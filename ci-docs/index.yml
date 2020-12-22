@@ -1,0 +1,108 @@
+### YamlMime:Landing
+metadata:
+  title: Laguntza-atala Dynamics 365 Customer Insights-erako
+  author: m-hartmann
+  description: Aurkitu artikulu garrantzitsuak laguntza edukiarekin hasteko.
+  ms.author: mhart
+  ms.date: 10/29/2020
+  ms.service: customer-insights
+  ms.topic: landing-page
+  ms.openlocfilehash: f175ea858213022afc87fce77213893c7d050d30
+  ms.sourcegitcommit: cf9b78559ca189d4c2086a66c879098d56c0377a
+  ms.translationtype: HT
+  ms.contentlocale: eu-ES
+  ms.lasthandoff: 11/03/2020
+  ms.locfileid: "4405005"
+title: Dynamics 365 Customer Insights dokumentazioa
+summary: Aurkitu baliabide lagungarriak Customer Insights erabiltzen hasteko eta bezeroei buruzko informazioaren ezaugarriak eta gaitasunak ezagutzeko.
+landingContent:
+- title: Ezagutu Customer Insights
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Customer Insights-en ikuspegi orokorra
+      url: overview.md
+    - text: Askapen planak
+      url: https://docs.microsoft.com/dynamics365-release-plan/2020wave2/customer-data-platform/dynamics365-customer-insights/planned-features
+    - text: Atzitu ingurunea
+      url: https://home.ci.ai.dynamics.com/
+- title: Hasi hartzaileei buruzko xehetasunekin
+  linkLists:
+  - linkListType: get-started
+    links:
+    - text: Hasi saioa doako proba bat lortzeko
+      url: https://dynamics.microsoft.com/en-us/get-started/?appname=customerinsights
+    - text: Berritasunak
+      url: audience-insights/whats-new-audience-insights.md
+    - text: hartzaileei buruzko xehetasunen dokumentazioa
+      url: audience-insights/index.yml
+- title: Jarri harremanetan
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Sartu Dynamics 365 komunitatean
+      url: https://go.microsoft.com/fwlink/?linkid=2073991
+    - text: Partekatu ideiak
+      url: https://go.microsoft.com/fwlink/?linkid=2074172
+    - text: Eman arazo baten berri
+      url: https://go.microsoft.com/fwlink/?linkid=2079641
+- title: Hartzaileen xehetasunen tutorialak
+  linkLists:
+  - linkListType: tutorial
+    links:
+    - text: Sortu ingurune bat
+      url: audience-insights/home.md
+    - text: Sortu bezeroaren profil bateratua
+      url: https://docs.microsoft.com/learn/modules/unified-customer-profile/
+    - text: Egin lan edozein aplikaziorekin
+      url: https://docs.microsoft.com/learn/modules/working-with-customer-insights/
+- title: Esportatu hartzaileei buruzko xehetasunen datuak
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Konfiguratu esportatze-helburuak
+      url: audience-insights/export-destinations.md
+    - text: Bezero-txartelak Dynamics 365 aplikazioetan
+      url: audience-insights/customer-card-add-in.md
+    - text: Power BI konektorea
+      url: audience-insights/export-power-bi.md
+- title: Kudeatu hartzaileen xehetasunak
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Konfiguratu sistema
+      url: audience-insights/system.md
+    - text: Definitu erabiltzaile-baimenak
+      url: audience-insights/permissions.md
+    - text: Kudeatu ingurune anizkoitzak
+      url: audience-insights/manage-environments.md
+- title: Parte-hartzearen xehetasunei buruz (aurrebista)
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Gaitasunaren ikuspegi orokorra
+      url: engagement-insights/overview.md
+    - text: Zehaztapenak eta baldintzak
+      url: engagement-insights/glossary.md
+    - text: Hasi erabiltzen
+      url: engagement-insights/get-started.md
+- title: Parte-hartzearen xehetasunen txostenak (aurrebista)
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Ikusi txostenak
+      url: engagement-insights/view-reports.md
+    - text: Sortu txosten pertsonalizatuak
+      url: engagement-insights/custom-reports.md
+    - text: Ikusi profil bateratuen txostena
+      url: engagement-insights/profile-reports.md
+- title: Parte-hartzearen xehetasunen gertaerak (aurrebista)
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Sortu gertaera finduak
+      url: engagement-insights/refined-events.md
+    - text: Esportatu gertaerak
+      url: engagement-insights/export-events.md
+    - text: Ezabatu eta esportatu datu pertsonalak
+      url: engagement-insights/delete-export-personal-data.md
