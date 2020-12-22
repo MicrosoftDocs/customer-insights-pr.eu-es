@@ -1,0 +1,79 @@
+### YamlMime:Landing
+title: Hartzaileen xehetasunen gaitasuna Dynamics 365 Customer Insights-en
+summary: Iragazi, bateratu eta bezeroen datuak iturri ugarietatik antolatu. Bezeroen profilak eta denbora errealeko segmentazioa sortu eta kudeatu. Bezeroaren datuak beste sistema batzuetan integratzea, are ekintzagarriagoa izan dadin.
+metadata:
+  title: hartzaileei buruzko xehetasunen dokumentazioa
+  description: Hartzaileen xehetasunen gako estekak dituen laguntza atala.
+  ms.service: customer-insights
+  ms.subservice: audience-insights
+  ms.topic: landing-page
+  author: m-hartmann
+  ms.author: mhart
+  ms.date: 10/16/2020
+  ms.openlocfilehash: 9dcbbecf793cca2ef1d79d6fad7f3b420f5a8806
+  ms.sourcegitcommit: cf9b78559ca189d4c2086a66c879098d56c0377a
+  ms.translationtype: HT
+  ms.contentlocale: eu-ES
+  ms.lasthandoff: 11/03/2020
+  ms.locfileid: "4404988"
+landingContent:
+- title: Hartzaileen xehetasunei buruz
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Produktuaren ikuspegi orokorra
+      url: overview.md
+    - text: Eginbide eguneratuak eta hobetuak
+      url: whats-new-audience-insights.md
+    - text: Komunitatearen kokalekua
+      url: https://go.microsoft.com/fwlink/?linkid=2073991
+- title: Datu-iturburuen hartzea
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Gehitu datu-iturburuak
+      url: data-sources.md
+    - text: Freskatze inkrementala
+      url: incremental-refresh-data-sources.md
+    - text: Ulertu entitateak
+      url: entities.md
+- title: Bateratu datuak
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Esleitu
+      url: map-entities.md
+    - text: Lotzea
+      url: match-entities.md
+    - text: Konbinazioa
+      url: merge-entities.md
+- title: Mugatu bezeroen profilak
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Konfiguratu harremanak
+      url: relationships.md
+    - text: Bezeroaren jardueren zerrenda
+      url: activities.md
+    - text: Ekarri zure Ikaskuntza automatiko ereduak
+      url: custom-models.md
+- title: Esportatu bezeroaren datuak
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Konfiguratu esportatze-helburuak
+      url: export-destinations.md
+    - text: Bezero-txartelak Dynamics 365 aplikazioetan
+      url: customer-card-add-in.md
+    - text: Power BI konektorea
+      url: export-power-bi.md
+- title: Kudeatu aplikazioa
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Konfiguratu sistema
+      url: system.md
+    - text: Definitu erabiltzaile-baimenak
+      url: permissions.md
+    - text: Kudeatu ingurune anizkoitzak
+      url: manage-environments.md

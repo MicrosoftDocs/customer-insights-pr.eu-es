@@ -1,0 +1,51 @@
+---
+title: Esportatu Customer Insights datuak Dynamics 365 Sales-era
+description: Ikasi Dynamics 365 Sales konexioa nola konfiguratu.
+ms.date: 08/21/2020
+ms.reviewer: philk
+ms.service: customer-insights
+ms.subservice: audience-insights
+ms.topic: conceptual
+author: m-hartmann
+ms.author: mhart
+manager: shellyha
+ms.openlocfilehash: af0824e69dfdf620a0ac756e32a9bd3dd85e5151
+ms.sourcegitcommit: 6a6df62fa12dcb9bd5f5a39cc3ee0e2b3988184b
+ms.translationtype: HT
+ms.contentlocale: eu-ES
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "4643803"
+---
+# <a name="connector-for-dynamics-365-sales-preview"></a>Dynamics 365 Sales konektorea (aurrebista)
+
+[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
+
+Dynamics 365 Sales-ekin marketin-zerrendak sortzeko, lan-fluxuen segimendua egiteko eta eskaintzak bidaltzeko, erabili bezeroen datuak.
+
+## <a name="prerequisite"></a>Aurrebaldintza
+
+[Common Data Service erabiliz sartutako Dynamics 365 Sales-eko](connect-power-query.md) kontaktuen erregistroak.
+
+## <a name="configure-the-connector-for-sales"></a>Konfiguratu konektorea Sales-erako
+
+1. Hartzaileei buruzko xehetasunetan, joan hona: **Administratzailea** > **Esportatu helburuak**.
+
+1. **Dynamics 365 Sales** azpian hautatu **Konfiguratu**.
+
+1. Eman zure esportatze-helmugari izen bat **Bistaratu izena** eremuan.
+
+1. Sartu erakundearen Salmentako URLa **Zerbitzariaren helbidea** eremu.
+
+1. Sarbidean **Zerbitzariaren administratzaile kontua** atala aukeratu **saioa hasi** eta aukeratu Dynamics 365 Sales kontua.
+
+1. Esleitu bezeroaren IDaren eremua Dynamics 365 kontaktuaren IDarekin.
+
+1. Hautatu **Hurrengoa**.
+
+1. Aukeratu segmentu bat edo gehiago.
+
+1. Sakatu **Gorde**.
+
+## <a name="export-the-data"></a>Esportatu datuak
+
+Hurrengoa egin dezakezu [esportatu datuak eskatu ahala](export-destinations.md). Esportazioa guztiekin ere exekutatuko da [programatutako freskapen](system.md#schedule-tab).
