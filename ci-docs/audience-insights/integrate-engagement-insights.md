@@ -1,0 +1,102 @@
+---
+title: Integratu konpromiso-estatistiketatik datozen webguneak ikusleekin
+description: Ekarri bezeroei buruzko web-informazioa konpromisoen estatistiketatik ikusleen estatistiketara.
+ms.date: 12/17/2020
+ms.service: customer-insights
+ms.subservice: audience-insights
+ms.topic: conceptual
+author: m-hartmann
+ms.author: mhart
+ms.reviewer: mukeshpo
+manager: shellyha
+ms.openlocfilehash: ba1cf6c7e85b8fe90baf34018f1309095573adf1
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
+ms.translationtype: HT
+ms.contentlocale: eu-ES
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5267661"
+---
+# <a name="integrate-web-data-from-engagement-insights-with-audience-insights"></a><span data-ttu-id="635d9-103">Integratu konpromiso-estatistiketatik datozen webguneak ikusleekin</span><span class="sxs-lookup"><span data-stu-id="635d9-103">Integrate web data from engagement insights with audience insights</span></span>
+
+<span data-ttu-id="635d9-104">Bezeroek sarritan egiten dituzte eguneroko transakzioak webguneak erabiliz.</span><span class="sxs-lookup"><span data-stu-id="635d9-104">Customers often do their day to day transactions online using web sites.</span></span> <span data-ttu-id="635d9-105">Konpromisoari buruzko informazioa gaitasuna Dynamics 365 Customer Insights web irtenbidea iturri gisa integratzeko irtenbide erabilgarria da.</span><span class="sxs-lookup"><span data-stu-id="635d9-105">The engagement insights capability in Dynamics 365 Customer Insights is a handy solution to integrate web data as a source.</span></span> <span data-ttu-id="635d9-106">Transakzio, demografia edo portaeraren inguruko datuez gain, sarean bezeroen profil bateratuetan jarduerak ikus ditzakegu.</span><span class="sxs-lookup"><span data-stu-id="635d9-106">In addition to transactional, demographic, or behavioral data we can see activities on the web in unified customer profiles.</span></span> <span data-ttu-id="635d9-107">Profil hau erabil dezakegu hartzaileak aktibatzeko segmentuak, neurriak edo iragarpenak bezalako ikuspegi osagarriak lortzeko.</span><span class="sxs-lookup"><span data-stu-id="635d9-107">We can use this profile to gain additional insights like segments, measures, or predictions for audience activation.</span></span>
+
+<span data-ttu-id="635d9-108">Artikulu honetan zure bezeroen web jardueren datuak konpromisoen inguruko datuetatik zure audientziaren inguruko ingurunera sartzeko urratsak deskribatzen dira.</span><span class="sxs-lookup"><span data-stu-id="635d9-108">This article describes the steps to bring your customers’ web activity data from engagement insights into your existing audience insights environment.</span></span>
+
+<span data-ttu-id="635d9-109">Adibide honetan, bezeroen profil bateratuak dituen ingurunea dugu.</span><span class="sxs-lookup"><span data-stu-id="635d9-109">In this example, we assume an environment that contains unified customer profiles.</span></span> <span data-ttu-id="635d9-110">Profilak inkesten iturriekin, txikizkako salmentekin eta txartel-sistema batekin bateratu ziren.</span><span class="sxs-lookup"><span data-stu-id="635d9-110">The profiles were unified with sources from surveys, retail sales, and a ticketing system.</span></span> <span data-ttu-id="635d9-111">Bezeroen inguruko jarduerak ere erakusten ditu.</span><span class="sxs-lookup"><span data-stu-id="635d9-111">It also shows the related activities of the customers.</span></span> 
+
+<span data-ttu-id="635d9-112">Orain bezero batek gure web propietateak bisitatzen dituen eta haien jarduerak ulertzen dituen jakin nahi dugu.</span><span class="sxs-lookup"><span data-stu-id="635d9-112">We now want to know if a customer visits our web properties and understand their activities.</span></span> <span data-ttu-id="635d9-113">Jardueren artean daude, adibidez, webgune bisitatu edo mezu elektroniko batean jasotako esteka batetik produktuen orriak ikusi.</span><span class="sxs-lookup"><span data-stu-id="635d9-113">Activities include, for example, visited websites or viewed product pages from a link received in an email.</span></span>
+
+## <a name="prerequisites"></a><span data-ttu-id="635d9-114">Aurrebaldintzak</span><span class="sxs-lookup"><span data-stu-id="635d9-114">Prerequisites</span></span>
+
+<span data-ttu-id="635d9-115">Konpromisoen estatistiketako datuak integratzeko, aurrebaldintza batzuk bete behar dira:</span><span class="sxs-lookup"><span data-stu-id="635d9-115">To integrate data from engagement insights, a few prerequisites need to be met:</span></span> 
+
+- <span data-ttu-id="635d9-116">Integratu konpromisoari buruzko SDK zure webgunearekin.</span><span class="sxs-lookup"><span data-stu-id="635d9-116">Integrate the engagement insights SDK with your website.</span></span> <span data-ttu-id="635d9-117">Informazio gehiagorako, ikusi [Hasi web SDK erabiltzen](../engagement-insights/instrument-website.md).</span><span class="sxs-lookup"><span data-stu-id="635d9-117">For more information, see [Get started with the web SDK](../engagement-insights/instrument-website.md).</span></span>
+- <span data-ttu-id="635d9-118">Web-gertaerak konpromiso-estatistiketatik esportatzeko ADLS Gen 2 biltegiratze-konturako sarbidea behar da, web-gertaeren datuak entzuleen estatistiketara sartzeko erabiliko dena.</span><span class="sxs-lookup"><span data-stu-id="635d9-118">Exporting web events from engagement insights requires access to an ADLS Gen 2 storage account that will be used to ingest the web events data to audience insights.</span></span> <span data-ttu-id="635d9-119">Informazio gehiago lortzeko, ikusi [Esportatu gertaerak](../engagement-insights/export-events.md).</span><span class="sxs-lookup"><span data-stu-id="635d9-119">For more information, see [Export events](../engagement-insights/export-events.md).</span></span>
+
+## <a name="configure-refined-events-in-engagement-insights"></a><span data-ttu-id="635d9-120">Konfiguratu finkatutako gertaerak konpromisoen estatistiketan</span><span class="sxs-lookup"><span data-stu-id="635d9-120">Configure refined events in engagement insights</span></span>
+
+<span data-ttu-id="635d9-121">Administratzaile batek webgune bat konpromiso estatistiken SDK-rekin sortu ondoren, *oinarrizko gertaerak* erabiltzaile batek web orri bat ikustean edo nonbait klik egitean biltzen dira.</span><span class="sxs-lookup"><span data-stu-id="635d9-121">After an administrator instrumented a website with the engagement insights SDK, *base events* are gathered when a user views a web page or clicks somewhere.</span></span> <span data-ttu-id="635d9-122">Oinarrizko gertaerek xehetasun ugari izan ohi dituzte.</span><span class="sxs-lookup"><span data-stu-id="635d9-122">Base events tend to contain numerous details.</span></span> <span data-ttu-id="635d9-123">Erabilera-kasuaren arabera, datuen azpimultzo bat behar duzu oinarrizko gertaera batean.</span><span class="sxs-lookup"><span data-stu-id="635d9-123">Depending on your use case, you only need a subset of the data in a base event.</span></span> <span data-ttu-id="635d9-124">Engagement xehetasunak sortzea ahalbidetzen dizu *gertaera finduak* zuk hautatutako oinarrizko gertaeraren propietateak bakarrik dituztenak.</span><span class="sxs-lookup"><span data-stu-id="635d9-124">Engagement insights let you create *refined events* that contain only the properties of a base event that you select.</span></span>     
+
+<span data-ttu-id="635d9-125">Informazio gehiagorako, ikusi [Sortu eta aldatu gertaera finduak](../engagement-insights/refined-events.md).</span><span class="sxs-lookup"><span data-stu-id="635d9-125">For more information, see [Create and modify refined events](../engagement-insights/refined-events.md).</span></span>
+
+<span data-ttu-id="635d9-126">Gertaera finduak sortzean kontuan hartzekoak:</span><span class="sxs-lookup"><span data-stu-id="635d9-126">Considerations when creating refined events:</span></span> 
+
+- <span data-ttu-id="635d9-127">Eman izen esanguratsua gertaera finduari.</span><span class="sxs-lookup"><span data-stu-id="635d9-127">Provide a meaningful name for the refined event.</span></span> <span data-ttu-id="635d9-128">Ikusleei buruzko informazioetan jarduera izen gisa erabil daiteke.</span><span class="sxs-lookup"><span data-stu-id="635d9-128">It's be used as an activity name in audience insights.</span></span>
+- <span data-ttu-id="635d9-129">Hautatu gutxienez propietate hauek publikoaren estatistiketan jarduera sortzeko:</span><span class="sxs-lookup"><span data-stu-id="635d9-129">Select at least the following properties to create an activity in audience insights:</span></span> 
+    - <span data-ttu-id="635d9-130">Signal.Action.Name: jardueraren xehetasunak adierazten ditu</span><span class="sxs-lookup"><span data-stu-id="635d9-130">Signal.Action.Name - indicating the activity details</span></span>
+    - <span data-ttu-id="635d9-131">Signal.User.Id: bezeroaren IDarekin mapatzeko erabiltzen da</span><span class="sxs-lookup"><span data-stu-id="635d9-131">Signal.User.Id - used to map with the customer ID</span></span>
+    - <span data-ttu-id="635d9-132">Signal.View.Uri: web-helbide gisa erabiltzen da segmentu edo neurrietarako oinarri gisa</span><span class="sxs-lookup"><span data-stu-id="635d9-132">Signal.View.Uri - used as a web address as a basis for segments or measures</span></span>
+    - <span data-ttu-id="635d9-133">Signal.Export.Id: gertaeretarako gako nagusi gisa erabiltzeko</span><span class="sxs-lookup"><span data-stu-id="635d9-133">Signal.Export.Id - to use as a primary key for events</span></span> <!-- system generated, do we need to list?-->
+    - <span data-ttu-id="635d9-134">Signal.Timestamp: jardueraren data eta ordua zehazteko</span><span class="sxs-lookup"><span data-stu-id="635d9-134">Signal.Timestamp - to determine the date and time for the activity</span></span>
+
+<span data-ttu-id="635d9-135">Aukeratu iragazkiak zure erabilera kasurako garrantzitsuak diren gertaera eta orrietan zentratzeko.</span><span class="sxs-lookup"><span data-stu-id="635d9-135">Select the filters to focus on the events and pages that matter for your use case.</span></span> <span data-ttu-id="635d9-136">Adibide honetan, "Posta elektronikoa sustatzeko" ekintzaren izena erabiliko dugu.</span><span class="sxs-lookup"><span data-stu-id="635d9-136">In this example, we'll use the "Email promotion" action name.</span></span>
+
+## <a name="export-the-refined-web-events"></a><span data-ttu-id="635d9-137">Esportatu findutako web-gertaerak</span><span class="sxs-lookup"><span data-stu-id="635d9-137">Export the Refined Web Events</span></span> 
+
+<span data-ttu-id="635d9-138">Gertaera findua definitu ondoren, gertaeraren datuak esportazio batera konfiguratu behar dituzu Azure Data Lake Storage, hori datu-iturburu gisa ezar daiteke ikusleei buruzko informazioetan kudeatzeko.</span><span class="sxs-lookup"><span data-stu-id="635d9-138">After defining the refined event is defined, you have to configure the export of the event data to an Azure Data Lake Storage, that can be set as a data source for ingestion in audience insights.</span></span> <span data-ttu-id="635d9-139">Esportazioak etengabe gertatzen dira gertaerak web propietatetik ateratzen diren heinean.</span><span class="sxs-lookup"><span data-stu-id="635d9-139">Exports happen constantly as the events flow from the web property.</span></span>
+
+<span data-ttu-id="635d9-140">Informazio gehiago lortzeko, ikusi [Esportatu gertaerak](../engagement-insights/export-events.md).</span><span class="sxs-lookup"><span data-stu-id="635d9-140">For more information, see [Export events](../engagement-insights/export-events.md).</span></span>
+
+## <a name="ingest-event-data-to-audience-insights"></a><span data-ttu-id="635d9-141">Kudeatu gertaeren datuak ikusleen estatistiketara</span><span class="sxs-lookup"><span data-stu-id="635d9-141">Ingest event data to audience insights</span></span>
+
+<span data-ttu-id="635d9-142">Orain gertaera findua definitu eta esportazioa konfiguratu ondoren, datuak ikusleei buruzko informazioa sartzeari ekingo diogu.</span><span class="sxs-lookup"><span data-stu-id="635d9-142">Now that you have defined the refined event and configured its export, we move on to ingesting the data to audience insights.</span></span> <span data-ttu-id="635d9-143">Datu-iturburu berri bat sortu behar duzu datuen eredu arrunten karpetan oinarrituta.</span><span class="sxs-lookup"><span data-stu-id="635d9-143">You need to create a new data source based on a Common Data Model folder.</span></span> <span data-ttu-id="635d9-144">Idatzi gertaerak esportatzen dituzun biltegiratze kontuaren xehetasunak.</span><span class="sxs-lookup"><span data-stu-id="635d9-144">Enter the details for the storage account you export the events to.</span></span> <span data-ttu-id="635d9-145">Urtean *default.cdm.json* fitxategia, hautatu irensteko gertaera findua eta entitatea ikusleei buruzko informazioetan sortzeko.</span><span class="sxs-lookup"><span data-stu-id="635d9-145">In the *default.cdm.json* file, select the refined event to ingest and create the entity in audience insights.</span></span>
+
+<span data-ttu-id="635d9-146">Informazio gehiagorako, ikusi [Konektatu Common Data Model karpeta batera Azure Data Lake kontu bat erabiliz](connect-common-data-model.md)</span><span class="sxs-lookup"><span data-stu-id="635d9-146">For more information, see [Connect to a Common Data Model folder using an Azure Data Lake account](connect-common-data-model.md)</span></span>
+
+
+## <a name="relate-refined-event-data-as-an-activity-of-a-customer-profile"></a><span data-ttu-id="635d9-147">Lotu findutako gertaeren datuak bezeroaren profileko jarduera gisa</span><span class="sxs-lookup"><span data-stu-id="635d9-147">Relate refined event data as an activity of a customer profile</span></span>
+
+<span data-ttu-id="635d9-148">Entitatea kudeatzen amaitu ondoren, bezeroaren profilerako jarduera konfigura dezakezu.</span><span class="sxs-lookup"><span data-stu-id="635d9-148">After completing the entity ingestion, you can configure the activity for the customer profile.</span></span>
+
+<span data-ttu-id="635d9-149">Informazio gehiago lortzeko, ikus [Bezeroaren jarduerak](activities.md).</span><span class="sxs-lookup"><span data-stu-id="635d9-149">For more information, see [Customer activities](activities.md).</span></span>
+
+:::image type="content" source="media/web-event-activity.png" alt-text="Jardueren orria Editatu jarduera panela zabalduta eta betetako eremuak.":::
+
+<span data-ttu-id="635d9-151">Konfiguratu jarduera berria esleipen honekin:</span><span class="sxs-lookup"><span data-stu-id="635d9-151">Configure the new activity with the following mapping:</span></span> 
+
+- <span data-ttu-id="635d9-152">**Gako nagusia:** Signal.Export.Id, ID esklusiboa gertaeren erregistro guztietarako eskuragarri dago konpromiso estatistiketan.</span><span class="sxs-lookup"><span data-stu-id="635d9-152">**Primary Key:** Signal.Export.Id, a unique ID that is available for every event record in engagement insights.</span></span> <span data-ttu-id="635d9-153">Propietate hau automatikoki sortzen da.</span><span class="sxs-lookup"><span data-stu-id="635d9-153">This property is automatically generated.</span></span>
+
+- <span data-ttu-id="635d9-154">**Denbora-zigilua:** Signal.Timestamp gertaeraren propietatean.</span><span class="sxs-lookup"><span data-stu-id="635d9-154">**Timestamp:** Signal.Timestamp in the event property.</span></span>
+
+- <span data-ttu-id="635d9-155">**Gertaera** Signal.Name, jarraitu nahi duzun gertaeraren izena.</span><span class="sxs-lookup"><span data-stu-id="635d9-155">**Event:** Signal.Name, the event name that you want to track.</span></span>
+
+- <span data-ttu-id="635d9-156">**Web-helbidea:** Signal.View.Uri gertaera sortu duen orriko uriei erreferentzia eginez.</span><span class="sxs-lookup"><span data-stu-id="635d9-156">**Web address:** Signal.View.Uri referring to the uri of the page that created the event.</span></span>
+
+- <span data-ttu-id="635d9-157">**Xehetasunak:** Signal.Action.Name gertaerarekin lotzeko informazioa irudikatzeko.</span><span class="sxs-lookup"><span data-stu-id="635d9-157">**Details:** Signal.Action.Name to represent the information to associate with the event.</span></span> <span data-ttu-id="635d9-158">Kasu honetan hautatutako propietateak gertaera mezu elektronikoa sustatzeko dela adierazten du.</span><span class="sxs-lookup"><span data-stu-id="635d9-158">The selected property in this case indicates that the event is for email promotion.</span></span>
+
+- <span data-ttu-id="635d9-159">**Jarduera mota:** adibide honetan, WebLog jarduera mota aukeratuko dugu.</span><span class="sxs-lookup"><span data-stu-id="635d9-159">**Activity type:** In this example, we choose the exsting activity type WebLog.</span></span> <span data-ttu-id="635d9-160">Aukeraketa hau iragazki aukera erabilgarria da iragarpen modeloak exekutatzeko edo jarduera mota horren arabera segmentuak sortzeko.</span><span class="sxs-lookup"><span data-stu-id="635d9-160">This selection is a useful filter option to run prediction models or create segments based on this activity type.</span></span>
+
+- <span data-ttu-id="635d9-161">**Konfiguratu erlazioa:** ezarpen garrantzitsu honek jarduera dauden bezeroen profilekin lotzen du.</span><span class="sxs-lookup"><span data-stu-id="635d9-161">**Set up relationship:** This important setting ties the activity to existing customer profiles.</span></span> <span data-ttu-id="635d9-162">**Signal.User.Id** bildu nahi den SDK-n konfiguratutako identifikatzailea da eta audientzia estatistiketan konfiguratuta dauden beste datu iturri batzuetako erabiltzaile IDarekin lotzen da.</span><span class="sxs-lookup"><span data-stu-id="635d9-162">**Signal.User.Id** is the identifier configured in the SDK to be collected and that relates to the user ID in other data sources that are configured in audience insights.</span></span> <span data-ttu-id="635d9-163">Adibide honetan, Signal.User.Id eta RetailCustomers-en arteko harremana konfiguratzen dugu: CustomerRetailId, hau da, datuak bateratzeko prozesuaren mapa urratsean zehaztu den gako nagusia.</span><span class="sxs-lookup"><span data-stu-id="635d9-163">In this example, we configure the relationship between Signal.User.Id and RetailCustomers:CustomerRetailId, which is the primary key that was deinfed in the map step of the data unification process.</span></span>
+
+
+<span data-ttu-id="635d9-164">Jarduerak prozesatu ondoren, bezeroen erregistroak berrikus ditzakezu eta bezeroaren txartela ireki dezakezu konpromisoari buruzko jarduerak denboran ikusteko.</span><span class="sxs-lookup"><span data-stu-id="635d9-164">After processing the activities, you can review customer records and open a customer card to see activities from engagement insights in the timeline.</span></span> 
+
+> [!TIP]
+> <span data-ttu-id="635d9-165">Konpromisoari buruzko informazioa duen bezeroaren IDa aurkitzeko, joan hona **Entitateak** eta aurreikusi UnifiedActivity entitatearen datuak.</span><span class="sxs-lookup"><span data-stu-id="635d9-165">To find a customer id that has an engagement insights activity, go to **Entities** and preview the data for the UnifiedActivity entity.</span></span> <span data-ttu-id="635d9-166">ActivityTypeDisplay = WebLog-ek goiko adibidean konfiguratutako konpromisoen inguruko informazioa du.</span><span class="sxs-lookup"><span data-stu-id="635d9-166">ActivityTypeDisplay = WebLog contain the engagement insights activity configured in the example above.</span></span> <span data-ttu-id="635d9-167">Kopiatu bezeroaren IDa erregistro horietako baten eta ID horretan **Bezeroak** orria.</span><span class="sxs-lookup"><span data-stu-id="635d9-167">Copy the customer ID for one of those records and for that ID on the **Customers** page.</span></span>
+
+## <a name="next-steps"></a><span data-ttu-id="635d9-168">Hurrengo urratsak</span><span class="sxs-lookup"><span data-stu-id="635d9-168">Next Steps</span></span>
+
+<span data-ttu-id="635d9-169">Orain [segmentuak](segments.md), [neurriak](measures.md) eta [iragarpenak](predictions.md) sor ditzakezu bezeroekin konexio esanguratsua egiteko.</span><span class="sxs-lookup"><span data-stu-id="635d9-169">You can now create [segments](segments.md), [measures](measures.md), and [predictions](predictions.md) to make a meaningful connection with your customers.</span></span>
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]
