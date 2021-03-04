@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: 295c372bb452e7c40aa950506dc494d4a2de1108
-ms.sourcegitcommit: cf9b78559ca189d4c2086a66c879098d56c0377a
+ms.openlocfilehash: 292da986faa7f62d8aa73ed7214075612178e2e1
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "4404998"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5269851"
 ---
 # <a name="relationships-between-entities"></a>Harremanak entitateen artean
 
@@ -28,8 +28,8 @@ Partiduen eta bateratze prozesuen artean, sistemen arteko harremanak agertokien 
 > ![Erlazioak sortzen](media/relationships-entities-merge.png "Erlazioak sortzen")
 
 - ***CustomerToContact* harremana** Bezeroaren entitatearen eta Harremanetarako entitatearen artean sortu zen. Bezero entitateak giltza eremua lortzen du **Contact_contactId** Harremanetarako entitatearen gako eremua erlazionatzeko **contactId**.
-- **_CustomerToAccount_ harremana** Bezeroaren entitatearen eta konturako entitatearen artean sortu zen. Bezero entitateak giltza eremua lortzen du **Account_contactId** Konturako entitatearen gako eremua erlazionatzeko **accountId**.
-- **_CustomerToWebAccount_ harremana** Bezeroaren entitatearen eta web-konturako entitatearen artean sortu zen. Bezero entitateak giltza eremua lortzen du **WebAccount_contactId** Web-Konturako entitatearen gako eremua erlazionatzeko **webaccountId**.
+- ***CustomerToAccount* harremana** Bezeroaren entitatearen eta konturako entitatearen artean sortu zen. Bezero entitateak giltza eremua lortzen du **Account_contactId** Konturako entitatearen gako eremua erlazionatzeko **accountId**.
+- ***CustomerToWebAccount* harremana** Bezeroaren entitatearen eta web-konturako entitatearen artean sortu zen. Bezero entitateak giltza eremua lortzen du **WebAccount_contactId** Web-Konturako entitatearen gako eremua erlazionatzeko **webaccountId**.
 
 ## <a name="create-a-relationship"></a>Sortu erlazioa
 
@@ -69,3 +69,6 @@ Definitu harreman pertsonalizatuak **Harremanak** orria. Harreman bakoitza Iturr
 ## <a name="next-step"></a>Hurrengo urratsa
 
 Sistema eta pertsonalizatutako harremanak sekretuak isilik ez dituzten datu iturri anitzetan oinarritutako segmentuak sortzeko erabiltzen dira. Informazio gehiago lortzeko, [Segmentuak](segments.md).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

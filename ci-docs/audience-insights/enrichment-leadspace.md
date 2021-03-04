@@ -5,16 +5,16 @@ ms.date: 11/24/2020
 ms.reviewer: kishorem
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: conceptual
+ms.topic: how-to
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: 1b5c6e46e8e424df83e855d81fc4dd7ecb394e3c
-ms.sourcegitcommit: a9b2cf598f256d07a48bba8617347ee90024a1dd
+ms.openlocfilehash: 12eed91a7ca4ef7fde0d53cca4a1dfd398b4634f
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "4668708"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5269407"
 ---
 # <a name="enrichment-of-company-profiles-with-leadspace-preview"></a>Enpresen profilak aberastea Leadspace-rekin (aurrebista)
 
@@ -38,7 +38,11 @@ Leadspace konfiguratzeko eta konfiguratzeko, honako baldintza hauek bete behar d
 
 1. Aukeratu **Hasi** eta, ondoren, sartu **Leadspace token** aktibo bat (betiko giltza). Berrikusi eta eman baimena **Datuen pribatutasuna eta betetzea** aukeratuz **ados** laukia. Berretsi bi sarrerak **Konektatu Leadspace-ra** hautatuta.
 
-1. Aukeratu **Esleitu datuak** eta zehaztu zure profil bateratuetako zein eremu erabili beharko liratekeen Leadspace enpresako datuekin bat etortzeko. **Enpresaren izena** eremua beharrezkoa da. Bat-etortzeen zehaztasun handiagoa lortzeko, beste bi eremu, **Enpresaren webgunea** eta **Enpresaren kokapena**, gehitu daitezke.
+1. Aukeratu **Esleitu datuak** eta aukeratu Microsoft Leadspace-ko enpresako datuekin aberastu nahi duzun datu multzoa. *Bezeroen* entitatea hauta dezakezu zure bezeroen profil guztiak aberasteko edo segmentu-entitate bat hauta dezakezu segmentu horretan dauden bezeroen profilak soilik aberasteko.
+
+   :::image type="content" source="media/enrichment-leadspace-select-segment.png" alt-text="Aukeratu bezeroaren profila eta segmentua aberasteko.":::
+
+1. Sakatu **Hurrengoa** eta zehaztu zure profil bateratuetako zein eremu erabili beharko liratekeen Leadspace enpresako datuekin bat etortzeko. **Enpresaren izena** eremua beharrezkoa da. Bat-etortzeen zehaztasun handiagoa lortzeko, beste bi eremu, **Enpresaren webgunea** eta **Enpresaren kokapena**, gehitu daitezke.
 
    :::image type="content" source="media/enrichment-leadspace-mapping.png" alt-text="Leadspace eremuak esleitzeko panela.":::
    
@@ -62,3 +66,6 @@ Eraiki zure bezeroen datu aberastuen gainean. Sortu [segmentuak](segments.md), [
 
 Dynamics 365 Customer Insights gaitzen duzunean datuak Leadspace-ra bidaltzeko, datuak betetzeko mugatik kanpo transferitzea baimentzen duzu Dynamics 365 Customer Insights-erako, datu pertsonalak bezalako datu sentikorrak barne. Microsoft-ek datu horiek transferituko ditu zure aginduz, baina zure ardura da Leadspace-k pribatutasun- edo segurtasun-betebeharrak betetzen dituela ziurtatzea. Informazio gehiago eskuratzeko, ikusi [Microsoft-en pribatutasun-adierazpena](https://go.microsoft.com/fwlink/?linkid=396732).
 Dynamics 365 Customer Insights administratzaileak edonoiz ken dezake aberastea funtzio hau erabiltzeari uzteko.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

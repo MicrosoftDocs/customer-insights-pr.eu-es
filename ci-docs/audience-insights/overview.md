@@ -1,30 +1,26 @@
 ---
-title: Hartzaileen xehetasunen gaitasuna
-description: Dynamics 365 Customer Insights-en hartzaileen xehetasunen gaitasunaren ikuspegi orokorra.
-ms.date: 02/05/2020
+title: Hartzaileen ikuspegia Dynamics 365 Customer Insights ikuspegi orokorra
+description: Dynamics 365 Customer Insights-en Hartzaileen ikuspegiaren ikuspegi orokorra.
+ms.date: 01/18/2021
 ms.reviewer: nimagen
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: conceptual
+ms.topic: overview
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: 82763b294484cca4a3982f4ebef6f914a02f5cca
-ms.sourcegitcommit: cf9b78559ca189d4c2086a66c879098d56c0377a
+ms.openlocfilehash: 735aae12abebd2d6d9b6aedb5835164834f480c0
+ms.sourcegitcommit: 0260ed244b97c2fd0be5e9a084c4c489358e8d4f
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "4404986"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "5476980"
 ---
-# <a name="dynamics-365-customer-insights-audience-insights-capability"></a>Dynamics 365 Customer Insights-en hartzaileen xehetasunen gaitasuna
+# <a name="audience-insights-for-dynamics-365-customer-insights-overview"></a>Hartzaileen ikuspegia Dynamics 365 Customer Insights ikuspegi orokorra
 
-Bezeroaren esperientzia erakundearen eraldaketa digitaleko asmoen muina da. Gaur egungo merkatuan lehiatzeko, erakundeek harreman esanguratsuak eraiki behar dituzte bezeroekin maila pertsonalean. Eskala modu eraginkorrean pertsonalizatzeko gaitasunak bezeroen ikuspegi osoa eta bateratua behar du.
+Hartzaileen xehetasunek zure bezeroak hobeto ezagutzen lagunduko dizute. Konektatu iturri transakzionaleko, jokabideko eta behatokiko hainbat iturritako datuak, 360 graduko bezeroaren ikuspegia sortzeko. Erabil itzazu ikuspegi horiek bezeroen inguruko esperientzia eta prozesuak gidatzeko. Bateratu eta ulertu bezeroen datuak eta balia itzazu ikuspegi eta ekintza adimentsuetarako.
 
-Hartzaileen xehetasunek zure bezeroak hobeto ezagutzen lagunduko dizute. Konektatu iturri transakzionaleko, jokabideko eta behatokiko hainbat iturritako datuak, 360 graduko bezeroaren ikuspegia sortzeko. Erabil itzazu ikuspegi horiek bezeroen inguruko esperientzia eta prozesuak gidatzeko.
-
-**Bateratu eta ulertu bezeroen datuak eta balia itzazu ikuspegi eta ekintza adimentsuetarako.**
-
-Hartzaileen xehetasunekin erakundeek hauek egin ditzakete:  
+## <a name="main-benefits"></a>Onura nagusiak 
 
 - **Ezabatu datuen ziloak eta bateratu bezeroen datuak**
 
@@ -33,15 +29,15 @@ Hartzaileen xehetasunekin erakundeek hauek egin ditzakete:
 
 - **Aberastu Microsoft Graph-en barruan dagoen audientzia adimenarekin**
 
-  - Eraiki bezeroen profil aberatsagoak Microsoft Graph barruan jasotako audientzia adimenduna txertatuz.  
+  - Eraiki bezeroen profil aberatsagoak [Microsoft Graph barruan jasotako audientzia adimenduna txertatuz](enrichment-microsoft-graph.md).  
 
 - **Zure negozio prozesuak eta bezeroen esperientzia pertsonalizatuak indartzea**
 
   - Eraman konpromiso pertsonalizatua kanaletan zehar: merkaturatzeko, salmentarako eta zerbitzuetako profesionalak ahalbidetzeko aukerarik gabe, testuinguruan oinarritutako customer insights eta bezeroen profil txartel pertsonalizatuak dagoeneko erabiltzen dituzten negozio aplikazioetan
   - Bezeroan zentratutako esperientziak eta prozesuak automatizatzea profil pertsonalizatuetan, negozio neurrietan eta segmentuetan oinarrituta.
-  - Gaitu eta hedatu Microsoft Power Platform-en sortutako negozio esperientziak. Sortu bizkor azkar kapsulatutako estatistikekin PowerApps-en kode baxuko ikuspegi indartsua erabiliz.  
+  - Gaitu eta hedatu lineako negozio esperientziak [Microsoft Power Platform-en](https://powerplatform.microsoft.com/). Sortu bizkor azkar kapsulatutako estatistikekin PowerApps-en kode baxuko ikuspegi indartsua erabiliz.  
 
-Hartzaileen xehetasunetan gako erabiltzaile hauen gaitasunak sartuko dira:
+## <a name="key-audiences"></a>Hartzaile nagusiak
 
 - **Datu analistak / administratzaileak:**
 
@@ -58,5 +54,8 @@ Hartzaileen xehetasunetan gako erabiltzaile hauen gaitasunak sartuko dira:
 
 - **Enpresa analistak:**
 
-  - Eraiki pertsonalizagarriak diren profilak, zehaztu neurriak eta sortu segmentuak zure bezeroaren 360 graduko ikuspegia lortzeko, zure erakundearentzat espezifikoak.  
-  - Erabili konektoreak PowerApps-erako, Microsoft Power BI-rako edo APIetarako, zure negozio aplikazioetan edo BI soluzioetan xehetasunak azaleratzeko.  
+  - Eraiki pertsonalizagarriak diren profilak, zehaztu neurriak, sortu segmentuak eta atera etekinik handiena analisi-igarleari zure bezeroaren 360 graduko ikuspegia lortzeko, zure erakundearentzat espezifikoak.  
+  - Erabili kutxaz kanpoko konektoreak Microsoft eta hirugarrenen aplikazio edo API batzuetarako estatistikak gehiago prozesatzeko.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

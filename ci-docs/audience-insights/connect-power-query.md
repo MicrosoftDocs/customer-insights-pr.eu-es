@@ -5,16 +5,16 @@ ms.date: 09/29/2020
 ms.reviewer: adkuppa
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: conceptual
+ms.topic: how-to
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: 8a170cc5b64b4b383501021232c83948e838a0e2
-ms.sourcegitcommit: cf9b78559ca189d4c2086a66c879098d56c0377a
+ms.openlocfilehash: d51a7efa5fd9f7336d1662500eb804a674738493
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "4404976"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5267753"
 ---
 # <a name="connect-to-a-power-query-data-source"></a>Konektatu Power Query datu-iturburu batera
 
@@ -28,7 +28,10 @@ Power Query-ek konektore multzo zabala eskaintzen du datuak irensteko. Konektore
 
 1. Aukeratu **Inportatu datuak** metodoa eta hautatu **Hurrengoa**.
 
-1. Eman **Izena** datu-iturburu-erako, eta hautatu **Hurrengoa** datu-iturburu sortzeko.
+1. Eman **Izena** datu-iturburu-erako, eta hautatu **Hurrengoa** datu-iturburu sortzeko. Jarri izena jarraibideei: 
+   - Hasi letra batekin.
+   - Erabili letrak eta zenbakiak soilik. Ezin da idatzi karaktere berezirik edo zuriunerik.
+   - Erabili 3 eta 64 karaktere artean.
 
 1. Hautatu bat [erabilgarri dauden konektoreetatik](#available-power-query-data-sources). Adibide honetarako, hautatu dugu **Testua/CSV** konektore.
 
@@ -77,3 +80,6 @@ Konektoreak kontrol-markarekin **Customer Insights (datu-fluxuak)** zutabea esku
 3. Aplikatu aldaketak eta eraldaketak **Power Query - Editatu kontsultak** elkarrizketa - koadroan deskribatutako moduan [Sortu datu-iturburu berria](#create-a-new-data-source) atala.
 
 4. Aukeratu **Gorde** Power Query-en aldaketak gordetzeko aldaketak egin ondoren.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -1,20 +1,20 @@
 ---
 title: Sortu eta kudeatu inguruneak
 description: Ikasi zerbitzuan izena ematen eta inguruneak kudeatzen.
-ms.date: 11/10/2020
+ms.date: 02/01/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: conceptual
+ms.topic: how-to
 ms.reviewer: nimagen
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: 010336445d0825a7ff82d1b7a65702fc12245788
-ms.sourcegitcommit: 6a6df62fa12dcb9bd5f5a39cc3ee0e2b3988184b
+ms.openlocfilehash: 744f0bcbf5d2700363180f44e38d6dee9bf5df63
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4644118"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5270097"
 ---
 # <a name="manage-environments"></a>Kudeatu inguruneak
 
@@ -46,9 +46,9 @@ Ingurune berria sortzeko bi era daude: Guztiz konfigurazio berria zehaz dezakezu
 
 Ingurune bat sortzeko:
 
-1. Hautatu botoia **ezarpenak** ikurra aplikazioaren goiburuan.
+1. Hautatu **Ingurunea** hautatzailea aplikazioaren goiburuan.
 
-1. Hautatu **Ingurune berria**.
+1. Hautatu **Berria**.
 
    > [!div class="mx-imgBorder"]
    > ![Ingurune-ezarpenak](media/environment-settings-dialog.png)
@@ -75,7 +75,14 @@ Ingurune bat sortzeko:
 
    - Azure Data Lake Storage Gen2 aukerarako, baliabideetan oinarritutako aukera eta harpidetzan oinarritutako aukera erabil dezakezu autentifikatzeko. Informazio gehiagorako, ikus [Konektatu hartzaileei buruzko xehetasunak Azure Data Lake Storage Gen2 kontu batera Azure zerbitzuaren entitatearekin](connect-service-principal.md). **Edukiontzia** izena ezin da aldatu eta "customerinsights" izango da.
    
-   - [Iragarpenak](predictions.md) erabili nahi badituzu, sartu Common Data Service instantziaren URLa **Zerbitzariaren helbidea** eremua, **Erabili iragarpenak** atalean.
+   - [Iragarpenak](predictions.md) erabili nahi badituzu edo konfiguratu datuak partekatzea aplikazioekin eta irtenbideekin Microsoft Dataverse-n oinarrituta, eman Microsoft Dataverse inguruneko URL azpian dagoen **Konfiguratu datuak partekatzearekin Microsoft Dataverse eta gaitasun osagarriak gaitu**. Aukeratu **Gaitu datuak partekatzea** Customer Insights-en irteerako datuak partekatzeko Microsoft Dataverse kudeatutako datuen lakua.
+
+     > [!NOTE]
+     > - Datuak partekatzearekin Microsoft Dataverse-ren kudeatutako datuen lakua ez da onartzen une honetan datu guztiak gordetzen dituzunean Azure Data Lake Storage.
+     > - [Entitate batean falta diren balioen iragarpena](predictions.md) ez da onartzen une honetan datuak partekatzea gaitzen duzunean Microsoft Dataverse-n kudeatutako Data Lake.
+
+     > [!div class="mx-imgBorder"]
+     > ![Datuak partekatzea ahalbidetzeko konfigurazio aukerak Microsoft Dataverse-rekin](media/Datasharing-with-DataverseMDL.png)
 
    Prozesuak exekutatzen dituzunean, adibidez, datuak sartzea edo segmentua sortzea, dagozkien karpetak sortuko dira goian zehaztu duzun biltegiratze kontuan. Datu fitxategiak eta model.json fitxategiak dagozkien azpi-karpetetan sortu eta gehituko dira exekutatzen duzun prozesuan oinarrituta.
 
@@ -86,7 +93,7 @@ Ingurune bat sortzeko:
 Hurrengo konfigurazio ezarpenak kopiatzen dira:
 
 - Eginbide konfigurazioak
-- Inbertitu / inportatutako datu-iturriak
+- Hornitutako edo inportatutako datu-iturburuak
 - Datuen bateratzea (mapa, bat etorri, batu) konfigurazioa
 - Segmentuak
 - Neurriak
@@ -120,11 +127,11 @@ Datuen bateratzea amaitutakoan, joan **Neurriak** eta **segmentuak** haiek fresk
 
 Dauden inguruneen xehetasun batzuk editatu ditzakezu.
 
-1. Joan **Administratzailea** > **Sistema** > **Hurrengoari buruz**.
+1.  Hautatu **Ingurunea** hautatzailea aplikazioaren goiburuan.
 
-2. Hautatu **Editatu**.
+2.  Hautatu **Editatu** ikonoa.
 
-3. Ingurugiroa eguneratu dezakezu **Bistaratu izena** baina ezin duzu aldatu **Eskualdea** edo **Mota**.
+3. **Editatu ingurunea** koadroan, ingurunekoak egunera ditzakezu **Bistaratzeko izena**, baina ezin duzu aldatu **Eskualdea** edo **Mota**.
 
 4. Ingurumena konfiguratuta badago, datuak gordetzeko Azure Data Lake Storage Gen2, eguneratu dezakezu **Kontuaren gakoa**. Hala ere, ezin duzu aldatu **Kontuaren izena** edo **edukiontzia** izendatzeko.
 
@@ -132,19 +139,27 @@ Dauden inguruneen xehetasun batzuk editatu ditzakezu.
 
 ## <a name="reset-an-existing-environment"></a>Berrezarri lehendik dagoen ingurunea
 
-Ingurunea egoera hutsera berrezar dezakezu konfigurazio guztiak ezabatu eta sartutako datuak kendu nahi badituzu.
+Administratzaile gisa, ingurunea egoera hutsera berrezar dezakezu konfigurazio guztiak ezabatu eta sartutako datuak kendu nahi badituzu.
 
-1.  Joan **Administratzailea** > **Sistema** > **Hurrengoari buruz**.
+1.  Hautatu **Ingurunea** hautatzailea aplikazioaren goiburuan. 
 
-2.  Hautatu **Berrezarri**. 
+2.  Aukeratu berrezarri nahi duzun ingurunea eta hautatu elipsia **...**. 
 
-3.  Ezabapena berresteko, idatzi ingurunearen izena eta hautatu **Berrezarri**.
+3. Aukeratu **Berrezarri** aukera. 
+
+4.  Ezabapena berresteko, idatzi ingurunearen izena eta hautatu **Berrezarri**.
+
+## <a name="delete-an-existing-environment-available-only-for-admins"></a>Ezabatu lehendik dagoen ingurunea (administratzaileentzat soilik dago erabilgarri)
+
+Administratzaile gisa, kudeatzen duzun ingurunea ezabatu dezakezu.
+
+1.  Hautatu **Ingurunea** hautatzailea aplikazioaren goiburuan.
+
+2.  Aukeratu berrezarri nahi duzun ingurunea eta hautatu elipsia **...**. 
+
+3. Aukeratu **Ezabatu** aukera. 
+
+4.  Ezabatzea berresteko, idatzi ingurumenaren izena eta hautatu **Ezabatu**.
 
 
-## <a name="delete-an-existing-environment"></a>Aurretik bazegoen ingurune bat ezabatu
-
-1. Joan **Administratzailea** > **Sistema** > **Hurrengoari buruz**.
-
-1. Hautatu **Ezabatu**.
-
-1. Ezabatzea berresteko, idatzi ingurumenaren izena eta hautatu **Ezabatu**.
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

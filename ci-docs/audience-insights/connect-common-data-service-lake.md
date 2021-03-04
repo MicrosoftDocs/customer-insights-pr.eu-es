@@ -4,17 +4,17 @@ description: Inportatu datuak Common Data Service kudeatutako datu-biltegia.
 ms.date: 09/29/2020
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: conceptual
+ms.topic: how-to
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
 ms.reviewer: adkuppa
-ms.openlocfilehash: 029857e2bbb5f6357a5c01138ceaad78887b7518
-ms.sourcegitcommit: 6a6df62fa12dcb9bd5f5a39cc3ee0e2b3988184b
+ms.openlocfilehash: 18b6cd3fdaf5b738877a73b520b91dbc6ded40de
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4643383"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5267775"
 ---
 # <a name="connect-to-data-in-a-common-data-service-managed-data-lake"></a>Konektatu datuekin Common Data Service kudeatutako data lake-ra
 
@@ -34,7 +34,10 @@ Lineako zerbitzuetan gordetako datuak, esaterako Azure Data Lake Storage datuak 
 
 3. Aukeratu **Konektatu Common Data Service** eta hautatu **hurrengoa**.
 
-4. Idatzi **Izena** datu-iturbururako eta hautatu **Hurrengoa**.
+4. Idatzi **Izena** datu-iturbururako eta hautatu **Hurrengoa**. Jarri izena jarraibideei: 
+   - Hasi letra batekin.
+   - Erabili letrak eta zenbakiak soilik. Ezin da idatzi karaktere berezirik edo zuriunerik.
+   - Erabili 3 eta 64 karaktere artean.
 
 5. Eman **Zerbitzariaren helbidea** zuretzako Common Data Service antolatzea eta hautatu **saioa hasi**.
 
@@ -65,3 +68,6 @@ Common Data Service desberdinera konektatzeko, [sortu datu-iturri berria](#conne
 3. Hautatu **Editatu** aukera zerrendan.
 
 4. Entitate osagarriak eskuragarri dauden entitateen zerrendatik hautatu eta hautatu **Gorde**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

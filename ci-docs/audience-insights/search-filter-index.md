@@ -1,7 +1,7 @@
 ---
 title: Bilatu eta iragazi bezeroen profilak
 description: Aurki itzazu zehaztutako atributuetarako bezeroen profil bateratuei eta iragazkiari buruzko informazioa.
-ms.date: 04/16/2020
+ms.date: 01/19/2021
 ms.reviewer: nimagen
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: 1842ad333c23bb155abc89167556163ae79cdd34
-ms.sourcegitcommit: cf9b78559ca189d4c2086a66c879098d56c0377a
+ms.openlocfilehash: d675738c43cbdb5f9b478d53d6124db38ba3004d
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "4404999"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5270051"
 ---
 # <a name="customer-profiles-search--filter-index"></a>Bezeroen profilak: Bilatu eta iragazi indizea
 
@@ -28,14 +28,6 @@ Zure bezeroen datuak bateratzearen emaitza Bezeroaren Profilaren entitatea da zu
 Bilaketa atributuak administratzaile gisa definitzen dituzun lehen aldia bada, indexatu beharreko eremuak lehenik definitu behar dituzu. Erabiltzaileek bezeroak bilatu eta iragazi ditzaketen atributu guztiak aukeratzea gomendatzen dizugu **Bezeroak** orria. Datuak bateratzeko prozesuan sortutako Bezero Profilaren entitatean dauden atributuak soilik zehaztu ditzakezu.
 
 1. Ireki **Bezeroak** orria eta hautatu **Bilatu eta iragazi indizea**.
-
-> [!NOTE]
-> Bilaketa-indize konfigurazio lehenetsi bat sortzen dugu Bezeroaren entitatean eskuragarri dauden atributuetan, honako mapa semantiko hauetatik, maparen orrian definituta.
-> - Pertsonaren izena, abizena, bigarren izena, izen osoa
-> - Erakundearen izena
-> - Helbide elektronikoa
-> - Telefono-zenbakia
-> - Kokapenaren informazioa
 
 2. Hautatu **+ Gehitu** zehazteko indexatutako eremuak.
 
@@ -65,3 +57,10 @@ The **Iragazi** menuan **Bezeroak** orrialdeak hainbat atributu-maila izan ditza
 2. Aldaketak aplikatzeko, hautatu **Gorde**.
 
 3. Aukeratu **Exekutatu** zure ezarpenak aplikatzeko prest dagoenean.
+
+## <a name="next-steps"></a>Hurrengo urratsak
+
+Joan **Bezeroak** orrira bezeroen profilak bilatzeko edo aurkitutako eremuak erabiltzea bezeroen profil guztien azpimultzoa ikusteko.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

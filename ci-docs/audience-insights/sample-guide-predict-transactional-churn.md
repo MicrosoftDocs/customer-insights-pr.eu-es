@@ -5,16 +5,16 @@ ms.date: 11/19/2020
 ms.reviewer: digranad
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: conceptual
+ms.topic: tutorial
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: 055708ed3f9f468cad83ecf976a460814bf05199
-ms.sourcegitcommit: 6a6df62fa12dcb9bd5f5a39cc3ee0e2b3988184b
+ms.openlocfilehash: 81540ad2f490cf566f031233543b3cb6aa838033
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4643578"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5269775"
 ---
 # <a name="transactional-churn-prediction-preview-sample-guide"></a>Transakzioen galera-tasaren iragarpenari (aurrebista) buruzko adibide-gida
 
@@ -43,13 +43,13 @@ Berrikusi zehazki [datuen sarrerari](data-sources.md) eta [Power Query konektore
 
 1. Eguneratu jarraian zerrendatutako zutabeen datu motak:
 
-   - **DateOfBirth**: Data
-   - **CreatedOn**: Data/ordua/zona
+   - **Jaioteguna**: Data
+   - **Sorrera-data**: Data/ordua/zona
 
    [!div class="mx-imgBorder"]
    ![Bihurtu jaioteguna data](media/ecommerce-dob-date.PNG "eraldatu jaiotze data datara")
 
-1. Eskuinaldeko paneleko "Izena" eremuan, aldatu izena **Kontsulta** datu-iturburuari eta ipini izen hau: **eCommerceContacts**
+1. Eskuinaldeko paneleko **Izena** eremuan, aldatu izena **Kontsulta** datu-iturburuari eta ipini izen hau: **eCommerceContacts**
 
 1. Gorde datu-iturburua.
 
@@ -66,7 +66,7 @@ Berrikusi zehazki [datuen sarrerari](data-sources.md) eta [Power Query konektore
    - **PurchasedOn**: Data/ordua
    - **TotalPrice**: Moneta
    
-1. Eskuinaldeko paneleko "Izena" eremuan, aldatu izena **Kontsulta** datu-iturburuari eta ipini izen hau: **eCommercePurchases**.
+1. Eskuinaldeko paneleko **Izena** eremuan, aldatu izena **Kontsulta** datu-iturburuari eta ipini izen hau: **eCommercePurchases**.
 
 1. Gorde datu-iturburua.
 
@@ -80,11 +80,11 @@ Berrikusi zehazki [datuen sarrerari](data-sources.md) eta [Power Query konektore
 
 1. Eguneratu jarraian zerrendatutako zutabeen datu motak:
 
-   - **DateOfBirth**: Data
+   - **Jaioteguna**: Data
    - **RewardsPoints**: Zenbaki osoa
-   - **CreatedOn**: Data/ordua
+   - **Sorrera-data**: Data/ordua
 
-1. Eskuinaldeko paneleko "Izena" eremuan, aldatu izena **Kontsulta** datu-iturburuari eta ipini izen hau: **loyCustomers**.
+1. Eskuinaldeko paneleko **Izena** eremuan, aldatu izena **Kontsulta** datu-iturburuari eta ipini izen hau: **loyCustomers**.
 
 1. Gorde datu-iturburua.
 
@@ -166,7 +166,7 @@ Bezeroen profil bateratuak behar bezala jarrita, harpidetzaren galera-tasaren ir
 
      :::image type="content" source="media/model-levers.PNG" alt-text="Aukeratu iragarpen-leihoa eta galera-tasaren definizioa ereduaren mailakatzaileak.":::
 
-1. Aukeratu **Erosketen historia (beharrezkoa)** eta hautatu **Gehitu datuak** harpidetzaren historiarako.
+1. Aukeratu **Erosketen historia (beharrezkoa)** eta hautatu **Gehitu datuak** erosketen historiarako.
 
 1. Gehitu **merkataritza elektronikoko erosketak: elektronikoa** entitatea eta esleitu elektronikoko eremuak ereduak eskatzen dituen eremuetara.
 
@@ -204,3 +204,6 @@ Ereduak sortutako entitatean oinarritutako segmentu berri bat sor dezakezu.
 Harpidetza-negozio honen galera-arrisku handiko bezeroak identifikatzen dituen segmentu dinamikoki eguneratua duzu.
 
 Informazio gehiagorako, ikusi [Sortu eta kudeatu segmentuak](segments.md).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: 1c95cba333266a73959de0a3afe1c8677130a3ec
-ms.sourcegitcommit: 334633cbd58f5659d20b4f87252c1a10cc7130db
+ms.openlocfilehash: dcef8f0547009e1488f1abe91423fa0bf5b061de
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "4667214"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5267417"
 ---
 # <a name="customer-activities"></a>Bezeroen jarduerak
 
@@ -44,13 +44,13 @@ Zure datu-iturriak datu-iturri ugarietatik transakzio- eta jarduera-datuak dituz
 
 1. Sarbidean **Ezarri harremana** atala konfiguratu xehetasunak zure jardueraren datuak dagokion bezeroari lotzeko.
 
-   > [!div class="mx-imgBorder"]
-   > ![Definitu entitate-harremana](media/activities-entities-define.png "Definitu entitate-harremana")
-
     - **Jardueraren entitatearen eremua**: Aukeratu beste erakunde batekin harremana ezartzeko erabiliko den eremuko zure entitatearen eremua.
     - **Bezero entitatea**: Aukeratu dagokion iturburu bezeroaren entitatea zein harremana izango duen. Datuak bateratzeko prozesuan erabiltzen diren iturri bezeroak dituzten erakundeekin soilik erlaziona zaitezke.
     - **Bezeroaren entitatearen eremua**: Eremu honek iturburu bezeroaren entitatearen gako nagusia mapa prozesuan hautatzen den bezala erakusten du. Jatorri bezeroaren entitatearen funtsezko eremu hau jarduera-entitatearekin harremana ezartzeko erabiltzen da.
     - **Izena**: Jarduera-entitate honen eta hautatutako iturri bezeroaren entitatearen arteko harremana badago, erlazioaren izena irakurtzeko moduan egongo da. Horrelako harremanik ez badago, harreman berria sortuko da hemen emandako izenarekin.
+   
+   > [!div class="mx-imgBorder"]
+   > ![Definitu entitate-harremana](media/activities-entities-define.png "Definitu entitate-harremana")
 
 1. Aldaketak aplikatzeko, hautatu **Gorde**.
 
@@ -82,3 +82,6 @@ Zure datu-iturriak datu-iturri ugarietatik transakzio- eta jarduera-datuak dituz
 3. Hautatu botoian **Ezabatu** ikonoa.
 
 4. Berretsi ezabatu nahi duzula.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

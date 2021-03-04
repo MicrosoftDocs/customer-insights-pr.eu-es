@@ -1,20 +1,20 @@
 ---
 title: Esportatu Customer Insights datuak SFTP ostalarietara
 description: Ikusi nola konfiguratu konexioa SFTP ostalaria.
-ms.date: 06/05/2020
+ms.date: 01/27/2021
 ms.reviewer: philk
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: conceptual
+ms.topic: how-to
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: c2529744d7a26a06324b79cad6a8001d75903545
-ms.sourcegitcommit: 6a6df62fa12dcb9bd5f5a39cc3ee0e2b3988184b
+ms.openlocfilehash: ddba55b3ca159c0095371e46385dcf1d3ed4a63d
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4643488"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5267983"
 ---
 # <a name="connector-for-sftp-preview"></a>Konektorea SFTP-rako (aurrebista)
 
@@ -22,7 +22,7 @@ Erabili hirugarrenen aplikazioetako bezero-datuak horiek fitxategiak modu seguru
 
 ## <a name="prerequisites"></a>Aurrebaldintzak
 
-- SFTP ostalari baten eta dagozkien egiaztagirien eskuragarritasuna.
+- SFTP ostalariaren erabilgarritasuna eta dagozkien egiaztagiriak.
 
 ## <a name="connect-to-sftp"></a>Konektatu SFTP-ra
 
@@ -32,23 +32,22 @@ Erabili hirugarrenen aplikazioetako bezero-datuak horiek fitxategiak modu seguru
 
 1. Eman zure destinoari izen ezagun bat **Bistaratu izena** eremu.
 
-1. Eman SFTP kontuaren **Erabiltzaile izena**, **Pasahitza** eta **Ostalari izena**. Adibidez: zure SFTP zerbitzariaren erroko karpeta /root/folder bada eta datuak /root/folder/ci_export_destination_folder karpetara esportatzea nahi baduzu, ostalariak honakoa izan beharko luke: sftp://<server_address>/ci_export_destination_folder".
+1. Eman SFTP kontuaren **Erabiltzaile-izena**, **Pasahitza**, **Ostalari-izena** eta **Esportazio-karpeta**.
 
 1. Hautatu **Egiaztatu** konexioa probatzeko.
 
-1. Egiaztatu ondoren, aukeratu zure datuak esportatu nahi dituzun **konprimitutako** edo **konprimitu gabea** eta hautatu **eremuaren mugatzailea** esportatutako fitxategietarako.
+1. Egiaztatu ondoren, aukeratu zure datuak esportatu nahi dituzun **Gzipped** edo **Konprimitu gabe**, eta hautatu **eremu-mugatzailea** esportatutako fitxategietarako.
 
 1. Aukeratu **ados** baieztatzeko **Datuen pribatutasuna eta betetzea**.
 
 1. Aukeratu **hurrengoa** esportazioa konfiguratzen hasteko.
 
-## <a name="configure-the-connection"></a>Konfiguratu konexioa
+## <a name="configure-the-export"></a>Konfiguratu esportazioa
 
-1. Hautatu **bezeroaren atributuak** esportatu nahi dituzunak. Ezaugarri bat edo gehiago esporta ditzakezu.
+1. Aukeratu entitateak, adibidez, esportatu nahi dituzun segmentuak.
 
-1. Hautatu **Hurrengoa**.
-
-1. Hautatu esportatu nahi dituzun segmentuak.
+   > [!NOTE]
+   > Aukeratutako entitate bakoitzak gehienez bost irteera fitxategi izango ditu esportatzean. 
 
 1. Sakatu **Gorde**.
 
@@ -56,7 +55,15 @@ Erabili hirugarrenen aplikazioetako bezero-datuak horiek fitxategiak modu seguru
 
 Hurrengoa egin dezakezu [esportatu datuak eskatu ahala](export-destinations.md). Esportazioa guztiekin ere exekutatuko da [programatutako freskapen](system.md#schedule-tab).
 
+## <a name="known-limitations"></a>Muga ezagunak
+
+- Esportazio baten iraupena zure sistemaren errendimenduaren araberakoa da. Bi PUZ nukleo eta 1 Gb memoria gomendatzen dizugu zure zerbitzariaren gutxieneko konfigurazio gisa. 
+- Gehienez 100 milioi bezero profil dituzten entitate esportatzaileek 90 minutu iraun dezakete gomendatutako gutxieneko konfigurazioa erabiltzen duten bi PUZ nukleorekin eta 1 Gb memoria. 
+
 ## <a name="data-privacy-and-compliance"></a>Datuen pribatutasuna eta arau-gordetzea
 
 Dynamics 365 Customer Insights gaitzen duzunean datuak SFTP bidez bidaltzeko, datuak betetzeko mugatik kanpo transferitzea baimentzen duzu Dynamics 365 Customer Insights-erako, datu pertsonalak bezalako datu sentikorrak barne. Microsoft-ek datu horiek transferituko ditu zure aginduz, baina zure ardura da esportatzeko helmugak pribatutasun- edo segurtasun-betebeharrak betetzen dituela ziurtatzea. Informazio gehiago eskuratzeko, ikusi [Microsoft-en pribatutasun-adierazpena](https://go.microsoft.com/fwlink/?linkid=396732).
 Funtzio hau erabiltzeari uzteko, Dynamics 365 Customer Insights-en administratzaileak esportazioaren helburuko kokalekua edonoiz ken dezake.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

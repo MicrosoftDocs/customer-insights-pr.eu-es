@@ -1,20 +1,20 @@
 ---
 title: Esportatu Customer Insights datuak Dynamics 365 Marketing-era
 description: Ikasi Dynamics 365 Marketing konexioa nola konfiguratu.
-ms.date: 08/21/2020
+ms.date: 02/01/2021
 ms.reviewer: philk
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: conceptual
+ms.topic: how-to
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: 163387779b64bd78ef08e2d96a5f1c9615062f28
-ms.sourcegitcommit: 6a6df62fa12dcb9bd5f5a39cc3ee0e2b3988184b
+ms.openlocfilehash: a06920b8ff25d7102ccd14ae68cf42fe91fa1ee6
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4643758"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5269039"
 ---
 # <a name="connector-for-dynamics-365-marketing-preview"></a>Dynamics 365 Marketing konektorea (aurrebista)
 
@@ -24,7 +24,10 @@ Erabili [segmentuak](segments.md) Dynamics 365 Marketing-ekin kanpainak eta kont
 
 ## <a name="prerequisite"></a>Aurrebaldintza
 
-[Common Data Service-n sartutako Dynamics 365 Marketing-eko](connect-power-query.md) kontaktuen erregistroak.
+- Kontaktu-erregistroek Dynamics 365 Marketing-en egon behar dute segmentu bat Customer Insights-etik Marketing-era esportatu ahal izateko. Irakurri gehiago kontaktuak nola sartu [Dynamics 365 Marketing erabiliz Common Data Services](connect-power-query.md).
+
+  > [!NOTE]
+  > Ikuspegien estatistiketatik Marketing segmentuak esportatzeak ez du kontaktu erregistro berririk sortuko Marketing instantzietan. Marketing kontaktuen erregistroak ikusleen estatistiketan sartu behar dira eta datu-iturburu gisa erabili. Gainera, Bezeroen entitate bateratuan sartu behar dira bezeroen IDak esleitzeko IDak harremanetan jartzeko, segmentuak esportatu aurretik.
 
 ## <a name="configure-the-connector-for-marketing"></a>Konfiguratu konektorea Marketinerako
 
@@ -49,3 +52,6 @@ Erabili [segmentuak](segments.md) Dynamics 365 Marketing-ekin kanpainak eta kont
 ## <a name="export-the-data"></a>Esportatu datuak
 
 Hurrengoa egin dezakezu [esportatu datuak eskatu ahala](export-destinations.md). Esportazioa guztiekin ere exekutatuko da [programatutako freskapen](system.md#schedule-tab).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

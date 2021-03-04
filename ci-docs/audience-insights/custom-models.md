@@ -4,16 +4,16 @@ description: Azure Ikaskuntza automatiko-en eredu pertsonalizatuekin lan egin Dy
 ms.date: 11/19/2020
 ms.reviewer: zacook
 ms.service: dynamics-365-ai
-ms.topic: article
+ms.topic: tutorial
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: ef248086b30b870359970529a7bfb37792be62d5
-ms.sourcegitcommit: a9b2cf598f256d07a48bba8617347ee90024a1dd
+ms.openlocfilehash: 34489faaecc5da1ce3dd68d799b3e0e0d9672ab7
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "4668888"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5267219"
 ---
 # <a name="custom-machine-learning-models"></a>Ikaskuntza automatiko eredu pertsonalizatuak
 
@@ -46,15 +46,15 @@ Iragarpenek bezeroen esperientzia hobeak sortzeko, negozio gaitasunak eta diru s
 
 1. Aukeratu Machine Learning Studio (klasikoa) web zerbitzua edo Azure Machine Learning-en bideratzea **Zure eredua duen web zerbitzua** goitibeherako zerrendan. Ondoren, hautatu **Hurrengoa**.
    - Lortu informazio gehiago [Machine Learning Studio-n (klasikoa) web zerbitzuan argitaratzeari buruz](https://docs.microsoft.com/azure/machine-learning/studio/deploy-a-machine-learning-web-service#deploy-it-as-a-new-web-service)
-   - Lortu informazio gehiago [Azure Machine Learning-en bideratze bat diseinatzailea](https://docs.microsoft.com/azure/machine-learning/concept-ml-pipelines#building-pipelines-with-the-designer) edo [SDK](https://docs.microsoft.com/azure/machine-learning/concept-ml-pipelines#building-pipelines-with-the-python-sdk) erabiliz argitaratzeari buruz. 
-     > [!NOTE]
-     > Zure bideratzea [bideratzearen amaiera-puntuan](https://docs.microsoft.com/azure/machine-learning/how-to-run-batch-predictions-designer#submit-a-pipeline-run) argitaratu behar da.
+   - Lortu informazio gehiago [Azure Machine Learning-en bideratze bat diseinatzailea](https://docs.microsoft.com/azure/machine-learning/concept-ml-pipelines#building-pipelines-with-the-designer) edo [SDK](https://docs.microsoft.com/azure/machine-learning/concept-ml-pipelines#building-pipelines-with-the-python-sdk) erabiliz argitaratzeari buruz. Zure bideratzea [bideratzearen amaiera-puntuan](https://docs.microsoft.com/azure/machine-learning/how-to-run-batch-predictions-designer#submit-a-pipeline-run) argitaratu behar da.
 
 1. **Web zerbitzuaren sarrera** bakoitzeko,hautatu bat datorren **Entitatea** hartzaileei buruzko xehetasunetan eta sakatu **Hurrengoa**.
+   > [!NOTE]
+   > Eredu pertsonalizatuko lan-fluxuak heuristika aplikatuko du web zerbitzuko sarrerako eremuak entitatearen atributuei esleitzeko eremuaren izenean eta datu motan oinarrituta. Akats bat ikusiko duzu web zerbitzu eremua entitate batera esleitu ezin bada.
 
    > [!div class="mx-imgBorder"]
    > ![Konfiguratu lan-fluxu bat](media/intelligence-screen2-updated.png "Konfiguratu lan-fluxu bat")
-
+   
 1. **Ereduaren irteerako parametroak** urratsean ezarri propietate hauek:
    - Machine Learning Studio (klasikoa)
       1. Sartu web zerbitzuaren irteerako emaitzak sartu nahi dituzun irteerako **Entitatearen izena**.
@@ -112,3 +112,6 @@ Zure lan-fluxua automatikoki exekutatzen da programatutako freskagarri bakoitzar
 1. Hautatu **Ezabatu** eta berretsi ezabatzea.
 
 Zure lan-fluxua ezabatu egingo da. [Entitatea](entities.md) lan-fluxua sortu zuenean sortu zen mantendu egingo da eta ikusi egin daiteke **Entitateak** orrian.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

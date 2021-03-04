@@ -5,16 +5,16 @@ ms.date: 11/12/2020
 ms.reviewer: zacook
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: conceptual
+ms.topic: how-to
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: f3cbbf99a6cecba2aab2cf85428d53e5df8346e4
-ms.sourcegitcommit: 6a6df62fa12dcb9bd5f5a39cc3ee0e2b3988184b
+ms.openlocfilehash: af461d290c69687fb47bacfcff446a0c62978383
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4644388"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5268303"
 ---
 # <a name="transactional-churn-prediction-preview"></a>Transakzioen galera-tasaren iragarpena (aurrebista)
 
@@ -96,6 +96,8 @@ Transakzioen galera-tasaren iragarpenak bezeroak denbora-tarte jakin batean jada
 1. Aukeran, hautatu **Gehitu datuak** **Bezeroaren jarduerak** atalerako. Aukeratu bezeroaren jarduerari buruzko informazioa ematen duen entitatea aurrebaldintzetan azaltzen den moduan.
 
 1. Esleitu eremu semantikoak bezeroaren jardueraren entitateko atributuetara eta hautatu **Hurrengoa**. Eremuen deskribapenak eskuratzeko, begiratu [ezinbesteko baldintza](#prerequisites).
+
+   :::image type="content" source="media/map-transaction-data-fields.png" alt-text="Esleitu bezeroen eremuak transakzio datuetarako.":::
 
 1. Hautatu konfiguratzen ari zaren bezeroaren jarduera motarekin bat datorren jarduera mota bat. Aukeratu **Sortu berria** eta aukeratu erabilgarri dagoen jarduera mota bat edo sortu mota berri bat.
 
@@ -185,3 +187,6 @@ Iragarpen ezabatzeak bere irteerako entitatea ere kentzen du.
 1. Hautatu ezabatu nahi duzun iragarpenaren ondoan elipsi bertikalak.
 
 1. Hautatu **Ezabatu**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

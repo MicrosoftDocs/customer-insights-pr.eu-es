@@ -1,20 +1,20 @@
 ---
 title: Aberastu bezeroen profilak Microsoft Graph-ekin
 description: Erabili jabedun Microsoft Graph-en datuak bezeroaren datuak aberasteko marka eta interes afinitateekin.
-ms.date: 09/28/2020
+ms.date: 12/10/2020
 ms.reviewer: kishorem
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: conceptual
+ms.topic: how-to
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: 4f93a2337815f76b98185ecb3755e08443031748
-ms.sourcegitcommit: cf9b78559ca189d4c2086a66c879098d56c0377a
+ms.openlocfilehash: 2c95369c778f592bc1460799aca0fa8cff813d68
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "4404964"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5269315"
 ---
 # <a name="enrich-customer-profiles-with-brand-and-interest-affinities-preview"></a>Aberastu bezeroen profilak marka eta interes kidetasunekin (aurrebista)
 
@@ -35,16 +35,21 @@ Microsoft Graph-eko lineako bilaketa datuak erabiltzen ditugu marka eta interese
 
 [Informazio gehiago Microsoft Graph-i buruz](https://docs.microsoft.com/graph/overview).
 
-## <a name="affinity-score-and-confidence"></a>Afinitate puntuazioa eta konfiantza
+## <a name="affinity-level-and-score"></a>Afinitate-maila eta puntuazioa
 
-**Afinitate puntuazioa** 100 puntuko eskalan kalkulatzen da, 100 markako edo interesarekiko afinitate handiena duen segmentua ordezkatuz.
+Bezeroen profil aberastu guztietan, erlazionatutako bi balio ematen ditugu: afinitate-maila eta afinitate-puntuazioa. Balio horiei esker, profil horren segmentu demografikoarekiko, marka edo interesekiko, beste segmentu demografiko batzuekiko duten afinitatea zehazten lagunduko dizute.
 
-**Afinitate konfiantza** 100 puntuko eskalan ere kalkulatzen da. Sistemaren konfiantza maila adierazten du segmentu batek marka edo interesarekiko afinitatea duela. Konfiantza maila segmentuaren tamainan eta segmentuaren granularitatean oinarritzen da. Segmentuaren tamaina segmentu jakin baterako daukagun datu kopuruaren arabera zehazten da. Segmentuen granularitatea profil batean zenbat atributu (adina, generoa, kokapena) erabilgarri dauden zehazten da.
+*Afinitate-maila* lau maila ditu eta *afinitate puntuazioa* afinitate mailetara esleitzen den 100 puntuko eskalan kalkulatzen da.
 
-Ez ditugu normalizatzen zure datu-baseko puntuazioak. Hori dela eta, agian ez duzu zure datu-multzoarentzako afinitate-puntuazio balore guztiak ikusten. Adibidez, baliteke zure datuetan ez izatea 100 afinitate puntuarekin bezeroaren profil aberastua. Hori posible da marka edo interes jakin baterako 100 puntuazio lortu dituen segmentu demografikoan ez badago.
 
-> [!TIP]
-> [segmentuak sortuz](segments.md) afinitate puntuazioak erabiltzean, berrikusi zure datu multzoko afinitate puntuazioen banaketa puntuazio atalase egokiak erabaki aurretik. Adibidez, 10 kidetasun puntuazioa esanguratsua izan daiteke marka edo interes jakin baterako 25 soilik duten afinitate puntuazio altuena.
+|Afinitate-maila |Afinitate-puntuazioa  |
+|---------|---------|
+|Oso handia     | 85-100       |
+|Handia     | 70-84        |
+|Ertaina     | 35-69        |
+|Txikia     | 1-34        |
+
+Afinitatea neurtzeko nahi duzun xehetasunen arabera, afinitate maila edo puntuazioa erabil dezakezu. Afinitate-puntuazioak kontrol zehatzagoa ematen dizu.
 
 ## <a name="supported-countriesregions"></a>Lagundutako herrialde / eskualdeak
 
@@ -54,17 +59,13 @@ Herrialdea hautatzeko, ireki **Marken aberastasuna** edo **Interesak aberastea**
 
 ### <a name="implications-related-to-country-selection"></a>Herrialdearen hautaketarekin lotutako ondorioak
 
-- Noiz [zure marka aukeratu](#define-your-brands-or-interests), iradokizunak emango ditugu hautatutako herrialde / eskualdearen arabera.
+- [Zure markak aukeratzen dituzunean](#define-your-brands-or-interests), sistemak hautatutako herrialdean edo eskualdean oinarritutako iradokizunak eskaintzen ditu.
 
-- Noiz [industria aukeratzea](#define-your-brands-or-interests), hautatutako herrialde / eskualdean oinarritutako marka edo interes garrantzitsuenak identifikatuko ditugu.
+- [Sektorea aukeratzean](#define-your-brands-or-interests), hautatutako herrialdean edo eskualdean oinarritutako marka edo interes garrantzitsuenak lortuko dituzu.
 
-- Noiz [zure eremuen mapa](#map-your-fields), Herrialdea / Eskualdea eremua ez bada mapatzen, aukeratutako herrialde / eskualdeko Microsoft Graph datuak erabiliko ditugu zure bezeroen profilak aberasteko. Aukeraketa hori ere erabiliko dugu herrialde / eskualdeko datuak eskuragarri ez dituzten zure bezero profilak aberasteko.
-
-- Noiz [profil aberasgarriak](#refresh-enrichment), bezeroen profil guztiak aberastuko ditugu, aukeratutako marka eta interesetarako eskuragarri ditugun Microsoft Graph datuak, hautatutako herrialde / eskualdean ez dauden profilak barne. Adibidez, Alemania aukeratu baduzu, Estatu Batuetan kokatutako profilak aberastuko ditugu baldin eta AEBetan hautatutako marka eta interesetarako Microsoft Graph datuak eskura baditugu.
+- [Profilak aberastean](#refresh-enrichment), bezeroen profil guztiak aberastuko ditugu hautatutako marka eta interesen datuak lortzeko. Aukeratutako herrialdean edo eskualdean ez dauden profilak barne. Adibidez, Alemania aukeratu baduzu, Estatu Batuetan kokatutako profilak aberastuko ditugu baldin eta AEBetan hautatutako marka eta interesetarako Microsoft Graph datuak eskura baditugu.
 
 ## <a name="configure-enrichment"></a>Aberastea konfiguratu
-
-Markak edo interesak aberastea konfiguratzeak bi pauso ditu:
 
 ### <a name="define-your-brands-or-interests"></a>Zehaztu zure markak edo zaletasunak
 
@@ -75,9 +76,19 @@ Hautatu aukera hauetariko bat:
 
 Marka edo interesa gehitzeko, sartu sarrerako eremuan, datozen terminoen araberako iradokizunak jasotzeko. Bilatzen ari zaren marka edo interesa zerrendatzen ez badugu, bidal iezaguzu iritzia erabilita **Proposatu** esteka.
 
+### <a name="review-enrichment-preferences"></a>Berrikusi aberaste-hobespenak
+
+Berrikusi aberastasun lehentasun lehenetsiak eta eguneratu behar dituzun moduan.
+
+:::image type="content" source="media/affinity-enrichment-preferences.png" alt-text="Aberasteko lehentasunen leihoaren pantaila-argazkia.":::
+
+### <a name="select-entity-to-enrich"></a>Hautatu aberasteko entitatea
+
+Aukeratu **Aberastutako entitatea** eta aukeratu Microsoft Graph-eko enpresako datuekin aberastu nahi duzun datu multzoa. Bezeroen entitatea hauta dezakezu zure bezeroen profil guztiak aberasteko edo segmentu-entitate bat hauta dezakezu segmentu horretan dauden bezeroen profilak soilik aberasteko.
+
 ### <a name="map-your-fields"></a>Esleitu eremuak
 
-Egin mapak zure bezero-erakunde bateratutik gutxienez bi atributuetara, bezeroaren datuak aberasteko erabili nahi dugun segmentu demografikoa definitzeko. Aukeratu **Editatu** eremuen mapa zehaztu eta hautatu **aplikatu** amaitutakoan. Aukeratu **Gorde** eremuaren mapa osatzeko.
+Esleitu zure bezero entitate bateratuko eremuak sistemak zure bezeroaren datuak aberasteko erabili nahi duzun segmentu demografikoa definitzeko. Esleitu herrialdea/eskualdea eta gutxienez Jaiotze-data edo Generoa atributuak. Gainera, herrialdea/eskualdea esleitu behar duzu. Halaber, hiri bat (eta estatua/probintzia) edo posta-kode bat esleitu behar dituzu gutxienez. Aukeratu **Editatu** eremuen mapa zehaztu eta hautatu **aplikatu** amaitutakoan. Aukeratu **Gorde** eremuaren mapa osatzeko.
 
 Formatu eta balio hauek onartzen dira, balioak ez dira maiuskulak:
 
@@ -120,3 +131,6 @@ Marka eta interes kidetasunak bezero banakako txarteletan ere ikus daitezke. Joa
 ## <a name="next-steps"></a>Hurrengo urratsak
 
 Eraiki zure bezeroen datu aberastuen gainean. Sortu [segmentuak](segments.md), [Neurriak](measures.md), eta baita [datuak esportatu](export-destinations.md) zure bezeroei esperientzia pertsonalizatuak emateko.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

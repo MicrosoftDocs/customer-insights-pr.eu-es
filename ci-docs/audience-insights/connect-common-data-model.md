@@ -4,17 +4,17 @@ description: Egin lan Common Data Model-ekin Azure Data Lake Storage erabiliz.
 ms.date: 05/29/2020
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: conceptual
+ms.topic: how-to
 author: m-hartmann
 ms.author: mhart
 ms.reviewer: adkuppa
 manager: shellyha
-ms.openlocfilehash: 25de23e615704a72f6b41d98ae9418beb338e77e
-ms.sourcegitcommit: 6a6df62fa12dcb9bd5f5a39cc3ee0e2b3988184b
+ms.openlocfilehash: 247e4d9c47ff2373065ebf3c6d554323e45a120b
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4643443"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5267845"
 ---
 # <a name="connect-to-a-common-data-model-folder-using-an-azure-data-lake-account"></a>Konektatu Common Data Model karpetara Azure Data Lake kontua erabiliz
 
@@ -38,17 +38,25 @@ Artikulu honek Azure Data Lake Storage Gen2 kontua erabiliz Common Data Model-ek
 
 1. Hautatu **Gehitu datu-iturburua**.
 
-1. Aukeratu **Konektatu Common Data Model karpeta batera**, sartu **Izena** datu-iturbururako, eta hautatu **Hurrengoa**.
+1. Aukeratu **Konektatu Common Data Model karpeta batera**, sartu **Izena** datu-iturbururako, eta hautatu **Hurrengoa**. Jarri izena jarraibideei: 
+   - Hasi letra batekin.
+   - Erabili letrak eta zenbakiak soilik. Ezin da idatzi karaktere berezirik edo zuriunerik.
+   - Erabili 3 eta 64 karaktere artean.
 
 1. Baliabideetan oinarritutako aukera eta harpidetzan oinarritutako aukera erabil dezakezu autentifikatzeko. Informazio gehiagorako, ikus [Konektatu hartzaileei buruzko xehetasunak Azure Data Lake Storage Gen2 kontu batera Azure zerbitzuaren entitatearekin](connect-service-principal.md). Sartu **Edukiontzia** -ren informazioa eta hautatu **Hurrengoa**.
    > [!div class="mx-imgBorder"]
-   > ![Elkarrizketa-koadroa Azure Data Lake-en konexioaren xehetasunak sartzeko](media/enter-new-storage-details.png)
-
-1. **Aukeratu Common Data Model karpeta** elkarrizketa-koadroa, hautatu datuak inportatzeko model.json fitxategia eta hautatu **Hurrengoa**.
+   > ![Elkarrizketa-koadroa Azure Data Lake-rako konexio xehetasun berriak sartzeko](media/enter-new-storage-details.png)
    > [!NOTE]
-   > Inguruneko beste datu-iturburu batekin lotutako model.json fitxategia ez da zerrendan agertuko.
+   > Datu-iturburu batera konektatu eta sortu ahal izateko goiko aipatutako edukiontzian edo biltegiratze kontuan honako rol hauetako bat behar duzu:
+   >  - Storage Blob datu-irakurgailua
+   >  - Storage Blob datuen jabea
+   >  - Storage Blob datuen kolaboratzailea
 
-1. Aukeratutako model.json fitxategian eskuragarri dauden entitateen zerrenda lortuko duzu. Berrikusi eta hautatu egin dezakezu zerrendan eskuragarri dauden entitateak eta hautatu **Gorde**. Datu-iturburu berriko hautatutako entitate guztiak sartuko dira.
+1. **Aukeratu Common Data Model karpeta** elkarrizketa-koadroa, hautatu datuak inportatzeko model.json edo manifest.json fitxategia eta hautatu **Hurrengoa**.
+   > [!NOTE]
+   > Inguruneko beste datu-iturburu batekin lotutako model.json edo manifest.json fitxategia ez da zerrendan agertuko.
+
+1. Aukeratutako model.json edo manifest.json fitxategian eskuragarri dauden entitateen zerrenda lortuko duzu. Berrikusi eta hautatu egin dezakezu zerrendan eskuragarri dauden entitateak eta hautatu **Gorde**. Datu-iturburu berriko hautatutako entitate guztiak sartuko dira.
    > [!div class="mx-imgBorder"]
    > ![Elkarrizketa-koadroa model.json fitxategi bateko entitateen zerrenda erakusten da](media/review-entities.png)
 
@@ -59,11 +67,11 @@ Artikulu honek Azure Data Lake Storage Gen2 kontua erabiliz Common Data Model-ek
 9. Zure hautaketak gorde ondoren, **Datu iturriak** orria irekitzen da. Datu eredu arruntaren karpetaren konexioa datu-iturburu gisa ikusi beharko zenuke orain.
 
 > [!NOTE]
-> model.json fitxategi bat ingurune bereko datu-iturburu batekin bakarrik lotu daiteke. Hala ere, model.json fitxategi bera erabil daiteke hainbat ingurunetako datu-iturburuetarako.
+> model.json edo manifest.json fitxategi bat ingurune bereko datu-iturburu batekin bakarrik lotu daiteke. Hala ere, model.json edo manifest.json fitxategi bera erabil daiteke hainbat ingurunetako datu-iturburuetarako.
 
 ## <a name="edit-a-common-data-model-folder-data-source"></a>Editatu datu arrunten ereduaren karpeta datu-iturburu
 
-Common Data Model karpeta duen biltegiratze konturako sarbide gakoa egunera dezakezu. Model.json fitxategia ere alda dezakezu. Biltegiratze kontutik beste edukiontzi batera konektatu nahi baduzu edo kontuaren izena aldatu nahi baduzu [datu-iturburu konexio berria sortu](#connect-to-a-common-data-model-folder).
+Common Data Model karpeta duen biltegiratze konturako sarbide gakoa egunera dezakezu. Model.json edo manifest.json fitxategia ere alda dezakezu. Biltegiratze kontutik beste edukiontzi batera konektatu nahi baduzu edo kontuaren izena aldatu nahi baduzu [datu-iturburu konexio berria sortu](#connect-to-a-common-data-model-folder).
 
 1. Hartzaileei buruzko xehetasunetan, joan hona: **Datuak** > **Datu-iturburuak**.
 
@@ -77,13 +85,24 @@ Common Data Model karpeta duen biltegiratze konturako sarbide gakoa egunera deza
 
 5. Aukeran, kontuaren gako konexio batetik baliabideetan oinarritutako edo harpidetzan oinarritutako konexio batera egunera dezakezu. Informazio gehiagorako, ikus [Konektatu hartzaileei buruzko xehetasunak Azure Data Lake Storage Gen2 kontu batera Azure zerbitzuaren entitatearekin](connect-service-principal.md). Ezin duzu aldatu **Edukiontzia**-ren informazioa konexioa eguneratzean.
    > [!div class="mx-imgBorder"]
-   > ![Elkarrizketa-koadroa Azure Data Lake-en konexioaren xehetasunak sartzeko](media/enter-existing-storage-details.png)
 
-6. Aukeran, aukeratu model.json fitxategia edukiontziatik beste entitate multzo batekin.
+   > ![Elkarrizketa-koadroa Azure Data Lake-k lehendik dagoen biltegiratze-kontu batekin konexioaren xehetasunak sartzeko](media/enter-existing-storage-details.png)
+
+   > [!NOTE]
+   > Datu-iturburu batera konektatu eta sortu ahal izateko goiko aipatutako edukiontzian edo biltegiratze kontuan honako rol hauetako bat behar duzu:
+   >  - Storage Blob datu-irakurgailua
+   >  - Storage Blob datuen jabea
+   >  - Storage Blob datuen kolaboratzailea
+
+
+6. Aukeran, aukeratu model.json edo manifest.json fitxategi desberdin bat edukiontziaren beste entitate multzo batekin.
 
 7. Aukeran, sartzeko entitate osagarriak hauta ditzakezu. Dagoeneko hautatutako edozein entitate ken ditzakezu mendekotasunik ez badago.
 
    > [!IMPORTANT]
-   > Existitzen den model.json fitxategiaren eta entitate multzoaren menpekotasunak badaude, akats mezu bat ikusiko duzu eta ezin duzu model.json fitxategi desberdin bat hautatu. Ezabatu mendekotasun horiek model.json fitxategia aldatu aurretik edo sortu datu-iturburu berri bat erabili nahi duzun model.json fitxategiarekin, mendekotasunak ez kentzeko.
+   > Lehendik dauden model.json edo manifest.json fitxategiaren eta entitateen multzoaren menpekotasunak badaude, errore mezu bat ikusiko duzu eta ezin duzu model.json edo manifest.json fitxategi desberdin bat hautatu. Kendu mendekotasun horiek model.json edo manifest.json fitxategia aldatu aurretik edo sortu datu-iturburu berri bat mendekotasunak ez kentzeko erabili nahi dituzun model.json edo manifest.json fitxategiarekin.
 
 8. Aukeran, atributu edo entitate osagarriak hauta ditzakezu datuen profilak gaitzeko edo lehendik hautatutakoak desgaitzeko.   
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

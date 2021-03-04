@@ -1,7 +1,7 @@
 ---
 title: Sistemaren konfigurazioa hartzaileen xehetasunetan
 description: Lortu informazio gehiago sistemaren ezarpenei buruz Dynamics 365 Customer Insights-en hartzaileen xehetasunen gaitasunean.
-ms.date: 06/02/2020
+ms.date: 02/12/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -9,25 +9,30 @@ author: m-hartmann
 ms.author: mhart
 ms.reviewer: nimagen
 manager: shellyha
-ms.openlocfilehash: 7dd72e6512cd87ac70235d21667399298408db21
-ms.sourcegitcommit: cf9b78559ca189d4c2086a66c879098d56c0377a
+ms.openlocfilehash: a9c9e258da49b8f452550794539962d48b856829
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "4404996"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5267325"
 ---
 # <a name="system-configuration"></a>Sistemaren konfigurazioa
 
-**Sistema** orriak lau fitxa ditu: **Egoera**, **Antolaketa**, **Honi buruz**, eta **Orokorra**.
+**Sistema** orriak fitxa hauek ditu:
+- [Egoera](#status-tab)
+- [Antolaketa](#schedule-tab)
+- [API erabilera](#api-usage-tab)
+- [Honi buruz](#about-tab)
+- [Orokorra](#general-tab)
 
 > [!div class="mx-imgBorder"]
 > ![Sistemaren orria](media/system-tabs.png "Sistemaren orria")
 
 ## <a name="status-tab"></a>Egoera fitxa
 
-**Egoeraren fitxa** fitxak datuen iragazkiaren, datuak esportatzea, aurrerapena eta hainbat produktu prozesu garrantzitsuren jarraipena egiteko aukera ematen dizu. Berrikusi fitxa honetako informazioa prozesu aktiboen osotasuna ziurtatzeko.
+**Egoeraren fitxa** datuen horniketa, datuen esportazioaren eta produktu garrantzitsuen beste hainbat prozesuren jarraipena egiteko aukera ematen dizu. Berrikusi fitxa honetako informazioa prozesu aktiboen osotasuna ziurtatzeko.
 
-Fitxa honetan egoeraren taulak daude **Datu iturriak**, **Sistemaren prozesuak**, eta **Datuak prestatzea**. Taula bakoitzak jarraipena egiten du **izena** zeregina eta dagokion entitatea da **Egoera** bere korrika berriena eta noiz izan zen **Azken eguneraketa**.
+Fitxa honek hainbat prozesurako egoera eta prozesatzeko informazioa duten taulak biltzen ditu. Taula bakoitzak jarraipena egiten du **izena** zeregina eta dagokion entitatea da **Egoera** bere korrika berriena eta noiz izan zen **Azken eguneraketa**.
 
 Ikusi xehetasunak zereginaren azken hainbat exekutatzea bere izena hautatuz.
 
@@ -40,7 +45,7 @@ Zereginen sei egoera mota daude. Hurrengo egoera motak ere erakusten dira *Bat e
 - **Saltatutakoak:** Ataza saltatu egin zen. Zeregin hau kontrolatzen duen downstream-eko prozesu bat edo gehiago huts egin edo saihestu egiten dira.
 - **Porrota:** Zereginaren prozesatzeak huts egin du.
 - **Bertan behera:** Erabiltzaileak prozesua bertan behera utzi zuen amaitu aurretik.
-- **ilaran:** Prozesazioa ilaran jarriko da eta beheko ataza guztiak amaituta hasiko da. Informazio gehiago lortzeko, irakurri [Freskatu politikak](#refresh-policies).
+- **Ilaran:** prozesua ilaran dago eta goranzko zeregin guztiak amaitutakoan hasiko da. Informazio gehiago lortzeko, irakurri [Freskatu politikak](#refresh-policies).
 
 ### <a name="refresh-policies"></a>Eguneratu politikak
 
@@ -89,4 +94,17 @@ Hautatu **Gorde** zure aukerak baieztatzeko.
 
 ## <a name="api-usage-tab"></a>APIaren erabilera fitxa
 
-Bilatu denbora errealean APIaren erabilerari buruzko xehetasunak eta ikusi zer gertakari gertatu den denbora tarte batean. Informazio gehiagorako, ikusi [Denbora errealeko datuen horniketa](real-time-data-ingestion.md).
+Bilatu denbora errealeko APIaren erabilerari buruzko xehetasunak eta ikusi denbora-tarte jakin batean zein gertaera gertatu diren. Denboraren epea aukeratzen duzu **Hautatu epe bat** goitibeherako menua. 
+
+**APIaren erabilera** hiru atal ditu: 
+- **API deiak**: hautatutako epean APIra egindako deien kopuru agregatua bistaratzen duen taula.
+
+- **Datuen transferentzia**: hautatutako denbora tartean APIaren bidez transferitu diren datu kopurua erakusten duen taula.
+
+-  **Eragiketak**: taula bat erabilgarri dauden API eragiketa bakoitzerako errenkadekin eta eragiketen erabilerari buruzko xehetasunak. Joan nahi duzun eragiketaren izena hauta dezakezu [APIaren erreferentzia](https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights&operation=Get-all-instances).
+
+   Erabiltzen dituzten eragiketak [denbora errealeko datuak hornitzea](real-time-data-ingestion.md) eduki binokular sinboloa duen botoia denbora errealeko APIaren erabilera ikusteko. Aukeratu botoia APIaren denbora errealeko uneko inguruneko erabilerari buruzko xehetasunak dituen alboko panela irekitzeko.   
+   Erabili **Taldekatu honen arabera** koadroan **APIaren erabilera denbora errealean** panelean denbora errealeko elkarrekintzak nola aurkeztu behar diren aukeratzeko. Datuak API metodoaren, entitatearen izen kualifikatua (irenstutako entitatea), sortutako (gertaeraren iturria), emaitza (arrakasta edo hutsegitea) edo errore kodeak arabera talka ditzakezu. Datuak historia-taula gisa eta taula gisa eskuragarri daude.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

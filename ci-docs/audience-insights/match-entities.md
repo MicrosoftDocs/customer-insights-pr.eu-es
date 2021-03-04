@@ -4,17 +4,17 @@ description: Lotu entitateak bezeroen profil bateratuak sortzeko.
 ms.date: 10/14/2020
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: conceptual
+ms.topic: tutorial
 author: m-hartmann
 ms.author: mhart
 ms.reviewer: adkuppa
 manager: shellyha
-ms.openlocfilehash: 78549037f9c9e59329f5423c36eeb058128802c0
-ms.sourcegitcommit: cf9b78559ca189d4c2086a66c879098d56c0377a
+ms.openlocfilehash: 05afd17b7f1b34f7f24a8fa8cb2dc32c1649d40f
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "4404993"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5267463"
 ---
 # <a name="match-entities"></a>Batu entitateak
 
@@ -22,7 +22,7 @@ Mapen fasea amaitu ondoren, entitateekin bat egiteko prest zaude. Binakako fasea
 
 ## <a name="specify-the-match-order"></a>bat etortzearen ordena zehaztu
 
-Joan **bateratzeko** > **Bat-etortzea** eta hautatu **Ezarri ordena** partidaren faseari hasiera emateko.
+Joan **Datuak** > **Bateratu** > **Bat etorri** aukerara eta hautatu **Ezarri ordena** bat-etortzearen fasea hasteko.
 
 Partida bakoitzak bi entitate edo gehiago entitate bakarrean elkartzen ditu eta bezero bakoitzaren erregistro bakarra jarraitzen du. Hurrengo adibidean, hiru entitate aukeratu ditugu: **HarremanetarakoCSV: TestData** gisa **Lehen** Erakunde, **WebAccountCSV: TestData** gisa **2. entitatea**, eta **CallRecordSmall: TestData** gisa **3. entitatea**. Aukeren goiko diagramak partidaren ordena nola gauzatuko den azaltzen du.
 
@@ -136,7 +136,7 @@ Erregistro bikoiztu bat identifikatu ondoren, erregistro hori entitateen arteko 
 
 1. Bat-egite prozesua exekutatzeak erregistroak taldekatzen ditu bikoiztuak kentzeko arauetan zehaztutako baldintzetan oinarrituta. Erregistroak taldekatu ondoren, bat-egiteen gidalerroa aplikatzen da erregistro nagusia identifikatzeko.
 
-1. Erregistro nagusi hori entitateen arteko bat etortzera pasatzen da.
+1. Irabazle erregistro hori entitateen arteko bat-etortzeari pasatzen zaio, irabazle ez diren erregistroekin batera (adibidez, ID alternatiboak) bat-etortzeko kalitatea hobetzeko.
 
 1. Beti bat datoz eta inoiz ez datoz bat bikoiztuak kentzeko arauen gainidazteak bat-etortze arau pertsonalizatuak. Bikoztuak kentzeko arau batek bat datozen erregistroak identifikatzen baditu eta bat datorren arau pertsonalizatua erregistro horiekin inoiz bat ez etortzeko ezarrita badago, bi erregistro horiek ez dira bat etorriko.
 
@@ -157,6 +157,17 @@ Lehen partidaren prozesuak entitate maisu bateratu bat sortzen du. Ondorengo nor
 
 > [!TIP]
 > Zereginen/prozesuen [sei egoera mota](system.md#status-types) daude. Gainera, prozesu gehienak [downstream-eko beste prozesu batzuen mende daude](system.md#refresh-policies). Aukeratu prozesu baten egoera, egon zen lan osoaren aurrerapen xehetasunak ikusteko. Aukeratu ondoren **Ikusi xehetasunak** lanaren zereginetako baterako, informazio osagarria aurkituko duzu: prozesatzeko denbora, azken prozesatze data eta zereginarekin lotutako akats eta abisu guztiak.
+
+## <a name="deduplication-output-as-an-entity"></a>Irteerako bikoiztuak desegiteko entitate gisa
+Entitate gurutzatuen parekatze gisa sortutako entitate nagusi bateratuaz gain, bikoiztuak desegiteko prozesuak entitate berri bat sortzen du partidu agindutik bikoiztuak desegiteko erregistroak identifikatzeko. Entitate hauek **ConflationMatchPairs:CustomerInsights** balioarekin batera **Sistema** atalean **Entitateak** orrian, **Deduplication_Datasource_Entity** izenarekin.
+
+Bikoiztuak desegiteko irteerako entitate batek informazio hau dauka:
+- IDak eta gakoak
+  - Gako nagusiaren eremua eta haren ID ordezkoen eremua. ID alternatiboen eremua erregistro baterako identifikatutako ID alternatibo guztiek osatzen dute.
+  - Deduplication_GroupId eremuak zehaztutako bikoiztuak desegiteko eremuetan oinarritutako antzeko erregistro guztiak multzokatzen dituen entitate baten barruan identifikatutako taldea edo klusterra erakusten du. Sistema prozesatzeko helburuarekin erabiltzen da. Eskuzko bikoiztuak desegiteko araurik zehazten ez bada eta sistemak definitutako bikoiztuak desegiteko arauak aplikatzen badira, baliteke eremu hori bikoiztuak desegiteko irteerako entitatean ez aurkitzea.
+  - Deduplication_WinnerId: eremu honek identifikatutako talde edo klusterren irabazlearen IDa dauka. Deduplication_WinnerId erregistroaren gako nagusiaren balioaren berdina bada, erregistroa irabazle erregistroa dela esan nahi du.
+- Bikoiztuak desegiteko arauak definitzeko erabiltzen diren eremuak.
+- Arau eta Puntuazio eremuak bikoiztuak desegiteko arauetatik zein aplikatu den eta bat datorren algoritmoak emandako puntuazioa adierazteko.
 
 ## <a name="review-and-validate-your-matches"></a>Berrikusi eta balioztatu partiduak
 
@@ -200,6 +211,11 @@ Handitu kalitatea zure parekuko parametro batzuk konfiguratuz:
   > [!div class="mx-imgBorder"]
   > ![Bikoiztu arau bat](media/configure-data-duplicate-rule.png "Bikoiztu arau bat")
 
+- **Desaktibatu arau bat** bat-etortzeko araua gordetzeko, bat etortzeko prozesutik kanpo uzten duen bitartean.
+
+  > [!div class="mx-imgBorder"]
+  > ![Desaktibatu arau bat](media/configure-data-deactivate-rule.png "Desaktibatu arau bat")
+
 - **Editatu zure arauak** aukeratuz **Editatu** sinboloa. Hurrengo aldaketa mota hauek aplika ditzakezu:
 
   - Aldatu egoera baterako atributuak: Hautatu atributu berriak baldintza zehatzen errenkadaren barruan.
@@ -229,6 +245,8 @@ Zehaztu egin ditzakezu erregistro jakinek beti edo inoiz bat etortzeko baldintza
     - Entitate-gakoa2: 34567
 
    Txantiloi fitxategi berak entitate anitzeko partiden erregistro pertsonalizatuak zehaztu ditzake.
+   
+   Entitate batean bikoiztuak desegiteko parekatze pertsonalizatua zehaztu nahi baduzu, eman Entitate 1 eta Entitate 2 entitate bera eta ezarri gako primarioen balio desberdinak.
 
 5. Aplikatu nahi dituzun gainidatzi guztiak gehitu ondoren, gorde txantiloiaren fitxategia.
 
@@ -250,3 +268,6 @@ Zehaztu egin ditzakezu erregistro jakinek beti edo inoiz bat etortzeko baldintza
 ## <a name="next-step"></a>Hurrengo urratsa
 
 Partidaren prozesua gutxienez bat bikote egin ondoren, zure datuetan egon daitezkeen kontraesanak konpondu ditzakezu [**konbinatu**](merge-entities.md) Gai.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

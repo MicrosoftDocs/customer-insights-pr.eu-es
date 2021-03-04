@@ -5,16 +5,16 @@ ms.date: 11/19/2020
 ms.reviewer: digranad
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: conceptual
+ms.topic: tutorial
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: 2537cfb5dde0d1ce1af16f585f0bf91d15ea1870
-ms.sourcegitcommit: a6e7df90d61450e00886753eb5db116f2f35bb6c
+ms.openlocfilehash: 3f1019ace424f89320c5a0d5058e928f4cbc7e62
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "4653965"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5269821"
 ---
 # <a name="subscription-churn-prediction-preview-sample-guide"></a>Harpidetzaren galera-tasaren iragarpenaren (aurrebista) lagin-gida
 
@@ -29,7 +29,7 @@ Contoso kalitate handiko kafea eta kafe-makinak sortzen dituen enpresa bat da. H
 - Gutxienez [Laguntzaileen baimenak](permissions.md) Customer Insights.
 - Honako urrats hauek [ingurune berri batean](manage-environments.md) inplementatzea gomendatzen dizugu.
 
-## <a name="task-1---ingest-data"></a>1. ataza - Datuak sartzea
+## <a name="task-1---ingest-data"></a>1. zeregina - Datuen sarrera
 
 Berrikusi zehazki [datuen sarrerari](data-sources.md) eta [Power Query konektoreak erabiliz datu-iturburuak inportatzeari](connect-power-query.md) buruzko artikuluak. Honako informazio honetan, ulertzen da ohituta zaudela orokorrean datuen sarrerarekin. 
 
@@ -46,10 +46,9 @@ Berrikusi zehazki [datuen sarrerari](data-sources.md) eta [Power Query konektore
    - **Jaioteguna**: Data
    - **Sorrera-data**: Data/ordua/zona
 
-   [!div class="mx-imgBorder"]
-   ![Bihurtu jaioteguna data](media/ecommerce-dob-date.PNG "eraldatu jaiotze data datara")
+   :::image type="content" source="media/ecommerce-dob-date.PNG" alt-text="Eraldatu jaiotze data datara.":::
 
-1. Eskuinaldeko paneleko "Izena" eremuan, aldatu izena **Kontsulta** datu-iturburuari eta ipini izen hau: **eCommerceContacts**
+1. Eskuinaldeko paneleko **Izena** eremuan, aldatu izena **Kontsulta** datu-iturburuari eta ipini izen hau: **eCommerceContacts**
 
 1. Gorde datu-iturburua.
 
@@ -67,7 +66,7 @@ Berrikusi zehazki [datuen sarrerari](data-sources.md) eta [Power Query konektore
    - **RewardsPoints**: Zenbaki osoa
    - **Sorrera-data**: Data/ordua
 
-1. Eskuinaldeko paneleko "Izena" eremuan, aldatu izena **Kontsulta** datu-iturburuari eta ipini izen hau: **loyCustomers**.
+1. Eskuinaldeko paneleko **Izena** eremuan, aldatu izena **Kontsulta** datu-iturburuari eta ipini izen hau: **loyCustomers**.
 
 1. Gorde datu-iturburua.
 
@@ -90,7 +89,7 @@ Berrikusi zehazki [datuen sarrerari](data-sources.md) eta [Power Query konektore
    - **Automatikoki berritzen da**: Egia / gezurra
    - **Errepikapen-maiztasuna, hilabetetan**: osoko zenbakia
 
-1. Eskuineko paneleko 'Izena' eremuan, aldatu **Kontsulta** izena datu-iturburuari eta ipini **Harpidetzaren historia**.
+1. Eskuineko paneleko **Izena** eremuan, aldatu **Kontsulta** izena datu-iturburuari eta idatzi **SubscriptionHistory**.
 
 1. Gorde datu-iturburua.
 
@@ -230,3 +229,6 @@ Ereduak sortutako entitatean oinarritutako segmentu berri bat sor dezakezu.
 Harpidetza-negozio honen galera-arrisku handiko bezeroak identifikatzen dituen segmentu dinamikoki eguneratua duzu.
 
 Informazio gehiagorako, ikusi [Sortu eta kudeatu segmentuak](segments.md).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

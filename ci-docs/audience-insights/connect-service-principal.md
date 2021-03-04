@@ -1,20 +1,20 @@
 ---
 title: Konektatu Azure Data Lake Storage Gen2 kontura zerbitzuaren entitatearekin
-description: Erabili hartzaileen xehetasunen Azure zerbitzuaren entitatea zure datu-biltegira konektatzeko horiek hartzaileen xehetasunetan txertatzerakoan.
-ms.date: 11/24/2020
+description: Erabili hartzaileen xehetasunen Azure zerbitzuaren entitatea zure datu-biltegira konektatzeko horiek hartzaileen xehetasunetan txertatzean.
+ms.date: 02/10/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: conceptual
+ms.topic: how-to
 author: adkuppa
 ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: c2fae278d34fa02b9168ac70dfa8dd351653245e
-ms.sourcegitcommit: 6a6df62fa12dcb9bd5f5a39cc3ee0e2b3988184b
+ms.openlocfilehash: eebbac1370a847869d98beaf70db49b809d762e7
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4644073"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5267707"
 ---
 # <a name="connect-to-an-azure-data-lake-storage-gen2-account-with-an-azure-service-principal-for-audience-insights"></a>Konektatu Azure Data Lake Storage Gen2 kontura hartzaileen xehetasunen Azure zerbitzuaren entitatearekin
 
@@ -22,7 +22,9 @@ Azure zerbitzuak erabiltzen dituzten tresna automatizatuek beti baimen mugatuak 
 
 Zerbitzuaren entitatea erabil dezakezu segurtasunez [Common Data Model fitxategi bat gehitu edo editatzeko datu-iturburu gisa](connect-common-data-model.md) edo [ingurune bat sortzeko edo lehendik dagoen ingurune bat eguneratzeko](manage-environments.md#create-an-environment-in-an-existing-organization).
 
-Administratzaile baimenak behar dituzu Azure harpidetzak zerbitzuaren entitatea sortzeko.
+> [!IMPORTANT]
+> - Zerbitzu nagusia erabiltzeko asmoa duen Azure Data Lake Gen2 biltegiratze kontuak izan behar du [Izen espazio hierarkikoa (HNS) gaituta dago](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-namespace).
+> - Administratzaile baimenak behar dituzu Azure harpidetzak zerbitzuaren entitatea sortzeko.
 
 ## <a name="create-azure-service-principal-for-audience-insights"></a>Sortu hartzaileen xehetasunen Azure zerbitzuaren entitatea
 
@@ -83,7 +85,7 @@ Erantsi Azure Data Lake biltegiratze-kontua hartzaileei buruzko informazioan [ir
 
 Jarraitu beheko urratsak hautatutako ikuspegiari buruzko beharrezko informazioa emateko.
 
-### <a name="resounce-based-storage-account-connection"></a>Baliabidetan oinarritutako biltegiratze-kontuaren konexioa
+### <a name="resource-based-storage-account-connection"></a>Baliabideetan oinarritutako biltegiratze-kontuaren konexioa
 
 1. Joan [Azure administratzaile atarira](https://portal.azure.com), hasi saioa zure harpidetzan eta ireki biltegiratze kontua.
 
@@ -108,7 +110,8 @@ Jarraitu beheko urratsak hautatutako ikuspegiari buruzko beharrezko informazioa 
 1. Berrikusi biltegiratze-kontuaren **Harpidetza**, **Baliabide taldea**, eta **Izena** eremuak, hartzaileei buruzko xehetasunetan balio egokiak hautatzen dituzula ziurtatzeko.
 
 1. Hartzaileei buruzko xehetasunetan, aukeratu balioak edo dagozkien eremuak biltegiratze kontua eransterakoan.
-
-   :::image type="content" source="media/ADLS-SP-SubscriptionConnection.png" alt-text="Idatzi biltegiratze kontuaren baliabidearen IDaren informazioa.":::
    
 1. Jarraitu hartzaileei buruzko informazioaren gainerako urratsekin biltegiratze kontua txertatu ahal izateko.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

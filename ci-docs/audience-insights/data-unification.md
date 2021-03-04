@@ -9,14 +9,14 @@ ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: 24321e9e11f9fd4e800526673726e5146ed33674
-ms.sourcegitcommit: cf9b78559ca189d4c2086a66c879098d56c0377a
+ms.openlocfilehash: 44f97696ec91dc488dd6a7528e186abb99c8288b
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "4404960"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5269637"
 ---
-# <a name="data-unification"></a>Datuak bateratzea
+# <a name="data-unification-overview"></a>Datuak bateratzeko ikuspegi orokorra
 
 [Datu-iturburuak konfiguratu](data-sources.md) ondoren, datuak bateratu ditzakezu. Datuak bateratzeak hiru urrats ditu: **Mapa**, **Bat-etortzea**, eta **Konbinatu**.
 
@@ -31,3 +31,6 @@ Datuen bateratzea amaitu ondoren, aukera dezakezu
 - [Ezarri entitateen arteko harremanak](relationships.md) segmentu sofistikatuak sortzeko
 - [aberastu zure datuak](enrichment-hub.md) zure bezeroei buruzko ikuspegi zabalagoa lortzeko
 - [zehaztu jarduerak](activities.md) sartutako atributu batzuetatik abiatuta
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

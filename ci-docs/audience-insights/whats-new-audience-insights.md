@@ -1,7 +1,7 @@
 ---
 title: Eginbide berriak eta datozenak
 description: Ezaugarri berriei, hobekuntzei eta akatsak konpontzeko ezaugarriei buruzko informazioa.
-ms.date: 11/02/2020
+ms.date: 02/02/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -9,12 +9,12 @@ author: m-hartmann
 ms.author: mhart
 ms.reviewer: midevane
 manager: shellyha
-ms.openlocfilehash: 07b4bee0445f9cd7d53a37cd405af839feb07ae3
-ms.sourcegitcommit: 4004eadac7a65e50e0a409cb925958523c2b6348
+ms.openlocfilehash: 9183c8af4fb9f9f08ac63d8d0cd37c6868bba310
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "4649989"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5270417"
 ---
 # <a name="whats-new-in-the-audience-insights-capability-of-dynamics-365-customer-insights"></a>Dynamics 365 Customer Insights hartzaileen xehetasunei buruzko zerbitzuaren ezaugarri berriak
 
@@ -30,6 +30,77 @@ Eguneratzeak eskualdeen arabera banatzen ditugu. Beraz, eskualde batzuek beste b
 
 > [!TIP]
 > Bidali eta bozkatzeko eginbideak eskaerak eta produktuaren iradokizunak, joan [Dynamics 365 aplikazioaren ideiak atarira](https://experience.dynamics.com/ideas/categories/?forum=79a8c474-4e35-e911-a971-000d3a4f3343&forumName=Dynamics%20365%20Customer%20Insights).
+
+## <a name="january-2021-updates"></a>2021eko urtarrilaren eguneratzeak
+
+2021eko urtarrilaren eguneratzeak hainbat funtzio, errendimendu berritze eta akats konponketak biltzen ditu.
+
+#### <a name="extensibility"></a>Hedagarritasuna
+
+- **Funtzionalitate hedatua eta errendimendu hobetua SFTP esportaziorako** Orain irteerako entitate guztiak Customer Insights-etik SFTP ostalari batera esporta ditzakezu. Lehen, esportazioa segmentuko entitateetara mugatzen zen. Gainera, SFTP esportazioaren errendimenduak datu bolumen handiagoa ahalbidetzen du denbora gutxian, zure SFTP ostalariaren errendimenduaren arabera.    
+  Informazio gehiagorako, ikusi [SFTP-erako konektorea (aurreargitalpena)](export-sftp.md).  
+
+#### <a name="segments"></a>Segmentuak
+
+- **Ikaskuntza automatikoak iradokitako segmentuak bultzatu ditu metrikak hobetzeko** Segmentuak ezagutzeko eta sortzeko modu berri bat dago. Sistemak dagoeneko jarraitzen ari zaren KPI (neurria) hobetzen lagun dezaketen segmentuak iradokitzeko adimen artifizialeko eredua erabiltzen du. Neurri batean edo beste atributu nagusi batean hautatzen dituzun atributuen eraginaren neurria erakusten dugu. Informazio horrek aukerak aurkezten dituzten segmentu potentzialak aurkitzen laguntzen du.    
+  Informazio gehiagorako, ikusi [Iradokitako segmentuak (aurreargitalpena)](suggested-segments.md).
+
+#### <a name="data-unification"></a>Datuak bateratzea
+
+- **Bat-etortzeko esperientzia hobetua** Datuak bateratzeko eremuan, partiduaren esperientzia eguneratu zen. Bat-etortzeen arauak konfiguratu eta ikustea ahalbidetzen du, estatistika zehatzak barne, bat-etortzeak nola funtzionatzen duen azaltzeko. Bat-etortzeen araua desgaitzeko aukerak daude, beraz, jada aktibo ez dago konfigurazioa mantentzen duen bitartean, arrastatu eta askatu bat-etortzeen arauak eta beste.
+  Informazio gehiago lortzeko, ikusi [Bat etortzeko entitateak](match-entities.md).
+
+- **Bat etortzearen prozesuko bikoiztea desegiteko irteera entitate gisa eskuragarri dago** Bat-etortzeen prozesuko bikoiztea desegiteko prozesuaren irteera entitate bereizi batean idazten da gehiago aztertzeko. Entitate hau bikoiztuak desegiteko prozesuan eta irabazlearen erregistroan erabilitako eremuek eta irabazle erregistroarekin bat egiten duten ordezko erregistroek osatzen dute.
+  Informazio gehiagorako, ikusi [Bikoiztuak desegiteko irteera entitate gisa](match-entities.md#deduplication-output-as-an-entity).
+
+#### <a name="system-administration"></a>Sistemaren administrazioa
+
+- **Partekatu datuak zuzenean Microsoft Dataverse-n** Orain Customer Insights irteera parteka dezakezu Microsoft Dataverse aplikazioaren Microsoft Dataverse Kudeatutako Data Lake erabiliz. Dataverse ingurune bat erlazionatu ostean Customer Insights-ekin, datuak partekatzea gaitzeko aukera duzu.
+  Informazio gehiagorako, ikusi [Kudeatu inguruneak](manage-environments.md).
+
+
+## <a name="december-2020-updates"></a>2020ko abenduko eguneratzeak
+
+2020ko abenduan egindako eguneratzeen artean hainbat eginbide, errendimendu bertsio-berritze eta akatsak konpontzeko ezaugarri daude.
+
+### <a name="new-and-updated-features-in-december-2020"></a>2020ko abenduko ezaugarri berriak eta eguneratuak
+
+#### <a name="data-enrichment"></a>Datu-aberastea
+
+- **Marka eta interes hobekien afinitate aberastasunak**
+  
+  Gure afinitate-puntuazioak sinplifikatu ditugu ulertzeko eta erabiltzeko errazagoak izan daitezen. Bezeroak azkar identifika ditzakezu marka edo interes jakin batekiko duten afinitatea kontuan hartuta.
+
+  Gainera, konfigurazio aukera berriak gehitu ditugu zure bezeroen profilak nola aberastu nahi dituzun hobeto kontrolatzeko. 
+
+  Informazio gehiago lortzeko, ikus [Aberastu bezeroen profilak marka eta interes kidetasunekin](enrichment-microsoft-graph.md).
+
+- **Kontrolatu zein profil aberastu**
+
+  Orain, zure bezeroen profilen azpimultzo bat aberastu dezakezu lehen mailako bezeroen ordez segmentu-entitate bat hautatzeko aukerarekin. Sortu segmentu bat aberastu nahi zenituzkeen bezeroen profilekin eta hautatu zure bezeroaren datu multzoaren aberasteko konfigurazioan.
+  Eginbide hau une honetan Experian eta HERE Technologies-ek emandako aberastasunetarako soilik dago eskuragarri. Gaitasun hori aberastasun gehiago izateko aukera emango dugu laster.
+
+  Informazio gehiagorako, ikusi [Aberastu bezeroen profilak Experian-en demografiarekin](enrichment-experian.md) edo [Bezeroen profilak aberastea HERE teknologiekin](enrichment-here.md).
+
+#### <a name="extensibility"></a>Hedagarritasuna
+
+- **Aktibatu zure segmentuak Autopilot bidez**
+
+  Esportatu segmentuak Autopilot-era eta erabili marketin helburuetarako. Informazio gehiagorako, ikusi [Autopilot-erako konektorea (aurreargitalpena)](export-autopilot.md).
+
+- **Aktibatu zure segmentuak SendGrid bidez**
+
+  Esportatu segmentuak SendGrid-era eta erabili marketin helburuetarako. Informazio gehiagorako, ikus [SendGrid-erako konektorea](export-sendgrid.md).
+
+#### <a name="system-administration"></a>Sistemaren administrazioa
+
+- **Ingurunea kudeatzeko esperientzia eguneratua**
+  
+  Inguruneak zuzenean sortu, editatu, ezabatu eta berrezarri ditzakezu aplikazioaren goiburuko ingurunearen hautatzailetik. 
+  
+  Gainera, erabiltzen ari zaren ingurunea inguruneko panelaren goialdean ainguratuta egongo da, beraz, gehiago bilatu beharrik ez izateko.
+
+  Informazio gehiagorako, ikusi [Kudeatu inguruneak](manage-environments.md).
 
 ## <a name="november-2020-updates"></a>2020ko azaroko eguneratzeak
 
@@ -165,7 +236,7 @@ Informazio gehiagorako, ikus [Aberastu bezeroen profilak Experian-en demografiar
 Atazaren xehetasunen panelak sistemak exekutatzen dituen atazen inguruko xehetasunak ikusteko aukera ematen du. Konfigurazioarekin arazoak identifikatzeko eta irtenbideak aurkitzeko modu erabilgarria da.
 Berrikusi errore-mezuak, ikusi balizko arazoak nola zuzentzen dituzun.
  
-- **Orrialde gehigarrietan gehitutako informazioa prozesatzen**
+- **Orri gehiagotan gehitutako informazioa prozesatzen**
 
 Hobekuntza honek zure entitateen egoerari buruzko informazioa gehitzen du **Entitateak** eta **Bezeroak** orrialdea.
  
@@ -202,9 +273,9 @@ Zeregin bat bertan behera uzten duzunean, adibidez, partidu prozesuan, bere azke
 
 #### <a name="enrichment"></a>Aberastea
 
-- **Merkatu osagarrietan interes-kidetasunak aberastea**
+- **Merkatu gehiagotan interes interesak aberastea**
 
-  Estatu Batuetatik haratago interes-aberastasunen aberastasuna bost merkatu osagarrietara hedatzen ari gara: Kanada, Australia, Erresuma Batua, Frantzia eta Alemania. Luzapen honekin, zure bezeroen datuak aberastu ditzakezu merkatu horiei dagozkien interes osagarriekin. Merkatu horietan dauden zure bezeroen profilak ere aberastuko ditugu, Microsoft Graph-en tokiko jabedun datuak erabiliz.
+  Estatu Batuetatik harago interes-aberastasunen aberastasuna beste bost merkatutara hedatzen ari gara: Kanada, Australia, Erresuma Batua, Frantzia eta Alemania. Luzapen honekin, zure bezeroen datuak aberastu ditzakezu merkatu horiei dagozkien interes gehiagorekin. Merkatu horietan dauden zure bezeroen profilak ere aberastuko ditugu, Microsoft Graph-en tokiko jabedun datuak erabiliz.
   Informazio gehiago lortzeko, ikus [Aberastu bezeroen profilak marka eta interes kidetasunekin](enrichment-microsoft-graph.md)
 
 
@@ -223,9 +294,9 @@ Zeregin bat bertan behera uzten duzunean, adibidez, partidu prozesuan, bere azke
 
 #### <a name="enrichment"></a>Aberastea
 
-- **Marka-kidetasunak merkatu osagarrietan eskuragarri**
+- **Merkatu gehiagoko marken interesak aberastea**
 
-  Marka afinitateak aberasteko erabilgarritasuna Estatu Batuetatik harago beste bost merkatuetara hedatzen ari gara: Kanada, Australia, Erresuma Batua, Frantzia eta Alemania. Luzapen honekin, zure bezeroen datuak merkatu horietako tokiko markekin aberastu ditzakezu. Merkatu horietan dauden zure bezeroen profilak ere aberastuko ditugu, Microsoft Graph-en tokiko jabedun datuak erabiliz.
+  Estatu Batuetatik harago marken aberastasunen aberastasuna beste bost merkatutara hedatzen ari gara: Kanada, Australia, Erresuma Batua, Frantzia eta Alemania. Luzapen honekin, zure bezeroen datuak merkatu horietako tokiko markekin aberastu ditzakezu. Merkatu horietan dauden zure bezeroen profilak ere aberastuko ditugu, Microsoft Graph-en tokiko jabedun datuak erabiliz.
   Informazio gehiago lortzeko, ikus [Aberastu bezeroen profilak marka eta interes kidetasunekin](enrichment-microsoft-graph.md)
 
 ## <a name="june-2020-updates"></a>2020ko ekaineko eguneratzeak
@@ -238,7 +309,7 @@ Zeregin bat bertan behera uzten duzunean, adibidez, partidu prozesuan, bere azke
 
 - **Leadspace enpresako datuekin aberastea**
   
-  Definitu eremuak Leadspace-tik erlazionatutako enpresaren datuak bilatzeko erabiltzen diren bezeroen profil bateratuetan. Aberastze prozesua exekutatu ondoren, B2B profilak enpresaren tamaina, kokapena, industria eta beste hainbat ezaugarri gehigarri aberasten dira.    
+  Definitu eremuak Leadspace-tik erlazionatutako enpresaren datuak bilatzeko erabiltzen diren bezeroen profil bateratuetan. Aberasteko prozesua exekutatu ondoren, B2B profilak aberastu egiten dira atributu gehiagorekin, besteak beste, enpresaren tamaina, kokalekua, industria eta beste.    
   Lankidetza horrek hirugarrenen zerbitzuen sarrerarekin zure datuen kalitatea hobetzeko aukera ematen du. Aberastasun hau erabiltzeko Leadspace-ren lizentzia beharko duzu B2B enpresaren datuetara sartzeko. Sistemak lizentzia hori erabiliko du zure datuak etengabe aberastu ahal izateko.    
   Informazio gehiago lortzeko, ikus [Enpresen profilak aberastea Leadspace-rekin](enrichment-leadspace.md).
 
@@ -264,7 +335,7 @@ Zeregin bat bertan behera uzten duzunean, adibidez, partidu prozesuan, bere azke
   Dynamics 365 Bezero txartelaren gehigarrian kontrol berri batek customer engagement aplikazioetan zure kontaktuen marka eta interes aberastasunak erakuts ditzakezu Dynamics 365-en.    
   Informazio gehiago lortzeko, ikus [Bezero-txartelaren gehigarria](customer-card-add-in.md).
 
-- **osagarria Power Automate abiarazleak**
+- **Power Automate abiarazle gehiago**
 
   Honako abiarazleak luzatu ditugu Power Automate ondorengo abiarazleak gehitu ditu:
   - Lortu jakinarazpen bat edo burutu ekintza freskagarri automatiko bat (datu-iturriak, bateratzea, segmentuak, neurriak, esportazioak) amaitzen denean
@@ -295,12 +366,12 @@ Zeregin bat bertan behera uzten duzunean, adibidez, partidu prozesuan, bere azke
   
   Aurkitu zure bezero basean antzeko bezeroak adimen artifiziala erabiliz. Ikaskuntza automatiko eredu binarioko sailkapen batek antzeko segmentazioa ematen die hedatutako segmentuko bezeroei. Puntuazioa iturri-segmentuko bezeroek duten antzekotasunean oinarritzen da. Antzekotasunaren puntuazioaren arabera, bezeroen profilak gehitu berri diren segmentu bati gehitzen zaizkio.
 
-  Marketin digitalean itxurazko modelo batzuetan aipatzen den bezala, AI eredua erabiltzen du zure bezeroen beste segmentu baten antzekoak diren bezeroak aurkitzeko, atributu gehigarriak faktorizatuz. Ezaugarriak hautatzeaz gain, segmentu berri horretan egon beharko duten bezeroen gehieneko kopurua zehazteko aukera ere ematen du. AI ereduak bezeroaren antzekotasun puntuazioak kalkulatuko ditu hautatutako atributuetan oinarrituz eta batez besteko antzekotasun puntuazio altuagoa duten bezeroak aurkituko ditu. Lortzen den segmentuan bezeroaren antzeko itxura duten bezeroak sartuko dira jatorrizko segmentuan.    
+  Batzuetan marketin digitalean itxurazko modelizazioa deritzo, adimen artifizialeko eredu bat erabiltzen du zure bezeroen beste segmentu baten antzekoak diren bezeroak aurkitzen laguntzeko atributu gehiago kontuan hartuta. Ezaugarriak hautatzeaz gain, segmentu berri horretan egon beharko duten bezeroen gehieneko kopurua zehazteko aukera ere ematen du. AI ereduak bezeroaren antzekotasun puntuazioak kalkulatuko ditu hautatutako atributuetan oinarrituz eta batez besteko antzekotasun puntuazio altuagoa duten bezeroak aurkituko ditu. Lortzen den segmentuan bezeroaren antzeko itxura duten bezeroak sartuko dira jatorrizko segmentuan.    
   Informazio gehiago lortzeko, ikusi [Antzeko bezeroak](find-similar-customer-segments.md).
 
 - **Segmentuen gaineko gainjartzea eta bereizleak**
 
-  Segmentu teilakatzeak bi segmentu edo gehiago dituzten bezeroak zein bezero eta zein diren ikusteko aukera ematen du. Adibidez, nola gastu altuko segmentuak gogobetetze handiko bezeroen segmentuarekin bat egiten duen edo bezeroen segmentu txikigarria nola gogortzen den asetze txikiko bezeroen segmentuan. Gainera, gainjartzeak nola aldatzen diren azter dezakezu zure aukeren atributu osagarrian oinarrituta.
+  Segmentu teilakatzeak bi segmentu edo gehiago dituzten bezeroak zein bezero eta zein diren ikusteko aukera ematen du. Adibidez, nola gastu altuko segmentuak gogobetetze handiko bezeroen segmentuarekin bat egiten duen edo bezeroen segmentu txikigarria nola gogortzen den asetze txikiko bezeroen segmentuan. Gainera, bata bestearen gainetik nola aldatzen den azter dezakezu, zuk aukeratutako atributu gehigarri batean oinarrituta.
 
   Segmentuen bereizleek agerian uzten dute segmentu bat zure bezeroek edo beste segmentu batek bereizten duena. Egin behar duzun bakarra segmentu bat identifikatzea da eta sistemak bereizleen zerrenda sailkatuta dagoen segmentuan bereizten dituzten profil atributuak eta neurriak identifikatuko ditu: bereizle indartsuenetik ahulenera.    
   Informazio gehiagorako, ikusi [Segmentuaren xehetasunak (aurrebista)](segment-insights.md).
@@ -333,7 +404,7 @@ Zeregin bat bertan behera uzten duzunean, adibidez, partidu prozesuan, bere azke
 
 - **Kronika eguneratua eta orrialde eguneratua Bezeroaren Kartaren gehigarrian**
 
-  Bezeroaren txartelaren gehigarriaren soluzioaren denbora-lerroa jarduera-lerroarekin bat dator. Kronikaren paginazioa hobetu zen eta aldi berean 50 jarduera erakusten dira. Kronologian jarduera osagarriak kargatzea ere ahalbidetzen du.    
+  Bezeroaren txartelaren gehigarriaren soluzioaren denbora-lerroa jarduera-lerroarekin bat dator. Kronikaren paginazioa hobetu zen eta aldi berean 50 jarduera erakusten dira. Gainera, denbora-lerroan jarduera gehiago kargatzeko aukera ematen du.    
   Informazio gehiago lortzeko, ikus [Bezero-txartelaren gehigarria](customer-card-add-in.md).
 
 - **Power Automate segmentu aldaketetarako abiarazlea**
@@ -412,7 +483,7 @@ Zeregin bat bertan behera uzten duzunean, adibidez, partidu prozesuan, bere azke
 
 - **Esportatu LiveRamp-era**
 
-  Aktibatu zure datuak LiveRamp®, 500 plataforma baino gehiagorekin konektatzeko digital, sozial eta telebistetako ekosistemetan. Erabili zure datuak LiveRamp-en iragarki-kanpainak bideratzeko, ezabatzeko eta pertsonalizatzeko.    
+  Aktibatu zure datuak LiveRamp®, 500 plataforma baino gehiagorekin konektatzeko digital, sozial eta telebistetako ekosistemetan. Erabili zure datuak LiveRamp-en iragarkien kanpainak bideratzeko, kentzeko eta pertsonalizatzeko.    
   Informazio gehiagorako, ikusi [LiveRamp&reg; konektorea](export-liveramp.md).
 
 - **Customer Insights talde gehigarriak**
@@ -433,7 +504,7 @@ Zeregin bat bertan behera uzten duzunean, adibidez, partidu prozesuan, bere azke
 
 #### <a name="segments"></a>Segmentuak
 
-- **Operadore gehigarria**
+- **Beste eragile bat**
   
   In-set operadoreak bezeroei segmentazioa ahalbidetzen die hainbat kate baloreren arabera. Operadore hau gehitu aurretik, segmentu hauek eraiki behar zenituzten edo hainbat baldintzarekin. In-set operadoreak baldintza bakarrarekin egiten du.    
   Informazio gehiagorako, ikusi [Sortu eta kudeatu segmentuak](segments.md).
@@ -444,3 +515,6 @@ Zeregin bat bertan behera uzten duzunean, adibidez, partidu prozesuan, bere azke
   
   Kopiatu zure konfigurazioa ingurune batetik bestera. Ingurune berria sortzen ari zaren bitartean, konfigurazioa kopiatu nahi duzun ingurunea aukeratu dezakezu. Egun, datuen iturriak, datuak bateratzeko harremanak, neurriak eta segmentuak onartzen ditugu. datu-iturburu egiaztagiriak eta benetako datuak ez dira kopiatu.    
   Informazio gehiagorako, ikusi [Kudeatu inguruneak](manage-environments.md).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

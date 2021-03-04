@@ -5,16 +5,16 @@ ms.date: 06/05/2020
 ms.reviewer: philk
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: conceptual
+ms.topic: how-to
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: 8260e3b5e529f3d54678d9d6e11aebb2795e27fd
-ms.sourcegitcommit: 6a6df62fa12dcb9bd5f5a39cc3ee0e2b3988184b
+ms.openlocfilehash: c839f9dc7e403412c0e3d936392d45a43bc63545
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4643668"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5269959"
 ---
 # <a name="connector-for-facebook-ads-manager-preview"></a>Konektatzailea Facebook Iragarkien kudeatzailea (aurrebista)
 
@@ -62,7 +62,16 @@ Bezeroen profil bateratuen segmentuak esportatu Facebook Iragarkien kudeatzailea
 
 Hurrengoa egin dezakezu [esportatu datuak eskatu ahala](export-destinations.md). Esportazioa guztiekin ere exekutatuko da [programatutako freskapen](system.md#schedule-tab).
 
+## <a name="known-limitations"></a>Muga ezagunak
+
+- Gehienez 10 milioi bezeroren profila esportazio bakoitzeko Facebook Ads kudeatzailea 
+- Esportatu Facebook Ads-eko kudeatzailera esportatzea segmentuetara mugatuta dago
+- Guztira 10 milioi profil dituzten segmentuak esportatzen 90 minutu behar izan daitezke
+
 ## <a name="data-privacy-and-compliance"></a>Datuen pribatutasuna eta arau-gordetzea
 
 Dynamics 365 Customer Insights gaitzen duzunean datuak  Facebook-en iragarki-kudeatzailera bidaltzeko, datuak betetzeko mugatik kanpo transferitzea baimentzen duzu Dynamics 365 Customer Insights-erako, datu pertsonalak bezalako datu sentikorrak barne. Microsoft-ek datu horiek transferituko ditu zure aginduz, baina zure ardura da Facebook iragarkiek pribatutasun- edo segurtasun-betebeharrak betetzen dituela ziurtatzea. Informazio gehiago eskuratzeko, ikusi [Microsoft-en pribatutasun-adierazpena](https://go.microsoft.com/fwlink/?linkid=396732).
 Funtzio hau erabiltzeari uzteko, Dynamics 365 Customer Insights-en administratzaileak esportazioaren helburuko kokalekua edonoiz ken dezake.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

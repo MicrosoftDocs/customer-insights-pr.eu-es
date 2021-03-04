@@ -1,7 +1,7 @@
 ---
 title: Instalatu eta konfiguratu Bezeroaren txartelaren osagarria
 description: Instalatu eta konfiguratu Dynamics 365 Customer Insights-erako Bezeroen txartelaren osagarria.
-ms.date: 08/04/2020
+ms.date: 01/20/2021
 ms.reviewer: philk
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: aab5deaf89b4b019f6688a1bca950ec2277ad5fb
-ms.sourcegitcommit: 6a6df62fa12dcb9bd5f5a39cc3ee0e2b3988184b
+ms.openlocfilehash: a6d5b49380ed129cf147698a16f5f3f597bf7fbc
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4644028"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5268029"
 ---
 # <a name="customer-card-add-in-preview"></a>Bezeroaren txartelaren osagarria (aurrebista)
 
@@ -28,7 +28,7 @@ Lortu zure bezeroen 360 graduko ikuspegia zuzenean Dynamics 365 aplikazioetan. I
 - [Common Data Service erabiliz Dynamics 365 aplikaziotik sartutako](connect-power-query.md) bezeroen profilak.
 - Bezeroaren txartelaren osagarriaren erabiltzaileak [erabiltzaile gisa gehitu behar dira](permissions.md) hartzaileen xehetasunetan.
 - [Bilaketa konfiguratua eta iragazkiaren gaitasunak](search-filter-index.md).
-- Kontrol demografikoa: eremu demografikoak, adina edo generoa, adibidez, bezeroen profil bateratuan daude eskuragarri.
+- Kontrol demografikoa: eremu demografikoak (adina edo generoa), adibidez, bezeroen profil bateratuan daude eskuragarri.
 - Aberastearen kontrola: Aktiboa eskatzen du [hobekuntzak](enrichment-hub.md) bezeroen profiletan aplikatuta.
 - Adimenaren kontrola: Azure Machine Learning ([iragarpenak](predictions.md) edo [eredu pertsonalizatuak](custom-models.md)) erabiliz sortutako datuak behar dira
 - Neurriaren kontrola: [Konfiguratutako neurriak](measures.md) behar dira.
@@ -92,10 +92,26 @@ Zenbait denbora behar izango duzu irtenbidea zure ingurunean instalatzeko.
 
 1. Sarbidean **Eremuaren propietateak** elkarrizketa-koadroa, garbitu **Erakutsi etiketa inprimakian** kontrol-laukia.
 
-1. Hautatu **Web** aukera kontrolerako. Aberastasunaren kontrolerako, hautatu zein aberastasun mota erakutsi nahi duzun **enrichmentType** eremu. Aberastasun-kontrol berezi bat gehitu behar diozu aberastasun-mota bakoitzari.
+1. Hautatu **Web** aukera kontrolerako. Aberastasunaren kontrolerako, hautatu zein aberastasun mota erakutsi nahi duzun **enrichmentType** eremu. Gehitu aberaste kontrol bereizi bat aberaste mota bakoitzerako.
 
 1. Aukeratu **Gorde** eta **Argitaratu** kontaktu formulario eguneratua argitaratzeko.
 
 1. Joan argitaratutako harremanetarako formulariora. Gehitu berri den kontrola ikusiko duzu. Baliteke erabiltzen duzun lehen aldian saioa hastea.
 
 1. Kontrol pertsonalizatuan erakutsi nahi duzuna pertsonalizatzeko, hautatu editatzeko botoia goiko eskuineko izkinan.
+
+## <a name="upgrade-customer-card-add-in"></a>Eguneratu Bezeroaren txartelaren osagarria
+Bezeroaren txartelaren gehigarria ez da automatikoki eguneratzen. Azken bertsiora eguneratzeko, jarraitu prozedura hau gehigarria instalatuta duen Dynamics 365 aplikazioan.
+
+1. Dynamics 365 aplikazioan, joan hona: **Ezarpenak** > **Pertsonalizazioa** eta hautatu **Irtenbideak**.
+
+1. Gehigarrien taulan bilatu **CustomerInsightsCustomerCard** eta hautatu errenkada.
+
+1. Aukeratu **Aplikatu irtenbidea berritzea** ekintza barran.
+
+   :::image type="content" source="media/customer-card-add-in-upgrade.png" alt-text="Eguneratu irtenbidea Dynamics 365 aplikazioen Pertsonalizazio eremuan":::
+
+1. Bertsio-berritze prozesua hasi ondoren, kargatzeko adierazle bat ikusiko duzu bertsio berritzea amaitu arte. Bertsio berririk ez badago, bertsio berritzeak errore mezu bat erakutsiko du.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

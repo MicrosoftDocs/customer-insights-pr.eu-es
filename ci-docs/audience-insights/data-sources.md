@@ -9,14 +9,14 @@ author: m-hartmann
 ms.author: mhart
 ms.reviewer: adkuppa
 manager: shellyha
-ms.openlocfilehash: a720641f7499fc71ff5bceeba48d296c51f77242
-ms.sourcegitcommit: 6a6df62fa12dcb9bd5f5a39cc3ee0e2b3988184b
+ms.openlocfilehash: 68aa1b56fb634da80a0c64db72f778d57507104d
+ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4643938"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5269683"
 ---
-# <a name="overview-about-data-sources"></a>Ikuspegi orokorra datu-iturburuei buruzkoa
+# <a name="data-sources-overview"></a>Datuen iturburuen ikuspegi orokorra
 
 [!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
 
@@ -49,7 +49,7 @@ Irentsitako datu-iturburu bakoitzaren izena, bere egoera eta iturri horretako da
 |Freskatzen    |Datuen horniketa martxan da. Eragiketa hau bertan behera utzi dezakezu **Utzi freskagarria** herrian **Ekintzak** zutabea. datu-iturburu-en freskagarria gelditzeak azken freskatze egoeran itzuliko du.       |
 |Ezin izan da egin     |Datuen iradokizunak akatsak izan ditu.         |
 
-Aukeratu **Freskatu egoera** freskatze egoerari buruzko xehetasun gehiago berrikusteko, erroreen xehetasunak eta beherako prozesuen eguneratzeak barne.
+Hautatu balioa **Egoera** datu-iturburu edozein zutabetan xehetasun gehiago berrikusteko. **Aurrerapenaren xehetasunak** panelean, zabaldu **Datu-iturburuak**. Aukeratu **Ikusi xehetasunak** freskatze egoerari buruzko xehetasun gehiago berrikusteko, erroreen xehetasunak eta beherako prozesuen eguneratzeak barne.
 
 Datuak kargatzea denbora har dezake. Freskatu ondoren, iradokitako datuak berrikusi daitezke **erakundeak** orria. Informazio gehiago lortzeko, [Entitateak](entities.md).
 
@@ -76,3 +76,6 @@ Eskatu ahalako datu-iturburu bat freskatzeko, jarraitu urrats hauek:
 2. Hautatu kendu nahi duzun datu-iturburu ondoko elipsi bertikala eta hautatu **Ezabatu** goitibeherako menuan.
 
 3. Berretsi ezabatu nahi duzula.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]
