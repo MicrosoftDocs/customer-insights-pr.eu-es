@@ -2,19 +2,19 @@
 title: Hartzaileen ikuspegia Dynamics 365 Customer Insights ikuspegi orokorra
 description: Dynamics 365 Customer Insights-en Hartzaileen ikuspegiaren ikuspegi orokorra.
 ms.date: 01/18/2021
-ms.reviewer: nimagen
+ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: overview
-author: m-hartmann
-ms.author: mhart
+author: NimrodMagen
+ms.author: nimagen
 manager: shellyha
-ms.openlocfilehash: 735aae12abebd2d6d9b6aedb5835164834f480c0
-ms.sourcegitcommit: 0260ed244b97c2fd0be5e9a084c4c489358e8d4f
+ms.openlocfilehash: 146994b739748c615ca002add4e64216da6c1dea
+ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "5476980"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "5598615"
 ---
 # <a name="audience-insights-for-dynamics-365-customer-insights-overview"></a>Hartzaileen ikuspegia Dynamics 365 Customer Insights ikuspegi orokorra
 
@@ -25,7 +25,7 @@ Hartzaileen xehetasunek zure bezeroak hobeto ezagutzen lagunduko dizute. Konekta
 - **Ezabatu datuen ziloak eta bateratu bezeroen datuak**
 
   - Konektatu eta bateratu zure datuak erraztasunez; sartu datu iturri ezagunetako transakzio-, behaketa- eta portaera-datuak [aurrez eraikitako konektoreak erabiliz](data-sources.md).
-  - Eraldatu bezeroaren datuak modu adimentsuan. Eraiki bezeroaren profil bateratuak [Datu eredu arrunta](https://docs.microsoft.com/common-data-model/). Ebatzi bezeroen identitatea AI / ML bideratutako gomendioekin.
+  - Eraldatu bezeroaren datuak modu adimentsuan. Eraiki bezeroaren profil bateratuak [Datu eredu arrunta](/common-data-model/). Ebatzi bezeroen identitatea AI / ML bideratutako gomendioekin.
 
 - **Aberastu Microsoft Graph-en barruan dagoen audientzia adimenarekin**
 
@@ -42,7 +42,7 @@ Hartzaileen xehetasunek zure bezeroak hobeto ezagutzen lagunduko dizute. Konekta
 - **Datu analistak / administratzaileak:**
 
   - Konektore-bilduma aberats baterako sarbidea, zure bezeroen datu guztiak sartzeko.
-  - Bezeroaren datuak batu eta bihurtzeko gaitasuna [Datu eredu arrunta](https://docs.microsoft.com/common-data-model/) formatuan.
+  - Bezeroaren datuak batu eta bihurtzeko gaitasuna [Datu eredu arrunta](/common-data-model/) formatuan.
   - Aberastu bezeroaren informazioa Microsoft Graph-en jasotako ikusleen adimenarekin, hala nola markaren afinitatearekin eta interesekin.
   - "Klikak ez kodearen" konfigurazioa eta arazketa-esperientzia, hartzaileen xehetasunak erraz konfiguratzeko eta balizko arazoak identifikatzeko.
   - AI-ren gomendioekin bezeroaren iturriak desberdinak garbitu eta estandarizatzea.  

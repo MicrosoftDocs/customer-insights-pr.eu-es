@@ -1,20 +1,20 @@
 ---
 title: Egin lan API-ekin
 description: Erabili APIak eta ulertu mugak.
-ms.date: 12/04/2020
+ms.date: 03/10/2021
 ms.reviewer: wimohabb
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: m-hartmann
-ms.author: mhart
+ms.author: wimohabb
 manager: shellyha
-ms.openlocfilehash: 966db1a22e7dece1bcd89733880bce059151157f
-ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
+ms.openlocfilehash: 011fa700563c53534554a6b73e87c2391bfdf714
+ms.sourcegitcommit: a872f59e6febe4d4bd678ddd0b60a1660acca0f3
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5267509"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "5710445"
 ---
 # <a name="work-with-customer-insights-apis"></a>Lan egin Customer Insights APIekin
 
@@ -36,7 +36,7 @@ Artikulu honek Customer Insights APIetara sartzeko, Azure aplikazioen erregistro
 
    :::image type="content" source="media/enable-apis.gif" alt-text="Gaitu Customer Insights APIak":::
 
-1. Aukeratu **Arakatu gure APIak** APIak probatzeko.
+1. Hautatu **Esploratu gure APIak** hurrengora [probatu APIak](https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights&operation=Get-all-instances).
 
 1. Aukeratu API eragiketa bat eta hautatu **Probatu**.
 
@@ -47,6 +47,9 @@ Artikulu honek Customer Insights APIetara sartzeko, Azure aplikazioen erregistro
 1. Joan alboko panelaren behealdera eta hautatu **Bidali**.
 
 HTTP erantzuna laster agertuko da behean.
+
+
+   :::image type="content" source="media/try-apis.gif" alt-text="APIak probatzeko modua nola aukeratu erakusten duen gif animatua.":::
 
 ## <a name="create-a-new-app-registration-in-the-azure-portal"></a>Sortu aplikazioen erregistro berria Azure atarian
 
@@ -61,6 +64,8 @@ Urrats hauek ordezko baimenak erabiliz Azure aplikazioa erabiltzen hasteko lagun
 
 1. Aplikazio berriaren erregistroan, joan hona: **API baimenak**.
 
+   :::image type="content" source="media/app-registration-1.gif" alt-text="GIF animatua API baimena ezartzeko aplikazioen erregistroan.":::
+
 1. Aukeratu **Gehitu baimena** eta hautatu **Customer Insights** alboko panelean.
 
 1. **Baimen mota** aukeran, hautatu **Ordezko baimenak** eta hautatu **erabiltzaile inpersonatzea** baimena.
@@ -71,9 +76,11 @@ Urrats hauek ordezko baimenak erabiliz Azure aplikazioa erabiltzen hasteko lagun
 
 Aplikazioaren / Bezeroaren IDa erabil dezakezu Microsoft Authentication Library (MSAL) zerbitzuarekin aplikazioa erregistratzeko, eskaerarekin batera APIra bidaltzeko titularraren tokena eskuratzeko.
 
+:::image type="content" source="media/grant-admin-consent.gif" alt-text="Gif animatua administratzailearen baimena emateko.":::
+
 MSAL-i buruzko informazio gehiago lortzeko, ikusi [Microsoft Authentication Library (MSAL) zerbitzuaren ikuspegi orokorra](https://docs.microsoft.com/azure/active-directory/develop/msal-overview).
 
-Azure aplikazioen erregistroari buruzko informazio gehiago lortzeko, ikusi [Azure atariko aplikazioen erregistroaren esperientzia berria](https://docs.microsoft.com/azure/active-directory/develop/app-registration-portal-training-guide).
+Azure aplikazioen erregistroari buruzko informazio gehiago lortzeko, ikusi [Azure atariko aplikazioen erregistroaren esperientzia berria](/azure/active-directory/develop/app-registration-portal-training-guide).
 
 Gure bezeroen liburutegien APIak erabiltzeari buruzko informazioa lortzeko, ikusi [Customer Insights-en bezero liburutegiak](#customer-insights-client-libraries).
 
@@ -101,6 +108,8 @@ Gure bezeroen liburutegien APIak erabiltzeari buruzko informazioa lortzeko, ikus
 
 1. Aukeratu **Eman administratzailearen baimena honetarako:...** aplikazioaren erregistroa osatzeko.
 
+   :::image type="content" source="media/grant-admin-consent.gif" alt-text="Gif animatua administratzailearen baimena emateko.":::
+
 1. Amaitzeko, aplikazioaren erregistroaren izena gehitu behar dugu erabiltzaile gisa Customer Insights-en.    
    Ireki Customer Insights, joan hona: **Administratzailea** > **Baimenak** eta hautatu **Gehitu erabiltzailea**.
 
@@ -108,7 +117,7 @@ Gure bezeroen liburutegien APIak erabiltzeari buruzko informazioa lortzeko, ikus
 
 ## <a name="customer-insights-client-libraries"></a>Customer Insights bezero liburutegiak
 
-Atal honek Customer Insights APIen eskuragarri dauden bezero liburutegiak erabiltzen hasteko laguntza ematen dizu.
+Atal honek Customer Insights APIen eskuragarri dauden bezero liburutegiak erabiltzen hasteko laguntza ematen dizu. Liburutegiaren iturburu kodea eta adibideen aplikazio guztiak hemen aurki ditzakezu [Customer Insights GitHub orria](https://github.com/microsoft/Dynamics365-CustomerInsights-Client-Libraries). 
 
 ### <a name="c-nuget"></a>C# NuGet
 
@@ -127,7 +136,7 @@ Ikasi NuGet.org orrialdetik C# bezero liburutegiak erabiltzen hasten. NuGet pake
 
 #### <a name="use-the-c-client-library"></a>Erabili C # bezero liburutegia
 
-1. Erabili [Microsoft autentifikazio liburutegia (MSAL)](https://docs.microsoft.com/azure/active-directory/develop/msal-overview) `AccessToken` bat lortzeko lehendik duzun [Azure aplikazioaren erregistroa](#create-a-new-app-registration-in-the-azure-portal) erabiliz.
+1. Erabili [Microsoft autentifikazio liburutegia (MSAL)](/azure/active-directory/develop/msal-overview) `AccessToken` bat lortzeko lehendik duzun [Azure aplikazioaren erregistroa](#create-a-new-app-registration-in-the-azure-portal) erabiliz.
 
 1. Token bat behar bezala autentifikatu eta eskuratu ondoren, eraiki berria edo erabili lehendik dagoen `HttpClient` **DefaultRequestHeaders "Baimena"** gehigarria **Titularra <access token>** gisa eta **Ocp-Apim-Subscription-Key** [Customer Insights inguruneko **harpidetza gakoa**](#get-started-trying-the-customer-insights-apis) gisa ezarrita.    
    Berrezarri **Baimena** goiburua egokia denean. Adibidez, token-a iraungi denean.
@@ -141,5 +150,12 @@ Ikasi NuGet.org orrialdetik C# bezero liburutegiak erabiltzen hasten. NuGet pake
 1. Erantzuna `object` motakoa izango da ziurrenik, metodoak hainbat mota itzul ditzakeelako (adibidez, `IList<InstanceInfo>` eta `ApiErrorResult`). Itzulera mota egiaztatzeko, objektuak segurtasunez bihur ditzakezu eragiketaren [APIaren xehetasunen orrian](https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights) zehaztutako erantzun motara.    
    Eskaerari buruzko informazio gehiago behar izanez gero, erabili **http mezuen metodoak** erantzun gordineko objektuan sartzeko.
 
+### <a name="nodejs-package"></a>NodeJS paketea
+
+Erabili NPM bidez eskuragarri dauden NodeJS bezero liburutegiak: https://www.npmjs.com/package/@microsoft/customerinsights
+
+### <a name="python-package"></a>Python paketea
+
+Erabili PyPi bidez eskuragarri dauden Python bezero liburutegiak: https://pypi.org/project/customerinsights/
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

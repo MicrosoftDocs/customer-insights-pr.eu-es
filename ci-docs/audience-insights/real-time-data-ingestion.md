@@ -2,19 +2,19 @@
 title: Denbora errealean datuak sartzea eta mugak
 description: Hartzaileen xehetasunetako denbora errealeko gaitasunen inguruko informazio orokorra.
 ms.date: 10/27/2020
-ms.reviewer: nikeller
+ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
-author: m-hartmann
-ms.author: mhart
+author: Nils-2m
+ms.author: nikeller
 manager: shellyha
-ms.openlocfilehash: 7421ed9d2cb399d546815b2d1b0ea5ec51ca6b6d
-ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
+ms.openlocfilehash: 3c84cfe7441eb026c1fd45eda1f72421388d01d7
+ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5270265"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "5598554"
 ---
 # <a name="real-time-data-ingestion-preview"></a>Denbora errealeko iragazkiak (aurrebista)
 
@@ -54,7 +54,7 @@ Denbora errealeko APIari esker, zure iturburuko sistematik (iturburuko erregistr
 
 Denbora errealeko APIarekin konektatzeko bi modu daude:
 
-- [zeharka](#connect-via-the-dynamics-365-customer-insights-connector), erabiliz [Dynamics 365 Customer Insights konektorea](https://docs.microsoft.com/connectors/customerinsights/)
+- [zeharka](#connect-via-the-dynamics-365-customer-insights-connector), erabiliz [Dynamics 365 Customer Insights konektorea](/connectors/customerinsights/)
 - [zuzenean](#connect-directly-to-the-real-time-api), kodearekin
 
 Bi moduek baldintza hauek betetzen dituzte:
@@ -66,13 +66,13 @@ Bi moduek baldintza hauek betetzen dituzte:
 
 ## <a name="connect-via-the-dynamics-365-customer-insights-connector"></a>Konektatu Dynamics 365 Customer Insights konektorea
 
-Denbora errealeko APIak dedikatu bateko datuak iren ditzake Power Platform konektorea [Dynamics 365 Customer Insights konektorea](https://docs.microsoft.com/connectors/customerinsights/), inolako koderik idatzi eta hedatu beharrik gabe.    
-Lotzaileak APIaren denbora errealeko ekintzak berak egin ditzake. Lizentzia balioduna behar duzu prima konektoreetarako. Informazio gehiagorako, ikusi [Power Apps eta Power Automate FAQ lizentziak](https://docs.microsoft.com/power-platform/admin/powerapps-flow-licensing-faq).
+Denbora errealeko APIak dedikatu bateko datuak iren ditzake Power Platform konektorea [Dynamics 365 Customer Insights konektorea](/connectors/customerinsights/), inolako koderik idatzi eta hedatu beharrik gabe.    
+Lotzaileak APIaren denbora errealeko ekintzak berak egin ditzake. Lizentzia balioduna behar duzu prima konektoreetarako. Informazio gehiagorako, ikusi [Power Apps eta Power Automate FAQ lizentziak](/power-platform/admin/powerapps-flow-licensing-faq).
 
-- Power Platform [Power Apps eta/edo Power Automate](https://docs.microsoft.com/connectors/)
-- Azure [Logic Aplikazioak](https://docs.microsoft.com/azure/connectors/apis-list)
+- Power Platform [Power Apps eta/edo Power Automate](/connectors/)
+- Azure [Logic Aplikazioak](/azure/connectors/apis-list)
 
-Fluxuak sortzeari buruzko xehetasun gehiago lortzeko, ikusi [Power Automate dokumentazioa](https://docs.microsoft.com/power-automate/).
+Fluxuak sortzeari buruzko xehetasun gehiago lortzeko, ikusi [Power Automate dokumentazioa](/power-automate/).
 
 ## <a name="connect-directly-to-the-real-time-api"></a>Konektatu zuzenean denbora errealeko APIarekin
 
