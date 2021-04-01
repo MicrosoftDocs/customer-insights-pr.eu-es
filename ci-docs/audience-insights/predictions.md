@@ -5,16 +5,16 @@ ms.date: 05/05/2020
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
-author: m-hartmann
-ms.author: mhart
-ms.reviewer: zacook
+author: zacookmsft
+ms.author: zacook
+ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 577232c7e901dfd54a195c3e9cfac5d1f0f866e6
-ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
+ms.openlocfilehash: 3342328b9eead9bdcb8b41f119a1d0a5823001c8
+ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5268257"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "5595886"
 ---
 # <a name="complete-your-partial-data-with-predictions"></a>Osatu zure datu partzialak iragarpenekin
 
@@ -31,7 +31,7 @@ Aurreikuspenek erraz iragarritako balioak sor ditzakezu bezeroaren ulermena hobe
 
 Zure erakundeak iragarpenen funtzioa erabili ahal izateko, ziurtatu baldintza hauek bete aurretik:
 
-1. Zure erakundeak instantzia bat du [konfiguratuta Common Data Service](https://docs.microsoft.com/ai-builder/build-model#prerequisites) zerbitzuan eta Customer Insights-en erakunde berean dago.
+1. Zure erakundeak instantzia bat du [konfiguratuta Common Data Service](/ai-builder/build-model#prerequisites) zerbitzuan eta Customer Insights-en erakunde berean dago.
 
 2. Zure ingurunea Common Data Service instantziari erantsita dago.
 
@@ -120,7 +120,7 @@ Aurreikuspen bat sortu ondoren, AI Builder-en eredua pertsonalizatu dezakezu zur
 
 4. Hautatu **Pertsonalizatu AI Builder-en**.
 
-5. Eguneratu zure eredua AI Builder-en. [Argibide gehiago AI builder ereduak kudeatzeari buruz](https://docs.microsoft.com/ai-builder/manage-model#retrain-and-republish-existing-models).
+5. Eguneratu zure eredua AI Builder-en. [Argibide gehiago AI builder ereduak kudeatzeari buruz](/ai-builder/manage-model#retrain-and-republish-existing-models).
 
 Zure iragarpenaren hurrengo exekutatuak sortu duzun eredu eguneratua erabiliko du.
 

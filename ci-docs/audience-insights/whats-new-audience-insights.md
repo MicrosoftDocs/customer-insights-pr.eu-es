@@ -1,7 +1,7 @@
 ---
 title: Eginbide berriak eta datozenak
 description: Ezaugarri berriei, hobekuntzei eta akatsak konpontzeko ezaugarriei buruzko informazioa.
-ms.date: 02/02/2021
+ms.date: 03/08/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -9,18 +9,18 @@ author: m-hartmann
 ms.author: mhart
 ms.reviewer: midevane
 manager: shellyha
-ms.openlocfilehash: 9183c8af4fb9f9f08ac63d8d0cd37c6868bba310
-ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
+ms.openlocfilehash: 96c0b871eeaaf0976e5c718f37f883f4410977dc
+ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5270417"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "5598416"
 ---
 # <a name="whats-new-in-the-audience-insights-capability-of-dynamics-365-customer-insights"></a>Dynamics 365 Customer Insights hartzaileen xehetasunei buruzko zerbitzuaren ezaugarri berriak
 
 [!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
 
-Gogotsu gaude gure eguneratze berrienak iragartzeko! Artikulu honek aurrebista publikoko eginbideak, aurrebistako funtzioak, erabilgarritasun orokorreko hobekuntzak, eta eginbideen eguneratzeak. Epe luzerako eginbide planak ikusteko, begiratu [Dynamics 365 eta Power Platform kaleratzeko planak](https://docs.microsoft.com/dynamics365/release-plans/).
+Gogotsu gaude gure eguneratze berrienak iragartzeko! Artikulu honek aurrebista publikoko eginbideak, aurrebistako funtzioak, erabilgarritasun orokorreko hobekuntzak, eta eginbideen eguneratzeak. Epe luzerako eginbide planak ikusteko, begiratu [Dynamics 365 eta Power Platform kaleratzeko planak](/dynamics365/release-plans/).
 
 Ondorengo bideoa ere ikus dezakezu azken sei hilabeteetan aurreikusitako gaitasunak ezagutzeko.
 
@@ -30,6 +30,40 @@ Eguneratzeak eskualdeen arabera banatzen ditugu. Beraz, eskualde batzuek beste b
 
 > [!TIP]
 > Bidali eta bozkatzeko eginbideak eskaerak eta produktuaren iradokizunak, joan [Dynamics 365 aplikazioaren ideiak atarira](https://experience.dynamics.com/ideas/categories/?forum=79a8c474-4e35-e911-a971-000d3a4f3343&forumName=Dynamics%20365%20Customer%20Insights).
+
+## <a name="february-2021-updates"></a>2021eko otsailaren eguneratzeak
+
+2021eko otsaileko eguneratzeak hainbat funtzio, errendimendu berritze eta akats konponketak biltzen ditu.
+
+#### <a name="extensibility"></a>Hedagarritasuna
+
+- **Esportatu segmentuak AdRoll-era**
+
+  Esportaziorako helmugak AdRoll barne hartzeko zabaldu ditugu. Segmentuak Customer Insights-etik AdRoll-eko ikusleetara esporta ditzakezu eta zure iragarkirako oinarri gisa erabil ditzakezu. Informazio gehiagorako, ikus [AdRoll-erako konektorea](export-adroll.md).
+
+#### <a name="segments"></a>Segmentuak
+ 
+- **Segmentu bikoiztua**
+  
+  Dauden segmentu berri bat sortzeko, orain segmentu bat bikoiztu eta segmentu bikoitza editatu dezakezu gehiago fintzeko. 
+
+- **Gehitu atributu osagarriak segmentu bati**
+
+  Orain atributuak sar ditzakezu zure segmentuko irteeran, nahiz eta atributu horiek bezeroaren profilekoak ez izan. Adibidez, sartu harpidetzaren IDak segmentu batean, bezero-entitatearekin M: 1 harremana duen harpidetzako entitatearen parte bada ere. Atributua bezeroaren entitatearekin erlazionatutako entitate bati badagokio, atributu hauek sar ditzakezu.  
+
+#### <a name="predictions"></a>Iragarpenak
+
+- **Sortu iragarpen produktuaren gomendioak**
+
+  Bezeroek zer erosteko interesa duten ulertzea negozioaren diru-sarrerak hobetzeko eta pertsonalizazioaren eta konpromisoaren bidez bezeroen leialtasuna lortzeko lehen urratsetako bat da. Zure bezeroaren interesekin bat ez datozen produktuentzako gomendioak emateak bezeroaren eta zure negozioaren arteko deskonektazio sentsazioa sor dezake eta, azken finean, bezero batek izan ditzakeen diru sarrera eta esperientzia orokorrak muga ditzake. 
+
+  Zure datuak erabiliz, etorkizunean zure bezeroek etorkizunean zer produktu eros ditzaketen aurreikuspenak sor ditzakezu. Informazio gehiagorako, ikusi [Produktuen gomendioa iragarpen](predict-product-recommendation.md).
+
+#### <a name="system-administration"></a>Sistemaren administrazioa
+
+- **Kopiatu inguruneak datu iturri mota gehiago onartzen ditu**
+
+  Administratzaileek ingurune konfigurazioak erakunde berdinean ingurune berri batera kopia ditzakete. Ezaugarri honek kopiatze ingurunearen funtzionaltasuna hedatzen du datu baseak oinarritzat hartuta Common Data Service datu-biltegia edo Common Data Model karpeta erabiltzen dira.
 
 ## <a name="january-2021-updates"></a>2021eko urtarrilaren eguneratzeak
 

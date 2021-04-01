@@ -2,19 +2,19 @@
 title: Esportatu Customer Insights datuak Azure Blob biltegira
 description: Ikasi Azure Blob biltegirako konexioa nola konfiguratu.
 ms.date: 09/18/2020
-ms.reviewer: philk
+ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
-author: m-hartmann
-ms.author: mhart
+author: phkieffer
+ms.author: philk
 manager: shellyha
-ms.openlocfilehash: ecacf20365e78ced8859dfa54b1b16cb923c00eb
-ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
+ms.openlocfilehash: 0986ee5caf5fa079994ca584fb2c4d9294ddb80b
+ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5269177"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "5596162"
 ---
 # <a name="connector-for-azure-blob-storage-preview"></a>Azure Blob biltegirako konektorea (aurrebista)
 
@@ -27,8 +27,8 @@ Gorde Customer Insights-eko datuak Azure Blob biltegian edo erabili datuak beste
 1. **Azure Blob biltegia** hautatu **Konfiguratu**.
 
 1. Sartu **Kontuaren izena**, **Kontuaren gakoa**, eta **edukiontzi** zure Azure Blob biltegirako kontuan.
-    - Azure Blob biltegiratze kontuaren izena eta kontuaren gakoa aurkitzeko informazio gehiago lortzeko, ikus [Kudeatu biltegiratze kontuen ezarpenak Azure atarian](https://docs.microsoft.com/azure/storage/common/storage-account-manage).
-    - Edukiontzia nola sortzen den jakiteko, ikus [Sortu edukiontzia](https://docs.microsoft.com/azure/storage/blobs/storage-quickstart-blobs-portal#create-a-container).
+    - Azure Blob biltegiratze kontuaren izena eta kontuaren gakoa aurkitzeko informazio gehiago lortzeko, ikus [Kudeatu biltegiratze kontuen ezarpenak Azure atarian](/azure/storage/common/storage-account-manage).
+    - Edukiontzia nola sortzen den jakiteko, ikus [Sortu edukiontzia](/azure/storage/blobs/storage-quickstart-blobs-portal#create-a-container).
 
 1. Eman zure destinoari izen ezagun bat **Bistaratu izena** eremu.
 
@@ -42,7 +42,7 @@ Esportatutako datuak zuk konfiguratutako Azure Blob biltegian gordetzen dira. Hu
 
 - Sistemak sortutako iturburuko entitate eta entitateetarako: `%ContainerName%/CustomerInsights_%instanceID%/%ExportDestinationName%/%EntityName%/%Year%/%Month%/%Day%/%HHMM%/%EntityName%_%PartitionId%.csv`
   - Adibidez: `Dynamics365CustomerInsights/CustomerInsights_abcd1234-4312-11f4-93dc-24f72f43e7d5/BlobExport/HighValueSegment/2020/08/24/1433/HighValueSegment_1.csv`
-- Esportatutako entitateentzako model.json %ExportDestinationName% mailan egongo da
+- Model.json esportatutako entitateetarako mantenduko dira %ExportDestinationName% mailan
   - Adibidez: `Dynamics365CustomerInsights/CustomerInsights_abcd1234-4312-11f4-93dc-24f72f43e7d5/BlobExport/model.json`
 
 ## <a name="export-the-data"></a>Esportatu datuak

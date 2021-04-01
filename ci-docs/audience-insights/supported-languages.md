@@ -1,34 +1,34 @@
 ---
 title: Hartzaileen xehetasunetan onartutako hizkuntzak
 description: Hizkuntzaren laguntza ulertu eta konfiguratu.
-ms.date: 04/27/2020
+ms.date: 02/26/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
-author: m-hartmann
-ms.author: mhart
-ms.reviewer: philk
+author: pkieffer
+ms.author: philk
+ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 84c4011e61058729a0ed0b7123df8a9227b0f083
-ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
+ms.openlocfilehash: cbf37b55ea6c54d912200a1f7167126925b35443
+ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5268165"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "5595457"
 ---
 # <a name="supported-languages-for-audience-insights-capability"></a>Hartzaileen xehetasunen gaitasunean onartutako hizkuntzak
 
-Dynamics 365 Customer Insights-en hartzaileen xehetasunen gaitasunak hainbat hizkuntza onartzen ditu. Gai honek eskuragarri dauden hizkuntzak zerrendatzen ditu eta haien arteko aldaketak egiteko laguntza eskaintzen du, baita itzulitako edukien ikuspegi orokorra ere.
+Ikusleen ikuspegia Dynamics 365 Customer Insights hizkuntza askotara itzulita dago. Hurrengo zerrendan eskuragarri dauden hizkuntzak eta itzulitakoari buruzko informazioa daude. Hizkuntza ezarpenak aldatzeko moduari buruzko informazio gehiago ere aurki dezakezu. 
 
 ## <a name="languages"></a>Hizkuntzak
 
 | Hizkuntzaren izena (Ingelesa)|  Hizkuntzaren izena (jatorrizko hizkuntza) |
 | ------------- | ------------- |
 | Euskara | euskara |
-| Bulgariera | Български |
+| Bulgariera | български |
 | Katalana | català |
 | Txinera (idazkera sinplifikatua) | 中文(简体) |
-| Txinera (Tradizionala) | 中文(繁體) |
+| Txinera (idazkera tradizionala) | 中文(繁體) |
 | Kroaziera | hrvatski |
 | Txekiera | čeština |
 | Daniera | dansk |
@@ -39,23 +39,23 @@ Dynamics 365 Customer Insights-en hartzaileen xehetasunen gaitasunak hainbat hiz
 | Frantsesa | français |
 | Galegoa | galego |
 | Alemana | Deutsch |
-| Grekoa | Ελληνικά |
+| Greziera | Ελληνικά |
 | Hindia | हिंदी |
 | Hungariera | magyar |
-| Indonesiera | Bahasa Indonesia |
+| Indonesiera | Indonesia |
 | Italiera | italiano |
 | Japoniera | 日本語 |
-| Kazakhera | Қазақ |
+| Kazakhera | қазақ тілі |
 | Koreera | 한국어 |
 | Letoniera | latviešu |
 | Lituaniera | lietuvių |
-| Malaysiera | Bahasa Melayu |
-| Norvegiera (Bokmål) | norsk (bokmål) |
-| Poloniera | Polski |
+| Malaysiera | Melayu |
+| Norvegiera (Bokmål) | norsk bokmål |
+| Poloniera | polski |
 | Portugesa (Brasil) | português |
 | Portugesa (Portugal) | português |
 | Errumaniera | română |
-| Errusiera | Русский |
+| Errusiera | pусский |
 | Serbiera (Zirilikoa) | српски |
 | Serbiera (latinoa) | srpski |
 | Eslovakiera | slovenčina |

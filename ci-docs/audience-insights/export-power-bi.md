@@ -2,19 +2,19 @@
 title: Power BI konektorea
 description: Ikusi nola erabili laguntzailearen estudioa Dynamics 365 Customer Insights konektorea Power BI-n.
 ms.date: 09/21/2020
-ms.reviewer: sthe
+ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
-author: m-hartmann
-ms.author: mhart
+author: stefanie-msft
+ms.author: sthe
 manager: shellyha
-ms.openlocfilehash: 0607a4644ac7d7beb19e4faecf012efcd197d48c
-ms.sourcegitcommit: 0260ed244b97c2fd0be5e9a084c4c489358e8d4f
+ms.openlocfilehash: e43e2f9dbc84ebfbf2154990a752740f973296cb
+ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "5477073"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "5596024"
 ---
 # <a name="connector-for-power-bi-preview"></a>Konektorea Power BI-rako (aurrebista)
 
@@ -23,7 +23,7 @@ Sortu zure datuentzako bistaratzeak Power BI Desktop-ekin. Sortu ikuspegi gehiag
 ## <a name="prerequisites"></a>Aurrebaldintzak
 
 - Bezeroen profil bateratuak dituzu.
-- Bertsioaren azken bertsioa [Microsoft Power BI Desktop](https://powerbi.microsoft.com/desktop/) zure ordenagailuan instalatuta dago. [Lortu hauei buruzko informazio gehiago: Power BI Desktop](https://docs.microsoft.com/power-bi/desktop-what-is-desktop)
+- Bertsioaren azken bertsioa [Microsoft Power BI Desktop](https://powerbi.microsoft.com/desktop/) zure ordenagailuan instalatuta dago. [Lortu hauei buruzko informazio gehiago: Power BI Desktop](/power-bi/desktop-what-is-desktop)
 
 ## <a name="configure-the-connector-for-power-bi"></a>Konfiguratu konektorea Power BI
 
@@ -47,7 +47,7 @@ Sortu zure datuentzako bistaratzeak Power BI Desktop-ekin. Sortu ikuspegi gehiag
 
 ## <a name="large-data-sets"></a>Datu multzo handiak
 
-Customer Insights konektorea Power BI bezeroentzako milioi bat profil dituzten datu multzoetarako lan egiteko diseinatuta dago. Datu multzo handiagoak inportatzeak funtziona dezake, baina denbora asko behar da. Gainera, prozesuak denbora-muga izan dezake Power BI mugak. Informazio gehiagorako, ikus [Power BI: Datu multzo handien gomendioak](https://docs.microsoft.com/power-bi/admin/service-premium-what-is#large-datasets). 
+Customer Insights konektorea Power BI bezeroentzako milioi bat profil dituzten datu multzoetarako lan egiteko diseinatuta dago. Datu multzo handiagoak inportatzeak funtziona dezake, baina denbora asko behar da. Gainera, prozesuak denbora-muga izan dezake Power BI mugak. Informazio gehiagorako, ikus [Power BI: Datu multzo handien gomendioak](/power-bi/admin/service-premium-what-is#large-datasets). 
 
 ### <a name="work-with-a-subset-of-data"></a>Lan egin datu azpimultzo batekin
 
@@ -70,4 +70,3 @@ Bikoiztutako harremanak identifikatu eta kendu ditzakezu.
 Bikoiztutako harremanak kendu ondoren, saiatu konfiguratzen Power BI konektorea berriro. Ingurumena erabilgarri egon beharko litzateke orain.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
-

@@ -1,133 +1,137 @@
 ---
 title: Lotu entitateak datuak bateratzeko
 description: Lotu entitateak bezeroen profil bateratuak sortzeko.
-ms.date: 10/14/2020
+ms.date: 02/23/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: tutorial
-author: m-hartmann
-ms.author: mhart
-ms.reviewer: adkuppa
+author: adkuppa
+ms.author: adkuppa
+ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 05afd17b7f1b34f7f24a8fa8cb2dc32c1649d40f
-ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
+ms.openlocfilehash: 2eb84c44aa530346a73ba720106734d705a45f23
+ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5267463"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "5595549"
 ---
 # <a name="match-entities"></a>Batu entitateak
 
-Mapen fasea amaitu ondoren, entitateekin bat egiteko prest zaude. Binakako faseak zure datu multzoak bezeroaren profil bateratutako datu multzoa nola konbinatu zehazten du. Partida faseak gutxienez eskatzen du [mapatutako bi erakunde](map-entities.md).
+Binakako faseak zure datu multzoak bezeroaren profil bateratutako datu multzoa nola konbinatu zehazten du. Osatu ondoren [mapa urratsa](map-entities.md) datuak bateratzeko prozesuan, zure entitateekin bat egiteko prest zaude. Partida faseak gutxienez eskatzen du mapatutako bi erakunde.
+
+Partidaren orrialdeak hiru atal ditu: 
+- Bat datozen erregistro kopurua laburbiltzen duten funtsezko metrikak
+- Partiduen ordena eta arauak entitateen arteko bat etortzeko
+- Partida entitateen birplikazio arauak
 
 ## <a name="specify-the-match-order"></a>bat etortzearen ordena zehaztu
 
 Joan **Datuak** > **Bateratu** > **Bat etorri** aukerara eta hautatu **Ezarri ordena** bat-etortzearen fasea hasteko.
 
-Partida bakoitzak bi entitate edo gehiago entitate bakarrean elkartzen ditu eta bezero bakoitzaren erregistro bakarra jarraitzen du. Hurrengo adibidean, hiru entitate aukeratu ditugu: **HarremanetarakoCSV: TestData** gisa **Lehen** Erakunde, **WebAccountCSV: TestData** gisa **2. entitatea**, eta **CallRecordSmall: TestData** gisa **3. entitatea**. Aukeren goiko diagramak partidaren ordena nola gauzatuko den azaltzen du.
+Partida bakoitzak bi entitate edo gehiago bateratzen ditu entitate bakar eta bateratu batean. Aldi berean, bezeroaren erregistro bakarrak gordetzen ditu. Adibidez, bi entitate hautatu ditugu: **eCommerce: eCommerceContacts** lehen entitate gisa eta **LoyaltyScheme: loyCustomers** bigarren entitate gisa. Entitateen ordenak sistema zein erregistroekin bat egiten saiatuko den zehazten du.
 
-> [!div class="mx-imgBorder"]
-> ![Editatu datuekin bat datozen ordena](media/configure-data-match-order-edit-page.png "Editatu datuekin bat datozen ordena")
+:::image type="content" source="media/match-page.png" alt-text="Partiduen orrialdearen pantaila-argazkia datuak bateratzeko prozesuaren bateratu eremuan.":::
   
-The **Lehen** entitatearekin bat dator **2. entitatea**. Lehen partidaren emaitza den datu-multzoarekin bat dator **3. entitatea**.
-Adibide honetan bi partida baino ez ditugu aukeratu, baina sistemak gehiago onartzen du.
+Entitate nagusia *eCommerce: eCommerceContacts* hurrengo entitatearekin bat dator *LoyaltyScheme: loyCustomers*. Partiduen lehen urratsetik ateratako datu multzoa hurrengo entitatearekin bat dator bi entitate baino gehiago badituzu.
 
 > [!IMPORTANT]
-> Aukeratzen duzun entitatea **Lehen** entitatea zure datu multzo nagusia bateratzeko oinarria izango da. Partida fasean hautatzen diren entitate osagarriak gehituko zaizkie entitate honi. Aldi berean, horrek ez du esan nahi erakunde bateratuak barne hartuko duenik *guztiak* entitate honetan sartutako datuak.
+> Aukeratzen duzun entitatea lehen entitatea zure datu multzo nagusia bateratzeko oinarria izango da. Partida fasean hautatzen diren entitate osagarriak gehituko zaizkie entitate honi. Horrek ez du esan nahi erakunde bateratuak sartuko duenik *guztiak* entitate honetan sartutako datuen artean.
 >
 > Bi entitateren hierarkia aukeratzen lagun dezaketen bi gogoeta daude:
 >
-> - Zein entitate jotzen duzu zure bezeroei buruzko datu osatuena eta fidagarriena izatea?
-> - Identifikatu berri duzun entitateak baditu beste entitate batzuek (adibidez, izena, telefono zenbakia edo helbide elektronikoa) partekatutako atributuak? Bestela, aukeratu zure bigarren entitate fidagarriena.
+> - Aukeratu entitate nagusia zure bezeroei buruzko profileko datu osatuena eta fidagarriena duen entitatea.
+> - Aukeratu beste entitate batzuekin (adibidez, izena, telefono zenbakia edo helbide elektronikoa) beste atributu batzuk dituzten entitatea lehen mailako entitate gisa.
 
-Aukeratu **Egina** zure partidaren ordena gordetzeko.
+Partiduen ordena zehaztu ondoren, definitutako partidu bikoteak ikusiko dituzu **Erregistroen xehetasunak** atalean **Datuak** > **Bat egin** > **Partidua**. Gako-metrikak hutsik egongo dira partida prozesua amaitu arte.
 
-## <a name="define-rules-for-your-first-match-pair"></a>Definitu zure lehen bikote bikotearen arauak
+## <a name="define-rules-for-match-pairs"></a>Partiduen bikoteen arauak zehaztu
 
-Partiduen ordena zehaztu ondoren, zehaztutako partiduak ikusiko dituzu **Bat-etortzea** orria. Pantailaren goiko aldean fitxak hutsik egongo dira bat datozen ordena exekutatu arte.
+Bat egiten duten arauek entitate pare bat lotuko den logika zehazten dute.
 
-> [!div class="mx-imgBorder"]
-> ![Definitu arauak](media/configure-data-match-need-rules.png "Definitu arauak")
+**Arauak behar ditu** Entitate baten izenaren ondoan abisatzeak iradokitzen du ez dela bat datorren araurik zehazten pare batentzat. 
 
-The **Beharrak arauak** abisuak iradokitzen du ez dela partida pareko arau bat definitzen. Bat egiten duten arauek entitate pare bat lotuko den logika zehazten dute.
+:::image type="content" source="media/match-rule-add.png" alt-text="Partiduen erregistroaren xehetasunen atalaren pantaila-argazkia kontrolarekin nabarmendutako arauak gehitzeko.":::
 
-1. Zure lehenengo araua zehazteko, ireki tekla **Arauaren definizioa** panela bat datorren bat datorren lerroan hautatutako partiden taulan (1) eta ondoren hautatuta **Sortu arau berria** (2).
+1. Aukeratu **Gehitu arauak** entitate baten menpe **Erregistroen xehetasunak** partida arauak definitzeko atala.
 
-   > [!div class="mx-imgBorder"]
-   > ![Sortu arau berria](media/configure-data-match-new-rule2.png "Sortu arau berria")
+1. Hurrengoan **Sortu araua** panelean, konfiguratu arauaren baldintzak.
 
-2. Sarbidean **Editatu araua** panela, konfiguratu arau horren baldintzak. Baldintza bakoitza derrigorrezko hautapenak biltzen dituzten bi errenkadek adierazten dute.
+   :::image type="content" source="media/match-rule-conditions.png" alt-text="Irekitako partida arau baten pantaila-argazkia baldintzak gehituta.":::
 
-   > [!div class="mx-imgBorder"]
-   > ![Arau-panel berria](media/configure-data-match-new-rule-condition.png "Arau-panel berria")
+   - **Entitatea / Eremua (lehen ilara)**: Aukeratu erlazionatutako entitate bat eta atributu bat bezeroarentzako litekeena den erregistro propietatea zehazteko. Adibidez, telefono zenbaki bat edo helbide elektronikoa. Saihestu jarduera motako atributuen arabera parekatzea. Esate baterako, erosketa IDak ez du bat-etortzerik izango beste erregistro mota batzuetan.
 
-   Entitatea / Eremua (lehenengoa) - Lehenengo bikote bikotearen entitatearekin bat egiteko erabiliko den atributua. Adibidez, telefono zenbaki bat edo helbide elektronikoa izan daitezke. Aukeratu bezeroarentzat bakarra izango den atributu bat.
+   - **Entitatea / eremua (bigarren ilara)**: Aukeratu lehen errenkadan zehaztutako entitatearen atributuarekin erlazionatutako atributu bat.
 
-   > [!TIP]
-   > Saihestu ez datozenekin bat egiten jarduera motako atributuen arabera. Beste modu batera esanda, atributu bat jarduera dela dirudi, irizpide eskasak izan litezke.  
+   - **Normalizatu**: Aukeratu hautatutako atributuen normalizazio aukera hauetatik. 
+     - Espazio zuria: espazio guztiak ezabatzen ditu. *Kaixo   Mundua* bihurtzen da *KaixoMundua*.
+     - Sinboloak: sinbolo eta karaktere berezi guztiak kentzen ditu. *Burua eta Sorbalda* bihurtzen da *HeadShoulder*.
+     - Testua minuskulara: karaktere guztiak minuskulara bihurtzen ditu. *MAIUSU GUZTIAK eta Izenburua* bihurtzen da *maiuskula guztiak eta izenburua*.
+     - Unicode ASCII: Unicode notazioa ASCII karaktere bihurtzen du. */u00B2* bihurtzen da *2*.
+     - Zenbakiak: beste zenbaki sistema batzuk, hala nola zenbaki erromatarrak, zenbaki arabiar bihurtzen ditu. *VIII* bihurtzen *8*.
+     - Mota semantikoak: izenak, izenburuak, telefono zenbakiak, helbideak eta abar normalizatzen ditu. 
 
-   Entitatea / Eremua (bigarrena) - Bigarren bikote bikotearen entitatearekin bat egiteko erabiliko den atributua.
+   - **Zehaztasuna**: zehaztu baldintza hau aplikatzeko zehaztasun maila. 
+     - **Oinarrizkoa**: aukeratu *Baxua*, *Ertaina*, *Altua*, eta *Zehazki*. Aukeratu **zehatza** Ehuneko 100 bat datozen erregistroak soilik lotzeko. Hautatu beste maila bat ehuneko 100 berdin-berdina ez duten erregistroekin bat etor dadin.
+     - **Pertsonalizatua**: ezarri erregistroek bat etorri behar duten ehunekoa. Sistemak atalase hori gainditzen duten erregistroak baino ez ditu bat etorriko.
 
-   Normalizatu - **Normalizazio metodoa**: Hautatutako atributuetarako hainbat normalizazio aukera daude. Adibidez, puntuazioa kentzea edo espazioak kentzea
+1. Eman **Izena** araurako.
 
-   Erakundearen izenak normalizatzeko (Aurrebista), hauta dezakezu **Mota (Telefonoa, Izena, Erakundea)**
+1. [Gehitu baldintza gehiago](#add-conditions-to-a-rule) edo hautatu **Eginda** araua amaitzeko.
 
-   > [!div class="mx-imgBorder"]
-   > ![Normalizazio-B2B](media/match-normalization-b2b.png "Normalizazio-B2B")
+1. Aukeran [gehitu arau gehiago](#add-rules-to-a-match-pair).
 
-   Zehaztasun maila - Baldintza honetarako erabiliko den zehaztasun maila. Partiduen egoera baterako zehaztasun maila ezartzeak bi mota izan ditzake: **Oinarrizko** eta **pertsonalizatua**.  
-   - Oinarrizkoa: lau aukera daude: baxua, ertaina, altua eta zehatza. Aukeratu **zehatza** Ehuneko 100 bat datozen erregistroak soilik lotzeko. Hautatu beste maila bat ehuneko 100 berdin-berdina ez duten erregistroekin bat etor dadin.
-   - Pertsonalizatua: erabil ezazu graduatzailea erregistroek bat egin behar duten edo sartu behar duten balio portzentaia pertsonalizatzeko **pertsonalizatua** eremu. Sistemak atalase hau gainditzen duten erregistroak soilik batuko ditu konbinatutako bikote bikote gisa. Labaingaiaren balioak 0 eta 1 artean daude. Beraz, 0,64k ehuneko 64 adierazten du.
+1. Aldaketak aplikatzeko, hautatu **Gorde**.
 
-3. Hautatu **Egina** araua gordetzeko.
+### <a name="add-conditions-to-a-rule"></a>Gehitu baldintzak araura
 
-### <a name="add-multiple-conditions"></a>Gehitu hainbat baldintza
+Entitateekin parekatzeko atributuek baldintza anitz betetzen badituzte, gehitu baldintza gehiago parekatze arau bati. Baldintzak AND operadore logikoarekin lotuta daude eta, beraz, baldintza guztiak betetzen badira soilik exekutatzen dira.
 
-Zure entitateekin bat etor dadin baldintza ugari betetzen badira soilik, gehitu AND eragile baten bidez lotzen diren baldintza gehiago.
+1. Joan **Datuak** > **Bat egin** > **Partidua** eta hautatu **Editatu** baldintzak gehitu nahi dituzun arauan.
 
-1. Sarbidean **Editatu araua** hautatu panela **Gehitu baldintza**. Baldintzak ezabatu ditzakezu lehendik dagoen baldintza baten kentzeko botoia hautatuta.
+1. Sarbidean **Editatu araua** hautatu panela **Gehitu baldintza**.
 
-2. Hautatu **Egina** araua gordetzeko.
+1. Hautatu **Egina** araua gordetzeko.
 
-## <a name="add-multiple-rules"></a>Gehitu hainbat arau
+### <a name="add-rules-to-a-match-pair"></a>Gehitu arauak partida bikoteari
 
-Baldintza bakoitza atributu pare bakar bati aplikatzen zaio, eta arauek baldintza multzoak adierazten dituzte. Zure entitateak atributu multzo desberdinekin parekatzeko, arau gehiago gehi ditzakezu.
+Partiduen arauek baldintza multzoak adierazten dituzte. Entitateak batzeko baldintzetan oinarrituz atributu anitzetan, gehitu arau gehiago
 
-1. Hartzaileei buruzko xehetasunetan, joan hona: **Datuak** > **Bat egin** > **Bat etorri**.
+1.  Joan **Datuak** > **Bat egin** > **Partidua** eta hautatu **Gehitu araua** entitatean gehitu nahi dituzun arauan.
 
-2. Hautatu eguneratu nahi duzun entitatea eta hautatu **Gehitu arauak**.
-
-3. Jarraitu prozedura deskribatutako moduan [Definitu zure lehen bikote bikotearen arauak](#define-rules-for-your-first-match-pair).
+2. Jarraitu urratsak [Partiduen bikoteen arauak zehaztu](#define-rules-for-match-pairs).
 
 > [!NOTE]
-> Arau ordena garrantzitsua da. Bat egiten duen algoritmoa zure lehenengo araua oinarri hartuta bat egiten saiatzen da eta bigarren araura jarraitzen du soilik lehenengo arauaren menpean identifikatu ez bada.
+> Arauen ordena garrantzitsua da. Bat datorren algoritmoa zure lehen arauaren arabera bat egiten saiatzen da eta bigarren araura jarraitzen du lehen arauarekin bat-etortzerik identifikatu ez bada bakarrik.
 
 ## <a name="define-deduplication-on-a-match-entity"></a>Definitu bikoiztuak kentzea bat datorren entitate batean
 
-Goiko ataletan azaldutako entitateen arteko lotura arauak zehaztearekin batera, bikoiztuak kentzearen arauak ere zehaztu ditzakezu. *Bikoiztuak kentzea* prozesu bat da. Erregistro bikoiztuak identifikatzen ditu, erregistro bakarrean konbinatzen ditu eta jatorrizko erregistro guztiak bateratutako erregistro honekin lotzen ditu konbinatutako erregistroarena ez den beste ID batzuekin.
+Horrez gain [entitateen arteko partida arauak](#define-rules-for-match-pairs), desduplikazio arauak ere zehaz ditzakezu. *Desplikazioa* erregistroak parekatzerakoan beste prozesu bat da. Erregistro bikoiztuak identifikatzen ditu eta erregistro bakarrean bateratzen ditu. Iturburu erregistroak bateratutako erregistroarekin lotzen dira ID ordezkoekin.
 
-Erregistro bikoiztu bat identifikatu ondoren, erregistro hori entitateen arteko bat-etortze prozesuan erabiliko da. Bikoiztuak ketzea entitate mailan ezartzen da eta bat egite prozesuan erabilitako entitate guztiei aplika dakieke.
+Bikoiztutako erregistroak entitateen arteko bat-etortze prozesuan erabiliko da. Desplikazioa entitate indibidualetan gertatzen da eta partida bikoteetan erabilitako entitate guztiak konfigura daitezke.
+
+Bikoiztuak kentzeko arauak zehaztea ez da derrigorrezkoa. Horrelako araurik konfiguratzen ez bada, sistemak definitutako arauak aplikatuko dira. Erregistro guztiak erregistro bakarrean konbinatzen dituzte entitatearen datuak entitateen arteko parekatzera pasa aurretik errendimendu hobea lortzeko.
 
 ### <a name="add-deduplication-rules"></a>Gehitu bikoiztuak kentzeko arauak
 
-1. Hartzaileei buruzko xehetasunetan, joan hona: **Datuak** > **Bat egin** > **Bat etorri**.
+1. Joan **Datuak** > **Bateratu** > **Bat egin**.
 
-1. **Konbinatutako bikoiztuak** atalean, hautatu **Ezarri entitateak**.
+1. **Konbinatutako bikoiztuak** atalean, hautatu **Ezarri entitateak**. Desduplikazio arauak dagoeneko sortuta badaude, hautatu **Editatu**.
 
-1. **Konbinatu hobespenak** atalean, hautatu bikoiztuak kentzea aplikatu nahi diezun entitateak.
+1. **Konbinatu hobespenak** panelean, hautatu bikoiztuak kentzea exekutatu nahi diezun entitateak.
 
-1. Zehaztu erregistro bikoiztuak nola bateratu eta aukeratu hiru bateratze aukeretako bat:
-   - *Beteen daudenak* : Betetako atributu gehien dituen erregistroa identifikatzen du erregistro nagusi gisa. Hori da konbinatzeko aukera lehenetsia.
-   - *Berrienak*: erregistro nagusia identifikatzen du berritasunen arabera. Berritasuna definitzeko data edo zenbakizko eremua behar du.
-   - *Zaharrenak*: erregistro nagusia identifikatzen du zahartasunaren arabera. Berritasuna definitzeko data edo zenbakizko eremua behar du.
+1. Zehaztu erregistro bikoiztuak nola konbinatu eta aukeratu hiru bateratze aukeretako bat:
+   - **Beteen daudenak** : Betetako atributu eremueak gehien dituen erregistroa identifikatzen du erregistro nagusi gisa. Hori da konbinatzeko aukera lehenetsia.
+   - **Berrienak**: erregistro nagusia identifikatzen du berritasunen arabera. Berritasuna definitzeko data edo zenbakizko eremua behar du.
+   - **Zaharrenak**: erregistro nagusia identifikatzen du zahartasunaren arabera. Berritasuna definitzeko data edo zenbakizko eremua behar du.
  
    > [!div class="mx-imgBorder"]
    > ![Bikoiztuak kentzeko arauak, 1. urratsa](media/match-selfconflation.png "Bikoiztuak kentzeko arauak, 1. urratsa")
  
-1. Entitateak hautatuta eta haien konbinatze-hobespenak zehaztutakoan, hautatu **Sortu arau berria** entitate mailan bikoiztuak kentzeko arauak definitzeko.
-   - **Aukeratu eremua** aukerak iturburuko datuen bikoiztuak nahi dituzun entitate horretatik eskuragarri dauden eremu guztiak zerrendatzen ditu.
-   - Zehaztu normalizazio- eta zehaztasun-ezarpenak, entitate gurutzatuen bat-etortzean zehaztutako antzera.
-   - Baldintza osagarriak defini ditzakezu **Gehitu baldintza** aukeratuz.
+1. Entitateak hautatuta eta haien konbinatze-hobespenak zehaztutakoan, hautatu **Gehitu araua** entitate mailan bikoiztuak kentzeko arauak definitzeko.
+   - **Aukeratu eremua** entitate horretatik eskuragarri dauden eremu guztiak zerrendatzen ditu. Aukeratu eremuak bikoiztuak diren egiaztatu nahi duzun eremua. Aukeratu bezero bakoitzarentzat litekeena den eremua. Adibidez, helbide elektronikoa edo izena, hiria eta telefono zenbakiaren konbinazioa.
+   - Zehaztu normalizazio eta zehaztasun ezarpenak.
+   - Definitu baldintza gehiago **Gehitu baldintza** aukeratuz.
  
    > [!div class="mx-imgBorder"]
    > ![Bikoiztuak kentzeko arauak, 2. urratsa](media/match-selfconflation-rules.png "Bikoiztuak kentzeko arauak, 2. urratsa")
@@ -138,28 +142,13 @@ Erregistro bikoiztu bat identifikatu ondoren, erregistro hori entitateen arteko 
 
 1. Irabazle erregistro hori entitateen arteko bat-etortzeari pasatzen zaio, irabazle ez diren erregistroekin batera (adibidez, ID alternatiboak) bat-etortzeko kalitatea hobetzeko.
 
-1. Beti bat datoz eta inoiz ez datoz bat bikoiztuak kentzeko arauen gainidazteak bat-etortze arau pertsonalizatuak. Bikoztuak kentzeko arau batek bat datozen erregistroak identifikatzen baditu eta bat datorren arau pertsonalizatua erregistro horiekin inoiz bat ez etortzeko ezarrita badago, bi erregistro horiek ez dira bat etorriko.
+1. Partiduen arau pertsonalizatuek definitutako desduplikazio arauak gainidatzi egiten dituzte. Bikoztuak kentzeko arau batek bat datozen erregistroak identifikatzen baditu eta bat datorren arau pertsonalizatua erregistro horiekin inoiz bat ez etortzeko ezarrita badago, bi erregistro horiek ez dira bat etorriko.
 
-1. Bat egite prozesua exekutatu ondoren, bikoiztuak kentzeko prozesuaren estatistikak ikusiko dituzu.
-   
-> [!NOTE]
-> Bikoiztuak kentzeko arauak zehaztea ez da derrigorrezkoa. Horrelako araurik konfiguratzen ez bada, sistemak definitutako arauak aplikatuko dira. Balio konbinazio bera (bat-etortze zehatza) gako nagusitik eta bat datozen arauetako eremuak erregistro bakarrean partekatzen dituzten erregistro guztiak biltzen dituzte entitateen datuak entitateen arteko loturari errendimendu hobea eta sistemaren ongizatea lortzeko.
+1. Ondoren, [exekutatuz bat-egite prozesua](#run-the-match-process), bikoiztuak kentzeko prozesuaren estatistikak ikusiko dituzu gako neurketen lauzetan.
 
-## <a name="run-your-match-order"></a>Egin zure partidaren eskaera
+### <a name="deduplication-output-as-an-entity"></a>Irteerako bikoiztuak desegiteko entitate gisa
 
-Bat-etortze arauak definitu ondoren, entitateen arteko bat-etortzea eta bikoiztuak kentzeko arauak barne, bat-egiteko eskaera exekutatu dezakezu. Gainean **Bat-etortzea** orria, hautatu **Exekutatu** prozesua hasteko. Bat egiten duen algoritmoak denbora batzuk behar izan ditu osatzeko. Ezin dituzu propietateak aldatu **Bat-etortzea** orria partidako prozesua amaitu arte. Bertan sortu zen bezeroaren profil bateratuko entitatea aurkituko duzu **erakundeak** orria. Zure bezero erakunde bateratua deitzen da **ConflationMatchPairs: CustomerInsights**.
-
-Aldaketa gehigarriak egiteko eta pausoa berriro egiteko, aurrerapen bateratzea bertan behera utzi dezakezu. Aukeratu **Freskagarria ...** testua eta hautatu **Lana bertan behera utzi** behean agertzen den alboko panelean.
-
-Partiduen prozesua amaitutakoan, **Freskagarria ...** testua aldatu egingo da **Arrakastatsua** eta orrialdearen funtzionalitate guztiak berriro erabil ditzakezu.
-
-Lehen partidaren prozesuak entitate maisu bateratu bat sortzen du. Ondorengo norgehiagoka guztiek entitate horren hedapena ekarri dute.
-
-> [!TIP]
-> Zereginen/prozesuen [sei egoera mota](system.md#status-types) daude. Gainera, prozesu gehienak [downstream-eko beste prozesu batzuen mende daude](system.md#refresh-policies). Aukeratu prozesu baten egoera, egon zen lan osoaren aurrerapen xehetasunak ikusteko. Aukeratu ondoren **Ikusi xehetasunak** lanaren zereginetako baterako, informazio osagarria aurkituko duzu: prozesatzeko denbora, azken prozesatze data eta zereginarekin lotutako akats eta abisu guztiak.
-
-## <a name="deduplication-output-as-an-entity"></a>Irteerako bikoiztuak desegiteko entitate gisa
-Entitate gurutzatuen parekatze gisa sortutako entitate nagusi bateratuaz gain, bikoiztuak desegiteko prozesuak entitate berri bat sortzen du partidu agindutik bikoiztuak desegiteko erregistroak identifikatzeko. Entitate hauek **ConflationMatchPairs:CustomerInsights** balioarekin batera **Sistema** atalean **Entitateak** orrian, **Deduplication_Datasource_Entity** izenarekin.
+Desplikazio prozesuak entitate berri bat sortzen du entitate bakoitzarentzako pareko bikoteetatik desplikatutako erregistroak identifikatzeko. Entitate hauek **ConflationMatchPairs:CustomerInsights** balioarekin batera **Sistema** atalean **Entitateak** orrian, **Deduplication_DataSource_Entity** izenarekin.
 
 Bikoiztuak desegiteko irteerako entitate batek informazio hau dauka:
 - IDak eta gakoak
@@ -168,77 +157,71 @@ Bikoiztuak desegiteko irteerako entitate batek informazio hau dauka:
   - Deduplication_WinnerId: eremu honek identifikatutako talde edo klusterren irabazlearen IDa dauka. Deduplication_WinnerId erregistroaren gako nagusiaren balioaren berdina bada, erregistroa irabazle erregistroa dela esan nahi du.
 - Bikoiztuak desegiteko arauak definitzeko erabiltzen diren eremuak.
 - Arau eta Puntuazio eremuak bikoiztuak desegiteko arauetatik zein aplikatu den eta bat datorren algoritmoak emandako puntuazioa adierazteko.
+   
+## <a name="run-the-match-process"></a>Bat-egite prozesua burutu
+
+Bat-etortze arauak konfiguratutakoak, entitateen arteko bat-etortzea eta bikoiztuak kentzeko arauak barne, bat-egiteko prozesua exekutatu dezakezu. 
+
+Joan **Datuak** > **Bateratu** > **Bat egin** eta hautatu **Korrika egin** prozesua hasteko. Bat datorren algoritmoak denbora pixka bat behar du osatzeko eta ezin duzu konfigurazioa aldatu osatu arte. Aldaketak egiteko, ezezta dezakezu exekutatzea. Aukeratu lanaren egoera eta hautatu **Utzi lana** gainean **Aurrerapenaren xehetasunak** panela.
+
+Exekuzio arrakastatsuaren emaitza, bezeroaren profileko entitate bateratua, aurkituko duzu **Entitateak** orrialdea. Zure bezero bateratutako entitateari deitzen zaio **Bezeroak** hurrengoan **Profilak** atala. Partida arrakastatsuaren lehenengo lasterketak bateratua sortzen du *Bezeroa* entitatea. Ondorengo partida guztiekin entitate hori zabaltzen da.
+
+> [!TIP]
+> Zereginen/prozesuen [sei egoera mota](system.md#status-types) daude. Gainera, prozesu gehienak [downstream-eko beste prozesu batzuen mende daude](system.md#refresh-policies). Aukeratu prozesu baten egoera, egon zen lan osoaren aurrerapen xehetasunak ikusteko. Aukeratu ondoren **Ikusi xehetasunak** lanaren zereginetako baterako, informazio osagarria aurkituko duzu: prozesatzeko denbora, azken prozesatze data eta zereginarekin lotutako akats eta abisu guztiak.
 
 ## <a name="review-and-validate-your-matches"></a>Berrikusi eta balioztatu partiduak
 
-Ebaluatu zure bikote bikoteen kalitatea eta findu:
+Joan **Datuak** > **Bateratu** > **Bat egin** zure bikoteen kalitatea ebaluatzeko eta beharrezkoa izanez gero hobetzeko.
 
-- Gainean **Bat-etortzea** orrialdean, bi fitxak aurkituko dituzu zure datuei buruzko hasierako ikuspegi erakusten dutenak.
+Orriaren goialdeko fitxek gako-metrikak erakusten dituzte, bat datozen erregistroen eta bikoiztuen kopurua laburbilduz.
 
-  - **Bezero bakarrak**: sistemak identifikatutako profil bakarraren kopurua erakusten du.
-  - **Bat datozen erregistroak**: zure partida pare guztietan agertzen diren kopurua erakusten du.
+:::image type="content" source="media/match-KPIs.png" alt-text="Partiduen orriko gakoen neurrien pantaila moztua zenbakiekin eta xehetasunekin.":::
 
-- Sarbidean **Loturaren ordena** taulan, partidako bikote bakoitzaren emaitzak ebaluatu ahal izango dituzu partidu-bikoteen entitate honek izan dituen erregistro kopurua alderatuz arrakastaz batutako erregistroen portzentajearekin.
+- **Iturri erregistro bakarrak** azken partidako exekuzioan prozesatutako banako iturrien erregistro kopurua erakusten du.
+- **Partiduen eta ez datozen erregistroak** Partidaren arauak prozesatu ondoren zenbat erregistro bakarra geratzen diren nabarmentzen du.
+- **Erregistro parekatuak soilik** zure bikote bikote guztien partida kopurua erakusten du.
 
-- Sarbidean **arauak** erakundeko atal bat **Loturaren ordena** taulan, arau mailan arrakastaz batutako erregistroen ehunekoa aurkituko duzu. Arau baten ondoko taularen sinboloa hautatuta, erregistro horiek guztiak ikus ditzakezu arau mailan. Erregistroen azpimultzo bat berrikustea gomendatzen dugu, behar bezala egokitu direla egiaztatzeko.
+Partida bakoitzaren emaitzak eta bere arauak ebaluatu ditzakezu **Erregistroen xehetasunak** mahaia. Konparatu partida bikotetik ateratako erregistro kopurua behar bezala parekatutako erregistroen ehunekoarekin.
 
-- Zure baldintzen inguruan zehaztasun-atalase desberdinak probatu, balio optimoa identifikatzeko.
+Berrikusi partida bikote baten arauak arau mailan arrakastaz bat datozen erregistroen ehunekoa ikusteko. Aukeratu elipsia (...) eta hautatu **Partidaren aurrebista** erregistro horiek guztiak arau mailan ikusteko. Erregistro batzuei begirada bat ematea gomendatzen dizugu, ondo egokitu direla egiaztatzeko.
 
-  1. Hautatu elipsia (...) esperimentatu nahi duzun bikote pareko araua eta aukeratu **Editatu**.
+Saiatu baldintzetan zehaztasun atalase desberdinetan balio optimoa aurkitzeko.
 
-  2. Hautatu esperimentatzeko erabili nahi duzun baldintza. Irizpide bakoitza errenkada batean irudikatuta dago **Bat-etortzearen araua** panela.
+  1. Aukeratu elipsia (...) esperimentatu nahi duzun arauaren eta hautatu **Editatu**.
 
-  3. Zer ikusiko duzu **Irizpideen aurrebista** orria baldintza baterako aukeratu duzun zehaztasun mailaren araberakoa da. Aukeratu aukeratutako baldintzaren parekatutako eta parekatu gabeko erregistro kopurua.
+  2. Aldatu zehaztasunen balioak berrikusi nahi dituzun baldintzetan.
 
-     Atalase-maila desberdinen eraginak hobeto ezagutzea. Atalase bakoitzaren azpian zenbat erregistro parekatuko diren konparatu eta erregistroak aukera bakoitzaren azpian ikus ditzakezu. Aukeratu fitxa bakoitza eta aztertu datuak taulako atalean.
+  3. Aukeratu **Aurrebista** beraz, ikusi hautatutako egoerarekin bat datozen eta parekatutako erregistro kopurua.
 
-## <a name="optimize-your-matches"></a>Optimizatu zure partiduak
+## <a name="manage-match-rules"></a>Kudeatu bat egiteko arauak
 
-Handitu kalitatea zure parekuko parametro batzuk konfiguratuz:
+Partiduen parametro gehienak birkonfigura eta doitu ditzakezu.
 
-- **Aldatu partidaren ordena** hautatuta **Editatu** eta aldatu partiduen ordenako eremuak.
+:::image type="content" source="media/match-rules-management.png" alt-text="Goitibeherako menuaren pantaila bat etortzeko arauen aukerekin.":::
 
-  > [!div class="mx-imgBorder"]
-  > ![Editatu datuekin bat datozen ordena](media/configure-data-match-order-edit.png "Editatu datuekin bat datozen ordena")
+- **Aldatu zure arauen ordena** hainbat arau zehaztu badituzu. Partiduen arauak berrantola ditzakezu **Mugitu gora** eta **Mugitu Behera** aukerak edo arrastatu eta jaregin.
 
-- **Aldatu zure arauen ordena** hainbat arau zehaztu badituzu. Partiduen arauak berriro ordenatu ditzakezu **Mugitu gora** eta **Mugitu behera** aukerak partidako arauen sarean.
-
-  > [!div class="mx-imgBorder"]
-  > ![Aldatu arauen ordena](media/configure-data-change-rule-order.png "Aldatu arauen ordena")
-
-- **Bikoiztu arauak** bat datorren arau bat zehaztu baduzu eta aldaketekin antzeko araua sortu nahi baduzu. Egin ezazu hautatuta **bikoiztua**.
-
-  > [!div class="mx-imgBorder"]
-  > ![Bikoiztu arau bat](media/configure-data-duplicate-rule.png "Bikoiztu arau bat")
+- **Aldatu arauen baldintzak** hautatuz **Editatu** eta aukeratu eremu desberdinak.
 
 - **Desaktibatu arau bat** bat-etortzeko araua gordetzeko, bat etortzeko prozesutik kanpo uzten duen bitartean.
 
-  > [!div class="mx-imgBorder"]
-  > ![Desaktibatu arau bat](media/configure-data-deactivate-rule.png "Desaktibatu arau bat")
+- **Bikoiztu zure arauak** bat datorren araua zehaztu baduzu eta antzeko arau bat aldaketekin sortu nahi baduzu, hautatu **Bikoiztu**.
 
-- **Editatu zure arauak** aukeratuz **Editatu** sinboloa. Hurrengo aldaketa mota hauek aplika ditzakezu:
+- **Ezabatu arau bat** hautatu **Ezabatu** ikurra.
 
-  - Aldatu egoera baterako atributuak: Hautatu atributu berriak baldintza zehatzen errenkadaren barruan.
-  - Aldatu baldintza baten atalasea: doitu zehaztapeneko labaina.
-  - Aldatu baldintza normalizazio metodoa: Eguneratu normalizazio metodoa.
+## <a name="specify-custom-match-conditions"></a>Zehaztu pertsonalizatutako bat etortzeko baldintzak
 
-## <a name="specify-your-custom-match-records"></a>Zehaztu norberaren bat datozen erregistroak
+Zehaztu egin ditzakezu erregistro jakinek beti edo inoiz bat etortzeko baldintzak. Arau hauek karga daitezke bat etortzeko prozesu estandarra gainidazteko. Adibidez, John Doe I eta John Doe II badaude gure erregistroetan, sistemak pertsona bakar gisa pare dezake. Partida pertsonalizatutako arauek profiletan pertsona desberdinak aipatzen dituztela zehazten dute. 
 
-Zehaztu egin ditzakezu erregistro jakinek beti edo inoiz bat etortzeko baldintzak. Arau hauek neurrira kargatu daitezke partidu prozesura.
+1. Joan **Datuak** > **Bateratu** > **Bat egin** eta hautatu **Bat-egite pertsonalizatua** hurrengoan **Erregistroen xehetasunak** atala.
 
-1. Hautatu botoia **Norberaren partida** Aukera aukeran **Loturaren ordena** pantaila.
+  :::image type="content" source="media/custom-match-create.png" alt-text="Bat-egitearen arauen sekzioak bat-egite pertsonalizatuaren kontrolak nabarmenduta pantaila-argazkia.":::
 
-   > [!div class="mx-imgBorder"]
-   > ![Sortu bat-etortze pertsonalizatua](media/custom-match-create.png "Sortu bat-etortze pertsonalizatua")
+1. Partiduen arau pertsonalizaturik ez baduzu, berria ikusiko duzu **Partida pertsonalizatua** xehetasun gehiagoko panela.
 
-2. Kargatutako entitaterik ez baduzu, berri bat ikusiko duzu **Norberaren partida** Xehetasunak bete behar dituzun elkarrizketa-koadroa. Xehetasun hauek lehenago eman badituzu, joan 8. urratsean.
+1. Aukeratu **Txantiloia bete** txantiloien fitxategia lortzeko, erakundeek beti bat etorri edo inoiz bat egin behar duten erregistroak zehazteko. Bi fitxategi desberdinetan "beti bat etorri" erregistroak eta "inoiz ez datoz" erregistroak bete behar dituzu.
 
-   > [!div class="mx-imgBorder"]
-   > ![Partida pertsonalizatua elkarrizketa-koadro berria](media/custom-match-new-dialog-box.png "Partida pertsonalizatua elkarrizketa-koadro berria")
-
-3. Aukeratu **Txantiloia bete** txantiloien fitxategia lortzeko, erakundeek beti bat etorri edo inoiz bat egin behar duten erregistroak zehazteko. Bi fitxategi desberdinetan "beti bat etorri" erregistroak eta "inoiz ez datoz" erregistroak bete behar dituzu.
-
-4. Txantiloiak entitateak eta entitatearen gako nagusien balioak pertsonalizatutako partidan zehazteko eremuak ditu. Adibidez, Salmenta entitatearen 12345 gako nagusia nahi baduzu, beti harremanetan jarri 34567 gako nagusiarekin harremanetan jartzeko, entitate hau honela zehaztu behar duzu:
+1. Txantiloiak entitateak eta entitatearen gako nagusien balioak pertsonalizatutako partidan zehazteko eremuak ditu. Adibidez, gako nagusia nahi baduzu *12345* hurrengotik *Salmentak* entitatea beti lehen mailako gakoarekin bat etortzeko *34567* hurrengotik *Harremanetarako* entitatea, bete txantiloia:
     - Entitate1: Salmentak
     - Entitate-gakoa1: 12345
     - Entitatea2: kontaktua
@@ -248,22 +231,22 @@ Zehaztu egin ditzakezu erregistro jakinek beti edo inoiz bat etortzeko baldintza
    
    Entitate batean bikoiztuak desegiteko parekatze pertsonalizatua zehaztu nahi baduzu, eman Entitate 1 eta Entitate 2 entitate bera eta ezarri gako primarioen balio desberdinak.
 
-5. Aplikatu nahi dituzun gainidatzi guztiak gehitu ondoren, gorde txantiloiaren fitxategia.
+1. Aplikatu nahi dituzun gainidatzi guztiak gehitu ondoren, gorde txantiloiaren fitxategia.
 
-6. Joan hona **Datuak** > **Datu iturburuak** eta txantiloien fitxategiak entitate berri gisa sartu. Iragazi ondoren, bat egin dezakezu Match-ren konfigurazioa zehazteko.
+1. Joan hona **Datuak** > **Datu iturburuak** eta txantiloien fitxategiak entitate berri gisa sartu. Iragazi ondoren, bat egin dezakezu Match-ren konfigurazioa zehazteko.
 
-7. Fitxategiak eta erakundeak kargatu ondoren, hautatu hautatu **Norberaren partida** aukera berriro. Aukerak ikusiko dituzu sartu nahi dituzun entitateak zehazteko. Hautatu eskatutako entitateak goitibeherako menuan.
+1. Fitxategiak eta erakundeak kargatu ondoren, hautatu hautatu **Norberaren partida** aukera berriro. Aukerak ikusiko dituzu sartu nahi dituzun entitateak zehazteko. Hautatu eskatutako entitateak goitibeherako menuan.
 
-   > [!div class="mx-imgBorder"]
-   > ![Pertsonalizatu loturen gainidazketak](media/custom-match-overrides.png "Pertsonalizatu loturen gainidazketak")
+   :::image type="content" source="media/custom-match-overrides.png" alt-text="Elkarrizketa-koadroaren pantaila bat etortze pertsonalizatuko agertoki baterako gainidatziak aukeratzeko.":::
 
-8. Hautatu erabili nahi dituzun entitateak **Beti bat etorri** eta **Inoiz ez dator bat** hautatu **Egina**.
+1. Hautatu erabili nahi dituzun entitateak **Beti bat etorri** eta **Inoiz ez dator bat** hautatu **Egina**.
 
-9. Aukeratu **Gorde** gainean **Bat-etortzea** konfiguratu berri duzun berdinketaren konfigurazioaren orria.
+1. Aukeratu **Gorde** gainean **Bat egin** orrialdea bat datorren konfigurazio pertsonalizatua aplikatzeko.
 
-10. Aukeratu **Exekutatu** gainean **Bat-etortzea** bat datorren orrialdea eta bat datorren pertsonalizazio konfigurazioa indarrean egongo da. Sistemaren bat datozen arauek konfigurazio-multzoa gainidazten dute.
+1. Aukeratu **Exekutatu** gainean **Bat egin** orrialdea parekatze prozesua hasteko. Partiduen zehaztapeneko beste arau batzuk pertsonalizatutako konfigurazio pertsonalizatuaren gainetik daude.
 
-11. Bat egiten denean, egiaztatu dezakezu **ConflationMatchPair** entitatea berrordainketak partiduetan aplikatzen direla baieztatzeko.
+> [!TIP]
+> Joan **Datuak** > **Entitateak** eta berrikusi **ConflationMatchPair** gainidatziak aplikatzen direla baieztatzeko entitatea.
 
 ## <a name="next-step"></a>Hurrengo urratsa
 

@@ -1,20 +1,20 @@
 ---
 title: Sortu eta kudeatu segmentuak
 description: Sortu bezeroen segmentuak, hainbat atributuren arabera taldekatzeko.
-ms.date: 10/15/2020
+ms.date: 03/02/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
-author: m-hartmann
-ms.author: mhart
-ms.reviewer: jimsonc
+author: JimsonChalissery
+ms.author: jimsonc
+ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: a1308f07ac3ba7d4b09931bab3d19b6dfaf479ee
-ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
+ms.openlocfilehash: 4a6e8a3216a2c0738d60247054afa9fc18412f55
+ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5270341"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "5597036"
 ---
 # <a name="create-and-manage-segments"></a>Sortu eta kudeatu segmentuak
 
@@ -35,19 +35,19 @@ Segmentuak **Segmentuak** orrian kudeatzen dira.
 
 1. Hartzaileen xehetasunetan, joan **Segmentuak** orrira.
 
-2. Aukeratu **Berria** > **Segmentu zuria**.
+1. Aukeratu **Berria** > **Segmentu zuria**.
 
-3. Sarbidean **Segmentu berria** hautatu panela, eta aukeratu segmentu mota bat **izena**.
+1. Sarbidean **Segmentu berria** hautatu panela, eta aukeratu segmentu mota bat **izena**.
 
    Aukeran, eman pantailaren izena eta segmentua identifikatzen lagunduko duen deskribapena.
 
-4. Aukeratu **hurrengo** etortzeko **Segmentuen eraikitzailea** taldea non definitzen duzun. Talde bat bezero multzo bat da.
+1. Aukeratu **hurrengo** etortzeko **Segmentuen eraikitzailea** taldea non definitzen duzun. Talde bat bezero multzo bat da.
 
-5. Aukeratu segmentatu nahi duzun atributua barne hartzen duen entitatea.
+1. Aukeratu segmentatu nahi duzun atributua barne hartzen duen entitatea.
 
-6. Aukeratu arabera zatitu beharreko atributua. Atributu honek lau balio motetako bat izan dezake: zenbakikoa, katea, data edo boolearra.
+1. Aukeratu arabera zatitu beharreko atributua. Atributu honek lau balio motetako bat izan dezake: zenbakikoa, katea, data edo boolearra.
 
-7. Aukeratu operadorea eta balio bat hautatutako atributurako.
+1. Aukeratu operadorea eta balio bat hautatutako atributurako.
 
    > [!div class="mx-imgBorder"]
    > ![Pertsonalizatu taldeko iragazkia](media/customer-group-numbers.png "Bezeroaren taldeko iragazkia")
@@ -64,9 +64,14 @@ Segmentuak **Segmentuak** orrian kudeatzen dira.
    > [!div class="mx-imgBorder"]
    > ![Harreman bidea segmentuak sortzean](media/segments-multiple-relationships.png "Harreman bidea segmentuak sortzean")
 
-9. Segmentua gordetzeko, sakatu **Gorde**. Zure segmentua gordeko da eta prozesatu egingo da baldintza guztiak baliozkotuz gero. Bestela, zirriborro gisa gordeko da.
+1. Lehenespenez, segmentuek definitutako iragazkiekin bat datozen bezeroen profilen atributu guztiak dituen irteerako entitatea sortzen dute. Segmentu bat ez den beste entitate batzuetan oinarrituta badago *Bezeroa* entitatea, entitate hauetatik atributu gehiago gehi ditzakezu irteerako entitateari. Aukeratu **Proiektuaren atributuak** irteerako entitateari erantsiko zaizkion atributuak aukeratzeko.  
 
-10. Aukeratu **Segurtasunetara itzuli** berriro ere **segmentuak** orria.
+   
+   Adibidez: segmentu bat bezeroarekin lotutako jarduerak dituen entitate batean oinarritzen da *Bezeroa* entitatea. Segmentuak azken 60 egunetan laguntza-mahaira deitu duten bezero guztiak bilatzen ditu. Irteerako entitatean bat datozen bezeroen erregistro guztiei deiaren iraupena eta dei kopurua eranstea aukera dezakezu. Informazio hau baliagarria izan daiteke maiz deitzen duten bezeroei lineako laguntza artikuluen eta ohiko galderen esteka lagungarriekin mezu elektronikoak bidaltzeko.
+
+1. Segmentua gordetzeko, sakatu **Gorde**. Zure segmentua gordeko da eta prozesatu egingo da baldintza guztiak baliozkotuz gero. Bestela, zirriborro gisa gordeko da.
+
+1. Aukeratu **Segurtasunetara itzuli** berriro ere **segmentuak** orria.
 
 ## <a name="manage-existing-segments"></a>Kudeatu lehendik dauden segmentuak
 
@@ -85,6 +90,7 @@ Segmentu bat hautatzean ekintza hauek erabilgarri daude:
 
 - **ikusi** segmentuko xehetasunak, kideen zenbaketa joera segmentuko kideen aurrebista barne.
 - **Editatu** segmentuak bere propietateak aldatzeko.
+- **Sortu bikoiztuak** segmentu baten. Bere propietateak berehala editatzea edo bikoiztua gordetzea aukeratu dezakezu.
 - **Freskatu** segmentuak azken datuak sartuko ditu.
 - **Aktibatu** edo **Desaktibatu** segmentua. Segmentuek bi egoera posible dituzte: aktiboak edo inaktiboak. Egoera hauek oso ondo etortzen dira segmentu bat editatzerakoan. Segmentu inaktiboetan, segmentuaren definizioa badago, baina oraindik ez du bezeroik. Segmentu bat aktibatzean, egoera "inaktibo" izatetik "aktibo" izatera pasatzen da eta segmentuaren definizioarekin bat datozen bezeroak bilatzen hasiko da. A bada [freskatze programatua](system.md#schedule-tab) konfiguratuta dago, segmentu inaktiboek dute **Egoera** gisa zerrendatuta **Saltatuta**, freskatzen saiatu ere ez zela egin adieraziz. Segmentu inaktiboa aktibatzen denean, freskatu egingo da eta programatutako freskapenetan sartuko da.
   Bestela, erabil dezakezu **Ordutegiak beranduago** funtzionaltasuna **Aktibatu / Desaktibatu** goitibehera, segmentu jakin bat aktibatzeko eta desaktibatzeko etorkizuneko data eta ordua zehazteko.

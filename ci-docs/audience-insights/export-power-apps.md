@@ -2,19 +2,19 @@
 title: Power Apps konektorea
 description: Konektatu Power Apps eta Power Automate-rekin.
 ms.date: 01/19/2021
-ms.reviewer: nikeller
+ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
-author: m-hartmann
-ms.author: mhart
+author: Nils-2m
+ms.author: nikeller
 manager: shellyha
-ms.openlocfilehash: 5a8bbb9a09218d54228589d43c21c8894680b56e
-ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
+ms.openlocfilehash: 3fa91553fd50a22ab62b5a2b1e3f13b9483776a8
+ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5268901"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "5598140"
 ---
 # <a name="microsoft-power-apps-connector-preview"></a>Microsoft Power Apps konektorea (Aurrebista)
 
@@ -22,9 +22,9 @@ Ekarri bezeroen profil bateratuak aplikazio pertsonalizatuekin Power Apps.
 
 ## <a name="connect-power-apps-and-dynamics-365-customer-insights"></a>Konektatu Power Apps eta Dynamics 365 Customer Insights
 
-Customer Insights askoren artean dago [erabilgarri dauden datuetarako iturriak Power Apps](https://docs.microsoft.com/powerapps/maker/canvas-apps/working-with-data-sources).
+Customer Insights askoren artean dago [erabilgarri dauden datuetarako iturriak Power Apps](/powerapps/maker/canvas-apps/working-with-data-sources).
 
-Erreferentzi Power Apps dokumentazioa nola ikasi ikasteko [gehitu datuen konexioa aplikazio bati](https://docs.microsoft.com/powerapps/maker/canvas-apps/add-data-connection). Berrikustea ere gomendatzen dugu [nola Power Apps Delegazioa erabiltzen du Canvas aplikazioetan datu-multzo handiak kudeatzeko](https://docs.microsoft.com/powerapps/maker/canvas-apps/delegation-overview).
+Erreferentzi Power Apps dokumentazioa nola ikasi ikasteko [gehitu datuen konexioa aplikazio bati](/powerapps/maker/canvas-apps/add-data-connection). Berrikustea ere gomendatzen dugu [nola Power Apps Delegazioa erabiltzen du Canvas aplikazioetan datu-multzo handiak kudeatzeko](/powerapps/maker/canvas-apps/delegation-overview).
 
 ## <a name="available-entities"></a>Entitate erabilgarriak
 
@@ -47,11 +47,11 @@ Ordezkaritza Bezeroen entitatearen eta UnifiedActivity entitatearen funtzionatze
 
 - Ordezkaritza **UnifiedActivity**: Erakunde honen ordezkaritzak eremuetarako bakarrik funtzionatzen du **ActivityId** eta **Bezeroaren IDa**.  
 
-- Ordezkaritzari buruzko informazio gehiago lortzeko, ikusi [Power Apps funtzio eta eragiketa delegagarriak](https://docs.microsoft.com/connectors/commondataservice/#power-apps-delegable-functions-and-operations-for-the-cds-for-apps). 
+- Ordezkaritzari buruzko informazio gehiago lortzeko, ikusi [Power Apps funtzio eta eragiketa delegagarriak](/connectors/commondataservice/#power-apps-delegable-functions-and-operations-for-the-cds-for-apps). 
 
 ## <a name="example-gallery-control"></a>Adibidez galeria kontrola
 
-Adibidez, bezero profilak gehitzen dizkiozu [galeriaren kontrolari](https://docs.microsoft.com/powerapps/maker/canvas-apps/add-gallery).
+Adibidez, bezero profilak gehitzen dizkiozu [galeriaren kontrolari](/powerapps/maker/canvas-apps/add-gallery).
 
 1. Gehitu a **Galeria** kontrolatzen ari zaren aplikazio batera.
 

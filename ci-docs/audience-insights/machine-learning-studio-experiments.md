@@ -6,15 +6,15 @@ ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: tutorial
 author: m-hartmann
-ms.author: mhart
-ms.reviewer: ameetj
+ms.author: ameetj
+ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 8a861d62bdfee6a3a82468fe1ab4a3fbbdad43d4
-ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
+ms.openlocfilehash: 71881f7e1f9448fe0a7d6d92b8102b8b42de7c2a
+ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5270189"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "5598324"
 ---
 # <a name="use-models-based-on-azure-machine-learning-studio-classic"></a>Erabili Azure Machine Learning Studio (klasikoa) zerbitzuan oinarritutako ereduak
 
@@ -37,7 +37,7 @@ Lehen urrats batean, Machine Learning Studio-ko (klasikoa) laneko area sortu beh
 
 1. Bilatu **Ikaskuntza automatiko Studio lan-eremua** eta hautatu **Sortu**.
 
-1. Idatzi beharrezko xehetasunak honetara [sortu lan-eremua](https://docs.microsoft.com/azure/machine-learning/studio/create-workspace). Aukeratu **Web zerbitzuen planaren prezioen maila** inportatzeko asmoa duzun datu kopuruaren arabera. Errendimendu onena lortzeko, hautatu geografikoki hurbilen dagoen **kokalekua**.
+1. Idatzi beharrezko xehetasunak honetara [sortu lan-eremua](/azure/machine-learning/studio/create-workspace). Aukeratu **Web zerbitzuen planaren prezioen maila** inportatzeko asmoa duzun datu kopuruaren arabera. Errendimendu onena lortzeko, hautatu geografikoki hurbilen dagoen **kokalekua**.
 
 1. Baliabidea sortu ondoren, Ikaskuntza automatiko Studio laneko espazioen panela agertuko da. Aukeratu **Ikaskuntza automatiko Studio abiarazi**.
 
@@ -65,7 +65,7 @@ Esperimentu berri bat sor dezakezu edo lehendik dagoen esperimentu txantiloia in
 
    ![Ezarri web zerbitzu iragargarria](media/predictive-webservice-control.png)
 
-1. Aurreikusitako web zerbitzuen esperimentua arrakastatsua izan ondoren, auto planifikaziorako erabil dezakezu. Web zerbitzua Customer Insights zerbitzuarekin lan egiteko, hautatu **Ezarri web zerbitzua** > **Ezarri Web Zerbitzua [Berria] Aurrebista**. [Ikasi gehiago web-zerbitzu bat inplementatzearen inguruan](https://docs.microsoft.com/azure/machine-learning/studio/deploy-a-machine-learning-web-service).
+1. Aurreikusitako web zerbitzuen esperimentua arrakastatsua izan ondoren, auto planifikaziorako erabil dezakezu. Web zerbitzua Customer Insights zerbitzuarekin lan egiteko, hautatu **Ezarri web zerbitzua** > **Ezarri Web Zerbitzua [Berria] Aurrebista**. [Ikasi gehiago web-zerbitzu bat inplementatzearen inguruan](/azure/machine-learning/studio/deploy-a-machine-learning-web-service).
 
    ![Inplementatu web zerbitzu iragargarria](media/predictive-webservice-deploy.png)
 
@@ -116,7 +116,7 @@ Hurrengo irudian Azure Ikaskuntza automatiko Studio-ren ereduaren prestakuntza e
 
 ![Churn eredua Azure Machine Learning Studio-n](media/azure-machine-learning-model.png)
 
-**Permutazioaren ezaugarrien garrantzia** izeneko teknika ere aplikatzen dugu, ereduen optimizazioaren alderdi garrantzitsua. Eraikitako modeloek ez dute ezer zehatzik inolako ezaugarri zehatzek azken iragarpen-en duten eraginaren inguruan. Funtzioen garrantziaren kalkulagailuak algoritmo pertsonalizatua erabiltzen du eredu zehatz baten emaitzetan banakako ezaugarrien eragina kalkulatzeko. Funtzioen garrantzia +1 eta -1 artean normalizatzen da. Eragin negatiboarekin, kasuan kasuko funtzioak emaitzaren gaineko eragin intuitiboa du eta eredutik kendu beharko litzateke. Eragin positiboak adierazten du funtzioak asko laguntzen duela iragarpen. Balio hauek ez dira korrelazio koefizienteak neurri desberdinak direlako. Informazio gehiago lortzeko, ikus [Permutazioaren ezaugarrien garrantzia](https://docs.microsoft.com/azure/machine-learning/studio-module-reference/permutation-feature-importance).
+**Permutazioaren ezaugarrien garrantzia** izeneko teknika ere aplikatzen dugu, ereduen optimizazioaren alderdi garrantzitsua. Eraikitako modeloek ez dute ezer zehatzik inolako ezaugarri zehatzek azken iragarpen-en duten eraginaren inguruan. Funtzioen garrantziaren kalkulagailuak algoritmo pertsonalizatua erabiltzen du eredu zehatz baten emaitzetan banakako ezaugarrien eragina kalkulatzeko. Funtzioen garrantzia +1 eta -1 artean normalizatzen da. Eragin negatiboarekin, kasuan kasuko funtzioak emaitzaren gaineko eragin intuitiboa du eta eredutik kendu beharko litzateke. Eragin positiboak adierazten du funtzioak asko laguntzen duela iragarpen. Balio hauek ez dira korrelazio koefizienteak neurri desberdinak direlako. Informazio gehiago lortzeko, ikus [Permutazioaren ezaugarrien garrantzia](/azure/machine-learning/studio-module-reference/permutation-feature-importance).
 
 [Galera-tasaren esperimentu osoa Azure AI galerian eskuragarri dago](https://gallery.azure.ai/Experiment/Hotel-Churn-Predictive-Exp).
 
@@ -168,7 +168,7 @@ Zerbitzuen katalogo osorako gomendioen banaketari buruz gehiago begiratuz, telef
 
 ## <a name="integrate-custom-models"></a>Integratu pertsonalizatutako ereduak
 
-Aurreikuspen hauek Customer Insights-en erabiltzeko, beharrezkoa da iragarpenak **esportatzea** bezeroaren IDekin batera. [Esportatu Azure Blob biltegiratze kokapenera](https://docs.microsoft.com/azure/storage/common/storage-import-export-data-from-blobs), iturburuko datuak esportatzen dituzun leku berera. Aurreikusitako web zerbitzua aldizka exekutatu daiteke eta puntuazioak eguneratzeko.
+Aurreikuspen hauek Customer Insights-en erabiltzeko, beharrezkoa da iragarpenak **esportatzea** bezeroaren IDekin batera. [Esportatu Azure Blob biltegiratze kokapenera](/azure/storage/common/storage-import-export-data-from-blobs), iturburuko datuak esportatzen dituzun leku berera. Aurreikusitako web zerbitzua aldizka exekutatu daiteke eta puntuazioak eguneratzeko.
 
 Eredu pertsonalizatuak sortutako datuak zure bezeroen datuak gehiago aberasteko erabil daitezke. Informazio gehiago lortzeko, ikus [Ikaskuntza automatiko eredu pertsonalizatuak](custom-models.md).
 

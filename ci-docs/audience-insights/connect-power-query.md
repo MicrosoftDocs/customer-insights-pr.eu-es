@@ -2,23 +2,23 @@
 title: Sartu datuak Power Query konektore baten bidez
 description: Konektoreak datu-iturburuetarako oinarrituz Power Query-n.
 ms.date: 09/29/2020
-ms.reviewer: adkuppa
+ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
-author: m-hartmann
-ms.author: mhart
+author: adkuppa
+ms.author: adkuppa
 manager: shellyha
-ms.openlocfilehash: d51a7efa5fd9f7336d1662500eb804a674738493
-ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
+ms.openlocfilehash: b9a1b30e37c3792aa7bdfcfc177da9e8a32c324d
+ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5267753"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "5596898"
 ---
 # <a name="connect-to-a-power-query-data-source"></a>Konektatu Power Query datu-iturburu batera
 
-Power Query-ek konektore multzo zabala eskaintzen du datuak irensteko. Konektore hauetako gehienek onartzen dute Dynamics 365 Customer Insights. Power Query konektoreetan oinarritutako datu iturriak gehitzeak hurrengo atalean azaldutako urratsak jarraitzen ditu. Hala ere, erabiltzen duzun konektorearen arabera, informazio desberdina behar da. Informazio gehiagorako, ikusi banakako konektoreei buruzko dokumentazioa [Power Query konektore erreferentzia](https://docs.microsoft.com/power-query/connectors/).
+Power Query-ek konektore multzo zabala eskaintzen du datuak irensteko. Konektore hauetako gehienek onartzen dute Dynamics 365 Customer Insights. Power Query konektoreetan oinarritutako datu iturriak gehitzeak hurrengo atalean azaldutako urratsak jarraitzen ditu. Hala ere, erabiltzen duzun konektorearen arabera, informazio desberdina behar da. Informazio gehiagorako, ikusi banakako konektoreei buruzko dokumentazioa [Power Query konektore erreferentzia](/power-query/connectors/).
 
 ## <a name="create-a-new-data-source"></a>Sortu datu-iturburua
 
@@ -44,7 +44,7 @@ Power Query-ek konektore multzo zabala eskaintzen du datuak irensteko. Konektore
    > [!div class="mx-imgBorder"]
    > ![Editatu eskaera eztabaida](media/data-manager-configure-edit-queries.png "Editatu eskaera eztabaida")
 
-1. Zure datuak ere eralda ditzakezu. Hautatu entitate bat editatzeko edo eraldatzeko. Erabili Power Query leihoan dauden aukerak transformazioak aplikatzeko. Eraldaketa bakoitza azpian agertzen da **Urrats aplikatuak**. Power Query-ek aurrez eraikitako eraldaketa aukera ugari eskaintzen ditu. Informazio gehiagorako, ikusi [Power Query eraldaketak](https://docs.microsoft.com/power-query/power-query-what-is-power-query#transformations).
+1. Zure datuak ere eralda ditzakezu. Hautatu entitate bat editatzeko edo eraldatzeko. Erabili Power Query leihoan dauden aukerak transformazioak aplikatzeko. Eraldaketa bakoitza azpian agertzen da **Urrats aplikatuak**. Power Query-ek aurrez eraikitako eraldaketa aukera ugari eskaintzen ditu. Informazio gehiagorako, ikusi [Power Query eraldaketak](/power-query/power-query-what-is-power-query#transformations).
 
 1. Entitate osagarriak gehi ditzakezu zure datu-iturburu hautatuta **Lortu datuak** herrian **Editatu zalantzak** elkarrizketa.
 
@@ -59,7 +59,7 @@ Power Query-ek konektore multzo zabala eskaintzen du datuak irensteko. Konektore
 
 ## <a name="available-power-query-data-sources"></a>Eskuragarri dauden Power Query datu iturriak
 
-Ikusi [Power Query konektore erreferentzia](https://docs.microsoft.com/power-query/connectors/) datuak Customer Insights inportatzeko hauta ditzakezun konektoreen zerrenda eguneratua lortzeko. 
+Ikusi [Power Query konektore erreferentzia](/power-query/connectors/) datuak Customer Insights inportatzeko hauta ditzakezun konektoreen zerrenda eguneratua lortzeko. 
 
 Konektoreak kontrol-markarekin **Customer Insights (datu-fluxuak)** zutabea eskuragarri dago Power Query oinarritutako datu iturri berriak sortzeko. Berrikusi konektore zehatz baten dokumentazioa, bere aurretiazko baldintzak, mugak eta bestelako xehetasunak ezagutzeko.
 

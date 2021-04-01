@@ -6,15 +6,15 @@ ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: tutorial
 author: naravill
-ms.author: mhart
-ms.reviewer: m-hartmann
+ms.author: naravill
+ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: c166015b92596da0c6097e3d25e89579a5186ce0
-ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
+ms.openlocfilehash: edd2cf488b52cef87b09b90336e48fdc7f470a68
+ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5267891"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "5597404"
 ---
 # <a name="use-azure-machine-learning-based-models"></a>Erabili Azure Machine Learning-en oinarritutako ereduak
 
@@ -29,9 +29,9 @@ Dynamics 365 Customer Insights-eko datu bateratuak negozioaren ikuspegi osagarri
 
 ## <a name="set-up-azure-machine-learning-workspace"></a>Konfiguratu Azure Machine Learning-en laneko area
 
-1. Ikusi [sortu Azure Machine Learning-en laneko area](https://docs.microsoft.com/azure/machine-learning/concept-workspace#-create-a-workspace) atala, laneko area sortzeko aukera desberdinetarako. Errendimendu onena lortzeko, sortu laneko area zure Customer Insights ingurunetik geografikoki hurbilen dagoen Azure eskualde batean.
+1. Ikusi [sortu Azure Machine Learning-en laneko area](/azure/machine-learning/concept-workspace#-create-a-workspace) atala, laneko area sortzeko aukera desberdinetarako. Errendimendu onena lortzeko, sortu laneko area zure Customer Insights ingurunetik geografikoki hurbilen dagoen Azure eskualde batean.
 
-1. Sar zaitez zure laneko areara [Azure Machine Learning Studio](https://ml.azure.com/) bidez. Laneko arearekin [elkarreragiteko](https://docs.microsoft.com/azure/machine-learning/concept-workspace#tools-for-workspace-interaction) hainbat modu daude.
+1. Sar zaitez zure laneko areara [Azure Machine Learning Studio](https://ml.azure.com/) bidez. Laneko arearekin [elkarreragiteko](/azure/machine-learning/concept-workspace#tools-for-workspace-interaction) hainbat modu daude.
 
 ## <a name="work-with-azure-machine-learning-designer"></a>Lan egin Azure Machine Learning-en diseinatzailearekin
 
@@ -39,13 +39,13 @@ Azure Machine Learning-en diseinatzaileak mihise bisuala eskaintzen du, datu mul
    
 ## <a name="working-with-azure-machine-learning-sdk"></a>Azure Machine Learning-en SDKrekin lan egitea
 
-Datu zientzialariek eta AA garatzaileek [Azure Machine Learning-en SDK](https://docs.microsoft.com/python/api/overview/azure/ml/?view=azure-ml-py&preserve-view=true) erabiltzen dute ikaskuntza automatikoko lan fluxuak eraikitzeko. Gaur egun, SDK erabiliz trebatutako ereduak ezin dira zuzenean Customer Insights-ekin integratu. Eredu hori erabiltzen duen sortako interferentzia-bideratzea behar da Customer Insights-ekin integratzeko.
+Datu zientzialariek eta AA garatzaileek [Azure Machine Learning-en SDK](/python/api/overview/azure/ml/?preserve-view=true&view=azure-ml-py) erabiltzen dute ikaskuntza automatikoko lan fluxuak eraikitzeko. Gaur egun, SDK erabiliz trebatutako ereduak ezin dira zuzenean Customer Insights-ekin integratu. Eredu hori erabiltzen duen sortako interferentzia-bideratzea behar da Customer Insights-ekin integratzeko.
 
 ## <a name="batch-pipeline-requirements-to-integrate-with-customer-insights"></a>Sorta bideratzearen eskakizunak Customer Insights-ekin integratzeko
 
 ### <a name="dataset-configuration"></a>Datu multzoaren konfigurazioa
 
-Datu multzoak sortu behar dituzu Customer Insights-eko entitate datuak zure sortako inferentzia-bideratzean erabiltzeko. Datu multzo hauek laneko arean erregistratu behar dira. Gaur egun, [datu multzo tabularrak](https://docs.microsoft.com/azure/machine-learning/how-to-create-register-datasets#tabulardataset) soilik onartzen ditugu, .csv formatuan. Entitateen datuei dagozkien datu multzoak bideratze-parametro gisa parametrizatu behar dira.
+Datu multzoak sortu behar dituzu Customer Insights-eko entitate datuak zure sortako inferentzia-bideratzean erabiltzeko. Datu multzo hauek laneko arean erregistratu behar dira. Gaur egun, [datu multzo tabularrak](/azure/machine-learning/how-to-create-register-datasets#tabulardataset) soilik onartzen ditugu, .csv formatuan. Entitateen datuei dagozkien datu multzoak bideratze-parametro gisa parametrizatu behar dira.
    
 * Diseinatzaileko datu multzoen parametroak
    
@@ -76,7 +76,7 @@ Datu multzoak sortu behar dituzu Customer Insights-eko entitate datuak zure sort
 
 ### <a name="import-pipeline-data-into-customer-insights"></a>Inportatu bideratzearen datuak Customer Insights-era
 
-* Diseinatzaileak [Esportatu datuak modulua](https://docs.microsoft.com/azure/machine-learning/algorithm-module-reference/export-data) eskaintzen du; horrek bideratze baten irteera Azure biltegira esportatzea ahalbidetzen du. Gaur egun, moduluak **Azure blob biltegiratzea** datu-biltegi mota erabili behar du eta **datu-biltegia** eta dagokion **bide-izena** parametrizatu. Customer Insights-ek parametro horiek biak gainidazten ditu bideratzea exekutatzerakoan produktuak eskuragarri duen datu biltegi eta bide-izen batekin.
+* Diseinatzaileak [Esportatu datuak modulua](/azure/machine-learning/algorithm-module-reference/export-data) eskaintzen du; horrek bideratze baten irteera Azure biltegira esportatzea ahalbidetzen du. Gaur egun, moduluak **Azure blob biltegiratzea** datu-biltegi mota erabili behar du eta **datu-biltegia** eta dagokion **bide-izena** parametrizatu. Customer Insights-ek parametro horiek biak gainidazten ditu bideratzea exekutatzerakoan produktuak eskuragarri duen datu biltegi eta bide-izen batekin.
    > [!div class="mx-imgBorder"]
    > ![Esportatu datuen moduluaren konfigurazioa](media/intelligence-designer-importdata.png "Esportatu datuen moduluaren konfigurazioa")
    

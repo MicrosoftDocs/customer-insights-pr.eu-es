@@ -1,20 +1,20 @@
 ---
 title: Power Automate konektorea | Microsoft Docs
-description: Sortu fluxuak Microsoft-en Power Automate batetik Dynamics 365 Customer Insights.
+description: Sortu fluxuak Microsoft Power Automate hurrengoan Dynamics 365 Customer Insights.
 ms.date: 01/20/2021
+ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
-author: m-hartmann
-ms.author: mhart
-ms.reviewer: philk
+author: phkieffer
+ms.author: philk
 manager: shellyha
-ms.openlocfilehash: fb1df4e9ab1f78300b8ec1f8dfdfbfbac0e71447
-ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
+ms.openlocfilehash: e973bb11b31c9e70b695ebec8aa2700fdaa5e44f
+ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5268809"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "5597910"
 ---
 # <a name="power-automate-connector-preview"></a>Power Automate konektorea (Aurrebista)
 
@@ -34,7 +34,7 @@ Erabili abiarazleak hodei fluxuak sortzeko eta zeregin errepikakorrak automatiza
 [Konfiguratu zure abiarazleak Power Automate](https://flow.microsoft.com/connectors/shared_customerinsights/dynamics-365-customer-insights-connector/).
 
 ## <a name="power-automate-actions"></a>Power Automate ekintzak
-Power Automate konektoreak erabilgarri dauden abiarazleak baino beste ekintza batzuk eskaintzen ditu. Informazio gehiagorako, ikus [Dynamics 365 Customer Insights Connector](https://docs.microsoft.com/connectors/customerinsights/).
+Power Automate konektoreak erabilgarri dauden abiarazleak baino beste ekintza batzuk eskaintzen ditu. Informazio gehiagorako, ikus [Dynamics 365 Customer Insights Connector](/connectors/customerinsights/).
 
 ## <a name="create-a-power-automate-flow"></a>Sortu Power Automate fluxu bat
 
@@ -44,7 +44,7 @@ Power Automate konektoreak erabilgarri dauden abiarazleak baino beste ekintza ba
 
 1. Power Automate-ko Customer Insights konektorea irekitzen da. **Hasi saioa** Power Automate.
 
-1. Aukeratu erabilgarri dauden abiarazleetako bat eta gehitu urrats gehiago zure fluxu berrian. Informazio gehiagorako, ikusi [Sortu hodei fluxua hemen Power Automate](https://docs.microsoft.com/power-automate/get-started-logic-flow).
+1. Aukeratu erabilgarri dauden abiarazleetako bat eta gehitu urrats gehiago zure fluxu berrian. Informazio gehiagorako, ikusi [Sortu hodei fluxua hemen Power Automate](/power-automate/get-started-logic-flow).
 
 Fluxuak nola erabili adibideak: 
 - Bidali mezu bat Microsoft Teams kanalera datu-iturburu freskatzeak huts egiten badu. 

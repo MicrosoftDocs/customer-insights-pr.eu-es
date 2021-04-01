@@ -2,19 +2,19 @@
 title: Bezeroaren balio osoaren iragarpena (CLV)
 description: Aurreikusi etorkizunean bezero aktiboen diru-sarrerak.
 ms.date: 02/05/2021
-ms.reviewer: wameng
+ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
 author: m-hartmann
-ms.author: mhart
+ms.author: wameng
 manager: shellyha
-ms.openlocfilehash: 363a46c81b5bb737d274998f9a699dc662e38d7c
-ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
+ms.openlocfilehash: 835a9f3371a8c1b1a10d5c6901c03e1df5379d3d
+ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5268579"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "5595780"
 ---
 # <a name="customer-lifetime-value-clv-prediction-preview"></a>Bezeroaren bizi-iraupenaren (CLV) balioa (aurreargitalpena)
 
@@ -194,11 +194,11 @@ Emaitza orrialdearen barruan hiru datu nagusi daude.
   
   - **Balio handiko bezeroak iragartzeko arrakasta-tasa**
 
-  Ikusi aldea adimen artifizialeko eredua erabiliz balio handiko bezeroak iragartzeko oinarrizko ereduarekin alderatuta. Adibidez, % 84 arrakasta-tasak esan nahi du prestakuntzako datuetan balio handiko bezero guztien artean adimen artifizialeko ereduak % 84 zehazki harrapatu zuela. Ondoren, arrakasta-tasa hau oinarrizko ereduaren arrakasta-tasarekin alderatzen dugu, aldaketa erlatiboa jakinarazteko. Balio hau ereduari kalifikazio bat emateko erabiltzen da.
+    Ikusi aldea adimen artifizialeko eredua erabiliz balio handiko bezeroak iragartzeko oinarrizko ereduarekin alderatuta. Adibidez, % 84 arrakasta-tasak esan nahi du prestakuntzako datuetan balio handiko bezero guztien artean adimen artifizialeko ereduak % 84 zehazki harrapatu zuela. Ondoren, arrakasta-tasa hau oinarrizko ereduaren arrakasta-tasarekin alderatzen dugu, aldaketa erlatiboa jakinarazteko. Balio hau ereduari kalifikazio bat emateko erabiltzen da.
 
   - **Erroreen metrikak**
     
-  Beste metrika batek modeloaren errendimendu orokorra berrikusteko aukera ematen du etorkizuneko balioak iragartzeko akatsen arabera. Errore batez besteko akats karratuaren (RMSE) metrika orokorra erabiltzen dugu errore hori ebaluatzeko. RMSE datu kuantitatiboak iragartzeko eredu baten errorea neurtzeko modu estandarra da. Adimen artifizialeko ereduaren RMSE oinarrizko ereduaren RMSEarekin alderatzen da eta desberdintasun erlatiboa jakinarazi da.
+    Beste metrika batek modeloaren errendimendu orokorra berrikusteko aukera ematen du etorkizuneko balioak iragartzeko akatsen arabera. Errore batez besteko akats karratuaren (RMSE) metrika orokorra erabiltzen dugu errore hori ebaluatzeko. RMSE datu kuantitatiboak iragartzeko eredu baten errorea neurtzeko modu estandarra da. Adimen artifizialeko ereduaren RMSE oinarrizko ereduaren RMSEarekin alderatzen da eta desberdintasun erlatiboa jakinarazi da.
 
   Adimen artifizialeko ereduak bezeroen sailkapen zehatza lehenesten du zure negozioari ematen dioten balioaren arabera. Beraz, balio handiko bezeroak iragartzeko arrakasta-tasa soilik erabiltzen da azken ereduaren nota lortzeko. RMSE metrika balio arruntetarako sentikorra da. Erosketa balio izugarri altuak dituzten bezeroen ehuneko txikia duzun eszenatokietan, baliteke RMSE metrikak modeloaren errendimenduaren argazki osoa ez ematea.   
 

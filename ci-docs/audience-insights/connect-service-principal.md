@@ -9,12 +9,12 @@ author: adkuppa
 ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: eebbac1370a847869d98beaf70db49b809d762e7
-ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
+ms.openlocfilehash: c670b0065a2833a6dc311d9e86d2b351140382ce
+ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5267707"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "5596484"
 ---
 # <a name="connect-to-an-azure-data-lake-storage-gen2-account-with-an-azure-service-principal-for-audience-insights"></a>Konektatu Azure Data Lake Storage Gen2 kontura hartzaileen xehetasunen Azure zerbitzuaren entitatearekin
 
@@ -23,7 +23,7 @@ Azure zerbitzuak erabiltzen dituzten tresna automatizatuek beti baimen mugatuak 
 Zerbitzuaren entitatea erabil dezakezu segurtasunez [Common Data Model fitxategi bat gehitu edo editatzeko datu-iturburu gisa](connect-common-data-model.md) edo [ingurune bat sortzeko edo lehendik dagoen ingurune bat eguneratzeko](manage-environments.md#create-an-environment-in-an-existing-organization).
 
 > [!IMPORTANT]
-> - Zerbitzu nagusia erabiltzeko asmoa duen Azure Data Lake Gen2 biltegiratze kontuak izan behar du [Izen espazio hierarkikoa (HNS) gaituta dago](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-namespace).
+> - Zerbitzu nagusia erabiltzeko asmoa duen Azure Data Lake Gen2 biltegiratze kontuak izan behar du [Izen espazio hierarkikoa (HNS) gaituta dago](/azure/storage/blobs/data-lake-storage-namespace).
 > - Administratzaile baimenak behar dituzu Azure harpidetzak zerbitzuaren entitatea sortzeko.
 
 ## <a name="create-azure-service-principal-for-audience-insights"></a>Sortu hartzaileen xehetasunen Azure zerbitzuaren entitatea
@@ -48,7 +48,7 @@ Hartzaileen xehetasunen zerbitzuaren entitate bat sortu aurretik, egiaztatu dago
 
 ### <a name="create-a-new-service-principal"></a>Sortu zerbitzuaren entitatea
 
-1. Instalatu **Graph-erako Azure Active Directory PowerShell** zerbitzuaren azken bertsioa. Informazio gehiagorako, ikus [Instalatu Graph-erako Azure Active Directory PowerShell](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2).
+1. Instalatu **Graph-erako Azure Active Directory PowerShell** zerbitzuaren azken bertsioa. Informazio gehiagorako, ikus [Instalatu Graph-erako Azure Active Directory PowerShell](/powershell/azure/active-directory/install-adv2).
    - Zure ordenagailuan, hautatu Windows tekla teklatuan eta bilatu **Windows PowerShell** eta **Exekutatu administratzaile gisa**.
    
    - Ireki den PowerShell leihoan, sartu `Install-Module AzureAD`.
