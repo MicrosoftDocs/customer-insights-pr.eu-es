@@ -2,52 +2,52 @@
 title: Esportatu Customer Insights datuak Azure Blob biltegira
 description: Ikasi Azure Blob biltegirako konexioa nola konfiguratu.
 ms.date: 09/18/2020
-ms.reviewer: philk
+ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
-author: m-hartmann
-ms.author: mhart
+author: phkieffer
+ms.author: philk
 manager: shellyha
-ms.openlocfilehash: ecacf20365e78ced8859dfa54b1b16cb923c00eb
-ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
+ms.openlocfilehash: 0986ee5caf5fa079994ca584fb2c4d9294ddb80b
+ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5269177"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "5596162"
 ---
-# <a name="connector-for-azure-blob-storage-preview"></a><span data-ttu-id="b1b91-103">Azure Blob biltegirako konektorea (aurrebista)</span><span class="sxs-lookup"><span data-stu-id="b1b91-103">Connector for Azure Blob storage (preview)</span></span>
+# <a name="connector-for-azure-blob-storage-preview"></a><span data-ttu-id="56ff3-103">Azure Blob biltegirako konektorea (aurrebista)</span><span class="sxs-lookup"><span data-stu-id="56ff3-103">Connector for Azure Blob storage (preview)</span></span>
 
-<span data-ttu-id="b1b91-104">Gorde Customer Insights-eko datuak Azure Blob biltegian edo erabili datuak beste aplikazioetara transferitzeko.</span><span class="sxs-lookup"><span data-stu-id="b1b91-104">Store your Customer Insights data in an Azure Blob storage or use it to transfer your data to other applications.</span></span>
+<span data-ttu-id="56ff3-104">Gorde Customer Insights-eko datuak Azure Blob biltegian edo erabili datuak beste aplikazioetara transferitzeko.</span><span class="sxs-lookup"><span data-stu-id="56ff3-104">Store your Customer Insights data in an Azure Blob storage or use it to transfer your data to other applications.</span></span>
 
-## <a name="configure-the-connector-for-azure-blob-storage"></a><span data-ttu-id="b1b91-105">Konfiguratu konektorea Azure Blob biltegiratzea</span><span class="sxs-lookup"><span data-stu-id="b1b91-105">Configure the connector for Azure Blob storage</span></span>
+## <a name="configure-the-connector-for-azure-blob-storage"></a><span data-ttu-id="56ff3-105">Konfiguratu konektorea Azure Blob biltegiratzea</span><span class="sxs-lookup"><span data-stu-id="56ff3-105">Configure the connector for Azure Blob storage</span></span>
 
-1. <span data-ttu-id="b1b91-106">Hartzaileei buruzko xehetasunetan, joan hona: **Administratzailea** > **Esportatu helburuak**.</span><span class="sxs-lookup"><span data-stu-id="b1b91-106">In audience insights, go to **Admin** > **Export destinations**.</span></span>
+1. <span data-ttu-id="56ff3-106">Hartzaileei buruzko xehetasunetan, joan hona: **Administratzailea** > **Esportatu helburuak**.</span><span class="sxs-lookup"><span data-stu-id="56ff3-106">In audience insights, go to **Admin** > **Export destinations**.</span></span>
 
-1. <span data-ttu-id="b1b91-107">**Azure Blob biltegia** hautatu **Konfiguratu**.</span><span class="sxs-lookup"><span data-stu-id="b1b91-107">Under **Azure Blob Storage**, select **Set up**.</span></span>
+1. <span data-ttu-id="56ff3-107">**Azure Blob biltegia** hautatu **Konfiguratu**.</span><span class="sxs-lookup"><span data-stu-id="56ff3-107">Under **Azure Blob Storage**, select **Set up**.</span></span>
 
-1. <span data-ttu-id="b1b91-108">Sartu **Kontuaren izena**, **Kontuaren gakoa**, eta **edukiontzi** zure Azure Blob biltegirako kontuan.</span><span class="sxs-lookup"><span data-stu-id="b1b91-108">Enter **Account name**, **Account key**, and **Container** for your Azure Blob storage account.</span></span>
-    - <span data-ttu-id="b1b91-109">Azure Blob biltegiratze kontuaren izena eta kontuaren gakoa aurkitzeko informazio gehiago lortzeko, ikus [Kudeatu biltegiratze kontuen ezarpenak Azure atarian](https://docs.microsoft.com/azure/storage/common/storage-account-manage).</span><span class="sxs-lookup"><span data-stu-id="b1b91-109">To learn more about how to find the Azure Blob storage account name and account key, see [Manage storage account settings in the Azure portal](https://docs.microsoft.com/azure/storage/common/storage-account-manage).</span></span>
-    - <span data-ttu-id="b1b91-110">Edukiontzia nola sortzen den jakiteko, ikus [Sortu edukiontzia](https://docs.microsoft.com/azure/storage/blobs/storage-quickstart-blobs-portal#create-a-container).</span><span class="sxs-lookup"><span data-stu-id="b1b91-110">To learn how to create a container, see [Create a container](https://docs.microsoft.com/azure/storage/blobs/storage-quickstart-blobs-portal#create-a-container).</span></span>
+1. <span data-ttu-id="56ff3-108">Sartu **Kontuaren izena**, **Kontuaren gakoa**, eta **edukiontzi** zure Azure Blob biltegirako kontuan.</span><span class="sxs-lookup"><span data-stu-id="56ff3-108">Enter **Account name**, **Account key**, and **Container** for your Azure Blob storage account.</span></span>
+    - <span data-ttu-id="56ff3-109">Azure Blob biltegiratze kontuaren izena eta kontuaren gakoa aurkitzeko informazio gehiago lortzeko, ikus [Kudeatu biltegiratze kontuen ezarpenak Azure atarian](/azure/storage/common/storage-account-manage).</span><span class="sxs-lookup"><span data-stu-id="56ff3-109">To learn more about how to find the Azure Blob storage account name and account key, see [Manage storage account settings in the Azure portal](/azure/storage/common/storage-account-manage).</span></span>
+    - <span data-ttu-id="56ff3-110">Edukiontzia nola sortzen den jakiteko, ikus [Sortu edukiontzia](/azure/storage/blobs/storage-quickstart-blobs-portal#create-a-container).</span><span class="sxs-lookup"><span data-stu-id="56ff3-110">To learn how to create a container, see [Create a container](/azure/storage/blobs/storage-quickstart-blobs-portal#create-a-container).</span></span>
 
-1. <span data-ttu-id="b1b91-111">Eman zure destinoari izen ezagun bat **Bistaratu izena** eremu.</span><span class="sxs-lookup"><span data-stu-id="b1b91-111">Give your destination a recognizable name in the **Display name** field.</span></span>
+1. <span data-ttu-id="56ff3-111">Eman zure destinoari izen ezagun bat **Bistaratu izena** eremu.</span><span class="sxs-lookup"><span data-stu-id="56ff3-111">Give your destination a recognizable name in the **Display name** field.</span></span>
 
-1. <span data-ttu-id="b1b91-112">Hautatu **Hurrengoa**.</span><span class="sxs-lookup"><span data-stu-id="b1b91-112">Select **Next**.</span></span>
+1. <span data-ttu-id="56ff3-112">Hautatu **Hurrengoa**.</span><span class="sxs-lookup"><span data-stu-id="56ff3-112">Select **Next**.</span></span>
 
-1. <span data-ttu-id="b1b91-113">Hautatu helmugara esportatu nahi duzun entitate bakoitzaren ondoko laukia.</span><span class="sxs-lookup"><span data-stu-id="b1b91-113">Select the box next to each of the entities you want to export to this destination.</span></span>
+1. <span data-ttu-id="56ff3-113">Hautatu helmugara esportatu nahi duzun entitate bakoitzaren ondoko laukia.</span><span class="sxs-lookup"><span data-stu-id="56ff3-113">Select the box next to each of the entities you want to export to this destination.</span></span>
 
-1. <span data-ttu-id="b1b91-114">Sakatu **Gorde**.</span><span class="sxs-lookup"><span data-stu-id="b1b91-114">Select **Save**.</span></span>
+1. <span data-ttu-id="56ff3-114">Sakatu **Gorde**.</span><span class="sxs-lookup"><span data-stu-id="56ff3-114">Select **Save**.</span></span>
 
-<span data-ttu-id="b1b91-115">Esportatutako datuak zuk konfiguratutako Azure Blob biltegian gordetzen dira.</span><span class="sxs-lookup"><span data-stu-id="b1b91-115">Exported data is stored in the Azure Blob storage container you configured.</span></span> <span data-ttu-id="b1b91-116">Hurrengo karpeta bideak automatikoki sortzen dira zure edukiontzian:</span><span class="sxs-lookup"><span data-stu-id="b1b91-116">The following folder paths are automatically created in your container:</span></span>
+<span data-ttu-id="56ff3-115">Esportatutako datuak zuk konfiguratutako Azure Blob biltegian gordetzen dira.</span><span class="sxs-lookup"><span data-stu-id="56ff3-115">Exported data is stored in the Azure Blob storage container you configured.</span></span> <span data-ttu-id="56ff3-116">Hurrengo karpeta bideak automatikoki sortzen dira zure edukiontzian:</span><span class="sxs-lookup"><span data-stu-id="56ff3-116">The following folder paths are automatically created in your container:</span></span>
 
-- <span data-ttu-id="b1b91-117">Sistemak sortutako iturburuko entitate eta entitateetarako: `%ContainerName%/CustomerInsights_%instanceID%/%ExportDestinationName%/%EntityName%/%Year%/%Month%/%Day%/%HHMM%/%EntityName%_%PartitionId%.csv`</span><span class="sxs-lookup"><span data-stu-id="b1b91-117">For source entities and entities generated by the system: `%ContainerName%/CustomerInsights_%instanceID%/%ExportDestinationName%/%EntityName%/%Year%/%Month%/%Day%/%HHMM%/%EntityName%_%PartitionId%.csv`</span></span>
-  - <span data-ttu-id="b1b91-118">Adibidez: `Dynamics365CustomerInsights/CustomerInsights_abcd1234-4312-11f4-93dc-24f72f43e7d5/BlobExport/HighValueSegment/2020/08/24/1433/HighValueSegment_1.csv`</span><span class="sxs-lookup"><span data-stu-id="b1b91-118">Example: `Dynamics365CustomerInsights/CustomerInsights_abcd1234-4312-11f4-93dc-24f72f43e7d5/BlobExport/HighValueSegment/2020/08/24/1433/HighValueSegment_1.csv`</span></span>
-- <span data-ttu-id="b1b91-119">Esportatutako entitateentzako model.json %ExportDestinationName% mailan egongo da</span><span class="sxs-lookup"><span data-stu-id="b1b91-119">The model.json for the exported entities will reside at the %ExportDestinationName% level</span></span>
-  - <span data-ttu-id="b1b91-120">Adibidez: `Dynamics365CustomerInsights/CustomerInsights_abcd1234-4312-11f4-93dc-24f72f43e7d5/BlobExport/model.json`</span><span class="sxs-lookup"><span data-stu-id="b1b91-120">Example: `Dynamics365CustomerInsights/CustomerInsights_abcd1234-4312-11f4-93dc-24f72f43e7d5/BlobExport/model.json`</span></span>
+- <span data-ttu-id="56ff3-117">Sistemak sortutako iturburuko entitate eta entitateetarako: `%ContainerName%/CustomerInsights_%instanceID%/%ExportDestinationName%/%EntityName%/%Year%/%Month%/%Day%/%HHMM%/%EntityName%_%PartitionId%.csv`</span><span class="sxs-lookup"><span data-stu-id="56ff3-117">For source entities and entities generated by the system: `%ContainerName%/CustomerInsights_%instanceID%/%ExportDestinationName%/%EntityName%/%Year%/%Month%/%Day%/%HHMM%/%EntityName%_%PartitionId%.csv`</span></span>
+  - <span data-ttu-id="56ff3-118">Adibidez: `Dynamics365CustomerInsights/CustomerInsights_abcd1234-4312-11f4-93dc-24f72f43e7d5/BlobExport/HighValueSegment/2020/08/24/1433/HighValueSegment_1.csv`</span><span class="sxs-lookup"><span data-stu-id="56ff3-118">Example: `Dynamics365CustomerInsights/CustomerInsights_abcd1234-4312-11f4-93dc-24f72f43e7d5/BlobExport/HighValueSegment/2020/08/24/1433/HighValueSegment_1.csv`</span></span>
+- <span data-ttu-id="56ff3-119">Model.json esportatutako entitateetarako mantenduko dira %ExportDestinationName% mailan</span><span class="sxs-lookup"><span data-stu-id="56ff3-119">The model.json for the exported entities will reside at the %ExportDestinationName% level</span></span>
+  - <span data-ttu-id="56ff3-120">Adibidez: `Dynamics365CustomerInsights/CustomerInsights_abcd1234-4312-11f4-93dc-24f72f43e7d5/BlobExport/model.json`</span><span class="sxs-lookup"><span data-stu-id="56ff3-120">Example: `Dynamics365CustomerInsights/CustomerInsights_abcd1234-4312-11f4-93dc-24f72f43e7d5/BlobExport/model.json`</span></span>
 
-## <a name="export-the-data"></a><span data-ttu-id="b1b91-121">Esportatu datuak</span><span class="sxs-lookup"><span data-stu-id="b1b91-121">Export the data</span></span>
+## <a name="export-the-data"></a><span data-ttu-id="56ff3-121">Esportatu datuak</span><span class="sxs-lookup"><span data-stu-id="56ff3-121">Export the data</span></span>
 
-<span data-ttu-id="b1b91-122">Hurrengoa egin dezakezu [esportatu datuak eskatu ahala](export-destinations.md#export-data-on-demand).</span><span class="sxs-lookup"><span data-stu-id="b1b91-122">You can [export data on demand](export-destinations.md#export-data-on-demand).</span></span> <span data-ttu-id="b1b91-123">Esportazioa guztiekin ere exekutatuko da [programatutako freskapen](system.md#schedule-tab).</span><span class="sxs-lookup"><span data-stu-id="b1b91-123">The export will also run with every [scheduled refresh](system.md#schedule-tab).</span></span>
+<span data-ttu-id="56ff3-122">Hurrengoa egin dezakezu [esportatu datuak eskatu ahala](export-destinations.md#export-data-on-demand).</span><span class="sxs-lookup"><span data-stu-id="56ff3-122">You can [export data on demand](export-destinations.md#export-data-on-demand).</span></span> <span data-ttu-id="56ff3-123">Esportazioa guztiekin ere exekutatuko da [programatutako freskapen](system.md#schedule-tab).</span><span class="sxs-lookup"><span data-stu-id="56ff3-123">The export will also run with every [scheduled refresh](system.md#schedule-tab).</span></span>
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -5,77 +5,77 @@ ms.date: 11/03/2020
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
-author: m-hartmann
-ms.author: mhart
-ms.reviewer: adkuppa
+author: adkuppa
+ms.author: adkuppa
+ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 68aa1b56fb634da80a0c64db72f778d57507104d
-ms.sourcegitcommit: 139548f8a2d0f24d54c4a6c404a743eeeb8ef8e0
+ms.openlocfilehash: 780dc61a82d6ed9856a37dc8f164fa946d982bbe
+ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5269683"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "5595932"
 ---
-# <a name="data-sources-overview"></a><span data-ttu-id="4bb38-103">Datuen iturburuen ikuspegi orokorra</span><span class="sxs-lookup"><span data-stu-id="4bb38-103">Data sources overview</span></span>
+# <a name="data-sources-overview"></a><span data-ttu-id="633b5-103">Datuen iturburuen ikuspegi orokorra</span><span class="sxs-lookup"><span data-stu-id="633b5-103">Data sources overview</span></span>
 
 [!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
 
-<span data-ttu-id="4bb38-104">Dynamics 365 Customer Insights-eko hartzaileen xehetasunen gaitasuna iturburu multzo zabal bateko datuekin konektatzen da.</span><span class="sxs-lookup"><span data-stu-id="4bb38-104">The audience insights capability in Dynamics 365 Customer Insights connects to data from a broad set of sources.</span></span> <span data-ttu-id="4bb38-105">datu-iturburu-era konektatzearen prozesua sarritan aipatzen da *datuen irenstea*.</span><span class="sxs-lookup"><span data-stu-id="4bb38-105">Connecting to a data source is often referred to as the process of *data ingestion*.</span></span> <span data-ttu-id="4bb38-106">Datuak irentsi ondoren, egin dezakezu [bateratu](data-unification.md) eta neurriak hartu.</span><span class="sxs-lookup"><span data-stu-id="4bb38-106">After ingesting the data, you can [unify](data-unification.md) and take action on it.</span></span>
+<span data-ttu-id="633b5-104">Dynamics 365 Customer Insights-eko hartzaileen xehetasunen gaitasuna iturburu multzo zabal bateko datuekin konektatzen da.</span><span class="sxs-lookup"><span data-stu-id="633b5-104">The audience insights capability in Dynamics 365 Customer Insights connects to data from a broad set of sources.</span></span> <span data-ttu-id="633b5-105">datu-iturburu-era konektatzearen prozesua sarritan aipatzen da *datuen irenstea*.</span><span class="sxs-lookup"><span data-stu-id="633b5-105">Connecting to a data source is often referred to as the process of *data ingestion*.</span></span> <span data-ttu-id="633b5-106">Datuak irentsi ondoren, egin dezakezu [bateratu](data-unification.md) eta neurriak hartu.</span><span class="sxs-lookup"><span data-stu-id="633b5-106">After ingesting the data, you can [unify](data-unification.md) and take action on it.</span></span>
 
-## <a name="add-a-data-source"></a><span data-ttu-id="4bb38-107">Gehitu datu-iturburua</span><span class="sxs-lookup"><span data-stu-id="4bb38-107">Add a data source</span></span>
+## <a name="add-a-data-source"></a><span data-ttu-id="633b5-107">Gehitu datu-iturburua</span><span class="sxs-lookup"><span data-stu-id="633b5-107">Add a data source</span></span>
 
-<span data-ttu-id="4bb38-108">datu-iturburu bat gehitzeko artikulu zehatzak ikusi, aukeratutako aukeraren arabera.</span><span class="sxs-lookup"><span data-stu-id="4bb38-108">Refer to the detailed articles on how to add a data source, depending on which option you choose.</span></span>
+<span data-ttu-id="633b5-108">datu-iturburu bat gehitzeko artikulu zehatzak ikusi, aukeratutako aukeraren arabera.</span><span class="sxs-lookup"><span data-stu-id="633b5-108">Refer to the detailed articles on how to add a data source, depending on which option you choose.</span></span>
 
-<span data-ttu-id="4bb38-109">datu-iturburu bat gehi dezakezu hiru modu nagusitan:</span><span class="sxs-lookup"><span data-stu-id="4bb38-109">You can add a data source in three main ways:</span></span>
+<span data-ttu-id="633b5-109">datu-iturburu bat gehi dezakezu hiru modu nagusitan:</span><span class="sxs-lookup"><span data-stu-id="633b5-109">You can add a data source in three main ways:</span></span>
 
-- [<span data-ttu-id="4bb38-110">Dozenaka Power Query lokailuren bidez</span><span class="sxs-lookup"><span data-stu-id="4bb38-110">Through dozens of Power Query connectors</span></span>](connect-power-query.md)
-- [<span data-ttu-id="4bb38-111">Hurrengotik Common Data Model-eko karpeta bat</span><span class="sxs-lookup"><span data-stu-id="4bb38-111">From a Common Data Model folder</span></span>](connect-common-data-model.md)
-- [<span data-ttu-id="4bb38-112">Zuretik Common Data Service lakua</span><span class="sxs-lookup"><span data-stu-id="4bb38-112">From your own Common Data Service lake</span></span>](connect-common-data-service-lake.md)
+- [<span data-ttu-id="633b5-110">Dozenaka Power Query lokailuren bidez</span><span class="sxs-lookup"><span data-stu-id="633b5-110">Through dozens of Power Query connectors</span></span>](connect-power-query.md)
+- [<span data-ttu-id="633b5-111">Hurrengotik Common Data Model-eko karpeta bat</span><span class="sxs-lookup"><span data-stu-id="633b5-111">From a Common Data Model folder</span></span>](connect-common-data-model.md)
+- [<span data-ttu-id="633b5-112">Zuretik Common Data Service lakua</span><span class="sxs-lookup"><span data-stu-id="633b5-112">From your own Common Data Service lake</span></span>](connect-common-data-service-lake.md)
 
 > [!NOTE]
-> <span data-ttu-id="4bb38-113">Ezin dituzu lokal datu iturrietako datuak gehitu oraindik.</span><span class="sxs-lookup"><span data-stu-id="4bb38-113">You can't add data from on-premises data sources yet.</span></span>
+> <span data-ttu-id="633b5-113">Ezin dituzu lokal datu iturrietako datuak gehitu oraindik.</span><span class="sxs-lookup"><span data-stu-id="633b5-113">You can't add data from on-premises data sources yet.</span></span>
 
-## <a name="review-ingested-data"></a><span data-ttu-id="4bb38-114">Berrikusi sartutako datuak</span><span class="sxs-lookup"><span data-stu-id="4bb38-114">Review ingested data</span></span>
+## <a name="review-ingested-data"></a><span data-ttu-id="633b5-114">Berrikusi sartutako datuak</span><span class="sxs-lookup"><span data-stu-id="633b5-114">Review ingested data</span></span>
 
-<span data-ttu-id="4bb38-115">Irentsitako datu-iturburu bakoitzaren izena, bere egoera eta iturri horretako datuak berritu ziren azken aldia ikusiko dituzu.</span><span class="sxs-lookup"><span data-stu-id="4bb38-115">You'll see the name of each ingested data source, its status, and the last time the data was refreshed for that source.</span></span> <span data-ttu-id="4bb38-116">Datu-iturburuen zerrenda zutabe bakoitzaren arabera ordenatu dezakezu.</span><span class="sxs-lookup"><span data-stu-id="4bb38-116">You can sort the list of data sources by every column.</span></span>
+<span data-ttu-id="633b5-115">Irentsitako datu-iturburu bakoitzaren izena, bere egoera eta iturri horretako datuak berritu ziren azken aldia ikusiko dituzu.</span><span class="sxs-lookup"><span data-stu-id="633b5-115">You'll see the name of each ingested data source, its status, and the last time the data was refreshed for that source.</span></span> <span data-ttu-id="633b5-116">Datu-iturburuen zerrenda zutabe bakoitzaren arabera ordenatu dezakezu.</span><span class="sxs-lookup"><span data-stu-id="633b5-116">You can sort the list of data sources by every column.</span></span>
 
 > [!div class="mx-imgBorder"]
-> <span data-ttu-id="4bb38-117">![Gehitutako datu-iturriak](media/configure-data-datasource-added.png "Gehitutako datu-iturriak")</span><span class="sxs-lookup"><span data-stu-id="4bb38-117">![Data source added](media/configure-data-datasource-added.png "Data source added")</span></span>
+> <span data-ttu-id="633b5-117">![Gehitutako datu-iturriak](media/configure-data-datasource-added.png "Gehitutako datu-iturriak")</span><span class="sxs-lookup"><span data-stu-id="633b5-117">![Data source added](media/configure-data-datasource-added.png "Data source added")</span></span>
 
-|<span data-ttu-id="4bb38-118">Egoera</span><span class="sxs-lookup"><span data-stu-id="4bb38-118">Status</span></span>  |<span data-ttu-id="4bb38-119">Deskribapena</span><span class="sxs-lookup"><span data-stu-id="4bb38-119">Description</span></span>  |
+|<span data-ttu-id="633b5-118">Egoera</span><span class="sxs-lookup"><span data-stu-id="633b5-118">Status</span></span>  |<span data-ttu-id="633b5-119">Deskribapena</span><span class="sxs-lookup"><span data-stu-id="633b5-119">Description</span></span>  |
 |---------|---------|
-|<span data-ttu-id="4bb38-120">Ongi egin da</span><span class="sxs-lookup"><span data-stu-id="4bb38-120">Successful</span></span>   |<span data-ttu-id="4bb38-121">Datu-iturburu sartu da **Freskatuta** zutabean denbora-tartea adierazten bada.</span><span class="sxs-lookup"><span data-stu-id="4bb38-121">Data source was successfully ingested if a time is mentioned in the **Refreshed** column.</span></span>
-|<span data-ttu-id="4bb38-122">Ez da hasi</span><span class="sxs-lookup"><span data-stu-id="4bb38-122">Not started</span></span>   |<span data-ttu-id="4bb38-123">Datu-iturburuak oraindik ez du daturik sartu edo oraindik zirriborro moduan daude.</span><span class="sxs-lookup"><span data-stu-id="4bb38-123">The data source has no data ingested yet or still in draft mode.</span></span>         |
-|<span data-ttu-id="4bb38-124">Freskatzen</span><span class="sxs-lookup"><span data-stu-id="4bb38-124">Refreshing</span></span>    |<span data-ttu-id="4bb38-125">Datuen horniketa martxan da.</span><span class="sxs-lookup"><span data-stu-id="4bb38-125">Data ingestion is in progress.</span></span> <span data-ttu-id="4bb38-126">Eragiketa hau bertan behera utzi dezakezu **Utzi freskagarria** herrian **Ekintzak** zutabea.</span><span class="sxs-lookup"><span data-stu-id="4bb38-126">You can cancel this operation by selecting **Stop refreshing** in the **Actions** column.</span></span> <span data-ttu-id="4bb38-127">datu-iturburu-en freskagarria gelditzeak azken freskatze egoeran itzuliko du.</span><span class="sxs-lookup"><span data-stu-id="4bb38-127">Stopping the refresh of a data source will revert it to its last refresh state.</span></span>       |
-|<span data-ttu-id="4bb38-128">Ezin izan da egin</span><span class="sxs-lookup"><span data-stu-id="4bb38-128">Failed</span></span>     |<span data-ttu-id="4bb38-129">Datuen iradokizunak akatsak izan ditu.</span><span class="sxs-lookup"><span data-stu-id="4bb38-129">Data ingestion ran into errors.</span></span>         |
+|<span data-ttu-id="633b5-120">Ongi egin da</span><span class="sxs-lookup"><span data-stu-id="633b5-120">Successful</span></span>   |<span data-ttu-id="633b5-121">Datu-iturburu sartu da **Freskatuta** zutabean denbora-tartea adierazten bada.</span><span class="sxs-lookup"><span data-stu-id="633b5-121">Data source was successfully ingested if a time is mentioned in the **Refreshed** column.</span></span>
+|<span data-ttu-id="633b5-122">Ez da hasi</span><span class="sxs-lookup"><span data-stu-id="633b5-122">Not started</span></span>   |<span data-ttu-id="633b5-123">Datu-iturburuak oraindik ez du daturik sartu edo oraindik zirriborro moduan daude.</span><span class="sxs-lookup"><span data-stu-id="633b5-123">The data source has no data ingested yet or still in draft mode.</span></span>         |
+|<span data-ttu-id="633b5-124">Freskatzen</span><span class="sxs-lookup"><span data-stu-id="633b5-124">Refreshing</span></span>    |<span data-ttu-id="633b5-125">Datuen horniketa martxan da.</span><span class="sxs-lookup"><span data-stu-id="633b5-125">Data ingestion is in progress.</span></span> <span data-ttu-id="633b5-126">Eragiketa hau bertan behera utzi dezakezu **Utzi freskagarria** herrian **Ekintzak** zutabea.</span><span class="sxs-lookup"><span data-stu-id="633b5-126">You can cancel this operation by selecting **Stop refreshing** in the **Actions** column.</span></span> <span data-ttu-id="633b5-127">datu-iturburu-en freskagarria gelditzeak azken freskatze egoeran itzuliko du.</span><span class="sxs-lookup"><span data-stu-id="633b5-127">Stopping the refresh of a data source will revert it to its last refresh state.</span></span>       |
+|<span data-ttu-id="633b5-128">Ezin izan da egin</span><span class="sxs-lookup"><span data-stu-id="633b5-128">Failed</span></span>     |<span data-ttu-id="633b5-129">Datuen iradokizunak akatsak izan ditu.</span><span class="sxs-lookup"><span data-stu-id="633b5-129">Data ingestion ran into errors.</span></span>         |
 
-<span data-ttu-id="4bb38-130">Hautatu balioa **Egoera** datu-iturburu edozein zutabetan xehetasun gehiago berrikusteko.</span><span class="sxs-lookup"><span data-stu-id="4bb38-130">Select the value in the **Status** column of any data source to review more details.</span></span> <span data-ttu-id="4bb38-131">**Aurrerapenaren xehetasunak** panelean, zabaldu **Datu-iturburuak**.</span><span class="sxs-lookup"><span data-stu-id="4bb38-131">In the **Progress details** pane, expand **Data sources**.</span></span> <span data-ttu-id="4bb38-132">Aukeratu **Ikusi xehetasunak** freskatze egoerari buruzko xehetasun gehiago berrikusteko, erroreen xehetasunak eta beherako prozesuen eguneratzeak barne.</span><span class="sxs-lookup"><span data-stu-id="4bb38-132">Select **See details** for more information about the refresh status, including error details and downstream process updates.</span></span>
+<span data-ttu-id="633b5-130">Hautatu balioa **Egoera** datu-iturburu edozein zutabetan xehetasun gehiago berrikusteko.</span><span class="sxs-lookup"><span data-stu-id="633b5-130">Select the value in the **Status** column of any data source to review more details.</span></span> <span data-ttu-id="633b5-131">**Aurrerapenaren xehetasunak** panelean, zabaldu **Datu-iturburuak**.</span><span class="sxs-lookup"><span data-stu-id="633b5-131">In the **Progress details** pane, expand **Data sources**.</span></span> <span data-ttu-id="633b5-132">Aukeratu **Ikusi xehetasunak** freskatze egoerari buruzko xehetasun gehiago berrikusteko, erroreen xehetasunak eta beherako prozesuen eguneratzeak barne.</span><span class="sxs-lookup"><span data-stu-id="633b5-132">Select **See details** for more information about the refresh status, including error details and downstream process updates.</span></span>
 
-<span data-ttu-id="4bb38-133">Datuak kargatzea denbora har dezake.</span><span class="sxs-lookup"><span data-stu-id="4bb38-133">Loading data can take some time.</span></span> <span data-ttu-id="4bb38-134">Freskatu ondoren, iradokitako datuak berrikusi daitezke **erakundeak** orria.</span><span class="sxs-lookup"><span data-stu-id="4bb38-134">After a successful refresh, the ingested data can be reviewed from the **Entities** page.</span></span> <span data-ttu-id="4bb38-135">Informazio gehiago lortzeko, [Entitateak](entities.md).</span><span class="sxs-lookup"><span data-stu-id="4bb38-135">For more information, see [Entities](entities.md).</span></span>
+<span data-ttu-id="633b5-133">Datuak kargatzea denbora har dezake.</span><span class="sxs-lookup"><span data-stu-id="633b5-133">Loading data can take some time.</span></span> <span data-ttu-id="633b5-134">Freskatu ondoren, iradokitako datuak berrikusi daitezke **erakundeak** orria.</span><span class="sxs-lookup"><span data-stu-id="633b5-134">After a successful refresh, the ingested data can be reviewed from the **Entities** page.</span></span> <span data-ttu-id="633b5-135">Informazio gehiago lortzeko, [Entitateak](entities.md).</span><span class="sxs-lookup"><span data-stu-id="633b5-135">For more information, see [Entities](entities.md).</span></span>
 
-## <a name="refresh-a-data-source"></a><span data-ttu-id="4bb38-136">Freskatu datu-iturburu bat</span><span class="sxs-lookup"><span data-stu-id="4bb38-136">Refresh a data source</span></span>
+## <a name="refresh-a-data-source"></a><span data-ttu-id="633b5-136">Freskatu datu-iturburu bat</span><span class="sxs-lookup"><span data-stu-id="633b5-136">Refresh a data source</span></span>
 
-<span data-ttu-id="4bb38-137">Datu-iturburuak antolaketa automatikoan freska daitezke edo eskuz freskatu, beharraren arabera.</span><span class="sxs-lookup"><span data-stu-id="4bb38-137">Data sources can be refreshed on an automatic schedule or refreshed manually on demand.</span></span> 
+<span data-ttu-id="633b5-137">Datu-iturburuak antolaketa automatikoan freska daitezke edo eskuz freskatu, beharraren arabera.</span><span class="sxs-lookup"><span data-stu-id="633b5-137">Data sources can be refreshed on an automatic schedule or refreshed manually on demand.</span></span> 
 
-<span data-ttu-id="4bb38-138">Joan **Administratzailea** > **Sistema** > [**Antolaketa**](system.md#schedule-tab) atalera sartutako datu-iturburu guztien freskatze antolatuak konfiguratzeko.</span><span class="sxs-lookup"><span data-stu-id="4bb38-138">Go to **Admin** > **System** > [**Schedule**](system.md#schedule-tab) to configure scheduled refreshes of all your ingested data sources.</span></span>
+<span data-ttu-id="633b5-138">Joan **Administratzailea** > **Sistema** > [**Antolaketa**](system.md#schedule-tab) atalera sartutako datu-iturburu guztien freskatze antolatuak konfiguratzeko.</span><span class="sxs-lookup"><span data-stu-id="633b5-138">Go to **Admin** > **System** > [**Schedule**](system.md#schedule-tab) to configure scheduled refreshes of all your ingested data sources.</span></span>
 
-<span data-ttu-id="4bb38-139">Eskatu ahalako datu-iturburu bat freskatzeko, jarraitu urrats hauek:</span><span class="sxs-lookup"><span data-stu-id="4bb38-139">To refresh a data source on demand, follow these steps:</span></span>
+<span data-ttu-id="633b5-139">Eskatu ahalako datu-iturburu bat freskatzeko, jarraitu urrats hauek:</span><span class="sxs-lookup"><span data-stu-id="633b5-139">To refresh a data source on demand, follow these steps:</span></span>
 
-1. <span data-ttu-id="4bb38-140">Hartzaileei buruzko xehetasunetan, joan hona: **Datuak** > **Datu-iturburuak**</span><span class="sxs-lookup"><span data-stu-id="4bb38-140">In audience insights, go to **Data** > **Data sources**</span></span>
+1. <span data-ttu-id="633b5-140">Hartzaileei buruzko xehetasunetan, joan hona: **Datuak** > **Datu-iturburuak**</span><span class="sxs-lookup"><span data-stu-id="633b5-140">In audience insights, go to **Data** > **Data sources**</span></span>
 
-2. <span data-ttu-id="4bb38-141">Hautatu freskatu nahi duzun datu-iturburuaren ondoko elipsi bertikala eta hautatu **Freskatu** goitibeherako zerrendatik.</span><span class="sxs-lookup"><span data-stu-id="4bb38-141">Select the vertical ellipsis next to the data source you want to refresh and select **Refresh** from the drop-down list.</span></span>
+2. <span data-ttu-id="633b5-141">Hautatu freskatu nahi duzun datu-iturburuaren ondoko elipsi bertikala eta hautatu **Freskatu** goitibeherako zerrendatik.</span><span class="sxs-lookup"><span data-stu-id="633b5-141">Select the vertical ellipsis next to the data source you want to refresh and select **Refresh** from the drop-down list.</span></span>
 
-3. <span data-ttu-id="4bb38-142">Datu-iturburua eskuz eguneratzeko aktibatuta dago.</span><span class="sxs-lookup"><span data-stu-id="4bb38-142">The data source is now triggered for a manual refresh.</span></span> <span data-ttu-id="4bb38-143">Datu-iturburua freskatuz gero, entitateen eskema zein datu-iturburuan zehaztutako entitateetako datuak eguneratuko dira.</span><span class="sxs-lookup"><span data-stu-id="4bb38-143">Refreshing a data source will update both the entity schema as well as data for all the entities specified in the data source.</span></span>
+3. <span data-ttu-id="633b5-142">Datu-iturburua eskuz eguneratzeko aktibatuta dago.</span><span class="sxs-lookup"><span data-stu-id="633b5-142">The data source is now triggered for a manual refresh.</span></span> <span data-ttu-id="633b5-143">Datu-iturburua freskatuz gero, entitateen eskema zein datu-iturburuan zehaztutako entitateetako datuak eguneratuko dira.</span><span class="sxs-lookup"><span data-stu-id="633b5-143">Refreshing a data source will update both the entity schema as well as data for all the entities specified in the data source.</span></span>
 
-4. <span data-ttu-id="4bb38-144">Aukeratu **Freskatzeari utzi** lehendik dagoen freskatzea bertan behera utzi nahi baduzu, eta datu-iturburua bere azken eguneratze-egoerara itzuliko da.</span><span class="sxs-lookup"><span data-stu-id="4bb38-144">Select **Stop refreshing** if you want to cancel an existing refresh and the data source will revert to its last refresh status.</span></span>
+4. <span data-ttu-id="633b5-144">Aukeratu **Freskatzeari utzi** lehendik dagoen freskatzea bertan behera utzi nahi baduzu, eta datu-iturburua bere azken eguneratze-egoerara itzuliko da.</span><span class="sxs-lookup"><span data-stu-id="633b5-144">Select **Stop refreshing** if you want to cancel an existing refresh and the data source will revert to its last refresh status.</span></span>
 
-## <a name="delete-a-data-source"></a><span data-ttu-id="4bb38-145">Ezabatu datu-iturri bat</span><span class="sxs-lookup"><span data-stu-id="4bb38-145">Delete a data source</span></span>
+## <a name="delete-a-data-source"></a><span data-ttu-id="633b5-145">Ezabatu datu-iturri bat</span><span class="sxs-lookup"><span data-stu-id="633b5-145">Delete a data source</span></span>
 
-1. <span data-ttu-id="4bb38-146">Hartzaileei buruzko xehetasunetan, joan hona: **Datuak** > **Datu-iturburuak**.</span><span class="sxs-lookup"><span data-stu-id="4bb38-146">In audience insights, go to **Data** > **Data sources**.</span></span>
+1. <span data-ttu-id="633b5-146">Hartzaileei buruzko xehetasunetan, joan hona: **Datuak** > **Datu-iturburuak**.</span><span class="sxs-lookup"><span data-stu-id="633b5-146">In audience insights, go to **Data** > **Data sources**.</span></span>
 
-2. <span data-ttu-id="4bb38-147">Hautatu kendu nahi duzun datu-iturburu ondoko elipsi bertikala eta hautatu **Ezabatu** goitibeherako menuan.</span><span class="sxs-lookup"><span data-stu-id="4bb38-147">Select the vertical ellipsis next to the data source you want to remove and select **Delete** from the drop-down menu.</span></span>
+2. <span data-ttu-id="633b5-147">Hautatu kendu nahi duzun datu-iturburu ondoko elipsi bertikala eta hautatu **Ezabatu** goitibeherako menuan.</span><span class="sxs-lookup"><span data-stu-id="633b5-147">Select the vertical ellipsis next to the data source you want to remove and select **Delete** from the drop-down menu.</span></span>
 
-3. <span data-ttu-id="4bb38-148">Berretsi ezabatu nahi duzula.</span><span class="sxs-lookup"><span data-stu-id="4bb38-148">Confirm your deletion.</span></span>
+3. <span data-ttu-id="633b5-148">Berretsi ezabatu nahi duzula.</span><span class="sxs-lookup"><span data-stu-id="633b5-148">Confirm your deletion.</span></span>
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
