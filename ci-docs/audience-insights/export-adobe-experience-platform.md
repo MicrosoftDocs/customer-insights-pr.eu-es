@@ -1,7 +1,7 @@
 ---
 title: Esportatu Customer Insights datuak Adobe Experience Platform-era
 description: Ikusi audientzia estatistiken segmentuak nola erabiltzen diren Adobe Experience Platform-en.
-ms.date: 02/26/2021
+ms.date: 03/29/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: stefanie-msft
 ms.author: antando
 manager: shellyha
-ms.openlocfilehash: d1856861562be55c6d1d051050fe965560fa42f8
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: 884f4d30f354bed29909d57be84dce4c8e46965a
+ms.sourcegitcommit: 1b671c6100991fea1cace04b5d4fcedcd88aa94f
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5596254"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5760086"
 ---
 # <a name="use-customer-insights-segments-in-adobe-experience-platform-preview"></a>Erabili Customer Insights segmentuak nola erabiltzen diren Adobe Experience Platform-en (aurrebista)
 
@@ -51,21 +51,36 @@ Bidali nahi duzun eskaintza helbidean izen, abizen, eta bezeroaren harpidetzaren
 
 Gure xede-audientzia identifikatuta, esportazioen konfigurazioa konfiguratu ahal izango dugu ikusleen estatistiketatik Azure blob-biltegia kontura.
 
-1. Hartzaileei buruzko xehetasunetan, joan hona: **Administratzailea** > **Esportatu helburuak**.
+### <a name="configure-a-connection"></a>Konfiguratu konexioa
 
-1. Hurrengoan **Azure blob-biltegia** fitxa, hautatu **Konfiguratu**.
+1. Joan **Administratzailea** > **Konexioak**.
 
-   :::image type="content" source="media/export-azure-blob-storage-tile.png" alt-text="Azure blob-biltegiko konfigurazio lauza.":::
+1. Aukeratu **Gehitu konexioa** eta aukeratu **Azure blob biltegiratzea** edo hautatu **Konfiguratu** hurrengoan **Azure blob biltegiratzea** teila:
 
-1. Eman **Bistaratzeko izena** esportazio helmuga berri honetarako eta ondoren sartu **Kontuaren izena**, **Kontuaren gakoa**, eta **Edukiontzia** segmentua esportatu nahi duzun Azure blob-biltegia kontukoa.  
+   :::image type="content" source="media/export-azure-blob-storage-tile.png" alt-text="Azure blob-biltegiko konfigurazio lauza."::: konexioa konfiguratzeko.
+
+1. Eman zure konexioa ezaguna den izena **Bistaratze izena** eremua. Izena eta konexio motak konexio bat deskribatzen du. Konexio honen xedea eta xedea azaltzen duen izena aukeratzea gomendatzen dugu.
+
+1. Aukeratu nork erabil dezakeen konexioa. Inolako neurririk hartzen ez baduzu, lehenetsia izango da Administratzaileak. Informazio gehiagorako, ikus [Baimendu laguntzaileei esportazioetarako konexioa erabiltzea](connections.md#allow-contributors-to-use-a-connection-for-exports).
+
+1. Sartu **Kontuaren izena**, **Kontuaren gakoa**, eta **Edukiontzia** segmentua esportatu nahi duzun Blob biltegiratze konturako.  
       
    :::image type="content" source="media/azure-blob-configuration.png" alt-text="Biltegiratze kontuaren konfigurazioaren pantaila-argazkia. "::: 
+   
+    - Blob biltegiratze kontuaren izena eta kontuaren gakoa nola aurkitu jakiteko, ikusi [Kudeatu biltegiratze kontuaren ezarpenak Azure atarian](/azure/storage/common/storage-account-manage).
+    - Edukiontzia nola sortzen den jakiteko, ikus [Sortu edukiontzia](/azure/storage/blobs/storage-quickstart-blobs-portal#create-a-container).
 
-   - Azure Blob biltegiratze kontuaren izena eta kontuaren gakoa aurkitzeko informazio gehiago lortzeko, ikus [Kudeatu biltegiratze kontuen ezarpenak Azure atarian](/azure/storage/common/storage-account-manage).
+1. Hautatu **Gorde** konexioa osatzeko. 
 
-   - Edukiontzia nola sortzen den jakiteko, ikus [Sortu edukiontzia](/azure/storage/blobs/storage-quickstart-blobs-portal#create-a-container).
+### <a name="configure-an-export"></a>Konfiguratu esportazio bat
 
-1. Hautatu **Hurrengoa**.
+Esportazio hau konfigura dezakezu mota honetako konexiorako sarbidea baduzu. Informazio gehiagorako, ikusi [Esportazioa konfiguratzeko beharrezkoak diren baimenak](export-destinations.md#set-up-a-new-export).
+
+1. Joan **Datuak** > **Esportazioak**.
+
+1. Esportatze berria sortzeko, hautatu **Gehitu esportatzea**.
+
+1. Hurrengoan **Konexioa esportatzeko** eremuan, aukeratu konexioa Azure Blob biltegiaren sekzioan. Atal honen izena ikusten ez baduzu, ez dago mota honetako konexiorik erabilgarri.
 
 1. Aukeratu esportatu nahi duzun segmentua. Adibide honetan, **ChurnProneCustomers** da.
 
@@ -73,11 +88,9 @@ Gure xede-audientzia identifikatuta, esportazioen konfigurazioa konfiguratu ahal
 
 1. Sakatu **Gorde**.
 
-Esportazio helmuga gorde ondoren, aktibatuta aurkituko duzu **Administratzailea** > **Esportazioak** > **Nire esportazio helmugak**.
+Esportazio helmuga gorde ondoren, aktibatuta aurkituko duzu **Datuak** > **Esportazioak**.
 
-:::image type="content" source="media/export-destination-azure-blob-storage.png" alt-text="Pantaila-argazkia esportazioen zerrenda eta lagin-segmentua nabarmenduta.":::
-
-Orain egin dezakezu [esportatu segmentua eskariaren arabera](export-destinations.md#export-data-on-demand). Esportazioa guztiekin ere exekutatuko da [programatutako freskapen](system.md).
+Orain egin dezakezu [esportatu segmentua eskariaren arabera](export-destinations.md#run-exports-on-demand). Esportazioa guztiekin ere exekutatuko da [programatutako freskapen](system.md).
 
 > [!NOTE]
 > Ziurtatu esportatutako segmentuan erregistro kopurua Adobe Campaign Standard lizentziaren baimendutako mugaren barruan dagoela.

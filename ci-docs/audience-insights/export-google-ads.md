@@ -1,67 +1,35 @@
 ---
 title: Esportatu Customer Insights datuak Google Ads-era
-description: Ikasi Google Ads-erako konexioa nola konfiguratu.
-ms.date: 11/18/2020
-ms.reviewer: mhart
+description: Ikasi konexioa konfiguratzen eta Google Ads-era esportatzen.
+ms.date: 03/03/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
 author: phkieffer
 ms.author: philk
+ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 6d9a25af3913e755cccec745c532b35aef3cccf9
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: f4c094e486577d00d8c0c64e8527829820b335f6
+ms.sourcegitcommit: 1b671c6100991fea1cace04b5d4fcedcd88aa94f
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5598232"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5759678"
 ---
-# <a name="connector-for-google-ads-preview"></a>Google Ads-eko konektorea (aurrebista)
+# <a name="export-segments-to-google-ads-preview"></a>Esportatu segmentuak Google Ads-era (aurrebista)
 
 Esportatu bezeroen profil bateratuetako segmentuak Google Ads-eko hartzaile-zerrendetara eta erabili zerrenda horiek Google Bilaketa-n, Gmail-en, YouTube-n eta Google Display Network-en iragartzeko. 
 
-## <a name="prerequisites"></a>Aurrebaldintzak
+## <a name="prerequisites-for-connection"></a>Konexioaren aurrebaldintzak
 
 -   Baduzu [Google Ads kontua](https://ads.google.com/) eta dagozkion administratzaile kredentzialak.
+-   Baduzu [Google Ads garatzaileen token homologatua](https://developers.google.com/google-ads/api/docs/first-call/dev-token) 
+-   Webgunearen baldintzak betetzen dituzu [Bezeroen arteko lotura politika](https://support.google.com/adspolicy/answer/6299717)
+-   Webgunearen baldintzak betetzen dituzu [berriro merkaturatzeko zerrenden tamainak](https://support.google.com/google-ads/answer/7558048) 
+
 -   Google Ads-en hartzaileak eta dagozkien IDak daude. Informazio gehiagorako, ikus [Google Ads-eko hartzaileak](https://support.google.com/google-ads/answer/7558048?hl=en#:~:text=Audience%20lists%20is%20a%20section,Display%20Network%20through%20remarketing%20campaigns.).
 -   [Konfiguratutako segmentuak](segments.md) dituzu
 -   Esportatutako segmentuetako bezeroen profil bateratuek helbide elektronikoa, izena eta abizena adierazten duen eremuak dituzte
-
-## <a name="connect-to-google-ads"></a>Konektatu Google Ads-era
-
-1. Joan **Administratzailea** > **Esportazio-helburuak** atalera.
-
-1. **Google Ads** atalean, hautatu **Konfiguratu**.
-
-1. Eman zure esportatze-helmugari izen bat **Bistaratu izena** eremuan.
-
-1. Idatzi **[Google Ads bezeroaren IDa](https://support.google.com/google-ads/answer/1704344)**.
-
-1. Sartu **[Google Ads-ek onartutako garatzaile token-a](https://developers.google.com/google-ads/api/docs/first-call/dev-token)**.
-
-1. Aukeratu **ados** baieztatzeko **Datuen pribatutasuna eta betetzea**.
-
-1. Sartu zure **[Google Ads hartzaileen IDa](https://support.google.com/google-ads/answer/7558048?hl=en#:~:text=Audience%20lists%20is%20a%20section,Display%20Network%20through%20remarketing%20campaigns.)** eta hautatu **Konektatu** Google Ads-eko konexioa hasieratzeko.
-
-1. Aukeratu **Egiaztatu Google Ads-ekin** eta eman zure Google Ads kredentzialak.
-
-1. Aukeratu **Gehitu zeure burua esportazio erabiltzaile gisa** eta eman zure Customer Insights kredentzialak.
-
-   :::image type="content" source="media/export-segments-googleads.PNG" alt-text="Esportatu pantaila-argazkia Google Ads konexiorako":::
-
-1. Aukeratu **hurrengoa** esportazioa konfiguratzeko.
-
-## <a name="configure-the-connector"></a>Konfiguratu konektorea
-
-1. **Datuen bat etortzea** atalean, **Posta elektronikoa** eremuan, hautatu zure bezeroaren profil bateratuko eremua, bezero baten helbide elektronikoa adierazten duena. Errepikatu urratsak **Izena** eta **abizena** eremuetan.
-
-1. Hautatu esportatu nahi dituzun segmentuak. Guztira 1 milioi bezero profil esporta ditzakezu Google Ads-era.
-
-1. Sakatu **Gorde**.
-
-## <a name="export-the-data"></a>Esportatu datuak
-
-Hurrengoa egin dezakezu [esportatu datuak eskatu ahala](export-destinations.md). Esportazioa guztiekin ere exekutatuko da [programatutako freskapen](system.md#schedule-tab). Google Ads-en, zure segmentuak azpian aurki ditzakezu hemen: [Google Ads-eko hartzaileak](https://support.google.com/google-ads/answer/7558048?hl=en/).
 
 ## <a name="known-limitations"></a>Muga ezagunak
 
@@ -69,6 +37,48 @@ Hurrengoa egin dezakezu [esportatu datuak eskatu ahala](export-destinations.md).
 - Google Ads-era esportatzea segmentuetara mugatuta dago.
 - Guztira 1 milioi profil dituzten segmentuak esportatzeak 5 minutu arte iraun dezake hornitzailearen aldetik mugak direla eta. 
 - Google Ads zerbitzuan bat etortzeak 48 ordu iraun dezake.
+
+## <a name="set-up-connection-to-google-ads"></a>Konfiguratu konexioa Google Ads-era
+
+1. Joan **Administratzailea** > **Konexioak**.
+
+1. Hautatu **Gehitu konexioa** eta aukeratu **Google Ads** konexioa konfiguratzeko.
+
+1. Eman zure konexioa ezaguna den izena **Bistaratze izena** eremua. Izena eta konexio motak konexio bat deskribatzen du. Konexio honen xedea eta xedea azaltzen duen izena aukeratzea gomendatzen dugu.
+
+1. Aukeratu nork erabil dezakeen konexioa. Inolako neurririk hartzen ez baduzu, lehenetsia izango da Administratzaileak. Informazio gehiagorako, ikus [Baimendu laguntzaileei esportazioetarako konexioa erabiltzea](connections.md#allow-contributors-to-use-a-connection-for-exports).
+
+1. Idatzi **[Google Ads bezeroaren IDa](https://support.google.com/google-ads/answer/1704344)**.
+
+1. Sartu **[Google Ads-ek onartutako garatzaile token-a](https://developers.google.com/google-ads/api/docs/first-call/dev-token)**.
+
+1. Aukeratu **ados** baieztatzeko **Datuen pribatutasuna eta betetzea**.
+
+1. Aukeratu **Egiaztatu Google Ads-ekin** eta eman zure Google Ads kredentzialak.
+
+1. Aukeratu **Gehitu zeure burua esportazio erabiltzaile gisa** eta eman zure Customer Insights kredentzialak.
+
+1. Hautatu **Gorde** konexioa osatzeko. 
+
+## <a name="configure-an-export"></a>Konfiguratu esportazio bat
+
+Esportazio hau konfigura dezakezu mota honetako konexiorako sarbidea baduzu. Informazio gehiagorako, ikusi [Esportazioa konfiguratzeko beharrezkoak diren baimenak](export-destinations.md#set-up-a-new-export).
+
+1. Joan **Datuak** > **Esportazioak**.
+
+1. Esportazio berria sortzeko, hautatu **Gehitu helmuga**.
+
+1. Hurrengoan **Konexioa esportatzeko** eremuan, aukeratu konexioa Google Ads sekzioan. Atal honen izena ikusten ez baduzu, ez dago mota honetako konexiorik erabilgarri.
+
+1. Sartu zure **[Google Ads hartzaileen IDa](https://support.google.com/google-ads/answer/7558048?hl=en#:~:text=Audience%20lists%20is%20a%20section,Display%20Network%20through%20remarketing%20campaigns.)** eta hautatu **Konektatu** Google Ads-eko konexioa hasieratzeko.
+
+1. **Datuen bat etortzea** atalean, **Posta elektronikoa** eremuan, hautatu zure bezeroaren profil bateratuko eremua, bezero baten helbide elektronikoa adierazten duena. Errepikatu urratsak **Izena** eta **abizena** eremuetan.
+
+1. Hautatu esportatu nahi dituzun segmentuak. Guztira 1 milioi bezero profil esporta ditzakezu Google Ads-era.
+
+Esportazio bat gordetzeak ez du esportazioa berehala exekutatzen.
+
+Esportazioa guztiekin egiten da [freskatze programatua](system.md#schedule-tab). Ere egin dezakezu [esportatu eskariaren arabera](export-destinations.md#run-exports-on-demand). 
 
 ## <a name="data-privacy-and-compliance"></a>Datuen pribatutasuna eta arau-gordetzea
 

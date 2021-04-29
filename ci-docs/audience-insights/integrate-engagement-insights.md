@@ -9,12 +9,12 @@ author: mukeshpo
 ms.author: mukeshpo
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 14ebff30d3ec7fc52dca6f86136309a3f454fa27
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: 9a4cb77bb4c6ef0d88b3f00802f66baab5520a07
+ms.sourcegitcommit: aaa275c60c0c77c88196277b266a91d653f8f759
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5597450"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "5896404"
 ---
 # <a name="integrate-web-data-from-engagement-insights-with-audience-insights"></a>Integratu konpromiso-estatistiketatik datozen webguneak ikusleekin
 
@@ -46,7 +46,7 @@ Gertaera finduak sortzean kontuan hartzekoak:
     - Signal.Action.Name: jardueraren xehetasunak adierazten ditu
     - Signal.User.Id: bezeroaren IDarekin mapatzeko erabiltzen da
     - Signal.View.Uri: web-helbide gisa erabiltzen da segmentu edo neurrietarako oinarri gisa
-    - Signal.Export.Id: gertaeretarako gako nagusi gisa erabiltzeko <!-- system generated, do we need to list?-->
+    - Signal.Export.Id: gertaeretarako gako nagusi gisa erabiltzeko
     - Signal.Timestamp: jardueraren data eta ordua zehazteko
 
 Aukeratu iragazkiak zure erabilera kasurako garrantzitsuak diren gertaera eta orrietan zentratzeko. Adibide honetan, "Posta elektronikoa sustatzeko" ekintzaren izena erabiliko dugu.

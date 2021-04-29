@@ -1,7 +1,7 @@
 ---
 title: Esportatu Customer Insights datuak Adobe Campaign Standard-era
 description: Ikusi audientzia estatistiken segmentuak nola erabiltzen diren Adobe Campaign Standard-en.
-ms.date: 02/26/2021
+ms.date: 03/29/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: stefanie-msft
 ms.author: antando
 manager: shellyha
-ms.openlocfilehash: a5d0154c3d7c473dcba03fac0847bafcf97de2f2
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: b6c010d84119c2fa8b3ef99017c65f9939bf28c4
+ms.sourcegitcommit: 1b671c6100991fea1cace04b5d4fcedcd88aa94f
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5596300"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5760266"
 ---
 # <a name="use-customer-insights-segments-in-adobe-campaign-standard-preview"></a>Erabili Customer Insights segmentuak nola erabiltzen diren Adobe Campaign Standard-en (aurrebista)
 
@@ -48,15 +48,21 @@ Bidali nahi duzun eskaintza helbidean izen, abizen, eta bezeroaren harpidetzaren
 
 ## <a name="export-your-target-audience"></a>Esportatu zure xede-publikoa
 
+### <a name="configure-a-connection"></a>Konfiguratu konexioa
+
 Gure xede-audientzia identifikatuta, esportazioen konfigurazioa konfiguratu ahal izango dugu ikusleen estatistiketatik Azure blob-biltegia kontura.
 
-1. Hartzaileei buruzko xehetasunetan, joan hona: **Administratzailea** > **Esportatu helburuak**.
+1. Ikusleen ikuspegietan, joan hona **Administratzailea** > **Konexioak**.
 
-1. **Adobe Campaign** lauzan, hautatu **Konfiguratu**.
+1. Aukeratu **Gehitu konexioa** eta aukeratu **Adobe kanpaina** konexioa konfiguratzeko edo hautatu **Konfiguratu** urtean **Adobe kanpaina** teila
 
    :::image type="content" source="media/adobe-campaign-standard-tile.png" alt-text="Adobe Campaign Standard-en konfigurazio lauza.":::
 
-1. Eman **Bistaratzeko izena** esportazio helmuga berri honetarako eta ondoren sartu **Kontuaren izena**, **Kontuaren gakoa**, eta **Edukiontzia** segmentua esportatu nahi duzun Azure blob-biltegia kontukoa.  
+1. Eman zure konexioa ezaguna den izena **Bistaratze izena** eremua. Izena eta konexio motak konexio bat deskribatzen du. Konexio honen xedea eta xedea azaltzen duen izena aukeratzea gomendatzen dugu.
+
+1. Aukeratu nork erabil dezakeen konexioa. Inolako neurririk hartzen ez baduzu, lehenetsia izango da Administratzaileak. Informazio gehiagorako, ikusi [Esportazioa konfiguratzeko beharrezkoak diren baimenak](export-destinations.md#set-up-a-new-export).
+
+1. Sartu **Kontuaren izena**, **Kontuaren gakoa**, eta **Edukiontzia** Azure Blob biltegiratze-kontuarena, segmentua esportatu nahi duzunera.  
       
    :::image type="content" source="media/azure-blob-configuration.png" alt-text="Biltegiratze kontuaren konfigurazioaren pantaila-argazkia. "::: 
 
@@ -64,7 +70,17 @@ Gure xede-audientzia identifikatuta, esportazioen konfigurazioa konfiguratu ahal
 
    - Edukiontzia nola sortzen den jakiteko, ikus [Sortu edukiontzia](/azure/storage/blobs/storage-quickstart-blobs-portal#create-a-container).
 
-1. Hautatu **Hurrengoa**.
+1. Hautatu **Gorde** konexioa osatzeko.
+
+### <a name="configure-an-export"></a>Konfiguratu esportazio bat
+
+Esportazio hau konfigura dezakezu mota honetako konexiorako sarbidea baduzu. Informazio gehiagorako, ikusi [Esportazioa konfiguratzeko beharrezkoak diren baimenak](export-destinations.md#set-up-a-new-export).
+
+1. Joan **Datuak** > **Esportazioak**.
+
+1. Esportatze berria sortzeko, hautatu **Gehitu esportatzea**.
+
+1. Hurrengoan **Konexioa esportatzeko** eremuan, aukeratu konexioa Adobe kanpainaren sekzioan. Atal honen izena ikusten ez baduzu, ez dago mota honetako konexiorik erabilgarri.
 
 1. Aukeratu esportatu nahi duzun segmentua. Adibide honetan, **ChurnProneCustomers** da.
 
@@ -83,11 +99,9 @@ Gure xede-audientzia identifikatuta, esportazioen konfigurazioa konfiguratu ahal
 
 1. Sakatu **Gorde**.
 
-Esportazio helmuga gorde ondoren, aktibatuta aurkituko duzu **Administratzailea** > **Esportazioak** > **Nire esportazio helmugak**.
+Esportazio helmuga gorde ondoren, aktibatuta aurkituko duzu **Datuak** > **Esportazioak**.
 
-:::image type="content" source="media/export-destination-adobe-campaign-standard.png" alt-text="Pantaila-argazkia esportazioen zerrenda eta lagin-segmentua nabarmenduta.":::
-
-Orain egin dezakezu [esportatu segmentua eskariaren arabera](export-destinations.md#export-data-on-demand). Esportazioa guztiekin ere exekutatuko da [programatutako freskapen](system.md).
+Orain egin dezakezu [esportatu segmentua eskariaren arabera](export-destinations.md#run-exports-on-demand). Esportazioa guztiekin ere exekutatuko da [programatutako freskapen](system.md).
 
 > [!NOTE]
 > Ziurtatu esportatutako segmentuan erregistro kopurua Adobe Campaign Standard lizentziaren baimendutako mugaren barruan dagoela.

@@ -1,6 +1,6 @@
 ---
-title: Esportatu Customer Insights datuak AdRoll-era
-description: Ikasi konexioa nola konfiguratu eta AdRoll-era esportatu.
+title: Esportatu Customer Insights datuak RollWorks-era
+description: Ikasi konexioa konfiguratzen eta esportatzen RollWorks.
 ms.date: 03/03/2021
 ms.reviewer: mhart
 ms.service: customer-insights
@@ -9,36 +9,36 @@ ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: e8f4d4ee6b2c6cdec513b700641db568fa16076d
-ms.sourcegitcommit: aaa275c60c0c77c88196277b266a91d653f8f759
+ms.openlocfilehash: 4979f0147dea2270f11342c1bb6b0693f3c24aea
+ms.sourcegitcommit: 1b671c6100991fea1cace04b5d4fcedcd88aa94f
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "5895944"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5760463"
 ---
-# <a name="export-segment-lists-to-adroll-preview"></a>Esportatu segmentuen zerrendak AdRoll (aurrebista)
+# <a name="export-segment-lists-to-rollworks-preview"></a>Esportatu segmentuen zerrendak RollWorks (aurrebista)
 
-Esportatu bezeroen profil bateratuen segmentuak AdRoll-era eta erabili iragarkietarako. 
+Esportatu bezeroen profil bateratuen segmentuak RollWorks eta erabili iragarkietarako. 
 
 ## <a name="prerequisites-for-a-connection"></a>Konexioaren aurrebaldintzak
 
--   Baduzu [AdRoll kontua](https://www.adroll.com/) eta dagozkion administratzaile kredentzialak.
+-   Baduzu [RollWorks kontua](https://www.rollworks.com/) eta dagozkien administratzaile egiaztagiriak.
 -   Badituzu [konfiguratutako segmentuak](segments.md) hartzaileei buruzko xehetasunetan.
 -   Esportatutako segmentuetako bezeroen profil bateratuek helbide elektronikoa adierazten duen eremua dute.
 
 ## <a name="known-limitations"></a>Muga ezagunak
 
-- Guztira 250.000 bezero-profil esporta ditzakezu AdRoll-era esportatzeko.
-- Ezin dituzu esportatu 100 profil baino gutxiagoko segmentuak AdRoll-era. 
-- AdRoll-era esportatzea segmentuetara mugatuta dago.
-- 250.000 profila AdRoll-era esportatzeko 10 minutu behar izan ditzakezu osatzeko. 
-- AdRoll-era esporta ditzakezun profilen kopurua AdRoll-rekin duzun kontratuaren menpe dago eta mugatua da.
+- Esportazio bakoitzeko 250.000 profil esportatu ditzakezu RollWorks-era.
+- Ezin dituzu 100 profil baino gutxiagoko segmentuak esportatu RollWorks-era. 
+- RollWorks esportatzea segmentuetara mugatzen da.
+- Esportatu gehienez 250.000 profil RollWorks, 10 minutu behar ditzake osatzeko. 
+- RollWorks-era esporta ditzakezun profilen kopurua RollWorks-rekin duzun kontratuaren menpe dago eta mugatua da.
 
-## <a name="set-up-connection-to-adroll"></a>Konfiguratu konexioa AdRoll-ra
+## <a name="set-up-connection-to-rollworks"></a>Konfiguratu konexioa RollWorks-era
 
 1. Joan **Administratzailea** > **Konexioak**.
 
-1. Hautatu **Gehitu konexioa** eta aukeratu **AdRoll** konexioa konfiguratzeko.
+1. Hautatu **Gehitu konexioa** eta aukeratu **RollWorks** konexioa konfiguratzeko.
 
 1. Eman zure konexioa ezaguna den izena **Bistaratze izena** eremua. Izena eta konexio motak konexio bat deskribatzen du. Konexio honen xedea eta xedea azaltzen duen izena aukeratzea gomendatzen dugu.
 
@@ -46,9 +46,9 @@ Esportatu bezeroen profil bateratuen segmentuak AdRoll-era eta erabili iragarkie
 
 1. Aukeratu **ados** baieztatzeko **Datuen pribatutasuna eta betetzea**.
 
-1. Aukeratu **Konektatu** AdRoll-eko konexioa hasieratzeko.
+1. Aukeratu **Konektatu** RollWorks konexioa hasieratzeko.
 
-1. Aukeratu **Egiaztatu AdRoll-ekin** eta eman zure administraziorako AdRoll kredentzialak. 
+1. Aukeratu **Autenticatu RollWorks-ekin** eta eman zure administratzaile egiaztagiriak RollWorks-erako.
 
 1. Aukeratu **Gehitu zeure burua esportazio erabiltzaile gisa** eta eman zure Customer Insights kredentzialak.
 
@@ -62,11 +62,11 @@ Esportazio hau konfigura dezakezu mota honetako konexiorako sarbidea baduzu. Inf
 
 1. Esportazio berria sortzeko, hautatu **Gehitu helmuga**.
 
-1. Hurrengoan **Konexioa esportatzeko** eremuan, aukeratu konexioa AdRoll sekzioan. Atal honen izena ikusten ez baduzu, ez dago mota honetako konexiorik erabilgarri.
+1. Hurrengoan **Konexioa esportatzeko** eremuan, aukeratu konexioa RollWorks sekzioan. Atal honen izena ikusten ez baduzu, ez dago mota honetako konexiorik erabilgarri.
 
-1. Sartu zure **AdRoll iragarlearen IDa** Informazio gehiagorako, ikus [Iragarkien iragarkien profilak](https://help.adroll.com/hc/articles/212011838-Advertiser-Profiles).
+1. Sartu zure **RollWorks iragarlearen IDa** [RollWorks Iragarkia](https://help.adroll.com/hc/articles/212011838-Advertiser-Profiles).
 
-3. **Datuen bat etortzea** atalean, **Posta elektronikoa** eremuan, hautatu zure bezeroaren profil bateratuko eremua, bezero baten helbide elektronikoa adierazten duena. Segmentuak AdRoll-era esportatu behar dira.
+3. **Datuen bat etortzea** atalean, **Posta elektronikoa** eremuan, hautatu zure bezeroaren profil bateratuko eremua, bezero baten helbide elektronikoa adierazten duena. Segmentuak esportatu behar dira RollWorks.
 
 1. Hautatu esportatu nahi dituzun segmentuak. Aukeratu gutxienez 100 kide dituen segmentua. Ezin dituzu segmentu txikiagoak esportatu. Gainera, esportatzeko segmentu baten gehieneko tamaina 250.000 kide da esportazio bakoitzeko. 
 
@@ -79,6 +79,6 @@ Esportazioa guztiekin egiten da [freskatze programatua](system.md#schedule-tab).
 
 ## <a name="data-privacy-and-compliance"></a>Datuen pribatutasuna eta arau-gordetzea
 
-Dynamics 365 Customer Insights gaitzen duzunean datuak AdRoll-era bidaltzeko, datuak betetzeko mugatik kanpo transferitzea baimentzen duzu Dynamics 365 Customer Insights-erako, datu pertsonalak bezalako datu sentikorrak barne. Microsoft-ek datu horiek transferituko ditu zure aginduz, baina zure ardura da AdRoll-ek pribatutasun- edo segurtasun-betebeharrak betetzen dituela ziurtatzea. Informazio gehiago eskuratzeko, ikusi [Microsoft-en pribatutasun-adierazpena](https://go.microsoft.com/fwlink/?linkid=396732).
+Gaitzen duzunean Dynamics 365 Customer Insights datuak RollWorks-era igortzeko, datuak betetzeko mugatik kanpo transferitzea baimentzen duzu Dynamics 365 Customer Insights, datu pertsonalak bezalako datu sentikorrak barne. Microsoft-ek datu horiek transferituko ditu zure aginduz, baina zu arduratuko zara RollWorks-ek pribatutasun edo segurtasun betebeharrak betetzen dituela ziurtatzeaz. Informazio gehiago eskuratzeko, ikusi [Microsoft-en pribatutasun-adierazpena](https://go.microsoft.com/fwlink/?linkid=396732).
 
 Funtzio hau erabiltzeari uzteko, Dynamics 365 Customer Insights-en administratzaileak esportazioaren helburuko kokalekua edonoiz ken dezake.

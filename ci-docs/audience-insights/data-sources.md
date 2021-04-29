@@ -1,7 +1,7 @@
 ---
 title: Erabili datu-iturburuak datuak sartzeko
 description: Ikasi iturri desberdinetako datuak nola inportatu.
-ms.date: 11/03/2020
+ms.date: 04/12/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -9,12 +9,12 @@ author: adkuppa
 ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 780dc61a82d6ed9856a37dc8f164fa946d982bbe
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: 0fc13d3ac0a5176637b6fe481dabe0b2aec11649
+ms.sourcegitcommit: d89b19b2a3497722b78362aeee688ae7e94915d9
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5595932"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5887879"
 ---
 # <a name="data-sources-overview"></a>Datuen iturburuen ikuspegi orokorra
 
@@ -32,8 +32,15 @@ datu-iturburu bat gehi dezakezu hiru modu nagusitan:
 - [Hurrengotik Common Data Model-eko karpeta bat](connect-common-data-model.md)
 - [Zuretik Common Data Service lakua](connect-common-data-service-lake.md)
 
-> [!NOTE]
-> Ezin dituzu lokal datu iturrietako datuak gehitu oraindik.
+## <a name="add-data-from-on-premises-data-sources"></a>Gehitu datuak lokal datu iturrietatik
+
+Oinarrian onartzen da lokal datu iturrietako datuak sartzea Audience Insights-en Power Platform datu-fluxuak. Datu-fluxuak Customer Insights-en gaitu daitezke [eskainiz Microsoft Dataverse inguruneko URLa](manage-environments.md#create-an-environment-in-an-existing-organization) ingurunea konfiguratzerakoan.
+
+Elkartu ondoren sortzen diren datu iturriak Dataverse Customer Insights-ekin ingurunea erabiliko da [Power Platform datu-fluxuak](/power-query/dataflows/overview-dataflows-across-power-platform-dynamics-365) lehenetsiz. Datu fluxuek on-prem konektibitatea onartzen dute datu pasabideak erabiliz. Aurretik zeuden datu iturriak kendu eta birsortu Dataverse ingurunea lokal datu atebideak erabiltzeko lotu zen.
+
+Dagoen batetik datozen atebideak Power BI edo Power Apps ingurunea ikusgai egongo da eta Customer Insights-en berrerabili dezakezu. Datu iturrien orrira joateko estekak agertzen dira Power Platform lokal datu atebideak ikusi eta konfiguratzeko ingurunea.
+
+:::image type="content" source="media/data-sources-onpremises-gateways.png" alt-text="Datu iturrien orriaren pantaila-argazkia Power Platform ingurunea.":::
 
 ## <a name="review-ingested-data"></a>Berrikusi sartutako datuak
 
@@ -65,7 +72,7 @@ Eskatu ahalako datu-iturburu bat freskatzeko, jarraitu urrats hauek:
 
 2. Hautatu freskatu nahi duzun datu-iturburuaren ondoko elipsi bertikala eta hautatu **Freskatu** goitibeherako zerrendatik.
 
-3. Datu-iturburua eskuz eguneratzeko aktibatuta dago. Datu-iturburua freskatuz gero, entitateen eskema zein datu-iturburuan zehaztutako entitateetako datuak eguneratuko dira.
+3. Datu-iturburua eskuz eguneratzeko aktibatuta dago. datu-iturburu freskatzeak entitatearen eskema eta datuak eguneratuko ditu datu-iturburu-en zehaztutako entitate guztientzat.
 
 4. Aukeratu **Freskatzeari utzi** lehendik dagoen freskatzea bertan behera utzi nahi baduzu, eta datu-iturburua bere azken eguneratze-egoerara itzuliko da.
 

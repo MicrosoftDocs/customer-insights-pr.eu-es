@@ -1,7 +1,7 @@
 ---
 title: Eginbide berriak eta datozenak
 description: Ezaugarri berriei, hobekuntzei eta akatsak konpontzeko ezaugarriei buruzko informazioa.
-ms.date: 03/08/2021
+ms.date: 04/07/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -9,12 +9,12 @@ author: m-hartmann
 ms.author: mhart
 ms.reviewer: midevane
 manager: shellyha
-ms.openlocfilehash: 96c0b871eeaaf0976e5c718f37f883f4410977dc
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: 2159481f9355de738a7b457dcf0849a45c3e08db
+ms.sourcegitcommit: aaa275c60c0c77c88196277b266a91d653f8f759
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5598416"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "5896220"
 ---
 # <a name="whats-new-in-the-audience-insights-capability-of-dynamics-365-customer-insights"></a>Dynamics 365 Customer Insights hartzaileen xehetasunei buruzko zerbitzuaren ezaugarri berriak
 
@@ -22,14 +22,51 @@ ms.locfileid: "5598416"
 
 Gogotsu gaude gure eguneratze berrienak iragartzeko! Artikulu honek aurrebista publikoko eginbideak, aurrebistako funtzioak, erabilgarritasun orokorreko hobekuntzak, eta eginbideen eguneratzeak. Epe luzerako eginbide planak ikusteko, begiratu [Dynamics 365 eta Power Platform kaleratzeko planak](/dynamics365/release-plans/).
 
-Ondorengo bideoa ere ikus dezakezu azken sei hilabeteetan aurreikusitako gaitasunak ezagutzeko.
-
-> [!VIDEO https://www.youtube.com/embed/jQh-7pscH30]
-
 Eguneratzeak eskualdeen arabera banatzen ditugu. Beraz, eskualde batzuek beste batzuen aurretik ezaugarriak ikus ditzakete. Modu ezberdinean zehaztu ezean, ez duzu inolako neurririk egin behar eta aplikazioa automatikoki eguneratuko dugu inolako denborarik gabe.
 
 > [!TIP]
 > Bidali eta bozkatzeko eginbideak eskaerak eta produktuaren iradokizunak, joan [Dynamics 365 aplikazioaren ideiak atarira](https://experience.dynamics.com/ideas/categories/?forum=79a8c474-4e35-e911-a971-000d3a4f3343&forumName=Dynamics%20365%20Customer%20Insights).
+
+## <a name="march-2021-updates"></a>2021eko eguneratzeak
+
+2021eko martxoko eguneratzeen artean hainbat funtzio, errendimendu bertsio berritzea eta akatsak konpondu dira.
+
+### <a name="activities"></a>Ekintzak
+
+- **Jarduera morroia eta mota semantikoak** Jardueren mapen esperientzia hobetu eta eguneratu dugu jardueren mapen sorrera bideratu eta errazteko. Esperientzia berri honetan, erabiltzaileek esperientzia gidatua lortzen dute prozesuaren urrats bakoitza betetzen laguntzeko. Jarduerak mapatzeko urratsean, jarduera mota askoren artean aukeratzeaz gain, erabiltzaileak datuak semantikoki mapatzea aukeratu dezake *Harpidetza* eta / edo *SalesOrderLine* industria eskema estandarretara, downstream kontsumorako erabil daitezkeenak.    
+  Informazio gehiago lortzeko, ikus [Bezeroaren jarduerak](activities.md).
+
+### <a name="data-ingestion"></a>Datu-horniketa
+
+- **Konektatu lokal datu iturrietara erabiliz Power Platform datu-fluxuak eta atebideak** Pozik gaude aurrerapenaren berri ematean Power Platform datu-fluxuak eta lokal konektibitatea Customer Insights-eko atebideak erabiliz lotutako batekin Power Platform edo Dataverse ingurunea. Customer Insights ingurunearekin estekatutako datu iturri berriak Dataverse ingurunea lehenetsia izango da Power Platform datu-fluxuak lokal datuen konektibitatea eta konektore eta transformazio gaitasun multzo aberatsa ekartzen dute.
+
+### <a name="extensibility"></a>Hedagarritasuna
+
+- **Konexioetan eta esportazioetan antolatutako esportazioak** izena aldatu dugu **Esportatu helmugak** orrialdera **Konexioak** eta beste orrialde bat gehitu du **Esportazioak**. Eguneratze honen barruan, lehendik dauden esportazioak konexio eta esportazio batera bihurtuko ditugu konexio hori erabiliz. Administratzaileek argitasun handiagoa dute orain irteerako datuetan **Konexioak** orrialdea. Erabiltzaile rol guztiek dute sarbidea **Esportazioak** orrialdea, baina administratzaileek soilik aukera dezakete laguntzaileek partekatutako konexioekin esportazio zehatzak editatzeko baimena ematea.     
+  Informazio gehiagorako, ikus [Konexioen ikuspegi orokorra](connections.md) eta [Esportazioen ikuspegi orokorra](export-destinations.md).
+
+- **Esportatu segmentuak Campaign Monitor-era** Esportaziorako helmugak Campaign Monitor barne zabaldu ditugu. Segmentuak Customer Insights-etik Campaign Monitor zerrendetara esporta ditzakezu eta zure marketin kanpainetarako oinarri gisa erabil ditzakezu.    
+   Informazio gehiago eskuratzeko, ikusi [Esportatu Campaign Monitor](export-campaign-monitor.md).
+
+- **Esportatu segmentuak Constant Contact** Esportaziorako helmugak Etengabeko Kontaktua barne zabaldu ditugu. Segmentuak Customer Insights-etik Constant Contact zerrendetara esporta ditzakezu eta zure marketin kanpainetarako oinarri gisa erabil ditzakezu.   
+   Informazio gehiago eskuratzeko, ikusi [Esportatu Constant Contact](export-constant-contact.md).
+
+- **Esportatu segmentuak RollWorks-era** Esportaziorako helmugak RollWorks barne zabaldu ditugu. Segmentuak Customer Insights-etik RollWorks audientzetera esporta ditzakezu eta zure B2B iragarkiak oinarri gisa erabil ditzakezu.    
+   Informazio gehiago eskuratzeko, ikusi [Esportatu RollWorks-era ](export-rollworks.md).
+
+- **Esportatu segmentuak Snapchat-era** Esportaziorako helmugak Snapchat barne zabaldu ditugu. Segmentuak Customer Insights-etik Snapchat audientzetera esporta ditzakezu eta zure iragarkiak oinarri gisa erabil ditzakezu.     
+   Informazio gehiago lortzeko, ikusi [Esportatu Snapchat-era](export-snapchat.md).
+
+### <a name="predictions"></a>Iragarpenak
+
+- **Erabili produktuaren iragazkiak produktu iragarleen gomendioetan** Produktuen iragazkiak erabiltzeko gaitasuna gehitu dugu gure produktuen gomendio ereduan. Zure produktuen azpimultzoa soilik erabiltzen duen iragarpen sor dezakezu.    
+   Informazio gehiagorako, ikus [Konfiguratu produktuen iragazkiak](predict-product-recommendation.md#configure-product-filters).
+
+- **Sortu segmentuen ereduen iragarpenak** iragarpen eredu baten emaitzak erabiliz segmentuak sortzeko modu azkarra gehitu dugu. Ereduaren emaitzen orrialdetik, segmentu berri bat erraz sor dezakezu berria hautatuta **Sortu segmentua** aukera.    
+  Informazio gehiagorako, ikus [Sortu segmentu bat iragarpen ereduan oinarrituta](prediction-based-segment.md).
+
+- **Produktuen gomendioen azalpenak** Informazioa gehitu dugu, AI ereduak produktuaren gomendioak sortzeko ikasitako funtsezko faktoreak azaltzen dituena eta faktore horiek produktuaren gomendioetan zenbateraino laguntzen duten azalduz. Informazio hau ereduaren emaitzen pantailan gehitzen da.    
+   Informazio gehiagorako, ikusi [Berrikusi iragarpen-egoera eta emaitzak](predict-product-recommendation.md#review-a-prediction-status-and-results).
 
 ## <a name="february-2021-updates"></a>2021eko otsailaren eguneratzeak
 
@@ -107,7 +144,7 @@ Eguneratzeak eskualdeen arabera banatzen ditugu. Beraz, eskualde batzuek beste b
 
   Gainera, konfigurazio aukera berriak gehitu ditugu zure bezeroen profilak nola aberastu nahi dituzun hobeto kontrolatzeko. 
 
-  Informazio gehiago lortzeko, ikus [Aberastu bezeroen profilak marka eta interes kidetasunekin](enrichment-microsoft-graph.md).
+  Informazio gehiago lortzeko, ikus [Aberastu bezeroen profilak marka eta interes kidetasunekin](enrichment-microsoft.md).
 
 - **Kontrolatu zein profil aberastu**
 
@@ -309,8 +346,8 @@ Zeregin bat bertan behera uzten duzunean, adibidez, partidu prozesuan, bere azke
 
 - **Merkatu gehiagotan interes interesak aberastea**
 
-  Estatu Batuetatik harago interes-aberastasunen aberastasuna beste bost merkatutara hedatzen ari gara: Kanada, Australia, Erresuma Batua, Frantzia eta Alemania. Luzapen honekin, zure bezeroen datuak aberastu ditzakezu merkatu horiei dagozkien interes gehiagorekin. Merkatu horietan dauden zure bezeroen profilak ere aberastuko ditugu, Microsoft Graph-en tokiko jabedun datuak erabiliz.
-  Informazio gehiago lortzeko, ikus [Aberastu bezeroen profilak marka eta interes kidetasunekin](enrichment-microsoft-graph.md)
+  Estatu Batuetatik harago interes-aberastasunen aberastasuna beste bost merkatutara hedatzen ari gara: Kanada, Australia, Erresuma Batua, Frantzia eta Alemania. Luzapen honekin, zure bezeroen datuak aberastu ditzakezu merkatu horiei dagozkien interes gehiagorekin. Merkatu horietan dauden bezeroen profilak ere aberastuko ditugu Microsoften tokiko jabedun datuak erabiliz.
+  Informazio gehiago lortzeko, ikus [Aberastu bezeroen profilak marka eta interes kidetasunekin](enrichment-microsoft.md)
 
 
 ## <a name="july-2020-updates"></a>2020ko uztaila eguneratzeak
@@ -330,8 +367,8 @@ Zeregin bat bertan behera uzten duzunean, adibidez, partidu prozesuan, bere azke
 
 - **Merkatu gehiagoko marken interesak aberastea**
 
-  Estatu Batuetatik harago marken aberastasunen aberastasuna beste bost merkatutara hedatzen ari gara: Kanada, Australia, Erresuma Batua, Frantzia eta Alemania. Luzapen honekin, zure bezeroen datuak merkatu horietako tokiko markekin aberastu ditzakezu. Merkatu horietan dauden zure bezeroen profilak ere aberastuko ditugu, Microsoft Graph-en tokiko jabedun datuak erabiliz.
-  Informazio gehiago lortzeko, ikus [Aberastu bezeroen profilak marka eta interes kidetasunekin](enrichment-microsoft-graph.md)
+  Estatu Batuetatik harago marken aberastasunen aberastasuna beste bost merkatutara hedatzen ari gara: Kanada, Australia, Erresuma Batua, Frantzia eta Alemania. Luzapen honekin, zure bezeroen datuak merkatu horietako tokiko markekin aberastu ditzakezu. Merkatu horietan dauden bezeroen profilak ere aberastuko ditugu Microsoften tokiko jabedun datuak erabiliz.
+  Informazio gehiago lortzeko, ikus [Aberastu bezeroen profilak marka eta interes kidetasunekin](enrichment-microsoft.md)
 
 ## <a name="june-2020-updates"></a>2020ko ekaineko eguneratzeak
 
@@ -355,7 +392,7 @@ Zeregin bat bertan behera uzten duzunean, adibidez, partidu prozesuan, bere azke
 - **Bereizgarria marka eta interes kidetasuna aberastea**
 
   Marka eta interes kidetasunak eskuragarri daude bi aberastasun independente gisa. Bereizitako aberasketek zure negozioaren eskakizun edo beharren arabera konfiguratu eta kudeatzeko malgutasuna ematen dizute.    
-  Informazio gehiago lortzeko, ikus [Aberastu bezeroen profilak marka eta interes kidetasunekin](enrichment-microsoft-graph.md).
+  Informazio gehiago lortzeko, ikus [Aberastu bezeroen profilak marka eta interes kidetasunekin](enrichment-microsoft.md).
 
 #### <a name="extensibility"></a>Hedagarritasuna
 

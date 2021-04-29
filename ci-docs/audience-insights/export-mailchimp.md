@@ -1,7 +1,7 @@
 ---
 title: Esportatu Customer Insights datuak Mailchimp-era
-description: Ikasi Mailchimp-erako konexioa nola konfiguratu.
-ms.date: 10/26/2020
+description: Ikasi konexioa konfiguratzen eta Mailchimp-era esportatzen.
+ms.date: 03/03/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,71 +9,78 @@ ms.topic: how-to
 author: phkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 9f86616731c3cc3d26370727103ea9c5d4288c8d
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: b94a8e8b6bb867ca04a64007d592b22fbd700618
+ms.sourcegitcommit: 1b671c6100991fea1cace04b5d4fcedcd88aa94f
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5598186"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5759863"
 ---
-# <a name="connector-for-mailchimp-preview"></a>Mailchimp-eko konektorea (aurrebista)
+# <a name="export-segment-lists-to-mailchimp-preview"></a>Esportatu segmentuen zerrendak Mailchimp (aurrebista)
 
 Esportatu bezero profil bateratuen segmentuak Mailchimp-era buletinak eta posta elektronikoko kanpainak sortzeko.
 
-## <a name="prerequisites"></a>Aurrebaldintzak
+## <a name="prerequisites-for-connection"></a>Konexioaren aurrebaldintzak
 
 -   Baduzu [Mailchimp kontua](https://mailchimp.com/) eta dagozkion administratzaile kredentzialak.
 -   Mailchimp-en hartzaileak eta dagozkien IDak daude. Informazio gehiagorako, ikus [Mailchimp-eko hartzaileak](https://mailchimp.com/help/create-audience/).
 -   [Konfiguratutako segmentuak](segments.md) dituzu
 -   Esportatutako segmentuetako bezeroen profil bateratuek helbide elektronikoa adierazten duen eremua dute.
 
-## <a name="connect-to-mailchimp"></a>Konektatu Mailchimp-era
+## <a name="known-limitations"></a>Muga ezagunak
 
-1. Joan **Administratzailea** > **Esportazio-helburuak** atalera.
+- Gehienez milioi bat profil Mailchimp-era esportatzeko.
+- Mailchimp-era esportatzea segmentuetara mugatuta dago.
+- Milioi profileko segmentuak esportatzeak hiru ordu arte iraun dezake. 
+- Mailchimp-era esporta ditzakezun profilen kopurua Mailchimp-ekin duzun kontratuaren menpe dago eta mugatua da.
 
-1. **Mailchimp** atalean hautatu **Konfiguratu**.
+## <a name="set-up-connection-to-mailchimp"></a>Konfiguratu konexioa Mailchimp-era
 
-1. Eman zure esportatze-helmugari izen bat **Bistaratu izena** eremuan.
+1. Joan **Administratzailea** > **Konexioak**.
+
+1. Hautatu **Gehitu konexioa** eta aukeratu **Autopilot** konexioa konfiguratzeko.
+
+1. Eman zure konexioa ezaguna den izena **Bistaratze izena** eremua. Izena eta konexio motak konexio bat deskribatzen du. Konexio honen xedea eta xedea azaltzen duen izena aukeratzea gomendatzen dugu.
+
+1. Aukeratu nork erabil dezakeen konexioa. Inolako neurririk hartzen ez baduzu, lehenetsia izango da Administratzaileak. Informazio gehiagorako, ikus [Baimendu laguntzaileei esportazioetarako konexioa erabiltzea](connections.md#allow-contributors-to-use-a-connection-for-exports).
 
 1. Aukeratu **ados** baieztatzeko **Datuen pribatutasuna eta betetzea**.
 
-1. Sartu zure **[Mailchimp hartzaileen IDa](https://mailchimp.com/help/find-audience-id/)** eta hautatu **Konektatu** Mailchimp-eko konexioa hasieratzeko.
+1. Aukeratu **Konektatu** Mailchimp konexioa hasieratzeko.
 
 1. Aukeratu **Egiaztatu Mailchimp-ekin** eta eman zure Mailchimp kredentzialak.
 
 1. Aukeratu **Gehitu zeure burua esportazio erabiltzaile gisa** eta eman zure Customer Insights kredentzialak.
 
-   :::image type="content" source="media/export-connect-mailchimp.png" alt-text="Esportatu pantaila-argazkia Mailchimp konexiorako":::
-
-1. Aukeratu **hurrengoa** esportazioa konfiguratzeko.
+1. Hautatu **Gorde** konexioa osatzeko. 
 
 ## <a name="configure-the-connector"></a>Konfiguratu konektorea
 
-1. **Datuen bat etortzea** atalean, **Posta elektronikoa** eremuan, hautatu zure bezeroaren profil bateratuko eremua, bezero baten helbide elektronikoa adierazten duena. 
+Esportazio hau konfigura dezakezu mota honetako konexiorako sarbidea baduzu. Informazio gehiagorako, ikusi [Esportazioa konfiguratzeko beharrezkoak diren baimenak](export-destinations.md#set-up-a-new-export).
 
-1. Aukeran, **izena** eta **abizena** esporta ditzakezu mezu pertsonalizatuagoak sortzeko eremu osagarri gisa. Aukeratu **Gehitu atributua** eremu horiek esleitzeko.
+1. Joan **Datuak**> **Esportazioak**.
+
+1. Esportazio berria sortzeko, hautatu **Gehitu helmuga**.
+
+1. Hurrengoan **Konexioa esportatzeko** eremuan, aukeratu konexioa Mailchimp sekzioan. Atal honen izena ikusten ez baduzu, ez dago mota honetako konexiorik erabilgarri.
+
+1. Idatzi **[Mailchimp audientzia ID](https://mailchimp.com/help/find-audience-id/)**
+
+3. **Datuen bat etortzea** atalean, **Posta elektronikoa** eremuan, hautatu zure bezeroaren profil bateratuko eremua, bezero baten helbide elektronikoa adierazten duena. 
+
+1. Aukeran, esporta dezakezu **izen** eta **abizen** mezu elektroniko pertsonalizatuagoak sortzeko. Aukeratu **Gehitu atributua** eremu horiek esleitzeko.
 
 1. Hautatu esportatu nahi dituzun segmentuak. Guztira 1 milioi bezero profil esporta ditzakezu Mailchimp-era.
 
-   :::image type="content" source="media/export-segments-mailchimp.png" alt-text="Aukeratu eremuak eta segmentuak Mailchimp-era esportatzeko":::
-
 1. Sakatu **Gorde**.
 
-## <a name="export-the-data"></a>Esportatu datuak
+Esportazio bat gordetzeak ez du esportazioa berehala exekutatzen.
 
-Hurrengoa egin dezakezu [esportatu datuak eskatu ahala](export-destinations.md). Esportazioa guztiekin ere exekutatuko da [programatutako freskapen](system.md#schedule-tab). Mailchimp-en, zure segmentuak azpian aurki ditzakezu hemen: [Mailchimp-eko hartzaileak](https://mailchimp.com/help/create-audience/).
-
-## <a name="known-limitations"></a>Muga ezagunak
-
-- Gehienez milioi bat profil Mailchimp-era esportatzeko.
-- Mailchimp-era esportatzea segmentuetara mugatuta dago.
-- Guztira 1 milioi profil dituzten segmentuak esportatzeak hiru ordu arte iraun dezake hornitzailearen aldetik mugak direla eta. 
-- Mailchimp-era esporta ditzakezun profilen kopurua Mailchimp-ekin duzun kontratuaren menpe dago eta mugatua da.
+Esportazioa guztiekin egiten da [freskatze programatua](system.md#schedule-tab). Ere egin dezakezu [esportatu eskariaren arabera](export-destinations.md#run-exports-on-demand). 
 
 ## <a name="data-privacy-and-compliance"></a>Datuen pribatutasuna eta arau-gordetzea
 
 Dynamics 365 Customer Insights gaitzen duzunean datuak Mailchimp-era bidaltzeko, datuak betetzeko mugatik kanpo transferitzea baimentzen duzu Dynamics 365 Customer Insights-erako, datu pertsonalak bezalako datu sentikorrak barne. Microsoft-ek datu horiek transferituko ditu zure aginduz, baina zure ardura da Mailchimp-ek pribatutasun- edo segurtasun-betebeharrak betetzen dituela ziurtatzea. Informazio gehiago eskuratzeko, ikusi [Microsoft-en pribatutasun-adierazpena](https://go.microsoft.com/fwlink/?linkid=396732).
 Funtzio hau erabiltzeari uzteko, Dynamics 365 Customer Insights-en administratzaileak esportazioaren helburuko kokalekua edonoiz ken dezake.
-
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

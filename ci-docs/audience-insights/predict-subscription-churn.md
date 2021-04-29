@@ -9,12 +9,12 @@ ms.topic: how-to
 author: zacookmsft
 ms.author: zacook
 manager: shellyha
-ms.openlocfilehash: 75f5f9f8f56a33b2a43a605595a463ca2e937c6b
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: b6bf4f715768b18d69be3bea4085acd96933e8da
+ms.sourcegitcommit: 6d5dd572f75ba4c0303ec77c3b74e4318d52705c
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5595641"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5906887"
 ---
 # <a name="subscription-churn-prediction-preview"></a>Harpidetzeko aurresateko iragarpena (aurrebista)
 
@@ -49,6 +49,12 @@ Harpidetza aurreikuspena lagundu egiten du iragartzen bezeroren bat arriskuan da
         - **Timestamp:** Giltza nagusian identifikatutako gertaeraren data eta ordua.
         - **Gertaera:** Erabili nahi duzun gertaeraren izena. Adibidez, streaming bideo zerbitzuko "UserAction" izeneko eremuak "Ikusi" balioa izan dezake.
         - **Xehetasunak:** Ekitaldiaren inguruko informazio zehatza. Adibidez, streaming bideo zerbitzuko "ShowTitle" izeneko eremuak bezeroak ikusi duen bideoaren balioa izan dezake.
+- Iradokitako datuen ezaugarriak:
+    - Datu historiko nahikoak: harpidetzaren datuak hautatutako denbora-leihoaren bikoitza gutxienez. Ahal izanez gero, bizpahiru urteko harpidetza datuak.
+    - Harpidetzaren egoera: datuek bezero bakoitzarentzako harpidetza aktiboak eta inaktiboak biltzen dituzte, beraz, bezeroaren ID bakoitzeko sarrera ugari daude.
+    - Bezero kopurua: gutxienez 10 bezeroaren profilak, ahal dela 1.000 bezero bakarrak baino gehiago. Ereduak huts egingo du 10 bezero baino gutxiagorekin eta datu historiko nahikorik gabe.
+    - Datuen osotasuna: emandako entitatearen datu eremuan falta diren balioen % 20 baino gutxiago.
+   
    > [!NOTE]
    > Gutxienez bi jarduera erregistro beharko dituzu kalkulatu nahi dituzun bezeroen % 50.
 
@@ -67,7 +73,7 @@ Harpidetza aurreikuspena lagundu egiten du iragartzen bezeroren bat arriskuan da
 ### <a name="define-customer-churn"></a>Definitu bezeroak harpidetza bertan behera uzteko unea
 
 1. Idatzi kopurua **Harpidetza amaitu zen egunak** zure negozioak bezero bat egoera txarrean dagoela uste duela. Epea normalean, bezeroen galerak ekiditen saiatzean eskaintzak edo bestelako marketin-ahaleginak bezalako negozio-jarduerak gustatzen zaizkio.
-1. Idatzi kopurua **Egunak etorkizuna ikertzeko txanda iragartzeko** txanda iragartzeko leiho bat ezartzeko. Adibidez, zure bezeroek hurrengo 90 egunetan eragingo duten arriskua aurreikusteko marketinari eusteko ahaleginetara egokitzeko. Denbora epe luzeago edo laburragoetan churn arriskua aurreikusteak zaildu dezake zure churn arriskuaren profileko faktoreak jorratzea, baina hori zure negozioaren eskakizun zehatzen menpe dago. Jarraitzeko, hautatu **Hurrengoa**
+1. Idatzi kopurua **Egunak etorkizuna ikertzeko txanda iragartzeko** txanda iragartzeko leiho bat ezartzeko. Adibidez, zure bezeroek hurrengo 90 egunetan eragingo duten arriskua aurreikusteko marketinari eusteko ahaleginetara egokitzeko. Denbora epe luzeago edo laburragoetan churn arriskua aurreikusteak zaildu dezake zure churn arriskuaren profileko faktoreak jorratzea, zure negozioaren eskakizun zehatzen arabera. Jarraitzeko, hautatu **Hurrengoa**
    >[!TIP]
    > Aukeratu dezakezu **Gorde eta itxi** edozein unetan aurreikuspena zirriborro gisa gordetzeko. Zirriborroaren iragarpena hemen aurkituko duzu **Nire iragarpenak** jarraitzeko fitxa.
 
@@ -113,7 +119,8 @@ Harpidetza aurreikuspena lagundu egiten du iragartzen bezeroren bat arriskuan da
 1. Hautatu berrikusi nahi duzun iragarpena.
    - **Iragarpen izena:** Sortzerakoan emandako iragarpenaren izena.
    - **Iragarpen mota:** Iragarpenak egiteko erabilitako eredu mota
-   - **Irteerako entitatea:** Iragarpenaren irteera gordetzeko entitatearen izena. Izen hori duen entitate bat aurki dezakezu **Datuak** > **erakundeak**.
+   - **Irteerako entitatea:** Iragarpenaren irteera gordetzeko entitatearen izena. Izen hori duen entitate bat aurki dezakezu **Datuak** > **erakundeak**.    
+     Irteerako entitatean, *ChurnScore* da aurreikusitako txandaren probabilitatea eta *IsChurn* oinarritutako etiketa bitarra da *ChurnScore* 0,5 atalasearekin. Baliteke atalase lehenetsiak ez funtzionatzea zure eszenatokian. [Sortu segmentu berria](segments.md#create-a-new-segment) nahi duzun atalasearekin.
    - **Iragarritako eremua:** Aurreikuspen mota batzuetarako bakarrik dago eremua, eta ez da harpidetzaren kutxa iragarpenean erabiltzen.
    - **Egoera:** Iragarpenaren exekutatutako egoera.
         - **ilaran:** Aurreikuspena beste prozesu batzuen zain egongo da.

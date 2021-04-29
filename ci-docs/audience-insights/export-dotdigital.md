@@ -1,7 +1,7 @@
 ---
 title: Esportatu Customer Insights datuak DotDigital-era
-description: Ikasi DotDigital-erako konexioa nola konfiguratu.
-ms.date: 11/14/2020
+description: Ikasi konexioa nola konfiguratu eta DotDigital-era esportatu.
+ms.date: 03/03/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,33 +9,40 @@ ms.topic: how-to
 author: phkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 51a28bdf0de34f0555d8ad7e3d13b2ef8911d417
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: 235bcdfa4a7c4c1a382778bd4f66c1a9f5b7beb1
+ms.sourcegitcommit: 1b671c6100991fea1cace04b5d4fcedcd88aa94f
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5598001"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5759944"
 ---
-# <a name="connector-for-dotdigital-preview"></a>DotDigital-eko konektorea (aurrebista)
+# <a name="export-segment-lists-to-dotdigital-preview"></a>Esportatu segmentuen zerrendak DotDigital (aurrebista)
 
 Esportatu bezeroen profil bateratuen segmentuak DotDigital helbide liburuetara eta erabili kanpainetarako, posta elektroniko bidezko marketinerako eta DotDigital-ekin bezero segmentuak eraikitzeko. 
 
-## <a name="prerequisites"></a>Aurrebaldintzak
+## <a name="prerequisites-for-a-connection"></a>Konexioaren aurrebaldintzak
 
 -   Baduzu [DotDigital kontua](https://dotdigital.com/) eta dagozkion administratzaile kredentzialak.
 -   DotDigital-en helbide-liburuak eta dagozkien IDak daude. IDa URLan aurki daiteke helbide-liburua hautatu eta irekitzean. Informazio gehiagorako, ikus [DotDigital helbide-liburuak](https://support.dotdigital.com/hc/articles/212211968-Creating-an-address-book).
 -   Badituzu [konfiguratutako segmentuak](segments.md) hartzaileei buruzko xehetasunetan.
 -   Esportatutako segmentuetako bezeroen profil bateratuek helbide elektronikoa adierazten duen eremua dute.
 
-## <a name="connect-to-dotdigital"></a>Konektatu DotDigital-era
+## <a name="known-limitations"></a>Muga ezagunak
 
-1. Joan **Administratzailea** > **Esportazio-helburuak** atalera.
+- Gehienez milioi bat profil DotDigital-era esportatzeko.
+- DotDigital-era esportatzea segmentuetara mugatuta dago.
+- Guztira 1 milioi profil dituzten segmentuak esportatzeak 3 ordu arte iraun dezake hornitzailearen aldetik mugak direla eta. 
+- DotDigital-era esporta ditzakezun profilen kopurua DotDigital-ekin duzun kontratuaren menpe dago eta mugatua da.
 
-1. **DotDigital** atalean hautatu **Konfiguratu**.
+## <a name="set-up-connection-to-dotdigital"></a>Konfiguratu konexioa DotDigital-era
 
-1. Eman zure esportatze-helmugari izen bat **Bistaratu izena** eremuan.
+1. Joan **Administratzailea** > **Konexioak**.
 
-   :::image type="content" source="media/DotDigital_config.PNG" alt-text="DotDigital esportaziorako konfigurazio panela.":::
+1. Hautatu **Gehitu konexioa** eta aukeratu **DotDigital** konexioa konfiguratzeko.
+
+1. Eman zure konexioa ezaguna den izena **Bistaratze izena** eremua. Izena eta konexio motak konexio bat deskribatzen du. Konexio honen xedea eta xedea azaltzen duen izena aukeratzea gomendatzen dugu.
+
+1. Aukeratu nork erabil dezakeen konexioa. Inolako neurririk hartzen ez baduzu, lehenetsia izango da Administratzaileak. Informazio gehiagorako, ikus [Baimendu laguntzaileei esportazioetarako konexioa erabiltzea](connections.md#allow-contributors-to-use-a-connection-for-exports).
 
 1. Idatzi **DotDigital-eko erabiltzaile-izena eta pasahitza**.
 
@@ -47,9 +54,18 @@ Esportatu bezeroen profil bateratuen segmentuak DotDigital helbide liburuetara e
 
 1. Aukeratu **Gehitu zeure burua esportazio erabiltzaile gisa** eta eman zure Customer Insights kredentzialak.
 
-1. Aukeratu **hurrengoa** esportazioa konfiguratzeko.
+1. Hautatu **Gorde** konexioa osatzeko. 
 
-## <a name="configure-the-connector"></a>Konfiguratu konektorea
+## <a name="configure-an-export"></a>Konfiguratu esportazio bat
+
+Esportazio hau konfigura dezakezu mota honetako konexiorako sarbidea baduzu. Informazio gehiagorako, ikusi [Esportazioa konfiguratzeko beharrezkoak diren baimenak](export-destinations.md#set-up-a-new-export).
+
+1. Joan **Datuak** > **Esportazioak**.
+
+1. Esportazio berria sortzeko, hautatu **Gehitu helmuga**.
+
+1. Hurrengoan **Konexioa esportatzeko** eremuan, aukeratu konexioa DotDigital sekzioan. Atal honen izena ikusten ez baduzu, ez dago mota honetako konexiorik erabilgarri.
+
 
 1. **Datuen bat etortzea** atalean, **Posta elektronikoa** eremuan, hautatu zure bezeroaren profil bateratuko eremua, bezero baten helbide elektronikoa adierazten duena. Errepikatu urrats berak aukerako beste eremu batzuetarako, esaterako **izena**, **abizena**, **Izen osoa**, **Generoa**, eta **Posta kodea**.
 
@@ -57,16 +73,12 @@ Esportatu bezeroen profil bateratuen segmentuak DotDigital helbide liburuetara e
 
 1. Sakatu **Gorde**.
 
-## <a name="export-the-data"></a>Esportatu datuak
+Esportazio bat gordetzeak ez du esportazioa berehala exekutatzen.
 
-Hurrengoa egin dezakezu [esportatu datuak eskatu ahala](export-destinations.md). Esportazioa guztiekin ere exekutatuko da [programatutako freskapen](system.md#schedule-tab). DotDigital-en, zure segmentuak hemen aurki ditzakezu: [DotDigital-eko helbide liburuak](https://support.dotdigital.com/hc/articles/212211968-Creating-an-address-book).
+Esportazioa guztiekin egiten da [freskatze programatua](system.md#schedule-tab). Ere egin dezakezu [esportatu eskariaren arabera](export-destinations.md#run-exports-on-demand). 
+ 
+DotDigital-en, zure segmentuak hemen aurki ditzakezu: [DotDigital-eko helbide liburuak](https://support.dotdigital.com/hc/articles/212211968-Creating-an-address-book).
 
-## <a name="known-limitations"></a>Muga ezagunak
-
-- Gehienez milioi bat profil DotDigital-era esportatzeko.
-- DotDigital-era esportatzea segmentuetara mugatuta dago.
-- Guztira 1 milioi profil dituzten segmentuak esportatzeak 3 ordu arte iraun dezake hornitzailearen aldetik mugak direla eta. 
-- DotDigital-era esporta ditzakezun profilen kopurua DotDigital-ekin duzun kontratuaren menpe dago eta mugatua da.
 
 ## <a name="data-privacy-and-compliance"></a>Datuen pribatutasuna eta arau-gordetzea
 

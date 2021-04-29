@@ -1,0 +1,81 @@
+---
+title: Esportatu Customer Insights datuak Snapchat-era
+description: Ikasi konexioa konfiguratzen eta esportatzen Snapchat.
+ms.date: 03/22/2021
+ms.reviewer: mhart
+ms.service: customer-insights
+ms.subservice: audience-insights
+ms.topic: conceptual
+author: pkieffer
+ms.author: philk
+manager: shellyha
+ms.openlocfilehash: d3dae7f0fef1fc3792c90c8ac0d3b037f5c0923d
+ms.sourcegitcommit: 1b671c6100991fea1cace04b5d4fcedcd88aa94f
+ms.translationtype: HT
+ms.contentlocale: eu-ES
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5760460"
+---
+# <a name="export-segment-lists-to-snapchat-preview"></a>Esportatu segmentuen zerrendak Snapchat (aurrebista)
+
+Esportatu bezeroen profil bateratuen segmentuak Snapchat eta erabili iragarkietarako. 
+
+## <a name="prerequisites-for-a-connection"></a>Konexioaren aurrebaldintzak
+
+-   Baduzu [Snapchat mailako kontua](https://business.snapchat.com/), [Snapchat iragarkien kontua](https://ads.snapchat.com/) eta dagozkien administratzaile egiaztagiriak.
+-   Badituzu [konfiguratutako segmentuak](segments.md) hartzaileei buruzko xehetasunetan.
+-   Esportatutako segmentuetako bezeroen profil bateratuek helbide elektronikoa adierazten duen eremua dute.
+
+## <a name="known-limitations"></a>Muga ezagunak
+
+- Snapchat esportatzea segmentuetara mugatzen da.
+- Esportatu gehienez 1 milioi profil Snapchat, 15 minutu behar ditzake osatzeko. 
+
+## <a name="set-up-connection-to-snapchat"></a>Konfiguratu konexioa Snapchat-era
+
+1. Joan **Administratzailea** > **Konexioak**.
+
+1. Hautatu **Gehitu konexioa** eta aukeratu **Snapchat** konexioa konfiguratzeko.
+
+1. Eman zure konexioa ezaguna den izena **Bistaratze izena** eremua. Izena eta konexio motak konexio bat deskribatzen du. Konexio honen xedea eta xedea azaltzen duen izena aukeratzea gomendatzen dugu.
+
+1. Aukeratu nork erabil dezakeen konexioa. Inolako neurririk hartzen ez baduzu, lehenetsia izango da Administratzaileak. Informazio gehiagorako, ikus [Baimendu laguntzaileei esportazioetarako konexioa erabiltzea](connections.md#allow-contributors-to-use-a-connection-for-exports).
+
+1. Aukeratu **ados** baieztatzeko **Datuen pribatutasuna eta betetzea**.
+
+1. Aukeratu **Konektatu** Snapchat konexioa hasieratzeko.
+
+1. Aukeratu **Autenticatu Snapchat-ekin** eta eman zure administratzaile egiaztagiriak Snapchat-erako. 
+
+1. Aukeratu **Gehitu zeure burua esportazio erabiltzaile gisa** eta eman zure Customer Insights kredentzialak.
+
+1. Hautatu **Gorde** konexioa osatzeko.
+
+## <a name="configure-an-export"></a>Konfiguratu esportazio bat
+
+Esportazio hau konfigura dezakezu mota honetako konexiorako sarbidea baduzu. Informazio gehiagorako, ikusi [Esportazioa konfiguratzeko beharrezkoak diren baimenak](export-destinations.md#set-up-a-new-export).
+
+1. Joan **Datuak** > **Esportazioak**.
+
+1. Esportazio berria sortzeko, hautatu **Gehitu helmuga**.
+
+1. Hurrengoan **Konexioa esportatzeko** eremuan, aukeratu konexioa Snapchat sekzioan. Atal honen izena ikusten ez baduzu, ez dago mota honetako konexiorik erabilgarri.
+
+1. Sartu [**Snapchat Audience IDa**](https://businesshelp.snapchat.com/s/article/custom-audiences).
+
+1. **Datuen bat etortzea** atalean, **Posta elektronikoa** eremuan, hautatu zure bezeroaren profil bateratuko eremua, bezero baten helbide elektronikoa adierazten duena. Segmentuak esportatu behar dira Snapchat.
+
+1. Hautatu esportatu nahi dituzun segmentuak. 
+
+1. Sakatu **Gorde**.
+
+Esportazio bat gordetzeak ez du esportazioa berehala exekutatzen.
+
+Esportazioa guztiekin egiten da [freskatze programatua](system.md#schedule-tab). Ere egin dezakezu [esportatu eskariaren arabera](export-destinations.md#run-exports-on-demand). 
+
+
+## <a name="data-privacy-and-compliance"></a>Datuen pribatutasuna eta arau-gordetzea
+
+Gaitzen duzunean Dynamics 365 Customer Insights datuak Snapchat-era igortzeko, datuak betetzeko mugatik kanpo transferitzea baimentzen duzu Dynamics 365 Customer Insights, datu pertsonalak bezalako datu sentikorrak barne. Microsoft-ek datu horiek transferituko ditu zure aginduz, baina zu arduratuko zara Snapchat-ek pribatutasun edo segurtasun betebeharrak betetzen dituela ziurtatzeaz. Informazio gehiago eskuratzeko, ikusi [Microsoft-en pribatutasun-adierazpena](https://go.microsoft.com/fwlink/?linkid=396732).
+
+Funtzio hau erabiltzeari uzteko, Dynamics 365 Customer Insights-en administratzaileak esportazioaren helburuko kokalekua edonoiz ken dezake.

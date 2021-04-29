@@ -1,7 +1,7 @@
 ---
 title: Enpresako profilak aberastea hirugarrenen Leadspace aberastearekin
 description: Leadspace-ren hirugarrenen aberasteari buruzko informazio orokorra.
-ms.date: 11/24/2020
+ms.date: 04/09/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,46 +9,67 @@ ms.topic: how-to
 author: kishorem-MS
 ms.author: kishorem
 manager: shellyha
-ms.openlocfilehash: 41c56aece043c2d7658fd2655713e1e98775edec
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: ccf4f661ecffb281556a4545b1f26ee809c697cd
+ms.sourcegitcommit: aaa275c60c0c77c88196277b266a91d653f8f759
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5597634"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "5895898"
 ---
 # <a name="enrichment-of-company-profiles-with-leadspace-preview"></a>Enpresen profilak aberastea Leadspace-rekin (aurrebista)
 
-Leadspace B2B Bezeroaren Datuen Plataforma eskaintzen duen datuen zientzia enpresa da. Enpresentzako bezeroen profil bateratuak dituzten bezeroei beren datuak aberasteko aukera ematen die. Aberasteek atributu osagarriak barne hartzen dituzte esaterako, enpresaren tamaina, kokalekua, sektorea, etab.
+Leadspace B2B Bezeroaren Datuen Plataforma eskaintzen duen datuen zientzia enpresa da. Enpresentzako bezeroen profil bateratuak dituzten bezeroei beren datuak aberasteko aukera ematen die. Aberasketek atributu gehiago biltzen dituzte, hala nola enpresaren tamaina, kokapena, industria eta abar.
 
 ## <a name="prerequisites"></a>Aurrebaldintzak
 
 Leadspace konfiguratzeko eta konfiguratzeko, honako baldintza hauek bete behar dira:
 
-- Leadspace lizentzia aktiboa duzu eta "betiko gakoa" (**Leadspace-ko token** deitzen zaio). Jar zaitez harremanetan zuzenean [Leadspace](https://www.leadspace.com/products/leadspace-on-demand/) beren produktuari buruzko xehetasunak lortzeko.
-- [Administratzaile](permissions.md#administrator) baimenak dituzu.
+- Leadspace lizentzia aktiboa duzu.
 - Duzu [bezeroen profil bateratuak](customer-profiles.md) enpresentzat.
+- Administratzaile batek konfiguratu du dagoeneko Leadspace konexioa edo zuk [administratzailea](permissions.md#administrator) baimenak eta "betiko giltza" (aipatzen da **Leadspace token**). Harremanetarako [Leadspace](https://www.leadspace.com/products/leadspace-on-demand/) zuzenean produktuaren inguruko xehetasunak lortzeko.
 
-## <a name="configuration"></a>Konfigurazioa
+## <a name="configure-the-enrichment"></a>Konfiguratu aberastea
 
 1. Hartzaileei buruzko xehetasunetan, joan hona: **Datuak** > **Aberastea**.
 
-1. Aukeratu **Aberastu nire datuak** Leadspace fitxan.
+1. Aukeratu **Aberastu nire datuak** Leadspace fitxan eta hautatu **Hasi**.
 
    :::image type="content" source="media/leadspace-tile.png" alt-text="Leadspace lauzaren pantaila-argazkia.":::
 
-1. Aukeratu **Hasi** eta, ondoren, sartu **Leadspace token** aktibo bat (betiko giltza). Berrikusi eta eman baimena **Datuen pribatutasuna eta betetzea** aukeratuz **ados** laukia. Berretsi bi sarrerak **Konektatu Leadspace-ra** hautatuta.
+1. Hautatu [konexioa](connections.md) goitibeherako zerrendatik. Jarri harremanetan administratzaile batekin konexiorik ez badago. Administratzailea bazara, sor dezakezu konexioa **Gehitu konexioa** hautatuz eta **Leadspace** aukeratuz. 
 
-1. Aukeratu **Esleitu datuak** eta aukeratu Microsoft Leadspace-ko enpresako datuekin aberastu nahi duzun datu multzoa. *Bezeroen* entitatea hauta dezakezu zure bezeroen profil guztiak aberasteko edo segmentu-entitate bat hauta dezakezu segmentu horretan dauden bezeroen profilak soilik aberasteko.
+1. Aukeratu **Konektatu Leadspace** konexioa berresteko.
 
-   :::image type="content" source="media/enrichment-leadspace-select-segment.png" alt-text="Aukeratu bezeroaren profila eta segmentua aberasteko.":::
+1. Aukeratu **Hurrengoa** eta aukeratu **Bezeroen datu multzoa** Leadspace konpainiaren datuekin aberastu nahi duzu. **Bezeroen** entitatea hauta dezakezu zure bezeroen profil guztiak aberasteko edo segmentu-entitate bat hauta dezakezu segmentu horretan dauden bezeroen profilak soilik aberasteko.
 
-1. Sakatu **Hurrengoa** eta zehaztu zure profil bateratuetako zein eremu erabili beharko liratekeen Leadspace enpresako datuekin bat etortzeko. **Enpresaren izena** eremua beharrezkoa da. Bat-etortzeen zehaztasun handiagoa lortzeko, beste bi eremu, **Enpresaren webgunea** eta **Enpresaren kokapena**, gehitu daitezke.
+    :::image type="content" source="media/enrichment-Leadspace-configuration-customer-data-set.png" alt-text="Pantaila-argazkia bezeroaren datu multzoa aukeratzerakoan.":::
+
+1. Aukeratu **Hurrengoa** eta zehaztu zure profil bateratuetako zein eremu mota erabili behar diren Leadspace-ko konpainiaren datuak bat datozen bilatzeko. **Enpresaren izena** eremua beharrezkoa da. Bat-etortzeen zehaztasun handiagoa lortzeko, beste bi eremu, **Enpresaren webgunea** eta **Enpresaren kokapena**, gehitu daitezke.
 
    :::image type="content" source="media/enrichment-leadspace-mapping.png" alt-text="Leadspace eremuak esleitzeko panela.":::
-   
-1. Aukeratu **Aplikatu** eremuen esleipena osatzeko.
 
-1. Aukeratu **Exekutatu** enpresaren profilak aberasteko. Aberasteak behar duen denbora bateratutako bezeroen profil kopuruaren araberakoa da.
+1. Hautatu **Hurrengoa** eremuaren jarraipena osatzeko.
+
+1. Eman aberasturako izena eta hautatu **Aurreztu aberastasuna** zure aukerak aztertu ondoren.
+
+
+## <a name="configure-the-connection-for-leadspace"></a>Konfiguratu konexioa Leadspace-rako 
+
+Administratzailea izan behar duzu konexioak konfiguratzeko. Aukeratu **Gehitu konexioa** aberastasun bat konfiguratzerakoan *edo* joan **Administratzailea** > **Konexioak** eta hautatu **Konfiguratu** Leadspace fitxan.
+
+1. Hautatu **Hasi erabiltzen** 
+
+1. Idatzi konexioaren izena **Bistaratzeko izena** kutxa.
+
+1. Hornitu balizoko Leadspace tokena.
+
+1. Berrikusi eta eman baimena **Datuen pribatutasuna eta betetzea** aukeratuz **ados** laukia
+
+1. Aukeratu **Egiaztatu** konfigurazioa balioztatzeko.
+
+1. Egiaztapena amaitu ondoren, hautatu **Gorde**.
+   
+   :::image type="content" source="media/enrichment-Leadspace-connection.png" alt-text="Leadspace konexioa konfigurazioaren orria.":::
 
 ## <a name="enrichment-results"></a>Aberastearen emaitzak
 

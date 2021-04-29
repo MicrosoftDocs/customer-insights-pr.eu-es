@@ -1,7 +1,7 @@
 ---
 title: Sortu eta kudeatu inguruneak
 description: Ikasi zerbitzuan izena ematen eta inguruneak kudeatzen.
-ms.date: 02/01/2021
+ms.date: 03/26/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
@@ -9,12 +9,12 @@ ms.reviewer: mhart
 author: NimrodMagen
 ms.author: nimagen
 manager: shellyha
-ms.openlocfilehash: 1c2dfdd2889b5cb6c5285b4d7cc7f52a3d6de4d1
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: 8cc1401251ed7c45c598bd4a8fb33a9709fabbc8
+ms.sourcegitcommit: d89b19b2a3497722b78362aeee688ae7e94915d9
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5598278"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5887971"
 ---
 # <a name="manage-environments"></a>Kudeatu inguruneak
 
@@ -44,6 +44,9 @@ Artikulu honetan erakunde berri bat nola sortu eta ingurune bat nola hornitu aza
 
 Ingurune berria sortzeko bi era daude: Guztiz konfigurazio berria zehaz dezakezu edo konfigurazio ezarpen batzuk kopiatu ditzakezu lehendik dagoen ingurunetik.
 
+> [!NOTE]
+> Erakundeek sor dezakete *bi* Customer Insights lizentzia bakoitzeko inguruneak. Zure erakundeak lizentzia behin baino gehiagotan erosten badu, mesedez [jarri harremanetan gure laguntza taldearekin](https://go.microsoft.com/fwlink/?linkid=2079641) erabilgarri dauden ingurune kopurua handitzeko. Edukiera eta gehigarritasunari buruzko informazio gehiago lortzeko, deskargatu [Dynamics 365 lizentzien gida](https://go.microsoft.com/fwlink/?LinkId=866544).
+
 Ingurune bat sortzeko:
 
 1. Hautatu **Ingurunea** hautatzailea aplikazioaren goiburuan.
@@ -55,14 +58,14 @@ Ingurune bat sortzeko:
 
 1. **Inguru berria sortu** elkarrizketa-koadroa, hautatu **Ingurune berria**.
 
-   Nahi baduzu [kopiatu uneko inguruneko datuak](#additional-considerations-for-copy-configuration-preview), hautatu **Kopiatu lehendik dagoen ingurunetik**. Zure erakundearen eskura dauden ingurune guztien zerrenda ikusiko duzu non datuak kopiatzeko.
+   Nahi baduzu [kopiatu uneko inguruneko datuak](#considerations-for-copy-configuration-preview), hautatu **Kopiatu lehendik dagoen ingurunetik**. Zure erakundearen eskura dauden ingurune guztien zerrenda ikusiko duzu non datuak kopiatzeko.
 
 1. Hornitu hurrengo xehetasunak:
    - **Izena**: entitatearen izena. Eremu hau dagoeneko bete da ingurune batetik kopiatzen baduzu, baina alda dezakezu.
    - **Eskualdea**: Zerbitzua hedatu eta ostatatzen den eskualdea.
    - **Mota**: Aukeratu Produkzio edo Sandbox ingurunea sortu nahi duzun ala ez.
 
-2. Nahi baduzu, hauta dezakezu **Ezarpen aurreratuak**:
+1. Nahi baduzu, hauta dezakezu **Ezarpen aurreratuak**:
 
    - **Gorde datu guztiak**: Customer Insights-ek sortutako irteerako datuak non gorde nahi dituzun zehazten du. Bi aukera dituzu: **Customer Insights biltegiratzea** (Azure Data Lake Customer Insights taldearen bidez kudeatua) eta **Azure Data Lake Storage Gen2** (zure berezko Azure Data Lake Storage). Lehenespenez, Customer Insights biltegiratzeko aukera hautatuko da.
 
@@ -75,20 +78,20 @@ Ingurune bat sortzeko:
 
    - Azure Data Lake Storage Gen2 aukerarako, baliabideetan oinarritutako aukera eta harpidetzan oinarritutako aukera erabil dezakezu autentifikatzeko. Informazio gehiagorako, ikus [Konektatu hartzaileei buruzko xehetasunak Azure Data Lake Storage Gen2 kontu batera Azure zerbitzuaren entitatearekin](connect-service-principal.md). **Edukiontzia** izena ezin da aldatu eta "customerinsights" izango da.
    
-   - [Iragarpenak](predictions.md) erabili nahi badituzu edo konfiguratu datuak partekatzea aplikazioekin eta irtenbideekin Microsoft Dataverse-n oinarrituta, eman Microsoft Dataverse inguruneko URL azpian dagoen **Konfiguratu datuak partekatzearekin Microsoft Dataverse eta gaitasun osagarriak gaitu**. Aukeratu **Gaitu datuak partekatzea** Customer Insights-en irteerako datuak partekatzeko Microsoft Dataverse kudeatutako datuen lakua.
+   - Erabili nahi baduzu [iragarpenak](predictions.md), oinarritutako aplikazioekin eta soluzioekin datuak partekatzea konfiguratzea Microsoft Dataverse, edo gaitu lokal datu iturrietatik datuak sartzea, eman Microsoft Dataverse inguruneko URL azpian **Konfiguratu datuak partekatzearekin Microsoft Dataverse eta gaitasun osagarriak gaitu**. Aukeratu **Gaitu datuak partekatzea** Customer Insights-en irteerako datuak partekatzeko Microsoft Dataverse kudeatutako datuen lakua.
 
      > [!NOTE]
      > - Datuak partekatzearekin Microsoft Dataverse-ren kudeatutako datuen lakua ez da onartzen une honetan datu guztiak gordetzen dituzunean Azure Data Lake Storage.
      > - [Entitate batean falta diren balioen iragarpena](predictions.md) ez da onartzen une honetan datuak partekatzea gaitzen duzunean Microsoft Dataverse-n kudeatutako Data Lake.
 
      > [!div class="mx-imgBorder"]
-     > ![Datuak partekatzea ahalbidetzeko konfigurazio aukerak Microsoft Dataverse-rekin](media/Datasharing-with-DataverseMDL.png)
+     > ![Datuak partekatzea ahalbidetzeko konfigurazio aukerak Microsoft Dataverse-rekin](media/datasharing-with-DataverseMDL.png)
 
    Prozesuak exekutatzen dituzunean, adibidez, datuak sartzea edo segmentua sortzea, dagozkien karpetak sortuko dira goian zehaztu duzun biltegiratze kontuan. Datu fitxategiak eta model.json fitxategiak dagozkien azpi-karpetetan sortu eta gehituko dira exekutatzen duzun prozesuan oinarrituta.
 
    Customer Insights-eko hainbat ingurune sortzen badituzu eta ingurune horietako irteerako entitateak zure biltegiratze kontuan gordetzea aukeratzen baduzu, karpeta bereiziak sortuko dira ingurune bakoitzarentzat ci_<environmentid> edukiontzian.
 
-### <a name="additional-considerations-for-copy-configuration-preview"></a>Kopiaren konfiguraziorako gogoeta osagarriak (aurrebista)
+### <a name="considerations-for-copy-configuration-preview"></a>Kopiatzeko konfigurazioaren inguruko gogoetak (aurrebista)
 
 Hurrengo konfigurazio ezarpenak kopiatzen dira:
 
@@ -136,6 +139,18 @@ Dauden inguruneen xehetasun batzuk editatu ditzakezu.
 4. Ingurumena konfiguratuta badago, datuak gordetzeko Azure Data Lake Storage Gen2, eguneratu dezakezu **Kontuaren gakoa**. Hala ere, ezin duzu aldatu **Kontuaren izena** edo **edukiontzia** izendatzeko.
 
 5. Aukeran, kontuaren gakoan oinarritutako konexio batetik baliabideetan oinarritutako edo harpidetzan oinarritutako konexio batera egunera dezakezu. Bertsio berritu ondoren, ezin duzu kontuaren gakoetara itzuli eguneratu ondoren. Informazio gehiagorako, ikus [Konektatu hartzaileei buruzko xehetasunak Azure Data Lake Storage Gen2 kontu batera Azure zerbitzuaren entitatearekin](connect-service-principal.md). Ezin duzu aldatu **Edukiontzia**-ren informazioa konexioa eguneratzean.
+
+6. Aukeran, a eman dezakezu Microsoft Dataverse inguruneko URL azpian **Konfiguratu datuak partekatzearekin Microsoft Dataverse eta gaitasun osagarriak gaitu**. Gaitasun hauek datuak oinarritutako aplikazioekin eta soluzioekin partekatzea dira Microsoft Dataverse, lokal datu iturrietatik jasotako datuak edo erabilera [iragarpenak](predictions.md). Aukeratu **Gaitu datuak partekatzea** Customer Insights-en irteerako datuak partekatzeko Microsoft Dataverse kudeatutako Data Lake.
+
+   > [!NOTE]
+   > - Datuak partekatzearekin Microsoft Dataverse-ren kudeatutako datuen lakua ez da onartzen une honetan datu guztiak gordetzen dituzunean Azure Data Lake Storage.
+   > - [Entitate batean falta diren balioen iragarpen](predictions.md) ez da onartzen une honetan datuak partekatzea gaitzen duzunean Microsoft Dataverse Kudeatutako Data Lake.
+
+   Datuak partekatzeko aukera gaitzean Microsoft Dataverse, datu-iturburuen freskatze osoa eta beste prozesu batzuk abiaraziko dira. Une honetan prozesuak martxan eta ilaran badaude, ez duzu ikusiko datuak partekatzea gaitzeko aukera Microsoft Dataverse. Prozesu horiek amaitu arte edo bertan behera uzteko itxaron dezakezu datuak partekatzea ahalbidetzeko. 
+   
+   :::image type="content" source="media/datasharing-with-DataverseMDL.png" alt-text="Konfigurazioaren aukerak gaitzeko datuak partekatzeko Microsoft Dataverse.":::
+   
+   Prozesuak exekutatzen dituzunean, adibidez, datuak sartzea edo segmentua sortzea, dagozkien karpetak sortuko dira goian zehaztu duzun biltegiratze kontuan. Datu fitxategiak eta model.json fitxategiak sortu eta dagozkien azpikarpetetara gehituko dira, exekutatzen duzun prozesuaren arabera.
 
 ## <a name="reset-an-existing-environment"></a>Berrezarri lehendik dagoen ingurunea
 

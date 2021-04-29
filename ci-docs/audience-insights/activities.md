@@ -1,7 +1,7 @@
 ---
 title: Bezeroen jarduerak
 description: Definitu bezeroen jarduerak eta ikusi bezeroaren kronologian.
-ms.date: 10/13/2020
+ms.date: 04/07/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.reviewer: mhart
@@ -9,79 +9,88 @@ ms.topic: conceptual
 author: MichelleDevaney
 ms.author: midevane
 manager: shellyha
-ms.openlocfilehash: fbfa9d7e00859cc80c24b98bd2dc806f1fda7803
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: 0c728fad4ed00d1bf085fed60057211861b3a195
+ms.sourcegitcommit: f0855bd7762b1f0a1d3dd5259e23c95e1b0a6a93
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5596714"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "5866392"
 ---
 # <a name="customer-activities"></a>Bezeroen jarduerak
 
-Konbinatu Dynamics 365 Customer Insights-eko [hainbat datu-iturburutako](data-sources.md) bezeroen jarduerak, jarduerak ordena kronologikoan zerrendatuko dituen bezeroen kronologia sortzeko. Kronika customer engagement aplikazioetan sar dezakezu Dynamics 365 aplikazioan [Bezero Txartelaren gehigarria](customer-card-add-in.md), edo a Power BI Arbel.
+Konbinatu bezeroaren jarduerak [hainbat datu iturri](data-sources.md) hurrengoan Dynamics 365 Customer Insights jarduerak kronologikoki zerrendatuko dituen kronograma sortzeko. Sartu kronograma Dynamics 365 aplikazioetan [Bezero txartelaren gehigarria](customer-card-add-in.md) irtenbide batean edo Power BI arbela.
 
 ## <a name="define-an-activity"></a>Definitu jarduera
 
-Zure datu-iturriak datu-iturri ugarietatik transakzio- eta jarduera-datuak dituzten entitateak dira. Identifika itzazu entitate horiek eta hautatu bezeroaren denbora-lerroan ikusi nahi dituzun jarduerak. Aukeratu zure xede-jarduera edo jarduerak biltzen dituen entitatea.
+Zure datu-iturriak datu-iturri ugarietatik transakzio- eta jarduera-datuak izan ditzaketen entitateak dira. Identifika itzazu entitate horiek eta hautatu bezeroaren denbora-lerroan ikusi nahi dituzun jarduerak. Aukeratu zure xede-jarduera edo jarduerak biltzen dituen entitatea.
+
+> [!NOTE]
+> Entitate batek gutxienez motako atributu bat izan behar du **Data** bezeroaren denbora-lerroan sartzeko eta ezin dituzu entitateak gehitu gabe **data** eremuak. The **Gehitu jarduera** kontrola ezgaitzen da horrelako entitate bat aurkitzen ez bada.
 
 1. Hartzaileei buruzko xehetasunetan, joan hona: **Datuak** > **Jarduerak**.
 
-1. Hautatu **Gehitu jarduera**.
+1. Aukeratu **Gehitu jarduera** jarduera konfiguratzeko prozesuaren esperientzia gidatua hasteko.
 
-   > [!NOTE]
-   > Entitate batek gutxienez motako atributu bat izan behar du **Data** bezeroaren denbora-lerroan sartzeko eta ezin dituzu entitateak gehitu gabe **data** eremuak. The **Gehitu jarduera** kontrola ezgaitzen da horrelako entitate bat aurkitzen ez bada.
+1. Hurrengoan **Jardueren datuak** urratsa, ezarri eremu hauetako balioak:
 
-1. Sarbidean **Gehitu jarduera** panela, ezarri hurrengo eremuetarako balioak:
-
+   - **Jardueraren izena**: Hautatu zure jarduerarako izen bat.
    - **Erakunde**: Aukeratu transakzio- edo jarduera-datuak biltzen dituen entitatea.
    - **Gako nagusia**: Hautatu erregistroa era esklusiboan identifikatzen duen eremua. Ez luke balio bikoizturik, balio hutsak edo falta diren balioak.
-   - **Denbora-zigilua**: Aukeratu zure jardueraren hasiera ordua adierazten duen eremua.
-   - **Gertaera**: Aukeratu jardueraren gertaera den eremua.
-   - **Web helbidea**: Aukeratu URLa adierazten duen eremua jarduera honi buruzko informazio osagarria eskaintzen duena. Adibidez, jarduera hau iturri duen transakzio-sistema. URL hau datu-iturburu-eko edozein eremu izan daiteke edo Power Query eraldaketa erabiliz eremu berri gisa eraiki daiteke. URLko datu hau Jarduera Unibidearen entitatean gordeko da, APIak erabiliz downstream kontsumitu daitekeena.
-   - **Xehetasunak**: Aukeran, hautatu gehitzen den eremua xehetasun gehiagorako.
-   - **Ikonoa**: Aukeran, hautatu jarduera hau adierazten duen ikonoa.
-   - **Jarduera mota**: Idatzi jarduera motaren definizio semantikoa hobekien deskribatzen duen datu arruntaren ereduari erreferentzia.
 
-1. Sarbidean **Ezarri harremana** atala konfiguratu xehetasunak zure jardueraren datuak dagokion bezeroari lotzeko.
+   :::image type="content" source="media/Activity_Wizard1.PNG" alt-text="Konfiguratu jardueraren datuak izena, entitatea eta gako nagusiarekin.":::
 
-    - **Jardueraren entitatearen eremua**: Aukeratu beste erakunde batekin harremana ezartzeko erabiliko den eremuko zure entitatearen eremua.
-    - **Bezero entitatea**: Aukeratu dagokion iturburu bezeroaren entitatea zein harremana izango duen. Datuak bateratzeko prozesuan erabiltzen diren iturri bezeroak dituzten erakundeekin soilik erlaziona zaitezke.
-    - **Bezeroaren entitatearen eremua**: Eremu honek iturburu bezeroaren entitatearen gako nagusia mapa prozesuan hautatzen den bezala erakusten du. Jatorri bezeroaren entitatearen funtsezko eremu hau jarduera-entitatearekin harremana ezartzeko erabiltzen da.
-    - **Izena**: Jarduera-entitate honen eta hautatutako iturri bezeroaren entitatearen arteko harremana badago, erlazioaren izena irakurtzeko moduan egongo da. Horrelako harremanik ez badago, harreman berria sortuko da hemen emandako izenarekin.
+1. Aukeratu **Hurrengoa** hurrengo urratsera joateko.
+
+1. Hurrengoan **Harremana** Urratsa, konfiguratu xehetasunak zure jarduerak datuak dagokion bezeroarekin konektatzeko. Urrats honek entitateen arteko konexioa bistaratzen du.  
+
+   - **Lehenengoa**: Zure jarduera entitatean atzerriko eremua, beste entitate batekin harremanak sortzeko erabiliko dena.
+   - **Bigarrena**: Zure jarduera entitatearekin erlazionatuko duen iturburu bezeroari dagokiona. Datuak bateratzeko prozesuan erabiltzen diren iturburu bezeroen entitateekin bakarrik lotu zaitezke.
+   - **Hirugarrena**: Jarduera entitate honen eta hautatutako iturburu bezero entitatearen arteko erlazioa badago jadanik, harremanaren izena irakurtzeko soilik moduan egongo da. Harremanik ez badago, harreman berri bat sortuko da koadro honetan ematen duzun izenarekin.
+
+   :::image type="content" source="media/Activity_Wizard2.PNG" alt-text="Definitu entitate-harremana.":::
+
+1. Aukeratu **Hurrengoa** hurrengo urratsera joateko. 
+
+1. Hurrengoan **Jarduera bateratzea** urratsa, aukeratu jarduera gertaera eta zure jardueraren hasiera ordua. 
+   - **Beharrezko eremuak**
+      1. **Ekitaldi jarduera**: Jarduera honen gertaera den eremua
+      2. **Denbora-marka**: Zure jardueraren hasiera ordua adierazten duen eremua.
+
+   - **Aukerako eremuak**
+      1. **Xehetasun osagarria**: Jarduera honetarako informazio garrantzitsua duen eremua.
+      2. **Ikonoa**: Jarduera mota hau ondoen irudikatzen duen ikonoa.
+      3. **Web-helbidea**: Jarduera honi buruzko informazioa duen URLa duen eremua. Adibidez, jarduera hau iturri duen transakzio-sistema. URL hau datu-iturburu-eko edozein eremu izan daiteke edo Power Query eraldaketa erabiliz eremu berri gisa eraiki daiteke. URL datuak fitxategian gordeko dira *Jarduera bateratua* entitatea, erabilita ibaian behera kontsumitu daitekeena [APIak](apis.md).
    
-   > [!div class="mx-imgBorder"]
-   > ![Definitu entitate-harremana](media/activities-entities-define.png "Definitu entitate-harremana")
+   :::image type="content" source="media/Activity_Wizard3.PNG" alt-text="Zehaztu bezeroaren jardueraren datuak Jarduera bateratuko entitate batean.":::
 
-1. Aldaketak aplikatzeko, hautatu **Gorde**.
+1. Hautatu **Hurrengoa** hurrengo urratsera mugitzeko. Aukeratu dezakezu **Amaitu eta berrikusi** aktibitatea orain gordetzeko, jarduera mota gisa ezarrita **Beste batzuk**. 
 
-1. **Jarduerak** orrian, hautatu **Exekutatu**.
+1. Hurrengoan **Jarduera mota** urratsa, aukeratu jarduera mota eta hautatu aukeran Customer Insights beste arlo batzuetan erabiltzeko jarduera mota batzuk semantikoki mapatu nahi dituzun. Gaur egun, *Harpidetza* & *SalesOrderLine* jarduera motak semantikoki mapatu daitezke eremuak mapatzea adostu ondoren. Jarduera mota bat jarduera berrirako garrantzitsua ez bada, hauta dezakezu *Beste batzuk* edo *Sortu berria* jarduera mota pertsonalizatua lortzeko.
+
+1. Hautatu **Hurrengoa** hurrengo urratsera mugitzeko. 
+
+1. Hurrengoan **Berrikuspena** urratsa, egiaztatu hautapenak. Aurreko edozein urratsetara itzuli eta beharrezkoa izanez gero informazioa eguneratuko duzu.
+
+   :::image type="content" source="media/Activity_Wizard5.PNG" alt-text="Berrikusi jarduera baterako zehaztutako eremuak.":::
+   
+1. Aukeratu **Gorde jarduera** aldaketak aplikatzeko eta hautatu **Eginda** atzera joateko **Datuak** > **Jarduerak**. Hemen ikus ditzakezu zein jarduera erakutsiko diren kronograman. 
+
+1. Gainean **Jarduerak** orrialdea, hautatu **Korrika egin** jarduera prozesatzeko. 
 
 > [!TIP]
 > Zereginen/prozesuen [sei egoera mota](system.md#status-types) daude. Gainera, prozesu gehienak [downstream-eko beste prozesu batzuen mende daude](system.md#refresh-policies). Aukeratu prozesu baten egoera, egon zen lan osoaren aurrerapen xehetasunak ikusteko. Aukeratu ondoren **Ikusi xehetasunak** lanaren zereginetako baterako, informazio osagarria aurkituko duzu: prozesatzeko denbora, azken prozesatze data eta zereginarekin lotutako akats eta abisu guztiak.
 
-## <a name="edit-an-activity"></a>Editatu jarduera
 
-1. Hartzaileei buruzko xehetasunetan, joan hona: **Datuak** > **Jarduerak**.
+## <a name="manage-existing-activities"></a>Kudeatu lehendik dauden jarduerak
 
-2. Hautatu editatu nahi duzun entitate-jarduera eta hautatu **Editatu**. Edo, entitate errenkadan pasa dezakezu eta hauta dezakezu **Editatu** ikonoa.
+Aktibatuta **Datuak** > **Jarduerak**, gordetako jarduera guztiak ikusi eta kudeatu ditzakezu. Jarduera bakoitza iturriari, entitateari eta jarduera motari buruzko xehetasunak ere biltzen dituen errenkada baten bidez irudikatzen da.
 
-3. Egin klik botoian **Editatu** ikonoa.
+Jarduera bat hautatzean ekintza hauek erabilgarri daude. 
 
-4. Sarbidean **Editatu jarduera** panela, eguneratu balioak eta hautatu **Gorde**.
+- **Editatu**: Berrikuspen urratsean jarduera konfigurazioa irekitzen du. Urrats honetatik uneko konfigurazioaren zati bat edo guztia alda dezakezu. Konfigurazioa aldatu ondoren, hautatu **Gorde jarduera** eta, ondoren, hautatu **Korrika egin** aldaketak prozesatzeko.
 
-5. **Jarduerak** orrian, hautatu **Exekutatu**.
+- **Aldatu izena**: Elkarrizketa-koadro bat irekitzen du non hautatutako jarduerari beste izen bat idazteko. Aldaketak aplikatzeko, hautatu **Gorde**.
 
-## <a name="delete-an-activity"></a>Ezabatu jarduera
-
-1. Hartzaileei buruzko xehetasunetan, joan hona: **Datuak** > **Jarduerak**.
-
-2. Hautatu kendu nahi duzun entitate-jarduera eta hautatu **Ezabatu**. Edo, entitate errenkadan pasa dezakezu eta hauta dezakezu **Ezabatu** ikonoa. Gainera, aldi berean ezabatu beharreko hainbat jarduera-entitate hauta ditzakezu.
-   > [!div class="mx-imgBorder"]
-   > ![Editatu edo ezabatu entitatearen erlazioak](media/activities-entities-edit-delete.png "Editatu edo ezabatu entitatearen erlazioak")
-
-3. Hautatu botoian **Ezabatu** ikonoa.
-
-4. Berretsi ezabatu nahi duzula.
-
+- **Ezabatu**: Elkarrizketa bat irekitzen du hautatutako jardueraren ezabaketa berresteko. Jarduera bat baino gehiago aldi berean ezaba ditzakezu jarduerak hautatuta eta gero ezabatzeko ikonoa hautatuta. Hautatu **Ezabatu** ezabatzea baieztatzeko.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

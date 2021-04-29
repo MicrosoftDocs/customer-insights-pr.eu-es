@@ -1,7 +1,7 @@
 ---
 title: Aberastu bezeroen profil bateratuak
 description: Erabili gaitasunak zure bezeroaren datuak aberasteko.
-ms.date: 11/02/2020
+ms.date: 04/09/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: 36e6f7f8fcd64fc2591e913910918b83bf27567b
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: 10c338b89a6f9971912d05986c105cba1221b01b
+ms.sourcegitcommit: aaa275c60c0c77c88196277b266a91d653f8f759
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5597680"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "5895990"
 ---
 # <a name="enrichment-for-customer-profiles-preview"></a>Bezeroen profiletarako aberastea (aurrebista)
 
@@ -27,8 +27,8 @@ Laguntzaileak edo Administratzaileak baimenak izan behar dituzu aberastasunak so
 
 Gainean **Ezagutu** fitxa, aberastasun hauek aurkituko dituzu:
 
-- [Markak](enrichment-microsoft-graph.md) emanda Microsoft Graph
-- [Interesak](enrichment-microsoft-graph.md) emanak Microsoft Graph
+- [Markak](enrichment-microsoft.md) hornituta Microsoft-en arabera
+- [Interesak](enrichment-microsoft.md) hornituta Microsoft-en arabera
 - [Enpresaren datuak](enrichment-leadspace.md) , Leadspace-k emanak
 - [Demografiak](enrichment-experian.md) hornituta daude Experian-ek
 - [Kokapen datuak](enrichment-here.md) HERE Technologies-ek emanak
@@ -40,7 +40,7 @@ Gainean **Nire aberastasunak** fitxan, konfiguratutako aberastasunak eta haien p
 
 Joan **Nire aberastasunak** konfiguratutako aberastasun guztiak ikusteko. Aberastu bakoitza aberastearen inguruko informazio osagarria biltzen duen errenkada gisa irudikatzen da.
 
-Aukeratu aberastasuna eskuragarri dauden aukerak ikusteko. Bestela, zerrendako elementu bateko elipsia (...) aukera dezakezu aukerak ikusteko.
+Aukeratu aberastasuna eskuragarri dauden aukerak ikusteko. Zerrenda bateko elipsia (...) ere hauta dezakezu aukerak ikusteko.
 
 :::image type="content" source="media/enrichment-hub-options-run.png" alt-text="Aberastasunen zerrendan aberastasunak kudeatzeko aukerak":::
 
@@ -52,5 +52,12 @@ Aukeratu aberastasuna eskuragarri dauden aukerak ikusteko. Bestela, zerrendako e
 
 Aberastasun anitz exekutatu edo desaktiba ditzakezu aldi berean zerrendan hautatuta. Ikusi eta editatzeko aukerak ez daude eskuragarri gisa eta soilik aberasteko soilik funtzionatzen du.
 
+## <a name="enrichments-and-connections"></a>Aberasteak eta konexioak
+
+Hirugarrenen aberastasunak erabiliz konfiguratzen dira [konexioak](connections.md), administratzaileak kredentzialekin konfiguratzen duena eta datuak transferitzeko baimena ematen duena. Konexioa erabil daiteke administratzaileen eta laguntzaileen bitartez aberasteak konfiguratzeko.  
+
+## <a name="multiple-enrichments-of-the-same-type"></a>Mota bereko hainbat aberastasun
+
+Aberastu nahi den entitatea aberasteko konfigurazioan zehazten da eta horrek zure profilen azpimultzo bat soilik aberastea ahalbidetzen du. Exmaple-rako, aberastu datuak segmentu zehatz baterako soilik. Mota bereko hainbat aberastasun konfigura ditzakezu eta konexio bera berrerabili. Zenbait aberastasunek sor ditzaketen mota bereko aberastasunen kopuruak izango dituzte mugak. Mugak eta egungo erabilera webgunean ikus daitezke **Aberastea** orrialdea.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -1,7 +1,7 @@
 ---
 title: Sortu eta kudeatu neurriak
 description: Zehaztu zure negozioaren errendimendua aztertzeko eta islatzeko neurriak.
-ms.date: 02/02/2021
+ms.date: 04/12/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -9,28 +9,28 @@ author: m-hartmann
 ms.author: wameng
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 202ea22d290be04e54ce9676b6b693162354607f
-ms.sourcegitcommit: d3eb07dcc72624a2d5cfc95c7ea9faaa2c1b6001
+ms.openlocfilehash: 9a94a32a04f2a8beb661c27271fe96f23d998722
+ms.sourcegitcommit: d89b19b2a3497722b78362aeee688ae7e94915d9
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "5654717"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "5887925"
 ---
 # <a name="define-and-manage-measures"></a>Neurriak zehaztu eta kudeatu
 
-Neurriek bezeroen portaerak eta negozioaren errendimendua hobeto ulertzen lagunduko dizute, balio garrantzitsuak eskuratuta [profil bateratuak](data-unification.md). Adibidez, enpresa batek ikusi nahi du *bezero bakoitzeko guztizko gastua* bezero bakoitzaren erosketa historia ulertzeko. Bestela, neurria *enpresaren guztizko salmentak* negozio osoko diru-sarrera agregatuak ulertzeko.  
+Neurriek bezeroen portaerak eta negozioaren errendimendua hobeto ulertzen lagunduko dizute. Balio garrantzitsuak aztertzen dituzte [profil bateratuak](data-unification.md). Adibidez, enpresa batek ikusi nahi du *bezero bakoitzeko guztizko gastua* bezero bakoitzaren erosketa historia edo neurria ulertzeko *enpresaren guztizko salmentak* negozio osoko diru-sarrera agregatuak ulertzeko.  
 
 Neurriak neurri-sortzailea, datuen kontsulta plataforma bat erabiltzen dute hainbat eragilerekin eta esleitzeko aukera sinpleekin. Datuak iragazteko, taldekatzeko emaitzak, detektatzeko aukera ematen du [entitate harreman bideak](relationships.md), eta irteera aurreikusi.
 
 Erabili neurri-sortzailea negozio-jarduerak planifikatzeko bezeroen datuak kontsultatuz eta estatistikak aterata. Adibidez, neurri bat sortzea *bezero bakoitzeko guztizko gastua* eta *bezeroaren itzulketa osoa* gastu handia baina errentagarritasuna handia duten bezero talde bat identifikatzen laguntzen du. [Segmentu bat sor](segments.md) dezakezu hurrengo ekintza onenak gidatzeko. 
 
-## <a name="create-a-measure"></a>Sortu neurri bat
+## <a name="build-your-own-measure-from-scratch"></a>Eraiki zure neurketa hutsetik
 
 Atal honek hutsetik neurri berri bat sortzen lagunduko dizu. Neurri bat bezeroaren entitatearekin konektatzeko konfiguratuta dauden datu-entitateetako datu-atributuekin eraiki dezakezu. 
 
 1. Hartzaileei buruzko xehetasunetan, joan hona: **Neurriak**.
 
-1. Hautatu **Berria**.
+1. Aukeratu **Berria** eta aukeratu **Eraiki zeurea**.
 
 1. Aukeratu **Editatu izena** eta eman **Izena** neurrian. 
    > [!NOTE]
@@ -72,6 +72,8 @@ Atal honek hutsetik neurri berri bat sortzen lagunduko dizu. Neurri bat bezeroar
    1. Aukeratu **Editatu dimentsioak** neurriaren balioak taldekatu nahi dituzun datu atributuak gehitzeko. Adibidez, hiria edo generoa. Lehenespenez, *Bezeroaren IDa* dimentsioa hautatzeko hautatzen da *bezero-mailako neurriak*. Neurri lehenetsia kendu dezakezu sortu nahi baduzu *negozio-mailako neurriak*.
    1. Aukeratu **Eginda** hautatutako atributua neurrira gehitzeko.
 
+1. Zure datuetan zenbaki oso batekin ordezkatu behar dituzun balioak badaude, adibidez *nulua* hurrengoarekin *0*, hautatu **Arauak**. Konfiguratu araua eta ziurtatu ordezko gisa zenbaki osoak bakarrik aukeratzen dituzula.
+
 1. Esleitutako datu-entitatearen eta *Bezero* entitatearen artean bide anitz badaude, identifikatutako bat aukeratu behar duzu [entitate erlazio-bideak](relationships.md). Neurriaren emaitzak hautatutako bidearen arabera alda daitezke. 
    1. Aukeratu **Datuen hobespenak** eta aukeratu zure neurria identifikatzeko erabili beharreko entitate bidea. Bide bakarra bada *Bezeroa* entitatea, kontrol hau ez da erakutsiko.
    1. Aukeratu **Eginda** zure hautaketa aplikatzeko. 
@@ -88,9 +90,57 @@ Atal honek hutsetik neurri berri bat sortzen lagunduko dizu. Neurri bat bezeroar
 
 1. Joan **Neurriak** atalera sortu berri den neurria zerrendan ikusteko.
 
+## <a name="use-a-template-to-build-a-measure"></a>Erabili txantiloia neurri bat eraikitzeko
+
+Normalean erabiltzen diren neurrien aurrez definitutako txantiloiak erabil ditzakezu horiek sortzeko. Txantiloien deskribapen zehatzak eta esperientzia gidatu batek neurrien sorrera eraginkorra izaten laguntzen dizute. Txantiloiak mapako datuen gainean eraikitzen dira *Jarduera bateratua* entitatea. Beraz, ziurtatu konfiguratu duzula [bezeroen jarduerak](activities.md) txantiloi batetik neurria sortu aurretik.
+
+Neurketa txantiloi erabilgarriak: 
+- Transakzioen batezbesteko balioa
+- Transakzioaren balioa, guztira
+- Eguneko batezbesteko diru-sarrerak
+- Urteko batezbesteko diru-sarrerak
+- Transakzio kopurua
+- Irabazitako fideltasun-puntuak
+- Erabilitako fideltasun-puntuak
+- Fideltasun-puntuen balantzea
+- Bezero aktiboaren bizi-iraupena
+- Fideltasun-kidetzaren iraupena
+- Azken transakziotik igarotako denbora
+
+Ondorengo prozeduran txantiloia erabiliz neurri berria eraikitzeko urratsak azaltzen dira.
+
+1. Hartzaileei buruzko xehetasunetan, joan hona: **Neurriak**.
+
+1. Hautatu **Berria** eta hautatu **Aukeratu txantiloia**.
+
+   :::image type="content" source="media/measure-use-template.png" alt-text="Goitibeherako menuaren pantaila-argazkia neurri berri bat sortzean txantiloian nabarmenduta.":::
+
+1. Aurkitu zure beharretara egokitzen den txantiloia eta hautatu **Aukeratu txantiloia**.
+
+1. Berrikusi eskatutako datuak eta hautatu **Hasi** datu guztiak lekuan badituzu.
+
+1. Hurrengoan **Editatu izena** panelean, ezarri neurriaren izena eta irteerako entitatea. 
+
+1. Hautatu **Eginda**.
+
+1. Hurrengoan **Ezarri denbora tartea** atalean, zehaztu erabili beharreko datuen denbora-tartea. Aukeratu neurri berriak datu multzo osoa estaltzea nahi baduzu hautatuz **Denbora guztian**. Edo neurria a ardatz izatea nahi baduzu **Denbora-tarte zehatza**.
+
+   :::image type="content" source="media/measure-set-time-period.png" alt-text="Neurria txantiloi batetik konfiguratzerakoan denbora tartea erakusten duen pantaila-argazkia.":::
+
+1. Hurrengo atalean, hautatu **Gehitu datuak** jarduerak aukeratzeko eta dagozkion datuak mapatzeko *Jarduera bateratua* entitatea.
+
+    1. 1. urratsa: 2. azpian **Jarduera mota**, aukeratu erabili nahi duzun entitatearen mota. Hurrengorako **Jarduerak**, hautatu mapatu nahi dituzun entitateak.
+    1. 2. urratsa 2: aukeratu atributua *Jarduera bateratua* formulak eskatzen duen osagaiaren entitatea. Adibidez, Transakzioaren batez besteko balioa, Transakzio balioa adierazten duen atributua da. Hurrengorako **Jardueren denbora-marka**, aukeratu aktibitatea jardueraren data eta ordua adierazten duen Jarduera bateratuko entitatearen artean.
+   
+1. Datuen mapak arrakasta izan ondoren, egoera honela ikus dezakezu **Osatua** eta mapatutako jardueren eta atributuen izena.
+
+   :::image type="content" source="media/measure-template-configured.png" alt-text="Osatutako neurri txantiloien konfigurazioaren pantaila-argazkia.":::
+
+1. Orain hauta dezakezu **Exekutatu** neurriaren emaitzak kalkulatzeko. Geroago fintzeko, hautatu **Gorde zirriborroa**.
+
 ## <a name="manage-your-measures"></a>Kudeatu neurriak
 
-[Neurri bat sortu](#create-a-measure) ondoren, neurrien zerrenda ikusiko duzu **Neurriak** orrian.
+Hemen aurkituko dituzu neurrien zerrenda **Neurriak** orrialdea.
 
 Neurri motari, sortzaileari, sortze datari, egoerari eta egoerari buruzko informazioa aurkituko duzu. Zerrendako neurri bat hautatzen duzunean, irteera aurreikusi eta .CSV fitxategia deskarga dezakezu.
 

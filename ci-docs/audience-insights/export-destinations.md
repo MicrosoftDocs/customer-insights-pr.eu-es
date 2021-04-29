@@ -1,7 +1,7 @@
 ---
-title: Esportazio-helburuak
-description: Esportatu datuak eta kudeatu esportatzeko helmugak.
-ms.date: 07/21/2020
+title: Esportatu datuak Customer Insights-etik
+description: Kudeatu esportazioak datuak partekatzeko.
+ms.date: 03/25/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,102 +9,73 @@ ms.topic: conceptual
 author: phkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 5557442983f8c48cd46387009e0060beb6e764bb
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: 354ce9ef30fe918975d06290430996c84f8bd3f7
+ms.sourcegitcommit: aaa275c60c0c77c88196277b266a91d653f8f759
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5596070"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "5896128"
 ---
-# <a name="export-destinations-preview-overview"></a>Esportazio-helburuen (aurreargitalpena) informazio orokorra
+# <a name="exports-preview-overview"></a>Esportazioak (aurreargitalpena) ikuspegi orokorra
 
-**Esportaziorako helmugak** orrialdeak datuak esportatzeko ezarri dituzun kokapen guztiak erakusten dizkizu. Helmuga berriak ere gehitu ditzakezu esportaziorako. Gainera, unean eskuragarri dauden esportatzeko aukerak erakusten ditu. Lortu ikuspegi orokorra, deskribapena eta jakin zer egin dezakezu hedagarritasun aukera bakoitzarekin. Esportatu profilak, neurriak eta segmentuak bateratzea negoziorako garrantzitsuak diren aplikazioetara.
+**Esportazioak** orrialdeak konfiguratutako esportazio guztiak erakusten ditu. Esportazioek datu zehatzak partekatzen dituzte hainbat aplikaziorekin. Bezeroen profilak edo entitateak, eskemak eta mapen xehetasunak sar ditzakete. Esportazio bakoitzak [konexioa, administratzaile batek konfiguratuta, autentifikazioa eta sarbidea kudeatzeko](connections.md).
 
-Joan **admin** > **Esportaziorako helmugak** zabalgarritasun aukera hauek aurkitzeko:
+> [!NOTE]
+> 2021eko martxora arte, esportazioek konexioa sortu zuten dagokion zerbitzura automatikoki. Esportazioek orain [konexioa, administratzaile batek sortua eta partekatua](connections.md) sortu aurretik.
 
-- [Adobe Campaign Standard](export-adobe-campaign-standard.md)
-- [Adobe Experience Platform](export-adobe-experience-platform.md)
-- [AdRoll](export-adroll.md)
-- [Autopilot](export-autopilot.md)
-- [Azure Blob Storage](export-azure-blob-storage.md)
-- [Azure Data Lake Storage Gen2](export-azure-data-lake-storage-gen2.md)
-- [Bot egiteko Microsoft Teams](export-teams-bot.md)
-- [Customer Insights API](apis.md)
-- [DotDigital](export-dotdigital.md)
-- [Dynamics 365 Customer Service (Bezeroaren txartelaren osagarria)](customer-card-add-in.md)
-- [Dynamics 365 Marketing](export-dynamics365-marketing.md)
-- [Dynamics 365 Sales](export-dynamics365-sales.md)
-- [Dynamics 365 Salmenten atala (Bezeroaren txartelaren osagarria)](customer-card-add-in.md)
-- [Facebook Iragarkien kudeatzailea](export-facebook.md)
-- [Google Ads](export-google-ads.md)
-- [LiveRamp&reg;](export-liveramp.md)
-- [Mailchimp](export-mailchimp.md)
-- [Marketo](export-marketo.md)
-- [Power Automate](export-power-automate.md)
-- [Power Apps](export-power-apps.md)
-- [Power BI](export-power-bi.md)
-- [SendGrid](export-sendgrid.md)
-- [SFTP](export-sftp.md)
+Joan **Datuak** > **Esportazioak** esportazioen orria ikusteko. Erabiltzaile rol guztiek konfiguratutako esportazioak ikusteko sarbidea dute. Komando-barrako bilaketa-eremua erabiltzea esportazioak haien izenaren, konexioaren izenaren edo konexio motaren arabera aurkitzeko.
 
-## <a name="add-a-new-export-destination"></a>Gehitu beste esportazio-helburu bat
+## <a name="set-up-a-new-export"></a>Konfiguratu esportazio berria
 
-Esportazio helmugak gehitzeko, [administratzaile baimenak](permissions.md) dituzu. Microsoft zerbitzuetara esportatzen baduzu, bi zerbitzuak erakunde berean daudela suposatuko dugu.
+Esportazioa konfiguratzeko edo editatzeko, konexioak eskuragarri izan behar dituzu. Konexioak zure araberakoak dira [erabiltzailearen rola](permissions.md):
+- Administratzaileek konexio guztietarako sarbidea dute. Konexio berriak sor ditzakete esportazioa konfiguratzerakoan.
+- Laguntzaileek konexio zehatzetarako sarbidea izan dezakete. Konexioak konfiguratzeko eta partekatzeko administratzaileen mende daude. Informazio gehiagorako, ikus [Baimendu laguntzaileei esportazioetarako konexioa erabiltzea](connections.md#allow-contributors-to-use-a-connection-for-exports).
+- Ikusleek lehendik dauden esportazioak soilik ikus ditzakete baina ez dituzte sortu.
 
-1. Joan **Administratzailea** > **Esportazio-helburuak** atalera.
+1. Joan **Datuak** > **Esportazioak**.
 
-1. Sar ezazu teklara **Nire esportazio helmuga** fitxa.
+1. Aukeratu **Gehitu esportazioa** esportazio helmuga berria sortzeko.
 
-1. Hautatu **Gehitu helmuga** esportatzeko helmuga berria sortzeko.
+1. Hurrengoan **Konfiguratu esportazioa** panelean, hautatu zein konexio erabili. [Konexioak](connections.md) administratzaileek kudeatzen dituzte. 
 
-1. Sarbidean **Helmuga gehitu** hautatu panela **Mota** esportazio-helmuga goitibeherakoan.
+1. Eman beharrezko xehetasunak eta hautatu **Gorde** esportazioa sortzeko.
 
-1. Eman beharrezko xehetasunak eta hautatu **hurrengo** esportazio-helmuga sortzeko.
-
-Aukeratu ere egin dezakezu **Konfiguratu** teila batean **Ezagutu** fitxa.
-
-## <a name="view-export-destinations"></a>Ikusi Esportatu helburuak
-
-Esportazio helmugak sortu ondoren, ondoko taulan aurkituko dituzu **Nire esportazio helmuga** fitxa. Taula honek hiru zutabe ditu:
-
-- **Bistaratu izena**: Helmuga sortzerakoan idatzi duzun izena.
-- **Mota**: Helmuga sortzean zuk ezarri duzun esportazio helmuga mota.
-- **Noiz sortua**: helburua sortu zenuen data.
-
-## <a name="edit-an-export-destination"></a>Editatu esportatze helmuga
+### <a name="edit-an-export"></a>Editatu esportazio bat
 
 1. Hautatu elipsi bertikala editatu nahi duzun Export helmugarako.
 
-   > [!div class="mx-imgBorder"]
-   > ![Elipsi bertikala](media/export-destinations-page-ellipsis.png "Elipsi bertikala")
+1. Hautatu **Editatu** goitibeherako menutik.
 
-1. Hautatu **Editatu** goitibeherako menuan.
+1. Aldatu eguneratu nahi dituzun balioak eta hautatu **Gorde**.
 
-1. Aldatu eguneratzea eskatzen duten balioak eta hautatu **Gorde**.
+## <a name="view-exports-and-export-details"></a>Ikusi esportazioak eta esportazioen xehetasunak
 
-## <a name="export-data-on-demand"></a>Esportatu datuak eskatu ahala
+Esportazio helmugak sortu ondoren, hemen agertzen dira **Datuak** > **Esportazioak**. Erabiltzaile guztiek ikus dezakete zein datu partekatzen diren eta horien azken egoera.
 
-Esportazio helmugarako konektore bat konfiguratu ondoren, esportazio guztiekin egingo da [programatutako freskagarria](system.md#schedule-tab).
+1. Joan **Datuak** > **Esportazioak**.
 
-Programatutako freskapenaren zain egon gabe datuak esportatzeko, joan **Nire esportazio helmuga** fitxan **administratzailea** > **Esportaziorako helmugak**.
+1. Editatzeko baimenik ez duten erabiltzaileak hautatzen dituzte **Ikusi** ordez **Editatu** ikusi esportazio xehetasunak.
 
-> [!div class="mx-imgBorder"]
-> ![Elipsi bertikala](media/export-destinations-page-ellipsis.png "Elipsi bertikala")
+1. Alboko panel honek esportazio honen konfigurazioa erakusten du. Editatzeko baimenik gabe ezin dituzu balioak aldatu. Aukeratu **Itxi** esportazioen orrira itzultzeko.
 
-- Aukeratu **Esportatu** zerrendaren gainetik esportazioa helmuga guztietara aldi berean exekutatzeko.
-- Hautatu elipsia (...) zerrendako elementu baten ostean eta ondoren hautatu **Esportatu** Aukera esportazioa helmuga bakar baterako exekutatzeko aukera.
+## <a name="run-exports-on-demand"></a>Exekutatu esportazioak eskatu ahala
 
-## <a name="remove-an-export-destination"></a>Ezabatu Export helmuga
+Esportazio bat konfiguratu ondoren, guztietan exekutatuko da [freskatze programatua](system.md#schedule-tab) betiere lan konexioa badu.
 
-Esportazio helmuga bat kentzeko, hasi nagusitik **Esportaziorako helmugak** orria.
+Datuak esportatzeko programatutako freskapenaren zain egon gabe, joan hona: **Datuak** > **Esportazioak**. Bi aukera dituzu:
 
-1. Hautatu elipsi bertikala kendu nahi duzun Export helmugarako.
+- Esportazio guztiak exekutatzeko, hautatu **Exekutatu guztiak** komando barran. 
+- Esportazio bakarra exekutatzeko, hautatu elipsia (...) zerrendako elementu batean eta ondoren aukeratu **Exekutatu**.
 
-   > [!div class="mx-imgBorder"]
-   > ![Elipsi bertikala](media/export-destinations-page-ellipsis.png "Elipsi bertikala")
+## <a name="remove-an-export"></a>Ezabatu Esportatu
 
-2. Hautatu **Kendu** goitibeherako menuan.
+1. Joan **Datuak** > **Esportazioak**.
 
-3. Baieztatu kentzea aukeratuz **Kendu** berrespen-pantailan.
+1. Hautatu elipsi bertikala kendu nahi duzun Esportaziorako.
+
+1. Hautatu **Kendu** goitibeherako menuan.
+
+1. Baieztatu kentzea aukeratuz **Kendu** berrespen-pantailan.
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

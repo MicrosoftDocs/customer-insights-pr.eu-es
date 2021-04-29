@@ -1,7 +1,7 @@
 ---
 title: Aberastea Experian hirugarrenen aberastearekin
 description: Experian-en hirugarrenen aberasteari buruzko informazio orokorra.
-ms.date: 12/10/2020
+ms.date: 04/09/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: how-to
 author: kishorem-ms
 ms.author: kishorem
 manager: shellyha
-ms.openlocfilehash: 4d4723e8f793ee857c4f5204a42be8338c71d4c3
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: 9cf2a7fa18ecc022ea67f6829f52381ad59f3172
+ms.sourcegitcommit: aaa275c60c0c77c88196277b266a91d653f8f759
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5597772"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "5896358"
 ---
 # <a name="enrich-customer-profiles-with-demographics-from-experian-preview"></a>Aberastu bezeroen profilak demografiarekin Experian-etik (aurrebista)
 
@@ -25,10 +25,10 @@ Experian mundu mailako liderra da kontsumitzaileen eta negozioen kredituen berri
 Experian konfiguratzeko, honako baldintza hauek bete behar dira:
 
 - Experian harpidetza aktiboa duzu. Harpidetza lortzeko, [jarri harremanetan Experian-ekin](https://www.experian.com/marketing-services/contact) zuzenean. [Ikasi gehiago Experian datu-aberasteari buruz](https://www.experian.com/marketing-services/microsoft?cmpid=ems_web_mci_cdppage).
-- Experian-ek sortu duen SSH gaitutako Garraio Seguru (ST) konturako Erabiltzaile IDa, Alderdiaren IDa eta Modelo zenbakia dituzu.
-- Badituzu [Administratzaile](permissions.md#administrator) baimenak hartzaileei buruzko xehetasunetan.
 
-## <a name="configuration"></a>Konfigurazioa
+- Administratzaile batek dagoeneko Experian konexioa konfiguratu du *edo* duzu [administratzailea](permissions.md#administrator) baimenak. Experianek zuretzako sortu duen SSH gaitutako Garraio Seguru (ST) konturako Erabiltzaile IDa, Alderdiaren IDa eta Modelo zenbakia ere behar dituzu.
+
+## <a name="configure-the-enrichment"></a>Konfiguratu aberastea
 
 1. Joan **Datuak** > **Aberastea** eta hautatu **Deskubritu** fitxa.
 
@@ -36,26 +36,46 @@ Experian konfiguratzeko, honako baldintza hauek bete behar dira:
 
    > [!div class="mx-imgBorder"]
    > ![Teila Experian](media/experian-tile.png "Teila Experian")
+   > 
 
-1. Aukeratu **Hasi** eta sartu Erabiltzailearen IDa, Alderdiaren IDa eta Modelo zenbakia Experian Secure Transport konturako. Berrikusi eta eman baimena **Datuen pribatutasuna eta betetzea** aukeratuz **ados** laukia. Berretsi sarrera guztiak hautatuta **Aplikatu**.
+1. Hautatu [konexioa](connections.md) goitibeherako zerrendatik. Jarri harremanetan administratzaile batekin konexiorik ez badago. Administratzailea bazara, sor dezakezu konexioa hautatuz **Gehitu konexioa** eta aukeratuz Experian goitibeherako zerrendan. 
 
-## <a name="map-your-fields"></a>Esleitu eremuak
+1. Aukeratu **Konektatu Experian** konexioaren hautapena berresteko.
 
-1.  Aukeratu **Gehitu datuak** eta aukeratu Experian-eko enpresako datu demografikoekin aberastu nahi duzun **Bezeroaren datu multzoa**. **Bezeroen** entitatea hauta dezakezu zure bezeroen profil guztiak aberasteko edo segmentu-entitate bat hauta dezakezu segmentu horretan dauden bezeroen profilak soilik aberasteko.
+1.  Aukeratu **Hurrengoa** eta aukeratu **Bezeroen datu multzoa** Experian datu demografikoekin aberastu nahi duzu. **Bezeroen** entitatea hauta dezakezu zure bezeroen profil guztiak aberasteko edo segmentu-entitate bat hauta dezakezu segmentu horretan dauden bezeroen profilak soilik aberasteko.
 
-1. Aukeratu zure gako identifikatzaileak **Izena eta helbidea**, **Helbide elektronikoa**, edo **Mugikorra** identitate-ebazpena Experian-era bidaltzeko.
+    :::image type="content" source="media/enrichment-Experian-configuration-customer-data-set.png" alt-text="Pantaila-argazkia bezeroaren datu multzoa aukeratzerakoan.":::
 
-   > [!TIP]
-   > Litekeena da Experian-era bidalitako gako identifikatzaile atributu gehiagok bat etortze tasa handiagoa lortzea.
+1. Aukeratu **Hurrengoa** eta zehaztu zure profil bateratuetako zein eremu mota erabili behar diren Experian-eko datu demografikoak bat datozen bilatzeko. Eremuetako bat gutxienez **Izena eta helbidea**, **Mugikorra**, edo **Posta elektronikoa** beharrezkoa da. Partiduen zehaztasun handiagoa lortzeko, beste bi eremu gehi daitezke. Aukeraketa honek hurrengo urratsean atzitu ditzakezun mapen eremuei eragingo die.
 
-1. Aukeratu **Hurrengoa** eta mapatu dagozkien atributuak zure bezero entitate bateratuarekin hautatutako gako identifikatzailearen eremuetarako.
+    > [!TIP]
+    > Litekeena da Experian-era bidalitako gako identifikatzaile atributu gehiagok bat etortze tasa handiagoa lortzea.
 
-1. Aukeratu **Gehitu atributua** Experian-era bidali nahi dituzun atributu osagarriak mapatzeko.
+1. Hautatu **Hurrengoa** eremuaren jarraipena hasteko.
 
-1.  Aukeratu **Gorde** eremuaren mapa osatzeko.
+1. Definitu zure profil bateratuetako zein eremu mota erabili behar diren Experian-eko datu demografikoak bat datozen bilatzeko. Eskatutako eremuak markatuta daude.
 
-    > [!div class="mx-imgBorder"]
-    > ![Experian eremuaren esleipena](media/experian-field-mapping.png "Experian eremuaren esleipena")
+1. Hornitu aberasturako izena eta irteerako entitatearen izena.
+
+1. Aukeratu **Aurreztu aberastasuna** zure aukerak aztertu ondoren.
+
+## <a name="configure-the-connection-for-experian"></a>Konfiguratu konexioa Experian-erako 
+
+Administratzailea izan behar duzu konexioak konfiguratzeko. Aukeratu **Gehitu konexioa** aberastasun bat konfiguratzerakoan *edo* joan **Administratzailea** > **Konexioak** eta hautatu **Konfiguratu** Experian fitxan.
+
+1. Hautatu **Hasi erabiltzen**.
+
+1. Idatzi konexioaren izena **Bistaratzeko izena** kutxa.
+
+1. Idatzi baliozko Erabiltzaile IDa, Alderdiaren IDa eta Modelo zenbakia Experian Secure Transport konturako.
+
+1. Berrikusi eta eman baimena **Datuen pribatutasuna eta betetzea** aukeratuz **ados** laukia
+
+1. Aukeratu **Egiaztatu** konfigurazioa balioztatzeko.
+
+1. Egiaztapena amaitu ondoren, hautatu **Gorde**.
+   
+   :::image type="content" source="media/enrichment-Experian-connection.png" alt-text="Experian konexioa konfigurazioaren panela.":::
 
 ## <a name="enrichment-results"></a>Aberastearen emaitzak
 

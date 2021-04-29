@@ -9,12 +9,12 @@ ms.topic: how-to
 author: zacookmsft
 ms.author: zacook
 manager: shellyha
-ms.openlocfilehash: f120e9e3cf8d40d913c7fa6a81fbf9facd045e3c
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: 43fcd37f8dd71e2890334a4cc53d49dae97d63c6
+ms.sourcegitcommit: 6d5dd572f75ba4c0303ec77c3b74e4318d52705c
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5597174"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5906841"
 ---
 # <a name="transactional-churn-prediction-preview"></a>Transakzioen galera-tasaren iragarpena (aurrebista)
 
@@ -46,6 +46,14 @@ Transakzioen galera-tasaren iragarpenak bezeroak denbora-tarte jakin batean jada
         - **Timestamp:** Giltza nagusian identifikatutako gertaeraren data eta ordua.
         - **Gertaera:** Erabili nahi duzun gertaeraren izena. Adibidez, janari dendako "UserAction" izeneko eremua bezeroak erabilitako kupoi bat izan daiteke.
         - **Xehetasunak:** Ekitaldiaren inguruko informazio zehatza. Adibidez, janari dendako "CouponValue" izeneko eremua izan daiteke kupoiaren moneta-balioa.
+- Iradokitako datuen ezaugarriak:
+    - Datu historiko nahikoa: gutxienez hautatutako denbora-leihoa bikoitzeko transakzioen datuak. Ahal izanez gero, bizpahiru urteko harpidetza datuak. 
+    - Erosketa anitz bezero bakoitzeko: modurik onenean, bi transakzio gutxienez bezeroko.
+    - Bezero kopurua: gutxienez 10 bezeroaren profilak, ahal dela 1.000 bezero bakarrak baino gehiago. Ereduak huts egingo du 10 bezero baino gutxiagorekin eta datu historiko nahikorik gabe.
+    - Datuen osotasuna: emandako entitatearen datu eremuan falta diren balioen % 20 baino gutxiago.
+
+> [!NOTE]
+> Bezeroen erosketa maiztasun handiko enpresa batentzat (aste gutxiren buruan) gomendatzen da iragarpen leiho laburragoa eta buelta definitzea hautatzea. Erosketa maiztasun baxua lortzeko (hilero edo urtean behin), aukeratu iragarpen leiho luzeagoa eta desegin definizioa.
 
 ## <a name="create-a-transactional-churn-prediction"></a>Sortu transakzioen galera-tasaren iragarpena
 
@@ -129,7 +137,9 @@ Transakzioen galera-tasaren iragarpenak bezeroak denbora-tarte jakin batean jada
 1. Hautatu berrikusi nahi duzun iragarpena.
    - **Iragarpenaren izena:** sortzerakoan emandako iragarpenaren izena.
    - **Iragarpen mota:** iragarpenean erabilitako eredu mota
-   - **Irteerako entitatea:** Iragarpenaren irteera gordetzeko entitatearen izena. Izen hori duen entitate bat aurki dezakezu **Datuak** > **erakundeak**.
+   - **Irteerako entitatea:** Iragarpenaren irteera gordetzeko entitatearen izena. Izen hori duen entitate bat aurki dezakezu **Datuak** > **erakundeak**.    
+     Irteerako entitatean, *ChurnScore* da aurreikusitako txandaren probabilitatea eta *IsChurn* oinarritutako etiketa bitarra da *ChurnScore* 0,5 atalasearekin. Baliteke atalase lehenetsiak ez funtzionatzea zure eszenatokian. [Sortu segmentu berria](segments.md#create-a-new-segment) nahi duzun atalasearekin.
+     Bezero guztiak ez dira nahitaez bezero aktiboak. Horietako batzuek agian ez dute jarduerarik izan aspalditik eta jadanik txundituta jotzen dira, zure txandaren definizioan oinarrituta. Ez da baliagarria lehendik nahastuta dauden bezeroen arreta arriskua aurreikustea, ez baitira interesatzen den publikoa.
    - **Iragarritako eremua:** Eremu hau iragarpen mota batzuetarako bakarrik betetzen da eta ez da erabiltzen galera-tasaren iragarpenean.
    - **Egoera:** iragarpenaren exekuzioaren egoera.
         - **Ilaran:** iragarpena beste prozesu batzuk exekutatzeko zain dago.
