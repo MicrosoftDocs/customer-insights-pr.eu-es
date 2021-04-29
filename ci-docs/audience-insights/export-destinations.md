@@ -1,7 +1,7 @@
 ---
-title: Esportazio-helburuak
-description: Esportatu datuak eta kudeatu esportatzeko helmugak.
-ms.date: 07/21/2020
+title: Esportatu datuak Customer Insights-etik
+description: Kudeatu esportazioak datuak partekatzeko.
+ms.date: 03/25/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,102 +9,73 @@ ms.topic: conceptual
 author: phkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 5557442983f8c48cd46387009e0060beb6e764bb
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: 354ce9ef30fe918975d06290430996c84f8bd3f7
+ms.sourcegitcommit: aaa275c60c0c77c88196277b266a91d653f8f759
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5596070"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "5896128"
 ---
-# <a name="export-destinations-preview-overview"></a><span data-ttu-id="81c59-103">Esportazio-helburuen (aurreargitalpena) informazio orokorra</span><span class="sxs-lookup"><span data-stu-id="81c59-103">Export destinations (preview) overview</span></span>
+# <a name="exports-preview-overview"></a><span data-ttu-id="24a3f-103">Esportazioak (aurreargitalpena) ikuspegi orokorra</span><span class="sxs-lookup"><span data-stu-id="24a3f-103">Exports (preview) overview</span></span>
 
-<span data-ttu-id="81c59-104">**Esportaziorako helmugak** orrialdeak datuak esportatzeko ezarri dituzun kokapen guztiak erakusten dizkizu.</span><span class="sxs-lookup"><span data-stu-id="81c59-104">The **Export destinations** page shows you all locations you've set up to export data to.</span></span> <span data-ttu-id="81c59-105">Helmuga berriak ere gehitu ditzakezu esportaziorako.</span><span class="sxs-lookup"><span data-stu-id="81c59-105">You can also add new destinations for export.</span></span> <span data-ttu-id="81c59-106">Gainera, unean eskuragarri dauden esportatzeko aukerak erakusten ditu.</span><span class="sxs-lookup"><span data-stu-id="81c59-106">Additionally, it shows export currently available options.</span></span> <span data-ttu-id="81c59-107">Lortu ikuspegi orokorra, deskribapena eta jakin zer egin dezakezu hedagarritasun aukera bakoitzarekin.</span><span class="sxs-lookup"><span data-stu-id="81c59-107">Get a quick overview, description, and find out what you can do with each extensibility option.</span></span> <span data-ttu-id="81c59-108">Esportatu profilak, neurriak eta segmentuak bateratzea negoziorako garrantzitsuak diren aplikazioetara.</span><span class="sxs-lookup"><span data-stu-id="81c59-108">Export unified profiles, measures, and segments to supported apps relevant for your business.</span></span>
+<span data-ttu-id="24a3f-104">**Esportazioak** orrialdeak konfiguratutako esportazio guztiak erakusten ditu.</span><span class="sxs-lookup"><span data-stu-id="24a3f-104">The **Exports** page shows you all configured exports.</span></span> <span data-ttu-id="24a3f-105">Esportazioek datu zehatzak partekatzen dituzte hainbat aplikaziorekin.</span><span class="sxs-lookup"><span data-stu-id="24a3f-105">Exports share specific data with various applications.</span></span> <span data-ttu-id="24a3f-106">Bezeroen profilak edo entitateak, eskemak eta mapen xehetasunak sar ditzakete.</span><span class="sxs-lookup"><span data-stu-id="24a3f-106">They can include customer profiles or entities, schemas, and mapping details.</span></span> <span data-ttu-id="24a3f-107">Esportazio bakoitzak [konexioa, administratzaile batek konfiguratuta, autentifikazioa eta sarbidea kudeatzeko](connections.md).</span><span class="sxs-lookup"><span data-stu-id="24a3f-107">Each export requires a [connection, set up by an administrator, to manage authentication and access](connections.md).</span></span>
 
-<span data-ttu-id="81c59-109">Joan **admin** > **Esportaziorako helmugak** zabalgarritasun aukera hauek aurkitzeko:</span><span class="sxs-lookup"><span data-stu-id="81c59-109">Go to **Admin** > **Export destinations** to find the following extensibility options:</span></span>
+> [!NOTE]
+> <span data-ttu-id="24a3f-108">2021eko martxora arte, esportazioek konexioa sortu zuten dagokion zerbitzura automatikoki.</span><span class="sxs-lookup"><span data-stu-id="24a3f-108">Until March 2021, exports created a connection to the corresponding service automatically.</span></span> <span data-ttu-id="24a3f-109">Esportazioek orain [konexioa, administratzaile batek sortua eta partekatua](connections.md) sortu aurretik.</span><span class="sxs-lookup"><span data-stu-id="24a3f-109">Exports now require a [connection, created and shared by an administrator](connections.md) before you can create them.</span></span>
 
-- [<span data-ttu-id="81c59-110">Adobe Campaign Standard</span><span class="sxs-lookup"><span data-stu-id="81c59-110">Adobe Campaign Standard</span></span>](export-adobe-campaign-standard.md)
-- [<span data-ttu-id="81c59-111">Adobe Experience Platform</span><span class="sxs-lookup"><span data-stu-id="81c59-111">Adobe Experience Platform</span></span>](export-adobe-experience-platform.md)
-- [<span data-ttu-id="81c59-112">AdRoll</span><span class="sxs-lookup"><span data-stu-id="81c59-112">AdRoll</span></span>](export-adroll.md)
-- [<span data-ttu-id="81c59-113">Autopilot</span><span class="sxs-lookup"><span data-stu-id="81c59-113">Autopilot</span></span>](export-autopilot.md)
-- [<span data-ttu-id="81c59-114">Azure Blob Storage</span><span class="sxs-lookup"><span data-stu-id="81c59-114">Azure Blob Storage</span></span>](export-azure-blob-storage.md)
-- [<span data-ttu-id="81c59-115">Azure Data Lake Storage Gen2</span><span class="sxs-lookup"><span data-stu-id="81c59-115">Azure Data Lake Storage Gen2</span></span>](export-azure-data-lake-storage-gen2.md)
-- [<span data-ttu-id="81c59-116">Bot egiteko Microsoft Teams</span><span class="sxs-lookup"><span data-stu-id="81c59-116">Bot for Microsoft Teams</span></span>](export-teams-bot.md)
-- [<span data-ttu-id="81c59-117">Customer Insights API</span><span class="sxs-lookup"><span data-stu-id="81c59-117">Customer Insights API</span></span>](apis.md)
-- [<span data-ttu-id="81c59-118">DotDigital</span><span class="sxs-lookup"><span data-stu-id="81c59-118">DotDigital</span></span>](export-dotdigital.md)
-- [<span data-ttu-id="81c59-119">Dynamics 365 Customer Service (Bezeroaren txartelaren osagarria)</span><span class="sxs-lookup"><span data-stu-id="81c59-119">Dynamics 365 Customer Service (Customer Card Add-in)</span></span>](customer-card-add-in.md)
-- [<span data-ttu-id="81c59-120">Dynamics 365 Marketing</span><span class="sxs-lookup"><span data-stu-id="81c59-120">Dynamics 365 Marketing</span></span>](export-dynamics365-marketing.md)
-- [<span data-ttu-id="81c59-121">Dynamics 365 Sales</span><span class="sxs-lookup"><span data-stu-id="81c59-121">Dynamics 365 Sales</span></span>](export-dynamics365-sales.md)
-- [<span data-ttu-id="81c59-122">Dynamics 365 Salmenten atala (Bezeroaren txartelaren osagarria)</span><span class="sxs-lookup"><span data-stu-id="81c59-122">Dynamics 365 Sales Hub (Customer Card Add-in)</span></span>](customer-card-add-in.md)
-- [<span data-ttu-id="81c59-123">Facebook Iragarkien kudeatzailea</span><span class="sxs-lookup"><span data-stu-id="81c59-123">Facebook Ads Manager</span></span>](export-facebook.md)
-- [<span data-ttu-id="81c59-124">Google Ads</span><span class="sxs-lookup"><span data-stu-id="81c59-124">Google Ads</span></span>](export-google-ads.md)
-- [<span data-ttu-id="81c59-125">LiveRamp&reg;</span><span class="sxs-lookup"><span data-stu-id="81c59-125">LiveRamp&reg;</span></span>](export-liveramp.md)
-- [<span data-ttu-id="81c59-126">Mailchimp</span><span class="sxs-lookup"><span data-stu-id="81c59-126">Mailchimp</span></span>](export-mailchimp.md)
-- [<span data-ttu-id="81c59-127">Marketo</span><span class="sxs-lookup"><span data-stu-id="81c59-127">Marketo</span></span>](export-marketo.md)
-- [<span data-ttu-id="81c59-128">Power Automate</span><span class="sxs-lookup"><span data-stu-id="81c59-128">Power Automate</span></span>](export-power-automate.md)
-- [<span data-ttu-id="81c59-129">Power Apps</span><span class="sxs-lookup"><span data-stu-id="81c59-129">Power Apps</span></span>](export-power-apps.md)
-- [<span data-ttu-id="81c59-130">Power BI</span><span class="sxs-lookup"><span data-stu-id="81c59-130">Power BI</span></span>](export-power-bi.md)
-- [<span data-ttu-id="81c59-131">SendGrid</span><span class="sxs-lookup"><span data-stu-id="81c59-131">SendGrid</span></span>](export-sendgrid.md)
-- [<span data-ttu-id="81c59-132">SFTP</span><span class="sxs-lookup"><span data-stu-id="81c59-132">SFTP</span></span>](export-sftp.md)
+<span data-ttu-id="24a3f-110">Joan **Datuak** > **Esportazioak** esportazioen orria ikusteko.</span><span class="sxs-lookup"><span data-stu-id="24a3f-110">Go to **Data** > **Exports** to view the exports page.</span></span> <span data-ttu-id="24a3f-111">Erabiltzaile rol guztiek konfiguratutako esportazioak ikusteko sarbidea dute.</span><span class="sxs-lookup"><span data-stu-id="24a3f-111">All user roles have access to view configured exports.</span></span> <span data-ttu-id="24a3f-112">Komando-barrako bilaketa-eremua erabiltzea esportazioak haien izenaren, konexioaren izenaren edo konexio motaren arabera aurkitzeko.</span><span class="sxs-lookup"><span data-stu-id="24a3f-112">Use of the search field in the command bar to find exports by their name, connection name, or connection type.</span></span>
 
-## <a name="add-a-new-export-destination"></a><span data-ttu-id="81c59-133">Gehitu beste esportazio-helburu bat</span><span class="sxs-lookup"><span data-stu-id="81c59-133">Add a new export destination</span></span>
+## <a name="set-up-a-new-export"></a><span data-ttu-id="24a3f-113">Konfiguratu esportazio berria</span><span class="sxs-lookup"><span data-stu-id="24a3f-113">Set up a new export</span></span>
 
-<span data-ttu-id="81c59-134">Esportazio helmugak gehitzeko, [administratzaile baimenak](permissions.md) dituzu.</span><span class="sxs-lookup"><span data-stu-id="81c59-134">To add export destinations, you have [administrator permissions](permissions.md).</span></span> <span data-ttu-id="81c59-135">Microsoft zerbitzuetara esportatzen baduzu, bi zerbitzuak erakunde berean daudela suposatuko dugu.</span><span class="sxs-lookup"><span data-stu-id="81c59-135">If you export to Microsoft services, we assume both services are in the same organization.</span></span>
+<span data-ttu-id="24a3f-114">Esportazioa konfiguratzeko edo editatzeko, konexioak eskuragarri izan behar dituzu.</span><span class="sxs-lookup"><span data-stu-id="24a3f-114">To set up or edit an export, you need to have connections available to you.</span></span> <span data-ttu-id="24a3f-115">Konexioak zure araberakoak dira [erabiltzailearen rola](permissions.md):</span><span class="sxs-lookup"><span data-stu-id="24a3f-115">Connections depend on your [user role](permissions.md):</span></span>
+- <span data-ttu-id="24a3f-116">Administratzaileek konexio guztietarako sarbidea dute.</span><span class="sxs-lookup"><span data-stu-id="24a3f-116">Administrators have access to all connections.</span></span> <span data-ttu-id="24a3f-117">Konexio berriak sor ditzakete esportazioa konfiguratzerakoan.</span><span class="sxs-lookup"><span data-stu-id="24a3f-117">They can also create new connections when setting up an export.</span></span>
+- <span data-ttu-id="24a3f-118">Laguntzaileek konexio zehatzetarako sarbidea izan dezakete.</span><span class="sxs-lookup"><span data-stu-id="24a3f-118">Contributors can have access to specific connections.</span></span> <span data-ttu-id="24a3f-119">Konexioak konfiguratzeko eta partekatzeko administratzaileen mende daude.</span><span class="sxs-lookup"><span data-stu-id="24a3f-119">They depend on administrators to configure and share connections.</span></span> <span data-ttu-id="24a3f-120">Informazio gehiagorako, ikus [Baimendu laguntzaileei esportazioetarako konexioa erabiltzea](connections.md#allow-contributors-to-use-a-connection-for-exports).</span><span class="sxs-lookup"><span data-stu-id="24a3f-120">For more information, see [Allow contributors to use a connection for exports](connections.md#allow-contributors-to-use-a-connection-for-exports).</span></span>
+- <span data-ttu-id="24a3f-121">Ikusleek lehendik dauden esportazioak soilik ikus ditzakete baina ez dituzte sortu.</span><span class="sxs-lookup"><span data-stu-id="24a3f-121">Viewers can only view existing exports but not create them.</span></span>
 
-1. <span data-ttu-id="81c59-136">Joan **Administratzailea** > **Esportazio-helburuak** atalera.</span><span class="sxs-lookup"><span data-stu-id="81c59-136">Go to **Admin** > **Export destinations**.</span></span>
+1. <span data-ttu-id="24a3f-122">Joan **Datuak** > **Esportazioak**.</span><span class="sxs-lookup"><span data-stu-id="24a3f-122">Go to **Data** > **Exports**.</span></span>
 
-1. <span data-ttu-id="81c59-137">Sar ezazu teklara **Nire esportazio helmuga** fitxa.</span><span class="sxs-lookup"><span data-stu-id="81c59-137">Switch to the **My export destinations** tab.</span></span>
+1. <span data-ttu-id="24a3f-123">Aukeratu **Gehitu esportazioa** esportazio helmuga berria sortzeko.</span><span class="sxs-lookup"><span data-stu-id="24a3f-123">Select **Add export** to create a new export destination.</span></span>
 
-1. <span data-ttu-id="81c59-138">Hautatu **Gehitu helmuga** esportatzeko helmuga berria sortzeko.</span><span class="sxs-lookup"><span data-stu-id="81c59-138">Select **Add destination** to create a new export destination.</span></span>
+1. <span data-ttu-id="24a3f-124">Hurrengoan **Konfiguratu esportazioa** panelean, hautatu zein konexio erabili.</span><span class="sxs-lookup"><span data-stu-id="24a3f-124">In the **Set up export** pane, select which connection to use.</span></span> <span data-ttu-id="24a3f-125">[Konexioak](connections.md) administratzaileek kudeatzen dituzte.</span><span class="sxs-lookup"><span data-stu-id="24a3f-125">[Connections](connections.md) are managed by administrators.</span></span> 
 
-1. <span data-ttu-id="81c59-139">Sarbidean **Helmuga gehitu** hautatu panela **Mota** esportazio-helmuga goitibeherakoan.</span><span class="sxs-lookup"><span data-stu-id="81c59-139">In the **Add destination** pane, select the **Type** of export destination in the drop-down.</span></span>
+1. <span data-ttu-id="24a3f-126">Eman beharrezko xehetasunak eta hautatu **Gorde** esportazioa sortzeko.</span><span class="sxs-lookup"><span data-stu-id="24a3f-126">Provide the required details and select **Save** to create the export.</span></span>
 
-1. <span data-ttu-id="81c59-140">Eman beharrezko xehetasunak eta hautatu **hurrengo** esportazio-helmuga sortzeko.</span><span class="sxs-lookup"><span data-stu-id="81c59-140">Provide the required details and select **Next** to create the export destination.</span></span>
+### <a name="edit-an-export"></a><span data-ttu-id="24a3f-127">Editatu esportazio bat</span><span class="sxs-lookup"><span data-stu-id="24a3f-127">Edit an export</span></span>
 
-<span data-ttu-id="81c59-141">Aukeratu ere egin dezakezu **Konfiguratu** teila batean **Ezagutu** fitxa.</span><span class="sxs-lookup"><span data-stu-id="81c59-141">You can also select **Set up** on a tile on the **Discover** tab.</span></span>
+1. <span data-ttu-id="24a3f-128">Hautatu elipsi bertikala editatu nahi duzun Export helmugarako.</span><span class="sxs-lookup"><span data-stu-id="24a3f-128">Select the vertical ellipsis for the export destination you want to edit.</span></span>
 
-## <a name="view-export-destinations"></a><span data-ttu-id="81c59-142">Ikusi Esportatu helburuak</span><span class="sxs-lookup"><span data-stu-id="81c59-142">View Export destinations</span></span>
+1. <span data-ttu-id="24a3f-129">Hautatu **Editatu** goitibeherako menutik.</span><span class="sxs-lookup"><span data-stu-id="24a3f-129">Select **Edit** from the drop-down menu.</span></span>
 
-<span data-ttu-id="81c59-143">Esportazio helmugak sortu ondoren, ondoko taulan aurkituko dituzu **Nire esportazio helmuga** fitxa. Taula honek hiru zutabe ditu:</span><span class="sxs-lookup"><span data-stu-id="81c59-143">After creating export destinations, you'll find them in a table on the **My export destinations** tab. This table has three columns:</span></span>
+1. <span data-ttu-id="24a3f-130">Aldatu eguneratu nahi dituzun balioak eta hautatu **Gorde**.</span><span class="sxs-lookup"><span data-stu-id="24a3f-130">Change the values you want to update and select **Save**.</span></span>
 
-- <span data-ttu-id="81c59-144">**Bistaratu izena**: Helmuga sortzerakoan idatzi duzun izena.</span><span class="sxs-lookup"><span data-stu-id="81c59-144">**Display name**: The name you entered when creating the destination.</span></span>
-- <span data-ttu-id="81c59-145">**Mota**: Helmuga sortzean zuk ezarri duzun esportazio helmuga mota.</span><span class="sxs-lookup"><span data-stu-id="81c59-145">**Type**: The export destination type you set when creating the destination.</span></span>
-- <span data-ttu-id="81c59-146">**Noiz sortua**: helburua sortu zenuen data.</span><span class="sxs-lookup"><span data-stu-id="81c59-146">**Created**: The date you created the destination.</span></span>
+## <a name="view-exports-and-export-details"></a><span data-ttu-id="24a3f-131">Ikusi esportazioak eta esportazioen xehetasunak</span><span class="sxs-lookup"><span data-stu-id="24a3f-131">View Exports and export details</span></span>
 
-## <a name="edit-an-export-destination"></a><span data-ttu-id="81c59-147">Editatu esportatze helmuga</span><span class="sxs-lookup"><span data-stu-id="81c59-147">Edit an export destination</span></span>
+<span data-ttu-id="24a3f-132">Esportazio helmugak sortu ondoren, hemen agertzen dira **Datuak** > **Esportazioak**.</span><span class="sxs-lookup"><span data-stu-id="24a3f-132">After creating export destinations, they are listed on **Data** > **Exports**.</span></span> <span data-ttu-id="24a3f-133">Erabiltzaile guztiek ikus dezakete zein datu partekatzen diren eta horien azken egoera.</span><span class="sxs-lookup"><span data-stu-id="24a3f-133">All users can see which data is shared and its latest status.</span></span>
 
-1. <span data-ttu-id="81c59-148">Hautatu elipsi bertikala editatu nahi duzun Export helmugarako.</span><span class="sxs-lookup"><span data-stu-id="81c59-148">Select the vertical ellipsis for the Export destination you want to edit.</span></span>
+1. <span data-ttu-id="24a3f-134">Joan **Datuak** > **Esportazioak**.</span><span class="sxs-lookup"><span data-stu-id="24a3f-134">Go to **Data** > **Exports**.</span></span>
 
-   > [!div class="mx-imgBorder"]
-   > <span data-ttu-id="81c59-149">![Elipsi bertikala](media/export-destinations-page-ellipsis.png "Elipsi bertikala")</span><span class="sxs-lookup"><span data-stu-id="81c59-149">![Vertical ellipsis](media/export-destinations-page-ellipsis.png "Vertical ellipsis")</span></span>
+1. <span data-ttu-id="24a3f-135">Editatzeko baimenik ez duten erabiltzaileak hautatzen dituzte **Ikusi** ordez **Editatu** ikusi esportazio xehetasunak.</span><span class="sxs-lookup"><span data-stu-id="24a3f-135">Users without edit permissions select **View** instead of **Edit** see the export details.</span></span>
 
-1. <span data-ttu-id="81c59-150">Hautatu **Editatu** goitibeherako menuan.</span><span class="sxs-lookup"><span data-stu-id="81c59-150">Select **Edit** from the dropdown menu.</span></span>
+1. <span data-ttu-id="24a3f-136">Alboko panel honek esportazio honen konfigurazioa erakusten du.</span><span class="sxs-lookup"><span data-stu-id="24a3f-136">This side pane shows the set up of this export.</span></span> <span data-ttu-id="24a3f-137">Editatzeko baimenik gabe ezin dituzu balioak aldatu.</span><span class="sxs-lookup"><span data-stu-id="24a3f-137">Without edit permissions, you can't change values.</span></span> <span data-ttu-id="24a3f-138">Aukeratu **Itxi** esportazioen orrira itzultzeko.</span><span class="sxs-lookup"><span data-stu-id="24a3f-138">Select **Close** to return to the exports page.</span></span>
 
-1. <span data-ttu-id="81c59-151">Aldatu eguneratzea eskatzen duten balioak eta hautatu **Gorde**.</span><span class="sxs-lookup"><span data-stu-id="81c59-151">Change the values that require update and select **Save**.</span></span>
+## <a name="run-exports-on-demand"></a><span data-ttu-id="24a3f-139">Exekutatu esportazioak eskatu ahala</span><span class="sxs-lookup"><span data-stu-id="24a3f-139">Run exports on demand</span></span>
 
-## <a name="export-data-on-demand"></a><span data-ttu-id="81c59-152">Esportatu datuak eskatu ahala</span><span class="sxs-lookup"><span data-stu-id="81c59-152">Export data on demand</span></span>
+<span data-ttu-id="24a3f-140">Esportazio bat konfiguratu ondoren, guztietan exekutatuko da [freskatze programatua](system.md#schedule-tab) betiere lan konexioa badu.</span><span class="sxs-lookup"><span data-stu-id="24a3f-140">After configuring an export, it will run with every [scheduled refresh](system.md#schedule-tab) as long as it has a working connection.</span></span>
 
-<span data-ttu-id="81c59-153">Esportazio helmugarako konektore bat konfiguratu ondoren, esportazio guztiekin egingo da [programatutako freskagarria](system.md#schedule-tab).</span><span class="sxs-lookup"><span data-stu-id="81c59-153">After configuring a connector for an export destination, exports will run with every [scheduled refresh](system.md#schedule-tab).</span></span>
+<span data-ttu-id="24a3f-141">Datuak esportatzeko programatutako freskapenaren zain egon gabe, joan hona: **Datuak** > **Esportazioak**.</span><span class="sxs-lookup"><span data-stu-id="24a3f-141">To export data without waiting for a scheduled refresh, go to **Data** > **Exports**.</span></span> <span data-ttu-id="24a3f-142">Bi aukera dituzu:</span><span class="sxs-lookup"><span data-stu-id="24a3f-142">You have two options:</span></span>
 
-<span data-ttu-id="81c59-154">Programatutako freskapenaren zain egon gabe datuak esportatzeko, joan **Nire esportazio helmuga** fitxan **administratzailea** > **Esportaziorako helmugak**.</span><span class="sxs-lookup"><span data-stu-id="81c59-154">To export data without waiting for a scheduled refresh, go the **My export destinations** tab on **Admin** > **Export destinations**.</span></span>
+- <span data-ttu-id="24a3f-143">Esportazio guztiak exekutatzeko, hautatu **Exekutatu guztiak** komando barran.</span><span class="sxs-lookup"><span data-stu-id="24a3f-143">To run all exports, select **Run all** in the command bar.</span></span> 
+- <span data-ttu-id="24a3f-144">Esportazio bakarra exekutatzeko, hautatu elipsia (...) zerrendako elementu batean eta ondoren aukeratu **Exekutatu**.</span><span class="sxs-lookup"><span data-stu-id="24a3f-144">To run a single export, select the ellipsis (...) on a list item and then choose **Run**.</span></span>
 
-> [!div class="mx-imgBorder"]
-> <span data-ttu-id="81c59-155">![Elipsi bertikala](media/export-destinations-page-ellipsis.png "Elipsi bertikala")</span><span class="sxs-lookup"><span data-stu-id="81c59-155">![Vertical ellipsis](media/export-destinations-page-ellipsis.png "Vertical ellipsis")</span></span>
+## <a name="remove-an-export"></a><span data-ttu-id="24a3f-145">Ezabatu Esportatu</span><span class="sxs-lookup"><span data-stu-id="24a3f-145">Remove an Export</span></span>
 
-- <span data-ttu-id="81c59-156">Aukeratu **Esportatu** zerrendaren gainetik esportazioa helmuga guztietara aldi berean exekutatzeko.</span><span class="sxs-lookup"><span data-stu-id="81c59-156">Select **Export** above the list to run the export to all export destinations simultaneously.</span></span>
-- <span data-ttu-id="81c59-157">Hautatu elipsia (...) zerrendako elementu baten ostean eta ondoren hautatu **Esportatu** Aukera esportazioa helmuga bakar baterako exekutatzeko aukera.</span><span class="sxs-lookup"><span data-stu-id="81c59-157">Select the ellipsis (...) after a list item and then choose the **Export** option to run the export for a single export destination.</span></span>
+1. <span data-ttu-id="24a3f-146">Joan **Datuak** > **Esportazioak**.</span><span class="sxs-lookup"><span data-stu-id="24a3f-146">Go to **Data** > **Exports**.</span></span>
 
-## <a name="remove-an-export-destination"></a><span data-ttu-id="81c59-158">Ezabatu Export helmuga</span><span class="sxs-lookup"><span data-stu-id="81c59-158">Remove an Export destination</span></span>
+1. <span data-ttu-id="24a3f-147">Hautatu elipsi bertikala kendu nahi duzun Esportaziorako.</span><span class="sxs-lookup"><span data-stu-id="24a3f-147">Select the vertical ellipsis for the Export you want to remove.</span></span>
 
-<span data-ttu-id="81c59-159">Esportazio helmuga bat kentzeko, hasi nagusitik **Esportaziorako helmugak** orria.</span><span class="sxs-lookup"><span data-stu-id="81c59-159">To remove an Export destination, start from the main **Export destinations** page.</span></span>
+1. <span data-ttu-id="24a3f-148">Hautatu **Kendu** goitibeherako menuan.</span><span class="sxs-lookup"><span data-stu-id="24a3f-148">Select **Remove** from the dropdown menu.</span></span>
 
-1. <span data-ttu-id="81c59-160">Hautatu elipsi bertikala kendu nahi duzun Export helmugarako.</span><span class="sxs-lookup"><span data-stu-id="81c59-160">Select the vertical ellipsis for the Export destination you want to remove.</span></span>
-
-   > [!div class="mx-imgBorder"]
-   > <span data-ttu-id="81c59-161">![Elipsi bertikala](media/export-destinations-page-ellipsis.png "Elipsi bertikala")</span><span class="sxs-lookup"><span data-stu-id="81c59-161">![Vertical ellipsis](media/export-destinations-page-ellipsis.png "Vertical ellipsis")</span></span>
-
-2. <span data-ttu-id="81c59-162">Hautatu **Kendu** goitibeherako menuan.</span><span class="sxs-lookup"><span data-stu-id="81c59-162">Select **Remove** from the dropdown menu.</span></span>
-
-3. <span data-ttu-id="81c59-163">Baieztatu kentzea aukeratuz **Kendu** berrespen-pantailan.</span><span class="sxs-lookup"><span data-stu-id="81c59-163">Confirm the removal by selecting **Remove** on the confirmation screen.</span></span>
+1. <span data-ttu-id="24a3f-149">Baieztatu kentzea aukeratuz **Kendu** berrespen-pantailan.</span><span class="sxs-lookup"><span data-stu-id="24a3f-149">Confirm the removal by selecting **Remove** on the confirmation screen.</span></span>
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
