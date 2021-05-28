@@ -1,7 +1,7 @@
 ---
 title: Egin lan API-ekin
 description: Erabili APIak eta ulertu mugak.
-ms.date: 03/10/2021
+ms.date: 05/10/2021
 ms.reviewer: wimohabb
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: m-hartmann
 ms.author: wimohabb
 manager: shellyha
-ms.openlocfilehash: 59161456914df84d7e72402ed1f5faf70a5119ba
-ms.sourcegitcommit: a39e00a50ad3eda820fd756c5611081f0ca04662
+ms.openlocfilehash: 4d41d7d328dfa6699b5f5e992d3a5bf3179490d8
+ms.sourcegitcommit: 33a8e21b3bf6521bdb8346f81f79fce88091ddfd
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 04/09/2021
-ms.locfileid: "5873647"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "6016577"
 ---
 # <a name="work-with-customer-insights-apis"></a>Lan egin Customer Insights APIekin
 
@@ -90,19 +90,13 @@ Gure bezeroen liburutegien APIak erabiltzeari buruzko informazioa lortzeko, ikus
 
 1. Azure atariko aplikazioaren erregistroan, joan hona: **API baimenak**.
 
-1. Aukeratu **Gehitu baimena** eta hautatu **Customer Insights** alboko panelean.
+1. Hautatu **Gehitu baimena**. 
+
+1. Aukeratu **Nire erakundeak erabiltzen dituen APIak** fitxa eta aukeratu **Customer Insights-erako Dynamics 365 AI** zerrendatik. 
 
 1. **Baimen mota** aukeran, hautatu **Aplikazioaren baimenak** eta hautatu **CustomerInsights.Api.All** baimena.
 
 1. Hautatu **Gehitu baimenak**.
-
-1. Aplikazio honetan administratzailearen baimena emateko, zerbitzuaren entitatea gehitu behar duzu.
-
-   1. Instalatu Azure Active Directory (AD) PowerShell modulua: `Install-Module -Name AzureAD -AllowClobber -Scope AllUsers`
-   1. Konektatu AD kontura: `Connect-AzureAD -TenantId <your tenant id>`. Maizterren IDa hemen aurki dezakezu: **Ikuspegi orokorra** > **Azure Active Directory**.
-   1. Exekutatu komando hau Azure AD zerbitzuaren entitatea gehitzeko: `New-AzureADServicePrincipal -AppId "38c77d00-5fcb-4cce-9d93-af4738258e3c" -DisplayName "Microsoft Dynamics 365 Customer Insights"` AppId parametroa Customer Insights API aplikazioari dagokio.
-
-   :::image type="content" source="media/azureAD-service-principal.png" alt-text="Zerbitzuaren entitatearen adibidea":::
 
 1. Aplikazio berriaren erregistratzeko, itzuli hona: **API baimenak**.
 

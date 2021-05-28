@@ -6,15 +6,15 @@ ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
-author: phkieffer
+author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 01290d5fae7af1737b73373d75e334ae1ed67d37
-ms.sourcegitcommit: 1b671c6100991fea1cace04b5d4fcedcd88aa94f
+ms.openlocfilehash: b5a644e286bd44d4ebf7d1837255326c005b48d6
+ms.sourcegitcommit: 74cd4fa9cbb784d9dff174c0eec7b4dcb408d66b
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5759806"
+ms.lasthandoff: 05/18/2021
+ms.locfileid: "6059301"
 ---
 # <a name="export-segments-to-marketo-preview"></a>Esportatu segmentuak Marketo-era (aurrebista)
 
@@ -44,7 +44,7 @@ Kanpainak sortzeko, posta elektroniko bidezko marketin-mezuak kudeatzeko eta bez
 
 1. Aukeratu nork erabil dezakeen konexioa. Inolako neurririk hartzen ez baduzu, lehenetsia izango da Administratzaileak. Informazio gehiagorako, ikus [Baimendu laguntzaileei esportazioetarako konexioa erabiltzea](connections.md#allow-contributors-to-use-a-connection-for-exports).
 
-1. Sartu zure **[Marketo-ren bezeroaren IDa, Bezeroaren sekretua eta REST amaiera-puntuaren ostalari izena](https://developers.marketo.com/rest-api/authentication/)**.
+1. Sartu zure **[Marketo-ren bezeroaren IDa, Bezeroaren sekretua eta REST amaiera-puntuaren ostalari izena](https://developers.marketo.com/rest-api/authentication/)**. REST Endpoint ostalari izena ostalari izena soilik da, gabe `https://`. Adibidez: `xyz-abc-123.mktorest.com`. 
 
 1. Aukeratu **ados** **Datu-pribatutasuna eta arau-betetzea** onartzeko eta hautatu **Konektatu** Marketo-rekin konexioa hasieratzeko.
 
@@ -62,11 +62,11 @@ Esportazio hau konfigura dezakezu mota honetako konexiorako sarbidea baduzu. Inf
 
 1. Hurrengoan **Konexioa esportatzeko** eremuan, aukeratu konexioa Marketo sekzioan. Atal honen izena ikusten ez baduzu, ez dago mota honetako konexiorik erabilgarri.
 
-1. Sartu zure **[Marketo zerrendaren IDa](https://docs.marketo.com/display/public/DOCS/Understanding+Static+Lists)** 
+1. Idatzi **[Marketo zerrendaren IDa](https://docs.marketo.com/display/public/DOCS/Understanding+Static+Lists)**. Zerrendaren IDa zenbaki hutsa da. Adibidez, Marketo zerrendaren IDa ST12345A7 bada, kendu karakterea zenbakien aurretik eta ondoren eta idatzi `12345`. 
 
 1. **Datuen bat etortzea** atalean, **Posta elektronikoa** eremuan, hautatu zure bezeroaren profil bateratuko eremua, bezero baten helbide elektronikoa adierazten duena. 
 
-1. Aukeran, esporta dezakezu **Izena**, **Abizena**, **Hiria**, **Egoera**, eta **Herrialdea/eskualdea** mezu elektroniko pertsonalizatuagoak sortzeko. Aukeratu **Gehitu atributua** eremu horiek esleitzeko.
+1. Aukeran, esporta dezakezu **Izena**, **Abizena**, **Hiria**, **Egoera** eta **Herrialdea/eskualdea** mezu elektroniko pertsonalizatuagoak sortzeko. Aukeratu **Gehitu atributua** eremu horiek esleitzeko.
 
 1. Hautatu esportatu nahi dituzun segmentuak. Guztira 1 milioi bezero profil esporta ditzakezu Marketo-ra.
 
@@ -74,7 +74,7 @@ Esportazio hau konfigura dezakezu mota honetako konexiorako sarbidea baduzu. Inf
 
 Esportazio bat gordetzeak ez du esportazioa berehala exekutatzen.
 
-Esportazioa guztiekin egiten da [freskatze programatua](system.md#schedule-tab). Ere egin dezakezu [esportatu eskariaren arabera](export-destinations.md#run-exports-on-demand). Marketo-n, zure segmentuak azpian aurki ditzakezu hemen: [Marketo-ko hartzaileak](ttps://docs.marketo.com/display/public/DOCS/Understanding+Static+Lists).
+Esportazioa guztiekin egiten da [freskatze programatua](system.md#schedule-tab). Ere egin dezakezu [esportatu eskariaren arabera](export-destinations.md#run-exports-on-demand). Marketo-n, zure segmentuak azpian aurki ditzakezu hemen: [Marketo-ko hartzaileak](https://docs.marketo.com/display/public/DOCS/Understanding+Static+Lists).
 
 
 ## <a name="data-privacy-and-compliance"></a>Datuen pribatutasuna eta arau-gordetzea

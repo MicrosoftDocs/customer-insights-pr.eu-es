@@ -9,12 +9,12 @@ ms.topic: how-to
 author: m-hartmann
 ms.author: wameng
 manager: shellyha
-ms.openlocfilehash: 835a9f3371a8c1b1a10d5c6901c03e1df5379d3d
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: 04c4252aae374cf25c16b71415ee4a89b51b0040
+ms.sourcegitcommit: f9e2fa3f11ecf11a5d9cccc376fdeb1ecea54880
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5595780"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "5954564"
 ---
 # <a name="customer-lifetime-value-clv-prediction-preview"></a>Bezeroaren bizi-iraupenaren (CLV) balioa (aurreargitalpena)
 
@@ -38,11 +38,11 @@ Datu hauek beharrezkoak dira, eta aukerako gisa markatuta daudenean, gomendagarr
 - Bezeroaren identifikatzailea: identifikazio bakarra bezero bakoitzarekin transakzioak lotzeko
 
 - Transakzioen historia: transakzio historikoen erregistroa beheko datu semantikoen eskemarekin
-    - Transakzioaren IDa: transakzio bakoitzaren identifikatzaile esklusiboa
-    - Transakzioaren data: data da, hobe transakzio bakoitzaren denbora-zigilua bada
-    - Transakzioaren zenbatekoa: transakzio bakoitzaren diru-balioa (adibidez, diru-sarrera edo irabazien marjina)
-    - Itzultzei esleitutako etiketa (aukerakoa): transakzioa itzulera den ala ez adierazten duen balio boolearra 
-    - Produktuaren IDa (aukerakoa): transakzioan parte hartu duen produktuaren IDa
+    - **Transakzioaren IDa**: transakzio bakoitzaren identifikatzaile esklusiboa
+    - **Transakzioaren data**: data da, hobe transakzio bakoitzaren denbora-zigilua bada
+    - **Transakzioaren zenbatekoa**: transakzio bakoitzaren diru-balioa (adibidez, diru-sarrera edo irabazien marjina)
+    - **Itzultzei esleitutako etiketa** (aukerakoa): transakzioa itzulera den ala ez adierazten duen balio boolearra 
+    - **Produktuaren IDa** (aukerakoa): transakzioan parte hartu duen produktuaren IDa
 
 - Datu gehigarriak (aukerakoa), adibidez
     - Web-jarduerak: webgunearen bisiten historia, posta elektronikoaren historia
@@ -53,10 +53,20 @@ Datu hauek beharrezkoak dira, eta aukerako gisa markatuta daudenean, gomendagarr
     - Bezeroaren identifikadoreak maparen jardueretan zure bezeroentzat
     - Jardueren izena eta jardueraren data biltzen dituen jarduera
     - Jardueren datu semantikoen eskemak honakoak dira: 
-        - Gako nagusia: jarduera baterako identifikatzaile bakarra
-        - Denbora-zigilua: gako nagusian identifikatutako gertaeraren data eta ordua
-        - Gertaera (jardueraren izena): erabili nahi duzun gertaeraren izena
-        - Xehetasunak (zenbatekoa edo balioa): bezeroaren jarduerari buruzko xehetasunak
+        - **Gako nagusia**: Jarduera baterako identifikatzaile bakarra
+        - **Denbora-zigilua**: Giltza nagusian identifikatutako gertaeraren data eta ordua
+        - **Gertaera (jardueraren izena)**: erabili nahi duzun gertaeraren izena
+        - **Xehetasunak (zenbatekoa edo balioa)**: bezeroaren jarduerari buruzko xehetasunak
+
+- Iradokitako datuen ezaugarriak:
+    - Datu historiko nahikoak: gutxienez urtebeteko datu transakzionalak. Ahal izanez gero, bizpahiru urteko datu transakzionalak CLV urtebetez iragartzeko.
+    - Erosketa anitz bezero bakoitzeko: Egokiena, gutxienez bizpahiru transakzio bezero ID bakoitzeko, ahal bada data anitzetan zehar.
+    - Bezero kopurua: gutxienez 100 bezero esklusibo, ahal dela 10.000 bezero baino gehiago. Ereduak huts egingo du 100 bezero baino gutxiagorekin eta datu historiko nahikorik gabe
+    - Datuen osotasuna: % 20 baino gutxiago falta dira sarrerako datuetako beharrezko eremuetan   
+
+> [!NOTE]
+> - Ereduak zure bezeroen transakzioen historia eskatzen du. Une honetan transakzioen historiako entitate bakarra konfigura daiteke. Erosketa edo transakzioaren entitate bat baino gehiago badaude, elkartu Power Query-en datuak kontsumitu aurretik.
+> - Bezeroen jardueren datu osagarriak lortzeko (aukerakoa), hala ere, bezeroaren jarduera entitateak nahi adina gehi ditzakezu ereduak kontuan har ditzan.
 
 ## <a name="create-a-customer-lifetime-value-prediction"></a>Sortu bezeroaren bizi-iraupenaren balioaren iragarpena
 
@@ -76,7 +86,7 @@ Datu hauek beharrezkoak dira, eta aukerako gisa markatuta daudenean, gomendagarr
    Lehenespenez, unitatea hilabete gisa ezartzen da. Urteetara alda dezakezu etorkizunean gehiago begiratzeko.
 
    > [!TIP]
-   > Ezarritako denbora-tarte baterako CLV zehaztasunez aurreikusteko, datu historikoen aldi konparagarria behar duzu. Adibidez, datozen 12 hilabeteetarako aurreikusi nahi baduzu, gutxienez 18 - 24 hilabeteen datu historikoak izatea gomendatzen da.
+   > Ezarritako denbora-tarte baterako CLV zehaztasunez aurreikusteko, datu historikoen aldi konparagarria behar duzu. Adibidez, datozen 12 hilabeteetarako CLV aurreikusi nahi baduzu, gutxienez 18 - 24 hilabeteen datu historikoak izatea gomendatzen da.
 
 1. Zehaztu zer **Bezero aktiboak** zure negoziorako esan nahi du. Ezarri bezeroak aktibo jotzeko gutxienez transakzio bat izan behar duen denbora-tartea. Ereduak bezero aktiboentzako CLV soilik aurreikusiko du. 
    - **Ereduak erosketa tartea kalkulatzen utzi (gomendatua)**: ereduak zure datuak aztertzen ditu eta erosketa historikoetan oinarritutako denbora tartea zehazten du.
@@ -181,14 +191,14 @@ Emaitza orrialdearen barruan hiru datu nagusi daude.
   Iragarpen konfiguratzerakoan emandako balio handiko bezeroen definizioa erabiliz, sistemak ebaluatzen du AA ereduak balio handia izan zuen bezero handiak aurreikustean oinarrizko eredu batekin alderatuta.    
 
   Kalifikazioak arau hauetan oinarrituta zehazten dira:
-  - A ereduak zehaztasunez aurreikusi zuen gutxienez % 5eko balio handiko bezero gehiago oinarrizko ereduarekin alderatuta.
-  - B ereduak zehaztasunez aurreikusi zuen gutxienez % 0-5 balio handiko bezero gehiago oinarrizko ereduarekin alderatuta.
-  - C ereduak zehaztasunez aurreikusi zuen balio handiko bezero gutxiago oinarrizko ereduarekin alderatuta.
+  - **A** ereduak zehaztasunez aurreikusi zuen gutxienez % 5eko balio handiko bezero gehiago oinarrizko ereduarekin alderatuta.
+  - **B** ereduak zehaztasunez aurreikusi zuen gutxienez % 0-5 balio handiko bezero gehiago oinarrizko ereduarekin alderatuta.
+  - **C** ereduak zehaztasunez aurreikusi zuen balio handiko bezero gutxiago oinarrizko ereduarekin alderatuta.
 
   **Ereduaren balorazioa** panelean adimen artifizialeko ereduaren errendimenduari eta oinarrizko ereduari buruzko xehetasun gehiago agertzen dira. Oinarrizko ereduak AI ez oinarritutako ikuspegia erabiltzen du bezeroek bizitzako balioa kalkulatzeko batez ere bezeroek egindako erosketa historikoetan oinarrituta.     
   Oinarrizko ereduaren arabera CLV kalkulatzeko erabilitako formula estandarra:    
 
-  *CLV bezero bakoitzeko = Bezeroak bezeroaren leiho aktiboan egindako batez besteko hileko erosketa * Hilabete kopurua CLV iragarpen aldian * Bezero guztien atxikipen tasa orokorra*
+  _**CLV bezero bakoitzeko** = Bezeroak bezeroaren leiho aktiboan egindako batez besteko hileko erosketa * Hilabete kopurua CLV iragarpen aldian * Bezero guztien atxikipen tasa orokorra*_
 
   Adimen artifizialeko eredua oinarrizko ereduarekin alderatzen da, bi modeloen errendimendu metrikan oinarrituta.
   

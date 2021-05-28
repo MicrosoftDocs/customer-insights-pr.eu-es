@@ -6,15 +6,15 @@ ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
-author: phkieffer
+author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: e973bb11b31c9e70b695ebec8aa2700fdaa5e44f
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: ce2477d957a1792e0436a0dfc15a33621b1c89a9
+ms.sourcegitcommit: e8e03309ba2515374a70c132d0758f3e1e1851d0
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5597910"
+ms.lasthandoff: 05/04/2021
+ms.locfileid: "5976073"
 ---
 # <a name="power-automate-connector-preview"></a>Power Automate konektorea (Aurrebista)
 
@@ -27,7 +27,7 @@ Erabili abiarazleak hodei fluxuak sortzeko eta zeregin errepikakorrak automatiza
 - Aktibatu datu-iturburu freskatzeak huts egiten duenean. 
 - Aktibatu datu-iturburu freskatzeak arrakasta duenean.
 - Abiarazi atalasea gainditzen denean segmentu batean. Harrapatzailea atalasearen gainetik zeharkatzera mugatzen da.
-- Abiarazi atalasea gainditzen denean negozio-neurketa batean. Harrapatzailea atalasearen gainetik zeharkatzera mugatzen da.
+- Abiarazi atalasea gainditzen denean negozio-neurketa batean. Dimentsiorik gabeko negozio-neurriak soilik onartzen dira. Harrapatzailea atalasearen gainetik zeharkatzera mugatzen da.
 - Abiarazi eguneratze osoa (datu iturriak, segmentuak, neurriak, ...) amaitzen denean.
 - Aktibatu bateratze-prozesuaren freskaketa bat (mapa, bat etorri, batu) amaitzen denean.
 

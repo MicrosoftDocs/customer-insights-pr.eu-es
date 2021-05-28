@@ -9,12 +9,12 @@ author: adkuppa
 ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 2eb84c44aa530346a73ba720106734d705a45f23
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: 2155042d86cda0cffee1588760a06d6c7eb7077e
+ms.sourcegitcommit: fcc94f55dc2dce84eae188d582801dc47696c9cc
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5595549"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "6085607"
 ---
 # <a name="match-entities"></a>Batu entitateak
 
@@ -103,6 +103,18 @@ Partiduen arauek baldintza multzoak adierazten dituzte. Entitateak batzeko baldi
 
 > [!NOTE]
 > Arauen ordena garrantzitsua da. Bat datorren algoritmoa zure lehen arauaren arabera bat egiten saiatzen da eta bigarren araura jarraitzen du lehen arauarekin bat-etortzerik identifikatu ez bada bakarrik.
+
+### <a name="change-the-entity-order-in-match-rules"></a>Aldatu entitateen ordena partiduen arauetan
+
+Partiduen arauen entitateak berrantola ditzakezu prozesatutako ordena aldatzeko. Ordena aldatu delako gatazkatsuak diren arauak kenduko dira. Kendutako arauak birsortu behar dituzu konfigurazio eguneratuarekin.
+
+1. Joan **Datuak** > **Bat egin** > **Bat-etortzea** eta hautatu **Editatu**.
+
+1. **Editatu araua** panelean, hautatu **Mugitu gora edo behera** kontrolatu edo arrastatu eta askatu entitateak ordena aldatzeko.
+
+   :::image type="content" source="media/reorder-match-rules.png" alt-text="Partiduen fasean eskaera-entitateak zein prozesutan prozesatzen diren aldatzeko aukerak.":::
+
+1. Hautatu **Egina** araua gordetzeko.
 
 ## <a name="define-deduplication-on-a-match-entity"></a>Definitu bikoiztuak kentzea bat datorren entitate batean
 

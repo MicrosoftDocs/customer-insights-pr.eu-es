@@ -9,12 +9,12 @@ author: m-hartmann
 ms.author: wameng
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 9a94a32a04f2a8beb661c27271fe96f23d998722
-ms.sourcegitcommit: d89b19b2a3497722b78362aeee688ae7e94915d9
+ms.openlocfilehash: 402e5ef3515bce0e6f56788781b7bd909738aaa6
+ms.sourcegitcommit: b833e333745d321edeaf96d3ed14458cbce02ff1
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5887925"
+ms.lasthandoff: 05/17/2021
+ms.locfileid: "6049235"
 ---
 # <a name="define-and-manage-measures"></a>Neurriak zehaztu eta kudeatu
 
@@ -34,7 +34,7 @@ Atal honek hutsetik neurri berri bat sortzen lagunduko dizu. Neurri bat bezeroar
 
 1. Aukeratu **Editatu izena** eta eman **Izena** neurrian. 
    > [!NOTE]
-   > Zure neurri konfigurazio berriak bi eremu besterik ez baditu, adibidez, Bezero IDa eta kalkulu bakarra, irteera zutabe berri gisa gehituko zaio Bezeroaren neurria izeneko sistemak sortutako entitateari. Gainera, neurriaren balioa bezeroaren profil bateratuan ikusi ahal izango duzu. Beste neurri batzuek beren entitateak sortuko dituzte.
+   > Zure neurri konfigurazio berriak bi eremu besterik ez baditu, adibidez, CustomerID eta kalkulu bakarra, irteera zutabe berri gisa gehituko zaio Customer_Measure izeneko sistemak sortutako entitateari. Gainera, neurriaren balioa bezeroaren profil bateratuan ikusi ahal izango duzu. Beste neurri batzuek beren entitateak sortuko dituzte.
 
 1. Konfigurazio eremuan, aukeratu agregazio funtzioa **Aukeratu Funtzioa** goitibeherako menua. Agregazio funtzioek honako hauek dituzte: 
    - **Sum**

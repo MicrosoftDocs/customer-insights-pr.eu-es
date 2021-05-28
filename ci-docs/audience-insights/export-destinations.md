@@ -6,22 +6,19 @@ ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
-author: phkieffer
+author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 354ce9ef30fe918975d06290430996c84f8bd3f7
-ms.sourcegitcommit: aaa275c60c0c77c88196277b266a91d653f8f759
+ms.openlocfilehash: c1078ed0ba259a6e9cde3c7ede3570890ae48e67
+ms.sourcegitcommit: 33a8e21b3bf6521bdb8346f81f79fce88091ddfd
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "5896128"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "6016599"
 ---
 # <a name="exports-preview-overview"></a>Esportazioak (aurreargitalpena) ikuspegi orokorra
 
 **Esportazioak** orrialdeak konfiguratutako esportazio guztiak erakusten ditu. Esportazioek datu zehatzak partekatzen dituzte hainbat aplikaziorekin. Bezeroen profilak edo entitateak, eskemak eta mapen xehetasunak sar ditzakete. Esportazio bakoitzak [konexioa, administratzaile batek konfiguratuta, autentifikazioa eta sarbidea kudeatzeko](connections.md).
-
-> [!NOTE]
-> 2021eko martxora arte, esportazioek konexioa sortu zuten dagokion zerbitzura automatikoki. Esportazioek orain [konexioa, administratzaile batek sortua eta partekatua](connections.md) sortu aurretik.
 
 Joan **Datuak** > **Esportazioak** esportazioen orria ikusteko. Erabiltzaile rol guztiek konfiguratutako esportazioak ikusteko sarbidea dute. Komando-barrako bilaketa-eremua erabiltzea esportazioak haien izenaren, konexioaren izenaren edo konexio motaren arabera aurkitzeko.
 

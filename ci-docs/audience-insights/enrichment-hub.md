@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: 10c338b89a6f9971912d05986c105cba1221b01b
-ms.sourcegitcommit: aaa275c60c0c77c88196277b266a91d653f8f759
+ms.openlocfilehash: c8e4a7247ccf575a62440038180010916b09d51b
+ms.sourcegitcommit: f9e2fa3f11ecf11a5d9cccc376fdeb1ecea54880
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "5895990"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "5954472"
 ---
 # <a name="enrichment-for-customer-profiles-preview"></a>Bezeroen profiletarako aberastea (aurrebista)
 
@@ -29,6 +29,7 @@ Gainean **Ezagutu** fitxa, aberastasun hauek aurkituko dituzu:
 
 - [Markak](enrichment-microsoft.md) hornituta Microsoft-en arabera
 - [Interesak](enrichment-microsoft.md) hornituta Microsoft-en arabera
+- [Helbide hobetuak](enrichment-enhanced-addresses.md) Microsoft-ek eskainita
 - [Enpresaren datuak](enrichment-leadspace.md) , Leadspace-k emanak
 - [Demografiak](enrichment-experian.md) hornituta daude Experian-ek
 - [Kokapen datuak](enrichment-here.md) HERE Technologies-ek emanak

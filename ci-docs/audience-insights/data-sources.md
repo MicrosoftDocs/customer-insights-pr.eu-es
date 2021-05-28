@@ -9,12 +9,12 @@ author: adkuppa
 ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 0fc13d3ac0a5176637b6fe481dabe0b2aec11649
-ms.sourcegitcommit: d89b19b2a3497722b78362aeee688ae7e94915d9
+ms.openlocfilehash: 3c0b4690e18285aa37eef481b3cfac951884ead6
+ms.sourcegitcommit: fcc94f55dc2dce84eae188d582801dc47696c9cc
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5887879"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "6085515"
 ---
 # <a name="data-sources-overview"></a>Datuen iturburuen ikuspegi orokorra
 
@@ -36,11 +36,9 @@ datu-iturburu bat gehi dezakezu hiru modu nagusitan:
 
 Oinarrian onartzen da lokal datu iturrietako datuak sartzea Audience Insights-en Power Platform datu-fluxuak. Datu-fluxuak Customer Insights-en gaitu daitezke [eskainiz Microsoft Dataverse inguruneko URLa](manage-environments.md#create-an-environment-in-an-existing-organization) ingurunea konfiguratzerakoan.
 
-Elkartu ondoren sortzen diren datu iturriak Dataverse Customer Insights-ekin ingurunea erabiliko da [Power Platform datu-fluxuak](/power-query/dataflows/overview-dataflows-across-power-platform-dynamics-365) lehenetsiz. Datu fluxuek on-prem konektibitatea onartzen dute datu pasabideak erabiliz. Aurretik zeuden datu iturriak kendu eta birsortu Dataverse ingurunea lokal datu atebideak erabiltzeko lotu zen.
+Elkartu ondoren sortzen diren datu iturriak Dataverse Customer Insights-ekin ingurunea erabiliko da [Power Platform datu-fluxuak](/power-query/dataflows/overview-dataflows-across-power-platform-dynamics-365) lehenetsiz. Datu fluxuek konektibitate lokala onartzen dute datuetarako atebidea erabiliz. Kendu eta sortu berriro Dataverse ingurunea [datuetarako atebide lokalen erabilerarekin](/powerapps/maker/data-platform/using-dataflows-with-on-premises-data.md) erlazionatu baino lehen zeuden datu-iturburuak.
 
 Dagoen batetik datozen atebideak Power BI edo Power Apps ingurunea ikusgai egongo da eta Customer Insights-en berrerabili dezakezu. Datu iturrien orrira joateko estekak agertzen dira Power Platform lokal datu atebideak ikusi eta konfiguratzeko ingurunea.
-
-:::image type="content" source="media/data-sources-onpremises-gateways.png" alt-text="Datu iturrien orriaren pantaila-argazkia Power Platform ingurunea.":::
 
 ## <a name="review-ingested-data"></a>Berrikusi sartutako datuak
 
