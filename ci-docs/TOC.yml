@@ -96,30 +96,40 @@
           href: audience-insights/measures.md
     - name: Iragarpenak
       items:
-        - name: Datuak osatzea balio iragarpenak erabiliz
-          href: audience-insights/predictions.md
-        - name: Iragarpenen harpidetza kornestatzea
-          href: audience-insights/predict-subscription-churn.md
-        - name: Harpidetzaren galera-tasaren iragarpenaren lagin-gida
-          href: audience-insights/sample-guide-predict-subscription-churn.md
-        - name: Iragarri transakzioen galera-tasa
-          href: audience-insights/predict-transactional-churn.md
-        - name: Transakzioen galera-tasaren iragarpenaren lagin-gida
-          href: audience-insights/sample-guide-predict-transactional-churn.md
-        - name: Iragarri bezeroaren bizi-iraupena (CLV)
-          href: audience-insights/predict-customer-lifetime-value.md
-        - name: Iragarri produktuen gomendioak
-          href: audience-insights/predict-product-recommendation.md
-        - name: Produktuak gomendatzeko iragarpenaren adibide-gida
-          href: audience-insights/sample-guide-predict-product-recommendation.md
+        - name: Datuak aurreikustea adimen aurreratuaren laguntzarekin
+          items:
+            - name: Iragarpen ereduen ikuspegi orokorra
+              href: audience-insights/predictions-overview.md
+            - name: Iragarri bezeroaren bizi-iraupena (CLV)
+              href: audience-insights/predict-customer-lifetime-value.md
+            - name: Iragarri produktuen gomendioak
+              href: audience-insights/predict-product-recommendation.md
+            - name: Iragarpenen harpidetza kornestatzea
+              href: audience-insights/predict-subscription-churn.md
+            - name: Iragarri transakzioen galera-tasa
+              href: audience-insights/predict-transactional-churn.md
+            - name: Erabili Azure Ikaskuntza automatikoko eredu pertsonalizatuak
+              href: audience-insights/custom-models.md
+            - name: Osatu partzialki falta diren datuak
+              href: audience-insights/predictions.md
+        - name: Gida laginak
+          items:
+            - name: CLVren iragarpen gida lagina
+              href: audience-insights/sample-guide-predict-clv.md
+            - name: Harpidetzaren galera-tasaren iragarpenaren lagin-gida
+              href: audience-insights/sample-guide-predict-subscription-churn.md
+            - name: Transakzioen galera-tasaren iragarpenaren lagin-gida
+              href: audience-insights/sample-guide-predict-transactional-churn.md
+            - name: Produktuak gomendatzeko iragarpenaren adibide-gida
+              href: audience-insights/sample-guide-predict-product-recommendation.md
+            - name: Esperimentuak Azure ikaskuntza automatikoarekin
+              href: audience-insights/azure-machine-learning-experiments.md
+            - name: Esperimentuak Azure Machine Learning Studio-rekin
+              href: audience-insights/machine-learning-studio-experiments.md
+        - name: Iragarpenak kudeatu
+          href: audience-insights/manage-predictions.md
         - name: Sortu iragarkietan oinarritutako segmentuak
           href: audience-insights/prediction-based-segment.md
-        - name: Inplementatu Ikaskuntza automatiko eredu pertsonalizatuak
-          href: audience-insights/custom-models.md
-        - name: Esperimentuak Azure ikaskuntza automatikoarekin
-          href: audience-insights/azure-machine-learning-experiments.md
-        - name: Esperimentuak Azure Machine Learning Studio-rekin
-          href: audience-insights/machine-learning-studio-experiments.md
     - name: Esportatu aukerak
       items:
         - name: Esportazioak
@@ -154,12 +164,18 @@
               href: audience-insights/export-facebook.md
             - name: Google Ads
               href: audience-insights/export-google-ads.md
+            - name: LinkedIn Ads
+              href: audience-insights/export-linkedin-ads.md
             - name: LiveRamp
               href: audience-insights/export-liveramp.md
             - name: Mailchimp
               href: audience-insights/export-mailchimp.md
             - name: Marketo
               href: audience-insights/export-marketo.md
+            - name: Microsoft Advertising
+              href: audience-insights/export-microsoft-advertising.md
+            - name: Omnisend
+              href: audience-insights/export-omnisend.md
             - name: RollWorks
               href: audience-insights/export-rollworks.md
             - name: SendGrid
@@ -200,6 +216,8 @@
           href: audience-insights/integrate-engagement-insights.md
         - name: Berrikusi entitateen eskema datu arrunten ereduan
           href: audience-insights/entity-schemas.md
+        - name: Customer Insights datuak Dataverse-n
+          href: audience-insights/customer-insights-dataverse.md
         - name: Egin lan API-ekin
           href: audience-insights/apis.md
         - name: API erreferentzia
@@ -240,6 +258,12 @@
           href: engagement-insights/custom-reports.md
         - name: Sortu profil bateratuko txostenak
           href: engagement-insights/profile-reports.md
+        - name: Ikusi eta sortu dimentsioak
+          href: engagement-insights/dimensions.md
+        - name: Ikusi eta sortu metrikak
+          href: engagement-insights/metrics.md
+        - name: Ikusi eta sortu segmentuak
+          href: engagement-insights/segments.md
     - name: Bidaiaren analitika
       items:
         - name: Sortu eta kudeatu inbutu-txostenak
