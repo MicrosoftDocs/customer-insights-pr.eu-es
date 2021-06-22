@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: zacookmsft
 ms.author: zacook
 manager: shellyha
-ms.openlocfilehash: e46e31131a2dd5235af8221eafcd2e1d1394f3d4
-ms.sourcegitcommit: 6d5dd572f75ba4c0303ec77c3b74e4318d52705c
+ms.openlocfilehash: 01704f78cfe1f6ceeee19ff825fc65150894d4ed
+ms.sourcegitcommit: 6b07c9c3102761be162e4842f3c9fbc19f948a9b
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5906749"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "6095541"
 ---
 # <a name="product-recommendation-prediction-preview"></a>Produktu-gomendioen iragarpena (aurreargitalpena)
 
@@ -205,33 +205,9 @@ Batzuetan, produktu batzuk bakarrik dira onuragarriak edo egokiak eraikitzen duz
        > [!div class="mx-imgBorder"]
        > ![Bezero partikular batzuentzako konfiantza handiko iradokizunak erakusten dituen zerrenda](media/product-recommendation-highconfidence.PNG "Bezero partikular batzuentzako konfiantza handiko iradokizunak erakusten dituen zerrenda")
 
-## <a name="fix-a-failed-prediction"></a>Konpondu huts egindako iragarpena
+## <a name="manage-predictions"></a>Iragarpenak kudeatu
 
-1. Joan **Nire iragarpenak** fitxan **Adimen** > **iragarpenak**.
-
-1. Hautatu akatsen erregistroak ikusi nahi dituzun iragarpena eta hautatu **Egunkariak**.
-
-1. Berrikusi errore guztiak. Hainbat akats mota gerta daitezke eta deskribatzen dute zer baldintza eragin duen errorea. Adibidez, zehaztasunez aurreikusteko datu nahikorik ez dagoen akatsa Customer Insights-en datu gehiago kargatuta konpondu ohi da.
-
-## <a name="refresh-a-prediction"></a>Iragarpen bat eguneratu
-
-Iragarpenak automatikoki freskatzen dira berean [antolatu zure datuak freskatzeko](system.md#schedule-tab) ezarpenetan konfiguratutako moduan.
-
-1. Joan **Nire iragarpenak** fitxan **Adimen** > **iragarpenak**.
-
-1. Hautatu freskatu nahi duzun iragarpenaren ondoan elipsi bertikalak.
-
-1. Aukeratu **Freskatu**.
-
-## <a name="delete-a-prediction"></a>Ezabatu iragarpena
-
-Iragarpen ezabatzeak irteerako entitatea ere kentzen du.
-
-1. Joan **Nire iragarpenak** fitxan **Adimen** > **iragarpenak**.
-
-1. Hautatu ezabatu nahi duzun iragarpenaren ondoan elipsi bertikalak.
-
-1. Hautatu **Ezabatu**.
+Iragarpenak optimizatzea, konpontzea, freskatzea edo ezabatzea posible da. Berrikusi sarrerako datuen erabilgarritasun txostena iragarpen azkarragoa eta fidagarriagoa nola egin jakiteko. Informazio gehiago lortzeko, ikusi [Kudeatu iragarpenak](manage-predictions.md).
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

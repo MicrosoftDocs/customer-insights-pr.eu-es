@@ -9,12 +9,12 @@ ms.topic: how-to
 author: zacookmsft
 ms.author: zacook
 manager: shellyha
-ms.openlocfilehash: b6bf4f715768b18d69be3bea4085acd96933e8da
-ms.sourcegitcommit: 6d5dd572f75ba4c0303ec77c3b74e4318d52705c
+ms.openlocfilehash: 4e7065b61940ef0d7b2a30f96f6225df29e30383
+ms.sourcegitcommit: 6b07c9c3102761be162e4842f3c9fbc19f948a9b
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5906887"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "6095633"
 ---
 # <a name="subscription-churn-prediction-preview"></a>Harpidetzeko aurresateko iragarpena (aurrebista)
 
@@ -147,30 +147,9 @@ Harpidetza aurreikuspena lagundu egiten du iragartzen bezeroren bat arriskuan da
        > [!div class="mx-imgBorder"]
        > ![Zerrenda eragin duten faktoreak eta horien garrantzia agerian dauden zerrendak](media/subscription-churn-influentialfactors.PNG "Zerrenda eragin duten faktoreak eta horien garrantzia agerian dauden zerrendak")
 
-## <a name="fix-a-failed-prediction"></a>Konpondu huts egindako iragarpena
+## <a name="manage-predictions"></a>Iragarpenak kudeatu
 
-1. Joan **Nire iragarpenak** fitxan **Adimen** > **iragarpenak**.
-1. Hautatu akatsen erregistroak ikusi nahi dituzun iragarpena eta hautatu **Egunkariak**.
-   > [!div class="mx-imgBorder"]
-   > ![Emaitzen menuko barra ikusteko itxi, editatu eredua eta erregistroak botoiak barne](media/subscription-churn-logsbutton.PNG "Emaitzen menuko barra ikusteko itxi, editatu eredua eta erregistroak botoiak barne")
-1. Berrikusi errore guztiak. Hainbat akats mota gerta daitezke eta deskribatzen dute zer baldintza eragin duen errorea. Adibidez, zehaztasunez aurreikusteko datu nahikorik ez dagoen akatsa datu osagarriak kargatuta konpondu ohi da.
-
-## <a name="refresh-a-prediction"></a>Iragarpen bat eguneratu
-
-Aurreikuspenak automatikoki berritu egingo dira [programatu zure datuak freskatzea](system.md#schedule-tab) ezarpenetan konfiguratuta.
-
-1. Joan **Nire iragarpenak** fitxan **Adimen** > **iragarpenak**.
-1. Hautatu freskatu nahi duzun iragarpenaren ondoan elipsi bertikalak.
-1. Aukeratu **Freskatu**.
-
-## <a name="delete-a-prediction"></a>Ezabatu iragarpena
-
-1. Joan **Nire iragarpenak** fitxan **Adimen** > **iragarpenak**.
-1. Hautatu ezabatu nahi duzun iragarpenaren ondoan elipsi bertikalak.
-1. Hautatu **Ezabatu**.
-
-> [!NOTE]
-> Iragarpen bat ezabatzeak bere irteera entitatea kenduko du.
+Iragarpenak optimizatzea, konpontzea, freskatzea edo ezabatzea posible da. Berrikusi sarrerako datuen erabilgarritasun txostena iragarpen azkarragoa eta fidagarriagoa nola egin jakiteko. Informazio gehiago lortzeko, ikusi [Kudeatu iragarpenak](manage-predictions.md).
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

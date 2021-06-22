@@ -9,12 +9,12 @@ author: JimsonChalissery
 ms.author: jimsonc
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: a7fa6515bd6e79dedfb21aa0f0b8e24b873a6771
-ms.sourcegitcommit: 8341fa964365c185b65bc4b71fc0c695ea127dc0
+ms.openlocfilehash: 6cb7bd62bf0f61e6dc5811b20e5011e4a086c743
+ms.sourcegitcommit: 84283d523a891298fca8aaf629d9f9ab2a1bc067
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 05/14/2021
-ms.locfileid: "6033997"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "6111372"
 ---
 # <a name="segments-overview"></a>Segmentuen informazio orokorra
 
@@ -32,22 +32,13 @@ Segmentu berri bat sortzeko hainbat modu daude:
 - AI-k oinarritutako iradokizunak neurri edo atributuetan oinarrituta: [Neurriak hobetzeko iradokitako segmentuak](suggested-segments.md)
 - Jardueretan oinarritutako iradokizunak: [Iradokitako segmentuak bezeroen jardueran oinarrituta](suggested-segments-activity.md)
 
-## <a name="get-insights-on-existing-segments"></a>Lortu lehendik dauden segmentuei buruzko informazioa
-
-Ezagutu informazio gehigarria lehendik dituzun segmentuen inguruan [Segmentuen xehetasunak](segment-insights.md). Aurki itzazu bi segmentu bereizten dituztenak edo komunean zer duten.
-
-## <a name="find-similar-customers"></a>Bilatu antzeko bezeroak
-
-Bilatu hautatutako segmentu bateko kideen antzekoak diren bezeroak adimen artifizialaren laguntzarekin. Informazio gehiago lortzeko, ikusi [antzeko bezeroak ](find-similar-customer-segments.md).
-
 ## <a name="manage-existing-segments"></a>Kudeatu lehendik dauden segmentuak
 
 Joan **Segmentuak** orrian, gordetako segmentu guztiak ikusi eta kudeatzeko.
 
 Segmentu bakoitza segmentuari buruzko informazio osagarria biltzen duen errenkada batez irudikatuta dago.
 
-> [!div class="mx-imgBorder"]
-> ![Aukerak lehendik dagoen segmentu bat kudeatzeko](media/segments-selected-segment.png "Aukerak lehendik dagoen segmentu bat kudeatzeko")
+:::image type="content" source="media/segments-selected-segment.png" alt-text="Aukeratutako segmentua aukeren goitibeherako zerrendarekin eta eskuragarri dauden aukerekin.":::
 
 Segmentu bat hautatzean ekintza hauek erabilgarri daude:
 
@@ -59,7 +50,7 @@ Segmentu bat hautatzean ekintza hauek erabilgarri daude:
   Bestela, erabil dezakezu **Ordutegiak beranduago** funtzionaltasuna **Aktibatu / Desaktibatu** goitibehera, segmentu jakin bat aktibatzeko eta desaktibatzeko etorkizuneko data eta ordua zehazteko.
 - **Aldatu izena** segmentuari.
 - **Deskargatu** .CSV fitxategi gisa segmentuko kideen zerrenda.
-- **Gehitu** aukerak segmentuan dauden bezeroen IDen zerrenda bidaltzen du beste aplikazio batean prozesatzeko.
+- **Kudeatu esportazioak** esportazioekin lotutako segmentua ikusteko eta kudeatzeko. [Lortu esportazioei buruzko informazio gehiago.](export-destinations.md)
 - **Ezabatu** segmentua.
 
 ## <a name="refresh-segments"></a>Freskatu segmentuak
@@ -68,6 +59,24 @@ Segmentu guztiak freskatu ditzakezu aldi berean hautatuta **Freskatu guztiak** g
 
 > [!TIP]
 > Zereginen/prozesuen [sei egoera mota](system.md#status-types) daude. Gainera, prozesu gehienak [downstream-eko beste prozesu batzuen mende daude](system.md#refresh-policies). Aukeratu prozesu baten egoera, egon zen lan osoaren aurrerapen xehetasunak ikusteko. Aukeratu ondoren **Ikusi xehetasunak** lanaren zereginetako baterako, informazio osagarria aurkituko duzu: prozesatzeko denbora, azken prozesatze data eta zereginarekin lotutako akats eta abisu guztiak.
+
+## <a name="export-segments"></a>Esportatu segmentuak
+
+Segmentu bat esportatu dezakezu segmentuen orrialdetik edo [esportazioen orritik](export-destinations.md). 
+
+1. Zoaz **Segmentuak** orrira.
+
+1. Esportatu nahi duzun segmenturako, hautatu **erakutsi gehiago [...]**.
+
+1. Goitibeherako zerrendatik, hautatu **kudeatu esportazioak**.
+
+1. **Segmentuaren esportazioak (aurrebista)** orria irekitzen da. Uneko segmentua duten edo ez duten esportazioen arabera taldekatutako konfiguratutako esportazio guztiak ikus ditzakezu.
+
+   1. Aukeratutako segmentua esportazio batera gehitzeko, hautatu esportazioa zerrendan eta hautatu **Gehitu segmentua**.
+
+   1. Aukeratutako segmentuarekin esportazio berri bat sortzeko, hautatu **Gehitu esportazioa**. Esportazioak sortzeari buruzko informazio gehiago lortzeko, ikusi [Konfiguratu esportazio berria](export-destinations.md#set-up-a-new-export).
+
+1. Aukeratu **Itzuli** segmentuen orri nagusira itzultzeko.
 
 ## <a name="view-processing-history-and-segment-members"></a>Ikusi prozesaketaren historia eta segmentuko kideak
 

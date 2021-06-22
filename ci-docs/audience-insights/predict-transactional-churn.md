@@ -9,12 +9,12 @@ ms.topic: how-to
 author: zacookmsft
 ms.author: zacook
 manager: shellyha
-ms.openlocfilehash: 43fcd37f8dd71e2890334a4cc53d49dae97d63c6
-ms.sourcegitcommit: 6d5dd572f75ba4c0303ec77c3b74e4318d52705c
+ms.openlocfilehash: b0e587739f9f4d03942d70a72de4f9378822054d
+ms.sourcegitcommit: 6b07c9c3102761be162e4842f3c9fbc19f948a9b
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5906841"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "6095587"
 ---
 # <a name="transactional-churn-prediction-preview"></a>Transakzioen galera-tasaren iragarpena (aurrebista)
 
@@ -144,7 +144,7 @@ Transakzioen galera-tasaren iragarpenak bezeroak denbora-tarte jakin batean jada
    - **Egoera:** iragarpenaren exekuzioaren egoera.
         - **Ilaran:** iragarpena beste prozesu batzuk exekutatzeko zain dago.
         - **Freskatzen:** iragarpena une honetan exekutatzen ari da irteerako entitatera isuriko diren emaitzak sortzeko.
-        - **Huts egin du:** iragarpenaren exekuzioak huts egin du. Xehetasun gehiago eskuratzeko, [berrikusi egunkariak](#troubleshoot-a-failed-prediction).
+        - **Huts egin du:** iragarpenaren exekuzioak huts egin du. Xehetasun gehiago eskuratzeko, [berrikusi egunkariak](manage-predictions.md#troubleshoot-a-failed-prediction).
         - **Ongi osatu da:** iragarpena ongi osatu da. Aukeratu **ikusi** elipse bertikalen azpian iragarpena berrikusteko
    - **Hizkuntzak:** Aurreikuspenerako konfigurazioa aldatu zen data.
    - **Azken freskatua:** Iragarpena freskatu den data irteerako entitatean.
@@ -168,35 +168,9 @@ Transakzioen galera-tasaren iragarpenak bezeroak denbora-tarte jakin batean jada
        
     1. **Eraginik garrantzitsuenak:** Zure iragarpena sortzerakoan kontuan hartzen diren faktore asko daude. Faktore bakoitzak bere garrantzia kalkulatzen du eredu batek sortzen dituen iragarpen bateratuetarako. Faktore hauek erabil ditzakezu zure iragarpen emaitzak balioztatzen laguntzeko. Bestela, informazio hori gero erabil dezakezu [segmentuak sortu](segments.md) horrek bezeroen kalte arriskuan eragina izan lezake.
 
-## <a name="troubleshoot-a-failed-prediction"></a>Huts egin duen iragarpen baten arazoak konpontzea
+## <a name="manage-predictions"></a>Iragarpenak kudeatu
 
-1. Joan **Adimena** > **Iragarpenak** atalera eta hautatu **Nire iragarpenak** fitxa.
-
-1. Aukeratu elipseak bertikalak errore-egunkariak ikusi nahi dituzun iragarpenaren ondoan.
-
-1. Hautatu **Egunkariak**.
-
-1. Berrikusi errore guztiak. Hainbat akats mota gerta daitezke eta deskribatzen dute zer baldintza eragin duen errorea. Adibidez, errore batek ez dauka datu nahikoak zehaztasunez iragartzeko ohikoa da ebaztea kargatzea datu osagarriak Customer Insights-en.
-
-## <a name="refresh-a-prediction"></a>Iragarpen bat eguneratu
-
-Aurreikuspenak automatikoki berritu egingo dira [programatu zure datuak freskatzea](system.md#schedule-tab) ezarpenetan konfiguratuta. Eskuz freskatu ditzakezu.
-
-1. Joan **Adimena** > **Iragarpenak** atalera eta hautatu **Nire iragarpenak** fitxa.
-
-1. Hautatu freskatu nahi duzun iragarpenaren ondoan elipsi bertikalak.
-
-1. Aukeratu **Freskatu**.
-
-## <a name="delete-a-prediction"></a>Ezabatu iragarpena
-
-Iragarpen ezabatzeak bere irteerako entitatea ere kentzen du.
-
-1. Joan **Adimena** > **Iragarpenak** atalera eta hautatu **Nire iragarpenak** fitxa.
-
-1. Hautatu ezabatu nahi duzun iragarpenaren ondoan elipsi bertikalak.
-
-1. Hautatu **Ezabatu**.
+Iragarpenak optimizatzea, konpontzea, freskatzea edo ezabatzea posible da. Berrikusi sarrerako datuen erabilgarritasun txostena iragarpen azkarragoa eta fidagarriagoa nola egin jakiteko. Informazio gehiago lortzeko, ikusi [Kudeatu iragarpenak](manage-predictions.md).
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

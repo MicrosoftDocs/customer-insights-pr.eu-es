@@ -1,7 +1,7 @@
 ---
 title: Aberastu bezeroen profilak Microsoften datuekin
 description: Erabili Microsoft-en jabedun datuak bezeroen datuak marka eta interes kidetasunekin aberasteko.
-ms.date: 04/09/2021
+ms.date: 06/14/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: how-to
 author: kishorem-MS
 ms.author: kishorem
 manager: shellyha
-ms.openlocfilehash: be042dd139607849b795c903fa58da2edb9ff589
-ms.sourcegitcommit: 72603fb39c4d5dbca71128815a2e1692542ea4dc
+ms.openlocfilehash: e92360bb886739cfe477ce1d2eb62219228a0292
+ms.sourcegitcommit: d4b4053f6ee8f60f1a214982c4726c9de84615ef
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "6064876"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "6245692"
 ---
 # <a name="enrich-customer-profiles-with-brand-and-interest-affinities-preview"></a>Aberastu bezeroen profilak marka eta interes kidetasunekin (aurrebista)
 
@@ -69,12 +69,10 @@ Esperientzia gidatu batek aberastasunak konfiguratzen lagunduko dizu.
 
 ### <a name="define-your-brands-or-interests"></a>Zehaztu zure markak edo zaletasunak
 
-Hautatu aukera hauetariko bat:
+Aukeratu gehienez bost marka edo interes aukera hauetako bat edo biak erabiliz:
 
-- **Industria**: Sistemak zure industrian garrantzitsuak diren marka edo interesak identifikatzen ditu eta zure bezeroaren datuak aberasten ditu.
-- **Aukeratu zeurea**: Zure erakunderako garrantzitsuenak diren marka edo interesen zerrendako bost elementu aukeratu.
-
-Marka edo interesa gehitzeko, sartu sarrerako eremuan, datozen terminoen araberako iradokizunak jasotzeko. Bilatzen ari zaren marka edo interesa zerrendatzen ez badugu, bidal iezaguzu iritzia erabilita **Proposatu** esteka.
+- **Industria**: Aukeratu zure industria goitibeherako zerrendan eta hautatu industria horretako marka edo interes garrantzitsuenen artean.
+- **Aukeratu zeurea**: Sartu zure erakundearentzako garrantzitsua den marka edo interesa eta aukeratu bat datorren iradokizunen artean. Bilatzen ari zaren marka edo interesa zerrendatzen ez badugu, bidal iezaguzu iritzia erabilita **Proposatu** esteka.
 
 ### <a name="review-enrichment-preferences"></a>Berrikusi aberaste-hobespenak
 

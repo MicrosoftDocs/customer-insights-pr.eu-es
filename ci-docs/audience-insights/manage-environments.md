@@ -1,7 +1,7 @@
 ---
 title: Sortu eta kudeatu inguruneak
 description: Ikasi zerbitzuan izena ematen eta inguruneak kudeatzen.
-ms.date: 03/26/2021
+ms.date: 06/15/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
@@ -9,12 +9,12 @@ ms.reviewer: mhart
 author: NimrodMagen
 ms.author: nimagen
 manager: shellyha
-ms.openlocfilehash: 8cc1401251ed7c45c598bd4a8fb33a9709fabbc8
-ms.sourcegitcommit: d89b19b2a3497722b78362aeee688ae7e94915d9
+ms.openlocfilehash: 06310ea6fc72f26e21e185a6abcb5d19d4b201f6
+ms.sourcegitcommit: e5425f060c8d80f9510283dc610ce70a4e709b1e
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5887971"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "6259084"
 ---
 # <a name="manage-environments"></a>Kudeatu inguruneak
 
@@ -76,9 +76,9 @@ Ingurune bat sortzeko:
    > Ingurunea sortzerakoan hautatu zenuen Azure eskualde bereko Azure Data Lake Gen2 biltegiratze kontuak soilik onartzen ditugu.
    > Azure Data Lake Gen2 Hierarkikoa Izen espazioaren (HNS) gaitutako biltegiratze kontuak soilik onartzen ditugu.
 
-   - Azure Data Lake Storage Gen2 aukerarako, baliabideetan oinarritutako aukera eta harpidetzan oinarritutako aukera erabil dezakezu autentifikatzeko. Informazio gehiagorako, ikus [Konektatu hartzaileei buruzko xehetasunak Azure Data Lake Storage Gen2 kontu batera Azure zerbitzuaren entitatearekin](connect-service-principal.md). **Edukiontzia** izena ezin da aldatu eta "customerinsights" izango da.
+   - Azure Data Lake Storage Gen2 aukerarako, baliabideetan oinarritutako aukera eta harpidetzan oinarritutako aukera erabil dezakezu autentifikatzeko. Informazio gehiagorako, ikus [Konektatu hartzaileei buruzko xehetasunak Azure Data Lake Storage Gen2 kontu batera Azure zerbitzuaren entitatearekin](connect-service-principal.md). **Edukiontzia** izena ezin da aldatu eta `customerinsights` izango da.
    
-   - Erabili nahi baduzu [iragarpenak](predictions.md), oinarritutako aplikazioekin eta soluzioekin datuak partekatzea konfiguratzea Microsoft Dataverse, edo gaitu lokal datu iturrietatik datuak sartzea, eman Microsoft Dataverse inguruneko URL azpian **Konfiguratu datuak partekatzearekin Microsoft Dataverse eta gaitasun osagarriak gaitu**. Aukeratu **Gaitu datuak partekatzea** Customer Insights-en irteerako datuak partekatzeko Microsoft Dataverse kudeatutako datuen lakua.
+   - Erabili nahi baduzu [iragarpenak](predictions.md), konfiguratu datuak partekatzea konfiguratzea Microsoft Dataverse-rekin, edo gaitu lokal datu iturrietatik datuak sartzea, eman Microsoft Dataverse inguruneko URL azpian **Konfiguratu datuak partekatzearekin Microsoft Dataverse eta gaitasun osagarriak gaitu**. Aukeratu **Gaitu datuak partekatzea** Customer Insights-en irteerako datuak partekatzeko Microsoft Dataverse kudeatutako datuen lakua.
 
      > [!NOTE]
      > - Datuak partekatzearekin Microsoft Dataverse-ren kudeatutako datuen lakua ez da onartzen une honetan datu guztiak gordetzen dituzunean Azure Data Lake Storage.
@@ -87,7 +87,7 @@ Ingurune bat sortzeko:
      > [!div class="mx-imgBorder"]
      > ![Datuak partekatzea ahalbidetzeko konfigurazio aukerak Microsoft Dataverse-rekin](media/datasharing-with-DataverseMDL.png)
 
-   Prozesuak exekutatzen dituzunean, adibidez, datuak sartzea edo segmentua sortzea, dagozkien karpetak sortuko dira goian zehaztu duzun biltegiratze kontuan. Datu fitxategiak eta model.json fitxategiak dagozkien azpi-karpetetan sortu eta gehituko dira exekutatzen duzun prozesuan oinarrituta.
+   Prozesuak exekutatzen dituzunean, adibidez, datuak sartzea edo segmentua sortzea, dagozkien karpetak sortuko dira goian zehaztu duzun biltegiratze kontuan. Datu fitxategiak eta model.json fitxategiak sortu eta karpetetara gehituko dira, prozesuaren izenaren arabera.
 
    Customer Insights-eko hainbat ingurune sortzen badituzu eta ingurune horietako irteerako entitateak zure biltegiratze kontuan gordetzea aukeratzen baduzu, karpeta bereiziak sortuko dira ingurune bakoitzarentzat ci_<environmentid> edukiontzian.
 
@@ -146,7 +146,7 @@ Dauden inguruneen xehetasun batzuk editatu ditzakezu.
    > - Datuak partekatzearekin Microsoft Dataverse-ren kudeatutako datuen lakua ez da onartzen une honetan datu guztiak gordetzen dituzunean Azure Data Lake Storage.
    > - [Entitate batean falta diren balioen iragarpen](predictions.md) ez da onartzen une honetan datuak partekatzea gaitzen duzunean Microsoft Dataverse Kudeatutako Data Lake.
 
-   Datuak partekatzeko aukera gaitzean Microsoft Dataverse, datu-iturburuen freskatze osoa eta beste prozesu batzuk abiaraziko dira. Une honetan prozesuak martxan eta ilaran badaude, ez duzu ikusiko datuak partekatzea gaitzeko aukera Microsoft Dataverse. Prozesu horiek amaitu arte edo bertan behera uzteko itxaron dezakezu datuak partekatzea ahalbidetzeko. 
+   Datuak partekatzeko aukera gaitu ondoren Microsoft Dataverse-rekin, datu-iturburuen freskatze osoa eta beste prozesu batzuk hasiko dira. Une honetan prozesuak martxan badaude, ez duzu ikusiko datuak partekatzea gaitzeko aukera Microsoft Dataverse. Itxaron prozesu horiek amaitu arte edo utzi bertan behera datuak partekatzea ahalbidetzeko. 
    
    :::image type="content" source="media/datasharing-with-DataverseMDL.png" alt-text="Konfigurazioaren aukerak gaitzeko datuak partekatzeko Microsoft Dataverse.":::
    

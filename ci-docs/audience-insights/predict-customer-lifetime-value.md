@@ -9,12 +9,12 @@ ms.topic: how-to
 author: m-hartmann
 ms.author: wameng
 manager: shellyha
-ms.openlocfilehash: 04c4252aae374cf25c16b71415ee4a89b51b0040
-ms.sourcegitcommit: f9e2fa3f11ecf11a5d9cccc376fdeb1ecea54880
+ms.openlocfilehash: e2f92a64d01a443bcf3c1605621abe045b93ee5e
+ms.sourcegitcommit: 6b07c9c3102761be162e4842f3c9fbc19f948a9b
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "5954564"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "6095495"
 ---
 # <a name="customer-lifetime-value-clv-prediction-preview"></a>Bezeroaren bizi-iraupenaren (CLV) balioa (aurreargitalpena)
 
@@ -149,7 +149,6 @@ Bezeroen interakzio nagusiak islatzen dituzten datuek (adibidez, webgunea, bezer
 
 1. Hautatu **Hurrengoa**.
 
-
 ### <a name="review-and-run-the-model-configuration"></a>Berrikusi eta exekutatu modeloaren konfigurazioa
 
 1. **Berrikusi modeloaren xehetasunak** urratsean, balioztatu iragarpenaren konfigurazioa. Aurreikuspen konfigurazioaren edozein ataletara joan zaitezke hautatuta **Editatu** erakutsitako balioaren azpian. Konfigurazio-urrats bat ere hauta dezakezu aurrerapen adierazletik.
@@ -170,11 +169,10 @@ Bezeroen interakzio nagusiak islatzen dituzten datuek (adibidez, webgunea, bezer
 - **Egoera**: iragarpenaren exekuzioaren egoera.
     - **Ilaran**: iragarpena beste prozesu batzuk osatzeko zain dago.
     - **Freskatzea**: iragarpena une honetan exekutatzen ari da irteerako entitatera isuriko diren emaitzak sortzeko.
-    - **Huts egin du**: iragarpenaren exekuzioak huts egin du. Xehetasun gehiago eskuratzeko, [berrikusi egunkariak](#troubleshoot-a-failed-prediction).
+    - **Huts egin du**: iragarpenaren exekuzioak huts egin du. Xehetasun gehiago eskuratzeko, [berrikusi egunkariak](manage-predictions.md#troubleshoot-a-failed-prediction).
     - **Ongi osatu da**: iragarpena ongi osatu da. Aukeratu **Ikusi** elipsi bertikalen azpian iragarpen emaitzak berrikusteko.
 - **Editatuta**: aurreikuspenerako konfigurazioa aldatu zen data.
 - **Azken freskatua**: iragarpena freskatu den data irteerako entitatean.
-
 
 ### <a name="review-prediction-results"></a>Berrikusi iragarpenen emaitzak
 
@@ -216,28 +214,8 @@ Emaitza orrialdearen barruan hiru datu nagusi daude.
 
 - **Eragin gehien duten faktoreak**: hainbat faktore hartzen dira kontuan zure CLV iragarpen sortzerakoan adimen artifizialeko ereduan emandako sarrera datuetan oinarrituta. Faktore bakoitzak eredu batek sortzen dituen aurreikuspen agregatuetarako kalkulatutako garrantzia du. Faktore hauek erabil ditzakezu zure iragarpen emaitzak balioztatzen laguntzeko. Faktore horiek CLV zure bezero guztien artean aurreikusteko eragin duten faktore eragileei buruzko informazio gehiago eskaintzen dute.
 
-## <a name="refresh-a-prediction"></a>Iragarpen bat eguneratu
+## <a name="manage-predictions"></a>Iragarpenak kudeatu
 
-Iragarpenak automatikoki freskatzen dira berean [antolatu zure datuak freskatzeko](system.md#schedule-tab) ezarpenetan konfiguratutako moduan. Eskuz freskatu ditzakezu.
-
-1. Joan **Adimena** > **Iragarpenak** atalera eta hautatu **Nire iragarpenak** fitxa.
-2. Hautatu freskatu nahi duzun iragarpenaren ondoan elipsi bertikalak.
-3. Aukeratu **Freskatu**.
-
-## <a name="delete-a-prediction"></a>Ezabatu iragarpena
-
-Iragarpen ezabatzeak bere irteerako entitatea ere kentzen du.
-
-1. Joan **Adimena** > **Iragarpenak** atalera eta hautatu **Nire iragarpenak** fitxa.
-2. Hautatu ezabatu nahi duzun iragarpenaren ondoan elipsi bertikalak.
-3. Hautatu **Ezabatu**.
-
-## <a name="troubleshoot-a-failed-prediction"></a>Huts egin duen iragarpen baten arazoak konpontzea
-
-1. Joan **Adimena** > **Iragarpenak** atalera eta hautatu **Nire iragarpenak** fitxa.
-2. Aukeratu elipseak bertikalak errore-egunkariak ikusi nahi dituzun iragarpenaren ondoan.
-3. Hautatu **Egunkariak**.
-4. Berrikusi errore guztiak. Hainbat akats mota gerta daitezke eta deskribatzen dute zer baldintza eragin duen errorea. Adibidez, zehaztasunez aurreikusteko datu nahikorik ez dagoen akatsa datu gehiago hartzaileen xehetasunetan kargatuta konpondu ohi da.
-
+Iragarpenak optimizatzea, konpontzea, freskatzea edo ezabatzea posible da. Berrikusi sarrerako datuen erabilgarritasun txostena iragarpen azkarragoa eta fidagarriagoa nola egin jakiteko. Informazio gehiago lortzeko, ikusi [Kudeatu iragarpenak](manage-predictions.md).
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

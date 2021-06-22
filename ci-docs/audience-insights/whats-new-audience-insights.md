@@ -1,7 +1,7 @@
 ---
 title: Eginbide berriak eta datozenak
 description: Ezaugarri berriei, hobekuntzei eta akatsak konpontzeko ezaugarriei buruzko informazioa.
-ms.date: 05/06/2021
+ms.date: 06/15/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -9,12 +9,12 @@ author: m-hartmann
 ms.author: mhart
 ms.reviewer: midevane
 manager: shellyha
-ms.openlocfilehash: c66b37d6e4d6ed830238566fbc09934832892b34
-ms.sourcegitcommit: 3f9981df97fa7b1f432a446d3f11936ea4cfbde5
+ms.openlocfilehash: 355dc22ac381145b231848830cefc47eda7968f4
+ms.sourcegitcommit: 6944c1592877eb92ec789df5f2e0dbecef638837
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "5988905"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "6263236"
 ---
 # <a name="whats-new-in-the-audience-insights-capability-of-dynamics-365-customer-insights"></a>Dynamics 365 Customer Insights hartzaileen xehetasunei buruzko zerbitzuaren ezaugarri berriak
 
@@ -26,6 +26,37 @@ Eguneratzeak eskualdeen arabera banatzen ditugu. Beraz, eskualde batzuek beste b
 
 > [!TIP]
 > Bidali eta bozkatzeko eginbideak eskaerak eta produktuaren iradokizunak, joan [Dynamics 365 aplikazioaren ideiak atarira](https://experience.dynamics.com/ideas/categories/?forum=79a8c474-4e35-e911-a971-000d3a4f3343&forumName=Dynamics%20365%20Customer%20Insights).
+
+## <a name="may-2021-updates"></a>2021eko maiatzeko eguneratzeak
+
+2021eko maiatzeko eguneratzeen artean hainbat funtzio, errendimendu bertsio berritzea eta akatsak konpondu dira.
+
+### <a name="data-ingestion"></a>Datu-horniketa
+
+- **Ikusi edo aldatu metadatuak edo entitatearen definizioa Azure Data Lake Storage-ko datuak eransterakoan** Orain metadatuak edo entitateen definizioa ikus eta editatu ditzakezu hartzaileen xehetasunetan, Azure Data Lake Storage-ko Common Data Model karpetako datuak eranstean. Gaitasun honek denbora errealeko iritzia, modeloaren balioztapena eta erroreen egiaztapena eskaintzen ditu. model.json eta manifest.json editatzeko aukera ematen du.
+
+### <a name="extensibility"></a>Hedagarritasuna
+
+- **Segmentuen esportazioa, antolaketa pertsonalizatua eta bikoizketak hobetu dira** Orain [segmentu zehatz baten esportazio guztiak ikus ditzakezu](export-destinations.md#view-exports-and-export-details) zerrenda batean. Ikuspegi berri honek segmentu zehatz bat nola erabiltzen den kudeatzen eta lehendik daudenak egokitzen edo esportazio berriak sortzen laguntzen du.    
+  Banakako esportazioetarako edo hainbat esportaziorako [freskatze ordutegi pertsonalizatuak defini ditzakezu](export-destinations.md#schedule-and-run-exports) aldi berean. Orain arte, esportazio guztiak sistema freskatzen ziren guztietan egiten ziren.    
+  Esportazio berri bat hutsetik sortu beharrean, lehendik dagoen batean oinarrituta has zaitezke denbora pixka bat aurrezteko.
+
+- **Esportatu segmentuak Microsoft Advertising-era** Esportaziorako helmugak zabaldu ditugu Microsoft Advertising sartzeko. Sortu bezeroekin bat datozen hartzaileak Microsoft Advertising-en bezero-profil bateratuaren datuekin eta erabili hartzaile horiek iragarki-kanpainetarako. Informazio gehiagorako, ikus [Esportatu segmentuak Microsoft Advertising-era](export-microsoft-advertising.md).
+
+- **Esportatu segmentuak LinkedIn Ads-era** Esportazio-helmugak zabaldu ditugu LinkedIn Ads gehitzeko eta harremanetarako bideratzea eta enpresaren bideratzea LinkedIn bidez desblokeatzeko aukera ematen dizugu, zure bezeroaren profileko datuak bateratuta esportatuz. Informazio gehiagorako, ikus [Esportatu segmentuak LinkedIn Ads-era](export-linkedin-ads.md).
+
+
+- **Esportatu segmentuak Omnisend-era** Esportaziorako helmugak Omnisend barne zabaldu ditugu. Kanpainak sortzeko, posta elektroniko bidezko marketin-mezuak kudeatzeko eta bezero talde zehatzei etekinik handiena ateratzeko Omnisend bidez, erabili hartzaileen xehetasunetan sortutako segmentuak. Informazio gehiagorako, ikus [Esportatu segmentuak Omnisend-era](export-omnisend.md)
+
+### <a name="predictions"></a>Iragarpenak
+
+- **Sarrerako datuak erabiltzeko txostena** Sarrerako datuen erabilgarritasun txostenak erabiltzeko prest dauden iragarpenek sor ditzaketen akats eta abisuen ikuspegi bateratua eskaintzen du. Ereduaren errendimendua hobetzeko gomendioak ere ematen ditu.    
+  Txostena eredu batek bere prestakuntza prozesua amaitu ondoren eskuragarri dago. Eredu bakoitzerako bereizita sortu da, ondo osatu den edo ez kontuan hartu gabe.
+  Gaur egun, eginbide hau transakzioen galera-tasaren ereduan bakarrik dago erabilgarri. Informazio gehiagorako, ikus [Sarrerako datuen erabilgarritasun txostena](manage-predictions.md#input-data-usability-report).
+
+### <a name="relationships"></a>Erlazioak
+
+- **Harreman bistaratzailea** Harremanen bistaratzailearen ikuspegiak entitateen eta haien kardinaltasunaren artean dauden harreman guztiak ikusteko aukera ematen du. Harremanak taldeka antolatzen dira orain: erabiltzaileak sortua, sistema eta heredatutako harremanak. Ikuspegia irudi gisa ere esporta dezakezu. Informazio gehiago lortzeko, ikusi [ikusi erlazioak](relationships.md#view-relationships). 
 
 ## <a name="april-2021-updates"></a>2021eko apirileko eguneratzeak
 

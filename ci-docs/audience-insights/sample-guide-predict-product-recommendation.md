@@ -9,12 +9,12 @@ ms.topic: tutorial
 author: diegogranados117
 ms.author: digranad
 manager: shellyha
-ms.openlocfilehash: 20072d14b160e54f5ad044adc1de6c079bf790e4
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: b136084316da5ae17a8428236381f69e5c21f9ea
+ms.sourcegitcommit: 7b6189e47ed1f87e7ce35d40e4cf7a6730f31ef2
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5595258"
+ms.lasthandoff: 06/01/2021
+ms.locfileid: "6129884"
 ---
 # <a name="product-recommendation-prediction-preview-sample-guide"></a>Produktuak gomendatzeko iragarpenaren (aurreargitalpena) adibide-gida
 
@@ -22,7 +22,7 @@ Produktuak gomendatzeko iragarpenaren adibide bat azalduko dizugu, behean emanda
 
 ## <a name="scenario"></a>Egoera
 
-Contoso kalitate handiko kafea eta kafe-makinak sortzen dituen enpresa bat da. Horiek Contoso Coffee webgunearen bidez saltzen dituzte. Haien helburua da bezeroei zein produktu gomendatu behar dieten ulertzea. Bezero gehiago zer diren jakitea **erosteko litekeena**, marketineko ahalegina aurrezten lagun diezaiekete elementu zehatzetan arreta jarriz.
+Contoso kalitate handiko kafea eta kafe makinak ekoizten dituen enpresa da eta Contoso Coffee webgunearen bidez saltzen dituzte. Haien helburua da bezeroei zein produktu gomendatu behar dieten ulertzea. Bezero gehiago zer diren jakitea **erosteko litekeena**, marketineko ahalegina aurrezten lagun diezaiekete elementu zehatzetan arreta jarriz.
 
 ## <a name="prerequisites"></a>Aurrebaldintzak
 
@@ -65,7 +65,7 @@ Berrikusi zehazki [datuen sarrerari](data-sources.md) eta [Power Query konektore
 
 1. Alboko paneleko **Izena** eremuan, aldatu izena **Kontsulta** datu-iturburuari eta ipini izen hau: **eCommercePurchases**.
 
-1. Gorde datu-iturburua.
+1. **Gorde** datu-iturburua.
 
 
 ### <a name="ingest-customer-data-from-loyalty-schema"></a>Sartu bezero-datuak fideltasun-eskematik
@@ -83,11 +83,11 @@ Berrikusi zehazki [datuen sarrerari](data-sources.md) eta [Power Query konektore
 
 1. Eskuinaldeko paneleko **Izena** eremuan, aldatu izena **Kontsulta** datu-iturburuari eta ipini izen hau: **loyCustomers**.
 
-1. Gorde datu-iturburua.
+1. **Gorde** datu-iturburua.
 
 ## <a name="task-2---data-unification"></a>2. zeregina - Datuen bateratzea
 
-Behin datuak sartuta, **Esleitu, bat etorri, konbinatu** prozesuarekin hasiko gara, bezeroaren profil bateratu bat sortzeko. Informazio gehiago lortzeko, ikusi [Datuen bateratzea](data-unification.md).
+Datuak irentsi ondoren, datuak bateratzeko prozesua hasten dugu bezeroaren profil bateratua sortzeko. Informazio gehiago lortzeko, ikusi [Datuen bateratzea](data-unification.md).
 
 ### <a name="map"></a>Esleitu
 
@@ -156,7 +156,7 @@ Bezeroen profil bateratuak behar bezala jarrita, harpidetzaren galera-tasaren ir
 
    - **Produktu kopurua**: ezarri balio hau **5**. Ezarpen honek bezeroei zenbat produktu gomendatu nahi dizkiezu definitzen du.
 
-   - **Bezeroek berriki erosi dituzten produktuak iradokitzen al dituzu?**: aukeratu **Bai** zure bezeroek aurretik erositako gomendioan produktuak sartu nahi dituzula adierazteko.
+   - **Espero diren erosketak errepikatu**: Aukeratu **Bai** zure bezeroek aurretik erositako gomendioan produktuak sartu nahi dituzula adierazteko.
 
    - **Atzera begiratu leihoa:** aukeratu gutxienez **365 egun**. Ezarpen honek zenbat egun atzera dezakezun eredua ikusteko aukera, informazio hori erabili ahal izateko bezeroek ikusiko duten gomendioak hobetzeko.
    
