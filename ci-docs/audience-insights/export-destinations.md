@@ -9,18 +9,18 @@ ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 6e7793fa99f8431d9d420529b39e0b5b5dbf6748
-ms.sourcegitcommit: 0689e7ed4265855d1f76745d68af390f8f4af8a0
+ms.openlocfilehash: 28563e3a76535cb0c92bfcda4ef5037430d00cfa
+ms.sourcegitcommit: d84d664e67f263bfeb741154d309088c5101b9c3
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "6253025"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "6305463"
 ---
 # <a name="exports-preview-overview"></a>Esportazioak (aurreargitalpena) ikuspegi orokorra
 
 **Esportazioak** orrialdeak konfiguratutako esportazio guztiak erakusten ditu. Esportazioek datu zehatzak partekatzen dituzte hainbat aplikaziorekin. Bezeroen profilak edo entitateak, eskemak eta mapen xehetasunak sar ditzakete. Esportazio bakoitzak [konexioa, administratzaile batek konfiguratuta, autentifikazioa eta sarbidea kudeatzeko](connections.md).
 
-Joan **Datuak** > **Esportazioak** esportazioen orria ikusteko. Erabiltzaile rol guztiek konfiguratutako esportazioak ikusteko sarbidea dute. Komando-barrako bilaketa-eremua erabiltzea esportazioak haien izenaren, konexioaren izenaren edo konexio motaren arabera aurkitzeko.
+Joan **Datuak** > **Esportazioak** esportazioen orria ikusteko. Erabiltzaile rol guztiek konfiguratutako esportazioak ikus ditzakete. Erabili komando-barrako bilaketa-eremua esportazioak haien izenaren, konexioaren izenaren edo konexio motaren arabera aurkitzeko.
 
 ## <a name="set-up-a-new-export"></a>Konfiguratu esportazio berria
 
@@ -65,7 +65,7 @@ Esportazio helmugak sortu ondoren, hemen agertzen dira **Datuak** > **Esportazio
 
 1. Joan **Datuak** > **Esportazioak**.
 
-1. Editatzeko baimenik ez duten erabiltzaileak hautatzen dituzte **Ikusi** ordez **Editatu** ikusi esportazio xehetasunak.
+1. Editatzeko baimenik ez duten erabiltzaileak hautatzen dituzte **Ikusi** ordez **Editatu** esportazio xehetasunak ikusteko.
 
 1. Alboko panelak esportazio baten konfigurazioa erakusten du. Editatzeko baimenik gabe ezin dituzu balioak aldatu. Aukeratu **Itxi** esportazioen orrira itzultzeko.
 
@@ -73,7 +73,7 @@ Esportazio helmugak sortu ondoren, hemen agertzen dira **Datuak** > **Esportazio
 
 Konfiguratzen duzun esportazio bakoitzak freskatze ordutegia du. Freskatze batean, sistemak esportazio batean sartzeko datu berri edo eguneratuak bilatzen ditu. Berez, esportazioak [programatutako eguneratze sistema](system.md#schedule-tab) guztien zati gisa exekutatzen dira. Freskatze ordutegia pertsonaliza dezakezu edo desaktiba dezakezu esportazioak eskuz exekutatzeko.
 
-Esportazio ordutegiak zure ingurunearen egoeraren araberakoak dira. Abian dauden [mendekotasunak](system.md#refresh-policies) eguneratzen ari badira programatutako esportazio bat hasi behar denean, sistemak dependentziak osatuko ditu eta esportazioa exekutatuko du. Zutabean esportazio bat noiz freskatu zen azkeneko aldiz ikus dezakezu **Freskatuta** zutabean.
+Esportazio ordutegiak zure ingurunearen egoeraren araberakoak dira. Eguneratzeak martxan badaude aktibatuta [mendekotasunak](system.md#refresh-policies) programatutako esportazio bat hasi behar denean, sistemak eguneraketak osatuko ditu eta esportazioa exekutatuko du. Zutabean esportazio bat noiz freskatu zen azkeneko aldiz ikus dezakezu **Freskatuta** zutabean.
 
 ### <a name="schedule-exports"></a>Antolatu esportazioak
 

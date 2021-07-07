@@ -9,12 +9,12 @@ ms.topic: how-to
 author: diegogranados117
 ms.author: digranad
 manager: shellyha
-ms.openlocfilehash: b935be08199f20e83bceb3317985b0e1dc120016
-ms.sourcegitcommit: 6b07c9c3102761be162e4842f3c9fbc19f948a9b
+ms.openlocfilehash: dccb8dcca8f65f64973e46fed9d83034d58282e2
+ms.sourcegitcommit: bcc47d15d4f0eacf008e4dbc09baac7f062b3ca8
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "6095682"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "6315863"
 ---
 # <a name="manage-predictions"></a>Iragarpenak kudeatu
 
@@ -35,9 +35,6 @@ Artikulu honetan iragarpen agertoki gehienek partekatzen dituzten zenbait zeregi
 Sarrerako datuak erabiltzeko txostena Sarrerako datuen erabilgarritasun txostenak erabiltzeko prest dauden iragarpenek sor ditzaketen akats eta abisuen ikuspegi bateratua eskaintzen du. Ereduaren errendimendua hobetzeko gomendioak ere ematen ditu.
 
 Txostena eredu batek bere prestakuntza prozesua amaitu ondoren eskuragarri dago. Eredu bakoitzerako bereizita sortu da, ondo osatu den edo ez kontuan hartu gabe.
-
-> [!NOTE]
-> Gaur egun, eginbide hau transakzioen galera-tasaren ereduan bakarrik funtzionatzen du.
 
 ### <a name="view-the-input-data-usability-report"></a>Ikusi sarrerako datuen erabilgarritasun-txostena
 

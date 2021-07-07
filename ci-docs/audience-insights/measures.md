@@ -9,12 +9,12 @@ author: m-hartmann
 ms.author: wameng
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 402e5ef3515bce0e6f56788781b7bd909738aaa6
-ms.sourcegitcommit: b833e333745d321edeaf96d3ed14458cbce02ff1
+ms.openlocfilehash: a83caf2428f3dbd9791b9f746d00d370362a508c
+ms.sourcegitcommit: d84d664e67f263bfeb741154d309088c5101b9c3
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 05/17/2021
-ms.locfileid: "6049235"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "6304774"
 ---
 # <a name="define-and-manage-measures"></a>Neurriak zehaztu eta kudeatu
 
@@ -64,17 +64,19 @@ Atal honek hutsetik neurri berri bat sortzen lagunduko dizu. Neurri bat bezeroar
 
 1. Iragazkiak gehitzeko, hautatu **Iragazi** konfigurazio-eremuan. 
   
-   1. **Gehitu atributua** ataleko **Iragazkiak** panelean, hautatu iragazkiak sortzeko erabili nahi duzun atributua.
+   1. Urtean **Gehitu atributua** ataleko **Iragazkiak** panelean, hautatu iragazkiak sortzeko erabili nahi duzun atributua.
    1. Ezarri iragazkien eragileak hautatutako atributu bakoitzaren iragazkia definitzeko.
    1. Aukeratu **Aplikatu** hautatutako atributua neurrira gehitzeko.
 
 1. Dimentsioak gehitzeko, hautatu **Dimentsioa** konfigurazio-eremuan. Dimentsioak irteerako entitateko zutabe gisa agertuko dira.
+ 
    1. Aukeratu **Editatu dimentsioak** neurriaren balioak taldekatu nahi dituzun datu atributuak gehitzeko. Adibidez, hiria edo generoa. Lehenespenez, *Bezeroaren IDa* dimentsioa hautatzeko hautatzen da *bezero-mailako neurriak*. Neurri lehenetsia kendu dezakezu sortu nahi baduzu *negozio-mailako neurriak*.
    1. Aukeratu **Eginda** hautatutako atributua neurrira gehitzeko.
 
 1. Zure datuetan zenbaki oso batekin ordezkatu behar dituzun balioak badaude, adibidez *nulua* hurrengoarekin *0*, hautatu **Arauak**. Konfiguratu araua eta ziurtatu ordezko gisa zenbaki osoak bakarrik aukeratzen dituzula.
 
 1. Esleitutako datu-entitatearen eta *Bezero* entitatearen artean bide anitz badaude, identifikatutako bat aukeratu behar duzu [entitate erlazio-bideak](relationships.md). Neurriaren emaitzak hautatutako bidearen arabera alda daitezke. 
+   
    1. Aukeratu **Datuen hobespenak** eta aukeratu zure neurria identifikatzeko erabili beharreko entitate bidea. Bide bakarra bada *Bezeroa* entitatea, kontrol hau ez da erakutsiko.
    1. Aukeratu **Eginda** zure hautaketa aplikatzeko. 
 
@@ -123,7 +125,7 @@ Ondorengo prozeduran txantiloia erabiliz neurri berria eraikitzeko urratsak azal
 
 1. Hautatu **Eginda**.
 
-1. Hurrengoan **Ezarri denbora tartea** atalean, zehaztu erabili beharreko datuen denbora-tartea. Aukeratu neurri berriak datu multzo osoa estaltzea nahi baduzu hautatuz **Denbora guztian**. Edo neurria a ardatz izatea nahi baduzu **Denbora-tarte zehatza**.
+1. Hurrengoan **Ezarri denbora tartea** atalean, zehaztu erabili beharreko datuen denbora-tartea. Aukeratu neurri berriak datu multzo osoa estaltzea nahi baduzu hautatuz **Denbora guztian**, edo neurria a ardatz izatea nahi baduzu **Denbora-tarte zehatza**.
 
    :::image type="content" source="media/measure-set-time-period.png" alt-text="Neurria txantiloi batetik konfiguratzerakoan denbora tartea erakusten duen pantaila-argazkia.":::
 
@@ -142,12 +144,12 @@ Ondorengo prozeduran txantiloia erabiliz neurri berria eraikitzeko urratsak azal
 
 Hemen aurkituko dituzu neurrien zerrenda **Neurriak** orrialdea.
 
-Neurri motari, sortzaileari, sortze datari, egoerari eta egoerari buruzko informazioa aurkituko duzu. Zerrendako neurri bat hautatzen duzunean, irteera aurreikusi eta .CSV fitxategia deskarga dezakezu.
+Neurri motari, sortzaileari, sortze datari, egoerari eta egoerari buruzko informazioa aurkituko duzu. Zerrendako neurri bat hautatzen duzunean, irteera aurreikusi eta CSV fitxategia deskarga dezakezu.
 
 Neurri guztiak aldi berean freskatzeko, hautatu **Freskatu guztiak** neurri zehatz bat aukeratu gabe.
 
 > [!div class="mx-imgBorder"]
-> ![Neurri bakarrak kudeatzeko ekintzak](media/measure-actions.png "Neurri bakarrak kudeatzeko ekintzak")
+> ![Neurri bakarrak kudeatzeko ekintzak.](media/measure-actions.png "Neurri bakarrak kudeatzeko ekintzak.")
 
 Aukeratu neurri bat zerrendan aukera hauetarako:
 
@@ -163,7 +165,7 @@ Aukeratu neurri bat zerrendan aukera hauetarako:
 
 ## <a name="next-step"></a>Hurrengo urratsa
 
-Sortzeko dauden neurriak erabiltzen dituzu [bezero segmentu bat](segments.md).
+Sortzeko dauden neurriak erabil ditzakezu [bezero segmentu bat](segments.md).
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -9,12 +9,12 @@ author: adkuppa
 ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 2155042d86cda0cffee1588760a06d6c7eb7077e
-ms.sourcegitcommit: fcc94f55dc2dce84eae188d582801dc47696c9cc
+ms.openlocfilehash: 50b11e7d6f62d7a25eb25a0f2b1c4ad7d859def1
+ms.sourcegitcommit: 0b754d194d765afef70d1008db7b347dd1f0ee40
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "6085607"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "6306013"
 ---
 # <a name="match-entities"></a>Batu entitateak
 
@@ -247,7 +247,7 @@ Zehaztu egin ditzakezu erregistro jakinek beti edo inoiz bat etortzeko baldintza
 
 1. Joan hona **Datuak** > **Datu iturburuak** eta txantiloien fitxategiak entitate berri gisa sartu. Iragazi ondoren, bat egin dezakezu Match-ren konfigurazioa zehazteko.
 
-1. Fitxategiak eta erakundeak kargatu ondoren, hautatu hautatu **Norberaren partida** aukera berriro. Aukerak ikusiko dituzu sartu nahi dituzun entitateak zehazteko. Hautatu eskatutako entitateak goitibeherako menuan.
+1. Fitxategiak eta erakundeak kargatu ondoren, hautatu hautatu **Norberaren partida** aukera berriro. Aukerak ikusiko dituzu sartu nahi dituzun entitateak zehazteko. Aukeratu beharrezko entitateak goitibeherako menuan.
 
    :::image type="content" source="media/custom-match-overrides.png" alt-text="Elkarrizketa-koadroaren pantaila bat etortze pertsonalizatuko agertoki baterako gainidatziak aukeratzeko.":::
 

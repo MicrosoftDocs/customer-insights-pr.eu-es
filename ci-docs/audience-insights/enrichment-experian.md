@@ -1,6 +1,6 @@
 ---
-title: Aberastea Experian hirugarrenen aberastearekin
-description: Experian-en hirugarrenen aberasteari buruzko informazio orokorra.
+title: Aberastea hirugarrenen aberastasunarekin Experian
+description: -Ri buruzko informazio orokorra Experian hirugarrenen aberastea.
 ms.date: 04/09/2021
 ms.reviewer: mhart
 ms.service: customer-insights
@@ -9,77 +9,81 @@ ms.topic: how-to
 author: kishorem-ms
 ms.author: kishorem
 manager: shellyha
-ms.openlocfilehash: 9cf2a7fa18ecc022ea67f6829f52381ad59f3172
-ms.sourcegitcommit: aaa275c60c0c77c88196277b266a91d653f8f759
+ms.openlocfilehash: 7c82fe92b3351a782a4fa6510300d870b742d042
+ms.sourcegitcommit: 42b3bce1e20e7cc707d232844dacfeed3d6fc096
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "5896358"
+ms.lasthandoff: 06/28/2021
+ms.locfileid: "6309805"
 ---
-# <a name="enrich-customer-profiles-with-demographics-from-experian-preview"></a>Aberastu bezeroen profilak demografiarekin Experian-etik (aurrebista)
+# <a name="enrich-customer-profiles-with-demographics-from-experian-preview"></a>Aberastu bezeroen profilak datu demografikoekin Experian (aurrebista)
 
-Experian mundu mailako liderra da kontsumitzaileen eta negozioen kredituen berri emateko eta marketin zerbitzuetan. Batera Experianen datuak aberasteko zerbitzuak, zure bezeroen ulermen sakona sor dezakezu zure bezeroen profilak datu demografikoekin aberastuz, hala nola etxeko tamaina, diru sarrerak eta abar.
+Experian mundu mailako liderra da kontsumitzaileen eta negozioen kredituen berri emateko eta merkaturatzeko zerbitzuetan. Batera Experian Datuak aberasteko zerbitzuak, zure bezeroen ezagutza sakonagoa eraiki dezakezu zure bezeroen profilak datu demografikoekin aberastuz, hala nola etxeko tamaina, diru sarrerak eta abar.
 
 ## <a name="prerequisites"></a>Aurrebaldintzak
 
-Experian konfiguratzeko, honako baldintza hauek bete behar dira:
+Konfiguratzeko Experian, honako baldintza hauek bete behar dira:
 
-- Experian harpidetza aktiboa duzu. Harpidetza lortzeko, [jarri harremanetan Experian-ekin](https://www.experian.com/marketing-services/contact) zuzenean. [Ikasi gehiago Experian datu-aberasteari buruz](https://www.experian.com/marketing-services/microsoft?cmpid=ems_web_mci_cdppage).
+- Experian harpidetza aktiboa izan behar duzu. Harpidetza lortzeko, [harremanetarako Experian](https://www.experian.com/marketing-services/contact) zuzenean. [Lortu informazio gehiago Experian datuen eraginari buruz](https://www.experian.com/marketing-services/microsoft?cmpid=ems_web_mci_cdppage).
 
-- Administratzaile batek dagoeneko Experian konexioa konfiguratu du *edo* duzu [administratzailea](permissions.md#administrator) baimenak. Experianek zuretzako sortu duen SSH gaitutako Garraio Seguru (ST) konturako Erabiltzaile IDa, Alderdiaren IDa eta Modelo zenbakia ere behar dituzu.
+- Administratzaile batek Experian konexioa konfiguratu du dagoeneko *edo* duzu [administratzailea](permissions.md#administrator) baimenak. Erabiltzaile IDa, Alderdiaren IDa eta Modelo zenbakia ere behar dituzu SSH gaitutako Garraio Seguru (ST) konturako Experian zuretzat sortua.
+
+## <a name="supported-countriesregions"></a>Lagundutako herrialde / eskualdeak
+
+Gaur egun, Estatu Batuetan bezeroen profil aberasgarriak onartzen ditugu.
 
 ## <a name="configure-the-enrichment"></a>Konfiguratu aberastea
 
 1. Joan **Datuak** > **Aberastea** eta hautatu **Deskubritu** fitxa.
 
-1. Aukeratu **Aberastu nire datuak** Experian fitxan.
+1. Aukeratu **Aberastu nire datuak** gainean Experian teila.
 
    > [!div class="mx-imgBorder"]
-   > ![Teila Experian](media/experian-tile.png "Teila Experian")
+   > ![Experian lauza](media/experian-tile.png "Experian lauza")
    > 
 
-1. Hautatu [konexioa](connections.md) goitibeherako zerrendatik. Jarri harremanetan administratzaile batekin konexiorik ez badago. Administratzailea bazara, sor dezakezu konexioa hautatuz **Gehitu konexioa** eta aukeratuz Experian goitibeherako zerrendan. 
+1. Hautatu goitibeherako zerrendako [konexio](connections.md) bat. Jarri harremanetan administratzaile batekin konexiorik ez badago. Administratzailea bazara, konexioa sor dezakezu hautatuta **Gehitu konexioa** eta aukeratzea Experian goitibeherako zerrendatik. 
 
 1. Aukeratu **Konektatu Experian** konexioaren hautapena berresteko.
 
-1.  Aukeratu **Hurrengoa** eta aukeratu **Bezeroen datu multzoa** Experian datu demografikoekin aberastu nahi duzu. **Bezeroen** entitatea hauta dezakezu zure bezeroen profil guztiak aberasteko edo segmentu-entitate bat hauta dezakezu segmentu horretan dauden bezeroen profilak soilik aberasteko.
+1.  Aukeratu **Hurrengoa** eta aukeratu **Bezeroen datu multzoa** datu demografikoekin aberastu nahi duzu Experian-etik. **Bezeroen** entitatea hauta dezakezu zure bezeroen profil guztiak aberasteko edo segmentu-entitate bat hauta dezakezu segmentu horretan dauden bezeroen profilak soilik aberasteko.
 
     :::image type="content" source="media/enrichment-Experian-configuration-customer-data-set.png" alt-text="Pantaila-argazkia bezeroaren datu multzoa aukeratzerakoan.":::
 
-1. Aukeratu **Hurrengoa** eta zehaztu zure profil bateratuetako zein eremu mota erabili behar diren Experian-eko datu demografikoak bat datozen bilatzeko. Eremuetako bat gutxienez **Izena eta helbidea**, **Mugikorra**, edo **Posta elektronikoa** beharrezkoa da. Partiduen zehaztasun handiagoa lortzeko, beste bi eremu gehi daitezke. Aukeraketa honek hurrengo urratsean atzitu ditzakezun mapen eremuei eragingo die.
+1. Aukeratu **Hurrengoa** eta zehaztu zure profil bateratuetako zein eremu mota erabili behar diren datu demografikoekin bat datozenak bilatzeko Experian. Eremuetako bat gutxienez **Izena eta helbidea**, **Mugikorra**, edo **Posta elektronikoa** beharrezkoa da. Partiduen zehaztasun handiagoa lortzeko, beste bi eremu gehi daitezke. Aukeraketa honek hurrengo urratsean atzitu ditzakezun mapen eremuei eragingo die.
 
     > [!TIP]
-    > Litekeena da Experian-era bidalitako gako identifikatzaile atributu gehiagok bat etortze tasa handiagoa lortzea.
+    > Gako identifikatzaile atributu gehiago bidali dira Experian litekeena da partida-tasa handiagoa lortzea.
 
 1. Hautatu **Hurrengoa** eremuaren jarraipena hasteko.
 
-1. Definitu zure profil bateratuetako zein eremu mota erabili behar diren Experian-eko datu demografikoak bat datozen bilatzeko. Eskatutako eremuak markatuta daude.
+1. Zehaztu profil bateratuetako zein eremu mota erabili behar diren datu demografikoekin bat datozenak bilatzeko Experian. Eskatutako eremuak markatuta daude.
 
 1. Hornitu aberasturako izena eta irteerako entitatearen izena.
 
 1. Aukeratu **Aurreztu aberastasuna** zure aukerak aztertu ondoren.
 
-## <a name="configure-the-connection-for-experian"></a>Konfiguratu konexioa Experian-erako 
+## <a name="configure-the-connection-for-experian"></a>Konfiguratu konexio-funtzioak Experian-en 
 
-Administratzailea izan behar duzu konexioak konfiguratzeko. Aukeratu **Gehitu konexioa** aberastasun bat konfiguratzerakoan *edo* joan **Administratzailea** > **Konexioak** eta hautatu **Konfiguratu** Experian fitxan.
+Administratzailea izan behar duzu konexioak konfiguratzeko. Aukeratu **Gehitu konexioa** aberastasun bat konfiguratzerakoan *edo* joan **Administratzailea** > **Konexioak** eta hautatu **Konfiguratu** gainean Experian lauza.
 
 1. Hautatu **Hasi erabiltzen**.
 
 1. Idatzi konexioaren izena **Bistaratzeko izena** kutxa.
 
-1. Idatzi baliozko Erabiltzaile IDa, Alderdiaren IDa eta Modelo zenbakia Experian Secure Transport konturako.
+1. Idatzi baliozko Erabiltzaile IDa, Alderdiaren IDa eta Modelo Zenbakia Experian Garraio Seguruaren kontua.
 
-1. Berrikusi eta eman baimena **Datuen pribatutasuna eta betetzea** aukeratuz **ados** laukia
+1. Berrikusi eta eman zure baimena **Datuen pribatutasuna eta betetzea** hautatuz **Ados**.
 
 1. Aukeratu **Egiaztatu** konfigurazioa balioztatzeko.
 
 1. Egiaztapena amaitu ondoren, hautatu **Gorde**.
    
-   :::image type="content" source="media/enrichment-Experian-connection.png" alt-text="Experian konexioa konfigurazioaren panela.":::
+   :::image type="content" source="media/enrichment-Experian-connection.png" alt-text="Experian konexioaren konfigurazio-panela.":::
 
 ## <a name="enrichment-results"></a>Aberastearen emaitzak
 
-Aberasteko prozesua hasteko, hautatu **Korrika egin** komando barratik. Gainera, sistemak aberastea automatikoki exekutatzen utzi dezakezu [freskatze programatua](system.md#schedule-tab). Prozesatzeko denbora zure bezeroen datuen tamainaren eta Experian-ek zure konturako aberastutako prozesuen araberakoa izango da.
+Aberasteko prozesua hasteko, hautatu **Korrika egin** komando barratik. Gainera, sistemak aberastea automatikoki exekutatzen utzi dezakezu [freskatze programatua](system.md#schedule-tab). Prozesatzeko denbora zure bezeroen datuen tamainaren eta zure konturako aberastutako prozesuen araberakoa izango da Experian.
 
 Aberasteko prozesua amaitu ondoren, aberastu berri diren bezeroen profilen datuak berrikus ditzakezu atalean **Nire aberastasunak**. Gainera, azken eguneratzearen ordua eta profil aberastuen kopurua aurkituko dituzu.
 
@@ -87,12 +91,12 @@ Aberastutako profil bakoitzaren ikuspegi zehatza sar dezakezu hautatuta **Ikusi 
 
 ## <a name="next-steps"></a>Hurrengo urratsak
 
-Eraiki zure bezeroen datu aberastuen gainean. Sortu [segmentuak](segments.md), [Neurriak](measures.md), eta baita [datuak esportatu](export-destinations.md) zure bezeroei esperientzia pertsonalizatuak emateko.
+Eraiki zure bezeroen datu aberastuen gainean. Sortu [segmentuak](segments.md) eta [neurriak](measures.md), eta are [datuak esportatu](export-destinations.md) zure bezeroei esperientzia pertsonalizatuak emateko.
 
 ## <a name="data-privacy-and-compliance"></a>Datuen pribatutasuna eta arau-gordetzea
 
-Dynamics 365 Customer Insights gaitzen duzunean datuak Experian-era bidaltzeko, datuak betetzeko mugatik kanpo transferitzea baimentzen duzu Dynamics 365 Customer Insights-erako, datu pertsonalak bezalako datu sentikorrak barne. Microsoft-ek datu horiek transferituko ditu zure aginduz, baina zure ardura da Experian-ek pribatutasun- edo segurtasun-betebeharrak betetzen dituela ziurtatzea. Informazio gehiago eskuratzeko, ikusi [Microsoft-en pribatutasun-adierazpena](https://go.microsoft.com/fwlink/?linkid=396732).
-Dynamics 365 Customer Insights administratzaileak edonoiz ken dezake aberastea funtzio hau erabiltzeari uzteko.
+Gaitzen duzunean Dynamics 365 Customer Insights datuak transmititzeko Experian, datuak betetze mugatik kanpo transferitzea baimentzen duzu Dynamics 365 Customer Insights, datu pertsonalak bezalako datu sentikorrak barne. Microsoft-ek datu hauek transferituko ditu zure aginduz, baina zu arduratuko zara hori ziurtatzeaz Experian izan ditzakezun pribatutasun edo segurtasun betebeharrak betetzen ditu. Informazio gehiago eskuratzeko, ikusi [Microsoft-en pribatutasun-adierazpena](https://go.microsoft.com/fwlink/?linkid=396732).
+Dynamics 365 Customer Insights administratzailea edonoiz ken dezake aberastea funtzio hau erabiltzeari uzteko.
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

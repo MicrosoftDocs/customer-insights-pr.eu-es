@@ -9,12 +9,12 @@ ms.topic: tutorial
 author: zacookmsft
 ms.author: zacook
 manager: shellyha
-ms.openlocfilehash: 87fb517e9f0b380f9721f77470dceb3bcb7e5616
-ms.sourcegitcommit: 55c00ea61c78db7b3b54894c01afb3246dff31c8
+ms.openlocfilehash: 82f6f363497f8f1b45fa84acd49bcaed332e60e8
+ms.sourcegitcommit: 0b754d194d765afef70d1008db7b347dd1f0ee40
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "5700653"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "6305604"
 ---
 # <a name="custom-machine-learning-models"></a>Ikaskuntza automatiko eredu pertsonalizatuak
 
@@ -72,7 +72,7 @@ Iragarpenek bezeroen esperientzia hobeak sortzeko, negozio gaitasunak eta diru s
       > [!div class="mx-imgBorder"]
       > ![Ereduaren irteerako parametroen panela](media/intelligence-screen3-outputparameters.png "Ereduaren irteerako parametroen panela")
 
-1. Hautatu bat egiten duen atributua **Customer ID emaitzetan** goitibeherako zerrendan zeinak zure bezeroa identifikatzen duen eta hautatu **Gorde**.
+1. Hautatu bat egiten duen atributua **Customer ID emaitzetan** goitibeherako zerrendan zeinak zure Customer Insights **Gorde** esleitzen duen.
 
    > [!div class="mx-imgBorder"]
    > ![Erlazionatu emaitzak bezeroaren datuen panelarekin](media/intelligence-screen4-relatetocustomer.png "Erlazionatu emaitzak bezeroaren datuen panelarekin")
@@ -100,7 +100,7 @@ Iragarpenek bezeroen esperientzia hobeak sortzeko, negozio gaitasunak eta diru s
       1. Aukeratu **irteerako datu-biltegi parametroaren izena** zure probako bideratzerako.
       1. Aukeratu **irteerako bide-izenaren parametroaren izena** zure probako bideratzerako.
 
-1. Hautatu bat egiten duen atributua **Customer ID emaitzetan** goitibeherako zerrendan zeinak zure bezeroa identifikatzen duen eta hautatu **Gorde**.
+1. Hautatu bat egiten duen atributua **Customer ID emaitzetan** goitibeherako zerrendan zeinak zure Customer Insights **Gorde** esleitzen duen.
    Inferentziako irteeratik atributu bat aukeratu bezeroaren entitatearen Bezeroaren ID zutabearen antzeko balioekin. Zure datu multzoan horrelako zutaberik ez baduzu, aukeratu errenkada modu esklusiboan identifikatzen duen atributu bat.
 
 ## <a name="run-a-workflow"></a>Lan-fluxuak exekutau

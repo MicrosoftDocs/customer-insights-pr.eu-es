@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: MichelleDevaney
 ms.author: midevane
 manager: shellyha
-ms.openlocfilehash: 0c728fad4ed00d1bf085fed60057211861b3a195
-ms.sourcegitcommit: f0855bd7762b1f0a1d3dd5259e23c95e1b0a6a93
+ms.openlocfilehash: 342aeb33f652d5d60cd25e13969766954bf56370
+ms.sourcegitcommit: d84d664e67f263bfeb741154d309088c5101b9c3
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "5866392"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "6304911"
 ---
 # <a name="customer-activities"></a>Bezeroen jarduerak
 
@@ -45,7 +45,7 @@ Zure datu-iturriak datu-iturri ugarietatik transakzio- eta jarduera-datuak izan 
 
    - **Lehenengoa**: Zure jarduera entitatean atzerriko eremua, beste entitate batekin harremanak sortzeko erabiliko dena.
    - **Bigarrena**: Zure jarduera entitatearekin erlazionatuko duen iturburu bezeroari dagokiona. Datuak bateratzeko prozesuan erabiltzen diren iturburu bezeroen entitateekin bakarrik lotu zaitezke.
-   - **Hirugarrena**: Jarduera entitate honen eta hautatutako iturburu bezero entitatearen arteko erlazioa badago jadanik, harremanaren izena irakurtzeko soilik moduan egongo da. Harremanik ez badago, harreman berri bat sortuko da koadro honetan ematen duzun izenarekin.
+   - **Hirugarrena**: Jarduera entitate honen eta hautatutako iturburu bezero entitatearen arteko erlazioa badago jadanik, harremanaren izena irakurtzeko soilik moduan egongo da. Harreman hori existitzen ez bada, harreman berri bat sortuko da koadro honetan ematen duzun izenarekin.
 
    :::image type="content" source="media/Activity_Wizard2.PNG" alt-text="Definitu entitate-harremana.":::
 
@@ -53,23 +53,23 @@ Zure datu-iturriak datu-iturri ugarietatik transakzio- eta jarduera-datuak izan 
 
 1. Hurrengoan **Jarduera bateratzea** urratsa, aukeratu jarduera gertaera eta zure jardueraren hasiera ordua. 
    - **Beharrezko eremuak**
-      1. **Ekitaldi jarduera**: Jarduera honen gertaera den eremua
-      2. **Denbora-marka**: Zure jardueraren hasiera ordua adierazten duen eremua.
+      - **Ekitaldi jarduera**: Jarduera honen gertaera den eremua.
+      - **Denbora-marka**: Zure jardueraren hasiera ordua adierazten duen eremua.
 
    - **Aukerako eremuak**
-      1. **Xehetasun osagarria**: Jarduera honetarako informazio garrantzitsua duen eremua.
-      2. **Ikonoa**: Jarduera mota hau ondoen irudikatzen duen ikonoa.
-      3. **Web-helbidea**: Jarduera honi buruzko informazioa duen URLa duen eremua. Adibidez, jarduera hau iturri duen transakzio-sistema. URL hau datu-iturburu-eko edozein eremu izan daiteke edo Power Query eraldaketa erabiliz eremu berri gisa eraiki daiteke. URL datuak fitxategian gordeko dira *Jarduera bateratua* entitatea, erabilita ibaian behera kontsumitu daitekeena [APIak](apis.md).
+      - **Xehetasun osagarria**: Jarduera honetarako informazio garrantzitsua duen eremua.
+      - **Ikonoa**: Jarduera mota hau ondoen irudikatzen duen ikonoa.
+      - **Web-helbidea**: Jarduera honi buruzko informazioa duen URLa duen eremua. Adibidez, jarduera hau iturri duen transakzio-sistema. URL hau datu-iturburu-eko edozein eremu izan daiteke edo Power Query eraldaketa erabiliz eremu berri gisa eraiki daiteke. URL datuak fitxategian gordeko dira *Jarduera bateratua* entitatea, erabilita ibaian behera kontsumitu daitekeena [APIak](apis.md).
    
    :::image type="content" source="media/Activity_Wizard3.PNG" alt-text="Zehaztu bezeroaren jardueraren datuak Jarduera bateratuko entitate batean.":::
 
 1. Hautatu **Hurrengoa** hurrengo urratsera mugitzeko. Aukeratu dezakezu **Amaitu eta berrikusi** aktibitatea orain gordetzeko, jarduera mota gisa ezarrita **Beste batzuk**. 
 
-1. Hurrengoan **Jarduera mota** urratsa, aukeratu jarduera mota eta hautatu aukeran Customer Insights beste arlo batzuetan erabiltzeko jarduera mota batzuk semantikoki mapatu nahi dituzun. Gaur egun, *Harpidetza* & *SalesOrderLine* jarduera motak semantikoki mapatu daitezke eremuak mapatzea adostu ondoren. Jarduera mota bat jarduera berrirako garrantzitsua ez bada, hauta dezakezu *Beste batzuk* edo *Sortu berria* jarduera mota pertsonalizatua lortzeko.
+1. Hurrengoan **Jarduera mota** urratsa, aukeratu jarduera mota eta hautatu aukeran Customer Insights beste arlo batzuetan erabiltzeko jarduera mota batzuk semantikoki mapatu nahi dituzun. Gaur egun, *Harpidetza* eta *SalesOrderLine* jarduera motak semantikoki mapatu daitezke eremuak mapatzea adostu ondoren. Jarduera mota bat jarduera berrirako garrantzitsua ez bada, hauta dezakezu *Beste batzuk* edo *Sortu berria* jarduera mota pertsonalizatua lortzeko.
 
 1. Hautatu **Hurrengoa** hurrengo urratsera mugitzeko. 
 
-1. Hurrengoan **Berrikuspena** urratsa, egiaztatu hautapenak. Aurreko edozein urratsetara itzuli eta beharrezkoa izanez gero informazioa eguneratuko duzu.
+1. Hurrengoan **Berrikuspena** urratsa, egiaztatu hautapenak. Itzuli aurreko edozein urratsetara eta eguneratu informazioa beharrezkoa bada.
 
    :::image type="content" source="media/Activity_Wizard5.PNG" alt-text="Berrikusi jarduera baterako zehaztutako eremuak.":::
    
@@ -89,7 +89,7 @@ Jarduera bat hautatzean ekintza hauek erabilgarri daude.
 
 - **Editatu**: Berrikuspen urratsean jarduera konfigurazioa irekitzen du. Urrats honetatik uneko konfigurazioaren zati bat edo guztia alda dezakezu. Konfigurazioa aldatu ondoren, hautatu **Gorde jarduera** eta, ondoren, hautatu **Korrika egin** aldaketak prozesatzeko.
 
-- **Aldatu izena**: Elkarrizketa-koadro bat irekitzen du non hautatutako jarduerari beste izen bat idazteko. Aldaketak aplikatzeko, hautatu **Gorde**.
+- **Aldatu izena**: Elkarrizketa-koadro bat irekitzen du eta bertan hautatutako jardueraren beste izen bat sar dezakezu. Aldaketak aplikatzeko, hautatu **Gorde**.
 
 - **Ezabatu**: Elkarrizketa bat irekitzen du hautatutako jardueraren ezabaketa berresteko. Jarduera bat baino gehiago aldi berean ezaba ditzakezu jarduerak hautatuta eta gero ezabatzeko ikonoa hautatuta. Hautatu **Ezabatu** ezabatzea baieztatzeko.
 

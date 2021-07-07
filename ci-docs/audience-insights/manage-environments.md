@@ -9,12 +9,12 @@ ms.reviewer: mhart
 author: NimrodMagen
 ms.author: nimagen
 manager: shellyha
-ms.openlocfilehash: 06310ea6fc72f26e21e185a6abcb5d19d4b201f6
-ms.sourcegitcommit: e5425f060c8d80f9510283dc610ce70a4e709b1e
+ms.openlocfilehash: 904ce68336cba4b7a4d5a37692b72d091400559d
+ms.sourcegitcommit: d84d664e67f263bfeb741154d309088c5101b9c3
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "6259084"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "6304865"
 ---
 # <a name="manage-environments"></a>Kudeatu inguruneak
 
@@ -54,29 +54,32 @@ Ingurune bat sortzeko:
 1. Hautatu **Berria**.
 
    > [!div class="mx-imgBorder"]
-   > ![Ingurune-ezarpenak](media/environment-settings-dialog.png)
+   > ![Ingurune-ezarpenak.](media/environment-settings-dialog.png)
 
-1. **Inguru berria sortu** elkarrizketa-koadroa, hautatu **Ingurune berria**.
+1. Urtean **Ingurune bat sortu** elkarrizketa-koadroa, hautatu **Ingurune berria**.
 
    Nahi baduzu [kopiatu uneko inguruneko datuak](#considerations-for-copy-configuration-preview), hautatu **Kopiatu lehendik dagoen ingurunetik**. Zure erakundearen eskura dauden ingurune guztien zerrenda ikusiko duzu non datuak kopiatzeko.
 
 1. Hornitu hurrengo xehetasunak:
    - **Izena**: entitatearen izena. Eremu hau dagoeneko bete da ingurune batetik kopiatzen baduzu, baina alda dezakezu.
-   - **Eskualdea**: Zerbitzua hedatu eta ostatatzen den eskualdea.
    - **Mota**: Aukeratu Produkzio edo Sandbox ingurunea sortu nahi duzun ala ez.
-
+   - **Eskualdea**: Zerbitzua hedatu eta ostatatzen den eskualdea.
+   
 1. Nahi baduzu, hauta dezakezu **Ezarpen aurreratuak**:
 
-   - **Gorde datu guztiak**: Customer Insights-ek sortutako irteerako datuak non gorde nahi dituzun zehazten du. Bi aukera dituzu: **Customer Insights biltegiratzea** (Azure Data Lake Customer Insights taldearen bidez kudeatua) eta **Azure Data Lake Storage Gen2** (zure berezko Azure Data Lake Storage). Lehenespenez, Customer Insights biltegiratzeko aukera hautatuko da.
+   - **Gorde datu guztiak**: Customer Insights-ek sortutako irteerako datuak non gorde nahi dituzun zehazten du. Bi aukera izango dituzu: **Customer Insights biltegiratzea** (Customer Insights taldeak kudeatzen duen Azure Data Lake) eta **Azure Data Lake Storage** (zeurea Azure Data Lake Storage). Lehenespenez, Customer Insights biltegiratzeko aukera hautatuko da.
 
-   > [!NOTE]
-   > Datuak Azure Data Lake Storage-n gordez gero, onartu egingo duzu datuak Azure biltegiratze-konturako egokia den kokaleku geografikora transferitu eta bertan biltegiratuko direla, eta balitekeela Dynamics 365 Customer Insights-en datuak biltegiratzen diren lekua ez den beste kokaleku bat izatea. Informazio gehiago lortzeko, ikusi. [Argibide gehiago Microsoft Trust Center-en.](https://www.microsoft.com/trust-center)
-   >
-   > Gaur egun, irensten diren erakundeak Customer Insights kudeatutako data lake-n gordetzen dira beti.
-   > Ingurunea sortzerakoan hautatu zenuen Azure eskualde bereko Azure Data Lake Gen2 biltegiratze kontuak soilik onartzen ditugu.
-   > Azure Data Lake Gen2 Hierarkikoa Izen espazioaren (HNS) gaitutako biltegiratze kontuak soilik onartzen ditugu.
+     > [!NOTE]
+     > Datuak Azure Data Lake Storage-n gordez gero, onartu egingo duzu datuak Azure biltegiratze-konturako egokia den kokaleku geografikora transferitu eta bertan biltegiratuko direla, eta balitekeela Dynamics 365 Customer Insights-en datuak biltegiratzen diren lekua ez den beste kokaleku bat izatea. Informazio gehiago lortzeko, ikusi. [Argibide gehiago Microsoft Trust Center-en.](https://www.microsoft.com/trust-center)
+     >
+     > Gaur egun, irensten diren erakundeak Customer Insights Kudeatutako Data Lake-n gordetzen dira beti. 
+     > 
+     > Bakarrik onartzen dugu Azure Data Lake Storage ingurunea sortzerakoan hautatu zenituen Azure eskualde bereko kontuak. 
+     > 
+     > Bakarrik onartzen dugu Azure Data Lake Storage izen espazio hierarkikoa gaituta duten kontuak.
 
-   - Azure Data Lake Storage Gen2 aukerarako, baliabideetan oinarritutako aukera eta harpidetzan oinarritutako aukera erabil dezakezu autentifikatzeko. Informazio gehiagorako, ikus [Konektatu hartzaileei buruzko xehetasunak Azure Data Lake Storage Gen2 kontu batera Azure zerbitzuaren entitatearekin](connect-service-principal.md). **Edukiontzia** izena ezin da aldatu eta `customerinsights` izango da.
+
+   - Azure Data Lake Storage aukera, baliabideetan oinarritutako aukera bat eta harpidetzan oinarritutako aukera bat autentifikatzeko aukera dezakezu. Informazio gehiagorako, ikus [Konektatu hartzaileei buruzko xehetasunak Azure Data Lake Storage Gen2 kontu batera Azure zerbitzuaren entitatearekin](connect-service-principal.md). **Edukiontzia** izena ezin da aldatu eta `customerinsights` izango da.
    
    - Erabili nahi baduzu [iragarpenak](predictions.md), konfiguratu datuak partekatzea konfiguratzea Microsoft Dataverse-rekin, edo gaitu lokal datu iturrietatik datuak sartzea, eman Microsoft Dataverse inguruneko URL azpian **Konfiguratu datuak partekatzearekin Microsoft Dataverse eta gaitasun osagarriak gaitu**. Aukeratu **Gaitu datuak partekatzea** Customer Insights-en irteerako datuak partekatzeko Microsoft Dataverse kudeatutako datuen lakua.
 
@@ -85,7 +88,7 @@ Ingurune bat sortzeko:
      > - [Entitate batean falta diren balioen iragarpena](predictions.md) ez da onartzen une honetan datuak partekatzea gaitzen duzunean Microsoft Dataverse-n kudeatutako Data Lake.
 
      > [!div class="mx-imgBorder"]
-     > ![Datuak partekatzea ahalbidetzeko konfigurazio aukerak Microsoft Dataverse-rekin](media/datasharing-with-DataverseMDL.png)
+     > ![Konfigurazioaren aukerak gaitzeko datuak partekatzeko Microsoft Dataverse.](media/datasharing-with-DataverseMDL.png)
 
    Prozesuak exekutatzen dituzunean, adibidez, datuak sartzea edo segmentua sortzea, dagozkien karpetak sortuko dira goian zehaztu duzun biltegiratze kontuan. Datu fitxategiak eta model.json fitxategiak sortu eta karpetetara gehituko dira, prozesuaren izenaren arabera.
 
@@ -113,14 +116,14 @@ Hurrengo konfigurazio ezarpenak kopiatzen *ez* dira:
 
 - Bezeroen profilak.
 - Datu-iturburuaren kredentzialak. Datu-iturburu bakoitzerako kredentzialak eman beharko dituzu eta datu iturriak eskuz freskatu.
-- Datu iturri arruntaren karpetaren datu iturriak Common Data Service lakua kudeatu. Datu iturri horiek eskuz sortu beharko dituzu iturri ingurunean izen berdinekin.
+- Common Data Model karpetako datu iturriak eta Dataverse kudeatzen du Data Lake. Datu iturri horiek eskuz sortu beharko dituzu iturri ingurunean izen berdinekin.
 
 Ingurumena kopiatzean, berrespen mezu bat ikusiko duzu ingurune berria sortu dela. Aukeratu **Joan datu iturrietara** datu-iturrien zerrenda ikusteko.
 
 Datu iturri guztiek a **Beharrezkoak diren egiaztagiriak** egoera. Editatu datu-iturriak eta sartu kredentzialak freskatzeko.
 
 > [!div class="mx-imgBorder"]
-> ![Kopiatutako datu-iturburuak](media/data-sources-copied.png)
+> ![Kopiatutako datu-iturburuak.](media/data-sources-copied.png)
 
 Datu iturriak freskatu ondoren, joan **Datuak** > **bateratzeko**. Hemen iturburu ingurumenaren ezarpenak aurkituko dituzu. Editatu behar dituzunean edo hautatu **Exekutatu** datuak bateratzeko prozesua hasteko eta bezero bateratutako entitatea sortzeko.
 
@@ -136,7 +139,7 @@ Dauden inguruneen xehetasun batzuk editatu ditzakezu.
 
 3. **Editatu ingurunea** koadroan, ingurunekoak egunera ditzakezu **Bistaratzeko izena**, baina ezin duzu aldatu **Eskualdea** edo **Mota**.
 
-4. Ingurumena konfiguratuta badago, datuak gordetzeko Azure Data Lake Storage Gen2, eguneratu dezakezu **Kontuaren gakoa**. Hala ere, ezin duzu aldatu **Kontuaren izena** edo **edukiontzia** izendatzeko.
+4. Ingurunea datuak gordetzeko konfiguratuta badago Azure Data Lake Storage, eguneratu dezakezu **Kontuaren gakoa**. Hala ere, ezin duzu aldatu **Kontuaren izena** edo **edukiontzia** izendatzeko.
 
 5. Aukeran, kontuaren gakoan oinarritutako konexio batetik baliabideetan oinarritutako edo harpidetzan oinarritutako konexio batera egunera dezakezu. Bertsio berritu ondoren, ezin duzu kontuaren gakoetara itzuli eguneratu ondoren. Informazio gehiagorako, ikus [Konektatu hartzaileei buruzko xehetasunak Azure Data Lake Storage Gen2 kontu batera Azure zerbitzuaren entitatearekin](connect-service-principal.md). Ezin duzu aldatu **Edukiontzia**-ren informazioa konexioa eguneratzean.
 
@@ -158,19 +161,19 @@ Administratzaile gisa, ingurunea egoera hutsera berrezar dezakezu konfigurazio g
 
 1.  Hautatu **Ingurunea** hautatzailea aplikazioaren goiburuan. 
 
-2.  Aukeratu berrezarri nahi duzun ingurunea eta hautatu elipsia **...**. 
+2.  Aukeratu berrezarri nahi duzun ingurunea eta hautatu elipsia (**...**). 
 
 3. Aukeratu **Berrezarri** aukera. 
 
 4.  Ezabapena berresteko, idatzi ingurunearen izena eta hautatu **Berrezarri**.
 
-## <a name="delete-an-existing-environment-available-only-for-admins"></a>Ezabatu lehendik dagoen ingurunea (administratzaileentzat soilik dago erabilgarri)
+## <a name="delete-an-existing-environment"></a>Aurretik bazegoen ingurune bat ezabatu
 
 Administratzaile gisa, kudeatzen duzun ingurunea ezabatu dezakezu.
 
 1.  Hautatu **Ingurunea** hautatzailea aplikazioaren goiburuan.
 
-2.  Aukeratu berrezarri nahi duzun ingurunea eta hautatu elipsia **...**. 
+2.  Aukeratu berrezarri nahi duzun ingurunea eta hautatu elipsia (**...**). 
 
 3. Aukeratu **Ezabatu** aukera. 
 

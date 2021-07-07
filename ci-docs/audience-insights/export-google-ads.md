@@ -9,27 +9,26 @@ author: pkieffer
 ms.author: philk
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 73f3257a3ae6e8423f45410546535df5e3b400ce
-ms.sourcegitcommit: e8e03309ba2515374a70c132d0758f3e1e1851d0
+ms.openlocfilehash: c23c8b4e6758df08e04bf1e3ae0cba4dee06fe2b
+ms.sourcegitcommit: d84d664e67f263bfeb741154d309088c5101b9c3
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 05/04/2021
-ms.locfileid: "5976303"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "6305325"
 ---
 # <a name="export-segments-to-google-ads-preview"></a>Esportatu segmentuak Google Ads-era (aurrebista)
 
-Esportatu bezeroen profil bateratuetako segmentuak Google Ads-eko hartzaile-zerrendetara eta erabili zerrenda horiek Google Bilaketa-n, Gmail-en, YouTube-n eta Google Display Network-en iragartzeko. 
+Esportatu bezeroen profil bateratuen segmentuak Google Ads audientzia-zerrenda batera eta erabili Google Bilaketa, Gmail, iragarkiak YouTube, eta Google Display Network. 
 
 ## <a name="prerequisites-for-connection"></a>Konexioaren aurrebaldintzak
 
 -   Baduzu [Google Ads kontua](https://ads.google.com/) eta dagozkion administratzaile kredentzialak.
--   Baduzu [Google Ads garatzaileen token homologatua](https://developers.google.com/google-ads/api/docs/first-call/dev-token) 
--   Webgunearen baldintzak betetzen dituzu [Bezeroen arteko lotura politika](https://support.google.com/adspolicy/answer/6299717)
--   Webgunearen baldintzak betetzen dituzu [berriro merkaturatzeko zerrenden tamainak](https://support.google.com/google-ads/answer/7558048) 
-
+-   Baduzu [Google Ads garatzaileen token homologatua](https://developers.google.com/google-ads/api/docs/first-call/dev-token). 
+-   Webgunearen baldintzak betetzen dituzu [Bezeroen arteko lotura politika](https://support.google.com/adspolicy/answer/6299717).
+-   Webgunearen baldintzak betetzen dituzu [berriro merkaturatzeko zerrenden tamainak](https://support.google.com/google-ads/answer/7558048).
 -   Google Ads-en hartzaileak eta dagozkien IDak daude. Informazio gehiagorako, ikus [Google Ads-eko hartzaileak](https://support.google.com/google-ads/answer/7558048?hl=en#:~:text=Audience%20lists%20is%20a%20section,Display%20Network%20through%20remarketing%20campaigns.).
--   [Konfiguratutako segmentuak](segments.md) dituzu
--   Esportatutako segmentuetako bezeroen profil bateratuek helbide elektronikoa, izena eta abizena adierazten duen eremuak dituzte
+-   [Konfiguratutako segmentuak](segments.md) dituzu.
+-   Esportatutako segmentuetako bezeroen profil bateratuek helbide elektronikoa, izena eta abizena adierazten duen eremuak dituzte.
 
 ## <a name="known-limitations"></a>Muga ezagunak
 
@@ -68,17 +67,19 @@ Esportazio hau konfigura dezakezu mota honetako konexiorako sarbidea baduzu. Inf
 
 1. Esportazio berria sortzeko, hautatu **Gehitu helmuga**.
 
-1. Hurrengoan **Konexioa esportatzeko** eremuan, aukeratu konexioa Google Ads sekzioan. Atal honen izena ikusten ez baduzu, ez dago mota honetako konexiorik erabilgarri.
+1. Hurrengoan **Konexioa esportatzeko** eremuan, aukeratu konexioa Google Ads sekzioan. Atal honen izena ikusten ez baduzu, mota honetako konexiorik ez duzu eskuragarri.
 
 1. Sartu zure **[Google Ads hartzaileen IDa](https://support.google.com/google-ads/answer/7558048?hl=en#:~:text=Audience%20lists%20is%20a%20section,Display%20Network%20through%20remarketing%20campaigns.)** eta hautatu **Konektatu** Google Ads-eko konexioa hasieratzeko.
 
-1. **Datuen bat etortzea** atalean, **Posta elektronikoa** eremuan, hautatu zure bezeroaren profil bateratuko eremua, bezero baten helbide elektronikoa adierazten duena. Errepikatu urratsak **Izena** eta **abizena** eremuetan.
+1. **Datuen bat etortzea** atalean, **Posta elektronikoa** eremuan, hautatu zure bezeroaren profil bateratuko eremua, bezero baten helbide elektronikoa adierazten duena. Errepikatu urratsak **Izena** eta **Abizena** eremuetan.
 
 1. Hautatu esportatu nahi dituzun segmentuak. Guztira 1 milioi bezero profil esporta ditzakezu Google Ads-era.
 
 Esportazio bat gordetzeak ez du esportazioa berehala exekutatzen.
 
-Esportazioa guztiekin egiten da [freskatze programatua](system.md#schedule-tab). Ere egin dezakezu [esportatu eskariaren arabera](export-destinations.md#run-exports-on-demand). 
+Esportazioa guztiekin egiten da [freskatze programatua](system.md#schedule-tab). 
+
+Ere egin dezakezu [esportatu eskariaren arabera](export-destinations.md#run-exports-on-demand). 
 
 ## <a name="data-privacy-and-compliance"></a>Datuen pribatutasuna eta arau-gordetzea
 

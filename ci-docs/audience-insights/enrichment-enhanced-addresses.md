@@ -9,12 +9,12 @@ ms.topic: how-to
 author: kishorem-ms
 ms.author: kishorem
 manager: shellyha
-ms.openlocfilehash: 07271d491460764f2c738e760e41c3492f2b6de9
-ms.sourcegitcommit: 27f9dd837304ef9fc00f055a6e900fbf6fce1429
+ms.openlocfilehash: e0ca731f944da9a7eaae7c2dc2d7568b6386089f
+ms.sourcegitcommit: d84d664e67f263bfeb741154d309088c5101b9c3
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "5965563"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "6305417"
 ---
 # <a name="enrichment-of-customer-profiles-with-enhanced-addresses"></a>Bezeroen profilak aberastu helbide hobetuekin
 
@@ -22,11 +22,11 @@ Zure datuetako helbideak desegituratuak, osatugabeak edo okerrak izan daitezke. 
 
 ## <a name="how-we-enhance-addresses"></a>Helbideak nola hobetzen ditugun
 
-Gure ereduak bi urratseko prozesua egiten du helbide bat hobetzeko. Lehenik eta behin, helbidea analizatzen du bere osagaiak identifikatzeko eta formatu egituratu batean jartzen ditu. Ondoren, adimen artifiziala erabiltzen dugu helbideko balioak zuzentzeko, osatzeko eta estandarizatzeko.
+Gure ereduak bi urratseko prozesua egiten du helbide bat hobetzeko. Lehenik eta behin, helbidea analizatzen du bere osagaiak identifikatzeko eta formatu egituratu batean jartzen ditu. Ondoren, AI erabiltzen dugu helbideko balioak zuzentzeko, osatzeko eta estandarizatzeko.
 
 ### <a name="example"></a>Adibidez
 
-Baliteke helbideen informazioa formatu ez estandarra izatea eta akats ortografikoak izatea. Ereduak arazo horiek konpon ditzake eta helbide koherenteak sor ditzake bezeroen profil bateratuetan.
+Baliteke helbideen informazioa formatu estandarra izatea eta akats ortografikoak izatea. Ereduak arazo horiek konpon ditzake eta helbide koherenteak sor ditzake bezeroen profil bateratuetan.
 
 ```Input
 4567 w main stret californa missouri 54321 us
@@ -50,7 +50,7 @@ Helbide hobetuak sartutako helbide datuetan dauden balioekin bakarrik funtzionat
 2. Egiaztatu balioetako bat, hala nola, posta-kodeak edo kaleen izenak, baliozkoak diren.
 3. Aldatu ezagutzen ez dituen balioak.
 
-Ereduak automatikoki ikasten oinarritutako teknikak erabiltzen ditu helbideak hobetzeko. Modeloak sarrera-balioa aldatzen duenerako konfiantza-atalase handia aplikatzen dugun bitartean, ML oinarritutako edozein eredurekin gertatzen den bezala, ez da % 100eko zehaztasuna bermatzen.
+Ereduak automatikoki ikasten oinarritutako teknikak erabiltzen ditu helbideak hobetzeko. Ereduak sarrerako balioa aldatzen duenerako konfiantza atalase handia aplikatzen dugun bitartean, ikaskuntzan oinarritutako edozein eredurekin gertatzen den moduan, ez da ehuneko 100eko zehaztasuna bermatzen.
 
 ## <a name="supported-countries-or-regions"></a>Lagundutako herrialdeak edo eskualdeak
 
@@ -76,7 +76,7 @@ Helbideek herrialde edo eskualde balioa izan behar dute. Ez dugu prozesatzen ona
 1. Hautatu zein formatu eman datu multzoetako helbideei. Aukeratu **Atributu bakarreko helbidea** zure datuetako helbideek eremu bakarra erabiltzen badute. Aukeratu **Hainbat atributuko helbidea** zure datuetako helbideek eremu bat edo gehiago erabiltzen badituzte.
 
    > [!NOTE]
-   > Herrialdea edo eskualdea derrigorrezkoa da atributu bakarreko eta atributu anitzeko helbidean. Herrialde edo eskualde balio baliodunak edo onartuak ez dituzten helbideak ez dira aberastuko
+   > Herrialde / eskualdea derrigorrezkoa da atributu bakarreko eta atributu anitzeko helbideetan. Herrialde edo eskualde balio baliodunak edo onartuak ez dituzten helbideak ez dira aberastuko.
 
 1.  Esleitu helbide eremuak zure bezero entitate bateratuarekin.
 
@@ -98,6 +98,6 @@ Aberastutako profil bakoitzaren ikuspegi zehatza sar dezakezu hautatuta **Ikusi 
 
 ## <a name="next-steps"></a>Hurrengo urratsak
 
-Eraiki zure bezeroen datu aberastuen gainean. Sortu [segmentuak](segments.md), [Neurriak](measures.md), eta baita [datuak esportatu](export-destinations.md) zure bezeroei esperientzia pertsonalizatuak emateko.
+Eraiki zure bezeroen datu aberastuen gainean. Sortu [segmentuak](segments.md) eta [neurriak](measures.md), eta are [datuak esportatu](export-destinations.md) zure bezeroei esperientzia pertsonalizatuak emateko.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

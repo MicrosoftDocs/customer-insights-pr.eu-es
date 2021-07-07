@@ -9,12 +9,12 @@ author: JimsonChalissery
 ms.author: jimsonc
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 6cb7bd62bf0f61e6dc5811b20e5011e4a086c743
-ms.sourcegitcommit: 84283d523a891298fca8aaf629d9f9ab2a1bc067
+ms.openlocfilehash: 336cab8619c0b80b7b8a38035cae99620baf2873
+ms.sourcegitcommit: 0b754d194d765afef70d1008db7b347dd1f0ee40
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "6111372"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "6306242"
 ---
 # <a name="segments-overview"></a>Segmentuen informazio orokorra
 
@@ -38,7 +38,7 @@ Joan **Segmentuak** orrian, gordetako segmentu guztiak ikusi eta kudeatzeko.
 
 Segmentu bakoitza segmentuari buruzko informazio osagarria biltzen duen errenkada batez irudikatuta dago.
 
-:::image type="content" source="media/segments-selected-segment.png" alt-text="Aukeratutako segmentua aukeren goitibeherako zerrendarekin eta eskuragarri dauden aukerekin.":::
+:::image type="content" source="media/segments-selected-segment.png" alt-text="Aukeratutako segmentua aukerak goitibeherako zerrendarekin eta eskuragarri dauden aukerekin.":::
 
 Segmentu bat hautatzean ekintza hauek erabilgarri daude:
 
@@ -68,7 +68,7 @@ Segmentu bat esportatu dezakezu segmentuen orrialdetik edo [esportazioen orritik
 
 1. Esportatu nahi duzun segmenturako, hautatu **erakutsi gehiago [...]**.
 
-1. Goitibeherako zerrendatik, hautatu **kudeatu esportazioak**.
+1. Aukeratu **Kudeatu esportazioak** ekintzen goitibeherako zerrendatik.
 
 1. **Segmentuaren esportazioak (aurrebista)** orria irekitzen da. Uneko segmentua duten edo ez duten esportazioen arabera taldekatutako konfiguratutako esportazio guztiak ikus ditzakezu.
 

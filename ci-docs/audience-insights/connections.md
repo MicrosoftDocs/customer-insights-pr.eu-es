@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: 106dbc26f95b309821d738e1484b1eaa79dd225b
-ms.sourcegitcommit: aaa275c60c0c77c88196277b266a91d653f8f759
+ms.openlocfilehash: 17e04b243e9b3d4375c86f5a890a18be35956835
+ms.sourcegitcommit: d84d664e67f263bfeb741154d309088c5101b9c3
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "5896082"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "6304957"
 ---
 # <a name="connections-preview-overview"></a>Konexioen ikuspegi orokorra (aurrebista)
 
@@ -74,7 +74,9 @@ Esportazio konexioa konfiguratu edo editatzerakoan, aukeratzen duzu zein erabilt
 
 ## <a name="remove-a-connection"></a>Konexioa kendu nahi duzu
 
-Kentzen ari zaren konexioa aberastasunek edo esportazioek erabiltzen badute, lehenengo deskonektatu edo kendu behar dituzu. Kendu elkarrizketa-koadroak aberastasun edo esportazio garrantzitsuetara eramango zaitu. Bereizitako aberastasunak eta esportazioak inaktibo bihurtzen dira. Berriro aktibatuko dituzu haiekin beste konexio bat gehituz [Aberastasunak](enrichment-hub.md) edo [Esportazioak](export-destinations.md) orrialdea.
+Kentzen ari zaren konexioa aberastasunek edo esportazioek erabiltzen badute, lehenengo deskonektatu edo kendu behar dituzu. Kendu elkarrizketa-koadroak aberastasun edo esportazio garrantzitsuetara eramango zaitu. 
+
+Bereizitako aberastasunak eta esportazioak inaktibo bihurtzen dira. Berriro aktibatuko dituzu haiekin beste konexio bat gehituz [Aberastasunak](enrichment-hub.md) edo [Esportazioak](export-destinations.md) orrialdea.
 
 1. Joan **Administratzailea** > **Konexioak (aurrebista)**.
 

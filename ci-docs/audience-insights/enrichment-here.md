@@ -1,5 +1,5 @@
 ---
-title: HERE Technologies hirugarrenen aberastearekin aberastea
+title: HERE Technologies Aberastea hirugarrenen aberastasunarekin
 description: HERE Technologies-en hirugarrenen aberasteari buruzko informazio orokorra.
 ms.date: 04/09/2021
 ms.reviewer: mhart
@@ -9,12 +9,12 @@ ms.topic: how-to
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: 5d1f037377010153045c9255d2d01f98ebf1fdfd
-ms.sourcegitcommit: aaa275c60c0c77c88196277b266a91d653f8f759
+ms.openlocfilehash: b3c1da0f541efb85b2ca9d87a2e3b97bbfb6ca7f
+ms.sourcegitcommit: d84d664e67f263bfeb741154d309088c5101b9c3
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "5896036"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "6305279"
 ---
 # <a name="enrichment-of-customer-profiles-with-here-technologies-preview"></a>Bezeroen profilak aberastea HERE Technologies-ekin (aurrebista)
 
@@ -26,7 +26,7 @@ HERE Technologies-en aberastea konfiguratzeko, honako baldintza hauek bete behar
 
 - HERE Technologies-en harpidetza aktiboa duzu. Harpidetza lortzeko, [erregistratu hemen](https://developer.here.com/sign-up?utm_medium=referral&utm_source=Microsoft-Dynamics-CI&create=Freemium-Basic) edo [jarri harremanetan HERE Technologies-ekin](https://developer.here.com/help?utm_medium=referral&utm_source=Microsoft-Dynamics-CI#how-can-we-help-you) zuzenean. [Lortu informazio gehiago HERE Technologies-en kokapen-aberasteari buruz.](https://developer.here.com/location-enrichment?cid=Dev-MicrosoftDynamics-DB-0-Dev-&utm_source=MicrosoftDynamics&utm_medium=referral&utm_campaign=Online_Dev_ReferralMicrosoft)
 
-- HEMEN dago [konexioa](connections.md) eskuragarri *edo* duzu [administratzailea](permissions.md#administrator) baimenak eta HERE Technologies API gakoa.
+- HERE [konexioa](connections.md) eskuragarri dago *edo* duzu [administratzailea](permissions.md#administrator) baimenak eta HERE Technologies API gakoa.
 
 ## <a name="configure-the-enrichment"></a>Konfiguratu aberastea
 
@@ -37,7 +37,7 @@ HERE Technologies-en aberastea konfiguratzeko, honako baldintza hauek bete behar
    > [!div class="mx-imgBorder"]
    > ![HERE Technologies-en lauza](media/HERE-tile.png "HERE Technologies-en lauza")
 
-1. Hautatu [konexioa](connections.md) goitibeherako zerrendatik. Jarri harremanetan administratzaile batekin konexiorik ez badago. Administratzailea bazara, hautatuz konexioa sor dezakezu **Gehitu konexioa**. Aukeratu **HEMEN Teknologiak** goitibeheratik. 
+1. Hautatu goitibeherako zerrendako [konexio](connections.md) bat. Jarri harremanetan administratzaile batekin konexiorik ez badago. Administratzailea bazara, hautatuz konexioa sor dezakezu **Gehitu konexioa**. Aukeratu **HERE Technologies** goitibeherako zerrendatik. 
 
 1. Aukeratu **Konektatu HERE Teknologietara** hautapena berresteko.
 
@@ -56,9 +56,9 @@ HERE Technologies-en aberastea konfiguratzeko, honako baldintza hauek bete behar
 
 1. Idatzi aberastearen izena. 
 
-1.Aukeratu **Aurreztu aberastasuna** zure aukerak aztertu ondoren.
+1. Aukeratu **Aurreztu aberastasuna** zure aukerak aztertu ondoren.
 
-## <a name="configure-the-connection-for-here-technologies"></a>Konfiguratu konexioa HEMEN teknologietarako 
+## <a name="configure-the-connection-for-here-technologies"></a>Konfiguratu konexioa HERE Technologies 
 
 Administratzailea izan behar duzu konexioak konfiguratzeko. Aukeratu **Gehitu konexioa** aberastasun bat konfiguratzerakoan *edo* joan **Administratzailea** > **Konexioak** eta hautatu **Konfiguratu** HERE Technologies fitxan.
 
@@ -66,13 +66,13 @@ Administratzailea izan behar duzu konexioak konfiguratzeko. Aukeratu **Gehitu ko
 
 1. Eman baliozko HERE Technologies API gakoa.
 
-1. Berrikusi eta eman baimena **Datuen pribatutasuna eta betetzea** aukeratuz **ados** laukia
+1. Berrikusi eta eman zure baimena **Datuen pribatutasuna eta betetzea** hautatuz **Ados**.
 
 1. Aukeratu **Egiaztatu** konfigurazioa balioztatzeko.
 
 1. Egiaztapena amaitu ondoren, hautatu **Gorde**.
 
-> [!div class="mx-imgBorder"]
+   > [!div class="mx-imgBorder"]
    > ![HEMEN teknologien konexioa konfigurazioaren orria](media/enrichment-HERE-connection.png "HEMEN teknologien konexioa konfigurazioaren orria")
 
 ## <a name="enrichment-results"></a>Aberastearen emaitzak
@@ -85,12 +85,12 @@ Aberastutako profil bakoitzaren ikuspegi zehatza sar dezakezu hautatuta **Ikusi 
 
 ## <a name="next-steps"></a>Hurrengo urratsak
 
-Eraiki zure bezeroen datu aberastuen gainean. Sortu [segmentuak](segments.md), [Neurriak](measures.md), eta baita [datuak esportatu](export-destinations.md) zure bezeroei esperientzia pertsonalizatuak emateko.
+Eraiki zure bezeroen datu aberastuen gainean. Sortu [segmentuak](segments.md) eta [neurriak](measures.md), eta are [datuak esportatu](export-destinations.md) zure bezeroei esperientzia pertsonalizatuak emateko.
 
 ## <a name="data-privacy-and-compliance"></a>Datuen pribatutasuna eta arau-gordetzea
 
 Dynamics 365 Customer Insights gaitzen duzunean datuak HERE Technologies-era bidaltzeko, datuak betetzeko mugatik kanpo transferitzea baimentzen duzu Dynamics 365 Customer Insights-erako, datu pertsonalak bezalako datu sentikorrak barne. Microsoft-ek datu horiek transferituko ditu zure aginduz, baina zure ardura da HERE Technologies-ek pribatutasun- edo segurtasun-betebeharrak betetzen dituela ziurtatzea. Informazio gehiago eskuratzeko, ikusi [Microsoft-en pribatutasun-adierazpena](https://go.microsoft.com/fwlink/?linkid=396732).
-Dynamics 365 Customer Insights administratzaileak edonoiz ken dezake aberastea funtzio hau erabiltzeari uzteko.
+Dynamics 365 Customer Insights administratzailea edonoiz ken dezake aberastea funtzio hau erabiltzeari uzteko.
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

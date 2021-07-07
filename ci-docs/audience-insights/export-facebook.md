@@ -9,12 +9,12 @@ ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 37d25aa038ea32b98f2d1850d7b42b701292438d
-ms.sourcegitcommit: e8e03309ba2515374a70c132d0758f3e1e1851d0
+ms.openlocfilehash: e20c7b7fd3989d7621cb7765f38b85c8ab4adfcb
+ms.sourcegitcommit: d84d664e67f263bfeb741154d309088c5101b9c3
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 05/04/2021
-ms.locfileid: "5976027"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "6305095"
 ---
 # <a name="export-segments-list-to-facebook-ads-manager-preview"></a>Esportatu segmentuen zerrenda Facebook Iragarkien kudeatzailea (aurrebista)
 
@@ -22,12 +22,12 @@ Bezeroen profil bateratuen segmentuak esportatu Facebook Iragarkien kudeatzailea
 
 ## <a name="prerequisites-for-connection"></a>Konexioaren aurrebaldintzak
 
-- Izan behar duzu [**Facebook iragazki-kontua**](https://www.facebook.com/business/learn/lessons/step-by-step-ads-manager-account) barne hartzen duena [**Facebook negozio-kontua**](https://business.facebook.com/).
-- [**Facebook Iragarkien kontuaren**](https://www.facebook.com/business/learn/lessons/step-by-step-ads-manager-account) administratzaile izan behar duzu.
+- [**Facebook iragarkien kontuak**](https://www.facebook.com/business/learn/lessons/step-by-step-ads-manager-account) dut [**Facebook negozio-kontua**](https://business.facebook.com/).
+- Administratzailea izan behar duzu [**Facebook iragarkien kontua**](https://www.facebook.com/business/learn/lessons/step-by-step-ads-manager-account).
 
 ## <a name="known-limitations"></a>Muga ezagunak
 
-- Gehienez 10 milioi bezeroren profila esportazio bakoitzeko Facebook Ads kudeatzailea.
+- Gehienez 10 milioi bezero profil esportatzeko Facebook Iragarkien kudeatzailea.
 - Esportatu Facebook Ads-eko kudeatzailera esportatzea segmentuetara mugatuta dago.
 - Sortu edo eguneratu audientzia pertsonalizatuak hemen Facebook motakoa *bezeroen zerrenda* bakarrik.
 - Guztira 10 milioi profil dituzten segmentuak esportatzen 90 minutu behar izan daitezke.
@@ -42,17 +42,17 @@ Erabiltzaileek esportazio bat sortu aurretik, administratzaile batek zerbitzurak
 
 1. Eman zure konexioa ezaguna den izena **Bistaratze izena** eremua. Izena eta konexio motak konexio bat deskribatzen du. Konexio honen xedea eta xedea azaltzen duen izena aukeratzea gomendatzen dugu.
 
-1. Aukeratu nork erabil dezakeen konexioa. Inolako neurririk hartzen ez baduzu, lehenetsia izango da **Administratzaileak**. Informazio gehiagorako, ikus [Baimendu laguntzaileei esportazioetarako konexioa erabiltzea](connections.md#allow-contributors-to-use-a-connection-for-exports).
+1. Aukeratu nork erabil dezakeen konexioa. Inolako neurririk hartzen ez baduzu, lehenetsia izango da Administratzaileak. Informazio gehiagorako, ikus [Baimendu laguntzaileei esportazioetarako konexioa erabiltzea](connections.md#allow-contributors-to-use-a-connection-for-exports).
 
 1. Autentifikatu Facebook iragarkiekin: 
 
-   1. Aukeratu **Jarraitu aurrera Facebook** saioa hasteko Facebook Iragarkien kontua.
+   1. Aukeratu **Jarraitu honekin Facebook** zure saioa hasteko Facebook Iragarkien kontua.
 
    1. Onartu **iragarkien kudeaketa** baimena, Facebook-ekin autentifikatu ondoren.
 
    1. Hautatu **Facebook iragarki kontua** lan egin nahi duzunarekin.
 
-   1. Aukeratu bat **Existitzen den audientzia pertsonalizatua** goitibeherako zerrendatik edo sortu bat **Ohiko audientzia berriak**. Informazio gehiago lortzeko, ikus [**Ikusleak Facebook Iragarkien kudeatzailea**](https://www.facebook.com/business/help/744354708981227?id=2469097953376494).
+   1. Aukeratu **Lehendik dagoen publiko pertsonalizatua** goitibeherako zerrendatik edo sortu **Publiko pertsonalizatu berria**. Informazio gehiago lortzeko, ikus [**Ikusleak Facebook Iragarkien kudeatzailea**](https://www.facebook.com/business/help/744354708981227?id=2469097953376494).
       > [!NOTE]
       > Ikusle pertsonalizatuak soilik sor ditzakezu edo eguneratu Facebook motakoa *bezeroen zerrenda* esportazio honekin. Zenbait kasutan, goitibeherako zerrendan mota desberdinetako ikusle pertsonalizatuak ikusten dituzu. Ez bezalako mota bat hautatzea *bezeroen zerrenda* esportazioak huts egingo du. 
 
@@ -68,16 +68,17 @@ Esportazio hau konfigura dezakezu mota honetako konexiorako sarbidea baduzu. Inf
 
 1. Esportazio berria sortzeko, hautatu **Gehitu helmuga**. 
 
-1. Hurrengoan **Esportaziorako konexioa** Aukeratu konexioa **Facebook Iragarkien kudeatzailea** atala. Atal honen izena ikusten ez baduzu, ez dago mota honetako konexiorik erabilgarri.
+1. Hurrengoan **Esportaziorako konexioa** Aukeratu konexioa **Facebook Iragarkien kudeatzailea** atala. Atal honen izena ikusten ez baduzu, mota honetako konexiorik ez duzu eskuragarri.
 
 1. Sarbidean **Aukeratu zure gako identifikatzaileen eremua** hautatu **Emaila**, **Izena eta helbidea**, edo **Mugikorra** bidali Facebook Iragarkien kudeatzailea. 
 
 1. Eman zure konexioa ezaguna den izena **Bistaratze izena** eremua.
 
 1. Aukeratu hautatutako gako identifikatzaileari zure bezeroen erakunde bateratuari dagozkion atributuak.
-   > [AHOLKULUA] Partidua lortzeko aukera onenak hautatuta baldin badaude **Emaila** gako identifikatzaile gisa. Identifikatzaile osagarriak gehitzeak bat egin dezake.
+   > [!TIP]
+   > Aukera onenak hautatuta baldin badaude **Helbide elektronikoa** gako identifikatzaile gisa. Identifikatzaile osagarriak gehitzeak bat egin dezake.
 
-1. Aukeratu **Gehitu atributua** bidali beharreko atributu gehiago mapatzeko Facebook Iragarkien kudeatzailea. Atributuak Facebook Iragarkien kudeatzailea erabiltzaileentzako lagunarteko izen hauek kokatzen dira: **FN** = **izena**, **LN** = **abizena**, **FI** = **Lehen Hasierakoa**, **TELEFONOA** = **Telefonoa**, **GEN** = **Generoa**, **DOB** = **Jaioteguna**, **ST** = **Estatu**, **CT** = **hiria**, **ZIP** = **Posta kodea / zip kodea**, **HERRIALDEA** = **Herrialdea / Eskualdea**
+1. Aukeratu **Gehitu atributua** bidali beharreko atributu gehiago mapatzeko Facebook Iragarkien kudeatzailea. Atributuak Facebook Iragarkien kudeatzailea erabiltzaileentzako lagunarteko izen hauek kokatzen dira: **FN** = **izena**, **LN** = **abizena**, **FI** = **Lehen Hasierakoa**, **TELEFONOA** = **Telefonoa**, **GEN** = **Generoa**, **DOB** = **Jaioteguna**, **ST** = **Estatu**, **CT** = **hiria**, **ZIP** = **Posta kodea / zip-kodea**, **HERRIALDEA** = **Herrialdea / Eskualdea**
 
 1. Hautatu esportatu nahi dituzun segmentuak.
 
@@ -85,7 +86,9 @@ Esportazio hau konfigura dezakezu mota honetako konexiorako sarbidea baduzu. Inf
 
 Esportazio bat gordetzeak ez du esportazioa berehala exekutatzen.
 
-Esportazioa guztiekin egiten da [freskatze programatua](system.md#schedule-tab). Ere egin dezakezu [esportatu eskariaren arabera](export-destinations.md#run-exports-on-demand). 
+Esportazioa guztiekin egiten da [freskatze programatua](system.md#schedule-tab). 
+
+Ere egin dezakezu [esportatu eskariaren arabera](export-destinations.md#run-exports-on-demand). 
 
 ## <a name="data-privacy-and-compliance"></a>Datuen pribatutasuna eta arau-gordetzea
 

@@ -9,16 +9,16 @@ ms.topic: conceptual
 author: stefanie-msft
 ms.author: antando
 manager: shellyha
-ms.openlocfilehash: b6c010d84119c2fa8b3ef99017c65f9939bf28c4
-ms.sourcegitcommit: 1b671c6100991fea1cace04b5d4fcedcd88aa94f
+ms.openlocfilehash: 917ab9559416f3ee0ffd66e471e590e8da3faffc
+ms.sourcegitcommit: d84d664e67f263bfeb741154d309088c5101b9c3
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5760266"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "6305371"
 ---
 # <a name="use-customer-insights-segments-in-adobe-campaign-standard-preview"></a>Erabili Customer Insights segmentuak nola erabiltzen diren Adobe Campaign Standard-en (aurrebista)
 
-Erabiltzaileentzako ikusleen estatistiken erabiltzaile gisa Dynamics 365 Customer Insights, baliteke segmentuak sortzea zure marketin kanpainak eraginkorragoak izan daitezen publiko garrantzitsuei zuzenduta. Adobe Experience Platform-eko eta Adobe Campaign Standard bezalako aplikazioetako audientziaren inguruko segmentu bat erabiltzeko, artikulu honetan zehaztutako urrats batzuk jarraitu behar dituzu.
+-N ikusleei buruzko informazioaren erabiltzaile gisa Dynamics 365 Customer Insights, baliteke segmentuak sortzea zure marketin kanpainak eraginkorragoak izan daitezen publiko garrantzitsuei zuzenduta. Adobe Experience Platform-eko eta Adobe Campaign Standard bezalako aplikazioetako audientziaren inguruko segmentu bat erabiltzeko, artikulu honetan zehaztutako urrats batzuk jarraitu behar dituzu.
 
 :::image type="content" source="media/ACS-flow.png" alt-text="Artikulu honetan azaldutako urratsen prozesuaren diagrama.":::
 
@@ -54,7 +54,7 @@ Gure xede-audientzia identifikatuta, esportazioen konfigurazioa konfiguratu ahal
 
 1. Ikusleen ikuspegietan, joan hona **Administratzailea** > **Konexioak**.
 
-1. Aukeratu **Gehitu konexioa** eta aukeratu **Adobe kanpaina** konexioa konfiguratzeko edo hautatu **Konfiguratu** urtean **Adobe kanpaina** teila
+1. Aukeratu **Gehitu konexioa** eta aukeratu **Adobe kanpaina** konexioa konfiguratzeko edo hautatu **Konfiguratu** urtean **Adobe kanpaina** teila.
 
    :::image type="content" source="media/adobe-campaign-standard-tile.png" alt-text="Adobe Campaign Standard-en konfigurazio lauza.":::
 
@@ -66,7 +66,7 @@ Gure xede-audientzia identifikatuta, esportazioen konfigurazioa konfiguratu ahal
       
    :::image type="content" source="media/azure-blob-configuration.png" alt-text="Biltegiratze kontuaren konfigurazioaren pantaila-argazkia. "::: 
 
-   - Azure Blob biltegiratze kontuaren izena eta kontuaren gakoa aurkitzeko informazio gehiago lortzeko, ikus [Kudeatu biltegiratze kontuen ezarpenak Azure atarian](/azure/storage/common/storage-account-manage).
+   - Azure Blob Storage kontuaren izena eta kontuaren gakoa aurkitzeko informazio gehiago lortzeko, ikus [Kudeatu biltegiratze kontuen ezarpenak Azure atarian](/azure/storage/common/storage-account-manage).
 
    - Edukiontzia nola sortzen den jakiteko, ikus [Sortu edukiontzia](/azure/storage/blobs/storage-quickstart-blobs-portal#create-a-container).
 
@@ -80,7 +80,7 @@ Esportazio hau konfigura dezakezu mota honetako konexiorako sarbidea baduzu. Inf
 
 1. Esportatze berria sortzeko, hautatu **Gehitu esportatzea**.
 
-1. Hurrengoan **Konexioa esportatzeko** eremuan, aukeratu konexioa Adobe kanpainaren sekzioan. Atal honen izena ikusten ez baduzu, ez dago mota honetako konexiorik erabilgarri.
+1. Hurrengoan **Konexioa esportatzeko** eremuan, aukeratu konexioa Adobe kanpainaren sekzioan. Atal honen izena ikusten ez baduzu, mota honetako konexiorik ez duzu eskuragarri.
 
 1. Aukeratu esportatu nahi duzun segmentua. Adibide honetan, **ChurnProneCustomers** da.
 
@@ -106,7 +106,7 @@ Orain egin dezakezu [esportatu segmentua eskariaren arabera](export-destinations
 > [!NOTE]
 > Ziurtatu esportatutako segmentuan erregistro kopurua Adobe Campaign Standard lizentziaren baimendutako mugaren barruan dagoela.
 
-Esportatutako datuak goian konfiguratu duzun Azure blob-biltegia edukiontzian gordetzen dira. Karpeta bide hau automatikoki sortzen da zure edukiontzian:
+Esportatutako datuak goian konfiguratu duzun Azure blob Storage edukiontzian gordetzen dira. Karpeta bide hau automatikoki sortzen da zure edukiontzian:
 
 *%ContainerName%/CustomerInsights_%instanceID%/% exportdestination-name%_%segmentname%_%timestamp%.csv*
 
@@ -118,7 +118,7 @@ Audientzia estatistiketatik ateratako segmentu bat esportatzen denean, aurreko u
 
 Adobe Campaign Standard-en segmentua erabiltzeko, Adobe Campaign Standard-en profil eskema luzatu behar dugu bi eremu gehigarri sartzeko. Ikasi nola egin [profila baliabidea luzatu](https://experienceleague.adobe.com/docs/campaign-standard/using/developing/use-cases--extending-resources/extending-the-profile-resource-with-a-new-field.html#developing) eremu berriekin Adobe Campaign Standard.
 
-Gure adibidean, eremu hauek dira *Segmentuaren izena eta segmentuaren data (aukerakoa).*
+Gure adibidean, eremu hauek dira *Segmentuaren izena eta segmentuaren data (aukerakoa)*.
 
 Eremu horiek erabiliko ditugu kanpaina honetarako bideratu nahi dugun Adobe Campaign Standard profilak identifikatzeko.
 
@@ -128,7 +128,7 @@ Adobe Campaign Standard-en inportatzera zoazena baino beste erregistroik ez bada
 
 Dena indarrean dagoela, entzuleen datuetatik prestatutako audientzia datuak Adobe Campaign Standard profilak sortzeko inportatu behar ditugu. Ikasi [nola inportatu profilak Adobe Campaign Standard zerbitzuan](https://experienceleague.adobe.com/docs/campaign-standard/using/profiles-and-audiences/managing-profiles/creating-profiles.html#profiles-and-audiences) lan-fluxua erabiliz.
 
-Beheko irudiko inportazio lan-fluxua 8 orduro exekutatzeko konfiguratuta dago eta esportatutako audientzia estatistiken segmentuak bilatzen ditu (.csv fitxategia Azure blob-biltegian). Lan-fluxuak .csv fitxategiaren edukia zehaztutako zutabe ordenan ateratzen du. Lan-fluxu hau oinarrizko akatsak kudeatzeko eta erregistro bakoitzak helbide elektronikoa duela ziurtatzeko sortu da, datuak Adobe Campaign Standard-en hidratatu aurretik. Lan-fluxuak ere segmentuaren izena fitxategi-izenetik ateratzen du ACS profileko datuetara sartu aurretik.
+Beheko irudiko inportazio lan-fluxua zortzi orduro exekutatzeko eta esportatutako audientzia estatistiken segmentuak bilatzeko konfiguratu da (.csv fitxategia Azure Blob Storage). Lan-fluxuak .csv fitxategiaren edukia zehaztutako zutabe ordenan ateratzen du. Lan-fluxu hau oinarrizko akatsak kudeatzeko eta erregistro bakoitzak helbide elektronikoa duela ziurtatzeko sortu da, datuak Adobe Campaign Standard-en hidratatu aurretik. Lan-fluxuak segmentuaren izena fitxategi-izenetik ateratzen du Adobe Campaign Standard profileko datuetara sartu aurretik.
 
 :::image type="content" source="media/ACS-import-workflow.png" alt-text="Inportazio lan-fluxuaren pantaila-argazkia Adobe Campaign Standard erabiltzaile interfazean.":::
 

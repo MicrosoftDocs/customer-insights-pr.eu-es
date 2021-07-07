@@ -9,16 +9,16 @@ ms.topic: how-to
 author: kishorem-MS
 ms.author: kishorem
 manager: shellyha
-ms.openlocfilehash: e92360bb886739cfe477ce1d2eb62219228a0292
-ms.sourcegitcommit: d4b4053f6ee8f60f1a214982c4726c9de84615ef
+ms.openlocfilehash: 1b11c325649b91ebb47cde924227eacedae64b7a
+ms.sourcegitcommit: d84d664e67f263bfeb741154d309088c5101b9c3
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "6245692"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "6305141"
 ---
 # <a name="enrich-customer-profiles-with-brand-and-interest-affinities-preview"></a>Aberastu bezeroen profilak marka eta interes kidetasunekin (aurrebista)
 
-Erabili Microsoft-en jabedun datuak bezeroen datuak marka eta interes kidetasunekin aberasteko. Afinitate horiek zure bezeroen antzeko demografia duten pertsonen datuetan oinarrituta zehazten dira. Informazio honek bezeroak hobeto ulertzen eta segmentatzen laguntzen du, marka eta interes jakin batzuen arabera.
+Erabili Microsoft-en jabedun datuak bezeroen datuak marka eta interes kidetasunekin aberasteko. Afinitate hauek zure bezeroen demografia antzekoko jendearen datuetan oinarritzen dira. Informazio honek bezeroak hobeto ulertzen eta segmentatzen laguntzen du, marka eta interes jakin batzuen arabera.
 
 Hartzaileen xehetasunetan, joan hona: **Datuak** > **Aberastea** [aberasteak konfiguratu eta ikusteko](enrichment-hub.md).
 
@@ -27,7 +27,7 @@ Marka afinitateak aberastea konfiguratzeko, joan **Ezagutu** fitxa eta aukeratu 
 Interes afinitateak aberastea konfiguratzeko, joan **Ezagutu** fitxa eta aukeratu **Aberastu nire datuak** gainean **Interesak** teila.
 
    > [!div class="mx-imgBorder"]
-   > ![Markak eta interesen lauzak](media/BrandsInterest-tile-Hub.png "Markak eta interesaren lauzak")
+   > ![Markak eta zaletasunak lauzak](media/BrandsInterest-tile-Hub.png "Markak eta zaletasunen lauzak")
 
 ## <a name="how-we-determine-affinities"></a>Afinitateak nola zehazten ditugun
 
@@ -53,7 +53,7 @@ Afinitatea neurtzeko nahi duzun xehetasunen arabera, afinitate maila edo puntuaz
 
 Egun, herrialde / eskualdeko aukerak onartzen ditugu: Australia, Kanada (ingelesa), Frantzia, Alemania, Erresuma Batua edo Estatu Batuak (ingelesa).
 
-Herrialdea hautatzeko, ireki **Marken aberastasuna** edo **Interesak aberastea** eta hautatu **Aldaketa** Alboan **Herrialdea / eskualdea**. Sarbidean **Herrialdearen eta eskualdeen ezarpenak** panela, aukeratu aukera bat eta hautatu **aplikatu**.
+Herrialde edo eskualde bat hautatzeko, ireki **Markak aberastea** edo **Interesa aberastea** eta hautatu **Aldaketa** Alboan **Herrialdea/Eskualdea**. Sarbidean **Herrialdearen eta eskualdeen ezarpenak** panela, aukeratu aukera bat eta hautatu **aplikatu**.
 
 ### <a name="implications-related-to-country-selection"></a>Herrialdearen hautaketarekin lotutako ondorioak
 
@@ -61,9 +61,9 @@ Herrialdea hautatzeko, ireki **Marken aberastasuna** edo **Interesak aberastea**
 
 - [Sektorea aukeratzean](#define-your-brands-or-interests), hautatutako herrialdean edo eskualdean oinarritutako marka edo interes garrantzitsuenak lortuko dituzu.
 
-- [Profilak aberastean](#refresh-enrichment), bezeroen profil guztiak aberastuko ditugu hautatutako marka eta interesen datuak lortzeko. Aukeratutako herrialdean edo eskualdean ez dauden profilak barne. Adibidez, Alemania aukeratu baduzu, Estatu Batuetan kokatutako profilak aberastuko ditugu AEBetan hautatutako marka eta interesetarako datuak eskuragarri baditugu.
+- Noiz [profil aberasgarriak](#refresh-enrichment), aberastuko ditugu hautatutako marken eta interesen datuak lortzeko bezeroen profil guztiak, hautatutako herrialdean edo eskualdean ez dauden profilak barne. Adibidez, Alemania aukeratu baduzu, Estatu Batuetan kokatutako profilak aberastuko ditugu AEBetan hautatutako marka eta interesetarako datuak eskuragarri baditugu.
 
-## <a name="configure-enrichment"></a>Aberastea konfiguratu
+## <a name="configure-enrichment"></a>Aberastea konfiguratzea
 
 Esperientzia gidatu batek aberastasunak konfiguratzen lagunduko dizu. 
 
@@ -71,7 +71,7 @@ Esperientzia gidatu batek aberastasunak konfiguratzen lagunduko dizu.
 
 Aukeratu gehienez bost marka edo interes aukera hauetako bat edo biak erabiliz:
 
-- **Industria**: Aukeratu zure industria goitibeherako zerrendan eta hautatu industria horretako marka edo interes garrantzitsuenen artean.
+- **Industria**: Aukeratu zure industria goitibeherako zerrendan eta aukeratu industria horretako marka edo interes gorenen artean.
 - **Aukeratu zeurea**: Sartu zure erakundearentzako garrantzitsua den marka edo interesa eta aukeratu bat datorren iradokizunen artean. Bilatzen ari zaren marka edo interesa zerrendatzen ez badugu, bidal iezaguzu iritzia erabilita **Proposatu** esteka.
 
 ### <a name="review-enrichment-preferences"></a>Berrikusi aberaste-hobespenak
@@ -88,19 +88,19 @@ Hautatu **Aberastutako entitatea** eta aukera datuak ezartzeko aberastu nahi duz
 
 Esleitu zure bezero entitate bateratuko eremuak sistemak zure bezeroaren datuak aberasteko erabili nahi duzun segmentu demografikoa definitzeko. Esleitu herrialdea/eskualdea eta gutxienez Jaiotze-data edo Generoa atributuak. Gainera, herrialdea/eskualdea esleitu behar duzu. Halaber, hiri bat (eta estatua/probintzia) edo posta-kode bat esleitu behar dituzu gutxienez. Aukeratu **Editatu** eremuen mapa zehaztu eta hautatu **aplikatu** amaitutakoan. Aukeratu **Gorde** eremuaren mapa osatzeko.
 
-Formatu eta balio hauek onartzen dira, balioak ez dira maiuskulak:
+Formatu eta balio hauek onartzen dira (balioak ez dira maiuskulak):
 
-- **Jaioteguna**: Jaiotze-data DataTime motara bihurtzea gomendatzen dugu datuak irensten diren bitartean. Bestela, barruko katea izan daiteke [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) "uuuu-HH-ee" edo "uuuu-HH-eeHH:mm:ssZ" formatua.
-- **Generoa**: Gizona, Emakumezkoa, Ezezaguna
-- **Posta kodea**: Bost digitu ZIP kodea AEBetarako, posta estandarraren beste edozein lekutan
-- **hiria**: Hiria izena ingelesez
-- **Estatua / Probintzia**: AEB eta Kanadako bi gutun-laburdura. Bi edo hiru gutun laburdura Australiarako. Ez da aplikagarria Frantzian, Alemanian edo Erresuma Batuan.
+- **Jaioteguna**: Jaiotze-data DataTime motara bihurtzea gomendatzen dugu datuak irensten diren bitartean. Bestela, katea izan daiteke [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) formatua "aaaa-MM-dd" edo "aaaa-MM-ddTHH: mm: ss".
+- **Generoa**: Gizona, Emakumezkoa, Ezezaguna.
+- **Posta kodea**: Estatu Batuetako bost digituko posta kodeak, beste edozein lekutan posta kodea estandarra.
+- **Hiria**: Hiria izena ingelesez.
+- **Estatua / Probintzia**: AEB eta Kanadako bi gutun-laburdura. Bi edo hiru gutun-laburdura Australiarako. Ez da aplikagarria Frantzian, Alemanian edo Erresuma Batuan.
 - **Herrialdea/Eskualdea**:
 
   - AEB: Ameriketako Estatu Batuak, Estatu Batuak, AEBak, AEBak, Amerika
   - CA: Kanada, CA
   - GB: Erresuma Batua, Erresuma Batua, Britainia Handia, GB, Britainia Handia eta Ipar Irlanda, Erresuma Batua
-  - AU: Australia, AU, Australiako Aberastasun Komuna
+  - AU: Australia, AU, Australiako Mankomunitatea
   - FR: Frantzia, FR, Frantziar Errepublika
   - DE: Alemania, Alemania, Deutschland, Allemagne, DE, Alemaniako Errepublika Federala, Alemaniako Errepublika
 
@@ -113,6 +113,7 @@ Azkenean, informazioa berrikusi eta aberasteko izena eman dezakezu.
 ## <a name="refresh-enrichment"></a>Freskatu aberastea
 
 Exekutatu aberastasuna marka, interesak eta eremuen mapak konfiguratu ondoren demografiarako. Prozesua hasteko, hautatu **Korrika egin** marka edo interesen konfigurazio orrian. Gainera, sistemak aberastasuna automatikoki utz dezakezu planifikatu gabeko freskatze baten baitan.
+
 Bezeroaren datuen tamainaren arabera, minutu batzuk behar izango dira aberasteko exekuzioa osatzeko.
 
 > [!TIP]
@@ -134,7 +135,7 @@ Marka eta interes kidetasunak bezero banakako txarteletan ere ikus daitezke. Joa
 
 ## <a name="next-steps"></a>Hurrengo urratsak
 
-Eraiki zure bezeroen datu aberastuen gainean. Sortu [segmentuak](segments.md), [Neurriak](measures.md), eta baita [datuak esportatu](export-destinations.md) zure bezeroei esperientzia pertsonalizatuak emateko.
+Eraiki zure bezeroen datu aberastuen gainean. Sortu [Segmentuak](segments.md) eta [Neurriak](measures.md), eta are [datuak esportatu](export-destinations.md) zure bezeroei esperientzia pertsonalizatuak emateko.
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -9,12 +9,12 @@ ms.topic: how-to
 author: kishorem-MS
 ms.author: kishorem
 manager: shellyha
-ms.openlocfilehash: ccf4f661ecffb281556a4545b1f26ee809c697cd
-ms.sourcegitcommit: aaa275c60c0c77c88196277b266a91d653f8f759
+ms.openlocfilehash: 0496d10c994cd077a778a6e745e3774e316765ae
+ms.sourcegitcommit: d84d664e67f263bfeb741154d309088c5101b9c3
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "5895898"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "6305187"
 ---
 # <a name="enrichment-of-company-profiles-with-leadspace-preview"></a>Enpresen profilak aberastea Leadspace-rekin (aurrebista)
 
@@ -36,7 +36,7 @@ Leadspace konfiguratzeko eta konfiguratzeko, honako baldintza hauek bete behar d
 
    :::image type="content" source="media/leadspace-tile.png" alt-text="Leadspace lauzaren pantaila-argazkia.":::
 
-1. Hautatu [konexioa](connections.md) goitibeherako zerrendatik. Jarri harremanetan administratzaile batekin konexiorik ez badago. Administratzailea bazara, sor dezakezu konexioa **Gehitu konexioa** hautatuz eta **Leadspace** aukeratuz. 
+1. Hautatu goitibeherako zerrendako [konexio](connections.md) bat. Jarri harremanetan administratzaile batekin konexiorik ez badago. Administratzailea bazara, sor dezakezu konexioa **Gehitu konexioa** hautatuz eta **Leadspace** aukeratuz. 
 
 1. Aukeratu **Konektatu Leadspace** konexioa berresteko.
 
@@ -57,13 +57,13 @@ Leadspace konfiguratzeko eta konfiguratzeko, honako baldintza hauek bete behar d
 
 Administratzailea izan behar duzu konexioak konfiguratzeko. Aukeratu **Gehitu konexioa** aberastasun bat konfiguratzerakoan *edo* joan **Administratzailea** > **Konexioak** eta hautatu **Konfiguratu** Leadspace fitxan.
 
-1. Hautatu **Hasi erabiltzen** 
+1. Hautatu **Hasi erabiltzen**. 
 
 1. Idatzi konexioaren izena **Bistaratzeko izena** kutxa.
 
 1. Hornitu balizoko Leadspace tokena.
 
-1. Berrikusi eta eman baimena **Datuen pribatutasuna eta betetzea** aukeratuz **ados** laukia
+1. Berrikusi eta eman zure baimena **Datuen pribatutasuna eta betetzea** hautatuz **Ados**.
 
 1. Aukeratu **Egiaztatu** konfigurazioa balioztatzeko.
 
@@ -81,12 +81,12 @@ Informazio gehiago lortzeko, ikus [Leadspace API](https://support.leadspace.com/
 
 ## <a name="next-steps"></a>Hurrengo urratsak
 
-Eraiki zure bezeroen datu aberastuen gainean. Sortu [segmentuak](segments.md), [Neurriak](measures.md), eta baita [datuak esportatu](export-destinations.md) zure bezeroei esperientzia pertsonalizatuak emateko.
+Eraiki zure bezeroen datu aberastuen gainean. Sortu [segmentuak](segments.md) eta [neurriak](measures.md), eta are [datuak esportatu](export-destinations.md) zure bezeroei esperientzia pertsonalizatuak emateko.
 
 ## <a name="data-privacy-and-compliance"></a>Datuen pribatutasuna eta arau-gordetzea
 
 Dynamics 365 Customer Insights gaitzen duzunean datuak Leadspace-ra bidaltzeko, datuak betetzeko mugatik kanpo transferitzea baimentzen duzu Dynamics 365 Customer Insights-erako, datu pertsonalak bezalako datu sentikorrak barne. Microsoft-ek datu horiek transferituko ditu zure aginduz, baina zure ardura da Leadspace-k pribatutasun- edo segurtasun-betebeharrak betetzen dituela ziurtatzea. Informazio gehiago eskuratzeko, ikusi [Microsoft-en pribatutasun-adierazpena](https://go.microsoft.com/fwlink/?linkid=396732).
-Dynamics 365 Customer Insights administratzaileak edonoiz ken dezake aberastea funtzio hau erabiltzeari uzteko.
+Dynamics 365 Customer Insights administratzailea edonoiz ken dezake aberastea funtzio hau erabiltzeari uzteko.
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

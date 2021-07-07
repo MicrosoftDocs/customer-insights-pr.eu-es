@@ -9,20 +9,20 @@ ms.topic: tutorial
 author: diegogranados117
 ms.author: digranad
 manager: shellyha
-ms.openlocfilehash: 251bc26246cee16952e8e4cb08e2ed7aa4d18488
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: 49dad45c951f3c00d77ddd99faec48bfccada8b0
+ms.sourcegitcommit: 0b754d194d765afef70d1008db7b347dd1f0ee40
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5595411"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "6306105"
 ---
 # <a name="transactional-churn-prediction-preview-sample-guide"></a>Transakzioen galera-tasaren iragarpenari (aurrebista) buruzko adibide-gida
 
-Gida honek Customer Insights zerbitzuko transakzioen galera-tasaren iragarpenaren adibide oso bat aurkeztuko dizu, jarraian emandako datuak erabilita. Gidan erabilitako datuak ez dira bezero-datu errealak eta Customer Insights harpidetzako *Demo* ingurunean aurkitutako Contoso datu multzoaren parte dira.
+Gida honek Customer Insights zerbitzuko transakzioen galera-tasaren iragarpenaren adibide oso bat aurkeztuko dizu, jarraian emandako datuak erabilita. Gida honetan erabilitako datu guztiak ez dira bezeroen benetako datuak eta Contoso datu-basean aurkitu da *Demo* ingurunea zure Customer Insights harpidetzaren barruan.
 
 ## <a name="scenario"></a>Egoera
 
-Contoso kalitate handiko kafea eta kafe-makinak sortzen dituen enpresa bat da. Horiek Contoso Coffee webgunearen bidez saltzen dituzte. Enpresaren helburua da jakitea egunerokotasunean bere produktuak erosten dituzten bezeroetako nortzuk utziko dioten bezero aktibo izateari datozen 60 egunetan. Zein bezero **galtzeko arriskua** dagoen jakiteak marketinarekin erlazionatutako ahalegina bideratzen lagun diezaioke enpresari, arreta bezero horiengan jarrita.
+Contoso kalitate handiko kafea eta kafe makinak ekoizten dituen enpresa da eta Contoso Coffee webgunearen bidez saltzen dituzte. Enpresaren helburua da jakitea egunerokotasunean bere produktuak erosten dituzten bezeroetako nortzuk utziko dioten bezero aktibo izateari datozen 60 egunetan. Zein bezero **galtzeko arriskua** dagoen jakiteak marketinarekin erlazionatutako ahalegina bideratzen lagun diezaioke enpresari, arreta bezero horiengan jarrita.
 
 ## <a name="prerequisites"></a>Aurrebaldintzak
 
@@ -105,13 +105,13 @@ Behin datuak sartuta, **Esleitu, bat etorri, konbinatu** prozesuarekin hasiko ga
 
    :::image type="content" source="media/unify-loyaltyid.PNG" alt-text="Bateratu LoyaltyId gako nagusi gisa.":::
 
-### <a name="match"></a>Lotzea
+### <a name="match"></a>Lotu
 
 1. Joan **Bat etorri** fitxara eta hautatu **Ezarri ordena**.
 
-1. **Nagusia** goitibeherako zerrendan, aukeratu **eCommerceContacts : eCommerce** iturburu nagusi gisa eta sartu erregistro guztiak.
+1. Urtean **Lehen Hezkuntza** goitibeherako zerrenda, aukeratu **eCommerceContacts: eCommerce** iturri nagusi gisa eta erregistro guztiak barne.
 
-1. **2. entitatea** goitibeherako zerrendan, aukeratu **loyCustomers : LoyaltyScheme** eta sartu erregistro guztiak.
+1. Urtean **2. entitatea** goitibeherako zerrenda, aukeratu **loyCustomers: LoyaltyScheme** eta erregistro guztiak sartu.
 
    :::image type="content" source="media/unify-match-order.PNG" alt-text="Bateratu eCommerce eta Loyalty bat-etortzea.":::
 
@@ -119,16 +119,16 @@ Behin datuak sartuta, **Esleitu, bat etorri, konbinatu** prozesuarekin hasiko ga
 
 1. Gehitu lehenengo baldintza FullName erabilita.
 
-   * eCommerceContacts entitateari dagokionez, hautatu **FullName** goitibeherako zerrendan.
-   * loyCustomers entitateari dagokionez, hautatu **FullName** goitibeherako zerrendan.
+   * ECommerceContacts aukeratzeko **Izen abizenak** goitibeherakoan.
+   * loyCustomers aukeratzeko **Izen abizenak** goitibeherakoan.
    * Aukeratu **Normalizatu** goitibeherako zerrendan eta aukeratu **Mota (Telefonoa, Izena, Helbidea, ...)**.
    * Ezarri **Zehaztasun maila**: **Oinarrizkoa** eta **Balioa**: **Altua**.
 
 1. Idatzi arau berriaren **Izen osoa, posta elektronikoa** izena.
 
    * Gehitu helbide elektronikoaren bigarren baldintza bat **Gehitu baldintza** hautatuta
-   * ECommerceContacts entitateari dagokionez, aukeratu **Helbide elektronikoa** goitibeherako zerrendan.
-   * loyCustomers entitateari dagokionez, aukeratu **Helbide elektronikoa** goitibeherako zerrendan. 
+   * ECommerceContacts entitateari dagokionez, aukeratu **Mezu elektronikoa** goitibeherakoan.
+   * loyCustomers entitateari dagokionez, aukeratu **Mezu elektronikoa** goitibeherakoan. 
    * "Normalizatu" hutsik utzi. 
    * Ezarri **Zehaztasun maila**: **Oinarrizkoa** eta **Balioa**: **Altua**.
 

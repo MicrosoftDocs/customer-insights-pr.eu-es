@@ -9,12 +9,12 @@ author: adkuppa
 ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 2cab702509596dd87c0c9b9769d1af8ba8387f9d
-ms.sourcegitcommit: fcc94f55dc2dce84eae188d582801dc47696c9cc
+ms.openlocfilehash: 86ab3cefa70e5fab4bdb27cde363adee26efee4c
+ms.sourcegitcommit: 0b754d194d765afef70d1008db7b347dd1f0ee40
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "6085561"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "6305605"
 ---
 # <a name="merge-entities"></a>Konbinatu entitateak
 
@@ -34,7 +34,7 @@ Automatikoki bateratutako atributuetako batean sartutako atributuak ikusteko, ha
 
 Sistemak bateratutako atributuak nola prozesatzen dituen alda dezakezu bezeroaren profil bateratua sortzeko. Aukeratu **Erakutsi gehiago** eta aukeratu zer aldatu nahi duzun.
 
-:::image type="content" source="media/manage-merged-attributes.png" alt-text="Aukerak Erakutsi gehiago goitibeherako menuan bateratutako atributuak kudeatzeko.":::
+:::image type="content" source="media/manage-merged-attributes.png" alt-text="Aukerak Erakutsi goitibeherako menuan bateratutako atributuak kudeatzeko.":::
 
 Informazio gehiagorako, ikus ondorengo atalak.
 

@@ -9,12 +9,12 @@ ms.topic: tutorial
 author: diegogranados117
 ms.author: digranad
 manager: shellyha
-ms.openlocfilehash: b136084316da5ae17a8428236381f69e5c21f9ea
-ms.sourcegitcommit: 7b6189e47ed1f87e7ce35d40e4cf7a6730f31ef2
+ms.openlocfilehash: a85ee598ec747d0594755314e83a127ce0f2af95
+ms.sourcegitcommit: 0b754d194d765afef70d1008db7b347dd1f0ee40
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 06/01/2021
-ms.locfileid: "6129884"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "6306151"
 ---
 # <a name="product-recommendation-prediction-preview-sample-guide"></a>Produktuak gomendatzeko iragarpenaren (aurreargitalpena) adibide-gida
 
@@ -101,13 +101,13 @@ Datuak irentsi ondoren, datuak bateratzeko prozesua hasten dugu bezeroaren profi
 
    ![Bateratu LoyaltyId gako nagusi gisa.](media/unify-loyaltyid.png)
 
-### <a name="match"></a>Lotzea
+### <a name="match"></a>Lotu
 
 1. Joan **Bat etorri** fitxara eta hautatu **Ezarri ordena**.
 
-2. **Nagusia** goitibeherako zerrendan, aukeratu **eCommerceContacts : eCommerce** iturburu nagusi gisa eta sartu erregistro guztiak.
+2. Urtean **Lehen Hezkuntza** goitibeherako zerrenda, aukeratu **eCommerceContacts: eCommerce** iturri nagusi gisa eta erregistro guztiak barne.
 
-3. **2. entitatea** goitibeherako zerrendan, aukeratu **loyCustomers : LoyaltyScheme** eta sartu erregistro guztiak.
+3. Urtean **2. entitatea** goitibeherako zerrenda, aukeratu **loyCustomers: LoyaltyScheme** eta erregistro guztiak sartu.
 
    ![Bateratu eCommerce eta Loyalty bat-etortzea.](media/unify-match-order.png)
 
@@ -115,16 +115,16 @@ Datuak irentsi ondoren, datuak bateratzeko prozesua hasten dugu bezeroaren profi
 
 5. Gehitu lehenengo baldintza FullName erabilita.
 
-   - eCommerceContacts entitateari dagokionez, hautatu **FullName** goitibeherako zerrendan.
-   - loyCustomers entitateari dagokionez, hautatu **FullName** goitibeherako zerrendan.
+   - ECommerceContacts aukeratzeko **Izen abizenak** goitibeherakoan.
+   - loyCustomers aukeratzeko **Izen abizenak** goitibeherakoan.
    - Aukeratu **Normalizatu** goitibeherako zerrendan eta aukeratu **Mota (Telefonoa, Izena, Helbidea, ...)**.
    - Ezarri **Zehaztasun maila**: **Oinarrizkoa** eta **Balioa**: **Altua**.
 
 6. Idatzi arau berriaren **Izen osoa, posta elektronikoa** izena.
 
    - Gehitu helbide elektronikoaren bigarren baldintza bat **Gehitu baldintza** hautatuta
-   - ECommerceContacts entitateari dagokionez, aukeratu **Helbide elektronikoa** goitibeherako zerrendan.
-   - loyCustomers entitateari dagokionez, aukeratu **Helbide elektronikoa** goitibeherako zerrendan.
+   - ECommerceContacts entitateari dagokionez, aukeratu **Mezu elektronikoa** goitibeherakoan.
+   - loyCustomers entitateari dagokionez, aukeratu **Mezu elektronikoa** goitibeherakoan.
    - "Normalizatu" hutsik utzi.
    - Ezarri **Zehaztasun maila**: **Oinarrizkoa** eta **Balioa**: **Altua**.
 

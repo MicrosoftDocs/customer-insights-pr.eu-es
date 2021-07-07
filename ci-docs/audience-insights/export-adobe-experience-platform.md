@@ -9,16 +9,16 @@ ms.topic: conceptual
 author: stefanie-msft
 ms.author: antando
 manager: shellyha
-ms.openlocfilehash: 884f4d30f354bed29909d57be84dce4c8e46965a
-ms.sourcegitcommit: 1b671c6100991fea1cace04b5d4fcedcd88aa94f
+ms.openlocfilehash: 1045d0e373fd5ea8987684e51bd9a07b7b535ee3
+ms.sourcegitcommit: d84d664e67f263bfeb741154d309088c5101b9c3
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5760086"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "6305509"
 ---
 # <a name="use-customer-insights-segments-in-adobe-experience-platform-preview"></a>Erabili Customer Insights segmentuak nola erabiltzen diren Adobe Experience Platform-en (aurrebista)
 
-Erabiltzaileentzako ikusleen estatistiken erabiltzaile gisa Dynamics 365 Customer Insights, baliteke segmentuak sortzea zure marketin kanpainak eraginkorragoak izan daitezen publiko garrantzitsuei zuzenduta. Adobe Experience Platform-eko eta Adobe Campaign Standard bezalako aplikazioetako audientziaren inguruko segmentu bat erabiltzeko, artikulu honetan zehaztutako urrats batzuk jarraitu behar dituzu.
+-N ikusleei buruzko informazioaren erabiltzaile gisa Dynamics 365 Customer Insights, baliteke segmentuak sortzea zure marketin kanpainak eraginkorragoak izan daitezen publiko garrantzitsuei zuzenduta. Adobe Experience Platform-eko eta Adobe Campaign Standard bezalako aplikazioetako audientziaren inguruko segmentu bat erabiltzeko, artikulu honetan zehaztutako urrats batzuk jarraitu behar dituzu.
 
 :::image type="content" source="media/AEP-flow.png" alt-text="Artikulu honetan azaldutako urratsen prozesuaren diagrama.":::
 
@@ -55,19 +55,19 @@ Gure xede-audientzia identifikatuta, esportazioen konfigurazioa konfiguratu ahal
 
 1. Joan **Administratzailea** > **Konexioak**.
 
-1. Aukeratu **Gehitu konexioa** eta aukeratu **Azure blob biltegiratzea** edo hautatu **Konfiguratu** hurrengoan **Azure blob biltegiratzea** teila:
+1. Aukeratu **Gehitu konexioa** eta aukeratu **Azure blob biltegiratzea** edo hautatu **Konfiguratu** urtean **Azure blob biltegiratzea** lauza konexioa konfiguratzeko.
 
-   :::image type="content" source="media/export-azure-blob-storage-tile.png" alt-text="Azure blob-biltegiko konfigurazio lauza."::: konexioa konfiguratzeko.
+   :::image type="content" source="media/export-azure-blob-storage-tile.png" alt-text="Azure blob-biltegiko konfigurazio lauza."::: 
 
 1. Eman zure konexioa ezaguna den izena **Bistaratze izena** eremua. Izena eta konexio motak konexio bat deskribatzen du. Konexio honen xedea eta xedea azaltzen duen izena aukeratzea gomendatzen dugu.
 
 1. Aukeratu nork erabil dezakeen konexioa. Inolako neurririk hartzen ez baduzu, lehenetsia izango da Administratzaileak. Informazio gehiagorako, ikus [Baimendu laguntzaileei esportazioetarako konexioa erabiltzea](connections.md#allow-contributors-to-use-a-connection-for-exports).
 
-1. Sartu **Kontuaren izena**, **Kontuaren gakoa**, eta **Edukiontzia** segmentua esportatu nahi duzun Blob biltegiratze konturako.  
+1. Sartu **Kontuaren izena**, **Kontuaren gakoa**, eta **Edukiontzia** segmentua esportatu nahi duzun Blob Storage konturako.  
       
    :::image type="content" source="media/azure-blob-configuration.png" alt-text="Biltegiratze kontuaren konfigurazioaren pantaila-argazkia. "::: 
    
-    - Blob biltegiratze kontuaren izena eta kontuaren gakoa nola aurkitu jakiteko, ikusi [Kudeatu biltegiratze kontuaren ezarpenak Azure atarian](/azure/storage/common/storage-account-manage).
+    - Blob Storage kontuaren izena eta kontuaren gakoa nola aurkitu jakiteko, ikusi [Kudeatu biltegiratze kontuaren ezarpenak Azure atarian](/azure/storage/common/storage-account-manage).
     - Edukiontzia nola sortzen den jakiteko, ikus [Sortu edukiontzia](/azure/storage/blobs/storage-quickstart-blobs-portal#create-a-container).
 
 1. Hautatu **Gorde** konexioa osatzeko. 
@@ -80,7 +80,7 @@ Esportazio hau konfigura dezakezu mota honetako konexiorako sarbidea baduzu. Inf
 
 1. Esportatze berria sortzeko, hautatu **Gehitu esportatzea**.
 
-1. Hurrengoan **Konexioa esportatzeko** eremuan, aukeratu konexioa Azure Blob biltegiaren sekzioan. Atal honen izena ikusten ez baduzu, ez dago mota honetako konexiorik erabilgarri.
+1. Hurrengoan **Konexioa esportatzeko** eremuan, aukeratu konexioa Azure Blob biltegiaren sekzioan. Atal honen izena ikusten ez baduzu, mota honetako konexiorik ez duzu eskuragarri.
 
 1. Aukeratu esportatu nahi duzun segmentua. Adibide honetan, **ChurnProneCustomers** da.
 
@@ -95,7 +95,7 @@ Orain egin dezakezu [esportatu segmentua eskariaren arabera](export-destinations
 > [!NOTE]
 > Ziurtatu esportatutako segmentuan erregistro kopurua Adobe Campaign Standard lizentziaren baimendutako mugaren barruan dagoela.
 
-Esportatutako datuak goian konfiguratu duzun Azure blob-biltegia edukiontzian gordetzen dira. Karpeta bide hau automatikoki sortzen da zure edukiontzian:
+Esportatutako datuak goian konfiguratu duzun Azure blob Storage edukiontzian gordetzen dira. Karpeta bide hau automatikoki sortzen da zure edukiontzian:
 
 *%ContainerName%/CustomerInsights_%instanceID%/%ExportDestinationName%/%EntityName%/%Year%/%Month%/%Day%/%HHMM%/%EntityName%_%PartitionId%.csv*
 
@@ -123,7 +123,8 @@ Iturburu konexioa definitu ondoren, [konfiguratu datu-fluxua](https://experience
 
 Kanpaina honen mezu elektronikoa bidaltzeko, Adobe Campaign Standard erabiliko dugu. Datuak Adobe Experience Platform-era inportatu ondoren, behar dugu [audientzia sortu](https://experienceleague.adobe.com/docs/campaign-standard/using/profiles-and-audiences/get-started-profiles-and-audiences.html#permission) Adobe Campaign Standard-n Adobe Experience Platform-eko datuak erabiliz.
 
-Ikasi nola egin [erabili segmentu eraikitzailea](https://experienceleague.adobe.com/docs/campaign-standard/using/profiles-and-audiences/working-with-adobe-experience-platform/aep-using-segment-builder.html#building-a-segment) Adobe Campaign Standard-en Adobe Experience Platform-eko datuetan oinarritutako audientzia definitzeko.
+
+Ikasi nola egin [erabili segmentu eraikitzailea](https://experienceleague.adobe.com/docs/campaign-standard/using/integrating-with-adobe-cloud/adobe-experience-platform/audience-destinations/aep-using-segment-builder.html) Adobe Campaign Standard-en Adobe Experience Platform-eko datuetan oinarritutako audientzia definitzeko.
 
 ## <a name="create-and-send-the-email-using-adobe-campaign-standard"></a>Sortu eta bidali mezu elektronikoa Adobe Campaign Standard erabiliz
 

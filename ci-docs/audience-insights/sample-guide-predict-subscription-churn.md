@@ -9,12 +9,12 @@ ms.topic: tutorial
 author: diegogranados117
 ms.author: digranad
 manager: shellyha
-ms.openlocfilehash: 324e5c19778230dd978b2f4e9156a2dd82b3d2bd
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: fa460fa5c79bc8a356ec5e90050ec85e05c55be8
+ms.sourcegitcommit: 0b754d194d765afef70d1008db7b347dd1f0ee40
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5595503"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "6306288"
 ---
 # <a name="subscription-churn-prediction-preview-sample-guide"></a>Harpidetzaren galera-tasaren iragarpenaren (aurrebista) lagin-gida
 
@@ -22,7 +22,7 @@ Harpidetzaren galera-tasaren iragarpenaren adibide bat azalduko dizugu, behean e
 
 ## <a name="scenario"></a>Egoera
 
-Contoso kalitate handiko kafea eta kafe-makinak sortzen dituen enpresa bat da. Horiek Contoso Coffee webgunearen bidez saltzen dituzte. Berriki harpidetza negozioa hasi zuten euren bezeroek aldiro kafea hartzeko. Haien helburua da ulertzea harpidetutako bezeroetako zeintzuk utz dezaketen harpidetza bertan behera hurrengo hilabeteetan. Zein bezero **galtzeko arriskua** dagoen jakiteak marketinarekin erlazionatutako ahalegina bideratzen lagun diezaioke enpresari, arreta bezero horiengan jarrita.
+Contoso kalitate handiko kafea eta kafe makinak ekoizten dituen enpresa da eta Contoso Coffee webgunearen bidez saltzen dituzte. Berriki harpidetza negozioa hasi zuten euren bezeroek aldiro kafea hartzeko. Haien helburua da ulertzea harpidetutako bezeroetako zeintzuk utz dezaketen harpidetza bertan behera hurrengo hilabeteetan. Zein bezero **galtzeko arriskua** dagoen jakiteak marketinarekin erlazionatutako ahalegina bideratzen lagun diezaioke enpresari, arreta bezero horiengan jarrita.
 
 ## <a name="prerequisites"></a>Aurrebaldintzak
 
@@ -124,13 +124,13 @@ Behin datuak sartuta, **Esleitu, bat etorri, konbinatu** prozesuarekin hasiko ga
 
    :::image type="content" source="media/unify-loyaltyid.PNG" alt-text="Bateratu LoyaltyId gako nagusi gisa.":::
 
-### <a name="match"></a>Lotzea
+### <a name="match"></a>Lotu
 
 1. Joan **Bat etorri** fitxara eta hautatu **Ezarri ordena**.
 
-1. **Nagusia** goitibeherako zerrendan, aukeratu **eCommerceContacts : eCommerce** iturburu nagusi gisa eta sartu erregistro guztiak.
+1. Urtean **Lehen Hezkuntza** goitibeherako zerrenda, aukeratu **eCommerceContacts: eCommerce** iturri nagusi gisa eta erregistro guztiak barne.
 
-1. **2. entitatea** goitibeherako zerrendan, aukeratu **loyCustomers : LoyaltyScheme** eta sartu erregistro guztiak.
+1. Urtean **2. entitatea** goitibeherako zerrenda, aukeratu **loyCustomers: LoyaltyScheme** eta erregistro guztiak sartu.
 
    :::image type="content" source="media/unify-match-order.PNG" alt-text="Bateratu eCommerce eta Loyalty bat-etortzea.":::
 
@@ -138,16 +138,16 @@ Behin datuak sartuta, **Esleitu, bat etorri, konbinatu** prozesuarekin hasiko ga
 
 1. Gehitu lehenengo baldintza FullName erabilita.
 
-   * eCommerceContacts entitateari dagokionez, hautatu **FullName** goitibeherako zerrendan.
-   * loyCustomers entitateari dagokionez, hautatu **FullName** goitibeherako zerrendan.
+   * ECommerceContacts aukeratzeko **Izen abizenak** goitibeherakoan.
+   * loyCustomers aukeratzeko **Izen abizenak** goitibeherakoan.
    * Aukeratu **Normalizatu** goitibeherako zerrendan eta aukeratu **Mota (Telefonoa, Izena, Helbidea, ...)**.
    * Ezarri **Zehaztasun maila**: **Oinarrizkoa** eta **Balioa**: **Altua**.
 
 1. Idatzi arau berriaren **Izen osoa, posta elektronikoa** izena.
 
    * Gehitu helbide elektronikoaren bigarren baldintza bat **Gehitu baldintza** hautatuta
-   * ECommerceContacts entitateari dagokionez, aukeratu **Helbide elektronikoa** goitibeherako zerrendan.
-   * loyCustomers entitateari dagokionez, aukeratu **Helbide elektronikoa** goitibeherako zerrendan. 
+   * ECommerceContacts entitateari dagokionez, aukeratu **Mezu elektronikoa** goitibeherakoan.
+   * loyCustomers entitateari dagokionez, aukeratu **Mezu elektronikoa** goitibeherakoan. 
    * "Normalizatu" hutsik utzi. 
    * Ezarri **Zehaztasun maila**: **Oinarrizkoa** eta **Balioa**: **Altua**.
 

@@ -9,16 +9,16 @@ ms.topic: how-to
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: a2d450635c19432bdd88db74b61c17febdeb568d
-ms.sourcegitcommit: aaa275c60c0c77c88196277b266a91d653f8f759
+ms.openlocfilehash: f92b36ac5364ea8586f9cbba7ba03178641555c0
+ms.sourcegitcommit: d84d664e67f263bfeb741154d309088c5101b9c3
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "5896266"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "6304635"
 ---
 # <a name="enrich-customer-profiles-with-custom-data-preview"></a>Aberastu bezeroen profilak datu pertsonalizatuekin (aurrebista)
 
-Fitxategiak transferitzeko protokolo segurua (SFTP) inportazio pertsonalizatuak datuak bateratzeko prozesua gainditu behar ez duten datuak inportatzeko aukera ematen du. Zure datuak ekartzeko modu malgua, segurua eta erraza da. SFTP inportazio pertsonalizatua erabil daiteke [SFTP esportazioarekin batera](export-sftp.md). Horrek aberastu behar den bezeroen profileko datuak esportatzen uzten dizu. Datuak prozesatu, aberastu eta SFTP inportazio pertsonalizatuak erabil daitezke datu aberastuak Dynamics 365 Customer Insights-eko hartzaileei buruzko informazioaren gaitasunera itzultzeko.
+Fitxategiak modu seguruan transferitzeko protokoloaren (SFTP) inportazio pertsonalizatuari esker, datuak bateratzeko prozesua igaro behar ez duten datu-aberasteak inporta ditzakezu. Zure datuak ekartzeko modu malgua, segurua eta erraza da. SFTP inportazio pertsonalizatua erabil daiteke [SFTP esportazioarekin batera](export-sftp.md). Horrek aberastu behar den bezeroen profileko datuak esportatzen uzten dizu. Datuak prozesatu eta aberastu daitezke, eta SFTP inportazio pertsonalizatua erabil daiteke datu aberastuak ikusleei buruzko informazioaren gaitasunera itzultzeko Dynamics 365 Customer Insights.
 
 ## <a name="prerequisites"></a>Aurrebaldintzak
 
@@ -37,11 +37,11 @@ SFTP inportazio pertsonalizatua konfiguratzeko, honako baldintza hauek bete beha
 
    :::image type="content" source="media/SFTP_Custom_Import_tile.png" alt-text="SFTP inportazio pertsonalizatuaren lauza.":::
 
-1. Hautatu [konexioa](connections.md) goitibeherako zerrendatik. Jarri harremanetan administratzaile batekin konexiorik ez badago. Administratzailea bazara, hautatuz konexioa sor dezakezu **Gehitu konexioa** eta aukeratzea **SFTP inportazio pertsonalizatua** goitibeheratik.
+1. Hautatu goitibeherako zerrendako [konexio](connections.md) bat. Jarri harremanetan administratzaile batekin konexiorik ez badago. Administratzailea bazara, konexioa sor dezakezu hautatuta **Gehitu konexioa** eta aukeratzea **SFTP inportazio pertsonalizatua** goitibeherako zerrendatik.
 
 1. Aukeratu **Konektatu Inportazio pertsonalizatura** hautatutako konexioa berresteko.
 
-1.  Aukeratu **Hurrengoa** eta sartu **Fitxategi izena** eta **Bidea** inportatu nahi duzun datu fitxategiaren.
+1.  Aukeratu **Hurrengoa** eta sartu **Bidea** eta **Fitxategi izena** inportatu nahi duzun datu fitxategiaren.
 
     :::image type="content" source="media/enrichment-SFTP-path-and-filename.png" alt-text="Pantaila argazkia datuak kokatzerakoan.":::
 
@@ -55,21 +55,21 @@ Administratzailea izan behar duzu konexioak konfiguratzeko. Aukeratu **Gehitu ko
 
 1. Idatzi konexioaren izena **Bistaratzeko izena** kutxa.
 
-1. Idatzi balio duen erabiltzaile izena, pasahitza eta ostalariaren URLa inportatu beharreko datuak STFP zerbitzariarentzat.
+1. Idatzi balio duen erabiltzaile izena, pasahitza eta ostalariaren URLa inportatu beharreko datuak dauden SFTP zerbitzariarentzat.
 
 1. Berrikusi eta eman baimena **Datuen pribatutasuna eta betetzea** aukeratuz **ados** laukia.
 
 1. Aukeratu **Egiaztatu** konfigurazioa balioztatzeko.
 
-1. Egiaztapena amaitutakoan, konexioa klik eginez gorde daiteke **Gorde**.
+1. Egiaztapena amaitutakoan, konexioa hautatuta gorde daiteke **Gorde**.
 
-> [!div class="mx-imgBorder"]
-   > ![Experian konexioa konfigurazioaren orria](media/enrichment-SFTP-connection.png "Experian konexioa konfigurazioaren orria")
+   > [!div class="mx-imgBorder"]
+   > ![Experian konexioaren konfigurazio-orria](media/enrichment-SFTP-connection.png "Experian konexioaren konfigurazio-orria")
 
 
 ## <a name="defining-field-mappings"></a>Eremu-esleipenak definitzen 
 
-SFTP zerbitzarian inportatu beharreko fitxategia duen direktorioak ere eduki behar du *model.json* fitxategia. Fitxategi honek datuak inportatzeko erabili beharreko eskema definitzen du. Eskemak [Common Data Model](/common-data-model/) erabili behar du eremuen esleipena zehazteko. model.json fitxategi baten adibide soil batek itxura hau du:
+SFTP zerbitzarian inportatu beharreko fitxategia duen direktorioak ere eduki behar du *model.json* fitxategia. Fitxategi honek datuak inportatzeko erabili beharreko eskema definitzen du. Eskemak erabili behar du [Common Data Model](/common-data-model/) eremuen mapaketa zehazteko. model.json fitxategi baten adibide soil batek itxura hau du:
 
 ```
 {
@@ -123,6 +123,6 @@ Aberastutako profil bakoitzaren ikuspegi zehatza sar dezakezu hautatuta **Ikusi 
 
 ## <a name="next-steps"></a>Hurrengo urratsak
 
-Eraiki zure bezeroen datu aberastuen gainean. Sortu [segmentuak](segments.md), [neurriak](measures.md), eta [esportatu](export-destinations.md) datuak zure bezeroei esperientzia pertsonalizatuak emateko.
+Eraiki zure bezeroen datu aberastuen gainean. Sortu [segmentuak](segments.md) eta [neurriak](measures.md), eta are [datuak esportatu](export-destinations.md) zure bezeroei esperientzia pertsonalizatuak emateko.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
