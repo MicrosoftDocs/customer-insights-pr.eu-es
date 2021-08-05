@@ -9,12 +9,12 @@ ms.topic: tutorial
 author: zacookmsft
 ms.author: zacook
 manager: shellyha
-ms.openlocfilehash: 82f6f363497f8f1b45fa84acd49bcaed332e60e8
-ms.sourcegitcommit: 0b754d194d765afef70d1008db7b347dd1f0ee40
+ms.openlocfilehash: 72ccb2d86c698939d0ff018b4d36203e793df9ae
+ms.sourcegitcommit: dab2cbf818fafc9436e685376df94c5e44e4b144
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "6305604"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6554833"
 ---
 # <a name="custom-machine-learning-models"></a>Ikaskuntza automatiko eredu pertsonalizatuak
 
@@ -42,7 +42,7 @@ Iragarpenek bezeroen esperientzia hobeak sortzeko, negozio gaitasunak eta diru s
 1. Eman zure pertsonalizatutako eredua ezaguna den izena **Izena** eremuan.
 
    > [!div class="mx-imgBorder"]
-   > ![Lan-fluxu berriaren panelaren pantaila](media/new-workflowv2.png "Lan-fluxu berriaren panelaren pantaila")
+   > ![Lan-fluxu berriaren panelaren pantaila.](media/new-workflowv2.png "Lan-fluxu berriaren panelaren pantaila")
 
 1. Hautatu web zerbitzua biltzen duen erakundea **Zure web zerbitzua duen maizterrak**.
 
@@ -59,7 +59,7 @@ Iragarpenek bezeroen esperientzia hobeak sortzeko, negozio gaitasunak eta diru s
    > Eredu pertsonalizatuko lan-fluxuak heuristika aplikatuko du web zerbitzuko sarrerako eremuak entitatearen atributuei esleitzeko eremuaren izenean eta datu motan oinarrituta. Akats bat ikusiko duzu web zerbitzu eremua entitate batera esleitu ezin bada.
 
    > [!div class="mx-imgBorder"]
-   > ![Konfiguratu lan-fluxu bat](media/intelligence-screen2-updated.png "Konfiguratu lan-fluxu bat")
+   > ![Konfiguratu lan-fluxu bat.](media/intelligence-screen2-updated.png "Konfiguratu lan-fluxu bat")
 
 1. **Ereduaren irteerako parametroak** urratsean ezarri propietate hauek:
    - Machine Learning Studio (klasikoa)
@@ -70,12 +70,12 @@ Iragarpenek bezeroen esperientzia hobeak sortzeko, negozio gaitasunak eta diru s
       1. Aukeratu sortako bideratzearen **Irteerako bide-izenaren parametroaren izena** goitibeherako zerrendan.
 
       > [!div class="mx-imgBorder"]
-      > ![Ereduaren irteerako parametroen panela](media/intelligence-screen3-outputparameters.png "Ereduaren irteerako parametroen panela")
+      > ![Ereduaren irteerako parametroen panela.](media/intelligence-screen3-outputparameters.png "Ereduaren irteerako parametroen panela")
 
 1. Hautatu bat egiten duen atributua **Customer ID emaitzetan** goitibeherako zerrendan zeinak zure Customer Insights **Gorde** esleitzen duen.
 
    > [!div class="mx-imgBorder"]
-   > ![Erlazionatu emaitzak bezeroaren datuen panelarekin](media/intelligence-screen4-relatetocustomer.png "Erlazionatu emaitzak bezeroaren datuen panelarekin")
+   > ![Erlazionatu emaitzak bezeroaren datuen panelarekin.](media/intelligence-screen4-relatetocustomer.png "Erlazionatu emaitzak bezeroaren datuen panelarekin")
 
 1. Ikusiko duzu **Lan-fluxua gordeta** pantaila lan-fluxuei buruzko xehetasunak.    
    Azure Machine Learning-eko bideratze baterako lan-fluxua konfiguratu baduzu, hartzaileei buruzko informazioa bideratzea duen laneko arean txertatuko da. Hartzaileei buruzko xehetasunek **Kolaboratzaile** funtzioa izango dute Azure laneko arean.

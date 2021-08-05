@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: mukeshpo
 ms.author: mukeshpo
 manager: shellyha
-ms.openlocfilehash: 6667e411a1b56e13105a6b59b7b5d249bc8141ea
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: e21f8a9422357fbc5c9425f91f3ba241c9dec9d8
+ms.sourcegitcommit: 8cc70f30baaae13dfb9c4c201a79691f311634f5
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5596346"
+ms.lasthandoff: 07/30/2021
+ms.locfileid: "6692290"
 ---
 # <a name="entity-schemas-in-common-data-model"></a>Entitateen eskema datu arrunten ereduan
 
@@ -24,7 +24,7 @@ ms.locfileid: "5596346"
 
 Hau partekatutako datuen eredua da, aplikazioei eta datuen integratzaileei errazago lankidetzan aritzeko aukera ematea, datuen definizio bateratua emanez. Datu arrunten ereduak metadatuen sistema aberatsa biltzen du entitate estandarrak, harremanak, hierarkiak, ezaugarriak eta beste. Dynamics 365 aplikazioetatik du jatorria eta GitHuben irekita dago 260 estandar entitate baino gehiagorekin. Barneko eta kanpoko bazkideen sistema handi batek industriari buruzko kontzeptuak laguntzen ditu Datu Eredu Orokorrean.
 
-Sistema eta plataforma ugarik gaur egungo datu eredua ezartzen dute, besteak beste Power BI datu fluxuak eta Azure Data zerbitzuak. Dagoeneko onartzen da Common Data Service, Dynamics 365, Power Apps, Power BI eta Azure datuen hurrengo zerbitzuak (zuzenean) [Open Data Initiative](https://www.microsoft.com/open-data-initiative).
+Sistema eta plataforma ugarik datu arruntaren eredua ezartzen dute gaur egun, besteak beste Power BI datu fluxuak eta Azure Data zerbitzuak. Dagoeneko onartzen da Microsoft Dataverse, Dynamics 365, Power Apps, Power BI, eta datozen Azure datu zerbitzuetan, zuzenean [Open Data Initiative](https://www.microsoft.com/open-data-initiative) zerbitzuaren balioetara gerturatuz.
 
 ## <a name="customer-insights-entity-schemas"></a>Customer Insights entitatearen eskemak
 
@@ -44,7 +44,7 @@ Informazio gehiago lortzeko, ikusi dokumentazioari buruzko dokumentazioa [Custom
 
 Entitateak ikus ditzakezu [Common Data Model-en entitateen nabigatzailean](https://microsoft.github.io/CDM/). Hautatu botoia **Kargatu GitHub-etik!** Botoian eta nabigatu **foundationCommon** > **crmCommon** > **soluzioak** > **customerInsights** non aurkituko duzu Customer Insights entitateen zerrenda eta horien definizioak.
 > [!div class="mx-imgBorder"]
-> ![CDM Entity Navigator CustomerActivity entitatea erakusten duena](media/CDM-entity-navigator.png "CDM Entity Navigator CustomerActivity entitatea erakusten duena")
+> ![CDM Entity Navigator CustomerActivity entitatea erakusten duena.](media/CDM-entity-navigator.png "CDM Entity Navigator CustomerActivity entitatea erakusten duena")
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

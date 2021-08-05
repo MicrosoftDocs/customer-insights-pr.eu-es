@@ -9,12 +9,12 @@ ms.topic: how-to
 author: kishorem-MS
 ms.author: kishorem
 manager: shellyha
-ms.openlocfilehash: 1b11c325649b91ebb47cde924227eacedae64b7a
-ms.sourcegitcommit: d84d664e67f263bfeb741154d309088c5101b9c3
+ms.openlocfilehash: 3b10fb23cca03ed918aa7fd46478b568d5ebbf1a
+ms.sourcegitcommit: dab2cbf818fafc9436e685376df94c5e44e4b144
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "6305141"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6555476"
 ---
 # <a name="enrich-customer-profiles-with-brand-and-interest-affinities-preview"></a>Aberastu bezeroen profilak marka eta interes kidetasunekin (aurrebista)
 
@@ -27,7 +27,7 @@ Marka afinitateak aberastea konfiguratzeko, joan **Ezagutu** fitxa eta aukeratu 
 Interes afinitateak aberastea konfiguratzeko, joan **Ezagutu** fitxa eta aukeratu **Aberastu nire datuak** gainean **Interesak** teila.
 
    > [!div class="mx-imgBorder"]
-   > ![Markak eta zaletasunak lauzak](media/BrandsInterest-tile-Hub.png "Markak eta zaletasunen lauzak")
+   > ![Markak eta zaletasunak lauzak.](media/BrandsInterest-tile-Hub.png "Markak eta zaletasunen lauzak")
 
 ## <a name="how-we-determine-affinities"></a>Afinitateak nola zehazten ditugun
 
@@ -123,7 +123,7 @@ Bezeroaren datuen tamainaren arabera, minutu batzuk behar izango dira aberasteko
 
 Aberaste prozesua exekutatu ostean, joan **Nire aberasteak** berrikusteko guztira aberastutako bezeroen kopurua eta aberastutako bezeroen profilen marka eta interesen banaketa.
 
-:::image type="content" source="media/my-enrichments.png" alt-text="Abantaila prozesua exekutatu ondoren, emaitzen aurrebista":::
+:::image type="content" source="media/my-enrichments.png" alt-text="Abantaila prozesua exekutatu ondoren, emaitzen aurrebista.":::
 
 Berrikusi aberastutako datuak, hautatuta **Ikusi aberastutako datuak** grafikoan. Marken datu aberastuak: **BrandAffinityFromMicrosoft** Erakunde. Interesen datuak datuak daude **InterestAffinityFromMicrosoft** Erakunde. Erakunde hauek zerrendan aurkituko dituzu **aberastea** taldean **Datuak** > **erakundeak** atalean.
 
@@ -131,7 +131,7 @@ Berrikusi aberastutako datuak, hautatuta **Ikusi aberastutako datuak** grafikoan
 
 Marka eta interes kidetasunak bezero banakako txarteletan ere ikus daitezke. Joan **Bezeroak** atalera eta hautatu bezeroaren profila. Bezeroaren txartelean, bezeroaren demografia profil horretako pertsonek afinitatea duten marken edo interesen zerrendak aurkituko dituzu.
 
-:::image type="content" source="media/enrichment-customer-card.png" alt-text="Aberastutako datuak dituen bezeroaren txartela":::
+:::image type="content" source="media/enrichment-customer-card.png" alt-text="Aberastutako datuak dituen bezeroaren txartela.":::
 
 ## <a name="next-steps"></a>Hurrengo urratsak
 

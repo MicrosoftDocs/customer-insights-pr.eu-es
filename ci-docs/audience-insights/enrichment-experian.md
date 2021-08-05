@@ -9,12 +9,12 @@ ms.topic: how-to
 author: kishorem-ms
 ms.author: kishorem
 manager: shellyha
-ms.openlocfilehash: 7c82fe92b3351a782a4fa6510300d870b742d042
-ms.sourcegitcommit: 42b3bce1e20e7cc707d232844dacfeed3d6fc096
+ms.openlocfilehash: abe9ee447745081e3c462d44e5901b6dac919adf
+ms.sourcegitcommit: dab2cbf818fafc9436e685376df94c5e44e4b144
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 06/28/2021
-ms.locfileid: "6309805"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6555338"
 ---
 # <a name="enrich-customer-profiles-with-demographics-from-experian-preview"></a>Aberastu bezeroen profilak datu demografikoekin Experian (aurrebista)
 
@@ -39,7 +39,7 @@ Gaur egun, Estatu Batuetan bezeroen profil aberasgarriak onartzen ditugu.
 1. Aukeratu **Aberastu nire datuak** gainean Experian teila.
 
    > [!div class="mx-imgBorder"]
-   > ![Experian lauza](media/experian-tile.png "Experian lauza")
+   > ![Experian lauza.](media/experian-tile.png "Experian lauza")
    > 
 
 1. Hautatu goitibeherako zerrendako [konexio](connections.md) bat. Jarri harremanetan administratzaile batekin konexiorik ez badago. Administratzailea bazara, konexioa sor dezakezu hautatuta **Gehitu konexioa** eta aukeratzea Experian goitibeherako zerrendatik. 

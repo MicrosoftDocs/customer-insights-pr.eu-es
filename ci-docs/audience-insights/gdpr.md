@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: m-hartmann
 ms.author: wimohabb
 manager: shellyha
-ms.openlocfilehash: 9c453c9b416bff0e6362a8ccf7ff534f4efa1e00
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: e832fbbdfb59cb06d98715223edca438d2c3a7f2
+ms.sourcegitcommit: dab2cbf818fafc9436e685376df94c5e44e4b144
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5597496"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6554286"
 ---
 # <a name="data-subject-rights-dsr-requests-under-gdpr"></a>Datu subjektuen eskubideak (DSR) eskaerak DBAOren azpian
 
@@ -40,7 +40,7 @@ Customer Insights kudeatzaile batek urrats hauek jarraitu ditzake datu-iturburu-
    2. Begiratu datu-iturburu azpian **Egoera**. Marka egiaztatzeak freskagarria izan dela esan nahi du. Abisu triangelu batek zerbait gaizki joan dela esan nahi du. Abisu triangelua bistaratzen bada, jarri harremanetan D365CI@microsoft.com.
 
 > [!div class="mx-imgBorder"]
-> ![DBAO tratamendua bezeroen datuak eskatzeko ezabatu](media/gdpr-data-sources.png "DBAO tratamendua bezeroen datuak eskatzeko ezabatu")
+> ![DBAO tratamendua bezeroen datuak eskatzeko ezabatu.](media/gdpr-data-sources.png "DBAO tratamendua bezeroen datuak eskatzeko ezabatu")
 
 #### <a name="manage-delete-requests-for-user-data"></a>Kudeatu erabiltzailearen datuak ezabatzeko eskaerak
 
@@ -52,7 +52,7 @@ Customer Insights kudeatzaile batek urrats hauek jarraitu ditzake Customer Insig
 4. Hautatu **Kendu**.
 
 > [!div class="mx-imgBorder"]
-> ![Kudeatu erabiltzailearen datuen DBAO ezabatzeko eskaerak](media/gdpr-permissions.png "Kudeatu erabiltzailearen datuen DBAO ezabatzeko eskaerak")
+> ![Kudeatu erabiltzailearen datuen DBAO ezabatzeko eskaerak.](media/gdpr-permissions.png "Kudeatu erabiltzailearen datuen DBAO ezabatzeko eskaerak")
 
 ## <a name="responding-to-gdpr-data-subject-export-requests"></a>DBAO datuen subjektuaren esportazio-eskaerei erantzutea
 

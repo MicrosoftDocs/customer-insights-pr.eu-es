@@ -9,12 +9,12 @@ author: adkuppa
 ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 50b11e7d6f62d7a25eb25a0f2b1c4ad7d859def1
-ms.sourcegitcommit: 0b754d194d765afef70d1008db7b347dd1f0ee40
+ms.openlocfilehash: de53927f7ed1f58176a7ba83f89be7c39064947c
+ms.sourcegitcommit: 5c9c54ffe045017c19f0042437ada2c101dcaa0f
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "6306013"
+ms.lasthandoff: 07/22/2021
+ms.locfileid: "6650303"
 ---
 # <a name="match-entities"></a>Batu entitateak
 
@@ -138,7 +138,7 @@ Bikoiztuak kentzeko arauak zehaztea ez da derrigorrezkoa. Horrelako araurik konf
    - **Zaharrenak**: erregistro nagusia identifikatzen du zahartasunaren arabera. Berritasuna definitzeko data edo zenbakizko eremua behar du.
  
    > [!div class="mx-imgBorder"]
-   > ![Bikoiztuak kentzeko arauak, 1. urratsa](media/match-selfconflation.png "Bikoiztuak kentzeko arauak, 1. urratsa")
+   > ![Bikoiztuak kentzeko arauak, 1. urratsa.](media/match-selfconflation.png "Bikoiztuak kentzeko arauak, 1. urratsa")
  
 1. Entitateak hautatuta eta haien konbinatze-hobespenak zehaztutakoan, hautatu **Gehitu araua** entitate mailan bikoiztuak kentzeko arauak definitzeko.
    - **Aukeratu eremua** entitate horretatik eskuragarri dauden eremu guztiak zerrendatzen ditu. Aukeratu eremuak bikoiztuak diren egiaztatu nahi duzun eremua. Aukeratu bezero bakoitzarentzat litekeena den eremua. Adibidez, helbide elektronikoa edo izena, hiria eta telefono zenbakiaren konbinazioa.
@@ -146,7 +146,7 @@ Bikoiztuak kentzeko arauak zehaztea ez da derrigorrezkoa. Horrelako araurik konf
    - Definitu baldintza gehiago **Gehitu baldintza** aukeratuz.
  
    > [!div class="mx-imgBorder"]
-   > ![Bikoiztuak kentzeko arauak, 2. urratsa](media/match-selfconflation-rules.png "Bikoiztuak kentzeko arauak, 2. urratsa")
+   > ![Bikoiztuak kentzeko arauak, 2. urratsa.](media/match-selfconflation-rules.png "Bikoiztuak kentzeko arauak, 2. urratsa")
 
   Entitate berarako hainbat bikoiztuak kentzeko arau sor ditzakezu. 
 
@@ -179,7 +179,9 @@ Joan **Datuak** > **Bateratu** > **Bat egin** eta hautatu **Korrika egin** proze
 Exekuzio arrakastatsuaren emaitza, bezeroaren profileko entitate bateratua, aurkituko duzu **Entitateak** orrialdea. Zure bezero bateratutako entitateari deitzen zaio **Bezeroak** hurrengoan **Profilak** atala. Partida arrakastatsuaren lehenengo lasterketak bateratua sortzen du *Bezeroa* entitatea. Ondorengo partida guztiekin entitate hori zabaltzen da.
 
 > [!TIP]
-> Zereginen/prozesuen [sei egoera mota](system.md#status-types) daude. Gainera, prozesu gehienak [downstream-eko beste prozesu batzuen mende daude](system.md#refresh-policies). Aukeratu prozesu baten egoera, egon zen lan osoaren aurrerapen xehetasunak ikusteko. Aukeratu ondoren **Ikusi xehetasunak** lanaren zereginetako baterako, informazio osagarria aurkituko duzu: prozesatzeko denbora, azken prozesatze data eta zereginarekin lotutako akats eta abisu guztiak.
+> Bat-etortze prozesua exekutatu ondoren, hautatu prozesuaren egoera irekitzeko **Zereginaren xehetasunak** panela. Ikuspegi orokorra ematen du prozesatzeko denborari, azken prozesatze datari eta zereginarekin lotutako akats eta abisu guztiei buruz. Aukeratu **Ikusi xehetasunak** bat-etortze prozesuan zein entitatek parte hartu zuten ikusteko, zein arau aplikatu ziren eta eguneratzeak arrakastaz argitaratu ziren.  
+> Zereginen/prozesuen [sei egoera mota](system.md#status-types) daude. Gainera, prozesu gehienak [downstream-eko beste prozesu batzuen mende daude](system.md#refresh-policies).  
+> :::image type="content" source="media/process-detail-path.png" alt-text="Lortu xehetasunak bide-izenari buruz zereginaren egoeraren estekatik prozesuaren xehetasunak lortzeko.":::
 
 ## <a name="review-and-validate-your-matches"></a>Berrikusi eta balioztatu partiduak
 

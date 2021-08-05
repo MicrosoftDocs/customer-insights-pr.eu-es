@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: m-hartmann
 ms.author: wimohabb
 manager: shellyha
-ms.openlocfilehash: 7157ad930f3cea17c12bd4f95028d291483329d3
-ms.sourcegitcommit: e5425f060c8d80f9510283dc610ce70a4e709b1e
+ms.openlocfilehash: 220e01a06711a5d35b8df09e265017a6d8fd0490
+ms.sourcegitcommit: 5c9c54ffe045017c19f0042437ada2c101dcaa0f
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "6259176"
+ms.lasthandoff: 07/22/2021
+ms.locfileid: "6650027"
 ---
 # <a name="work-with-customer-insights-data-in-microsoft-dataverse"></a>Egin lan Customer Insights datuekin Microsoft Dataverse-n
 
@@ -24,11 +24,11 @@ Customer Insights-ek irteerako entitateak hemen eskuragarri jartzeko aukera eska
 
 **Lehendik dauden Dataverse inguruneak dituzten erakundeak**
 
-Dagoeneko Dataverse erabiltzen duten erakundeek [lehendik dagoen Dataverse inguruneetako bat](manage-environments.md#create-an-environment-in-an-existing-organization) erabil dezakete administratzaile batek hartzaileen xehetasunak konfiguratzen dituenean. Dataverse ingurunearen URLa emanez, entzuleen xehetasunen ingurune berriarekin lotzen da. Ahalik eta errendimendu onena bermatzeko, Customer Insights eta Dataverse inguruneek eskualde berean egon behar dute.
+Dagoeneko Dataverse erabiltzen duten erakundeek [lehendik dagoen Dataverse inguruneetako bat](get-started-paid.md) erabil dezakete administratzaile batek hartzaileen xehetasunak konfiguratzen dituenean. Dataverse ingurunearen URLa emanez, entzuleen xehetasunen ingurune berriarekin lotzen da. Ahalik eta errendimendu onena bermatzeko, Customer Insights eta Dataverse inguruneek eskualde berean egon behar dute.
 
 Dataverse ingurunea eransteko, zabaldu **Ezarpen aurreratuak** hartzaileen xehetasunen ingurunea sortzerakoan. Eman **Microsoft Dataverse inguruneko URLa** eta hautatu **Gaitu datuak partekatzea** kontrol-laukia.
 
-:::image type="content" source="media/Datasharing-with-DataverseMDL.png" alt-text="alt":::
+:::image type="content" source="media/Datasharing-with-DataverseMDL.png" alt-text="alt.":::
 
 **Erakunde berria**
 

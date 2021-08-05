@@ -1,7 +1,7 @@
 ---
 title: Aberastu bezeroen profil bateratuak
 description: Erabili gaitasunak zure bezeroaren datuak aberasteko.
-ms.date: 04/09/2021
+ms.date: 07/01/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,18 +9,19 @@ ms.topic: conceptual
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: c35e73b366fcd5db2ba5a757295ddda6db30efa0
-ms.sourcegitcommit: d84d664e67f263bfeb741154d309088c5101b9c3
+ms.custom: intro-internal
+ms.openlocfilehash: d12c0a9dd65d31f9ae8a9cafeafab2767d57893e
+ms.sourcegitcommit: dab2cbf818fafc9436e685376df94c5e44e4b144
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "6305233"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6555246"
 ---
 # <a name="enrichment-for-customer-profiles-preview"></a>Bezeroen profiletarako aberastea (aurrebista)
 
 Erabili Microsoft eta beste bazkide batzuen iturrietako datuak bezeroaren datuak aberasteko.
 
-:::image type="content" source="media/enrichment-hub-page.png" alt-text="Aberasteko gunearen orria":::
+:::image type="content" source="media/enrichment-hub-page.png" alt-text="Aberasteko gunearen orria.":::
 
 Hartzaileen xehetasunetan, joan hona: **Datuak** > **Aberastea** aberasteko aukerekin lan egiteko.  
 
@@ -42,9 +43,9 @@ Gainean **Nire aberastasunak** fitxan, konfiguratutako aberastasunak eta haien p
 
 Joan **Nire aberastasunak** fitxa konfiguratutako aberastasun guztiak ikusteko. Aberastu bakoitza aberastearen inguruko informazio osagarria biltzen duen errenkada gisa irudikatzen da.
 
-Aukeratu aberastasuna eskuragarri dauden aukerak ikusteko. Zerrenda bateko elipsia (...) ere hauta dezakezu aukerak ikusteko.
+Aukeratu aberastea eskuragarri dauden aukerak ikusteko. Zerrenda bateko elipsia (...) ere hauta dezakezu aukerak ikusteko. Zenbait aberaste konfiguratu badituzu, bilaketa-koadroa erabil dezakezu azkar aurkitzeko.
 
-:::image type="content" source="media/enrichment-hub-options-run.png" alt-text="Aberastasunen zerrendan aberastasunak kudeatzeko aukerak":::
+:::image type="content" source="media/enrichment-hub-options-run.png" alt-text="Aberasteen zerrendan aberastasunak kudeatzeko aukerak.":::
 
 - **ikusi** aberastasun xehetasunak bezeroen profil aberastuen kopuruarekin.
 - **Editatu** aberastasunaren konfigurazioa.
@@ -52,7 +53,7 @@ Aukeratu aberastasuna eskuragarri dauden aukerak ikusteko. Zerrenda bateko elips
 - **Desaktibatu** lehendik dagoen aberastasuna programatutako freskatze automatikoekin automatikoki freskatzeari uzteko. Azken freskatze arrakastatsuaren datuak erabilgarri egongo dira. **Aktibatu** aberastu aktiboa, freskatze automatikoa programatutako freskapen guztiekin berrabiarazteko.
 - **Ezabatu** aberastea.
 
-Aberastasun anitz exekutatu edo desaktiba ditzakezu aldi berean zerrendan hautatuta. Ikusi eta editatzeko aukerak ez daude eskuragarri gisa eta soilik aberasteko soilik funtzionatzen du.
+Exekutatu edo desaktibatu aberaste anitz aldi berean zerrendan hautatuta. Ikusi eta editatu aukerak ez daude eskuragarri ekintza masibo gisa. Aldi berean aberaste baterako funtzionatzen egiten dute.
 
 ## <a name="enrichments-and-connections"></a>Aberasteak eta konexioak
 

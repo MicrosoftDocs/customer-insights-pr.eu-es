@@ -1,7 +1,7 @@
 ---
 title: Power BI konektorea
 description: Ikusi nola erabili laguntzailearen estudioa Dynamics 365 Customer Insights konektorea Power BI-n.
-ms.date: 09/21/2020
+ms.date: 07/23/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: how-to
 author: stefanie-msft
 ms.author: sthe
 manager: shellyha
-ms.openlocfilehash: e43e2f9dbc84ebfbf2154990a752740f973296cb
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: faeb95bd7d2fe3cb220308cdee559b3347c5af54
+ms.sourcegitcommit: f98b6b2058f384365f222d1f9ba0cc9ce801f09d
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5596024"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "6661087"
 ---
 # <a name="connector-for-power-bi-preview"></a>Konektorea Power BI-rako (aurrebista)
 
@@ -39,7 +39,7 @@ Sortu zure datuentzako bistaratzeak Power BI Desktop-ekin. Sortu ikuspegi gehiag
 
 1. **Nabigatzailea** elkarrizketa-koadroa. sarbidea duzun ingurune guztien zerrenda ikusiko duzu. Zabaldu ingurune bat eta ireki edozein karpeta (entitateak, neurriak, segmentuak, aberasteak). Adibidez, ireki **Entitateak** karpeta, inporta ditzakezun entitate guztiak ikusteko.
 
-   ![Power BI Konektagailuaren nabigatzailea](media/power-bi-navigator.png "Power BI Konektagailuaren nabigatzailea")
+   ![Power BI Konektagailuaren nabigatzailea.](media/power-bi-navigator.png "Power BI Konektagailuaren nabigatzailea")
 
 1. Hautatu sartu beharreko entitateen ondoko kontrol laukiak **kargatu**. Hainbat entitate hautatu ahalko dituzu, ingurune anitzetan.
 
@@ -68,5 +68,11 @@ Bikoiztutako harremanak identifikatu eta kendu ditzakezu.
 3. Kendu identifikatutako harreman bikoiztuak.
 
 Bikoiztutako harremanak kendu ondoren, saiatu konfiguratzen Power BI konektorea berriro. Ingurumena erabilgarri egon beharko litzateke orain.
+
+### <a name="errors-on-date-fields-when-loading-entities-in-power-bi-desktop"></a>Data-eremuen erroreak entitateak kargatzean Power BI Desktop-en
+
+UUUU/HH/EE bezalako data formatua duten eremuak dituzten entitateak kargatzean, akatsak topatuko dituzu bat ez datozen lokal formatuak direla eta. Desberdintasun hau zure Power BI Desktop fitxategia ingelesa (Estatu Batuak) ez den beste ezarpen batekin ezarrita dagoenean gertatzen da, hartzaileei buruzko xehetasunen data eremuak AEBetako formatuan gordetzen baitira.
+
+Power BI Desktop fitxategiak ezarpen lokal bakarra du, datuak berreskuratzean aplikatzen dena. Data-eremu hauek behar bezala interpretatu ahal izateko, ezarri .BPI fitxategiaren lokalizazioa ingelesera (Estatu Batuak). [Ikasi webgune baten eskualdeko eremuak nola aldatu Power BI mahaigaineko fitxategian](/power-bi/fundamentals/supported-languages-countries-regions.md#choose-the-locale-for-importing-data-into-power-bi-desktop).
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: m-hartmann
 ms.author: wimohabb
 manager: shellyha
-ms.openlocfilehash: 9326f821f9970ba2254ab804814e369abb677eb0
-ms.sourcegitcommit: d84d664e67f263bfeb741154d309088c5101b9c3
+ms.openlocfilehash: f98af8fb1c1d1ae050a5273286d35cf276d9fb17
+ms.sourcegitcommit: dab2cbf818fafc9436e685376df94c5e44e4b144
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "6304727"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6554466"
 ---
 # <a name="work-with-customer-insights-apis"></a>Lan egin Customer Insights APIekin
 
@@ -35,7 +35,7 @@ Artikulu honetan Customer Insights APIak nola sartu, Azure aplikazioen erregistr
  
    APIak gaitzeak API eskaeretan erabiltzen den harpidetza gako nagusia eta bigarren mailakoa sortzen ditu zure instantziarako. Gakoak birsortu ditzakezu **Birsortu nagusia** edo **Birsortu bigarren mailakoa** hautatuz hemen: **Administratzailea** > **Baimenak** > **APIak**.
 
-   :::image type="content" source="media/enable-apis.gif" alt-text="Gaitu Customer Insights APIak":::
+   :::image type="content" source="media/enable-apis.gif" alt-text="Gaitu Customer Insights APIak.":::
 
 1. Hautatu **Esploratu gure APIak** hurrengora [probatu APIak](https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights&operation=Get-all-instances).
 
@@ -129,7 +129,7 @@ Ikasi NuGet.org orrialdetik C# bezero liburutegiak erabiltzen hasten. NuGet pake
  
    Bestela, exekutatu komando hau **NuGet Pakete kudeatzailearen kontsolan**: `Install-Package -Id Microsoft.Dynamics.CustomerInsights.Api -Source nuget.org -ProjectName <project name> [-Version <version>]`
 
-   :::image type="content" source="media/visual-studio-nuget-package.gif" alt-text="Gehitu NuGet paketea Visual Studio proiektuan":::
+   :::image type="content" source="media/visual-studio-nuget-package.gif" alt-text="Gehitu NuGet paketea Visual Studio proiektuan.":::
 
 #### <a name="use-the-c-client-library"></a>Erabili C # bezero liburutegia
 
@@ -141,7 +141,7 @@ Ikasi NuGet.org orrialdetik C# bezero liburutegiak erabiltzen hasten. NuGet pake
 
 1. Pasatu `HttpClient` `CustomerInsights` bezeroaren sorkuntzara.
 
-   :::image type="content" source="media/httpclient-sample.png" alt-text="Httpclient-en lagina":::
+   :::image type="content" source="media/httpclient-sample.png" alt-text="Httpclient-en lagina.":::
 
 1. Egin deiak bezeroekin "luzapen metodoetara", adibidez, `GetAllInstancesAsync`. Azpiko `Microsoft.Rest.HttpOperationResponse`-rako sarbidea hobetsi bada, erabili "http mezuen metodoak" erabili, adibidez, `GetAllInstancesWithHttpMessagesAsync`.
 

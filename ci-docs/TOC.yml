@@ -2,6 +2,8 @@
   href: index.yml
 - name: Produktuaren ikuspegi orokorra
   href: overview.md
+- name: Sortu probako bertsioa
+  href: audience-insights/get-started-trial.md
 - name: Atzitu ingurunea
   href: 'https://home.ci.ai.dynamics.com/'
 - name: Hartzaileen xehetasunak
@@ -10,12 +12,10 @@
       href: audience-insights/index.yml
     - name: Gaitasunaren ikuspegi orokorra
       href: audience-insights/overview.md
-    - name: Doako proba
-      href: 'https://dynamics.microsoft.com/get-started/?appname=customerinsights'
     - name: Eginbide eguneratuak eta hobetuak
       href: audience-insights/whats-new-audience-insights.md
     - name: Sortu ingurune bat
-      href: audience-insights/home.md
+      href: audience-insights/get-started-paid.md
     - name: Ikasteko moduluak
       items:
         - name: Sartu datuak
@@ -34,8 +34,8 @@
           href: audience-insights/connect-power-query.md
         - name: Gehitu datu arrunten ereduaren karpeta datu-iturburu
           href: audience-insights/connect-common-data-model.md
-        - name: Gehitu Common Data Service kudeatutako data lake
-          href: audience-insights/connect-common-data-service-lake.md
+        - name: Gehitu Dataverse kudeatutako data lake
+          href: audience-insights/connect-dataverse-managed-lake.md
         - name: Datu iturrietarako freskatze gehigarria
           href: audience-insights/incremental-refresh-data-sources.md
         - name: Denbora errealeko iragazkiak (aurrebista)
@@ -76,11 +76,11 @@
           href: audience-insights/enrichment-experian.md
         - name: Aberastu SFTP inportazio pertsonalizatuarekin
           href: audience-insights/enrichment-SFTP-custom-import.md
-    - name: Segmentuak eta neurriak
+    - name: Segmentuak
       items:
         - name: Segmentuen informazio orokorra
           href: audience-insights/segments.md
-        - name: Sortu segmentuak eta bezero taldeak
+        - name: Sortu segmentuak
           href: audience-insights/segment-builder.md
         - name: Neurrietan oinarritutako iradokitako segmentuak
           href: audience-insights/suggested-segments.md
@@ -254,6 +254,8 @@
       items:
         - name: Sortu eta aldatu gertaerak
           href: engagement-insights/refined-events.md
+        - name: Ezagutu aurretik autentifikatutako bisitarien web gertaerak
+          href: engagement-insights/unknown-to-known.md
         - name: Esportatu gertaerak
           href: engagement-insights/export-events.md
     - name: Txostenak
@@ -304,7 +306,9 @@
       items:
         - name: Ezabatu eta esportatu datu pertsonalak
           href: engagement-insights/delete-export-personal-data.md
+    - name: Erabilgarritasun lokala
+      href: engagement-insights/regional-availability.md
     - name: Zerbitzuaren mugak
       href: engagement-insights/quotas.md
-- name: Jarri harremanetan laguntza zerbitzuarekin
+- name: Jarri laguntza-zerbitzuarekin harremanetan
   href: 'https://admin.powerplatform.microsoft.com/support'

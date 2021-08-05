@@ -9,12 +9,12 @@ ms.topic: how-to
 author: adkuppa
 ms.author: adkuppa
 manager: shellyha
-ms.openlocfilehash: 50c231070ff9930c1ea82971bf4f8541a89d5027
-ms.sourcegitcommit: 0b754d194d765afef70d1008db7b347dd1f0ee40
+ms.openlocfilehash: b37bb5dfeed2326784ef276a93a04bec626aaf6e
+ms.sourcegitcommit: dab2cbf818fafc9436e685376df94c5e44e4b144
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "6305876"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6554668"
 ---
 # <a name="connect-to-a-power-query-data-source"></a>Konektatu Power Query datu-iturburu batera
 
@@ -42,7 +42,7 @@ Power Query-ek konektore multzo zabala eskaintzen du datuak irensteko. Konektore
 1. **Power Query - Editatu kontsultak** Elkarrizketa-koadroak datuak berrikusi eta hobetzeko aukera ematen du. Aukeratutako datu-iturburu sistemetan identifikatutako sistemak ezkerreko panelean agertzen dira.
 
    > [!div class="mx-imgBorder"]
-   > ![Editatu eskaera eztabaida](media/data-manager-configure-edit-queries.png "Editatu eskaera eztabaida")
+   > ![Editatu eskaera eztabaida.](media/data-manager-configure-edit-queries.png "Editatu eskaera eztabaida")
 
 1. Zure datuak ere eralda ditzakezu. Hautatu entitate bat editatzeko edo eraldatzeko. Erabili Power Query leihoan dauden aukerak transformazioak aplikatzeko. Eraldaketa bakoitza azpian agertzen da **Urrats aplikatuak**. Power Query-ek aurrez eraikitako eraldaketa aukera ugari eskaintzen ditu. Informazio gehiagorako, ikusi [Power Query eraldaketak](/power-query/power-query-what-is-power-query#transformations).
 
@@ -75,7 +75,7 @@ Konektoreak kontrol-markarekin **Customer Insights (datu-fluxuak)** zutabea esku
 2. Aukeratu elipsi bertikala aldatu eta hautatu nahi duzun datu-iturburu ondoan **Editatu** goitibeherako menutik.
 
    > [!div class="mx-imgBorder"]
-   > ![Editatu aukera](media/edit-option-data-sources.png "Editatu aukera")
+   > ![Editatu aukera.](media/edit-option-data-sources.png "Editatu aukera")
 
 3. Aplikatu aldaketak eta eraldaketak **Power Query - Editatu kontsultak** elkarrizketa - koadroan deskribatutako moduan [Sortu datu-iturburu berria](#create-a-new-data-source) atala.
 

@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: zacookmsft
 ms.author: zacook
 manager: shellyha
-ms.openlocfilehash: 01704f78cfe1f6ceeee19ff825fc65150894d4ed
-ms.sourcegitcommit: 6b07c9c3102761be162e4842f3c9fbc19f948a9b
+ms.openlocfilehash: bcbafa513c2c61b0280c91aa7ed71e211c32c35c
+ms.sourcegitcommit: dab2cbf818fafc9436e685376df94c5e44e4b144
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "6095541"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6556109"
 ---
 # <a name="product-recommendation-prediction-preview"></a>Produktu-gomendioen iragarpena (aurreargitalpena)
 
@@ -64,7 +64,7 @@ Ezaugarri hau probatzea interesatzen bazaizu baina beheko baldintzak betetzeko d
 
 1. Aukeratu **Produktuen gomendioen eredua (aurrebista)** lauza eta hautatu **Erabili eredu hau**.
    > [!div class="mx-imgBorder"]
-   > ![Produktuen gomendioaren ereduaren lauza Erabili eredu botoiarekin](media/product-recommendation-usethismodel.PNG "Produktuen gomendioaren ereduaren lauza Erabili eredu botoiarekin")
+   > ![Produktuen gomendioaren ereduaren lauza Erabili eredu botoiarekin.](media/product-recommendation-usethismodel.PNG "Produktuen gomendioaren ereduaren lauza Erabili eredu botoiarekin")
 
 1. Berrikusi ereduaren eskakizunei buruzko informazioa. Beharrezko datuak badituzu, hautatu **Hasi erabiltzen**.
 
@@ -93,7 +93,7 @@ Ezaugarri hau probatzea interesatzen bazaizu baina beheko baldintzak betetzeko d
 
 1. Esleitu eremu semantikoak erosketa-historiako entitateko atributuetara eta hautatu **Hurrengoa**. Eremuen deskribapenak eskuratzeko, begiratu [ezinbesteko baldintza](#prerequisites).
    > [!div class="mx-imgBorder"]
-   > ![Definitu entitate-harremana](media/product-recommendation-purchasehistorymapping.PNG "Erosketa-historia orria hautatutako erosketa historia entitateko esleitutako atributu semantikoak erakusten ditu")
+   > ![Definitu entitate-harremana.](media/product-recommendation-purchasehistorymapping.PNG "Erosketa-historia orria hautatutako erosketa historia entitateko esleitutako atributu semantikoak erakusten ditu")
 
 1. Eremuak betetzen ez badira, konfiguratu erosketa-historiaren entitatea *Bezeroaren* entitatean.
     1. Hautatu **Erosketa-historiaren entitatea**.
@@ -101,7 +101,7 @@ Ezaugarri hau probatzea interesatzen bazaizu baina beheko baldintzak betetzeko d
     1. Hautatu botoia **Bezero entitatea** bat datorrena zure lehen bezero-entitatearekin.
     1. Idatzi izena deskribatzen duena harremana.
        > [!div class="mx-imgBorder"]
-       > ![Bezeroarekiko harremana sortu dela erakusten duen erosketa-historiaren orria](media/model-purchase-join.png "Bezeroarekiko harremana sortu dela erakusten duen erosketa-historiaren orria")
+       > ![Bezeroarekiko harremana sortu dela erakusten duen erosketa-historiaren orria.](media/model-purchase-join.png "Bezeroarekiko harremana sortu dela erakusten duen erosketa-historiaren orria")
 
 1. Sakatu **Gorde**.
 
@@ -145,7 +145,7 @@ Batzuetan, produktu batzuk bakarrik dira onuragarriak edo egokiak eraikitzen duz
 
 1. Joan **Nire iragarpenak** fitxan **Adimen** > **iragarpenak**.
    > [!div class="mx-imgBorder"]
-   > ![Nire iragarpenak orriaren ikuspegia](media/product-recommendation-mypredictions.PNG "Nire iragarpenak orriaren ikuspegia")
+   > ![Nire iragarpenak orriaren ikuspegia.](media/product-recommendation-mypredictions.PNG "Nire iragarpenak orriaren ikuspegia")
 
 1. Hautatu berrikusi nahi duzun iragarpena.
    - **Iragarpen izena:** Sortzerakoan emandako iragarpenaren izena.
@@ -163,7 +163,7 @@ Batzuetan, produktu batzuk bakarrik dira onuragarriak edo egokiak eraikitzen duz
 
 1. Hautatu elipse bertikalak emaitzak berrikusteko nahi duzun iragarpenaren ondoan **ikusi**.
    > [!div class="mx-imgBorder"]
-   > ![Aurreikuspen bat egiteko, editatu, freskatu, ikusi, erregistroak eta ezabatu behar diren iragarpenak egiteko iragarki baterako aukerak](media/product-recommendation-verticalellipses.PNG "Aurreikuspen bat egiteko, editatu, freskatu, ikusi, erregistroak eta ezabatu behar diren iragarpenak egiteko iragarki baterako aukerak")
+   > ![Aurreikuspen bat egiteko, editatu, freskatu, ikusi, erregistroak eta ezabatu behar diren iragarpenak egiteko iragarki baterako aukerak.](media/product-recommendation-verticalellipses.PNG "Aurreikuspen bat egiteko, editatu, freskatu, ikusi, erregistroak eta ezabatu behar diren iragarpenak egiteko iragarki baterako aukerak")
 
 1. Emaitzen orrian barruan bost datu atal nagusi daude:
     1. **Prestakuntza ereduaren errendimendua:** A, B edo C puntuazio posibleak dira. Puntuazio honek iragarpenaren errendimendua adierazten du eta irteerako entitatean gordetako emaitzak erabiltzeko erabakia har dezake.
@@ -173,13 +173,13 @@ Batzuetan, produktu batzuk bakarrik dira onuragarriak edo egokiak eraikitzen duz
             - **C** eredua kontuan hartuko da **C** motako kalitatea "Arrakasta @ K" metrika oinarrizko lerroan baino gutxiago bada.
                
                > [!div class="mx-imgBorder"]
-               > ![Ereduaren errendimenduaren emaitza ikusi](media/product-recommendation-modelperformance.PNG "Ereduaren errendimenduaren emaitza ikusi")
+               > ![Ereduaren errendimenduaren emaitza ikusi.](media/product-recommendation-modelperformance.PNG "Ereduaren errendimenduaren emaitza ikusi")
             - **Oinarria**: ereduak bezero guztien artean erosketa kopuruaren arabera gomendatzen diren produktu onenak hartzen ditu eta ereduak identifikatutako ikasitako arauak erabiltzen ditu bezeroentzako gomendio multzo bat sortzeko. Iragarpenak goiko produktuekin alderatzen dira, produktua erosi zuten bezero kopuruaren arabera kalkulatuta. Bezero batek gutxienez erositako produktuetan ere ikusi den produktu bat gutxienez gomendatutako produktuetan baldin badu, oinarrizko oinarritzat hartzen da. 100 bezeroen artean produktu gomendatua erosi duten 10 bezero horien artean, oinarrizko % 10 izango litzateke.
             - **Arrakasta @ K**: transakzioen balidazio multzoa erabiliz, gomendioak sortzen dira bezero guztientzat eta transakzioen balidazio multzoarekin alderatzen dira. Adibidez, 12 hilabeteko epean, 12. hilabetea datuen balidazio multzo gisa alboratu daiteke. Ereduak gutxienez 12. hilean erosiko zenukeen gauza bat iragartzen badu aurreko 11 hilabeteetan ikasitakoaren arabera, bezeroak "Arrakasta @ K" metrika handituko luke.
     
     1. **Iradokitako produktu gehienak (kalkuluarekin):** Zure bezeroentzat aurreikusitako lehen bost produktuak.
        > [!div class="mx-imgBorder"]
-       > ![Gomendatutako 5 produktu onenak erakusten dituen grafikoa](media/product-recommendation-topproducts.PNG "Gomendatutako 5 produktu onenak erakusten dituen grafikoa")
+       > ![Gomendatutako 5 produktu onenak erakusten dituen grafikoa.](media/product-recommendation-topproducts.PNG "Gomendatutako 5 produktu onenak erakusten dituen grafikoa")
     
     1. **Gomendio faktore nagusiak:** Ereduak bezeroen transakzioen historia erabiltzen du produktuen gomendioak emateko. Iraganeko erosketetan oinarritutako ereduak ikasten ditu eta bezeroen eta produktuen arteko antzekotasunak aurkitzen ditu. Antzekotasun horiek produktuen gomendioak sortzeko erabiltzen dira.
     Jarraian, ereduak sortutako produktuaren gomendioan eragina izan dezaketen faktoreak daude. 
@@ -190,20 +190,20 @@ Batzuetan, produktu batzuk bakarrik dira onuragarriak edo egokiak eraikitzen duz
         Produktuen gomendio guztietan faktore horietako batek edo gehiagok eragiten dute. Eragindako faktore bakoitzak rol bat izan duen gomendioen ehunekoa taula batean ikus daiteke. Hurrengo adibidean, gomendioen % 100ek iraganeko transakzioen eragina izan zuten, % 60ek bezeroen antzekotasunaren eta % 22 produktuaren antzekotasunaren arabera. Pasa zaitez diagramako barren gainean eragin faktoreek zer portzentaia izan duten jakiteko.
 
         > [!div class="mx-imgBorder"]
-        > ![Gomendioen faktore gakoak](media/product-recommendation-keyrecommendationfactors.png "Ereduak produktuaren gomendioak sortzeko ikasitako funtsezko gomendio faktoreak")
+        > ![Gomendioen faktore gakoak.](media/product-recommendation-keyrecommendationfactors.png "Ereduak produktuaren gomendioak sortzeko ikasitako funtsezko gomendio faktoreak")
        
      
    1. **Datuen estatistikak**: Kontuan hartu den ereduaren transakzioen, bezeroen eta produktuen kopuruaren ikuspegi orokorra ematen du. Ereduak ikasteko eta produktuen gomendioak sortzeko erabili ziren sarrerako datuetan oinarritzen da.
 
       > [!div class="mx-imgBorder"]
-      > ![Datuen estatistikak](media/product-recommendation-datastatistics.png "Ereduak ikasteko ereduak erabilitako datuen inguruko datuen estatistikak")
+      > ![Datuen estatistikak.](media/product-recommendation-datastatistics.png "Ereduak ikasteko ereduak erabilitako datuen inguruko datuen estatistikak")
 
       Atal honetan ereduak ereduak ikasteko eta produktuen gomendioak sortzeko ereduak erabili zituen datu puntuen inguruko estatistikak erakusten dira. Iragazkia, modeloaren konfigurazioan konfiguratuta dagoen moduan, modeloak sortutako irteeran aplikatuko da. Hala ere, ereduak eskura dauden datu guztiak erabiltzen ditu ereduak ikasteko. Hori dela eta, modeloaren konfigurazioan produktuen iragazkia erabiltzen baduzu, atal honetan ereduak ereduak ikasteko aztertu dituen produktuen kopurua erakutsiko da, definitutako iragazki-irizpideekin bat datozen produktuen kopuruarekin alderatuta.
 
    1. **Konfiantza handiko produktuen gomendioak:** ereduak bezeroak eros ditzakeela uste duten bezeroei emandako gomendioen lagina.    
       Produktuen katalogoa gehitzen bada, produktuen IDak produktuen izenekin ordezkatuko dira. Produktuen izenek iragarpenen inguruko informazio erabilgarriagoa eta intuitiboagoa eskaintzen dute.
        > [!div class="mx-imgBorder"]
-       > ![Bezero partikular batzuentzako konfiantza handiko iradokizunak erakusten dituen zerrenda](media/product-recommendation-highconfidence.PNG "Bezero partikular batzuentzako konfiantza handiko iradokizunak erakusten dituen zerrenda")
+       > ![Bezero partikular batzuentzako konfiantza handiko iradokizunak erakusten dituen zerrenda.](media/product-recommendation-highconfidence.PNG "Bezero partikular batzuentzako konfiantza handiko iradokizunak erakusten dituen zerrenda")
 
 ## <a name="manage-predictions"></a>Iragarpenak kudeatu
 

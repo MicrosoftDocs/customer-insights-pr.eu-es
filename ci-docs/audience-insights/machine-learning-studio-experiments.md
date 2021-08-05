@@ -9,12 +9,12 @@ author: m-hartmann
 ms.author: ameetj
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 71881f7e1f9448fe0a7d6d92b8102b8b42de7c2a
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: 2eb44604e72b32292f971754d4f8c4fd1988c697
+ms.sourcegitcommit: dab2cbf818fafc9436e685376df94c5e44e4b144
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5598324"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6555154"
 ---
 # <a name="use-models-based-on-azure-machine-learning-studio-classic"></a>Erabili Azure Machine Learning Studio (klasikoa) zerbitzuan oinarritutako ereduak
 
@@ -41,7 +41,7 @@ Lehen urrats batean, Machine Learning Studio-ko (klasikoa) laneko area sortu beh
 
 1. Baliabidea sortu ondoren, Ikaskuntza automatiko Studio laneko espazioen panela agertuko da. Aukeratu **Ikaskuntza automatiko Studio abiarazi**.
 
-   ![Azure Ikaskuntza automatiko Studio erabiltzailearen interfazea](media/azure-machine-learning-studio.png)
+   ![Azure Ikaskuntza automatiko Studio erabiltzailearen interfazea.](media/azure-machine-learning-studio.png)
 
 ## <a name="work-with-azure-machine-learning-studio"></a>Lan egin Azure Machine Learning Studio
 
@@ -55,7 +55,7 @@ Esperimentu berri bat sor dezakezu edo lehendik dagoen esperimentu txantiloia in
 
 1. Esperimentu berria sortu edo esperimentuen txantiloia erabiltzen baduzu galeriatik, konfiguratu behar duzu **Inportatu datuak** propietate. Erabili esperientzia gidatua edo eman zuzenean xehetasunak zure datuak dituen Azure blob biltegira sartzeko.  
 
-   ![Azure Machine Learning Studio esperimentua](media/azure-machine-learning-studio-experiment.png)
+   ![Azure Machine Learning Studio esperimentua.](media/azure-machine-learning-studio-experiment.png)
 
 1. Orain, prozesatzeko neurrira egindako hoditeria eraiki dezakezu datuak garbitu eta aurreprozesatzeko, funtzioak ateratzeko eta eredu egokia prestatzeko.
 
@@ -63,15 +63,15 @@ Esperimentu berri bat sor dezakezu edo lehendik dagoen esperimentu txantiloia in
 
 1. Eredu baten kalitatearekin konforme zaudenean, hautatu **Ezarri web zerbitzua** > **Aurreikusitako web zerbitzua**. Aukera honek prestatutako esperientziatik prestatutako eredua eta featutazio-hodiak inportatzen ditu iragarpen zerbitzu batera. Iragarpen zerbitzuak beste datu multzo bat har dezake prestakuntza esperimentuan erabilitako eskemarekin, iragarpenak egiteko.
 
-   ![Ezarri web zerbitzu iragargarria](media/predictive-webservice-control.png)
+   ![Ezarri web zerbitzu iragargarria.](media/predictive-webservice-control.png)
 
 1. Aurreikusitako web zerbitzuen esperimentua arrakastatsua izan ondoren, auto planifikaziorako erabil dezakezu. Web zerbitzua Customer Insights zerbitzuarekin lan egiteko, hautatu **Ezarri web zerbitzua** > **Ezarri Web Zerbitzua [Berria] Aurrebista**. [Ikasi gehiago web-zerbitzu bat inplementatzearen inguruan](/azure/machine-learning/studio/deploy-a-machine-learning-web-service).
 
-   ![Inplementatu web zerbitzu iragargarria](media/predictive-webservice-deploy.png)
+   ![Inplementatu web zerbitzu iragargarria.](media/predictive-webservice-deploy.png)
 
 ## <a name="sample-models-from-the-gallery"></a>Galeriako eredu ereduak
 
-Artikulu honetako modeloetarako Contoso Hotelaren fikziozko eszenatokia erabiliko dugu. Contoso Hotelak datu hauek biltzen ditu:
+Fikziozko eszenatoki bat erabiliko dugu Contoso Hotelekoa artikulu honetako ereduetarako. Contoso Hotelak datu hauek biltzen ditu:
 
 - Hotel-egonaldiaren jardueraz osatutako CRM datuak. Datu multzoak erregistratutako bezero bakoitzeko egonaldien daten inguruko informazioa biltzen du. Erreserba, gela motak, gastuaren xehetasunak eta abar buruzko informazioa ere ematen ditu. Datuek lau urte irauten dute, 2014ko urtarriletik 2018ko urtarrila.
 - Hoteleko bezeroen bezeroen profilak. Profil hauek bezero bakoitzari buruzko informazioa biltzen dute, horien izena, jaioteguna, posta helbidea, generoa eta telefono zenbakia.
@@ -87,13 +87,13 @@ Churn definizioa eszenatokiaren arabera alda daiteke. Adibide honetan, azken urt
 
 Esperimentuaren txantiloia galeriatik inportatu daiteke. Lehenik eta behin, ziurtatu datuak inportatzen dituzula **Hotel Ostatu Jarduera**, **Bezeroaren datuak**, eta **Zerbitzuaren erabilera datuak** Azure Blob biltegitik.
 
-   ![Inportatu datuak Churn ereduari dagokionez](media/import-data-azure-blob-storage.png)
+   ![Inportatu datuak Churn ereduari dagokionez.](media/import-data-azure-blob-storage.png)
 
 ### <a name="featurization"></a>Eginbideak egin
 
 Galera-tasaren definizioa oinarritzat hartuta, etiketan eragina izango duten ezaugarri gordinak identifikatzen ditugu lehenik. Ondoren, ezaugarri gordin hauek Ikaskuntza automatiko ereduekin erabil daitezkeen zenbakizko funtzioetan prozesatzen ditugu. Datuen integrazioa Customer Insights-en gertatzen da, beraz, taula hauek konbina ditzakegu *Bezeroaren IDa* erabiliz.
 
-   ![Sartu inportatutako datuak](media/join-imported-data.png)
+   ![Sartu inportatutako datuak.](media/join-imported-data.png)
 
 Galera-tasaren analisia egiteko ereduaren sorrera zaila izan daiteke. Datuak denboraren funtzio bat dira egunero egiten diren hotel jarduera berriekin. Featizazio garaian, datu dinamikotik ezaugarri estatikoak sortu nahi ditugu. Kasu honetan, hoteleko jardueratik ezaugarri ugari sortzen ditugu urtebeteko leiho labainkorrekin. Gela mota edo erreserba mota bezalako ezaugarri kategoriak ere bereizten ditugu, kodetze beroa erabiliz.  
 
@@ -114,7 +114,7 @@ Orain erabili beharreko algoritmo egokiena aukeratu behar dugu. Kasu honetan, ez
 
 Hurrengo irudian Azure Ikaskuntza automatiko Studio-ren ereduaren prestakuntza eta ebaluazio hoditeria erakusten dira:
 
-![Churn eredua Azure Machine Learning Studio-n](media/azure-machine-learning-model.png)
+![Churn eredua Azure Machine Learning Studio-n.](media/azure-machine-learning-model.png)
 
 **Permutazioaren ezaugarrien garrantzia** izeneko teknika ere aplikatzen dugu, ereduen optimizazioaren alderdi garrantzitsua. Eraikitako modeloek ez dute ezer zehatzik inolako ezaugarri zehatzek azken iragarpen-en duten eraginaren inguruan. Funtzioen garrantziaren kalkulagailuak algoritmo pertsonalizatua erabiltzen du eredu zehatz baten emaitzetan banakako ezaugarrien eragina kalkulatzeko. Funtzioen garrantzia +1 eta -1 artean normalizatzen da. Eragin negatiboarekin, kasuan kasuko funtzioak emaitzaren gaineko eragin intuitiboa du eta eredutik kendu beharko litzateke. Eragin positiboak adierazten du funtzioak asko laguntzen duela iragarpen. Balio hauek ez dira korrelazio koefizienteak neurri desberdinak direlako. Informazio gehiago lortzeko, ikus [Permutazioaren ezaugarrien garrantzia](/azure/machine-learning/studio-module-reference/permutation-feature-importance).
 
@@ -148,7 +148,7 @@ Helburua zerbitzuaren erabileraren dolarraren zenbatekoa maximizatzea bezala def
 
 Galera-tasaren eredua bezala, hoteleko zerbitzuaren bezeroaren IDa bezeroaren IDarekin batzen ari gara bezeroaren ID bakoitzeko etengabe gomendioak eraikitzeko.
 
-![Gomendio ereduaren ezaugarri](media/azure-machine-learning-model-featurization.png)
+![Gomendio ereduaren ezaugarri.](media/azure-machine-learning-model-featurization.png)
 
 Datuak hiru entitate desberdinetatik jasotzen dira eta ezaugarri horietatik eratorritakoak dira. Gomendioaren arazoaren ezaugarri nagusia ezberdina da Churn edo CLTV eszenatokiekin alderatuta. Gomendio ereduak sarrera datuak behar ditu hiru funtzio multzoren moduan.
 
@@ -156,13 +156,13 @@ Datuak hiru entitate desberdinetatik jasotzen dira eta ezaugarri horietatik erat
 
 Produktuak edo zerbitzuak iragartzen ditugu **Train Matchbox Recommender** algoritmoa erabili eta eredua trebatzeko.
 
-![Produktuen gomendioa algoritmoa](media/azure-machine-learning-model-recommendation-algorithm.png)
+![Produktuen gomendioa algoritmoa.](media/azure-machine-learning-model-recommendation-algorithm.png)
 
 **Train Matchbox Recommender** ereduak prestakuntza zerbitzuaren erabilera datuetan, bezeroaren deskribapenean (aukerakoa) eta zerbitzuaren deskribapenean hartzen dituen hiru sarrerako portuak. Eredua puntuatzeko hiru modu desberdin daude. Bata eredua ebaluaziorako da, non normalizatutako zenbateko irabazia metatutako puntuazioa (NDCG) puntuazioa kalkulatzen den puntuatutako elementuak sailkatzeko. Esperimentu honetan, NDCG puntuazioa 0.97 da. Beste bi aukerak eredua puntuatzea da zerbitzuen katalogo gomendagarrian, edo erabiltzaileek aurretik erabili ez dituzten elementuetan soilik puntuatzea.
 
 Zerbitzuen katalogo osorako gomendioen banaketari buruz gehiago begiratuz, telefonoa, WiFi-a eta mezularitza-zerbitzua gomendagarriak diren zerbitzu nagusiak direla ohartzen gara. Hau bat dator zerbitzuaren kontsumoaren datuen banaketetatik topatu duguna:
 
-![Gomendio-ereduaren irteerakoa](media/azure-machine-learning-model-output.png)
+![Gomendio-ereduaren irteerakoa.](media/azure-machine-learning-model-output.png)
 
 [Produktuaren gomendio-esperimentua osoa Azure AI galerian atzi daiteke.](https://gallery.azure.ai/Experiment/Recommendation-4)
 

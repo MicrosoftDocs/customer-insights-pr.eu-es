@@ -9,12 +9,12 @@ author: adkuppa
 ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 385406b706890d741fec2694c190c0fada7809d7
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: 49bab0605197912cd4b81ff193b914599a092792
+ms.sourcegitcommit: dab2cbf818fafc9436e685376df94c5e44e4b144
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5596530"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6554879"
 ---
 # <a name="connect-to-a-common-data-model-folder-using-an-azure-data-lake-account"></a>Konektatu Common Data Model karpetara Azure Data Lake kontua erabiliz
 
@@ -45,7 +45,7 @@ Artikulu honek Azure Data Lake Storage Gen2 kontua erabiliz Common Data Model-ek
 
 1. Baliabideetan oinarritutako aukera eta harpidetzan oinarritutako aukera erabil dezakezu autentifikatzeko. Informazio gehiagorako, ikus [Konektatu hartzaileei buruzko xehetasunak Azure Data Lake Storage Gen2 kontu batera Azure zerbitzuaren entitatearekin](connect-service-principal.md). Sartu **Edukiontzia** -ren informazioa eta hautatu **Hurrengoa**.
    > [!div class="mx-imgBorder"]
-   > ![Elkarrizketa-koadroa Azure Data Lake-rako konexio xehetasun berriak sartzeko](media/enter-new-storage-details.png)
+   > ![Elkarrizketa-koadroa Azure Data Lake-rako konexio xehetasun berriak sartzeko.](media/enter-new-storage-details.png)
    > [!NOTE]
    > Datu-iturburu batera konektatu eta sortu ahal izateko goiko aipatutako edukiontzian edo biltegiratze kontuan honako rol hauetako bat behar duzu:
    >  - Storage Blob datu-irakurgailua
@@ -58,11 +58,11 @@ Artikulu honek Azure Data Lake Storage Gen2 kontua erabiliz Common Data Model-ek
 
 1. Aukeratutako model.json edo manifest.json fitxategian eskuragarri dauden entitateen zerrenda lortuko duzu. Berrikusi eta hautatu egin dezakezu zerrendan eskuragarri dauden entitateak eta hautatu **Gorde**. Datu-iturburu berriko hautatutako entitate guztiak sartuko dira.
    > [!div class="mx-imgBorder"]
-   > ![Elkarrizketa-koadroa model.json fitxategi bateko entitateen zerrenda erakusten da](media/review-entities.png)
+   > ![Elkarrizketa-koadroa model.json fitxategi bateko entitateen zerrenda erakusten da.](media/review-entities.png)
 
 8. Zehaztu zein datu-entitate gaitu nahi duzun datu-profilak gaitzeko eta hautatu **Gorde**. Datuen profilak sortzean analisiak eta beste gaitasun batzuk gaitzen dira. Entitate osoa hauta dezakezu, entitatetik atributu guztiak hautatzen dituena edo zenbait atributu hauta ditzakezu. Lehenespenez, ez dago entitaterik gaituta datu-profilak egiteko.
    > [!div class="mx-imgBorder"]
-   > ![Datu-profilak erakusten dituen elkarrizketa-koadroa](media/dataprofiling-entities.png)
+   > ![Datu-profilak erakusten dituen elkarrizketa-koadroa.](media/dataprofiling-entities.png)
 
 9. Zure hautaketak gorde ondoren, **Datu iturriak** orria irekitzen da. Datu eredu arruntaren karpetaren konexioa datu-iturburu gisa ikusi beharko zenuke orain.
 
@@ -81,12 +81,12 @@ Common Data Model karpeta duen biltegiratze konturako sarbide gakoa egunera deza
 
 4. Aukeran, eguneratu **Sarbide gakoa** eta hautatu **hurrengo**.
 
-   ![Elkarrizketa-koadroa lehendik dagoen datu-iturburu-eko sarbide-gakoa editatzeko eta eguneratzeko](media/edit-access-key.png)
+   ![Elkarrizketa-koadroa lehendik dagoen datu-iturburu-eko sarbide-gakoa editatzeko eta eguneratzeko.](media/edit-access-key.png)
 
 5. Aukeran, kontuaren gako konexio batetik baliabideetan oinarritutako edo harpidetzan oinarritutako konexio batera egunera dezakezu. Informazio gehiagorako, ikus [Konektatu hartzaileei buruzko xehetasunak Azure Data Lake Storage Gen2 kontu batera Azure zerbitzuaren entitatearekin](connect-service-principal.md). Ezin duzu aldatu **Edukiontzia**-ren informazioa konexioa eguneratzean.
    > [!div class="mx-imgBorder"]
 
-   > ![Elkarrizketa-koadroa Azure Data Lake-k lehendik dagoen biltegiratze-kontu batekin konexioaren xehetasunak sartzeko](media/enter-existing-storage-details.png)
+   > ![Elkarrizketa-koadroa Azure Data Lake-k lehendik dagoen biltegiratze-kontu batekin konexioaren xehetasunak sartzeko.](media/enter-existing-storage-details.png)
 
    > [!NOTE]
    > Datu-iturburu batera konektatu eta sortu ahal izateko goiko aipatutako edukiontzian edo biltegiratze kontuan honako rol hauetako bat behar duzu:

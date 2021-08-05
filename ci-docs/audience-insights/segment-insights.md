@@ -9,12 +9,12 @@ author: JimsonChalissery
 ms.author: jimsonc
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 2856888d6ac64d5daabcc5a234f13bc6f88bb3df
-ms.sourcegitcommit: 0b754d194d765afef70d1008db7b347dd1f0ee40
+ms.openlocfilehash: 0803be651662480ddf1fd22952f6a69ee1603001
+ms.sourcegitcommit: dab2cbf818fafc9436e685376df94c5e44e4b144
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "6306059"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6554970"
 ---
 # <a name="segment-insights-preview"></a>Segmentuaren xehetasunak (aurrebista)
 
@@ -44,7 +44,7 @@ Erabaki aldaketak nola lotzen diren ere atributu zehatzetarako azter daiteke.
 Azterketa amaitu ondoren, aurkitu xehetasun honi buruzko xehetasunak **segmentuak** > **Xehetasunak (aurrebista)**.
 
 > [!div class="mx-imgBorder"]
-> :::image type="content" source="media/segment-overlap.png" alt-text="Segmentuen gaineko ikuspegi xehetasunak":::
+> :::image type="content" source="media/segment-overlap.png" alt-text="Segmentuen gaineko ikuspegi xehetasunak.":::
 
 Hautatu ikuspegi bat analisiaren emaitzak ikusteko:
 
@@ -77,7 +77,7 @@ Segmentuen bereizleek segmentu bat gainerako bezeroek edo beste segmentu batek b
 Azterketa amaitu ondoren, aurkitu xehetasun honi buruzko xehetasunak **segmentuak** > **Xehetasunak (aurrebista)**.
 
 > [!div class="mx-imgBorder"]
-> :::image type="content" source="media/segment-differentiators.png" alt-text="Segmentuen desberdintzailea ikuspegi xehetasunak":::
+> :::image type="content" source="media/segment-differentiators.png" alt-text="Segmentuen desberdintzailea ikuspegi xehetasunak.":::
 
 Hautatu ikuspegi bat analisiaren emaitzak ikusteko. Ezberdintasunen azterketak bi fitxa biltzen ditu. **Atributuak** fitxak bereizle gisa kontsideratutako profil atributuak zerrendatzen ditu. **Neurriak** fitxa bereizleak. Fitxa bakoitzean xehetasun hauek daude:
 

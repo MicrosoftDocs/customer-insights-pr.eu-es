@@ -1,7 +1,7 @@
 ---
 title: Eginbide berriak eta datozenak
 description: Ezaugarri berriei, hobekuntzei eta akatsak konpontzeko ezaugarriei buruzko informazioa.
-ms.date: 06/15/2021
+ms.date: 07/19/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -9,12 +9,12 @@ author: m-hartmann
 ms.author: mhart
 ms.reviewer: midevane
 manager: shellyha
-ms.openlocfilehash: 355dc22ac381145b231848830cefc47eda7968f4
-ms.sourcegitcommit: 6944c1592877eb92ec789df5f2e0dbecef638837
+ms.openlocfilehash: 1c54d74c999eb4776074951a129019843017964e
+ms.sourcegitcommit: 8cc70f30baaae13dfb9c4c201a79691f311634f5
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "6263236"
+ms.lasthandoff: 07/30/2021
+ms.locfileid: "6692374"
 ---
 # <a name="whats-new-in-the-audience-insights-capability-of-dynamics-365-customer-insights"></a>Dynamics 365 Customer Insights hartzaileen xehetasunei buruzko zerbitzuaren ezaugarri berriak
 
@@ -26,6 +26,28 @@ Eguneratzeak eskualdeen arabera banatzen ditugu. Beraz, eskualde batzuek beste b
 
 > [!TIP]
 > Bidali eta bozkatzeko eginbideak eskaerak eta produktuaren iradokizunak, joan [Dynamics 365 aplikazioaren ideiak atarira](https://experience.dynamics.com/ideas/categories/?forum=79a8c474-4e35-e911-a971-000d3a4f3343&forumName=Dynamics%20365%20Customer%20Insights).
+
+## <a name="june-2021-updates"></a>2021ko ekaineko eguneratzeak
+
+2021ko ekaineko eguneratzeak hainbat funtzio, errendimendu berritze eta akats konponketak biltzen ditu.
+
+### <a name="data-ingestion"></a>Datu-horniketa
+
+- **Datuak bateratzeko aurrerapenen eguneratzeak hobetu dira** Orain eguneraketaren egoera dinamiko hobetu eta xeheagoak ikus ditzakezu [datuak bateratzeko prozesua](data-unification.md) urratsetan. Ezaugarri honi esker aurrerapen zehatzen jarraipena egin dezakezu prozesuaren fluxua ulertzeko eta urratsak arreta behar izanez gero neurriak hartzeko.
+
+### <a name="extensibility"></a>Hedagarritasuna
+
+- **Esportatu segmentuak eta bestelako datuak Salesforce Marketing Cloud-era** Esportatzeko helmugak zabaldu ditugu [Salesforce Marketing Cloud](export-salesforce.md) sartzeko. Segmentuak eta beste datu mota batzuk esportatu ditzakezu Salesforce Marketing Cloud-era markako SFTP esportazio baten bidez. Datuen inportazioa Salesforce-n erabat automatiza daiteke eta marketin kanpaina eraginkorragoak sortzeko erabil daiteke.  
+ 
+- **Esportatu segmentuak ActiveCampaign-era** Esportatzeko helmugak zabaldu ditugu [Active Campaign](export-active-campaign.md) sartzeko. Kanpainak sortzeko segmentuak esportatzeko, exekutatu posta elektroniko bidezko marketin-mezuak eta egin lan ActiveCampaign-en bezero talde jakinekin.
+ 
+- **Esportatu segmentuak Sendinblue-era** Esportatzeko helmugak zabaldu ditugu [Sendinblue](export-sendinblue.md) sartzeko. Kanpainak sortzeko segmentuak esportatzeko, exekutatu posta elektroniko bidezko marketin-mezuak eta egin lan Sendinblue-n bezero talde jakinekin.
+ 
+### <a name="ux-updates"></a>UX eguneratzeak 
+
+- **Bezeroen orri berria eta hobetua eta profilaren xehetasunen orria** Bezeroen orria eta profilaren xehetasun orrialdeak berriro diseinatu ditugu erabiltzaileen esperientzia hobetzeko eta errendimendu hobea lortzeko. Aldaketa horiei esker, bezeroak ikusi, ordenatu, bilatu eta iragazi ditzakezu. Iragazkiak URLan irudikatzen dira bilaketa-emaitzak beste erabiltzaileekin batera partekatzeko. Bilaketaren emaitzak segmentu gisa ere gorde daitezke.    
+  Bezeroen profilen xehetasunen orrialdeak datuak azpiatal desberdinetan biltzen ditu, hala nola datu demografikoak, IDak eta profileko beste atributuak, irakurgarritasuna hobetzeko. Profilaren xehetasunen orrian beste atal batzuk interaktiboagoak dira. Adibidez jardueren atalak iragazteko eta ordenatzeko aukera ematen du.
+
 
 ## <a name="may-2021-updates"></a>2021eko maiatzeko eguneratzeak
 
@@ -170,7 +192,7 @@ Eguneratzeak eskualdeen arabera banatzen ditugu. Beraz, eskualde batzuek beste b
 
 - **Kopiatu inguruneak datu iturri mota gehiago onartzen ditu**
 
-  Administratzaileek ingurune konfigurazioak erakunde berdinean ingurune berri batera kopia ditzakete. Ezaugarri honek kopiatze ingurunearen funtzionaltasuna hedatzen du datu baseak oinarritzat hartuta Common Data Service datu-biltegia edo Common Data Model karpeta erabiltzen dira.
+  Administratzaileek ingurune konfigurazioak erakunde berdinean ingurune berri batera kopia ditzakete. Ezaugarri honek kopiatze ingurunearen funtzionaltasuna hedatzen du Microsoft Dataverse-k kudeatutako datu-biltegi batean oinarritutako datu-iturburuak edo Common Data Model karpeta erabiltzen direnean.
 
 ## <a name="january-2021-updates"></a>2021eko urtarrilaren eguneratzeak
 

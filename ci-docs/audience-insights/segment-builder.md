@@ -1,7 +1,7 @@
 ---
 title: Sortu eta kudeatu segmentuak
 description: Sortu bezeroen segmentuak, hainbat atributuren arabera taldekatzeko.
-ms.date: 05/03/2021
+ms.date: 07/18/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
@@ -9,14 +9,24 @@ author: JimsonChalissery
 ms.author: jimsonc
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 550e509a24701fe5fcdeb9d54311872dc954156c
-ms.sourcegitcommit: 72603fb39c4d5dbca71128815a2e1692542ea4dc
+ms.openlocfilehash: 4a19661abea42618ef1848110c05d635a925c68f
+ms.sourcegitcommit: c45b094072cbe3fbf61d1e9e7d220e1f29ffebd0
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "6064922"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "6685447"
 ---
 # <a name="create-and-manage-segments"></a>Sortu eta kudeatu segmentuak
+
+> [!IMPORTANT]
+> 2021eko irailean segmentua sortzeko esperientziari buruzko hainbat aldaketa gauzatu dira: 
+> - Segmentuen eraikitzaileak itxura desberdina izango du birziklatutako elementuekin eta erabiltzaileen fluxu hobearekin.
+> - Data-ordu operadore berriak eta data-hautatzaile hobetua gaituta daude segmentu-sortzailean.
+> - Segmentuen baldintzak eta arauak gehitu edo kendu ahal izango dituzu. 
+> - OR baldintzarekin hasten diren arau habiaratuak erabilgarri egongo dira. Jada ez duzu AND baldintzarik kanpoko geruzan.
+> - Atributuak hautatzeko alboko panela erabilgarri egongo da etengabe.
+> - Entitate erlazio bideak hautatzeko aukera.
+> Segmentu-sortzaile berria probatzeko, bidali mezu elektroniko bat "Segmentu-eraikitzaile berria gaitzeko eskaera" gaiari heltzeko [at] microsoft.com helbidera. Sartu zure erakundearen izena eta zure sandbox ingurunearen IDa.
 
 Definitu iragazki konplexuak bezero entitate bateratuaren eta hari lotutako entitateen inguruan. Segmentu bakoitzak, prozesatu ondoren, bezeroen erregistro multzo bat sortzen du eta esportatu eta neurriak hartu ditzakezu. Segmentuak **Segmentuak** orrian kudeatzen dira. 
 
@@ -50,7 +60,7 @@ Segmentua sortu bitartean, zirriborroa gorde dezakezu. Segmentu inaktibo gisa go
 1. Aukeratu operadorea eta balio bat hautatutako atributurako.
 
    > [!div class="mx-imgBorder"]
-   > ![Pertsonalizatu taldeko iragazkia](media/customer-group-numbers.png "Bezeroaren taldeko iragazkia")
+   > ![Pertsonalizatu taldeko iragazkia.](media/customer-group-numbers.png "Bezeroaren taldeko iragazkia")
 
    |Zenbakia |Definizioa  |
    |---------|---------|
@@ -66,7 +76,7 @@ Segmentua sortu bitartean, zirriborroa gorde dezakezu. Segmentu inaktibo gisa go
       - **EDO** operadorea: Baldintzaren bat segmentazio prozesuaren zati gisa bete behar da. Aukera hau oso baliagarria da hainbat baldintza definitzen dituzunean entitate berarentzat.
 
       > [!div class="mx-imgBorder"]
-      > ![EDO baldintza bat bete behar den operadorea](media/segmentation-either-condition.png "EDO baldintza bat bete behar den operadorea")
+      > ![EDO baldintza bat bete behar den operadorea.](media/segmentation-either-condition.png "EDO baldintza bat bete behar den operadorea")
 
       Gaur egun, habia habia egin daiteke **EDO** operadorea **ETA** operadorea, baina ez alderantziz.
 
@@ -74,12 +84,12 @@ Segmentua sortu bitartean, zirriborroa gorde dezakezu. Segmentu inaktibo gisa go
    Hautatu **Gehitu taldea**.
 
       > [!div class="mx-imgBorder"]
-      > ![Bezeroen taldea gehitzeko taldea](media/customer-group-add-group.png "Bezeroen taldea gehitzeko taldea")
+      > ![Bezeroen taldea gehitzeko taldea.](media/customer-group-add-group.png "Bezeroen taldea gehitzeko taldea")
 
    1. Aukeratu multzo operadoreetako bat: **Batasuna**, **Elkartu**, edo **Izan ezik**.
 
    > [!div class="mx-imgBorder"]
-   > ![Bezeroen taldea gehitzeko bateratzea](media/customer-group-union.png "Bezeroen taldea gehitzeko bateratzea")
+   > ![Bezeroen taldea gehitzeko bateratzea.](media/customer-group-union.png "Bezeroen taldea gehitzeko bateratzea")
 
    - **Bateratzea** bi taldeak batzen ditu.
 
@@ -90,7 +100,7 @@ Segmentua sortu bitartean, zirriborroa gorde dezakezu. Segmentu inaktibo gisa go
 1. Erakundea bezero bateratutako entitatearekin konektatuta badago [harremanak](relationships.md), erlazio bidea zehaztu behar duzu baliozko segmentua sortzeko. Gehitu entitateak erlazio-bide honetatik hautatu dezakezu arte **Bezeroa: CustomerInsights** entitatea goitibehera. Ondoren, aukeratu **Erregistro guztiak** urrats bakoitzerako.
 
    > [!div class="mx-imgBorder"]
-   > ![Harreman bidea segmentuak sortzean](media/segments-multiple-relationships.png "Harreman bidea segmentuak sortzean")
+   > ![Harreman bidea segmentuak sortzean.](media/segments-multiple-relationships.png "Harreman bidea segmentuak sortzean")
 
 1. Lehenespenez, segmentuek definitutako iragazkiekin bat datozen bezeroen profilen atributu guztiak dituen irteerako entitatea sortzen dute. Segmentu bat ez den beste entitate batzuetan oinarrituta badago *Bezeroa* entitatea, entitate hauetatik atributu gehiago gehi ditzakezu irteerako entitateari. Aukeratu **Proiektuaren atributuak** irteerako entitateari erantsiko zaizkion atributuak aukeratzeko.  
   
@@ -127,7 +137,7 @@ Segmentu bizkorrek segmentu sinpleak operadore bakar batekin azkar eraikitzeko a
 4. Sistemak zurekin hornituko zaitu **Segurtasunaren neurria**. Definitu duzun segmentua sortu edo aukeratu dezakezu edo, bestela, berrikusi beste segmentu baten tamaina lortzeko.
 
     > [!div class="mx-imgBorder"]
-    > ![Izena eta estimazioa segmentu azkar baterako](media/quick-segment-name.png "Izena eta estimazioa segmentu azkar baterako")
+    > ![Izena eta estimazioa segmentu azkar baterako.](media/quick-segment-name.png "Izena eta estimazioa segmentu azkar baterako")
 
 5. Jarri **izena** zure segmentuari. Nahi baduzu, eman **Bistaratzeko izena**.
 

@@ -9,12 +9,12 @@ ms.topic: how-to
 author: stefanie-msft
 ms.author: sthe
 manager: shellyha
-ms.openlocfilehash: 822082d661863e737ea3d3a749a6c878db766967
-ms.sourcegitcommit: e8e03309ba2515374a70c132d0758f3e1e1851d0
+ms.openlocfilehash: 7ee57aa9e86ebf9bd1989d88750642f0b01bd4bf
+ms.sourcegitcommit: f18635c29bb25d9e424a3f5825dc2696278450cf
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 05/04/2021
-ms.locfileid: "5977362"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "6327349"
 ---
 # <a name="export-data-to-azure-synapse-analytics-preview"></a>Esportatu datuak Azure Synapse Analytics-era (aurreargitalpena)
 
@@ -74,8 +74,10 @@ Esportazio hau konfigura dezakezu mota honetako konexiorako sarbidea baduzu. Inf
 1. Ezagutzeko modukoa eman **Bistaratzeko izena** zure esportaziorako eta **Datu-basearen izena**.
 
 1. Aukeratu zein entitatetara esportatu nahi duzun Azure Synapse Analytics-era.
+   > [!NOTE]
+   > [Common Data Model karpetan](connect-common-data-model.md) oinarritutako datu iturriak ez dira onartzen.
 
-1. Sakatu **Gorde**.
+2. Sakatu **Gorde**.
 
 Esportazio bat gordetzeak ez du esportazioa berehala exekutatzen.
 

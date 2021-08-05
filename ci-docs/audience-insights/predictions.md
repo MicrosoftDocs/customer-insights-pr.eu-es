@@ -9,12 +9,12 @@ author: zacookmsft
 ms.author: zacook
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 3342328b9eead9bdcb8b41f119a1d0a5823001c8
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: 31b9b1b709540896c1dbc19f974df4ab056a7b8d
+ms.sourcegitcommit: 8cc70f30baaae13dfb9c4c201a79691f311634f5
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5595886"
+ms.lasthandoff: 07/30/2021
+ms.locfileid: "6692512"
 ---
 # <a name="complete-your-partial-data-with-predictions"></a>Osatu zure datu partzialak iragarpenekin
 
@@ -31,11 +31,11 @@ Aurreikuspenek erraz iragarritako balioak sor ditzakezu bezeroaren ulermena hobe
 
 Zure erakundeak iragarpenen funtzioa erabili ahal izateko, ziurtatu baldintza hauek bete aurretik:
 
-1. Zure erakundeak instantzia bat du [konfiguratuta Common Data Service](/ai-builder/build-model#prerequisites) zerbitzuan eta Customer Insights-en erakunde berean dago.
+1. Zure erakundeak instantzia bat du [Microsoft Dataverse-n konfiguratuta](/ai-builder/build-model#prerequisites) eta Customer Insights-en erakunde berean dago.
 
-2. Zure ingurunea Common Data Service instantziari erantsita dago.
+2. Zure hartzaileen xehetasunen ingurunea lotuta dago Dataverse instantziarekin.
 
-Zu bazara [ingurune berria sortu](manage-environments.md), konfiguratu iturburuan **Ingurua sortu** elkarrizketa-koadroa eta hautatu **aurreratua**. Ingurua sortu baduzu, joan bere ezarpenetara eta hautatu **aurreratua**. Edozein modutan, **Erabili iragarpenak** atalean, sartu zure ingurunea lotu nahi duzun Common Data Service instantziaren URLa.
+Zu bazara [ingurune berria sortu](get-started-paid.md), konfiguratu iturburuan **Ingurua sortu** elkarrizketa-koadroa eta hautatu **aurreratua**. Ingurua sortu baduzu, joan bere ezarpenetara eta hautatu **aurreratua**. Edozein modutan, **Erabili iragarpenak** atalean, sartu zure ingurunea lotu nahi duzun Dataverse instantziaren URLa.
 
 ## <a name="create-a-prediction-in-the-customer-entity"></a>Sortu iragarpenak bezeroaren entitatean
 
@@ -47,17 +47,17 @@ Zu bazara [ingurune berria sortu](manage-environments.md), konfiguratu iturburua
 
 4. Bilatu balioak aurreikusteko nahi duzun atributu izena eta ondoren hautatu **Orokorra** ikonoa hemen **Laburpen** zutabea.
    > [!div class="mx-imgBorder"]
-   > ![Ikuspegi orokorra](media/intelligence-overviewicon.png "Ikuspegi orokorra")
+   > ![Ikuspegi orokorra.](media/intelligence-overviewicon.png "Ikuspegi orokorra")
 
 5. Zure atributua lortzeko balio gutxi falta bada, hautatu **Falta diren balioak aurreikustea** zure iragarpenarekin jarraitzeko.
    > [!div class="mx-imgBorder"]
-   > ![Egoera orokorra falta diren balioen iragarpen botoia erakusten da](media/intelligence-overviewpredictmissingvalues.png "Egoera orokorra falta diren balioen iragarpen botoia erakusten da")
+   > ![Egoera orokorra falta diren balioen iragarpen botoia erakusten da.](media/intelligence-overviewpredictmissingvalues.png "Egoera orokorra falta diren balioen iragarpen botoia erakusten da")
 
 6. Eman a **Bistaratu izena** eta **Irteerako entitatearen izena** iragarpenaren emaitzetarako.
 
 7. Aurrez okupatutako aukeren zerrenda batek iragarritako kategoria batera non mapatu ditzakezun erakutsiko du. Kasu honetan, zure kategoriako aukerak 0 edo 1 izango dira, iragarpenaren benetako / gezurra edo bitarra izaerara mapatzen duten heinean. Kategoria zutabean, esleitu "0" gisa sailkatu nahi dituzun eremu-balioak azken iragarpenean "0"-ra, eta "1" gisa sailkatu nahi dituzun elementuak "1" eremura azken iragarpenean.
    > [!div class="mx-imgBorder"]
-   > ![Adibidez, mapen eremuaren balioak kategorietan erakusteko](media/intelligence-categorymapping.png "Adibidez, mapen eremuaren balioak kategorietan erakusteko")
+   > ![Adibidez, mapen eremuaren balioak kategorietan erakusteko.](media/intelligence-categorymapping.png "Adibidez, mapen eremuaren balioak kategorietan erakusteko")
 
 8. Aukeratu **Egina** eta iragarpena prozesatuko da. Tratamenduak denbora gutxi iraungo du, datuen tamainaren eta konplexutasunaren arabera. Emaitzak entitate berri batean egongo dira eskuragarri **Irteerako entitatearen izena** sortu zenuen iragarpenaz.
 
@@ -77,7 +77,7 @@ Fluxu horren baitan atributu zehatz bat aukeratu behar duzu zure segmentua nola 
 
 5. Sortu berri duzun segmentuak datu osatugabeak baditu iturburu eremuan, falta diren balioak aurreikustea aukeratu dezakezu.
    > [!div class="mx-imgBorder"]
-   > ![Iragarpen botoia](media/segments-predictoption.png "Iragarpen botoia")
+   > ![Iragarpen botoia.](media/segments-predictoption.png "Iragarpen botoia")
 
 6. Eman a **Bistaratu izena** eta **Irteerako entitatearen izena** iragarpenaren emaitzetarako.
 
@@ -93,7 +93,7 @@ Fluxu horren baitan atributu zehatz bat aukeratu behar duzu zure segmentua nola 
 
 4. Zure iragarpena ikusita hainbat datu puntu ikusiko dituzu.
    > [!div class="mx-imgBorder"]
-   > ![Iragarpenen orria](media/intelligence-predictionsviewpage.png "Iragarpenen orria")
+   > ![Iragarpenen orria.](media/intelligence-predictionsviewpage.png "Iragarpenen orria")
 
    - **Aurreikusitako balioak** Erakusten den mapeketa erakusten du Eremuaren balioa kategorian mapak egiteko fasean. Horiek dira kategoria jakin batera mapatu diren zure datu-baseko balioak.
    -**Goi mailako eragileak** kategoria zehatz batera mapak egitean iragarpenen konfiantzan eragina izan dezaketen datu-multzoko faktoreak dira.
@@ -139,7 +139,7 @@ Zure iragarpenaren hurrengo exekutatuak sortu duzun eredu eguneratua erabiliko d
 
 ## <a name="troubleshooting"></a>Irtenbideak
 
-Eranskina ezin baduzu osatu Common Data Service prozesua akats bat dela eta, prozesua eskuz betetzen saia zaitezke. Erantsitako prozesuan gerta daitezkeen bi arazo ezagutzen dira:
+Eranskina ezin baduzu osatu Dataverse prozesua akats bat dela eta, prozesua eskuz betetzen saia zaitezke. Erantsitako prozesuan gerta daitezkeen bi arazo ezagutzen dira:
 
 - Bezeroaren txartelaren osagarriaren soluzioa ez dago instalatuta.
     1. Jarraitu argibideak [instalatu eta konfiguratu irtenbidea](customer-card-add-in.md).

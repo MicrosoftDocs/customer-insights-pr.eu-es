@@ -9,12 +9,12 @@ ms.topic: how-to
 author: zacookmsft
 ms.author: zacook
 manager: shellyha
-ms.openlocfilehash: 4e7065b61940ef0d7b2a30f96f6225df29e30383
-ms.sourcegitcommit: 6b07c9c3102761be162e4842f3c9fbc19f948a9b
+ms.openlocfilehash: 9eb0593f93d713124e4113dcb62c588819f5b97b
+ms.sourcegitcommit: dab2cbf818fafc9436e685376df94c5e44e4b144
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "6095633"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6556292"
 ---
 # <a name="subscription-churn-prediction-preview"></a>Harpidetzeko aurresateko iragarpena (aurrebista)
 
@@ -63,7 +63,7 @@ Harpidetza aurreikuspena lagundu egiten du iragartzen bezeroren bat arriskuan da
 1. Hartzaileei buruzko xehetasunetan, joan hona: **Adimena** > **Iragarpenak**.
 1. Hautatu botoia **Harpidetza kornearen eredua (aurrebista)** fitxa eta hautatu **Erabili eredu hau**.
    > [!div class="mx-imgBorder"]
-   > ![Harpidetza Churn ereduko fitxa erabil ezazu Eredu hau botoiarekin](media/subscription-churn-usethismodel.PNG "Harpidetza Churn ereduko fitxa erabil ezazu Eredu hau botoiarekin")
+   > ![Harpidetza Churn ereduko fitxa erabil ezazu Eredu hau botoiarekin.](media/subscription-churn-usethismodel.PNG "Harpidetza Churn ereduko fitxa erabil ezazu Eredu hau botoiarekin")
 
 ### <a name="name-model"></a>Ezarri izena ereduari
 
@@ -86,11 +86,11 @@ Harpidetza aurreikuspena lagundu egiten du iragartzen bezeroren bat arriskuan da
     1. Hautatu botoia **Bezero entitatea** bat datorrena zure lehen bezero-entitatearekin.
     1. Idatzi izena deskribatzen duena harremana.
        > [!div class="mx-imgBorder"]
-       > ![Harpidetzearen historia orrialdea bezeroarekiko harremanaren sorrera erakusten duena](media/subscription-churn-subscriptionhistoryrelationship.PNG "Harpidetzearen historia orrialdea bezeroarekiko harremanaren sorrera erakusten duena")
+       > ![Harpidetzearen historia orrialdea bezeroarekiko harremanaren sorrera erakusten duena.](media/subscription-churn-subscriptionhistoryrelationship.PNG "Harpidetzearen historia orrialdea bezeroarekiko harremanaren sorrera erakusten duena")
 1. Hautatu **Hurrengoa**.
 1. Egin mapen eremu semantikoak harpidedunen historiaren entitatean eta hautatu **Gorde**. Eremuen deskribapenak eskuratzeko, begiratu [ezinbesteko baldintza](#prerequisites).
    > [!div class="mx-imgBorder"]
-   > ![Harpidetzaren historiaren orria hautatutako harpidetze historiaren entitateko eremuetan mapatuta dauden atributu semantikoak erakusten ditu](media/subscription-churn-subscriptionhistorymapping.PNG "Harpidetzaren historiaren orria hautatutako harpidetze historiaren entitateko eremuetan mapatuta dauden atributu semantikoak erakusten ditu")
+   > ![Harpidetzaren historiaren orria hautatutako harpidetze historiaren entitateko eremuetan mapatuta dauden atributu semantikoak erakusten ditu.](media/subscription-churn-subscriptionhistorymapping.PNG "Harpidetzaren historiaren orria hautatutako harpidetze historiaren entitateko eremuetan mapatuta dauden atributu semantikoak erakusten ditu")
 1. Hautatu **Gehitu datuak** **Bezeroaren jarduerak** eta aukeratu entitatea ematen duena bezeroaren jarduera informazioa aurrebaldintzetan deskribatu bezala.
 1. Hautatu konfiguratzen ari zaren bezeroaren jarduera motarekin bat datorren jarduera mota bat.  Aukeratu **Sortu berria** eta eman izena, behar duzun jarduera motarekin bat datorren aukera bat ikusten ez baduzu.
 1. Bezeroaren jarduera erakundearen eta bezeroaren entitatearen arteko harremanak konfiguratu beharko dituzu.
@@ -101,7 +101,7 @@ Harpidetza aurreikuspena lagundu egiten du iragartzen bezeroren bat arriskuan da
 1. Egin mapen eremu semantikoak bezeroaren jarduera entitatean eta hautatu **Gorde**. Eremuen deskribapenak eskuratzeko, begiratu [ezinbesteko baldintza](#prerequisites).
 1. (Aukerakoa) Beste bezeroen jarduera batzuk sartu nahi badituzu, errepikatu goiko pausoak.
    > [!div class="mx-imgBorder"]
-   > ![Definitu entitate-harremana](media/subscription-churn-customeractivitiesmapping.PNG "Bezeroaren jarduerak orria hautatutako bezeroaren jarduera entitateko eremuetan mapatuta dauden atributu semantikoak erakusten ditu")
+   > ![Definitu entitate-harremana.](media/subscription-churn-customeractivitiesmapping.PNG "Bezeroaren jarduerak orria hautatutako bezeroaren jarduera entitateko eremuetan mapatuta dauden atributu semantikoak erakusten ditu")
 1. Hautatu **Hurrengoa**.
 
 ### <a name="set-schedule-and-review-configuration"></a>Ezarri programazioa eta berrikusi konfigurazioa
@@ -115,7 +115,7 @@ Harpidetza aurreikuspena lagundu egiten du iragartzen bezeroren bat arriskuan da
 
 1. Joan **Nire iragarpenak** fitxan **Adimen** > **iragarpenak**.
    > [!div class="mx-imgBorder"]
-   > ![Nire iragarpenak orriaren ikuspegia](media/subscription-churn-mypredictions.PNG "Nire iragarpenak orriaren ikuspegia")
+   > ![Nire iragarpenak orriaren ikuspegia.](media/subscription-churn-mypredictions.PNG "Nire iragarpenak orriaren ikuspegia")
 1. Hautatu berrikusi nahi duzun iragarpena.
    - **Iragarpen izena:** Sortzerakoan emandako iragarpenaren izena.
    - **Iragarpen mota:** Iragarpenak egiteko erabilitako eredu mota
@@ -131,7 +131,7 @@ Harpidetza aurreikuspena lagundu egiten du iragartzen bezeroren bat arriskuan da
    - **Azken freskatua:** Iragarpena freskatu den data irteerako entitatean.
 1. Hautatu elipse bertikalak emaitzak berrikusteko nahi duzun iragarpenaren ondoan **ikusi**.
    > [!div class="mx-imgBorder"]
-   > ![Aurreikuspen bat egiteko, editatu, freskatu, ikusi, erregistroak eta ezabatu behar diren iragarpenak egiteko iragarki baterako aukerak](media/subscription-churn-verticalellipses.PNG "Aurreikuspen bat egiteko, editatu, freskatu, ikusi, erregistroak eta ezabatu behar diren iragarpenak egiteko iragarki baterako aukerak")
+   > ![Aurreikuspen bat egiteko, editatu, freskatu, ikusi, erregistroak eta ezabatu behar diren iragarpenak egiteko iragarki baterako aukerak.](media/subscription-churn-verticalellipses.PNG "Aurreikuspen bat egiteko, editatu, freskatu, ikusi, erregistroak eta ezabatu behar diren iragarpenak egiteko iragarki baterako aukerak")
 1. Emaitza orrialdearen barruan hiru datu nagusi daude:
     1. **Prestakuntza ereduaren errendimendua:** A, B edo C puntuazio posibleak dira. Puntuazio honek iragarpenaren errendimendua adierazten du eta irteerako entitatean gordetako emaitzak erabiltzeko erabakia har dezake.
         - Puntuazioak honako arauen arabera zehazten dira:
@@ -139,13 +139,13 @@ Harpidetza aurreikuspena lagundu egiten du iragartzen bezeroren bat arriskuan da
             - **B** ereduak zehaztasunez aurreikusitako guztiaren % 50 gutxienez, eta prezio zehatzen portzentajea kriskitatu duten bezeroen batez besteko maiztasun-tasa historikoa baino txikiagoa den batez besteko tasa % 10era arte.
             - **C** ereduak zehaztasunez aurreikusitako guztiaren % 50 gutxiago aurreikusten duenean, edo prezipitazio zehatzen portzentajea bezeroen prezio arruntaren batez bestekoa baino txikiagoa bada.
                > [!div class="mx-imgBorder"]
-               > ![Ereduaren errendimenduaren emaitza ikusi](media/subscription-churn-modelperformance.PNG "Ereduaren errendimenduaren emaitza ikusi")
+               > ![Ereduaren errendimenduaren emaitza ikusi.](media/subscription-churn-modelperformance.PNG "Ereduaren errendimenduaren emaitza ikusi")
     1. **Probabilitatea asetzeko (bezero kopurua):** Bezero-taldeak krisiak eragindako arriskuaren arabera. Datu horrek gero lagundu dezake krisi arrisku handia duten bezeroen segmentu bat sortu nahi baduzu. Horrelako segmentuek segmentu kide izateko zure mozketa nolakoa izan behar den ulertzen lagunduko dute.
        > [!div class="mx-imgBorder"]
-       > ![Grafoaren emaitzen banaketa erakusten duen grafikoa, % 0-100 bitartekoa](media/subscription-churn-resultdistribution.PNG "Grafoaren emaitzen banaketa erakusten duen grafikoa, % 0-100 bitartekoa")
+       > ![Grafoaren emaitzen banaketa erakusten duen grafikoa, % 0-100 bitartekoa.](media/subscription-churn-resultdistribution.PNG "Grafoaren emaitzen banaketa erakusten duen grafikoa, % 0-100 bitartekoa")
     1. **Eraginik garrantzitsuenak:** Zure iragarpena sortzerakoan kontuan hartzen diren faktore asko daude. Faktore bakoitzak eredu batek sortzen dituen aurreikuspen agregatuetarako kalkulatutako garrantzia du. Faktore hauek erabil ditzakezu zure iragarpen emaitzak balioztatzen laguntzeko. Bestela, informazio hori gero erabil dezakezu [segmentuak sortu](segments.md) horrek bezeroen kalte arriskuan eragina izan lezake.
        > [!div class="mx-imgBorder"]
-       > ![Zerrenda eragin duten faktoreak eta horien garrantzia agerian dauden zerrendak](media/subscription-churn-influentialfactors.PNG "Zerrenda eragin duten faktoreak eta horien garrantzia agerian dauden zerrendak")
+       > ![Zerrenda eragin duten faktoreak eta horien garrantzia agerian dauden zerrendak.](media/subscription-churn-influentialfactors.PNG "Zerrenda eragin duten faktoreak eta horien garrantzia agerian dauden zerrendak")
 
 ## <a name="manage-predictions"></a>Iragarpenak kudeatu
 

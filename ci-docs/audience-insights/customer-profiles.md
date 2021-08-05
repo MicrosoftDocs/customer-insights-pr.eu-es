@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: NimrodMagen
 ms.author: nimagen
 manager: shellyha
-ms.openlocfilehash: c9adb4d7db74573d0512ae7a68a0e7ab51c994a0
-ms.sourcegitcommit: d84d664e67f263bfeb741154d309088c5101b9c3
+ms.openlocfilehash: 8ab55d101f98169b8f794ce580ddd0a71ede6642
+ms.sourcegitcommit: dab2cbf818fafc9436e685376df94c5e44e4b144
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "6304589"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6554603"
 ---
 # <a name="customer-profiles"></a>Bezeroen profilak
 
@@ -23,11 +23,11 @@ ms.locfileid: "6304589"
 Bezeroak pertsona edo erakundeak izan daitezke (aurrebista). Bezero edo erakundearen profil bakoitza fitxa batez irudikatuta dago. Aukeratu fitxa bat bezero edo erakunde zehatz horri buruzko informazio osagarria ikusteko. Erabili orrialdearen kontrolaren orrialdearen beheko kontrolak erregistro osagarriak ikusteko.
 
 > [!div class="mx-imgBorder"] 
-> ![B2C bezeroen profilak](media/profiles-customers.png "B2C bezeroen profilak")
+> ![B2C bezeroen profilak.](media/profiles-customers.png "B2C bezeroen profilak")
 
 Erakundeak (Aurrebista)
 > [!div class="mx-imgBorder"] 
-> ![B2B bezeroen profilak](media/profile-customers-b2b.png "B2B bezeroen profilak")
+> ![B2B bezeroen profilak.](media/profile-customers-b2b.png "B2B bezeroen profilak")
 
 > [!NOTE]
 > Hautatzen dituzunean fitxak ezin badituzu ikusi **Bezeroak** nabigazioan, zure administratzaileak egin behar du [definitu gutxienez bilaketa atributu bat](search-filter-index.md) gainean **Bilatu eta iragazi indizea**.
@@ -47,7 +47,7 @@ Bezeroak Profilaren entitatearen eremuak iragazi ditzakezu. Bilaketaren antzera,
 2. Egiaztatu bezeroak iragazi nahi dituzun atributuen ondoko laukiak.
 
    > [!div class="mx-imgBorder"] 
-   > ![Bezeroen profilak](media/profiles-customers3.png "Bezeroen profilak")
+   > ![Bezeroen profilak.](media/profiles-customers3.png "Bezeroen profilak")
 
 3. Kendu iragazkiak **Garbitu iragazkiak** hautatuta **Bezeroak** orrian.
 

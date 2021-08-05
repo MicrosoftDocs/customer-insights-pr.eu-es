@@ -9,12 +9,12 @@ ms.topic: how-to
 author: zacookmsft
 ms.author: zacook
 manager: shellyha
-ms.openlocfilehash: b0e587739f9f4d03942d70a72de4f9378822054d
-ms.sourcegitcommit: 6b07c9c3102761be162e4842f3c9fbc19f948a9b
+ms.openlocfilehash: 28c89693239393d93b7a816535b8c3fffe353935
+ms.sourcegitcommit: e57d51ae3cc233f7b6185c074c66efd9800c02c1
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "6095587"
+ms.lasthandoff: 07/14/2021
+ms.locfileid: "6559390"
 ---
 # <a name="transactional-churn-prediction-preview"></a>Transakzioen galera-tasaren iragarpena (aurrebista)
 
@@ -47,7 +47,7 @@ Transakzioen galera-tasaren iragarpenak bezeroak denbora-tarte jakin batean jada
         - **Gertaera:** Erabili nahi duzun gertaeraren izena. Adibidez, janari dendako "UserAction" izeneko eremua bezeroak erabilitako kupoi bat izan daiteke.
         - **Xehetasunak:** Ekitaldiaren inguruko informazio zehatza. Adibidez, janari dendako "CouponValue" izeneko eremua izan daiteke kupoiaren moneta-balioa.
 - Iradokitako datuen ezaugarriak:
-    - Datu historiko nahikoa: gutxienez hautatutako denbora-leihoa bikoitzeko transakzioen datuak. Ahal izanez gero, bizpahiru urteko harpidetza datuak. 
+    - Datu historiko nahikoa: gutxienez hautatutako denbora-leihoa bikoitzeko transakzioen datuak. Hobe, transakzioen historia bizpahiru urtekoa. 
     - Erosketa anitz bezero bakoitzeko: modurik onenean, bi transakzio gutxienez bezeroko.
     - Bezero kopurua: gutxienez 10 bezeroaren profilak, ahal dela 1.000 bezero bakarrak baino gehiago. Ereduak huts egingo du 10 bezero baino gutxiagorekin eta datu historiko nahikorik gabe.
     - Datuen osotasuna: emandako entitatearen datu eremuan falta diren balioen % 20 baino gutxiago.

@@ -9,12 +9,12 @@ author: naravill
 ms.author: naravill
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: edd2cf488b52cef87b09b90336e48fdc7f470a68
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: 3f97e22687ae4f5536d492bac83bdf9c711e2c94
+ms.sourcegitcommit: dab2cbf818fafc9436e685376df94c5e44e4b144
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5597404"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6554420"
 ---
 # <a name="use-azure-machine-learning-based-models"></a>Erabili Azure Machine Learning-en oinarritutako ereduak
 
@@ -52,7 +52,7 @@ Datu multzoak sortu behar dituzu Customer Insights-eko entitate datuak zure sort
      Diseinatzailean, ireki **Aukeratu zutabeak datu multzoan** eta hautatu **Ezarri bideratze-parametro gisa**; bertan parametroaren izena ipini behar da.
 
      > [!div class="mx-imgBorder"]
-     > ![Diseinatzaileko datu multzoen parametrizazioa](media/intelligence-designer-dataset-parameters.png "Diseinatzaileko datu multzoen parametrizazioa")
+     > ![Diseinatzaileko datu multzoen parametrizazioa.](media/intelligence-designer-dataset-parameters.png "Diseinatzaileko datu multzoen parametrizazioa")
    
 * Datu multzoaren parametroa SDK-n (Python)
    
@@ -78,7 +78,7 @@ Datu multzoak sortu behar dituzu Customer Insights-eko entitate datuak zure sort
 
 * Diseinatzaileak [Esportatu datuak modulua](/azure/machine-learning/algorithm-module-reference/export-data) eskaintzen du; horrek bideratze baten irteera Azure biltegira esportatzea ahalbidetzen du. Gaur egun, moduluak **Azure blob biltegiratzea** datu-biltegi mota erabili behar du eta **datu-biltegia** eta dagokion **bide-izena** parametrizatu. Customer Insights-ek parametro horiek biak gainidazten ditu bideratzea exekutatzerakoan produktuak eskuragarri duen datu biltegi eta bide-izen batekin.
    > [!div class="mx-imgBorder"]
-   > ![Esportatu datuen moduluaren konfigurazioa](media/intelligence-designer-importdata.png "Esportatu datuen moduluaren konfigurazioa")
+   > ![Esportatu datuen moduluaren konfigurazioa.](media/intelligence-designer-importdata.png "Esportatu datuen moduluaren konfigurazioa")
    
 * Inferentziaren irteera kodea erabiliz idaztean, irteera karga dezakezu laneko areako *erregistratutako datu-biltegiko* bide-izen batera. Bide-izena eta datu-biltegia bideratzean parametrizatuta badaude, Customer Insights-ek inferentzia irteera irakurri eta inportatu ahal izango du. Gaur egun, csv formatuko tabular bakarreko irteera onartzen da. Bide-izenak direktorioa eta fitxategi-izena izan behar ditu.
 

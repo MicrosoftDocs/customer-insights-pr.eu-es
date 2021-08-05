@@ -9,12 +9,12 @@ author: JimsonChalissery
 ms.author: jimsonc
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: f588f45ed11efffbb335003642a4b92810153017
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: 96fbd18a20e0df7abd4e79ff77e2c3a396e33ccc
+ms.sourcegitcommit: dab2cbf818fafc9436e685376df94c5e44e4b144
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5596760"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6554190"
 ---
 # <a name="similar-customers-preview"></a>Bezero antzekoak (aurrebista)
 
@@ -50,7 +50,7 @@ Ezaugarri honek adimen artifiziala erabiliz zure bezero basean antzeko bezeroak 
 Antzeko segmentua prozesatu ondoren, zerrendan agertzen den segmentu berria aurkituko duzu **segmentuak** orria.
 
 > [!div class="mx-imgBorder"]
-> ![Antzeko bezeroen segmentua](media/expanded-segment.png "Antzeko bezeroen segmentua")
+> ![Antzeko bezeroen segmentua.](media/expanded-segment.png "Antzeko bezeroen segmentua")
 
 Aukeratu **ikusi** segmentuko xehetasunak irekitzeko ekintza barran. Ikuspegi honek emaitzen banaketaren inguruko informazioa jasotzen du [antzekotasun puntuazioak](#about-similarity-scores). Antzekotasun puntuazioaren balioak ere aurkituko dituzu **Segmentuko kideen aurrebista**.
 

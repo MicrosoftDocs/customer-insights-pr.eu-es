@@ -9,18 +9,18 @@ author: adkuppa
 ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: c670b0065a2833a6dc311d9e86d2b351140382ce
-ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.openlocfilehash: cc94ad49f12067d513db4663bff60620d6501eb0
+ms.sourcegitcommit: 8cc70f30baaae13dfb9c4c201a79691f311634f5
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "5596484"
+ms.lasthandoff: 07/30/2021
+ms.locfileid: "6692098"
 ---
 # <a name="connect-to-an-azure-data-lake-storage-gen2-account-with-an-azure-service-principal-for-audience-insights"></a>Konektatu Azure Data Lake Storage Gen2 kontura hartzaileen xehetasunen Azure zerbitzuaren entitatearekin
 
 Azure zerbitzuak erabiltzen dituzten tresna automatizatuek beti baimen mugatuak izan behar dituzte. Aplikazioek erabiltzaile pribilegiatu gisa saioa hasi beharrean, Azure-k zerbitzuaren entitateak eskaintzen ditu. Irakurri jarraian hartzaileen xehetasunak nola konektatu Azure Data Lake Storage Gen2 kontuarekin Azure zerbitzuaren entitatea erabiliz biltegiratze kontuko gakoen ordez. 
 
-Zerbitzuaren entitatea erabil dezakezu segurtasunez [Common Data Model fitxategi bat gehitu edo editatzeko datu-iturburu gisa](connect-common-data-model.md) edo [ingurune bat sortzeko edo lehendik dagoen ingurune bat eguneratzeko](manage-environments.md#create-an-environment-in-an-existing-organization).
+Zerbitzuaren entitatea erabil dezakezu segurtasunez [Common Data Model fitxategi bat gehitu edo editatzeko datu-iturburu gisa](connect-common-data-model.md) edo [ingurune bat sortzeko edo lehendik dagoen ingurune bat eguneratzeko](get-started-paid.md).
 
 > [!IMPORTANT]
 > - Zerbitzu nagusia erabiltzeko asmoa duen Azure Data Lake Gen2 biltegiratze kontuak izan behar du [Izen espazio hierarkikoa (HNS) gaituta dago](/azure/storage/blobs/data-lake-storage-namespace).
@@ -81,7 +81,7 @@ Baliteke aldaketak barreiatzeko 15 minutu behar izatea.
 
 ## <a name="enter-the-azure-resource-id-or-the-azure-subscription-details-in-the-storage-account-attachment-to-audience-insights"></a>Idatzi Azure baliabidearen IDa edo Azure harpidetzaren xehetasunak hartzaileen xehetasunen ataleko biltegirako kontuaren eranskinean.
 
-Erantsi Azure Data Lake biltegiratze-kontua hartzaileei buruzko informazioan [irteerako datuak gordetzeko](manage-environments.md) edo [datu-iturburu gisa erabiltzeko](connect-common-data-service-lake.md). Azure Data Lake aukera aukeratuz gero, baliabideetan oinarritutako edo harpidetzan oinarritutako ikuspegiaren artean aukera dezakezu.
+Erantsi Azure Data Lake biltegiratze-kontua hartzaileei buruzko informazioan [irteerako datuak gordetzeko](manage-environments.md) edo [datu-iturburu gisa erabiltzeko](connect-dataverse-managed-lake.md). Azure Data Lake aukera aukeratuz gero, baliabideetan oinarritutako edo harpidetzan oinarritutako ikuspegiaren artean aukera dezakezu.
 
 Jarraitu beheko urratsak hautatutako ikuspegiari buruzko beharrezko informazioa emateko.
 

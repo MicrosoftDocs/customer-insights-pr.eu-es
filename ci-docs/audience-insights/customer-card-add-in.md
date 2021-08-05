@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 88492943ddbf9ae30c64d92b261433b74f34f682
-ms.sourcegitcommit: d74430270f1b754322287c4f045d7febdae35be2
+ms.openlocfilehash: 6a7137730ab8cc43bc93daf647d9d55d02d96cd8
+ms.sourcegitcommit: 8cc70f30baaae13dfb9c4c201a79691f311634f5
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6059573"
+ms.lasthandoff: 07/30/2021
+ms.locfileid: "6692190"
 ---
 # <a name="customer-card-add-in-preview"></a>Bezeroaren txartelaren osagarria (aurrebista)
 
@@ -25,7 +25,7 @@ Lortu zure bezeroen 360 graduko ikuspegia zuzenean Dynamics 365 aplikazioetan. B
 ## <a name="prerequisites"></a>Aurrebaldintzak
 
 - Gehigarriak Dynamics 365 ereduak gidatutako aplikazioekin soilik funtzionatzen du, hala nola Sales edo bezeroarentzako arreta-zerbitzu, 9.0 bertsioa eta berriagoak.
-- Zure Dynamics 365 datuak ikusleekin esleitu ahal izateko izan behar dituzten bezeroen profilak [Dynamics 365 aplikaziotik gehituta Common Data Service konektorea](connect-power-query.md).
+- Zure Dynamics 365 datuak ikusleekin esleitu ahal izateko izan behar dituzten bezeroen profilak [Dynamics 365 aplikaziotik gehituta Microsoft Dataverse konektorea](connect-power-query.md).
 - Bezero txartelaren gehigarriaren Dynamics 365 erabiltzaile guztiek izan behar dute [erabiltzaile gisa gehitu da](permissions.md) datuak ikusteko ikusleei buruzko informazioetan.
 - [Bilaketa eta iragazki gaitasunak konfiguratuta](search-filter-index.md) audientziari buruzko datuetan funtzionatu behar da.
 - Gehigarrien kontrol bakoitza datu zehatzetan oinarritzen da ikusleen estatistiketan:
@@ -50,7 +50,7 @@ Zenbait denbora behar izango duzu irtenbidea zure ingurunean instalatzeko.
 1. Hautatu botoia **Bistaratu izena** esteka **Dynamics 365 Customer Insights Bezero-txartelaren gehigarria (aurrebista)** konponbidea.
 
    > [!div class="mx-imgBorder"]
-   > ![Hautatu Proiektuaren bistaratze-izena](media/select-display-name.png "Hautatu Proiektuaren bistaratze-izena")
+   > ![Hautatu Proiektuaren bistaratze-izena.](media/select-display-name.png "Hautatu Proiektuaren bistaratze-izena")
 
 1. Aukeratu **saioa hasi** eta sartu Customer Insights konfiguratzeko erabiltzen duzun kudeatzaileko kontuaren kredentzialak.
 
@@ -64,7 +64,7 @@ Zenbait denbora behar izango duzu irtenbidea zure ingurunean instalatzeko.
    - Kontu batekin esleitzeko, hautatu Bezeroaren entitateko IDarekin bat datorren kontuaren entitatea.
 
    > [!div class="mx-imgBorder"]
-   > ![Kontaktuaren IDaren eremua](media/contact-id-field.png "Kontaktuaren IDaren eremua")
+   > ![Kontaktuaren IDaren eremua.](media/contact-id-field.png "Kontaktuaren IDaren eremua")
 
 1. Hautatu **Gorde konfigurazioa** gutxieneko balioaren ezarpenak gordetzeko.
 
@@ -83,7 +83,7 @@ Zenbait denbora behar izango duzu irtenbidea zure ingurunean instalatzeko.
 1. Aukeratu Bezeroaren Txartelak kontrolak gehitu nahi dituzun harremanetarako formularioa.
 
     > [!div class="mx-imgBorder"]
-    > ![Hautatu Kontaktuaren inprimakia](media/contact-active-forms.png "Hautatu Kontaktuaren inprimakia")
+    > ![Hautatu Kontaktuaren inprimakia.](media/contact-active-forms.png "Hautatu Kontaktuaren inprimakia")
 
 1. Kontrola gehitzeko, inprimaki-editore-en, arrastatu edozein eremu **Eremu-esploradorea**-etik kontrolatu demografikoa nahi duzun lekura.
 
@@ -110,7 +110,7 @@ Bezeroaren txartelaren gehigarria ez da automatikoki eguneratzen. Azken bertsior
 
 1. Aukeratu **Aplikatu irtenbidea berritzea** ekintza barran.
 
-   :::image type="content" source="media/customer-card-add-in-upgrade.png" alt-text="Eguneratu irtenbidea Dynamics 365 aplikazioen Pertsonalizazio eremuan":::
+   :::image type="content" source="media/customer-card-add-in-upgrade.png" alt-text="Eguneratu irtenbidea Dynamics 365 aplikazioen Pertsonalizazio eremuan.":::
 
 1. Bertsio-berritze prozesua hasi ondoren, kargatzeko adierazle bat ikusiko duzu bertsio berritzea amaitu arte. Bertsio berririk ez badago, bertsio berritzeak errore mezu bat erakutsiko du.
 

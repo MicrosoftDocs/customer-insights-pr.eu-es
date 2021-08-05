@@ -9,12 +9,12 @@ ms.topic: how-to
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: b3c1da0f541efb85b2ca9d87a2e3b97bbfb6ca7f
-ms.sourcegitcommit: d84d664e67f263bfeb741154d309088c5101b9c3
+ms.openlocfilehash: 00be15367001a5f4342d60bb284726ef7154d05c
+ms.sourcegitcommit: dab2cbf818fafc9436e685376df94c5e44e4b144
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "6305279"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6555292"
 ---
 # <a name="enrichment-of-customer-profiles-with-here-technologies-preview"></a>Bezeroen profilak aberastea HERE Technologies-ekin (aurrebista)
 
@@ -35,7 +35,7 @@ HERE Technologies-en aberastea konfiguratzeko, honako baldintza hauek bete behar
 1. Aukeratu **Aberastu nire datuak** HERE Technologies fitxan eta hautatu **Hasi**.
 
    > [!div class="mx-imgBorder"]
-   > ![HERE Technologies-en lauza](media/HERE-tile.png "HERE Technologies-en lauza")
+   > ![HERE Technologies-en lauza.](media/HERE-tile.png "HERE Technologies-en lauza")
 
 1. Hautatu goitibeherako zerrendako [konexio](connections.md) bat. Jarri harremanetan administratzaile batekin konexiorik ez badago. Administratzailea bazara, hautatuz konexioa sor dezakezu **Gehitu konexioa**. Aukeratu **HERE Technologies** goitibeherako zerrendatik. 
 
@@ -50,7 +50,7 @@ HERE Technologies-en aberastea konfiguratzeko, honako baldintza hauek bete behar
 1. Zehaztu zure profil bateratuetako zein eremu erabili beharko liratekeen HERE Technologies-en bat datozen kokapen datuak bilatzeko. **1. kalea** eta **Zip / Posta Kodea** eremuak derrigorrezkoak dira hautatutako lehen eta / edo bigarren mailako helbidean. Bat-etortze zehatzagoak lortzeko, eremu gehiago gehitu daitezke.
 
    > [!div class="mx-imgBorder"]
-   > ![HERE Technologies-en aberastearen konfigurazio orria](media/enrichment-HERE-configuration.png "HERE Technologies-en aberastearen konfigurazio orria")
+   > ![HERE Technologies-en aberastearen konfigurazio orria.](media/enrichment-HERE-configuration.png "HERE Technologies-en aberastearen konfigurazio orria")
 
 1. Hautatu **Hurrengoa** eremuaren jarraipena osatzeko.
 
@@ -73,7 +73,7 @@ Administratzailea izan behar duzu konexioak konfiguratzeko. Aukeratu **Gehitu ko
 1. Egiaztapena amaitu ondoren, hautatu **Gorde**.
 
    > [!div class="mx-imgBorder"]
-   > ![HEMEN teknologien konexioa konfigurazioaren orria](media/enrichment-HERE-connection.png "HEMEN teknologien konexioa konfigurazioaren orria")
+   > ![HEMEN teknologien konexioa konfigurazioaren orria.](media/enrichment-HERE-connection.png "HEMEN teknologien konexioa konfigurazioaren orria")
 
 ## <a name="enrichment-results"></a>Aberastearen emaitzak
 

@@ -9,12 +9,12 @@ author: adkuppa
 ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 86ab3cefa70e5fab4bdb27cde363adee26efee4c
-ms.sourcegitcommit: 0b754d194d765afef70d1008db7b347dd1f0ee40
+ms.openlocfilehash: 24b523786158ff36c314601846ee25ea64cfabbe
+ms.sourcegitcommit: 5c9c54ffe045017c19f0042437ada2c101dcaa0f
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "6305605"
+ms.lasthandoff: 07/22/2021
+ms.locfileid: "6650119"
 ---
 # <a name="merge-entities"></a>Konbinatu entitateak
 
@@ -109,7 +109,7 @@ Entitate batzuek besteek baino xehetasun gehiago dituzte. Entitate batek eremu b
 Eskuz batu atributuak edo sistemak batzen dituzun ala ez, beti bat egin dezakezu. Hautatu **Exekutatu** **Konbinatu** orrian prozesua hasteko.
 
 > [!div class="mx-imgBorder"]
-> ![Datuen batzea Gorde eta Exekutatu](media/configure-data-merge-save-run.png "Datuen batzea Gorde eta Exekutatu")
+> ![Datuen batzea Gorde eta Exekutatu.](media/configure-data-merge-save-run.png "Datuen batzea Gorde eta Exekutatu")
 
 Aukeratu **Exekutatu soilik Batu** bezero entitate bateratuan islatutako irteera soilik ikusi nahi baduzu. Beherantz egindako prozesuak bezala freskatuko dira [freskatze-programan definitzen da](system.md#schedule-tab).
 
@@ -118,7 +118,9 @@ Aukeratu **Exekutatu, konbinatu eta erraztu prozesuak** sistema zure aldaketekin
 Aldaketa gehiago egiteko eta urratsa berriro exekutatzeko, abian den bateratze bat bertan behera utzi dezakezu. Aukeratu **Freskagarria ...** eta hautatu **Lana bertan behera utzi** agertzen den alboko panelean.
 
 > [!TIP]
-> Zereginen/prozesuen [sei egoera mota](system.md#status-types) daude. Gainera, prozesu gehienak [downstream-eko beste prozesu batzuen mende daude](system.md#refresh-policies). Aukeratu prozesu baten egoera, egon zen lan osoaren aurrerapen xehetasunak ikusteko. Aukeratu ondoren **Ikusi xehetasunak** lanaren zereginetako baterako, informazio osagarria aurkituko duzu: prozesatzeko denbora, azken prozesatze data eta zereginarekin lotutako akats eta abisu guztiak.
+> Bateratze prozesua exekutatu ondoren, hautatu prozesuaren egoera irekitzeko **Zereginaren xehetasunak** panela. Ikuspegi orokorra ematen du prozesatzeko denborari, azken prozesatze datari eta zereginarekin lotutako akats eta abisu guztiei buruz. Aukeratu **Ikusi xehetasunak** bat-etortze prozesuan zein entitatek parte hartu zuten ikusteko, gatazkaren konponbideak arrakasta izan zuen eta eguneratzeak arrakastaz argitaratu ziren.  
+> Zereginen/prozesuen [sei egoera mota](system.md#status-types) daude. Gainera, prozesu gehienak [downstream-eko beste prozesu batzuen mende daude](system.md#refresh-policies).  
+> :::image type="content" source="media/process-detail-path.png" alt-text="Lortu xehetasunak bide-izenari buruz zereginaren egoeraren estekatik prozesuaren xehetasunak lortzeko.":::
 
 ## <a name="next-step"></a>Hurrengo urratsa
 
