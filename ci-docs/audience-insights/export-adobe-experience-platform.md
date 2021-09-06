@@ -1,6 +1,6 @@
 ---
-title: Esportatu Customer Insights datuak Adobe Experience Platform-era
-description: Ikusi audientzia estatistiken segmentuak nola erabiltzen diren Adobe Experience Platform-en.
+title: Esportatu Customer Insights datuak Adobe Experience Platform
+description: Ikusi publikoaren estatistiken segmentuak nola erabiltzen diren Adobe Experience Platform.
 ms.date: 03/29/2021
 ms.reviewer: mhart
 ms.service: customer-insights
@@ -9,16 +9,16 @@ ms.topic: conceptual
 author: stefanie-msft
 ms.author: antando
 manager: shellyha
-ms.openlocfilehash: 1045d0e373fd5ea8987684e51bd9a07b7b535ee3
-ms.sourcegitcommit: d84d664e67f263bfeb741154d309088c5101b9c3
+ms.openlocfilehash: fac976a49b1b5c5485b75e1262135738c913bd2230be7df8aa0ec12c59734053
+ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "6305509"
+ms.lasthandoff: 08/10/2021
+ms.locfileid: "7032102"
 ---
-# <a name="use-customer-insights-segments-in-adobe-experience-platform-preview"></a>Erabili Customer Insights segmentuak nola erabiltzen diren Adobe Experience Platform-en (aurrebista)
+# <a name="use-customer-insights-segments-in-adobe-experience-platform-preview"></a>Erabili Customer Insights segmentuak Adobe Experience Platform (aurrebista)
 
--N ikusleei buruzko informazioaren erabiltzaile gisa Dynamics 365 Customer Insights, baliteke segmentuak sortzea zure marketin kanpainak eraginkorragoak izan daitezen publiko garrantzitsuei zuzenduta. Adobe Experience Platform-eko eta Adobe Campaign Standard bezalako aplikazioetako audientziaren inguruko segmentu bat erabiltzeko, artikulu honetan zehaztutako urrats batzuk jarraitu behar dituzu.
+-N ikusleei buruzko informazioaren erabiltzaile gisa Dynamics 365 Customer Insights, baliteke segmentuak sortzea zure marketin kanpainak eraginkorragoak izan daitezen publiko garrantzitsuei zuzenduta. Ikusleen estatistiketatik segmentu bat erabiltzeko Adobe Experience Platform eta bezalako aplikazioak Adobe Campaign Standard, artikulu honetan zehaztutako urrats batzuk jarraitu behar dituzu.
 
 :::image type="content" source="media/AEP-flow.png" alt-text="Artikulu honetan azaldutako urratsen prozesuaren diagrama.":::
 
@@ -31,9 +31,9 @@ ms.locfileid: "6305509"
 
 ## <a name="campaign-overview"></a>Kanpainaren informazio orokorra
 
-Adobe Experience Platform-en audientzia estatistiketatik segmentuak nola erabil ditzakezun hobeto ulertzeko, ikus dezagun fikziozko lagin kanpaina.
+Ikusleen estatistiketako segmentuak nola erabil ditzakezun hobeto ulertzeko Adobe Experience Platform Ikus dezagun fikziozko lagin kanpaina.
 
-Demagun zure enpresak hilero harpidetzan oinarritutako zerbitzua eskaintzen diela Estatu Batuetako bezeroei. Datozen zortzi egunetan harpidetzak berritzekoak diren baina oraindik harpidetza berritu ez duten bezeroak identifikatu nahi dituzu. Bezero horiek mantentzeko, promozio eskaintza posta elektroniko bidez bidali nahi diezu, Adobe Experience Platform erabiliz.
+Demagun zure enpresak hilero harpidetzan oinarritutako zerbitzua eskaintzen diela Estatu Batuetako bezeroei. Datozen zortzi egunetan harpidetzak berritzekoak diren baina oraindik harpidetza berritu ez duten bezeroak identifikatu nahi dituzu. Bezero hauek mantentzeko, posta elektroniko bidez promozio eskaintza bidali nahi diezu Adobe Experience Platform.
 
 Adibide honetan, promozioko posta elektronikoko kanpaina behin exekutatu nahi dugu. Artikulu honek ez du kanpaina behin baino gehiagotan egitearen erabilera kasua jasotzen.
 
@@ -93,7 +93,7 @@ Esportazio helmuga gorde ondoren, aktibatuta aurkituko duzu **Datuak** > **Espor
 Orain egin dezakezu [esportatu segmentua eskariaren arabera](export-destinations.md#run-exports-on-demand). Esportazioa guztiekin ere exekutatuko da [programatutako freskapen](system.md).
 
 > [!NOTE]
-> Ziurtatu esportatutako segmentuan erregistro kopurua Adobe Campaign Standard lizentziaren baimendutako mugaren barruan dagoela.
+> Ziurtatu esportatutako segmentuan erregistro kopurua zure baimendutako mugaren barruan dagoela Adobe Campaign Standard lizentzia.
 
 Esportatutako datuak goian konfiguratu duzun Azure blob Storage edukiontzian gordetzen dira. Karpeta bide hau automatikoki sortzen da zure edukiontzian:
 
@@ -105,29 +105,29 @@ Adibidez: Dynamics365CustomerInsights/CustomerInsights_abcd1234-4312-11f4-93dc-2
 
 Adibidez: Dynamics365CustomerInsights/CustomerInsights_abcd1234-4312-11f4-93dc-24f72f43e7d5/ChurnSegmentDemo/model.json
 
-## <a name="define-experience-data-model-xdm-in-adobe-experience-platform"></a>Definitu Experience Data Model (XDM) Adobe Experience Platform-en
+## <a name="define-experience-data-model-xdm-in-adobe-experience-platform"></a>Definitu Experience Data Model (XDM) urtean Adobe Experience Platform
 
-Audientzia estatistiketatik esportatutako datuak Adobe Experience Platform programan erabili aurretik, Experience Data Model eskema eta [konfiguratu datuak denbora errealean bezeroaren profilerako](https://experienceleague.adobe.com/docs/experience-platform/profile/tutorials/dataset-configuration.html#tutorials).
+Audientzia estatistiketatik esportatutako datuak barruan erabili ahal izango dira Adobe Experience Platform, Experience Data Model eskema definitu behar dugu eta [konfiguratu datuak denbora errealean bezeroaren profilerako](https://experienceleague.adobe.com/docs/experience-platform/profile/tutorials/dataset-configuration.html#tutorials).
 
 Ikasi [zer den XDM](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html) eta ulertu [eskemaren konposizioaren oinarriak](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html#schema).
 
-## <a name="import-data-into-adobe-experience-platform"></a>Inportatu datuak Adobe Experience Platformera
+## <a name="import-data-into-adobe-experience-platform"></a>Inportatu datuak Adobe Experience Platform aplikaziora
 
-Dena indarrean dagoela, entzuleen datuetatik prestatutako audientzia datuak Adobe Experience Platformera inportatu behar ditugu.
+Dena indarrean dagoenean, prestatutako audientzia datuak inportatu behar ditugu ikusleen estatistiketatik Adobe Experience Platform.
 
 Lehenik eta behin, [sortu Azure blob-biltegia iturburu konexioa](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/cloud-storage/blob.html#getting-started).    
 
-Iturburu konexioa definitu ondoren, [konfiguratu datu-fluxua](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/dataflow/cloud-storage.html#ui-tutorials) hodeiko biltegiratze batch konexiorako segmentuen irteera audientzia estatistiketatik Adobe Experience Platformera inportatzeko.
+Iturburu konexioa definitu ondoren, [konfiguratu datu-fluxua](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/dataflow/cloud-storage.html#ui-tutorials) hodeiko biltegiratze batch konexiorako segmentuaren irteera ikusleen estatistiketatik inportatzeko Adobe Experience Platform.
 
-## <a name="create-an-audience-in-adobe-campaign-standard"></a>Sortu audientzia Adobe Campaign Standard zerbitzuan
+## <a name="create-an-audience-in-adobe-campaign-standard"></a>Sortu audientzia bat bertan Adobe Campaign Standard
 
-Kanpaina honen mezu elektronikoa bidaltzeko, Adobe Campaign Standard erabiliko dugu. Datuak Adobe Experience Platform-era inportatu ondoren, behar dugu [audientzia sortu](https://experienceleague.adobe.com/docs/campaign-standard/using/profiles-and-audiences/get-started-profiles-and-audiences.html#permission) Adobe Campaign Standard-n Adobe Experience Platform-eko datuak erabiliz.
+Kanpaina honen mezu elektronikoa bidaltzeko, Adobe Campaign Standard erabiliko dugu. Datuak inportatu ondoren Adobe Experience Platform, behar dugu [audientzia sortu](https://experienceleague.adobe.com/docs/campaign-standard/using/profiles-and-audiences/get-started-profiles-and-audiences.html#permission) urtean Adobe Campaign Standard datuak erabiliz Adobe Experience Platform.
 
 
-Ikasi nola egin [erabili segmentu eraikitzailea](https://experienceleague.adobe.com/docs/campaign-standard/using/integrating-with-adobe-cloud/adobe-experience-platform/audience-destinations/aep-using-segment-builder.html) Adobe Campaign Standard-en Adobe Experience Platform-eko datuetan oinarritutako audientzia definitzeko.
+Ikasi nola egin [erabili segmentu eraikitzailea](https://experienceleague.adobe.com/docs/campaign-standard/using/integrating-with-adobe-cloud/adobe-experience-platform/audience-destinations/aep-using-segment-builder.html) urtean Adobe Campaign Standard audientzia definitzeko datuetan oinarrituta Adobe Experience Platform.
 
-## <a name="create-and-send-the-email-using-adobe-campaign-standard"></a>Sortu eta bidali mezu elektronikoa Adobe Campaign Standard erabiliz
+## <a name="create-and-send-the-email-using-adobe-campaign-standard"></a>Sortu eta bidali mezu elektronikoa erabiliz Adobe Campaign Standard
 
 Sortu mezu elektronikoaren edukia eta gero [probatu eta bidali](https://experienceleague.adobe.com/docs/campaign-standard/using/testing-and-sending/get-started-sending-messages.html#preparing-and-testing-messages) zure emaila.
 
-:::image type="content" source="media/contoso-sample-email.jpg" alt-text="Adobe Campaign Standard-ren berritze-eskaintza duen posta elektronikoa.":::
+:::image type="content" source="media/contoso-sample-email.jpg" alt-text="Posta elektronikoaren adibidea berritze eskaintzarekin Adobe Campaign Standard.":::
