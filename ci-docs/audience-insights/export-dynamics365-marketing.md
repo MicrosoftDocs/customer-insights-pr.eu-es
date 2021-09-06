@@ -1,7 +1,7 @@
 ---
 title: Esportatu Customer Insights datuak Dynamics 365 Marketing-era
 description: Ikasi konexioa konfiguratzen eta esportatzen Dynamics 365 Marketing-era.
-ms.date: 03/03/2021
+ms.date: 08/24/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,18 +9,20 @@ ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: bd8189f8daee1a6aea75e75e116186f62a360ba4
-ms.sourcegitcommit: 8cc70f30baaae13dfb9c4c201a79691f311634f5
+ms.openlocfilehash: b8e63a738abaf4fbb902e3edbf83f5a815978478
+ms.sourcegitcommit: 8e89575fe2acb4b289fc157fa7c4c29caf9be967
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 07/30/2021
-ms.locfileid: "6692466"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "7417190"
 ---
 # <a name="use-segments-in-dynamics-365-marketing-preview"></a>Erabili segmentuak Dynamics 365 Marketing-en (aurrebista)
 
 [!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
 
-Erabili [segmentuak](segments.md) Dynamics 365 Marketing-ekin kanpainak eta kontaktu-talde zehatzak sortzeko. Informazio gehiago lortzeko, ikus [Erabili segmentuak Dynamics 365 Customer Insights Dynamics 365 Marketing](/dynamics365/marketing/customer-insights-segments)
+Erabili [segmentuak](segments.md) Dynamics 365 Marketing-ekin kanpainak eta kontaktu-talde zehatzak sortzeko. Informazio gehiago lortzeko, ikus [Erabili segmentuak Dynamics 365 Customer Insights Dynamics 365 Marketing](/dynamics365/marketing/customer-insights-segments).
+
+Dynamics 365 Marketing-en gaitasun berriak erabiltzen ari bazara denbora errealean bezero-bidaia orkestraziorako Dataverse org, ez duzu Dynamics 365 Marketing-era esportazio estandarrik sortu behar. Audientzia estatistiketako kontaktuak eta segmentuak zuzenean eskuragarri daude Dynamics 365 Marketing-en Marketing eta Customer Insights konektatu ondoren. Lehendik dauden esportazioak ezabatu aurretik, berrikusi dokumentazioa hemen [nola konektatu ikuslearen estatistikak eta Dynamics 365 Marketing bezero-bidaia orkestrazioa](/dynamics365/marketing/real-time-marketing-ci-profile).
 
 ## <a name="prerequisite-for-a-connection"></a>Konexioaren aurrebaldintza
 

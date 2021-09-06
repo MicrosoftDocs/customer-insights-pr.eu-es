@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: MichelleDevaney
 ms.author: midevane
 manager: shellyha
-ms.openlocfilehash: d5b9566ec88096fec31d8e164a51598159ec26d4
-ms.sourcegitcommit: ece48f80a7b470fb33cd36e3096b4f1e9190433a
+ms.openlocfilehash: 1853fcd8db2918a0b4a19fa0934e2f0ddbcf6d093c85fdf2068a13f954035dec
+ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 06/03/2021
-ms.locfileid: "6171149"
+ms.lasthandoff: 08/10/2021
+ms.locfileid: "7035216"
 ---
 # <a name="relationships-between-entities"></a>Harremanak entitateen artean
 
@@ -82,7 +82,7 @@ Orrialde honek lehendik dauden eta harreman berrietarako aukera multzo bat eskai
 
 ### <a name="explore-the-relationship-visualizer"></a>Arakatu harremanen bistaratzailea
 
-Harremanen bistaratzaileak konektatuta dauden entitateeen eta haien kardinalitatearen sare-diagrama erakusten du.
+Harremanen bistaratzaileak konektatuta dauden entitateeen eta haien kardinalitatearen sare-diagrama erakusten du. Harremanen bidea ere bistaratzen du.
 
 Ikuspegia pertsonalizatzeko, koadroen kokapena alda dezakezu mihisean arrastatuz.
 
@@ -92,6 +92,20 @@ Aukera erabilgarriak:
 - **Esportatu irudi gisa**: Uneko ikuspegia irudi fitxategi gisa gorde.
 - **Aldatu diseinu horizontal / bertikalera**: Entitateen eta harremanen lerrokatzea aldatu.
 - **Editatu**: Harreman pertsonalizatuen propietateak eguneratu editatzeko panelean eta gorde aldaketak.
+
+### <a name="relationship-path"></a>Erlazioaren bide-izena
+
+Harreman-bideak iturburu-entitate baten eta xede-entitate baten arteko harremanekin lotura duten entitateak deskribatzen ditu. Profil bateratuaren entitatea ez den beste entitate batzuk biltzen dituen segmentu edo neurri bat sortzean erabiltzen da eta profil anitzeko entitate horretara iristeko aukera ugari daude.
+
+Harremanen bideak profil bateratuko entitatera sartzeko zein harremanen berri ematen duen sistemaren berri ematen du. Harreman bide desberdinek emaitza desberdinak eman ditzakete.
+
+Adibidez, entitatea *eCommerce_eCommerceErosketak* profil bateratuarekin harreman hauek ditu *Bezeroa* entitatea:
+
+- eCommerce_eCommercePurchases > Bezeroa
+- eCommerce_eCommercePurchases > eCommerce_eCommerceContacts > POS_posPurchases > Bezeroa
+- eCommerce_eCommercePurchases > eCommerce_eCommerceContacts > POS_posPurchases > loyaltyScheme_loyCustomers > Bezeroa 
+
+Harreman-bideak zehazten du zein entitate erabil ditzakezun neurri edo segmentuetarako arauak sortzerakoan. Harreman bide luzeena duen aukera aukeratzeak emaitza gutxiago lortuko du ziurrenik bat datozen erregistroek entitate guztien parte izan behar dutelako. Adibide honetan, bezeroak merkataritza elektronikoaren bidez (eCommerce_eCommercePurchases), salmenta puntu batean (POS_posPurchases) erosi behar ditu ondasunak eta gure fidelizazio programan parte hartu (loyaltyScheme_loyCustomers). Lehen aukera aukeratzerakoan, emaitza gehiago lortuko zenituzke, bezeroek entitate osagarri batean bakarrik egon behar dutelako.
 
 ## <a name="manage-existing-relationships"></a>Kudeatu lehendik dauden erlazioak 
 
@@ -105,6 +119,6 @@ Aukeratu harremana eta aukeratu aukera hauetako bat:
 
 ## <a name="next-step"></a>Hurrengo urratsa
 
-Sistema eta pertsonalizatutako harremanak sekretuak isilik ez dituzten datu iturri anitzetan oinarritutako [segmentuak sortzeko](segments.md) erabiltzen dira.
+Sistema eta harreman pertsonalizatuak ohituta daude [segmentuak sortu](segments.md) eta [neurriak](measures.md) jada isilarazi gabeko datu iturri anitzetan oinarrituta.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

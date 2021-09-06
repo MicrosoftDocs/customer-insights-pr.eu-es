@@ -9,12 +9,12 @@ author: JimsonChalissery
 ms.author: jimsonc
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 4a19661abea42618ef1848110c05d635a925c68f
-ms.sourcegitcommit: c45b094072cbe3fbf61d1e9e7d220e1f29ffebd0
+ms.openlocfilehash: e759872643cc7387cf732d73c7a320ae8901e5a9
+ms.sourcegitcommit: 42692a815695b9fdc93b9358eae09f2c3e97293c
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "6685447"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7377773"
 ---
 # <a name="create-and-manage-segments"></a>Sortu eta kudeatu segmentuak
 
@@ -27,6 +27,23 @@ ms.locfileid: "6685447"
 > - Atributuak hautatzeko alboko panela erabilgarri egongo da etengabe.
 > - Entitate erlazio bideak hautatzeko aukera.
 > Segmentu-sortzaile berria probatzeko, bidali mezu elektroniko bat "Segmentu-eraikitzaile berria gaitzeko eskaera" gaiari heltzeko [at] microsoft.com helbidera. Sartu zure erakundearen izena eta zure sandbox ingurunearen IDa.
+> :::image type="content" source="media/segment-builder-overview.png" alt-text="Segmentu-sortzailearen elementuak." lightbox="media/segment-builder-overview.png":::
+>
+> 1 - Antolatu zure segmentua arau eta azpi arauekin. Arau edo azpi-arau bakoitza baldintzez osatuta dago. Konbinatu baldintzak eragile logikoekin
+>
+> 2 - Aukeratu [harreman bidea](relationships.md) arau bati aplikatzen zaion entitateen artean. Harreman-bideak baldintza batean zein atributu erabil daitezkeen zehazten du.
+>
+> 3 - Kudeatu arauak eta azpi-arauak. Arau baten kokapena aldatu edo ezabatu.
+>
+> 4 - Gehitu baldintzak eta eraiki habia maila egokia azpi-arauak erabiliz.
+>
+> 5 - Aplikatu multzo eragiketak konektatutako arauei.
+>
+> 6 - Erabili atributuen panela eskuragarri dauden entitateen atributuak gehitzeko edo atributuetan oinarritutako baldintzak sortzeko. Panelak hautatutako araurako erabilgarri dauden hautatutako harreman bideen arabera oinarritutako entitate eta atributuen zerrenda erakusten du.
+>
+> 7 - Gehitu atributuetan oinarritutako baldintzak lehendik dauden arau eta azpiurrei edo gehitu arau berri bati.
+>
+> 8 - Desegin eta berregin aldaketak segmentua eraikitzean.
 
 Definitu iragazki konplexuak bezero entitate bateratuaren eta hari lotutako entitateen inguruan. Segmentu bakoitzak, prozesatu ondoren, bezeroen erregistro multzo bat sortzen du eta esportatu eta neurriak hartu ditzakezu. Segmentuak **Segmentuak** orrian kudeatzen dira. 
 
@@ -147,6 +164,6 @@ Segmentu bizkorrek segmentu sinpleak operadore bakar batekin azkar eraikitzeko a
 
 ## <a name="next-steps"></a>Hurrengo urratsak
 
-[Esportatu segmentua](export-destinations.md) eta esploratu [Bezero txartela](customer-card-add-in.md) eta [Konektoreak](export-power-bi.md) bezeroaren mailari buruzko informazioa lortzeko.
+[Esportatu segmentu bat](export-destinations.md) eta esploratu [Bezeroen txartelaren integrazioa](customer-card-add-in.md) segmentuak beste aplikazio batzuetan erabiltzeko.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

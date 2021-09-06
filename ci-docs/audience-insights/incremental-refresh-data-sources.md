@@ -9,12 +9,12 @@ ms.topic: how-to
 author: adkuppa
 ms.author: adkuppa
 manager: shellyha
-ms.openlocfilehash: 1af2e4c42dc5890556c90bb3e5ef1aeb0621fda0
-ms.sourcegitcommit: dab2cbf818fafc9436e685376df94c5e44e4b144
+ms.openlocfilehash: d204228f8d6881cbf0e7fac6609bf50dd5296610
+ms.sourcegitcommit: 42692a815695b9fdc93b9358eae09f2c3e97293c
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "6554144"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7377819"
 ---
 # <a name="incremental-refresh-for-data-sources-based-on-power-query"></a>Power Query-n oinarritutako datu iturrientzako freskapen gehikorra
 
@@ -44,8 +44,7 @@ Hartzaileen xehetasunek sartze inkrementala onartzen duten Power Query bidez inp
 
 1. **Goranzko freskatze ezarpenak** atalean, datu-iturburu sortzerakoan hautatu dituzun entitate guztientzako goranzko freskatzea konfiguratuko duzu.
 
-   > [!div class="mx-imgBorder"]
-   > ![Konfiguratu datu-iturburuko entitateak goranzko freskatzerako.](media/incremental-refresh-settings.png "Konfiguratu datu-iturburuko entitateak goranzko freskatzerako")
+   :::image type="content" source="media/incremental-refresh-settings.png" alt-text="Konfiguratu datu-iturburuko entitateak goranzko freskatzerako.":::
 
 1. Hautatu entitate bat eta eman xehetasun hauek:
 
