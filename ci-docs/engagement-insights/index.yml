@@ -1,0 +1,86 @@
+### YamlMime:Landing
+title: Elkarreragin xehetasunen (aurrebista) gaitasuna hurrengoan Dynamics 365 Customer Insights
+summary: Bildu zure webguneetarako datuak. Ulertu bezeroen interakzioak eta zure webguneen erabilera modu interaktiboan. Erabil ezazu konpromisoen eta publikoaren estatistiken arteko integrazio sakona zure denbora errealeko portaeraren analisia bezeroaren profileko txostenekin aberasteko. Aberastu bezeroen profilak webeko jarduerekin, denbora errealeko portaera datuak lortzeko bezero garrantzitsuen datuekin batera. Eraldatu zure negozioa bezeroen datuetatik berehala balioa lortzeko.
+metadata:
+  title: Elkarreragin xehetasunen (aurrebista) dokumentazioa
+  description: Lagundu zentroa lotura gakoekin konpromisoak ezagutzeko.
+  ms.service: customer-insights
+  ms.subservice: engagement-insights
+  ms.topic: hub-page
+  author: m-hartmann
+  ms.author: mhart
+  ms.reviewer: mhart
+  ms.date: 07/30/2021
+  ms.openlocfilehash: 9951b1834d18acf0c4961a776d9d6247d4ae3505b5721a41314266e41f8ae928
+  ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+  ms.translationtype: HT
+  ms.contentlocale: eu-ES
+  ms.lasthandoff: 08/10/2021
+  ms.locfileid: "7036223"
+landingContent:
+- title: Honi buruz
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Gaitasunaren ikuspegi orokorra
+      url: overview.md
+    - text: Zehaztapenak eta baldintzak
+      url: glossary.md
+    - text: Ezagutu elkarreragin xehetasunak
+      url: https://dynamics.microsoft.com/ai/customer-insights/engagement-insights-capability/
+- title: Erregistratzea
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Hasi erabiltzen
+      url: get-started.md
+    - text: Sortu laneko area bat
+      url: create-workspace.md
+    - text: Hornitu webgunea
+      url: instrument-website.md
+- title: Txostenak
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Ikusi txostenak
+      url: view-reports.md
+    - text: Sortu txosten pertsonalizatuak
+      url: custom-reports.md
+    - text: Ikusi profil bateratuen txostena
+      url: profile-reports.md
+    - text: Sortu inbutuko txostenak
+      url: funnel-reports.md
+- title: Gertaera
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Sortu gertaera mugatuak
+      url: refined-events.md
+    - text: Esportatu gertaerak
+      url: export-events.md
+    - text: Ezabatu eta esportatu datu pertsonalak
+      url: delete-export-personal-data.md
+- title: Garatzailearen baliabideak
+  linkLists:
+  - linkListType: reference
+    links:
+    - text: Garatzailearen baliabideak
+      url: developer-resources.md
+    - text: WebSDK lagina
+      url: websdk-sample.md
+    - text: Web SDK aurreratuen egoerak
+      url: advanced-SDK-implementation.md
+    - text: Android SDK adibidea
+      url: get-started-android.md
+    - text: iOS SDK lagina
+      url: get-started-ios.md
+- title: Administrazioa
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Kudeatu inguruneak eta laneko areak
+      url: manage-environments-workspaces.md
+    - text: Konektatu hartzaileen xehetasunetara
+      url: configure-connections.md
+    - text: Kudeatu cookieak eta erabiltzaileen baimena
+      url: user-consent-storage.md
