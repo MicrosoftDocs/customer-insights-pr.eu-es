@@ -7,12 +7,12 @@ metadata:
   ms.date: 07/30/2021
   ms.service: customer-insights
   ms.topic: landing-page
-  ms.openlocfilehash: 1446a2bcb24739187a37b2024c9a6070ab008989d722ebf84ef5259ec2ee4d5c
-  ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+  ms.openlocfilehash: e6a658f43b382934ee9b9b55c54fc1dff3f4df72
+  ms.sourcegitcommit: 3bafa27adae113948636b30c7462e0af060c7131
   ms.translationtype: HT
   ms.contentlocale: eu-ES
-  ms.lasthandoff: 08/10/2021
-  ms.locfileid: "7036542"
+  ms.lasthandoff: 09/17/2021
+  ms.locfileid: "7498582"
 title: Dynamics 365 Customer Insights dokumentazioa
 summary: Bilatu baliabide lagungarriak hasteko eta Customer Insights-en funtzioak eta gaitasunak ezagutzeko.
 landingContent:
@@ -26,16 +26,16 @@ landingContent:
       url: /dynamics365-release-plan/
     - text: Ezagutu CDP
       url: https://dynamics.microsoft.com/ai/customer-insights/
-- title: Hasi hartzaileei buruzko xehetasunekin
+- title: Hasi Customer Insights erabiltzen
   linkLists:
   - linkListType: get-started
     links:
     - text: Hasi saioa doako proba bat lortzeko
       url: https://dynamics.microsoft.com/en-us/get-started/?appname=customerinsights
-    - text: BERRITASUNAK
+    - text: Hartzaileen xehetasunen berritasunak
       url: audience-insights/whats-new-audience-insights.md
-    - text: hartzaileei buruzko xehetasunen dokumentazioa
-      url: audience-insights/index.yml
+    - text: Parte-hartzearen xehetasunen berritasunak
+      url: https://docs.microsoft.com/dynamics365-release-plan/2021wave1/customer-data-platform/engagement-insights/planned-features
 - title: Jarri harremanetan
   linkLists:
   - linkListType: overview
@@ -46,16 +46,16 @@ landingContent:
       url: https://go.microsoft.com/fwlink/?linkid=2074172
     - text: Eman arazo baten berri
       url: https://go.microsoft.com/fwlink/?linkid=2079641
-- title: Hartzaileen xehetasunen tutorialak
+- title: Partekatu datuak gaitasunen artean
   linkLists:
-  - linkListType: tutorial
+  - linkListType: how-to-guide
     links:
-    - text: Sortu ingurune bat
-      url: audience-insights/home.md
-    - text: Sortu bezeroaren profil bateratua
-      url: /learn/modules/unified-customer-profile/
-    - text: Egin lan edozein aplikaziorekin
-      url: /learn/modules/working-with-customer-insights/
+    - text: Sortu esteka bat gaitasunen artean
+      url: engagement-insights/integrate-audience-insights-engagement-insights.md
+    - text: Sortu txostenetan erabiltzeko segmentuak
+      url: engagement-insights/integrate-audience-insights-segments.md
+    - text: Erabili profilen propietateak analisi interaktiborako
+      url: engagement-insights/curate-dimensions.md
 - title: Esportatu hartzaileei buruzko xehetasunen datuak
   linkLists:
   - linkListType: how-to-guide

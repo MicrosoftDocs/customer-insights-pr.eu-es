@@ -1,7 +1,7 @@
 ---
 title: Aberastu bezeroen profil bateratuak
 description: Erabili gaitasunak zure bezeroaren datuak aberasteko.
-ms.date: 07/01/2021
+ms.date: 08/31/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -10,12 +10,12 @@ author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
 ms.custom: intro-internal
-ms.openlocfilehash: a64bbd754d4013d0a6243074ac9f55991547be82b269047a9937b583baf98697
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: 992c45e30e2dff00f5207290940b56b2fe1c08ad
+ms.sourcegitcommit: b9a81c2acd42d774669d2db3d0430c7d81de991c
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7032513"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "7469931"
 ---
 # <a name="enrichment-for-customer-profiles-preview"></a>Bezeroen profiletarako aberastea (aurrebista)
 
@@ -29,6 +29,7 @@ Laguntzaileak edo Administratzaileak baimenak izan behar dituzu aberastasunak so
 
 Gainean **Ezagutu** fitxa, aberastasun hauek aurkituko dituzu:
 
+- [Azure Maps](enrichment-azure-maps.md), Microsoft-ek eskainia
 - [Markak](enrichment-microsoft.md) hornituta Microsoft-en arabera
 - [Interesak](enrichment-microsoft.md) hornituta Microsoft-en arabera
 - [Helbide hobetuak](enrichment-enhanced-addresses.md) Microsoft-ek eskainita
@@ -62,5 +63,17 @@ Hirugarrenen aberastasunak erabiliz konfiguratzen dira [konexioak](connections.m
 ## <a name="multiple-enrichments-of-the-same-type"></a>Mota bereko hainbat aberastasun
 
 Aberastu nahi den entitatea aberasteko konfigurazioan zehazten da eta horrek zure profilen azpimultzo bat soilik aberastea ahalbidetzen du. Adibidez, aberastu datuak segmentu zehatz baterako soilik. Mota bereko hainbat aberastasun konfigura ditzakezu eta konexio bera berrerabili. Zenbait aberastasunek sor ditzaketen mota bereko aberastasunen kopuruak izango dituzte mugak. Mugak eta egungo erabilera webgunean ikus daitezke **Aberastea** orrialdea.
+
+## <a name="see-the-progress-of-the-enrichment-process"></a>Ikusi aberaste-prozesuaren garapena
+
+Aberaste-prozesuaren xehetasunak aurki ditzakezu, bere egoera eta arazo posibleak barne, freskatu bitartean edo freskatu ondoren. Ulertu zein prozesu sartzen diren aberastea freskatzeko prozesuan eta zenbat denbora behar izan den prozesuak exekutatzeko. Aberaste-egoera Experian, Leadspace, HERE Technologies, SFTP Import, eta Azure Maps-ek onartzen dute.
+
+Aberastearen egoera ikusteko
+
+1. Joan **Datuak** > **Aberastua**. 
+1. **Aberasteak** fitxan, hautatu aberaste baten egoera alboko panela irekitzeko. 
+1. **Garapenaren xehetasunen** panelean, zabaldu **Aberasteak** sekzioa. 
+1. Ikusi nahi duzun aberastearen egoeran, hautatu **ikusi xehetasunak**. 
+1. **Zereginaren xehetasunak** panelean, hautatu **erakutsi xehetasunak** aberastea eta bere egoera eguneratzeko eragiketan dauden prozesuak ikusteko. 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

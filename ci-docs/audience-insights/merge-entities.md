@@ -1,7 +1,7 @@
 ---
 title: Konbinatu entitateak datuen bateratzean
 description: Konbinatu entitateak bezeroen profil bateratuak sortzeko.
-ms.date: 05/10/2021
+ms.date: 09/14/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: tutorial
@@ -9,12 +9,12 @@ author: adkuppa
 ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 6e64154dc58f679d13033fa55a60cd0c306f62f31548b8ce98ea1ed5f423b3e9
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: b038cd3f5b433fedf918d34bbfaf2261e11c5c17
+ms.sourcegitcommit: fecdee73e26816c42d39d160d4d5cfb6c8a91596
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7034987"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "7494304"
 ---
 # <a name="merge-entities"></a>Konbinatu entitateak
 
@@ -76,17 +76,40 @@ Baztertu atributu bat konbinatutako bezeroaren profiletik. Eremua beste prozesu 
 
 **Batu** orrian, hautatu **Baztertutako eremuak** baztertutako eremu guztien zerrenda ikusteko. Panel honek baztertutako eremuak berriro gehitzeko aukera ematen du.
 
+## <a name="edit-a-merged-field"></a>Editatu konbinatutako eremua
+
+1.  Hautatu konbinatutako eremua.
+
+1.  Aukeratu **Erakutsi gehiago** eta aukeratu **Editatu**.
+
+1.  Zehaztu nola konbinatu eremuak hiru aukera hauetatik:
+    - **Garrantzia**: balio nagusia identifikatzen du parte hartzen duten zehaztutako eremuen garrantziaren sailkapenean oinarrituta. Hori da konbinatzeko aukera lehenetsia. Garrantziaren araberako sailkapena ezartzeko, hautatu **Eraman gora/behera**.
+    :::image type="content" source="media/importance-merge-option.png" alt-text="Garrantziaren aukera eremuak konbinatzeko elkarrizketan."::: 
+    - **Azkena**: balio nagusia identifikatzen du, berritasunaren arabera. Berritasuna definitzeko, data edo zenbakizko eremua behar da eremuak konbinatzeko esparruan parte hartzen duen entitate bakoitzerako.
+    :::image type="content" source="media/recency-merge-option.png" alt-text="Berritasunaren aukera eremuak konbinatzeko elkarrizketan.":::
+    - **Zaharrena**: balio nagusia identifikatzen du, zahartasunaren arabera. Berritasuna definitzeko, data edo zenbakizko eremua behar da eremuak konbinatzeko esparruan parte hartzen duen entitate bakoitzerako.
+
+1.  Eremu osagarriak gehi ditzakezu konbinazio-prozesuan parte hartzeko.
+
+1.  Konbinatutako eremuaren izena alda dezakezu.
+
+1. Aldaketak aplikatzeko, hautatu **Eginda**.
+
+1. Aukeratu **Gorde** eta **Korrika egin** aldaketak prozesatzeko. 
+
 ## <a name="manually-combine-fields"></a>Konbinatu eremuak eskuz
 
 Zehaztu bateratutako atributu bat eskuz. 
 
 1. **Batu** orrian, hautatu **Konbinatu eremuak**.
 
-1. Eman **Izena** bat eta **Irteerako eremuaren izena**.
+1. Zehaztu konbinazio nagusiaren gidalerroak **Konbinatu eremuak honen arabera** goitibeherako menuan.
 
 1. Aukeratu gehituko duzun eremua. Hautatu **Gehitu eremuak** eremu gehiago konbinatzeko.
 
-1. Berretsi bazterketa.
+1. Eman **Izena** bat eta **Irteerako eremuaren izena**.
+
+1. Aldaketak aplikatzeko, hautatu **Eginda**.
 
 1. Aukeratu **Gorde** eta **Korrika egin** aldaketak prozesatzeko. 
 
@@ -103,6 +126,27 @@ Entitate batzuek besteek baino xehetasun gehiago dituzte. Entitate batek eremu b
 1. Berretsi aldaketa.
 
 1. Aukeratu **Gorde** eta **Korrika egin** aldaketak prozesatzeko.
+
+## <a name="configure-customer-id-generation"></a>Konfiguratu bezeroaren IDaren sorrera 
+
+Konbinazio-eremuak konfiguratu ondoren, definitu dezakezu nola sortu CustomerId balioak, bezeroaren profilaren identifikatzaile esklusiboak. Datuak bateratzeko prozesuko konbinazio-urratsak sortzen du bezero-profilaren identifikatzaile esklusiboa. *Bezeroaren* entitateko CustomerId identifikatzailea sortzen da datuen bateratze-prozesutik. 
+
+Bezeroaren entitateko CustomerId lehenengo balioaren eta hutsa ez den gako nagusi irabazlearen arteko hash-ean oinarritzen da. Gako horiek bat-etortze eta konbinazio urratsetan erabilitako entitateetatik datoz eta bat-etortzearen sailkapenak eragina dute horiengan. Sortutako CustomerID-a aldatu daiteke gako-balio nagusia aldatzen denean bat-etortzearen ordenako lehen mailako entitatean. Ondorioz, gako-balio nagusiak ez du beti bezero berdina ordezkatuko.
+
+Bezeroaren ID egonkor bat sortzeak portaera hori ekiditeko aukera ematen dizu.
+
+**Konfiguratu bezeroaren ID esklusiboa**
+
+1. Joan hona: **Bateratu** > **Konbinatu**.
+
+1. **Konbinatu** orrian, hautatu **Gakoak** fitxa. 
+
+1. Jarri **CustomerId** errenkadaren gainean eta hautatu **Konfiguratu** aukera.
+   :::image type="content" source="media/customize-stable-id.png" alt-text="IDaren sorrera pertsonalizatzeko kontrola.":::
+
+1. Hautatu gehienez bost eremu, bezeroaren ID esklusiboaz osatuta egongo direnak eta egonkorragoak izango direnak. Konfigurazioarekin bat ez datozen erregistroek sistemak konfiguratutako IDa erabiltzen dute haren ordez.  
+
+1. Aldaketak aplikatzeko, hautatu **eginda** eta exekutatu konbinazio-prozesua.
 
 ## <a name="run-your-merge"></a>Exekutatu zure bateratzea
 

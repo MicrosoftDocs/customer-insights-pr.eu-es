@@ -14,8 +14,14 @@
       href: audience-insights/overview.md
     - name: Eginbide eguneratuak eta hobetuak
       href: audience-insights/whats-new-audience-insights.md
-    - name: Sortu ingurune bat
-      href: audience-insights/get-started-paid.md
+    - name: Hasi erabiltzen
+      items:
+        - name: Hasiera bizkorreko gida
+          href: audience-insights/get-started.md
+        - name: Sortu ingurune bat
+          href: audience-insights/get-started-paid.md
+        - name: Arakatu hartzaileen xehetasunak
+          href: audience-insights/home.md
     - name: Ikasteko moduluak
       items:
         - name: Sartu datuak
@@ -68,6 +74,8 @@
           href: audience-insights/enrichment-microsoft.md
         - name: Helbide hobetuak
           href: audience-insights/enrichment-enhanced-addresses.md
+        - name: Aberastu Azure Maps-ekin
+          href: audience-insights/enrichment-azure-maps.md
         - name: Aberastu HERE Technologies-ekin
           href: audience-insights/enrichment-here.md
         - name: Aberastu Leadspace-rekin
@@ -230,21 +238,15 @@
           href: audience-insights/apis.md
         - name: API erreferentzia
           href: 'https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights'
-    - name: Zerbitzuaren mugak
-      href: audience-insights/service-limits.md
-    - name: DSR eskaerak DBAO pean
-      href: audience-insights/gdpr.md
 - name: Parte-hartzearen xehetasunak (aurreargitalpena)
   items:
     - name: Laguntza-atala
       href: engagement-insights/index.yml
     - name: Gaitasunaren ikuspegi orokorra
       href: engagement-insights/overview.md
-    - name: Doako proba
-      href: 'https://pi.dynamics.com/'
     - name: Hasi erabiltzen
       items:
-        - name: Hasi erabiltzen
+        - name: Hasiera bizkorreko gida
           href: engagement-insights/get-started.md
         - name: Sortu laneko area bat
           href: engagement-insights/create-workspace.md
@@ -300,18 +302,10 @@
           href: engagement-insights/user-roles.md
         - name: Kudeatu inguruneak eta laneko areak
           href: engagement-insights/manage-environments-workspaces.md
-        - name: Konfiguratu konektoreak
-          href: engagement-insights/configure-connections.md
         - name: Kudeatu cookieak eta erabiltzaileen baimena
           href: engagement-insights/user-consent-storage.md
-    - name: DBAO
-      items:
-        - name: Ezabatu eta esportatu datu pertsonalak
-          href: engagement-insights/delete-export-personal-data.md
     - name: Erabilgarritasun lokala
       href: engagement-insights/regional-availability.md
-    - name: Zerbitzuaren mugak
-      href: engagement-insights/quotas.md
 - name: Integratu ikusleen eta konpromisoen inguruko datuak
   items:
     - name: Estekaren hartzailearen xehetasunak eta elkarreragin xehetasunak
@@ -320,5 +314,9 @@
       href: engagement-insights/integrate-audience-insights-segments.md
     - name: Erabili dimentsio demografikoak portaeraren datuak banatzeko
       href: engagement-insights/curate-dimensions.md
+- name: Zerbitzuaren mugak
+  href: service-limits.md
+- name: DSR eskubideak eta eskaerak
+  href: dsr-rights-requests.md
 - name: Lortu laguntza
-  href: 'https://dynamics.microsoft.com/en-us/support/'
+  href: 'https://dynamics.microsoft.com/support/'

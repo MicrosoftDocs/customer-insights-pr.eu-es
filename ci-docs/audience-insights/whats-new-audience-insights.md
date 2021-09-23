@@ -1,7 +1,7 @@
 ---
 title: Eginbide berriak eta datozenak
 description: Ezaugarri berriei, hobekuntzei eta akatsak konpontzeko ezaugarriei buruzko informazioa.
-ms.date: 07/19/2021
+ms.date: 08/31/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -9,12 +9,12 @@ author: m-hartmann
 ms.author: mhart
 ms.reviewer: midevane
 manager: shellyha
-ms.openlocfilehash: 3412213bcf3a4174baf28c6b4d38f5febded18707c355d236d5082698c4c0db7
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: fcc45c24e9d89516dba9964ee16f57caf439eff0
+ms.sourcegitcommit: 2abe9b661b8c3c01e9730c629e383402e3f6a655
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7035948"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "7465190"
 ---
 # <a name="whats-new-in-the-audience-insights-capability-of-dynamics-365-customer-insights"></a>Dynamics 365 Customer Insights hartzaileen xehetasunei buruzko zerbitzuaren ezaugarri berriak
 
@@ -26,6 +26,15 @@ Eguneratzeak eskualdeen arabera banatzen ditugu. Beraz, eskualde batzuek beste b
 
 > [!TIP]
 > Bidali eta bozkatzeko eginbideak eskaerak eta produktuaren iradokizunak, joan [Dynamics 365 aplikazioaren ideiak atarira](https://experience.dynamics.com/ideas/categories/?forum=79a8c474-4e35-e911-a971-000d3a4f3343&forumName=Dynamics%20365%20Customer%20Insights).
+
+## <a name="august-2021-updates"></a>2021eko abuztuko eguneratzeak
+
+2021eko uztaileko eta abuztuko eguneratzeek eginbide berriak, errendimenduaren bertsio-berritzeak eta akatsen konponketak dituzte.
+
+### <a name="extensibility"></a>Hedagarritasuna
+
+- **Esportatu segmentuak Klaviyo-ra** Zabaldu egin ditugu [esportazio-helburuak, Klaviyo sartzeko](export-klaviyo.md). Orain segmentuak esporta ditzakezu kanpainak sortzeko, posta elektroniko bidezko marketina egiteko eta bezero talde zehatzak erabiltzeko Klaviyo-n. 
+
 
 ## <a name="june-2021-updates"></a>2021ko ekaineko eguneratzeak
 

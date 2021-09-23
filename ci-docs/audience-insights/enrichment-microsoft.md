@@ -9,12 +9,12 @@ ms.topic: how-to
 author: kishorem-MS
 ms.author: kishorem
 manager: shellyha
-ms.openlocfilehash: 726edb19a9fd97d80ae357103dc7d48ed38b005131ad44137b47d629a1c60b12
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: 45c81a037258e42d8975e0372c104865a9d4cbfe
+ms.sourcegitcommit: 2acda3c5adf40bc3f5bbb4b2b4b6c22f84371da7
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7033846"
+ms.lasthandoff: 09/01/2021
+ms.locfileid: "7466609"
 ---
 # <a name="enrich-customer-profiles-with-brand-and-interest-affinities-preview"></a>Aberastu bezeroen profilak marka eta interes kidetasunekin (aurrebista)
 
@@ -126,6 +126,8 @@ Aberaste prozesua exekutatu ostean, joan **Nire aberasteak** berrikusteko guztir
 :::image type="content" source="media/my-enrichments.png" alt-text="Abantaila prozesua exekutatu ondoren, emaitzen aurrebista.":::
 
 Berrikusi aberastutako datuak, hautatuta **Ikusi aberastutako datuak** grafikoan. Marken datu aberastuak: **BrandAffinityFromMicrosoft** Erakunde. Interesen datuak datuak daude **InterestAffinityFromMicrosoft** Erakunde. Erakunde hauek zerrendan aurkituko dituzu **aberastea** taldean **Datuak** > **erakundeak** atalean.
+
+Diagraman, denboran zehar aberastu diren bezeroen profil kopurua eta aberastutako entitatearen aurrebista ikusiko dituzu. Aberastutako entitatea ikusteko, hautatu **Erakutsi gehiago** aurrebista-lauzan.
 
 ## <a name="see-enrichment-data-on-the-customer-card"></a>Ikusi aberastasun datuak bezeroaren txartelean
 

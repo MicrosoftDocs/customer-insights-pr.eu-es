@@ -4,17 +4,17 @@ description: Ikusi iOS SDK pertsonalizatzen eta exekutatzen
 author: britl
 ms.reviewer: mhart
 ms.author: britl
-ms.date: 06/23/2021
+ms.date: 09/15/2021
 ms.service: customer-insights
 ms.subservice: engagement-insights
 ms.topic: conceptual
 ms.manager: shellyha
-ms.openlocfilehash: de8291fc429ae6433301a47bfdf9a3271b1b77294fd58448c7aa6bd0783edc97
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: f05929435eeee9cf3f891ab18842c5861e39d5ba
+ms.sourcegitcommit: fecdee73e26816c42d39d160d4d5cfb6c8a91596
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7036858"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "7494215"
 ---
 # <a name="get-started-with-the-ios-sdk"></a>Hasi iOS SDK erabiltzen
 
@@ -45,11 +45,36 @@ Hasi prozesua lan egiteko lan eremua hautatuz, iOS plataforma mugikorra hautatuz
 
 - Ez baduzu lehendik dagoen lan-eremurik, hautatu **Laneko area berria** eta jarraitu pausoak sortzeko [laneko area berria](create-workspace.md).
 
+- Laneko area sortu ondoren, joan hona: **Administratzailea** > **Lan eremua** eta, ondoren, hautatu **Instalazio gida**.
+
 ## <a name="configure-the-sdk"></a>Konfiguratu SDK
 
-SDK deskargatu ondoren, Xcode-en lan egin dezakezu gertaerak gaitu eta definitzeko.
+SDK deskargatu ondoren, Xcode-en lan egin dezakezu gertaerak gaitu eta definitzeko. Bi modu daude horretarako:
 
-1. Laneko area sortu ondoren, joan hona: **Administratzailea** > **Lan eremua** eta, ondoren, hautatu **Instalazio gida**.
+### <a name="option-1-using-cocoapods-recommended"></a>1. aukera: CocoaPods erabiltzea (gomendatua)
+CocoaPods Swift and Objective-C Cocoa proiektuen mendekotasun-kudeatzailea da. Horri esker, iOS-erako parte-hartzearen xehetasunen SDK errazago integratzen da. CocoaPods-ek parte-hartzearen xehetasunen SDKren azken bertsiora bertsio-berritzeko aukera ematen du. Hona hemen nora erabili CocoaPods parte-hartzearen xehetasunen SDK integratzeko Xcode proiektuan. 
+
+1. Instalatu CocoaPods. 
+
+1. Sortu Podfile izeneko fitxategi bat proiektuaren erroko direktorioan eta gehitu honako adierazpen hauek. Ordeztu YOUR_TARGET_PROJECT_NAME Xcode proiektuaren izenarekin. 
+```objectivec
+platform :ios, '9.0'  
+
+ target '${YOUR_TARGET_PROJECT_NAME}' do 
+
+     use_frameworks!   
+
+     pod 'EIObjC.framework.debug' 
+
+     pod 'EIObjC.framework.release' 
+
+ end 
+```
+Goiko pod konfigurazioak SDKren arazteko eta kaleratutako bertsioak dituzte. Aukeratu proiekturako egokiena dena.
+
+1. Pod-a instalatzeko, exekutatu komando hau: `pod install --repo-update `
+
+### <a name="option-2-using-download-link"></a>2. aukera: deskarga-esteka erabiltzea
 
 1. Deskargatu [parte-hartzearen xehetasunen iOS SDK](https://download.pi.dynamics.com/sdk/EI-SDKs/ei-ios-sdk.zip), eta jarri `EIObjC.xcframework` fitxategia `Frameworks` karpetan.
 

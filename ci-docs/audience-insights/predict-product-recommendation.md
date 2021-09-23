@@ -1,20 +1,20 @@
 ---
 title: Produktuen gomendioen iragarpena
 description: Aurreikusi litekeena dela bezeroak eros ditzakeen produktuak edo haiekin elkarreragitea.
-ms.date: 03/17/2021
+ms.date: 09/13/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
-author: zacookmsft
-ms.author: zacook
+author: wmelewong
+ms.author: wameng
 manager: shellyha
-ms.openlocfilehash: 60d511181aa85e3e939eff3e5931f0de7807c01c8f38134ebca5c5604cd53871
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: a75a245bc721d65643fa78d46f2be52291595a5a
+ms.sourcegitcommit: fecdee73e26816c42d39d160d4d5cfb6c8a91596
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7034941"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "7494524"
 ---
 # <a name="product-recommendation-prediction-preview"></a>Produktu-gomendioen iragarpena (aurreargitalpena)
 
@@ -89,23 +89,24 @@ Ezaugarri hau probatzea interesatzen bazaizu baina beheko baldintzak betetzeko d
 
 ### <a name="add-required-data"></a>Gehitu beharrezko datuak
 
-1. Aukeratu **Gehitu datuak** **Bezeroen transakzio-historia** atalean eta aukeratu transakzioen / erosketen historiari buruzko informazioa ematen duen entitatea, [aurrebaldintzak](#prerequisites) atalean deskribatu moduan.
+1. Hautatu **gehitu datuak** eta aukeratu transakzioaren edo erosketa-historiaren informazioa duen jarduera mota alboko paneletik.
 
-1. Esleitu eremu semantikoak erosketa-historiako entitateko atributuetara eta hautatu **Hurrengoa**. Eremuen deskribapenak eskuratzeko, begiratu [ezinbesteko baldintza](#prerequisites).
-   > [!div class="mx-imgBorder"]
-   > ![Definitu entitate-harremana.](media/product-recommendation-purchasehistorymapping.PNG "Erosketa-historia orria hautatutako erosketa historia entitateko esleitutako atributu semantikoak erakusten ditu")
+1. **Aukeratu jarduerak** atalean, aukeratu hautatutako jarduerako zein jarduera jakinetan jarri behar duen arreta kalkuluak.
 
-1. Eremuak betetzen ez badira, konfiguratu erosketa-historiaren entitatea *Bezeroaren* entitatean.
-    1. Hautatu **Erosketa-historiaren entitatea**.
-    1. Aukeratu erosketa-historiaren entitatean bezeroa identifikatzen duen **Eremua**. Zure *Bezeroaren* entitatearen bezeroaren ID nagusiarekin erlazionatu behar da.
-    1. Hautatu botoia **Bezero entitatea** bat datorrena zure lehen bezero-entitatearekin.
-    1. Idatzi izena deskribatzen duena harremana.
-       > [!div class="mx-imgBorder"]
-       > ![Bezeroarekiko harremana sortu dela erakusten duen erosketa-historiaren orria.](media/model-purchase-join.png "Bezeroarekiko harremana sortu dela erakusten duen erosketa-historiaren orria")
+   :::image type="content" source="media/product-recommendation-select-semantic-activity.PNG" alt-text="Alboko panela, mota semantikoan jarduera jakinak aukeratzeko eragiketa erakusten.":::
+
+1. Jarduera ez badiozu oraindik mota semantiko bati esleitu, hautatu **Editatu** hori egiteko. Jarduera semantikoak esleitzeko esperientzia gidatua irekiko da. Esleitu datuak hautatutako jarduera motako dagokien eremuekin.
+
+   :::image type="content" source="media/product-recommendation-set-activity-type.PNG" alt-text="Jarduera mota ezartzen duen orria.":::
+
+1. Behin jarduera esleituta dagokion mota semantikoari, hautatu **hurrengoa** jarraitzeko 
+ 
+1. Esleitu atributu semantikoak eredua exekutatu ahal izateko behar diren eremuei.
 
 1. Sakatu **Gorde**.
 
 1. Hautatu **Hurrengoa**.
+
 
 ### <a name="configure-product-filters"></a>Konfiguratu produktu-iragazkiak
 

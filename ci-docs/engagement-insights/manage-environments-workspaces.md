@@ -4,17 +4,17 @@ description: Lan eremuak eta inguruneak nola sortu, berrizendatu eta ezabatu.
 author: jusali
 ms.reviewer: mhart
 ms.author: jusali
-ms.date: 07/01/2021
+ms.date: 09/09/2021
 ms.service: customer-insights
 ms.subservice: engagement-insights
 ms.topic: how-to
 ms.manager: shellyha
-ms.openlocfilehash: bf310b1a50ba7baac5d11d5f22ff42003fbba516efd7d165c00b59adc958da2e
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: a5b48db5ae23ea65bf608d67348d493bfdc7678f
+ms.sourcegitcommit: 0ceb46c4f57ab49d3a2ebb1c8a816bbafe979e3d
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7034027"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "7486020"
 ---
 # <a name="manage-environments-and-workspaces"></a>Kudeatu inguruneak eta laneko areak
 
@@ -85,13 +85,11 @@ Laneko area ezabatzen baduzu, betiko kenduko dira bertan dauden edukia, datuak, 
 
 1. Aukeratu **Gehitu kideak** sarbidea emateko eta [rolak esleitu](user-roles.md). Gaur egun, soilik **Laneko espazioaren administratzailea** eskuragarri dago.
 
-1. Konfiguratzen baduzu [ikusleei buruzko informazioarekin lotura](configure-connections.md), hauta dezakezu **Baimendu profileko datuetarako sarbidea** kideari oinarritutako txostenak ikusi ahal izateko [erabiltzaileen profilak](profile-reports.md).
-
 1. Aukeratu **Gehitu kideak** zure laneko eremuan gehitzeko.
 
 ## <a name="manage-an-environment"></a>Kudeatu ingurunea
 
-Ingurumen administratzaile gisa, ingurune batera sar zaitezke ezkerreko nabigazio paneletik. Ingurumenaren ezarpenak, Ingurumeneko beste administratzaile batzuk, laneko guneak eta [ikusleei buruzko informazioa lortzeko konexioak](configure-connections.md). Aukeratu fitxak administrazio zentroan arlo desberdinen artean mugitzeko.
+Ingurumen administratzaile gisa, ingurune batera sar zaitezke ezkerreko nabigazio paneletik. Ingurunearen ezarpenak, beste inguruneen administratzaileak eta laneko areak konfigura ditzakezu. Aukeratu fitxak administrazio zentroan arlo desberdinen artean mugitzeko.
 
 :::image type="content" source="media/New-environment.png" alt-text="Ingurunearen administrazio-zentroa.":::
 
@@ -123,8 +121,6 @@ Ingurumen administratzaile gisa, ingurune batera sar zaitezke ezkerreko nabigazi
 
 1. Aukeratu **Gehitu kideak** eguneratu kideak eta [rolak esleitu](user-roles.md). Gaur egun, soilik **Ingurunearen administratzailea** eskuragarri dago.
 
-1. Konfiguratzen baduzu [ikusleei buruzko informazioarekin lotura](configure-connections.md), hauta dezakezu **Baimendu profileko datuetarako sarbidea** kideari oinarritutako txostenak ikusi ahal izateko [erabiltzaileen profilak](profile-reports.md).
-
 1. Aukeratu **Gehitu kideak** zure ingurunean gehitzeko.
 
 ### <a name="delete-an-environment"></a>Ezabatu ingurunea
@@ -143,7 +139,7 @@ Ingurune administratzaileek inguruneak ezabatu ditzakete. Ingurune bat ezabatu a
 
 Ikuslearen estatistiketarako konexioak ezartzeak bezeroen profil bateratuetan oinarritutako konpromisoen estatistiketan txostenak ikus ditzakezu. 
 
-Informazio gehiago lortzeko, ikusi [Konfiguratu konexioak](configure-connections.md).
+Informazio gehiagorako, ikusi [Sortu esteka hartzailearen eta elkarreragin xehetasunen artean](integrate-audience-insights-engagement-insights.md).
 
 ## <a name="manage-personal-data"></a>Kudeatu datu pertsonalak
 

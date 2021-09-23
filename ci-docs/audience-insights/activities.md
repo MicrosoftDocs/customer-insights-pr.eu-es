@@ -1,20 +1,20 @@
 ---
 title: Bezeroen jarduerak
-description: Definitu bezeroen jarduerak eta ikusi bezeroaren kronologian.
-ms.date: 04/07/2021
+description: Definitu bezeroen jarduerak eta ikusi denbora-lerroan bezeroen profiletan.
+ms.date: 09/12/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.reviewer: mhart
 ms.topic: conceptual
-author: MichelleDevaney
-ms.author: midevane
+author: CadeSanthaMSFT
+ms.author: cadesantha
 manager: shellyha
-ms.openlocfilehash: 6ebe899d3e3da43c4108678cd2e4f9a986e18ab35e839044becab4619adb0f14
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: c5697df8a7d011c70384c8bc5e4773d7fcc25a62
+ms.sourcegitcommit: fecdee73e26816c42d39d160d4d5cfb6c8a91596
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7033616"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "7494396"
 ---
 # <a name="customer-activities"></a>Bezeroen jarduerak
 
@@ -60,12 +60,15 @@ Zure datu-iturriak datu-iturri ugarietatik transakzio- eta jarduera-datuak izan 
       - **Xehetasun osagarria**: Jarduera honetarako informazio garrantzitsua duen eremua.
       - **Ikonoa**: Jarduera mota hau ondoen irudikatzen duen ikonoa.
       - **Web-helbidea**: Jarduera honi buruzko informazioa duen URLa duen eremua. Adibidez, jarduera hau iturri duen transakzio-sistema. URL hau datu-iturburu-eko edozein eremu izan daiteke edo Power Query eraldaketa erabiliz eremu berri gisa eraiki daiteke. URL datuak fitxategian gordeko dira *Jarduera bateratua* entitatea, erabilita ibaian behera kontsumitu daitekeena [APIak](apis.md).
-   
-   :::image type="content" source="media/Activity_Wizard3.PNG" alt-text="Zehaztu bezeroaren jardueraren datuak Jarduera bateratuko entitate batean.":::
+
+   - **Erakutsi denbora-eskalan**
+      - Aukeratu jarduera ikuspegi kronologikoan erakutsi nahi duzun bezeroen profiletan. Jarduera denbora-lerroan erakusteko, hautatu **Bai**. Ezkutatzeko, hautatu **Ez**.
+
+      :::image type="content" source="media/Activity_Wizard3.PNG" alt-text="Zehaztu bezeroaren jardueraren datuak Jarduera bateratuko entitate batean.":::
 
 1. Hautatu **Hurrengoa** hurrengo urratsera mugitzeko. Aukeratu dezakezu **Amaitu eta berrikusi** aktibitatea orain gordetzeko, jarduera mota gisa ezarrita **Beste batzuk**. 
 
-1. Hurrengoan **Jarduera mota** urratsa, aukeratu jarduera mota eta hautatu aukeran Customer Insights beste arlo batzuetan erabiltzeko jarduera mota batzuk semantikoki mapatu nahi dituzun. Gaur egun, *Harpidetza* eta *SalesOrderLine* jarduera motak semantikoki mapatu daitezke eremuak mapatzea adostu ondoren. Jarduera mota bat jarduera berrirako garrantzitsua ez bada, hauta dezakezu *Beste batzuk* edo *Sortu berria* jarduera mota pertsonalizatua lortzeko.
+1. Hurrengoan **Jarduera mota** urratsa, aukeratu jarduera mota eta hautatu aukeran Customer Insights beste arlo batzuetan erabiltzeko jarduera mota batzuk semantikoki mapatu nahi dituzun. Unean, *Feedback*, *Loyalty*, *SalesOrder*, *SalesOrderLine*, eta *Subscription* jarduera motak semantikoki esleitu daitezke, eremuak esleitzea onartu ondoren. Jarduera mota bat jarduera berrirako garrantzitsua ez bada, hauta dezakezu *Beste batzuk* edo *Sortu berria* jarduera mota pertsonalizatua lortzeko.
 
 1. Hautatu **Hurrengoa** hurrengo urratsera mugitzeko. 
 

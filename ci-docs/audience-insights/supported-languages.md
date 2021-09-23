@@ -1,24 +1,23 @@
 ---
-title: Hartzaileen xehetasunetan onartutako hizkuntzak
+title: Hizkuntza bateragarriak Dynamics 365 Customer Insights-erako
 description: Hizkuntzaren laguntza ulertu eta konfiguratu.
-ms.date: 02/26/2021
+ms.date: 09/01/2021
 ms.service: customer-insights
-ms.subservice: audience-insights
 ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: e9161ebbfdf3ae6c48c12cdf7515b77ca49ae8055ae9a69f9ec314bc1247aeaf
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: f80c3019df9b5d82273842ca6f6f18bef0239687
+ms.sourcegitcommit: 5704002484cdf85ebbcf4e7e4fd12470fd8e259f
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7035124"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "7483327"
 ---
-# <a name="supported-languages-for-audience-insights-capability"></a>Hartzaileen xehetasunen gaitasunean onartutako hizkuntzak
+# <a name="supported-languages-for-dynamics-365-customer-insights"></a>Hizkuntza bateragarriak Dynamics 365 Customer Insights-erako
 
-Ikusleen ikuspegia Dynamics 365 Customer Insights hizkuntza askotara itzulita dago. Hurrengo zerrendan eskuragarri dauden hizkuntzak eta itzulitakoari buruzko informazioa daude. Hizkuntza ezarpenak aldatzeko moduari buruzko informazio gehiago ere aurki dezakezu. 
+Dynamics 365 Customer Insights hizkuntza askotara itzuli da. Hurrengo zerrendan eskuragarri dauden hizkuntzak eta itzulitakoari buruzko informazioa daude. Hizkuntza ezarpenak aldatzeko moduari buruzko informazio gehiago ere aurki dezakezu. 
 
 ## <a name="languages"></a>Hizkuntzak
 
@@ -69,7 +68,7 @@ Ikusleen ikuspegia Dynamics 365 Customer Insights hizkuntza askotara itzulita da
 
 ## <a name="whats-translated"></a>Itzulitakoa
 
-Aplikazioak zure hizkuntza-lehentasuna erabiliko du menua, etiketako testua eta sistemaren mezuak bezalako elementuak hobetsitako hizkuntzan erakusteko.
+Customer Insights-ek hizkuntza hobespenak erabiltzen ditu menua, etiketaren testua eta sistemaren mezuak zeure hizkuntza hobetsian erakusteko.
 
 Ezaugarri gehienak zure datuetan oinarritzen direlako, elementu batzuk jatorrizko hizkuntzan geratzen dira. Adibidez:
 

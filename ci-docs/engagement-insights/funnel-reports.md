@@ -4,17 +4,17 @@ description: Nola erabili inbutu-txostenak ikusleak erabakiak nola hartzen ditue
 ms.reviewer: mhart
 ms.author: kamacdon
 author: kamacdon
-ms.date: 06/23/2021
+ms.date: 09/17/2021
 ms.service: customer-insights
 ms.subservice: engagement-insights
 ms.topic: how-to
 ms.manager: shellyha
-ms.openlocfilehash: 7c6b7b7285556f8a531ce9e29f0d1de162562be6fb43dd826a65fd9e00d87b30
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: 901e7ec50037d66c7c5ceb635d1c6cda6cfff83b
+ms.sourcegitcommit: 3bafa27adae113948636b30c7462e0af060c7131
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7032240"
+ms.lasthandoff: 09/17/2021
+ms.locfileid: "7498627"
 ---
 # <a name="create-and-manage-funnel-reports"></a>Sortu eta kudeatu inbutu-txostenak
 
@@ -158,4 +158,21 @@ Inbutuko txosten baten izena aldatu, ezabatu edo txosteneko urratsak alda ditzak
 1. Aukeratu izen bat txostena irekitzeko.
 
 1. Hautatu urratsa kendu nahi duzuna eta hautatu **Ezabatu**.
+
+## <a name="funnel-insights"></a>Inbutuaren xehetasunak 
+
+Parte-hartzearen xehetasunek inbutuaren xehetasunak eskaintzen dituzte bezeroentzat. Erabili inbutuaren xehetasunak inbutuaren txosteneko urratsei buruzko bezeroaren portaera hobeto ulertzeko. Inbutuaren txosten bat sortu eta gordetzerakoan, txostenerako inbutuaren xehetasunak automatikoki sortzen dira. 
+
+Inbutuaren xehetasunak honako kategoria hauen bidez ikus ditzakezu, bai maila nagusi eta urrats mailan: 
+
+ - Bihurketa-tasa 
+ - Trantsizio-denbora 
+ - Osatze-ordua 
+
+Erabili xehetasun horiek bezeroaren portaera sakonago arakatzeko eta inbutuaren txosteneko entrega-puntuak eta bihurketak hobeto ulertzeko. 
+
+Inbutuaren xehetasunak 24 orduro kalkulatzen dira edo inbutuaren txostena **Gordetzen** duzunero. 
+
+> [!NOTE]
+> Inbutuaren xehetasunak ikusteko, txostena gorde behar duzu aldaketak egiten dituzunero. 
 

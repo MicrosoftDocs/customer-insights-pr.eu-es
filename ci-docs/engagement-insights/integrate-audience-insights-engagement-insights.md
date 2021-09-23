@@ -1,19 +1,19 @@
 ---
 title: Sortu esteka bat hartzaile xehetasun eta elkarreragin xehetasunen artean
 description: Sortu lotura aktibo bat ikusleen estatistiken eta konpromisoen estatistiken artean, datuen noranzko bikoitza partekatzea ahalbidetzeko.
-ms.date: 07/22/2021
+ms.date: 09/08/2021
 ms.service: customer-insights
 ms.topic: conceptual
 author: mkisel
 ms.author: mkisel
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 870209a7e19fec464ec41462a02365771bd653bd
-ms.sourcegitcommit: 1c396394470df8e68c2fafe3106567536ff87194
+ms.openlocfilehash: 0fdbc93292291814b2e1a62fee2c5ff796ae14e2
+ms.sourcegitcommit: 4e5b7ec50c7612765a9ec2c8673e0cc43b357abb
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "7460998"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "7487092"
 ---
 # <a name="create-a-link-between-audience-insights-and-engagement-insights"></a>Sortu esteka bat hartzaile xehetasun eta elkarreragin xehetasunen artean
 
@@ -26,14 +26,14 @@ Erabili profil bateratuak eta segmentuen audientzia estatistiketatik konpromiso 
 ## <a name="prerequisites"></a>Aurrebaldintzak
 
 - Ikusleen estatistiken profilak an gorde behar dira Azure Data Lake Storage jabea duzun kontua edo [Microsoft Dataverse](/powerapps/maker/data-platform/data-platform-intro.md)&ndash;datuen laku kudeatua. 
-
+- Hartzaileen xehetasunen ingurunean erlazionatutako Dataverse ingurune bat izan behar du. Eta ingurune horrek Dataverse erabiltzen badu datuak gordetzeko, ziurtatu **Gaitu datuak partekatzea** aukera hautatzen duzula hartzaileen xehetasunetan. Informazio gehiaog lortzeko, ikusi [Sortu eta konfiguratu ordainpeko ingurune bat hartzaileen xehetasunetan](../audience-insights/get-started-paid.md).
 - Administratzaile-baimenak behar dituzu bai konpromisoen inguruko estatistiketarako eta bai publikoetako estatistiketarako.
-
 - Lotutako inguruneek eskualde geografiko berean egon behar dute.
 
 > [!NOTE]
-> - Ikusleentzako estatistiken harpidetzak probak egiten baditu, audientzien estatistikak barnean kudeatutako data lake erabiltzen badu, jarri harremanetan [pirequest@microsoft.com](mailto:pirequest@microsoft.com) laguntza lortzeko. 
-> - Zure ikusleei buruzko informazioa inguruneak zurea erabiltzen badu Azure Data Lake Storage datuak gordetzeko, konpromisoari buruzko informazioaren Azure zerbitzu nagusia gehitu behar duzu zure biltegiratze kontuan. Xehetasunak lortzeko, joan hona [Konektatu Azure Data Lake Storage kontua Azure zerbitzu nagusiarekin ikusleei buruzko informazioa lortzeko](../audience-insights/connect-service-principal.md). Era berean, zure ikusleei buruzko informazioaren inguruneak lotura izan beharko luke [Dataverse ingurunea](../audience-insights/get-started-paid.md). 
+> - Hartzaileen xehetasunen harpidetza probako bertsioa bada, hartzaileen xehetasunen barruan kudeatutako datu-biltegi bat erabiltzen duena, jarri harremanetan honekin laguntza lortzeko: [pirequest@microsoft.com](mailto:pirequest@microsoft.com). 
+> - Zure ikusleei buruzko informazioa inguruneak zurea erabiltzen badu Azure Data Lake Storage datuak gordetzeko, konpromisoari buruzko informazioaren Azure zerbitzu nagusia gehitu behar duzu zure biltegiratze kontuan. Xehetasunak lortzeko, joan hona [Konektatu Azure Data Lake Storage kontua Azure zerbitzu nagusiarekin ikusleei buruzko informazioa lortzeko](../audience-insights/connect-service-principal.md). 
+
 
 ## <a name="create-an-environment-link"></a>Sortu ingurune bat estekan
 
@@ -75,6 +75,7 @@ Inguruneak estekatu ostean estekatutako inguruneetarako aukerako ezaugarriak hau
 
    > [!IMPORTANT]
    > Urrats honetan erabiltzaileak esplizituki gehitzen ez badituzu, datuak ezkutatuko zaizkie erabiltzaileei konpromisoari buruzko informazioetan.
+   > Ikusleen estatistiken segmentuak konpromisoen estatistiketan agertzeko, lehenik eta behin egin behar duzu [exekutatu bateratze eta downstream prozesuak](../audience-insights/merge-entities.md). Downstream prozesuak garrantzitsuak dira, ikusleei buruzko informazio segmentuak prestatzen dituen taula bakarra sortzen dutelako, konpromisoekin partekatzeko. (Sistema freskatzea programatuta badago, automatikoki beheranzko prozesuak sartuko ditu.)
 
 1. Berrikusi zure hautapena eta hautatu **Amaitu**.
 

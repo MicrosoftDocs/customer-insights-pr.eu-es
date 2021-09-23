@@ -4,17 +4,17 @@ description: Ikusi Android SDK pertsonalizatzen eta exekutatzen
 author: britl
 ms.reviewer: mhart
 ms.author: britl
-ms.date: 06/23/2021
+ms.date: 09/15/2021
 ms.service: customer-insights
 ms.subservice: engagement-insights
 ms.topic: conceptual
 ms.manager: shellyha
-ms.openlocfilehash: 77e63929bbcc7ecff34a3839af525b76ec3c7f21173ddc5f8f2d69f11c25c441
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: a060ac60db71a7b0fb8c0d7a3b0e266004fbee6a
+ms.sourcegitcommit: fecdee73e26816c42d39d160d4d5cfb6c8a91596
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7036903"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "7494259"
 ---
 # <a name="get-started-with-the-android-sdk"></a>Hasi Android SDK erabiltzen
 
@@ -35,17 +35,38 @@ Ondorengo konfigurazio aukerak SDKra pasa daitezke:
 
 - Irensteko giltza bat (ikusi jarraian nola eskuratzeko beheko argibideak)
 
-## <a name="step-1-integrate-the-sdk-into-your-application"></a>1. urratsa. Integratu SDK zure aplikazioan
+## <a name="integrate-the-sdk-into-your-application"></a>Integratu SDK zure aplikazioan
 Hasi prozesua lan egiteko lan eremua hautatuz, Android plataforma mugikorra hautatuz eta Android SDK deskargatuz.
 
 - Erabili ezkerreko nabigazio paneleko laneko espazio aldatzailea zure lan eremua hautatzeko.
 
 - Ez baduzu lehendik dagoen lan-eremurik, hautatu **Laneko area berria** eta jarraitu pausoak sortzeko [laneko area berria](create-workspace.md).
 
-## <a name="step-2-configure-the-sdk"></a>2. urratsa. Konfiguratu SDK
+- Laneko area sortu ondoren, joan hona: **Administratzailea** > **Lan eremua** eta, ondoren, hautatu **Instalazio gida**. 
 
-1. Laneko area sortu ondoren, joan hona: **Administratzailea** > **Lan eremua** eta, ondoren, hautatu **Instalazio gida**. 
+## <a name="configure-the-sdk"></a>Konfiguratu SDK
 
+Behin SDK deskargatuta, Android Studio-n egin dezakezu harekin lan, gertaerak gaitu eta definitzeko. Bi modu daude horretarako:
+### <a name="option-1-using-jitpack-recommended"></a>1. aukera: JitPack erabiltzea (gomendatua)
+1. Gehitu JitPack biltegia erroko `build.gradle` elementuan:
+    ```gradle
+    allprojects {
+        repositories {
+            ...
+            maven { url 'https://jitpack.io' }
+        }
+    }
+    ```
+
+1. Gehitu mendekotasuna:
+    ```gradle
+    dependencies {
+        implementation 'com.github.microsoft:engagementinsights-sdk-android:1.0.0'
+        api 'com.google.code.gson:gson:2.8.1'
+    }
+    ```
+
+### <a name="option-2-using-download-link"></a>2. aukera: deskarga-esteka erabiltzea
 1. Deskargatu [parte-hartzearen xehetasunen Android SDK](https://download.pi.dynamics.com/sdk/EI-SDKs/ei-android-sdk.zip), eta jarri `eiandroidsdk-debug.aar` fitxategia `libs` karpetan.
 
 1. Ireki proiektu mailako `build.gradle` fitxategia eta gehitu kode zati hauek:
@@ -62,7 +83,17 @@ Hasi prozesua lan egiteko lan eremua hautatuz, Android plataforma mugikorra haut
     }
     ```
 
-1. Konfiguratu konpromiso estatistiken SDK konfigurazioa zure bidez `AndroidManifest.xml` fitxategia `manifests` karpeta. 
+1. Gehitu sareko eta Interneteko baimenak `manifests` karpetako `AndroidManifest.xml` fitxategian. 
+    ```xml
+    <manifest>
+        ...
+        <uses-permission android:name="android.permission.INTERNET" />
+        <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    ```
+    
+1. Ezarri parte-hartzearen xehetasunen SDKren konfigurazioa `AndroidManifest.xml` fitxategiaren bidez. 
+
+## <a name="enable-auto-instrumentation"></a>Gaitu instrumentazio automatikoa
 1. Kopiatu XML kode zati helbidetik **Instalazio gida**. `Your-Ingestion-Key` automatikoki bete beharko litzateke.
 
    > [!NOTE]
@@ -85,7 +116,7 @@ Hasi prozesua lan egiteko lan eremua hautatuz, Android plataforma mugikorra haut
    </application>
    ```
 
-1. `View` gertaerak ikusteko eginbidearen `autoCapture` gaitzeko edo desgaitzeko, ezarri goiko autoCapture eremua `true` edo `false` gisa.
+1. `View` gertaerak ikusteko eginbidearen `autoCapture` gaitzeko edo desgaitzeko, ezarri goiko autoCapture eremua `true` edo `false` gisa. Uneko `Action` ekintza eskuz gehitu behar da.
 
 1. (Aukerakoa) Beste konfigurazio batzuen artean, amaierako puntu biltzailearen URLa ezartzea dago. Iradokizun gako metadatuen azpian gehi daitezke `AndroidManifest.xml`:
     ```xml
@@ -94,9 +125,9 @@ Hasi prozesua lan egiteko lan eremua hautatuz, Android plataforma mugikorra haut
             android:value="https://some-endpoint-url.com" />
     ```
 
-## <a name="step-3-initialize-the-sdk-from-mainactivity"></a>3. urratsa. Hasieratu MainActivity elementuko SDK 
+## <a name="implement-custom-events"></a>Ezarri gertaera pertsonalizatuak
 
-SDK hasieratu ondoren, gertaerekin eta haien propietateekin lan egin dezakezu MainActivity ingurunean.
+Behin SDK abiarazita, gertaerekin eta euren propietateekin lan egin dezakezu `MainActivity` ingurunean.
 
     
 Java:
@@ -147,7 +178,7 @@ event.setProperty("ad_shown", true)
 analytics.trackEvent(event)
 ```
 
-### <a name="set-user-details-for-your-event-optional"></a>Ezarri zure gertaeraren erabiltzaile xehetasunak (aukerakoa)
+## <a name="set-user-details-for-your-event-optional"></a>Ezarri zure gertaeraren erabiltzaile xehetasunak (aukerakoa)
 
 SDK-k gertaera guztiekin bidal daitekeen erabiltzailearen informazioa zehazteko aukera ematen du. Erabiltzailearen informazioa zehaztu dezakezu `setUser(user: User)` APIa `Analytics` mailan.
 
