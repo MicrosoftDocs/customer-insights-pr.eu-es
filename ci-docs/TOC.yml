@@ -242,7 +242,7 @@
   items:
     - name: Laguntza-atala
       href: engagement-insights/index.yml
-    - name: Gaitasunaren ikuspegi orokorra
+    - name: Parte-hartzearen xehetasunei buruz
       href: engagement-insights/overview.md
     - name: Hasi erabiltzen
       items:
@@ -306,7 +306,7 @@
           href: engagement-insights/user-consent-storage.md
     - name: Erabilgarritasun lokala
       href: engagement-insights/regional-availability.md
-- name: Integratu ikusleen eta konpromisoen inguruko datuak
+- name: Partekatu datuak gaitasunen artean
   items:
     - name: Estekaren hartzailearen xehetasunak eta elkarreragin xehetasunak
       href: engagement-insights/integrate-audience-insights-engagement-insights.md
@@ -318,5 +318,3 @@
   href: service-limits.md
 - name: DSR eskubideak eta eskaerak
   href: dsr-rights-requests.md
-- name: Lortu laguntza
-  href: 'https://dynamics.microsoft.com/support/'

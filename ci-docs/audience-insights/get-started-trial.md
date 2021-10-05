@@ -10,12 +10,12 @@ author: MichelleDevaney
 ms.author: midevane
 manager: shellyha
 ms.custom: intro-internal
-ms.openlocfilehash: f038dedd369ac9e623146b66528efa87c47a8c23769037d8709fa9b804a0b723
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: 3a235e924395a606b9332de3d205289288a597a9
+ms.sourcegitcommit: f1e3cc51ea4cf68210eaf0210ad6e14b15ac4fe8
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7035400"
+ms.lasthandoff: 09/27/2021
+ms.locfileid: "7558808"
 ---
 # <a name="set-up-a-trial-environment"></a>Konfiguratu probako ingurunea 
 
@@ -95,7 +95,7 @@ Orain sartutako datuak erabil ditzakezu Customer Insights zure eszenatokira egok
 
 - Probak aktibatuta daude 30 egun lehenespenez. Hala ere, proban saioa hasten duzunean 23. egunetik aurrera luza ditzakezu.
 - Ezin duzu Azure Data Lake biltegiratze kontua erabili probako irteerako datuak gordetzeko. Hala ere, datuak Data Lake biltegiratze kontu batetik har ditzakezu.
-- Gehienez 3 GB datu gorde ditzakezu Dataverse Customer Insights proban hasten zarenean automatikoki hornitzen den ingurunean.
+- 3 GB datu gorde ditzakezu Customer Insights abiaraztean automatikoki hornitzen den Dataverse ingurunean.
 
 ## <a name="copy-data-from-a-trial-to-a-paid-subscription"></a>Kopiatu probako datuak ordaindutako harpidetzara
 

@@ -8,12 +8,12 @@ author: mkisel
 ms.author: mkisel
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 0fdbc93292291814b2e1a62fee2c5ff796ae14e2
-ms.sourcegitcommit: 4e5b7ec50c7612765a9ec2c8673e0cc43b357abb
+ms.openlocfilehash: 8d93a49a29c29103e189a6d4a42294c18dc28abd
+ms.sourcegitcommit: f1e3cc51ea4cf68210eaf0210ad6e14b15ac4fe8
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "7487092"
+ms.lasthandoff: 09/27/2021
+ms.locfileid: "7559003"
 ---
 # <a name="create-a-link-between-audience-insights-and-engagement-insights"></a>Sortu esteka bat hartzaile xehetasun eta elkarreragin xehetasunen artean
 
@@ -54,6 +54,9 @@ Ingurunearen esteka sor dezakezu **Administratzailea** > **Ingurumena** ezarpena
 ## <a name="enable-audience-insights-unified-profiles-attributes-and-segments"></a>Gaitu publikoaren estatistikak profil bateratuen atributuak eta segmentuak
 
 Inguruneak estekatu ostean estekatutako inguruneetarako aukerako ezaugarriak hauta ditzakezu. Ezaugarri horiei esker, publikoaren estatistiketatik profil bateratuen atributuak eta segmentuak bezeroen datuen analisi interaktiboa egiteko daude.
+
+> [!IMPORTANT]
+> Ikusleen estatistiken segmentuak konpromisoen estatistiketan agertzeko, lehenik eta behin egin behar duzu [exekutatu bateratze eta downstream prozesuak](../audience-insights/merge-entities.md). Downstream prozesuak garrantzitsuak dira, ikusleei buruzko informazio segmentuak prestatzen dituen taula bakarra sortzen dutelako, konpromisoekin partekatzeko. (Sistema freskatzea programatuta badago, automatikoki beheranzko prozesuak sartuko ditu.)
 
 **Web datuak konpromiso estatistiketan aztertzeko**
 

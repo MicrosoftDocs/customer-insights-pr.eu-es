@@ -1,20 +1,20 @@
 ---
 title: Entitateen eta entitateen bide-izenen arteko erlazioak
 description: Sortu eta kudeatu datu-iturburu anitzetako entitateen arteko harremanak.
-ms.date: 06/01/2020
+ms.date: 09/27/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
-author: MichelleDevaney
-ms.author: midevane
+author: CadeSanthaMSFT
+ms.author: cadesantha
 manager: shellyha
-ms.openlocfilehash: 1853fcd8db2918a0b4a19fa0934e2f0ddbcf6d093c85fdf2068a13f954035dec
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: c639cfca30cf1b57ada7d728311210b7210a37ac
+ms.sourcegitcommit: f72d5b86dfdc7282c6c1918b1ab3962d7a1c9852
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7035216"
+ms.lasthandoff: 09/27/2021
+ms.locfileid: "7557337"
 ---
 # <a name="relationships-between-entities"></a>Harremanak entitateen artean
 
@@ -93,11 +93,11 @@ Aukera erabilgarriak:
 - **Aldatu diseinu horizontal / bertikalera**: Entitateen eta harremanen lerrokatzea aldatu.
 - **Editatu**: Harreman pertsonalizatuen propietateak eguneratu editatzeko panelean eta gorde aldaketak.
 
-### <a name="relationship-path"></a>Erlazioaren bide-izena
+## <a name="relationship-paths"></a>Erlazioaren bide-izenak
 
-Harreman-bideak iturburu-entitate baten eta xede-entitate baten arteko harremanekin lotura duten entitateak deskribatzen ditu. Profil bateratuaren entitatea ez den beste entitate batzuk biltzen dituen segmentu edo neurri bat sortzean erabiltzen da eta profil anitzeko entitate horretara iristeko aukera ugari daude.
+Erlazioaren bide-izen batek iturburu entitate baten eta xede entitate baten arteko harremanekin lotura duten entitateak deskribatzen ditu. Profil bateratuaren entitatea ez den beste entitate batzuk biltzen dituen segmentu edo neurri bat sortzean erabiltzen da eta profil anitzeko entitate horretara iristeko aukera ugari daude. 
 
-Harremanen bideak profil bateratuko entitatera sartzeko zein harremanen berri ematen duen sistemaren berri ematen du. Harreman bide desberdinek emaitza desberdinak eman ditzakete.
+Erlazioaren bide-izen batek profil bateratuko entitatera sartzeko zein harremanen gaineko sistemaren berri ematen du. Harreman bide desberdinek emaitza desberdinak eman ditzakete.
 
 Adibidez, entitatea *eCommerce_eCommerceErosketak* profil bateratuarekin harreman hauek ditu *Bezeroa* entitatea:
 
@@ -105,7 +105,43 @@ Adibidez, entitatea *eCommerce_eCommerceErosketak* profil bateratuarekin harrema
 - eCommerce_eCommercePurchases > eCommerce_eCommerceContacts > POS_posPurchases > Bezeroa
 - eCommerce_eCommercePurchases > eCommerce_eCommerceContacts > POS_posPurchases > loyaltyScheme_loyCustomers > Bezeroa 
 
-Harreman-bideak zehazten du zein entitate erabil ditzakezun neurri edo segmentuetarako arauak sortzerakoan. Harreman bide luzeena duen aukera aukeratzeak emaitza gutxiago lortuko du ziurrenik bat datozen erregistroek entitate guztien parte izan behar dutelako. Adibide honetan, bezeroak merkataritza elektronikoaren bidez (eCommerce_eCommercePurchases), salmenta puntu batean (POS_posPurchases) erosi behar ditu ondasunak eta gure fidelizazio programan parte hartu (loyaltyScheme_loyCustomers). Lehen aukera aukeratzerakoan, emaitza gehiago lortuko zenituzke, bezeroek entitate osagarri batean bakarrik egon behar dutelako.
+Erlazioaren bide-izen batek zehazten du zein entitate erabil ditzakezun neurri edo segmentuetarako arauak sortzerakoan. Harreman bide luzeena duen aukera aukeratzeak emaitza gutxiago lortuko du ziurrenik bat datozen erregistroek entitate guztien parte izan behar dutelako. Adibide honetan, bezeroak merkataritza elektronikoaren bidez (eCommerce_eCommercePurchases), salmenta puntu batean (POS_posPurchases) erosi behar ditu ondasunak eta gure fidelizazio programan parte hartu (loyaltyScheme_loyCustomers). Lehen aukera aukeratzerakoan, emaitza gehiago lortuko zenituzke, bezeroek entitate osagarri batean bakarrik egon behar dutelako.
+
+### <a name="direct-relationship"></a>Erlazio zuzena
+
+Harreman bat **harreman zuzena** bezala sailkatzen da iturburu-entitate bat harreman bakarra duen xede-entitate batekin erlazionatzen denean.
+
+Adibidez, *eCommerce_eCommercePurchases* izeneko jarduera entitate bat helburuko entitate batekin konektatzen bada *eCommerce_eCommerceContacts* entitatea *ContactId* elementuaren bidez soilik, harreman zuzena da.
+
+:::image type="content" source="media/direct_Relationship.png" alt-text="Jatorrizko entitatea zuzenean konektatzen da xede entitatearekin.":::
+
+#### <a name="multi-path-relationship"></a>Bide-izen anitzeko erlazioa
+
+**Bide-izen anitzeko harremana** iturri-entitate bat xede-entitate bat baino gehiagorekin konektatzen duen harreman zuzeneko mota berezia da.
+
+Adibidez, *eCommerce_eCommercePurchases* izeneko jarduera-entitate bat xede duten bi entitateekin lotzen bada, *eCommerce_eCommerceContacts* eta *loyaltyScheme_loyCustomers*, bide-izen anitzeko harremana da.
+
+:::image type="content" source="media/multi-path_relationship.png" alt-text="Iturburuko entitatea zuzenean xede duen entitate batekin baino gehiagorekin konektatzen da salto anitzeko harreman baten bidez.":::
+
+### <a name="indirect-relationship"></a>Zeharkako erlazioa
+
+Harreman bat **zeharkako harreman** bezala sailkatzen da iturburu-entitate bat hainbat entitaterekin erlazionatzen bada xede-entitate batekin erlazionatu aurretik.
+
+#### <a name="multi-hop-relationship"></a>Salto anitzeko erlazioa
+
+*Salto anitzeko erlazio* bat da *zeharkako harremana* iturburu-entitate bat xede-entitate batekin beste bitartekari-entitate baten edo gehiagoren bidez konektatzeko aukera ematen duena.
+
+Adibidez, *eCommerce_eCommercePurchasesWest* izeneko jarduera-entitate bat konektatzen bada *eCommerce_eCommercePurchasesEast* izeneko tarteko entitate batekin eta, ondoren, *eCommerce_eCommerceContacts* izeneko xede-entitate batera konektatzen bada, salto anitzeko harremana da.
+
+:::image type="content" source="media/multi-hop_relationship.png" alt-text="Jatorrizko entitatea zuzenean konektatzen da xede duen entitate batekin tarteko entitate batekin.":::
+
+### <a name="multi-hop-multi-path-relationship"></a>Salto eta bide-izen anitzeko erlazioa
+
+Salto anitzeko eta bide anitzeko erlazioak batera erabil daitezke sortzeko **salto eta bide-izen anitzeko erlazioak**. Mota berezi honek **salto anitzeko** eta **bide-izen anitzeko erlazioak** funtzioen funtzioak konbinatzen ditu. Helburuko entitate bat baino gehiagorekin konektatzeko aukera ematen du bitarteko entitateak erabiltzen ari zaren bitartean.
+
+Adibidez, *eCommerce_eCommercePurchasesWest* izeneko jarduera-entitate bat konektatzen bada *eCommerce_eCommercePurchasesEast* izeneko tarteko entitate batekin eta, ondoren, *eCommerce_eCommerceContacts* eta *loyaltyScheme_loyCustomers* izeneko bi xede-entitatetara konektatzen bada, salto eta bide-izen anitzeko harremana da.
+
+:::image type="content" source="media/multi-hop_multi-path_relationship.png" alt-text="Iturburu-entitatea zuzenean konektatzen da xede-entitate batekin eta beste xede-entitate batera konektatzen da tarteko entitate baten bidez.":::
 
 ## <a name="manage-existing-relationships"></a>Kudeatu lehendik dauden erlazioak 
 
