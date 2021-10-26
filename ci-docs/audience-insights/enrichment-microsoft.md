@@ -9,12 +9,12 @@ ms.topic: how-to
 author: kishorem-MS
 ms.author: kishorem
 manager: shellyha
-ms.openlocfilehash: 45c81a037258e42d8975e0372c104865a9d4cbfe
-ms.sourcegitcommit: 2acda3c5adf40bc3f5bbb4b2b4b6c22f84371da7
+ms.openlocfilehash: 51b150cbf5d9cfb3a5df42e680bcfa57ec5496cb
+ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 09/01/2021
-ms.locfileid: "7466609"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "7617862"
 ---
 # <a name="enrich-customer-profiles-with-brand-and-interest-affinities-preview"></a>Aberastu bezeroen profilak marka eta interes kidetasunekin (aurrebista)
 
@@ -137,7 +137,7 @@ Marka eta interes kidetasunak bezero banakako txarteletan ere ikus daitezke. Joa
 
 ## <a name="next-steps"></a>Hurrengo urratsak
 
-Eraiki zure bezeroen datu aberastuen gainean. Sortu [Segmentuak](segments.md) eta [Neurriak](measures.md), eta are [datuak esportatu](export-destinations.md) zure bezeroei esperientzia pertsonalizatuak emateko.
+[!INCLUDE [next-steps-enrichment](../includes/next-steps-enrichment.md)]
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

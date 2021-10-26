@@ -1,7 +1,7 @@
 ---
 title: Onartutako iragarpen agertokiei buruzko ikuspegi orokorra
 description: Dynamics 365 Customer Insights aplikazioak lantzen dituen iragarpen agertokiak eta aukerak.
-ms.date: 05/18/2021
+ms.date: 09/06/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -10,12 +10,12 @@ author: zacookmsft
 ms.author: zacook
 manager: shellyha
 ms.custom: intro-internal
-ms.openlocfilehash: 57c61895d636273fc90a0ac5a942fd0c9abf583c687ae20621949554e581cdf8
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: be452e4f1515f637f6edbc3ae3aaf6a3d3471489
+ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7035994"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "7618828"
 ---
 # <a name="predictions-overview"></a>Iragarpenen ikuspegi orokorra
 
@@ -24,10 +24,20 @@ Dynamics 365 Customer Insights adimen artifiziala eta Ikaskuntza automatikoa bal
 ## <a name="out-of-box-models"></a>Erabiltzeko prest dauden ereduak
 
 Datuak aurreikusten hasteko modurik errazena aurrez zehaztutako ereduak dira, maiz erabiltzeko prest dauden eredu gisa aipatzen direnak. Datu eta egitura jakin batzuk besterik ez dituzte eskatzen estatistikak azkar sortzeko. Gaur egun, eredu hauek daude eskuragarri: 
-- [Bezeroaren bizi-iraupenaren balioa](predict-customer-lifetime-value.md): Bezero batek negozioarekin izandako elkarrekintza osoan zehar izan dezakeen diru sarrera iragartzen du. 
+
+# <a name="individual-customers-b2c"></a>[Banakako bezeroak (B2C)](#tab/b2c)
+
+- [Bezeroaren bizi-iraupenaren balioa](predict-customer-lifetime-value.md): Bezero batek negozioarekin izandako elkarrekintza osoan zehar izan dezakeen diru sarrera iragartzen du.
 - [Produktuen gomendioa](predict-product-recommendation.md): Produktu iragarleen gomendio multzoak iradokitzen ditu erosketa portaeran eta antzeko erosketa ereduak dituzten bezeroetan oinarrituta.
 - [Harpidetzen galera-tasa](predict-subscription-churn.md): bezeroak enpresaren harpidetza-produktu eta -zerbitzuak erabiltzeari uzteko arriskua duen iragar dezake.
 - [Transakzioen galera-tasa](predict-transactional-churn.md): Aurreikusi bezero batek zure produktuak edo zerbitzuak denbora tarte jakin batean erosiko ez dituen ala ez.
+
+# <a name="business-accounts-b2b"></a>[Negozio-kontuak (B2B)](#tab/b2b)
+
+- [Transakzioen galera-tasa](predict-transactional-churn.md): Aurreikusi bezero batek zure produktuak edo zerbitzuak denbora tarte jakin batean erosiko ez dituen ala ez.
+
+---
+
 
 ## <a name="azure-machine-learning-integration"></a>Azure ikaskuntza automatikoaren integrazioa
 

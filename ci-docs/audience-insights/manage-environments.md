@@ -1,7 +1,7 @@
 ---
 title: Sortu eta kudeatu inguruneak
 description: Ikasi zerbitzuan izena ematen eta inguruneak kudeatzen.
-ms.date: 07/22/2021
+ms.date: 10/14/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
@@ -9,12 +9,12 @@ ms.reviewer: mhart
 author: NimrodMagen
 ms.author: nimagen
 manager: shellyha
-ms.openlocfilehash: e3f99f8f151aea5f120084382babd5e46e109545a4f63aafc51c3ecb1400cc33
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: ce2fdd435a81bb04148057554c5958e3ab59f125
+ms.sourcegitcommit: 53b133a716c73cb71e8bcbedc6273cec70ceba6c
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7034162"
+ms.lasthandoff: 10/15/2021
+ms.locfileid: "7645111"
 ---
 # <a name="manage-environments"></a>Kudeatu inguruneak
 
@@ -26,7 +26,7 @@ Hautatu botoia **Ingurumena** kontrol orria orriaren goiko eskuinaldean ingurune
 
 :::image type="content" source="media/home-page-environment-switcher.png" alt-text="Inguruaz aldatzeko kontrolaren pantaila-argazkia.":::
 
-Administratzaileek inguruneak [sortu](get-started-paid.md) eta kudeatu ditzakete.
+Administratzaileek inguruneak [sortu](create-environment.md) eta kudeatu ditzakete.
 
 ## <a name="edit-an-existing-environment"></a>Editatu lehendik dagoen ingurunea
 
@@ -36,23 +36,9 @@ Dauden inguruneen xehetasun batzuk editatu ditzakezu.
 
 2.  Hautatu **Editatu** ikonoa.
 
-3. **Editatu ingurunea** koadroan, ingurunekoak egunera ditzakezu **Bistaratzeko izena**, baina ezin duzu aldatu **Eskualdea** edo **Mota**.
+3. Urtean **Editatu ingurunea** koadroan, ingurunearen ezarpenak egunera ditzakezu.
 
-4. Ingurunea datuak gordetzeko konfiguratuta badago Azure Data Lake Storage, eguneratu dezakezu **Kontuaren gakoa**. Hala ere, ezin duzu aldatu **Kontuaren izena** edo **edukiontzia** izendatzeko.
-
-5. Aukeran, kontuaren gakoan oinarritutako konexio batetik baliabideetan oinarritutako edo harpidetzan oinarritutako konexio batera egunera dezakezu. Bertsio berritu ondoren, ezin duzu kontuaren gakoetara itzuli eguneratu ondoren. Informazio gehiagorako, ikus [Konektatu hartzaileei buruzko xehetasunak Azure Data Lake Storage Gen2 kontu batera Azure zerbitzuaren entitatearekin](connect-service-principal.md). Ezin duzu aldatu **Edukiontzia**-ren informazioa konexioa eguneratzean.
-
-6. Aukeran, a eman dezakezu Microsoft Dataverse inguruneko URL azpian **Konfiguratu datuak partekatzearekin Microsoft Dataverse eta gaitasun osagarriak gaitu**. Gaitasun hauek datuak oinarritutako aplikazioekin eta soluzioekin partekatzea dira Microsoft Dataverse, lokal datu iturrietatik jasotako datuak edo erabilera [iragarpenak](predictions.md). Aukeratu **Gaitu datuak partekatzea** Customer Insights-en irteerako datuak partekatzeko Microsoft Dataverse kudeatutako Data Lake.
-
-   > [!NOTE]
-   > - Datuak partekatzearekin Microsoft Dataverse-ren kudeatutako datuen lakua ez da onartzen une honetan datu guztiak gordetzen dituzunean Azure Data Lake Storage.
-   > - [Entitate batean falta diren balioen iragarpena](predictions.md) eta PowerBI Embedded txostenak hartzaileen xehetasunetan (zure ingurunean gaituta badaude) ez dira onartzen datuak partekatzea gaitzen duzunean Microsoft Dataverse-k kudeatutako datu-biltegiarekin.
-
-   Datuak partekatzeko aukera gaitu ondoren Microsoft Dataverse-rekin, datu-iturburuen freskatze osoa eta beste prozesu batzuk hasiko dira. Une honetan prozesuak martxan badaude, ez duzu ikusiko datuak partekatzea gaitzeko aukera Microsoft Dataverse. Itxaron prozesu horiek amaitu arte edo utzi bertan behera datuak partekatzea ahalbidetzeko. 
-   
-   :::image type="content" source="media/datasharing-with-DataverseMDL.png" alt-text="Konfigurazioaren aukerak gaitzeko datuak partekatzeko Microsoft Dataverse.":::
-   
-   Prozesuak exekutatzen dituzunean, adibidez, datuak sartzea edo segmentua sortzea, dagozkien karpetak sortuko dira goian zehaztu duzun biltegiratze kontuan. Datu fitxategiak eta model.json fitxategiak sortu eta dagozkien azpikarpetetara gehituko dira, exekutatzen duzun prozesuaren arabera.
+Informazio gehiago lortzeko ingurune-ezarpenetan, ikusi [Sortu ingurune berri bat](create-environment.md).
 
 ## <a name="copy-the-environment-configuration"></a>Kopiatu ingurunearen konfigurazioa
 

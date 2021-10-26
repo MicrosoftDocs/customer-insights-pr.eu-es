@@ -1,7 +1,7 @@
 ---
 title: Power Apps konektorea
 description: Konektatu Power Apps eta Power Automate-rekin.
-ms.date: 01/19/2021
+ms.date: 10/01/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: how-to
 author: Nils-2m
 ms.author: nikeller
 manager: shellyha
-ms.openlocfilehash: fc0af656cd5b436d9efd65b2a2c75dde9c9deb9dbcdd56ffc6a960f5878a631f
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: 985e6c85795fba8ca3063cdffc7f9012e798856a
+ms.sourcegitcommit: 5d82e5b808517e0e99fdfdd7e4a4422a5b8ebd5c
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7031734"
+ms.lasthandoff: 10/11/2021
+ms.locfileid: "7623208"
 ---
 # <a name="microsoft-power-apps-connector-preview"></a>Microsoft Power Apps konektorea (Aurrebista)
 
@@ -30,48 +30,47 @@ Erreferentzi Power Apps dokumentazioa nola ikasi ikasteko [gehitu datuen konexio
 
 Customer Insights konexio gisa gehitu ondoren, ondorengo entitateak aukeratu ditzakezu Power Apps:
 
-- Bezeroa: hurrengoko datuak erabiltzeko [bezeroaren profil bateratua](customer-profiles.md).
-- UnifiedActivity: aplikazioan [jardueren denbora-lerroa](activities.md) bistaratzeko.
+- **Bezeroa**: erabiltzeko datuak hurrengoan [bateratutako bezeroaren profila](customer-profiles.md).
+- **UnifiedActivity**: bistaratzeko [jardueren kronograma](activities.md) aplikazioan.
+- **ContactProfile**: bezero baten kontaktuak bistaratzeko. Entitate hori soilik eskuragarria publikoaren xehetasunak ingurunearena negozio-konturako.
 
 ## <a name="limitations"></a>Murriztapenak
 
 ### <a name="retrievable-entities"></a>Eskura daitezkeen entitateak
 
-Fitxategia soilik berreskura dezakezu **Bezeroa**, **UnifiedActivity**, eta **Segmentuak** entitateak Power Apps konektore. Beste entitate batzuk erakusten dira azpiko konektoreak abiarazle bidez onartzen dituelako Power Automate.  
+Fitxategia soilik berreskura dezakezu **Bezeroa**, **UnifiedActivity**, **Segmentuak**, eta **ContactProfile** entitateak Power Apps konektore. ContactProfile soilik eskuragarria publikoaren xehetasunak instantzia negozio-konturako. Beste entitate batzuk erakusten dira azpiko konektoreak abiarazle bidez onartzen dituelako Power Automate.
 
 ### <a name="delegation"></a>Ordezkaritza
 
-Ordezkaritza Bezeroen entitatearen eta UnifiedActivity entitatearen funtzionatzen du. 
+Ordezkaritza lanak **Bezeroa** entitatea eta **UnifiedActivity** entitatea. 
 
 - **Bezeroa** entitatearen ordezkaritza: entitate honen ordezkaritza erabiltzeko, eremuak indexatu behar dira hemen: [Bilaketa- eta iragazki-indizea](search-filter-index.md).  
-
 - Ordezkaritza **UnifiedActivity**: Erakunde honen ordezkaritzak eremuetarako bakarrik funtzionatzen du **ActivityId** eta **Bezeroaren IDa**.  
+- Ordezkaritza **ContactProfile**: Entitate honen ordezkaritzak eremuetarako bakarrik funtzionatzen du **ContactId** eta **CustomerId**. ContactProfile soilik eskuragarria publikoaren xehetasunak inguruneak negozio-konturako.
 
-- Ordezkaritzari buruzko informazio gehiago lortzeko, ikusi [Power Apps funtzio eta eragiketa delegagarriak](/connectors/commondataservice/#power-apps-delegable-functions-and-operations-for-the-cds-for-apps). 
+Ordezkaritzari buruzko informazio gehiago lortzeko, joan hona [Power Apps funtzio eta eragiketa delegagarriak](/powerapps/maker/canvas-apps/delegation-overview). 
 
 ## <a name="example-gallery-control"></a>Adibidez galeria kontrola
 
-Adibidez, bezero profilak gehitzen dizkiozu [galeriaren kontrolari](/powerapps/maker/canvas-apps/add-gallery).
+Bezeroen profilak gehi ditzakezu [galeriaren kontrola](/powerapps/maker/canvas-apps/add-gallery).
 
-1. Gehitu a **Galeria** kontrolatzen ari zaren aplikazio batera.
-
-> [!div class="mx-imgBorder"]
-> ![Gehitu galeria-elementu bat.](media/connector-powerapps9.png "Gehitu galeria-elementu bat")
-
-1. Aukeratu **Bezeroaren** datu-iturburu elementuen gisa.
+1. Gehitu **galeria** kontrolatzen ari zaren aplikazio batera.
 
     > [!div class="mx-imgBorder"]
-    > ![Hautatu datu-iturburua.](media/choose-datasource-powerapps.png "Hautatu datu-iturburua")
+    > ![Gehitu galeria-elementu bat.](media/connector-powerapps9.png "Gehitu galeria-elementu bat.")
 
-1. Eskubian dagoen datuen panela alda dezakezu Bezeroaren entitateak galerian erakusteko zein eremutan hautatu ahal izateko.
+2. Aukeratu **Bezeroaren** datu-iturburu elementuen gisa.
 
-1. Aukeratutako bezeroaren eremuan edozein galeria erakutsi nahi baduzu, bete etiketa baten Testuaren propietatea: **{Name_of_the_gallery}.Selected.{property_name}**
+    > [!div class="mx-imgBorder"]
+    > ![Hautatu datu-iturburua.](media/choose-datasource-powerapps.png "Hautatu datu-iturburua.")
 
-    Adibidea: Gallery1.Selected.address1_city
+3. Eskubian dagoen datuen panela alda dezakezu Bezeroaren entitateak galerian erakusteko zein eremutan hautatu ahal izateko.
 
-1. Bezeroarentzako denbora-lerro bateratua bistaratzeko, gehitu Galeriako elementua eta gehitu elementuak jabetza: **Iragazkia('UnifiedActivity', CustomerId = {Customer_Id})**
+4. Aukeratutako bezeroaren eremuan edozein galeria erakutsi nahi baduzu, bete **Testua** propietatea etiketa erabiliz **{Name_of_the_gallery}.hautatutakoa.{property_name}**  
+    - Adibidez: _Gallery1.Selected.address1_city_
 
-    Adibidez: Iragazkia('UnifiedActivity', CustomerId = Gallery1.Selected.CustomerId)
+5. Bistaratzeko bateratua kronologia bezero baterako, gehitu galeriaren elementua, eta gehitu **Elementuak** propietatea erabiliz **Iragazi('UnifiedActivity', CustomerId = {Customer_Id})**  
+    - Adibidez: _Iragazi('UnifiedActivity', CustomerId = Gallery1.Selected.CustomerId)_
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

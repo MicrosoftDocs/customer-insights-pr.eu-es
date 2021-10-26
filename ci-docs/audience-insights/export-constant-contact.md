@@ -1,7 +1,7 @@
 ---
 title: Esportatu Customer Insights datuak Constant Contact
 description: Ikasi konexioa konfiguratzen eta esportatzen Constant Contact.
-ms.date: 03/22/2021
+ms.date: 10/08/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 30dfe4d6c2374ba9979827ea70a71c52a1334b45dd3e36ccb1de90fae0c61ad9
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: b25e4f11e21d059c2d867e925c0ae5635a87addc
+ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7031826"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "7619104"
 ---
 # <a name="export-segments-to-constant-contact-preview"></a>Esportatu segmentuak Constant Contact-era (aurrebista)
 
@@ -28,10 +28,10 @@ Esportatu bezeroen profil bateratuen segmentuak Constant Contact eta erabili mar
 
 ## <a name="known-limitations"></a>Muga ezagunak
 
-- Esportazio bakoitzeko milioi bat profil esportatu ditzakezu Constant Contact.
+- Esportazio bakoitzeko milioi bat bezero profila esporta ditzakezu Kontaktu konstantea.
 - Constant Contact esportatzea segmentuetara mugatzen da.
-- Esportatu gehienez 1 milioi profil Constant Contact, 1 ordu behar ditzake osatzeko. 
-- Etengabeko kontaktua-ra esporta ditzakezun profilen kopurua Constant Contact-rekin duzun kontratuaren menpe dago eta mugatua da.
+- Milioi batera arte bezero profil Kontaktu konstantea dituzten segmentuak esportatzen ordubete behar izan ditzakete osatzeko. 
+- Kontaktu konstantera esporta ditzakezun bezeroen profil kopurua Kontaktu konstantearekin duzun kontratuaren menpe dago eta mugatua da.
 
 ## <a name="set-up-connection-to-constant-contact"></a>Konfiguratu konexioa Constant Contact-era
 
@@ -65,7 +65,7 @@ Esportazio hau konfigura dezakezu mota honetako konexiorako sarbidea baduzu. Inf
 
 1. Idatzi zure [**Constant Contact zerrendaren IDa**](https://app.constantcontact.com/pages/contacts/ui#lists). Ireki zerrenda bat Constant Contact URL zerrendaren IDa aurkitzeko.
 
-1. **Datuen bat etortzea** atalean, **Posta elektronikoa** eremuan, hautatu zure bezeroaren profil bateratuko eremua, bezero baten helbide elektronikoa adierazten duena. Segmentuak esportatu behar dira Constant Contact.
+1. Urtean **Datuen bat etortzea** atalean, **Posta elektronikoa** eremua, hautatu bezeroaren helbide elektronikoa adierazten duen eremua. Segmentuak esportatu behar dira Constant Contact.
 
 1. Aukeran, izena eta abizena esporta ditzakezu mezu pertsonalizatuagoak sortzeko eremu osagarri gisa. Aukeratu **Gehitu atributua** eremu horiek esleitzeko.
 

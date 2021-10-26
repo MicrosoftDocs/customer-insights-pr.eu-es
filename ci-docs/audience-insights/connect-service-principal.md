@@ -9,18 +9,18 @@ author: adkuppa
 ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: b96c7f580b4067e059e00a9cdb4e872e9acd4a5c
-ms.sourcegitcommit: 5704002484cdf85ebbcf4e7e4fd12470fd8e259f
+ms.openlocfilehash: b901d799dbd73841a6ddbae754c4e4275f61146a
+ms.sourcegitcommit: 53b133a716c73cb71e8bcbedc6273cec70ceba6c
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "7483510"
+ms.lasthandoff: 10/15/2021
+ms.locfileid: "7645157"
 ---
 # <a name="connect-to-an-azure-data-lake-storage-account-by-using-an-azure-service-principal"></a>Konektatu Azure Data Lake Storage kontu nagusia Azure zerbitzuaren nagusia erabiliz
 
 Azure zerbitzuak erabiltzen dituzten tresna automatizatuek beti baimen mugatuak izan behar dituzte. Aplikazioek erabiltzaile pribilegiatu gisa saioa hasi beharrean, Azure-k zerbitzuaren entitateak eskaintzen ditu. Irakurri irakurtzen nola konektatzen den jakiteko Dynamics 365 Customer Insights batekin Azure Data Lake Storage kontua biltegiratze kontuko gakoen ordez Azure zerbitzu nagusia erabilita. 
 
-Zerbitzu nagusia segurtasunez erabil dezakezu [gehitu edo editatu Common Data Model karpeta datu-iturburu gisa](connect-common-data-model.md), edo [ingurune bat sortu edo eguneratu](get-started-paid.md).
+Zerbitzu nagusia segurtasunez erabil dezakezu [gehitu edo editatu Common Data Model karpeta datu-iturburu gisa](connect-common-data-model.md), edo [ingurune bat sortu edo eguneratu](create-environment.md).
 
 > [!IMPORTANT]
 > - Zerbitzuaren entitatea erabiliko duen Data Lake Storage kontuak [gaituta eduki behar du izen-leku hierarkikoa](/azure/storage/blobs/data-lake-storage-namespace).

@@ -1,7 +1,7 @@
 ---
 title: Esportatu Customer Insights datuak Marketo-ra
 description: Ikasi konexioa konfiguratzen eta Marketo-ra esportatzen.
-ms.date: 03/03/2021
+ms.date: 10/08/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 0d5eaa769973c861d89287bba0ed29509ab2efc653bdd8e177cc49b3560c698e
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: 71a16bd71a58b5cc0a6a2ed421561d91f782dd8e
+ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7033478"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "7619150"
 ---
 # <a name="export-segments-to-marketo-preview"></a>Esportatu segmentuak Marketo-era (aurrebista)
 
@@ -29,10 +29,10 @@ Kanpainak sortzeko, posta elektroniko bidezko marketin-mezuak kudeatzeko eta bez
 
 ## <a name="known-limitations"></a>Muga ezagunak
 
-- Gehienez milioi bat profil Marketo-ra esportatzeko.
+- Gehienez milioi bat bezero-profil Marketo-ra esportatzeko.
 - Marketo-ra esportatzea segmentuetara mugatuta dago.
-- Guztira 1 milioi profil dituzten segmentuak esportatzen 3 ordu behar izan daitezke. 
-- Marketo-ra esporta ditzakezun profilen kopurua Marketo-rekin duzun kontratuaren menpe dago eta mugatua da.
+- Guztira milioi bat bezero profil dituzten segmentuak esportatzeak hiru ordu arte iraun dezake. 
+- Marketo-ra esporta ditzakezun bezeroen profil kopurua Marketo-rekin duzun kontratuaren menpe dago eta mugatua da.
 
 ## <a name="set-up-connection-to-marketo"></a>Konfiguratu konexioa Marketo-ra
 
@@ -64,7 +64,7 @@ Esportazio hau konfigura dezakezu mota honetako konexiorako sarbidea baduzu. Inf
 
 1. Idatzi **[Marketo zerrendaren IDa](https://docs.marketo.com/display/public/DOCS/Understanding+Static+Lists)**. Zerrendaren IDa zenbaki hutsa da. Adibidez, Marketo zerrendaren IDa ST12345A7 bada, kendu karakterea zenbakien aurretik eta ondoren eta idatzi `12345`. 
 
-1. **Datuen bat etortzea** atalean, **Posta elektronikoa** eremuan, hautatu zure bezeroaren profil bateratuko eremua, bezero baten helbide elektronikoa adierazten duena. 
+1. Urtean **Datuen bat etortzea** atalean, **Posta elektronikoa** eremua, hautatu bezeroaren helbide elektronikoa adierazten duen eremua. 
 
 1. Aukeran, esporta dezakezu **Izena**, **Abizena**, **Hiria**, **Egoera** eta **Herrialdea/eskualdea** mezu elektroniko pertsonalizatuagoak sortzeko. Aukeratu **Gehitu atributua** eremu horiek esleitzeko.
 

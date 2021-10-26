@@ -1,72 +1,97 @@
 ---
-title: Sortu eta aldatu gertaera finduak
-description: Nola sortu eta aldatu gertaera finduak.
+title: Sortu eta aldatu gertaerak
+description: Nola sortu eta aldatu gertaerak.
 ms.reviewer: mhart
 ms.author: jefhar
 author: mochimochi016
-ms.date: 04/30/2021
+ms.date: 10/01/2021
 ms.service: customer-insights
 ms.subservice: engagement-insights
 ms.topic: how-to
 ms.manager: shellyha
-ms.openlocfilehash: 0344bac5f4d43df853309f43c94d95f962937f77c936ed7305c5de4a08835f04
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: 935dc4cd41218842e8406b747daef47de04e337a
+ms.sourcegitcommit: 693458e13e4b4d94b6205093559912f6a4dc4a1c
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7034759"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "7606169"
 ---
-# <a name="create-and-modify-refined-events"></a>Sortu eta aldatu gertaera finduak
+# <a name="create-and-modify-events"></a>Sortu eta aldatu gertaerak
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
-
 
 Gertaera erabiltzaileen portaera adierazten duten datuak dira, adibidez, webgune bateko jarduerak.
 
 - *Oinarria* gertaera erregistratzen du erabiltzaile batek ikusten duenean orria (ikusi gertaera) edo elkarreragiten duen edukiarekin (ekintzaren gertaera).
 - *Findu* gertaera oinarrizko gertaeraren ikuspegi birtuala da. Gertaera finduak definitzen dituzu propietateak kenduz eta gehituz edo gertaerak propietate balioetan oinarrituta iragaziz.
 
+## <a name="prerequisites"></a>Aurrebaldintzak
+
+Gertaerak lortzeko, zure webguneko datuak behar dute lehenik konektatuta egotea elkarreragin-xehetasunetara kode zatiarekin. Informazio gehiagorako, ikus [Instalatu web SDK webgune batean](instrument-website.md).
+
+ :::image type="content" source="media/new-events-connect-data.png" alt-text="Konektatu datuak lehenik.":::
+
+## <a name="create-refined-events"></a>Sortu gertaera mugatuak
+
 Erabili gertaera finduak oinarrizko gertaeraren esparrua murrizteko [esportatu](export-events.md) edo esposiziorako beharrezkoak ez diren propietateak kentzeko.
 
-## <a name="create-refined-events"></a>Sortu gertaera finduak
+> [!NOTE]
+> Web SDK zure webgunera gehitu ondoren, oinarrizko gertaerak ikusi eta gertaera finduak sor ditzakezu. 
 
-Oinarrizko gertaera batetik gertaera findu bat sortzeko hiru modu daude. 
+Oinarrizko gertaerak ikusteko:
 
-1. Joan **Datuak**> **Ekitaldiak** eta aukeratu aukera hauetako bat:
-    - Aukeratu **Gertakari berriak** eta, ondoren, hautatu **Sortu gertaera finduak**.
-    - Aukeratu oinarrizko gertaera ikuspegi zehatza irekitzeko eta hautatu **Sortu gertaera finduak** goiko menutik.
-    - Aukeratu **Gehiago [...]** oinarrizko gertaera baterako lasterbide menua irekitzeko. Ondoren hautatu **Sortu gertaera finduak**.
-    
-    :::image type="content" source="media/create-refined-events-options.png" alt-text="Gertaera finduak sortzeko aukerak.":::
+1. Ezkerreko nabigazio-panelean, joan **datuak** atalera.
 
-1. Urtean **Sortu gertaera finduak** elkarrizketa-koadroan, sartu informazio hau:
+1. Aukeratu **Ekitaldiak** laneko eremuko gertaera guztien zerrenda ikusteko.
 
-- Hautatu gertaera bat **Oinarrizko gertaerak** goitibeherako gertaera berri bat sortzen ari bazara.
-- Idatzi izena **findutako gertaerak bistaratzeko izena** kutxa.
-- Aukeran, eguneratu iradokitakoa **Benetako izena** espazioak erabili gabe.
+    :::image type="content" source="media/data-events.png" alt-text="Ikusi gertaerak.":::
 
-3. Aukeratu **Sortu** zure ezarpenak aplikatzeko.
+Oinarrizko gertaera batetik gertaera findu bat sortzeko: 
 
-1. Zure gertaera finduaren ikuspegi zehatzean, hautatu **Gehitu eta kendu propietateak** irekitzeko **Editatu propietateak** panela. 
+1. Joan **Datuak** > **Ekitaldiak** eta hautatu **+ Ekitaldi berriak** pantailaren goialdean.
 
-1. Erabili kontrol laukiak erakutsi nahi dituzun propietateak eta ezkutatu nahi dituzunak hautatzeko. 
-   :::image type="content" source="media/edit-properties-refined-events.png" alt-text="Editatu finkatutako gertaeren propietateak.":::
+1. Urtean **Gertakari berriak** elkarrizketa-koadroa, hautatu **Sortu gertaera finduak** eta, ondoren, hautatu **Hurrengoa**.
+   
+     :::image type="content" source="media/new-events-wizard.png" alt-text="Gertaera berrien morroia.":::
+     
+1. Urtean **Gertakari berriak** elkarrizketa-koadroa, sartu informazio hau:
 
-1. Aukeratu **Berretsi** zure hautaketa aplikatzeko.
+   - Hautatu gertaera bat **Oinarrizko gertaerak** goitibehera.
+   - Idatzi izena **findutako gertaerak bistaratzeko izena** kutxa.
+   - Aukeran, eguneratu iradokitakoa **Benetako izena** espazioak erabili gabe.
 
-1. Hautatu **Gorde konfigurazioa** konfigurazioa gordetzeko.
+1. Aukeratu **Sortu** zure ezarpenak aplikatzeko.
 
-## <a name="edit-refined-events"></a>Editatu findutako gertaerak
-
-Gertaera findu baten izena eta propietateak alda ditzakezu.
+Orain gertaera findua zure **Ekitaldiak** zerrenda.
 
 ### <a name="edit-event-name"></a>Editatu gertaeraren izena
 
-1. Joan **Datuak** > **Gertaerak**. 
-1. Aukeratu **Gehiago [...]** gertaera baterako eta hautatu **Editatu izena**.
-1. Eguneratu gertaeraren izena eta hautatu **Aldatu izena**.
+Oinarrizko edo gertaera findu baten izena eta propietateak alda ditzakezu.
 
-### <a name="edit-selected-properties"></a>Editatu hautatutako propietateak
+1. Joan **Datuak** > **Gertaerak**. 
+
+1. Aukeratu **Gehiago [...]** gertaera baterako eta hautatu **Editatu izena**.
+    
+     :::image type="content" source="media/create-refined-events-options.png" alt-text="Gertaera finduak sortzeko aukerak.":::
+
+3. Eguneratu gertaeraren izena eta hautatu **Aldatu izena**.
+
+### <a name="view-the-details-of-a-refined-event"></a>Ikusi gertaera findu baten xehetasunak:
+
+1. Urtean **Ekitaldia** zerrendan, hautatu zure oinarria edo gertaera findua. 
+
+1. Aukeratu **Gehitu eta kendu propietateak** pantailaren goialdean irekitzeko **Editatu propietateak** panela. 
+
+     :::image type="content" source="media/add-remove-properties.png" alt-text="Gehitu eta kendu propietateak.":::
+
+1. Erabili kontrol laukiak erakutsi nahi dituzun propietateak eta ezkutatu nahi dituzunak hautatzeko. 
+
+   :::image type="content" source="media/edit-properties-refined-events.png" alt-text="Editatu finkatutako gertaeren propietateak.":::
+
+1. Aukeratu **Berretsi** zure hautapena aplikatzeko eta, ondoren, hautatu **Gorde**.
+
+
+### <a name="edit-selected-properties-for-a-refined-event"></a>Editatu hautatutako propietateak gertaera findu baterako
 
 1. Joan **Datuak** > **Ekitaldiak** eta hautatu findutako gertaerak ikuspegi zehatza irekitzeko.
 1. Aukeratu **Gehitu eta kendu propietateak**. 

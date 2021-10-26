@@ -1,7 +1,7 @@
 ---
 title: Esportatu datuak Customer Insights-etik
 description: Kudeatu esportazioak datuak partekatzeko.
-ms.date: 06/14/2021
+ms.date: 10/08/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -10,25 +10,48 @@ author: pkieffer
 ms.author: philk
 manager: shellyha
 ms.custom: intro-internal
-ms.openlocfilehash: be4d142e0f9f422cac459f603aa5dd8bb490321cfe1b2de58f4a128ae56f4ba3
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: 45a4c964e9810640c764357a72b9794f4fda89f4
+ms.sourcegitcommit: 5d82e5b808517e0e99fdfdd7e4a4422a5b8ebd5c
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7034667"
+ms.lasthandoff: 10/11/2021
+ms.locfileid: "7623086"
 ---
 # <a name="exports-preview-overview"></a>Esportazioak (aurreargitalpena) ikuspegi orokorra
 
-**Esportazioak** orrialdeak konfiguratutako esportazio guztiak erakusten ditu. Esportazioek datu zehatzak partekatzen dituzte hainbat aplikaziorekin. Bezeroen profilak edo entitateak, eskemak eta mapen xehetasunak sar ditzakete. Esportazio bakoitzak [konexioa, administratzaile batek konfiguratuta, autentifikazioa eta sarbidea kudeatzeko](connections.md).
+**Esportazioak** orrialdeak konfiguratutako esportazio guztiak erakusten ditu. Esportazioek datu zehatzak partekatzen dituzte hainbat aplikaziorekin. Bezeroen profilak, entitateak, eskemak eta mapen xehetasunak sar ditzakete. Esportazio bakoitzak [konexioa, administratzaile batek konfiguratuta, autentifikazioa eta sarbidea kudeatzeko](connections.md).
 
 Joan **Datuak** > **Esportazioak** esportazioen orria ikusteko. Erabiltzaile rol guztiek konfiguratutako esportazioak ikus ditzakete. Erabili komando-barrako bilaketa-eremua esportazioak haien izenaren, konexioaren izenaren edo konexio motaren arabera aurkitzeko.
 
-## <a name="set-up-a-new-export"></a>Konfiguratu esportazio berria
+## <a name="export-types"></a>Esportatze-motak
 
+Bi esportazio mota nagusi daude:  
+
+- **Datuen kanpoko esportazioak** ikusleen estatistiketan eskuragarri dagoen entitate mota esportatzen utzi. Esportatzeko hautatzen dituzun entitateak datu-eremu, metadatu, eskema eta mapping xehetasun guztiekin esportatzen dira. 
+- **Segmentatu esportazioak** utzi segmentu entitateak ikusleen estatistiketatik esportatzen. Segmentuek bezeroen profilen zerrenda adierazten dute. Esportazioa konfiguratzerakoan, sartutako datu eremuak hautatuko dituzu, datuak esportatzen dituzun xede sistemaren arabera. 
+
+### <a name="export-segments"></a>Esportatu segmentuak
+
+**Segmentuak esportatzea negozio kontuetarako (B2B) edo bezero partikularretarako (B2C) inguruneetan**  
+Esportazio aukera gehienek bi ingurune motak onartzen dituzte. Segmentuak xede-sistema desberdinetara esportatzeak baldintza zehatzak ditu. Orokorrean, segmentuaren kide, bezeroaren profilak, harremanetarako informazioa dauka. Normalean bezero partikularretan eraikitako segmentuen kasuan (B2C) gertatzen den arren, ez da nahitaez negozio kontuetan oinarritutako segmentuen kasuan (B2B). 
+
+**Enpresa kontuetarako esportazio inguruneak segmentatu (B2B)**  
+- Enpresa kontuetarako inguruneen testuinguruan segmentuak *kontua* entitatea. Kontuen segmentuak bere horretan esportatzeko, xede-sistemak kontu segmentu puruak onartzen ditu. Hau da kasua [LinkedIn](export-linkedin-ads.md) aukeratzerakoan **konpainia** aukera esportazioa definitzerakoan.
+- Helburuko beste sistema guztiek harremanetarako entitatearen eremuak behar dituzte. Kontu segmentuek erlazionatutako kontaktuetatik datuak berreskura ditzaketela ziurtatzeko, zure segmentuaren definizioak kontaktu entitatearen atributuak proiektatu behar ditu. Lortu informazio gehiago nola egin [konfiguratu segmentuak eta proiektuaren atributuak](segment-builder.md).
+
+**Banakako bezeroentzako inguruneetako esportazioak segmentatu (B2C)**  
+- Segmentuak testuinguruan inguruneetan banakako bezeroak eraikitzen dira *bezero profil bateratua* entitatea. Xede-sistemen baldintzak betetzen dituen segmentu guztiak (adibidez, helbide elektronikoa) esportatu ahal izango dira.
+
+**Segmentuen esportazioen mugak**  
+- Hirugarrenen helburu sistemek esporta ditzakezun bezeroen profil kopurua muga dezakete. 
+- Banakako bezeroentzako, segmentuko kide kopurua ikusiko duzu esportatzeko segmentu bat hautatzen duzunean. Abisu bat jasoko duzu segmentu bat handiegia bada. 
+- Negozio kontuetarako, segmentu bateko kontu kopurua ikusiko duzu; hala ere, proiekta daitezkeen kontaktuen kopurua ez da agertzen. Zenbait kasutan, esportatutako segmentuak xede-sistemak onartzen dituena baino bezero profil gehiago izatea ekar dezake. Helburuko sistemen emaitzen mugak gaindituz gero, esportazioa saltatuko da. 
+
+## <a name="set-up-a-new-export"></a>Konfiguratu esportazio berria  
 Esportazioa konfiguratzeko edo editatzeko, konexioak eskuragarri izan behar dituzu. Konexioak zure araberakoak dira [erabiltzailearen rola](permissions.md):
-- Administratzaileek konexio guztietarako sarbidea dute. Konexio berriak sor ditzakete esportazioa konfiguratzerakoan.
-- Laguntzaileek konexio zehatzetarako sarbidea izan dezakete. Konexioak konfiguratzeko eta partekatzeko administratzaileen mende daude. Esportazioen zerrendan agertzen da laguntzaileek esportazio bat editatu edo soilik ikus dezaketen **Zure baimenak** zutabean. Informazio gehiagorako, ikus [Baimendu laguntzaileei esportazioetarako konexioa erabiltzea](connections.md#allow-contributors-to-use-a-connection-for-exports).
-- Ikusleek lehendik dauden esportazioak soilik ikus ditzakete baina ez dituzte sortu.
+- **Administratzaileak** sarbidea dute konexio guztietara. Konexio berriak sor ditzakete esportazioa konfiguratzerakoan.
+- **Laguntzaileek** sarbidea dute konexio espezifikoetara. Konexioak konfiguratzeko eta partekatzeko administratzaileen mende daude. Esportazioen zerrendan agertzen da laguntzaileek esportazio bat editatu edo soilik ikus dezaketen **Zure baimenak** zutabean. Informazio gehiagorako, joan hona [Baimendu laguntzaileei esportazioetarako konexioa erabiltzea](connections.md#allow-contributors-to-use-a-connection-for-exports).
+- **Ikusleak** lehendik dauden esportazioak soilik ikus ditzake —ez sortu.
 
 ### <a name="define-a-new-export"></a>Definitu esportazio berria
 

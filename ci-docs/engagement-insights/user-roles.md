@@ -4,27 +4,33 @@ description: Laneko espazioko kideentzako eskuragarri dauden rolen eta baimenen 
 ms.reviewer: mhart
 ms.author: jusali
 author: jusali
-ms.date: 07/06/2021
+ms.date: 10/01/2021
 ms.service: customer-insights
 ms.subservice: engagement-insights
 ms.topic: conceptual
 ms.manager: shellyha
-ms.openlocfilehash: 6d7f4db4a130fc15a69b380c892538db5492d96d8e13f3c070c6a6b9bd098371
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: 68e28caf1c14c23acd506da5f7b441f1e3b72e8b
+ms.sourcegitcommit: 53b133a716c73cb71e8bcbedc6273cec70ceba6c
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7036678"
+ms.lasthandoff: 10/15/2021
+ms.locfileid: "7645522"
 ---
 # <a name="roles-and-permissions"></a>Funtzioak eta baimenak
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
-Lan gunea gertaerak eta txostenak gordetzeko eta nola kudeatzen duzuna da. Kidea laneko espazio batera sar daitekeen erabiltzailea da. Kideak zure lan-eremura esleitu eta haien rolak eta baimenak zehaztu ditzakezu. Administratzaile rolek laneko espazioak eta inguruneak kudeatzen dituzte eta beste erabiltzaileentzako konpromisoen inguruko datuak konfiguratzen dituzte. Laguntzaile rolak konpromiso estatistikak konfiguratu behar ez dituzten baina beren txostenak, inbutuak edo segmentuak sortu nahi dituzten analistei zuzenduta daude.
+Lan-eremua gertaerak eta txostenak gordetzeko eta kudeatzeko lekua da. Informazio gehiagorako, ikus [Sortu lan gunea eta gehitu kideak](create-workspace.md). 
+
+Laneko espazio batek rol eta baimen hauek sar ditzake:
+
+- *Kidea* rolak laneko espazio batera sar daitezkeen erabiltzaileak dira. Kideak zure lan-eremura esleitu eta haien rolak eta baimenak zehaztu ditzakezu. 
+- *Administratzaile* rolek laneko espazioak eta inguruneak kudeatzen dituzte eta beste erabiltzaileentzako konpromisoen inguruko datuak konfiguratzen dituzte. 
+- *Laguntzailea* rolak konpromiso-estatistikak konfiguratu behar ez dituzten baina beren txostenak, inbutuak edo segmentuak sortu nahi dituzten analistei zuzenduta daude.
 
 ## <a name="permissions"></a>Baimenak
   
-Ondorengo taulan rol bakoitzerako baimenak identifikatzen dira. 
+Hurrengo taulan rol bakoitzerako baimenak identifikatzen dira. 
 
 | Baimena | Ingurunearen administratzailea | Laneko arearen administratzailea | Ingurunearen kolaboratzailea | Laneko arearen kolaboratzailea | 
 |--|--|--|--|--|

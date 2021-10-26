@@ -1,7 +1,7 @@
 ---
 title: Esportatu Customer Insights datuak Omnisend-era
 description: Ikasi konexioa nola konfiguratu eta Omnisend-era esportatu.
-ms.date: 05/21/2021
+ms.date: 10/08/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 58b54dc24f4656f9dd376415a701539c8796e83e6d4e3c6754f5627ce77c5685
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: 5496efa075fa3474c579366d143ea55e86ec3995
+ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7031751"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "7619013"
 ---
 # <a name="export-segments-to-omnisend-preview"></a>Esportatu segmentuak Omnisend-era (aurrebista)
 
@@ -28,9 +28,9 @@ Esportatu bezeroen profil bateratuen segmentuak Omnisend-era eta erabili marketi
 
 ## <a name="known-limitations"></a>Muga ezagunak
 
-- Esportazio bakoitzeko milioi bat profil esportatu ditzakezu Omnisend-era eta 4 ordu behar izan ditzakezu osatzeko.
+- Esportazio bakoitzeko milioi bat bezero esportatu ditzakezu esportazio bakoitzeko Omnisend-era eta lau ordu behar izan ditzakezu osatzeko.
 - Omnisend-era esportatzea segmentuetara mugatzen da.
-- Omnisend-era esporta ditzakezun profilen kopurua Omnisend-ekin duzun kontratuaren araberakoa da.
+- Omnisend-era esporta ditzakezun bezeroen profil kopurua Omnisend-ekin duzun kontratuaren menpe dago.
 
 ## <a name="set-up-connection-to-omnisend"></a>Konfiguratu konexioa Omnisend-era
 
@@ -62,7 +62,7 @@ Esportazio hau konfigura dezakezu mota honetako konexiorako sarbidea baduzu. Inf
 
 1. Hurrengoan **Konexioa esportatzeko** eremuan, aukeratu konexioa Omnisend sekzioan. Atal honen izena ikusten ez baduzu, ez dago mota honetako konexiorik erabilgarri.
 
-1. **Datuen bat etortzea** atalean, **Posta elektronikoa** eremuan, hautatu zure bezeroaren profil bateratuko eremua, bezero baten helbide elektronikoa adierazten duena. Segmentuak esportatu behar dira Omnisend-era. Aukeran, Izena, Abizena, Helbidea, Herrialdea/eskualdea, Egoera eta posta-kodea esporta ditzakezu mezu elektroniko pertsonalizatuagoak sortzeko. Aukeratu **Gehitu atributua** eremu horiek esleitzeko.
+1. Urtean **Datuen bat etortzea** atalean, **Posta elektronikoa** eremua, hautatu bezeroaren helbide elektronikoa adierazten duen eremua. Segmentuak esportatu behar dira Omnisend-era. Aukeran, Izena, Abizena, Helbidea, Herrialdea/eskualdea, Egoera eta posta-kodea esporta ditzakezu mezu elektroniko pertsonalizatuagoak sortzeko. Aukeratu **Gehitu atributua** eremu horiek esleitzeko.
 
 1. Sakatu **Gorde**.
 

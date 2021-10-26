@@ -9,12 +9,12 @@ author: m-hartmann
 ms.author: mhart
 ms.reviewer: midevane
 manager: shellyha
-ms.openlocfilehash: fcc45c24e9d89516dba9964ee16f57caf439eff0
-ms.sourcegitcommit: 2abe9b661b8c3c01e9730c629e383402e3f6a655
+ms.openlocfilehash: 5262ad20019e90e73ab121a5ab90e602c1a32b7e
+ms.sourcegitcommit: 693458e13e4b4d94b6205093559912f6a4dc4a1c
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "7465190"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "7606029"
 ---
 # <a name="whats-new-in-the-audience-insights-capability-of-dynamics-365-customer-insights"></a>Dynamics 365 Customer Insights hartzaileen xehetasunei buruzko zerbitzuaren ezaugarri berriak
 
@@ -26,6 +26,20 @@ Eguneratzeak eskualdeen arabera banatzen ditugu. Beraz, eskualde batzuek beste b
 
 > [!TIP]
 > Bidali eta bozkatzeko eginbideak eskaerak eta produktuaren iradokizunak, joan [Dynamics 365 aplikazioaren ideiak atarira](https://experience.dynamics.com/ideas/categories/?forum=79a8c474-4e35-e911-a971-000d3a4f3343&forumName=Dynamics%20365%20Customer%20Insights).
+
+## <a name="september-2021-updates"></a>2021eko iraileko eguneratzea
+
+2021eko iraileko eguneratzeek ezaugarri berriak, errendimendu bertsio berritzea eta akatsak konpondu dituzte.
+
+### <a name="activities"></a>Ekintzak
+
+- **Jardueren kronologia hobekuntzak** Jardueren kronologiarako iragazkiak bezeroen profiletan zabaldu ditugu. Gainera, iragazki-pan berria erabil dezakezu jarduera motaren eta dataren arabera iragazteko. Datak baldintza desberdinak erabiliz iragazi daitezke. Informazio gehiagorako, ikus [Ikusi jarduera profilak bezeroen profiletan](activities.md#view-activity-timelines-on-customer-profiles).
+
+### <a name="relationships"></a>Erlazioak
+
+- **Hop anitzeko harremanen laguntza** Saltoki anitzeko harremanak erabiltzea jarduerak konfiguratzerakoan eta entitateen arteko harremanak definitzerakoan. Lupo anitzeko harremanek bitarteko entitate bat erabiltzen dute bi entitate konektatzeko. Jarduera bat konfiguratzerakoan, hop anitzeko erlazioa erabil dezakezu zure jarduera entitatea bitarteko entitate batekin eta gero bezero entitate batekin konektatzeko. Salto anitzeko harremanak bide anitzeko harremanekin konbinatu ditzakezu. Informazio gehiagorako, ikus [Hop anitzeko harremana](relationships.md#multi-hop-relationship).
+
+- **Bide-izena anitzeko harremanen laguntza** Saltoki anitzeko harremanak erabiltzea jarduerak konfiguratzerakoan eta entitateen arteko harremanak definitzerakoan. Bide anitzeko harremanek iturburu-entitate bat entitate batekin baino gehiagorekin erlazionatzen dute. Jarduera bat konfiguratzerakoan, hop anitzeko erlazioa erabil dezakezu zure jarduera bat baino gehiago bezero entitate batekin konektatzeko. Bide anitzeko harremanak bide anitzeko harremanekin konbinatu ditzakezu. Informazio gehiagorako, ikus [Bide anitzeko harremana](relationships.md#multi-path-relationship).
 
 ## <a name="august-2021-updates"></a>2021eko abuztuko eguneratzeak
 

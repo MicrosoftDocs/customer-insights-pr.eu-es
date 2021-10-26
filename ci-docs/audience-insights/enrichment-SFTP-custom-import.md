@@ -9,12 +9,12 @@ ms.topic: how-to
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: b67aa7477033222b0bc9512a962a1580edd973b4882ce925620ff5ec14f83fe3
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: fa1d4ffd9f77e128b5d804e4562e964561f4684f
+ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7032697"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "7618667"
 ---
 # <a name="enrich-customer-profiles-with-custom-data-preview"></a>Aberastu bezeroen profilak datu pertsonalizatuekin (aurrebista)
 
@@ -44,6 +44,8 @@ SFTP inportazio pertsonalizatua konfiguratzeko, honako baldintza hauek bete beha
 1.  Aukeratu **Hurrengoa** eta sartu **Bidea** eta **Fitxategi izena** inportatu nahi duzun datu fitxategiaren.
 
     :::image type="content" source="media/enrichment-SFTP-path-and-filename.png" alt-text="Pantaila argazkia datuak kokatzerakoan.":::
+
+1. Aukeratu **Hurrengoa** eta aukeratu bezeroaren datu multzoa. Hau bezeroen profil guztiak edo segmentu bat izan daiteke.
 
 1. Aukeratu **Hurrengoa** eta eman aberasturako izena eta irteerako entitatearen izena. 
 
@@ -123,6 +125,6 @@ Aberastutako profil bakoitzaren ikuspegi zehatza sar dezakezu hautatuta **Ikusi 
 
 ## <a name="next-steps"></a>Hurrengo urratsak
 
-Eraiki zure bezeroen datu aberastuen gainean. Sortu [segmentuak](segments.md) eta [neurriak](measures.md), eta are [datuak esportatu](export-destinations.md) zure bezeroei esperientzia pertsonalizatuak emateko.
+[!INCLUDE [next-steps-enrichment](../includes/next-steps-enrichment.md)]
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

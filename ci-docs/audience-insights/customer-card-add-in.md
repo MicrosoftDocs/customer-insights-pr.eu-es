@@ -1,7 +1,7 @@
 ---
 title: Dynamics 365 aplikazioetarako bezeroaren txartelaren osagarria
 description: Erakutsi audientzia estatistiken datuak Dynamics 365 aplikazioetan gehigarri honekin.
-ms.date: 05/18/2021
+ms.date: 09/30/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,18 +9,20 @@ ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 0f6c922104df229980b308136a4d764938121b35d6d744f41b1530bdb5515e7f
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: c9c7cfbf9f47cca53e5543e2cda2584e25ad855d
+ms.sourcegitcommit: 1565f4f7b4e131ede6ae089c5d21a79b02bba645
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7032973"
+ms.lasthandoff: 10/14/2021
+ms.locfileid: "7643346"
 ---
 # <a name="customer-card-add-in-preview"></a>Bezeroaren txartelaren osagarria (aurrebista)
 
 [!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
 
-Lortu zure bezeroen 360 graduko ikuspegia zuzenean Dynamics 365 aplikazioetan. Bezeroaren txartelaren gehigarria onartutako Dynamics 365 aplikazio batean instalatuta dagoenez, demografia, estatistikak eta jardueren kronogramak bistaratzea aukera dezakezu. Gehigarriak Customer Insights-etik datuak berreskuratuko ditu konektatutako Dynamics 365 aplikazioko datuak eragin gabe. 
+Lortu zure bezeroen 360 graduko ikuspegia zuzenean Dynamics 365 aplikazioetan. Bezeroaren txartelaren gehigarria onartutako Dynamics 365 aplikazio batean instalatuta baduzu, bezeroaren profileko eremuak, estatistikak eta jardueren kronograma bistaratzea aukera dezakezu. Gehigarriak Customer Insights-etik datuak berreskuratuko ditu konektatutako Dynamics 365 aplikazioko datuak eragin gabe.
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWN1qv]
 
 ## <a name="prerequisites"></a>Aurrebaldintzak
 
@@ -28,20 +30,19 @@ Lortu zure bezeroen 360 graduko ikuspegia zuzenean Dynamics 365 aplikazioetan. B
 - Zure Dynamics 365 datuak ikusleekin esleitu ahal izateko izan behar dituzten bezeroen profilak [Dynamics 365 aplikaziotik gehituta Microsoft Dataverse konektorea](connect-power-query.md).
 - Bezero txartelaren gehigarriaren Dynamics 365 erabiltzaile guztiek izan behar dute [erabiltzaile gisa gehitu da](permissions.md) datuak ikusteko ikusleei buruzko informazioetan.
 - [Bilaketa eta iragazki gaitasunak konfiguratuta](search-filter-index.md) audientziari buruzko datuetan funtzionatu behar da.
-- Gehigarrien kontrol bakoitza datu zehatzetan oinarritzen da ikusleen estatistiketan:
-  - Neurriaren kontrola: [Konfiguratutako neurriak](measures.md) behar dira.
-  - Adimenaren kontrola: erabiliz sortutako datuak eskatzen ditu [iragarpenak](predictions.md) edo [eredu pertsonalizatuak](custom-models.md).
-  - Kontrol demografikoa: eremu demografikoak (adina edo generoa), adibidez, bezeroen profil bateratuan daude eskuragarri.
-  - Aberastearen kontrola: Aktiboa eskatzen du [hobekuntzak](enrichment-hub.md) bezeroen profiletan aplikatuta.
-  - Kronogramaren kontrola: [konfiguratutako jarduerak](activities.md) behar dira.
+- Gehigarrien kontrol bakoitza datu zehatzetan oinarritzen da ikusleen estatistiketan. Datu eta kontrol batzuk mota jakin batzuetako inguruneetan soilik daude eskuragarri. Gehigarrien konfigurazioak hautatutako ingurune mota dela eta kontrolik eskuragarri ez dagoen jakinaraziko dizu. Ikasi gehiago hurrengoari buruz [ingurunearen erabilera-kasuak](work-with-business-accounts.md).
+  - **Neurriaren kontrola**: Beharrezkoa da [konfiguratutako neurriak](measures.md) bezeroaren atributu mota.
+  - **Adimenaren kontrola**: eskatzen du datuak sortuta erabiltzea [iragarpenak](predictions.md) edo [pertsonalizatutako ereduak](custom-models.md).
+  - **Bezeroen xehetasunak kontrolatzea**: Profileko eremu guztiak eskuragarri daude bezeroaren profil bateratuan.
+  - **Aberastearen kontrola**: eskatzen du aktiboa [hobekuntzak](enrichment-hub.md) aplikatuta bezeroaren profiletara.
+  - **Kontaktuen kontrola**: Motako kontaktuen entitate semantikoaren definizioa eskatzen du.
+  - **Kronologiaren kontrola**: eskatzen du [konfiguratutako jarduerak](activities.md).
 
 ## <a name="install-the-customer-card-add-in"></a>Instalatu Bezeroaren txartelaren osagarria
 
 Bezeroaren Txartelaren Gehigarria Dynamics 365-en customer engagement aplikazioetarako irtenbidea da. Konponbidea instalatzeko, joan AppSource eta bilatu **Bezero txartel dinamikoa**. Hautatu [Bezero txartela AppSource-n](https://appsource.microsoft.com/product/dynamics-365/mscrm.dynamics_365_customer_insights_customer_card_addin?tab=Overview) eta hautatu **Eskuratu orain**.
 
-Baliteke Dynamics 365 aplikaziorako zure administratzaileekin saioa hasi behar duzula irtenbidea instalatzeko.
-
-Zenbait denbora behar izango duzu irtenbidea zure ingurunean instalatzeko.
+Baliteke Dynamics 365 aplikaziorako zure administratzaileekin saioa hasi behar duzula irtenbidea instalatzeko. Zenbait denbora behar izango duzu irtenbidea zure ingurunean instalatzeko.
 
 ## <a name="configure-the-customer-card-add-in"></a>Konfiguratu Bezeroaren Kartaren Gehigarria
 
@@ -50,7 +51,7 @@ Zenbait denbora behar izango duzu irtenbidea zure ingurunean instalatzeko.
 1. Hautatu botoia **Bistaratu izena** esteka **Dynamics 365 Customer Insights Bezero-txartelaren gehigarria (aurrebista)** konponbidea.
 
    > [!div class="mx-imgBorder"]
-   > ![Hautatu Proiektuaren bistaratze-izena.](media/select-display-name.png "Hautatu Proiektuaren bistaratze-izena")
+   > ![Hautatu Proiektuaren bistaratze-izena.](media/select-display-name.png "Hautatu Proiektuaren bistaratze-izena.")
 
 1. Aukeratu **saioa hasi** eta sartu Customer Insights konfiguratzeko erabiltzen duzun kudeatzaileko kontuaren kredentzialak.
 
@@ -64,7 +65,7 @@ Zenbait denbora behar izango duzu irtenbidea zure ingurunean instalatzeko.
    - Kontu batekin esleitzeko, hautatu Bezeroaren entitateko IDarekin bat datorren kontuaren entitatea.
 
    > [!div class="mx-imgBorder"]
-   > ![Kontaktuaren IDaren eremua.](media/contact-id-field.png "Kontaktuaren IDaren eremua")
+   > ![Kontaktuaren IDaren eremua.](media/contact-id-field.png "Kontaktuaren IDaren eremua.")
 
 1. Hautatu **Gorde konfigurazioa** gutxieneko balioaren ezarpenak gordetzeko.
 
@@ -73,7 +74,9 @@ Zenbait denbora behar izango duzu irtenbidea zure ingurunean instalatzeko.
 1. Esleitu **Customer Insights txartela pertsonalizatzailea** eginkizuna erakunde osoarentzako txartelean erakutsitako edukia pertsonalizatuko duten erabiltzaileentzat.
 
 ## <a name="add-customer-card-controls-to-forms"></a>Gehitu bezeroaren txartelaren kontrola inprimakietan
-  
+
+Zure agertokiaren arabera, kontroletara gehitzea aukera dezakezu **Harremanetarako** inprimakia edo **Kontua** forma. Ikusleei buruzko informazioaren ingurunea negozio kontuetarako bada, kontrolak Kontuaren inprimakian gehitzea gomendatzen dugu. Kasu horretan, ordeztu "kontaktua" beheko urratsetan "kontua."
+
 1. Bezero-txartelaren kontrolak zure Kontaktu inprimakian gehitzeko, joan **ezarpenak** > **pertsonalizazioak** Dynamics 365-en.
 
 1. Hautatu **Pertsonalizatu sistema**.
@@ -83,7 +86,7 @@ Zenbait denbora behar izango duzu irtenbidea zure ingurunean instalatzeko.
 1. Aukeratu Bezeroaren Txartelak kontrolak gehitu nahi dituzun harremanetarako formularioa.
 
     > [!div class="mx-imgBorder"]
-    > ![Hautatu Kontaktuaren inprimakia.](media/contact-active-forms.png "Hautatu Kontaktuaren inprimakia")
+    > ![Hautatu Kontaktuaren inprimakia.](media/contact-active-forms.png "Hautatu Kontaktuaren inprimakia.")
 
 1. Kontrola gehitzeko, inprimaki-editore-en, arrastatu edozein eremu **Eremu-esploradorea**-etik kontrolatu demografikoa nahi duzun lekura.
 
@@ -102,7 +105,8 @@ Zenbait denbora behar izango duzu irtenbidea zure ingurunean instalatzeko.
 1. Kontrol pertsonalizatuan erakutsi nahi duzuna pertsonalizatzeko, hautatu editatzeko botoia goiko eskuineko izkinan.
 
 ## <a name="upgrade-customer-card-add-in"></a>Eguneratu Bezeroaren txartelaren osagarria
-Bezeroaren txartelaren gehigarria ez da automatikoki eguneratzen. Azken bertsiora eguneratzeko, jarraitu prozedura hau gehigarria instalatuta duen Dynamics 365 aplikazioan.
+
+Bezeroaren txartelaren gehigarria ez da automatikoki eguneratzen. Azken bertsiora eguneratzeko, jarraitu urrats hauek gehigarria instalatuta duen Dynamics 365 aplikazioan.
 
 1. Dynamics 365 aplikazioan, joan hona: **Ezarpenak** > **Pertsonalizazioa** eta hautatu **Irtenbideak**.
 

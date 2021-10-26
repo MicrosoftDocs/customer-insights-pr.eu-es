@@ -1,7 +1,7 @@
 ---
-title: Transakzioen galera-tasaren iragarpena
+title: Transakzio churn iragarpena
 description: Iragarri bezeroren bat arriskuan dagoen jada produktu eta zerbitzuak erosten ez dituelako.
-ms.date: 11/12/2020
+ms.date: 10/11/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,19 +9,23 @@ ms.topic: how-to
 author: zacookmsft
 ms.author: zacook
 manager: shellyha
-ms.openlocfilehash: f0d56fc6595fcbb226897fcb52148924d00306b6d75b617fc8cafbcc0aab0641
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: ac484f74e388aa23422a89e25dabb555f2ad4118
+ms.sourcegitcommit: 1565f4f7b4e131ede6ae089c5d21a79b02bba645
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7034895"
+ms.lasthandoff: 10/14/2021
+ms.locfileid: "7643343"
 ---
-# <a name="transactional-churn-prediction-preview"></a>Transakzioen galera-tasaren iragarpena (aurrebista)
+# <a name="transaction-churn-prediction-preview"></a>Transakzioa bertan behera uzteko iragarpena (aurrebista)
 
-Transakzioen galera-tasaren iragarpenak bezeroak denbora-tarte jakin batean jada zure produktuak edo zerbitzuak erosiko ote dituen iragartzen laguntzen du. Galera-tasaren iragarpen berriak sor ditzakezu **Adimena** > **Iragarpenak** atalean. Aukeratu **Nire iragarpenak** sortu dituzun beste iragarpen batzuk ikusteko.
+Transakzioen galera-tasaren iragarpenak bezeroak denbora-tarte jakin batean jada zure produktuak edo zerbitzuak erosiko ote dituen iragartzen laguntzen du. Galera-tasaren iragarpen berriak sor ditzakezu **Adimena** > **Iragarpenak** atalean. Aukeratu **Nire iragarpenak** sortu dituzun beste iragarpen batzuk ikusteko. 
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWN6Eg]
+
+Negozio kontuetan oinarritutako inguruneetarako, kontu baten transazio transaktiboa aurreikus dezakegu, baita kontuaren konbinazioa eta produktuen kategoria bezalako beste informazio maila ere. Dimentsio bat gehituz gero, "Contoso" kontuak "bulegoko papergintza" produktuaren kategoria erosteari utziko dion jakin daiteke. Gainera, negozio kontuetarako, AI ere erabil dezakegu kontu bat bigarren mailako informazio kategoria bat lortzeko litekeena den arrazoien zerrenda sortzeko.
 
 > [!TIP]
-> Probatu tutoriala transakzioen galera-tasaren iragarpena eskuratzeko lagin-datuak erabiliz: [Transakzioen galera-tasaren iragarpenaren (aurrebista) lagin gida](sample-guide-predict-transactional-churn.md).
+> Saiatu transakzioaren txandaren tutoriala iragarpen lagin-datuak erabiliz: [Transaction churn iragarpen (preview) lagin gida](sample-guide-predict-transactional-churn.md).
 
 ## <a name="prerequisites"></a>Aurrebaldintzak
 
@@ -32,11 +36,11 @@ Transakzioen galera-tasaren iragarpenak bezeroak denbora-tarte jakin batean jada
     - Bezeroen identifikadoreak, transakzioak zure bezeroekin lotzeko.
     - Transakzioen gertaeren datak, transakzioaren datak zehazten dituztenak.
     - Erosketak / transakzioak egiteko datu semantikoen eskemak informazio hau behar du:
-        - **Transakzioaren IDa:** Erosketa edo transakzio baten identifikatzaile bakarra.
-        - **Transakzioaren data:** Erosketaren edo transakzioaren data.
-        - **Transakzioaren balioa:** Transakzioaren / elementuaren moneta / zenbakizko balioa.
-        - (Aukerakoa) **Produktuaren ID esklusiboa:** Erositako produktuaren edo zerbitzuaren IDa, zure datuak lerro-elementuaren mailan badaude.
-        - (Aukerakoa) **Transakzio hau itzulera izan den ala ez:** Transakzioa itzulera izan den edo ez identifikatzen duen egia / gezurra eremua. **Transakzioaren balioa** negatiboa bada, informazio hau itzulera bat ondorioztatzeko ere erabiliko dugu.
+        - **Transakzioaren IDa**: Erosketa edo transakzio baten identifikatzaile bakarra.
+        - **Transakzioaren data**: Erosketaren edo transakzioaren data.
+        - **Transakzioaren balioa**: Transakzioaren / elementuaren moneta / zenbakizko balioa.
+        - (Aukerakoa) **Produktuaren ID esklusiboa**: Erositako produktuaren edo zerbitzuaren IDa, zure datuak lerro-elementuaren mailan badaude.
+        - (Aukerakoa) **Transakzio hau itzulera izan den ala ez**: Transakzioa itzulera izan den edo ez identifikatzen duen egia / gezurra eremua. **Transakzioaren balioa** negatiboa bada, informazio hau itzulera bat ondorioztatzeko ere erabiliko dugu.
 - (Aukerakoa) Bezeroen jarduerei buruzko datuak:
     - Mota bereko jarduerak bereizteko jarduera identifikatzaileak.
     - Bezeroaren identifikadoreak maparen jardueretan zure bezeroentzat.
@@ -46,6 +50,15 @@ Transakzioen galera-tasaren iragarpenak bezeroak denbora-tarte jakin batean jada
         - **Timestamp:** Giltza nagusian identifikatutako gertaeraren data eta ordua.
         - **Gertaera:** Erabili nahi duzun gertaeraren izena. Adibidez, janari dendako "UserAction" izeneko eremua bezeroak erabilitako kupoi bat izan daiteke.
         - **Xehetasunak:** Ekitaldiaren inguruko informazio zehatza. Adibidez, janari dendako "CouponValue" izeneko eremua izan daiteke kupoiaren moneta-balioa.
+- (Aukerakoa) Zure bezeroei buruzko datuak:
+    - Datu hauek oso gutxitan beharko lirateke, eta atributu estatikoagoetara lerrokatu beharko lirateke, ereduak errendimendu onena izan dezan.
+    - Bezeroen datuen datu semantikoen eskemak honakoak dira:
+        - **CustomerID:** Bezero batentzako identifikatzaile bakarra.
+        - **Sortze-data:** Bezeroa hasieran gehitu zen data.
+        - **Estatua edo Probintzia:** Bezeroaren estatua edo probintziaren kokapena.
+        - **Herrialdea:** Bezero baten herrialdea.
+        - **Industria:** Bezeroaren industria mota. Adibidez, kafea erretzeko "Industria" izeneko eremuak bezeroa txikizkaria den ala ez adieraz dezake.
+        - **Sailkapena:** Zure negoziorako bezero baten sailkapena. Adibidez, kafe-txigorgailu batean "ValueSegment" izeneko eremua bezeroaren maila izan daiteke bezeroaren tamainaren arabera.
 - Iradokitako datuen ezaugarriak:
     - Datu historiko nahikoa: gutxienez hautatutako denbora-leihoa bikoitzeko transakzioen datuak. Hobe, transakzioen historia bizpahiru urtekoa. 
     - Erosketa anitz bezero bakoitzeko: modurik onenean, bi transakzio gutxienez bezeroko.
@@ -55,15 +68,15 @@ Transakzioen galera-tasaren iragarpenak bezeroak denbora-tarte jakin batean jada
 > [!NOTE]
 > Bezeroen erosketa maiztasun handiko enpresa batentzat (aste gutxiren buruan) gomendatzen da iragarpen leiho laburragoa eta buelta definitzea hautatzea. Erosketa maiztasun baxua lortzeko (hilero edo urtean behin), aukeratu iragarpen leiho luzeagoa eta desegin definizioa.
 
-## <a name="create-a-transactional-churn-prediction"></a>Sortu transakzioen galera-tasaren iragarpena
+## <a name="create-a-transaction-churn-prediction"></a>Sortu transakzioa bertan behera uzteko iragarpena
 
 1. Customer Insights atalean, joan **Inteligentzia** > **Iragarpenak**.
 
 1. Aukeratu **Bezeroaren galera-tasaren eredua (aurrebista)** lauza eta hautatu **Erabili eredu hau**.
-   
-1. **Bezeroaren galera-tasaren eredua** panelean, aukeratu **Transakzionala** eta hautatu **Hasi**.
 
-:::image type="content" source="media/select-transaction-churn.PNG" alt-text="Pantaila-argazkia, bezeroaren galera-tasaren ereduaren panelean aukera transakzionala hautatuta.":::
+1. Urtean **Bezeroaren buelta eredua** panela, aukeratu **Transakzioa** eta hautatu **Hasi**.
+
+:::image type="content" source="media/select-transaction-churn.PNG" alt-text="Pantaila pantaila hautatutako transakzio aukerarekin Customer churn model panelean.":::
 
 ### <a name="name-model"></a>Ezarri izena ereduari
 
@@ -75,50 +88,86 @@ Transakzioen galera-tasaren iragarpenak bezeroak denbora-tarte jakin batean jada
 
 ### <a name="define-customer-churn"></a>Definitu bezeroak harpidetza bertan behera uzteko unea
 
-1. Ezarri denbora-tarte bat **Identifikatu hurrengoan gal ditzakegun bezeroak** eremuaren galera-tasa iragartzeko. Adibidez, iragarri hurrengo 90 egunetako bezeroen galera-tasa, marketineko mantentze-ahaleginak egokitzeko. Denbora tarte luzeago edo laburragoan galera-arriskua aurreikusteak zaildu dezake galera-arriskuaren profilaren arrazoiak zehaztea, baina zure negozio eskakizun zehatzen araberakoa da. 
+1. Ezarri denbora-tarte bat **Identifikatu hurrengoan gal ditzakegun bezeroak** eremuaren galera-tasa iragartzeko. Adibidez, iragarri hurrengo 90 egunetako bezeroen galera-tasa, marketineko mantentze-ahaleginak egokitzeko. Denbora tarte luzeago edo laburragoan galera-arriskua aurreikusteak zaildu dezake galera-arriskuaren profilaren arrazoiak zehaztea, baina zure negozio eskakizun zehatzen araberakoa da.
    >[!TIP]
    > Aukeratu dezakezu **Gorde eta itxi** edozein unetan aurreikuspena zirriborro gisa gordetzeko. Zirriborroaren iragarpena hemen aurkituko duzu **Nire iragarpenak** jarraitzeko fitxa.
 
 1. Idatzi egun kopurua **Bezero bat galdutzat jotzen da epe honetan ez badu erosketarik egin:** eremuko galera-tasa definitzeko. Adibidez, bezeroak azken 30 egunetan erosketarik egin ez badu, zure negoziorako galdutzat har daitezke. 
 
-1. Jarraitzeko, hautatu **Hurrengoa**
+1. Jarraitzeko, hautatu **Hurrengoa**.
 
 ### <a name="add-required-data"></a>Gehitu beharrezko datuak
 
-1. Aukeratu **Gehitu datuak** **Erosketen historia** atalean eta aukeratu transakzioen / erosketen historiari buruzko informazioa ematen duen entitatea, [aurrebaldintzak](#prerequisites) atalean deskribatu moduan.
+1. Hautatu **gehitu datuak** eta aukeratu transakzioaren edo erosketa-historiaren informazioa duen jarduera mota alboko paneletik.
 
-1. Esleitu eremu semantikoak erosketa-historiako entitateko atributuetara eta hautatu **Hurrengoa**. Eremuen deskribapenak eskuratzeko, begiratu [ezinbesteko baldintza](#prerequisites).
+1. **Aukeratu jarduerak** atalean, aukeratu hautatutako jarduerako zein jarduera jakinetan jarri behar duen arreta kalkuluak.
 
-   :::image type="content" source="media/model-map-purchase-entity.PNG" alt-text="Esleitu erosketa-entitatearen eremu semantikoak.":::
+   :::image type="content" source="media/product-recommendation-select-semantic-activity.PNG" alt-text="Alboko panela, mota semantikoan jarduera jakinak aukeratzeko eragiketa erakusten.":::
 
-1. Beheko eremuak betetzen ez badira, konfiguratu erosketa-historiaren entitatea Bezeroaren entitatera.
-    1. Hautatu **Erosketa-historiaren entitatea**.
-    1. Aukeratu erosketa-historiaren entitatean bezeroa identifikatzen duen **Eremua**. Zure Bezeroaren entitatearen bezeroaren ID nagusiarekin erlazionatu behar da.
-    1. Hautatu botoia **Bezero entitatea** bat datorrena zure lehen bezero-entitatearekin.
-    1. Idatzi izena deskribatzen duena harremana.
+1. Jarduera ez badiozu oraindik mota semantiko bati esleitu, hautatu **Editatu** hori egiteko. Jarduera semantikoak esleitzeko esperientzia gidatua irekiko da. Esleitu datuak hautatutako jarduera motako dagokien eremuekin.
 
-    :::image type="content" source="media/model-purchase-join.PNG" alt-text="Bezeroarekiko harremana sortu dela erakusten duen erosketa-historiaren orria.":::
-   
+   :::image type="content" source="media/product-recommendation-set-activity-type.PNG" alt-text="Jarduera mota ezartzen duen orria.":::
+
+1. Behin jarduera esleituta dagokion mota semantikoari, hautatu **hurrengoa** jarraitzeko
+
+1. Esleitu atributu semantikoak eredua exekutatu ahal izateko behar diren eremuei. Beheko eremuak betetzen ez badira, konfiguratu erosketa-historiaren entitatea *Bezeroaren* entitatera.
+
 1. Hautatu **Hurrengoa**.
 
-1. Aukeran, hautatu **Gehitu datuak** **Bezeroaren jarduerak** atalerako. Aukeratu bezeroaren jarduerari buruzko informazioa ematen duen entitatea aurrebaldintzetan azaltzen den moduan.
+### <a name="select-prediction-level"></a>Hautatu iragarpenaren maila
 
-1. Esleitu eremu semantikoak bezeroaren jardueraren entitateko atributuetara eta hautatu **Hurrengoa**. Eremuen deskribapenak eskuratzeko, begiratu [ezinbesteko baldintza](#prerequisites).
+Iragarpen gehienak bezero mailan sortzen dira. Zenbait egoeratan, baliteke hori ez izatea negozioaren beharrei erantzuteko adina. Ezaugarri hau erabil dezakezu bezero baten adar bati buelta emateko, adibidez, bezeroarentzat oro har.
 
-   :::image type="content" source="media/map-transaction-data-fields.png" alt-text="Esleitu bezeroen eremuak transakzio datuetarako.":::
+1. Bezeroak baino maila altuagoan iragarpen sortzeko, hautatu **Aukeratu entitatea bigarren maila baterako**. Aukera erabilgarri ez badago, ziurtatu aurreko atala bete duzula.
+
+1. Zabaldu bigarren maila aukeratu nahi zenukeen entitateak edo erabili bilaketa-iragazkiaren koadroa hautatutako aukerak iragazteko.
+
+1. Aukeratu bigarren maila gisa erabili nahi duzun atributua, eta hautatu **Gehitu**
+
+1. Hautatu **Hurrengoa**
+
+> [!NOTE]
+> Atal honetan eskuragarri dauden entitateak aurreko atalean aukeratu duzun entitatearekin harremana dutelako erakusten dira. Gehitu nahi duzun entitatea ikusten ez baduzu, ziurtatu baliozko harremana duela **Harremanak**. Bat-bateko eta askoko harremanek soilik balio dute konfigurazio honetarako.
+
+### <a name="add-additional-data-optional"></a>Gehitu datu gehigarriak (aukerakoa)
+
+Konfiguratu harremana bezeroaren jarduera entitatetik *Bezeroa* entitatea.
+
+1. Aukeratu bezeroaren jardueraren taulan bezeroa identifikatzen duen eremua. Zuzenean erlazionatuta egon daiteke zure *Bezero* entitatearen bezeroaren ID nagusiarekin.
+
+1. Aukeratu zure entitate nagusia *Bezeroa* entitatea.
+
+1. Idatzi izena deskribatzen duena harremana.
+
+#### <a name="customer-activities"></a>Bezeroen jarduerak
+
+1. Aukeran, hautatu **Gehitu datuak** **Bezeroaren jarduerak** atalerako.
+
+1. Aukeratu erabili nahi dituzun datuak dituen jarduera mota semantikoa, eta hautatu jarduera bat edo gehiago atalean **Jarduerak** atala.
 
 1. Hautatu konfiguratzen ari zaren bezeroaren jarduera motarekin bat datorren jarduera mota bat. Aukeratu **Sortu berria** eta aukeratu erabilgarri dagoen jarduera mota bat edo sortu mota berri bat.
 
-1. Bezeroaren jarduera erakundearen eta bezeroaren entitatearen arteko harremanak konfiguratu beharko dituzu.
-    1. Aukeratu bezeroaren jardueraren taulan bezeroa identifikatzen duen eremua. Zuzenean erlazionatuta egon daiteke zure Bezero entitatearen bezeroaren ID nagusiarekin.
-    1. Hautatu botoia Bezero entitatea bat datorrena zure lehen bezero-entitatearekin
-    1. Idatzi izena deskribatzen duena harremana.
-
-1. Sakatu **Gorde**.
+1. Hautatu **Hurrengoa**, gero **Gorde**.
 
 1. Sartu nahiko zenukeen beste bezeroen jarduerarik baduzu, errepikatu goiko urratsak.
 
+#### <a name="customers-data"></a>Bezeroen datuak
+
+1. Aukeran, hautatu **Gehitu datuak** hurrengorako **Bezeroen datuak**.
+
+1. Mapatu atributu semantikoak zure bezeroen datuetako eremuetara identifikatutako moduan. Erabilitako eremuetako datuak ez dira askotan aldatu behar ereduaren errendimendu onena bermatzeko. Adibidez, hilero aldatzen den "Sailkapena" eremua hautatzeak iragarpen-en erabilitako azken balioa izango du, nahiz eta historikoki balio bera ez aplikatu bezeroari iragarpen ereduak eraikitzerakoan.
+
 1. Hautatu **Hurrengoa**.
+
+### <a name="provide-an-optional-list-of-benchmark-accounts-business-accounts-only"></a>Eman erreferentziazko kontuen aukerako zerrenda (negozio kontuak soilik)
+
+Gehitu erreferentzia gisa erabili nahi dituzun negozioen bezeroen eta kontuen zerrenda. Lortuko duzu [erreferentziazko kontu horien xehetasunak](#review-a-prediction-status-and-results) besteak beste, haien txandaren puntuazioa eta haien txandaren eragina izan zuten ezaugarri garrantzitsuenak iragarpen.
+
+1. Hautatu **+ Gehitu bezeroak**.
+
+1. Aukeratu erreferentzia gisa jokatzen duten bezeroak.
+
+1. Jarraitzeko, hautatu **Hurrengoa**.
 
 ### <a name="set-schedule-and-review-configuration"></a>Ezarri programazioa eta berrikusi konfigurazioa
 
@@ -135,42 +184,62 @@ Transakzioen galera-tasaren iragarpenak bezeroak denbora-tarte jakin batean jada
 1. Joan **Adimena** > **Iragarpenak** atalera eta hautatu **Nire iragarpenak** fitxa.
 
 1. Hautatu berrikusi nahi duzun iragarpena.
-   - **Iragarpenaren izena:** sortzerakoan emandako iragarpenaren izena.
-   - **Iragarpen mota:** iragarpenean erabilitako eredu mota
-   - **Irteerako entitatea:** Iragarpenaren irteera gordetzeko entitatearen izena. Izen hori duen entitate bat aurki dezakezu **Datuak** > **erakundeak**.    
+   - **Iragarpenaren izena**: sortzean emandako iragarpenaren izena.
+   - **Iragarpen mota**: iragarpenean erabilitako eredu mota
+   - **Irteerako entitatea**: iragarpenaren irteera gordetzeko entitatearen izena. Izen hori duen entitate bat aurki dezakezu **Datuak** > **erakundeak**.
      Irteerako entitatean, *ChurnScore* da aurreikusitako txandaren probabilitatea eta *IsChurn* oinarritutako etiketa bitarra da *ChurnScore* 0,5 atalasearekin. Baliteke atalase lehenetsiak ez funtzionatzea zure eszenatokian. [Sortu segmentu berria](segments.md#create-a-new-segment) nahi duzun atalasearekin.
-     Bezero guztiak ez dira nahitaez bezero aktiboak. Horietako batzuek agian ez dute jarduerarik izan aspalditik eta jadanik txundituta jotzen dira, zure txandaren definizioan oinarrituta. Ez da baliagarria lehendik nahastuta dauden bezeroen arreta arriskua aurreikustea, ez baitira interesatzen den publikoa.
-   - **Iragarritako eremua:** Eremu hau iragarpen mota batzuetarako bakarrik betetzen da eta ez da erabiltzen galera-tasaren iragarpenean.
-   - **Egoera:** iragarpenaren exekuzioaren egoera.
-        - **Ilaran:** iragarpena beste prozesu batzuk exekutatzeko zain dago.
-        - **Freskatzen:** iragarpena une honetan exekutatzen ari da irteerako entitatera isuriko diren emaitzak sortzeko.
-        - **Huts egin du:** iragarpenaren exekuzioak huts egin du. Xehetasun gehiago eskuratzeko, [berrikusi egunkariak](manage-predictions.md#troubleshoot-a-failed-prediction).
-        - **Ongi osatu da:** iragarpena ongi osatu da. Aukeratu **ikusi** elipse bertikalen azpian iragarpena berrikusteko
-   - **Hizkuntzak:** Aurreikuspenerako konfigurazioa aldatu zen data.
-   - **Azken freskatua:** Iragarpena freskatu den data irteerako entitatean.
+     Bezero guztiak ez dira nahitaez bezero aktiboak. Horietako batzuek agian ez dute jarduerarik izan aspalditik eta jadanik txundituta jotzen dira, zure txandaren definizioan oinarrituta. Ez da baliagarria lehendik nahastuta dauden bezeroen arriskua aurreikustea, ez baitira interesatzen zaien publikoa.
+   - **Iragarritako eremua**: Eremu hau iragarpen mota batzuetarako bakarrik betetzen da eta ez da erabiltzen galera-tasaren iragarpenean.
+   - **Egoera**: iragarpenaren exekuzioaren egoera.
+        - **Ilaran**: iragarpena beste prozesu batzuk exekutatzeko zain dago.
+        - **Freskatzen**: iragarpena une honetan exekutatzen ari da irteerako entitatera isuriko diren emaitzak sortzeko.
+        - **Huts egin du**: iragarpenaren exekuzioak huts egin du. Xehetasun gehiago eskuratzeko, [berrikusi egunkariak](manage-predictions.md#troubleshoot-a-failed-prediction).
+        - **Ongi osatu da**: iragarpena ongi osatu da. Aukeratu **ikusi** elipse bertikalen azpian iragarpena berrikusteko
+   - **Editatuta**: aurreikuspenerako konfigurazioa aldatu zen data.
+   - **Azken freskatua**: iragarpena freskatu den data irteerako entitatean.
 
 1. Hautatu elipse bertikalak emaitzak berrikusteko nahi duzun iragarpenaren ondoan **ikusi**.
 
-   :::image type="content" source="media/model-subs-view.PNG" alt-text="Ikusi kontrola iragarpen baten emaitzak ikusteko.":::   
+   :::image type="content" source="media/model-subs-view.PNG" alt-text="Ikusi kontrola iragarpen baten emaitzak ikusteko.":::
 
 1. Emaitza orrialdearen barruan hiru datu nagusi daude:
-    1. **Prestakuntza ereduaren errendimendua:** A, B edo C puntuazio posibleak dira. Puntuazio honek iragarpenaren errendimendua adierazten du eta irteerako entitatean gordetako emaitzak erabiltzeko erabakia har dezake. Puntuazioak honako arauen arabera zehazten dira:
-         
-         - **A** ereduak iragarpen guztien gutxienez % 50 zehaztasunez aurreikusi duenean, eta galdutako bezeroen iragarpenen zehaztasuna oinarrizko tasa baino gutxienez % 10 baino handiagoa denean.
+   - **Prestakuntza ereduaren errendimendua**: A, B edo C puntuazio posibleak dira. Puntuazio honek iragarpenaren errendimendua adierazten du eta irteerako entitatean gordetako emaitzak erabiltzeko erabakia har dezake. Puntuazioak honako arauen arabera zehazten dira: 
+        - **A** ereduak iragarpen guztien gutxienez % 50 zehaztasunez aurreikusi duenean, eta galdutako bezeroen iragarpenen zehaztasuna oinarrizko tasa baino gutxienez % 10 baino handiagoa denean.
             
-         - **B** ereduak iragarpen guztien gutxienez % 50 zehaztasunez aurreikusi duenean, eta galdutako bezeroen iragarpenen zehaztasuna oinarrizko tasa baino gehienez % 10 handiagoa denean.
+        - **B** ereduak iragarpen guztien gutxienez % 50 zehaztasunez aurreikusi duenean, eta galdutako bezeroen iragarpenen zehaztasuna oinarrizko tasa baino gehienez % 10 handiagoa denean.
             
-         - **C** ereduak iragarpen guztien % 50 baino gutxiago zehaztasunez aurreikusi duenean, edo galdutako bezeroen iragarpenen zehaztasuna oinarrizko tasa baino txikiagoa denean.
+        - **C** ereduak iragarpen guztien % 50 baino gutxiago zehaztasunez aurreikusi duenean, edo galdutako bezeroen iragarpenen zehaztasuna oinarrizko tasa baino txikiagoa denean.
                
-         - **Oinarria** atalak ereduaren iragarpen denbora-tartearen sarrera hartzen du (adibidez, urtebete) eta ereduak denbora zati desberdinak sortzen ditu 2rekin zatituz, hilabete batera edo gutxiagora iritsi arte. Zatiki horiek denbora tarte horretan erosi ez duten bezeroentzako negozio arau bat sortzeko erabiltzen ditu. Bezero hauek galdutzat jotzen dira. Zein bezero galtzeko aukera dagoen ondoen iragartzen duen denboran oinarritutako negozio-araua hartzen da oinarrizko eredu gisa.
+        - **Oinarria** atalak ereduaren iragarpen denbora-tartearen sarrera hartzen du (adibidez, urtebete) eta ereduak denbora zati desberdinak sortzen ditu 2rekin zatituz, hilabete batera edo gutxiagora iritsi arte. Zatiki horiek denbora tarte horretan erosi ez duten bezeroentzako negozio arau bat sortzeko erabiltzen ditu. Bezero hauek galdutzat jotzen dira. Zein bezero galtzeko aukera dagoen ondoen iragartzen duen denboran oinarritutako negozio-araua hartzen da oinarrizko eredu gisa.
             
-    1. **Probabilitatea asetzeko (bezero kopurua):** Bezero-taldeak krisiak eragindako arriskuaren arabera. Datu horrek gero lagundu dezake krisi arrisku handia duten bezeroen segmentu bat sortu nahi baduzu. Horrelako segmentuek segmentu kide izateko zure mozketa nolakoa izan behar den ulertzen lagunduko dute.
+    - **Probabilitatea asetzeko (bezero kopurua)**: Bezero-taldeak krisiak eragindako arriskuaren arabera. Datu horrek gero lagundu dezake krisi arrisku handia duten bezeroen segmentu bat sortu nahi baduzu. Horrelako segmentuek segmentu kide izateko zure mozketa nolakoa izan behar den ulertzen lagunduko dute.
        
-    1. **Eraginik garrantzitsuenak:** Zure iragarpena sortzerakoan kontuan hartzen diren faktore asko daude. Faktore bakoitzak bere garrantzia kalkulatzen du eredu batek sortzen dituen iragarpen bateratuetarako. Faktore hauek erabil ditzakezu zure iragarpen emaitzak balioztatzen laguntzeko. Bestela, informazio hori gero erabil dezakezu [segmentuak sortu](segments.md) horrek bezeroen kalte arriskuan eragina izan lezake.
+    - **Eraginik garrantzitsuenak**: Zure iragarpena sortzerakoan kontuan hartzen diren faktore asko daude. Faktore bakoitzak bere garrantzia kalkulatzen du eredu batek sortzen dituen iragarpen bateratuetarako. Faktore hauek erabil ditzakezu zure iragarpen emaitzak balioztatzen laguntzeko, edo informazio hau geroago erabil dezakezu [segmentuak sortu](segments.md) horrek bezeroentzako txandakako arriskuan eragina izan dezake.
+
+
+1. Enpresa kontuetarako, aurkitu **Eraginaren ezaugarrien analisia** informazio orria. Lau datu atal ditu:
+
+    - Eskuineko panelean hautatutako elementuak zehazten du orrialde honetako edukia. Aukeratu elementu bat **Goi mailako bezeroak** edo **Erreferentziazko bezeroak**. Bi zerrendak txandaren puntuazioaren balio txikiagoaren arabera ordenatuta daude, puntuazioa bezeroarentzat bakarrik den edo bezeroentzako puntuazio konbinatua eta produktuen kategoria bezalako bigarren maila.
+        
+        - **Goi mailako bezeroak**: Churn arrisku handiena duten eta churn arrisku txikiena duten 10 bezeroen zerrenda. 
+        - **Erreferentziazko bezeroak**: Eredua konfiguratzerakoan hautatu diren 10 bezeroen zerrenda.
+ 
+    - **Churn puntuazioa:** Eskuineko panelean hautatutako elementuaren desaktibazio puntuazioa erakusten du.
+    
+    - **Churn arriskuaren banaketa:** Bezeroen arteko arriskuaren banaketa eta hautatutako bezeroa dagoen pertzentila erakusten ditu. 
+    
+    - **Gailu arriskua handitzen eta gutxitzen duten ezaugarri nagusiak:** Eskuineko paneleko hautatutako elementurako, biribiltzeko arriskua handitu eta murriztu duten bost ezaugarri nagusiak zerrendatzen dira. Eragin duen eginbide bakoitzerako, elementuak duen ezaugarriaren balioa eta horrek eragina du txandaren puntuazioan. Ezaugarri bakoitzaren batez besteko balioa bezeroaren segmentu baxu, ertain eta altuan ere agertzen da. Aukeratutako elementurako eragin handieneko funtzioen balioak hobeto testuinguratzen eta bezeroen segmentu baxu, ertain eta altuarekin alderatzen laguntzen du.
+
+       - Baxua: kontuak edo kontu eta bigarren mailako konbinazioak 0 eta 0,33 arteko desoreka puntuazioarekin
+       - Ertaina: kontuak edo kontuen eta bigarren mailen konbinazioak 0,33 eta 0,66 arteko desoreka puntuazioarekin
+       - Altua: kontuak edo kontuen eta bigarren mailen konbinazioak 0,66 baino handiagoko desoreka puntuazioarekin
+    
+       Kontu mailan desaktibazioa iragartzen duzunean, kontu guztiak kontsideratzen dira desaktibazio segmentuen batez besteko ezaugarrien balioak lortzeko. Kontu bakoitzeko bigarren mailako mailak iragartzeko, txandakako segmentuen deribazioa alboko panelean hautatutako elementuaren bigarren mailaren araberakoa da. Adibidez, artikulu batek produktu kategoria bigarren maila badu = bulegoko materiala, bulegoko materiala produktu kategoria gisa duten elementuak baino ez dira kontuan hartuko produktuen batez besteko ezaugarrien balioak ateratzerakoan. Logika hau aplikatzen da elementuaren ezaugarrien balioen alderaketa bidezko, baxu, ertain eta altuko segmentuen batez besteko balioekin alderatzea.
+
+       Zenbait kasutan, baxua, ertaina edo altua den segmentuen batez besteko balioa hutsik dago edo ez dago erabilgarri, goiko definizioan oinarrituta ez baitago dagokion churn segmentuetako elementurik.
 
 ## <a name="manage-predictions"></a>Iragarpenak kudeatu
 
-Iragarpenak optimizatzea, konpontzea, freskatzea edo ezabatzea posible da. Berrikusi sarrerako datuen erabilgarritasun txostena iragarpen azkarragoa eta fidagarriagoa nola egin jakiteko. Informazio gehiago lortzeko, ikusi [Kudeatu iragarpenak](manage-predictions.md).
-
+Iragarpenak optimizatzea, konpontzea, freskatzea edo ezabatzea posible da. Berrikusi sarrerako datuen erabilgarritasun txostena iragarpen azkarragoa eta fidagarriagoa nola egin jakiteko. Informazio gehiagorako, joan [Kudeatu iragarpenak](manage-predictions.md).
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

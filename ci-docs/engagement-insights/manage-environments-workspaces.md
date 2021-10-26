@@ -4,17 +4,17 @@ description: Lan eremuak eta inguruneak nola sortu, berrizendatu eta ezabatu.
 author: jusali
 ms.reviewer: mhart
 ms.author: jusali
-ms.date: 09/09/2021
+ms.date: 10/01/2021
 ms.service: customer-insights
 ms.subservice: engagement-insights
 ms.topic: how-to
 ms.manager: shellyha
-ms.openlocfilehash: a5b48db5ae23ea65bf608d67348d493bfdc7678f
-ms.sourcegitcommit: 0ceb46c4f57ab49d3a2ebb1c8a816bbafe979e3d
+ms.openlocfilehash: 279af24358a1d6ea2b4cc75d5496042af73a7cae
+ms.sourcegitcommit: 53b133a716c73cb71e8bcbedc6273cec70ceba6c
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 09/09/2021
-ms.locfileid: "7486020"
+ms.lasthandoff: 10/15/2021
+ms.locfileid: "7645431"
 ---
 # <a name="manage-environments-and-workspaces"></a>Kudeatu inguruneak eta laneko areak
 
@@ -22,42 +22,20 @@ ms.locfileid: "7486020"
 
 ## <a name="overview"></a>Informazio orokorra
 
-Lan gunea gertaerak eta txostenak gordetzeko eta kudeatzeko gunea da. Bertan, erabiltzaileen jarduera denbora errealean ikus dezakezu. Lan-eremua sortzen duzunean, lan-eremura bidali beharreko datu mota hautatzen duzu. Gaur egun, web datuak eta mugikorretarako aplikazioak onartzen dira.
+Gai honetan laneko espazioak eta inguruneak nola kudeatu eztabaidatzen da dagoeneko sortu ondoren. 
 
-Ingurunea zure laneko espazioak eta konexioak kudeatzeko gunea da. Ingurumenak nola erabiltzen dituzun zure erakundearen eta zure erabilera kasuaren araberakoa da. Adibidez, sor dezakezu:
+- *Lan-eremua* gertaerak eta txostenak gordetzeko eta kudeatzeko gunea da. Bertan, erabiltzaileen jarduera denbora errealean ikus dezakezu. Lan-eremua sortzen duzunean, lan-eremura bidali beharreko datu mota hautatzen duzu. Gaur egun, web datuak eta mugikorretarako aplikazioak onartzen dira. Informazio gehiagorako, ikus [Sortu lan gunea eta gehitu kideak](create-workspace.md).
 
--   Ingurune bakarra.
--   Ingurune bereiziak probatzeko eta ekoizteko.
--   Ingurune bereiziak zure erakundeko talde edo sail zehatzetarako, ikusle bakoitzarentzako gertaera garrantzitsuak dituztenak.
--   Ingurune bereiziak zure enpresaren adar global desberdinetarako.
--   Konexioak Customer Insights audientziaren xehetasunak gaitasuna.
+- *Ingurunea* zure laneko espazioak eta konexioak kudeatzeko gunea da. Informazio gehiago lortzeko, ikusi [Sortu ingurune berri bat](create-new-environment.md).
 
-## <a name="choose-an-environment-and-create-a-workspace"></a>Aukeratu ingurunea eta sortu lanerako gunea 
-
-Laneko espazio guztiek ingurune batean egon behar dute. Aurretik zegoen ingurunea hauta dezakezu edo berria egin dezakezu laneko area sortzen duzunean. Ondoren, laneko eremuko kideak gehitzea eta datuak biltzen hastea aukera dezakezu.
-
-**Sortzeko lehen lan-eremua**
-
-1. Konpromisoen estatistiketan, hautatu **Berria** laneko espazioaren aldatzailetik. 
-
-   :::image type="content" source="media/New-workspace.png" alt-text="Customer Insights orrialdeen laneko hautatzailea.":::
-
-1. Aukeratu ingurune bat zerrendatik edo hautatu **Inguru berria sortu**.
-
-1. Idatzi izena hemen **Laneko espazioaren izena**. 
-
-1. Aukeratu zein ingurune mota sortu nahi duzun, webgune batean edo mugikorretarako aplikazio batean gertatzen dena neurtu nahi duzun ala ez. 
-
-1. Kideak gehitu eta haien baimen maila esleitu dezakezu **Rola** zerrenda. Ondoren hautatu **Amaitu** lan eremua sortzeko edo **Hurrengoa** kodea instalatzeko. 
-
-1. Instalatu kode zati datuak jasotzen hasteko eta hautatu **Eginda**. 
-
-## <a name="manage-a-workspace"></a>Kudeatu laneko area bat
+## <a name="manage-an-existing-workspace"></a>Kudeatu lehendik dagoen laneko area bat
 
 Ingurune batean laneko espazio anitz mantendu ditzakezu aldi berean. Zure [funzioa](user-roles.md) horietan nola lan egin daitekeen zehazten du. 
 
  - Laneko eremua kudeatzeko inguruneko administratzailea edo Laneko eremuko administratzailea izan behar duzu.
  - Laneko arearen administratzaile gisa, lehendik dauden laneko espazioak izena aldatu edo ezaba ditzakezu. 
+
+:::image type="content" source="media/workspace-edit.png" alt-text="Laneko arearen administratzailearen zentroa.":::
 
 ### <a name="edit-a-workspace-name"></a>Editatu lan-eremuaren izena
 
@@ -75,7 +53,7 @@ Laneko area ezabatzen baduzu, betiko kenduko dira bertan dauden edukia, datuak, 
 
 1. Hautatu **Ezabatu lan-eremua**. 
 
-1. Hurrengoan **Ezabatu lan-eremua** elkarrizketa, idatzi **BAIEZTATU EZABATZEA**. 
+1. Urtean **Ezabatu laneko eremua** elkarrizketa-koadroa, sartu **BAIMENDU EZABATU** txapel guztietan. 
 
 1. Hautatu **Ezabatu** modu iraunkorrean ezabatzeko lan-eremua.
 
@@ -87,27 +65,11 @@ Laneko area ezabatzen baduzu, betiko kenduko dira bertan dauden edukia, datuak, 
 
 1. Aukeratu **Gehitu kideak** zure laneko eremuan gehitzeko.
 
-## <a name="manage-an-environment"></a>Kudeatu ingurunea
+## <a name="manage-an-existing-environment"></a>Kudeatu existitzen den ingurune bat
 
 Ingurumen administratzaile gisa, ingurune batera sar zaitezke ezkerreko nabigazio paneletik. Ingurunearen ezarpenak, beste inguruneen administratzaileak eta laneko areak konfigura ditzakezu. Aukeratu fitxak administrazio zentroan arlo desberdinen artean mugitzeko.
 
-:::image type="content" source="media/New-environment.png" alt-text="Ingurunearen administrazio-zentroa.":::
-
-### <a name="create-an-environment"></a>Sortu ingurune bat
-
-1. Laneko arearen hautatzailean, hautatu **+Berria**.
-
-1. Esperientzia gidatuan ireki **Ingurunea** goitibeherako menua eta hautatu **Ingurune berria sortu**. 
-
-1. Eman **Ingurunearen izena**.
-
-   :::image type="content" source="media/create-environment.png" alt-text="Urratsa esperientzia gidatuan ingurunearen xehetasunak zehazteko.":::
-
-1. Aukeratu **Eskualdea** eta hautatu **Hurrengoa**. 
-
-1. Eman Laneko arearen izena eta aukeratu zein lan mota sortu nahi duzun. 
-
-1.  Aukeran, gehitu kideak eta kopiatu kode zati sortze prozesua.
+:::image type="content" source="media/environment-edit.png" alt-text="Ingurunearen administrazio-zentroa.":::
 
 ### <a name="rename-an-environment"></a>Aldatu izena ingurune bat
 
@@ -131,7 +93,7 @@ Ingurune administratzaileek inguruneak ezabatu ditzakete. Ingurune bat ezabatu a
 
 1. Hautatu **Ezabatu ingurunea**. 
 
-1. Hurrengoan **Ezabatu lan-eremua** elkarrizketa, idatzi **BAIEZTATU EZABATZEA**. 
+1. Urtean **Ezabatu laneko eremua** elkarrizketa-koadroa, sartu **BAIMENDU EZABATU** txapel guztietan. 
 
 1. Ingurunea betiko ezabatzeko, hautatu **ezabatu**.
 

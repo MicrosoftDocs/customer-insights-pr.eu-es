@@ -10,12 +10,12 @@ ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
 ms.custom: intro-internal
-ms.openlocfilehash: 75d597158233f75f0eb5f94389f9dba199d81719f2bbe4e5cc58d2a3afc7dcf8
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: de31e1f25c08d0bcb5341c5f465b1999de48acf3
+ms.sourcegitcommit: 53b133a716c73cb71e8bcbedc6273cec70ceba6c
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7032835"
+ms.lasthandoff: 10/15/2021
+ms.locfileid: "7645340"
 ---
 # <a name="data-sources-overview"></a>Datuen iturburuen ikuspegi orokorra
 
@@ -35,7 +35,7 @@ datu-iturburu bat gehi dezakezu hiru modu nagusitan:
 
 ## <a name="add-data-from-on-premises-data-sources"></a>Gehitu datuak lokal datu iturrietatik
 
-Oinarrian onartzen da lokal datu iturrietako datuak sartzea parte-hartzaileen xehetasunen Microsoft Power Platform datu-fluxuak. Datu-fluxuak Customer Insights-en gaitu daitezke [eskainiz Microsoft Dataverse inguruneko URLa](get-started-paid.md) ingurunea konfiguratzerakoan.
+Oinarrian onartzen da lokal datu iturrietako datuak sartzea parte-hartzaileen xehetasunen Microsoft Power Platform datu-fluxuak. Datu-fluxuak Customer Insights-en gaitu daitezke [eskainiz Microsoft Dataverse inguruneko URLa](create-environment.md) ingurunea konfiguratzerakoan.
 
 Elkartu ondoren sortzen diren datu iturriak Dataverse Customer Insights-ekin ingurunea erabiliko da [Power Platform datu-fluxuak](/power-query/dataflows/overview-dataflows-across-power-platform-dynamics-365) lehenetsiz. Datu fluxuek konektibitate lokala onartzen dute datuetarako atebidea erabiliz. Kendu eta sortu berriro Dataverse ingurunea [datuetarako atebide lokalen erabilerarekin](/data-integration/gateway/service-gateway-app) erlazionatu baino lehen zeuden datu-iturburuak.
 

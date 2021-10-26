@@ -1,7 +1,7 @@
 ---
 title: Esportatu Customer Insights datuak Microsoft Advertising-era
 description: Ikasi konexioa konfiguratzen eta esportatzen Microsoft Advertising-era.
-ms.date: 05/12/2021
+ms.date: 10/08/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 8f8a4cbb9590f9c5311789154319283530e0a10343cccbe9c7aec99765b4fbf2
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: 12fd221acb7c0eed443c9b860aca42dcb2b3788c
+ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7031438"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "7618046"
 ---
 # <a name="export-segments-to-microsoft-advertising-preview"></a>Esportatu segmentuak Microsoft Advertising-era (aurrebista)
 
@@ -29,9 +29,9 @@ Esportatu Customer Insights segmentuak Microsoft Advertising-era Customer Match 
 
 ## <a name="known-limitations"></a>Muga ezagunak
 
-- Esportazio bakoitzeko 500.000 bat profil esportatu ditzakezu Microsoft Advertising-era.
+- Esportazio bakoitzeko 500.000 bezero profila esporta ditzakezu Microsoft Advertising.
 - Microsoft Advertising-era esportatzea segmentuetara mugatzen da.
-- Gehienez 500.000 profil Microsoft Advertising-era esportatzeak 10 minutu behar ditzake osatzeko. 
+- 500.000 arte bezero profil Microsoft Advertising-en dituzten segmentuak esportatzen 10 minutu behar izan ditzakete osatzeko. 
 
 
 ## <a name="set-up-the-connection-to-microsoft-advertising"></a>Konfiguratu Microsoft Advertising-erako konexioa
@@ -68,7 +68,7 @@ Esportazio hau konfigura dezakezu mota honetako konexiorako sarbidea baduzu. Inf
 
 1. Sartu **Microsoft Advertising Bezeroaren IDa eta Kontuaren IDa**. Bezeroaren IDa (`cid`) eta Kontuaren IDa (`aid`) URLaren parametroetan aurki ditzakezu Microsoft Advertising-en saioa hasten duzunean.
 
-1. **Datuen bat etortzea** atalean, **Posta elektronikoa** eremuan, hautatu bezeroaren profil bateratuko eremua bezero baten helbide elektronikoarekin. Segmentuak esportatu behar dira Microsoft Advertising-era.
+1. Urtean **Datuen bat etortzea** atalean, **Posta elektronikoa** eremua, hautatu bezeroaren helbide elektronikoa adierazten duen eremua. Segmentuak esportatu behar dira Microsoft Advertising-era.
 
 1. Sakatu **Gorde**.
 

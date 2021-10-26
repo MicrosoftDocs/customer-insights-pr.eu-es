@@ -1,7 +1,7 @@
 ---
 title: Esportatu Customer Insights datuak RollWorks-era
 description: Ikasi konexioa konfiguratzen eta esportatzen RollWorks.
-ms.date: 03/03/2021
+ms.date: 10/08/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: d8ce4d867835dcb7cf56c6fffff4e25d1f5c109af0e401fc0eb8b3a7427c1de4
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: f8f6a79db9cb4bb109c03a464d9f8c7f3b862ad5
+ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7034575"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "7617429"
 ---
 # <a name="export-segments-to-rollworks-preview"></a>Esportatu segmentuak RollWorks-era (aurrebista)
 
@@ -28,11 +28,11 @@ Esportatu bezeroen profil bateratuen segmentuak RollWorks eta erabili iragarkiet
 
 ## <a name="known-limitations"></a>Muga ezagunak
 
-- Esportazio bakoitzeko 250.000 profil esportatu ditzakezu RollWorks-era.
-- Ezin dituzu 100 profil baino gutxiagoko segmentuak esportatu RollWorks-era. 
+- Esportazio bakoitzeko 250.000 bezero profila esporta ditzakezu RollWorks.
+- Ezin dituzu esportatu 100 bezero profil baino gutxiago dituzten segmentuak RollWorks-era. 
 - RollWorks esportatzea segmentuetara mugatzen da.
-- Esportatu gehienez 250.000 profil RollWorks, 10 minutu behar ditzake osatzeko. 
-- RollWorks-era esporta ditzakezun profilen kopurua RollWorks-rekin duzun kontratuaren menpe dago eta mugatua da.
+- 250.000 arte bezero profil RollWorks-en dituzten segmentuak esportatzen 10 minutu behar izan ditzakete osatzeko. 
+- RollWorks-era esporta ditzakezun bezeroen profil kopurua RollWorks-ekin duzun kontratuaren menpe dago eta mugatua da.
 
 ## <a name="set-up-connection-to-rollworks"></a>Konfiguratu konexioa RollWorks-era
 
@@ -66,7 +66,7 @@ Esportazio hau konfigura dezakezu mota honetako konexiorako sarbidea baduzu. Inf
 
 1. Sartu zure **RollWorks iragarlearen IDa** [RollWorks Iragarkia](https://help.adroll.com/hc/articles/212011838-Advertiser-Profiles).
 
-3. **Datuen bat etortzea** atalean, **Posta elektronikoa** eremuan, hautatu zure bezeroaren profil bateratuko eremua, bezero baten helbide elektronikoa adierazten duena. Segmentuak esportatu behar dira RollWorks.
+1. Urtean **Datuen bat etortzea** atalean, **Posta elektronikoa** eremua, hautatu bezeroaren helbide elektronikoa adierazten duen eremua. Segmentuak esportatu behar dira RollWorks.
 
 1. Hautatu esportatu nahi dituzun segmentuak. Aukeratu gutxienez 100 kide dituen segmentua. Ezin dituzu segmentu txikiagoak esportatu. Gainera, esportatzeko segmentu baten gehieneko tamaina 250.000 kide da esportazio bakoitzeko. 
 

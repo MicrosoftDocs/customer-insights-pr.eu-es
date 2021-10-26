@@ -1,7 +1,7 @@
 ---
 title: Esportatu Customer Insights datuak AdRoll-era
 description: Ikasi konexioa nola konfiguratu eta AdRoll-era esportatu.
-ms.date: 03/03/2021
+ms.date: 10/08/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: e48f67ec21bb9b883dd30544ccf4dcfbf487acb1abaf0a0557764bc3d955e41a
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: f9373ea18e77723c988392a5a2959baa66d8eae9
+ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7032056"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "7617313"
 ---
 # <a name="export-segments-to-adroll-preview"></a>Esportatu segmentuak AdRoll-era (aurrebista)
 
@@ -28,11 +28,11 @@ Esportatu bezeroen profil bateratuen segmentuak AdRoll-era eta erabili iragarkie
 
 ## <a name="known-limitations"></a>Muga ezagunak
 
-- Aldiko 250.000 profil esporta ditzakezu gehienez AdRoll batean.
-- Ezin dituzu esportatu 100 profil baino gutxiagoko segmentuak AdRoll-era. 
+- Gehienez 250.000 bezero-profil esporta ditzakezu aldi bakoitzean AdRoll-era.
+- Ezin dituzu esportatu 100 bezero profil baino gutxiago dituzten segmentuak AdRoll-era. 
 - AdRoll-era esportatzea segmentuetara mugatuta dago.
-- 250.000 profila AdRoll-era esportatzeko 10 minutu behar izan ditzakezu osatzeko. 
-- AdRoll-era esporta ditzakezun profilen kopurua AdRoll-ekin duzun kontratuaren araberakoa da.
+- 250.000 arte bezero profil AdRoll-en dituzten segmentuak esportatzen 10 minutu behar izan ditzakete osatzeko. 
+- AdRoll-era esporta ditzakezun bezeroen profil kopurua AdRoll-ekin duzun kontratuaren menpe dago eta mugatua da.
 
 ## <a name="set-up-connection-to-adroll"></a>Konfiguratu konexioa AdRoll-ra
 
@@ -66,7 +66,7 @@ Esportazio hau konfigura dezakezu mota honetako konexiorako sarbidea baduzu. Inf
 
 1. Sartu zure **AdRoll iragarlearen IDa**. Informazio gehiagorako, ikus [AdRoll iragarkien profilak](https://help.adroll.com/hc/articles/212011838-Advertiser-Profiles).
 
-3. **Datuen bat etortzea** atalean, **Posta elektronikoa** eremuan, hautatu zure bezeroaren profil bateratuko eremua, bezero baten helbide elektronikoa adierazten duena. Segmentuak AdRoll-era esportatu behar dira.
+1. Urtean **Datuen bat etortzea** atalean, **Posta elektronikoa** eremua, hautatu bezeroaren helbide elektronikoa adierazten duen eremua. Segmentuak AdRoll-era esportatu behar dira.
 
 1. Hautatu esportatu nahi dituzun segmentuak. Aukeratu gutxienez 100 kide dituen segmentua. Ezin dituzu segmentu txikiagoak esportatu. Gainera, esportatzeko segmentu baten gehieneko tamaina 250.000 kide da esportazio bakoitzeko. 
 

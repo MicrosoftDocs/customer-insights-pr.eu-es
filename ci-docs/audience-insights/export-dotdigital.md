@@ -1,7 +1,7 @@
 ---
 title: Esportatu Customer Insights datuak DotDigital-era
 description: Ikasi konexioa nola konfiguratu eta DotDigital-era esportatu.
-ms.date: 03/03/2021
+ms.date: 10/08/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: f09be0dfa599c1ef7cf0055b7ce1df8784cf447ada64b56bc7543c214f9a5b99
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: 3e3a79603f9f5746ee176d3d4299a30510c7459e
+ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7034621"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "7618368"
 ---
 # <a name="export-segments-to-dotdigital-preview"></a>Esportatu segmentuak DotDigital-era (aurrebista)
 
@@ -22,17 +22,17 @@ Esportatu bezeroen profil bateratuen segmentuak DotDigital helbide liburuetara e
 
 ## <a name="prerequisites-for-a-connection"></a>Konexioaren aurrebaldintzak
 
--   Baduzu [DotDigital kontua](https://dotdigital.com/) eta dagozkion administratzaile kredentzialak.
+-   Baduzu [DotDigital kontua](https://dotdigital.com/) eta sortu zuen [API erabiltzailea](https://support.dotdigital.com/hc/articles/115001718730-How-do-I-create-an-API-user). API erabiltzailearen egiaztagiriak erabili beharko dituzu konexioa sortzeko
 -   DotDigital-en helbide-liburuak eta dagozkien IDak daude. IDa URLan aurki daiteke helbide-liburua hautatu eta irekitzean. Informazio gehiagorako, ikus [DotDigital helbide-liburuak](https://support.dotdigital.com/hc/articles/212211968-Creating-an-address-book).
 -   Badituzu [konfiguratutako segmentuak](segments.md) hartzaileei buruzko xehetasunetan.
 -   Esportatutako segmentuetako bezeroen profil bateratuek helbide elektronikoa adierazten duen eremua dute.
 
 ## <a name="known-limitations"></a>Muga ezagunak
 
-- Gehienez milioi bat profil DotDigital-era esportatzeko.
+- Gehienez milioi bat bezero-profil DotDigital-era esportatzeko.
 - DotDigital-era esportatzea segmentuetara mugatuta dago.
-- Guztira 1 milioi profil dituzten segmentuak esportatzeak 3 ordu arte iraun dezake hornitzailearen aldetik mugak direla eta. 
-- DotDigital-era esporta ditzakezun profilen kopurua DotDigital-ekin duzun kontratuaren menpe dago eta mugatua da.
+- Guztira 1 milioi bezero profil dituzten segmentuak esportatzeak 3 ordu arte iraun dezake hornitzailearen aldetik mugak daudelako. 
+- DotDigital-era esporta ditzakezun bezeroen profil kopurua DotDigital-ekin duzun kontratuaren menpe dago eta mugatua da.
 
 ## <a name="set-up-connection-to-dotdigital"></a>Konfiguratu konexioa DotDigital-era
 
@@ -44,7 +44,7 @@ Esportatu bezeroen profil bateratuen segmentuak DotDigital helbide liburuetara e
 
 1. Aukeratu nork erabil dezakeen konexioa. Inolako neurririk hartzen ez baduzu, lehenetsia izango da Administratzaileak. Informazio gehiagorako, ikus [Baimendu laguntzaileei esportazioetarako konexioa erabiltzea](connections.md#allow-contributors-to-use-a-connection-for-exports).
 
-1. Idatzi **DotDigital-eko erabiltzaile-izena eta pasahitza**.
+1. Idatzi **DotDigital-eko API erabiltzaile-izena eta pasahitza**. 
 
 1. Sartu zure **[DotDigital helbide liburuaren IDa](https://support.dotdigital.com/hc/articles/212211968-Creating-an-address-book)**.
 
@@ -67,7 +67,7 @@ Esportazio hau konfigura dezakezu mota honetako konexiorako sarbidea baduzu. Inf
 1. Hurrengoan **Konexioa esportatzeko** eremuan, aukeratu konexioa DotDigital sekzioan. Atal honen izena ikusten ez baduzu, ez dago mota honetako konexiorik erabilgarri.
 
 
-1. **Datuen bat etortzea** atalean, **Posta elektronikoa** eremuan, hautatu zure bezeroaren profil bateratuko eremua, bezero baten helbide elektronikoa adierazten duena. Errepikatu urrats berak aukerako beste eremu batzuetarako, esaterako **izena**, **abizena**, **Izen osoa**, **Generoa**, eta **Posta kodea**.
+1. Urtean **Datuen bat etortzea** atalean, **Posta elektronikoa** eremua, hautatu bezeroaren helbide elektronikoa adierazten duen eremua. Errepikatu urrats berak aukerako beste eremu batzuetarako, esaterako **izena**, **abizena**, **Izen osoa**, **Generoa**, eta **Posta kodea**.
 
 1. Hautatu esportatu nahi dituzun segmentuak. Guztira 1 milioi bezero profil esporta ditzakezu DotDigital-era.
 

@@ -9,12 +9,12 @@ author: pkieffer
 ms.author: philk
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: c958f58c927b76364f305dad8f524dde29b2a638
-ms.sourcegitcommit: f1e3cc51ea4cf68210eaf0210ad6e14b15ac4fe8
+ms.openlocfilehash: ce9579f3d31207e666665237fd8935bb86889f8d
+ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 09/27/2021
-ms.locfileid: "7558940"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "7617903"
 ---
 # <a name="export-segments-to-google-ads-preview"></a>Esportatu segmentuak Google Ads-era (aurrebista)
 
@@ -35,9 +35,9 @@ Esportatu bezeroen profil bateratuen segmentuak Google Ads audientzia-zerrenda b
 
 ## <a name="known-limitations"></a>Muga ezagunak
 
-- Gehienez milioi bat profil Google Ads-era esportatzeko.
+- Gehienez milioi bat bezero-profil Google Ads-era esportatzeko.
 - Google Ads-era esportatzea segmentuetara mugatuta dago.
-- Guztira 1 milioi profil dituzten segmentuak esportatzeak 5 minutu arte iraun dezake hornitzailearen aldetik mugak direla eta. 
+- Guztira 1 milioi bezero profil dituzten segmentuak esportatzeak 5 minutu arte iraun dezake hornitzailearen aldetik mugak daudelako. 
 - Google Ads zerbitzuan bat etortzeak 48 ordu iraun dezake.
 
 ## <a name="set-up-connection-to-google-ads"></a>Konfiguratu konexioa Google Ads-era
@@ -74,7 +74,7 @@ Esportazio hau konfigura dezakezu mota honetako konexiorako sarbidea baduzu. Inf
 
 1. Sartu zure **[Google Ads hartzaileen IDa](https://support.google.com/google-ads/answer/7558048?hl=en#:~:text=Audience%20lists%20is%20a%20section,Display%20Network%20through%20remarketing%20campaigns.)** eta hautatu **Konektatu** Google Ads-eko konexioa hasieratzeko.
 
-1. **Datuen bat etortzea** atalean, **Posta elektronikoa** eremuan, hautatu zure bezeroaren profil bateratuko eremua, bezero baten helbide elektronikoa adierazten duena.
+1. Urtean **Datuen bat etortzea** atalean, **Posta elektronikoa** eremua, hautatu bezeroaren helbide elektronikoa adierazten duen eremua.
 
 1. Hautatu esportatu nahi dituzun segmentuak. Guztira 1 milioi bezero profil esporta ditzakezu Google Ads-era.
 

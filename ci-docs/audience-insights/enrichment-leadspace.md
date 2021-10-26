@@ -1,32 +1,32 @@
 ---
 title: Enpresako profilak aberastea hirugarrenen Leadspace aberastearekin
 description: Leadspace-ren hirugarrenen aberasteari buruzko informazio orokorra.
-ms.date: 04/09/2021
+ms.date: 09/30/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
-author: kishorem-MS
-ms.author: kishorem
+author: jodahlMSFT
+ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: 34b73b37670ed45e2c31ea164c0788b793bee433829ce21317c83903f3fca1fe
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: c57eb0ceb50e3b778acac72a4bbfd733a5b0c401
+ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7031688"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "7617336"
 ---
 # <a name="enrichment-of-company-profiles-with-leadspace-preview"></a>Enpresen profilak aberastea Leadspace-rekin (aurrebista)
 
-Leadspace B2B Bezeroaren Datuen Plataforma eskaintzen duen datuen zientzia enpresa da. Enpresentzako bezeroen profil bateratuak dituzten bezeroei beren datuak aberasteko aukera ematen die. Aberasketek atributu gehiago biltzen dituzte, hala nola enpresaren tamaina, kokapena, industria eta abar.
+Leadspace B2B Bezeroaren Datuen Plataforma eskaintzen duen datuen zientzia enpresa da. Kontuetan oinarritutako bezeroen profil bateratuak dituzten inguruneak ahalbidetzen ditu beren datuak aberasteko. Aberastu *Bezeroen profilak* enpresaren tamaina, kokapena edo industria bezalako atributuekin. Aberastu *Harremanetarako profilak* izenburua, pertsona edo posta elektronikoa egiaztatzea bezalako atributuekin.
 
 ## <a name="prerequisites"></a>Aurrebaldintzak
 
 Leadspace konfiguratzeko eta konfiguratzeko, honako baldintza hauek bete behar dira:
 
 - Leadspace lizentzia aktiboa duzu.
-- Duzu [bezeroen profil bateratuak](customer-profiles.md) enpresentzat.
-- Administratzaile batek konfiguratu du dagoeneko Leadspace konexioa edo zuk [administratzailea](permissions.md#administrator) baimenak eta "betiko giltza" (aipatzen da **Leadspace token**). Harremanetarako [Leadspace](https://www.leadspace.com/products/leadspace-on-demand/) zuzenean produktuaren inguruko xehetasunak lortzeko.
+- Baduzu [bezeroen profil bateratuak](customer-profiles.md) kontuetan oinarrituta.
+- Administratzaile batek konfiguratu du dagoeneko Leadspace konexioa edo zuk [administratzailea](permissions.md#administrator) baimenak eta "betiko giltza" (aipatzen da **Leadspace token**). Harremanetarako [Leadspace](https://www.leadspace.com/leadspace-microsoft-dynamics-365/) zuzenean produktuaren inguruko xehetasunak lortzeko.
 
 ## <a name="configure-the-enrichment"></a>Konfiguratu aberastea
 
@@ -50,6 +50,10 @@ Leadspace konfiguratzeko eta konfiguratzeko, honako baldintza hauek bete behar d
 
 1. Hautatu **Hurrengoa** eremuaren jarraipena osatzeko.
 
+1. Hautatu kontrol laukia baduzu *Harremanetarako profilak* aberastu nahiko zenukeela. Ikusleen estatistikek beharrezko eremuak automatikoki mapatuko dituzte.
+
+   :::image type="content" source="media/enrichment-leadspace-contacts.png" alt-text="Leadspace kontaktuak aberastu egiten du.":::
+ 
 1. Eman aberasturako izena eta hautatu **Aurreztu aberastasuna** zure aukerak aztertu ondoren.
 
 
@@ -81,7 +85,8 @@ Informazio gehiago lortzeko, ikus [Leadspace API](https://support.leadspace.com/
 
 ## <a name="next-steps"></a>Hurrengo urratsak
 
-Eraiki zure bezeroen datu aberastuen gainean. Sortu [segmentuak](segments.md) eta [neurriak](measures.md), eta are [datuak esportatu](export-destinations.md) zure bezeroei esperientzia pertsonalizatuak emateko.
+
+[!INCLUDE [next-steps-enrichment](../includes/next-steps-enrichment.md)]
 
 ## <a name="data-privacy-and-compliance"></a>Datuen pribatutasuna eta arau-gordetzea
 

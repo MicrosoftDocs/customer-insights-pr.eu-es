@@ -2,8 +2,14 @@
   href: index.yml
 - name: Produktuaren ikuspegi orokorra
   href: overview.md
-- name: Sortu probako bertsioa
-  href: audience-insights/get-started-trial.md
+- name: Doako proba
+  items:
+    - name: Hasi saioa doako proba lortzeko
+      href: trial-signup.md
+    - name: Probaren FAQa
+      href: trial-FAQ.md
+- name: Hasi ordaindutako lizentziarekin
+  href: paid-license.md
 - name: Atzitu ingurunea
   href: 'https://home.ci.ai.dynamics.com/'
 - name: Hartzaileen xehetasunak
@@ -19,9 +25,11 @@
         - name: Hasiera bizkorreko gida
           href: audience-insights/get-started.md
         - name: Sortu ingurune bat
-          href: audience-insights/get-started-paid.md
+          href: audience-insights/create-environment.md
         - name: Arakatu hartzaileen xehetasunak
           href: audience-insights/home.md
+    - name: Egin lan negozio-kontuekin
+      href: audience-insights/work-with-business-accounts.md
     - name: Ikasteko moduluak
       items:
         - name: Sartu datuak
@@ -66,6 +74,8 @@
           href: audience-insights/relationships.md
         - name: Bezeroaren jardueren zerrenda
           href: audience-insights/activities.md
+        - name: Definitu esleipen semantikoak
+          href: audience-insights/semantic-mappings.md
     - name: Datu-aberastea
       items:
         - name: Aberastu bezeroen profilak
@@ -114,7 +124,7 @@
               href: audience-insights/predict-product-recommendation.md
             - name: Iragarpenen harpidetza kornestatzea
               href: audience-insights/predict-subscription-churn.md
-            - name: Iragarri transakzioen galera-tasa
+            - name: Iragarri transakzio churn
               href: audience-insights/predict-transactional-churn.md
             - name: Erabili Azure Ikaskuntza automatikoko eredu pertsonalizatuak
               href: audience-insights/custom-models.md
@@ -126,7 +136,7 @@
               href: audience-insights/sample-guide-predict-clv.md
             - name: Harpidetzaren galera-tasaren iragarpenaren lagin-gida
               href: audience-insights/sample-guide-predict-subscription-churn.md
-            - name: Transakzioen galera-tasaren iragarpenaren lagin-gida
+            - name: Transakzioaren txandaren lagin iragarpen gida
               href: audience-insights/sample-guide-predict-transactional-churn.md
             - name: Produktuak gomendatzeko iragarpenaren adibide-gida
               href: audience-insights/sample-guide-predict-product-recommendation.md
@@ -222,10 +232,14 @@
           href: audience-insights/connections.md
         - name: Kudeatu ingurune anizkoitzak
           href: audience-insights/manage-environments.md
-        - name: Konektatu ADLS biltegiratze-kontura zerbitzuaren entitatearekin
-          href: audience-insights/connect-service-principal.md
         - name: Onartutako hizkuntzak
           href: audience-insights/supported-languages.md
+        - name: Segurtasuna
+          items:
+            - name: Ekarri zure Key Vault
+              href: audience-insights/use-azure-key-vault.md
+            - name: Konektatu ADLS biltegiratze-kontura zerbitzuaren entitatearekin
+              href: audience-insights/connect-service-principal.md
     - name: Hedagarritasuna
       items:
         - name: Integratu web-datuak konpromisoen estatistiketatik
@@ -248,6 +262,8 @@
       items:
         - name: Hasiera bizkorreko gida
           href: engagement-insights/get-started.md
+        - name: Sortu ingurune bat
+          href: engagement-insights/create-new-environment.md
         - name: Sortu laneko area bat
           href: engagement-insights/create-workspace.md
         - name: Hartu gertaerak mugikorreko aplikazioetatik eta guneetatik

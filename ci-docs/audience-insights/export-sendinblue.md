@@ -1,7 +1,7 @@
 ---
 title: Esportatu Customer Insights datuak Sendinblue-ra
 description: Ikasi konexioa nola konfiguratu eta Sendinblue-ra esportatu.
-ms.date: 06/29/2021
+ms.date: 10/08/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: how-to
 author: phkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: be52554763b57e1c1ef2f960d52bbae79ac9827913c97ac73b429f66bbf4db37
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: b5924b2d4e7f0b11ce6478a31015fcbaaf44ff93
+ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7036040"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "7617770"
 ---
 # <a name="export-segments-to-sendinblue-preview"></a>Esportatu segmentuak Sendinblue-ra (aurrebista)
 
@@ -29,10 +29,10 @@ Esportatu bezero profil bateratuen segmentuak kanpaniak sortzeko, posta elektron
 
 ## <a name="known-limitations"></a>Muga ezagunak
 
-- Gehienez milioi bat profileko Sendinblue esportazio bakoitzeko.
+- Gehienez milioi bat bezero-profil Sendinblue-ra esportatzeko.
 - Sendinblue-ra esportatzea segmentuetara mugatzen da.
-- Guztira 1 milioi profil dituzten segmentuak esportatzeak 90 minutu iraun dezake. 
-- Sendinblue-ra esporta ditzakezun profilen kopurua Sendinblue-rekin duzun kontratuaren menpe dago eta mugatua da.
+- Guztira 1 milioi bezero profil dituzten segmentuak esportatzeak 90 minutu arte iraun dezake. 
+- Sendinblue-ra esporta ditzakezun bezeroen profil kopurua Sendinblue-rekin duzun kontratuaren menpe dago eta mugatua da.
 
 ## <a name="set-up-connection-to-sendinblue"></a>Konfiguratu Sendinblue-ra konexioa
 
@@ -64,7 +64,7 @@ Esportazio hau konfigura dezakezu mota honetako konexiorako sarbidea baduzu. Inf
 
 1. Sartu zure **SendinBlue zerrendaren IDa** 
 
-1. **Datuen bat etortzea** atalean, **Posta elektronikoa** eremuan, hautatu zure bezeroaren profil bateratuko eremua, bezero baten helbide elektronikoa adierazten duena. 
+1. Urtean **Datuen bat etortzea** atalean, **Posta elektronikoa** eremua, hautatu bezeroaren helbide elektronikoa adierazten duen eremua. 
 
 1. Aukeran, esporta dezakezu **Izena**, **Abizena** eta **Telefonoa** mezu elektroniko pertsonalizatuagoak sortzeko. Aukeratu **Gehitu atributua** eremu horiek esleitzeko.
 

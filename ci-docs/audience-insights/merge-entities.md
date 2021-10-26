@@ -1,7 +1,7 @@
 ---
 title: Konbinatu entitateak datuen bateratzean
 description: Konbinatu entitateak bezeroen profil bateratuak sortzeko.
-ms.date: 09/14/2021
+ms.date: 10/10/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: tutorial
@@ -9,12 +9,14 @@ author: adkuppa
 ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: b038cd3f5b433fedf918d34bbfaf2261e11c5c17
-ms.sourcegitcommit: fecdee73e26816c42d39d160d4d5cfb6c8a91596
+searchScope:
+- ci-merge
+ms.openlocfilehash: 6b3002b21ea043315e50724ec103aef8a3ced98e
+ms.sourcegitcommit: 37182127b93b90846cc91fbeb26dd7a18cf5610a
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "7494304"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "7648239"
 ---
 # <a name="merge-entities"></a>Konbinatu entitateak
 
@@ -89,7 +91,7 @@ Baztertu atributu bat konbinatutako bezeroaren profiletik. Eremua beste prozesu 
     :::image type="content" source="media/recency-merge-option.png" alt-text="Berritasunaren aukera eremuak konbinatzeko elkarrizketan.":::
     - **Zaharrena**: balio nagusia identifikatzen du, zahartasunaren arabera. Berritasuna definitzeko, data edo zenbakizko eremua behar da eremuak konbinatzeko esparruan parte hartzen duen entitate bakoitzerako.
 
-1.  Eremu osagarriak gehi ditzakezu konbinazio-prozesuan parte hartzeko.
+1.  Eremu gehiago gehitu ditzakezu bateratze prozesuan parte hartzeko.
 
 1.  Konbinatutako eremuaren izena alda dezakezu.
 
@@ -131,7 +133,7 @@ Entitate batzuek besteek baino xehetasun gehiago dituzte. Entitate batek eremu b
 
 Konbinazio-eremuak konfiguratu ondoren, definitu dezakezu nola sortu CustomerId balioak, bezeroaren profilaren identifikatzaile esklusiboak. Datuak bateratzeko prozesuko konbinazio-urratsak sortzen du bezero-profilaren identifikatzaile esklusiboa. *Bezeroaren* entitateko CustomerId identifikatzailea sortzen da datuen bateratze-prozesutik. 
 
-Bezeroaren entitateko CustomerId lehenengo balioaren eta hutsa ez den gako nagusi irabazlearen arteko hash-ean oinarritzen da. Gako horiek bat-etortze eta konbinazio urratsetan erabilitako entitateetatik datoz eta bat-etortzearen sailkapenak eragina dute horiengan. Sortutako CustomerID-a aldatu daiteke gako-balio nagusia aldatzen denean bat-etortzearen ordenako lehen mailako entitatean. Ondorioz, gako-balio nagusiak ez du beti bezero berdina ordezkatuko.
+Bezeroaren entitateko CustomerId lehenengo balioaren eta hutsa ez den gako nagusi irabazlearen arteko hash-ean oinarritzen da. Gako horiek bat-etortze eta konbinazio urratsetan erabilitako entitateetatik datoz eta bat-etortzearen sailkapenak eragina dute horiengan. Sortutako CustomerID-a aldatu daiteke gako-balio nagusia aldatzen denean bat-etortzearen ordenako lehen mailako entitatean. Beraz, baliteke lehen mailako balio nagusiak ez izatea beti bezero bera.
 
 Bezeroaren ID egonkor bat sortzeak portaera hori ekiditeko aukera ematen dizu.
 
@@ -139,7 +141,7 @@ Bezeroaren ID egonkor bat sortzeak portaera hori ekiditeko aukera ematen dizu.
 
 1. Joan hona: **Bateratu** > **Konbinatu**.
 
-1. **Konbinatu** orrian, hautatu **Gakoak** fitxa. 
+1. Hautatu **Gakoak** fitxa. 
 
 1. Jarri **CustomerId** errenkadaren gainean eta hautatu **Konfiguratu** aukera.
    :::image type="content" source="media/customize-stable-id.png" alt-text="IDaren sorrera pertsonalizatzeko kontrola.":::
@@ -147,6 +149,30 @@ Bezeroaren ID egonkor bat sortzeak portaera hori ekiditeko aukera ematen dizu.
 1. Hautatu gehienez bost eremu, bezeroaren ID esklusiboaz osatuta egongo direnak eta egonkorragoak izango direnak. Konfigurazioarekin bat ez datozen erregistroek sistemak konfiguratutako IDa erabiltzen dute haren ordez.  
 
 1. Aldaketak aplikatzeko, hautatu **eginda** eta exekutatu konbinazio-prozesua.
+
+## <a name="group-profiles-into-households-or-clusters"></a>Taldeko profilak etxeetan edo klusterretan
+
+Bezeroen profila sortzeko konfigurazio prozesuaren barruan, erlazionatutako profilak kluster batean biltzeko arauak defini ditzakezu. Gaur egun bi kluster mota daude eskuragarri - etxekoak eta pertsonalizatutakoak. Sistemak automatikoki aurrez zehaztutako arauak dituen etxea aukeratzen du *Bezeroa* entitateak eremu semantikoak ditu *Person.LastName* eta *Location.Address*. Klusterra ere sor dezakezu zure arau eta baldintzekin, antzekoa [partida arauak](match-entities.md#define-rules-for-match-pairs).
+
+**Definitu etxea edo klusterra**
+
+1. Joan hona: **Bateratu** > **Konbinatu**.
+
+1. Gainean **Batu** fitxa, hautatu **Aurreratua** > **Sortu klusterra**.
+
+   :::image type="content" source="media/create-cluster.png" alt-text="Kontrolatu kluster berria sortzeko.":::
+
+1. Aukeratu **Etxekoa** edo bat **Pertsonalizatua** klusterra. Eremu semantikoak bada *Person.LastName* eta *Location.Address* existitzen dira *Bezeroa* entitatea, etxea automatikoki hautatzen da.
+
+1. Eman klusterraren izena eta hautatu **Eginda**.
+
+1. Aukeratu **Klusterrak** fitxa sortu duzun klusterra aurkitzeko.
+
+1. Zehaztu arauak eta baldintzak zure klusterra definitzeko.
+
+1. Aukeratu **Korrika egin** bateratze prozesua exekutatzeko eta klusterra sortzeko.
+
+Bateratze prozesua exekutatu ondoren, klusterren identifikatzaileak eremu berri gisa gehitzen dira *Bezeroa* entitatea.
 
 ## <a name="run-your-merge"></a>Exekutatu zure bateratzea
 

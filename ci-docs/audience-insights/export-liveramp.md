@@ -1,7 +1,7 @@
 ---
 title: LiveRamp konektorea
 description: Ikasi konexioa eta esportazioa LiveRamp-era nola konfiguratu.
-ms.date: 03/03/2021
+ms.date: 10/08/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: how-to
 author: kishorem-ms
 ms.author: kishorem
 manager: shellyha
-ms.openlocfilehash: 7940db3efacad62ba16099849b3e3ca00d2a5cc1ed31e15a34209c0797e6ae13
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: f9a0a88fb58897e4d279c181f4cdb4f6c852da60
+ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7035630"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "7618920"
 ---
 # <a name="export-segments-to-liverampreg-preview"></a>Esportatu segmentuak LiveRamp-era&reg; (aurrebista)
 
@@ -58,7 +58,7 @@ Esportazio hau konfigura dezakezu mota honetako konexiorako sarbidea baduzu. Inf
    > [!div class="mx-imgBorder"]
    > ![LiveRamp konektorea atributuen mapak.](media/export-liveramp-segments.png "LiveRamp konektorea atributuen mapak")
 
-1. Aukeratu hautatutako gako identifikatzaileari zure bezeroen erakunde bateratuari dagozkion atributuak.
+1. Mapatu dagozkien atributuak zure *Bezeroa* hautatutako gako identifikatzailearen entitatea.
 
 1. Hautatu **Gehitu atributua** LiveRamp-era bidalitako atributu gehiago jarraitzeko.
 

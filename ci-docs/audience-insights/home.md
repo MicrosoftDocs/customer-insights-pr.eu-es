@@ -1,7 +1,7 @@
 ---
 title: Etxeko orria hartzaileen xehetasunetan
 description: Hasi aplikazioa arakatzen Etxeko orrian.
-ms.date: 08/26/2021
+ms.date: 09/30/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: NimrodMagen
 ms.author: nimagen
 manager: shellyha
-ms.openlocfilehash: 55c0313d1dbf7fb6774c058a6784cf02821d9133
-ms.sourcegitcommit: b9a81c2acd42d774669d2db3d0430c7d81de991c
+ms.openlocfilehash: 4ab5497024cb15b103e96b0fc9a2e0739fd4691c
+ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 09/02/2021
-ms.locfileid: "7469930"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "7617679"
 ---
 # <a name="explore-audience-insights"></a>Arakatu hartzaileen xehetasunak
 
@@ -23,7 +23,7 @@ ms.locfileid: "7469930"
 
 :::image type="content" source="media/home-page.png" alt-text="Hasierako pantailaren pantaila-argazkia lagin-estatistikak erakusten dituena.":::
 
-1 - Aldatu Customer Insights-en gaitasun batetik bestera 2 - Erabili ezkerreko panela area batetik bestera nabigatzeko 3 - Ezagutu zein ingurunetan ari zaren lanean eta kudeatu inguruneak administratzaile gisa 4 - Zehaztu ezarpen pertsonalak Customer Insights-erako
+1 - Customer Insights-en gaitasunen artean aldatu 2 - Erabili ezkerreko panela arlo desberdinen artean nabigatzeko eta aukeratu xede publiko nagusia 3 - Ezagutu zein ingurunetan lan egiten duzun eta administratzaile gisa inguruneak kudeatu 4 - Zehaztu Customer Insights-erako ezarpen pertsonalak
 
 Azpian **Azken segmentuak**, definitu dituzun atributu demografikoetan, portaeran edo transakzioetan oinarritutako bezero taldeak ikusten dituzu. [Segmentuak sortzea](segments.md) zure bezero-taldea taldekatzen eta zure negozio-jarduerak hobeto bideratzen laguntzen dizu.
 

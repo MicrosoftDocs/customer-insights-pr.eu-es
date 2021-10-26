@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: CadeSanthaMSFT
 ms.author: cadesantha
 manager: shellyha
-ms.openlocfilehash: c639cfca30cf1b57ada7d728311210b7210a37ac
-ms.sourcegitcommit: f72d5b86dfdc7282c6c1918b1ab3962d7a1c9852
+ms.openlocfilehash: bd80d0315f4f501b8f8108b99c144082c21e0d4c
+ms.sourcegitcommit: 5d82e5b808517e0e99fdfdd7e4a4422a5b8ebd5c
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 09/27/2021
-ms.locfileid: "7557337"
+ms.lasthandoff: 10/11/2021
+ms.locfileid: "7622863"
 ---
 # <a name="relationships-between-entities"></a>Harremanak entitateen artean
 
@@ -67,6 +67,20 @@ Harremanak atzerriko gakoa duen *iturburu-entitatea* eta iturburuko entitatearen
    - **Helburuko gako eremua**: xede entitatearen gako eremua. Adibidez bezeroak erabil dezake **Bezeroaren IDa** gako eremua.
 
 4. Erlazio pertsonalizatua sortzeko, hautatu **Gorde**.
+
+## <a name="set-up-account-hierarchies"></a>Konfiguratu kontuaren hierarkiak
+
+Negozio kontuak helburu publiko nagusitzat erabiltzeko konfiguratuta dauden inguruneek kontu hierarkiak konfigura ditzakete erlazionatutako negozio kontuetarako. Adibidez, negozio unitate bereiziak dituen enpresa. 
+
+Erakundeek kontuen hierarkiak sortzen dituzte kontuak eta elkarren arteko harremanak hobeto kudeatzeko. Ikusleei buruzko informazioaren gaitasunak irentsitako bezeroen datuetan lehendik dauden guraso-seme-alaben kontuen hierarkiak onartzen ditu. Adibidez, Dynamics 365 Sales-eko kontuak. Hierarkia hauek konfiguratu daitezke **Harremanak** orria ikusleen estatistiketan, kontu hierarkia fitxan.
+
+1. Joan **Datuak** > **Harremanak**.
+1. Hautatu **Kontuaren hierarkia** fitxa.
+1. Hautatu **Kontu berriaren hierarkia**. 
+1. Urtean **Kontuen hierarkia** panelean, eman hierarkiari izena. Sistemak irteerako entitatearen izena sortzen du. Irteerako izen entitatearen izena alda dezakezu.
+1. Aukeratu zure kontuaren hierarkia duen entitatea. Normalean kontuak dituen entitate berean izaten da.
+1. Aukeratu **Kontuaren IDa** eta **Kontuaren guraso IDa** hautatutako entitatetik 
+1. Aukeratu **Gorde** ezarpenak aplikatzeko eta kontu hierarkia amaitzeko.
 
 ## <a name="view-relationships"></a>Ikusi erlazioak
 

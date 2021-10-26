@@ -1,7 +1,7 @@
 ---
 title: Aberastu bezeroen profil bateratuak
 description: Erabili gaitasunak zure bezeroaren datuak aberasteko.
-ms.date: 08/31/2021
+ms.date: 09/30/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -10,12 +10,12 @@ author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
 ms.custom: intro-internal
-ms.openlocfilehash: 992c45e30e2dff00f5207290940b56b2fe1c08ad
-ms.sourcegitcommit: b9a81c2acd42d774669d2db3d0430c7d81de991c
+ms.openlocfilehash: 5d5e12ee44dfa40c470738eaee5c68fdf23d1b2d
+ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 09/02/2021
-ms.locfileid: "7469931"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "7617540"
 ---
 # <a name="enrichment-for-customer-profiles-preview"></a>Bezeroen profiletarako aberastea (aurrebista)
 
@@ -27,16 +27,26 @@ Hartzaileen xehetasunetan, joan hona: **Datuak** > **Aberastea** aberasteko auke
 
 Laguntzaileak edo Administratzaileak baimenak izan behar dituzu aberastasunak sortzeko edo editatzeko. Informazio gehiago lortzeko, [Baimenak](permissions.md).
 
-Gainean **Ezagutu** fitxa, aberastasun hauek aurkituko dituzu:
+Gainean **Ezagutu** fitxa, onartutako aberasteko aukera guztiak aurkituko dituzu.
 
-- [Azure Maps](enrichment-azure-maps.md), Microsoft-ek eskainia
+# <a name="individual-customers-b2c"></a>[Banakako bezeroak (B2C)](#tab/b2c)
+
 - [Markak](enrichment-microsoft.md) hornituta Microsoft-en arabera
 - [Interesak](enrichment-microsoft.md) hornituta Microsoft-en arabera
-- [Helbide hobetuak](enrichment-enhanced-addresses.md) Microsoft-ek eskainita
-- [Enpresaren datuak](enrichment-leadspace.md) , Leadspace-k emanak
+- [Helbide hobetuak](enrichment-enhanced-addresses.md) Microsoft-ek eskainita 
 - Experian-ek eskainitako [datu demografikoak](enrichment-experian.md)
-- [Kokapen datuak](enrichment-here.md) HERE Technologies-ek emanak
-- [Datu pertsonalizatuak](enrichment-SFTP-custom-import.md) fitxategiak modu seguruan transferitzeko protokoloaren (SFTP) bidez
+- [Datu pertsonalizatuak](enrichment-SFTP-custom-import.md) fitxategiak modu seguruan transferitzeko protokoloaren (SFTP) bidez 
+- [Azure Maps](enrichment-azure-maps.md), Microsoft-ek eskainia
+
+# <a name="business-accounts-b2b"></a>[Negozio-kontuak (B2B)](#tab/b2b)
+
+- [Enpresaren datuak](enrichment-leadspace.md) , Leadspace-k emanak
+- [Helbide hobetuak](enrichment-enhanced-addresses.md) Microsoft-ek eskainita 
+- [Kokapen datuak](enrichment-here.md) HERE Technologies-ek emanak 
+- [Datu pertsonalizatuak](enrichment-SFTP-custom-import.md) fitxategiak modu seguruan transferitzeko protokoloaren (SFTP) bidez 
+- [Azure Maps](enrichment-azure-maps.md), Microsoft-ek eskainia
+
+---
 
 Gainean **Nire aberastasunak** fitxan, konfiguratutako aberastasunak eta haien propietateak editatzen ikus ditzakezu.
 
@@ -58,7 +68,7 @@ Exekutatu edo desaktibatu aberaste anitz aldi berean zerrendan hautatuta. Ikusi 
 
 ## <a name="enrichments-and-connections"></a>Aberasteak eta konexioak
 
-Hirugarrenen aberastasunak erabiliz konfiguratzen dira [konexioak](connections.md), administratzaileak kredentzialekin konfiguratzen duena eta datuak transferitzeko baimena ematen duena. Konexioa erabil daiteke administratzaileen eta laguntzaileen bitartez aberasteak konfiguratzeko.  
+Hirugarrenen aberastasunak erabiliz konfiguratzen dira [konexioak](connections.md), administratzaileak kredentzialekin konfiguratzen duena eta datuak transferitzeko baimena ematen duena. Konexioak erabil daitezke administratzaile eta langileen aldetik hobekuntzak konfiguratzeko.  
 
 ## <a name="multiple-enrichments-of-the-same-type"></a>Mota bereko hainbat aberastasun
 

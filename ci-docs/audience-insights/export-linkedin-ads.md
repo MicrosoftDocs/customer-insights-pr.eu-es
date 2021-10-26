@@ -1,7 +1,7 @@
 ---
 title: Esportatu Customer Insights datuak LinkedIn Ads-era
 description: Ikasi konexioa konfiguratzen eta LinkedIn Ads-era esportatzen.
-ms.date: 05/12/2021
+ms.date: 10/08/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 2cfaa37fd0ac697f29665792bab27a925d8ea1eede0519d424524a7e5accbfeb
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: 948a7e980df5714034009c92282e78cf2bdcb231
+ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7034208"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "7618276"
 ---
 # <a name="export-segments-to-linkedin-ads-preview"></a>Esportatu segmentuak LinkedIn Ads-era (aurrebista)
 
@@ -28,9 +28,9 @@ Esportatu bezeroen profil bateratuen segmentuak LinkedIn Ads-era bat datozen har
 
 ## <a name="known-limitations"></a>Muga ezagunak
 
-- Esportazio bakoitzeko 100.000 profil esportatu ditzakezu LinkedIn Ads-era.
+- Esportazio bakoitzeko 100K bezero profila esporta ditzakezu LinkedIn iragarkietara.
 - LinkedIn Ads-era esportatzea segmentuetara mugatzen da.
-- Esportatu gehienez 100.000 profil LinkedIn Ads-era, 10 minutu behar ditzake osatzeko. 
+- 100K arte bezero profil LinkedIn Ads-en dituzten segmentuak esportatzen 10 minutu behar izan ditzakete osatzeko. 
 
 ## <a name="set-up-the-connection-to-linkedin-ads"></a>Konfiguratu konexioa LinkedIn Ads-era
 
@@ -66,7 +66,7 @@ Esportazio bat konfigura dezakezu mota honetako konexiorako sarbidea baduzu. Inf
 
 1. Aukeratu egin nahi dituzun datuak esportatu nahi dituzun ala ez [kontaktuen bideratzea](https://business.linkedin.com/marketing-solutions/ad-targeting/contact-targeting) edo [enpresen bideratzea](https://business.linkedin.com/marketing-solutions/ad-targeting/account-targeting) egiteko LinkedIn-en. 
 
-1. **Datuen bat etortzea** atalean, hautatu bezeroaren profil bateratuko bezero baten helbide elektronikoa adierazten duen eremua. Segmentuak esportatu behar dira LinkedIn Ads-era.
+1. Urtean **Datuen bat etortzea** atalean, kontaktuak bideratzeko, hautatu bezeroaren helbide elektronikoa, Apple Ad IDa, Google Ad IDa, Google Erabiltzailearen IDa edo first eta abizen adierazten duen eremu bat gutxienez. Enpresaren bideratzea aukeratzen baduzu, hautatu gutxienez enpresaren izena, posta elektronikoaren domeinua, LinkedIn orriaren URLa, Stock ikurra edo Webgunea adierazten duen eremua. Eremu gehigarriak hauta daitezke zure esportazioa gehiago definitzeko. 
 
 1. Hautatu esportatu nahi dituzun segmentuak. LinkedIn Campaign Manager-eko bat datozen hartzaileak automatikoki sortuko dira esportatzeko hautatu dituzun segmentuen izenarekin. Segmentu bakoitzak bat datorren hartzaile bereizi bat sortuko du. 
 

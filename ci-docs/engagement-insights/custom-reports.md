@@ -4,23 +4,23 @@ description: Ikasi nola sortu eta pertsonalizatu txostenak.
 author: mochimochi016
 ms.reviewer: mhart
 ms.author: jefhar
-ms.date: 06/09/2021
+ms.date: 10/01/2021
 ms.service: customer-insights
 ms.subservice: engagement-insights
 ms.topic: conceptual
 ms.manager: shellyha
-ms.openlocfilehash: 2540221710786dc1c84b231fbb23b9749b601cc6a2aeb78614e16002302a80a9
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: 3fa801bfc8b0aee65c21b90de2423a3d5d5e4e26
+ms.sourcegitcommit: d9965f4bfc09391698a34042f6b44367e53819e3
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7036948"
+ms.lasthandoff: 09/30/2021
+ms.locfileid: "7582860"
 ---
 # <a name="create-and-edit-custom-reports"></a>Sortu eta editatu txosten pertsonalizatuak
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
-Kutxaz kanpoko txostenez gain, txosten pertsonalizatua sor dezakezu diagramen eta taulen bisualizazioekin, erabiltzaileen portaera ulertzen laguntzeko. Artikulu honetan taula eta diagramen bistaratzeak erabiliz behar dituzun datuekin txostena nola sortu azaltzen da. 
+Erabiltzeko prest dauden (OOB) txostenez gain, diagrama bat eta taula-bistaratzeak dituen txosten pertsonalizatu bat konpila dezakezu erabiltzaileen portaera ulertu ahal izateko. Artikulu honetan taula eta diagramen bistaratzeak erabiliz behar dituzun datuekin txostena nola sortu azaltzen da. OOB txostenen inguruko informazioa lortzeko, ikusi [Ikusi txostenak](view-reports.md).
 
 ## <a name="create-a-custom-report"></a>Sortu txosten pertsonalizatua
 
@@ -35,11 +35,13 @@ Kutxaz kanpoko txostenez gain, txosten pertsonalizatua sor dezakezu diagramen et
     - Aukeratu **Gehitu bisuala** komando barran taula lehenetsitako bistaratzea sortzeko.
     - Edo hautatu zutabea, barra, lerroa, eremua, tarta, erroskila edo taula bistaratzea **Txosten editorea** panela.
 
-1. Urtean **Datuak** panelean, aukeratu erabilgarrietako bat **Metrikak** (adibidez, orrialde bistak) bistaratzeko. Ondoren gehitu **Neurriak** (adibidez, herrialdea) bistaratzea erakusteko. Aukeratzeko aukera osagarriak gehitzeari buruzko informazio gehiago lortzeko, ikusi [Ikusi eta sortu metrikak](metrics.md) eta [Ikusi eta sortu dimentsioak](dimensions.md).
+1. Urtean **Datuak** ataleko **Bistaratze editorea** panelean, aukeratu eskuragarri dauden aukeretako bat (adibidez, orrialde bistak) **Metrika** goitibehera. Gehitu ere egin dezakezu **Neurriak** (adibidez, herrialdea) bisualizazioan erakusteko. Informazio gehiagorako, ikus [Ikusi eta sortu metrikak](metrics.md) eta [Ikusi eta sortu dimentsioak](dimensions.md).
 
-1. Aukeratu **Diseinua** urtean **Bistaratze editorea** gehitu panela **Izenburuaren testua**, eta ezarri **Posizioa**, **Datuen etiketak**, eta **ardatza**.  Bistaratzea ere alda dezakezu beste diagrama mota bat hautatuta.
+   :::image type="content" source="media/page-views.png" alt-text="Aukeratu neurketa txostenerako.":::
 
-1. Bistaratze baten tamaina eta posizioa alda ditzakezu:
+1. Aukeratu **Diseinua** ataleko **Bistaratze editorea** gehitu panela **Izenburuaren testua** eta txandakatu **Izenburua** piztu eta itzali.  Bistaratze mota ere alda dezakezu beste taula bat hautatuta, esate baterako **diagrama**.
+
+1. Bistaratze baten tamaina eta kokapena aldatzeko:
    - Aukeratu bistaratzea eta arrastatu ertzetako edo ertzetako bat bere tamaina doitzeko.
    - Aukeratu bistaratzea eta eraman posizio berri batera. Geziak ere erabil ditzakezu posizioa aldatzeko.
 1. Beste ikustaldi bat gehitzeko, hautatu **Gehitu bisuala** komando-barran.
@@ -47,17 +49,27 @@ Kutxaz kanpoko txostenez gain, txosten pertsonalizatua sor dezakezu diagramen et
 
 1. Eman izen pertsonalizatutako txostenaren izena eta hautatu **Gorde** sortzeko.
  
+## <a name="filter-a-custom-report"></a>Iragazi pertsonalizatutako txosten bat
+
+Txosten pertsonalizatu batean denbora tartea edo data tartea hauta dezakezu balio edo denbora tarte batean zentratzeko.
+
+Denbora tartea hautatzeko, txostenaren ikuspegiaren goiko eskuineko izkinan, hautatu balio bat txostenaren goitibeherako zerrendan. Ere aukeratu dezakezu **Data tarte finkoa*.
+
+:::image type="content" source="media/filter-time-date-range.png" alt-text="Iragazi denbora edo data tartearen arabera.":::
+
+Txosten gehienetan, hautatu **+ Gehitu baldintza**, txostena iragazteko dimentsio edo segmentu bat aukeratzeko. Informazio gehiagorako, ikus [Ikusi eta sortu segmentuak](segments.md).
+
 ## <a name="edit-a-custom-report"></a>Editatu pertsonalizatutako txostena
 
 1. Joan **Aztertu** > **Pertsonalizatua** txosten pertsonalizatuen zerrendara sartzeko.
 
 1. Txosten pertsonalizatuen zerrendan, hautatu **Gehiago [...]** 
 
-1. Aukeratu **Editatu xehetasunak** txostenaren izena aldatzeko.
+1. Aukeratu **Editatu izena** txostenaren izena aldatzeko.
 
-1. Aukeratu txostenaren izena eta erabili **Gehitu bisuala** eta **Editatu** bistaratzeak gehitu, kendu, kokatu edo tamaina aldatzeko aukerak.
+1. Aukeratu txostenaren izena eta erabili **+ Gehitu bisuala** eta **Editatu** bistaratzeak gehitu, kendu, kokatu edo tamaina aldatzeko aukerak.
 
-1. Bistaratze baten propietateak aldatzeko, hautatu **...** eta, ondoren, hautatu **Editatu bisuala**.
+1. Bistaratze baten propietateak aldatzeko, hautatu bisuala, hautatu **...** eta gero **Editatu bisuala**.
 
    :::image type="content" source="media/edit-visual-control.png" alt-text="Txosten pertsonalizatuen diagramaren propietateak editatzea.":::
 
@@ -72,5 +84,6 @@ Kutxaz kanpoko txostenez gain, txosten pertsonalizatua sor dezakezu diagramen et
 1. Aukeratu **Ezabatu** txostena kentzeko.
 
 1. Berretsi ezabatzen duzula txostena behin betiko kentzeko.
+
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
