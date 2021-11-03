@@ -9,12 +9,12 @@ author: JimsonChalissery
 ms.author: jimsonc
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 6840f4bc345b0821fb2349666130b39d542878e7
-ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
+ms.openlocfilehash: ac33a6dcde4c710cecd3c6836aad3e26ce5c7de6
+ms.sourcegitcommit: 31985755c7c973fb1eb540c52fd1451731d2bed2
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "7617315"
+ms.lasthandoff: 10/22/2021
+ms.locfileid: "7673745"
 ---
 # <a name="segments-overview"></a>Segmentuen informazio orokorra
 
@@ -26,7 +26,7 @@ Segmentuaren definizio baten iragazkiekin bat datozen bezeroen profilak aipatzen
 
 Segmentu berri bat sortzeko hainbat modu daude: 
 
-# <a name="individual-customers-b2c"></a>[Banakako bezeroak (B2C)](#tab/b2c)
+# <a name="individual-consumers-b-to-c"></a>[Banakako kontsumitzaileak (negoziotik bezerora)](#tab/b2c)
 
 - Segmentu konplexua segmentu eraikitzailearekin: [Gurea eraiki](segment-builder.md#create-a-new-segment) 
 - Operadore bakarreko segmentu sinpleak: [Segmentu azkarra](segment-builder.md#quick-segments) 
@@ -34,7 +34,7 @@ Segmentu berri bat sortzeko hainbat modu daude:
 - AI-k oinarritutako iradokizunak neurri edo atributuetan oinarrituta: [Neurriak hobetzeko iradokitako segmentuak](suggested-segments.md) 
 - Jardueretan oinarritutako iradokizunak: [Iradokitako segmentuak bezeroen jardueran oinarrituta](suggested-segments-activity.md) 
 
-# <a name="business-accounts-b2b"></a>[Negozio-kontuak (B2B)](#tab/b2b)
+# <a name="business-accounts-b-to-b"></a>[Negozio-kontuak (negoziotik negoziora)](#tab/b2b)
 
 - Segmentu konplexua segmentu eraikitzailearekin: [Gurea eraiki](segment-builder.md#create-a-new-segment)
 

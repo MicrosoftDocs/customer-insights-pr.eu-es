@@ -10,12 +10,12 @@ author: MichelleDevaney
 ms.author: midevane
 manager: shellyha
 ms.custom: intro-internal
-ms.openlocfilehash: 95afd1fedb98a451e4978ee66be2ea98ad7a4a76
-ms.sourcegitcommit: 53b133a716c73cb71e8bcbedc6273cec70ceba6c
+ms.openlocfilehash: 914af46d2d82f3556d149f2836680c902f826d50
+ms.sourcegitcommit: 31985755c7c973fb1eb540c52fd1451731d2bed2
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "7645660"
+ms.lasthandoff: 10/22/2021
+ms.locfileid: "7673376"
 ---
 # <a name="create-an-environment-in-audience-insights"></a>Sortu ingurune bat audientziaren xehetasunetan
 
@@ -46,7 +46,7 @@ Urtean **Oinarrizko informazioa** urratsa, aukeratu hutsetik ingurunea sortu nah
 
 Hornitu hurrengo xehetasunak:
    - **Izena**: entitatearen izena. Eremu hau dagoeneko bete da ingurune batetik kopiatzen baduzu, baina alda dezakezu.
-   - **Aukeratu negozioa**: Aukeratu ingurune berriaren audientzia nagusia. Banakako bezeroekin (B2C) edo [negozio kontuak](work-with-business-accounts.md) (B2B).
+   - **Aukeratu negozioa**: Aukeratu ingurune berriaren audientzia nagusia. Kontsumitzaile indibidualekin lan egin dezakezu (negoziotik bezerora) edo [negozio kontuekin](work-with-business-accounts.md) (negoziotik negoziora).
    - **Mota**: Aukeratu Produkzio edo Sandbox ingurunea sortu nahi duzun ala ez. Sandbox inguruneek ez dute programatutako datuak freskatzea onartzen eta aurrez ezartzeko eta probatzeko pentsatuta daude. Sandbox inguruneek unean hautatutako produkzio ingurunearen audientzia nagusia erabiltzen dute.
    - **Eskualdea**: Zerbitzua hedatu eta ostatatzen den eskualdea.
 
@@ -66,7 +66,7 @@ Datuak gordeta Azure Data Lake Storage, onartzen duzu datuak Azure biltegiratze 
 > - Azure Data Lake Storage ingurunea sortzerakoan hautatu zenuen Azure eskualde bereko kontuak.
 > - Azure Data Lake Storage dituzten kontuak *izen espazio hierarkikoa* gaituta.
 
-Azure Data Lake Storage aukera, baliabideetan oinarritutako aukera bat eta harpidetzan oinarritutako aukera bat autentifikatzeko aukera dezakezu. Informazio gehiagorako, ikus [Konektatu hartzaileei buruzko xehetasunak Azure Data Lake Storage Gen2 kontu batera Azure zerbitzuaren entitatearekin](connect-service-principal.md). **Edukiontzia** izena izango da `customerinsights` eta ezin da aldatu.
+Azure Data Lake Storage aukera, baliabideetan oinarritutako aukera bat eta harpidetzan oinarritutako aukera bat autentifikatzeko aukera dezakezu. Informazio gehiagorako, ikus [Konektatu Azure Data Lake Storage kontu batera Azure zerbitzuaren entitate bat erabiliz](connect-service-principal.md). **Edukiontzia** izena izango da `customerinsights` eta ezin da aldatu.
 
 Datuak sartzea bezalako sistemaren prozesuak amaitzen direnean, sistemak dagozkion karpetak sortzen ditu zuk zehaztutako biltegiratze kontuan. Datu fitxategiak eta *model.json* fitxategiak sortzen dira eta karpetetan gehitzen dira prozesuaren izenean oinarrituta.
 
@@ -76,14 +76,14 @@ Customer Insights-eko hainbat ingurune sortzen badituzu eta irteerako entitateak
    
 **Microsoft Dataverse** urratsak Customer Insights zurekin konektatzeko aukera ematen dizu Dataverse ingurunea.
 
-Erabiltzeko [kutxaz kanpoko iragarpen modeloak](predictions-overview.md#out-of-box-models), konfiguratu datuak partekatzearekin Dataverse. Edo datuen iradokizuna gaitu dezakezu lokal datu iturrietatik, Microsoft Dataverse zure erakundeak administratzen duen ingurumen URLa. Aukeratu **Gaitu datuak partekatzea** Customer Insights-en irteerako datuak partekatzeko Dataverse kudeatutako datuen lakua.
+Erabiltzeko [kutxaz kanpoko iragarpen modeloak](predictions-overview.md#out-of-box-models), konfiguratu datuak partekatzearekin Dataverse. Edo datuen iradokizuna gaitu dezakezu lokal datu iturrietatik, Microsoft Dataverse zure erakundeak administratzen duen ingurumen URLa. Aukeratu **Gaitu datuak partekatzea** Customer Insights-en irteerako datuak partekatzeko Dataverse kudeatutako Data Lake.
 
 :::image type="content" source="media/dataverse-data-sharing.png" alt-text="Konfigurazioaren aukerak gaitzeko datuak partekatzeko Microsoft Dataverse.":::
 
 > [!NOTE]
 > Customer Insights-ek ez ditu onartzen hurrengo datuak partekatzeko egoerak:
-> - Datu guztiak zure kabuz gordetzen badituzu Azure Data Lake Storage, ezin izango duzu datuak partekatzea gaitu Microsoft Dataverse Kudeatutako Data Lake.
-> - Datuekin partekatzea gaitzen baduzu Microsoft Dataverse Kudeatutako Data Lake, ezin izango duzu [sortu aurreikusitako edo falta diren balioak entitate batean](predictions.md).
+> - Datu guztiak zure kabuz gordetzen badituzu Azure Data Lake Storage, ezin izango duzu datuak partekatzea gaitu Dataverse Kudeatutako Data Lake.
+> - Datuak Dataverse-rekin partekatzea gaitzen baduzu, ezin izango duzu [sortu aurreikusitako edo falta diren balioak entitate batean](predictions.md).
 
 ### <a name="step-4-finalize-the-settings"></a>4. urratsa: Amaitu Ezarpenak
 
@@ -93,10 +93,10 @@ Ezarpen gehienak geroago alda ditzakezu. Informazio gehiagorako, ikusi [Kudeatu 
 
 ## <a name="work-with-your-new-environment"></a>Lan egin ingurune berriarekin
 
-Berrikusi hurrengo artikuluak Customer Insights konfiguratzen hasteko. 
+Berrikusi artikulu hauek Customer Insights konfiguratzen hasteko: 
 
 - [Gehitu erabiltzaile gehiago eta eman baimenak](permissions.md).
 - [Sartu zure datu-iturburuak](data-sources.md) eta exekutatu [datuak bateratzeko prozesuaren](data-unification.md) bidez lortzeko [bezeroen profil bateratuak](customer-profiles.md).
 - [Aberastu bezeroen profil bateratuak](enrichment-hub.md) edo [exekutatu eredu iragarleak](predictions-overview.md).
-- [Sortu segmentuak](segments.md) bezeroak taldekatzeko eta [neurrien](measures.md) berrikuspen KPIak.
+- [Sortu segmentuak](segments.md) bezeroak taldekatzeko eta [neurriak](measures.md) KPIak berrikusteko.
 - [Konfiguratu konexioak](connections.md) eta [esportazioak](export-destinations.md) zure datuen azpimultzoak beste aplikazio batzuetan prozesatzeko.

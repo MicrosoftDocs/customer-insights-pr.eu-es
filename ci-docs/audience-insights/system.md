@@ -1,7 +1,7 @@
 ---
 title: Sistemaren konfigurazioa hartzaileen xehetasunetan
 description: Lortu informazio gehiago sistemaren ezarpenei buruz Dynamics 365 Customer Insights-en hartzaileen xehetasunen gaitasunean.
-ms.date: 02/12/2021
+ms.date: 10/15/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -9,12 +9,12 @@ author: NimrodMagen
 ms.author: nimagen
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 2af8728009b4f1d53ebc2557bab8c79537a0dc5dda54477493ab1ad16f3f9a8a
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: 3ce767939b8fedf676dc569ede47104ecfe930dd
+ms.sourcegitcommit: cd9f9a9d3da71c5420ef5c4c6ead91bc820d17a9
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7035874"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "7651825"
 ---
 # <a name="system-configuration"></a>Sistemaren konfigurazioa
 
@@ -24,9 +24,9 @@ ms.locfileid: "7035874"
 - [API erabilera](#api-usage-tab)
 - [Honi buruz](#about-tab)
 - [Orokorrak](#general-tab)
+- [Segurtasuna](#security-tab)
 
-> [!div class="mx-imgBorder"]
-> ![Sistemaren orria.](media/system-tabs.png "Sistemaren orria")
+:::image type="content" source="media/system-tabs.png" alt-text="Sistemaren orrian ezarpenen fitxak.":::
 
 ## <a name="status-tab"></a>Egoera fitxa
 
@@ -84,9 +84,15 @@ Erabili **Antolaketa** fitxa [sartutako datu-iturburuen](data-sources.md) freska
 
 ## <a name="general-tab"></a>Fitxa orokorra
 
-Bi aukera daude **Orokorra** fitxa, **Hizkuntza** eta **Herrialdearen/Eskualdearen formatua**.
+Hizkuntza eta herrialde/eskualde formatua alda ditzakezu **Orokorra** fitxan.
 
-Aplikazioak [hainbat hizkuntza onartzen ditu](supported-languages.md). Nahiago duzun hizkuntza aldatzeko, aukeratu a **Hizkuntza** goitibehera.
+Customer Insights [hainbat hizkuntza onartzen ditu](/dynamics365/get-started/availability). Aplikazioak zure hizkuntza-lehentasuna erabiliko du menua, etiketako testua eta sistemaren mezuak bezalako elementuak hobetsitako hizkuntzan erakusteko.
+
+Eskuz sartu dituzun inportatutako datuak eta informazioa ez dira itzuliko.
+
+### <a name="update-the-settings"></a>Eguneratu ezarpenak
+
+Nahiago duzun hizkuntza aldatzeko, aukeratu a **Hizkuntza** goitibehera.
 
 Data, ordua eta zenbakiak nahiago duzun formateatzea aldatzeko, erabili '... **Herrialdearen/Eskualdearen formatua** goitibeherako menuko. Eremu honen azpian formateatze aurrebista bistaratzen da. Sistemak automatikoki hautapen bat proposatuko du hizkuntza berria aukeratzen duzunean.
 
@@ -105,6 +111,13 @@ Bilatu denbora errealeko APIaren erabilerari buruzko xehetasunak eta ikusi denbo
 
    Erabiltzen dituzten eragiketak [denbora errealeko datuak hornitzea](real-time-data-ingestion.md) eduki binokular sinboloa duen botoia denbora errealeko APIaren erabilera ikusteko. Aukeratu botoia APIaren denbora errealeko uneko inguruneko erabilerari buruzko xehetasunak dituen alboko panela irekitzeko.   
    Erabili **Taldekatu honen arabera** koadroan **APIaren erabilera denbora errealean** panelean denbora errealeko elkarrekintzak nola aurkeztu behar diren aukeratzeko. Datuak API metodoaren, entitatearen izen kualifikatua (irenstutako entitatea), sortutako (gertaeraren iturria), emaitza (arrakasta edo hutsegitea) edo errore kodeak arabera talka ditzakezu. Datuak historia-taula gisa eta taula gisa eskuragarri daude.
+
+## <a name="security-tab"></a>Segurtasun-fitxa
+
+**Segurtasuna** fitxak [Azure key vault](/azure/key-vault/general/basic-concepts) inguruneari lotu eta kudeatzeko aukera ematen dizu.
+Eskainitako gako-ganga erakundearen betetze-mugan sekretuak agertzeko eta erabiltzeko erabil daiteke. Ikusleen estatistikek Azure Key Vault-eko sekretuak erabil ditzakete [konexioak konfiguratu](connections.md) hirugarrenen sistemetara.
+
+Informazio gehiagorako, ikus [Ekarri zure Azure key vault](use-azure-key-vault.md).
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

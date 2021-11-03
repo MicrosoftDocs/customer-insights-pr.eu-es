@@ -1,7 +1,7 @@
 ---
 title: Ikaskuntza automatikoak iradokitako segmentuak bultzatu ditu
 description: Utzi Ikaskuntza automatikoak bezeroen atributuetan oinarritutako segmentu berri eta interesgarriak aurkitzen laguntzen.
-ms.date: 02/01/2021
+ms.date: 10/15/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: how-to
 author: JimsonChalissery
 ms.author: jimsonc
 manager: shellyha
-ms.openlocfilehash: f743853826cee0427618abccfba27f10016a0f05cc674f5f7da2210366d60305
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: 44e46bb650b6f090afcab3bc940d03a304e9c375
+ms.sourcegitcommit: 31985755c7c973fb1eb540c52fd1451731d2bed2
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7028345"
+ms.lasthandoff: 10/22/2021
+ms.locfileid: "7673168"
 ---
 # <a name="suggested-segments-preview"></a>Iradokitako segmentuak (aurrebista)
 
@@ -23,7 +23,7 @@ Ezagutu zure bezeroen segmentu interesgarriak adimen artifizialeko eredu baten l
 > [!NOTE]
 > Iradokitako segmentuen ezaugarriak bitarteko automatizatuak erabiltzen ditu datuak ebaluatzeko eta aurreikuspenak egiteko datu horietan oinarrituta, eta, beraz, profilak sortzeko metodo gisa erabiltzeko gaitasuna du, termino hori Datuen Babeserako Arau Orokorrak ("DBAO") definitzen baitu. Ezaugarri hau datuak tratatzeko zure erabilera DBAO edo beste lege edo arau batzuen menpe egon daiteke. Zu zara Dynamics 365 Customer Insights-en erabileraren arduradun, eginbide, lege eta arau guztiak betetzeaz barne, hala nola pribatutasunarekin, datu pertsonalekin, datu biometrikoekin, datuen babesarekin eta komunikazioen konfidentzialtasunarekin lotutako legeak.
 
-:::image type="content" source="media/suggested-segments-details.png" alt-text="Iradokitako segmentuen orria Customer Insights-en, iradokizun baten xehetasunak erakusten ditu alboko panelean.":::
+:::image type="content" source="media/suggested-segments.png" alt-text="Alboko panel batean iradokizun baten xehetasunak erakusten dituen iradokitako segmentuen orria.":::
 
 ## <a name="suggested-segments-to-improve-your-kpis"></a>KPIak hobetzeko gomendatutako segmentuak
 
@@ -49,7 +49,7 @@ Segmentu iradokizunak desberdinak dira atributu numeriko bat edo atributu katego
 
 Bezalako zenbakizko atributu batekin *urteko errenta* edo *bazkide aldia* atributu nagusia denez, sistemak zenbakizko atributuaren batez besteko balio handiagoa edo txikiagoa duten segmentuak iradokitzen ditu bezero guztiekin alderatuta.
 
-Bezalako atributu kategorikoa *bezeroaren gogobetetasuna* atributu nagusiak kategoria jakin bateko bezeroen ehuneko handiagoa edo txikiagoa duten iradokitako segmentuak lortzen baititu, kategoria bereko bezero guztien ehunekoarekin alderatuta. Adibidez, *bezeroaren gogobetetasuna* atributu nagusi gisa aukeratzen da eta hiru kategoria ditu (*Baxua*, *Ertaina* eta *Altua*). Kategoria bakoitzerako, kategoria horretako bezeroen portzentaje nabarmen handiagoa edo txikiagoa duten segmentuak proposatuko dira kategoria bereko bezero guztien proportzioarekin alderatuta. Bezero guztien % 22k badu asebetetze *Altua*, beraz, bezeroekin proportzio nabarmen handiagoa edo txikiagoa duten segmentuak soilik asebetetze *Altua* % 22rekin alderatuta iradokiko da kategoria horretarako. Era berean, segmentuak iradokiko dira beste kategoria bakoitzerako (*Baxua* eta *Ertaina*) estatistikoki esanguratsuak badira.
+Bezalako atributu kategorikoa *bezeroaren gogobetetasuna* atributu nagusiak kategoria jakin bateko bezeroen ehuneko handiagoa edo txikiagoa duten iradokitako segmentuak lortzen baititu, kategoria bereko bezero guztien ehunekoarekin alderatuta. Adibidez, *bezeroaren gogobetetasuna* atributu nagusi gisa aukeratzen da eta hiru kategoria ditu (*Baxua*, *Ertaina* eta *Altua*). Kategoria bakoitzerako, kategoria horretako bezeroen ehuneko handiagoa edo txikiagoa duten segmentuak proposatuko dira, kategoria bereko bezero guztien proportzioaren aldean. Bezeroen %22k asebetetze *altua* badu, asebetetze *altua* duten bezeroen ehuneko handiagoa edo baxuagoa duten segmentuak iradokiko dira, kategoria horretarako iradokitako %22arekin alderatuta. Era berean, segmentuak iradokiko dira beste kategoria bakoitzerako (*Baxua* eta *Ertaina*) estatistikoki esanguratsuak badira.
 
 > [!NOTE]
 > Gaur egun, gehienez 10 kategoria dituzten atributu kategoriko nagusiak onartzen ditugu. 10 kategoria baino gehiago dituen atributu nagusi batean oinarritutako segmentuen iradokizunak ikusi nahi badituzu, kategoria batzuk taldekatzea gomendatzen dugu kategoria kopurua 10 edo gutxiagora murrizteko. Muga hau lehen mailako atributuei bakarrik dagokie. Atributu kategorikoetan eragiteko, gehienez 100 kategoria onartzen ditugu.
@@ -77,7 +77,7 @@ Bezalako atributu kategorikoa *bezeroaren gogobetetasuna* atributu nagusiak kate
 
 Adimen artifizialeko ereduak iradokizunak sortu ondoren, zerrendan aurkituko dituzu **Segmentuak** > **Iradokizunak (aurrebista)**.
  
-Aukeratu iradokitako segmentu bat iradokizun horren xehetasunak berrikusteko, batez besteko balioaren eta segmentuko kide kopuruaren alderaketa barne. AI ereduak hautatutako segmentua iradokitzeko ikasitako atributu balioak edo arauak ere berrikusi ditzakezu.
+Hautatu iradokitako segmentu bat iradokizun horren xehetasunak berrikusteko. AI ereduak hautatutako segmentua iradokitzeko ikasitako atributu balioak edo arauak ere berrikusi ditzakezu.
 
 ## <a name="save-a-suggestion-as-a-segment"></a>Gorde segmentu bat iradokizun gisa
 

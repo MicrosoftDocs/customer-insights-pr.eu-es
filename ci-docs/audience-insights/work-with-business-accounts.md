@@ -1,7 +1,7 @@
 ---
 title: Hasteko negozio kontuekin helburu nagusia den publiko gisa
 description: Ikasi negozio kontuekin helburu nagusia den publiko gisa Dynamics 365 Customer Insights.
-ms.date: 09/30/2021
+ms.date: 10/19/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -9,16 +9,16 @@ author: m-hartmann
 ms.author: wimohabb
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: ea036cf3a3623a314a6d0d7da85b2c30c030ccea
-ms.sourcegitcommit: 53b133a716c73cb71e8bcbedc6273cec70ceba6c
+ms.openlocfilehash: ac5ae950a44f7f32e3cb9fdc0ffad05b78fddef0
+ms.sourcegitcommit: 31985755c7c973fb1eb540c52fd1451731d2bed2
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "7644973"
+ms.lasthandoff: 10/22/2021
+ms.locfileid: "7673672"
 ---
 # <a name="work-with-business-accounts-in-audience-insights"></a>Lana negozio kontuekin audientzia estatistiketan
 
-Ikusleek gaitasuna erakusten dute Dynamics 365 Customer Insights zure ingurunea konfiguratzeko aukera ematen dizu lehen helburu publiko desberdinetarako: bezero partikularrak (B2C) eta negozio kontuak (B2B). B2C eszenatokietan, datuak norbanakoen inguruan zentratzen dira. B2Brentzat, xede-publiko nagusiak kontuak - erakundeak edo enpresak - eta kontaktuak dira. Artikulu honek negozio kontuetarako ingurune batekin hasi zaitezke. Ezaugarri-arloen desberdintasunak zerrendatzen ditu ikusleen estatistiketan, zure ingurunearen ikuspegiaren arabera. Desberdintasunei buruzko informazio gehiago nahi izanez gero, berrikusi funtzioen arloetako dokumentuak. 
+Ikusleek gaitasuna erakusten dute Dynamics 365 Customer Insights zure ingurunea konfiguratzeko aukera ematen dizu lehen helburu publiko desberdinetarako: kontsumitzaile partikularrak (B-to-C) eta negozio kontuak (B-to-B). B-to-C eszenatokietan, datuak norbanakoen inguruan zentratzen dira. B-to-B eszenatokietan, xede-publiko nagusiak kontuak - erakundeak edo enpresak - eta kontaktuak dira. Artikulu honek negozio kontuetarako ingurune batekin hasi zaitezke. Ezaugarri-arloen desberdintasunak zerrendatzen ditu ikusleen estatistiketan, zure ingurunearen ikuspegiaren arabera. Desberdintasunei buruzko informazio gehiago nahi izanez gero, berrikusi funtzioen arloetako dokumentuak. 
 
 ## <a name="create-an-environment-for-business-accounts"></a>Sortu ingurune bat negozio-kontuetarako
 
@@ -32,7 +32,7 @@ Datuak bateratu ondoren, [zehaztu kontu hierarkiak](relationships.md#set-up-acco
 
 Zure erakundeak bezero eta negozio kontuen banakako inguruneak mantentzen baditu, ezkerreko paneleko aldatzailea erabil dezakezu xede publiko nagusia aukeratzeko.
 
-:::image type="content" source="media/switch-primary-target-audience.PNG" alt-text="Aldagailua bezero nagusien eta negozio kontuen artean hartzaile nagusia aldatzeko.":::
+:::image type="content" source="media/switch-primary-target-audience.png" alt-text="Aldagailua bezero nagusien eta negozio kontuen artean hartzaile nagusia aldatzeko.":::
 
 ## <a name="supported-feature-areas"></a>Onartutako eginbide-eremuak
 

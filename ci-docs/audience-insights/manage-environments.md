@@ -9,12 +9,12 @@ ms.reviewer: mhart
 author: NimrodMagen
 ms.author: nimagen
 manager: shellyha
-ms.openlocfilehash: ce2fdd435a81bb04148057554c5958e3ab59f125
-ms.sourcegitcommit: 53b133a716c73cb71e8bcbedc6273cec70ceba6c
+ms.openlocfilehash: 2d977ef4eb585e26b36139681552db22d84759c9
+ms.sourcegitcommit: 31985755c7c973fb1eb540c52fd1451731d2bed2
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "7645111"
+ms.lasthandoff: 10/22/2021
+ms.locfileid: "7673718"
 ---
 # <a name="manage-environments"></a>Kudeatu inguruneak
 
@@ -67,7 +67,8 @@ Datu hauek *ez* dira kopiatu:
 
 - Bezeroen profilak.
 - Datu-iturburuaren kredentzialak. Datu-iturburu bakoitzerako kredentzialak eman beharko dituzu eta datu iturriak eskuz freskatu.
-- Common Data Model karpetako datu iturriak eta Dataverse kudeatzen du Data Lake. Datu iturri horiek eskuz sortu beharko dituzu iturri ingurunean izen berdinekin.
+
+- Common Data Model karpetako eta Dataverse-k kudeatutako datu-biltegiko datu-iturburuak. Datu iturri horiek eskuz sortu beharko dituzu iturri ingurunean izen berdinekin.
 
 Ingurumena kopiatzean, berrespen mezu bat ikusiko duzu ingurune berria sortu dela. Aukeratu **Joan datu iturrietara** datu-iturrien zerrenda ikusteko.
 

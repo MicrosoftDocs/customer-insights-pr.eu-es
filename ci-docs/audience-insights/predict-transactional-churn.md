@@ -1,7 +1,7 @@
 ---
 title: Transakzio churn iragarpena
 description: Iragarri bezeroren bat arriskuan dagoen jada produktu eta zerbitzuak erosten ez dituelako.
-ms.date: 10/11/2021
+ms.date: 10/20/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: how-to
 author: zacookmsft
 ms.author: zacook
 manager: shellyha
-ms.openlocfilehash: ac484f74e388aa23422a89e25dabb555f2ad4118
-ms.sourcegitcommit: 1565f4f7b4e131ede6ae089c5d21a79b02bba645
+ms.openlocfilehash: 9fa6a044989d523e1068aff24266cfb475632736
+ms.sourcegitcommit: 31985755c7c973fb1eb540c52fd1451731d2bed2
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 10/14/2021
-ms.locfileid: "7643343"
+ms.lasthandoff: 10/22/2021
+ms.locfileid: "7673030"
 ---
 # <a name="transaction-churn-prediction-preview"></a>Transakzioa bertan behera uzteko iragarpena (aurrebista)
 
@@ -28,6 +28,32 @@ Negozio kontuetan oinarritutako inguruneetarako, kontu baten transazio transakti
 > Saiatu transakzioaren txandaren tutoriala iragarpen lagin-datuak erabiliz: [Transaction churn iragarpen (preview) lagin gida](sample-guide-predict-transactional-churn.md).
 
 ## <a name="prerequisites"></a>Aurrebaldintzak
+
+# <a name="individual-consumers-b-to-c"></a>[Banakako kontsumitzaileak (negoziotik bezerora)](#tab/b2c)
+
+- Gutxienez [Laguntzaileen baimenak](permissions.md) Customer Insights.
+- Enpresa-ezagutzak zer negoziorentzako esan nahi du ulertzeko. Denboran oinarritutako galera-tasen definizioak onartzen ditugu, hau da, erosketarik gabeko tarte baten ondoren bezeroa galdutzat jotzen da.
+- Zure transakzio / erosketen inguruko datuak eta horien historia:
+    - Erosketak / transakzioak bereizteko transakzio identifikatzaileak.
+    - Bezeroen identifikadoreak, transakzioak zure bezeroekin lotzeko.
+    - Transakzioen gertaeren datak, transakzioaren datak zehazten dituztenak.
+    - Erosketak / transakzioak egiteko datu semantikoen eskemak informazio hau behar du:
+        - **Transakzioaren IDa**: Erosketa edo transakzio baten identifikatzaile bakarra.
+        - **Transakzioaren data**: Erosketaren edo transakzioaren data.
+        - **Transakzioaren balioa**: Transakzioaren / elementuaren moneta / zenbakizko balioa.
+        - (Aukerakoa) **Produktuaren ID esklusiboa**: Erositako produktuaren edo zerbitzuaren IDa, zure datuak lerro-elementuaren mailan badaude.
+        - (Aukerakoa) **Transakzio hau itzulera izan den ala ez**: Transakzioa itzulera izan den edo ez identifikatzen duen egia / gezurra eremua. **Transakzioaren balioa** negatiboa bada, informazio hau itzulera bat ondorioztatzeko ere erabiliko dugu.
+- (Aukerakoa) Bezeroen jarduerei buruzko datuak:
+    - Mota bereko jarduerak bereizteko jarduera identifikatzaileak.
+    - Bezeroaren identifikadoreak maparen jardueretan zure bezeroentzat.
+    - Jardueren izena eta jardueraren data biltzen dituen jarduera.
+    - Bezeroen jardueren datu semantikoen eskemak honako hauek ditu:
+        - **Gako nagusia:** Jarduera baterako identifikatzaile bakarra. Adibidez, webgunea bisitatzea edo bezeroak zure produktuaren lagin bat probatu duela azaltzen duen erabilera erregistroa.
+        - **Timestamp:** Giltza nagusian identifikatutako gertaeraren data eta ordua.
+        - **Gertaera:** Erabili nahi duzun gertaeraren izena. Adibidez, janari dendako "UserAction" izeneko eremua bezeroak erabilitako kupoi bat izan daiteke.
+        - **Xehetasunak:** Ekitaldiaren inguruko informazio zehatza. Adibidez, janari dendako "CouponValue" izeneko eremua izan daiteke kupoiaren moneta-balioa.
+
+# <a name="business-accounts-b-to-b"></a>[Negozio-kontuak (negoziotik negoziora)](#tab/b2b)
 
 - Gutxienez [Laguntzaileen baimenak](permissions.md) Customer Insights.
 - Enpresa-ezagutzak zer negoziorentzako esan nahi du ulertzeko. Denboran oinarritutako galera-tasen definizioak onartzen ditugu, hau da, erosketarik gabeko tarte baten ondoren bezeroa galdutzat jotzen da.
@@ -51,7 +77,7 @@ Negozio kontuetan oinarritutako inguruneetarako, kontu baten transazio transakti
         - **Gertaera:** Erabili nahi duzun gertaeraren izena. Adibidez, janari dendako "UserAction" izeneko eremua bezeroak erabilitako kupoi bat izan daiteke.
         - **Xehetasunak:** Ekitaldiaren inguruko informazio zehatza. Adibidez, janari dendako "CouponValue" izeneko eremua izan daiteke kupoiaren moneta-balioa.
 - (Aukerakoa) Zure bezeroei buruzko datuak:
-    - Datu hauek oso gutxitan beharko lirateke, eta atributu estatikoagoetara lerrokatu beharko lirateke, ereduak errendimendu onena izan dezan.
+    - Datu hauek atributu estatikoagoetara lerrokatu beharko lirateke, ereduak errendimendu onena izan dezan.
     - Bezeroen datuen datu semantikoen eskemak honakoak dira:
         - **CustomerID:** Bezero batentzako identifikatzaile bakarra.
         - **Sortze-data:** Bezeroa hasieran gehitu zen data.
@@ -59,6 +85,9 @@ Negozio kontuetan oinarritutako inguruneetarako, kontu baten transazio transakti
         - **Herrialdea:** Bezero baten herrialdea.
         - **Industria:** Bezeroaren industria mota. Adibidez, kafea erretzeko "Industria" izeneko eremuak bezeroa txikizkaria den ala ez adieraz dezake.
         - **Sailkapena:** Zure negoziorako bezero baten sailkapena. Adibidez, kafe-txigorgailu batean "ValueSegment" izeneko eremua bezeroaren maila izan daiteke bezeroaren tamainaren arabera.
+
+---
+
 - Iradokitako datuen ezaugarriak:
     - Datu historiko nahikoa: gutxienez hautatutako denbora-leihoa bikoitzeko transakzioen datuak. Hobe, transakzioen historia bizpahiru urtekoa. 
     - Erosketa anitz bezero bakoitzeko: modurik onenean, bi transakzio gutxienez bezeroko.
@@ -114,6 +143,32 @@ Negozio kontuetan oinarritutako inguruneetarako, kontu baten transazio transakti
 
 1. Hautatu **Hurrengoa**.
 
+# <a name="individual-consumers-b-to-c"></a>[Banakako kontsumitzaileak (negoziotik bezerora)](#tab/b2c)
+
+### <a name="add-additional-data-optional"></a>Gehitu datu gehigarriak (aukerakoa)
+
+Konfiguratu harremana bezeroaren jarduera entitatetik *Bezeroa* entitatea.
+
+1. Aukeratu bezeroaren jardueraren taulan bezeroa identifikatzen duen eremua. Zuzenean erlazionatuta egon daiteke zure *Bezero* entitatearen bezeroaren ID nagusiarekin.
+
+1. Aukeratu zure entitate nagusia *Bezeroa* entitatea.
+
+1. Idatzi izena deskribatzen duena harremana.
+
+#### <a name="customer-activities"></a>Bezeroen jarduerak
+
+1. Aukeran, hautatu **Gehitu datuak** **Bezeroaren jarduerak** atalerako.
+
+1. Aukeratu erabili nahi dituzun datuak dituen jarduera mota semantikoa, eta hautatu jarduera bat edo gehiago atalean **Jarduerak** atala.
+
+1. Hautatu konfiguratzen ari zaren bezeroaren jarduera motarekin bat datorren jarduera mota bat. Aukeratu **Sortu berria** eta aukeratu erabilgarri dagoen jarduera mota bat edo sortu mota berri bat.
+
+1. Hautatu **Hurrengoa**, gero **Gorde**.
+
+1. Sartu nahiko zenukeen beste bezeroen jarduerarik baduzu, errepikatu goiko urratsak.
+
+# <a name="business-accounts-b-to-b"></a>[Negozio-kontuak (negoziotik negoziora)](#tab/b2b)
+
 ### <a name="select-prediction-level"></a>Hautatu iragarpenaren maila
 
 Iragarpen gehienak bezero mailan sortzen dira. Zenbait egoeratan, baliteke hori ez izatea negozioaren beharrei erantzuteko adina. Ezaugarri hau erabil dezakezu bezero baten adar bati buelta emateko, adibidez, bezeroarentzat oro har.
@@ -122,9 +177,9 @@ Iragarpen gehienak bezero mailan sortzen dira. Zenbait egoeratan, baliteke hori 
 
 1. Zabaldu bigarren maila aukeratu nahi zenukeen entitateak edo erabili bilaketa-iragazkiaren koadroa hautatutako aukerak iragazteko.
 
-1. Aukeratu bigarren maila gisa erabili nahi duzun atributua, eta hautatu **Gehitu**
+1. Aukeratu bigarren maila gisa erabili nahi duzun atributua, eta hautatu **Gehitu**.
 
-1. Hautatu **Hurrengoa**
+1. Hautatu **Hurrengoa**.
 
 > [!NOTE]
 > Atal honetan eskuragarri dauden entitateak aurreko atalean aukeratu duzun entitatearekin harremana dutelako erakusten dira. Gehitu nahi duzun entitatea ikusten ez baduzu, ziurtatu baliozko harremana duela **Harremanak**. Bat-bateko eta askoko harremanek soilik balio dute konfigurazio honetarako.
@@ -159,7 +214,7 @@ Konfiguratu harremana bezeroaren jarduera entitatetik *Bezeroa* entitatea.
 
 1. Hautatu **Hurrengoa**.
 
-### <a name="provide-an-optional-list-of-benchmark-accounts-business-accounts-only"></a>Eman erreferentziazko kontuen aukerako zerrenda (negozio kontuak soilik)
+### <a name="provide-an-optional-list-of-benchmark-accounts"></a>Eman erreferentziazko kontuen aukerako zerrenda
 
 Gehitu erreferentzia gisa erabili nahi dituzun negozioen bezeroen eta kontuen zerrenda. Lortuko duzu [erreferentziazko kontu horien xehetasunak](#review-a-prediction-status-and-results) besteak beste, haien txandaren puntuazioa eta haien txandaren eragina izan zuten ezaugarri garrantzitsuenak iragarpen.
 
@@ -168,6 +223,8 @@ Gehitu erreferentzia gisa erabili nahi dituzun negozioen bezeroen eta kontuen ze
 1. Aukeratu erreferentzia gisa jokatzen duten bezeroak.
 
 1. Jarraitzeko, hautatu **Hurrengoa**.
+
+---
 
 ### <a name="set-schedule-and-review-configuration"></a>Ezarri programazioa eta berrikusi konfigurazioa
 
@@ -201,6 +258,25 @@ Gehitu erreferentzia gisa erabili nahi dituzun negozioen bezeroen eta kontuen ze
 1. Hautatu elipse bertikalak emaitzak berrikusteko nahi duzun iragarpenaren ondoan **ikusi**.
 
    :::image type="content" source="media/model-subs-view.PNG" alt-text="Ikusi kontrola iragarpen baten emaitzak ikusteko.":::
+
+# <a name="individual-consumers-b-to-c"></a>[Banakako kontsumitzaileak (negoziotik bezerora)](#tab/b2c)
+
+1. Emaitza orrialdearen barruan hiru datu nagusi daude:
+   - **Prestakuntza ereduaren errendimendua**: A, B edo C puntuazio posibleak dira. Puntuazio honek iragarpenaren errendimendua adierazten du eta irteerako entitatean gordetako emaitzak erabiltzeko erabakia har dezake. Puntuazioak honako arauen arabera zehazten dira: 
+        - **A** ereduak iragarpen guztien gutxienez % 50 zehaztasunez aurreikusi duenean, eta galdutako bezeroen iragarpenen zehaztasuna oinarrizko tasa baino gutxienez % 10 baino handiagoa denean.
+            
+        - **B** ereduak iragarpen guztien gutxienez % 50 zehaztasunez aurreikusi duenean, eta galdutako bezeroen iragarpenen zehaztasuna oinarrizko tasa baino gehienez % 10 handiagoa denean.
+            
+        - **C** ereduak iragarpen guztien % 50 baino gutxiago zehaztasunez aurreikusi duenean, edo galdutako bezeroen iragarpenen zehaztasuna oinarrizko tasa baino txikiagoa denean.
+               
+        - **Oinarria** atalak ereduaren iragarpen denbora-tartearen sarrera hartzen du (adibidez, urtebete) eta ereduak denbora zati desberdinak sortzen ditu 2rekin zatituz, hilabete batera edo gutxiagora iritsi arte. Zatiki horiek denbora tarte horretan erosi ez duten bezeroentzako negozio arau bat sortzeko erabiltzen ditu. Bezero hauek galdutzat jotzen dira. Zein bezero galtzeko aukera dagoen ondoen iragartzen duen denboran oinarritutako negozio-araua hartzen da oinarrizko eredu gisa.
+            
+    - **Probabilitatea asetzeko (bezero kopurua)**: Bezero-taldeak krisiak eragindako arriskuaren arabera. Datu horrek gero lagundu dezake krisi arrisku handia duten bezeroen segmentu bat sortu nahi baduzu. Horrelako segmentuek segmentu kide izateko zure mozketa nolakoa izan behar den ulertzen lagunduko dute.
+       
+    - **Eraginik garrantzitsuenak**: Zure iragarpena sortzerakoan kontuan hartzen diren faktore asko daude. Faktore bakoitzak bere garrantzia kalkulatzen du eredu batek sortzen dituen iragarpen bateratuetarako. Faktore hauek erabil ditzakezu zure iragarpen emaitzak balioztatzen laguntzeko, edo informazio hau geroago erabil dezakezu [segmentuak sortu](segments.md) horrek bezeroentzako txandakako arriskuan eragina izan dezake.
+
+
+# <a name="business-accounts-b-to-b"></a>[Negozio-kontuak (negoziotik negoziora)](#tab/b2b)
 
 1. Emaitza orrialdearen barruan hiru datu nagusi daude:
    - **Prestakuntza ereduaren errendimendua**: A, B edo C puntuazio posibleak dira. Puntuazio honek iragarpenaren errendimendua adierazten du eta irteerako entitatean gordetako emaitzak erabiltzeko erabakia har dezake. Puntuazioak honako arauen arabera zehazten dira: 
@@ -237,6 +313,11 @@ Gehitu erreferentzia gisa erabili nahi dituzun negozioen bezeroen eta kontuen ze
        Kontu mailan desaktibazioa iragartzen duzunean, kontu guztiak kontsideratzen dira desaktibazio segmentuen batez besteko ezaugarrien balioak lortzeko. Kontu bakoitzeko bigarren mailako mailak iragartzeko, txandakako segmentuen deribazioa alboko panelean hautatutako elementuaren bigarren mailaren araberakoa da. Adibidez, artikulu batek produktu kategoria bigarren maila badu = bulegoko materiala, bulegoko materiala produktu kategoria gisa duten elementuak baino ez dira kontuan hartuko produktuen batez besteko ezaugarrien balioak ateratzerakoan. Logika hau aplikatzen da elementuaren ezaugarrien balioen alderaketa bidezko, baxu, ertain eta altuko segmentuen batez besteko balioekin alderatzea.
 
        Zenbait kasutan, baxua, ertaina edo altua den segmentuen batez besteko balioa hutsik dago edo ez dago erabilgarri, goiko definizioan oinarrituta ez baitago dagokion churn segmentuetako elementurik.
+       
+       > [!NOTE]
+       > Batez besteko baxu, ertain eta goi zutabeen balioen interpretazioa desberdina da herrialdea edo industria bezalako ezaugarri kategorientzat. "Batez besteko" ezaugarri-balioaren nozioa ezaugarri kategorikoei aplikatzen ez zaienez, zutabe hauetako balioak urritasun baxuko, ertaineko edo handiko segmentuetako bezeroen proportzioa dira, elementu kategorikoaren balio bera dutenak alboko panelean hautatutako elementuarekin alderatuta.
+
+---
 
 ## <a name="manage-predictions"></a>Iragarpenak kudeatu
 

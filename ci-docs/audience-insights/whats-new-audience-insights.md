@@ -9,12 +9,12 @@ author: m-hartmann
 ms.author: mhart
 ms.reviewer: midevane
 manager: shellyha
-ms.openlocfilehash: 5262ad20019e90e73ab121a5ab90e602c1a32b7e
-ms.sourcegitcommit: 693458e13e4b4d94b6205093559912f6a4dc4a1c
+ms.openlocfilehash: e501df8701493a1c5b83c4d06da3a73fd226165f
+ms.sourcegitcommit: 31985755c7c973fb1eb540c52fd1451731d2bed2
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "7606029"
+ms.lasthandoff: 10/22/2021
+ms.locfileid: "7673800"
 ---
 # <a name="whats-new-in-the-audience-insights-capability-of-dynamics-365-customer-insights"></a>Dynamics 365 Customer Insights hartzaileen xehetasunei buruzko zerbitzuaren ezaugarri berriak
 
@@ -166,7 +166,7 @@ Eguneratzeak eskualdeen arabera banatzen ditugu. Beraz, eskualde batzuek beste b
 - **Esportatu segmentuak Constant Contact** Esportaziorako helmugak Etengabeko Kontaktua barne zabaldu ditugu. Segmentuak Customer Insights-etik Constant Contact zerrendetara esporta ditzakezu eta zure marketin kanpainetarako oinarri gisa erabil ditzakezu.   
    Informazio gehiago eskuratzeko, ikusi [Esportatu Constant Contact](export-constant-contact.md).
 
-- **Esportatu segmentuak RollWorks-era** Esportaziorako helmugak RollWorks barne zabaldu ditugu. Segmentuak Customer Insights-etik RollWorks audientzetera esporta ditzakezu eta zure B2B iragarkiak oinarri gisa erabil ditzakezu.    
+- **Esportatu segmentuak RollWorks-era** Esportaziorako helmugak RollWorks barne zabaldu ditugu. Orain Customer Insights-eko segmentuak RollWorks-eko hartzileetara esporta ditzakezu eta zure B-to-B publizitatearen oinarri gisa erabil ditzakezu.    
    Informazio gehiago eskuratzeko, ikusi [Esportatu RollWorks-era ](export-rollworks.md).
 
 - **Esportatu segmentuak Snapchat-era** Esportaziorako helmugak Snapchat barne zabaldu ditugu. Segmentuak Customer Insights-etik Snapchat audientzetera esporta ditzakezu eta zure iragarkiak oinarri gisa erabil ditzakezu.     

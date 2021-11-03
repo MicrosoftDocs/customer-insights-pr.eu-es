@@ -10,12 +10,12 @@ author: pkieffer
 ms.author: philk
 manager: shellyha
 ms.custom: intro-internal
-ms.openlocfilehash: 45a4c964e9810640c764357a72b9794f4fda89f4
-ms.sourcegitcommit: 5d82e5b808517e0e99fdfdd7e4a4422a5b8ebd5c
+ms.openlocfilehash: 61e95e47489495e367498547687b0065169519e6
+ms.sourcegitcommit: 31985755c7c973fb1eb540c52fd1451731d2bed2
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 10/11/2021
-ms.locfileid: "7623086"
+ms.lasthandoff: 10/22/2021
+ms.locfileid: "7673308"
 ---
 # <a name="exports-preview-overview"></a>Esportazioak (aurreargitalpena) ikuspegi orokorra
 
@@ -32,14 +32,14 @@ Bi esportazio mota nagusi daude:
 
 ### <a name="export-segments"></a>Esportatu segmentuak
 
-**Segmentuak esportatzea negozio kontuetarako (B2B) edo bezero partikularretarako (B2C) inguruneetan**  
-Esportazio aukera gehienek bi ingurune motak onartzen dituzte. Segmentuak xede-sistema desberdinetara esportatzeak baldintza zehatzak ditu. Orokorrean, segmentuaren kide, bezeroaren profilak, harremanetarako informazioa dauka. Normalean bezero partikularretan eraikitako segmentuen kasuan (B2C) gertatzen den arren, ez da nahitaez negozio kontuetan oinarritutako segmentuen kasuan (B2B). 
+**Segmentuak esportatzea negozio kontuetarako (B-to-B) edo kontsumitzaile partikularretarako (B-to-C) inguruneetan**  
+Esportazio aukera gehienek bi ingurune motak onartzen dituzte. Segmentuak xede-sistema desberdinetara esportatzeak baldintza zehatzak ditu. Orokorrean, segmentuaren kide, bezeroaren profilak, harremanetarako informazioa dauka. Normalean kontsumitzaile partikularretan eraikitako segmentuen kasuan (B-to-C) gertatzen den arren, ez da nahitaez negozio kontuetan oinarritutako segmentuen kasuan (B-to-B). 
 
-**Enpresa kontuetarako esportazio inguruneak segmentatu (B2B)**  
+**Enpresa kontuetarako esportazio inguruneak segmentatu (B-to-B)**  
 - Enpresa kontuetarako inguruneen testuinguruan segmentuak *kontua* entitatea. Kontuen segmentuak bere horretan esportatzeko, xede-sistemak kontu segmentu puruak onartzen ditu. Hau da kasua [LinkedIn](export-linkedin-ads.md) aukeratzerakoan **konpainia** aukera esportazioa definitzerakoan.
 - Helburuko beste sistema guztiek harremanetarako entitatearen eremuak behar dituzte. Kontu segmentuek erlazionatutako kontaktuetatik datuak berreskura ditzaketela ziurtatzeko, zure segmentuaren definizioak kontaktu entitatearen atributuak proiektatu behar ditu. Lortu informazio gehiago nola egin [konfiguratu segmentuak eta proiektuaren atributuak](segment-builder.md).
 
-**Banakako bezeroentzako inguruneetako esportazioak segmentatu (B2C)**  
+**Banakako kontsumitzaileen inguruneetako esportazioak segmentatu (B-to-C)**  
 - Segmentuak testuinguruan inguruneetan banakako bezeroak eraikitzen dira *bezero profil bateratua* entitatea. Xede-sistemen baldintzak betetzen dituen segmentu guztiak (adibidez, helbide elektronikoa) esportatu ahal izango dira.
 
 **Segmentuen esportazioen mugak**  

@@ -9,12 +9,12 @@ author: m-hartmann
 ms.author: wameng
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 39acca78c022bc15ebc15dc80f21fe175da04d4d
-ms.sourcegitcommit: 5d82e5b808517e0e99fdfdd7e4a4422a5b8ebd5c
+ms.openlocfilehash: d77d1901fee4771537554c05d3963316d0fb37cb
+ms.sourcegitcommit: 31985755c7c973fb1eb540c52fd1451731d2bed2
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 10/11/2021
-ms.locfileid: "7622844"
+ms.lasthandoff: 10/22/2021
+ms.locfileid: "7673355"
 ---
 # <a name="define-and-manage-measures"></a>Neurriak zehaztu eta kudeatu
 
@@ -28,7 +28,7 @@ Erabili neurri-sortzailea negozio-jarduerak planifikatzeko bezeroen datuak konts
 
 Atal honek hutsetik neurri berri bat sortzen lagunduko dizu. Neurri bat eraiki dezakezu bezeroen profileko entitate bateratuarekin konektatzeko konfiguratuta dauden datu-entitateetako datu-atributuekin.
 
-# <a name="individual-customers-b2c"></a>[Banakako bezeroak (B2C)](#tab/b2c)
+# <a name="individual-consumers-b-to-c"></a>[Banakako kontsumitzaileak (negoziotik bezerora)](#tab/b2c)
 
 1. Hartzaileei buruzko xehetasunetan, joan hona: **Neurriak**.
 
@@ -92,7 +92,7 @@ Atal honek hutsetik neurri berri bat sortzen lagunduko dizu. Neurri bat eraiki d
 
 1. Joan **Neurriak** atalera sortu berri den neurria zerrendan ikusteko.
 
-# <a name="business-accounts-b2b"></a>[Negozio-kontuak (B2B)](#tab/b2b)
+# <a name="business-accounts-b-to-b"></a>[Negozio-kontuak (negoziotik negoziora)](#tab/b2b)
 
 1. Hartzaileei buruzko xehetasunetan, joan hona: **Neurriak**.
 
@@ -164,7 +164,7 @@ Atal honek hutsetik neurri berri bat sortzen lagunduko dizu. Neurri bat eraiki d
 
 Normalean erabiltzen diren neurrien aurrez definitutako txantiloiak erabil ditzakezu horiek sortzeko. Txantiloien deskribapen zehatzak eta esperientzia gidatu batek neurrien sorrera eraginkorra izaten laguntzen dizute. Txantiloiak mapako datuen gainean eraikitzen dira *Jarduera bateratua* entitatea. Beraz, ziurtatu konfiguratu duzula [bezeroen jarduerak](activities.md) txantiloi batetik neurria sortu aurretik.
 
-# <a name="individual-customers-b2c"></a>[Banakako bezeroak (B2C)](#tab/b2c)
+# <a name="individual-consumers-b-to-c"></a>[Banakako kontsumitzaileak (negoziotik bezerora)](#tab/b2c)
 
 Normalean erabiltzen diren neurrien aurrez definitutako txantiloiak erabil ditzakezu horiek sortzeko. Txantiloien deskribapen zehatzak eta esperientzia gidatu batek neurrien sorrera eraginkorra izaten laguntzen dizute. Txantiloiak mapako datuen gainean eraikitzen dira *Jarduera bateratua* entitatea. Beraz, ziurtatu konfiguratu duzula [bezeroen jarduerak](activities.md) txantiloi batetik neurria sortu aurretik.
 
@@ -212,7 +212,7 @@ Ondorengo prozeduran txantiloia erabiliz neurri berria eraikitzeko urratsak azal
 
 1. Orain hauta dezakezu **Exekutatu** neurriaren emaitzak kalkulatzeko. Geroago fintzeko, hautatu **Gorde zirriborroa**.
 
-# <a name="business-accounts-b2b"></a>[Negozio-kontuak (B2B)](#tab/b2b)
+# <a name="business-accounts-b-to-b"></a>[Negozio-kontuak (negoziotik negoziora)](#tab/b2b)
 
 Funtzio hau bezero partikularrak helburu nagusi dituzten inguruneetan sortutako neurrietarako bakarrik dago erabilgarri.
 
