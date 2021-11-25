@@ -1,7 +1,7 @@
 ---
 title: Erabili datu-iturburuak datuak sartzeko
 description: Ikasi iturri desberdinetako datuak nola inportatu.
-ms.date: 04/12/2021
+ms.date: 11/01/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -10,18 +10,18 @@ ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
 ms.custom: intro-internal
-ms.openlocfilehash: de31e1f25c08d0bcb5341c5f465b1999de48acf3
-ms.sourcegitcommit: 53b133a716c73cb71e8bcbedc6273cec70ceba6c
-ms.translationtype: HT
+ms.openlocfilehash: 27cbd0346b1219c7812f4b90327dd27b645c2b8e
+ms.sourcegitcommit: 834651b933b1e50e7557d44f926a3fb757c1f83a
+ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "7645340"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "7732112"
 ---
 # <a name="data-sources-overview"></a>Datuen iturburuen ikuspegi orokorra
 
 [!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
 
-Dynamics 365 Customer Insights-eko hartzaileen xehetasunen gaitasuna iturburu multzo zabal bateko datuekin konektatzen da. datu-iturburu-era konektatzearen prozesua sarritan aipatzen da *datuen irenstea*. Datuak irentsi ondoren, egin dezakezu [bateratu](data-unification.md) eta neurriak hartu.
+Dynamics 365 Customer Insights-n ikusleei buruzko informazio-gaitasuna iturri multzo zabal bateko datuekin konektatzen da. datu-iturburu-era konektatzearen prozesua sarritan aipatzen da *datuen irenstea*. Datuak irentsi ondoren, egin dezakezu [bateratu](data-unification.md) eta neurriak hartu.
 
 ## <a name="add-a-data-source"></a>Gehitu datu-iturburua
 
@@ -31,15 +31,15 @@ datu-iturburu bat gehi dezakezu hiru modu nagusitan:
 
 - [Dozenaka Power Query lokailuren bidez](connect-power-query.md)
 - [Hurrengotik Common Data Model-eko karpeta bat](connect-common-data-model.md)
-- [Zuretik Microsoft Dataverse lakua](connect-dataverse-managed-lake.md)
+- [Zure Microsoft Dataverse lakutik](connect-dataverse-managed-lake.md)
 
 ## <a name="add-data-from-on-premises-data-sources"></a>Gehitu datuak lokal datu iturrietatik
 
-Oinarrian onartzen da lokal datu iturrietako datuak sartzea parte-hartzaileen xehetasunen Microsoft Power Platform datu-fluxuak. Datu-fluxuak Customer Insights-en gaitu daitezke [eskainiz Microsoft Dataverse inguruneko URLa](create-environment.md) ingurunea konfiguratzerakoan.
+Lokal datu-iturburuetako datuak ikusleei buruzko informazioetan sartzea onartzen da Microsoft Power Platform datu-fluxuetan oinarrituta. Datu-fluxuak Customer Insights-en gaitu daitezke [Microsoft Dataverse ingurunearen URLa emanez](create-environment.md) ingurunea ezartzerakoan.
 
-Elkartu ondoren sortzen diren datu iturriak Dataverse Customer Insights-ekin ingurunea erabiliko da [Power Platform datu-fluxuak](/power-query/dataflows/overview-dataflows-across-power-platform-dynamics-365) lehenetsiz. Datu fluxuek konektibitate lokala onartzen dute datuetarako atebidea erabiliz. Kendu eta sortu berriro Dataverse ingurunea [datuetarako atebide lokalen erabilerarekin](/data-integration/gateway/service-gateway-app) erlazionatu baino lehen zeuden datu-iturburuak.
+Dataverse ingurune bat Customer Insights-ekin lotu ondoren sortzen diren datu-iturburuak erabiliko dituzte [Power Platform datu-fluxuak](/power-query/dataflows/overview-dataflows-across-power-platform-dynamics-365) lehenetsiz. Datu fluxuek konektibitate lokala onartzen dute datuetarako atebidea erabiliz. Kendu eta birsortu Dataverse ingurunea lotu aurretik zeuden datu-iturriak [erabili lokal datu-pasabideak](/data-integration/gateway/service-gateway-app).
 
-Dagoen batetik datozen atebideak Power BI edo Power Apps ingurunea ikusgai egongo da eta Customer Insights-en berrerabili dezakezu. Datu iturrien orriak estekara erakusten du Microsoft Power Platform lokal datu atebideak ikusi eta konfiguratzeko ingurunea.
+Lehendik dagoen Power BI edo Power Apps inguruneko datu-atebideak ikusgai egongo dira eta Customer Insights-en berrerabili ahal izango duzu. Datu-iturburuen orrialdeak Microsoft Power Platform ingurunera joateko estekak erakusten ditu, non lokal datu-atebideak ikusi eta konfigura ditzakezun.
 
 ## <a name="review-ingested-data"></a>Berrikusi sartutako datuak
 
@@ -48,14 +48,7 @@ Irentsitako datu-iturburu bakoitzaren izena, bere egoera eta iturri horretako da
 > [!div class="mx-imgBorder"]
 > ![Gehitutako datu-iturriak.](media/configure-data-datasource-added.png "Gehitutako datu-iturriak")
 
-|Fasea  |Deskribapenak  |
-|---------|---------|
-|Osatuta   |Datu-iturburu sartu da **Freskatuta** zutabean denbora-tartea adierazten bada.
-|Ez da hasi   |Datu-iturburuak oraindik ez du daturik sartu edo oraindik zirriborro moduan daude.         |
-|Freskatzen    |Datuen horniketa martxan da. Eragiketa hau bertan behera utzi dezakezu **Utzi freskagarria** herrian **Ekintzak** zutabea. datu-iturburu-en freskagarria gelditzeak azken freskatze egoeran itzuliko du.       |
-|Ezin izan da egin     |Datuen iradokizunak akatsak izan ditu.         |
-
-Hautatu balioa **Egoera** datu-iturburu edozein zutabetan xehetasun gehiago berrikusteko. **Aurrerapenaren xehetasunak** panelean, zabaldu **Datu-iturburuak**. Aukeratu **Ikusi xehetasunak** freskatze egoerari buruzko xehetasun gehiago berrikusteko, erroreen xehetasunak eta beherako prozesuen eguneratzeak barne.
+[!INCLUDE [progress-details-include](../includes/progress-details-pane.md)]
 
 Datuak kargatzeak denbora behar dezake. Freskatu ondoren, iradokitako datuak berrikusi daitezke **erakundeak** orria. Informazio gehiago lortzeko, [Entitateak](entities.md).
 

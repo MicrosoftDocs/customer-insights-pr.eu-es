@@ -1,7 +1,7 @@
 ---
 title: Eginbide berriak eta datozenak
 description: Ezaugarri berriei, hobekuntzei eta akatsak konpontzeko ezaugarriei buruzko informazioa.
-ms.date: 08/31/2021
+ms.date: 11/04/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -9,14 +9,14 @@ author: m-hartmann
 ms.author: mhart
 ms.reviewer: midevane
 manager: shellyha
-ms.openlocfilehash: e501df8701493a1c5b83c4d06da3a73fd226165f
-ms.sourcegitcommit: 31985755c7c973fb1eb540c52fd1451731d2bed2
-ms.translationtype: HT
+ms.openlocfilehash: f7e2645e1608ea83b5d3af1073a5d6f6e97eec8f
+ms.sourcegitcommit: 2a0947cffb52eaf885aa2e50c95b3693f7e4c589
+ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 10/22/2021
-ms.locfileid: "7673800"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "7753102"
 ---
-# <a name="whats-new-in-the-audience-insights-capability-of-dynamics-365-customer-insights"></a>Dynamics 365 Customer Insights hartzaileen xehetasunei buruzko zerbitzuaren ezaugarri berriak
+# <a name="whats-new-in-the-audience-insights-capability-of-dynamics-365-customer-insights"></a>Zer berri dago Dynamics 365 Customer Insights-ren ikusleei buruzko informazio-gaitasunean
 
 [!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
 
@@ -26,6 +26,41 @@ Eguneratzeak eskualdeen arabera banatzen ditugu. Beraz, eskualde batzuek beste b
 
 > [!TIP]
 > Bidali eta bozkatzeko eginbideak eskaerak eta produktuaren iradokizunak, joan [Dynamics 365 aplikazioaren ideiak atarira](https://experience.dynamics.com/ideas/categories/?forum=79a8c474-4e35-e911-a971-000d3a4f3343&forumName=Dynamics%20365%20Customer%20Insights).
+
+## <a name="october-2021-updates"></a>2021eko urriko eguneraketak
+
+2021eko urrian egindako eguneratzeek ezaugarri berriak, errendimenduaren hobekuntzak eta akatsen konponketak dituzte.
+
+### <a name="b-to-b"></a>B-tik-B
+
+2021eko urrian hasita, negozio-kontuekin eta haiei lotutako kontaktuekin lan egin dezakezu Customer Insights-en. Aurretik, aplikazioa kontsumitzaile indibidualentzat egokituta zegoen. Hainbat ezaugarri-eremu eguneratu ziren B-to-B eszenatokiak onartzeko ingurune-mota berri baten gainean. Onartutako B-to-B eginbideei buruzko ikuspegi orokorra lortzeko, ikus [Lan egin negozio-kontuekin ikusleen estatistiketan](work-with-business-accounts.md).
+
+Ondorengo ataletan negozio-kontuei eta kontsumitzaile indibidualei laguntzeko egokitu ziren funtsezko arlo batzuk nabarmentzen dira.
+
+#### <a name="export-segments-based-on-business-accounts"></a>Esportatu segmentuak negozio-kontuetan oinarrituta
+
+Segmentu-esportazio guztiak ikusleen informazioetan eskuragarri daude negozio-kontuen testuinguruan. Segmentu esportazio gehienek konfigurazio gehigarria behar dute eta [aurreikusitako harremanetarako informazioa](segment-builder.md#create-a-new-segment) azpiko segmentuetan negozio-kontuetarako balio izatea. Informazio gehiagorako, ikus [Esportatu segmentuak](export-destinations.md#export-segments).
+
+#### <a name="use-the-linkedin-ads-export-with-business-accounts"></a>Erabili LinkedIn Ads esportazioa negozio-kontuekin
+
+LinkedIn Ads esportazioa eskuragarri dago orain harremanetarako eta enpresentzako bideratzeko negozio kontuen testuinguruan. Linkedin-eko esportazioaren ardatz nagusi gisa enpresaren bideratzea hautatzean, negozio-kontuetan eraikitako segmentuak esportatu ditzakezu harremanetarako informazioa proiektatu beharrik gabe. Informazio gehiago lortzeko, joan honi buruzko dokumentuetara [LinkedIn Ads esportatzea](export-linkedin-ads.md) eta arteko aldea [harremanetarako bideratzea](https://business.linkedin.com/marketing-solutions/ad-targeting/contact-targeting) eta [enpresaren bideratzea](https://business.linkedin.com/marketing-solutions/ad-targeting/account-targeting). 
+
+#### <a name="create-measures-based-on-business-accounts-and-their-hierarchy"></a>Enpresa-kontuetan eta haien hierarkian oinarritutako neurriak sortzea
+
+Neurri-sortzaileak negozio-kontuen inguruan neurriak sortzeko eta hierarkiaren informazioa erabiltzeko aukera ematen dizu. Hierarkiaren informazioa kontu batean eta harekin lotutako azpikontu guztietan neurrien kalkulua biltzeko erabiltzen da. Adibidez, hierarkiak identifikatutako negozio-kontu talde bakoitzeko diru-sarrera osoa bezalako neurriak sor ditzakezu. Informazio gehiagorako, ikusi [Neurriak zehaztea eta kudeatzea](measures.md).
+
+#### <a name="create-segments-based-on-business-accounts-and-their-hierarchy"></a>Sortu segmentuak negozio-kontuetan eta haien hierarkian oinarrituta
+
+Segmentu-sortzaileak aukeran segmentu bateko kontu bakoitzaren kontaktu-informazioa barne hartzen duten negozio-kontuen segmentuak sortzeko aukera ematen du. Kontuaren hierarkia konfiguratuta baduzu, kontuaren hierarkia informazioa erabil dezakezu segmentua sortzeko. Informazio gehiagorako, ikus [Sortu segmentu berri bat](segment-builder.md#create-a-new-segment).
+
+#### <a name="retain-your-business-accounts-with-deep-insights-to-their-churn-tendency"></a>Eutsi zure negozio-kontuak beren joerari buruzko ikuspegi sakonekin
+
+Bezeroen txanda iragarpen ereduak negozio-kontuak ere onartzen ditu orain. Kontu baterako ez ezik, kontu baten eta zuri erosten dizuten produktu edo zerbitzu kategoria baten konbinaziorako ere balioesteko arriskua ebalua dezakezu. Gehigarri honek ulertzen laguntzen dizu kontu batek orokorrean zuri erosteari uztea edo ondasun edo zerbitzuen kategoria jakin baterako aukera gehiago duen. AI eredu hau gehiago erabiltzen laguntzeko, kontu bat litekeena den arrazoiak ere zerrendatzen ditu. Informazio gehiagorako, ikus [Transakzio txanda iragarpen (aurrebista)](predict-transactional-churn.md).
+
+#### <a name="see-contacts-of-a-business-account-in-customer-view"></a>Ikusi negozio-kontu bateko kontaktuak Bezeroaren ikuspegian
+
+Enpresa-kontuak erlazionatutako kontuekin mapatzen badira, Customer Insights aplikazioak erlazionatutako kontaktu hauek erakusten ditu bezeroaren xehetasunen ikuspegiaren zati gisa. Informazio gehiagorako, ikus [Bezeroen profilak](customer-profiles.md).
+
 
 ## <a name="september-2021-updates"></a>2021eko iraileko eguneratzea
 
@@ -78,7 +113,7 @@ Eguneratzeak eskualdeen arabera banatzen ditugu. Beraz, eskualde batzuek beste b
 
 ### <a name="data-ingestion"></a>Datu-horniketa
 
-- **Ikusi edo aldatu metadatuak edo entitatearen definizioa Azure Data Lake Storage-ko datuak eransterakoan** Orain metadatuak edo entitateen definizioa ikus eta editatu ditzakezu hartzaileen xehetasunetan, Azure Data Lake Storage-ko Common Data Model karpetako datuak eranstean. Gaitasun honek denbora errealeko iritzia, modeloaren balioztapena eta erroreen egiaztapena eskaintzen ditu. model.json eta manifest.json editatzeko aukera ematen du.
+- **Ikusi edo aldatu metadatuak edo entitatearen definizioa zure Azure Data Lake Storage-ko datuak eransten dituzunean** Orain ikus eta edita ditzakezu metadatuak edo entitateen definizioa ikusleen ikuspegietan zure Azure Data Lake Storage-en Common Data Model karpeta bateko datuak eransten dituzunean. Gaitasun honek denbora errealeko iritzia, modeloaren balioztapena eta erroreen egiaztapena eskaintzen ditu. model.json eta manifest.json editatzeko aukera ematen du.
 
 ### <a name="extensibility"></a>Hedagarritasuna
 
@@ -153,7 +188,7 @@ Eguneratzeak eskualdeen arabera banatzen ditugu. Beraz, eskualde batzuek beste b
 
 ### <a name="data-ingestion"></a>Datu-horniketa
 
-- **Konektatu lokal datu iturrietara erabiliz Power Platform datu-fluxuak eta atebideak** Pozik gaude aurrerapenaren berri ematean Power Platform datu-fluxuak eta lokal konektibitatea Customer Insights-eko atebideak erabiliz lotutako batekin Power Platform edo Dataverse ingurunea. Customer Insights ingurunearekin estekatutako datu iturri berriak Dataverse ingurunea lehenetsia izango da Power Platform datu-fluxuak lokal datuen konektibitatea eta konektore eta transformazio gaitasun multzo aberatsa ekartzen dute.
+- **Konektatu lokal datu-iturburuetara Power Platform datu-fluxu eta atebideekin** Atsegin handiz iragartzen dugu Power Platform datu-fluxuen eta lokal konektibitatearen aurrebista Customer Insights-en atebideak erabiliz, lotutako Power Platform edo Dataverse ingurune batekin. Lotutako Dataverse ingurunea duen Customer Insights ingurune batean sortutako datu-iturburu berriek Power Platform datu-fluxuak lehenetsiko dituzte, lokal datu-konektibitatea eta konektore-multzo aberatsa eta eraldaketa-gaitasun bat ekarriz.
 
 ### <a name="extensibility"></a>Hedagarritasuna
 
@@ -167,7 +202,7 @@ Eguneratzeak eskualdeen arabera banatzen ditugu. Beraz, eskualde batzuek beste b
    Informazio gehiago eskuratzeko, ikusi [Esportatu Constant Contact](export-constant-contact.md).
 
 - **Esportatu segmentuak RollWorks-era** Esportaziorako helmugak RollWorks barne zabaldu ditugu. Orain Customer Insights-eko segmentuak RollWorks-eko hartzileetara esporta ditzakezu eta zure B-to-B publizitatearen oinarri gisa erabil ditzakezu.    
-   Informazio gehiago eskuratzeko, ikusi [Esportatu RollWorks-era ](export-rollworks.md).
+   Informazio gehiago eskuratzeko, ikusi [Esportatu RollWorks-era](export-rollworks.md).
 
 - **Esportatu segmentuak Snapchat-era** Esportaziorako helmugak Snapchat barne zabaldu ditugu. Segmentuak Customer Insights-etik Snapchat audientzetera esporta ditzakezu eta zure iragarkiak oinarri gisa erabil ditzakezu.     
    Informazio gehiago lortzeko, ikusi [Esportatu Snapchat-era](export-snapchat.md).
@@ -215,7 +250,7 @@ Eguneratzeak eskualdeen arabera banatzen ditugu. Beraz, eskualde batzuek beste b
 
 - **Kopiatu inguruneak datu iturri mota gehiago onartzen ditu**
 
-  Administratzaileek ingurune konfigurazioak erakunde berdinean ingurune berri batera kopia ditzakete. Ezaugarri honek kopiatze ingurunearen funtzionaltasuna hedatzen du Microsoft Dataverse-k kudeatutako datu-biltegi batean oinarritutako datu-iturburuak edo Common Data Model karpeta erabiltzen direnean.
+  Administratzaileek ingurune konfigurazioak erakunde berdinean ingurune berri batera kopia ditzakete. Ezaugarri honek kopia-ingurunearen funtzionaltasuna hedatzen du Microsoft Dataverse kudeatutako datu-laku batean edo Common Data Model karpeta batean oinarritutako datu-iturriak erabiltzen diren kasuetarako.
 
 ## <a name="january-2021-updates"></a>2021eko urtarrilaren eguneratzeak
 
@@ -241,7 +276,7 @@ Eguneratzeak eskualdeen arabera banatzen ditugu. Beraz, eskualde batzuek beste b
 
 #### <a name="system-administration"></a>Sistemaren administrazioa
 
-- **Partekatu datuak zuzenean Microsoft Dataverse-n** Orain Customer Insights irteera parteka dezakezu Microsoft Dataverse aplikazioaren Microsoft Dataverse Kudeatutako Data Lake erabiliz. Dataverse ingurune bat erlazionatu ostean Customer Insights-ekin, datuak partekatzea gaitzeko aukera duzu.
+- **Partekatu datuak modu errazean Microsoft Dataverse-ekin** Orain Customer Insights irteera Microsoft Dataverse aplikazioekin parteka dezakezu Microsoft Dataverse Managed Data Lake erabiliz. Dataverse ingurune bat Customer Insights-ekin lotzen duzunean, datuak partekatzea gaitzeko aukera izango duzu.
   Informazio gehiagorako, ikusi [Kudeatu inguruneak](manage-environments.md).
 
 

@@ -9,16 +9,16 @@ ms.topic: conceptual
 author: m-hartmann
 ms.author: wimohabb
 manager: shellyha
-ms.openlocfilehash: 8404515a20529c00708d84813f3a022ad98c45362a2f1e68d7aa890d085071a9
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
-ms.translationtype: HT
+ms.openlocfilehash: 7201ed9e5315d73e6b9c25b4bc4c4e4ed839a215
+ms.sourcegitcommit: 834651b933b1e50e7557d44f926a3fb757c1f83a
+ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7033570"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "7732249"
 ---
 # <a name="work-with-customer-insights-apis"></a>Lan egin Customer Insights APIekin
 
-Dynamics 365 Customer Insights APIak eskaintzen ditu zure datuetan oinarritutako zure aplikazioak eraikitzeko Customer Insights-en.
+Dynamics 365 Customer Insights-ek Customer Insights-en zure datuetan oinarrituta zure aplikazioak eraikitzeko APIak eskaintzen ditu.
 
 > [!IMPORTANT]
 > API horien xehetasunak hemen daude zerrendatuta: [Customer Insights APIen erreferentzia](https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights). Eragiketei, parametroei eta erantzunen inguruko informazio osagarria biltzen dute.
@@ -117,25 +117,25 @@ Atal honek Customer Insights APIen eskuragarri dauden bezero liburutegiak erabil
 
 ### <a name="c-nuget"></a>C# NuGet
 
-Ikasi NuGet.org orrialdetik C# bezero liburutegiak erabiltzen hasten. NuGet paketeari buruzko informazio gehiagorako, ikusi [Microsoft.Dynamics.CustomerInsights.Api](https://www.nuget.org/packages/Microsoft.Dynamics.CustomerInsights.Api/). Gaur egun, pakete hau netstandard2.0 eta netcoreapp2.0 markoetara bideratuta dago.
+Ikasi nola hasi C# bezero liburutegiak erabiltzen NuGet.org-en. NuGet paketeari buruzko informazio gehiago lortzeko, ikus [Microsoft.Dynamics.CustomerInsights.Api](https://www.nuget.org/packages/Microsoft.Dynamics.CustomerInsights.Api/). Gaur egun, pakete hau netstandard2.0 eta netcoreapp2.0 markoetara bideratuta dago.
 
 #### <a name="add-the-c-client-library-to-a-c-project"></a>Gehitu C # bezero liburutegia C # proiektu batera
 
-1. Visual Studio-n, ireki proiektuaren **NuGet Pakete kudeatzailea**.
+1. Visual Studio atalean, ireki **NuGet Pakete-kudeatzailea** zure proiekturako.
 
 1. Bilatu **Microsoft.Dynamics.CustomerInsights.Api**.
 
 1. Aukeratu **Instalatu** paketea proiektuari gehitzeko.
  
-   Bestela, exekutatu komando hau **NuGet Pakete kudeatzailearen kontsolan**: `Install-Package -Id Microsoft.Dynamics.CustomerInsights.Api -Source nuget.org -ProjectName <project name> [-Version <version>]`
+   Bestela, exekutatu komando hau **NuGet Pakete-kudeatzailearen kontsola** :`Install-Package -Id Microsoft.Dynamics.CustomerInsights.Api -Source nuget.org -ProjectName <project name> [-Version <version>]`
 
-   :::image type="content" source="media/visual-studio-nuget-package.gif" alt-text="Gehitu NuGet paketea Visual Studio proiektuan.":::
+   :::image type="content" source="media/visual-studio-nuget-package.gif" alt-text="Gehitu NuGet paketea Visual Studio proiektuari.":::
 
 #### <a name="use-the-c-client-library"></a>Erabili C # bezero liburutegia
 
 1. Erabili [Microsoft autentifikazio liburutegia (MSAL)](/azure/active-directory/develop/msal-overview) `AccessToken` bat lortzeko lehendik duzun [Azure aplikazioaren erregistroa](#create-a-new-app-registration-in-the-azure-portal) erabiliz.
 
-1. Token bat behar bezala autentifikatu eta eskuratu ondoren, eraiki berria edo erabili lehendik dagoen `HttpClient` **DefaultRequestHeaders "Baimena"** gehigarria **Titularra <access token>** gisa eta **Ocp-Apim-Subscription-Key** [Customer Insights inguruneko **harpidetza gakoa**](#get-started-trying-the-customer-insights-apis) gisa ezarrita.   
+1. Token bat ongi autentifikatu eta eskuratu ondoren, eraiki berria edo erabili lehendik dagoen bat`HttpClient` gehigarriarekin **DefaultRequestHeaders "Baimena"** ezarri **Eramailearen "sarbide-tokena"** eta **Ocp-Apim-Harpidetza-gakoa** ezarri [**harpidetza-gakoa** zure Customer Insights ingurunetik](#get-started-trying-the-customer-insights-apis).   
  
    Berrezarri **Baimena** goiburua egokia denean. Adibidez, token-a iraungi denean.
 

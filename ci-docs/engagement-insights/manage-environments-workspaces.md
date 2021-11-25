@@ -9,12 +9,12 @@ ms.service: customer-insights
 ms.subservice: engagement-insights
 ms.topic: how-to
 ms.manager: shellyha
-ms.openlocfilehash: 279af24358a1d6ea2b4cc75d5496042af73a7cae
-ms.sourcegitcommit: 53b133a716c73cb71e8bcbedc6273cec70ceba6c
-ms.translationtype: HT
+ms.openlocfilehash: 09cb3ddf0f8b4507b7eae6668ea3dad08cfcea29
+ms.sourcegitcommit: 31985755c7c973fb1eb540c52fd1451731d2bed2
+ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "7645431"
+ms.lasthandoff: 10/22/2021
+ms.locfileid: "7673774"
 ---
 # <a name="manage-environments-and-workspaces"></a>Kudeatu inguruneak eta laneko areak
 
@@ -24,7 +24,7 @@ ms.locfileid: "7645431"
 
 Gai honetan laneko espazioak eta inguruneak nola kudeatu eztabaidatzen da dagoeneko sortu ondoren. 
 
-- *Lan-eremua* gertaerak eta txostenak gordetzeko eta kudeatzeko gunea da. Bertan, erabiltzaileen jarduera denbora errealean ikus dezakezu. Lan-eremua sortzen duzunean, lan-eremura bidali beharreko datu mota hautatzen duzu. Gaur egun, web datuak eta mugikorretarako aplikazioak onartzen dira. Informazio gehiagorako, ikus [Sortu lan gunea eta gehitu kideak](create-workspace.md).
+- *Lan-eremua* gertaerak eta txostenak gordetzeko eta kudeatzeko gunea da. Bertan, erabiltzaileen jarduera denbora errealean ikus dezakezu. Lan-eremua sortzen duzunean, lan-eremura bidali beharreko datu mota hautatzen duzu. Gaur egun, web datuak eta mugikorretarako aplikazioak onartzen dira. Informazio gehiagorako, ikus [Sortu lan-eremu berri bat eta gehitu kideak](create-workspace.md).
 
 - *Ingurunea* zure laneko espazioak eta konexioak kudeatzeko gunea da. Informazio gehiago lortzeko, ikusi [Sortu ingurune berri bat](create-new-environment.md).
 
@@ -47,7 +47,7 @@ Ingurune batean laneko espazio anitz mantendu ditzakezu aldi berean. Zure [funzi
 
 ### <a name="delete-a-workspace"></a>Ezabatu lan-eremua
 
-Laneko area ezabatzen baduzu, betiko kenduko dira bertan dauden edukia, datuak, ezarpenak eta baimenak. Ekintza ezin da desegin.
+Lan-eremu bat behin betiko ezabatzeak bere eduki, datu, ezarpen eta baimen guztiak kentzen ditu. Ekintza ezin da desegin.
 
 1. Joan **Administratu** > **Lan-eremua** eta hautatu **Ezarpenak**.
 
@@ -71,19 +71,11 @@ Ingurumen administratzaile gisa, ingurune batera sar zaitezke ezkerreko nabigazi
 
 :::image type="content" source="media/environment-edit.png" alt-text="Ingurunearen administrazio-zentroa.":::
 
-### <a name="rename-an-environment"></a>Aldatu izena ingurune bat
+### <a name="edit-an-environment-name"></a>Editatu ingurunearen izena
 
 1. Joan **Administratu** > **Ingurunea** eta hautatu **Ezarpenak**.
 
 1. Eguneratu **Ingurunearen izena** eta hautatu **Gorde** aldaketak aplikatzeko.
-
-### <a name="manage-environment-members"></a>Kudeatu ingurunearen kideak
-
-1. Joan **Administratu** > **Ingurunea** eta hautatu **Kideak**.
-
-1. Aukeratu **Gehitu kideak** eguneratu kideak eta [rolak esleitu](user-roles.md). Gaur egun, soilik **Ingurunearen administratzailea** eskuragarri dago.
-
-1. Aukeratu **Gehitu kideak** zure ingurunean gehitzeko.
 
 ### <a name="delete-an-environment"></a>Ezabatu ingurunea
 
@@ -97,6 +89,14 @@ Ingurune administratzaileek inguruneak ezabatu ditzakete. Ingurune bat ezabatu a
 
 1. Ingurunea betiko ezabatzeko, hautatu **ezabatu**.
 
+### <a name="manage-environment-members"></a>Kudeatu ingurunearen kideak
+
+1. Joan **Administratu** > **Ingurunea** eta hautatu **Kideak**.
+
+1. Aukeratu **Gehitu kideak** eguneratu kideak eta [rolak esleitu](user-roles.md). Gaur egun, soilik **Ingurunearen administratzailea** eskuragarri dago.
+
+1. Aukeratu **Gehitu kideak** zure ingurunean gehitzeko.
+
 ## <a name="manage-connections"></a>Kudeatu konexioak
 
 Ikuslearen estatistiketarako konexioak ezartzeak bezeroen profil bateratuetan oinarritutako konpromisoen estatistiketan txostenak ikus ditzakezu. 
@@ -107,7 +107,6 @@ Informazio gehiagorako, ikusi [Sortu esteka hartzailearen eta elkarreragin xehet
 
 Zure bezeroaren datu pertsonalak babesteko, azken erabiltzailearen identifikazio datuak ezabatu edo esporta ditzakezu.
 
-Informazio gehiagorako, ikus [Ezabatu eta esportatu informazio pertsonala duten gertaeren datuak](delete-export-personal-data.md).
-
+Informazio gehiagorako, ikus [Ezabatu eta esportatu informazio pertsonala duten gertaeren datuak](../dsr-rights-requests.md#deleting-and-exporting-event-data-containing-end-user-identifiable-information).
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

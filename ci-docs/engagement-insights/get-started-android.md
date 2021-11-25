@@ -1,26 +1,26 @@
 ---
-title: Hasi Android SDK erabiltzen
-description: Ikusi Android SDK pertsonalizatzen eta exekutatzen
+title: Hasi Android SDK-rekin
+description: Ikasi Android SDK pertsonalizatu eta exekutatu
 author: britl
 ms.reviewer: mhart
 ms.author: britl
-ms.date: 09/15/2021
+ms.date: 10/19/2021
 ms.service: customer-insights
 ms.subservice: engagement-insights
 ms.topic: conceptual
 ms.manager: shellyha
-ms.openlocfilehash: a060ac60db71a7b0fb8c0d7a3b0e266004fbee6a
-ms.sourcegitcommit: fecdee73e26816c42d39d160d4d5cfb6c8a91596
-ms.translationtype: HT
+ms.openlocfilehash: c678c2dafbb77926269b5602bca363c678ec6b3f
+ms.sourcegitcommit: ef823f3d7fa28d3a90cfde9409be9465ffa2cf09
+ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "7494259"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "7655327"
 ---
-# <a name="get-started-with-the-android-sdk"></a>Hasi Android SDK erabiltzen
+# <a name="get-started-with-the-android-sdk"></a>Hasi Android SDK-arekin
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
-Tutorial honek Android aplikazioa Dynamics 365 Customer Insights parte-hartzearen xehetasunen SDK-rekin hornitzeko prozesuan lagunduko dizu. Zure atarian gertaerak ikusten bost minutu edo lehenago hasiko zara.
+Tutorial honek zure Android aplikazioa Android konpromezuaren inguruko informazio SDK batekin tresnatzeko prozesuan zehar gidatzen zaitu. Zure atarian gertaerak ikusten bost minutu edo lehenago hasiko zara.
 
 ## <a name="configuration-options"></a>Konfigurazio-aukerak
 Ondorengo konfigurazio aukerak SDKra pasa daitezke:
@@ -31,23 +31,23 @@ Ondorengo konfigurazio aukerak SDKra pasa daitezke:
 
 - Android Studio
 
-- Gutxienekoa Android API maila: 16 (Jelly Bean)
+- Gutxieneko Android API maila: 16 (Jelly Bean)
 
 - Irensteko giltza bat (ikusi jarraian nola eskuratzeko beheko argibideak)
 
 ## <a name="integrate-the-sdk-into-your-application"></a>Integratu SDK zure aplikazioan
-Hasi prozesua lan egiteko lan eremua hautatuz, Android plataforma mugikorra hautatuz eta Android SDK deskargatuz.
+Hasi prozesua lan-eremu bat hautatuz, Android plataforma mugikorra hautatuz eta Android SDK deskargatuz.
 
 - Erabili ezkerreko nabigazio paneleko laneko espazio aldatzailea zure lan eremua hautatzeko.
 
 - Ez baduzu lehendik dagoen lan-eremurik, hautatu **Laneko area berria** eta jarraitu pausoak sortzeko [laneko area berria](create-workspace.md).
 
-- Laneko area sortu ondoren, joan hona: **Administratzailea** > **Lan eremua** eta, ondoren, hautatu **Instalazio gida**. 
+- Laneko area sortu ondoren, joan hona: **Administratzailea** > **Lan eremua** eta, ondoren, hautatu **Instalazio gida**.
 
 ## <a name="configure-the-sdk"></a>Konfiguratu SDK
 
-Behin SDK deskargatuta, Android Studio-n egin dezakezu harekin lan, gertaerak gaitu eta definitzeko. Bi modu daude horretarako:
-### <a name="option-1-using-jitpack-recommended"></a>1. aukera: JitPack erabiltzea (gomendatua)
+SDK deskargatu ondoren, Android Studio-en lan egin dezakezu gertaerak gaitzeko eta definitzeko. Bi modu daude horretarako:
+### <a name="option-1-use-jitpack-recommended"></a>1. aukera: Erabili JitPack (gomendatua)
 1. Gehitu JitPack biltegia erroko `build.gradle` elementuan:
     ```gradle
     allprojects {
@@ -61,13 +61,13 @@ Behin SDK deskargatuta, Android Studio-n egin dezakezu harekin lan, gertaerak ga
 1. Gehitu mendekotasuna:
     ```gradle
     dependencies {
-        implementation 'com.github.microsoft:engagementinsights-sdk-android:1.0.0'
+        implementation 'com.github.microsoft:engagementinsights-sdk-android:v1.0.0'
         api 'com.google.code.gson:gson:2.8.1'
     }
     ```
 
-### <a name="option-2-using-download-link"></a>2. aukera: deskarga-esteka erabiltzea
-1. Deskargatu [parte-hartzearen xehetasunen Android SDK](https://download.pi.dynamics.com/sdk/EI-SDKs/ei-android-sdk.zip), eta jarri `eiandroidsdk-debug.aar` fitxategia `libs` karpetan.
+### <a name="option-2-use-download-link"></a>2. aukera: Erabili deskargatzeko esteka
+1. Deskargatu [konpromisoari buruzko xehetasunak Android SDK](https://download.pi.dynamics.com/sdk/EI-SDKs/ei-android-sdk.zip), eta jarri`eiandroidsdk-debug.aar` fitxategian`libs` karpeta.
 
 1. Ireki proiektu mailako `build.gradle` fitxategia eta gehitu kode zati hauek:
     ```gradle
@@ -83,22 +83,23 @@ Behin SDK deskargatuta, Android Studio-n egin dezakezu harekin lan, gertaerak ga
     }
     ```
 
-1. Gehitu sareko eta Interneteko baimenak `manifests` karpetako `AndroidManifest.xml` fitxategian. 
+## <a name="enable-auto-instrumentation"></a>Gaitu instrumentazio automatikoa
+
+1. Gehitu sareko eta Interneteko baimenak `manifests` karpetako `AndroidManifest.xml` fitxategian.
     ```xml
     <manifest>
         ...
         <uses-permission android:name="android.permission.INTERNET" />
         <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     ```
-    
-1. Ezarri parte-hartzearen xehetasunen SDKren konfigurazioa `AndroidManifest.xml` fitxategiaren bidez. 
 
-## <a name="enable-auto-instrumentation"></a>Gaitu instrumentazio automatikoa
+1. Ezarri parte-hartzearen xehetasunen SDKren konfigurazioa `AndroidManifest.xml` fitxategiaren bidez.
+
 1. Kopiatu XML kode zati helbidetik **Instalazio gida**. `Your-Ingestion-Key` automatikoki bete beharko litzateke.
 
    > [!NOTE]
    > Ez duzu ordezkatu behar `${applicationId}` atala. Automatikoki bete beharko litzateke.
-   
+
 
    ```xml
    <application>
@@ -116,20 +117,24 @@ Behin SDK deskargatuta, Android Studio-n egin dezakezu harekin lan, gertaerak ga
    </application>
    ```
 
-1. `View` gertaerak ikusteko eginbidearen `autoCapture` gaitzeko edo desgaitzeko, ezarri goiko autoCapture eremua `true` edo `false` gisa. Uneko `Action` ekintza eskuz gehitu behar da.
+1. `View` gertaerak ikusteko eginbidearen `autoCapture` gaitzeko edo desgaitzeko, ezarri goiko autoCapture eremua `true` edo `false` gisa. 
 
-1. (Aukerakoa) Beste konfigurazio batzuen artean, amaierako puntu biltzailearen URLa ezartzea dago. Iradokizun gako metadatuen azpian gehi daitezke `AndroidManifest.xml`:
-    ```xml
+   >[!NOTE]
+   >`Action` gertaerak eskuz gehitu behar dira.
+
+1. (Aukerakoa) Beste konfigurazio batzuen artean, amaierako puntu biltzailearen URLa ezartzea dago. Ingestio-gako metadatuen azpian gehi daitezke `AndroidManifest.xml`.
+
+   ```xml
         <meta-data
             android:name="com.microsoft.engagementinsights.endpointUrl"
             android:value="https://some-endpoint-url.com" />
-    ```
+   ```
 
 ## <a name="implement-custom-events"></a>Ezarri gertaera pertsonalizatuak
 
 Behin SDK abiarazita, gertaerekin eta euren propietateekin lan egin dezakezu `MainActivity` ingurunean.
 
-    
+
 Java:
 ```java
 Analytics analytics = new Analytics();
@@ -141,7 +146,7 @@ var analytics = Analytics()
 ```
 
 ### <a name="set-property-for-all-events-optional"></a>Ezarri gertaera guztietako propietatea (aukerakoa)
-    
+
 Java:
 ```java
 analytics.setProperty("year", 2021);

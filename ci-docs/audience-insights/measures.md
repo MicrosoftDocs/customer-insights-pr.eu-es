@@ -1,7 +1,7 @@
 ---
 title: Sortu eta kudeatu neurriak
 description: Zehaztu zure negozioaren errendimendua aztertzeko eta islatzeko neurriak.
-ms.date: 09/30/2021
+ms.date: 11/01/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -9,12 +9,12 @@ author: m-hartmann
 ms.author: wameng
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: d77d1901fee4771537554c05d3963316d0fb37cb
-ms.sourcegitcommit: 31985755c7c973fb1eb540c52fd1451731d2bed2
-ms.translationtype: HT
+ms.openlocfilehash: f6be11bd97be71bc0c3a58eaee4d8ed45f535877
+ms.sourcegitcommit: 834651b933b1e50e7557d44f926a3fb757c1f83a
+ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 10/22/2021
-ms.locfileid: "7673355"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "7732711"
 ---
 # <a name="define-and-manage-measures"></a>Neurriak zehaztu eta kudeatu
 
@@ -238,8 +238,7 @@ Aukeratu neurri bat zerrendan aukera hauetarako:
 - **Ezabatu** neurria.
 - **Aktibatu** edo **Desaktibatu**. Neurri inaktiboak ez dira freskatuko [freskatze programatuan](system.md#schedule-tab).
 
-> [!TIP]
-> Zereginen/prozesuen [sei egoera mota](system.md#status-types) daude. Gainera, prozesu gehienak [downstream-eko beste prozesu batzuen mende daude](system.md#refresh-policies). Aukeratu prozesu baten egoera, egon zen lan osoaren aurrerapen xehetasunak ikusteko. Aukeratu ondoren **Ikusi xehetasunak** lanaren zereginetako baterako, informazio osagarria aurkituko duzu: prozesatzeko denbora, azken prozesatze data eta zereginarekin lotutako akats eta abisu guztiak.
+[!INCLUDE [progress-details-include](../includes/progress-details-pane.md)]
 
 ## <a name="next-step"></a>Hurrengo urratsa
 

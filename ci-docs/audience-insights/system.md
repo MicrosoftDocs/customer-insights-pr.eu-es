@@ -1,7 +1,7 @@
 ---
 title: Sistemaren konfigurazioa hartzaileen xehetasunetan
-description: Lortu informazio gehiago sistemaren ezarpenei buruz Dynamics 365 Customer Insights-en hartzaileen xehetasunen gaitasunean.
-ms.date: 10/15/2021
+description: Lortu informazio sistemaren ezarpenei buruz Dynamics 365 Customer Insights audientziari buruzko informazio-gaitasunean.
+ms.date: 11/01/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -9,14 +9,16 @@ author: NimrodMagen
 ms.author: nimagen
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 3ce767939b8fedf676dc569ede47104ecfe930dd
-ms.sourcegitcommit: cd9f9a9d3da71c5420ef5c4c6ead91bc820d17a9
-ms.translationtype: HT
+ms.openlocfilehash: 1b790106f8b9617d0c1f244e1d15a74c7ef9a82b
+ms.sourcegitcommit: 834651b933b1e50e7557d44f926a3fb757c1f83a
+ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "7651825"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "7732344"
 ---
 # <a name="system-configuration"></a>Sistemaren konfigurazioa
+
+Ikusleen informazioetan sistemaren konfigurazioetara sartzeko, hautatu ezkerreko nabigazio-barran **Admin** > **Sistema** sistemako zereginen eta prozesuen zerrenda ikusteko.
 
 **Sistema** orriak fitxa hauek ditu:
 - [Fasea](#status-tab)
@@ -30,39 +32,55 @@ ms.locfileid: "7651825"
 
 ## <a name="status-tab"></a>Egoera fitxa
 
-**Egoeraren fitxa** datuen horniketa, datuen esportazioaren eta produktu garrantzitsuen beste hainbat prozesuren jarraipena egiteko aukera ematen dizu. Berrikusi fitxa honetako informazioa prozesu aktiboen osotasuna ziurtatzeko.
+The **Egoera fitxa** zereginen, datuen sarreraren, datuen esportazioen eta beste hainbat produktu-prozesu garrantzitsuen jarraipena egiteko aukera ematen du. Berrikusi fitxa honetako informazioa zure zeregin eta prozesu aktiboen osotasuna ziurtatzeko.
 
-Fitxa honek hainbat prozesurako egoera eta prozesatzeko informazioa duten taulak biltzen ditu. Taula bakoitzak jarraipena egiten du **izena** zeregina eta dagokion entitatea da **Egoera** bere korrika berriena eta noiz izan zen **Azken eguneraketa**.
+Fitxa honek hainbat prozesurako egoera eta prozesatzeko informazioa duten taulak biltzen ditu. Taula bakoitzak jarraipena egiten du **izena** zeregina eta dagokion entitatea da **Egoera** bere korrika berriena eta noiz izan zen **Azken eguneraketa**. Azken exekuzioen xehetasunak ikus ditzakezu ataza edo prozesuaren izena hautatuta. 
 
-Ikusi xehetasunak zereginaren azken hainbat exekutatzea bere izena hautatuz.
+Hautatu ataza edo prozesuaren ondoan dagoen egoera **Egoera** zutabea irekitzeko **Aurrerapen xehetasunak** panela.
 
-### <a name="status-types"></a>Egoera motak
+   :::image type="content" source="media/system-progress-details.png" alt-text="Sistemaren aurrerapenaren xehetasunen panela":::
 
-Zereginen sei egoera mota daude. Hurrengo egoera motak ere erakusten dira *Bat egin*, *Konbinatu*, *Datu iturriak*, *segmentu*, *Neurriak*, *aberastea*, *jarduerak*, eta *iragarpenak* orriak:
+### <a name="status-definitions"></a>Egoeraren definizioak
 
-- **Izapidea:** Ataza martxan dago. Egoera alda daiteke arrakasta edo porrota.
-- **Arrakastatsua:** Ataza ondo burutu da.
-- **Saltatutakoak:** Ataza saltatu egin zen. Zeregin hau kontrolatzen duen downstream-eko prozesu bat edo gehiago huts egin edo saihestu egiten dira.
-- **Porrota:** Zereginaren prozesatzeak huts egin du.
-- **Bertan behera:** Erabiltzaileak prozesua bertan behera utzi zuen amaitu aurretik.
-- **Ilaran:** prozesua ilaran dago eta goranzko zeregin guztiak amaitutakoan hasiko da. Informazio gehiago lortzeko, irakurri [Freskatu politikak](#refresh-policies).
+Sistemak egoera hauek erabiltzen ditu zereginetarako eta prozesuetarako:
 
-### <a name="refresh-policies"></a>Eguneratu politikak
+|Fasea  |Definizioa  |
+|---------|---------|
+|Utzi da |Prozesatzea amaitu baino lehen bertan behera utzi du erabiltzaileak.   |
+|Huts eginda   |Datuen iradokizunak akatsak izan ditu.         |
+|Huts egin du  |Prozesatzeak huts egin du.  |
+|Hasi gabe   |Datu-iturburuak oraindik ez du daturik sartu edo oraindik zirriborro moduan daude.         |
+|Prozesatze  |Zeregin edo prozesua abian da.  |
+|Freskatzen    |Datuen horniketa martxan da. Eragiketa hau bertan behera utzi dezakezu **Utzi freskagarria** herrian **Ekintzak** zutabea. datu-iturburu-en freskagarria gelditzeak azken freskatze egoeran itzuliko du.       |
+|Saltatuta  |Zeregin edo prozesua saltatu egin da. Zeregin hau kontrolatzen duen downstream-eko prozesu bat edo gehiago huts egin edo saihestu egiten dira.|
+|Osatuta  |Zeregin edo prozesua behar bezala burutu da. Datu-iturburuetarako, datuak behar bezala irentsi direla adierazten du denboraren bat aipatzen bada **Freskatua** zutabea.|
+|Ilaran | Prozesatzea ilaran dago eta gorako zeregin eta prozesu guztiak amaitutakoan hasiko da. Informazio gehiagorako, ikus [Freskatzeko prozesuak](#refresh-processes).|
 
-Zerrenda honek prozesu nagusietako freskatze-gidalerroak erakusten ditu:
+### <a name="refresh-processes"></a>Freskatzeko prozesuak
 
-- **Datu iturriak:** - (r) en arabera [konfiguratutako egutegia](#schedule-tab). Ez dago beste prozesurik. Partida prozesu honen arrakastaren araberakoa da.
-- **Bat-etortzea:** - (r) en arabera [konfiguratutako egutegia](#schedule-tab). Partiduen definizioan erabilitako datu-iturrien prozesamenduaren araberakoa da. Konbinatu Partida prozesu honen arrakastaren araberakoa da.
-- **Konbinatu:** - (r) en arabera [konfiguratutako egutegia](#schedule-tab). Bat-etortzearen prozesuaren osatzearen araberakoa da. Segmentuak, neurriak, aberastea, bilaketa, jarduerak, iragarpenak eta datuen prestaketa prozesu honen arrakastaren araberakoak dira.
-- **segmentuak**: Eskuz exekutatzen da (denbora bakarreko freskapena) eta arabera [konfiguratutako egutegia](#schedule-tab). Mergeren araberakoa da. Ikuspegiak prozesatzearen araberakoak dira.
-- **Neurriak**: Eskuz exekutatzen da (denbora bakarreko freskapena) eta arabera [konfiguratutako egutegia](#schedule-tab). Mergeren araberakoa da.
-- **Jarduerak**: Eskuz exekutatzen da (denbora bakarreko freskapena) eta arabera [konfiguratutako egutegia](#schedule-tab). Mergeren araberakoa da.
-- **Aberastea**: Eskuz exekutatzen da (denbora bakarreko freskapena) eta arabera [konfiguratutako egutegia](#schedule-tab). Mergeren araberakoa da.
-- **Bilatu**: Eskuz exekutatzen da (denbora bakarreko freskapena) eta arabera [konfiguratutako egutegia](#schedule-tab). Mergeren araberakoa da.
-- **Datuen prestaketa**: - (r) en arabera [konfiguratutako egutegia](#schedule-tab). Mergeren araberakoa da.
-- **Xehetasunak**: Eskuz exekutatzen da (denbora bakarreko freskapena) eta arabera [konfiguratutako egutegia](#schedule-tab). Segmentuen araberakoa da.
+Zereginen eta prozesuen freskatzearen arabera exekutatzen da [konfiguratutako ordutegia](#schedule-tab). 
 
-Aukeratu zeregin baten egoera, egon zen lan osoaren aurrerapen xehetasunak ikusteko. Goiko freskatze politikek a-ri aurre egin dezaketena ulertzen lagun dezakete **saltatu** edo **Ilaran** Zeregin.
+|Prozesua  |Deskribapenak  |
+|---------|---------|
+|Jarduera  |Eskuz exekutatzen da (denbora bakarreko freskagarria). Batze-prozesuaren araberakoa da. Ikuspegiak prozesatzearen araberakoak dira.|
+|Analisien estekatzea |Eskuz exekutatzen da (denbora bakarreko freskagarria). Segmentuen araberakoa da.  |
+|Analisien prestaketa |Eskuz exekutatzen da (denbora bakarreko freskagarria). Segmentuen araberakoa da.  |
+|Datu-prestaketa   |Batzearen araberakoa da.   |
+|Datu-iturburuak   |Ez dago beste prozesurik. Partida prozesu honen arrakastaren araberakoa da.  |
+|Aberasteak   |Eskuz exekutatzen da (denbora bakarreko freskagarria). Batze-prozesuaren araberakoa da. |
+|Esportazio-helmugak |Eskuz exekutatzen da (denbora bakarreko freskagarria). Segmentuen araberakoa da.  |
+|Xehetasunak |Eskuz exekutatzen da (denbora bakarreko freskagarria). Segmentuen araberakoa da.  |
+|Adimena   |Batzearen araberakoa da.   |
+|Lotu |Partiduen definizioan erabilitako datu-iturrien prozesamenduaren araberakoa da.      |
+|Neurketak  |Eskuz exekutatzen da (denbora bakarreko freskagarria). Batze-prozesuaren araberakoa da.  |
+|Konbinazioa   |Bat-etortzearen prozesuaren osatzearen araberakoa da. Segmentuak, neurriak, aberastea, bilaketa, jarduerak, iragarpenak eta datuen prestaketa prozesu honen arrakastaren araberakoak dira.   |
+|Profilak   |Eskuz exekutatzen da (denbora bakarreko freskagarria). Batze-prozesuaren araberakoa da. |
+|Bilaketa   |Eskuz exekutatzen da (denbora bakarreko freskagarria). Batze-prozesuaren araberakoa da. |
+|Segmentuak  |Eskuz exekutatzen da (denbora bakarreko freskagarria). Batze-prozesuaren araberakoa da. Ikuspegiak prozesatzearen araberakoak dira.|
+|Sistema   |Bat-etortzearen prozesuaren osatzearen araberakoa da. Segmentuak, neurriak, aberastea, bilaketa, jarduerak, iragarpenak eta datuen prestaketa prozesu honen arrakastaren araberakoak dira.   |
+|Erabiltzailea  |Eskuz exekutatzen da (denbora bakarreko freskagarria). Entitateen araberakoa da.  |
+
+Hautatu prozesu baten egoera lan guztiaren aurrerapenaren xehetasunak ikusteko. Goiko freskatze prozesuek a konpontzeko zer egin dezakezun ulertzen lagun dezakete **Saltatu** edo **Ilaran jarrita** zeregina edo prozesua.
 
 ## <a name="schedule-tab"></a>Antolaketa fitxa
 
@@ -86,7 +104,7 @@ Erabili **Antolaketa** fitxa [sartutako datu-iturburuen](data-sources.md) freska
 
 Hizkuntza eta herrialde/eskualde formatua alda ditzakezu **Orokorra** fitxan.
 
-Customer Insights [hainbat hizkuntza onartzen ditu](/dynamics365/get-started/availability). Aplikazioak zure hizkuntza-lehentasuna erabiliko du menua, etiketako testua eta sistemaren mezuak bezalako elementuak hobetsitako hizkuntzan erakusteko.
+Bezeroen ikuspegiak [hizkuntza asko onartzen ditu](/dynamics365/get-started/availability). Aplikazioak zure hizkuntza-lehentasuna erabiliko du menua, etiketako testua eta sistemaren mezuak bezalako elementuak hobetsitako hizkuntzan erakusteko.
 
 Eskuz sartu dituzun inportatutako datuak eta informazioa ez dira itzuliko.
 
@@ -109,7 +127,7 @@ Bilatu denbora errealeko APIaren erabilerari buruzko xehetasunak eta ikusi denbo
 
 -  **Eragiketak**: taula bat erabilgarri dauden API eragiketa bakoitzerako errenkadekin eta eragiketen erabilerari buruzko xehetasunak. Joan nahi duzun eragiketaren izena hauta dezakezu [APIaren erreferentzia](https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights&operation=Get-all-instances).
 
-   Erabiltzen dituzten eragiketak [denbora errealeko datuak hornitzea](real-time-data-ingestion.md) eduki binokular sinboloa duen botoia denbora errealeko APIaren erabilera ikusteko. Aukeratu botoia APIaren denbora errealeko uneko inguruneko erabilerari buruzko xehetasunak dituen alboko panela irekitzeko.   
+   Erabiltzen duten eragiketak [denbora errealeko datuak sartzea](real-time-data-ingestion.md) ikur prismatiko bat duen botoi bat edukitzea denbora errealeko APIaren erabilera ikusteko. Aukeratu botoia APIaren denbora errealeko uneko inguruneko erabilerari buruzko xehetasunak dituen alboko panela irekitzeko.   
    Erabili **Taldekatu honen arabera** koadroan **APIaren erabilera denbora errealean** panelean denbora errealeko elkarrekintzak nola aurkeztu behar diren aukeratzeko. Datuak API metodoaren, entitatearen izen kualifikatua (irenstutako entitatea), sortutako (gertaeraren iturria), emaitza (arrakasta edo hutsegitea) edo errore kodeak arabera talka ditzakezu. Datuak historia-taula gisa eta taula gisa eskuragarri daude.
 
 ## <a name="security-tab"></a>Segurtasun-fitxa

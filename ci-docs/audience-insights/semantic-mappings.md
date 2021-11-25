@@ -1,7 +1,7 @@
 ---
 title: Esleipen semantikoak (aurreargitalpena)
 description: Kartografia semantikoen ikuspegi orokorra eta nola erabili.
-ms.date: 09/28/2021
+ms.date: 11/01/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.reviewer: mhart
@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: CadeSanthaMSFT
 ms.author: cadesantha
 manager: shellyha
-ms.openlocfilehash: b0884b8b6a2c5abe4b3967d1b57d11a3a6d65c5b
-ms.sourcegitcommit: 5d82e5b808517e0e99fdfdd7e4a4422a5b8ebd5c
-ms.translationtype: HT
+ms.openlocfilehash: f23c622572ff9f967eca07de7898419d1ffc18b0
+ms.sourcegitcommit: 834651b933b1e50e7557d44f926a3fb757c1f83a
+ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 10/11/2021
-ms.locfileid: "7622920"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "7731928"
 ---
 # <a name="semantic-mappings"></a>Esleipen semantikoa
 
@@ -75,8 +75,7 @@ Kartografia semantikoek jarduerarik gabeko datuak aurrez definitutako eskemetara
 
 1. Kartografia semantiko bat aurrerago exekutatzeko, hautatu mapaketa semantikoa eta hautatu **Freskatu**.
 
-> [!TIP]
-> Zereginen/prozesuen [sei egoera mota](system.md#status-types) daude. Gainera, prozesu gehienak [downstream-eko beste prozesu batzuen mende daude](system.md#refresh-policies). Aukeratu prozesu baten egoera, egon zen lan osoaren aurrerapen xehetasunak ikusteko. Aukeratu ondoren **Ikusi xehetasunak** lanaren zereginetako baterako, informazio osagarria aurkituko duzu: prozesatzeko denbora, azken prozesatze data eta zereginarekin lotutako akats eta abisu guztiak.
+[!INCLUDE [progress-details-include](../includes/progress-details-pane.md)]
 
 ## <a name="manage-existing-semantic-mappings"></a>Kudeatu lehendik dauden mapaketa semantikoak
 
@@ -91,5 +90,6 @@ Aktibatuta **Datuak** > **Kartografia semantikoak (aurrebista)**, gordetako mapa
 - **Aldatu izena**: Elkarrizketa-koadro bat irekitzen du eta bertan beste izen bat sar dezakezu hautatutako mapaketa semantikorako. Aldaketak aplikatzeko, hautatu **Gorde**.
 
 - **Ezabatu**: Elkarrizketa-koadro bat irekitzen du hautatutako mapaketa semantikoa ezabatzen dela berresteko. Kartografia semantiko bat baino gehiago aldi berean ezaba ditzakezu mapaketa semantikoak eta ezabatzeko ikonoa hautatuta. Hautatu **Ezabatu** ezabatzea baieztatzeko.
+
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

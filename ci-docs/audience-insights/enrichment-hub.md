@@ -1,7 +1,7 @@
 ---
 title: Aberastu bezeroen profil bateratuak
 description: Erabili gaitasunak zure bezeroaren datuak aberasteko.
-ms.date: 09/30/2021
+ms.date: 11/05/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -10,12 +10,12 @@ author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
 ms.custom: intro-internal
-ms.openlocfilehash: bc0128c222c032e8cfe35e6f3baa0ea722bce7cb
-ms.sourcegitcommit: 31985755c7c973fb1eb540c52fd1451731d2bed2
-ms.translationtype: HT
+ms.openlocfilehash: de27da92118b83dafa0742b6a1e10ee315750c61
+ms.sourcegitcommit: 6efcba688d1db1a5d6343c229f292a26c48fc007
+ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 10/22/2021
-ms.locfileid: "7672984"
+ms.lasthandoff: 11/05/2021
+ms.locfileid: "7770102"
 ---
 # <a name="enrichment-for-customer-profiles-preview"></a>Bezeroen profiletarako aberastea (aurrebista)
 
@@ -34,7 +34,7 @@ Gainean **Ezagutu** fitxa, onartutako aberasteko aukera guztiak aurkituko dituzu
 - [Markak](enrichment-microsoft.md) hornituta Microsoft-en arabera
 - [Interesak](enrichment-microsoft.md) hornituta Microsoft-en arabera
 - [Helbide hobetuak](enrichment-enhanced-addresses.md) Microsoft-ek eskainita 
-- Experian-ek eskainitako [datu demografikoak](enrichment-experian.md)
+- [Demografiak](enrichment-experian.md) hornituta daude Experian-ek
 - [Datu pertsonalizatuak](enrichment-SFTP-custom-import.md) fitxategiak modu seguruan transferitzeko protokoloaren (SFTP) bidez 
 - [Azure Maps](enrichment-azure-maps.md), Microsoft-ek eskainia
 
@@ -42,6 +42,7 @@ Gainean **Ezagutu** fitxa, onartutako aberasteko aukera guztiak aurkituko dituzu
 
 - [Enpresaren datuak](enrichment-leadspace.md) , Leadspace-k emanak
 - [Helbide hobetuak](enrichment-enhanced-addresses.md) Microsoft-ek eskainita 
+- [Enpresaren datu hobetuak](enrichment-enhanced-company-data.md) Microsoft-ek emandakoa
 - [Kokapen datuak](enrichment-here.md) HERE Technologies-ek emanak 
 - [Datu pertsonalizatuak](enrichment-SFTP-custom-import.md) fitxategiak modu seguruan transferitzeko protokoloaren (SFTP) bidez 
 - [Azure Maps](enrichment-azure-maps.md), Microsoft-ek eskainia
@@ -76,7 +77,7 @@ Aberastu nahi den entitatea aberasteko konfigurazioan zehazten da eta horrek zur
 
 ## <a name="see-the-progress-of-the-enrichment-process"></a>Ikusi aberaste-prozesuaren garapena
 
-Aberaste-prozesuaren xehetasunak aurki ditzakezu, bere egoera eta arazo posibleak barne, freskatu bitartean edo freskatu ondoren. Ulertu zein prozesu sartzen diren aberastea freskatzeko prozesuan eta zenbat denbora behar izan den prozesuak exekutatzeko. Aberaste-egoera Experian, Leadspace, HERE Technologies, SFTP Import, eta Azure Maps-ek onartzen dute.
+Aberaste-prozesuaren xehetasunak aurki ditzakezu, bere egoera eta arazo posibleak barne, freskatu bitartean edo freskatu ondoren. Ulertu zein prozesu sartzen diren aberastea freskatzeko prozesuan eta zenbat denbora behar izan den prozesuak exekutatzeko. Aberaste-egoera Experian, Leadspace, HERE Technologies, SFTP Import eta Azure Maps-en onartzen da.
 
 Aberastearen egoera ikusteko
 

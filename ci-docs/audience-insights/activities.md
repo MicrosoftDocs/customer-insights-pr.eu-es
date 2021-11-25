@@ -1,7 +1,7 @@
 ---
 title: Bezeroen jarduerak
 description: Definitu bezeroen jarduerak eta ikusi denbora-lerroan bezeroen profiletan.
-ms.date: 09/27/2021
+ms.date: 11/01/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.reviewer: mhart
@@ -9,16 +9,16 @@ ms.topic: conceptual
 author: CadeSanthaMSFT
 ms.author: cadesantha
 manager: shellyha
-ms.openlocfilehash: bcb8d42963719f5d225556c31b3fc06db8573e5b
-ms.sourcegitcommit: 31985755c7c973fb1eb540c52fd1451731d2bed2
-ms.translationtype: HT
+ms.openlocfilehash: c99ec2e7d5e4bf32a509bbe4c0c53999129b2305
+ms.sourcegitcommit: 834651b933b1e50e7557d44f926a3fb757c1f83a
+ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 10/22/2021
-ms.locfileid: "7673122"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "7732423"
 ---
 # <a name="customer-activities"></a>Bezeroen jarduerak
 
-Konbinatu bezeroaren jarduerak [hainbat datu iturri](data-sources.md) hurrengoan Dynamics 365 Customer Insights jarduerak kronologikoki zerrendatuko dituen kronograma sortzeko. Sartu kronograma Dynamics 365 aplikazioetan [Bezero txartelaren gehigarria](customer-card-add-in.md) irtenbide batean edo Power BI arbela.
+Konbinatu bezeroen jarduerak [hainbat datu-iturri](data-sources.md) Dynamics 365 Customer Insights-n jarduerak kronologikoki zerrendatzen dituen denbora-lerroa sortzeko. Sartu denbora-lerroa Dynamics 365 aplikazioetan [Bezero Txartelaren gehigarria](customer-card-add-in.md) irtenbidea, edo Power BI panel batean.
 
 ## <a name="define-an-activity"></a>Definitu jarduera
 
@@ -82,9 +82,7 @@ Entitate batek gutxienez motako atributu bat izan behar du **Data** bezeroaren d
 
 1. Gainean **Jarduerak** orrialdea, hautatu **Korrika egin** jarduera prozesatzeko. 
 
-> [!TIP]
-> Zereginen/prozesuen [sei egoera mota](system.md#status-types) daude. Gainera, prozesu gehienak [downstream-eko beste prozesu batzuen mende daude](system.md#refresh-policies). Aukeratu prozesu baten egoera, egon zen lan osoaren aurrerapen xehetasunak ikusteko. Aukeratu ondoren **Ikusi xehetasunak** lanaren zereginetako baterako, informazio osagarria aurkituko duzu: prozesatzeko denbora, azken prozesatze data eta zereginarekin lotutako akats eta abisu guztiak.
-
+[!INCLUDE [progress-details-include](../includes/progress-details-pane.md)]
 
 ## <a name="manage-existing-activities"></a>Kudeatu lehendik dauden jarduerak
 

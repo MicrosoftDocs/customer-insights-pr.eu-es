@@ -1,7 +1,7 @@
 ---
 title: Konbinatu entitateak datuen bateratzean
 description: Konbinatu entitateak bezeroen profil bateratuak sortzeko.
-ms.date: 10/10/2021
+ms.date: 11/01/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: tutorial
@@ -11,12 +11,12 @@ ms.reviewer: mhart
 manager: shellyha
 searchScope:
 - ci-merge
-ms.openlocfilehash: 6b3002b21ea043315e50724ec103aef8a3ced98e
-ms.sourcegitcommit: 37182127b93b90846cc91fbeb26dd7a18cf5610a
-ms.translationtype: HT
+ms.openlocfilehash: c218f9c1a1b7711ee48419470bf6c352450ffc0c
+ms.sourcegitcommit: 834651b933b1e50e7557d44f926a3fb757c1f83a
+ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "7648239"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "7732757"
 ---
 # <a name="merge-entities"></a>Konbinatu entitateak
 
@@ -187,10 +187,9 @@ Aukeratu **Exekutatu, konbinatu eta erraztu prozesuak** sistema zure aldaketekin
 
 Aldaketa gehiago egiteko eta urratsa berriro exekutatzeko, abian den bateratze bat bertan behera utzi dezakezu. Aukeratu **Freskagarria ...** eta hautatu **Lana bertan behera utzi** agertzen den alboko panelean.
 
-> [!TIP]
-> Bateratze prozesua exekutatu ondoren, hautatu prozesuaren egoera irekitzeko **Zereginaren xehetasunak** panela. Ikuspegi orokorra ematen du prozesatzeko denborari, azken prozesatze datari eta zereginarekin lotutako akats eta abisu guztiei buruz. Aukeratu **Ikusi xehetasunak** bat-etortze prozesuan zein entitatek parte hartu zuten ikusteko, gatazkaren konponbideak arrakasta izan zuen eta eguneratzeak arrakastaz argitaratu ziren.  
-> Zereginen/prozesuen [sei egoera mota](system.md#status-types) daude. Gainera, prozesu gehienak [downstream-eko beste prozesu batzuen mende daude](system.md#refresh-policies).  
-> :::image type="content" source="media/process-detail-path.png" alt-text="Lortu xehetasunak bide-izenari buruz zereginaren egoeraren estekatik prozesuaren xehetasunak lortzeko.":::
+[!INCLUDE [progress-details-include](../includes/progress-details-pane.md)]
+
+:::image type="content" source="media/process-detail-path.png" alt-text="Lortu xehetasunak bide-izenari buruz zereginaren egoeraren estekatik prozesuaren xehetasunak lortzeko.":::
 
 ## <a name="next-step"></a>Hurrengo urratsa
 

@@ -1,5 +1,5 @@
 ---
-title: Zerbitzuaren mugak Dynamics 365 Customer Insights
+title: Zerbitzu-mugak Dynamics 365 Customer Insights-n
 description: Mugak eta murrizketak ulertu.
 ms.date: 09/03/2021
 ms.service: customer-insights
@@ -9,12 +9,12 @@ author: JimsonChalissery
 ms.author: jimsonc
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: eba7871faf304d5945191b5b9bc215243b4f8a05
-ms.sourcegitcommit: 5704002484cdf85ebbcf4e7e4fd12470fd8e259f
-ms.translationtype: HT
+ms.openlocfilehash: eb25e050b8aa768e6e1d8d4c5adce6095cccc346
+ms.sourcegitcommit: 31a9b531dacd3a6465b3030c704ff5c085b7e122
+ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "7483639"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7791968"
 ---
 # <a name="service-limits-in-customer-insights-capabilities"></a>Zerbiztuaren mugak Customer Insights-en gaitasunetan
 
@@ -22,11 +22,11 @@ Artikulu honek Customer Insights zerbitzuaren muga integratuak deskribatzen ditu
 
 ## <a name="audience-insights"></a>Hartzaileen xehetasunak
 
-### <a name="service-limits-in-dynamics-365-customer-insights-audience-insights-capability"></a>Zerbitzuaren mugak Dynamics 365 Customer Insights hartzaileen xehetasunen gaitasunean
+### <a name="service-limits-in-dynamics-365-customer-insights-audience-insights-capability"></a>Zerbitzu-mugak Dynamics 365 Customer Insights audientziari buruzko informazio-gaitasunean
 
 | Area  | Mugak  | Oharrak |
 |-------------|---------------------------------------------------------------------|---------------------------------------------------------------------|
-| Segmentuak eta neurriak | 100 segmentu edo neurri. | [Segmentu](audience-insights/segments.md) eta [neurri](audience-insights/measures.md) aktiboen guztizko kopurua; guztira ezin dira 100 baino gehiago izan.  |
+| Segmentuak, neurriak eta iragarpenak | 300  | Guztizko kopurua [segmentuak](audience-insights/segments.md),[neurriak](audience-insights/measures.md), eta [iragarpenak](audience-insights/predictions.md) bateratuta, ezin dira 300 baino gehiago.  |
 | Erlazioak | 20 sakontasun maila entitate bideetako erlazioetan. | Sortzerakoan [segmentuak](audience-insights/segments.md) edo [neurriak](audience-insights/measures.md) eraikitzailearen interfazea erabiliz, entitate bide-izenek 20 harreman salto izan ditzakete hasierako entitatearen eta xede entitatearen artean.  |
 
 

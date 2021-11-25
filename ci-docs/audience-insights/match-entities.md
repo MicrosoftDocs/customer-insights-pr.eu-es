@@ -1,7 +1,7 @@
 ---
 title: Lotu entitateak datuak bateratzeko
 description: Lotu entitateak datu multzoak konbinatzeko eta bezeroen profil bateratuak sortzeko.
-ms.date: 02/23/2021
+ms.date: 11/01/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: tutorial
@@ -11,12 +11,12 @@ ms.reviewer: mhart
 manager: shellyha
 searchScope:
 - ci-match
-ms.openlocfilehash: 67e17495fa6da1cfac7ee4ee165e798364f6cb27
-ms.sourcegitcommit: 37182127b93b90846cc91fbeb26dd7a18cf5610a
+ms.openlocfilehash: cabeddbc9d485108d166e6355175a01721b75a55
+ms.sourcegitcommit: 834651b933b1e50e7557d44f926a3fb757c1f83a
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "7648193"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "7732619"
 ---
 # <a name="match-entities"></a>Batu entitateak
 
@@ -180,10 +180,7 @@ Joan **Datuak** > **Bateratu** > **Bat egin** eta hautatu **Korrika egin** proze
 
 Exekuzio arrakastatsuaren emaitza, bezeroaren profileko entitate bateratua, aurkituko duzu **Entitateak** orrialdea. Zure bezero bateratutako entitateari deitzen zaio **Bezeroak** hurrengoan **Profilak** atala. Partida arrakastatsuaren lehenengo lasterketak bateratua sortzen du *Bezeroa* entitatea. Ondorengo partida guztiekin entitate hori zabaltzen da.
 
-> [!TIP]
-> Bat-etortze prozesua exekutatu ondoren, hautatu prozesuaren egoera irekitzeko **Zereginaren xehetasunak** panela. Ikuspegi orokorra ematen du prozesatzeko denborari, azken prozesatze datari eta zereginarekin lotutako akats eta abisu guztiei buruz. Aukeratu **Ikusi xehetasunak** bat-etortze prozesuan zein entitatek parte hartu zuten ikusteko, zein arau aplikatu ziren eta eguneratzeak arrakastaz argitaratu ziren.  
-> Zereginen/prozesuen [sei egoera mota](system.md#status-types) daude. Gainera, prozesu gehienak [downstream-eko beste prozesu batzuen mende daude](system.md#refresh-policies).  
-> :::image type="content" source="media/process-detail-path.png" alt-text="Lortu xehetasunak bide-izenari buruz zereginaren egoeraren estekatik prozesuaren xehetasunak lortzeko.":::
+[!INCLUDE [progress-details-include](../includes/progress-details-pane.md)]
 
 ## <a name="review-and-validate-your-matches"></a>Berrikusi eta balioztatu partiduak
 

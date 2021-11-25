@@ -1,7 +1,7 @@
 ---
 title: Sartu datuak Power Query konektore baten bidez
 description: Konektoreak datu-iturburuetarako oinarrituz Power Query-n.
-ms.date: 09/29/2020
+ms.date: 11/01/2020
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,16 +9,16 @@ ms.topic: how-to
 author: adkuppa
 ms.author: adkuppa
 manager: shellyha
-ms.openlocfilehash: ab6edc3f33ebacb81f55c0882a78c5827b4384ed
-ms.sourcegitcommit: 1565f4f7b4e131ede6ae089c5d21a79b02bba645
-ms.translationtype: HT
+ms.openlocfilehash: 5d54d33c235e646644e8874e5b0c28898dcff11a
+ms.sourcegitcommit: 834651b933b1e50e7557d44f926a3fb757c1f83a
+ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 10/14/2021
-ms.locfileid: "7643479"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "7732203"
 ---
 # <a name="connect-to-a-power-query-data-source"></a>Konektatu Power Query datu-iturburu batera
 
-Power Query-ek konektore multzo zabala eskaintzen du datuak irensteko. Konektore hauetako gehienek onartzen dute Dynamics 365 Customer Insights. Power Query konektoreetan oinarritutako datu iturriak gehitzeak hurrengo atalean azaldutako urratsak jarraitzen ditu. Hala ere, erabiltzen duzun konektorearen arabera, informazio desberdina behar da. Informazio gehiagorako, ikusi banakako konektoreei buruzko dokumentazioa [Power Query konektore erreferentzia](/power-query/connectors/).
+Power Query-ek konektore multzo zabala eskaintzen du datuak irensteko. Konektore horietako gehienak Dynamics 365 Customer Insights-k onartzen ditu. Power Query konektoreetan oinarritutako datu iturriak gehitzeak hurrengo atalean azaldutako urratsak jarraitzen ditu. Hala ere, erabiltzen duzun konektorearen arabera, informazio desberdina behar da. Informazio gehiagorako, ikusi banakako konektoreei buruzko dokumentazioa [Power Query konektore erreferentzia](/power-query/connectors/).
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWN6EK]
 
@@ -79,6 +79,8 @@ Konektoreak kontrol-markarekin **Customer Insights (datu-fluxuak)** zutabea esku
    > [!div class="mx-imgBorder"]
    > ![Editatu aukera.](media/edit-option-data-sources.png "Editatu aukera")
 
+   [!INCLUDE [progress-details-include](../includes/progress-details-pane.md)]
+   
 3. Aplikatu aldaketak eta eraldaketak **Power Query - Editatu kontsultak** elkarrizketa - koadroan deskribatutako moduan [Sortu datu-iturburu berria](#create-a-new-data-source) atala.
 
 4. Aukeratu **Gorde** Power Query-en aldaketak gordetzeko aldaketak egin ondoren.

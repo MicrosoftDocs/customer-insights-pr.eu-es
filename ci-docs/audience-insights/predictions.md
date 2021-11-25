@@ -1,7 +1,7 @@
 ---
 title: Osatu datu partzialak iragarpenak erabiliz
 description: Erabili iragarpenak bezeroen datu osatugabeak betetzeko.
-ms.date: 05/05/2020
+ms.date: 11/01/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
@@ -9,31 +9,32 @@ author: zacookmsft
 ms.author: zacook
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 7ca42334420a27a8739d7c28bb72606c3ed91f3c
-ms.sourcegitcommit: 53b133a716c73cb71e8bcbedc6273cec70ceba6c
-ms.translationtype: HT
+ms.openlocfilehash: 3100acf383d85c00a6ff0a8ebc54e038bd813427
+ms.sourcegitcommit: 834651b933b1e50e7557d44f926a3fb757c1f83a
+ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "7645019"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "7732345"
 ---
-# <a name="complete-your-partial-data-with-predictions"></a>Osatu zure datu partzialak iragarpenekin
+# <a name="complete-your-partial-data-with-predictions-deprecated"></a>Osatu zure datu partzialak iragarpenekin (zaharkituta)
 
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
+> [!IMPORTANT]
+> Ezaugarri hau izango da **zaharkitua** bezala **2021eko azaroaren 5a**. Uneko inplementazioek funtzionatzen jarraituko dute eginbidea kendu arte, baina ezin izango duzu integrazio berririk sortu beheko argibideak erabiliz.
 
 Aurreikuspenek erraz iragarritako balioak sor ditzakezu bezeroaren ulermena hobetzeko. **Adimena** > **Iragarpenak** orrian, **Nire iragarpenak** atala hauta dezakezu hartzaileei buruzko xehetasunen beste atal batzuetan konfiguratu dituzun iragarpenak ikusteko eta pertsonalizatzeko aukera ematen dizu.
 
 > [!NOTE]
 > Ezin duzu funtzio hau erabili zure inguruak Azure Data Lake Gen 2 biltegia erabiltzen badu.
 >
-> Aurreikuspenen funtzionalitateak bitarteko automatizatuak erabiltzen ditu datuak ebaluatzeko eta datu horietan oinarritutako iragarpenak egiteko, eta, beraz, profilak egiteko metodo gisa erabiltzeko gaitasuna du, termino hori Datuak Babesteko Araudi Orokorrak ("DBAO") definitzen baitu. Bezeroak funtzio hau erabiltzeko datuak prozesatzeko DBAO edo beste lege edo arau batzuen menpe egon daiteke. Zu zara Dynamics 365 Customer Insights-en erabileraren arduradun, iragarpenez aplikagarriak diren lege eta arau guztiak betetzeaz barne, hala nola pribatutasunarekin, datu pertsonalekin, datu biometrikoekin, datuen babesarekin eta komunikazioen konfidentzialtasunarekin lotutako legeak.
+> Aurreikuspenen funtzionalitateak bitarteko automatizatuak erabiltzen ditu datuak ebaluatzeko eta datu horietan oinarritutako iragarpenak egiteko, eta, beraz, profilak egiteko metodo gisa erabiltzeko gaitasuna du, termino hori Datuak Babesteko Araudi Orokorrak ("DBAO") definitzen baitu. Bezeroak funtzio hau erabiltzeko datuak prozesatzeko DBAO edo beste lege edo arau batzuen menpe egon daiteke. Zure Dynamics 365 Customer Insights-en erabilerak, iragarpenak barne, aplikagarriak diren lege eta araudi guztiak betetzen dituela ziurtatzeko ardura duzu, pribatutasunari, datu pertsonalei, datu biometrikoei, datuen babesari eta komunikazioen konfidentzialtasunari lotutako legeak barne.
 
 ## <a name="prerequisites"></a>Aurrebaldintzak
 
 Zure erakundeak iragarpenen funtzioa erabili ahal izateko, ziurtatu baldintza hauek bete aurretik:
 
-1. Zure erakundeak instantzia bat du [Microsoft Dataverse-n konfiguratuta](/ai-builder/build-model#prerequisites) eta Customer Insights-en erakunde berean dago.
+1. Zure erakundeak instantzia bat dauka [ezarri Microsoft Dataverse-en](/ai-builder/build-model#prerequisites) eta Customer Insights-en erakunde berean dago.
 
-2. Zure hartzaileen xehetasunen ingurunea lotuta dago Dataverse instantziarekin.
+2. Ikusleei buruzko informazio-ingurunea zure Dataverse instantziari atxikita dago.
 
 Informazio gehiago lortzeko, ikusi [Sortu ingurune berri bat](create-environment.md).
 
@@ -60,6 +61,8 @@ Informazio gehiago lortzeko, ikusi [Sortu ingurune berri bat](create-environment
    > ![Adibidez, mapen eremuaren balioak kategorietan erakusteko.](media/intelligence-categorymapping.png "Adibidez, mapen eremuaren balioak kategorietan erakusteko")
 
 8. Aukeratu **Egina** eta iragarpena prozesatuko da. Tratamenduak denbora gutxi iraungo du, datuen tamainaren eta konplexutasunaren arabera. Emaitzak entitate berri batean egongo dira eskuragarri **Irteerako entitatearen izena** sortu zenuen iragarpenaz.
+
+[!INCLUDE [progress-details-include](../includes/progress-details-pane.md)]
 
 ## <a name="create-a-prediction-while-creating-a-segment"></a>Sortu iragarpenak segmentu bat sortzen duzun bitartean
 
@@ -137,9 +140,9 @@ Zure iragarpenaren hurrengo exekutatuak sortu duzun eredu eguneratua erabiliko d
 
 4. Berretsi ezabatzea.
 
-## <a name="troubleshooting"></a>Irtenbideak
+## <a name="troubleshooting"></a>Arazoak konpontzea
 
-Eranskina ezin baduzu osatu Dataverse prozesua akats bat dela eta, prozesua eskuz betetzen saia zaitezke. Erantsitako prozesuan gerta daitezkeen bi arazo ezagutzen dira:
+Errore bat dela eta Dataverse eranskinaren prozesua ezin baduzu osatu, prozesua eskuz osatzen saia zaitezke. Erantsitako prozesuan gerta daitezkeen bi arazo ezagutzen dira:
 
 - Bezeroaren txartelaren osagarriaren soluzioa ez dago instalatuta.
     1. Jarraitu argibideak [instalatu eta konfiguratu irtenbidea](customer-card-add-in.md).
@@ -152,7 +155,7 @@ Eranskina ezin baduzu osatu Dataverse prozesua akats bat dela eta, prozesua esku
     1. Aukeratu **+ Berria** eta hautatu **Erabiltzailea**.
     1. Aukeratu **Aplikazioaren erabiltzailea** hautatuta ez badago, eta sartu informazio hau:
         - **Erabiltzaile-izena:** cihelp@microsoft.com
-        - **Aplikazioaren ID-a:** 38c77d00-5fcb-4cce-9d93-af4738258e3c
+        - **Aplikazioaren IDa:** 38c77d00-5fcb-4cce-9d93-af4738258e3c
         - **Izena:** Bezeroa
         - **Abizena:** xehetasunak
         - **Posta elektroniko nagusia:** cihelp@microsoft.com

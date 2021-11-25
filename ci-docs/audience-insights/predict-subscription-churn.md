@@ -9,16 +9,18 @@ ms.topic: how-to
 author: zacookmsft
 ms.author: zacook
 manager: shellyha
-ms.openlocfilehash: 409dfce02c41d7c52295409912880b9224469908805e199066faeb2b7a4f1f9d
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
-ms.translationtype: HT
+ms.openlocfilehash: f9397729d2f79d079b4dea2ee92d0823b6d987e4
+ms.sourcegitcommit: fb9f118b4e16b5aabb3e503463efca21718f5d72
+ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7035308"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "7799715"
 ---
 # <a name="subscription-churn-prediction-preview"></a>Harpidetzeko aurresateko iragarpena (aurrebista)
 
 Harpidetza aurreikuspena lagundu egiten du iragartzen bezeroren bat arriskuan dagoen jada enpresaren harpidetza produktu eta zerbitzuak erabiltzen ez dituelako. Harpidetzearen aurreikuspen berriak sor ditzakezu **Adimena** > **iragarpenak** orria. Aukeratu **Nire iragarpenak** sortu dituzun beste iragarpen batzuk ikusteko.
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWOKNQ]
 
 > [!TIP]
 > Probatu tutoriala harpidetzen galera-tasaren iragarpena eskuratzeko lagin-datuak erabiliz: [Harpidetzen galera-tasaren iragarpenaren lagin gida](sample-guide-predict-subscription-churn.md).

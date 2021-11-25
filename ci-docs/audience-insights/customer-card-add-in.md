@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: c9c7cfbf9f47cca53e5543e2cda2584e25ad855d
-ms.sourcegitcommit: 1565f4f7b4e131ede6ae089c5d21a79b02bba645
-ms.translationtype: HT
+ms.openlocfilehash: dbcdcbea8ffd1755b58c322233c08c70a065db36
+ms.sourcegitcommit: 31a9b531dacd3a6465b3030c704ff5c085b7e122
+ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 10/14/2021
-ms.locfileid: "7643346"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7792014"
 ---
 # <a name="customer-card-add-in-preview"></a>Bezeroaren txartelaren osagarria (aurrebista)
 
@@ -27,20 +27,20 @@ Lortu zure bezeroen 360 graduko ikuspegia zuzenean Dynamics 365 aplikazioetan. B
 ## <a name="prerequisites"></a>Aurrebaldintzak
 
 - Gehigarriak Dynamics 365 ereduak gidatutako aplikazioekin soilik funtzionatzen du, hala nola Sales edo bezeroarentzako arreta-zerbitzu, 9.0 bertsioa eta berriagoak.
-- Zure Dynamics 365 datuak ikusleekin esleitu ahal izateko izan behar dituzten bezeroen profilak [Dynamics 365 aplikaziotik gehituta Microsoft Dataverse konektorea](connect-power-query.md).
+- Zure Dynamics 365 datuak ikusleei buruzko informazio-bezero-profiletara mapatzeko, hauek izan behar dira.[Dynamics 365 aplikaziotik irentsita Microsoft Dataverse konektorea erabiliz](connect-power-query.md).
 - Bezero txartelaren gehigarriaren Dynamics 365 erabiltzaile guztiek izan behar dute [erabiltzaile gisa gehitu da](permissions.md) datuak ikusteko ikusleei buruzko informazioetan.
 - [Bilaketa eta iragazki gaitasunak konfiguratuta](search-filter-index.md) audientziari buruzko datuetan funtzionatu behar da.
 - Gehigarrien kontrol bakoitza datu zehatzetan oinarritzen da ikusleen estatistiketan. Datu eta kontrol batzuk mota jakin batzuetako inguruneetan soilik daude eskuragarri. Gehigarrien konfigurazioak hautatutako ingurune mota dela eta kontrolik eskuragarri ez dagoen jakinaraziko dizu. Ikasi gehiago hurrengoari buruz [ingurunearen erabilera-kasuak](work-with-business-accounts.md).
   - **Neurriaren kontrola**: Beharrezkoa da [konfiguratutako neurriak](measures.md) bezeroaren atributu mota.
   - **Adimenaren kontrola**: eskatzen du datuak sortuta erabiltzea [iragarpenak](predictions.md) edo [pertsonalizatutako ereduak](custom-models.md).
   - **Bezeroen xehetasunak kontrolatzea**: Profileko eremu guztiak eskuragarri daude bezeroaren profil bateratuan.
-  - **Aberastearen kontrola**: eskatzen du aktiboa [hobekuntzak](enrichment-hub.md) aplikatuta bezeroaren profiletara.
+  - **Aberastearen kontrola**: eskatzen du aktiboa [hobekuntzak](enrichment-hub.md) aplikatuta bezeroaren profiletara. Txartelaren gehigarriak aberastasun hauek onartzen ditu: [Markak](enrichment-microsoft.md) Microsoft-ek emandakoa, [Interesak](enrichment-microsoft.md) Microsoft-ek emandakoa.
   - **Kontaktuen kontrola**: Motako kontaktuen entitate semantikoaren definizioa eskatzen du.
   - **Kronologiaren kontrola**: eskatzen du [konfiguratutako jarduerak](activities.md).
 
 ## <a name="install-the-customer-card-add-in"></a>Instalatu Bezeroaren txartelaren osagarria
 
-Bezeroaren Txartelaren Gehigarria Dynamics 365-en customer engagement aplikazioetarako irtenbidea da. Konponbidea instalatzeko, joan AppSource eta bilatu **Bezero txartel dinamikoa**. Hautatu [Bezero txartela AppSource-n](https://appsource.microsoft.com/product/dynamics-365/mscrm.dynamics_365_customer_insights_customer_card_addin?tab=Overview) eta hautatu **Eskuratu orain**.
+Bezeroaren Txartelaren Gehigarria Dynamics 365-en customer engagement aplikazioetarako irtenbidea da. Irtenbidea instalatzeko, joan AppSource helbidera eta bilatu **Dynamics Bezero Txartela**. Hautatu [Bezero txartelaren gehigarria AppSource-en](https://appsource.microsoft.com/product/dynamics-365/mscrm.dynamics_365_customer_insights_customer_card_addin?tab=Overview) eta hautatu **Lortu orain**.
 
 Baliteke Dynamics 365 aplikaziorako zure administratzaileekin saioa hasi behar duzula irtenbidea instalatzeko. Zenbait denbora behar izango duzu irtenbidea zure ingurunean instalatzeko.
 
@@ -48,7 +48,7 @@ Baliteke Dynamics 365 aplikaziorako zure administratzaileekin saioa hasi behar d
 
 1. Administratzaile gisa, zoaz webgunera **ezarpenak** atala Dynamics 365-en, eta hautatu **Soluzioak**.
 
-1. Hautatu botoia **Bistaratu izena** esteka **Dynamics 365 Customer Insights Bezero-txartelaren gehigarria (aurrebista)** konponbidea.
+1. Hautatu **Bistaratzeko izena** esteka **Dynamics 365 Customer Insights Bezero txartelaren gehigarria (aurrebista)** irtenbidea.
 
    > [!div class="mx-imgBorder"]
    > ![Hautatu Proiektuaren bistaratze-izena.](media/select-display-name.png "Hautatu Proiektuaren bistaratze-izena.")

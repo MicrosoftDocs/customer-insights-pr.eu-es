@@ -1,7 +1,7 @@
 ---
 title: Sortu eta kudeatu inguruneak
 description: Ikasi zerbitzuan izena ematen eta inguruneak kudeatzen.
-ms.date: 10/14/2021
+ms.date: 11/12/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
@@ -9,12 +9,12 @@ ms.reviewer: mhart
 author: NimrodMagen
 ms.author: nimagen
 manager: shellyha
-ms.openlocfilehash: 2d977ef4eb585e26b36139681552db22d84759c9
-ms.sourcegitcommit: 31985755c7c973fb1eb540c52fd1451731d2bed2
-ms.translationtype: HT
+ms.openlocfilehash: 65c6a68f550c2873ec30c6ac54f1752d880ce12c
+ms.sourcegitcommit: fb9f118b4e16b5aabb3e503463efca21718f5d72
+ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 10/22/2021
-ms.locfileid: "7673718"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "7799623"
 ---
 # <a name="manage-environments"></a>Kudeatu inguruneak
 
@@ -39,6 +39,19 @@ Dauden inguruneen xehetasun batzuk editatu ditzakezu.
 3. Urtean **Editatu ingurunea** koadroan, ingurunearen ezarpenak egunera ditzakezu.
 
 Informazio gehiago lortzeko ingurune-ezarpenetan, ikusi [Sortu ingurune berri bat](create-environment.md).
+
+## <a name="connect-to-microsoft-dataverse"></a>Konektatu Microsoft Dataverse-era
+   
+The **Microsoft Dataverse** urratsak Customer Insights zure Dataverse ingurunearekin konektatzeko aukera ematen dizu.
+
+Erabiltzeko [kutxaz kanpoko iragarpen ereduak](predictions-overview.md#out-of-box-models), konfiguratu datuak partekatzea Dataverse-rekin. Edo lokal datu-iturburuetatik datuak sartzea gai dezakezu, zure erakundeak kudeatzen duen Microsoft Dataverse inguruneko URLa emanez. Hautatu **Gaitu datuak partekatzea** Customer Insights irteerako datuak Dataverse-k kudeatutako datu-laku batekin partekatzeko.
+
+:::image type="content" source="media/dataverse-data-sharing.png" alt-text="Microsoft Dataverse-ekin datuak partekatzea gaitzeko konfigurazio-aukerak.":::
+
+> [!NOTE]
+> Customer Insights-ek ez ditu onartzen hurrengo datuak partekatzeko egoerak:
+> - Datu guztiak zure Azure Data Lake Storage-n gordetzen badituzu, ezin izango duzu datu-partekaketa gaitu Dataverse-k kudeatutako data lake batekin.
+> - Dataverse-rekin datuak partekatzea gaitzen baduzu, ezin izango duzu [entitate batean aurreikusitako edo falta diren balioak sortzea](predictions.md).
 
 ## <a name="copy-the-environment-configuration"></a>Kopiatu ingurunearen konfigurazioa
 
@@ -68,7 +81,7 @@ Datu hauek *ez* dira kopiatu:
 - Bezeroen profilak.
 - Datu-iturburuaren kredentzialak. Datu-iturburu bakoitzerako kredentzialak eman beharko dituzu eta datu iturriak eskuz freskatu.
 
-- Common Data Model karpetako eta Dataverse-k kudeatutako datu-biltegiko datu-iturburuak. Datu iturri horiek eskuz sortu beharko dituzu iturri ingurunean izen berdinekin.
+- Common Data Model karpetako datu-iturriak eta Dataverse-k kudeatutako datu-lakua. Datu iturri horiek eskuz sortu beharko dituzu iturri ingurunean izen berdinekin.
 
 Ingurumena kopiatzean, berrespen mezu bat ikusiko duzu ingurune berria sortu dela. Aukeratu **Joan datu iturrietara** datu-iturrien zerrenda ikusteko.
 
