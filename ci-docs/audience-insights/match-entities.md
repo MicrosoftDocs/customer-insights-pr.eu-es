@@ -1,7 +1,7 @@
 ---
 title: Lotu entitateak datuak bateratzeko
-description: Lotu entitateak datu multzoak konbinatzeko eta bezeroen profil bateratuak sortzeko.
-ms.date: 11/01/2021
+description: Lotu entitateak bezeroen profil bateratuak sortzeko.
+ms.date: 11/24/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: tutorial
@@ -11,12 +11,12 @@ ms.reviewer: mhart
 manager: shellyha
 searchScope:
 - ci-match
-ms.openlocfilehash: cabeddbc9d485108d166e6355175a01721b75a55
-ms.sourcegitcommit: 834651b933b1e50e7557d44f926a3fb757c1f83a
-ms.translationtype: HT
+ms.openlocfilehash: 253c1614725252eb4c794d77669a00b401f0198d
+ms.sourcegitcommit: 740e41ec965cee2229592a6d2610c12def116311
+ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "7732619"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "7863796"
 ---
 # <a name="match-entities"></a>Batu entitateak
 
@@ -224,17 +224,24 @@ Partiduen parametro gehienak birkonfigura eta doitu ditzakezu.
 
 ## <a name="specify-custom-match-conditions"></a>Zehaztu pertsonalizatutako bat etortzeko baldintzak
 
-Zehaztu egin ditzakezu erregistro jakinek beti edo inoiz bat etortzeko baldintzak. Arau hauek karga daitezke bat etortzeko prozesu estandarra gainidazteko. Adibidez, John Doe I eta John Doe II badaude gure erregistroetan, sistemak pertsona bakar gisa pare dezake. Partida pertsonalizatutako arauek profiletan pertsona desberdinak aipatzen dituztela zehazten dute. 
+Bat-etortze-logika lehenetsia gainidazten duten baldintzak zehaztu ditzakezu. Lau aukera daude eskuragarri: 
+
+|Aukera  |Deskribapenak |Adibidez  |
+|---------|---------|---------|
+|Beti bat etorri behar du     | Beti bat datozen balioak definitzen ditu.         |  Beti lotu *Mikel* eta *MikeR*.       |
+|Ez du inoiz bat etorri behar     | Inoiz bat ez datozen balioak definitzen ditu.        | Inoiz ez parekatu *Joan* eta *Jonathan*.        |
+|Salbuespen pertsonalizatua     | Partida-fasean sistemak beti alde batera utzi behar dituen balioak zehazten ditu. |  Ez ikusi balioei *11111* eta *Ezezaguna* partidan zehar.        |
+|Aliasen esleipena    | Sistemak balio berdintzat hartu behar dituen balioak definitzea.         | Kontuan hartu *Joe* berdina izateko *Joseph*.        |
 
 1. Joan **Datuak** > **Bateratu** > **Bat egin** eta hautatu **Bat-egite pertsonalizatua** hurrengoan **Erregistroen xehetasunak** atala.
 
-  :::image type="content" source="media/custom-match-create.png" alt-text="Bat-egitearen arauen sekzioak bat-egite pertsonalizatuaren kontrolak nabarmenduta pantaila-argazkia.":::
+   :::image type="content" source="media/custom-match-create.png" alt-text="Bat-egitearen arauen sekzioak bat-egite pertsonalizatuaren kontrolak nabarmenduta pantaila-argazkia.":::
 
-1. Partiduen arau pertsonalizaturik ez baduzu, berria ikusiko duzu **Partida pertsonalizatua** xehetasun gehiagoko panela.
+1. urtean **Pertsonalizatua** panela, joan **Erregistroak** fitxa.
 
-1. Aukeratu **Txantiloia bete** txantiloien fitxategia lortzeko, erakundeek beti bat etorri edo inoiz bat egin behar duten erregistroak zehazteko. Bi fitxategi desberdinetan "beti bat etorri" erregistroak eta "inoiz ez datoz" erregistroak bete behar dituzu.
+1. Aukeratu bat-etortze pertsonalizatu aukera aukeran **Mota pertsonalizatua** goitibeherako eta hautatu **Deskargatu txantiloia**. Bat-etortze-aukera bakoitzerako txantiloi bat behar duzu.
 
-1. Txantiloiak entitateak eta entitatearen gako nagusien balioak pertsonalizatutako partidan zehazteko eremuak ditu. Adibidez, gako nagusia nahi baduzu *12345* hurrengotik *Salmentak* entitatea beti lehen mailako gakoarekin bat etortzeko *34567* hurrengotik *Harremanetarako* entitatea, bete txantiloia:
+1. Txantiloi fitxategi bat deskargatzen da. Ireki eta bete xehetasunak. Txantiloiak entitateak eta entitatearen gako nagusien balioak pertsonalizatutako partidan zehazteko eremuak ditu. Adibidez, gako nagusia nahi baduzu *12345* hurrengotik *Salmentak* entitatea beti lehen mailako gakoarekin bat etortzeko *34567* hurrengotik *Harremanetarako* entitatea, bete txantiloia:
     - Entitate1: Salmentak
     - Entitate-gakoa1: 12345
     - Entitatea2: kontaktua
@@ -244,26 +251,32 @@ Zehaztu egin ditzakezu erregistro jakinek beti edo inoiz bat etortzeko baldintza
    
    Entitate batean bikoiztuak desegiteko parekatze pertsonalizatua zehaztu nahi baduzu, eman Entitate 1 eta Entitate 2 entitate bera eta ezarri gako primarioen balio desberdinak.
 
-1. Aplikatu nahi dituzun gainidatzi guztiak gehitu ondoren, gorde txantiloiaren fitxategia.
+1. Gainbatze guztiak gehitu ondoren, gorde txantiloi fitxategia.
 
-1. Joan hona **Datuak** > **Datu iturburuak** eta txantiloien fitxategiak entitate berri gisa sartu. Iragazi ondoren, bat egin dezakezu Match-ren konfigurazioa zehazteko.
+1. Joan hona **Datuak** > **Datu iturburuak** eta txantiloien fitxategiak entitate berri gisa sartu.
 
-1. Fitxategiak eta erakundeak kargatu ondoren, hautatu hautatu **Norberaren partida** aukera berriro. Aukerak ikusiko dituzu sartu nahi dituzun entitateak zehazteko. Aukeratu beharrezko entitateak goitibeherako menuan.
+1. Fitxategiak eta erakundeak kargatu ondoren, hautatu hautatu **Norberaren partida** aukera berriro. Aukerak ikusiko dituzu sartu nahi dituzun entitateak zehazteko. Hautatu goitibeherako menuan beharrezko entitateak eta hautatu **Eginda**.
 
    :::image type="content" source="media/custom-match-overrides.png" alt-text="Elkarrizketa-koadroaren pantaila bat etortze pertsonalizatuko agertoki baterako gainidatziak aukeratzeko.":::
 
-1. Hautatu erabili nahi dituzun entitateak **Beti bat etorri** eta **Inoiz ez dator bat** hautatu **Egina**.
+1. Parekatze pertsonalizatua aplikatzea erabili nahi duzun bat-etortze-aukeraren araberakoa da. 
+
+   - Izan ere **Beti lotu** edo **Inoiz ez parekatu**, jarraitu hurrengo urratsera.
+   - Izan ere **Saihesbide pertsonalizatua** edo **Aliasaren mapaketa**, hautatu **Editatu** lehendik dagoen bat-etortze-arau batean edo sortu arau berri bat. Normalizazioak goitibeherako aukeran, aukeratu **Saihesbide pertsonalizatua** edo **Aliasaren mapaketa** aukera eta hautatu **Eginda**.
 
 1. Aukeratu **Gorde** gainean **Bat egin** orrialdea bat datorren konfigurazio pertsonalizatua aplikatzeko.
 
 1. Aukeratu **Exekutatu** gainean **Bat egin** orrialdea parekatze prozesua hasteko. Partiduen zehaztapeneko beste arau batzuk pertsonalizatutako konfigurazio pertsonalizatuaren gainetik daude.
 
-> [!TIP]
-> Joan **Datuak** > **Entitateak** eta berrikusi **ConflationMatchPair** gainidatziak aplikatzen direla baieztatzeko entitatea.
+### <a name="known-issues"></a>Ohiko konfigurazio-arazoak
+
+- Auto-konflazioak ez ditu datu normalizatuak erakusten deduplicazio-entitateetan. Hala ere, normalizazioa barnetik aplikatzen du deduplicazioan. Normalizazio guztietarako diseinatuta dago. 
+- Mota semantikoen ezarpena kentzen bada **Mapa** bat-etortze-arau batek Alias-mapping edo Saihesbide pertsonalizatua erabiltzen duenean, normalizazioa ez da aplikatuko. Bat-etortze-arauan normalizazioa konfiguratu ondoren mota semantikoa garbitzen baduzu bakarrik gertatzen da, mota semantikoa ezezaguna izango delako.
+
 
 ## <a name="next-step"></a>Hurrengo urratsa
 
-Partidaren prozesua gutxienez bat bikote egin ondoren, zure datuetan egon daitezkeen kontraesanak konpondu ditzakezu [**konbinatu**](merge-entities.md) Gai.
+Gutxienez partida-bikote baten partida-prozesua amaitu ondoren, jarraitu [**Batu**](merge-entities.md) urratsa.
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
