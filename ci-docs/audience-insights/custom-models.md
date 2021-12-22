@@ -1,7 +1,7 @@
 ---
 title: Ikaskuntza automatiko eredu pertsonalizatuak | Microsoft Docs
 description: Azure Ikaskuntza automatiko-en eredu pertsonalizatuekin lan egin Dynamics 365 Customer Insights.
-ms.date: 03/22/2021
+ms.date: 12/01/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,14 +9,20 @@ ms.topic: tutorial
 author: zacookmsft
 ms.author: zacook
 manager: shellyha
-ms.openlocfilehash: 187995cdf4d92a0609f8abb4c792e698ad4342cdb1f578744136add1bfcf3a53
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
-ms.translationtype: HT
+ms.openlocfilehash: 47e2e5109ef8f21a782f6c8f87088009f8a40fdf
+ms.sourcegitcommit: 58651d33e0a7d438a2587c9ceeaf7ff58ae3b648
+ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7032927"
+ms.lasthandoff: 12/02/2021
+ms.locfileid: "7881769"
 ---
 # <a name="custom-machine-learning-models"></a>Ikaskuntza automatiko eredu pertsonalizatuak
+
+> [!NOTE]
+> Ikaskuntza automatiko Studiorako (klasikoa) laguntza 2024ko abuztuaren 31n amaituko da. Hona trantsizioa egitea gomendatzen dizugu [Azure Ikaskuntza automatiko](/azure/machine-learning/overview-what-is-azure-machine-learning) data horretarako.
+>
+> 2021eko abenduaren 1etik aurrera, ezin izango dituzu sortu Ikaskuntza automatiko Studio (klasikoak) baliabide berriak. 2024ko abuztuaren 31ra arte, dauden Ikaskuntza automatiko Studio (klasikoak) baliabideak erabiltzen jarraitu dezakezu. Informazio gehiagorako, ikus [Migratu Azurera Ikaskuntza automatiko](/azure/machine-learning/migrate-overview).
+
 
 **Adimena** > **Eredu pertsonalizatuak** lan-fluxuak kudeatzeko aukera ematen dizu Azure Machine Learning-eko ereduetan oinarrituta. Lan-fluxuek xehetasunak sortu nahi dituzun datuak aukeratzen eta emaitzak bezeroaren datu bateratuekin esleitzen laguntzen zaituzte. Ikaskuntza automatikoko eredu pertsonalizatuak eraikitzeari buruzko informazio gehiago lortzeko, ikusi [Erabili Azure Machine Learning-en oinarritutako ereduak](azure-machine-learning-experiments.md).
 
@@ -26,7 +32,7 @@ Iragarpenek bezeroen esperientzia hobeak sortzeko, negozio gaitasunak eta diru s
 
 ## <a name="prerequisites"></a>Aurrebaldintzak
 
-- Gaur egun, eginbide honek [Machine Learning Studio (klasikoa)](https://studio.azureml.net) eta [Azure Machine Learning sortako bideratzeak](/azure/machine-learning/concept-ml-pipelines) onartzen ditu.
+- Eginbide honek bidez argitaratutako web zerbitzuak onartzen ditu [Azure Ikaskuntza automatiko sorta-hodiak](/azure/machine-learning/concept-ml-pipelines).
 
 - Ezaugarri hau erabiltzeko Azure Studio Lake instantziarekin lotutako Azure Data Lake Gen2 biltegiratze kontua behar duzu. Informazio gehiago lortzeko, ikusi [Sortu Azure Data Lake Storage Gen2 biltegiratze kontua](/azure/storage/blobs/data-lake-storage-quickstart-create-account).
 
@@ -48,11 +54,10 @@ Iragarpenek bezeroen esperientzia hobeak sortzeko, negozio gaitasunak eta diru s
 
 1. Azure Ikaskuntza automatiko harpidetza Customer Insights baino beste maizter bat baldin baduzu, hautatu **saioa hasi** hautatutako erakundearen zure egiaztagiriekin.
 
-1. Aukeratu web zerbitzuarekin erlazionatutako **Laneko areak**. Bi atal daude zerrendatuta, bata Azure Machine Learning v1-entzat (Machine Learning Studio (klasikoa)) eta bestea Azure Machine Learning v2-rentzat (Azure Machine Learning). Ez badakizu ziur zein laneko espazio den egokia Machine Learning Studio (klasikoa) web zerbitzurako, hautatu **Edozein**.
+1. Aukeratu web zerbitzuarekin erlazionatutako **Laneko areak**. 
 
-1. Aukeratu Machine Learning Studio (klasikoa) web zerbitzua edo Azure Machine Learning-en bideratzea **Zure eredua duen web zerbitzua** goitibeherako zerrendan. Ondoren, hautatu **Hurrengoa**.
-   - Lortu informazio gehiago [Machine Learning Studio-n (klasikoa) web zerbitzuan argitaratzeari buruz](/azure/machine-learning/studio/deploy-a-machine-learning-web-service#deploy-it-as-a-new-web-service)
-   - Lortu informazio gehiago [Azure Machine Learning-en bideratze bat diseinatzailea](/azure/machine-learning/concept-ml-pipelines#building-pipelines-with-the-designer) edo [SDK](/azure/machine-learning/concept-ml-pipelines#building-pipelines-with-the-python-sdk) erabiliz argitaratzeari buruz. Zure bideratzea [bideratzearen amaiera-puntuan](/azure/machine-learning/how-to-run-batch-predictions-designer#submit-a-pipeline-run) argitaratu behar da.
+1. Aukeratu Azure Ikaskuntza automatiko kanalizazioa atalean **Zure eredua duen web zerbitzua** goitibeherako. Ondoren, hautatu **Hurrengoa**.    
+   Lortu informazio gehiago [Azure Machine Learning-en bideratze bat diseinatzailea](/azure/machine-learning/concept-ml-pipelines#building-pipelines-with-the-designer) edo [SDK](/azure/machine-learning/concept-ml-pipelines#building-pipelines-with-the-python-sdk) erabiliz argitaratzeari buruz. Zure bideratzea [bideratzearen amaiera-puntuan](/azure/machine-learning/how-to-run-batch-predictions-designer#submit-a-pipeline-run) argitaratu behar da.
 
 1. **Web zerbitzuaren sarrera** bakoitzeko,hautatu bat datorren **Entitatea** hartzaileei buruzko xehetasunetan eta sakatu **Hurrengoa**.
    > [!NOTE]
@@ -62,9 +67,6 @@ Iragarpenek bezeroen esperientzia hobeak sortzeko, negozio gaitasunak eta diru s
    > ![Konfiguratu lan-fluxu bat.](media/intelligence-screen2-updated.png "Konfiguratu lan-fluxu bat")
 
 1. **Ereduaren irteerako parametroak** urratsean ezarri propietate hauek:
-   - Machine Learning Studio (klasikoa)
-      1. Sartu web zerbitzuaren irteerako emaitzak sartu nahi dituzun irteerako **Entitatearen izena**.
-   - Azure ikaskuntza automatikoa
       1. Sartu bideratzearen irteerako emaitzak sartu nahi dituzun irteerako **Entitatearen izena**.
       1. Aukeratu sortako bideratzearen **Irteerako datu-biltegi parametroaren izena** goitibeherako zerrendan.
       1. Aukeratu sortako bideratzearen **Irteerako bide-izenaren parametroaren izena** goitibeherako zerrendan.
@@ -93,9 +95,6 @@ Iragarpenek bezeroen esperientzia hobeak sortzeko, negozio gaitasunak eta diru s
 1. **Web zerbitzuaren sarrera** bakoitzeko, bat datorren **Entitatea** egunera dezakezu hartzaileei buruzko xehetasunetan. Ondoren, hautatu **Hurrengoa**.
 
 1. **Ereduaren irteerako parametroak** urratsean ezarri propietate hauek:
-   - Machine Learning Studio (klasikoa)
-      1. Sartu web zerbitzuaren irteerako emaitzak sartu nahi dituzun irteerako **Entitatearen izena**.
-   - Azure ikaskuntza automatikoa
       1. Sartu bideratzearen irteerako emaitzak sartu nahi dituzun irteerako **Entitatearen izena**.
       1. Aukeratu **irteerako datu-biltegi parametroaren izena** zure probako bideratzerako.
       1. Aukeratu **irteerako bide-izenaren parametroaren izena** zure probako bideratzerako.

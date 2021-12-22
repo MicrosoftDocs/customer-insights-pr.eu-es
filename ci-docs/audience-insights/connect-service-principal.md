@@ -1,7 +1,7 @@
 ---
 title: Konektatu Azure Data Lake Storage kontu nagusia zerbitzuaren nagusia erabiliz
 description: Erabili Azure zerbitzu nagusia zure data lake konektatzeko.
-ms.date: 09/08/2021
+ms.date: 12/06/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
@@ -9,26 +9,26 @@ author: adkuppa
 ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: b901d799dbd73841a6ddbae754c4e4275f61146a
-ms.sourcegitcommit: 53b133a716c73cb71e8bcbedc6273cec70ceba6c
-ms.translationtype: HT
+ms.openlocfilehash: faef3583337fd495e7baf40b0a208f1d9f10281a
+ms.sourcegitcommit: 11b343f6622665251ab84ae39ebcd91fa1c928ca
+ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "7645157"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "7900228"
 ---
 # <a name="connect-to-an-azure-data-lake-storage-account-by-using-an-azure-service-principal"></a>Konektatu Azure Data Lake Storage kontu nagusia Azure zerbitzuaren nagusia erabiliz
 
-Azure zerbitzuak erabiltzen dituzten tresna automatizatuek beti baimen mugatuak izan behar dituzte. Aplikazioek erabiltzaile pribilegiatu gisa saioa hasi beharrean, Azure-k zerbitzuaren entitateak eskaintzen ditu. Irakurri irakurtzen nola konektatzen den jakiteko Dynamics 365 Customer Insights batekin Azure Data Lake Storage kontua biltegiratze kontuko gakoen ordez Azure zerbitzu nagusia erabilita. 
+Artikulu honek nola konektatu eztabaidatzen du Dynamics 365 Customer Insights batekin Azure Data Lake Storage kontua Azure zerbitzu nagusi bat erabiliz biltegiratze-kontuaren gakoen ordez. 
 
-Zerbitzu nagusia segurtasunez erabil dezakezu [gehitu edo editatu Common Data Model karpeta datu-iturburu gisa](connect-common-data-model.md), edo [ingurune bat sortu edo eguneratu](create-environment.md).
+Azure zerbitzuak erabiltzen dituzten tresna automatizatuek beti baimen mugatuak izan behar dituzte. Aplikazioek erabiltzaile pribilegiatu gisa saioa hasi beharrean, Azure-k zerbitzuaren entitateak eskaintzen ditu. Zerbitzu nagusiak modu seguruan erabil ditzakezu [gehitu edo editatu Common Data Model karpeta bat datu-iturburu gisa](connect-common-data-model.md) edo [ingurune bat sortu edo eguneratu](create-environment.md).
 
 > [!IMPORTANT]
 > - Zerbitzuaren entitatea erabiliko duen Data Lake Storage kontuak [gaituta eduki behar du izen-leku hierarkikoa](/azure/storage/blobs/data-lake-storage-namespace).
-> - Administratzaile baimenak behar dituzu Azure harpidetzak zerbitzuaren entitatea sortzeko.
+> - Zure Azure harpidetzarako administratzaile-baimenak behar dituzu zerbitzu nagusi bat sortzeko.
 
 ## <a name="create-an-azure-service-principal-for-customer-insights"></a>Sortu Azure zerbitzu nagusia Customer Insights-entzat
 
-Ikusleen edo konpromisoen inguruko zerbitzu nagusia sortu aurretik, egiaztatu zure erakundean dagoen ala ez.
+Customer Insights-en zerbitzu nagusi berri bat sortu aurretik, egiaztatu zure erakundean dagoeneko badagoen.
 
 ### <a name="look-for-an-existing-service-principal"></a>Bilatu lehendik dagoen zerbitzuaren entitatea
 

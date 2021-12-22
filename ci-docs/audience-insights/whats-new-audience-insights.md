@@ -1,7 +1,7 @@
 ---
 title: Eginbide berriak eta datozenak
 description: Ezaugarri berriei, hobekuntzei eta akatsak konpontzeko ezaugarriei buruzko informazioa.
-ms.date: 11/04/2021
+ms.date: 12/02/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -9,14 +9,14 @@ author: m-hartmann
 ms.author: mhart
 ms.reviewer: midevane
 manager: shellyha
-ms.openlocfilehash: f7e2645e1608ea83b5d3af1073a5d6f6e97eec8f
-ms.sourcegitcommit: 2a0947cffb52eaf885aa2e50c95b3693f7e4c589
+ms.openlocfilehash: 346ef93e8471580b782618550ca4eb71b3f3c921
+ms.sourcegitcommit: 48d799535fad84e8b63c80aef48b5c5e87628f58
 ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "7753102"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "7884247"
 ---
-# <a name="whats-new-in-the-audience-insights-capability-of-dynamics-365-customer-insights"></a>Zer berri dago Dynamics 365 Customer Insights-ren ikusleei buruzko informazio-gaitasunean
+# <a name="whats-new-in-the-audience-insights-capability-of-dynamics-365-customer-insights"></a>Dynamics 365 Customer Insights hartzaileen xehetasunei buruzko zerbitzuaren ezaugarri berriak
 
 [!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
 
@@ -26,6 +26,18 @@ Eguneratzeak eskualdeen arabera banatzen ditugu. Beraz, eskualde batzuek beste b
 
 > [!TIP]
 > Bidali eta bozkatzeko eginbideak eskaerak eta produktuaren iradokizunak, joan [Dynamics 365 aplikazioaren ideiak atarira](https://experience.dynamics.com/ideas/categories/?forum=79a8c474-4e35-e911-a971-000d3a4f3343&forumName=Dynamics%20365%20Customer%20Insights).
+
+## <a name="november-2021-updates"></a>2021eko azaroko eguneraketak
+
+2021eko azaroko eguneratzeek ezaugarri berriak, errendimenduaren hobekuntzak eta akatsen konponketak barne hartzen dituzte.
+
+### <a name="segment-membership-now-available-in-dataverse"></a>Segmentuko kidetza orain eskuragarri dago hemen Dataverse
+
+Bezeroen profiletarako kideen segmentuari buruzko informazioa eskuragarri dago orain Dataverse bezeroen profil eta ikuspegiekin batera. Dynamics 365 ekintza-aplikazioek eta ereduetan oinarritutako aplikazioek datu hauek erabil ditzakete bezero jakin baten segmentu-kidetasunaren xehetasunak bilatzeko.
+
+### <a name="activities-support-contact-level-details-for-business-accounts"></a>Jarduerek kontaktu-mailako xehetasunak onartzen dituzte enpresa-kontuetarako
+
+Orain, zure negozio-kontuaren jarduera-eremuko kontaktuen jarduerak konfiguratu, bistaratu eta iragazi ditzakezu kontuko kontaktuek jarduera zehatzetan parte hartu duten hobeto ulertzeko.
 
 ## <a name="october-2021-updates"></a>2021eko urriko eguneraketak
 
@@ -113,7 +125,7 @@ Enpresa-kontuak erlazionatutako kontuekin mapatzen badira, Customer Insights apl
 
 ### <a name="data-ingestion"></a>Datu-horniketa
 
-- **Ikusi edo aldatu metadatuak edo entitatearen definizioa zure Azure Data Lake Storage-ko datuak eransten dituzunean** Orain ikus eta edita ditzakezu metadatuak edo entitateen definizioa ikusleen ikuspegietan zure Azure Data Lake Storage-en Common Data Model karpeta bateko datuak eransten dituzunean. Gaitasun honek denbora errealeko iritzia, modeloaren balioztapena eta erroreen egiaztapena eskaintzen ditu. model.json eta manifest.json editatzeko aukera ematen du.
+- **Ikusi edo aldatu metadatuak edo entitatearen definizioa Azure Data Lake Storage-ko datuak eransterakoan** Orain metadatuak edo entitateen definizioa ikus eta editatu ditzakezu hartzaileen xehetasunetan, Azure Data Lake Storage-ko Common Data Model karpetako datuak eranstean. Gaitasun honek denbora errealeko iritzia, modeloaren balioztapena eta erroreen egiaztapena eskaintzen ditu. model.json eta manifest.json editatzeko aukera ematen du.
 
 ### <a name="extensibility"></a>Hedagarritasuna
 
@@ -188,7 +200,7 @@ Enpresa-kontuak erlazionatutako kontuekin mapatzen badira, Customer Insights apl
 
 ### <a name="data-ingestion"></a>Datu-horniketa
 
-- **Konektatu lokal datu-iturburuetara Power Platform datu-fluxu eta atebideekin** Atsegin handiz iragartzen dugu Power Platform datu-fluxuen eta lokal konektibitatearen aurrebista Customer Insights-en atebideak erabiliz, lotutako Power Platform edo Dataverse ingurune batekin. Lotutako Dataverse ingurunea duen Customer Insights ingurune batean sortutako datu-iturburu berriek Power Platform datu-fluxuak lehenetsiko dituzte, lokal datu-konektibitatea eta konektore-multzo aberatsa eta eraldaketa-gaitasun bat ekarriz.
+- **Konektatu lokal datu iturrietara erabiliz Power Platform datu-fluxuak eta atebideak** Pozik gaude aurrerapenaren berri ematean Power Platform datu-fluxuak eta lokal konektibitatea Customer Insights-eko atebideak erabiliz lotutako batekin Power Platform edo Dataverse ingurunea. Customer Insights ingurunearekin estekatutako datu iturri berriak Dataverse ingurunea lehenetsia izango da Power Platform datu-fluxuak lokal datuen konektibitatea eta konektore eta transformazio gaitasun multzo aberatsa ekartzen dute.
 
 ### <a name="extensibility"></a>Hedagarritasuna
 
@@ -202,7 +214,7 @@ Enpresa-kontuak erlazionatutako kontuekin mapatzen badira, Customer Insights apl
    Informazio gehiago eskuratzeko, ikusi [Esportatu Constant Contact](export-constant-contact.md).
 
 - **Esportatu segmentuak RollWorks-era** Esportaziorako helmugak RollWorks barne zabaldu ditugu. Orain Customer Insights-eko segmentuak RollWorks-eko hartzileetara esporta ditzakezu eta zure B-to-B publizitatearen oinarri gisa erabil ditzakezu.    
-   Informazio gehiago eskuratzeko, ikusi [Esportatu RollWorks-era](export-rollworks.md).
+   Informazio gehiago eskuratzeko, ikusi [Esportatu RollWorks-era ](export-rollworks.md).
 
 - **Esportatu segmentuak Snapchat-era** Esportaziorako helmugak Snapchat barne zabaldu ditugu. Segmentuak Customer Insights-etik Snapchat audientzetera esporta ditzakezu eta zure iragarkiak oinarri gisa erabil ditzakezu.     
    Informazio gehiago lortzeko, ikusi [Esportatu Snapchat-era](export-snapchat.md).
@@ -250,7 +262,7 @@ Enpresa-kontuak erlazionatutako kontuekin mapatzen badira, Customer Insights apl
 
 - **Kopiatu inguruneak datu iturri mota gehiago onartzen ditu**
 
-  Administratzaileek ingurune konfigurazioak erakunde berdinean ingurune berri batera kopia ditzakete. Ezaugarri honek kopia-ingurunearen funtzionaltasuna hedatzen du Microsoft Dataverse kudeatutako datu-laku batean edo Common Data Model karpeta batean oinarritutako datu-iturriak erabiltzen diren kasuetarako.
+  Administratzaileek ingurune konfigurazioak erakunde berdinean ingurune berri batera kopia ditzakete. Ezaugarri honek kopiatze ingurunearen funtzionaltasuna hedatzen du Microsoft Dataverse-k kudeatutako datu-biltegi batean oinarritutako datu-iturburuak edo Common Data Model karpeta erabiltzen direnean.
 
 ## <a name="january-2021-updates"></a>2021eko urtarrilaren eguneratzeak
 
@@ -276,7 +288,7 @@ Enpresa-kontuak erlazionatutako kontuekin mapatzen badira, Customer Insights apl
 
 #### <a name="system-administration"></a>Sistemaren administrazioa
 
-- **Partekatu datuak modu errazean Microsoft Dataverse-ekin** Orain Customer Insights irteera Microsoft Dataverse aplikazioekin parteka dezakezu Microsoft Dataverse Managed Data Lake erabiliz. Dataverse ingurune bat Customer Insights-ekin lotzen duzunean, datuak partekatzea gaitzeko aukera izango duzu.
+- **Partekatu datuak zuzenean Microsoft Dataverse-n** Orain Customer Insights irteera parteka dezakezu Microsoft Dataverse aplikazioaren Microsoft Dataverse Kudeatutako Data Lake erabiliz. Dataverse ingurune bat erlazionatu ostean Customer Insights-ekin, datuak partekatzea gaitzeko aukera duzu.
   Informazio gehiagorako, ikusi [Kudeatu inguruneak](manage-environments.md).
 
 

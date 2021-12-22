@@ -1,7 +1,7 @@
 ---
 title: Power Query-n oinarritutako datu-iturburuen freskatze inkrementala
 description: Freskatu datu berri eta eguneratuak datu iturri handietarako Power Query oinarritzat hartuta.
-ms.date: 09/28/2020
+ms.date: 12/06/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,14 +9,16 @@ ms.topic: how-to
 author: adkuppa
 ms.author: adkuppa
 manager: shellyha
-ms.openlocfilehash: d204228f8d6881cbf0e7fac6609bf50dd5296610
-ms.sourcegitcommit: 42692a815695b9fdc93b9358eae09f2c3e97293c
-ms.translationtype: HT
+ms.openlocfilehash: f614d701aeb06720a60b14549a7fe666f8fe0617
+ms.sourcegitcommit: 11b343f6622665251ab84ae39ebcd91fa1c928ca
+ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7377819"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "7900240"
 ---
 # <a name="incremental-refresh-for-data-sources-based-on-power-query"></a>Power Query-n oinarritutako datu iturrientzako freskapen gehikorra
+
+Artikulu honek Power Query-en oinarritutako datu-iturburuetarako freskatze inkrementala nola konfiguratu aztertzen du.
 
 Datu iturrien freskapen gehigarriak abantaila hauek eskaintzen ditu:
 
@@ -30,9 +32,9 @@ Hartzaileen xehetasunek sartze inkrementala onartzen duten Power Query bidez inp
 
 1. [Sortu datu-iturburu berria Power Query oinarrituta](connect-power-query.md).
 
-1. Eman datu-iturburuaren izena.
+1. Eman a **Izena** datu-iturburu-erako.
 
-1. Hautatu freskatze gehigarri bat onartzen duen datu-iturburu bat, hala nola Azure SQL datu basea.
+1. Hautatu freskatze inkrementala onartzen duen datu-iturburu, adibidez [Azure SQL datu-basea](/power-query/connectors/azuresqldatabase).
 
 1. Aukeratu irensteko entitateak edo taulak.
 

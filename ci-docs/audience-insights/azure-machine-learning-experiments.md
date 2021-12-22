@@ -1,7 +1,7 @@
 ---
 title: Azure Machine Learning-en esperimentuak
 description: 'Erabili Azure Machine Learning-en oinarritutako ereduak hemen: Dynamics 365 Customer Insights.'
-ms.date: 11/30/2020
+ms.date: 12/02/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: tutorial
@@ -9,16 +9,16 @@ author: naravill
 ms.author: naravill
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 4c04a1d08aba152ce91d452ae2300c1ce0fc79e5d6980ac506dc40d9914c9fca
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
-ms.translationtype: HT
+ms.openlocfilehash: e37eec503c9df83ef72497e22afa1266296e642c
+ms.sourcegitcommit: 58651d33e0a7d438a2587c9ceeaf7ff58ae3b648
+ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7033157"
+ms.lasthandoff: 12/02/2021
+ms.locfileid: "7881723"
 ---
 # <a name="use-azure-machine-learning-based-models"></a>Erabili Azure Machine Learning-en oinarritutako ereduak
 
-Dynamics 365 Customer Insights-eko datu bateratuak negozioaren ikuspegi osagarriak sor ditzaketen ikaskuntza automatiko ereduak eraikitzeko iturria da. Customer Insights Machine Learning Studio-rekin (klasikoa) eta Azure Machine Learning-ekin integratzen da zure eredu pertsonalizatuak erabiltzeko. Joan [Machine Learning Studio (klasikoa) esperimentuak](machine-learning-studio-experiments.md) atalera Machine Learning Studio-n (klasikoa) eraikitako esperimentuen adibideak ikusteko. 
+Dynamics 365 Customer Insights-eko datu bateratuak negozioaren ikuspegi osagarriak sor ditzaketen ikaskuntza automatiko ereduak eraikitzeko iturria da. Customer Insights Azure Machine Learning-ekin integratzen da zure pertsonalizatutako ereduak erabiltzeko.
 
 ## <a name="prerequisites"></a>Aurrebaldintzak
 
@@ -35,7 +35,7 @@ Dynamics 365 Customer Insights-eko datu bateratuak negozioaren ikuspegi osagarri
 
 ## <a name="work-with-azure-machine-learning-designer"></a>Lan egin Azure Machine Learning-en diseinatzailearekin
 
-Azure Machine Learning-en diseinatzaileak mihise bisuala eskaintzen du, datu multzoak eta moduluak arrastatu eta jaregin ahal izateko, Machine Learning Studio-ren (klasikoa) antzera. Diseinatzailetik sortutako sorta bideratzea Customer Insights-en sar daiteke, hala konfiguratuta badago. 
+Azure Ikaskuntza automatiko diseinatzaileak ikusizko mihise bat eskaintzen du, non datu multzoak eta moduluak arrastatu eta jar ditzakezun. Diseinatzailetik sortutako sorta bideratzea Customer Insights-en sar daiteke, hala konfiguratuta badago. 
    
 ## <a name="working-with-azure-machine-learning-sdk"></a>Azure Machine Learning-en SDKrekin lan egitea
 

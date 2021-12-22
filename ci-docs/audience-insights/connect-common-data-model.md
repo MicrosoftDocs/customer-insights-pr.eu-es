@@ -1,7 +1,7 @@
 ---
 title: Konektatu Common Data Model-eko datuak Azure Data Lake kontu batekin
 description: Egin lan Common Data Model-ekin Azure Data Lake Storage erabiliz.
-ms.date: 05/29/2020
+ms.date: 12/06/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
@@ -9,12 +9,12 @@ author: adkuppa
 ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 93871f8029053d4ed4a116d3af3550b7684ee11ea8633e937138245e193a44e6
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
-ms.translationtype: HT
+ms.openlocfilehash: 5f9010f78ea4c24094e0df4f8e153fb832e05cc8
+ms.sourcegitcommit: 11b343f6622665251ab84ae39ebcd91fa1c928ca
+ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7033111"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "7900182"
 ---
 # <a name="connect-to-a-common-data-model-folder-using-an-azure-data-lake-account"></a>Konektatu Common Data Model karpetara Azure Data Lake kontua erabiliz
 
@@ -30,7 +30,7 @@ Artikulu honek Azure Data Lake Storage Gen2 kontua erabiliz Common Data Model-ek
 
 - Konektatu eta datuak sartu nahi dituzun Azure datu-biltegiak Dynamics 365 Customer Insights ingurunearen Azure eskualde berean egon behar du. Ez da onartzen beste Azure eskualde bateko datu-biltegi batetik Common Data Model-eko karpeta batera konektatzea. Inguruneko Azure eskualdea ezagutzeko, joan hona: **Administratzailea** > **Sistema** > **Honi buruz** hartzaileei buruzko xehetasunetan.
 
-- Lineako zerbitzuetan gordetako datuak Dynamics 365 Customer Insights-en datuak prozesatzen edo gordetzen direna ez den beste kokaleku batean gorde daitezke.Lineako zerbitzuetan gordetako datuak inportatuz edo konektatuz onartu egiten duzu Dynamics 365 Customer Insights-rekin transferitu eta biltegiratu daitezkeen datuak. [Ezagutu gehiago Microsoft Trust Center-en.](https://www.microsoft.com/trust-center)
+- Lineako zerbitzuetan biltegiratutako datuak datuak prozesatzen edo gordetzen diren tokian beste toki batean bil daitezke Dynamics 365 Customer Insights.Lineako zerbitzuetan gordetako datuak inportatuz edo konektatuz gero, onartzen duzu datuak batera transferitu eta gorde daitezkeela.Dynamics 365 Customer Insights . [Lortu informazio gehiago Microsoft Trust Center-en](https://www.microsoft.com/trust-center).
 
 ## <a name="connect-to-a-common-data-model-folder"></a>Konektatu Common Data Model-eko karpeta batera
 
@@ -38,12 +38,11 @@ Artikulu honek Azure Data Lake Storage Gen2 kontua erabiliz Common Data Model-ek
 
 1. Hautatu **Gehitu datu-iturburua**.
 
-1. Aukeratu **Konektatu Common Data Model karpeta batera**, sartu **Izena** datu-iturbururako, eta hautatu **Hurrengoa**. Jarri izena jarraibideei: 
-   - Hasi letra batekin.
-   - Erabili letrak eta zenbakiak soilik. Ezin da idatzi karaktere berezirik edo zuriunerik.
-   - Erabili 3 eta 64 karaktere artean.
+1. Hautatu **Azure data Lake biltegiratzea**, sartu a **Izena** datu-iturburu-rako, gero hautatu **Hurrengoa**.
 
-1. Baliabideetan oinarritutako aukera eta harpidetzan oinarritutako aukera erabil dezakezu autentifikatzeko. Informazio gehiagorako, ikus [Konektatu hartzaileei buruzko xehetasunak Azure Data Lake Storage Gen2 kontu batera Azure zerbitzuaren entitatearekin](connect-service-principal.md). Sartu **Edukiontzia** -ren informazioa eta hautatu **Hurrengoa**.
+   - Galdetzen bazaizu, hautatu zure industriari dagozkion datu-multzoetako bat, eta hautatu **Hurrengoa**. 
+
+1. Baliabideetan oinarritutako aukera eta harpidetzan oinarritutako aukera erabil dezakezu autentifikatzeko. Informazio gehiagorako, ikus [Konektatu hartzaileei buruzko xehetasunak Azure Data Lake Storage Gen2 kontu batera Azure zerbitzuaren entitatearekin](connect-service-principal.md). Sartu **Zerbitzariaren helbidea**, hautatu **saioa hasi**, gero hautatu **Hurrengoa**.
    > [!div class="mx-imgBorder"]
    > ![Elkarrizketa-koadroa Azure Data Lake-rako konexio xehetasun berriak sartzeko.](media/enter-new-storage-details.png)
    > [!NOTE]
@@ -56,11 +55,11 @@ Artikulu honek Azure Data Lake Storage Gen2 kontua erabiliz Common Data Model-ek
    > [!NOTE]
    > Inguruneko beste datu-iturburu batekin lotutako model.json edo manifest.json fitxategia ez da zerrendan agertuko.
 
-1. Aukeratutako model.json edo manifest.json fitxategian eskuragarri dauden entitateen zerrenda lortuko duzu. Berrikusi eta hautatu egin dezakezu zerrendan eskuragarri dauden entitateak eta hautatu **Gorde**. Datu-iturburu berriko hautatutako entitate guztiak sartuko dira.
+1. Aukeratutako model.json edo manifest.json fitxategian eskuragarri dauden entitateen zerrenda ikusiko duzu. Berrikusi eta hautatu erabilgarri dauden entitateen zerrendatik, gero hautatu **Gorde**. Datu-iturburu berriko hautatutako entitate guztiak sartuko dira.
    > [!div class="mx-imgBorder"]
    > ![Elkarrizketa-koadroa model.json fitxategi bateko entitateen zerrenda erakusten da.](media/review-entities.png)
 
-8. Zehaztu zein datu-entitate gaitu nahi duzun datu-profilak gaitzeko eta hautatu **Gorde**. Datuen profilak sortzean analisiak eta beste gaitasun batzuk gaitzen dira. Entitate osoa hauta dezakezu, entitatetik atributu guztiak hautatzen dituena edo zenbait atributu hauta ditzakezu. Lehenespenez, ez dago entitaterik gaituta datu-profilak egiteko.
+8. Adierazi zein datu-entitate gaitu nahi dituzun datuen profila eta hautatu **Gorde**. Datuen profilak sortzean analisiak eta beste gaitasun batzuk gaitzen dira. Entitate osoa hauta dezakezu, entitatetik atributu guztiak hautatzen dituena edo zenbait atributu hauta ditzakezu. Lehenespenez, ez dago entitaterik gaituta datu-profilak egiteko.
    > [!div class="mx-imgBorder"]
    > ![Datu-profilak erakusten dituen elkarrizketa-koadroa.](media/dataprofiling-entities.png)
 

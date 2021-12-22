@@ -4,7 +4,7 @@
   href: overview.md
 - name: Doako proba
   items:
-    - name: Erregistratu doako proba lortzeko
+    - name: Hasi saioa doako proba lortzeko
       href: trial-signup.md
     - name: Probaren FAQa
       href: trial-FAQ.md
@@ -48,7 +48,7 @@
           href: audience-insights/connect-power-query.md
         - name: Gehitu datu arrunten ereduaren karpeta datu-iturburu
           href: audience-insights/connect-common-data-model.md
-        - name: Gehitu Dataverse kudeatutako datu-lakua
+        - name: Gehitu Dataverse kudeatutako data lake
           href: audience-insights/connect-dataverse-managed-lake.md
         - name: Datu iturrietarako freskatze gehigarria
           href: audience-insights/incremental-refresh-data-sources.md
@@ -84,7 +84,7 @@
           href: audience-insights/enrichment-microsoft.md
         - name: Helbide hobetuak
           href: audience-insights/enrichment-enhanced-addresses.md
-        - name: Hobetu enpresaren datuak
+        - name: Enpresaren datu hobetuak
           href: audience-insights/enrichment-enhanced-company-data.md
         - name: Aberastu Azure Maps-ekin
           href: audience-insights/enrichment-azure-maps.md
@@ -94,6 +94,8 @@
           href: audience-insights/enrichment-leadspace.md
         - name: Aberastu Experian-ekin
           href: audience-insights/enrichment-experian.md
+        - name: Aberastu Office 365 datuak
+          href: audience-insights/enrichment-office.md
         - name: Aberastu SFTP inportazio pertsonalizatuarekin
           href: audience-insights/enrichment-SFTP-custom-import.md
     - name: Segmentuak
@@ -144,8 +146,6 @@
               href: audience-insights/sample-guide-predict-product-recommendation.md
             - name: Esperimentuak Azure ikaskuntza automatikoarekin
               href: audience-insights/azure-machine-learning-experiments.md
-            - name: Esperimentuak Azure Machine Learning Studio-rekin
-              href: audience-insights/machine-learning-studio-experiments.md
         - name: Iragarpenak kudeatu
           href: audience-insights/manage-predictions.md
         - name: Sortu iragarkietan oinarritutako segmentuak
@@ -180,7 +180,7 @@
               href: audience-insights/export-dotdigital.md
             - name: Dynamics 365 Marketing
               href: audience-insights/export-dynamics365-marketing.md
-            - name: "Dynamics\_365 Sales"
+            - name: "Dynamics\_365\_Sales"
               href: audience-insights/export-dynamics365-sales.md
             - name: Facebook Iragarkien kudeatzailea
               href: audience-insights/export-facebook.md
@@ -240,13 +240,15 @@
               href: audience-insights/use-azure-key-vault.md
             - name: Konektatu ADLS biltegiratze-kontura zerbitzuaren entitatearekin
               href: audience-insights/connect-service-principal.md
+            - name: Esportatu diagnostikoen erregistroak
+              href: audience-insights/diagnostics.md
     - name: Hedagarritasuna
       items:
         - name: Integratu web-datuak konpromisoen estatistiketatik
           href: audience-insights/integrate-engagement-insights.md
         - name: Berrikusi entitateen eskema datu arrunten ereduan
           href: audience-insights/entity-schemas.md
-        - name: Customer Insights datuak Dataverse-en
+        - name: Customer Insights datuak Dataverse-n
           href: audience-insights/customer-insights-dataverse.md
         - name: Egin lan API-ekin
           href: audience-insights/apis.md
@@ -338,9 +340,9 @@
           href: engagement-insights/advanced-SDK-implementation.md
         - name: Web SDKren lagina
           href: engagement-insights/websdk-sample.md
-        - name: Android SDKaren tutoriala
+        - name: Android SDK tutoriala
           href: engagement-insights/get-started-android.md
-        - name: Android SDK lagina
+        - name: Android SDK adibidea
           href: engagement-insights/androidsdk-sample.md
         - name: iOS SDKaren tutoriala
           href: engagement-insights/get-started-ios.md

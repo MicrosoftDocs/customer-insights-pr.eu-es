@@ -1,7 +1,7 @@
 ---
 title: Erabili datu-iturburuak datuak sartzeko
 description: Ikasi iturri desberdinetako datuak nola inportatu.
-ms.date: 11/01/2021
+ms.date: 12/06/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -10,36 +10,39 @@ ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
 ms.custom: intro-internal
-ms.openlocfilehash: 27cbd0346b1219c7812f4b90327dd27b645c2b8e
-ms.sourcegitcommit: 834651b933b1e50e7557d44f926a3fb757c1f83a
+ms.openlocfilehash: 6846c73cb156aaa049e2656c8e327bcba1f73abc
+ms.sourcegitcommit: 11b343f6622665251ab84ae39ebcd91fa1c928ca
 ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "7732112"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "7900321"
 ---
 # <a name="data-sources-overview"></a>Datuen iturburuen ikuspegi orokorra
 
 [!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
 
-Dynamics 365 Customer Insights-n ikusleei buruzko informazio-gaitasuna iturri multzo zabal bateko datuekin konektatzen da. datu-iturburu-era konektatzearen prozesua sarritan aipatzen da *datuen irenstea*. Datuak irentsi ondoren, egin dezakezu [bateratu](data-unification.md) eta neurriak hartu.
+Dynamics 365 Customer Insights-eko hartzaileen xehetasunen gaitasuna iturburu multzo zabal bateko datuekin konektatzen da. datu-iturburu-era konektatzearen prozesua sarritan aipatzen da *datuen irenstea*. Datuak irentsi ondoren, egin dezakezu [bateratu](data-unification.md) eta neurriak hartu.
 
 ## <a name="add-a-data-source"></a>Gehitu datu-iturburua
 
-datu-iturburu bat gehitzeko artikulu zehatzak ikusi, aukeratutako aukeraren arabera.
+Ikusi artikulu zehatzak datu-iturburu bat nola gehitu jakiteko, aukeratzen duzun aukeraren arabera.
 
-datu-iturburu bat gehi dezakezu hiru modu nagusitan:
+Datu iturri hauek gehi ditzakezu:
 
-- [Dozenaka Power Query lokailuren bidez](connect-power-query.md)
-- [Hurrengotik Common Data Model-eko karpeta bat](connect-common-data-model.md)
-- [Zure Microsoft Dataverse lakutik](connect-dataverse-managed-lake.md)
+- [Power Query konektoreak](connect-power-query.md)
+- [Common Data Model](connect-common-data-model.md)
+- [Microsoft Dataverse aintzira](connect-dataverse-managed-lake.md)
+
+> [!NOTE]
+> Probako bertsioa erabiltzen ari bazara, inportazio metodoen atalean a **Customer Insights datu-liburutegia** aukera. Aukeratu aukera hau hainbat industriatarako erabilgarri dagoen datu-multzo lagin bat hautatzeko. Informazio gehiagorako, ikus [Dynamics 365 Customer Insights epaiketa](../trial-signup.md).
 
 ## <a name="add-data-from-on-premises-data-sources"></a>Gehitu datuak lokal datu iturrietatik
 
-Lokal datu-iturburuetako datuak ikusleei buruzko informazioetan sartzea onartzen da Microsoft Power Platform datu-fluxuetan oinarrituta. Datu-fluxuak Customer Insights-en gaitu daitezke [Microsoft Dataverse ingurunearen URLa emanez](create-environment.md) ingurunea ezartzerakoan.
+Oinarrian onartzen da lokal datu iturrietako datuak sartzea parte-hartzaileen xehetasunen Microsoft Power Platform datu-fluxuak. Customer Insights-en Datu-fluxuak gaitu ditzakezu [emanez Microsoft Dataverse ingurunearen URLa](create-environment.md) ingurunea ezartzerakoan.
 
-Dataverse ingurune bat Customer Insights-ekin lotu ondoren sortzen diren datu-iturburuak erabiliko dituzte [Power Platform datu-fluxuak](/power-query/dataflows/overview-dataflows-across-power-platform-dynamics-365) lehenetsiz. Datu fluxuek konektibitate lokala onartzen dute datuetarako atebidea erabiliz. Kendu eta birsortu Dataverse ingurunea lotu aurretik zeuden datu-iturriak [erabili lokal datu-pasabideak](/data-integration/gateway/service-gateway-app).
+A elkartu ondoren sortzen diren datu-iturriak Dataverse Customer Insights erabilera duen ingurunea [Power Platform datu-fluxuak](/power-query/dataflows/overview-dataflows-across-power-platform-dynamics-365) lehenetsiz. Datu fluxuek konektibitate lokala onartzen dute datuetarako atebidea erabiliz. Aurretik zeuden datu-iturriak kendu eta birsor ditzakezu Dataverse ingurunea lotzen zen [lokal datu-atebideak erabiliz](/data-integration/gateway/service-gateway-app).
 
-Lehendik dagoen Power BI edo Power Apps inguruneko datu-atebideak ikusgai egongo dira eta Customer Insights-en berrerabili ahal izango duzu. Datu-iturburuen orrialdeak Microsoft Power Platform ingurunera joateko estekak erakusten ditu, non lokal datu-atebideak ikusi eta konfigura ditzakezun.
+Dagoen batetik datozen atebideak Power BI edo Power Apps ingurunea ikusgai egongo da eta Customer Insights-en berrerabili dezakezu. Datu iturrien orriak estekara erakusten du Microsoft Power Platform lokal datu atebideak ikusi eta konfiguratzeko ingurunea.
 
 ## <a name="review-ingested-data"></a>Berrikusi sartutako datuak
 

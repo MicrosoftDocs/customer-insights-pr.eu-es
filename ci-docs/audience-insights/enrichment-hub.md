@@ -10,12 +10,12 @@ author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
 ms.custom: intro-internal
-ms.openlocfilehash: de27da92118b83dafa0742b6a1e10ee315750c61
-ms.sourcegitcommit: 6efcba688d1db1a5d6343c229f292a26c48fc007
+ms.openlocfilehash: e44e973bf7713ed5c31dfb9849419decd4ad1c78
+ms.sourcegitcommit: 48d799535fad84e8b63c80aef48b5c5e87628f58
 ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 11/05/2021
-ms.locfileid: "7770102"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "7884201"
 ---
 # <a name="enrichment-for-customer-profiles-preview"></a>Bezeroen profiletarako aberastea (aurrebista)
 
@@ -34,7 +34,7 @@ Gainean **Ezagutu** fitxa, onartutako aberasteko aukera guztiak aurkituko dituzu
 - [Markak](enrichment-microsoft.md) hornituta Microsoft-en arabera
 - [Interesak](enrichment-microsoft.md) hornituta Microsoft-en arabera
 - [Helbide hobetuak](enrichment-enhanced-addresses.md) Microsoft-ek eskainita 
-- [Demografiak](enrichment-experian.md) hornituta daude Experian-ek
+- Experian-ek eskainitako [datu demografikoak](enrichment-experian.md)
 - [Datu pertsonalizatuak](enrichment-SFTP-custom-import.md) fitxategiak modu seguruan transferitzeko protokoloaren (SFTP) bidez 
 - [Azure Maps](enrichment-azure-maps.md), Microsoft-ek eskainia
 
@@ -46,6 +46,7 @@ Gainean **Ezagutu** fitxa, onartutako aberasteko aukera guztiak aurkituko dituzu
 - [Kokapen datuak](enrichment-here.md) HERE Technologies-ek emanak 
 - [Datu pertsonalizatuak](enrichment-SFTP-custom-import.md) fitxategiak modu seguruan transferitzeko protokoloaren (SFTP) bidez 
 - [Azure Maps](enrichment-azure-maps.md), Microsoft-ek eskainia
+- [Kontuaren partaidetza-datuak](enrichment-office.md) Microsoft-ek emandakoa
 
 ---
 
@@ -77,7 +78,7 @@ Aberastu nahi den entitatea aberasteko konfigurazioan zehazten da eta horrek zur
 
 ## <a name="see-the-progress-of-the-enrichment-process"></a>Ikusi aberaste-prozesuaren garapena
 
-Aberaste-prozesuaren xehetasunak aurki ditzakezu, bere egoera eta arazo posibleak barne, freskatu bitartean edo freskatu ondoren. Ulertu zein prozesu sartzen diren aberastea freskatzeko prozesuan eta zenbat denbora behar izan den prozesuak exekutatzeko. Aberaste-egoera Experian, Leadspace, HERE Technologies, SFTP Import eta Azure Maps-en onartzen da.
+Aberaste-prozesuaren xehetasunak aurki ditzakezu, bere egoera eta arazo posibleak barne, freskatu bitartean edo freskatu ondoren. Ulertu zein prozesu sartzen diren aberastea freskatzeko prozesuan eta zenbat denbora behar izan den prozesuak exekutatzeko. Aberaste-egoera Experian, Leadspace, HERE Technologies, SFTP Import, eta Azure Maps-ek onartzen dute.
 
 Aberastearen egoera ikusteko
 

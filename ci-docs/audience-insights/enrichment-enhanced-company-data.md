@@ -1,7 +1,7 @@
 ---
 title: Enpresaren datuen hobekuntza
 description: Aberastu eta normalizatu enpresaren datuak Microsoft-en ereduekin.
-ms.date: 11/15/2021
+ms.date: 12/16/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,16 +9,16 @@ ms.topic: how-to
 author: kishorem-ms
 ms.author: kishorem
 manager: shellyha
-ms.openlocfilehash: d11700c87f31cedc40d32b201251d8a9e2e2c312
-ms.sourcegitcommit: dfc4843cc78857f1e3ca49d7b938e3ba77969169
+ms.openlocfilehash: 616efe723313a6fbec7f1c7219c236a8f0aab3b2
+ms.sourcegitcommit: e141a6a34a985cca68f03082a700ed27f2f3c0c1
 ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "7813905"
+ms.lasthandoff: 12/17/2021
+ms.locfileid: "7927567"
 ---
 # <a name="enrichment-of-company-profiles-with-enhanced-company-data"></a>Enpresaren profilak aberastea enpresaren datu hobetuekin
 
-Erabili Microsoft-en ereduak eta konpilatutako enpresako datuak zure enpresaren profilak zuzentzeko, osatzeko eta estandarizatzeko. Erabiliko dugu [Common Data Model formatua](/common-data-model/schema/core/applicationcommon/account) zehaztasun eta ikuspegi hobeak lortzeko.
+Erabili Microsoft-en ereduak eta konpilatutako enpresako datuak zure enpresaren profilak zuzentzeko, osatzeko eta estandarizatzeko. Erabiliko dugu [Common Data Model formatua](/common-data-model/schema/core/applicationcommon/account) zehaztasun eta ikuspegi hobea lortzeko.
 
 ## <a name="how-we-enhance-company-data"></a>Nola hobetzen ditugun enpresako datuak
 
@@ -66,7 +66,7 @@ Datu hobetuekin muga batzuk daude. Beheko zerrendako elementuak ez ditu ereduak 
 
 1. Hautatu zure enpresa-profiletatik zein eremu mota erabili behar diren Microsoft-ek konpilatutako enpresa-datuekin bat etortzeko. Aukeraketa honek hurrengo urratsean atzitu ditzakezun mapen eremuei eragingo die.
 
-1.  Mapeatu zure bezero-entitate bateratuko konpainiaren eremuak. Zenbat eta gako-identifikatzaile eta eremu gehiago mapatu, orduan eta aukera handiagoa izango da bat-etortze-tasa handiagoa izateko.
+1.  Mapeatu zure bezero-entitate bateratuko konpainiaren eremuak. Zenbat eta gako-identifikatzaile eta eremu gehiago mapatu, orduan eta probabilitate handiagoa izango da bat-etortze-tasa handiagoa izateko.
 
     :::image type="content" source="media/enhanced-company-data-mapping.png" alt-text="Datuen mapak egiteko urratsa enpresa aberaste bat konfiguratzean.":::
 
@@ -83,6 +83,16 @@ Aberasteko prozesua hasteko, hautatu **Korrika egin** komando barratik. Gainera,
 Aberasteko prozesua amaitu ondoren, aberastu berri diren bezeroen profilen datuak berrikus ditzakezu atalean **Nire aberastasunak**. Gainera, azken eguneratzearen ordua eta profil aberastuen kopurua aurkituko dituzu.
 
 Aberastutako profil bakoitzaren ikuspegi zehatza sar dezakezu hautatuta **Ikusi aberastutako datuak**.
+
+### <a name="overview-card"></a>Ikuspegiko txartela
+
+Ikuspegi-txartelak aberastearen estaldurari buruzko xehetasunak erakusten ditu. 
+
+* **Bezeroak prozesatu eta aldatu** : arrakastaz aberastu diren bezero-profilen kopurua.
+
+* **Bezeroak prozesatu eta aldatu gabe** : aitortu baina aldatu ez diren bezero-profilen kopurua. Normalean, sarrerako datuak baliozkoak direnean eta aberastearekin hobetu ezin direnean gertatzen da.
+
+* **Bezeroak ez dira prozesatu eta ez dira aldatu** : Aitortu ez diren profil kopurua. Normalean baliogabeak diren edo aberastasunak onartzen ez dituen sarrerako datuetarako.
 
 ## <a name="next-steps"></a>Hurrengo urratsak
 

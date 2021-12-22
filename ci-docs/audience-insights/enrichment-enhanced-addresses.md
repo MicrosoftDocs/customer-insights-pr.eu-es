@@ -1,7 +1,7 @@
 ---
-title: Helbidea hobetzeko aberastea
+title: Helbidea hobetzeko aberastea (bideoa)
 description: Aberastu eta normalizatu bezeroen profilen helbideen informazioa Microsoft-en ereduekin.
-ms.date: 07/25/2021
+ms.date: 12/16/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: how-to
 author: kishorem-ms
 ms.author: kishorem
 manager: shellyha
-ms.openlocfilehash: f56be1f4ecdac124ed76a0fb0eb1e313099248bf
-ms.sourcegitcommit: 1565f4f7b4e131ede6ae089c5d21a79b02bba645
+ms.openlocfilehash: d2c174b7882382faf4c363198982317ee21fdd4b
+ms.sourcegitcommit: e141a6a34a985cca68f03082a700ed27f2f3c0c1
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 10/14/2021
-ms.locfileid: "7643351"
+ms.lasthandoff: 12/17/2021
+ms.locfileid: "7927496"
 ---
 # <a name="enrichment-of-customer-profiles-with-enhanced-addresses"></a>Bezeroen profilak aberastu helbide hobetuekin
 
@@ -101,6 +101,16 @@ Aberasteko prozesua hasteko, hautatu **Korrika egin** komando barratik. Gainera,
 Aberasteko prozesua amaitu ondoren, aberastu berri diren bezeroen profilen datuak berrikus ditzakezu atalean **Nire aberastasunak**. Gainera, azken eguneratzearen ordua eta profil aberastuen kopurua aurkituko dituzu.
 
 Aberastutako profil bakoitzaren ikuspegi zehatza sar dezakezu hautatuta **Ikusi aberastutako datuak**.
+
+### <a name="overview-card"></a>Ikuspegiko txartela
+
+Ikuspegi-txartelak aberastearen estaldurari buruzko xehetasunak erakusten ditu. 
+
+* **Bezeroak prozesatu eta aldatu** : arrakastaz aberastu diren bezero-profilen kopurua.
+
+* **Bezeroak prozesatu eta aldatu gabe** : aitortu baina aldatu ez diren bezero-profilen kopurua. Normalean, sarrerako datuak baliozkoak direnean eta aberastearekin hobetu ezin direnean gertatzen da.
+
+* **Bezeroak ez dira prozesatu eta ez dira aldatu** : Aitortu ez diren profil kopurua. Normalean baliogabeak diren edo aberastasunak onartzen ez dituen sarrerako datuetarako.
 
 ## <a name="next-steps"></a>Hurrengo urratsak
 

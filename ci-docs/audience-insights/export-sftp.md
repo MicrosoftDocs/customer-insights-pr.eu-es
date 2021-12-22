@@ -1,5 +1,5 @@
 ---
-title: Esportatu Customer Insights datuak SFTP ostalarietara
+title: Esportatu Customer Insights datuak SFTP ostalarietara (bideoa)
 description: Ikasi konexioa nola konfiguratu eta SFTP kokapen batera esportatu.
 ms.date: 03/03/2021
 ms.reviewer: mhart
@@ -9,12 +9,12 @@ ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: a54025588945e4db6ab800dca034520b5f08d49b
-ms.sourcegitcommit: 31985755c7c973fb1eb540c52fd1451731d2bed2
+ms.openlocfilehash: 568e5826175417175bd09435d697031f0ab64223
+ms.sourcegitcommit: e141a6a34a985cca68f03082a700ed27f2f3c0c1
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 10/22/2021
-ms.locfileid: "7673901"
+ms.lasthandoff: 12/17/2021
+ms.locfileid: "7927542"
 ---
 # <a name="export-segments-and-other-data-to-sftp-preview"></a>Esportatu segmentuak eta beste datu batzuk SFTP-ra (aurrebista)
 
@@ -28,6 +28,7 @@ Erabili zure bezeroen datuak hirugarrenen aplikazioetan, fitxategi transferentzi
 
 ## <a name="known-limitations"></a>Muga ezagunak
 
+- Suebakien atzean dauden SFTP helmugak ez dira onartzen oraingoz. 
 - Esportazio baten iraupena zure sistemaren errendimenduaren araberakoa da. Bi PUZ nukleo eta 1 Gb memoria gomendatzen dizugu zure zerbitzariaren gutxieneko konfigurazio gisa. 
 - Gehienez 100 milioi bezero profil dituzten entitate esportatzaileek 90 minutu iraun dezakete gomendatutako gutxieneko konfigurazioa erabiltzen duten bi PUZ nukleorekin eta 1 Gb memoria. 
 
