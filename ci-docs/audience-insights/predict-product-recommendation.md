@@ -1,7 +1,7 @@
 ---
 title: Produktuen gomendioen iragarpena
 description: Aurreikusi litekeena dela bezeroak eros ditzakeen produktuak edo haiekin elkarreragitea.
-ms.date: 09/13/2021
+ms.date: 01/13/2022
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: wmelewong
 ms.author: wameng
 manager: shellyha
-ms.openlocfilehash: a75a245bc721d65643fa78d46f2be52291595a5a
-ms.sourcegitcommit: fecdee73e26816c42d39d160d4d5cfb6c8a91596
-ms.translationtype: HT
+ms.openlocfilehash: 62b829b6ca3074e0ca52fb52584b74572bb05f05
+ms.sourcegitcommit: 15b1521041149716f8031cfa6d0dc61a56a5e2ff
+ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "7494524"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "7967778"
 ---
 # <a name="product-recommendation-prediction-preview"></a>Produktu-gomendioen iragarpena (aurreargitalpena)
 
@@ -54,7 +54,7 @@ Ezaugarri hau probatzea interesatzen bazaizu baina beheko baldintzak betetzeko d
 
 > [!NOTE]
 > - Ereduak zure bezeroen transakzioen historia eskatzen du. Transakzio baten definizioa nahiko malgua da. Erabiltzaile-produktu elkarreragina deskribatzen duten datu guztiek sarrera gisa funtziona dezakete. Adibidez, produktu bat erostea, klasea hartzea edo ekitaldi batera joatea.
-> - Une honetan transakzioen historiako entitate bakarra konfigura daiteke. Erosketa entitate bat baino gehiago badaude, elkartu Power Query-en datuak kontsumitu aurretik.
+> - Une honetan transakzioen historiako entitate bakarra konfigura daiteke. Erosketa-entitate anitz badaude, elkartu itzazu Power Query datuak sartu aurretik.
 > - Ordena eta eskaeraren xehetasunak entitate desberdinak badira, batu haiekin ereduan erabili aurretik. Ereduak ez du entitate bateko eskaera IDarekin edo ordainagiriaren IDarekin soilik funtzionatzen.
 
 
@@ -79,11 +79,11 @@ Ezaugarri hau probatzea interesatzen bazaizu baina beheko baldintzak betetzeko d
 1. Ezarri **Produktu kopurua** bezero bati gomendatu nahi diozu. Balio hori zure bidalketa metodoak datuak nola betetzen dituen araberakoa da. Hiru produktu gomendatzen badituzu, ezarri balio hori horren arabera.
    
    >[!TIP]
-   > Aukeratu dezakezu **Gorde eta itxi** edozein unetan aurreikuspena zirriborro gisa gordetzeko. Iragarpen zirriborroa hemen aurkituko duzu **Nire iragarpenak** fitxa.
+   > Hautatu dezakezu **Gorde zirriborroa** edozein unetan iragarpen zirriborro gisa gordetzeko. Iragarpen zirriborroa hemen aurkituko duzu **Nire iragarpenak** fitxa.
 
-1. Aukeratu **Bezeroek berriki erosi dituzten produktuak iradoki** nahi dituzun.
+1. Aukeratu bezeroek duela gutxi erosi dituzten produktuak sartu nahi dituzun **Errepikatu erosketak espero dira** eremua.
 
-1. *Ez* aukeratu baduzu, gomendatu duela gutxi erositako produktuak, ezarri **Atzera begiratu leihoa**. Ezarpen honek produktuak erabiltzaileari berriro gomendatu aurretik ereduak kontuan hartzen duen denbora-tartea zehazten du. Adibidez, adierazi bezero batek bi urtean behin ordenagailu eramangarri bat erosten duela. Leiho honetan azken bi urteetako erosketa historia ikusiko da, eta elementuren bat aurkitzen badute, elementua gomendioetatik iragazi egingo da.
+1. Ezarri **Begiratu atzera leihoa**. Ezarpen honek produktuak erabiltzaileari berriro gomendatu aurretik ereduak kontuan hartzen duen denbora-tartea zehazten du. Adibidez, adierazi bezero batek bi urtean behin ordenagailu eramangarri bat erosten duela. Leiho honetan azken bi urteetako erosketa historia ikusiko da, eta elementuren bat aurkitzen badute, elementua gomendioetatik iragazi egingo da.
 
 1. Hautatu **Hurrengoa**
 

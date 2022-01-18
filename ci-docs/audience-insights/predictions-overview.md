@@ -1,21 +1,20 @@
 ---
 title: Onartutako iragarpen agertokiei buruzko ikuspegi orokorra
 description: Dynamics 365 Customer Insights aplikazioak lantzen dituen iragarpen agertokiak eta aukerak.
-ms.date: 09/06/2021
+ms.date: 12/21/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: get-started
+ms.topic: overview
 author: zacookmsft
 ms.author: zacook
 manager: shellyha
-ms.custom: intro-internal
-ms.openlocfilehash: 63e22bf9a457ea43c65132643681cffb295ae7e5
-ms.sourcegitcommit: 31985755c7c973fb1eb540c52fd1451731d2bed2
-ms.translationtype: HT
+ms.openlocfilehash: 5972d5b191ded7db14e2ebe9a4a26570a8ea60ba
+ms.sourcegitcommit: bb1ca84bc38e81fb2ff2961c457384b7beb5b5fa
+ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 10/22/2021
-ms.locfileid: "7673947"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7977998"
 ---
 # <a name="predictions-overview"></a>Iragarpenen ikuspegi orokorra
 
@@ -31,6 +30,7 @@ Datuak aurreikusten hasteko modurik errazena aurrez zehaztutako ereduak dira, ma
 - [Produktuen gomendioa](predict-product-recommendation.md): Produktu iragarleen gomendio multzoak iradokitzen ditu erosketa portaeran eta antzeko erosketa ereduak dituzten bezeroetan oinarrituta.
 - [Harpidetzen galera-tasa](predict-subscription-churn.md): bezeroak enpresaren harpidetza-produktu eta -zerbitzuak erabiltzeari uzteko arriskua duen iragar dezake.
 - [Transakzioen galera-tasa](predict-transactional-churn.md): Aurreikusi bezero batek zure produktuak edo zerbitzuak denbora tarte jakin batean erosiko ez dituen ala ez.
+- [Sentimenduen analisia](sentiment-analysis.md) : Bezeroen iritzien sentimendua aztertzea eta maiz aipatzen diren negozio-alderdiak identifikatzea.
 
 # <a name="business-accounts-b-to-b"></a>[Negozio-kontuak (negoziotik negoziora)](#tab/b2b)
 
@@ -43,6 +43,6 @@ Datuak aurreikusten hasteko modurik errazena aurrez zehaztutako ereduak dira, ma
 
 Erakunde batek dagoeneko Azure Ikaskuntza automatikoaren esperientzietan oinarritutako Ikaskuntza automatikoko eszenatokiak erabiltzen baditu, Customer Insights-eko eredu pertsonalizatuen ezaugarriak puntuak konektatzen laguntzen du. Sortu xehetasunak sortu nahi dituzun datuak aukeratzen lagunduko dizuten lan-fluxuak eta emaitzak zure bezeroen profil bateratuei esleitu. Informazio gehiago lortzeko, ikus [Ikaskuntza automatiko eredu pertsonalizatuak](custom-models.md).
 
-## <a name="ai-builder-prediction"></a>AI Builder-en iragarpena
+## <a name="ai-builder-prediction"></a>AI Builder iragarpen
 
 Batzuetan, datu multzoak osatu gabe daude eta balio batzuk falta dira. Customer Insights-ek Bezeroaren entitate eta segmentuetarako falta diren balioak aurreikusten lagun dezake. Informazio gehiagorako, ikus [Osatu zure datu partzialak iragarpenekin](predictions.md).

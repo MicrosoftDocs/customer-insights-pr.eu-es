@@ -9,12 +9,12 @@ ms.topic: tutorial
 author: zacookmsft
 ms.author: zacook
 manager: shellyha
-ms.openlocfilehash: 47e2e5109ef8f21a782f6c8f87088009f8a40fdf
-ms.sourcegitcommit: 58651d33e0a7d438a2587c9ceeaf7ff58ae3b648
+ms.openlocfilehash: 8ca30193ae4f4ef3ed9c60f2d694cd11fad46c76
+ms.sourcegitcommit: 15b1521041149716f8031cfa6d0dc61a56a5e2ff
 ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 12/02/2021
-ms.locfileid: "7881769"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "7967640"
 ---
 # <a name="custom-machine-learning-models"></a>Ikaskuntza automatiko eredu pertsonalizatuak
 
@@ -40,6 +40,8 @@ Iragarpenek bezeroen esperientzia hobeak sortzeko, negozio gaitasunak eta diru s
 
    > [!NOTE]
    > Datuak zure Customer Insights instantzien eta laneko fluxuko hautatutako Azure web zerbitzu edo kanalizazioen artean transferitzen dira. Datuak Azure zerbitzu batera transmititzen dituzunean, ziurtatu zerbitzua datuak prozesatzeko konfiguratuta dagoen moduak eta kokalekuak betetzen dituela erakundeko datu horien eskakizun legal guztiak.
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWRElk]
 
 ## <a name="add-a-new-workflow"></a>Gehitu lan-fluxu bat
 

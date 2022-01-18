@@ -5,21 +5,21 @@ description: Lehen exekuzio-esperientziarekin ohitu Dynamics 365 Customer Insigh
 ms.author: mhart
 ms.date: 10/05/2021
 ms.service: customer-insights
-ms.topic: overview
+ms.topic: conceptual
 ms.manager: shellyha
 ms.custom: intro-internal
-ms.openlocfilehash: 9f96a70d0cc316e8793921fedb0cc3fa4751c827
-ms.sourcegitcommit: 31985755c7c973fb1eb540c52fd1451731d2bed2
-ms.translationtype: HT
+ms.openlocfilehash: e17b66217415c0b554a449f0d992deec7e2d96e7
+ms.sourcegitcommit: bb1ca84bc38e81fb2ff2961c457384b7beb5b5fa
+ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 10/22/2021
-ms.locfileid: "7673421"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7977630"
 ---
 # <a name="get-started-after-purchasing-customer-insights"></a>Hasteko Customer Insights erosi ondoren
 
 Artikulu honetan lehen urratsak nola eman azaltzen da Dynamics 365 Customer Insights zure erakundeak harpidetza erosi ondoren. Customer Insights erosi nahi baduzu, gure harremanetarako aukerak atalean agertzen dira [Dynamics 365 Customer Insights webgunean](https://dynamics.microsoft.com/ai/customer-insights/). 
 
-Customer Insights-erako harpidetza lizentzia erosi ondoren, Microsoft 365 maizterreko administratzaile orokorrak ingurunea sortzera gonbidatzen duen mezu elektronikoa jasotzen du. 
+Customer Insights-erako harpidetza-lizentzia bat erosi ondoren, honen administratzaile globalak Microsoft 365 maizterrak ingurunea sortzera gonbidatzen duen mezu elektroniko bat jasotzen du. 
 
 Customer Insights maizter bakoitzeko lizentzia du eta hainbat gaitasun ditu. Edukiera eta lizentzia gehiago eros ditzakezu kuota lehenetsia handitzeko. 
 - [Prezioen informazio orokorra](https://dynamics.microsoft.com/ai/customer-insights/pricing/)

@@ -44,7 +44,7 @@
       items:
         - name: Datuen iturburuen ikuspegi orokorra
           href: audience-insights/data-sources.md
-        - name: Gehitu datu iturriak Power Query konektoreen bidez
+        - name: Gehitu datu-iturriak bidez Power Query konektoreak
           href: audience-insights/connect-power-query.md
         - name: Gehitu datu arrunten ereduaren karpeta datu-iturburu
           href: audience-insights/connect-common-data-model.md
@@ -80,7 +80,7 @@
       items:
         - name: Aberastu bezeroen profilak
           href: audience-insights/enrichment-hub.md
-        - name: Marka eta intereseko kidetasunak
+        - name: Markak eta zaletasunak
           href: audience-insights/enrichment-microsoft.md
         - name: Helbide hobetuak
           href: audience-insights/enrichment-enhanced-addresses.md
@@ -130,6 +130,8 @@
               href: audience-insights/predict-subscription-churn.md
             - name: Iragarri transakzio churn
               href: audience-insights/predict-transactional-churn.md
+            - name: Aztertu sentimendua bezeroen iritzietan
+              href: audience-insights/sentiment-analysis.md
             - name: Erabili Azure Ikaskuntza automatikoko eredu pertsonalizatuak
               href: audience-insights/custom-models.md
             - name: Osatu partzialki falta diren datuak

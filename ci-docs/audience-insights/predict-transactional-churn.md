@@ -1,7 +1,7 @@
 ---
-title: Transaction churn iragarpen (bideoa)
+title: Transakzio txanda iragarpen (bideoa dauka)
 description: Iragarri bezeroren bat arriskuan dagoen jada produktu eta zerbitzuak erosten ez dituelako.
-ms.date: 10/20/2021
+ms.date: 01/13/2022
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: how-to
 author: zacookmsft
 ms.author: zacook
 manager: shellyha
-ms.openlocfilehash: ad87e0fd848168d1a18f28f2ac5c507bb01e1f28
-ms.sourcegitcommit: 12910882ca990ec0e890ed4deaf3dac7e01621e5
-ms.translationtype: HT
+ms.openlocfilehash: 602a86a67006925faac00add8e089d28f7071c14
+ms.sourcegitcommit: 15b1521041149716f8031cfa6d0dc61a56a5e2ff
+ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 12/10/2021
-ms.locfileid: "7904057"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "7967732"
 ---
 # <a name="transaction-churn-prediction-preview"></a>Transakzioa bertan behera uzteko iragarpena (aurrebista)
 
@@ -103,10 +103,10 @@ Negozio kontuetan oinarritutako inguruneetarako, kontu baten transazio transakti
 
 1. Aukeratu **Bezeroaren galera-tasaren eredua (aurrebista)** lauza eta hautatu **Erabili eredu hau**.
 
-1. Urtean **Bezeroaren buelta eredua** panela, aukeratu **Transakzioa** eta hautatu **Hasi**.
+1. urtean **Bezeroen txandakako eredua (aurrebista)** panela, aukeratu **Transakzioa** eta hautatu **Hasi**.
 
 :::image type="content" source="media/select-transaction-churn.PNG" alt-text="Pantaila pantaila hautatutako transakzio aukerarekin Customer churn model panelean.":::
-
+ 
 ### <a name="name-model"></a>Ezarri izena ereduari
 
 1. Eman ereduari ereduari beste ereduak bereizteko.
@@ -117,11 +117,11 @@ Negozio kontuetan oinarritutako inguruneetarako, kontu baten transazio transakti
 
 ### <a name="define-customer-churn"></a>Definitu bezeroak harpidetza bertan behera uzteko unea
 
-1. Ezarri denbora-tarte bat **Identifikatu hurrengoan gal ditzakegun bezeroak** eremuaren galera-tasa iragartzeko. Adibidez, iragarri hurrengo 90 egunetako bezeroen galera-tasa, marketineko mantentze-ahaleginak egokitzeko. Denbora tarte luzeago edo laburragoan galera-arriskua aurreikusteak zaildu dezake galera-arriskuaren profilaren arrazoiak zehaztea, baina zure negozio eskakizun zehatzen araberakoa da.
+1. Ezarri **iragarpen leihoa**. Adibidez, iragarri hurrengo 90 egunetako bezeroen galera-tasa, marketineko mantentze-ahaleginak egokitzeko. Denbora tarte luzeago edo laburragoan galera-arriskua aurreikusteak zaildu dezake galera-arriskuaren profilaren arrazoiak zehaztea, baina zure negozio eskakizun zehatzen araberakoa da.
    >[!TIP]
-   > Aukeratu dezakezu **Gorde eta itxi** edozein unetan aurreikuspena zirriborro gisa gordetzeko. Zirriborroaren iragarpena hemen aurkituko duzu **Nire iragarpenak** jarraitzeko fitxa.
+   > Hautatu dezakezu **Gorde zirriborroa** edozein unetan iragarpen zirriborro gisa gordetzeko. Zirriborroaren iragarpena hemen aurkituko duzu **Nire iragarpenak** jarraitzeko fitxa.
 
-1. Idatzi egun kopurua **Bezero bat galdutzat jotzen da epe honetan ez badu erosketarik egin:** eremuko galera-tasa definitzeko. Adibidez, bezeroak azken 30 egunetan erosketarik egin ez badu, zure negoziorako galdutzat har daitezke. 
+1. Sartu churn definitzeko egun kopurua **Churn definizioa** eremua. Adibidez, bezeroak azken 30 egunetan erosketarik egin ez badu, zure negoziorako galdutzat har daitezke. 
 
 1. Jarraitzeko, hautatu **Hurrengoa**.
 
@@ -129,19 +129,16 @@ Negozio kontuetan oinarritutako inguruneetarako, kontu baten transazio transakti
 
 1. Hautatu **gehitu datuak** eta aukeratu transakzioaren edo erosketa-historiaren informazioa duen jarduera mota alboko paneletik.
 
-1. **Aukeratu jarduerak** atalean, aukeratu hautatutako jarduerako zein jarduera jakinetan jarri behar duen arreta kalkuluak.
+1. Azpian **Aukeratu jarduerak**, aukeratu jarduera zehatzak kalkulua zentratu nahi duzun hautatutako jarduera motatik.
 
-   :::image type="content" source="media/product-recommendation-select-semantic-activity.PNG" alt-text="Alboko panela, mota semantikoan jarduera jakinak aukeratzeko eragiketa erakusten.":::
+   :::image type="content" source="media/transaction-churn-select-activity.PNG" alt-text="Alboko panela, mota semantikoan jarduera jakinak aukeratzeko eragiketa erakusten.":::
 
-1. Jarduera ez badiozu oraindik mota semantiko bati esleitu, hautatu **Editatu** hori egiteko. Jarduera semantikoak esleitzeko esperientzia gidatua irekiko da. Esleitu datuak hautatutako jarduera motako dagokien eremuekin.
+   Jarduera ez badiozu oraindik mota semantiko bati esleitu, hautatu **Editatu** hori egiteko. Jarduera semantikoak esleitzeko esperientzia gidatua irekiko da. Esleitu datuak hautatutako jarduera motako dagokien eremuekin.
 
-   :::image type="content" source="media/product-recommendation-set-activity-type.PNG" alt-text="Jarduera mota ezartzen duen orria.":::
+1. Esleitu atributu semantikoak eredua exekutatu ahal izateko behar diren eremuei. Beheko eremuak betetzen ez badira, konfiguratu erosketa-historiaren entitatea *Bezeroaren* entitatera. Sakatu **Gorde**.
 
-1. Behin jarduera esleituta dagokion mota semantikoari, hautatu **hurrengoa** jarraitzeko
+1. urtean **Gehitu beharrezko datuak** urratsa, hautatu **Hurrengoa** jarraitzeko jarduera gehiago gehitu nahi ez badituzu.
 
-1. Esleitu atributu semantikoak eredua exekutatu ahal izateko behar diren eremuei. Beheko eremuak betetzen ez badira, konfiguratu erosketa-historiaren entitatea *Bezeroaren* entitatera.
-
-1. Hautatu **Hurrengoa**.
 
 # <a name="individual-consumers-b-to-c"></a>[Banakako kontsumitzaileak (negoziotik bezerora)](#tab/b2c)
 

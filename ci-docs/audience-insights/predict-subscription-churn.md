@@ -1,5 +1,5 @@
 ---
-title: Harpidetza txanda iragarpen (bideoa)
+title: Harpidetza txanda iragarpen (bideoa dauka)
 description: Aurreikusi bezeroren bat arriskuan dagoen jada enpresaren harpidetza produktu eta zerbitzuak erabiltzen ez dituelako.
 ms.date: 08/19/2020
 ms.reviewer: mhart
@@ -9,12 +9,12 @@ ms.topic: how-to
 author: zacookmsft
 ms.author: zacook
 manager: shellyha
-ms.openlocfilehash: 1ef2ff642731ee1ba0a142433745fc5a5b398c88
-ms.sourcegitcommit: 12910882ca990ec0e890ed4deaf3dac7e01621e5
-ms.translationtype: HT
+ms.openlocfilehash: 52ef7a8584cbae5dff0c800650b0238cc09fd6d5
+ms.sourcegitcommit: 15b1521041149716f8031cfa6d0dc61a56a5e2ff
+ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 12/10/2021
-ms.locfileid: "7903934"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "7967686"
 ---
 # <a name="subscription-churn-prediction-preview"></a>Harpidetzeko aurresateko iragarpena (aurrebista)
 
@@ -77,7 +77,7 @@ Harpidetza aurreikuspena lagundu egiten du iragartzen bezeroren bat arriskuan da
 1. Idatzi kopurua **Harpidetza amaitu zen egunak** zure negozioak bezero bat egoera txarrean dagoela uste duela. Epea normalean, bezeroen galerak ekiditen saiatzean eskaintzak edo bestelako marketin-ahaleginak bezalako negozio-jarduerak gustatzen zaizkio.
 1. Idatzi kopurua **Egunak etorkizuna ikertzeko txanda iragartzeko** txanda iragartzeko leiho bat ezartzeko. Adibidez, zure bezeroek hurrengo 90 egunetan eragingo duten arriskua aurreikusteko marketinari eusteko ahaleginetara egokitzeko. Denbora epe luzeago edo laburragoetan churn arriskua aurreikusteak zaildu dezake zure churn arriskuaren profileko faktoreak jorratzea, zure negozioaren eskakizun zehatzen arabera. Jarraitzeko, hautatu **Hurrengoa**
    >[!TIP]
-   > Aukeratu dezakezu **Gorde eta itxi** edozein unetan aurreikuspena zirriborro gisa gordetzeko. Zirriborroaren iragarpena hemen aurkituko duzu **Nire iragarpenak** jarraitzeko fitxa.
+   > Hautatu dezakezu **Gorde zirriborroa** edozein unetan iragarpen zirriborro gisa gordetzeko. Zirriborroaren iragarpena hemen aurkituko duzu **Nire iragarpenak** jarraitzeko fitxa.
 
 ### <a name="add-required-data"></a>Gehitu beharrezko datuak
 

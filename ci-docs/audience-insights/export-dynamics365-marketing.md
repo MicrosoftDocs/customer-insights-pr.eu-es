@@ -9,12 +9,12 @@ ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: b8e63a738abaf4fbb902e3edbf83f5a815978478
-ms.sourcegitcommit: 8e89575fe2acb4b289fc157fa7c4c29caf9be967
-ms.translationtype: HT
+ms.openlocfilehash: 2c673c432f308efa289625a159de608d07f8d2b3
+ms.sourcegitcommit: f988114ac7a288ccadf2db35b02dbef5cacea4d9
+ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "7417190"
+ms.lasthandoff: 01/14/2022
+ms.locfileid: "7975109"
 ---
 # <a name="use-segments-in-dynamics-365-marketing-preview"></a>Erabili segmentuak Dynamics 365 Marketing-en (aurrebista)
 
@@ -45,7 +45,7 @@ Dynamics 365 Marketing-en gaitasun berriak erabiltzen ari bazara denbora erreale
 
 1. Sarbidean **Zerbitzariaren administratzaile kontua** atala aukeratu **saioa hasi** eta aukeratu Dynamics 365 Marketing kontua.
 
-1. Esleitu bezeroaren IDaren eremua Dynamics 365 kontaktuaren IDarekin.
+1. Mapeatu Bezeroaren entitateko Contact ID eremua Dynamics 365 Contact ID-arekin.
 
 1. Hautatu **Gorde** konexioa osatzeko. 
 
