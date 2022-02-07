@@ -1,7 +1,7 @@
 ---
 title: Eginbide berriak eta datozenak
-description: Ezaugarri berriei, hobekuntzei eta akatsak konpontzeko ezaugarriei buruzko informazioa.
-ms.date: 12/02/2021
+description: 'Ezaugarri berriei, hobekuntzei eta akatsak konpontzeko ezaugarriei buruzko informazioa.'
+ms.date: 01/27/2022
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -9,16 +9,11 @@ author: m-hartmann
 ms.author: mhart
 ms.reviewer: midevane
 manager: shellyha
-ms.openlocfilehash: 346ef93e8471580b782618550ca4eb71b3f3c921
-ms.sourcegitcommit: 48d799535fad84e8b63c80aef48b5c5e87628f58
-ms.translationtype: MT
-ms.contentlocale: eu-ES
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "7884247"
 ---
+
 # <a name="whats-new-in-the-audience-insights-capability-of-dynamics-365-customer-insights"></a>Dynamics 365 Customer Insights hartzaileen xehetasunei buruzko zerbitzuaren ezaugarri berriak
 
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
+
 
 Gogotsu gaude gure eguneratze berrienak iragartzeko! Artikulu honek aurrebista publikoko eginbideak, aurrebistako funtzioak, erabilgarritasun orokorreko hobekuntzak, eta eginbideen eguneratzeak. Epe luzerako eginbide planak ikusteko, begiratu [Dynamics 365 eta Power Platform kaleratzeko planak](/dynamics365/release-plans/).
 
@@ -27,9 +22,53 @@ Eguneratzeak eskualdeen arabera banatzen ditugu. Beraz, eskualde batzuek beste b
 > [!TIP]
 > Bidali eta bozkatzeko eginbideak eskaerak eta produktuaren iradokizunak, joan [Dynamics 365 aplikazioaren ideiak atarira](https://experience.dynamics.com/ideas/categories/?forum=79a8c474-4e35-e911-a971-000d3a4f3343&forumName=Dynamics%20365%20Customer%20Insights).
 
+
+## <a name="december-2021-updates"></a>2021eko abenduko eguneraketak
+
+2021eko abenduko eguneratzeek ezaugarri berriak, errendimendu-berritzeak eta akatsen konponketak barne hartzen dituzte.
+
+### <a name="forward-customer-insights-logs-to-azure-monitor"></a>Bidali Customer Insights erregistroak Azure Monitorera
+
+Customer Insights-ek integrazio zuzena eskaintzen du Azure Monitor-ekin. Ezaugarri honek auditoretza-gertaerak eta operazio-gertaerak barne hartzen ditu. Azure Monitor baliabide-erregistroek erregistroak kontrolatu eta Azure biltegiratze-ra, Azure Log Analytics-era bidal ditzakezu edo Azure Event Hubs-era bidali.
+
+Informazio gehiagorako, ikus [Saioa birbidaltzea Dynamics 365 Customer Insights Azure Monitor-ekin (Aurrebista)](diagnostics.md).
+
+### <a name="enrich-customer-profiles-with-engagement-data"></a>Aberastu bezeroen profilak konpromiso datuekin
+
+Erabili datuak Microsoft Office 365 zure bezero-kontuaren profilak engaiamenduei buruzko informazioekin aberasteko Office 365 aplikazioak. Konpromiso-datuak posta elektronikoa eta bilera-jarduerak dira, kontu mailan batzen direnak. Adibidez, negozio-kontu bateko mezu elektronikoen kopurua edo kontuarekin izandako bilera-kopurua. Ez da banakako erabiltzaileei buruzko daturik partekatzen. Aberaste hau eskualde hauetan dago eskuragarri: Erresuma Batua, Europa, Ipar Amerika.
+
+Informazio gehiagorako, ikus [Aberastu bezeroen profilak konpromiso datuekin (aurrebista)](enrichment-office.md)
+
+### <a name="advanced-data-unification-features"></a>Datuak bateratzeko eginbide aurreratuak
+
+#### <a name="enable-conflict-resolution-policies-at-the-individual-attribute-level"></a>Gaitu gatazkak konpontzeko politikak banakako atributu mailan
+
+Entitate baten barruan bezeroen erregistroak desbikoitzean, baliteke erregistro osoa irabazle gisa aukeratu behar izatea nahi ez izatea. Orain, hainbat erregistrotako eremu onenak batzeko aukera ematen dizugu, atributu bakoitzaren arauetan oinarrituta. Adibidez, posta elektroniko berriena ETA helbiderik osatuena erregistro ezberdinetatik gordetzea aukera dezakezu. 
+
+Orain atributu indibidualentzako bateratze-arau bereiziak defini ditzakezu erregistroak entitate bakarrean desbikoiztu eta batzen dituzun bitartean. Aurretik, bateratze-arau bakarra hautatzen uzten dizugu (erregistroak berritasun-datuen osotasunean oinarrituta mantenduz) eta arau hori erregistro-mailan aplikatzen zen atributu guztietan. Hori ez da aproposa gorde nahi dituzun datu batzuk A erregistroan aurkitzen direnean eta beste datu on batzuk B erregistroan aurkitzen direnean.
+
+Informazio gehiagorako, ikusi [Definitu bikoiztuak kentzea bat datorren entitate batean](match-entities.md#define-deduplication-on-a-match-entity).
+
+#### <a name="custom-rules-for-matching"></a>Lotzeko arau pertsonalizatuak
+
+Batzuetan, arau orokorren salbuespen bat zehaztu behar duzu erregistroak EZ bat etortzeko. Hau gerta daiteke pertsona askok informazio nahikoa partekatzen dutenean, sistemak banako bakar gisa parekatuko lituzke. Adibidez, abizen berdina duten bikiak, hiri berean bizi direnak eta jaiotze data partekatzen dutenak.
+
+Salbuespenek ziurtatzen dute datuen bateratze okerra bateratze-arauetan bideratu daitekeela. Arau bati hainbat salbuespen gehi ditzakezu.
+
+Informazio gehiagorako, ikus [Gehitu salbuespenak arau bati](match-entities.md#add-exceptions-to-a-rule).
+
+#### <a name="provide-additional-conflict-resolution-policies-and-enable-grouping-of-attributes"></a>Eman gatazkak konpontzeko politika osagarriak eta gaitu atributuak taldekatzea
+
+Ezaugarri honek eremu talde bat unitate bakar gisa tratatzeko aukera ematen dizu. Adibidez, gure erregistroek Helbidea1, Helbidea2, Hiria, Estatua eta Zip eremuak badituzu. Seguruenik, ez dugu nahi beste erregistro baten Helbide2 batean batu, gure datuak osatuagoak izango liratekeela pentsatuz.
+
+Orain erlazionatutako eremuen talde bat konbina dezakezu eta bateratze-politika bakarra aplika dezakezu taldeari. 
+
+Informazio gehiagorako, ikus [Konbinatu eremu talde bat](merge-entities.md#combine-a-group-of-fields).
+
+
 ## <a name="november-2021-updates"></a>2021eko azaroko eguneraketak
 
-2021eko azaroko eguneratzeek ezaugarri berriak, errendimenduaren hobekuntzak eta akatsen konponketak barne hartzen dituzte.
+2021eko azaroko eguneratzeek ezaugarri berriak, errendimendu-berritzeak eta akatsen konponketak barne hartzen dituzte.
 
 ### <a name="segment-membership-now-available-in-dataverse"></a>Segmentuko kidetza orain eskuragarri dago hemen Dataverse
 
@@ -37,7 +76,7 @@ Bezeroen profiletarako kideen segmentuari buruzko informazioa eskuragarri dago o
 
 ### <a name="activities-support-contact-level-details-for-business-accounts"></a>Jarduerek kontaktu-mailako xehetasunak onartzen dituzte enpresa-kontuetarako
 
-Orain, zure negozio-kontuaren jarduera-eremuko kontaktuen jarduerak konfiguratu, bistaratu eta iragazi ditzakezu kontuko kontaktuek jarduera zehatzetan parte hartu duten hobeto ulertzeko.
+Orain, zure negozio-kontuaren jarduera-eremuetan kontaktuen jarduerak konfiguratu, bistaratu eta iragazi ditzakezu kontuko kontaktuek jarduera zehatzetan parte hartu duten hobeto ulertzeko.
 
 ## <a name="october-2021-updates"></a>2021eko urriko eguneraketak
 
@@ -55,7 +94,7 @@ Segmentu-esportazio guztiak ikusleen informazioetan eskuragarri daude negozio-ko
 
 #### <a name="use-the-linkedin-ads-export-with-business-accounts"></a>Erabili LinkedIn Ads esportazioa negozio-kontuekin
 
-LinkedIn Ads esportazioa eskuragarri dago orain harremanetarako eta enpresentzako bideratzeko negozio kontuen testuinguruan. Linkedin-eko esportazioaren ardatz nagusi gisa enpresaren bideratzea hautatzean, negozio-kontuetan eraikitako segmentuak esportatu ditzakezu harremanetarako informazioa proiektatu beharrik gabe. Informazio gehiago lortzeko, joan honi buruzko dokumentuetara [LinkedIn Ads esportatzea](export-linkedin-ads.md) eta arteko aldea [harremanetarako bideratzea](https://business.linkedin.com/marketing-solutions/ad-targeting/contact-targeting) eta [enpresaren bideratzea](https://business.linkedin.com/marketing-solutions/ad-targeting/account-targeting). 
+LinkedIn Ads esportazioa eskuragarri dago orain harremanetarako eta enpresentzako bideratzeko negozio kontuen testuinguruan. Konpainiaren xedea LinkedIn esportazioaren ardatz nagusi gisa hautatzen duzunean, negozio-kontuetan eraikitako segmentuak esportatu ditzakezu harremanetarako informazioa proiektatu beharrik gabe. Informazio gehiago lortzeko, joan honi buruzko dokumentuetara [LinkedIn Ads esportatzea](export-linkedin-ads.md) eta arteko aldea [harremanetarako bideratzea](https://business.linkedin.com/marketing-solutions/ad-targeting/contact-targeting) eta [enpresaren bideratzea](https://business.linkedin.com/marketing-solutions/ad-targeting/account-targeting). 
 
 #### <a name="create-measures-based-on-business-accounts-and-their-hierarchy"></a>Enpresa-kontuetan eta haien hierarkian oinarritutako neurriak sortzea
 

@@ -9,16 +9,11 @@ ms.reviewer: mhart
 author: NimrodMagen
 ms.author: nimagen
 manager: shellyha
-ms.openlocfilehash: 309b2a900e50727ffa655fc6b5fe728ea55ba5bf
-ms.sourcegitcommit: 626d485dae1e001e63e4d4bf78f6770766822ba0
-ms.translationtype: MT
-ms.contentlocale: eu-ES
-ms.lasthandoff: 12/06/2021
-ms.locfileid: "7892369"
 ---
+
 # <a name="manage-environments"></a>Kudeatu inguruneak
 
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
+
 
 ## <a name="switch-environments"></a>Aldatu inguruneak
 
@@ -47,7 +42,7 @@ Informazio gehiago lortzeko ingurune-ezarpenetan, ikusi [Sortu ingurune berri ba
 Erabiltzeko [kutxaz kanpoko iragarpen modeloak](predictions-overview.md#out-of-box-models), konfiguratu datuak partekatzearekin Dataverse. Edo datuen iradokizuna gaitu dezakezu lokal datu iturrietatik, Microsoft Dataverse zure erakundeak administratzen duen ingurumen URLa. Aukeratu **Gaitu datuak partekatzea** Customer Insights-en irteerako datuak partekatzeko Dataverse kudeatutako Data Lake.
 
 > [!IMPORTANT]
-> Bezeroen ikuspegiak eta Dataverse Eskualde berean egon behar da datuak partekatzea gaitzeko.
+> Bezeroen ikuspegiak eta Dataverse Eskualde berean egon behar da datuak partekatzea ahalbidetzeko.
 
 :::image type="content" source="media/dataverse-data-sharing.png" alt-text="Konfigurazioaren aukerak gaitzeko datuak partekatzeko Microsoft Dataverse.":::
 

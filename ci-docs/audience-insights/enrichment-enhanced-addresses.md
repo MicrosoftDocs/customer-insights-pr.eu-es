@@ -1,7 +1,7 @@
 ---
 title: Helbidea hobetzeko aberastea (bideoa dauka)
 description: Aberastu eta normalizatu bezeroen profilen helbideen informazioa Microsoft-en ereduekin.
-ms.date: 12/16/2021
+ms.date: 01/19/2022
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,13 +9,8 @@ ms.topic: how-to
 author: kishorem-ms
 ms.author: kishorem
 manager: shellyha
-ms.openlocfilehash: afb1a6b4805702697889bb91ca36a96a714cba3d
-ms.sourcegitcommit: 9132fdf54070cc551ab878378078e6285852818f
-ms.translationtype: MT
-ms.contentlocale: eu-ES
-ms.lasthandoff: 12/18/2021
-ms.locfileid: "7934908"
 ---
+
 # <a name="enrichment-of-customer-profiles-with-enhanced-addresses"></a>Bezeroen profilak aberastu helbide hobetuekin
 
 Zure datuetako helbideak desegituratuak, osatugabeak edo okerrak izan daitezke. Erabili Microsoft-en ereduak zure helbideak normalizatzeko eta aberasteko [Common Data Model formatua](/common-data-model/schema/core/applicationcommon/address) zehaztasun eta ikuspegi hobeak lortzeko.
@@ -100,17 +95,17 @@ Aberasteko prozesua hasteko, hautatu **Korrika egin** komando barratik. Gainera,
 
 Aberasteko prozesua amaitu ondoren, aberastu berri diren bezeroen profilen datuak berrikus ditzakezu atalean **Nire aberastasunak**. Gainera, azken eguneratzearen ordua eta profil aberastuen kopurua aurkituko dituzu.
 
-Aberastutako profil bakoitzaren ikuspegi zehatza sar dezakezu hautatuta **Ikusi aberastutako datuak**.
+Aberastutako datuen lagin bat ikus dezakezu **Bezeroen aurrebista aberastua** teila. Hautatu **Gehiago ikusi** eta hautatu **Datuak** fitxa aberastutako profil bakoitzaren ikuspegi zehatzera sartzeko.
 
 ### <a name="overview-card"></a>Ikuspegiko txartela
 
 Ikuspegi-txartelak aberastearen estaldurari buruzko xehetasunak erakusten ditu. 
 
-* **Bezeroak prozesatu eta aldatu** : arrakastaz aberastu diren bezero-profilen kopurua.
+* **Helbideak prozesatu eta aldatu** : arrakastaz aberastu diren helbideak dituzten bezero-profilen kopurua.
 
-* **Bezeroak prozesatu eta aldatu gabe** : aitortu baina aldatu ez diren bezero-profilen kopurua. Normalean, sarrerako datuak baliozkoak direnean eta aberastearekin hobetu ezin direnean gertatzen da.
+* **Helbideak prozesatu eta aldatu gabe** : Aitortu baina aldatu ez diren helbideak dituzten bezero-profilen kopurua. Normalean, sarrerako datuak baliozkoak direnean eta aberastearekin hobetu ezin direnean gertatzen da.
 
-* **Bezeroak ez dira prozesatu eta ez dira aldatu** : Aitortu ez diren profil kopurua. Normalean baliogabeak diren edo aberastasunak onartzen ez dituen sarrerako datuetarako.
+* **Helbideak ez dira prozesatu eta ez dira aldatu** : Aitortu gabeko helbideak dituzten profil kopurua. Normalean baliogabeak diren edo aberastasunak onartzen ez dituen sarrerako datuetarako.
 
 ## <a name="next-steps"></a>Hurrengo urratsak
 

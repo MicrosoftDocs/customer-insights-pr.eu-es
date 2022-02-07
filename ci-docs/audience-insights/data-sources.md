@@ -9,16 +9,11 @@ author: adkuppa
 ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 78379c827e132b3b172aa7381f4c5ef2c70b9771
-ms.sourcegitcommit: bb1ca84bc38e81fb2ff2961c457384b7beb5b5fa
-ms.translationtype: MT
-ms.contentlocale: eu-ES
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7977814"
 ---
+
 # <a name="data-sources-overview"></a>Datuen iturburuen ikuspegi orokorra
 
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
+
 
 Dynamics 365 Customer Insights-eko hartzaileen xehetasunen gaitasuna iturburu multzo zabal bateko datuekin konektatzen da. datu-iturburu-era konektatzearen prozesua sarritan aipatzen da *datuen irenstea*. Datuak irentsi ondoren, egin dezakezu [bateratu](data-unification.md) eta neurriak hartu.
 
@@ -33,7 +28,7 @@ Datu iturri hauek gehi ditzakezu:
 - [Microsoft Dataverse aintzira](connect-dataverse-managed-lake.md)
 
 > [!NOTE]
-> Probako bertsioa erabiltzen ari bazara, inportazio metodoen atalean a **Customer Insights datu-liburutegia** aukera. Aukeratu aukera hau hainbat industriarentzat erabilgarri dagoen datu-multzo lagin bat hautatzeko. Informazio gehiagorako, ikus [Dynamics 365 Customer Insights epaiketa](../trial-signup.md).
+> Probako bertsioa erabiltzen ari bazara, inportazio metodoen atalean a **Customer Insights datu-liburutegia** aukera. Aukeratu aukera hau hainbat industriatarako erabilgarri dagoen datu-multzo lagin bat hautatzeko. Informazio gehiagorako, ikus [Dynamics 365 Customer Insights epaiketa](../trial-signup.md).
 
 ## <a name="add-data-from-on-premises-data-sources"></a>Gehitu datuak lokal datu iturrietatik
 

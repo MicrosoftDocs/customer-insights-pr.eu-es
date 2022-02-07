@@ -1,7 +1,7 @@
 ---
 title: Konektatu Common Data Model-eko datuak Azure Data Lake kontu batekin
 description: Egin lan Common Data Model-ekin Azure Data Lake Storage erabiliz.
-ms.date: 12/06/2021
+ms.date: 01/25/2022
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
@@ -9,13 +9,8 @@ author: adkuppa
 ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 5f9010f78ea4c24094e0df4f8e153fb832e05cc8
-ms.sourcegitcommit: 11b343f6622665251ab84ae39ebcd91fa1c928ca
-ms.translationtype: MT
-ms.contentlocale: eu-ES
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "7900182"
 ---
+
 # <a name="connect-to-a-common-data-model-folder-using-an-azure-data-lake-account"></a>Konektatu Common Data Model karpetara Azure Data Lake kontua erabiliz
 
 Artikulu honek Azure Data Lake Storage Gen2 kontua erabiliz Common Data Model-eko datuak sartzeko moduari buruzko informazioa eskaintzen du.
@@ -25,6 +20,8 @@ Artikulu honek Azure Data Lake Storage Gen2 kontua erabiliz Common Data Model-ek
 - Azure Data Lake-eko datuek datu arrunten ereduaren estandarra jarraitu behar dute. Oraingoz ez dira beste formatuak onartzen.
 
 - Datuak sartzeak Azure Data Lake *Gen2* biltegiratze kontuak soilik onartzen ditu. Ezin dituzu Azure Data Lake Gen1 biltegiratze kontuak erabili datuak sartzeko.
+
+- Azure Data Lake biltegiratze-kontuak izan behar du [izen-espazio hierarkikoa gaituta](/azure/storage/blobs/data-lake-storage-namespace).
 
 - Azure zerbitzuaren entitatearekin autentifikatzeko, ziurtatu zure maizterrean konfiguratuta dagoela. Informazio gehiagorako, ikus [Konektatu hartzaileei buruzko xehetasunak Azure Data Lake Storage Gen2 kontu batera Azure zerbitzuaren entitatearekin](connect-service-principal.md).
 

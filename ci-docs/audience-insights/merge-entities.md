@@ -1,7 +1,7 @@
 ---
 title: Konbinatu entitateak datuen bateratzean
 description: Konbinatu entitateak bezeroen profil bateratuak sortzeko.
-ms.date: 11/01/2021
+ms.date: 01/28/2022
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: tutorial
@@ -10,14 +10,9 @@ ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
 searchScope:
-- ci-merge
-ms.openlocfilehash: c218f9c1a1b7711ee48419470bf6c352450ffc0c
-ms.sourcegitcommit: 834651b933b1e50e7557d44f926a3fb757c1f83a
-ms.translationtype: MT
-ms.contentlocale: eu-ES
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "7732757"
+  - ci-merge
 ---
+
 # <a name="merge-entities"></a>Konbinatu entitateak
 
 Konbinaketa fasea azken fasea da datuak bateratzeko prozesuan. Bere helburua gatazkako datuak bateratzea da. Datu gatazkatsu batzuen adibideetan zure datu multzoetako bi bezeroen izena aurki daiteke, baina bakoitza modu desberdinean agertzen da ("Grant Marshall" versus "Grant Marshal"), edo telefono zenbakia (617-803-091X versus 617803091X ). Datu-puntu gatazkatsu horiek batzea atributuak banatzen dira.
@@ -99,11 +94,13 @@ Baztertu atributu bat konbinatutako bezeroaren profiletik. Eremua beste prozesu 
 
 1. Aukeratu **Gorde** eta **Korrika egin** aldaketak prozesatzeko. 
 
-## <a name="manually-combine-fields"></a>Konbinatu eremuak eskuz
+## <a name="combine-fields-manually"></a>Konbinatu eremuak eskuz
 
-Zehaztu bateratutako atributu bat eskuz. 
+Zehaztu bateratutako atributu bat eskuz.
 
-1. **Batu** orrian, hautatu **Konbinatu eremuak**.
+1. Gainean **Batu** orrialdea, hautatu **Konbinatu**.
+
+1. Aukeratu **Eremuak** aukera.
 
 1. Zehaztu konbinazio nagusiaren gidalerroak **Konbinatu eremuak honen arabera** goitibeherako menuan.
 
@@ -114,6 +111,26 @@ Zehaztu bateratutako atributu bat eskuz.
 1. Aldaketak aplikatzeko, hautatu **Eginda**.
 
 1. Aukeratu **Gorde** eta **Korrika egin** aldaketak prozesatzeko. 
+
+## <a name="combine-a-group-of-fields"></a>Konbinatu eremu talde bat
+
+Tratatu eremu talde bat unitate bakar gisa. Adibidez, gure erregistroek Helbidea1, Helbidea2, Hiria, Estatua eta Zip eremuak badituzu. Seguruenik, ez dugu nahi beste erregistro baten Helbide2 batean batu, gure datuak osatuagoak izango direlakoan
+
+1. Gainean **Batu** orrialdea, hautatu **Konbinatu**.
+
+1. Aukeratu **Eremu multzoa** aukera.
+
+1. Zehaztu bateratze irabazlearen politika **Sailkatu taldeak arabera** goitibeherako.
+
+1. Hautatu **Gehitu** eta aukeratu eremuetan eremu gehiago edo talde gehiago gehitu nahi dituzun.
+
+1. Eman a **Izena** eta bat **Irteera izena** eremu konbinatu bakoitzeko.
+
+1. Eman a **Izena** eremuen talderako. 
+
+1. Aldaketak aplikatzeko, hautatu **Eginda**.
+
+1. Aukeratu **Gorde** eta **Korrika egin** aldaketak prozesatzeko.
 
 ## <a name="change-the-order-of-fields"></a>Aldatu eremuen ordena
 
