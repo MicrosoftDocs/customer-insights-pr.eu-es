@@ -2,6 +2,22 @@
   href: index.yml
 - name: Produktuaren ikuspegi orokorra
   href: overview.md
+- name: Ikasketa-katalogoa
+  items:
+    - name: Lehenengo urratsak
+      href: /learn/modules/get-started-customer-data-platform/
+    - name: Sartu datuak
+      href: /learn/modules/ingest-data-customer-insights/
+    - name: Sortu bezeroaren profil bateratua
+      href: /learn/modules/unified-customer-profile/
+    - name: Lan egin ikusleen ikuspegiekin
+      href: /learn/modules/working-with-customer-insights/
+    - name: Datuak aberastu eta iragarpenak egin
+      href: /learn/modules/enrich-data/
+    - name: Kudeatu kanpoko konexioak
+      href: /learn/modules/configure-third-party-connections/
+    - name: Administratu Customer Insights
+      href: /learn/modules/administer-customer-data-platform/
 - name: Doako proba
   items:
     - name: Hasi saioa doako proba lortzeko
@@ -30,16 +46,6 @@
           href: audience-insights/home.md
     - name: Egin lan negozio-kontuekin
       href: audience-insights/work-with-business-accounts.md
-    - name: Ikasteko moduluak
-      items:
-        - name: Sartu datuak
-          href: /learn/modules/ingest-data-customer-insights/
-        - name: Sortu bezeroaren profil bateratua
-          href: /learn/modules/unified-customer-profile/
-        - name: Egin lan edozein aplikaziorekin
-          href: /learn/modules/working-with-customer-insights/
-        - name: Datuak eta iragarpenak aberastu
-          href: /learn/modules/enrich-data/
     - name: Datu-iturburuak
       items:
         - name: Datuen iturburuen ikuspegi orokorra
@@ -372,3 +378,5 @@
   href: service-limits.md
 - name: DSR eskubideak eta eskaerak
   href: dsr-rights-requests.md
+- name: Lortu laguntza
+  href: /power-platform/admin/get-help-support

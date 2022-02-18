@@ -1,7 +1,7 @@
 ---
 title: Lotu entitateak datuak bateratzeko
 description: Lotu entitateak bezeroen profil bateratuak sortzeko.
-ms.date: 01/28/2022
+ms.date: 02/07/2022
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: tutorial
@@ -10,9 +10,14 @@ ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
 searchScope:
-  - ci-match
+- ci-match
+ms.openlocfilehash: 20f21a6601a1a6f13d076878b10c15be947dac9f
+ms.sourcegitcommit: a399bd17523c8d06afd7d78af4fc711f93c0e8be
+ms.translationtype: HT
+ms.contentlocale: eu-ES
+ms.lasthandoff: 02/07/2022
+ms.locfileid: "8098820"
 ---
-
 # <a name="match-entities"></a>Batu entitateak
 
 Binakako faseak zure datu multzoak bezeroaren profil bateratutako datu multzoa nola konbinatu zehazten du. Osatu ondoren [mapa urratsa](map-entities.md) datuak bateratzeko prozesuan, zure entitateekin bat egiteko prest zaude. Partida faseak gutxienez eskatzen du mapatutako bi erakunde.
@@ -24,13 +29,7 @@ Partidaren orrialdeak hiru atal ditu:
 
 ## <a name="specify-the-match-order"></a>bat etortzearen ordena zehaztu
 
-Joan **Datuak** > **Bateratu** > **Bat etorri** aukerara eta hautatu **Ezarri ordena** bat-etortzearen fasea hasteko.
-
-Partida bakoitzak bi entitate edo gehiago bateratzen ditu entitate bakar eta bateratu batean. Aldi berean, bezeroaren erregistro bakarrak gordetzen ditu. Adibidez, bi entitate hautatu ditugu: **eCommerce: eCommerceContacts** lehen entitate gisa eta **LoyaltyScheme: loyCustomers** bigarren entitate gisa. Entitateen ordenak sistema zein erregistroekin bat egiten saiatuko den zehazten du.
-
-:::image type="content" source="media/match-page.png" alt-text="Partiduen orrialdearen pantaila-argazkia datuak bateratzeko prozesuaren bateratu eremuan.":::
-  
-Entitate nagusia *eCommerce: eCommerceContacts* hurrengo entitatearekin bat dator *LoyaltyScheme: loyCustomers*. Lehen bat-etortze-urratsetik ateratzen den datu-multzoa hurrengo entitatearekin bat dator bi entitate baino gehiago badituzu.
+Partida bakoitzak bi entitate edo gehiago bateratzen ditu entitate bakar eta bateratu batean. Aldi berean, bezeroaren erregistro bakarrak gordetzen ditu. Bat-etortze-ordenak sistemak erregistroekin bat egiten saiatzen den ordena adierazten du.
 
 > [!IMPORTANT]
 > Aukeratzen duzun entitatea lehen entitatea zure datu multzo nagusia bateratzeko oinarria izango da. Partida fasean hautatzen diren entitate osagarriak gehituko zaizkie entitate honi. Horrek ez du esan nahi erakunde bateratuak sartuko duenik *guztiak* entitate honetan sartutako datuen artean.
@@ -38,9 +37,18 @@ Entitate nagusia *eCommerce: eCommerceContacts* hurrengo entitatearekin bat dato
 > Bi entitateren hierarkia aukeratzen lagun dezaketen bi gogoeta daude:
 >
 > - Aukeratu entitate nagusia zure bezeroei buruzko profileko datu osatuena eta fidagarriena duen entitatea.
-> - Aukeratu beste entitate batzuekin (adibidez, izena, telefono zenbakia edo helbide elektronikoa) beste atributu batzuk dituzten entitatea lehen mailako entitate gisa.
+> - Aukeratu beste entitate batzuekin komunean hainbat atributu dituen entitatea (adibidez, izena, telefono-zenbakia edo helbide elektronikoa) entitate nagusi gisa.
 
-Partiduen ordena zehaztu ondoren, definitutako partidu bikoteak ikusiko dituzu **Erregistroen xehetasunak** atalean **Datuak** > **Bat egin** > **Partidua**. Gako-metrikak hutsik egongo dira partida prozesua amaitu arte.
+1. Joan **Datuak** > **Bateratu** > **Bat etorri** aukerara eta hautatu **Ezarri ordena** bat-etortzearen fasea hasteko.
+1. Hautatu **Entitatearen agindua**. Adibidez, hautatu **eCommerce:eCommerceContacts** entitate nagusi gisa eta **LoyaltyScheme:loyCustomers** bigarren entitate gisa. 
+1. Entitateko erregistro guztiak bezero esklusibo gisa eta ondorengo entitate guztiekin bat egiteko, hautatu **Sartu guztiak**.
+1. Hautatu **Eginda**. 
+
+Bat-etortze-ordena zehaztu ondoren, definitutako bat-etortze-bikoteak agertzen dira **Bat datozen erregistroen xehetasunak** atalean **Datuak** > **Bateratu** > **Partidua**. Funtsezko neurketak hutsik daude parekatze-prozesua amaitu arte.
+
+:::image type="content" source="media/match-page.png" alt-text="Partiduen orrialdearen pantaila-argazkia datuak bateratzeko prozesuaren bateratu eremuan.":::
+  
+Entitate nagusia *eCommerce: eCommerceContacts* hurrengo entitatearekin bat dator *LoyaltyScheme: loyCustomers*. Lehen bat-etortze-urratsetik ateratzen den datu-multzoa hurrengo entitatearekin bat dator bi entitate baino gehiago badituzu.
 
 ## <a name="define-rules-for-match-pairs"></a>Partiduen bikoteen arauak zehaztu
 
@@ -50,7 +58,7 @@ Bat egiten duten arauek entitate pare bat lotuko den logika zehazten dute.
 
 :::image type="content" source="media/match-rule-add.png" alt-text="Partiduen erregistroaren xehetasunen atalaren pantaila-argazkia kontrolarekin nabarmendutako arauak gehitzeko.":::
 
-1. Aukeratu **Gehitu arauak** entitate baten menpe **Erregistroen xehetasunak** partida arauak definitzeko atala.
+1. Hautatu **Gehitu araua** entitate baten pean **Bat datozen erregistroen xehetasunak** atala partida-arauak definitzeko.
 
 1. Hurrengoan **Sortu araua** panelean, konfiguratu arauaren baldintzak.
 
@@ -61,15 +69,15 @@ Bat egiten duten arauek entitate pare bat lotuko den logika zehazten dute.
    - **Entitatea / eremua (bigarren ilara)**: Aukeratu lehen errenkadan zehaztutako entitatearen atributuarekin erlazionatutako atributu bat.
 
    - **Normalizatu**: Aukeratu hautatutako atributuen normalizazio aukera hauetatik. 
-     - Espazio zuria: espazio guztiak ezabatzen ditu. *Kaixo   Mundua* bihurtzen da *KaixoMundua*.
+     - Zenbakiak: beste zenbaki sistema batzuk, hala nola zenbaki erromatarrak, zenbaki arabiar bihurtzen ditu. *VIII* bihurtzen *8*.
      - Sinboloak: sinbolo eta karaktere berezi guztiak kentzen ditu. *Burua eta Sorbalda* bihurtzen da *HeadShoulder*.
      - Testua minuskulara: karaktere guztiak minuskulara bihurtzen ditu. *MAIUSU GUZTIAK eta Izenburua* bihurtzen da *maiuskula guztiak eta izenburua*.
+     - Mota (Telefonoa, Izena, Helbidea, Erakundea): izenak, izenburuak, telefono zenbakiak, helbideak, etab. 
      - Unicode ASCII: Unicode notazioa ASCII karaktere bihurtzen du. */u00B2* bihurtzen da *2*.
-     - Zenbakiak: beste zenbaki sistema batzuk, hala nola zenbaki erromatarrak, zenbaki arabiar bihurtzen ditu. *VIII* bihurtzen *8*.
-     - Mota semantikoak: izenak, izenburuak, telefono zenbakiak, helbideak eta abar normalizatzen ditu. 
+     - Espazio zuria: espazio guztiak ezabatzen ditu. *Kaixo   Mundua* bihurtzen da *KaixoMundua*.
 
    - **Zehaztasuna**: zehaztu baldintza hau aplikatzeko zehaztasun maila. 
-     - **Oinarrizkoa**: aukeratu *Baxua*, *Ertaina*, *Altua*, eta *Zehazki*. Aukeratu **zehatza** Ehuneko 100 bat datozen erregistroak soilik lotzeko. Hautatu beste maila bat ehuneko 100 berdin-berdina ez duten erregistroekin bat etor dadin.
+     - **Oinarrizkoa**: aukeratu *Baxua*, *Ertaina*, *Altua*, eta *Zehazki*. Hautatu **Zehatza** ehuneko 100ean bat datozen erregistroak soilik lotzeko. Hautatu beste maila bat ehuneko 100 berdin-berdina ez duten erregistroekin bat etor dadin.
      - **Pertsonalizatua**: ezarri erregistroek bat etorri behar duten ehunekoa. Sistemak atalase hori gainditzen duten erregistroak baino ez ditu bat etorriko.
 
 1. Eman **Izena** araurako.
@@ -92,7 +100,7 @@ Entitateekin parekatzeko atributuek baldintza anitz betetzen badituzte, gehitu b
 
 ### <a name="add-rules-to-a-match-pair"></a>Gehitu arauak partida bikoteari
 
-Partiduen arauek baldintza multzoak adierazten dituzte. Entitateak batzeko baldintzetan oinarrituz atributu anitzetan, gehitu arau gehiago
+Partiduen arauek baldintza multzoak adierazten dituzte. Entitateak hainbat atribututan oinarritutako baldintzen arabera lotzeko, gehitu arau gehiago.
 
 1.  Joan **Datuak** > **Bat egin** > **Partidua** eta hautatu **Gehitu araua** entitatean gehitu nahi dituzun arauan.
 
@@ -117,7 +125,7 @@ Parekatze-arauetarako entitateak berrantola ditzakezu prozesatzen diren ordena a
 
 Horrez gain [entitateen arteko partida arauak](#define-rules-for-match-pairs), desduplikazio arauak ere zehaz ditzakezu. *Desplikazioa* erregistroak parekatzerakoan beste prozesu bat da. Erregistro bikoiztuak identifikatzen ditu eta erregistro bakarrean bateratzen ditu. Iturburu erregistroak bateratutako erregistroarekin lotzen dira ID ordezkoekin.
 
-Bikoiztutako erregistroak entitateen arteko bat-etortze prozesuan erabiliko da. Desplikazioa entitate indibidualetan gertatzen da eta partida bikoteetan erabilitako entitate guztiak konfigura daitezke.
+Bikoiztutako erregistroak entitateen arteko parekatze-prozesuan erabiltzen dira. Desduplicazioa entitate indibidualetan gertatzen da eta partida-bikoteetan erabiltzen den entitate guztietan konfigura daiteke.
 
 Bikoiztuak kentzeko arauak zehaztea ez da derrigorrezkoa. Horrelako araurik konfiguratzen ez bada, sistemak definitutako arauak aplikatuko dira. Erregistro guztiak erregistro bakarrean konbinatzen dituzte entitatearen datuak entitateen arteko parekatzera pasa aurretik errendimendu hobea lortzeko.
 
@@ -134,7 +142,7 @@ Bikoiztuak kentzeko arauak zehaztea ez da derrigorrezkoa. Horrelako araurik konf
       - **Berrienak**: erregistro nagusia identifikatzen du berritasunen arabera. Berritasuna definitzeko data edo zenbakizko eremua behar du.
       - **Zaharrenak**: erregistro nagusia identifikatzen du zahartasunaren arabera. Berritasuna definitzeko data edo zenbakizko eremua behar du.
 
-   1. Aukeran, hautatu **Aurreratua** entitate baten atributu indibidualen deduplicazio-arauak definitzeko. Adibidez, posta elektroniko berriena ETA helbiderik osatuena erregistro ezberdinetatik gordetzea aukera dezakezu. Zabaldu entitatea bere atributu guztiak ikusteko eta zein aukera erabili atributu indibidualetarako. Azkenaldian oinarritutako aukera bat aukeratzen baduzu, berritasuna definitzen duen data/orduaren eremua ere zehaztu behar duzu. 
+   1. Aukeran, entitate baten atributu indibidualetan deduplicazio-arauak definitzeko, hautatu **Aurreratua**. Adibidez, posta elektroniko berriena ETA helbiderik osatuena erregistro ezberdinetatik gordetzea aukera dezakezu. Zabaldu entitatea bere atributu guztiak ikusteko eta zein aukera erabili atributu indibidualetarako. Azkenaldian oinarritutako aukera bat aukeratzen baduzu, berritasuna definitzen duen data/orduaren eremua ere zehaztu behar duzu. 
  
       > [!div class="mx-imgBorder"]
       > ![Bikoiztuak kentzeko arauak, 1. urratsa.](media/match-selfconflation.png "Bikoiztuak kentzeko arauak, 1. urratsa")
@@ -254,7 +262,7 @@ Bat-etortze-logika lehenetsia gainidazten duten baldintzak zehaztu ditzakezu. La
 
 1. urtean **Pertsonalizatua** panela, joan **Erregistroak** fitxa.
 
-1. Aukeratu bat-etortze pertsonalizatu aukera aukeran **Mota pertsonalizatua** goitibeherako eta hautatu **Deskargatu txantiloia**. Bat-etortze-aukera bakoitzerako txantiloi bat behar duzu.
+1. Aukeratu bat-etortze pertsonalizatu aukera aukeran **Mota pertsonalizatua** goitibeherako eta hautatu **Deskargatu txantiloia**. Txantiloi bereizi bat behar duzu bat-etortze-aukera bakoitzerako.
 
 1. Ireki deskargatutako txantiloi fitxategia eta bete xehetasunak. Txantiloiak entitateak eta entitatearen gako nagusien balioak pertsonalizatutako partidan zehazteko eremuak ditu. Adibidez, gako nagusia nahi baduzu *12345* hurrengotik *Salmentak* entitatea beti lehen mailako gakoarekin bat etortzeko *34567* hurrengotik *Harremanetarako* entitatea, bete txantiloia:
     - Entitate1: Salmentak
@@ -286,7 +294,7 @@ Bat-etortze-logika lehenetsia gainidazten duten baldintzak zehaztu ditzakezu. La
 #### <a name="known-issues"></a>Ohiko konfigurazio-arazoak
 
 - Autokonflazioak ez ditu datu normalizatuak erakusten deduplicazio-entitateetan. Hala ere, normalizazioa barnetik aplikatzen du deduplicazioan. Normalizazio guztietarako diseinatuta dago. 
-- Mota semantikoen ezarpena kentzen bada **Mapa** Bat-etortze-arau batek Alias-mapping edo Saihesbide pertsonalizatua erabiltzen duenean, normalizazioa ez da aplikatuko. Bat-etortze-arauan normalizazioa konfiguratu ondoren mota semantikoa garbitzen baduzu bakarrik gertatzen da, mota semantikoa ezezaguna izango delako.
+- Mota semantikoa ezarpena kentzen bada **Mapa** Bat-etortze-arau batek Alias-mapping edo Saihesbide pertsonalizatua erabiltzen duenean, normalizazioa ez da aplikatuko. Bat-etortze-arauan normalizazioa konfiguratu ondoren mota semantikoa garbitzen baduzu bakarrik gertatzen da, mota semantikoa ezezaguna izango delako.
 
 
 ## <a name="next-step"></a>Hurrengo urratsa

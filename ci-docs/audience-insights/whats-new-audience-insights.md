@@ -1,7 +1,7 @@
 ---
 title: Eginbide berriak eta datozenak
-description: 'Ezaugarri berriei, hobekuntzei eta akatsak konpontzeko ezaugarriei buruzko informazioa.'
-ms.date: 01/27/2022
+description: Ezaugarri berriei, hobekuntzei eta akatsak konpontzeko ezaugarriei buruzko informazioa.
+ms.date: 03/02/2022
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -9,8 +9,13 @@ author: m-hartmann
 ms.author: mhart
 ms.reviewer: midevane
 manager: shellyha
+ms.openlocfilehash: 0e25ed4e4e25b130fda410d4ba1c78caded7f0f9
+ms.sourcegitcommit: b7189b8621e66ee738e4164d4b3ce2af0def3f51
+ms.translationtype: HT
+ms.contentlocale: eu-ES
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "8088270"
 ---
-
 # <a name="whats-new-in-the-audience-insights-capability-of-dynamics-365-customer-insights"></a>Dynamics 365 Customer Insights hartzaileen xehetasunei buruzko zerbitzuaren ezaugarri berriak
 
 
@@ -23,13 +28,24 @@ Eguneratzeak eskualdeen arabera banatzen ditugu. Beraz, eskualde batzuek beste b
 > Bidali eta bozkatzeko eginbideak eskaerak eta produktuaren iradokizunak, joan [Dynamics 365 aplikazioaren ideiak atarira](https://experience.dynamics.com/ideas/categories/?forum=79a8c474-4e35-e911-a971-000d3a4f3343&forumName=Dynamics%20365%20Customer%20Insights).
 
 
+## <a name="january-2022-updates"></a>2022ko urtarrileko eguneraketak
+
+2022ko urtarrileko eguneratzeek ezaugarri berriak, errendimenduaren hobekuntzak eta akatsen konponketak barne hartzen dituzte.
+
+### <a name="sentiment-analysis-of-your-customers-feedback"></a>Zure bezeroen iritzien analisia
+
+Customer Insights-ek AI-k bultzatutako eginbide berri bat eskaintzen du bezeroen sentimendua sintetizatzeko eta negozio-alderdi zehatzak identifikatzeko, hobekuntzak hobetzeko aukera gisa. Zure bezeroen idatzizko iritziak aztertuta, informazio zehatzak lor ditzakezu kostu baxuan. Sentimenduen analisia Lengoaia Naturaleko Prozesamenduaren (NLP) ereduek bultzatuta, bezeroaren ID bakoitzeko bi informazio eratorri sortzen dituztenak. Sentimendu puntuazioa (-5etik 5era) eta negozio-alderdi aplikagarrien zerrenda. 
+
+Informazio gehiagorako, ikus [Aztertu sentimendua bezeroen iritzietan (Aurrebista)](sentiment-analysis.md).
+
+
 ## <a name="december-2021-updates"></a>2021eko abenduko eguneraketak
 
 2021eko abenduko eguneratzeek ezaugarri berriak, errendimendu-berritzeak eta akatsen konponketak barne hartzen dituzte.
 
 ### <a name="forward-customer-insights-logs-to-azure-monitor"></a>Bidali Customer Insights erregistroak Azure Monitorera
 
-Customer Insights-ek integrazio zuzena eskaintzen du Azure Monitor-ekin. Ezaugarri honek auditoretza-gertaerak eta operazio-gertaerak barne hartzen ditu. Azure Monitor baliabide-erregistroek erregistroak kontrolatu eta Azure biltegiratze-ra, Azure Log Analytics-era bidal ditzakezu edo Azure Event Hubs-era bidali.
+Customer Insights-ek integrazio zuzena eskaintzen du Azure Monitor-ekin. Ezaugarri honek auditoretza-gertaerak eta operazio-gertaerak barne hartzen ditu. Azure Monitor baliabideen erregistroek erregistroak kontrolatu eta Azure Storagera, Azure Log Analytics-era bidaltzeko edo Azure Event Hubs-era igortzeko aukera ematen dute.
 
 Informazio gehiagorako, ikus [Saioa birbidaltzea Dynamics 365 Customer Insights Azure Monitor-ekin (Aurrebista)](diagnostics.md).
 
@@ -37,7 +53,7 @@ Informazio gehiagorako, ikus [Saioa birbidaltzea Dynamics 365 Customer Insights 
 
 Erabili datuak Microsoft Office 365 zure bezero-kontuaren profilak engaiamenduei buruzko informazioekin aberasteko Office 365 aplikazioak. Konpromiso-datuak posta elektronikoa eta bilera-jarduerak dira, kontu mailan batzen direnak. Adibidez, negozio-kontu bateko mezu elektronikoen kopurua edo kontuarekin izandako bilera-kopurua. Ez da banakako erabiltzaileei buruzko daturik partekatzen. Aberaste hau eskualde hauetan dago eskuragarri: Erresuma Batua, Europa, Ipar Amerika.
 
-Informazio gehiagorako, ikus [Aberastu bezeroen profilak konpromiso datuekin (aurrebista)](enrichment-office.md)
+Informazio gehiagorako, ikus [Aberastu bezeroen profilak konpromiso datuekin (Aurrebista)](enrichment-office.md).
 
 ### <a name="advanced-data-unification-features"></a>Datuak bateratzeko eginbide aurreratuak
 
@@ -59,7 +75,7 @@ Informazio gehiagorako, ikus [Gehitu salbuespenak arau bati](match-entities.md#a
 
 #### <a name="provide-additional-conflict-resolution-policies-and-enable-grouping-of-attributes"></a>Eman gatazkak konpontzeko politika osagarriak eta gaitu atributuak taldekatzea
 
-Ezaugarri honek eremu talde bat unitate bakar gisa tratatzeko aukera ematen dizu. Adibidez, gure erregistroek Helbidea1, Helbidea2, Hiria, Estatua eta Zip eremuak badituzu. Seguruenik, ez dugu nahi beste erregistro baten Helbide2 batean batu, gure datuak osatuagoak izango liratekeela pentsatuz.
+Ezaugarri honek eremu talde bat unitate bakar gisa tratatzeko aukera ematen dizu. Adibidez, gure erregistroek Helbidea1, Helbidea2, Hiria, Estatua eta Zip eremuak badituenean. Seguruenik, ez dugu nahi beste erregistro baten Helbide2 batean batu, gure datuak osatuagoak izango liratekeela pentsatuz.
 
 Orain erlazionatutako eremuen talde bat konbina dezakezu eta bateratze-politika bakarra aplika dezakezu taldeari. 
 
@@ -94,7 +110,7 @@ Segmentu-esportazio guztiak ikusleen informazioetan eskuragarri daude negozio-ko
 
 #### <a name="use-the-linkedin-ads-export-with-business-accounts"></a>Erabili LinkedIn Ads esportazioa negozio-kontuekin
 
-LinkedIn Ads esportazioa eskuragarri dago orain harremanetarako eta enpresentzako bideratzeko negozio kontuen testuinguruan. Konpainiaren xedea LinkedIn esportazioaren ardatz nagusi gisa hautatzen duzunean, negozio-kontuetan eraikitako segmentuak esportatu ditzakezu harremanetarako informazioa proiektatu beharrik gabe. Informazio gehiago lortzeko, joan honi buruzko dokumentuetara [LinkedIn Ads esportatzea](export-linkedin-ads.md) eta arteko aldea [harremanetarako bideratzea](https://business.linkedin.com/marketing-solutions/ad-targeting/contact-targeting) eta [enpresaren bideratzea](https://business.linkedin.com/marketing-solutions/ad-targeting/account-targeting). 
+LinkedIn Ads esportazioa eskuragarri dago orain harremanetarako eta enpresentzako bideratzeko negozio-kontuen testuinguruan. Konpainiaren xedea LinkedIn esportazioaren ardatz nagusi gisa hautatzean, negozio-kontuetan eraikitako segmentuak esportatu ditzakezu harremanetarako informazioa proiektatu beharrik gabe. Informazio gehiago lortzeko, joan honi buruzko dokumentuetara [LinkedIn Ads esportatzea](export-linkedin-ads.md) eta arteko aldea [harremanetarako bideratzea](https://business.linkedin.com/marketing-solutions/ad-targeting/contact-targeting) eta [enpresaren bideratzea](https://business.linkedin.com/marketing-solutions/ad-targeting/account-targeting). 
 
 #### <a name="create-measures-based-on-business-accounts-and-their-hierarchy"></a>Enpresa-kontuetan eta haien hierarkian oinarritutako neurriak sortzea
 
@@ -102,11 +118,11 @@ Neurri-sortzaileak negozio-kontuen inguruan neurriak sortzeko eta hierarkiaren i
 
 #### <a name="create-segments-based-on-business-accounts-and-their-hierarchy"></a>Sortu segmentuak negozio-kontuetan eta haien hierarkian oinarrituta
 
-Segmentu-sortzaileak aukeran segmentu bateko kontu bakoitzaren kontaktu-informazioa barne hartzen duten negozio-kontuen segmentuak sortzeko aukera ematen du. Kontuaren hierarkia konfiguratuta baduzu, kontuaren hierarkia informazioa erabil dezakezu segmentua sortzeko. Informazio gehiagorako, ikus [Sortu segmentu berri bat](segment-builder.md#create-a-new-segment).
+Segmentu-sortzaileak aukera ematen du segmentu bateko kontu bakoitzaren kontaktu-informazioa barne hartzen duten negozio-kontuen segmentuak sortzeko. Kontuaren hierarkia konfiguratuta baduzu, kontuaren hierarkia informazioa erabil dezakezu segmentua sortzeko. Informazio gehiagorako, ikus [Sortu segmentu berri bat](segment-builder.md#create-a-new-segment).
 
 #### <a name="retain-your-business-accounts-with-deep-insights-to-their-churn-tendency"></a>Eutsi zure negozio-kontuak beren joerari buruzko ikuspegi sakonekin
 
-Bezeroen txanda iragarpen ereduak negozio-kontuak ere onartzen ditu orain. Kontu baterako ez ezik, kontu baten eta zuri erosten dizuten produktu edo zerbitzu kategoria baten konbinaziorako ere balioesteko arriskua ebalua dezakezu. Gehigarri honek ulertzen laguntzen dizu kontu batek orokorrean zuri erosteari uztea edo ondasun edo zerbitzuen kategoria jakin baterako aukera gehiago duen. AI eredu hau gehiago erabiltzen laguntzeko, kontu bat litekeena den arrazoiak ere zerrendatzen ditu. Informazio gehiagorako, ikus [Transakzio txanda iragarpen (aurrebista)](predict-transactional-churn.md).
+Bezeroen txanda iragarpen ereduak negozio-kontuak ere onartzen ditu orain. Kontu baterako ez ezik, kontu baten eta zuri erosten dizuten produktu edo zerbitzu kategoria baten konbinaziorako ere ebaluatu dezakezu. Gehigarri honek ulertzen laguntzen dizu kontu batek orokorrean zuri erosteari uztea edo ondasun edo zerbitzuen kategoria jakin baterako aukera gehiago duen ulertzen. AI eredu hau gehiago erabiltzen laguntzeko, kontu bat litekeena den arrazoiak ere zerrendatzen ditu. Informazio gehiagorako, ikus [Transaction churn iragarpen (aurrebista)](predict-transactional-churn.md).
 
 #### <a name="see-contacts-of-a-business-account-in-customer-view"></a>Ikusi negozio-kontu bateko kontaktuak Bezeroaren ikuspegian
 

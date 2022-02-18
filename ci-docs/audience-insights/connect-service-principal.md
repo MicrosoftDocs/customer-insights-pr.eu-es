@@ -9,12 +9,12 @@ author: adkuppa
 ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: faef3583337fd495e7baf40b0a208f1d9f10281a
-ms.sourcegitcommit: 11b343f6622665251ab84ae39ebcd91fa1c928ca
-ms.translationtype: MT
+ms.openlocfilehash: 1af01e5579f85d7c8bc8976a003f53ef2dd280d1
+ms.sourcegitcommit: b7189b8621e66ee738e4164d4b3ce2af0def3f51
+ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "7900228"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "8088103"
 ---
 # <a name="connect-to-an-azure-data-lake-storage-account-by-using-an-azure-service-principal"></a>Konektatu Azure Data Lake Storage kontu nagusia Azure zerbitzuaren nagusia erabiliz
 
@@ -23,7 +23,7 @@ Artikulu honek nola konektatu eztabaidatzen du Dynamics 365 Customer Insights ba
 Azure zerbitzuak erabiltzen dituzten tresna automatizatuek beti baimen mugatuak izan behar dituzte. Aplikazioek erabiltzaile pribilegiatu gisa saioa hasi beharrean, Azure-k zerbitzuaren entitateak eskaintzen ditu. Zerbitzu nagusiak modu seguruan erabil ditzakezu [gehitu edo editatu Common Data Model karpeta bat datu-iturburu gisa](connect-common-data-model.md) edo [ingurune bat sortu edo eguneratu](create-environment.md).
 
 > [!IMPORTANT]
-> - Zerbitzuaren entitatea erabiliko duen Data Lake Storage kontuak [gaituta eduki behar du izen-leku hierarkikoa](/azure/storage/blobs/data-lake-storage-namespace).
+> - Zerbitzu nagusia erabiliko duen Data Lake Storage kontuak Gen2 izan behar du eta eduki [izen-espazio hierarkikoa gaituta](/azure/storage/blobs/data-lake-storage-namespace). Azure Data Lake Gen1 biltegiratze-kontuak ez dira onartzen.
 > - Zure Azure harpidetzarako administratzaile-baimenak behar dituzu zerbitzu nagusi bat sortzeko.
 
 ## <a name="create-an-azure-service-principal-for-customer-insights"></a>Sortu Azure zerbitzu nagusia Customer Insights-entzat

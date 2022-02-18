@@ -10,12 +10,12 @@ author: MichelleDevaney
 ms.author: midevane
 manager: shellyha
 ms.custom: intro-internal
-ms.openlocfilehash: 4f26220f6ba7f5b5ae00c11216129f9ad814b77d
-ms.sourcegitcommit: 626d485dae1e001e63e4d4bf78f6770766822ba0
-ms.translationtype: MT
+ms.openlocfilehash: d29992c88bd54fcfcf5e6429a89a34b6f73148c8
+ms.sourcegitcommit: b7189b8621e66ee738e4164d4b3ce2af0def3f51
+ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 12/06/2021
-ms.locfileid: "7892323"
+ms.lasthandoff: 02/03/2022
+ms.locfileid: "8088087"
 ---
 # <a name="create-an-environment-in-audience-insights"></a>Sortu ingurune bat audientziaren xehetasunetan
 
@@ -28,7 +28,7 @@ Erakundeek sor dezakete *bi* Customer Insights lizentzia bakoitzeko inguruneak. 
 
 ## <a name="create-a-new-environment"></a>Sortu ingurune bat
 
-Customer Insights-erako harpidetza lizentzia erosi ondoren, Microsoft 365 maizterreko administratzaile orokorrak ingurunea sortzera gonbidatzen duen mezu elektronikoa jasotzen du. Erabiltzen hasteko, joan hona: [https://home.ci.ai.dynamics.com/start](https://home.ci.ai.dynamics.com/start). 
+Customer Insights-erako harpidetza-lizentzia bat erosi ondoren, honen administratzaile globalak Microsoft 365 maizterrak ingurunea sortzera gonbidatzen duen mezu elektroniko bat jasotzen du. Erabiltzen hasteko, joan hona: [https://home.ci.ai.dynamics.com/start](https://home.ci.ai.dynamics.com/start). 
 
 Esperientzia gidatu batek ingurune berri baterako beharrezko informazio guztia biltzeko urratsak egiten laguntzen dizu. Behar duzu [administratzaile baimenak](permissions.md) inguruneak sortzeko edo kudeatzeko ikusleen ikuspegietan.
 
@@ -64,7 +64,7 @@ Datuak gordeta Azure Data Lake Storage, onartzen duzu datuak Azure biltegiratze 
 > Customer Insights-ek gaur egun honako hau onartzen du:
 > - Entitate ingestatuak Power BI batean gordetako datu-fluxuak Microsoft Dataverse -kudeatutako Data Lake.  
 > - Azure Data Lake Storage ingurunea sortzerakoan hautatu zenuen Azure eskualde bereko kontuak.
-> - Azure Data Lake Storage dituzten kontuak *izen espazio hierarkikoa* gaituta.
+> - Azure Data Lake Storage Gen2 diren eta dituzten kontuak *izen-espazio hierarkikoa* gaituta. Azure Data Lake Gen1 biltegiratze-kontuak ez dira onartzen.
 
 Azure Data Lake Storage aukera, baliabideetan oinarritutako aukera bat eta harpidetzan oinarritutako aukera bat autentifikatzeko aukera dezakezu. Informazio gehiagorako, ikus [Konektatu Azure Data Lake Storage kontu batera Azure zerbitzuaren entitate bat erabiliz](connect-service-principal.md). **Edukiontzia** izena izango da `customerinsights` eta ezin da aldatu.
 

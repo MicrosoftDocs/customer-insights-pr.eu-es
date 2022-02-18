@@ -9,16 +9,16 @@ ms.topic: conceptual
 author: m-hartmann
 ms.author: wimohabb
 manager: shellyha
-ms.openlocfilehash: 7201ed9e5315d73e6b9c25b4bc4c4e4ed839a215
-ms.sourcegitcommit: 834651b933b1e50e7557d44f926a3fb757c1f83a
-ms.translationtype: MT
+ms.openlocfilehash: 413746e1896928d2c648ba59d67d4247a173da57
+ms.sourcegitcommit: 21854bb66ffa53948f659886f2e131236539ae88
+ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "7732249"
+ms.lasthandoff: 02/08/2022
+ms.locfileid: "8100125"
 ---
 # <a name="work-with-customer-insights-apis"></a>Lan egin Customer Insights APIekin
 
-Dynamics 365 Customer Insights-ek Customer Insights-en zure datuetan oinarrituta zure aplikazioak eraikitzeko APIak eskaintzen ditu.
+Dynamics 365 Customer Insights APIak eskaintzen ditu zure datuetan oinarritutako zure aplikazioak eraikitzeko Customer Insights-en.
 
 > [!IMPORTANT]
 > API horien xehetasunak hemen daude zerrendatuta: [Customer Insights APIen erreferentzia](https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights). Eragiketei, parametroei eta erantzunen inguruko informazio osagarria biltzen dute.
@@ -35,7 +35,7 @@ Artikulu honetan Customer Insights APIak nola sartu, Azure aplikazioen erregistr
  
    APIak gaitzeak API eskaeretan erabiltzen den harpidetza gako nagusia eta bigarren mailakoa sortzen ditu zure instantziarako. Gakoak birsortu ditzakezu **Birsortu nagusia** edo **Birsortu bigarren mailakoa** hautatuz hemen: **Administratzailea** > **Baimenak** > **APIak**.
 
-   :::image type="content" source="media/enable-apis.gif" alt-text="Gaitu Customer Insights APIak.":::
+<!--  :::image type="content" source="media/enable-apis.gif" alt-text="Enable Customer Insights APIs."::: -->
 
 1. Hautatu **Esploratu gure APIak** hurrengora [probatu APIak](https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights&operation=Get-all-instances).
 
@@ -49,7 +49,7 @@ Artikulu honetan Customer Insights APIak nola sartu, Azure aplikazioen erregistr
 
 HTTP erantzuna laster agertuko da behean.
 
-   :::image type="content" source="media/try-apis.gif" alt-text="APIak nola probatu.":::
+<!--   :::image type="content" source="media/try-apis.gif" alt-text="How to test the APIs."::: -->
 
 ## <a name="create-a-new-app-registration-in-the-azure-portal"></a>Sortu aplikazioen erregistro berria Azure atarian
 
@@ -65,7 +65,7 @@ Urrats hauei esker, Azure aplikazio batean Customer Insights APIak erabiltzen ha
 
 1. Aplikazio berriaren erregistroan, joan hona: **API baimenak**.
 
-   :::image type="content" source="media/app-registration-1.gif" alt-text="Nola ezarri API baimenak aplikazioaren erregistroan.":::
+<!--   :::image type="content" source="media/app-registration-1.gif" alt-text="How to set API permissions in App registration."::: -->
 
 1. Aukeratu **Gehitu baimena** eta hautatu **Customer Insights** alboko panelean.
 
@@ -77,7 +77,7 @@ Urrats hauei esker, Azure aplikazio batean Customer Insights APIak erabiltzen ha
 
 Aplikazioaren / Bezeroaren IDa erabil dezakezu Microsoft Authentication Library (MSAL) zerbitzuarekin aplikazioa erregistratzeko, eskaerarekin batera APIra bidaltzeko titularraren tokena eskuratzeko.
 
-:::image type="content" source="media/grant-admin-consent.gif" alt-text="Administratzailearen baimena nola eman.":::
+<!-- :::image type="content" source="media/grant-admin-consent.gif" alt-text="How to grant admin consent."::: -->
 
 MSAL-i buruzko informazio gehiago lortzeko, ikusi [Microsoft Authentication Library (MSAL) zerbitzuaren ikuspegi orokorra](/azure/active-directory/develop/msal-overview).
 
@@ -103,7 +103,7 @@ APIak gure bezeroen liburutegietan erabiltzeari buruzko informazioa lortzeko, ik
 
 1. Aukeratu **Eman administratzailearen baimena honetarako:...** aplikazioaren erregistroa osatzeko.
 
-   :::image type="content" source="media/grant-admin-consent.gif" alt-text="Administratzailearen baimena nola eman.":::
+ <!--  :::image type="content" source="media/grant-admin-consent.gif" alt-text="How to grant admin consent."::: -->
 
 1. Amaitzeko, aplikazioaren erregistroaren izena gehitu behar dugu erabiltzaile gisa Customer Insights-en.  
    
@@ -117,19 +117,19 @@ Atal honek Customer Insights APIen eskuragarri dauden bezero liburutegiak erabil
 
 ### <a name="c-nuget"></a>C# NuGet
 
-Ikasi nola hasi C# bezero liburutegiak erabiltzen NuGet.org-en. NuGet paketeari buruzko informazio gehiago lortzeko, ikus [Microsoft.Dynamics.CustomerInsights.Api](https://www.nuget.org/packages/Microsoft.Dynamics.CustomerInsights.Api/). Gaur egun, pakete hau netstandard2.0 eta netcoreapp2.0 markoetara bideratuta dago.
+Ikasi NuGet.org orrialdetik C# bezero liburutegiak erabiltzen hasten. NuGet paketeari buruzko informazio gehiagorako, ikusi [Microsoft.Dynamics.CustomerInsights.Api](https://www.nuget.org/packages/Microsoft.Dynamics.CustomerInsights.Api/). Gaur egun, pakete hau netstandard2.0 eta netcoreapp2.0 markoetara bideratuta dago.
 
 #### <a name="add-the-c-client-library-to-a-c-project"></a>Gehitu C # bezero liburutegia C # proiektu batera
 
-1. Visual Studio atalean, ireki **NuGet Pakete-kudeatzailea** zure proiekturako.
+1. Visual Studio-n, ireki proiektuaren **NuGet Pakete kudeatzailea**.
 
 1. Bilatu **Microsoft.Dynamics.CustomerInsights.Api**.
 
 1. Aukeratu **Instalatu** paketea proiektuari gehitzeko.
  
-   Bestela, exekutatu komando hau **NuGet Pakete-kudeatzailearen kontsola** :`Install-Package -Id Microsoft.Dynamics.CustomerInsights.Api -Source nuget.org -ProjectName <project name> [-Version <version>]`
+   Bestela, exekutatu komando hau **NuGet Pakete kudeatzailearen kontsolan**: `Install-Package -Id Microsoft.Dynamics.CustomerInsights.Api -Source nuget.org -ProjectName <project name> [-Version <version>]`
 
-   :::image type="content" source="media/visual-studio-nuget-package.gif" alt-text="Gehitu NuGet paketea Visual Studio proiektuari.":::
+ <!--  :::image type="content" source="media/visual-studio-nuget-package.gif" alt-text="Add NuGet package to Visual Studio project."::: -->
 
 #### <a name="use-the-c-client-library"></a>Erabili C # bezero liburutegia
 
@@ -141,7 +141,7 @@ Ikasi nola hasi C# bezero liburutegiak erabiltzen NuGet.org-en. NuGet paketeari 
 
 1. Pasatu `HttpClient` `CustomerInsights` bezeroaren sorkuntzara.
 
-   :::image type="content" source="media/httpclient-sample.png" alt-text="Httpclient-en lagina.":::
+<!--   :::image type="content" source="media/httpclient-sample.png" alt-text="Sample of httpclient."::: -->
 
 1. Egin deiak bezeroekin "luzapen metodoetara", adibidez, `GetAllInstancesAsync`. Azpiko `Microsoft.Rest.HttpOperationResponse`-rako sarbidea hobetsi bada, erabili "http mezuen metodoak" erabili, adibidez, `GetAllInstancesWithHttpMessagesAsync`.
 

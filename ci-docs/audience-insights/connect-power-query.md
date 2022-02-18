@@ -9,18 +9,18 @@ ms.topic: how-to
 author: adkuppa
 ms.author: adkuppa
 manager: shellyha
-ms.openlocfilehash: aae49be4364676ecc7a307e60eeca13859f1662a
-ms.sourcegitcommit: 9132fdf54070cc551ab878378078e6285852818f
-ms.translationtype: MT
+ms.openlocfilehash: 727cb9a4d754b6dbd74d6ecab1b183d41f713d8f
+ms.sourcegitcommit: aadee829eff111c95eb30c0a97a68dcc87994acf
+ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 12/18/2021
-ms.locfileid: "7934963"
+ms.lasthandoff: 02/04/2022
+ms.locfileid: "8092057"
 ---
 # <a name="connect-to-a-power-query-data-source"></a>Konektatu a Power Query datu-iturburu
 
 Power Query datuak irensteko konektore multzo zabala eskaintzen du. Konektore hauetako gehienek onartzen dute Dynamics 365 Customer Insights. 
 
-Oinarritutako datu-iturriak gehitzea Power Query konektoreak, oro har, atal honetan adierazitako urratsak jarraitzen ditu. Hala ere, erabiltzen duzun konektorearen arabera, informazio desberdina behar da. Gehiago jakiteko, ikusi konektore indibidualei buruzko dokumentazioa [Power Query konektorearen erreferentzia](/power-query/connectors/).
+Oinarritutako datu-iturriak gehitzea Power Query konektoreak, oro har, atal honetan azaltzen diren urratsak jarraitzen ditu. Hala ere, erabiltzen duzun konektorearen arabera, informazio desberdina behar da. Gehiago jakiteko, ikusi konektore indibidualei buruzko dokumentazioa [Power Query konektorearen erreferentzia](/power-query/connectors/).
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWN6EK]
 
@@ -30,7 +30,7 @@ Oinarritutako datu-iturriak gehitzea Power Query konektoreak, oro har, atal hone
 
 1. Hautatu **Gehitu datu-iturburua**.
 
-1. Hautatu **Microsoft Power Query**, gero hautatu **Hurrengoa**.
+1. Aukeratu **Microsoft Power Query**.
 
 1. Eman **Izena** datu-iturburu-erako, eta hautatu **Hurrengoa** datu-iturburu sortzeko.
 
@@ -47,12 +47,12 @@ Oinarritutako datu-iturriak gehitzea Power Query konektoreak, oro har, atal hone
 
 1. Zure datuak ere eralda ditzakezu. Hautatu entitate bat editatzeko edo eraldatzeko. Erabili aukerak Power Query eraldaketak aplikatzeko leihoa. Eraldaketa bakoitza azpian agertzen da **Urrats aplikatuak**. Power Query aurrez eraikitako eraldaketa aukera ugari eskaintzen ditu. Informazio gehiagorako, ikus [Power Query Eraldaketak](/power-query/power-query-what-is-power-query#transformations).
 
-1. Entitate osagarriak gehi ditzakezu zure datu-iturburu hautatuta **Lortu datuak** herrian **Editatu zalantzak** elkarrizketa.
-
    Ondorengo eraldaketak erabiltzea gomendatzen dugu:
 
-   - CSV fitxategi bateko datuak irensten badituzu, lehenengo ilaran maiz goiburuak agertzen dira. Joan **Transformatu mahaia** eta hautatu **Erabili goiburuak lehen ilara gisa**.
-   - Ziurtatu datu mota behar bezala ezarrita dagoela.
+   - CSV fitxategi bateko datuak irensten badituzu, lehenengo ilaran maiz goiburuak agertzen dira. Joan **Eraldatu** eta hautatu **Erabili lehen errenkada goiburu gisa**.
+   - Ziurtatu datu mota behar bezala ezarrita dagoela. Adibidez, data eremuetarako, hautatu data mota bat.
+
+1. Zure datu-iturburu-i entitate gehigarriak gehitzeko **Editatu kontsultak** elkarrizketa-koadroa, joan hona **Hasiera** eta hautatu **Lortu datuak**.
 
 1. Hautatu **Gorde** behealdean Power Query eraldaketak gordetzeko leihoa. Gorde ondoren, zure datu-iturburu aktibatuta aurkituko duzu **Datu-iturburuak** > **Datu iturriak**.
 

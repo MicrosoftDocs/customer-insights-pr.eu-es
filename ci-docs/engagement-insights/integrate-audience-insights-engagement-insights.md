@@ -8,12 +8,12 @@ author: mkisel
 ms.author: mkisel
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: db38778c0da862e119f9b374e07c82ead0d3a4f2
-ms.sourcegitcommit: 53b133a716c73cb71e8bcbedc6273cec70ceba6c
+ms.openlocfilehash: 6aadd6b5018f63362f86c0e3e3ce085e94c47391
+ms.sourcegitcommit: 5dd32dc2b18027cf2aa954356dded4bc6aab9801
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "7645567"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "8115999"
 ---
 # <a name="create-a-link-between-audience-insights-and-engagement-insights"></a>Sortu esteka bat hartzaile xehetasun eta elkarreragin xehetasunen artean
 
@@ -25,7 +25,7 @@ Erabili profil bateratuak eta segmentuen audientzia estatistiketatik konpromiso 
 
 ## <a name="prerequisites"></a>Aurrebaldintzak
 
-- Ikusleen estatistiken profilak an gorde behar dira Azure Data Lake Storage jabea duzun kontua edo [Microsoft Dataverse](/powerapps/maker/data-platform/data-platform-intro.md)&ndash;datuen laku kudeatua. 
+- Ikusleen estatistiken profilak an gorde behar dira Azure Data Lake Storage jabea duzun kontua edo [Microsoft Dataverse](/powerapps/maker/data-platform/data-platform-intro)&ndash;datuen laku kudeatua. 
 - Hartzaileen xehetasunen ingurunean erlazionatutako Dataverse ingurune bat izan behar du. Eta ingurune horrek Dataverse erabiltzen badu datuak gordetzeko, ziurtatu **Gaitu datuak partekatzea** aukera hautatzen duzula hartzaileen xehetasunetan. Informazio gehiagorako, ikus [Sortu eta konfiguratu ingurune bat ikusleen estatistiketan](../audience-insights/create-environment.md).
 - Administratzaile-baimenak behar dituzu bai konpromisoen inguruko estatistiketarako eta bai publikoetako estatistiketarako.
 - Lotutako inguruneek eskualde geografiko berean egon behar dute.

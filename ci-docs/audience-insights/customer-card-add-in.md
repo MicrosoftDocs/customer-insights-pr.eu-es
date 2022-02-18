@@ -1,7 +1,7 @@
 ---
-title: Dynamics 365 aplikazioetarako Bezero txartelaren gehigarria (bideoa dauka)
+title: Dynamics 365 aplikazioetarako Bezero Txartelaren gehigarria (bideoa dauka)
 description: Erakutsi audientzia estatistiken datuak Dynamics 365 aplikazioetan gehigarri honekin.
-ms.date: 12/22/2021
+ms.date: 02/02/2022
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,8 +9,13 @@ ms.topic: conceptual
 author: Nils-2m
 ms.author: nikeller
 manager: shellyha
+ms.openlocfilehash: ce6c8fab84fd4c5dfc9f78b91dde3483a1d358c1
+ms.sourcegitcommit: 11308ed275b4b25a35576eccfcae9dda9e2c2784
+ms.translationtype: HT
+ms.contentlocale: eu-ES
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "8085192"
 ---
-
 # <a name="customer-card-add-in-preview"></a>Bezeroaren txartelaren osagarria (aurrebista)
 
 
@@ -22,7 +27,7 @@ Lortu zure bezeroen 360 graduko ikuspegia zuzenean Dynamics 365 aplikazioetan. B
 ## <a name="prerequisites"></a>Aurrebaldintzak
 
 - Gehigarriak Dynamics 365 ereduak gidatutako aplikazioekin soilik funtzionatzen du, hala nola Sales edo bezeroarentzako arreta-zerbitzu, 9.0 bertsioa eta berriagoak.
-- Dynamics 365 datuak ikusleei buruzko informazio-bezero-profiletara mapatzeko, gomendatzen dugu [Dynamics 365 aplikaziotik irentsita Microsoft Dataverse konektorea](connect-power-query.md). Dynamics 365 kontaktuak (edo kontuak) irensteko beste metodo bat erabiltzen baduzu, ziurtatu behar duzu`contactid` (edo`accountid`) eremua gisa ezartzen da [datu-iturburu horren lehen gakoa datuak bateratzeko prozesuaren mapa-urratsean](map-entities.md#select-primary-key-and-semantic-type-for-attributes). 
+- Dynamics 365 datuak ikusleei buruzko informazio-bezero-profiletara mapatzeko, gomendatzen dugu [Dynamics 365 aplikaziotik irentsitakoa erabiliz Microsoft Dataverse konektorea](connect-power-query.md). Dynamics 365 kontaktuak (edo kontuak) irensteko beste metodo bat erabiltzen baduzu, ziurtatu behar duzu`contactid` (edo`accountid`) eremua gisa ezartzen da [datu-iturburu horren lehen gakoa datuak bateratzeko prozesuaren mapa-urratsean](map-entities.md#select-primary-key-and-semantic-type-for-attributes). 
 - Bezero txartelaren gehigarriaren Dynamics 365 erabiltzaile guztiek izan behar dute [erabiltzaile gisa gehitu da](permissions.md) datuak ikusteko ikusleei buruzko informazioetan.
 - [Bilaketa eta iragazki gaitasunak konfiguratuta](search-filter-index.md) audientziari buruzko datuetan funtzionatu behar da.
 - Gehigarrien kontrol bakoitza datu zehatzetan oinarritzen da ikusleen estatistiketan. Datu eta kontrol batzuk mota jakin batzuetako inguruneetan soilik daude eskuragarri. Gehigarrien konfigurazioak hautatutako ingurune mota dela eta kontrolik eskuragarri ez dagoen jakinaraziko dizu. Ikasi gehiago hurrengoari buruz [ingurunearen erabilera-kasuak](work-with-business-accounts.md).
@@ -113,5 +118,26 @@ Bezeroaren txartelaren gehigarria ez da automatikoki eguneratzen. Azken bertsior
 
 1. Bertsio-berritze prozesua hasi ondoren, kargatzeko adierazle bat ikusiko duzu bertsio berritzea amaitu arte. Bertsio berririk ez badago, bertsio berritzeak errore mezu bat erakutsiko du.
 
+## <a name="troubleshooting"></a>Arazoak konpontzea
+
+### <a name="controls-from-customer-card-add-in-dont-find-data"></a>Bezero txartelaren gehigarriko kontrolak ez dute daturik aurkitzen
+
+**Arazoa:**
+
+Nahiz eta behar bezala konfiguratutako ID eremuak, kontrolek ezin dute inolako bezeroren daturik aurkitu.  
+
+**Ebazpena:**
+
+1. Ziurtatu Txartelaren gehigarria argibideen arabera konfiguratu duzula: [Konfiguratu Bezero Txartelaren gehigarria](#configure-the-customer-card-add-in) 
+
+1. Berrikusi datuak sartzeko konfigurazioa. Editatu kontaktuaren ID GUIDa duen Dynamics 365 sistemarako datu-iturburu. Kontaktuaren ID GUID letra larriz agertzen bada Power Query editorea, saiatu honako hau: 
+    1. Editatu datu-iturburu datu-iturburu hemen irekitzeko Power Query Editorea.
+    1. Hautatu kontaktuaren ID zutabea.
+    1. Hautatu **Eraldatu** goiburuko barran erabilgarri dauden ekintzak ikusteko.
+    1. Hautatu **minuskula**. Baliozkotu taulako GUIDak letra xeheak badira.
+    1. Gorde datu-iturburua.
+    1. Exekutatu datuak sartzea, bateratzea eta beheranzko prozesuak aldaketak GUIDera hedatzeko. 
+
+Freskatze osoa amaitu ondoren, Bezero Txartelaren gehigarrien kontrolak espero diren datuak erakutsi beharko lituzke. 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
