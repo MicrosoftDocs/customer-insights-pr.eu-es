@@ -10,9 +10,14 @@ ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
 searchScope:
-  - ci-merge
+- ci-merge
+ms.openlocfilehash: eb08ab38d23bf22a17896b63c93e6821431b002a
+ms.sourcegitcommit: 3807202283dd116a30f900a163d8141db621e5a8
+ms.translationtype: HT
+ms.contentlocale: eu-ES
+ms.lasthandoff: 01/28/2022
+ms.locfileid: "8046548"
 ---
-
 # <a name="merge-entities"></a>Konbinatu entitateak
 
 Konbinaketa fasea azken fasea da datuak bateratzeko prozesuan. Bere helburua gatazkako datuak bateratzea da. Datu gatazkatsu batzuen adibideetan zure datu multzoetako bi bezeroen izena aurki daiteke, baina bakoitza modu desberdinean agertzen da ("Grant Marshall" versus "Grant Marshal"), edo telefono zenbakia (617-803-091X versus 617803091X ). Datu-puntu gatazkatsu horiek batzea atributuak banatzen dira.

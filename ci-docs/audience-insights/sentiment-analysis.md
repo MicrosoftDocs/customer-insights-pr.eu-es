@@ -9,8 +9,13 @@ ms.topic: conceptual
 author: wmelewong
 ms.author: wameng
 manager: shellyha
+ms.openlocfilehash: 8a4473c1c395bbcf8efa2bfa24cddb82e1784279
+ms.sourcegitcommit: 15ec8c5f54242feda9489e7665726ec5e0983dc9
+ms.translationtype: HT
+ms.contentlocale: eu-ES
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "8008750"
 ---
-
 # <a name="analyze-sentiment-in-customer-feedback-preview"></a>Aztertu sentimendua bezeroen iritzietan (Aurrebista)
 
 Bezeroek kalitate handiko produktuak, zerbitzuak eta esperientziak espero dituzte egun. Batez ere iritzia partekatzen duten bezeroak. Erakundeentzat oso zaila da gero eta datu-bolumena aztertzea zehaztasuna eta lan-kostu handiagoak murriztu gabe. Dynamics 365 Customer Insights sentimenduen analisi-eredu bat eskaintzen du bezeroen iritzietarako, erakundeei beren datuak zehatzago eta kostu txikiagoan aztertzeko aukera ematen diena.
