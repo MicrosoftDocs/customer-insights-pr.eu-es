@@ -1,20 +1,20 @@
 ---
 title: Hartzaileen xehetasunen segmentuak
 description: Segmentuen ikuspegi orokorra eta nola sortu eta kudeatu.
-ms.date: 11/01/2021
+ms.date: 09/30/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: overview
+ms.topic: how-to
 author: JimsonChalissery
 ms.author: jimsonc
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 740d293b21f43b50201f23fcba109318823ef3af
-ms.sourcegitcommit: bb1ca84bc38e81fb2ff2961c457384b7beb5b5fa
+ms.openlocfilehash: 6840f4bc345b0821fb2349666130b39d542878e7
+ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7978044"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "7617315"
 ---
 # <a name="segments-overview"></a>Segmentuen informazio orokorra
 
@@ -26,7 +26,7 @@ Segmentuaren definizio baten iragazkiekin bat datozen bezeroen profilak aipatzen
 
 Segmentu berri bat sortzeko hainbat modu daude: 
 
-# <a name="individual-consumers-b-to-c"></a>[Banakako kontsumitzaileak (negoziotik bezerora)](#tab/b2c)
+# <a name="individual-customers-b2c"></a>[Banakako bezeroak (B2C)](#tab/b2c)
 
 - Segmentu konplexua segmentu eraikitzailearekin: [Gurea eraiki](segment-builder.md#create-a-new-segment) 
 - Operadore bakarreko segmentu sinpleak: [Segmentu azkarra](segment-builder.md#quick-segments) 
@@ -34,7 +34,7 @@ Segmentu berri bat sortzeko hainbat modu daude:
 - AI-k oinarritutako iradokizunak neurri edo atributuetan oinarrituta: [Neurriak hobetzeko iradokitako segmentuak](suggested-segments.md) 
 - Jardueretan oinarritutako iradokizunak: [Iradokitako segmentuak bezeroen jardueran oinarrituta](suggested-segments-activity.md) 
 
-# <a name="business-accounts-b-to-b"></a>[Negozio-kontuak (negoziotik negoziora)](#tab/b2b)
+# <a name="business-accounts-b2b"></a>[Negozio-kontuak (B2B)](#tab/b2b)
 
 - Segmentu konplexua segmentu eraikitzailearekin: [Gurea eraiki](segment-builder.md#create-a-new-segment)
 
@@ -65,7 +65,8 @@ Segmentu bat hautatzean ekintza hauek erabilgarri daude:
 
 Segmentu guztiak freskatu ditzakezu aldi berean hautatuta **Freskatu guztiak** gainean **segmentuak** orrialdea edo segmentu bat edo gehiago freskatu ditzakezu hautatzen dituzunean eta aukeratutakoan **Freskatu** aukeren artean. Bestela, berriztagarria den aldizka konfigura dezakezu **administratzailea** > **Sistema** > **Ordutegiak**.
 
-[!INCLUDE [progress-details-include](../includes/progress-details-pane.md)]
+> [!TIP]
+> Zereginen/prozesuen [sei egoera mota](system.md#status-types) daude. Gainera, prozesu gehienak [downstream-eko beste prozesu batzuen mende daude](system.md#refresh-policies). Aukeratu prozesu baten egoera, egon zen lan osoaren aurrerapen xehetasunak ikusteko. Aukeratu ondoren **Ikusi xehetasunak** lanaren zereginetako baterako, informazio osagarria aurkituko duzu: prozesatzeko denbora, azken prozesatze data eta zereginarekin lotutako akats eta abisu guztiak.
 
 ## <a name="export-segments"></a>Esportatu segmentuak
 
@@ -104,6 +105,5 @@ Beheko aldean segmentuko kideen zerrenda dago.
 > Zerrenda honetan agertzen diren eremuak zure segmentuko entitateen atributuetan oinarrituta daude.
 >
 >Zerrenda bat datorren segmentuko kideen aurrebista da eta zure segmentuko lehen 100 erregistroak erakusten ditu, behar bezala baloratu eta haren definizioak berrikusteko. Bat datozen erregistro guztiak ikusteko, beharrezkoa da [esportatu segmentua](export-destinations.md).
-
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)] 

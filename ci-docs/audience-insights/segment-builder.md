@@ -1,7 +1,7 @@
 ---
-title: Sortu segmentuak segmentu-egilearekin
+title: Sortu eta kudeatu segmentuak
 description: Sortu bezeroen segmentuak, hainbat atributuren arabera taldekatzeko.
-ms.date: 10/18/2021
+ms.date: 05/03/2021
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
@@ -9,148 +9,125 @@ author: JimsonChalissery
 ms.author: jimsonc
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: bd01edfe7d63d6c7712a808224171f1bb8ad8a2b
-ms.sourcegitcommit: 31985755c7c973fb1eb540c52fd1451731d2bed2
+ms.openlocfilehash: 550e509a24701fe5fcdeb9d54311872dc954156c
+ms.sourcegitcommit: 72603fb39c4d5dbca71128815a2e1692542ea4dc
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 10/22/2021
-ms.locfileid: "7673535"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "6064922"
 ---
-# <a name="create-segments"></a>Sortu segmentuak
+# <a name="create-and-manage-segments"></a>Sortu eta kudeatu segmentuak
 
-Definitu iragazki konplexuak bezero entitate bateratuaren eta hari lotutako entitateen inguruan. Segmentu bakoitzak, prozesatu ondoren, bezeroen erregistro multzo bat sortzen du eta esportatu eta neurriak hartu ditzakezu. Segmentuak **Segmentuak** orrian kudeatzen dira. [Segmentu berriak sor](#create-a-new-segment) ditzakezu segmentu-egilea erabiliz edo [sortu segmentuak bizkor](#quick-segments) aplikazioko beste eremu batzuetatik. 
+Definitu iragazki konplexuak bezero entitate bateratuaren eta hari lotutako entitateen inguruan. Segmentu bakoitzak, prozesatu ondoren, bezeroen erregistro multzo bat sortzen du eta esportatu eta neurriak hartu ditzakezu. Segmentuak **Segmentuak** orrian kudeatzen dira. 
 
-> [!TIP]
-> - Segmentu bizkorrak inguruneetarako soilik onartzen dira **bezero partikularrak**.    
-> - Oinarritutako segmentuak **bezero partikularrak** automatikoki sartu segmentuko kideentzako eskuragarri dagoen informazioa. Inguruneetan **negozio kontuak**, segmentuak kontuetan (enpresak edo filialak) oinarritzen dira. Kontaktu informazioa segmentu batean sartzeko, erabili **Proiektuaren atributuak** funtzionalitatea segmentu eraikitzailean.
->    - Ziurtatu harremanetarako datu-iturriak daudela [semantikoki mapatuta ContactProfile](semantic-mappings.md#define-a-contactprofile-semantic-entity-mapping) entitatera.
+Hurrengo adibideak segmentazio gaitasunaren erabilera ilustratzen du. Azken 90 egunetan gutxienez $500 agindu duten bezeroentzako segmentu bat zehaztu dugu *eta* bezeroarentzako arreta-zerbitzu deitu batean parte hartu zutenak eskalatu egin ziren.
 
-## <a name="segment-builder"></a>Segmentu-egilea
-
-Irudi honek segmentu-sortzailearekin hainbat alderdi adierazten ditu. Bezero talde bat bilakatzen den segmentu bat erakusten du. Bezeroek ondasunak denbora-tarte jakin batean eskatu zituzten eta sari-puntuak bildu edo diru kopuru bat gastatu zuten. 
-
-:::image type="content" source="media/segment-builder-overview.png" alt-text="Segmentu-sortzailearen elementuak." lightbox="media/segment-builder-overview.png":::
-
-1. Antolatu zure segmentua arau eta azpi arauekin. Arau edo azpi-arau bakoitza baldintzez osatuta dago. Konbinatu baldintzak eragile logikoekin
-
-1. Aukeratu [harreman bidea](relationships.md) arau bati aplikatzen zaion entitateen artean. Harreman-bideak baldintza batean zein atributu erabil daitezkeen zehazten du.
-
-1. Kudeatu arauak eta azpi-arauak. Arau baten kokapena aldatu edo ezabatu.
-
-1. Gehitu baldintzak eta eraiki habia maila egokia azpi-arauak erabiliz.
-
-1. Aplikatu multzo eragiketak konektatutako arauei.
-
-1. Erabili atributuen panela eskuragarri dauden entitateen atributuak gehitzeko edo atributuetan oinarritutako baldintzak sortzeko. Panelak hautatutako araurako erabilgarri dauden hautatutako harreman bideen arabera oinarritutako entitate eta atributuen zerrenda erakusten du.
-
-1. Gehitu atributuetan oinarritutako baldintzak lehendik dauden arau eta azpiurrei edo gehitu arau berri bati.
-
-1. Desegin eta berregin aldaketak segmentua eraikitzean.
-
-Goiko adibideak segmentazio-gaitasuna adierazten du. Segmentu bat definitu dugu ondasunak online erosten gutxienez $500 gastatu dituzten eta *softwareen garapenean* interesa duten bezeroentzat.
+:::image type="content" source="media/segmentation-group1-2.png" alt-text="Segmentu-sortzailearen UIren pantaila-argazkia bezero segmentu bat zehazten duten bi taldeekin.":::
 
 ## <a name="create-a-new-segment"></a>Sortu segmentu berria
 
-Segmentu berri bat sortzeko hainbat modu daude. Sekzio honetan segmentu bat hutsetik nola sortu azaltzen da. A ere sor dezakezu *segmentu azkarra* dauden entitateetan oinarrituta edo lortzeko Ikaskuntza automatiko ereduak *iradokitako segmentuak*. Informazio gehiagorako, joan [Segmentuen ikuspegi orokorra](segments.md).
+Segmentu berri bat sortzeko hainbat modu daude. Atal honetan a nola sortu deskribatzen da *segmentu hutsa* hutsetik. A ere sor dezakezu *segmentu azkarra* dauden entitateetan oinarrituta edo lortzeko Ikaskuntza automatiko ereduak *iradokitako segmentuak*. Informazio gehiago lortzeko: [Segmentuen informazio orokorra](segments.md).
 
-Segmentua sortu bitartean, zirriborroa gorde dezakezu. Zirriborro fasean, segmentu bat segmentu inaktibo gisa gordetzen da. Segmentuaren konfigurazioa amaitzen duzunean, exekutatu segmentua aktibatzeko. Bestela, egin dezakezu **Aktibatu** segmentu bat **Segmentu guztiak** orritik.
+Segmentua sortu bitartean, zirriborroa gorde dezakezu. Segmentu inaktibo gisa gordeko da eta ezin da aktibatu baliozko konfigurazio batekin amaituta.
 
 1. Zoaz **Segmentuak** orrira.
 
-1. Hautatu **Berria** > **Sortu zeurea**.
+1. Aukeratu **Berria** > **Segmentu zuria**.
 
-1. Segmentu-sortzailearen orrian, arauak definitzen edo konposatzen dituzu. Arau batek bezero multzo bat definitzen duten baldintza bat edo gehiago ditu.
+1. **Segmentu berria** panelean, aukeratu segmentu mota bat:
 
-1. **Rule1** sekzioan, aukeratu zein entitateren atributurekin iragazi nahi dituzun bezeroak. Bi modu daude atributuak aukeratzeko: 
-   - Berrikusi erabilgarri dauden entitateak eta atributuak **Gehitu arauan** paneleane ta hautatu gehitu beharreko atributuaren ondoko **+** ikonoa. Aukeratu atributua lehendik dagoen arau batean gehitu nahi duzun, ala arau berri bat sortzeko erabili.
-   - Bat datozen iradokizunak ikusteko, idatzi atributuaren izena arauaren sekzioan.
+   - **Segmentu dinamikoak** [freskatu](segments.md#refresh-segments) aldizkako ordutegian.
+   - **Segmentu estatikoak** exekutatu behin sortzen duzunean.
 
-1. Aukeratu baldintzaren bat datozen balioak zehazteko eragileak. Atributuak lau datu mota izan ditzake balio gisa: zenbakizkoa, katea, datua edo boolearra. Atributuaren datu moten arabera, baldintza zehazteko eragile desberdinak daude. Negozio kontuak dituzten segmentuetarako, bi operadore berezi daude eskuratutako iruzkinen arteko balizko hierarkiak sartzeko. Erabili *seme-alabak* eta *guraso* operadoreek lotutako kontuak sartzeko. 
+1. Eman **Irteerako entitatearen izena** segmenturako. Aukeran, eman pantailaren izena eta segmentua identifikatzen lagunduko duen deskribapena.
 
-1. Arau batean baldintza gehiago gehitzeko, hautatu **Gehitu baldintza**. Arau bat sortzeko uneko arauaren barruan, hautatu **gehitu azpiaraua**.
+1. Aukeratu **hurrengo** etortzeko **Segmentuen eraikitzailea** taldea non definitzen duzun. Talde bat bezero multzo bat da.
 
-1. Arau batek *Bezeroaren* entitatea ez diren beste entitate batzuk erabiltzen baditu, erlazioaren bide-izena ezarri behar duzu. Erlazioaren bide-izena beharrezkoa da sistemari jakinarazteko zein erlazioren bidez atzitu nahi duzun bezeroaren entitate bateratua. Hautatu **ezarri erlazioaren bide izena** hautatutako entitatea esleitzeko bezeroaren entitate bateratuari. Erlazioaren bide-izen posible bakarra badago, sistemak automatikoki hautatuko du. Harreman bide desberdinek emaitza desberdinak eman ditzakete. Arau bakoitzak bere erlazioaren bide-izena izan dezake.
+1. Aukeratu segmentatu nahi duzun atributua barne hartzen duen entitatea.
 
-   Hautatu :::image type="content" source="media/relationship-path.png" alt-text="Erlazioaren bide-izen posiblea, arau bat sortzerakoan bezeroaren entitate bateratuari esleitutako entitatea batean oinarrituta.":::
+1. Aukeratu arabera zatitu beharreko atributua. Atributu honek lau balio motetako bat izan dezake: zenbakikoa, katea, data edo boolearra.
 
-   Adibidez, pantaila-argazkiko *eCommerce_eCommercePurchases* entitateak lau aukera ditu *Bezeroaren* entitateari esleitzeko: 
-   - eCommerce_eCommercePurchases > eCommerce_eCommerceContacts > Bezeroa
-   - eCommerce_eCommercePurchases > Bezeroa
-   - eCommerce_eCommercePurchases > eCommerce_eCommerceContacts > POS_posPurchases > Bezeroa
-   - eCommerce_eCommercePurchases > eCommerce_eCommerceContacts > POS_posPurchases > loyaltyScheme_loyCustomers > Bezeroa Azken aukera hautatzerakoan, arauaren baldintzetan zerrendatutako entitate guztien atributuak sar ditzakegu. Litekeena da emaitza gutxiago lortzea, bat datozen bezeroen erregistroek entitate guztien parte izan behar dutelako. Adibide honetan, merkataritza elektroniko (*eCommerce_eCommercePurchases*) bidez ondasunak erosi dituzte, (*POS_posPurchases*) erosketa-puntuan eta geure fideltasun-programan (*loyaltyScheme_loyCustomers*) parte hartzen dute. Bigarren aukera hautatzereakoan, *eCommerce_eCommercePurchases* eta *Bezeroaren* entitateko atributuak soilik aukera ditzakegu. Horri esker, bezeroaren profil gehiago lor daitezke.
+1. Aukeratu operadorea eta balio bat hautatutako atributurako.
 
-1. Arau batean hainbat baldintza badituzu, aukera dezakezu zein eragile logikok konektatzen dituen.  
-   - **AND** eragilea: baldintza guztiak bete behar dira erregistro bat segmentuan sartzeko. Aukera hau baliagarria da entitate desberdinetan baldintzak definitzen dituzunean.
-   - **OR** eragilea: baldintzetako bat bete behar da erregistro bat segmentuan sartzeko. Aukera hau oso baliagarria da hainbat baldintza definitzen dituzunean entitate berarentzat.
+   > [!div class="mx-imgBorder"]
+   > ![Pertsonalizatu taldeko iragazkia](media/customer-group-numbers.png "Bezeroaren taldeko iragazkia")
 
-   :::image type="content" source="media/segmentation-either-condition.png" alt-text="Arautu bi AND baldintzen bidez.":::
+   |Zenbakia |Definizioa  |
+   |---------|---------|
+   |1     |Entity          |
+   |2     |Atributua          |
+   |3    |Eragilea         |
+   |4    |Balioa         |
 
-   OR eragilea erabiltzean, baldintza guztiak erlazioaren bide-izenean dauden entitateetan oinarrituta egon behar dira.
+   1. Talde bati baldintza gehiago gehitzeko, bi operadore logiko erabil ditzakezu:
 
-   - Hainbat arau sor ditzakezu bezeroen erregistro multzo desberdinak sortzeko. Taldeak konbinatu ditzakezu zure negozio kasurako behar diren bezeroak sartzeko. Arau berri bat sortzkeo, hautatu **Gehitu araua**. Zehazki, ezin baduzu entitatea sartu arau batean zehaztutako erlazioaren bide-izenaren ondorioz, arau berri bat sortu beharko duzu berau osatzen duten atributuak aukeratzeko.
+      - **ETA** operadorea: Bi baldintza segmentazio prozesuaren baitan bete behar dira. Aukera hau baliagarria da entitate desberdinetan baldintzak definitzen dituzunean.
 
-      :::image type="content" source="media/segment-rule-grouping.png" alt-text="Gehitu beste arau bat segmentu batena eta hautatu multzoko eragilea.":::
+      - **EDO** operadorea: Baldintzaren bat segmentazio prozesuaren zati gisa bete behar da. Aukera hau oso baliagarria da hainbat baldintza definitzen dituzunean entitate berarentzat.
 
-   - Aukeratu multzo operadoreetako bat: **Batasuna**, **Elkartu**, edo **Izan ezik**.
+      > [!div class="mx-imgBorder"]
+      > ![EDO baldintza bat bete behar den operadorea](media/segmentation-either-condition.png "EDO baldintza bat bete behar den operadorea")
 
-      - **Bateratzea** bi taldeak batzen ditu.
-      - **Gurutzatu** bi taldeak gainjartzen ditu. Bi taldeek *komunean dituzten* datuak soilik geratzen dira talde bateratuan.
-      - **Salbuespena** bi taldeak batzen ditu. B taldearekiko *Komunak ez diren* A taldeko datuak soilik gordetzen dira B taldean.
+      Gaur egun, habia habia egin daiteke **EDO** operadorea **ETA** operadorea, baina ez alderantziz.
 
-1. Lehenespenez, zehaztutako iragazkiekin bat datozen bezeroen profilen atributu guztiak dituzten irteerako entitateak sortzen dituzte segmentuek. Segmentu bat ez den beste entitate batzuetan oinarrituta badago *Bezeroa* entitatea, entitate hauetatik atributu gehiago gehi ditzakezu irteerako entitateari. Aukeratu **Proiektuaren atributuak** irteerako entitateari erantsiko zaizkion atributuak aukeratzeko. 
+   1. Talde bakoitza bezero multzoarekin bat dator. Taldeak konbinatu ditzakezu zure negozio kasurako behar diren bezeroak sartzeko.    
+   Hautatu **Gehitu taldea**.
 
-   > [!IMPORTANT]
-   > Negozio kontuetan oinarritutako segmentuetarako, *ContactProfile* entitateko kontu bakoitzaren kontaktu baten edo gehiagoren xehetasunak sartu behar dira segmentuan, segmentu hori harremanetarako informazioa behar duten helmugetara aktibatu edo esportatu ahal izateko. *ContactProfile* entitateari buruzko informazio gehiago lortzeko, ikus [Esleipen semantikoak](semantic-mappings.md).
-   > Kontaktuen proiektatutako atributuak dituzten negozio-kontuetan oinarritutako segmentu baten irteerako lagin bat honela izan daiteke: 
-   >
-   > |ID  |Kontuaren izena  |Diru-sarrerak  |Kontaktuaren izena  | Kontaktuaren funtzioa|
-   > |---------|---------|---------|---------|---|
-   > |10021     | Contoso | 100K | [Abbie Moss, Ruth Soto]  | [CEO, lorpenen kudeatzailea]
+      > [!div class="mx-imgBorder"]
+      > ![Bezeroen taldea gehitzeko taldea](media/customer-group-add-group.png "Bezeroen taldea gehitzeko taldea")
 
-   :::image type="content" source="media/segments-project-attributes.png" alt-text="Alboko panelean hautatutako proiektatutako atributuen adibidea, irteerako entitatean gehitzeko.":::
+   1. Aukeratu multzo operadoreetako bat: **Batasuna**, **Elkartu**, edo **Izan ezik**.
+
+   > [!div class="mx-imgBorder"]
+   > ![Bezeroen taldea gehitzeko bateratzea](media/customer-group-union.png "Bezeroen taldea gehitzeko bateratzea")
+
+   - **Bateratzea** bi taldeak batzen ditu.
+
+   - **Gurutzatu** bi taldeak gainjartzen ditu. Bi taldeetako datu *komunak* soilik mantentzen dira talde bateratuan.
+
+   - **Salbuespena** bi taldeak batzen ditu. A eta B talde bietan *ez dauden* datuak soilik mantentzen dira.
+
+1. Erakundea bezero bateratutako entitatearekin konektatuta badago [harremanak](relationships.md), erlazio bidea zehaztu behar duzu baliozko segmentua sortzeko. Gehitu entitateak erlazio-bide honetatik hautatu dezakezu arte **Bezeroa: CustomerInsights** entitatea goitibehera. Ondoren, aukeratu **Erregistro guztiak** urrats bakoitzerako.
+
+   > [!div class="mx-imgBorder"]
+   > ![Harreman bidea segmentuak sortzean](media/segments-multiple-relationships.png "Harreman bidea segmentuak sortzean")
+
+1. Lehenespenez, segmentuek definitutako iragazkiekin bat datozen bezeroen profilen atributu guztiak dituen irteerako entitatea sortzen dute. Segmentu bat ez den beste entitate batzuetan oinarrituta badago *Bezeroa* entitatea, entitate hauetatik atributu gehiago gehi ditzakezu irteerako entitateari. Aukeratu **Proiektuaren atributuak** irteerako entitateari erantsiko zaizkion atributuak aukeratzeko.  
   
-   Adibidez: segmentu bat erosketa datuak dituen entitate batean oinarritzen da *Bezeroa* entitatea. Segmentuak uneko urtean ondasunak erosi dituzten Espainiako bezero guztiak bilatzen ditu. Atributuak eranstea aukera dezakezu, adibidez, ondasunen prezioa edo irteerako entitateko bat datozen bezeroen erregistroen erosketa-data. Informazioa baliagarria izan daiteke gastatutako guztizkoaren urtaroen araberako korrelazioak aztertzeko.
+   Adibidez: segmentu bat bezeroarekin lotutako jarduerak dituen entitate batean oinarritzen da *Bezeroa* entitatea. Segmentuak azken 60 egunetan laguntza-mahaira deitu duten bezero guztiak bilatzen ditu. Irteerako entitatean bat datozen bezeroen erregistro guztiei deiaren iraupena eta dei kopurua eranstea aukera dezakezu. Informazio hau baliagarria izan daiteke maiz deitzen duten bezeroei lineako laguntza artikuluen eta ohiko galderen esteka lagungarriekin mezu elektronikoak bidaltzeko.
 
    > [!NOTE]
-   > - **Proiektuaren atributuak** bezero entitatearekin bat-bateko harremana duten entitateentzat bakarrik funtzionatzen du. Adibidez, bezero batek harpidetza ugari izan ditzake.
-   > - Proiektatu nahi duzun atributua saltotik bat baino gehiagora badago *Bezeroa* entitateak, harremanak definitzen duen moduan, atributu hori eraikitzen ari zaren segmentuaren kontsultaren arau guztietan erabili beharko litzateke. 
-   > - Proiektatu nahi duzun atributua saltotik batera badago *Bezeroa* entitateak ez du presente egon behar atributu hori eraikitzen ari zaren segmentuaren kontsultaren arau guztietan erabiltzean. 
-   > - Multzo operadoreak erabiltzean **proiektatutako atributuak** kontuan hartzen dira.
+   > - Proiektatutako atributuek bezeroaren entitatearekin bat-bateko harremana duten entitateentzat bakarrik funtzionatzen dute. Adibidez, bezero batek harpidetza ugari izan ditzake.
+   > - Eraikitzen ari zaren segmentu kontsulta talde guztietan erabiltzen den entitate bateko atributuak soilik proiekta ditzakezu.
+   > - Multzo operadoreak erabiltzean proiektatutako atributuak kontuan hartzen dira.
 
-1. Segmentua gorde eta exekutatu aurretik, hautatu **editatu xehetasunak**, segmentuaren izenaren ondoan. Eman segmentuari izena eta eguneratu segmentuaren iradokitako **irteerako entitatearen izena**. Segmentuaren azalpena ere gehi dezakezu.
+1. Segmentua gordetzeko, sakatu **Gorde**. Zure segmentua gordeko da eta prozesatu egingo da baldintza guztiak baliozkotuz gero. Bestela, zirriborro gisa gordeko da.
 
-1. Aukeratu **Exekutatu** segmentua gordetzeko, aktibatzeko eta zure segmentua prozesatzen hasteko arau eta baldintza guztietan oinarrituta. Bestela, segmentu inaktibo gisa gordeko da.
-   
 1. Aukeratu **Segurtasunetara itzuli** berriro ere **segmentuak** orria.
 
-1. Lehenespenez, segmentua segmentu dinamiko gisa sortzen da. Esan nahi du sistemaren freskatzeetan segmentua freskatzen dela. [Gelditzeko freskatze automatikoa](segments.md#manage-existing-segments), hautatu segmentua aukeratu **Estatikoa egin** aukera. Segmentu estatikoak [eskuz freskatu daitezke](segments.md#refresh-segments) edozein unetan.
 
-> [!TIP]
-> - Segmentu-egileak ez ditu entitateetako baliozko balioak iradokiko baldintzen eragileak ezartzean. Erabilgarri dauden balioak ikusteko, joan **Datuak** > **Entitateak** atalera eta deskargatu entitatearen datuak.
-> - Datetan oinarritutako baldintzek data finkoen eta data-tarte mugikorren artean aldatzeko aukera ematen dute.
-> - Segmenturako arau ugari badituzu, editatzen ari zaren arauak lerro urdin bertikala du ondoan. 
-> - Arauak eta baldintzak segmentuaren definizioko beste lekuetara eraman ditzakezu. Hautatu [...] arau edo baldintza baten ondoan eta hautatu nola eta nora eraman.
-> - **Desegin** eta **Berregin** Komando-barrako kontrolek aldaketak atzeratzeko aukera ematen dute.
 
 ## <a name="quick-segments"></a>Segmentu azkarrak
 
 Segmentu bizkorrek segmentu sinpleak operadore bakar batekin azkar eraikitzeko aukera ematen dute ikuspegi azkarragoak lortzeko.
 
 1. **Segmentuak** orrian, hautatu **Berria** > **Sortu honetatik**.
+
    - Hautatu **Profilak** aukera *bateratutako bezeroaren* entitatean oinarritutako segmentu bat eraikitzeko aukera.
    - Aukeratu **Neurriak** aukera sortu aurretik sortutako neurrien inguruan segmentu bat eraikitzeko.
    - Hautatu botoia **Adimen** Aukera hau bai erabiliz sortu duzun irteerako entitateetako baten inguruan eraikitzeko aukera **iragarpenak** edo **Neurrira egindako ereduak** gaitasunak.
 
 2. Sarbidean **Segmentu azkar berria** elkarrizketa-koadroan, hautatu atributu bat **eremua** goitibeherako menuko.
 
-3. Sistemak xehetasun gehiago emango dizkizu bezeroen segmentu hobeak sortzeko.
+3. Sistemak ikuspegi osagarriak emango ditu zure bezeroen segmentu hobeak sortzen lagunduko dutenak.
    - Eremu kategorikoetarako, 10 bezero zenbatuko ditugu. Hautatu **Balio** bat eta hautatu **Berrikusi**.
+
    - Zenbakizko atributu bat lortzeko, sistemak erakutsiko du zer atributu-balioa eroriko den bezero bakoitzaren portzentalaren azpian. Aukeratu bat **Operadorea** eta **Balioa** eta hautatu **Berrikusi**.
 
 4. Sistemak zurekin hornituko zaitu **Segurtasunaren neurria**. Definitu duzun segmentua sortu edo aukeratu dezakezu edo, bestela, berrikusi beste segmentu baten tamaina lortzeko.
 
     > [!div class="mx-imgBorder"]
-    > ![Izena eta estimazioa segmentu azkar baterako.](media/quick-segment-name.png "Izena eta estimazioa segmentu azkar baterako")
+    > ![Izena eta estimazioa segmentu azkar baterako](media/quick-segment-name.png "Izena eta estimazioa segmentu azkar baterako")
 
 5. Jarri **izena** zure segmentuari. Nahi baduzu, eman **Bistaratzeko izena**.
 
@@ -160,6 +137,6 @@ Segmentu bizkorrek segmentu sinpleak operadore bakar batekin azkar eraikitzeko a
 
 ## <a name="next-steps"></a>Hurrengo urratsak
 
-[Esportatu segmentu bat](export-destinations.md) eta esploratu [Bezeroen txartelaren integrazioa](customer-card-add-in.md) segmentuak beste aplikazio batzuetan erabiltzeko.
+[Esportatu segmentua](export-destinations.md) eta esploratu [Bezero txartela](customer-card-add-in.md) eta [Konektoreak](export-power-bi.md) bezeroaren mailari buruzko informazioa lortzeko.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

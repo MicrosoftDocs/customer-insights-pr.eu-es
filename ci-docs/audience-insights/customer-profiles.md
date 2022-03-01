@@ -1,71 +1,75 @@
 ---
 title: Ikusi bezeroen profilak
 description: Lortu zure bezeroen datu bateratuen ikuspegi konbinatua.
-ms.date: 09/30/2021
+ms.date: 12/01/2020
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
-author: Nils-2m
-ms.author: nikeller
+author: NimrodMagen
+ms.author: nimagen
 manager: shellyha
-ms.openlocfilehash: 07d2206372f89cd7dcd9df84c87024a6f87d5eac
-ms.sourcegitcommit: 5d82e5b808517e0e99fdfdd7e4a4422a5b8ebd5c
+ms.openlocfilehash: 433e6ceda0ec7827bd672cff40f895d7719561df
+ms.sourcegitcommit: aaa275c60c0c77c88196277b266a91d653f8f759
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 10/11/2021
-ms.locfileid: "7623254"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "5896312"
 ---
 # <a name="customer-profiles"></a>Bezeroen profilak
 
-**Bezeroak** orrialdeak zure bezeroen profil bateratuen ikuspegi konbinatua erakusten du. Bezeroen profilak behin eskuragarri daude [sortu du Bezeroen entitate bateratua](data-unification.md). Orriak bezeroak bilatzeko eta bilaketa horretarako aurkibidea definitzeko aukera ematen dizu.
+**Bezeroak** orriak zure bezeroen ikuspegi konbinatua erakusten du, [datu-iturburu guztietatik](data-sources.md) bildutako profileko datuetan oinarrituta. Bezeroen profilak behin erabilgarri daude [sortu Bezeroaren erakunde bateratua](data-unification.md). Ziurtatu datuak bateratzeko prozesua betetzen duzula zure bezeroen ikuspegi aberatsagoak lortzeko. Orriak bezeroak bilatzeko aukera ere ematen du.
 
-Bezeroak norbanakoak edo erakundeak izan daitezke. Bezeroen profil bakoitza fitxa baten bidez irudikatzen da. Erabili paginazio kontrolak erregistro gehiago lortzeko. Txartelak eremuko eremuak erakusten ditu *Bezeroa* fitxategian definitutako entitatea **Bilatu eta iragazi indizea**. Aukeratu fitxa bat hautatutako bezeroarentzako datuak ikusteko izeneko orri dedikatu batean [Bezeroaren xehetasunen orria](customer-profiles.md#customer-details-page).
+Bezeroak pertsona edo erakundeak izan daitezke (aurrebista). Bezero edo erakundearen profil bakoitza fitxa batez irudikatuta dago. Aukeratu fitxa bat bezero edo erakunde zehatz horri buruzko informazio osagarria ikusteko. Erabili orrialdearen kontrolaren orrialdearen beheko kontrolak erregistro osagarriak ikusteko.
 
 > [!div class="mx-imgBorder"] 
-> ![Bezeroen orria emaitza fitxak erakusten ditu](media/customers-page-result-tiles-B2C.png "Bezeroen orria emaitza fitxak erakusten ditu")
+> ![B2C bezeroen profilak](media/profiles-customers.png "B2C bezeroen profilak")
+
+Erakundeak (Aurrebista)
+> [!div class="mx-imgBorder"] 
+> ![B2B bezeroen profilak](media/profile-customers-b2b.png "B2B bezeroen profilak")
 
 > [!NOTE]
-> Aukeratzean fitxak ikusi ezin badituzu **Bezeroak** nabigazioan, zure administratzaileak behar du [definitu gutxienez bila daitekeen atributu bat](search-filter-index.md) urtean **Bilatu eta iragazi indizea**.
+> Hautatzen dituzunean fitxak ezin badituzu ikusi **Bezeroak** nabigazioan, zure administratzaileak egin behar du [definitu gutxienez bilaketa atributu bat](search-filter-index.md) gainean **Bilatu eta iragazi indizea**.
 
 ## <a name="search-for-customers"></a>Bilatu bezeroentzako
 
-Bilatu bezeroak izen bat edo beste atributuren bat bilaketa laukian sartuz. Bilaketa fitxategiaren barruan soilik funtzionatzen du _Bezeroa_ datuak bateratzeko prozesuan sortutako entitatea.
+Bilatu bezeroak izen bat edo beste atributuren bat bilaketa laukian sartuz. Bilaketa datuak bateratzeko prozesuan sortutako Bezero Profilaren entitatearen barruan bakarrik funtzionatzen du.
 
-Administratzaile gisa, bilaketa atributuak konfigura ditzakezu **Bilatu eta iragazi indizea** orria. Informazio gehiagorako, joan hona [Kudeatu bilaketa eta iragazki indizea](search-filter-index.md).
+Administratzaile gisa, bilaketa atributuak konfigura ditzakezu **Bilatu eta iragazi indizea** orria. Informazio gehiago lortzeko, ikus [Kudeatu bilaketa eta iragazki indizea](search-filter-index.md).
 
 ## <a name="filter-customers"></a>Iragazi bezeroak
 
-Bezeroen arabera iragazi ditzakezu _Bezeroa_ entitate eremuak. Bilaketaren antzera, zure administratzaileak lehendabizi eremuak ezin izango ditu definitu **Bilatu eta iragazi indizea** orria.
+Bezeroak Profilaren entitatearen eremuak iragazi ditzakezu. Bilaketaren antzera, zure administratzaileak lehendabizi eremuak ezin izango ditu definitu **Bilatu eta iragazi indizea** orria.
 
-1. Aukeratu **Erakutsi iragazkiak** gainean **Bezeroak** orrialdea.
+1. Hautatu **Iragazi** **Bezeroak** orrian.
 
-1. Egiaztatu bezeroak iragazi nahi dituzun atributuen ondoko laukiak.
+2. Egiaztatu bezeroak iragazi nahi dituzun atributuen ondoko laukiak.
 
-1. Kendu iragazkiak **Garbitu iragazkiak** hautatuta **Bezeroak** orrian.
+   > [!div class="mx-imgBorder"] 
+   > ![Bezeroen profilak](media/profiles-customers3.png "Bezeroen profilak")
 
-## <a name="customer-details-page"></a>Bezeroaren xehetasunen orria
+3. Kendu iragazkiak **Garbitu iragazkiak** hautatuta **Bezeroak** orrian.
 
-Aukeratu bezeroaren lauzetako bat **Bezeroaren xehetasunen orria** irekitzeko. Ikuspegi honek aukeratutako bezeroaren informazio bateratua du. Bezeroaren datuen artean honako eduki hau dago:
+##  <a name="customer-details-page"></a>Bezeroaren xehetasunen orria
 
-**Bezeroaren profilaren fitxa**: Fitxa honek bateratuaren balio desberdinak erakusten ditu _Bezeroa_ entitatea. Eremu batek aukeratutako bezeroaren profilerako baliorik ez badu, ez da erakutsiko. Fitxa ataletan egituratuta dago:  
-  - Lehenengo atalean aurrez zehaztutako eremu multzo bat agertzen da eta jarraian bilaketa eta iragazki indizearen zati diren eremu guztiak agertzen dira. Helbideekin lotutako eremu guztiak lerro bakarrean konbinatzen dira profilak eremu horiek baditu. 
-  - **Bezero honen kontaktuak**: Enpresa kontuetarako inguruneetan, bezero honi lotutako kontaktu guztiak ikusiko dituzu bigarren atal gisa. Kontaktu bakoitza bere eremuekin erakusten da. Eremu hutsak ezkutatuta daude.
-  - **Eremu osagarriak**: Aukeratutako bezeroaren gainerako eremuak erakusten ditu, IDak izan ezik. 
-  - **IDak**: ID guztiak dagokien entitatearen izenarekin zerrendatzen ditu. Eremuak beren semantikaren bidez identifikatzen dira ID gisa, eta horrela sailkatzen dituzte.
+Aukeratu bezeroaren lauzetako bat **Bezeroaren xehetasunen orria** irekitzeko. Ikuspegi honek aukeratutako bezeroaren informazio bateratua du.
 
-**Jardueren kronograma**: Datuak erakusten ditu jarduerak konfiguratuta badituzu. Denbora-lerroaren ikuspegiak hautatutako bezeroaren kronologikoki antolatutako jarduerak biltzen ditu, azken jardueratik hasita. Informazio gehiagorako, joan [Bezeroaren jarduerak](activities.md).
+Bezeroaren xehetasunek honako hau barne hartzen dute:
 
-**Xehetasunak**:  
-  - **Neurriak**: Bezeroaren atributu neurri bat edo gehiago konfiguratu zenituen erakusten du. Zure bezeroen inguruan kalkulatutako KPIak sartzen dira bezero bakoitzaren mailan. Informazio gehiagorako, joan hona [Neurriak zehaztu eta kudeatu](measures.md).
+-   **Bezeroaren profilaren lauza:** Lauza honek bezeroaren profileko entitate bateratuaren balio desberdinak erakusten ditu. Xehetasun horien artean helbide elektronikoa, izena, hiria, eta abar sartzen dira. 
 
-  - **Interes potentzialak, marka potentzialak**: Marka edo interes afinitate aberastasuna konfiguratu zenuen erakusten du. Aukeratutako profilaren antzekoa den profila duten beste bezero batzuetan oinarritutako marka eta interes potentzialak adierazten ditu. Informazio gehiagorako, joan hona [Bezeroen profilak aberastu marka eta interesen arteko kidetasunekin](enrichment-microsoft.md).
+-   **Interes potentzialak, marka potentzialak:** Lehen mailako aberastasuna konfiguratu zenuen erakusten du. Bezero honen antzeko profila duten bezeroek izan ditzaketen markekiko interes eta afinitate potentzialak adierazten ditu. Informazio gehiago lortzeko, ikus [Aberastu bezeroen profilak marka eta interes kidetasunekin](enrichment-microsoft.md).
 
-Bezeroen bilaketa orrira itzultzeko, hautatu **Itzuli Bezeroetara**.
+-   **Neurriak:** Mota zehatz bateko neurri bat edo gehiago konfiguratu zenituen erakusten du: bezeroaren atributuaren neurriak. Zure bezeroen inguruan kalkulatutako KPIak sartzen dira bezero bakoitzaren mailan. Informazio gehiagorako, ikusi [Neurriak zehaztea eta kudeatzea](measures.md).
+
+-   **Jardueren kronologia:** Jarduerak konfiguratu dituzun erakusten du. Ikuspegi kronologikoak bezero honen kronologikoki ordenatutako jarduerak biltzen ditu, azken jardueratik hasita. Informazio gehiago lortzeko, ikus [Bezeroaren jarduerak](activities.md).
+
+Aukeratu **Itzuli Bezeroetara** bezeroen bilaketa orrira itzultzeko.
 
 ## <a name="next-steps"></a>Hurrengo urratsak
 
-[Gehitu datu iturri gehiago](data-sources.md), [profil bateratuak aberastu](enrichment-hub.md), edo [segmentuak sortu](segments.md) bezeroen profil bateratuekin lan egiteko beste aplikazio batzuetan.
+[Gehitu datu iturri gehiago](data-sources.md) edo [bezeroen segmentuak sortu](segments.md).
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

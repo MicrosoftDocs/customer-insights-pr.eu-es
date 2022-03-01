@@ -1,7 +1,7 @@
 ---
 title: Enpresaren datuen hobekuntza
 description: Aberastu eta normalizatu enpresaren datuak Microsoft-en ereduekin.
-ms.date: 01/19/2022
+ms.date: 11/15/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: how-to
 author: kishorem-ms
 ms.author: kishorem
 manager: shellyha
-ms.openlocfilehash: 693e2f410a77cbf2e87ff0132ce963aab7e8e3e4
-ms.sourcegitcommit: 4c9db6c124d7244e7e8bb2f8bfdc697523781c31
+ms.openlocfilehash: d11700c87f31cedc40d32b201251d8a9e2e2c312
+ms.sourcegitcommit: dfc4843cc78857f1e3ca49d7b938e3ba77969169
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 01/19/2022
-ms.locfileid: "8010873"
+ms.lasthandoff: 11/15/2021
+ms.locfileid: "7813905"
 ---
 # <a name="enrichment-of-company-profiles-with-enhanced-company-data"></a>Enpresaren profilak aberastea enpresaren datu hobetuekin
 
@@ -51,7 +51,7 @@ Datu hobetuekin muga batzuk daude. Beheko zerrendako elementuak ez ditu ereduak 
 
 1.  Enpresaren identitatea berretsi. Ez dugu egiaztatzen sarrera lehendik dagoen erakunde bat den edo enpresa batek irteera izen estandar gisa erabiltzen duen.
 2.  Estali orokorrean enpresak mundu osoan. Microsoft-ek bildutako konpainiaren datuek estaldura globala dute, baina estaldura gehien Australian, Kanadan, Erresuma Batuan eta Estatu Batuetan eskaintzen du.
-3.  Normalizatu enpresen helbideak mundu osoan. Gaur egun, herrialde edo eskualde hauetan helbideak estandarizatzen onartzen ditugu: Australia, Kanada, Frantzia, Alemania, Italia, Japonia, Erresuma Batua eta Estatu Batuak.
+3.  Normalizatu enpresen helbideak mundu osoan. Gaur egun, herrialde edo eskualde hauetan helbideak estandarizatzea onartzen dugu: Australia, Kanada, Frantzia, Alemania, Italia, Japonia, Erresuma Batua eta Estatu Batuak.
 4.  Datuen zehaztasuna edo freskotasuna bermatu. Enpresaren informazioa askotan aldatzen denez, ezin dugu bermatu emandako enpresaren datu hobetuak beti zehatzak edo eguneratuak direnik.
 
 ## <a name="configure-the-enrichment"></a>Konfiguratu aberastea
@@ -82,17 +82,7 @@ Aberasteko prozesua hasteko, hautatu **Korrika egin** komando barratik. Gainera,
 
 Aberasteko prozesua amaitu ondoren, aberastu berri diren bezeroen profilen datuak berrikus ditzakezu atalean **Nire aberastasunak**. Gainera, azken eguneratzearen ordua eta profil aberastuen kopurua aurkituko dituzu.
 
-Aberastutako datuen lagin bat ikus dezakezu **Bezeroen aurrebista aberastua** teila. Hautatu **Gehiago ikusi** eta hautatu **Datuak** fitxa aberastutako profil bakoitzaren ikuspegi zehatzera sartzeko.
-
-### <a name="overview-card"></a>Ikuspegiko txartela
-
-Ikuspegi-txartelak aberastearen estaldurari buruzko xehetasunak erakusten ditu. 
-
-* **Enpresak prozesatu eta aldatu** : arrakastaz aberastu diren bezero-enpresa-profilen kopurua.
-
-* **Enpresak tramitatu eta aldatu gabe** : aitortu baina aldatu ez diren bezero-enpresa-profilen kopurua. Hau normalean sarrerako datuak baliozkoak direnean eta aberastearekin hobetu ezin direnean gertatzen da.
-
-* **Enpresak ez izapidetu eta ez aldatu** : Aitortu ez diren bezero-enpresa-profilen kopurua. Hau normalean baliogabeak diren edo aberasteak onartzen ez dituen sarrerako datuekin gertatzen da.
+Aberastutako profil bakoitzaren ikuspegi zehatza sar dezakezu hautatuta **Ikusi aberastutako datuak**.
 
 ## <a name="next-steps"></a>Hurrengo urratsak
 

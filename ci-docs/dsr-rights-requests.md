@@ -1,6 +1,6 @@
 ---
 title: Datu subjektuen eskubideak (DSR) eskaerak DBAOren azpian | Microsoft Docs
-description: Erantzun Dynamics 365 Customer Insights ikusleei buruzko informazio-gaitasunari buruzko subjektuaren eskaerei.
+description: Erantzun Dynamics 365 Customer Insights hartzaileen xehetasunen gaitasunaren datuen jabearen eskaerei.
 ms.date: 08/11/2021
 ms.reviewer: mhart
 ms.service: customer-insights
@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: m-hartmann
 ms.author: wimohabb
 manager: shellyha
-ms.openlocfilehash: c116f7ce208c0288851a4b2230e27784ba3a5337
-ms.sourcegitcommit: 834651b933b1e50e7557d44f926a3fb757c1f83a
+ms.openlocfilehash: 6faaeb6a1ee34c3e5c8e7d465b37cee589bc920c
+ms.sourcegitcommit: 5704002484cdf85ebbcf4e7e4fd12470fd8e259f
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "7732665"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "7483638"
 ---
 # <a name="data-subject-rights-dsr-requests-under-gdpr"></a>Datu subjektuen eskubideak (DSR) eskaerak DBAOren azpian
 
@@ -24,7 +24,7 @@ Bezeroek DBAO betekizunak betetzeko konpromisoa dugu. Informazio pertsonala barn
 
 ## <a name="audience-insights"></a>Hartzaileen xehetasunak
 
-### <a name="responding-to-gdpr-data-subject-delete-requests-for-dynamics-365-customer-insights-audience-insights-capability"></a>Dynamics 365 Customer Insights ikusleei buruzko informazio-gaitasunerako GDPR datu-gaiak ezabatzeko eskaerei erantzutea
+### <a name="responding-to-gdpr-data-subject-delete-requests-for-dynamics-365-customer-insights-audience-insights-capability"></a>Erantzun Dynamics 365 Customer Insights hartzaileen xehetasunen gaitasunaren DBAO datuen jabearen ezabatze-eskaerei
 
 Erakunde baten bezeroen datu pertsonalak ezabatzeko eskubidea funtsezko babesa da Datuak Babesteko Araudi Orokorrean (DBAO). Datu pertsonalak kentzea barne hartzen ditu datu pertsonal guztiak eta sistemak sortutako erregistroak kentzea, ikuskapenen egunkari informazioa izan ezik.
 
@@ -39,7 +39,7 @@ Hartzaileen xehetasunek bezero jakin baten edo erabiltzailearen datu pertsonalak
 
 Customer Insights kudeatzaile batek urrats hauek jarraitu ditzake datu-iturburu-en ezabatu diren bezeroen datuak kentzeko:
 
-1. Hasi saioa Dynamics 365 Customer Insights-en.
+1. Hasi saioa Dynamics 365 Customer Insights aplikazioan.
 2. Hartzaileei buruzko xehetasunetan, joan hona: **Datuak** > **Datu-iturburuak**
 3. Ezabatutako bezeroen datuak biltzen dituen zerrendan datu-iturburu bakoitzeko:
    1. Hautatu (...) eta ondoren, hautatu **Freskatu**.
@@ -52,7 +52,7 @@ Customer Insights kudeatzaile batek urrats hauek jarraitu ditzake datu-iturburu-
 
 Customer Insights kudeatzaile batek urrats hauek jarraitu ditzake Customer Insights erabiltzailearen datuak ezabatzeko:
 
-1. Hasi saioa Dynamics 365 Customer Insights-en.
+1. Hasi saioa Dynamics 365 Customer Insights aplikazioan.
 2. Hartzaileei buruzko xehetasunetan, joan hona: **Administratzailea** > **Baimenak**.
 3. Hautatu ezabatu nahi dituzun erabiltzailearen kontrol-laukiak.
 4. Hautatu **Kendu**.
@@ -79,14 +79,7 @@ Maizter administratzaileak urrats hauek jarraitzen ditu datuak esportatzeko:
 2. Onartu eskatutako erabiltzailearen datuak esportatzeko baieztapena.
 3. Jaso esportatutako datuak maizter admin helbide elektronikoaren bidez.
 
-## <a name="consent-management-preview"></a>Baimenaren kudeaketa (aurrebista)
-
-Baimenak kudeatzeko gaitasunak ez ditu zuzenean erabiltzaileen datuak biltzen. Beste aplikazio batzuetan erabiltzaileek emandako baimen-datuak soilik inportatzen eta prozesatzen ditu.
-
-Erabiltzaile espezifikoei buruzko adostasun-datuak kentzeko, kendu baimena kudeatzeko gaitasunean jasotako datu-iturrietatik. datu-iturburu freskatu ondoren, kendutako datuak Baimen Zentroan ere ezabatuko dira. Baimen-entitatea erabiltzen duten aplikazioek iturburuan kendutako datuak ere ezabatuko dituzte a ondoren [freskatu](audience-insights/system.md#refresh-processes). Datu-iturriak azkar freskatzea gomendatzen dugu datu-gaiaren eskaera bati erantzun ondoren erabiltzailearen datuak beste prozesu eta aplikazio guztietatik kentzeko.
-
-
-## <a name="engagement-insights-preview"></a>Parte-hartzearen xehetasunak (aurreargitalpena)
+## <a name="engagement-insights"></a>Parte-hartzearen xehetasunak
 
 ### <a name="deleting-and-exporting-event-data-containing-end-user-identifiable-information"></a>Azken erabiltzailearen identifikazio informazioa duten gertaeren datuak ezabatu eta esportatu
 

@@ -1,20 +1,20 @@
 ---
 title: Power BI konektorea
 description: Ikusi nola erabili laguntzailearen estudioa Dynamics 365 Customer Insights konektorea Power BI-n.
-ms.date: 07/23/2021
-ms.reviewer: mhart
+ms.date: 09/21/2020
+ms.reviewer: sthe
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: how-to
-author: stefanie-msft
-ms.author: sthe
+ms.topic: conceptual
+author: m-hartmann
+ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: a0ca431dbea839fe271cf3a512cd3a5dde6d920d396056e91b33bcf7ed84272a
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: d497ca779a337c512a7254524f597cff226bcb45
+ms.sourcegitcommit: cf9b78559ca189d4c2086a66c879098d56c0377a
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7035492"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "4404957"
 ---
 # <a name="connector-for-power-bi-preview"></a>Konektorea Power BI-rako (aurrebista)
 
@@ -23,7 +23,7 @@ Sortu zure datuentzako bistaratzeak Power BI Desktop-ekin. Sortu ikuspegi gehiag
 ## <a name="prerequisites"></a>Aurrebaldintzak
 
 - Bezeroen profil bateratuak dituzu.
-- Bertsioaren azken bertsioa [Microsoft Power BI Desktop](https://powerbi.microsoft.com/desktop/) zure ordenagailuan instalatuta dago. [Lortu hauei buruzko informazio gehiago: Power BI Desktop](/power-bi/desktop-what-is-desktop)
+- Bertsioaren azken bertsioa [Microsoft Power BI Desktop](https://powerbi.microsoft.com/desktop/) zure ordenagailuan instalatuta dago. [Lortu hauei buruzko informazio gehiago: Power BI Desktop](https://docs.microsoft.com/power-bi/desktop-what-is-desktop)
 
 ## <a name="configure-the-connector-for-power-bi"></a>Konfiguratu konektorea Power BI
 
@@ -31,7 +31,7 @@ Sortu zure datuentzako bistaratzeak Power BI Desktop-ekin. Sortu ikuspegi gehiag
 
 1. Hautatu **Ikusi gehiago** eta bilatu **Dynamics 365 Customer Insights**
 
-1. Hautatu **Konektatu**.
+1. Aukeratu emaitza eta hautatu **konektatu**.
 
 1. **saioa hasi** Customer Insights-erako erabiltzen duzun antolakuntza-kontu bera daukazu eta hautatu **konektatu**.
    > [!NOTE]
@@ -39,7 +39,7 @@ Sortu zure datuentzako bistaratzeak Power BI Desktop-ekin. Sortu ikuspegi gehiag
 
 1. **Nabigatzailea** elkarrizketa-koadroa. sarbidea duzun ingurune guztien zerrenda ikusiko duzu. Zabaldu ingurune bat eta ireki edozein karpeta (entitateak, neurriak, segmentuak, aberasteak). Adibidez, ireki **Entitateak** karpeta, inporta ditzakezun entitate guztiak ikusteko.
 
-   ![Power BI Konektagailuaren nabigatzailea.](media/power-bi-navigator.png "Power BI Konektagailuaren nabigatzailea")
+   ![Power BI Konektagailuaren nabigatzailea](media/power-bi-navigator.png "Power BI Konektagailuaren nabigatzailea")
 
 1. Hautatu sartu beharreko entitateen ondoko kontrol laukiak **kargatu**. Hainbat entitate hautatu ahalko dituzu, ingurune anitzetan.
 
@@ -47,32 +47,8 @@ Sortu zure datuentzako bistaratzeak Power BI Desktop-ekin. Sortu ikuspegi gehiag
 
 ## <a name="large-data-sets"></a>Datu multzo handiak
 
-Customer Insights konektorea Power BI bezeroentzako milioi bat profil dituzten datu multzoetarako lan egiteko diseinatuta dago. Datu multzo handiagoak inportatzeak funtziona dezake, baina denbora asko behar da. Gainera, prozesuak denbora-muga izan dezake Power BI mugak. Informazio gehiagorako, ikus [Power BI: Datu multzo handien gomendioak](/power-bi/admin/service-premium-what-is#large-datasets). 
+Customer Insights konektorea Power BI bezeroentzako milioi bat profil dituzten datu multzoetarako lan egiteko diseinatuta dago. Datu multzo handiagoak inportatzeak funtziona dezake, baina denbora asko behar da. Gainera, prozesuak denbora-muga izan dezake Power BI mugak. Informazio gehiagorako, ikus [Power BI: Datu multzo handien gomendioak](https://docs.microsoft.com/power-bi/admin/service-premium-what-is#large-datasets). 
 
 ### <a name="work-with-a-subset-of-data"></a>Lan egin datu azpimultzo batekin
 
 Kontuan hartu zure datuen azpimultzo batekin lan egitea. Adibidez, [segmentuak](segments.md) sor ditzakezu bezeroaren erregistro guztiak Power BI-ra esportatu beharrean.
-
-## <a name="troubleshooting"></a>Arazoak konpontzea
-
-### <a name="customer-insights-environment-doesnt-show-in-power-bi"></a>Customer Insights ingurunea ez da agertzen Power BI-n
-
-Bat baino gehiago dituzten inguruneak [erlazioa](relationships.md) ikusleen estatistiketan bi entitate berdinen artean definitutakoak ez dira erabilgarri egongo Power BI konektorea.
-
-Bikoiztutako harremanak identifikatu eta kendu ditzakezu.
-
-1. Ikusleen ikuspegietan, joan hona **Datuak** > **Erlazioak** falta zaizun inguruneari buruz Power BI-n.
-2. Bikoiztutako harremanak identifikatu:
-   - Egiaztatu bi entitate berdinen artean erlazio bat baino gehiago definitzen den.
-   - Egiaztatu batasun prozesuan sartutako bi entitateen artean sortutako erlaziorik dagoen. Bateratze prozesuan sartutako entitate guztien artean harreman inplizitua dago definituta.
-3. Kendu identifikatutako harreman bikoiztuak.
-
-Bikoiztutako harremanak kendu ondoren, saiatu konfiguratzen Power BI konektorea berriro. Ingurumena erabilgarri egon beharko litzateke orain.
-
-### <a name="errors-on-date-fields-when-loading-entities-in-power-bi-desktop"></a>Data-eremuen erroreak entitateak kargatzean Power BI Desktop-en
-
-UUUU/HH/EE bezalako data formatua duten eremuak dituzten entitateak kargatzean, akatsak topatuko dituzu bat ez datozen lokal formatuak direla eta. Desberdintasun hau zure Power BI Desktop fitxategia ingelesa (Estatu Batuak) ez den beste ezarpen batekin ezarrita dagoenean gertatzen da, hartzaileei buruzko xehetasunen data eremuak AEBetako formatuan gordetzen baitira.
-
-Power BI Desktop fitxategiak ezarpen lokal bakarra du, datuak berreskuratzean aplikatzen dena. Data-eremu hauek behar bezala interpretatu ahal izateko, ezarri .BPI fitxategiaren lokalizazioa ingelesera (Estatu Batuak). [Ikasi webgune baten eskualdeko eremuak nola aldatu Power BI mahaigaineko fitxategian](/power-bi/fundamentals/supported-languages-countries-regions.md#choose-the-locale-for-importing-data-into-power-bi-desktop).
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

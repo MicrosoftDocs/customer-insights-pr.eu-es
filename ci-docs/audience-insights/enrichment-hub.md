@@ -1,7 +1,7 @@
 ---
 title: Aberastu bezeroen profil bateratuak
 description: Erabili gaitasunak zure bezeroaren datuak aberasteko.
-ms.date: 02/07/2022
+ms.date: 09/30/2021
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -10,12 +10,12 @@ author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
 ms.custom: intro-internal
-ms.openlocfilehash: 5c3dda3b9bae828857258025ff79958ee22bdb6f
-ms.sourcegitcommit: a399bd17523c8d06afd7d78af4fc711f93c0e8be
+ms.openlocfilehash: bc0128c222c032e8cfe35e6f3baa0ea722bce7cb
+ms.sourcegitcommit: 31985755c7c973fb1eb540c52fd1451731d2bed2
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 02/07/2022
-ms.locfileid: "8098774"
+ms.lasthandoff: 10/22/2021
+ms.locfileid: "7672984"
 ---
 # <a name="enrichment-for-customer-profiles-preview"></a>Bezeroen profiletarako aberastea (aurrebista)
 
@@ -37,17 +37,14 @@ Gainean **Ezagutu** fitxa, onartutako aberasteko aukera guztiak aurkituko dituzu
 - Experian-ek eskainitako [datu demografikoak](enrichment-experian.md)
 - [Datu pertsonalizatuak](enrichment-SFTP-custom-import.md) fitxategiak modu seguruan transferitzeko protokoloaren (SFTP) bidez 
 - [Azure Maps](enrichment-azure-maps.md), Microsoft-ek eskainia
-- [Kokapen datuak](enrichment-here.md) HERE Technologies-ek emanak 
 
 # <a name="business-accounts-b-to-b"></a>[Negozio-kontuak (negoziotik negoziora)](#tab/b2b)
 
 - [Enpresaren datuak](enrichment-leadspace.md) , Leadspace-k emanak
 - [Helbide hobetuak](enrichment-enhanced-addresses.md) Microsoft-ek eskainita 
-- [Enpresaren datu hobetuak](enrichment-enhanced-company-data.md) Microsoft-ek emandakoa
 - [Kokapen datuak](enrichment-here.md) HERE Technologies-ek emanak 
 - [Datu pertsonalizatuak](enrichment-SFTP-custom-import.md) fitxategiak modu seguruan transferitzeko protokoloaren (SFTP) bidez 
 - [Azure Maps](enrichment-azure-maps.md), Microsoft-ek eskainia
-- [Kontuaren partaidetza-datuak](enrichment-office.md) Microsoft-ek emandakoa
 
 ---
 

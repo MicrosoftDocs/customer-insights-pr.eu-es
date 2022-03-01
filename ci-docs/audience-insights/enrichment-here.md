@@ -1,20 +1,20 @@
 ---
-title: HERE Technologies Aberastea hirugarrenen aberastasunarekin
+title: HERE Technologies hirugarrenen aberastearekin aberastea
 description: HERE Technologies-en hirugarrenen aberasteari buruzko informazio orokorra.
-ms.date: 04/09/2021
-ms.reviewer: mhart
+ms.date: 10/27/2020
+ms.reviewer: jodahl
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: how-to
-author: jodahlMSFT
-ms.author: jodahl
+ms.topic: conceptual
+author: m-hartmann
+ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: 61fba6bbf9d33ee8d9c725133f0f7f304c1ca79e
-ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
+ms.openlocfilehash: 7082fcfec099c3c9436b233c193be23625f6691a
+ms.sourcegitcommit: a9b2cf598f256d07a48bba8617347ee90024a1dd
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "7618460"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "4668663"
 ---
 # <a name="enrichment-of-customer-profiles-with-here-technologies-preview"></a>Bezeroen profilak aberastea HERE Technologies-ekin (aurrebista)
 
@@ -26,54 +26,31 @@ HERE Technologies-en aberastea konfiguratzeko, honako baldintza hauek bete behar
 
 - HERE Technologies-en harpidetza aktiboa duzu. Harpidetza lortzeko, [erregistratu hemen](https://developer.here.com/sign-up?utm_medium=referral&utm_source=Microsoft-Dynamics-CI&create=Freemium-Basic) edo [jarri harremanetan HERE Technologies-ekin](https://developer.here.com/help?utm_medium=referral&utm_source=Microsoft-Dynamics-CI#how-can-we-help-you) zuzenean. [Lortu informazio gehiago HERE Technologies-en kokapen-aberasteari buruz.](https://developer.here.com/location-enrichment?cid=Dev-MicrosoftDynamics-DB-0-Dev-&utm_source=MicrosoftDynamics&utm_medium=referral&utm_campaign=Online_Dev_ReferralMicrosoft)
 
-- HERE [konexioa](connections.md) eskuragarri dago *edo* duzu [administratzailea](permissions.md#administrator) baimenak eta HERE Technologies API gakoa.
+- HERE Technologies-en API gakoa duzu.
 
-## <a name="configure-the-enrichment"></a>Konfiguratu aberastea
+- [Administratzaile](permissions.md#administrator) baimenak dituzu.
 
-1. Joan **Datuak** > **Aberastua**. 
+## <a name="configuration"></a>Konfigurazioa
 
-1. Aukeratu **Aberastu nire datuak** HERE Technologies fitxan eta hautatu **Hasi**.
+1. Joan **Datuak** > **Aberastua**.
+
+1. Hautatu **aberastu datuak** HERE Technologies-en lauzan.
 
    > [!div class="mx-imgBorder"]
-   > ![HERE Technologies-en lauza.](media/HERE-tile.png "HERE Technologies-en lauza")
+   > ![HERE Technologies-en lauza](media/HERE-tile.png "HERE Technologies-en lauza")
 
-1. Hautatu goitibeherako zerrendako [konexio](connections.md) bat. Jarri harremanetan administratzaile batekin konexiorik ez badago. Administratzailea bazara, hautatuz konexioa sor dezakezu **Gehitu konexioa**. Aukeratu **HERE Technologies** goitibeherako zerrendatik. 
+1. Sartu **HERE Technologies API gako** aktibo bat. Berrikusi eta eman baimena **Datuen pribatutasuna eta betetzea** aukeratuz **ados** laukia. 
 
-1. Aukeratu **Konektatu HERE Teknologietara** hautapena berresteko.
+1. Berretsi bi sarrerak **Konektatu HERE-ra** hautatuta.
 
-1.  Aukeratu **Hurrengoa** eta aukeratu **Bezeroen datu multzoa** HERE Teknologien kokapen datuekin aberastu nahi duzu. **Bezeroen** entitatea hauta dezakezu zure bezeroen profil guztiak aberasteko edo segmentu-entitate bat hauta dezakezu segmentu horretan dauden bezeroen profilak soilik aberasteko.
-
-    :::image type="content" source="media/enrichment-HERE-configuration-customer-data-set.png" alt-text="Pantaila-argazkia bezeroaren datu multzoa aukeratzerakoan.":::
-
-1. Aukeratu eremuak lehen eta/edo bigarren helbidera esleitu nahi dituzun. Bi helbideen eremuen mapak zehaztu ditzakezu eta bi helbideen profilak bereiz aberastu. Adibidez, etxea eta negozioaren helbidea badaude. Hautatu **Hurrengoa**.
+1. Aukeratu **Gehitu datuak** eta aukeratu eremuak lehen eta/edo bigarren helbidera esleitu nahi dituzun. Bi helbideen eremuen esleipena zehaztu ditzakezu (adibidez, etxeko eta negozioaren helbidea) eta bi helbideen profilak bereiz aberastu. Hautatu **Hurrengoa**.
 
 1. Zehaztu zure profil bateratuetako zein eremu erabili beharko liratekeen HERE Technologies-en bat datozen kokapen datuak bilatzeko. **1. kalea** eta **Zip / Posta Kodea** eremuak derrigorrezkoak dira hautatutako lehen eta / edo bigarren mailako helbidean. Bat-etortze zehatzagoak lortzeko, eremu gehiago gehitu daitezke.
 
    > [!div class="mx-imgBorder"]
-   > ![HERE Technologies-en aberastearen konfigurazio orria.](media/enrichment-HERE-configuration.png "HERE Technologies-en aberastearen konfigurazio orria")
+   > ![HERE Technologies-en aberastearen konfigurazio orria](media/enrichment-HERE-configuration.png "HERE Technologies-en aberastearen konfigurazio orria")
 
-1. Hautatu **Hurrengoa** eremuaren jarraipena osatzeko.
-
-1. Idatzi aberastearen izena. 
-
-1. Aukeratu **Aurreztu aberastasuna** zure aukerak aztertu ondoren.
-
-## <a name="configure-the-connection-for-here-technologies"></a>Konfiguratu konexioa HERE Technologies 
-
-Administratzailea izan behar duzu konexioak konfiguratzeko. Aukeratu **Gehitu konexioa** aberastasun bat konfiguratzerakoan *edo* joan **Administratzailea** > **Konexioak** eta hautatu **Konfiguratu** HERE Technologies fitxan.
-
-1. Idatzi konexioaren izena **Bistaratzeko izena** kutxa.
-
-1. Eman baliozko HERE Technologies API gakoa.
-
-1. Berrikusi eta eman zure baimena **Datuen pribatutasuna eta betetzea** hautatuz **Ados**.
-
-1. Aukeratu **Egiaztatu** konfigurazioa balioztatzeko.
-
-1. Egiaztapena amaitu ondoren, hautatu **Gorde**.
-
-   > [!div class="mx-imgBorder"]
-   > ![HEMEN teknologien konexioa konfigurazioaren orria.](media/enrichment-HERE-connection.png "HEMEN teknologien konexioa konfigurazioaren orria")
+1. Aukeratu **Aplikatu** eremuen esleipena osatzeko.
 
 ## <a name="enrichment-results"></a>Aberastearen emaitzak
 
@@ -85,12 +62,9 @@ Aberastutako profil bakoitzaren ikuspegi zehatza sar dezakezu hautatuta **Ikusi 
 
 ## <a name="next-steps"></a>Hurrengo urratsak
 
-[!INCLUDE [next-steps-enrichment](../includes/next-steps-enrichment.md)]
+Eraiki zure bezeroen datu aberastuen gainean. Sortu [segmentuak](segments.md), [Neurriak](measures.md), eta baita [datuak esportatu](export-destinations.md) zure bezeroei esperientzia pertsonalizatuak emateko.
 
 ## <a name="data-privacy-and-compliance"></a>Datuen pribatutasuna eta arau-gordetzea
 
 Dynamics 365 Customer Insights gaitzen duzunean datuak HERE Technologies-era bidaltzeko, datuak betetzeko mugatik kanpo transferitzea baimentzen duzu Dynamics 365 Customer Insights-erako, datu pertsonalak bezalako datu sentikorrak barne. Microsoft-ek datu horiek transferituko ditu zure aginduz, baina zure ardura da HERE Technologies-ek pribatutasun- edo segurtasun-betebeharrak betetzen dituela ziurtatzea. Informazio gehiago eskuratzeko, ikusi [Microsoft-en pribatutasun-adierazpena](https://go.microsoft.com/fwlink/?linkid=396732).
-Dynamics 365 Customer Insights administratzailea edonoiz ken dezake aberastea funtzio hau erabiltzeari uzteko.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+Dynamics 365 Customer Insights administratzaileak edonoiz ken dezake aberastea funtzio hau erabiltzeari uzteko.

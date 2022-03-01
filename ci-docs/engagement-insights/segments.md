@@ -4,17 +4,17 @@ description: Segmentuak nola sortu, editatu eta ezabatu eta non erabili.
 ms.reviewer: mhart
 ms.author: jusali
 author: jusali
-ms.date: 10/01/2021
+ms.date: 06/09/2021
 ms.service: customer-insights
 ms.subservice: engagement-insights
 ms.topic: how-to
 ms.manager: shellyha
-ms.openlocfilehash: f6bba645a78173fb00dc75e6080f2aeda0b5a143
-ms.sourcegitcommit: 565637f49cbdd05a82f42784f594c19cac299140
+ms.openlocfilehash: cedcd58373428dd35ba29ce8fdd00007257f8fa59b0d25bc584b4e832df13604
+ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 10/11/2021
-ms.locfileid: "7623572"
+ms.lasthandoff: 08/10/2021
+ms.locfileid: "7036133"
 ---
 # <a name="view-and-create-segments"></a>Ikusi eta sortu segmentuak
 
@@ -44,27 +44,22 @@ Atal honetan a nola sortu deskribatzen da *segmentu hutsa* hutsetik.
 
 1. Hautatu **Segmentu berria**.
 
-1. Urtean **Baliabideen Liburutegia**, hautatu (+) iragazkia iragazi nahi duzun atributuaren ondoan. Gaur egun, dimentsioetan oinarritutako segmentuak bakarrik sor ditzakezu.
+1. **Baliabideen liburutegia** atalean, aukeratu zein atributuren arabera iragazi nahi duzun. Gaur egun, dimentsioetan oinarritutako segmentuak bakarrik sor ditzakezu.
 
-   :::image type="content" source="media/create-new-segment.png" alt-text="Sortu segmentu berria.":::
-
-1. Urtean **Arau** atalean, aukeratu operadore bat eta hautatutako atributuaren balioa. Eragiketa hauek onartzen dira.
-
-   :::image type="content" source="media/choose-operator-segment.png" alt-text="Aukeratu operadore bat zure segmentu berrirako.":::
-
+1. Aukeratu operadorea eta balio bat hautatutako atributurako. Eragiketa hauek onartzen dira.
    - **da**: bat-etortze zehatza behar du balioak sartzeko. **Honen berdina** erabiltzen du balio bakarrerako edo **edozein** balio anitz sartzeko.
    - **ez da**: bat-etortze zehatza behar du balioak kanpoan uzteko. **Honen berdina** erabiltzen du balio bakarrerako edo **edozein** balio anitz sartzeko.
    - **honekin hasten da**: bat datozen balioekin hasten den katea.
    - **honekin amaitzen da**: bat datozen balioekin amaitzen den katea.
    - **dauka**: bat datorren balioetan jasotako katea.
 
-1. Talde bati baldintza gehiago gehitzeko, operadore logikoak erabil ditzakezu. Multzo operadoreak erabiltzean proiektatutako atributuak kontuan hartzen dira.
+1. Talde bati baldintza gehiago gehitzeko, bi operadore logiko erabil ditzakezu. Multzo operadoreak erabiltzean proiektatutako atributuak kontuan hartzen dira.
    - **ETA** operadorea: Bi baldintza segmentazio prozesuaren baitan bete behar dira. Aukera hau baliagarria da entitate desberdinetan baldintzak definitzen dituzunean.
    - **EDO** operadorea: Baldintzaren bat segmentazio prozesuaren zati gisa bete behar da. Aukera hau oso baliagarria da hainbat baldintza definitzen dituzunean entitate berarentzat.
 
 1. Hautatu **gorde** eta jarri izena segmentuari. 
 
-Segmentua **Segmentuak** orrian agertuko da eta laneko eremuko txosten eta inbutu guztiei aplika diezaiekezu.
+Segmentua Segmentuak orrian agertuko da eta laneko eremuko txosten eta inbutu guztiei aplika diezaiekezu.
 
 ## <a name="use-a-segment-in-a-report-or-funnel"></a>Erabili segmentu bat txosten edo inbutu batean
 
@@ -72,7 +67,7 @@ Segmentuak txosten bati edo inbutu bati aplika diezaiekezu, segmentuaren baldint
 
 :::image type="content" source="media/segment-reports-filter.png" alt-text="Orrialde bistaratutako txostena goitibeherako zerrenda zabaldua zein segmentu aplikatu aukeratzeko.":::
 
-Segmentu bat aplikatzeko, ireki txostena edo inbutua. Aukeratu **+ Gehitu baldintza** eta aukeratu **Iragazi segmentuaren arabera**. Hautatu zerrendatik aplikatu nahi duzun segmentua. Segmentua txostenean aplikatuko da. Diagrama batek segmentua onartzen ez badu, errore bat agertzen da. Informazio gehiagorako, ikus [Sortu eta kudeatu inbutu-txostenak](funnel-reports.md).
+Segmentu bat aplikatzeko, ireki txostena edo inbutua. Aukeratu **Gehitu baldintza** eta aukeratu **Iragazi segmentuaren arabera**. Hautatu zerrendatik aplikatu nahi duzun segmentua. Segmentua txostenean aplikatuko da. Diagrama batek segmentua onartzen ez badu, errore bat agertzen da.
  
 *Gehienez hiru segmentu* aplika ditzakezu txosten edo inbutu batean.
 
@@ -96,7 +91,5 @@ Segmentu bat aplikatzeko, ireki txostena edo inbutua. Aukeratu **+ Gehitu baldin
 1. Segmentuen zerrendan, hautatu **Gehiago [...]**. 
 1. Aukeratu **Ezabatu** goitibeherako zerrendatik.
 1. Berresteko, hautatu **ezabatu**.
-
-
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

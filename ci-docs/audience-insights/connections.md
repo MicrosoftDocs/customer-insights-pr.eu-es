@@ -5,16 +5,16 @@ ms.date: 04/09/2021
 ms.reviewer: nikeller
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: overview
+ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: e78e18b75ee9797b5fc76486615992e301e4c650
-ms.sourcegitcommit: bb1ca84bc38e81fb2ff2961c457384b7beb5b5fa
+ms.openlocfilehash: 17e04b243e9b3d4375c86f5a890a18be35956835
+ms.sourcegitcommit: d84d664e67f263bfeb741154d309088c5101b9c3
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7977722"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "6304957"
 ---
 # <a name="connections-preview-overview"></a>Konexioen ikuspegi orokorra (aurrebista)
 
@@ -47,7 +47,6 @@ Konexioak gehitzeko, eduki behar duzu [administratzaile baimenak](permissions.md
 1. Hurrengoan **Konfiguratu konexioa** panelean, eman beharrezko xehetasunak. 
    1. **Bistaratzeko izena** eta konexio motak konexio bat deskribatzen du. Konexio honen xedea eta xedea azaltzen duen izena aukeratzea gomendatzen dugu.
    1. Eremu zehatzak zein zerbitzuetara konektatzen zaren araberakoak dira. Konexio mota zehatz baten xehetasunak ezagutu ditzakezu xede zerbitzuaren inguruko artikulua.
-   1. Bada [erabili zure Key Vault](use-azure-key-vault.md) sekretuak gordetzeko, aktibatu **Erabili Key Vault** eta aukeratu zerrendako sekretua.
 
 1. Konexioa sortzeko, hautatu **Gorde**.
 
@@ -94,6 +93,3 @@ Bereizitako aberastasunak eta esportazioak inaktibo bihurtzen dira. Berriro akti
 
 1. Ezabapena berresteko hautatu **Kendu**.
 
-## <a name="set-up-connections-with-secrets-managed-by-your-own-key-vault"></a>Konfiguratu konexioak zeure Key Vault-ek kudeatutako sekretuekin
-
-Konexio batzuek API gakoak edo pasahitzak bezalako sekretuak behar dituzte. Konexio batzuek zure Key Vault-en gordetako sekretuak onartzen dituzte. Lortu informazio gehiago onartutako konexioei buruz eta nola konfiguratu [zure Key Ganga, ikusleei buruzko informazioa lortzeko](use-azure-key-vault.md).

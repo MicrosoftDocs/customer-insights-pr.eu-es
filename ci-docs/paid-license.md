@@ -1,25 +1,25 @@
 ---
 title: Hasi ordaindutako lizentziarekin Dynamics 365 Customer Insights
 author: m-hartmann
-description: Lehen exekuzio-esperientziarekin ohitu Dynamics 365 Customer Insights-en eta haren gaitasunak aztertu.
+description: Familiako lehen esperientziarekin ohitu Dynamics 365 Customer Insights eta haren gaitasunak aztertu.
 ms.author: mhart
 ms.date: 10/05/2021
 ms.service: customer-insights
-ms.topic: conceptual
+ms.topic: overview
 ms.manager: shellyha
 ms.custom: intro-internal
-ms.openlocfilehash: e17b66217415c0b554a449f0d992deec7e2d96e7
-ms.sourcegitcommit: bb1ca84bc38e81fb2ff2961c457384b7beb5b5fa
+ms.openlocfilehash: b4228a36069f4adb8098ea96cefec0eef81a6560
+ms.sourcegitcommit: 53b133a716c73cb71e8bcbedc6273cec70ceba6c
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7977630"
+ms.lasthandoff: 10/15/2021
+ms.locfileid: "7645659"
 ---
 # <a name="get-started-after-purchasing-customer-insights"></a>Hasteko Customer Insights erosi ondoren
 
 Artikulu honetan lehen urratsak nola eman azaltzen da Dynamics 365 Customer Insights zure erakundeak harpidetza erosi ondoren. Customer Insights erosi nahi baduzu, gure harremanetarako aukerak atalean agertzen dira [Dynamics 365 Customer Insights webgunean](https://dynamics.microsoft.com/ai/customer-insights/). 
 
-Customer Insights-erako harpidetza-lizentzia bat erosi ondoren, honen administratzaile globalak Microsoft 365 maizterrak ingurunea sortzera gonbidatzen duen mezu elektroniko bat jasotzen du. 
+Customer Insights-erako harpidetza lizentzia erosi ondoren, Microsoft 365 maizterreko administratzaile orokorrak ingurunea sortzera gonbidatzen duen mezu elektronikoa jasotzen du. 
 
 Customer Insights maizter bakoitzeko lizentzia du eta hainbat gaitasun ditu. Edukiera eta lizentzia gehiago eros ditzakezu kuota lehenetsia handitzeko. 
 - [Prezioen informazio orokorra](https://dynamics.microsoft.com/ai/customer-insights/pricing/)
@@ -29,7 +29,7 @@ Zerbitzua eta eginbideak probatu nahi badituzu, ikusi [Konfiguratu proba ingurun
 
 ## <a name="start-with-customer-insights"></a>Hasi Customer Insights erabiltzen
 
-Lehenengo exekuzioaren esperientziak Customer Insights-rekin hasierako ikuspegia aukeratzen eta laginetako datuekin gaitasunak aztertzen laguntzen dizu. Hurrengo urrats gisa, zure ingurunea sor dezakezu eta zure datuekin lan egin.
+Lehenengo lasterketako esperientziak Customer Insights-rekin hasierako ikuspegia aukeratzen eta laginetako datuekin gaitasunak aztertzen laguntzen dizu. Hurrengo urrats gisa, zure ingurunea sor dezakezu eta zure datuekin lan egin.
 
 **Saioa hasteko lehen aldirako**:
 

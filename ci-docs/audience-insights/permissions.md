@@ -1,20 +1,20 @@
 ---
 title: Kudeatu erabiltzaile-baimenak
 description: Lortu baimenei eta erabiltzaile-funtzioei buruzko informazio gehiago.
-ms.date: 03/25/2021
-ms.reviewer: mhart
+ms.date: 10/27/2020
+ms.reviewer: nimagen
 ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
-author: NimrodMagen
-ms.author: nimagen
+author: m-hartmann
+ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: 430ad902a5a75552243bc4a094361a749364383717278f687dd6e8ef33749c6f
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
+ms.openlocfilehash: 7de78c0ef71ec5b83870d396de36a7dcabbd14e5
+ms.sourcegitcommit: b50c754481d0af6d0cf4b550775d7b31d95846ef
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7028299"
+ms.lasthandoff: 12/06/2020
+ms.locfileid: "4689205"
 ---
 # <a name="user-permissions"></a>Erabiltzailearen baimenak
 
@@ -31,7 +31,7 @@ Hiru funtzio mota daude:
 - Ikusi eta arakatu **Aberastea** orria.
 - Arakatu eta esportatu erakundeak erabiliz **erakundeak** orria.
 - Ikusi sistemaren prozesuen egoera **Sistema** orria.
-- Ikusi esportazioak hemen **Esportazioak** orrialdea.
+- Esportatu segmentuak **Segmentuak** orritik.
 - Instalatu eta erabili **Power BI Customer Insights** panela.
 
 ## <a name="contributor"></a>Kolaboratzailea
@@ -43,7 +43,6 @@ Hiru funtzio mota daude:
 - Sortu segmentuak **Segmentuak** orria erabiliz.
 - Sortu neurriak erabiliz **Neurriak** orria.
 - Kudeatu eta konfiguratu bezeroen profilak **aberastea** orria (lehen alderdiko aberasketetarako bakarrik).
-- Kudeatu eta sortu esportazioak laguntzaileekin partekatutako konexioetan oinarrituta. [Lortu informazio gehiago administratzaileek laguntzaileei nola esportazioetarako konexio bat erabiltzea onartzen duten jakiteko](connections.md#allow-contributors-to-use-a-connection-for-exports).
 
 ## <a name="administrator"></a>Administratzailea
 
@@ -51,9 +50,8 @@ Hiru funtzio mota daude:
 - Aldatu ezarpenak **Sistema** orrian, zure sistemaren prozesuetarako laneko hizkuntza eta freskatze ordutegiak barne.
 - Ikusi eta gehitu baimenak **Baimenak** orria erabiliz.
 - Ezarri bilaketa eta Bezeroak orriko iragazkien definizioak **Bilaketa- eta iragazki-aurkibidea** orria erabiliz (**Bezeroak** orriaren bidez atzi daiteke).
-- Kudeatu konexioak eta onar itzazu beste erabiltzaile rolak **Konexioak** orrialdea.
+- Definitu Dynamics 365 Sales segmentuen helmuga **Esportatu helmugak** orria.
 - Kudeatu eta konfiguratu bezeroen profilak **aberastea** orria (aberasketa guztietarako).
-- Kudeatu eta sortu esportazioak **Esportazioak** orrialdea.
 - Instalatu eta erabili **Bezeroaren txartelaren osagarria**.
 - Gehitu eta erabili **Power Apps konektorea**.
 - Gaitu [Customer Insights APIen](apis.md) erabilera.
@@ -76,6 +74,3 @@ Hartzaileen xehetasunetan, joan **Administratzailea** > **Baimenak** atalera une
 - Rolak azpian zehazten dira **Rola** zutabea.
 - Hautatu zutabeetako edozein titulu emaitzak emaitzak zutabe horren balioaren arabera ordenatzeko.
 - Erabili **Bilatu** eremua orrialdearen goialdean erabiltzaile jakinak kokatzeko.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

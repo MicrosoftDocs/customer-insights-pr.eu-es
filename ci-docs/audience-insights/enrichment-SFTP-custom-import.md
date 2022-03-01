@@ -9,12 +9,12 @@ ms.topic: how-to
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: fa1d4ffd9f77e128b5d804e4562e964561f4684f
-ms.sourcegitcommit: 23c8973a726b15050e368cc6e0aab78b266a89f6
+ms.openlocfilehash: f92b36ac5364ea8586f9cbba7ba03178641555c0
+ms.sourcegitcommit: d84d664e67f263bfeb741154d309088c5101b9c3
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "7618667"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "6304635"
 ---
 # <a name="enrich-customer-profiles-with-custom-data-preview"></a>Aberastu bezeroen profilak datu pertsonalizatuekin (aurrebista)
 
@@ -45,8 +45,6 @@ SFTP inportazio pertsonalizatua konfiguratzeko, honako baldintza hauek bete beha
 
     :::image type="content" source="media/enrichment-SFTP-path-and-filename.png" alt-text="Pantaila argazkia datuak kokatzerakoan.":::
 
-1. Aukeratu **Hurrengoa** eta aukeratu bezeroaren datu multzoa. Hau bezeroen profil guztiak edo segmentu bat izan daiteke.
-
 1. Aukeratu **Hurrengoa** eta eman aberasturako izena eta irteerako entitatearen izena. 
 
 1. Aukeratu **Aurreztu aberastasuna** zure aukerak aztertu ondoren.
@@ -66,7 +64,7 @@ Administratzailea izan behar duzu konexioak konfiguratzeko. Aukeratu **Gehitu ko
 1. Egiaztapena amaitutakoan, konexioa hautatuta gorde daiteke **Gorde**.
 
    > [!div class="mx-imgBorder"]
-   > ![Experian konexioaren konfigurazio-orria.](media/enrichment-SFTP-connection.png "Experian konexioaren konfigurazio-orria")
+   > ![Experian konexioaren konfigurazio-orria](media/enrichment-SFTP-connection.png "Experian konexioaren konfigurazio-orria")
 
 
 ## <a name="defining-field-mappings"></a>Eremu-esleipenak definitzen 
@@ -125,6 +123,6 @@ Aberastutako profil bakoitzaren ikuspegi zehatza sar dezakezu hautatuta **Ikusi 
 
 ## <a name="next-steps"></a>Hurrengo urratsak
 
-[!INCLUDE [next-steps-enrichment](../includes/next-steps-enrichment.md)]
+Eraiki zure bezeroen datu aberastuen gainean. Sortu [segmentuak](segments.md) eta [neurriak](measures.md), eta are [datuak esportatu](export-destinations.md) zure bezeroei esperientzia pertsonalizatuak emateko.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

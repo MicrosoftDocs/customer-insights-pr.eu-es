@@ -1,48 +1,38 @@
 ---
 title: Esportatu Customer Insights datuak Dynamics 365 Sales-era
-description: Ikasi konexioa nola konfiguratu eta Dynamics 365 Sales-era esportatu.
-ms.date: 03/03/2021
-ms.reviewer: mhart
+description: Ikasi Dynamics 365 Sales konexioa nola konfiguratu.
+ms.date: 08/21/2020
+ms.reviewer: philk
 ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: how-to
-author: pkieffer
-ms.author: philk
+ms.topic: conceptual
+author: m-hartmann
+ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: d8a35424f4271b350b8d84e72a01deb6d69652a0
-ms.sourcegitcommit: 08a5dfcc4f9d293c8e7ac4fef604bc52985b1b78
+ms.openlocfilehash: af0824e69dfdf620a0ac756e32a9bd3dd85e5151
+ms.sourcegitcommit: 6a6df62fa12dcb9bd5f5a39cc3ee0e2b3988184b
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 02/04/2022
-ms.locfileid: "8090908"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "4643803"
 ---
-# <a name="use-segments-in-dynamics-365-sales-preview"></a>Erabili segmentuak Dynamics 365 Sales-en (aurrebista)
+# <a name="connector-for-dynamics-365-sales-preview"></a>Dynamics 365 Sales konektorea (aurrebista)
 
-
+[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
 
 Dynamics 365 Sales-ekin marketin-zerrendak sortzeko, lan-fluxuen segimendua egiteko eta eskaintzak bidaltzeko, erabili bezeroen datuak.
 
-## <a name="known-limitations"></a>Muga ezagunak
+## <a name="prerequisite"></a>Aurrebaldintza
 
-- Dynamics 365 Sales-era esportatzeak 100.000 kidetara mugatzen dira segmentu bakoitzeko.
-- Dynamics 365 Sales-era segmentuen esportazioak gehienez 3 ordu behar izan ditzake osatzeko. 
+[Common Data Service erabiliz sartutako Dynamics 365 Sales-eko](connect-power-query.md) kontaktuen erregistroak.
 
-## <a name="prerequisite-for-connection"></a>Konexiorako aurrebaldintza
+## <a name="configure-the-connector-for-sales"></a>Konfiguratu konektorea Sales-erako
 
-1. Kontaktu-erregistroek Dynamics 365 Sales-en egon behar dute segmentu bat Customer Insights-etik Sales-era esportatu ahal izateko. Irakurri gehiago kontaktuak nola sartu [Dynamics 365 Sales erabiliz Microsoft Dataverse](connect-power-query.md).
+1. Hartzaileei buruzko xehetasunetan, joan hona: **Administratzailea** > **Esportatu helburuak**.
 
-   > [!NOTE]
-   > Ikuspegien estatistiketatik salmentetara segmentuak esportatzeak ez du kontaktu erregistro berririk sortuko Sales instantzietan. Sales kontaktuen erregistroak ikusleen estatistiketan sartu behar dira eta datu-iturburu gisa erabili. Gainera, Bezeroen entitate bateratuan sartu behar dira bezeroen IDak esleitzeko IDak harremanetan jartzeko, segmentuak esportatu aurretik.
+1. **Dynamics 365 Sales** azpian hautatu **Konfiguratu**.
 
-## <a name="set-up-the-connection-to-sales"></a>Konfiguratu konexioa Sales-era
-
-1. Joan **Administratzailea** > **Konexioak**.
-
-1. Hautatu **Gehitu konexioa** eta aukeratu **Dynamics 365 Sales** konexioa konfiguratzeko.
-
-1. Eman zure konexioa ezaguna den izena **Bistaratze izena** eremua. Izena eta konexio motak konexio bat deskribatzen du. Konexio honen xedea eta xedea azaltzen duen izena aukeratzea gomendatzen dugu.
-
-1. Aukeratu nork erabil dezakeen konexioa. Inolako neurririk hartzen ez baduzu, lehenetsia izango da Administratzaileak. Informazio gehiagorako, ikus [Baimendu laguntzaileei esportazioetarako konexioa erabiltzea](connections.md#allow-contributors-to-use-a-connection-for-exports).
+1. Eman zure esportatze-helmugari izen bat **Bistaratu izena** eremuan.
 
 1. Sartu erakundearen Salmentako URLa **Zerbitzariaren helbidea** eremu.
 
@@ -50,24 +40,12 @@ Dynamics 365 Sales-ekin marketin-zerrendak sortzeko, lan-fluxuen segimendua egit
 
 1. Esleitu bezeroaren IDaren eremua Dynamics 365 kontaktuaren IDarekin.
 
-1. Hautatu **Gorde** konexioa osatzeko. 
-
-## <a name="configure-an-export"></a>Konfiguratu esportazio bat
-
-Esportazio hau konfigura dezakezu mota honetako konexiorako sarbidea baduzu. Informazio gehiagorako, ikusi [Esportazioa konfiguratzeko beharrezkoak diren baimenak](export-destinations.md#set-up-a-new-export).
-
-1. Joan **Datuak** > **Esportazioak**.
-
-1. Esportazio berria sortzeko, hautatu **Gehitu helmuga**.
-
-1. Hurrengoan **Konexioa esportatzeko** eremuan, aukeratu konexioa Dynamics 365 Sales sekzioan. Atal honen izena ikusten ez baduzu, ez dago mota honetako konexiorik erabilgarri.
+1. Hautatu **Hurrengoa**.
 
 1. Aukeratu segmentu bat edo gehiago.
 
-1. Sakatu **Gorde**
+1. Sakatu **Gorde**.
 
-Esportazio bat gordetzeak ez du esportazioa berehala exekutatzen.
+## <a name="export-the-data"></a>Esportatu datuak
 
-Esportazioa guztiekin egiten da [freskatze programatua](system.md#schedule-tab). Ere egin dezakezu [esportatu eskariaren arabera](export-destinations.md#run-exports-on-demand). 
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+Hurrengoa egin dezakezu [esportatu datuak eskatu ahala](export-destinations.md). Esportazioa guztiekin ere exekutatuko da [programatutako freskapen](system.md#schedule-tab).

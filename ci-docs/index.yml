@@ -4,17 +4,17 @@ metadata:
   author: m-hartmann
   description: Aurkitu artikulu garrantzitsuak laguntza edukiarekin hasteko.
   ms.author: mhart
-  ms.date: 03/02/2022
+  ms.date: 10/29/2020
   ms.service: customer-insights
   ms.topic: landing-page
-  ms.openlocfilehash: e154b37f57bb2765f48a9f6b38f86dffcb05f403
-  ms.sourcegitcommit: a371fc1e75b2321e45d3f972a3ac84c725f8cc38
+  ms.openlocfilehash: f175ea858213022afc87fce77213893c7d050d30
+  ms.sourcegitcommit: cf9b78559ca189d4c2086a66c879098d56c0377a
   ms.translationtype: HT
   ms.contentlocale: eu-ES
-  ms.lasthandoff: 02/10/2022
-  ms.locfileid: "8107184"
+  ms.lasthandoff: 11/03/2020
+  ms.locfileid: "4405005"
 title: Dynamics 365 Customer Insights dokumentazioa
-summary: Bilatu baliabide lagungarriak hasteko eta Customer Insights-en funtzioak eta gaitasunak ezagutzeko.
+summary: Aurkitu baliabide lagungarriak Customer Insights erabiltzen hasteko eta bezeroei buruzko informazioaren ezaugarriak eta gaitasunak ezagutzeko.
 landingContent:
 - title: Ezagutu Customer Insights
   linkLists:
@@ -23,41 +23,19 @@ landingContent:
     - text: Customer Insights-en ikuspegi orokorra
       url: overview.md
     - text: Askapen planak
-      url: /dynamics365/release-plans/
-    - text: Ezagutu CDP
-      url: https://dynamics.microsoft.com/ai/customer-insights/
-  - linkListType: learn
-    links:
-    - text: Customer Insights ikasteko bidea
-      url: /learn/paths/build-customer-insights/
-- title: Hasi Customer Insights erabiltzen
+      url: https://docs.microsoft.com/dynamics365-release-plan/2020wave2/customer-data-platform/dynamics365-customer-insights/planned-features
+    - text: Atzitu ingurunea
+      url: https://home.ci.ai.dynamics.com/
+- title: Hasi hartzaileei buruzko xehetasunekin
   linkLists:
   - linkListType: get-started
     links:
     - text: Hasi saioa doako proba bat lortzeko
       url: https://dynamics.microsoft.com/en-us/get-started/?appname=customerinsights
-    - text: Hartzaileen xehetasunen berritasunak
+    - text: Berritasunak
       url: audience-insights/whats-new-audience-insights.md
-    - text: Hasiera bizkorreko gida
-      url: audience-insights/get-started.md
-  - linkListType: learn
-    links:
-    - text: Lehenengo urratsak
-      url: /learn/modules/get-started-customer-data-platform/
-- title: Kudeatu hartzaileen xehetasunak
-  linkLists:
-  - linkListType: how-to-guide
-    links:
-    - text: Konfiguratu sistema
-      url: audience-insights/system.md
-    - text: Definitu erabiltzaile-baimenak
-      url: audience-insights/permissions.md
-    - text: Kudeatu ingurune anizkoitzak
-      url: audience-insights/manage-environments.md
-  - linkListType: learn
-    links:
-    - text: Administratu Customer Insights
-      url: /learn/modules/administer-customer-data-platform/
+    - text: hartzaileei buruzko xehetasunen dokumentazioa
+      url: audience-insights/index.yml
 - title: Jarri harremanetan
   linkLists:
   - linkListType: overview
@@ -68,16 +46,16 @@ landingContent:
       url: https://go.microsoft.com/fwlink/?linkid=2074172
     - text: Eman arazo baten berri
       url: https://go.microsoft.com/fwlink/?linkid=2079641
-- title: Partekatu datuak gaitasunen artean
+- title: Hartzaileen xehetasunen tutorialak
   linkLists:
-  - linkListType: how-to-guide
+  - linkListType: tutorial
     links:
-    - text: Sortu esteka bat gaitasunen artean
-      url: engagement-insights/integrate-audience-insights-engagement-insights.md
-    - text: Sortu txostenetan erabiltzeko segmentuak
-      url: engagement-insights/integrate-audience-insights-segments.md
-    - text: Erabili profilen propietateak analisi interaktiborako
-      url: engagement-insights/curate-dimensions.md
+    - text: Sortu ingurune bat
+      url: audience-insights/home.md
+    - text: Sortu bezeroaren profil bateratua
+      url: https://docs.microsoft.com/learn/modules/unified-customer-profile/
+    - text: Egin lan edozein aplikaziorekin
+      url: https://docs.microsoft.com/learn/modules/working-with-customer-insights/
 - title: Esportatu hartzaileei buruzko xehetasunen datuak
   linkLists:
   - linkListType: how-to-guide
@@ -88,6 +66,16 @@ landingContent:
       url: audience-insights/customer-card-add-in.md
     - text: Power BI konektorea
       url: audience-insights/export-power-bi.md
+- title: Kudeatu hartzaileen xehetasunak
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Konfiguratu sistema
+      url: audience-insights/system.md
+    - text: Definitu erabiltzaile-baimenak
+      url: audience-insights/permissions.md
+    - text: Kudeatu ingurune anizkoitzak
+      url: audience-insights/manage-environments.md
 - title: Parte-hartzearen xehetasunei buruz (aurrebista)
   linkLists:
   - linkListType: overview
