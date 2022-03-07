@@ -3,25 +3,26 @@ title: Transakzioen galera-tasaren iragarpenari buruzko adibide-gida
 description: Erabili gida hau erabiltzeko prest dagoen transakzioen galera-tasaren iragarpen-eredua probatzeko.
 ms.date: 11/19/2020
 ms.reviewer: mhart
+ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: tutorial
 author: diegogranados117
 ms.author: digranad
 manager: shellyha
-ms.openlocfilehash: 93841358d110bd16c7b7f8beb079bed704b22260
-ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
-ms.translationtype: MT
+ms.openlocfilehash: 49dad45c951f3c00d77ddd99faec48bfccada8b0
+ms.sourcegitcommit: 0b754d194d765afef70d1008db7b347dd1f0ee40
+ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 02/25/2022
-ms.locfileid: "8354586"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "6306105"
 ---
-# <a name="transactional-churn-prediction-sample-guide"></a>Transakzioen galera-tasaren iragarpenari buruzko adibide-gida
+# <a name="transactional-churn-prediction-preview-sample-guide"></a>Transakzioen galera-tasaren iragarpenari (aurrebista) buruzko adibide-gida
 
-Gida honek Customer Insights zerbitzuko transakzioen galera-tasaren iragarpenaren adibide oso bat aurkeztuko dizu, jarraian emandako datuak erabilita. Gidan erabilitako datuak ez dira bezero-datu errealak eta Customer Insights harpidetzako *Demo* ingurunean aurkitutako Contoso datu multzoaren parte dira.
+Gida honek Customer Insights zerbitzuko transakzioen galera-tasaren iragarpenaren adibide oso bat aurkeztuko dizu, jarraian emandako datuak erabilita. Gida honetan erabilitako datu guztiak ez dira bezeroen benetako datuak eta Contoso datu-basean aurkitu da *Demo* ingurunea zure Customer Insights harpidetzaren barruan.
 
 ## <a name="scenario"></a>Egoera
 
-Contoso kalitate handiko kafea eta kafe-makinak sortzen dituen enpresa bat da. Horiek Contoso Coffee webgunearen bidez saltzen dituzte. Enpresaren helburua da jakitea egunerokotasunean bere produktuak erosten dituzten bezeroetako nortzuk utziko dioten bezero aktibo izateari datozen 60 egunetan. Zein bezero **galtzeko arriskua** dagoen jakiteak marketinarekin erlazionatutako ahalegina bideratzen lagun diezaioke enpresari, arreta bezero horiengan jarrita.
+Contoso kalitate handiko kafea eta kafe makinak ekoizten dituen enpresa da eta Contoso Coffee webgunearen bidez saltzen dituzte. Enpresaren helburua da jakitea egunerokotasunean bere produktuak erosten dituzten bezeroetako nortzuk utziko dioten bezero aktibo izateari datozen 60 egunetan. Zein bezero **galtzeko arriskua** dagoen jakiteak marketinarekin erlazionatutako ahalegina bideratzen lagun diezaioke enpresari, arreta bezero horiengan jarrita.
 
 ## <a name="prerequisites"></a>Aurrebaldintzak
 
@@ -30,7 +31,7 @@ Contoso kalitate handiko kafea eta kafe-makinak sortzen dituen enpresa bat da. H
 
 ## <a name="task-1---ingest-data"></a>1. zeregina - Datuen sarrera
 
-Berrikusi artikuluak [datuak sartzeari buruz](data-sources.md) eta [datu-iturriak erabiliz inportatzea Power Query konektoreak](connect-power-query.md) zehazki. Honako informazio honetan, ulertzen da ohituta zaudela orokorrean datuen sarrerarekin. 
+Berrikusi zehazki [datuen sarrerari](data-sources.md) eta [Power Query konektoreak erabiliz datu-iturburuak inportatzeari](connect-power-query.md) buruzko artikuluak. Honako informazio honetan, ulertzen da ohituta zaudela orokorrean datuen sarrerarekin. 
 
 ### <a name="ingest-customer-data-from-ecommerce-platform"></a>Sartu bezero-datuak merkataritza elektronikoko plataformatik
 
@@ -45,7 +46,8 @@ Berrikusi artikuluak [datuak sartzeari buruz](data-sources.md) eta [datu-iturria
    - **Jaioteguna**: Data
    - **Sorrera-data**: Data/ordua/zona
 
-   :::image type="content" source="media/ecommerce-dob-date.PNG" alt-text="Bihurtu jaioteguna data.":::
+   [!div class="mx-imgBorder"]
+   ![Bihurtu jaioteguna data](media/ecommerce-dob-date.PNG "eraldatu jaiotze data datara")
 
 1. Eskuinaldeko paneleko **Izena** eremuan, aldatu izena **Kontsulta** datu-iturburuari eta ipini izen hau: **eCommerceContacts**
 
@@ -148,7 +150,7 @@ Behin datuak sartuta, **Esleitu, bat etorri, konbinatu** prozesuarekin hasiko ga
 
 ## <a name="task-3---configure-transaction-churn-prediction"></a>3. zeregina - Konfiguratu transakzioen galera-tasaren iragarpena
 
-Bezeroen profil bateratuak behar bezala jarrita, harpidetzaren galera-tasaren iragarpena exekutatu dezakegu. Urrats zehatzak ikusteko, ikusi [Harpidetza txanda iragarpen](predict-subscription-churn.md) Artikulu. 
+Bezeroen profil bateratuak behar bezala jarrita, harpidetzaren galera-tasaren iragarpena exekutatu dezakegu. Urrats zehatzetarako, ikusi [Harpidetzaren galera-tasaren iragarpena (aurrebista)](predict-subscription-churn.md) artikulu. 
 
 1. Joan **Adimena** > **Ezagutu** atalera eta hautatu **Bezeroen galera-tasaren eredua**.
 

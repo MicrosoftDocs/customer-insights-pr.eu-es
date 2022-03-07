@@ -5,15 +5,16 @@ author: m-hartmann
 ms.author: mhart
 ms.date: 02/10/2022
 ms.topic: get-started
+ms.service: customer-insights
 ms.custom: template-trial-faq
 ms.reviewer: jeffhar
 manager: shellyha
-ms.openlocfilehash: 9badd8370358b9f5745ba6347e8db42e89c5f3d3
-ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
-ms.translationtype: MT
+ms.openlocfilehash: f63ed39ba8c710d0c0149e0944efaafe27e7b9bb
+ms.sourcegitcommit: 5dd32dc2b18027cf2aa954356dded4bc6aab9801
+ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "8229480"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "8115953"
 ---
 # <a name="dynamics-365-customer-insights-trial-faq"></a>Dynamics 365 Customer Insights probako bertsioaren FAQa
 
@@ -42,7 +43,7 @@ Proban izena ematen duzunean, mezu elektroniko bat jasoko duzu probaren xehetasu
 
 ### <a name="how-do-i-add-more-users-to-a-trial"></a>Nola gehi ditzaket erabiltzaileak proba batean?
 
-Erabiltzaileak gehitzeko, joan [Microsoft 365 administrazio-zentrora](https://admin.microsoft.com) probako administratzaile-kontua erabiliz. Jarraitu [administrazio zentroaren orientazioa](/microsoft-365/admin/add-users/add-users) erabiltzaileak gehitzeko probarako lizentziaren mugaren barruan. Gehitzen ari zaren erabiltzaileak dagoeneko badu Microsoft 365 kontua, esleitu segurtasun-funtzio egokia probako org-an. Informazio gehiagorako, ikus [Esleitu segurtasun-funtzio erabiltzaile bati](/power-platform/admin/create-users-assign-online-security-roles#assign-a-security-role-to-a-user).
+Erabiltzaileak gehitzeko, joan [Microsoft 365 administrazio zentroa](https://admin.microsoft.com) probako administratzaile kontua erabiliz. Jarraitu [administrazio zentroaren orientazioa](/microsoft-365/admin/add-users/add-users) erabiltzaileak gehitzeko probarako lizentziaren mugaren barruan. Gehitzen ari zaren erabiltzaileak dagoeneko badu Microsoft 365 kontua, esleitu segurtasun-funtzio egokia probako org-an. Informazio gehiagorako, ikus [Esleitu segurtasun-funtzio erabiltzaile bati](/power-platform/admin/create-users-assign-online-security-roles#assign-a-security-role-to-a-user).
 
 ### <a name="how-many-users-can-i-add-to-my-trial-environment"></a>Zenbat erabiltzaile gehitu ditzaket nire probako ingurunera?
 

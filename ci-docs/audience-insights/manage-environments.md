@@ -1,26 +1,24 @@
 ---
 title: Sortu eta kudeatu inguruneak
 description: Ikasi zerbitzuan izena ematen eta inguruneak kudeatzen.
-ms.date: 12/06/2021
+ms.date: 11/12/2021
+ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
 ms.reviewer: mhart
 author: NimrodMagen
 ms.author: nimagen
 manager: shellyha
-searchScope:
-- ci-system-about
-- customerInsights
-ms.openlocfilehash: d9e0ee726dbbfcf330022c4d95747551d3114e7e
-ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
+ms.openlocfilehash: 65c6a68f550c2873ec30c6ac54f1752d880ce12c
+ms.sourcegitcommit: fb9f118b4e16b5aabb3e503463efca21718f5d72
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 02/25/2022
-ms.locfileid: "8354264"
+ms.lasthandoff: 11/12/2021
+ms.locfileid: "7799623"
 ---
 # <a name="manage-environments"></a>Kudeatu inguruneak
 
-
+[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
 
 ## <a name="switch-environments"></a>Aldatu inguruneak
 
@@ -42,21 +40,18 @@ Dauden inguruneen xehetasun batzuk editatu ditzakezu.
 
 Informazio gehiago lortzeko ingurune-ezarpenetan, ikusi [Sortu ingurune berri bat](create-environment.md).
 
-## <a name="connect-to-microsoft-dataverse"></a>Konektatu Microsoft Dataverse-ra
+## <a name="connect-to-microsoft-dataverse"></a>Konektatu Microsoft Dataverse-era
    
-**Microsoft Dataverse** urratsak Customer Insights zurekin konektatzeko aukera ematen dizu Dataverse ingurunea.
+The **Microsoft Dataverse** urratsak Customer Insights zure Dataverse ingurunearekin konektatzeko aukera ematen dizu.
 
-Erabiltzeko [kutxaz kanpoko iragarpen modeloak](predictions-overview.md#out-of-box-models), konfiguratu datuak partekatzearekin Dataverse. Edo datuen iradokizuna gaitu dezakezu lokal datu iturrietatik, Microsoft Dataverse zure erakundeak administratzen duen ingurumen URLa.
+Erabiltzeko [kutxaz kanpoko iragarpen ereduak](predictions-overview.md#out-of-box-models), konfiguratu datuak partekatzea Dataverse-rekin. Edo lokal datu-iturburuetatik datuak sartzea gai dezakezu, zure erakundeak kudeatzen duen Microsoft Dataverse inguruneko URLa emanez. Hautatu **Gaitu datuak partekatzea** Customer Insights irteerako datuak Dataverse-k kudeatutako datu-laku batekin partekatzeko.
 
-> [!IMPORTANT]
-> Bezeroen ikuspegiak eta Dataverse Eskualde berean egon behar da datuak partekatzea gaitzeko.
-
-:::image type="content" source="media/dataverse-provisioning.png" alt-text="Konfigurazioaren aukerak gaitzeko datuak partekatzeko Microsoft Dataverse.":::
+:::image type="content" source="media/dataverse-data-sharing.png" alt-text="Microsoft Dataverse-ekin datuak partekatzea gaitzeko konfigurazio-aukerak.":::
 
 > [!NOTE]
 > Customer Insights-ek ez ditu onartzen hurrengo datuak partekatzeko egoerak:
-> - Datu guztiak zure kabuz gordetzen badituzu Azure Data Lake Storage, ezin izango duzu datuak partekatzea gaitu Dataverse Kudeatutako Data Lake.
-> - Datuak Dataverse-rekin partekatzea gaitzen baduzu, ezin izango duzu [sortu aurreikusitako edo falta diren balioak entitate batean](predictions.md).
+> - Datu guztiak zure Azure Data Lake Storage-n gordetzen badituzu, ezin izango duzu datu-partekaketa gaitu Dataverse-k kudeatutako data lake batekin.
+> - Dataverse-rekin datuak partekatzea gaitzen baduzu, ezin izango duzu [entitate batean aurreikusitako edo falta diren balioak sortzea](predictions.md).
 
 ## <a name="copy-the-environment-configuration"></a>Kopiatu ingurunearen konfigurazioa
 
@@ -86,7 +81,7 @@ Datu hauek *ez* dira kopiatu:
 - Bezeroen profilak.
 - Datu-iturburuaren kredentzialak. Datu-iturburu bakoitzerako kredentzialak eman beharko dituzu eta datu iturriak eskuz freskatu.
 
-- Common Data Model karpetako eta Dataverse-k kudeatutako datu-biltegiko datu-iturburuak. Datu iturri horiek eskuz sortu beharko dituzu iturri ingurunean izen berdinekin.
+- Common Data Model karpetako datu-iturriak eta Dataverse-k kudeatutako datu-lakua. Datu iturri horiek eskuz sortu beharko dituzu iturri ingurunean izen berdinekin.
 
 Ingurumena kopiatzean, berrespen mezu bat ikusiko duzu ingurune berria sortu dela. Aukeratu **Joan datu iturrietara** datu-iturrien zerrenda ikusteko.
 

@@ -2,21 +2,19 @@
 title: Denbora errealean datuak sartzea eta mugak
 description: Hartzaileen xehetasunetako denbora errealeko gaitasunen inguruko informazio orokorra.
 ms.date: 10/27/2020
-ms.reviewer: mhart
+ms.reviewer: nikeller
+ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
-author: Nils-2m
-ms.author: nikeller
+author: m-hartmann
+ms.author: mhart
 manager: shellyha
-searchScope:
-- ci-system-api-usage
-- customerInsights
-ms.openlocfilehash: 2fe5279eee1b3b30f5bc21464c85fe5f86d342a0
-ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
-ms.translationtype: MT
+ms.openlocfilehash: b00a72e6a67e33c8e70ccc6139c5e62020f9d3e1
+ms.sourcegitcommit: b50c754481d0af6d0cf4b550775d7b31d95846ef
+ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 02/25/2022
-ms.locfileid: "8355460"
+ms.lasthandoff: 12/06/2020
+ms.locfileid: "4689160"
 ---
 # <a name="real-time-data-ingestion-preview"></a>Denbora errealeko iragazkiak (aurrebista)
 
@@ -56,7 +54,7 @@ Denbora errealeko APIari esker, zure iturburuko sistematik (iturburuko erregistr
 
 Denbora errealeko APIarekin konektatzeko bi modu daude:
 
-- [zeharka](#connect-via-the-dynamics-365-customer-insights-connector), erabiliz [Dynamics 365 Customer Insights konektorea](/connectors/customerinsights/)
+- [zeharka](#connect-via-the-dynamics-365-customer-insights-connector), erabiliz [Dynamics 365 Customer Insights konektorea](https://docs.microsoft.com/connectors/customerinsights/)
 - [zuzenean](#connect-directly-to-the-real-time-api), kodearekin
 
 Bi moduek baldintza hauek betetzen dituzte:
@@ -68,13 +66,13 @@ Bi moduek baldintza hauek betetzen dituzte:
 
 ## <a name="connect-via-the-dynamics-365-customer-insights-connector"></a>Konektatu Dynamics 365 Customer Insights konektorea
 
-Denbora errealeko APIak dedikatu bateko datuak iren ditzake Power Platform konektorea [Dynamics 365 Customer Insights konektorea](/connectors/customerinsights/), inolako koderik idatzi eta hedatu beharrik gabe.    
-Lotzaileak APIaren denbora errealeko ekintzak berak egin ditzake. Lizentzia balioduna behar duzu prima konektoreetarako. Informazio gehiagorako, ikusi [Power Apps eta Power Automate FAQ lizentziak](/power-platform/admin/powerapps-flow-licensing-faq).
+Denbora errealeko APIak dedikatu bateko datuak iren ditzake Power Platform konektorea [Dynamics 365 Customer Insights konektorea](https://docs.microsoft.com/connectors/customerinsights/), inolako koderik idatzi eta hedatu beharrik gabe.    
+Lotzaileak APIaren denbora errealeko ekintzak berak egin ditzake. Lizentzia balioduna behar duzu prima konektoreetarako. Informazio gehiagorako, ikusi [Power Apps eta Power Automate FAQ lizentziak](https://docs.microsoft.com/power-platform/admin/powerapps-flow-licensing-faq).
 
-- Power Platform [Power Apps eta/edo Power Automate](/connectors/)
-- Azure [Logic Aplikazioak](/azure/connectors/apis-list)
+- Power Platform [Power Apps eta/edo Power Automate](https://docs.microsoft.com/connectors/)
+- Azure [Logic Aplikazioak](https://docs.microsoft.com/azure/connectors/apis-list)
 
-Fluxuak sortzeari buruzko xehetasun gehiago lortzeko, ikusi [Power Automate dokumentazioa](/power-automate/).
+Fluxuak sortzeari buruzko xehetasun gehiago lortzeko, ikusi [Power Automate dokumentazioa](https://docs.microsoft.com/power-automate/).
 
 ## <a name="connect-directly-to-the-real-time-api"></a>Konektatu zuzenean denbora errealeko APIarekin
 
@@ -85,7 +83,6 @@ API honen xehetasunak, parametroak eta erantzunak barne, hemen aurki ditzakezu: 
 
 ## <a name="understand-your-real-time-usage-with-telemetry"></a>Ulertu zure denbora errealeko erabilera telemetriarekin
 
-Lortu denbora errealeko APIrako eskaeren bolumena eta sistemak izan ditzakeen arazoei buruzko informazioa. [Atzitu denbora errealeko telemetria](system.md#api-usage-tab). 
+Lortu denbora errealeko APIrako eskaeren bolumena eta sistemak izan ditzakeen arazoei buruzko informazioa. Ahal duzu [sartu denbora errealeko telemetriara](system.md#api-usage-tab) joanda **admin** > **Sistema** > **APIaren erabilera**. **Eragiketak** taulan, denbora errealeko metodoak erabiltzen dituzten API eragiketetarako errenkadek botoi bat dute denbora errealeko APIaren erabilera ikusteko. Botoia sinbolo binokular batekin bistaratzen da. Aukeratu botoia APIaren denbora errealeko uneko inguruneko erabilerari buruzko xehetasunak dituen alboko panela irekitzeko.
 
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+Erabili **Taldeka** hautatzailea zure denbora errealean elkarreraginak nola aurkeztu hobeto aukeratzeko azken 24 orduetatik azken 30 egunetara bitarteko denbora-lerro batean. Datuak API metodoaren, entitatearen izen kualifikatua (irenstutako entitatea), sortutako (gertaeraren iturria), emaitza (arrakasta edo hutsegitea) edo errore kodeak arabera talka ditzakezu. Datuak historia-taula gisa eta taula gisa eskuragarri daude.

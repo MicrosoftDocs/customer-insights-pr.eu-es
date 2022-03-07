@@ -1,22 +1,20 @@
 ---
-title: Sortu zure bezeroen ikuspegi bateratua
-description: Joan datuen bateratze prozesua zure datuekin bezeroen profilen datu multzo nagusi bakarra sortzeko.
-ms.date: 10/18/2021
+title: Datuak bateratzea
+description: Ikasi sartutako datuak bateratzen.
+ms.date: 04/16/2020
 ms.reviewer: mhart
+ms.service: customer-insights
 ms.subservice: audience-insights
-ms.topic: overview
+ms.topic: conceptual
 author: adkuppa
 ms.author: adkuppa
 manager: shellyha
-searchScope:
-- ci-map
-- customerInsights
-ms.openlocfilehash: 2012d32494ccd4639cbffbb81d4f6eac1258e23b
-ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
-ms.translationtype: MT
+ms.openlocfilehash: 73d8006c670268420f8cd6a2b37cb214ba1bbd6c
+ms.sourcegitcommit: bae40184312ab27b95c140a044875c2daea37951
+ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 02/25/2022
-ms.locfileid: "8353804"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "5597864"
 ---
 # <a name="data-unification-overview"></a>Datuak bateratzeko ikuspegi orokorra
 

@@ -2,6 +2,7 @@
 title: Hasteko negozio kontuekin helburu nagusia den publiko gisa
 description: Ikasi negozio kontuekin helburu nagusia den publiko gisa Dynamics 365 Customer Insights.
 ms.date: 10/19/2021
+ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: m-hartmann
@@ -9,16 +10,12 @@ ms.custom: intro-internal
 ms.author: wimohabb
 ms.reviewer: mhart
 manager: shellyha
-searchScope:
-- ci-semantic-mapping
-- ci-connections
-- customerInsights
-ms.openlocfilehash: 88882dc727c37262c9f204fbc8049abe17bd21a3
-ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
-ms.translationtype: MT
+ms.openlocfilehash: fb943a91154e913c85c40fbf6077c171e9240ac5
+ms.sourcegitcommit: bb1ca84bc38e81fb2ff2961c457384b7beb5b5fa
+ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 02/25/2022
-ms.locfileid: "8353527"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7977906"
 ---
 # <a name="work-with-business-accounts-in-audience-insights"></a>Lana negozio kontuekin audientzia estatistiketan
 

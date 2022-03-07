@@ -2,22 +2,19 @@
 title: Osatu datu partzialak iragarpenak erabiliz
 description: Erabili iragarpenak bezeroen datu osatugabeak betetzeko.
 ms.date: 11/01/2021
+ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
 author: zacookmsft
 ms.author: zacook
 ms.reviewer: mhart
 manager: shellyha
-searchScope:
-- ci-predictions
-- ci-custom-models
-- customerInsights
-ms.openlocfilehash: 9634523f61e27a0ed183186a788ab0cef3c0491b
-ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
-ms.translationtype: MT
+ms.openlocfilehash: 3100acf383d85c00a6ff0a8ebc54e038bd813427
+ms.sourcegitcommit: 834651b933b1e50e7557d44f926a3fb757c1f83a
+ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 02/25/2022
-ms.locfileid: "8353988"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "7732345"
 ---
 # <a name="complete-your-partial-data-with-predictions-deprecated"></a>Osatu zure datu partzialak iragarpenekin (zaharkituta)
 
@@ -29,15 +26,15 @@ Aurreikuspenek erraz iragarritako balioak sor ditzakezu bezeroaren ulermena hobe
 > [!NOTE]
 > Ezin duzu funtzio hau erabili zure inguruak Azure Data Lake Gen 2 biltegia erabiltzen badu.
 >
-> Aurreikuspenen funtzionalitateak bitarteko automatizatuak erabiltzen ditu datuak ebaluatzeko eta datu horietan oinarritutako iragarpenak egiteko, eta, beraz, profilak egiteko metodo gisa erabiltzeko gaitasuna du, termino hori Datuak Babesteko Araudi Orokorrak ("DBAO") definitzen baitu. Bezeroak funtzio hau erabiltzeko datuak prozesatzeko DBAO edo beste lege edo arau batzuen menpe egon daiteke. Zu zara Dynamics 365 Customer Insights-en erabileraren arduradun, iragarpenez aplikagarriak diren lege eta arau guztiak betetzeaz barne, hala nola pribatutasunarekin, datu pertsonalekin, datu biometrikoekin, datuen babesarekin eta komunikazioen konfidentzialtasunarekin lotutako legeak.
+> Aurreikuspenen funtzionalitateak bitarteko automatizatuak erabiltzen ditu datuak ebaluatzeko eta datu horietan oinarritutako iragarpenak egiteko, eta, beraz, profilak egiteko metodo gisa erabiltzeko gaitasuna du, termino hori Datuak Babesteko Araudi Orokorrak ("DBAO") definitzen baitu. Bezeroak funtzio hau erabiltzeko datuak prozesatzeko DBAO edo beste lege edo arau batzuen menpe egon daiteke. Zure Dynamics 365 Customer Insights-en erabilerak, iragarpenak barne, aplikagarriak diren lege eta araudi guztiak betetzen dituela ziurtatzeko ardura duzu, pribatutasunari, datu pertsonalei, datu biometrikoei, datuen babesari eta komunikazioen konfidentzialtasunari lotutako legeak barne.
 
 ## <a name="prerequisites"></a>Aurrebaldintzak
 
 Zure erakundeak iragarpenen funtzioa erabili ahal izateko, ziurtatu baldintza hauek bete aurretik:
 
-1. Zure erakundeak instantzia bat du [Microsoft Dataverse-n konfiguratuta](/ai-builder/build-model#prerequisites) eta Customer Insights-en erakunde berean dago.
+1. Zure erakundeak instantzia bat dauka [ezarri Microsoft Dataverse-en](/ai-builder/build-model#prerequisites) eta Customer Insights-en erakunde berean dago.
 
-2. Zure hartzaileen xehetasunen ingurunea lotuta dago Dataverse instantziarekin.
+2. Ikusleei buruzko informazio-ingurunea zure Dataverse instantziari atxikita dago.
 
 Informazio gehiago lortzeko, ikusi [Sortu ingurune berri bat](create-environment.md).
 
@@ -116,7 +113,7 @@ Fluxu horren baitan atributu zehatz bat aukeratu behar duzu zure segmentua nola 
 
 ## <a name="edit-a-prediction"></a>Editatu iragarpena
 
-Iragarpen bat sortu ondoren, eredua pertsonaliza dezakezu AI Builder zure ereduaren eraginkortasuna areagotzeko.  
+Aurreikuspen bat sortu ondoren, AI Builder-en eredua pertsonalizatu dezakezu zure ereduaren eraginkortasuna areagotzeko.  
 
 1. Hartzaileen xehetasunetan, joan hona: **Adimena** > **Iragarpenak** > **Nire iragarpenak**.
 
@@ -124,14 +121,14 @@ Iragarpen bat sortu ondoren, eredua pertsonaliza dezakezu AI Builder zure eredua
 
 3. Hautatu elipsi eremuan **Ekintzak** zutabea eta aukeratu **ikusi**.
 
-4. Hautatu **Pertsonalizatu AI Builder**.
+4. Hautatu **Pertsonalizatu AI Builder-en**.
 
-5. Eguneratu zure eredua AI Builder. [Argibide gehiago AI builder ereduak kudeatzeari buruz](/ai-builder/manage-model#retrain-and-republish-existing-models).
+5. Eguneratu zure eredua AI Builder-en. [Argibide gehiago AI builder ereduak kudeatzeari buruz](/ai-builder/manage-model#retrain-and-republish-existing-models).
 
 Zure iragarpenaren hurrengo exekutatuak sortu duzun eredu eguneratua erabiliko du.
 
 > [!NOTE]
-> Urtean sortutako eredu berriak AI Builder ez da ikusleen ikuspegietan erakutsiko eredua goian zerrendatutako esperientzietatik sortu ez bada.
+> AI Builder-en sortutako eredu berriak ez dira hartzaileen xehetasunetan bistaratuko, eredua goian zerrendatutako esperientzietatik sortu izan ezean.
 
 ## <a name="remove-a-prediction"></a>Kendu iragarpena
 
@@ -143,9 +140,9 @@ Zure iragarpenaren hurrengo exekutatuak sortu duzun eredu eguneratua erabiliko d
 
 4. Berretsi ezabatzea.
 
-## <a name="troubleshooting"></a>Irtenbideak
+## <a name="troubleshooting"></a>Arazoak konpontzea
 
-Eranskina ezin baduzu osatu Dataverse prozesua akats bat dela eta, prozesua eskuz betetzen saia zaitezke. Erantsitako prozesuan gerta daitezkeen bi arazo ezagutzen dira:
+Errore bat dela eta Dataverse eranskinaren prozesua ezin baduzu osatu, prozesua eskuz osatzen saia zaitezke. Erantsitako prozesuan gerta daitezkeen bi arazo ezagutzen dira:
 
 - Bezeroaren txartelaren osagarriaren soluzioa ez dago instalatuta.
     1. Jarraitu argibideak [instalatu eta konfiguratu irtenbidea](customer-card-add-in.md).
@@ -158,7 +155,7 @@ Eranskina ezin baduzu osatu Dataverse prozesua akats bat dela eta, prozesua esku
     1. Aukeratu **+ Berria** eta hautatu **Erabiltzailea**.
     1. Aukeratu **Aplikazioaren erabiltzailea** hautatuta ez badago, eta sartu informazio hau:
         - **Erabiltzaile-izena:** cihelp@microsoft.com
-        - **Aplikazioaren ID-a:** 38c77d00-5fcb-4cce-9d93-af4738258e3c
+        - **Aplikazioaren IDa:** 38c77d00-5fcb-4cce-9d93-af4738258e3c
         - **Izena:** Bezeroa
         - **Abizena:** xehetasunak
         - **Posta elektroniko nagusia:** cihelp@microsoft.com

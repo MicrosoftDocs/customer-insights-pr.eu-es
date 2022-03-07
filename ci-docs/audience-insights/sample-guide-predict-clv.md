@@ -3,17 +3,18 @@ title: Bezeroaren bizi-iraupenaren balioa iragarpenaren lagin gida
 description: Erabili lagin gida hau bezeroaren bizi-iraupenaren balio osorako iragarpen modeloa probatzeko.
 ms.date: 05/25/2021
 ms.reviewer: mhart
+ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: tutorial
 author: yashlundia
 ms.author: yalundia
 manager: shellyha
-ms.openlocfilehash: c130e5f699f7eb921b69a20bc6d4ba9eab5b2779
-ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
-ms.translationtype: MT
+ms.openlocfilehash: 73d294a285b4ad706bec7fe925c1daa0b839ddd6
+ms.sourcegitcommit: 7b6189e47ed1f87e7ce35d40e4cf7a6730f31ef2
+ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 02/25/2022
-ms.locfileid: "8354816"
+ms.lasthandoff: 06/01/2021
+ms.locfileid: "6129930"
 ---
 # <a name="customer-lifetime-value-clv-prediction-sample-guide"></a>Bezeroaren bizi-iraupenaren balioaren iragarpenaren lagin gida
 
@@ -21,7 +22,7 @@ Gida honek Bezeroaren bizi-iraupenaren balio osoko (CLV) iragarpen adibidearen a
 
 ## <a name="scenario"></a>Egoera
 
-Contoso kalitate handiko kafe eta kafe makinak ekoizten dituen enpresa da. Contoso Kafearen webgunearen bidez saltzen dituzte produktuak. Konpainiak bezeroek hurrengo 12 hilabeteetan sor dezaketen balioa (diru-sarrerak) ulertu nahi du. Datozen 12 hilabeteetan bezeroek espero duten balioa ezagutzeak balio handiko bezeroenganako marketin ahalegina bideratzen lagunduko die.
+Contoso kalitate handiko kafea eta kafe makinak ekoizten dituen enpresa da. Produktuak Contoso Coffee webgunearen bidez saltzen dituzte. Konpainiak bezeroek hurrengo 12 hilabeteetan sor dezaketen balioa (diru-sarrerak) ulertu nahi du. Datozen 12 hilabeteetan bezeroek espero duten balioa ezagutzeak balio handiko bezeroenganako marketin ahalegina bideratzen lagunduko die.
 
 ## <a name="prerequisites"></a>Aurrebaldintzak
 
@@ -30,7 +31,7 @@ Contoso kalitate handiko kafe eta kafe makinak ekoizten dituen enpresa da. Conto
 
 ## <a name="task-1---ingest-data"></a>1. zeregina - Datuen sarrera
 
-Berrikusi artikuluak [datuak sartzeari buruz](data-sources.md) eta [datu-iturriak erabiliz inportatzea Power Query konektoreak](connect-power-query.md). Honako informazio honetan, ulertzen da ohituta zaudela orokorrean datuen sarrerarekin.
+Errepasatu [datuen irensteari](data-sources.md) eta [datu iturriak Power Query konektoreen bidez inportatzeari](connect-power-query.md) buruzko artikuluak. Honako informazio honetan, ulertzen da ohituta zaudela orokorrean datuen sarrerarekin.
 
 ### <a name="ingest-customer-data-from-ecommerce-platform"></a>Sartu bezero-datuak merkataritza elektronikoko plataformatik
 
@@ -122,9 +123,9 @@ Datuak irentsi ondoren, datuak bateratzeko prozesua hasten dugu bezeroaren profi
 
 1. Joan **Bat etorri** fitxara eta hautatu **Ezarri ordena**.
 
-1. Urtean **Lehen Hezkuntza** goitibeherako zerrenda, aukeratu **eCommerceContacts: eCommerce** iturri nagusi gisa eta erregistro guztiak barne.
+1. **Nagusia** goitibeherako zerrendan, aukeratu **eCommerceContacts : eCommerce** iturburu nagusi gisa eta sartu erregistro guztiak.
 
-1. Urtean **2. entitatea** goitibeherako zerrenda, aukeratu **loyCustomers: LoyaltyScheme** eta erregistro guztiak sartu.
+1. **2. entitatea** goitibeherako zerrendan, aukeratu **loyCustomers : LoyaltyScheme** eta sartu erregistro guztiak.
 
    ![Bateratu eCommerce eta Loyalty bat-etortzea.](media/unify-match-order.png)
 
@@ -132,16 +133,16 @@ Datuak irentsi ondoren, datuak bateratzeko prozesua hasten dugu bezeroaren profi
 
 1. Gehitu lehenengo baldintza FullName erabilita.
 
-   - ECommerceContacts aukeratzeko **Izen abizenak** goitibeherakoan.
-   - loyCustomers aukeratzeko **Izen abizenak** goitibeherakoan.
-   - Aukeratu **Normalizatu** goitibehera eta aukeratu **Mota (Telefonoa, Izena, Helbidea, ...)**.
+   - eCommerceContacts entitateari dagokionez, hautatu **FullName** goitibeherako zerrendan.
+   - loyCustomers entitateari dagokionez, hautatu **FullName** goitibeherako zerrendan.
+   - Aukeratu **Normalizatu** goitibeherako zerrendan eta aukeratu **Mota (Telefonoa, Izena, Helbidea, ...)**.
    - Ezarri **Zehaztasun maila**: **Oinarrizkoa** eta **Balioa**: **Altua**.
 
 1. Idatzi arau berriaren **Izen osoa, posta elektronikoa** izena.
 
    - Gehitu helbide elektronikoaren bigarren baldintza bat **Gehitu baldintza** hautatuta
-   - ECommerceContacts entitateari dagokionez, aukeratu **Mezu elektronikoa** goitibeherakoan.
-   - loyCustomers entitateari dagokionez, aukeratu **Mezu elektronikoa** goitibeherakoan.
+   - ECommerceContacts entitateari dagokionez, aukeratu **Helbide elektronikoa** goitibeherako zerrendan.
+   - loyCustomers entitateari dagokionez, aukeratu **Helbide elektronikoa** goitibeherako zerrendan.
    - "Normalizatu" hutsik utzi.
    - Ezarri **Zehaztasun maila**: **Oinarrizkoa** eta **Balioa**: **Altua**.
 
@@ -163,7 +164,7 @@ Datuak irentsi ondoren, datuak bateratzeko prozesua hasten dugu bezeroaren profi
 
 ## <a name="task-3---configure-customer-lifetime-value-prediction"></a>3. ataza - Konfiguratu bezeroaren bizi-iraupenaren balioaren iragarpena
 
-Bezeroen profil bateratuak ongi jarrita, bezeroaren bizi-iraupenaren balioaren iragarpena exekutatu dezakegu. Urrats zehatzak ikusteko, ikus [Bezeroaren bizitza osorako balioa iragarpen](predict-customer-lifetime-value.md).
+Bezeroen profil bateratuak ongi jarrita, bezeroaren bizi-iraupenaren balioaren iragarpena exekutatu dezakegu. Urrats zehatzak lortzeko, ikus [Bezeroaren bizi-iraupenaren balioaren iragarpena (aurrebista)](predict-customer-lifetime-value.md).
 
 1. Joan **Adimena**  > **Iragarpenak** eta hautatu **Bezeroaren bizi-iraupenaren balioaren eredua**.
 

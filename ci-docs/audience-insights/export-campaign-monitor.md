@@ -1,19 +1,20 @@
 ---
 title: Esportatu Customer Insights datuak Campaign Monitor-era
 description: Ikasi konexioa konfiguratzen eta esportatzen Campaign Monitor.
-ms.date: 10/08/2021
+ms.date: 03/03/2021
 ms.reviewer: mhart
+ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: be9c92a087ab4664077d18fe8585bf96715c1535
-ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
-ms.translationtype: MT
+ms.openlocfilehash: 091a3197dc0c19ff78f0419fb4e88868e0f78359
+ms.sourcegitcommit: 831765a55775d358447cb7ffa56f2c3b85459084
+ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "8228137"
+ms.lasthandoff: 06/01/2021
+ms.locfileid: "6124166"
 ---
 # <a name="export-segments-to-campaign-monitor-preview"></a>Esportatu segmentuak Campaign Monitor-era (aurrebista)
 
@@ -27,10 +28,10 @@ Esportatu bezeroen profil bateratuen segmentuak Campaign Monitor-era eta erabili
 
 ## <a name="known-limitations"></a>Muga ezagunak
 
-- Esportazio bakoitzeko milioi bat bezero profila esporta ditzakezu Kanpainaren monitorea.
+- Esportazio bakoitzeko milioi bat profil esportatu ditzakezu Campaign Monitor.
 - Campaign Monitor-era esportatzea segmentuetara mugatuta dago.
-- Milioi batera arte bezero profil Kanpainaren monitorea dituzten segmentuak esportatzen 20 minutu behar izan ditzakete osatzeko. 
-- Kanpainaren monitorea esporta ditzakezun bezeroen profil kopurua Kanpainaren monitorearekin duzun kontratuaren menpe dago eta mugatua da.
+- Esportatu gehienez 1 milioi profil Campaign Monitor, 20 minutu behar ditzake osatzeko. 
+- Campaign Monitor-era esporta ditzakezun profilen kopurua Campaign Monitor-ekin duzun kontratuaren menpe dago eta mugatua da.
 
 ## <a name="set-up-connection-to-campaign-monitor"></a>Konfiguratu konexioa Campaign Monitor
 
@@ -65,7 +66,7 @@ Esportazio hau konfigura dezakezu mota honetako konexiorako sarbidea baduzu. Inf
 1. Idatzi [**Campaign Monitor zerrendaren IDa**](https://www.campaignmonitor.com/api/getting-started/#your-list-id).    
    [Sortu API gakoa](https://www.campaignmonitor.com/api/getting-started/) hurrengotik **Kontu ezarpenak** Campaign Monitor-en lehenengo API zerrendaren IDa ikusteko.  
 
-1. Urtean **Datuen bat etortzea** atalean, **Posta elektronikoa** eremua, hautatu bezeroaren helbide elektronikoa adierazten duen eremua. Segmentuak esportatu behar dira Campaign Monitor.
+3. **Datuen bat etortzea** atalean, **Posta elektronikoa** eremuan, hautatu zure bezeroaren profil bateratuko eremua, bezero baten helbide elektronikoa adierazten duena. Segmentuak esportatu behar dira Campaign Monitor.
 
 1. Sakatu **Gorde**.
 

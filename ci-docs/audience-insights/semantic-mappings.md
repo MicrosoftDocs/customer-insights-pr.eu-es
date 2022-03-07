@@ -1,24 +1,22 @@
 ---
 title: Esleipen semantikoak (aurreargitalpena)
 description: Kartografia semantikoen ikuspegi orokorra eta nola erabili.
-ms.date: 12/01/2021
+ms.date: 11/01/2021
+ms.service: customer-insights
 ms.subservice: audience-insights
 ms.reviewer: mhart
 ms.topic: conceptual
 author: CadeSanthaMSFT
 ms.author: cadesantha
 manager: shellyha
-searchScope:
-- ci-semantic-mapping
-- customerInsights
-ms.openlocfilehash: 37696f3e82eb9b75fbf9f78363adc890891efcc3
-ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
-ms.translationtype: MT
+ms.openlocfilehash: f23c622572ff9f967eca07de7898419d1ffc18b0
+ms.sourcegitcommit: 834651b933b1e50e7557d44f926a3fb757c1f83a
+ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 02/25/2022
-ms.locfileid: "8353942"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "7731928"
 ---
-# <a name="semantic-mappings-preview"></a>Esleipen semantikoak (aurreargitalpena)
+# <a name="semantic-mappings"></a>Esleipen semantikoa
 
 Kartografia semantikoek jarduerarik gabeko datuak aurrez definitutako eskemetara mapatzen uzten dizute. Eskema hauek ikusleen estatistikak laguntzen dituzte zure datuen atributuak hobeto ulertzeko. Kartografia semantikoak eta emandako datuek ikusleei buruzko informazio eta ezaugarri berriak ahalbidetzen dituzte. Zure jardueren datuak eskemetara mapatzeko, berrikusi [jarduerak](activities.md) dokumentazioa.
 
@@ -93,40 +91,5 @@ Aktibatuta **Datuak** > **Kartografia semantikoak (aurrebista)**, gordetako mapa
 
 - **Ezabatu**: Elkarrizketa-koadro bat irekitzen du hautatutako mapaketa semantikoa ezabatzen dela berresteko. Kartografia semantiko bat baino gehiago aldi berean ezaba ditzakezu mapaketa semantikoak eta ezabatzeko ikonoa hautatuta. Hautatu **Ezabatu** ezabatzea baieztatzeko.
 
-## <a name="use-a-contactprofile-semantic-entity-mapping-to-create-contact-level-activities"></a>Erabili ContactProfile entitate semantikoen mapaketa kontaktu mailako jarduerak sortzeko
-
-Bat sortu ondoren *Harremanetarako Profila* entitate semantikoen mapak, kontaktuen jarduerak har ditzakezu. Kontu baten jardueraren kronograman ikus dezakezu zein kontaktu zen jarduera bakoitzaren arduraduna. Urrats gehienek jarduera-mapearen konfigurazio tipikoari jarraitzen diote.
-
-   > [!NOTE]
-   > Kontaktu mailako jarduerak funtzionatzeko, biak izan behar dituzu **Kontuaren ID** eta **Kontaktu ID** zure jarduera-datuen barruan erregistro bakoitzerako atributuak.
-
-1. [Definitu a *Harremanetarako Profila* entitate semantikoen mapaketa.](#define-a-contactprofile-semantic-entity-mapping) Eta exekutatu mapa semantikoa.
-
-1. Hartzaileei buruzko xehetasunetan, joan hona: **Datuak** > **Jarduerak**.
-
-1. Hautatu **Gehitu jarduera** jarduera berri bat sortzeko.
-
-1. Jarriari izena eman, hautatu iturburuko jarduera-entitatea eta hautatu jarduera-entitatearen gako nagusia.
-
-1. urtean **Harremanak** urratsa, sortu zure jarduera-iturburuko datuen arteko zeharkako harremana kontuekin, zure harremanetarako datuak bitartekari gisa erabiliz. Informazio gehiagorako, ikus [harreman zuzeneko eta zeharkako bideak](relationships.md#relationship-paths).
-   - Deitutako jarduera baterako erlazio adibidea *Erosketak*:
-      - **Erosketak Iturburu Jardueren Datuak** > **Harremanetarako datuak** atributuaren gainean **Kontaktu ID**
-      - **Harremanetarako datuak** > **Kontuaren datuak** atributuaren gainean **Kontuaren ID**
-
-   :::image type="content" source="media/Contact_Activities1.png" alt-text="Erlazio-konfigurazio adibidea.":::
-
-1. Harremanak konfiguratu ondoren, hautatu **Hurrengoa** eta osatu zure jarduera-maparen konfigurazioa. Jarduerak sortzeari buruzko urrats zehatzak ikusteko, ikus [jarduera bat definitu](activities.md).
-
-1. Exekutatu zure jardueren mapak.
-
-1. Zure kontaktu-mailako jarduerak zure bezeroen denbora-lerroan ikusgai egongo dira orain.
-
-   :::image type="content" source="media/Contact_Activities2.png" alt-text="Azken emaitza kontaktu-jarduerak konfiguratu ondoren":::
-
-### <a name="contact-level-activity-timeline-filtering"></a>Kontaktu-mailako jardueren denbora-lerroaren iragazketa
-
-Kontaktu-mailako jardueren mapa konfiguratu eta exekutatu ondoren, zure bezeroen jardueren kronograma eguneratuko da. Beren ID edo izenak biltzen ditu, zurearen arabera *Harremanetarako Profila* konfigurazioa, jardun zuten jardueretarako. Jarduerak kontaktuen arabera iragazi ditzakezu denbora-lerroan interesatzen zaizkizun kontaktu zehatzak ikusteko. Gainera, kontaktu zehatz bati esleituta ez dauden jarduera guztiak ikus ditzakezu hautatuta **Kontaktu bati mapatu gabeko jarduerak**.
-
-   :::image type="content" source="media/Contact_Activities3.png" alt-text="Kontaktu mailako jardueretarako eskuragarri dauden iragazketa-aukerak.":::
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

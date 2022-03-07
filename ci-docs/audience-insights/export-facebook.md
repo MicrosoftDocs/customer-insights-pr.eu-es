@@ -1,25 +1,24 @@
 ---
-title: Esportatu Customer Insights datuak hona Facebook Iragarkien kudeatzailea (bideoa dauka)
+title: Esportatu Customer Insights datuak Facebook iragarki-kudeatzailera
 description: Ikasi konexioa konfiguratzen eta esportatzen Facebook Iragarkien kudeatzailea.
 ms.date: 04/15/2021
 ms.reviewer: mhart
+ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 781cf10e1bb5ddaf82d4a17c7a77e0c43c41a1c2
-ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
-ms.translationtype: MT
+ms.openlocfilehash: e20c7b7fd3989d7621cb7765f38b85c8ab4adfcb
+ms.sourcegitcommit: d84d664e67f263bfeb741154d309088c5101b9c3
+ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "8226480"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "6305095"
 ---
 # <a name="export-segments-list-to-facebook-ads-manager-preview"></a>Esportatu segmentuen zerrenda Facebook Iragarkien kudeatzailea (aurrebista)
 
 Bezeroen profil bateratuen segmentuak esportatu Facebook Iragarkien kudeatzailea kanpainak sortzeko Facebook eta Instagram.
-
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWO1aN]
 
 ## <a name="prerequisites-for-connection"></a>Konexioaren aurrebaldintzak
 
@@ -31,7 +30,7 @@ Bezeroen profil bateratuen segmentuak esportatu Facebook Iragarkien kudeatzailea
 - Gehienez 10 milioi bezero profil esportatzeko Facebook Iragarkien kudeatzailea.
 - Esportatu Facebook Ads-eko kudeatzailera esportatzea segmentuetara mugatuta dago.
 - Sortu edo eguneratu audientzia pertsonalizatuak hemen Facebook motakoa *bezeroen zerrenda* bakarrik.
-- Guztira 10 milioi bezero profil dituzten segmentuak esportatzen 90 minutu behar izan ditzakete osatzeko.
+- Guztira 10 milioi profil dituzten segmentuak esportatzen 90 minutu behar izan daitezke.
 
 ## <a name="set-up-connection-to-facebook-ads-manager"></a>Konfiguratu konexioa Facebook iragarkien kudeatzailea
 

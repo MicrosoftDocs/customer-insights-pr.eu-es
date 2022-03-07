@@ -2,21 +2,19 @@
 title: Konektatu Azure Data Lake Storage kontu nagusia zerbitzuaren nagusia erabiliz
 description: Erabili Azure zerbitzu nagusia zure data lake konektatzeko.
 ms.date: 12/06/2021
+ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
 author: adkuppa
 ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
-searchScope:
-- ci-system-security
-- customerInsights
-ms.openlocfilehash: d593880b06bd21e96826039a67382b75a4296a87
-ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
-ms.translationtype: MT
+ms.openlocfilehash: faef3583337fd495e7baf40b0a208f1d9f10281a
+ms.sourcegitcommit: 11b343f6622665251ab84ae39ebcd91fa1c928ca
+ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 02/25/2022
-ms.locfileid: "8354173"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "7900228"
 ---
 # <a name="connect-to-an-azure-data-lake-storage-account-by-using-an-azure-service-principal"></a>Konektatu Azure Data Lake Storage kontu nagusia Azure zerbitzuaren nagusia erabiliz
 
@@ -25,7 +23,7 @@ Artikulu honek nola konektatu eztabaidatzen du Dynamics 365 Customer Insights ba
 Azure zerbitzuak erabiltzen dituzten tresna automatizatuek beti baimen mugatuak izan behar dituzte. Aplikazioek erabiltzaile pribilegiatu gisa saioa hasi beharrean, Azure-k zerbitzuaren entitateak eskaintzen ditu. Zerbitzu nagusiak modu seguruan erabil ditzakezu [gehitu edo editatu Common Data Model karpeta bat datu-iturburu gisa](connect-common-data-model.md) edo [ingurune bat sortu edo eguneratu](create-environment.md).
 
 > [!IMPORTANT]
-> - Zerbitzu nagusia erabiliko duen Data Lake Storage kontuak Gen2 izan behar du eta eduki [izen-espazio hierarkikoa gaituta](/azure/storage/blobs/data-lake-storage-namespace). Azure Data Lake Gen1 biltegiratze-kontuak ez dira onartzen.
+> - Zerbitzuaren entitatea erabiliko duen Data Lake Storage kontuak [gaituta eduki behar du izen-leku hierarkikoa](/azure/storage/blobs/data-lake-storage-namespace).
 > - Zure Azure harpidetzarako administratzaile-baimenak behar dituzu zerbitzu nagusi bat sortzeko.
 
 ## <a name="create-an-azure-service-principal-for-customer-insights"></a>Sortu Azure zerbitzu nagusia Customer Insights-entzat
@@ -92,7 +90,7 @@ Baliteke aldaketak barreiatzeko 15 minutu behar izatea.
 
 ## <a name="enter-the-azure-resource-id-or-the-azure-subscription-details-in-the-storage-account-attachment-to-audience-insights"></a>Idatzi Azure baliabidearen IDa edo Azure harpidetzaren xehetasunak hartzaileen xehetasunen ataleko biltegirako kontuaren eranskinean
 
-Data Lake Storage kontua erantsi dezakezu hartzaileen xehetasunetan [irteerako datuak gordetzeko](manage-environments.md) edo [datu-iturburu gisa erabiltzeko](/dynamics365/customer-insights/audience-insights/connect-dataverse-managed-lake). Aukera honek baliabideetan oinarritutako edo harpidetzan oinarritutako ikuspegiaren artean aukeratzeko aukera ematen du. Aukeratzen duzun ikuspegiaren arabera, jarraitu prozedura hurrengo ataletako batean.
+Data Lake Storage kontua erantsi dezakezu hartzaileen xehetasunetan [irteerako datuak gordetzeko](manage-environments.md) edo [datu-iturburu gisa erabiltzeko](connect-common-data-service-lake.md). Aukera honek baliabideetan oinarritutako edo harpidetzan oinarritutako ikuspegiaren artean aukeratzeko aukera ematen du. Aukeratzen duzun ikuspegiaren arabera, jarraitu prozedura hurrengo ataletako batean.
 
 ### <a name="resource-based-storage-account-connection"></a>Baliabideetan oinarritutako biltegiratze-kontuaren konexioa
 

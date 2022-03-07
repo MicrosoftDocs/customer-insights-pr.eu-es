@@ -1,26 +1,22 @@
 ---
-title: Freskatze gehigarria Power Query oinarritutako datu-iturriak
-description: Freskatu datu berriak eta eguneratuak datu-iturri handietarako Power Query.
-ms.date: 12/06/2021
+title: Power Query-n oinarritutako datu-iturburuen freskatze inkrementala
+description: Freskatu datu berri eta eguneratuak datu iturri handietarako Power Query oinarritzat hartuta.
+ms.date: 09/28/2020
 ms.reviewer: mhart
+ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
 author: adkuppa
 ms.author: adkuppa
 manager: shellyha
-searchScope:
-- ci-system-schedule
-- customerInsights
-ms.openlocfilehash: 62632efda3c0c7e53fcdd8864b053ba93e2918bc
-ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
-ms.translationtype: MT
+ms.openlocfilehash: d204228f8d6881cbf0e7fac6609bf50dd5296610
+ms.sourcegitcommit: 42692a815695b9fdc93b9358eae09f2c3e97293c
+ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 02/25/2022
-ms.locfileid: "8353666"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7377819"
 ---
-# <a name="incremental-refresh-for-data-sources-based-on-power-query"></a>Horretan oinarritutako datu-iturburuetarako freskatze gehigarria Power Query
-
-Artikulu honek datu-iturburuetarako freskatze inkrementala nola konfiguratu aztertzen du Power Query.
+# <a name="incremental-refresh-for-data-sources-based-on-power-query"></a>Power Query-n oinarritutako datu iturrientzako freskapen gehikorra
 
 Datu iturrien freskapen gehigarriak abantaila hauek eskaintzen ditu:
 
@@ -30,13 +26,13 @@ Datu iturrien freskapen gehigarriak abantaila hauek eskaintzen ditu:
 
 ## <a name="configure-incremental-refresh"></a>Konfiguratu freskatze inkrementala
 
-Ikusleei buruzko informazioak inportatutako datu-iturburuen freskatze gehigarria ahalbidetzen du Power Query gehigarrian irenstea onartzen dutenak. Adibidez, Azure SQL datu baseak data eta orduaren eremuekin, datuen erregistroak eguneratu zirenean adierazten dutenak.
+Hartzaileen xehetasunek sartze inkrementala onartzen duten Power Query bidez inportatutako datu-iturburuen freskatze inkrementala onartzen dute. Adibidez, Azure SQL datu baseak data eta orduaren eremuekin, datuen erregistroak eguneratu zirenean adierazten dutenak.
 
-1. [Sortu datu-iturburu berri bat Power Query](connect-power-query.md).
+1. [Sortu datu-iturburu berria Power Query oinarrituta](connect-power-query.md).
 
-1. Eman a **Izena** datu-iturburu-erako.
+1. Eman datu-iturburuaren izena.
 
-1. Hautatu freskatze inkrementala onartzen duen datu-iturburu, adibidez [Azure SQL datu-basea](/power-query/connectors/azuresqldatabase).
+1. Hautatu freskatze gehigarri bat onartzen duen datu-iturburu bat, hala nola Azure SQL datu basea.
 
 1. Aukeratu irensteko entitateak edo taulak.
 

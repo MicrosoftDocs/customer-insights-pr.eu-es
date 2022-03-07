@@ -1,25 +1,20 @@
 ---
-title: Helbidea hobetzeko aberastea (bideoa dauka)
+title: Helbidea hobetzeko aberastea
 description: Aberastu eta normalizatu bezeroen profilen helbideen informazioa Microsoft-en ereduekin.
-ms.date: 01/19/2022
+ms.date: 07/25/2021
 ms.reviewer: mhart
+ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
 author: kishorem-ms
 ms.author: kishorem
 manager: shellyha
-searchScope:
-- ci-data-sources-enrichment
-- ci-data-sources-enrichment-details
-- ci-enrichments
-- ci-enrichment-wizard
-- customerInsights
-ms.openlocfilehash: 067757019078d3a46b224ba259d2d097dfbbe381
-ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
+ms.openlocfilehash: 65db6ce05f4d6f7f7b08ada172fec057027dd310
+ms.sourcegitcommit: 8cc70f30baaae13dfb9c4c201a79691f311634f5
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 02/25/2022
-ms.locfileid: "8353621"
+ms.lasthandoff: 07/30/2021
+ms.locfileid: "6692238"
 ---
 # <a name="enrichment-of-customer-profiles-with-enhanced-addresses"></a>Bezeroen profilak aberastu helbide hobetuekin
 
@@ -28,8 +23,6 @@ Zure datuetako helbideak desegituratuak, osatugabeak edo okerrak izan daitezke. 
 ## <a name="how-we-enhance-addresses"></a>Helbideak nola hobetzen ditugun
 
 Gure ereduak bi urratseko prozesua egiten du helbide bat hobetzeko. Lehenik eta behin, helbidea analizatzen du bere osagaiak identifikatzeko eta formatu egituratu batean jartzen ditu. Ondoren, AI erabiltzen dugu helbideko balioak zuzentzeko, osatzeko eta estandarizatzeko.
-
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWNewo]
 
 ### <a name="example"></a>Adibidez
 
@@ -105,20 +98,10 @@ Aberasteko prozesua hasteko, hautatu **Korrika egin** komando barratik. Gainera,
 
 Aberasteko prozesua amaitu ondoren, aberastu berri diren bezeroen profilen datuak berrikus ditzakezu atalean **Nire aberastasunak**. Gainera, azken eguneratzearen ordua eta profil aberastuen kopurua aurkituko dituzu.
 
-Aberastutako datuen lagin bat ikus dezakezu **Bezeroen aurrebista aberastua** teila. Hautatu **Gehiago ikusi** eta hautatu **Datuak** fitxa aberastutako profil bakoitzaren ikuspegi zehatzera sartzeko.
-
-### <a name="overview-card"></a>Ikuspegiko txartela
-
-Ikuspegi-txartelak aberastearen estaldurari buruzko xehetasunak erakusten ditu. 
-
-* **Helbideak prozesatu eta aldatu** : arrakastaz aberastu diren helbideak dituzten bezero-profilen kopurua.
-
-* **Helbideak prozesatu eta aldatu gabe** : Aitortu baina aldatu ez diren helbideak dituzten bezero-profilen kopurua. Normalean, sarrerako datuak baliozkoak direnean eta aberastearekin hobetu ezin direnean gertatzen da.
-
-* **Helbideak ez dira prozesatu eta ez dira aldatu** : Aitortu gabeko helbideak dituzten profilen kopurua. Normalean baliogabeak diren edo aberastasunak onartzen ez dituen sarrerako datuetarako.
+Aberastutako profil bakoitzaren ikuspegi zehatza sar dezakezu hautatuta **Ikusi aberastutako datuak**.
 
 ## <a name="next-steps"></a>Hurrengo urratsak
 
-[!INCLUDE [next-steps-enrichment](../includes/next-steps-enrichment.md)]
+Eraiki zure bezeroen datu aberastuen gainean. Sortu [segmentuak](segments.md) eta [neurriak](measures.md), eta are [datuak esportatu](export-destinations.md) zure bezeroei esperientzia pertsonalizatuak emateko.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
