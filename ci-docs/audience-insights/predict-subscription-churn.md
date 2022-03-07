@@ -3,20 +3,19 @@ title: Harpidetza txanda iragarpen (bideoa dauka)
 description: Aurreikusi bezeroren bat arriskuan dagoen jada enpresaren harpidetza produktu eta zerbitzuak erabiltzen ez dituelako.
 ms.date: 08/19/2020
 ms.reviewer: mhart
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
 author: zacookmsft
 ms.author: zacook
 manager: shellyha
-ms.openlocfilehash: 52ef7a8584cbae5dff0c800650b0238cc09fd6d5
-ms.sourcegitcommit: 15b1521041149716f8031cfa6d0dc61a56a5e2ff
-ms.translationtype: HT
+ms.openlocfilehash: b61e87ad833dd7a8e51c6619945a9e216d85f221
+ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
+ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "7967686"
+ms.lasthandoff: 02/25/2022
+ms.locfileid: "8354678"
 ---
-# <a name="subscription-churn-prediction-preview"></a>Harpidetzeko aurresateko iragarpena (aurrebista)
+# <a name="subscription-churn-prediction"></a>Harpidetza Churn iragarpen
 
 Harpidetza aurreikuspena lagundu egiten du iragartzen bezeroren bat arriskuan dagoen jada enpresaren harpidetza produktu eta zerbitzuak erabiltzen ez dituelako. Harpidetzearen aurreikuspen berriak sor ditzakezu **Adimena** > **iragarpenak** orria. Aukeratu **Nire iragarpenak** sortu dituzun beste iragarpen batzuk ikusteko.
 
@@ -63,7 +62,7 @@ Harpidetza aurreikuspena lagundu egiten du iragartzen bezeroren bat arriskuan da
 ## <a name="create-a-subscription-churn-prediction"></a>Sortu harpidetzaren aurresateko iragarpena
 
 1. Hartzaileei buruzko xehetasunetan, joan hona: **Adimena** > **Iragarpenak**.
-1. Hautatu botoia **Harpidetza kornearen eredua (aurrebista)** fitxa eta hautatu **Erabili eredu hau**.
+1. Hautatu **Harpidetza churn eredua** fitxa eta hautatu **Erabili eredu hau**.
    > [!div class="mx-imgBorder"]
    > ![Harpidetza Churn ereduko fitxa erabil ezazu Eredu hau botoiarekin.](media/subscription-churn-usethismodel.PNG "Harpidetza Churn ereduko fitxa erabil ezazu Eredu hau botoiarekin")
 

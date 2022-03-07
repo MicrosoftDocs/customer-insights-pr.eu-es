@@ -3,18 +3,20 @@ title: Ikuskaritza Dynamics 365 Customer Insights Azure Monitor-ekin
 description: Ikasi erregistroak nola bidali Microsoft Azure Monitorea.
 ms.date: 12/14/2021
 ms.reviewer: mhart
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: article
 author: brndkfr
 ms.author: bkief
 manager: shellyha
-ms.openlocfilehash: d962c359d70a068fcf939b61e340f86de088b419
-ms.sourcegitcommit: 0c3c473e0220de9ee3c1f1ee1825de0b3b3663c3
+searchScope:
+- ci-system-diagnostic
+- customerInsights
+ms.openlocfilehash: 2e0801c2b6af591e48a7df485a8523903c07617c
+ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "7920861"
+ms.lasthandoff: 02/25/2022
+ms.locfileid: "8354357"
 ---
 # <a name="log-forwarding-in-dynamics-365-customer-insights-with-azure-monitor-preview"></a>Saioa birbidaltzea Dynamics 365 Customer Insights Azure Monitor-ekin (aurrebista)
 
@@ -63,7 +65,7 @@ Customer Insights-en diagnostikoak konfiguratzeko, aurrebaldintza hauek bete beh
 
 1. Berretsi **Datuen pribatutasuna eta betetzea** adierazpena.
 
-1. Hautatu **Konektatu sistemara** helmugako baliabidera konektatzeko. Erregistroak helmugan agertzen hasten dira 15 minuturen buruan, APIa erabiltzen bada eta gertaerak sortzen baditu.
+1. Hautatu **Konektatu sistemara** helmugako baliabidera konektatzeko. Erregistroak 15 minuturen buruan helmugan agertzen hasten dira, APIa erabiltzen bada eta gertaerak sortzen baditu.
 
 ### <a name="remove-a-destination"></a>Helmuga bat kendu
 
@@ -89,7 +91,7 @@ Customer Insights-ek bi kategoria eskaintzen ditu:
 
 ## <a name="configuration-on-the-destination-resource"></a>Helmugako baliabidearen konfigurazioa
 
-Baliabide motaren aukeran oinarrituta, pauso hauek automatikoki aplikatuko dira:
+Baliabide motaren aukeran oinarrituta, urrats hauek automatikoki aplikatuko dira:
 
 ### <a name="storage-account"></a>Biltegiratze-kontua
 
@@ -158,7 +160,7 @@ The`identity` JSON objektuak honako egitura du
 | Eremua                         | Deskribapenak                                                                                                                          |
 | ----------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
 | `Authorization.UserRole`      | Erabiltzaileari edo aplikazioari esleitutako rola. Informazio gehiagorako, ikus [erabiltzailearen baimenak](permissions.md).                                     |
-| `Authorization.RequiredRoles` | Eragiketa egiteko beharrezkoak diren rolak. `Admin` rola baimenduta dago eragiketa guztiak egiteko.                                                    |
+| `Authorization.RequiredRoles` | Eragiketa egiteko beharrezkoak diren rolak. `Admin` rolak eragiketa guztiak egiteko baimena du.                                                    |
 | `Claims`                      | Erabiltzailearen edo aplikazioaren JSON web token (JWT) erreklamazioak. Erreklamazio-propietateak erakundearen eta erakundearen arabera aldatzen dira Azure Active Directory konfigurazioa. |
 
 #### <a name="api-properties-schema"></a>APIaren propietateen eskema
@@ -228,7 +230,7 @@ Lan-fluxuaren gertaerek propietate hauek dituzte.
 | ------------------------------- | -------- | ---- | ----------- |
 | `properties.eventType`                       | Yes      | Yes  | Beti`WorkflowEvent`, gertaera lan-fluxuaren gertaera gisa markatuz.                                                                                                                                                                                                |
 | `properties.workflowJobId`                   | Yes      | Yes  | Lan-fluxuaren exekuzioaren identifikatzailea. Lan-fluxuaren exekuzioaren barruan dauden lan-fluxu eta zereginen gertaera guztiek berdinak dituzte `workflowJobId`.                                                                                                                                   |
-| `properties.operationType`                   | Yes      | Yes  | Eragiketaren identifikatzailea, ikus [Eragiketa motak].(#operazio-motak)                                                                                                                                                                                       |
+| `properties.operationType`                   | Yes      | Yes  | Eragiketaren identifikatzailea, ikusi [Eragiketa motak].(#operazio-motak)                                                                                                                                                                                       |
 | `properties.tasksCount`                      | Yes      | No   | Lan-fluxua soilik. Lan-fluxuak abiarazten dituen ataza kopurua.                                                                                                                                                                                                       |
 | `properties.submittedBy`                     | Yes      | No   | Aukerakoa. Lan-fluxuaren gertaerak soilik. The Azure Active Directory [erabiltzailearen objectId](/azure/marketplace/find-tenant-object-id#find-user-object-id) nork eragin zuen lan-fluxua, ikus ere `properties.workflowSubmissionKind`.                                   |
 | `properties.workflowType`                    | Yes      | No   | `full` edo`incremental` freskatu.                                                                                                                                                                                                                            |
@@ -241,7 +243,7 @@ Lan-fluxuaren gertaerek propietate hauek dituzte.
 | `properties.identifier`                      | No       | Yes  | - OperationType =`Export`, identifikatzailea esportazio-konfigurazioaren gida da. <br> - OperationType =`Enrichment`, aberastearen gidaria da <br> - OperationTyperako`Measures` eta`Segmentation`, identifikatzailea entitatearen izena da. |
 | `properties.friendlyName`                    | No       | Yes  | Esportazio edo prozesatzen den entitatearen izen atsegina.                                                                                                                                                                                           |
 | `properties.error`                           | No       | Yes  | Aukerakoa. Errore-mezua xehetasun gehiagorekin.                                                                                                                                                                                                                  |
-| `properties.additionalInfo.Kind`             | No       | Yes  | Aukerakoa. OperationTyperako`Export` bakarrik. Esportazio mota identifikatzen du. Informazio gehiagorako, ikus [esportazio-helmugen ikuspegi orokorra](export-destinations.md).                                                                                          |
+| `properties.additionalInfo.Kind`             | No       | Yes  | Aukerakoa. OperationTyperako`Export` bakarrik. Esportazio mota identifikatzen du. Informazio gehiagorako, ikus [esportazio-helmuguen ikuspegi orokorra](export-destinations.md).                                                                                          |
 | `properties.additionalInfo.AffectedEntities` | No       | Yes  | Aukerakoa. OperationTyperako`Export` bakarrik. Esportazioan konfiguratutako entitateen zerrenda dauka.                                                                                                                                                            |
 | `properties.additionalInfo.MessageCode`      | No       | Yes  | Aukerakoa. OperationTyperako`Export` bakarrik. Esportaziorako mezu zehatza.                                                                                                                                                                                 |
 | `properties.additionalInfo.entityCount`      | No       | Yes  | Aukerakoa. OperationTyperako`Segmentation` bakarrik. Segmentuak zenbat kide dituen adierazten du.                                                                                                                                                    |

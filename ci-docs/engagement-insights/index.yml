@@ -1,92 +1,29 @@
 ### YamlMime:Landing
-title: Parte-hartzearen xehetasunen gaitasuna Dynamics 365 Customer Insights-en (aurreargitalpena)
-summary: Bildu zure webguneetarako datuak. Ulertu bezeroen interakzioak eta zure webguneen erabilera modu interaktiboan. Erabil ezazu konpromisoen eta publikoaren estatistiken arteko integrazio sakona zure denbora errealeko portaeraren analisia bezeroaren profileko txostenekin aberasteko. Aberastu bezeroen profilak webeko jarduerekin, denbora errealeko portaera datuak lortzeko bezero garrantzitsuen datuekin batera. Eraldatu zure negozioa bezeroen datuetatik berehala balioa lortzeko.
+title: Engaiamenduaren estatistiken aurrebista amaitzen da
+summary: The Dynamics 365 Customer Insights konpromisoari buruzko informazio-gaitasunaren aurrebista 2022ko otsailaren 15ean amaitu zen. Aldaketa honek esan nahi du Customer Insights-en probako esperientziak ez duela inbutuak sortzeko gaitasunik ezta txostenak egiteko beste funtzionalitaterik ere. Customer Insights-en beste hainbat ezaugarri arakatu eta ebaluatzera gonbidatzen zaitugu, Microsoft Customer Data Platform (CDP). Mesedez, jarri harremanetan zure Microsoft kontuko taldearekin zuzenean gaitasunen aurrebistaren amaierari buruzko galderarik baduzu. Zure kontu-taldeak datozen abiarazteen berri emango dizu. Eskerrik asko.
 metadata:
   title: Parte-hartzearen xehetasunen (aurreargitalpena) dokumentazioa
   description: Lagundu zentroa lotura gakoekin konpromisoak ezagutzeko.
-  ms.service: customer-insights
   ms.subservice: engagement-insights
   ms.topic: hub-page
   author: m-hartmann
   ms.author: mhart
   ms.reviewer: mhart
   ms.date: 09/15/2021
-  ms.openlocfilehash: bf2e40b1ca304e7b26687eaff298d2e70615cd2b
-  ms.sourcegitcommit: fecdee73e26816c42d39d160d4d5cfb6c8a91596
-  ms.translationtype: HT
+  ms.openlocfilehash: 99933c69c791da12815ebee3edb6413276b19b09
+  ms.sourcegitcommit: 1946d7af0bd2ca216885bec3c5c95009996d9a28
+  ms.translationtype: MT
   ms.contentlocale: eu-ES
-  ms.lasthandoff: 09/15/2021
-  ms.locfileid: "7494169"
+  ms.lasthandoff: 02/25/2022
+  ms.locfileid: "8350451"
 landingContent:
-- title: Honi buruz
+- title: Jarri harremanetan
   linkLists:
   - linkListType: overview
     links:
-    - text: Gaitasunaren onurak
-      url: overview.md
-    - text: Terminoen glosarioa
-      url: glossary.md
-    - text: Eginbide eguneratuak eta hobetuak
-      url: /dynamics365-release-plan/2021wave1/customer-data-platform/engagement-insights/planned-features
-- title: Erregistratzea
-  linkLists:
-  - linkListType: how-to-guide
-    links:
-    - text: Hasi erabiltzen
-      url: get-started.md
-    - text: Sortu laneko area bat
-      url: create-workspace.md
-    - text: Hornitu webgunea
-      url: instrument-website.md
-- title: Ikusi eta iragazi txostenak
-  linkLists:
-  - linkListType: how-to-guide
-    links:
-    - text: Ikusi txostenak
-      url: view-reports.md
-    - text: Ikusi profil bateratuen txostena
-      url: profile-reports.md
-    - text: Erabili hartzaileen segmentuak txostenak iragazteko
-      url: integrate-audience-insights-segments.md
-- title: Analizatu
-  linkLists:
-  - linkListType: how-to-guide
-    links:
-    - text: Sortu inbutuko txostenak
-      url: funnel-reports.md
-    - text: Analizatu portaera-datuak
-      url: curate-dimensions.md
-    - text: Sortu txosten pertsonalizatuak
-      url: custom-reports.md
-    - text: Sortu gertaera mugatuak
-      url: refined-events.md
-    - text: Esportatu gertaerak
-      url: export-events.md
-- title: Garatzaileentzako baliabideak
-  linkLists:
-  - linkListType: reference
-    links:
-    - text: Garatzaileentzako baliabideak
-      url: developer-resources.md
-    - text: WebSDK lagina
-      url: websdk-sample.md
-    - text: Web SDK aurreratuen egoerak
-      url: advanced-SDK-implementation.md
-    - text: Android SDK adibidea
-      url: get-started-android.md
-    - text: iOS SDK lagina
-      url: get-started-ios.md
-- title: Administrazioa
-  linkLists:
-  - linkListType: how-to-guide
-    links:
-    - text: Kudeatu inguruneak eta laneko areak
-      url: manage-environments-workspaces.md
-    - text: Konektatu hartzaileen xehetasunetara
-      url: integrate-audience-insights-engagement-insights.md
-    - text: Kudeatu cookieak eta erabiltzaileen baimena
-      url: user-consent-storage.md
-    - text: Ezabatu eta esportatu datu pertsonalak
-      url: delete-export-personal-data.md
-    - text: Zerbitzuaren mugak
-      url: ../service-limits.md
+    - text: Sartu Dynamics 365 komunitatean
+      url: https://go.microsoft.com/fwlink/?linkid=2073991
+    - text: Partekatu ideiak
+      url: https://go.microsoft.com/fwlink/?linkid=2074172
+    - text: Eman arazo baten berri
+      url: https://go.microsoft.com/fwlink/?linkid=2079641

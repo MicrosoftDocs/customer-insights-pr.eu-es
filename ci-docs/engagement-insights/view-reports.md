@@ -4,17 +4,16 @@ description: Erabili eskuragarri dauden txostenak zure webgunean denbora erreale
 author: darrinw-docs
 ms.reviewer: mhart
 ms.author: darrinw
-ms.date: 06/18/2021
-ms.service: customer-insights
+ms.date: 10/01/2021
 ms.subservice: engagement-insights
 ms.topic: conceptual
 ms.manager: shellyha
-ms.openlocfilehash: cb6d9ab75b95a5f677d2267f5412a55327930987b2fc3a1a21958633a8116bd2
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
-ms.translationtype: HT
+ms.openlocfilehash: 03b0b4bab0d5d9c2ae641c85aac8174ec1668d45
+ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
+ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7036633"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8229725"
 ---
 # <a name="view-reports"></a>Ikusi txostenak
 
@@ -92,12 +91,18 @@ Mugikorreko txostenak denbora errealeko erabileran, aplikazioetan eta erabiltzai
 
 - **Kokalekuak** erakutsi aplikazio-erabiltzaileei buruzko informazioa herrialdearen, eskualdearen eta hiriaren arabera.
 
-## <a name="filter-by-time-or-value"></a>Iragazi denbora edo balioaren arabera
+## <a name="filter-by-time-or-date-range"></a>Iragazi denbora edo data tartearen arabera
 
-Web edo mugikorreko txosten batean denbora tartea edo balioa hauta dezakezu, balio edo denbora tarte batean zentratzeko. 
+Txosten web edo mugikor batean denbora tartea edo data tartea hauta dezakezu balio edo denbora tarte batean zentratzeko. 
 
-- Denbora-tarte bat hautatzeko, hautatu **Gehiago [...]** txostenaren goitibeherako zerrendatik. Denbora tartea hautatzea desgaituta dago denbora errealeko erabilera txostenean; denbora errealeko erabilera txostenaren denbora tartea "orain" da.
+- Denbora tartea hautatzeko, txostenaren ikuspegiaren goiko eskuineko izkinan, hautatu balio bat txostenaren goitibeherako zerrendan. Ere aukeratu dezakezu **Data tarte finkoa**. 
 
-- Txosten gehienetan, hautatu diagrama edo zerrenda bateko balioa hautatutako balioaren txostena iragazteko.
+  :::image type="content" source="media/filter-by-time.png" alt-text="Iragazi denbora edo data tartearen arabera.":::   
+
+- Txosten gehienetan, hautatu diagrama edo zerrendako balioa txostena iragazteko.
+
+> [!NOTE]
+> Denbora tartea hautatzea desgaituta dago denbora errealeko erabilera txostenean; denbora errealeko erabilera txostenaren denbora tartea "orain" da.
+
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

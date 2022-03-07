@@ -1,39 +1,33 @@
 ---
-title: Gaitu kutxaz kanpoko profilen txostenak
-description: Nola sortu kutxaz kanpoko profileko txostenak, generoaren, adinaren eta jatorrizko eskualdearen edo eskualdearen arabera.
+title: Gaitu kutxaz kanpoko (OOB) profilen txostenak
+description: Nola sortu kutxaz kanpoko (OOB) profileko txostenak, generoaren, adinaren eta jatorrizko eskualdearen edo eskualdearen arabera.
 author: darrinw-docs
 ms.reviewer: mhart
 ms.author: darrinw
-ms.date: 05/03/2021
-ms.service: customer-insights
+ms.date: 10/01/2021
 ms.subservice: engagement-insights
 ms.topic: conceptual
 ms.manager: shellyha
-ms.openlocfilehash: bf2ec67c9fb99918b87841d3c0b131934e31b58b
-ms.sourcegitcommit: 0ceb46c4f57ab49d3a2ebb1c8a816bbafe979e3d
-ms.translationtype: HT
+ms.openlocfilehash: 4c165c4278a4870e6872d460e20cf7cb1eb8df83
+ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
+ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 09/09/2021
-ms.locfileid: "7486105"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8233939"
 ---
-# <a name="out-of-box-profile-reports"></a>Kutxaz kanpoko profilen txostenak
+# <a name="out-of-box-oob-unified-profile-reports"></a>Kutxaz kanpoko (OOB) profilen txosten bateratuak
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
-Txostena bilduma bat da datuen ikuspegia laguntzeko ulertzen nola jokatzen duten erabiltzaileek. Customer Insights publikoaren estatistiketara konektatuz gero, konpromiso estatistikek bezeroen profil bateratuei buruzko informazioa duen txostena erakuts dezakete. Txosten honek dituzun profil kopurua biltzen du, generoaren, adinaren eta kokapen geografikoaren arabera multzokatuta.
+Profilen txosten bateratua datuen bistaratze bilduma da, erabiltzaileek nola jokatzen duten ulertzen laguntzeko. Customer Insights-en audientzia-gaitasunarekin konektatuz gero, konpromiso-estatistikek OOB txostenak bistaratu ditzakete bezeroen profil bateratuei buruzko informazioarekin. Txosten honek dituzun profil kopurua biltzen du, generoaren, adinaren eta kokapen geografikoaren arabera multzokatuta. Bezeroen profilen inguruko informazioa lortzeko, ikusi [Bezeroen profilak](../audience-insights/customer-profiles.md).
 
 ## <a name="prerequisites"></a>Aurrebaldintzak
 
-Ikusleei buruzko informazioaren inguruneak bezeroak kudeatzen dituen datuak gorde behar ditu Azure Data Lake Storage kontua.
-
-Customer Insights-ek kudeatutako datu-biltegi batean audientzia estatistiken gaitasunaren edo ingurune baten proba bertsioa erabiltzen ari bazara, [jarri gurekin harremanetan](https://go.microsoft.com/fwlink/?linkid=2145734) laguntza lortzeko.  
-
+Inguruneko administratzaile batek behar du [lotura sortu konpromisoen eta ikusleen ikuspegien artean](integrate-audience-insights-engagement-insights.md).
 
 ## <a name="enable-the-customer-profile-report"></a>Gaitu bezeroaren profilaren txostena
 
-Inguruneen administratzaileak [parte-hartzearen eta hartzaileen xehetasunak estekatu behar ditu](integrate-audience-insights-engagement-insights.md).
-
-Konexioaren xehetasunak zehaztu ondoren, administratzaileak erakundeko beste pertsonei sarbidea eman diezaieke txostena ikusteko. Ingurunearen administrazioa konfiguratzeko konexioa automatikoki atzi dezake txostena. 
+Konpromisoen eta publikoaren estatistiken arteko lotura zehaztu ondoren, administratzaileak erakundeko beste pertsonei sarbidea eman diezaieke txostena ikusteko. Ingurunearen administrazioa konfiguratzeko konexioa automatikoki atzi dezake txostena. 
 
 Konexioa osatu ondoren, **Profilak** eginbidea erabilgarri egongo da ezkerreko nabigazio panelean. 
 

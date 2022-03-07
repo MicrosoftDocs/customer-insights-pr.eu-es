@@ -3,18 +3,17 @@ title: Aberastu bezeroen profilak datuekin Microsoft Office 365
 description: Erabili jabedun datuak Microsoft Office zure bezeroen profilak konpromiso datuekin aberasteko.
 ms.date: 12/03/2021
 ms.reviewer: mhart
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
 author: jodahl
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: a30e09b5ed491c8d36019b5f0d35e0a2f7a0199c
-ms.sourcegitcommit: 48d799535fad84e8b63c80aef48b5c5e87628f58
+ms.openlocfilehash: 938a9de83fd8f5ff0c9ae815d626cdfa35228aba
+ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "7889769"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8228459"
 ---
 # <a name="enrich-customer-profiles-with-engagement-data-preview"></a>Aberastu bezeroen profilak konpromiso datuekin (aurrebista)
 
@@ -28,7 +27,7 @@ Aberastea konfiguratzeko, aurrebaldintza hauek bete behar dira:
 
 - Aktibo bat duzu Office 365 hodeiko lizentzia.
 - Zuk daukazu [bezeroen profil bateratuak](customer-profiles.md) oinarrituta [negozio kontuak](work-with-business-accounts.md).
-- Zure Customer Insights inguruneak a izan behar du [Microsoft Dataverse erakundea erantsita](create-environment.md#step-3-connect-to-microsoft-dataverse).
+- Zure Customer Insights inguruneak a izan behar du [Microsoft Dataverse erakunde erantsia](create-environment.md#step-3-connect-to-microsoft-dataverse).
 - Zuk daukazu [administratzailea](permissions.md#administrator) baimenak.
 - Zure baimena duzu, edo lor dezakezu Office 365 maizter administratzailea erabiltzeko Office 365 eman beharreko datuak **Antolakuntzarako ikuspegiak** Dynamics 365 aplikazioen barruan.
 
@@ -36,7 +35,7 @@ Aberastea konfiguratzeko, aurrebaldintza hauek bete behar dira:
 
 1. Hartzaileei buruzko xehetasunetan, joan hona: **Datuak** > **Aberastea**.
 
-1. Joan zaitez **Ezagutu** fitxa eta hautatu **Aberastu nire datuak** gainean **Kontu-konpromisoa** teila.
+1. Joan zaitez **Ezagutu** fitxa eta hautatu **Aberastu nire datuak** gainean **Kontuaren parte hartzea** teila.
 
    :::image type="content" source="media/enrichment-office-tile.png" alt-text="Kontuaren konpromiso-lauza.":::
    
@@ -54,7 +53,7 @@ Aberastea konfiguratzeko, aurrebaldintza hauek bete behar dira:
 
 ## <a name="office-365-tenant-administrator-consent"></a>Office 365 maizter administratzaileen baimena
 
-Baten adostasuna Office 365 maizter-administratzailea behar da aberastea aktibatzeko. E-mail bat bidaltzen da Office 365 maizter-administratzaileei aberastea gordetzen denean, eta horrek Dynamics 365 aplikazioei zure enpresak erabiltzeko baimena emateko eta berrikusteko eskatzen die.Office 365 eman beharreko datuak **Antolakuntzarako ikuspegiak**. The Office 365 maizter administratzaileak zuzenean baimena eman dezake bere Office 365 administrazio kontsola, hautatuz **Antolakuntzarako ikuspegiak**.
+Baten adostasuna Office 365 maizter-administratzailea behar da aberastea aktibatzeko. E-mail bat bidaltzen da Office 365 maizter-administratzaileei aberastea gordetzen denean, eta horrek Dynamics 365 aplikazioei zure enpresak erabiltzeko baimena emateko eta berrikusteko eskatzen die.Office 365 eman beharreko datuak **Antolakuntzarako ikuspegiak**. The Office 365 maizter-administratzaileak zuzenean baimena eman dezake Office 365 administrazio kontsola, hautatuz **Antolakuntzarako ikuspegiak**.
 
 ## <a name="running-the-enrichment-for-the-first-time"></a>Aberasketa lehen aldiz exekutatzen
 
@@ -76,7 +75,7 @@ Era berean, denboran zehar aberastutako bezeroen kopurua eta aberaste-datuen aur
 
 :::image type="content" source="media/enrichment-office-results-overview.png" alt-text="Abantaila prozesua exekutatu ondoren, emaitzen aurrebista.":::
 
-Datu guztiak kontu mailara arte batzen dira. Sistemak konpromiso puntuazio bat kalkulatzen du, 0tik 100era bitartekoa, kontu bakoitzeko. Konpromisoaren puntuazioak mezu elektronikoetan eta bileretan kontuaren konpromisoaren neurri konposatua eskaintzen du zure beste kontuekiko. Ondorengo zerrendak kontu-konpromisoak aberasteak ematen dituen datu bateratuak ditu:
+Datu guztiak kontu mailara arte batzen dira. Sistemak konpromiso puntuazio bat kalkulatzen du, 0tik 100era bitartekoa, kontu bakoitzeko. Konpromisoaren puntuazioak mezu elektronikoetan eta bileretan kontuaren konpromisoaren neurketa konposatua eskaintzen du zure beste kontuekiko. Ondorengo zerrendak kontu-konpromisoa aberasteak ematen dituen datu bateratuak ditu:
 
 
 

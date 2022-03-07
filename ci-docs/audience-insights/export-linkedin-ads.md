@@ -3,18 +3,17 @@ title: Esportatu Customer Insights datuak LinkedIn Ads-era
 description: Ikasi konexioa konfiguratzen eta LinkedIn Ads-era esportatzen.
 ms.date: 10/08/2021
 ms.reviewer: mhart
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 867a6541734746f75a35faaa8d3861e0479d6114
-ms.sourcegitcommit: 9558ff772ee6c944fcb8db4bfc8cda13b38a1bff
-ms.translationtype: HT
+ms.openlocfilehash: 7a6bb466652b8703a4784329a5e675965f557e82
+ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
+ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 11/29/2021
-ms.locfileid: "7866873"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8231088"
 ---
 # <a name="export-segments-to-linkedin-ads-preview"></a>Esportatu segmentuak LinkedIn Ads-era (aurrebista)
 
@@ -22,7 +21,7 @@ Esportatu bezeroen profil bateratuen segmentuak LinkedIn Ads-era bat datozen har
 
 ## <a name="prerequisites"></a>Aurrebaldintzak
 
--   Bat daukazu [LinkedIn Campaign Manager kontua](https://business.linkedin.com/marketing-solutions/ads) eta dagozkion administratzaile-kreditazioak.
+-   Badituzu [LinkedIn Campaign Manager kontua](https://business.linkedin.com/marketing-solutions/ads) eta dagozkien administratzaile egiaztagiriak.
 -   Badituzu [konfiguratutako segmentuak](segments.md) hartzaileei buruzko xehetasunetan.
 -   Esportatutako segmentuetako bezeroen profilek helbide elektronikoa duen eremu bat dute.
 
@@ -49,7 +48,7 @@ Esportatu bezeroen profil bateratuen segmentuak LinkedIn Ads-era bat datozen har
 
 1. Aukeratu **Konektatu** Campaign Monitor konexioa hasieratzeko.
 
-1. Hautatu **Autentifikatu LinkedIn-ekin** eta eman zure administratzailearen kredentzialak LinkedIn Campaign Manager-erako.
+1. Aukeratu **Autentifikatu LinkedIn-ekin** eta eman zure administratzaile egiaztagiriak LinkedIn Campaign Manager-erako.
 
 1. Aukeratu **Gehitu zeure burua esportazio erabiltzaile gisa** eta eman zure Customer Insights kredentzialak.
 
@@ -69,7 +68,7 @@ Esportazio bat konfigura dezakezu mota honetako konexiorako sarbidea baduzu. Inf
 
 1. Urtean **Datuen bat etortzea** atalean, kontaktuak bideratzeko, hautatu bezeroaren helbide elektronikoa, Apple Ad IDa, Google Ad IDa, Google Erabiltzailearen IDa edo first eta abizen adierazten duen eremu bat gutxienez. Enpresaren bideratzea aukeratzen baduzu, hautatu gutxienez enpresaren izena, posta elektronikoaren domeinua, LinkedIn orriaren URLa, Stock ikurra edo Webgunea adierazten duen eremua. Eremu gehigarriak hauta daitezke zure esportazioa gehiago definitzeko. 
 
-1. Hautatu esportatu nahi dituzun segmentuak. LinkedIn Campaign Manager-en bat datozen audientziak automatikoki sortuko dira esportatzeko hautatu dituzun segmentuen izenarekin. Segmentu bakoitzak bat datorren hartzaile bereizi bat sortuko du. 
+1. Hautatu esportatu nahi dituzun segmentuak. LinkedIn Campaign Manager-eko bat datozen hartzaileak automatikoki sortuko dira esportatzeko hautatu dituzun segmentuen izenarekin. Segmentu bakoitzak bat datorren hartzaile bereizi bat sortuko du. 
 
 1. Sakatu **Gorde**.
 
@@ -80,6 +79,6 @@ Esportazioa guztiekin egiten da [freskatze programatua](system.md#schedule-tab).
 
 ## <a name="data-privacy-and-compliance"></a>Datuen pribatutasuna eta arau-gordetzea
 
-Dynamics 365 Customer Insights LinkedIn Ads-era datuak transmititzeko gaitzen duzunean, Dynamics 365 Customer Insights-en betetze-mugetatik kanpo datuak transferitzea onartzen duzu, datu pertsonalak bezalako datu potentzialak barne. Microsoft-ek datu horiek transferituko ditu zure aginduz, baina zu arduratuko zara LinkedIn Ads-ek pribatutasun edo segurtasun betebeharrak betetzen dituela ziurtatzeaz. Informazio gehiago eskuratzeko, ikusi [Microsoft-en pribatutasun-adierazpena](https://go.microsoft.com/fwlink/?linkid=396732).
+Gaitzen duzunean Dynamics 365 Customer Insights datuak LinkedIn Ads-era igortzeko, datuak betetzeko mugatik kanpo transferitzea baimentzen duzu Dynamics 365 Customer Insights, datu pertsonalak bezalako datu sentikorrak barne. Microsoft-ek datu horiek transferituko ditu zure aginduz, baina zu arduratuko zara LinkedIn Ads-ek pribatutasun edo segurtasun betebeharrak betetzen dituela ziurtatzeaz. Informazio gehiago eskuratzeko, ikusi [Microsoft-en pribatutasun-adierazpena](https://go.microsoft.com/fwlink/?linkid=396732).
 
-Zure Dynamics 365 Customer Insights Administratzaileak esportazio-helmuga hau edozein unetan ken dezake funtzionalitate hau erabiltzeari uzteko.
+Funtzio hau erabiltzeari uzteko, esportazioaren helburuko kokaleku hori ken dezake Dynamics 365 Customer Insights administratzaileak.

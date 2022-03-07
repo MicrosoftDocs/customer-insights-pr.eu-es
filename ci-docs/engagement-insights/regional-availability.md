@@ -4,26 +4,25 @@ description: Lortu informazio gehiago zerbitzua hedatzen den eskualdeei eta leku
 author: mkisel11
 ms.reviewer: mhart
 ms.author: mkisel
-ms.date: 09/01/2021
-ms.service: customer-insights
+ms.date: 09/28/2021
 ms.topic: article
 ms.manager: shellyha
-ms.openlocfilehash: c89637cbbe6626f95bcadb1f69831a1647f448a4
-ms.sourcegitcommit: 5704002484cdf85ebbcf4e7e4fd12470fd8e259f
-ms.translationtype: HT
+ms.openlocfilehash: 08435e651c3706257b8c0548e6e9bbf98f39dce9
+ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
+ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "7483282"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8228091"
 ---
 # <a name="regional-availability-for-dynamics-365-customer-insights"></a>Dynamics 365 Customer Insights-en eskualdeko erabilgarritasuna
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
-Parte-hartzearen xehetasunak, Dynamics 365 Customer Insights-en gaitasuna dena, bezeroen euren datuak gordetzeko eskualde gehiago sartzen ditu gradualki. Administratzaileek eskualdea aukeratu dezakete [ingurune bat sortzen dutenean](manage-environments-workspaces.md#create-an-environment). 
+Parte-hartzearen xehetasunak, Dynamics 365 Customer Insights-en gaitasuna dena, bezeroen euren datuak gordetzeko eskualde gehiago sartzen ditu gradualki. Administratzaileek eskualdea aukeratu dezakete [ingurune bat sortzen dutenean](create-new-environment.md). 
 
-Lehen aldiz parte-hartzearen xehetasunak konfiguratzen dituzunean, eskualdea aukeratu dezakezu [lehenengo exekuzioaren esperientzia gidatuan](quickstart.md). Ondoren, ingurune berri bakoitzak datuak gordeko diren ingurunea aukeratzeko aukera ematen dizu.
+Lehen aldiz parte-hartzearen xehetasunak konfiguratzen dituzunean, eskualdea aukeratu dezakezu [lehenengo exekuzioaren esperientzia gidatuan](quickstart.md). Geroago, ingurune berri bakoitzak datuak gordeko diren eskualdea aukeratzeko aukera ematen du.
 
-Unean bi kokaleku daude: AEB eta Europa. Erabiltzaileek AEBetako mendebaldeko eskualdea eta Europa iparraldekoa aukeratu dezakete.
+Gaur egun AEBetako eta Europako geografiak onartzen ditugu. Erabiltzaileek eskualde horien artean aukeratu dezakete: AEBetako mendebaldea, AEBetako ekialdea, Europa iparraldea eta Europa mendebaldea.
 
 Erakunde batek eskualde desberdinetako inguruneak mantendu ditzake. Adibidez, Ingurumen A-k AEBetako Mendebaldeko datuak gordetzen ditu eta Ingurumen B Europako iparraldean.
 

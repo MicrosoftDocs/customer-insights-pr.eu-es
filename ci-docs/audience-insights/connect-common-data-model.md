@@ -2,19 +2,23 @@
 title: Konektatu Common Data Model-eko datuak Azure Data Lake kontu batekin
 description: Egin lan Common Data Model-ekin Azure Data Lake Storage erabiliz.
 ms.date: 01/25/2022
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
 author: adkuppa
 ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 8a871d65bd79d3246984e23fb52210c8dc7259b8
-ms.sourcegitcommit: 7a99f3490e6582c2bc2b38019ed1898348b0eaba
-ms.translationtype: HT
+searchScope:
+- ci-data-sources
+- ci-create-data-source
+- ci-attach-cdm
+- customerInsights
+ms.openlocfilehash: 1e3b28316c06d6a15dd5690837c365b0677a882e
+ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
+ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 01/25/2022
-ms.locfileid: "8027037"
+ms.lasthandoff: 02/25/2022
+ms.locfileid: "8354902"
 ---
 # <a name="connect-to-a-common-data-model-folder-using-an-azure-data-lake-account"></a>Konektatu Common Data Model karpetara Azure Data Lake kontua erabiliz
 
@@ -57,7 +61,7 @@ Artikulu honek Azure Data Lake Storage Gen2 kontua erabiliz Common Data Model-ek
    > [!NOTE]
    > Inguruneko beste datu-iturburu batekin lotutako model.json edo manifest.json fitxategia ez da zerrendan agertuko.
 
-1. Aukeratutako model.json edo manifest.json fitxategian eskuragarri dauden entitateen zerrenda ikusiko duzu. Berrikusi eta hautatu erabilgarri dauden entitateen zerrendatik, gero hautatu **Gorde**. Datu-iturburu berriko hautatutako entitate guztiak sartuko dira.
+1. Hautatutako model.json edo manifest.json fitxategian eskuragarri dauden entitateen zerrenda ikusiko duzu. Berrikusi eta hautatu erabilgarri dauden entitateen zerrendatik, gero hautatu **Gorde**. Datu-iturburu berriko hautatutako entitate guztiak sartuko dira.
    > [!div class="mx-imgBorder"]
    > ![Elkarrizketa-koadroa model.json fitxategi bateko entitateen zerrenda erakusten da.](media/review-entities.png)
 

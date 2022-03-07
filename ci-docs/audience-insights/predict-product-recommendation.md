@@ -1,22 +1,21 @@
 ---
 title: Produktuen gomendioen iragarpena
 description: Aurreikusi litekeena dela bezeroak eros ditzakeen produktuak edo haiekin elkarreragitea.
-ms.date: 09/13/2021
+ms.date: 01/13/2022
 ms.reviewer: mhart
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: wmelewong
 ms.author: wameng
 manager: shellyha
-ms.openlocfilehash: a75a245bc721d65643fa78d46f2be52291595a5a
-ms.sourcegitcommit: fecdee73e26816c42d39d160d4d5cfb6c8a91596
-ms.translationtype: HT
+ms.openlocfilehash: b9a9c7eb4ee3f2f0510a609757a36e5d5796a2f7
+ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
+ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "7494524"
+ms.lasthandoff: 02/25/2022
+ms.locfileid: "8355736"
 ---
-# <a name="product-recommendation-prediction-preview"></a>Produktu-gomendioen iragarpena (aurreargitalpena)
+# <a name="product-recommendation-prediction"></a>Produktuen gomendioen iragarpena
 
 Produktuen gomendio ereduak produktu iragarleentzako gomendio multzoak sortzen ditu. Gomendioak aurreko erosketa portaeran eta antzeko erosketa ereduak dituzten bezeroetan oinarritzen dira. Produktu gomendioen iragarpen berriak sor ditzakezu **Adimena** > **Iragarpenak** orrialdea. Aukeratu **Nire iragarpenak** sortu dituzun beste iragarpen batzuk ikusteko.
 
@@ -54,7 +53,7 @@ Ezaugarri hau probatzea interesatzen bazaizu baina beheko baldintzak betetzeko d
 
 > [!NOTE]
 > - Ereduak zure bezeroen transakzioen historia eskatzen du. Transakzio baten definizioa nahiko malgua da. Erabiltzaile-produktu elkarreragina deskribatzen duten datu guztiek sarrera gisa funtziona dezakete. Adibidez, produktu bat erostea, klasea hartzea edo ekitaldi batera joatea.
-> - Une honetan transakzioen historiako entitate bakarra konfigura daiteke. Erosketa entitate bat baino gehiago badaude, elkartu Power Query-en datuak kontsumitu aurretik.
+> - Une honetan transakzioen historiako entitate bakarra konfigura daiteke. Erosketa-entitate anitz badaude, elkartu itzazu Power Query datuak sartu aurretik.
 > - Ordena eta eskaeraren xehetasunak entitate desberdinak badira, batu haiekin ereduan erabili aurretik. Ereduak ez du entitate bateko eskaera IDarekin edo ordainagiriaren IDarekin soilik funtzionatzen.
 
 
@@ -62,7 +61,7 @@ Ezaugarri hau probatzea interesatzen bazaizu baina beheko baldintzak betetzeko d
 
 1. Customer Insights atalean, joan **Inteligentzia** > **Iragarpenak**.
 
-1. Aukeratu **Produktuen gomendioen eredua (aurrebista)** lauza eta hautatu **Erabili eredu hau**.
+1. Hautatu **Produktuen gomendioen eredua** fitxa eta hautatu **Erabili eredu hau**.
    > [!div class="mx-imgBorder"]
    > ![Produktuen gomendioaren ereduaren lauza Erabili eredu botoiarekin.](media/product-recommendation-usethismodel.PNG "Produktuen gomendioaren ereduaren lauza Erabili eredu botoiarekin")
 
@@ -79,11 +78,11 @@ Ezaugarri hau probatzea interesatzen bazaizu baina beheko baldintzak betetzeko d
 1. Ezarri **Produktu kopurua** bezero bati gomendatu nahi diozu. Balio hori zure bidalketa metodoak datuak nola betetzen dituen araberakoa da. Hiru produktu gomendatzen badituzu, ezarri balio hori horren arabera.
    
    >[!TIP]
-   > Aukeratu dezakezu **Gorde eta itxi** edozein unetan aurreikuspena zirriborro gisa gordetzeko. Iragarpen zirriborroa hemen aurkituko duzu **Nire iragarpenak** fitxa.
+   > Hautatu dezakezu **Gorde zirriborroa** edozein unetan iragarpen zirriborro gisa gordetzeko. Iragarpen zirriborroa hemen aurkituko duzu **Nire iragarpenak** fitxa.
 
-1. Aukeratu **Bezeroek berriki erosi dituzten produktuak iradoki** nahi dituzun.
+1. Aukeratu bezeroek duela gutxi erosi dituzten produktuak sartu nahi dituzun **Errepikatu erosketak espero dira** eremua.
 
-1. *Ez* aukeratu baduzu, gomendatu duela gutxi erositako produktuak, ezarri **Atzera begiratu leihoa**. Ezarpen honek produktuak erabiltzaileari berriro gomendatu aurretik ereduak kontuan hartzen duen denbora-tartea zehazten du. Adibidez, adierazi bezero batek bi urtean behin ordenagailu eramangarri bat erosten duela. Leiho honetan azken bi urteetako erosketa historia ikusiko da, eta elementuren bat aurkitzen badute, elementua gomendioetatik iragazi egingo da.
+1. Ezarri **Begiratu atzera leihoa**. Ezarpen honek produktuak erabiltzaileari berriro gomendatu aurretik ereduak kontuan hartzen duen denbora-tartea zehazten du. Adibidez, adierazi bezero batek bi urtean behin ordenagailu eramangarri bat erosten duela. Leiho honetan azken bi urteetako erosketa historia ikusiko da, eta elementuren bat aurkitzen badute, elementua gomendioetatik iragazi egingo da.
 
 1. Hautatu **Hurrengoa**
 

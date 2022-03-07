@@ -1,24 +1,23 @@
 ---
 title: Customer Insights entitateen eskemak Common Data Model-en
 description: Egin lan entitateekin Common Data Model-en.
-ms.date: 04/17/2020
+ms.date: 08/13/2021
 ms.reviewer: mhart
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: mukeshpo
 ms.author: mukeshpo
 manager: shellyha
-ms.openlocfilehash: e21f8a9422357fbc5c9425f91f3ba241c9dec9d8
-ms.sourcegitcommit: 8cc70f30baaae13dfb9c4c201a79691f311634f5
-ms.translationtype: HT
+ms.openlocfilehash: f0af2a6d8a90ff01ea9d4eeb29f34113261fd0d4
+ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
+ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 07/30/2021
-ms.locfileid: "6692290"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8230986"
 ---
 # <a name="entity-schemas-in-common-data-model"></a>Entitateen eskema datu arrunten ereduan
 
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
+
 
 [Datu eredu arrunta](/common-data-model/) adierazpen-zehaztapena da, eta negozioen eta produktibitatearen aplikazioetan gehien erabiltzen diren kontzeptuak eta jarduerak ordezkatzen dituzten entitate estandarren definizioa. Eredu hori datu behaketa eta analitikoetara ere hedatzen ari da. Datu arrunten ereduak negozio-erakunde zehaztuak, modularrak eta hedagarriak eskaintzen ditu (hala nola, Kontua, Negozio Unitatea, Kasua, Kontaktua, Leadea, Aukera eta Produktua), baita saltzaileekin, langileekin eta bezeroekin elkarreraginak ere, hala nola jarduerak eta zerbitzua maila hitzarmenak. Edonork eraiki eta hedatu ahal izango ditu Datu Ereduen eredu arrunten definizioak negozioetarako berariazko ideiak osatzeko.
 
@@ -42,7 +41,7 @@ Informazio gehiago lortzeko, ikusi dokumentazioari buruzko dokumentazioa [Custom
 
 ## <a name="view-entities-using-the-common-data-model-entity-navigator"></a>Ikusi entitateak datu ereduen entitate nabigatzailea erabiliz
 
-Entitateak ikus ditzakezu [Common Data Model-en entitateen nabigatzailean](https://microsoft.github.io/CDM/). Hautatu botoia **Kargatu GitHub-etik!** Botoian eta nabigatu **foundationCommon** > **crmCommon** > **soluzioak** > **customerInsights** non aurkituko duzu Customer Insights entitateen zerrenda eta horien definizioak.
+Entitateak ikus ditzakezu [Common Data Model-en entitateen nabigatzailean](https://microsoft.github.io/CDM/). Aukeratu entitate bat Insights aplikazioa atalean Customer Insights entitateen zerrenda eta horien definizioak lortzeko.
 > [!div class="mx-imgBorder"]
 > ![CDM Entity Navigator CustomerActivity entitatea erakusten duena.](media/CDM-entity-navigator.png "CDM Entity Navigator CustomerActivity entitatea erakusten duena")
 

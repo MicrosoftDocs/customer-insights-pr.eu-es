@@ -1,20 +1,19 @@
 ---
 title: Esportatu Customer Insights datuak Klaviyo-ra
 description: Ikasi konexioa nola konfiguratu eta Klaviyo-ra esportatu.
-ms.date: 08/13/2021
+ms.date: 10/08/2021
 ms.reviewer: mhart
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 7c1297fd5381c00c07d6501186c51fe4798773d1
-ms.sourcegitcommit: 205f931ec671a0ab1850f2c1c94df3307ffb62c9
-ms.translationtype: HT
+ms.openlocfilehash: 027aee70d9fdab0a92d7fd99209a6ac2ca3cc361
+ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
+ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7385773"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8225429"
 ---
 # <a name="export-segment-lists-to-klaviyo-preview"></a>Esportatu segmentuen zerrendak Klaviyo-ra (aurrebista)
 
@@ -28,10 +27,10 @@ Esportatu bezero profil bateratuen segmentuak Klaviyo-ra eta erabili marketin-ja
 
 ## <a name="known-limitations"></a>Muga ezagunak
 
-- Esportazio bakoitzeko 100'000 profil esporta ditzakezu Klaviyo-ra.
+- Esportazio bakoitzeko 100.000 bezero profila esporta ditzakezu Klaviyo.
 - Klaviyo-ra esportatzea segmentuetara mugatzen da.
-- 1 milioi profil Klaviyo-ra esportatzeko 20 minutu behar izan ditzakezu osatzeko. 
-- Klaviyo-ra esporta ditzakezun profilen kopurua Klaviyo-rekin duzun kontratuaren menpe dago eta mugatua da.
+- Milioi batera arte bezero profil Klaviyo-ren dituzten segmentuak esportatzen 20 minutu behar izan ditzakete osatzeko. 
+- Klaviyo-ra esporta ditzakezun bezeroen profil kopurua Klaviyo-ekin duzun kontratuaren menpe dago eta mugatua da.
 
 ## <a name="set-up-connection-to-klaviyo"></a>Konfiguratu Klaviyo-ra konexioa
 
@@ -67,7 +66,7 @@ Esportazio hau konfigura dezakezu mota honetako konexiorako sarbidea baduzu. Inf
 
 1. Sartu zure [**Klaviyo zerrendaren IDa**](https://help.klaviyo.com/hc/articles/115005078647-How-to-Find-a-List-ID).     
 
-3. **Datuen bat etortzea** atalean, **Posta elektronikoa** eremuan, hautatu zure bezeroaren profil bateratuko eremua, bezero baten helbide elektronikoa adierazten duena. Klaviyo-ra esportatzea segmentuetara beharrezkoa da.
+3. Urtean **Datuen bat etortzea** atalean, **Posta elektronikoa** eremua, hautatu bezeroaren helbide elektronikoa adierazten duen eremua. Klaviyo-ra esportatzea segmentuetara beharrezkoa da.
 
 1. Sakatu **Gorde**.
 

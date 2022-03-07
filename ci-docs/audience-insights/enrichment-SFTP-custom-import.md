@@ -3,18 +3,17 @@ title: Aberastea SFTP inportazio pertsonalizatuarekin
 description: SFTP pertsonalizatutako inportazio aberasteari buruzko informazio orokorra.
 ms.date: 04/09/2021
 ms.reviewer: mhart
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: f92b36ac5364ea8586f9cbba7ba03178641555c0
-ms.sourcegitcommit: d84d664e67f263bfeb741154d309088c5101b9c3
+ms.openlocfilehash: e4b9a65eb50f75e0243fabfc10b501cf7acf4490
+ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "6304635"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8229612"
 ---
 # <a name="enrich-customer-profiles-with-custom-data-preview"></a>Aberastu bezeroen profilak datu pertsonalizatuekin (aurrebista)
 
@@ -45,6 +44,8 @@ SFTP inportazio pertsonalizatua konfiguratzeko, honako baldintza hauek bete beha
 
     :::image type="content" source="media/enrichment-SFTP-path-and-filename.png" alt-text="Pantaila argazkia datuak kokatzerakoan.":::
 
+1. Aukeratu **Hurrengoa** eta aukeratu bezeroaren datu multzoa. Hau bezeroen profil guztiak edo segmentu bat izan daiteke.
+
 1. Aukeratu **Hurrengoa** eta eman aberasturako izena eta irteerako entitatearen izena. 
 
 1. Aukeratu **Aurreztu aberastasuna** zure aukerak aztertu ondoren.
@@ -64,7 +65,7 @@ Administratzailea izan behar duzu konexioak konfiguratzeko. Aukeratu **Gehitu ko
 1. Egiaztapena amaitutakoan, konexioa hautatuta gorde daiteke **Gorde**.
 
    > [!div class="mx-imgBorder"]
-   > ![Experian konexioaren konfigurazio-orria](media/enrichment-SFTP-connection.png "Experian konexioaren konfigurazio-orria")
+   > ![Experian konexioaren konfigurazio-orria.](media/enrichment-SFTP-connection.png "Experian konexioaren konfigurazio-orria")
 
 
 ## <a name="defining-field-mappings"></a>Eremu-esleipenak definitzen 
@@ -123,6 +124,6 @@ Aberastutako profil bakoitzaren ikuspegi zehatza sar dezakezu hautatuta **Ikusi 
 
 ## <a name="next-steps"></a>Hurrengo urratsak
 
-Eraiki zure bezeroen datu aberastuen gainean. Sortu [segmentuak](segments.md) eta [neurriak](measures.md), eta are [datuak esportatu](export-destinations.md) zure bezeroei esperientzia pertsonalizatuak emateko.
+[!INCLUDE [next-steps-enrichment](../includes/next-steps-enrichment.md)]
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

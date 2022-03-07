@@ -1,21 +1,23 @@
 ---
 title: Sortu inguruneak Customer Insights-en
 description: Lizentziapeko harpidetza duten inguruneak sortzeko urratsak Dynamics 365 Customer Insights.
-ms.date: 12/06/2021
+ms.date: 02/24/2022
 ms.reviewer: mhart
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
 author: MichelleDevaney
 ms.author: midevane
 manager: shellyha
 ms.custom: intro-internal
-ms.openlocfilehash: d29992c88bd54fcfcf5e6429a89a34b6f73148c8
-ms.sourcegitcommit: b7189b8621e66ee738e4164d4b3ce2af0def3f51
-ms.translationtype: HT
+searchScope:
+- ci-home
+- customerInsights
+ms.openlocfilehash: c37afd5649f8cf40d5379f3d39d0cbd96cde3bd3
+ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
+ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "8088087"
+ms.lasthandoff: 02/25/2022
+ms.locfileid: "8354080"
 ---
 # <a name="create-an-environment-in-audience-insights"></a>Sortu ingurune bat audientziaren xehetasunetan
 
@@ -76,12 +78,14 @@ Customer Insights-eko hainbat ingurune sortzen badituzu eta irteerako entitateak
    
 **Microsoft Dataverse** urratsak Customer Insights zurekin konektatzeko aukera ematen dizu Dataverse ingurunea.
 
-Erabiltzeko [kutxaz kanpoko iragarpen modeloak](predictions-overview.md#out-of-box-models), konfiguratu datuak partekatzearekin Dataverse. Edo datuen iradokizuna gaitu dezakezu lokal datu iturrietatik, Microsoft Dataverse zure erakundeak administratzen duen ingurumen URLa. Aukeratu **Gaitu datuak partekatzea** Customer Insights-en irteerako datuak partekatzeko Dataverse kudeatutako Data Lake.
+Eman zurea Microsoft Dataverse Datuak (profilak eta ikuspegiak) oinarritutako negozio-aplikazioekin partekatzeko ingurunea Dataverse, Dynamics 365 Marketing edo ereduetan oinarritutako aplikazioak bezala Power Apps. Utzi eremu hau hutsik zurea ez baduzu Dataverse ingurumena eta bat emango dizugu.
+
+Zurera konektatzen Dataverse inguruneak ere aukera ematen dizu [irensi lokal datu-iturburuetako datuak erabiliz Power Platform datu-fluxuak eta pasabideak](data-sources.md#add-data-from-on-premises-data-sources). Erabili ere egin dezakezu [kutxaz kanpoko iragarpen ereduak](predictions-overview.md?tabs=b2c#out-of-box-models) batera konektatuz Dataverse ingurunea.
 
 > [!IMPORTANT]
 > Bezeroen ikuspegiak eta Dataverse Eskualde berean egon behar da datuak partekatzea gaitzeko.
 
-:::image type="content" source="media/dataverse-data-sharing.png" alt-text="Konfigurazioaren aukerak gaitzeko datuak partekatzeko Microsoft Dataverse.":::
+:::image type="content" source="media/dataverse-provisioning.png" alt-text="datuak partekatzearekin Microsoft Dataverse automatikoki gaituta instantzia garbi berrietarako.":::
 
 > [!NOTE]
 > Customer Insights-ek ez ditu onartzen hurrengo datuak partekatzeko egoerak:

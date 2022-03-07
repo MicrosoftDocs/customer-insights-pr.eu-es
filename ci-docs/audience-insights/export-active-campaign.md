@@ -1,20 +1,19 @@
 ---
 title: Esportatu Customer Insights datuak ActiveCampaign-ra
 description: Ikasi konexioa nola konfiguratu eta ActiveCampaign-ra esportatu.
-ms.date: 06/29/2021
+ms.date: 10/08/2021
 ms.reviewer: mhart
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 6d85fa9836618e27f7f3da6ce17c07b4bc89e187
-ms.sourcegitcommit: 057079532e31c12bac36f374857ba3dc847d6ad0
-ms.translationtype: HT
+ms.openlocfilehash: 089b9b0d76437e695f797f941ed384734d8f772e
+ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
+ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "6314572"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8227794"
 ---
 # <a name="export-segments-to-activecampaign-preview"></a>Esportatu segmentuak ActiveCampaign-ra (aurrebista)
 
@@ -28,9 +27,9 @@ Esportatu bezero profil bateratuen segmentuak ActiveCampaign-era eta erabili mar
 
 ## <a name="known-limitations"></a>Muga ezagunak
 
-- Esportazio bakoitzeko milioi bat profil esportatu ditzakezu ActiveCampaign-era eta 90 minutu behar izan ditzakezu osatzeko.
+- Esportazio bakoitzeko milioi bat bezero esportatu ditzakezu esportazio bakoitzeko ActiveCampaign-era eta 90 minutu behar izan ditzakezu osatzeko.
 - ActiveCampaign-era esportatzea segmentuetara mugatzen da.
-- ActiveCampaign-era esporta ditzakezun profilen kopurua ActiveCampaign-ekin duzun kontratuaren araberakoa da.
+- ActiveCampaign-era esporta ditzakezun bezeroen profil kopurua ActiveCampaign-ekin duzun kontratuaren menpe dago eta mugatua da.
 
 ## <a name="set-up-connection-to-activecampaign"></a>Konfiguratu ActiveCampaign-era konexioa
 
@@ -64,7 +63,7 @@ Esportazio bat konfigura dezakezu mota honetako konexiorako sarbidea baduzu. Inf
 
 1. Sartu zure [**ActiveCampaign zerrendaren IDa**](https://help.activecampaign.com/hc/articles/360000030559-How-to-create-a-list-in-ActiveCampaign).    
 
-3. **Datuen bat etortzea** atalean, **Posta elektronikoa** eremuan, hautatu zure bezeroaren profil bateratuko eremua, bezero baten helbide elektronikoa adierazten duena. ActiveCampaign-era esportatzea segmentuetara beharrezkoa da. Aukeran, esporta dezakezu Izena, Abizena eta Telefonoa mezu elektroniko pertsonalizatuagoak sortzeko. Aukeratu Gehitu atributua eremu horiek esleitzeko.
+1. Urtean **Datuen bat etortzea** atalean, **Posta elektronikoa** eremua, hautatu bezeroaren helbide elektronikoa adierazten duen eremua. ActiveCampaign-era esportatzea segmentuetara beharrezkoa da. Aukeran, esporta dezakezu Izena, Abizena eta Telefonoa mezu elektroniko pertsonalizatuagoak sortzeko. Aukeratu Gehitu atributua eremu horiek esleitzeko.
 
 1. Sakatu **Gorde**.
 

@@ -1,22 +1,24 @@
 ---
 title: Esleipen semantikoak (aurreargitalpena)
 description: Kartografia semantikoen ikuspegi orokorra eta nola erabili.
-ms.date: 09/28/2021
-ms.service: customer-insights
+ms.date: 12/01/2021
 ms.subservice: audience-insights
 ms.reviewer: mhart
 ms.topic: conceptual
 author: CadeSanthaMSFT
 ms.author: cadesantha
 manager: shellyha
-ms.openlocfilehash: b0884b8b6a2c5abe4b3967d1b57d11a3a6d65c5b
-ms.sourcegitcommit: 5d82e5b808517e0e99fdfdd7e4a4422a5b8ebd5c
-ms.translationtype: HT
+searchScope:
+- ci-semantic-mapping
+- customerInsights
+ms.openlocfilehash: 37696f3e82eb9b75fbf9f78363adc890891efcc3
+ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
+ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 10/11/2021
-ms.locfileid: "7622920"
+ms.lasthandoff: 02/25/2022
+ms.locfileid: "8353942"
 ---
-# <a name="semantic-mappings"></a>Esleipen semantikoa
+# <a name="semantic-mappings-preview"></a>Esleipen semantikoak (aurreargitalpena)
 
 Kartografia semantikoek jarduerarik gabeko datuak aurrez definitutako eskemetara mapatzen uzten dizute. Eskema hauek ikusleen estatistikak laguntzen dituzte zure datuen atributuak hobeto ulertzeko. Kartografia semantikoak eta emandako datuek ikusleei buruzko informazio eta ezaugarri berriak ahalbidetzen dituzte. Zure jardueren datuak eskemetara mapatzeko, berrikusi [jarduerak](activities.md) dokumentazioa.
 
@@ -75,8 +77,7 @@ Kartografia semantikoek jarduerarik gabeko datuak aurrez definitutako eskemetara
 
 1. Kartografia semantiko bat aurrerago exekutatzeko, hautatu mapaketa semantikoa eta hautatu **Freskatu**.
 
-> [!TIP]
-> Zereginen/prozesuen [sei egoera mota](system.md#status-types) daude. Gainera, prozesu gehienak [downstream-eko beste prozesu batzuen mende daude](system.md#refresh-policies). Aukeratu prozesu baten egoera, egon zen lan osoaren aurrerapen xehetasunak ikusteko. Aukeratu ondoren **Ikusi xehetasunak** lanaren zereginetako baterako, informazio osagarria aurkituko duzu: prozesatzeko denbora, azken prozesatze data eta zereginarekin lotutako akats eta abisu guztiak.
+[!INCLUDE [progress-details-include](../includes/progress-details-pane.md)]
 
 ## <a name="manage-existing-semantic-mappings"></a>Kudeatu lehendik dauden mapaketa semantikoak
 
@@ -91,5 +92,41 @@ Aktibatuta **Datuak** > **Kartografia semantikoak (aurrebista)**, gordetako mapa
 - **Aldatu izena**: Elkarrizketa-koadro bat irekitzen du eta bertan beste izen bat sar dezakezu hautatutako mapaketa semantikorako. Aldaketak aplikatzeko, hautatu **Gorde**.
 
 - **Ezabatu**: Elkarrizketa-koadro bat irekitzen du hautatutako mapaketa semantikoa ezabatzen dela berresteko. Kartografia semantiko bat baino gehiago aldi berean ezaba ditzakezu mapaketa semantikoak eta ezabatzeko ikonoa hautatuta. Hautatu **Ezabatu** ezabatzea baieztatzeko.
+
+## <a name="use-a-contactprofile-semantic-entity-mapping-to-create-contact-level-activities"></a>Erabili ContactProfile entitate semantikoen mapaketa kontaktu mailako jarduerak sortzeko
+
+Bat sortu ondoren *Harremanetarako Profila* entitate semantikoen mapak, kontaktuen jarduerak har ditzakezu. Kontu baten jardueraren kronograman ikus dezakezu zein kontaktu zen jarduera bakoitzaren arduraduna. Urrats gehienek jarduera-mapearen konfigurazio tipikoari jarraitzen diote.
+
+   > [!NOTE]
+   > Kontaktu mailako jarduerak funtzionatzeko, biak izan behar dituzu **Kontuaren ID** eta **Kontaktu ID** zure jarduera-datuen barruan erregistro bakoitzerako atributuak.
+
+1. [Definitu a *Harremanetarako Profila* entitate semantikoen mapaketa.](#define-a-contactprofile-semantic-entity-mapping) Eta exekutatu mapa semantikoa.
+
+1. Hartzaileei buruzko xehetasunetan, joan hona: **Datuak** > **Jarduerak**.
+
+1. Hautatu **Gehitu jarduera** jarduera berri bat sortzeko.
+
+1. Jarriari izena eman, hautatu iturburuko jarduera-entitatea eta hautatu jarduera-entitatearen gako nagusia.
+
+1. urtean **Harremanak** urratsa, sortu zure jarduera-iturburuko datuen arteko zeharkako harremana kontuekin, zure harremanetarako datuak bitartekari gisa erabiliz. Informazio gehiagorako, ikus [harreman zuzeneko eta zeharkako bideak](relationships.md#relationship-paths).
+   - Deitutako jarduera baterako erlazio adibidea *Erosketak*:
+      - **Erosketak Iturburu Jardueren Datuak** > **Harremanetarako datuak** atributuaren gainean **Kontaktu ID**
+      - **Harremanetarako datuak** > **Kontuaren datuak** atributuaren gainean **Kontuaren ID**
+
+   :::image type="content" source="media/Contact_Activities1.png" alt-text="Erlazio-konfigurazio adibidea.":::
+
+1. Harremanak konfiguratu ondoren, hautatu **Hurrengoa** eta osatu zure jarduera-maparen konfigurazioa. Jarduerak sortzeari buruzko urrats zehatzak ikusteko, ikus [jarduera bat definitu](activities.md).
+
+1. Exekutatu zure jardueren mapak.
+
+1. Zure kontaktu-mailako jarduerak zure bezeroen denbora-lerroan ikusgai egongo dira orain.
+
+   :::image type="content" source="media/Contact_Activities2.png" alt-text="Azken emaitza kontaktu-jarduerak konfiguratu ondoren":::
+
+### <a name="contact-level-activity-timeline-filtering"></a>Kontaktu-mailako jardueren denbora-lerroaren iragazketa
+
+Kontaktu-mailako jardueren mapa konfiguratu eta exekutatu ondoren, zure bezeroen jardueren kronograma eguneratuko da. Beren ID edo izenak biltzen ditu, zurearen arabera *Harremanetarako Profila* konfigurazioa, jardun zuten jardueretarako. Jarduerak kontaktuen arabera iragazi ditzakezu denbora-lerroan interesatzen zaizkizun kontaktu zehatzak ikusteko. Gainera, kontaktu zehatz bati esleituta ez dauden jarduera guztiak ikus ditzakezu hautatuta **Kontaktu bati mapatu gabeko jarduerak**.
+
+   :::image type="content" source="media/Contact_Activities3.png" alt-text="Kontaktu mailako jardueretarako eskuragarri dauden iragazketa-aukerak.":::
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -2,8 +2,30 @@
   href: index.yml
 - name: Produktuaren ikuspegi orokorra
   href: overview.md
-- name: Sortu probako bertsioa
-  href: audience-insights/get-started-trial.md
+- name: Ikasketa-katalogoa
+  items:
+    - name: Lehenengo urratsak
+      href: /learn/modules/get-started-customer-data-platform/
+    - name: Sartu datuak
+      href: /learn/modules/ingest-data-customer-insights/
+    - name: Sortu bezeroaren profil bateratua
+      href: /learn/modules/unified-customer-profile/
+    - name: Lan egin ikusleen ikuspegiekin
+      href: /learn/modules/working-with-customer-insights/
+    - name: Datuak aberastu eta iragarpenak egin
+      href: /learn/modules/enrich-data/
+    - name: Kudeatu kanpoko konexioak
+      href: /learn/modules/configure-third-party-connections/
+    - name: Administratu Customer Insights
+      href: /learn/modules/administer-customer-data-platform/
+- name: Doako proba
+  items:
+    - name: Hasi saioa doako proba lortzeko
+      href: trial-signup.md
+    - name: Probaren FAQa
+      href: trial-FAQ.md
+- name: Hasi ordaindutako lizentziarekin
+  href: paid-license.md
 - name: Atzitu ingurunea
   href: 'https://home.ci.ai.dynamics.com/'
 - name: Hartzaileen xehetasunak
@@ -19,29 +41,25 @@
         - name: Hasiera bizkorreko gida
           href: audience-insights/get-started.md
         - name: Sortu ingurune bat
-          href: audience-insights/get-started-paid.md
+          href: audience-insights/create-environment.md
         - name: Arakatu hartzaileen xehetasunak
           href: audience-insights/home.md
-    - name: Ikasteko moduluak
-      items:
-        - name: Sartu datuak
-          href: /learn/modules/ingest-data-customer-insights/
-        - name: Sortu bezeroaren profil bateratua
-          href: /learn/modules/unified-customer-profile/
-        - name: Egin lan edozein aplikaziorekin
-          href: /learn/modules/working-with-customer-insights/
-        - name: Datuak eta iragarpenak aberastu
-          href: /learn/modules/enrich-data/
+    - name: Egin lan negozio-kontuekin
+      href: audience-insights/work-with-business-accounts.md
     - name: Datu-iturburuak
       items:
         - name: Datuen iturburuen ikuspegi orokorra
           href: audience-insights/data-sources.md
-        - name: Gehitu datu iturriak Power Query konektoreen bidez
+        - name: Gehitu datu-iturriak bidez Power Query konektoreak
           href: audience-insights/connect-power-query.md
         - name: Gehitu datu arrunten ereduaren karpeta datu-iturburu
           href: audience-insights/connect-common-data-model.md
         - name: Gehitu Dataverse kudeatutako data lake
           href: audience-insights/connect-dataverse-managed-lake.md
+        - name: Gehitu Azure Synapse Analytics
+          href: audience-insights/connect-synapse.md
+        - name: Datu iturrietarako aberastea
+          href: audience-insights/data-sources-enrichment.md
         - name: Datu iturrietarako freskatze gehigarria
           href: audience-insights/incremental-refresh-data-sources.md
         - name: Denbora errealeko iragazkiak (aurrebista)
@@ -66,22 +84,30 @@
           href: audience-insights/relationships.md
         - name: Bezeroaren jardueren zerrenda
           href: audience-insights/activities.md
+        - name: Definitu esleipen semantikoak
+          href: audience-insights/semantic-mappings.md
     - name: Datu-aberastea
       items:
         - name: Aberastu bezeroen profilak
           href: audience-insights/enrichment-hub.md
-        - name: Marka eta intereseko kidetasunak
+        - name: Markak eta zaletasunak
           href: audience-insights/enrichment-microsoft.md
         - name: Helbide hobetuak
           href: audience-insights/enrichment-enhanced-addresses.md
+        - name: Enpresaren datu hobetuak
+          href: audience-insights/enrichment-enhanced-company-data.md
         - name: Aberastu Azure Maps-ekin
           href: audience-insights/enrichment-azure-maps.md
         - name: Aberastu HERE Technologies-ekin
           href: audience-insights/enrichment-here.md
         - name: Aberastu Leadspace-rekin
           href: audience-insights/enrichment-leadspace.md
+        - name: Aberastu LiveRamp-ekin
+          href: audience-insights/enrichment-liveramp.md
         - name: Aberastu Experian-ekin
           href: audience-insights/enrichment-experian.md
+        - name: Aberastu Office 365 datuak
+          href: audience-insights/enrichment-office.md
         - name: Aberastu SFTP inportazio pertsonalizatuarekin
           href: audience-insights/enrichment-SFTP-custom-import.md
     - name: Segmentuak
@@ -100,8 +126,12 @@
           href: audience-insights/find-similar-customer-segments.md
     - name: Neurketak
       items:
-        - name: Neurriak eta KPIak definitu
+        - name: Neurrien ikuspegi orokorra
           href: audience-insights/measures.md
+        - name: Sortu neurri berri bat
+          href: audience-insights/measure-builder.md
+        - name: Erabili neurri txantiloia
+          href: audience-insights/measure-templates.md
     - name: Iragarpenak
       items:
         - name: Datuak aurreikustea adimen aurreratuaren laguntzarekin
@@ -114,8 +144,10 @@
               href: audience-insights/predict-product-recommendation.md
             - name: Iragarpenen harpidetza kornestatzea
               href: audience-insights/predict-subscription-churn.md
-            - name: Iragarri transakzioen galera-tasa
+            - name: Iragarri transakzio churn
               href: audience-insights/predict-transactional-churn.md
+            - name: Aztertu sentimendua bezeroen iritzietan
+              href: audience-insights/sentiment-analysis.md
             - name: Erabili Azure Ikaskuntza automatikoko eredu pertsonalizatuak
               href: audience-insights/custom-models.md
             - name: Osatu partzialki falta diren datuak
@@ -126,14 +158,12 @@
               href: audience-insights/sample-guide-predict-clv.md
             - name: Harpidetzaren galera-tasaren iragarpenaren lagin-gida
               href: audience-insights/sample-guide-predict-subscription-churn.md
-            - name: Transakzioen galera-tasaren iragarpenaren lagin-gida
+            - name: Transakzioaren txandaren lagin iragarpen gida
               href: audience-insights/sample-guide-predict-transactional-churn.md
             - name: Produktuak gomendatzeko iragarpenaren adibide-gida
               href: audience-insights/sample-guide-predict-product-recommendation.md
             - name: Esperimentuak Azure ikaskuntza automatikoarekin
               href: audience-insights/azure-machine-learning-experiments.md
-            - name: Esperimentuak Azure Machine Learning Studio-rekin
-              href: audience-insights/machine-learning-studio-experiments.md
         - name: Iragarpenak kudeatu
           href: audience-insights/manage-predictions.md
         - name: Sortu iragarkietan oinarritutako segmentuak
@@ -222,14 +252,16 @@
           href: audience-insights/connections.md
         - name: Kudeatu ingurune anizkoitzak
           href: audience-insights/manage-environments.md
-        - name: Konektatu ADLS biltegiratze-kontura zerbitzuaren entitatearekin
-          href: audience-insights/connect-service-principal.md
-        - name: Onartutako hizkuntzak
-          href: audience-insights/supported-languages.md
+        - name: Segurtasuna
+          items:
+            - name: Ekarri zure Key Vault
+              href: audience-insights/use-azure-key-vault.md
+            - name: Konektatu ADLS biltegiratze-kontura zerbitzuaren entitatearekin
+              href: audience-insights/connect-service-principal.md
+            - name: Esportatu diagnostikoen erregistroak
+              href: audience-insights/diagnostics.md
     - name: Hedagarritasuna
       items:
-        - name: Integratu web-datuak konpromisoen estatistiketatik
-          href: audience-insights/integrate-engagement-insights.md
         - name: Berrikusi entitateen eskema datu arrunten ereduan
           href: audience-insights/entity-schemas.md
         - name: Customer Insights datuak Dataverse-n
@@ -238,85 +270,45 @@
           href: audience-insights/apis.md
         - name: API erreferentzia
           href: 'https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights'
-- name: Parte-hartzearen xehetasunak (aurreargitalpena)
+- name: Baimenaren kudeaketa (aurrebista)
   items:
     - name: Laguntza-atala
-      href: engagement-insights/index.yml
+      href: consent-management/index.yml
     - name: Gaitasunaren ikuspegi orokorra
-      href: engagement-insights/overview.md
-    - name: Hasi erabiltzen
+      href: consent-management/overview.md
+    - name: Lehenengo urratsak
       items:
-        - name: Hasiera bizkorreko gida
-          href: engagement-insights/get-started.md
-        - name: Sortu laneko area bat
-          href: engagement-insights/create-workspace.md
-        - name: Hartu gertaerak mugikorreko aplikazioetatik eta guneetatik
-          href: engagement-insights/developer-resources.md
+        - name: Lehenengo urratsak
+          href: consent-management/get-started.md
         - name: Kontzeptuak eta terminologia
-          href: engagement-insights/glossary.md
-    - name: Gertaera
+          href: consent-management/glossary.md
+    - name: Inportatu onarpen-datuak
       items:
-        - name: Sortu eta aldatu gertaerak
-          href: engagement-insights/refined-events.md
-        - name: Ezagutu aurretik autentifikatutako bisitarien web gertaerak
-          href: engagement-insights/unknown-to-known.md
-        - name: Esportatu gertaerak
-          href: engagement-insights/export-events.md
-    - name: Txostenak
+        - name: Inportatu onarpen-datuak
+          href: consent-management/import-consent-data.md
+        - name: Ezarri baimenaren datuak eta aplikatu baimenaren hobespenak
+          href: consent-management/set-consent-rules.md
+    - name: Kudeatu baimenaren datuak
       items:
-        - name: Ikusi txostenak
-          href: engagement-insights/view-reports.md
-        - name: Sortu txosten pertsonalizatuak
-          href: engagement-insights/custom-reports.md
-        - name: Sortu profil bateratuko txostenak
-          href: engagement-insights/profile-reports.md
-        - name: Ikusi eta sortu dimentsioak
-          href: engagement-insights/dimensions.md
-        - name: Ikusi eta sortu metrikak
-          href: engagement-insights/metrics.md
-        - name: Ikusi eta sortu segmentuak
-          href: engagement-insights/segments.md
-    - name: Bidaiaren analitika
+        - name: Gaitu adostasun-arauak ikusleen estatistiketan
+          href: audience-insights/activate-consent.md
+        - name: Kudeatu adostasun-arau lehenetsiak ikusleei buruzko informazio-segmentuetan
+          href: audience-insights/change-default-consent-rules.md
+    - name: Kudeatu ezarpenak eta erabiltzaileak
       items:
-        - name: Sortu eta kudeatu inbutu-txostenak
-          href: engagement-insights/funnel-reports.md
-    - name: Garatzailearen baliabideak
+        - name: Konfiguratu sistemaren ezarpenak
+          href: consent-management/system-settings.md
+        - name: Kudeatu erabiltzaileak eta baimenak
+          href: consent-management/manage-users.md
+    - name: Erabili baimenaren datuak
       items:
-        - name: Garatzaileen baliabideen ikuspegi orokorra
-          href: engagement-insights/developer-resources.md
-        - name: Sareko SDK-ren tutoriala
-          href: engagement-insights/advanced-SDK-implementation.md
-        - name: Web SDKren lagina
-          href: engagement-insights/websdk-sample.md
-        - name: Android SDK tutoriala
-          href: engagement-insights/get-started-android.md
-        - name: Android SDK adibidea
-          href: engagement-insights/androidsdk-sample.md
-        - name: iOS SDKaren tutoriala
-          href: engagement-insights/get-started-ios.md
-        - name: iOS SDK lagina
-          href: engagement-insights/iossdk-sample.md
-    - name: Administrazioa
-      items:
-        - name: Funtzioak eta baimenak
-          href: engagement-insights/user-roles.md
-        - name: Kudeatu inguruneak eta laneko areak
-          href: engagement-insights/manage-environments-workspaces.md
-        - name: Kudeatu cookieak eta erabiltzaileen baimena
-          href: engagement-insights/user-consent-storage.md
-    - name: Erabilgarritasun lokala
-      href: engagement-insights/regional-availability.md
-- name: Integratu ikusleen eta konpromisoen inguruko datuak
-  items:
-    - name: Estekaren hartzailearen xehetasunak eta elkarreragin xehetasunak
-      href: engagement-insights/integrate-audience-insights-engagement-insights.md
-    - name: Erabili audientzia estatistiken segmentuak konpromiso estatistiken txostenak horretan
-      href: engagement-insights/integrate-audience-insights-segments.md
-    - name: Erabili dimentsio demografikoak portaeraren datuak banatzeko
-      href: engagement-insights/curate-dimensions.md
+        - name: Sortu aurreikuspenak adostasun datuekin
+          href: consent-management/predictions-consent-data.md
+- name: Parte-hartzearen xehetasunak (aurreargitalpena)
+  href: engagement-insights/overview.md
 - name: Zerbitzuaren mugak
   href: service-limits.md
 - name: DSR eskubideak eta eskaerak
   href: dsr-rights-requests.md
 - name: Lortu laguntza
-  href: 'https://dynamics.microsoft.com/support/'
+  href: /power-platform/admin/get-help-support

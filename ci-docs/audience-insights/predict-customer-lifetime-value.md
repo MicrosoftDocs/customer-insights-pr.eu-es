@@ -3,20 +3,24 @@ title: Bezeroaren balio osoaren iragarpena (CLV)
 description: Aurreikusi etorkizunean bezero aktiboen diru-sarrerak.
 ms.date: 02/05/2021
 ms.reviewer: mhart
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
 author: m-hartmann
 ms.author: wameng
 manager: shellyha
-ms.openlocfilehash: 740d6a5a749e156414b0e80193334051b7f2632fe4d1f4291d74b99250f35bc2
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
-ms.translationtype: HT
+searchScope:
+- ci-predictions
+- ci-create-prediction
+- ci-custom-models
+- customerInsights
+ms.openlocfilehash: 07790604b06f21095a9220a6f57727cac80789c5
+ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
+ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7035354"
+ms.lasthandoff: 02/25/2022
+ms.locfileid: "8355774"
 ---
-# <a name="customer-lifetime-value-clv-prediction-preview"></a>Bezeroaren bizi-iraupenaren (CLV) balioa (aurreargitalpena)
+# <a name="customer-lifetime-value-clv-prediction"></a>Bezeroaren balio osoaren iragarpena (CLV)
 
 Aurreikusi bezero aktibo partikularrek zure negozioari ekarriko dioten balizko balioa (diru-sarrerak) etorkizunean zehaztutako denbora-tarte batean. Ezaugarri honek hainbat helburu lortzen lagun zaitzake: 
 - Balio handiko bezeroak identifikatu eta ikuspegi hori prozesatu
@@ -65,7 +69,7 @@ Datu hauek beharrezkoak dira, eta aukerako gisa markatuta daudenean, gomendagarr
     - Datuen osotasuna: % 20 baino gutxiago falta dira sarrerako datuetako beharrezko eremuetan   
 
 > [!NOTE]
-> - Ereduak zure bezeroen transakzioen historia eskatzen du. Une honetan transakzioen historiako entitate bakarra konfigura daiteke. Erosketa edo transakzioaren entitate bat baino gehiago badaude, elkartu Power Query-en datuak kontsumitu aurretik.
+> - Ereduak zure bezeroen transakzioen historia eskatzen du. Une honetan transakzioen historiako entitate bakarra konfigura daiteke. Erosketa/transakzio entitate anitz badaude, horiek bateratu ditzakezu Power Query datuak sartu aurretik.
 > - Bezeroen jardueren datu osagarriak lortzeko (aukerakoa), hala ere, bezeroaren jarduera entitateak nahi adina gehi ditzakezu ereduak kontuan har ditzan.
 
 ## <a name="create-a-customer-lifetime-value-prediction"></a>Sortu bezeroaren bizi-iraupenaren balioaren iragarpena
@@ -74,7 +78,7 @@ Datu hauek beharrezkoak dira, eta aukerako gisa markatuta daudenean, gomendagarr
 
 1. Hautatu **Bezeroaren bizi-iraupenaren balioa** fitxa eta hautatu **Erabili eredua**. 
 
-1. **Bezeroaren bizi-iraupenaren balioa (aurrebista)** panelean, hautatu **Hasi erabiltzen**.
+1. urtean **Bezeroaren bizitzako balioa** panela, hautatu **Hasi**.
 
 1. **Eman izena eredu honi** eta **Irteerako entitatearen izenari** beste eredu edo entitate batzuetatik bereizteko.
 

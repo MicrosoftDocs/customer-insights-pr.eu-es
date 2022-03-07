@@ -1,20 +1,19 @@
 ---
 title: Esportatu Customer Insights datuak Snapchat-era
 description: Ikasi konexioa konfiguratzen eta esportatzen Snapchat.
-ms.date: 03/22/2021
+ms.date: 10/08/2021
 ms.reviewer: mhart
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 6565ab81599abcc0f94465e1153f08e0bc119839
-ms.sourcegitcommit: 831765a55775d358447cb7ffa56f2c3b85459084
-ms.translationtype: HT
+ms.openlocfilehash: 7eac3307b3f82b6c5ebc3d66d6563ae50696ed65
+ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
+ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 06/01/2021
-ms.locfileid: "6124028"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8227233"
 ---
 # <a name="export-segments-to-snapchat-preview"></a>Esportatu segmentuak Snapchat-era (aurrebista)
 
@@ -29,7 +28,7 @@ Esportatu bezeroen profil bateratuen segmentuak Snapchat eta erabili iragarkieta
 ## <a name="known-limitations"></a>Muga ezagunak
 
 - Snapchat esportatzea segmentuetara mugatzen da.
-- Esportatu gehienez 1 milioi profil Snapchat, 15 minutu behar ditzake osatzeko. 
+- Milioi batera arte bezero profil Snapchat-en dituzten segmentuak esportatzen 15 minutu behar izan ditzakete osatzeko. 
 
 ## <a name="set-up-connection-to-snapchat"></a>Konfiguratu konexioa Snapchat-era
 
@@ -63,7 +62,7 @@ Esportazio hau konfigura dezakezu mota honetako konexiorako sarbidea baduzu. Inf
 
 1. Sartu [**Snapchat Audience IDa**](https://businesshelp.snapchat.com/s/article/custom-audiences).
 
-1. **Datuen bat etortzea** atalean, **Posta elektronikoa** eremuan, hautatu zure bezeroaren profil bateratuko eremua, bezero baten helbide elektronikoa adierazten duena. Segmentuak esportatu behar dira Snapchat.
+1. Urtean **Datuen bat etortzea** atalean, **Posta elektronikoa** eremua, hautatu bezeroaren helbide elektronikoa adierazten duen eremua. Segmentuak esportatu behar dira Snapchat.
 
 1. Hautatu esportatu nahi dituzun segmentuak. 
 

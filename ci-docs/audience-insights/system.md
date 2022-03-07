@@ -1,20 +1,26 @@
 ---
 title: Sistemaren konfigurazioa hartzaileen xehetasunetan
-description: Lortu informazio sistemaren ezarpenei buruz Dynamics 365 Customer Insights audientziari buruzko informazio-gaitasunean.
+description: Lortu informazio gehiago sistemaren ezarpenei buruz Dynamics 365 Customer Insights-en hartzaileen xehetasunen gaitasunean.
 ms.date: 11/01/2021
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: NimrodMagen
 ms.author: nimagen
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 1b790106f8b9617d0c1f244e1d15a74c7ef9a82b
-ms.sourcegitcommit: 834651b933b1e50e7557d44f926a3fb757c1f83a
-ms.translationtype: HT
+searchScope:
+- ci-system-status
+- ci-system-schedule
+- ci-system-about
+- ci-system-general
+- ci-system-api-usage
+- customerInsights
+ms.openlocfilehash: 2c52f7b8a7d41ae4a985745c7b79bbc62f59bb5a
+ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
+ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "7732344"
+ms.lasthandoff: 02/25/2022
+ms.locfileid: "8354197"
 ---
 # <a name="system-configuration"></a>Sistemaren konfigurazioa
 
@@ -32,7 +38,7 @@ Ikusleen informazioetan sistemaren konfigurazioetara sartzeko, hautatu ezkerreko
 
 ## <a name="status-tab"></a>Egoera fitxa
 
-The **Egoera fitxa** zereginen, datuen sarreraren, datuen esportazioen eta beste hainbat produktu-prozesu garrantzitsuen jarraipena egiteko aukera ematen du. Berrikusi fitxa honetako informazioa zure zeregin eta prozesu aktiboen osotasuna ziurtatzeko.
+The **Egoera fitxa** zereginen, datuen sarreraren, datuen esportazioen eta beste hainbat produktu-prozesu garrantzitsuen aurrerapena jarraitzeko aukera ematen du. Berrikusi fitxa honetako informazioa zure zeregin eta prozesu aktiboen osotasuna ziurtatzeko.
 
 Fitxa honek hainbat prozesurako egoera eta prozesatzeko informazioa duten taulak biltzen ditu. Taula bakoitzak jarraipena egiten du **izena** zeregina eta dagokion entitatea da **Egoera** bere korrika berriena eta noiz izan zen **Azken eguneraketa**. Azken exekuzioen xehetasunak ikus ditzakezu ataza edo prozesuaren izena hautatuta. 
 
@@ -47,9 +53,9 @@ Sistemak egoera hauek erabiltzen ditu zereginetarako eta prozesuetarako:
 |Fasea  |Definizioa  |
 |---------|---------|
 |Utzi da |Prozesatzea amaitu baino lehen bertan behera utzi du erabiltzaileak.   |
-|Huts eginda   |Datuen iradokizunak akatsak izan ditu.         |
+|Ezin izan da egin   |Datuen iradokizunak akatsak izan ditu.         |
 |Huts egin du  |Prozesatzeak huts egin du.  |
-|Hasi gabe   |Datu-iturburuak oraindik ez du daturik sartu edo oraindik zirriborro moduan daude.         |
+|Ez da hasi   |Datu-iturburuak oraindik ez du daturik sartu edo oraindik zirriborro moduan daude.         |
 |Prozesatze  |Zeregin edo prozesua abian da.  |
 |Freskatzen    |Datuen horniketa martxan da. Eragiketa hau bertan behera utzi dezakezu **Utzi freskagarria** herrian **Ekintzak** zutabea. datu-iturburu-en freskagarria gelditzeak azken freskatze egoeran itzuliko du.       |
 |Saltatuta  |Zeregin edo prozesua saltatu egin da. Zeregin hau kontrolatzen duen downstream-eko prozesu bat edo gehiago huts egin edo saihestu egiten dira.|
@@ -70,21 +76,25 @@ Zereginen eta prozesuen freskatzearen arabera exekutatzen da [konfiguratutako or
 |Aberasteak   |Eskuz exekutatzen da (denbora bakarreko freskagarria). Batze-prozesuaren araberakoa da. |
 |Esportazio-helmugak |Eskuz exekutatzen da (denbora bakarreko freskagarria). Segmentuen araberakoa da.  |
 |Xehetasunak |Eskuz exekutatzen da (denbora bakarreko freskagarria). Segmentuen araberakoa da.  |
-|Adimena   |Batzearen araberakoa da.   |
+|Inteligentzia   |Batzearen araberakoa da.   |
 |Lotu |Partiduen definizioan erabilitako datu-iturrien prozesamenduaren araberakoa da.      |
 |Neurketak  |Eskuz exekutatzen da (denbora bakarreko freskagarria). Batze-prozesuaren araberakoa da.  |
 |Konbinazioa   |Bat-etortzearen prozesuaren osatzearen araberakoa da. Segmentuak, neurriak, aberastea, bilaketa, jarduerak, iragarpenak eta datuen prestaketa prozesu honen arrakastaren araberakoak dira.   |
 |Profilak   |Eskuz exekutatzen da (denbora bakarreko freskagarria). Batze-prozesuaren araberakoa da. |
-|Bilaketa   |Eskuz exekutatzen da (denbora bakarreko freskagarria). Batze-prozesuaren araberakoa da. |
+|Bilatu?   |Eskuz exekutatzen da (denbora bakarreko freskagarria). Batze-prozesuaren araberakoa da. |
 |Segmentuak  |Eskuz exekutatzen da (denbora bakarreko freskagarria). Batze-prozesuaren araberakoa da. Ikuspegiak prozesatzearen araberakoak dira.|
 |Sistema   |Bat-etortzearen prozesuaren osatzearen araberakoa da. Segmentuak, neurriak, aberastea, bilaketa, jarduerak, iragarpenak eta datuen prestaketa prozesu honen arrakastaren araberakoak dira.   |
-|Erabiltzailea  |Eskuz exekutatzen da (denbora bakarreko freskagarria). Entitateen araberakoa da.  |
+|User  |Eskuz exekutatzen da (denbora bakarreko freskagarria). Entitateen araberakoa da.  |
 
 Hautatu prozesu baten egoera lan guztiaren aurrerapenaren xehetasunak ikusteko. Goiko freskatze prozesuek a konpontzeko zer egin dezakezun ulertzen lagun dezakete **Saltatu** edo **Ilaran jarrita** zeregina edo prozesua.
 
 ## <a name="schedule-tab"></a>Antolaketa fitxa
 
 Erabili **Antolaketa** fitxa [sartutako datu-iturburuen](data-sources.md) freskatze automatikoak antolatzeko. Freskatze automatikoak zure datuen iturrien eguneratzeak zure bezeroen profil bateratuetan islatzen laguntzen du.
+
+> [!NOTE]
+> Zuk kudeatzen dituzun datu-iturburuak beren egutegietan freskatzen dira. Zuk kudeatzen dituzun datu-iturburuak freskatzea antolatzeko, konfiguratu freskatze-ezarpenak datu-iturburu zehatz horretan.**Datu iturriak** orrialdea.
+> :::image type="content" source="media/PPDF-edit-refresh.png" alt-text="Power Platform Datu-fluxua freskatzeko ezarpenak.":::
 
 1. Hartzaileen xehetasunetan, joan hona: **Administratzailea** > **Sistema** eta hautatu **Antolaketa** fitxa.
 

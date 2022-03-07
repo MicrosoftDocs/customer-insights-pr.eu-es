@@ -1,20 +1,22 @@
 ---
 title: Customer Insights datuak Microsoft Dataverse-n
 description: Erabili Customer Insights entitateak taula gisa Microsoft Dataverse-n.
-ms.date: 10/14/2021
+ms.date: 11/25/2021
 ms.reviewer: mhart
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: m-hartmann
 ms.author: wimohabb
 manager: shellyha
-ms.openlocfilehash: 9855ff6908001dd18bc19a286fc56620d0a127e5
-ms.sourcegitcommit: 53b133a716c73cb71e8bcbedc6273cec70ceba6c
-ms.translationtype: HT
+searchScope:
+- ci-system-diagnostic
+- customerInsights
+ms.openlocfilehash: 9f730f5856221592cddf34b714beeaca24c52130
+ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
+ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "7645203"
+ms.lasthandoff: 02/25/2022
+ms.locfileid: "8355414"
 ---
 # <a name="work-with-customer-insights-data-in-microsoft-dataverse"></a>Egin lan Customer Insights datuekin Microsoft Dataverse-n
 
@@ -45,6 +47,7 @@ Hartzaileen xehetasunetatik ateratako entitate batzuk taula moduan daude eskurag
 - [CustomerMeasure](#customermeasure)
 - [Aberastea](#enrichment)
 - [Iragarpena](#prediction)
+- [Segmentuko kidetasuna](#segment-membership)
 
 
 ### <a name="customerprofile"></a>Bezero-profila
@@ -121,3 +124,16 @@ Taula honetan ereduaren iragarpenen irteera dago.
 | Balioak               | JSON katea | Ereduak sortutako atributuen zerrenda |
 | msdynci_predictionid | GUIDa        | Msdynci_identifier-etik sortutako GUID determinista | 
 | msdynci_identifier   | String      |  `Model|ModelProvider|CustomerId`                      |
+
+### <a name="segment-membership"></a>Segmentuko kidetasuna
+
+Taula honek bezeroen profilen segmentu-kidetasunaren informazioa dauka.
+
+| Column        | Idatzi | Deskribapenak                        |
+|--------------------|--------------|-----------------------------|
+| Bezeroaren IDa        | String       | Bezero-profilaren IDa        |
+| SegmentProvider      | String       | Segmentuak argitaratzen dituen aplikazioa. Lehenetsia: ikusleen estatistikak         |
+| SegmentMembershipType | String       | Bezero mota segmentu honetako kidetzaren erregistroa. Hainbat mota onartzen ditu, hala nola Bezeroa, Kontaktua edo Kontua. Lehenetsia: Bezeroa  |
+| Segmentuak       | JSON katea  | Bezeroaren profila kide den segmentu berezien zerrenda      |
+| msdynci_identifier  | String   | Segmentuko kidetzaren erregistroaren identifikatzaile bakarra. `CustomerId|SegmentProvider|SegmentMembershipType|Name`  |
+| msdynci_segmentmembershipid | GUIDa      | Hemendik sortutako GUID deterministikoa`msdynci_identifier`          |

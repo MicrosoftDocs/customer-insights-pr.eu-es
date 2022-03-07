@@ -1,37 +1,38 @@
 ---
 title: LiveRamp konektorea
-description: Ikasi datuak LiveRamp-era esportatzen.
-ms.date: 12/02/2020
-ms.reviewer: kishorem
-ms.service: customer-insights
+description: Ikasi konexioa eta esportazioa LiveRamp-era nola konfiguratu.
+ms.date: 10/08/2021
+ms.reviewer: mhart
 ms.subservice: audience-insights
-ms.topic: conceptual
-author: m-hartmann
-ms.author: mhart
+ms.topic: how-to
+author: kishorem-ms
+ms.author: kishorem
 manager: shellyha
-ms.openlocfilehash: 86aa8c66a47ee61741082c95f05d2e5ce3f06f35
-ms.sourcegitcommit: 334633cbd58f5659d20b4f87252c1a10cc7130db
-ms.translationtype: HT
+ms.openlocfilehash: 4c0f58083e8486d2042d8efcc8b3690020efb1c3
+ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
+ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "4667169"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8226337"
 ---
-# <a name="liverampreg-connector-preview"></a>LiveRamp&reg; konektorea (aurrebista)
+# <a name="export-segments-to-liverampreg-preview"></a>Esportatu segmentuak LiveRamp-era&reg; (aurrebista)
 
-Aktibatu zure datuak LiveRamp-en, 500 plataforma baino gehiagorekin konektatzeko digital, sozial eta telebistetako ekosistemetan. Lan egin LiveRamp-ekin zure datuekin iragarki-kanpainak zuzentzeko, ezabatzeko eta pertsonalizatzeko.
+Aktibatu zure datuak LiveRamp-en 500 plataforma baino gehiagorekin konektatzeko telebista digitaletan, sozialetan eta telebistetan. Lan egin LiveRamp-ekin zure datuekin iragarki-kanpainak zuzentzeko, ezabatzeko eta pertsonalizatzeko.
 
-## <a name="prerequisites"></a>Aurrebaldintzak
+## <a name="prerequisites-for-a-connection"></a>Konexioaren aurrebaldintzak
 
 - Konektore hau erabiltzeko LiveRamp-eko harpidetza behar duzu.
 - Harpidetza lortzeko, [jarri harremanetan LiveRamp-ekin](https://liveramp.com/contact/) zuzenean. [Argibide gehiago LiveRamp Onboarding-i buruz](https://liveramp.com/our-platform/data-onboarding/).
 
-## <a name="connect-to-liveramp"></a>Konektatu LiveRamp-era
+## <a name="set-up-connection-to-liveramp"></a>Konfiguratu konexioa LiveRamp-era
 
-1. Hartzaileei buruzko xehetasunetan, joan hona: **Administratzailea** > **Esportatu helburuak**.
+1. Joan **Administratzailea** > **Konexioak**.
 
-1. **LiveRamp** lauzan, hautatu **Konfiguratu**.
+1. Hautatu **Gehitu konexioa** eta aukeratu **LiveRamp** konexioa konfiguratzeko.
 
-1. Eman zure destinoari izen ezagun bat **Bistaratu izena** eremu.
+1. Eman zure konexioa ezaguna den izena **Bistaratze izena** eremua. Izena eta konexio motak konexio bat deskribatzen du. Konexio honen xedea eta xedea azaltzen duen izena aukeratzea gomendatzen dugu.
+
+1. Aukeratu nork erabil dezakeen konexioa. Inolako neurririk hartzen ez baduzu, lehenetsia izango da Administratzaileak. Informazio gehiagorako, ikus [Baimendu laguntzaileei esportazioetarako konexioa erabiltzea](connections.md#allow-contributors-to-use-a-connection-for-exports).
 
 1. Eman **Erabiltzaile izena** eta **Pasahitza** zure LiveRamp Secure FTP (SFTP) kontuan.
 Kredentzial hauek zure LiveRamp Onboarding kredentzialak desberdinak izan daitezke.
@@ -40,15 +41,25 @@ Kredentzial hauek zure LiveRamp Onboarding kredentzialak desberdinak izan daitez
 
 1. Egiaztatu ondoren, eman baimena **Datuen pribatutasuna eta betetzea** aukeratuz **ados** laukia.
 
-1. Aukeratu **hurrengo** LiveRamp konektorea konfiguratzeko.
+1. Hautatu **Gorde** konexioa osatzeko.
 
-## <a name="configure-the-connector"></a>Konfiguratu konektorea
+## <a name="configure-an-export"></a>Konfiguratu esportazio bat
+
+Esportazio hau konfigura dezakezu mota honetako konexiorako sarbidea baduzu. Informazio gehiagorako, ikusi [Esportazioa konfiguratzeko beharrezkoak diren baimenak](export-destinations.md#set-up-a-new-export).
+
+1. Joan **Datuak** > **Esportazioak**.
+
+1. Esportazio berria sortzeko, hautatu **Gehitu helmuga**.
+
+1. Hurrengoan **Konexioa esportatzeko** eremuan, aukeratu konexioa LiveRamp sekzioan. Atal honen izena ikusten ez baduzu, ez dago mota honetako konexiorik erabilgarri.
 
 1. Sarbidean **Aukeratu zure gako identifikatzailea** eremua, hautatu **Emaila**, **Izena eta helbidea**, edo **Mugikorra** identitatearen ebazpenerako LiveRamp-era bidali.
+   > [!div class="mx-imgBorder"]
+   > ![LiveRamp konektorea atributuen mapak.](media/export-liveramp-segments.png "LiveRamp konektorea atributuen mapak")
 
-1. Aukeratu hautatutako gako identifikatzaileari zure bezeroen erakunde bateratuari dagozkion atributuak.
+1. Mapatu dagozkien atributuak zure *Bezeroa* hautatutako gako identifikatzailearen entitatea.
 
-1. Aukeratu **Gehitu atributua** LiveRamp-era bidaltzeko atributu osagarriak mapatzeko.
+1. Hautatu **Gehitu atributua** LiveRamp-era bidalitako atributu gehiago jarraitzeko.
 
    > [!TIP]
    > LiveRamp erabiltzaileari gako identifikatzaile atributu gehiago bidaltzeak baliteke partidu tasa handiagoa lortzea.
@@ -57,15 +68,14 @@ Kredentzial hauek zure LiveRamp Onboarding kredentzialak desberdinak izan daitez
 
 1. Sakatu **Gorde**.
 
-> [!div class="mx-imgBorder"]
-> ![LiveRamp konektorea atributuen mapak](media/export-liveramp-segments.png "LiveRamp konektorea atributuen mapak")
+Esportazio bat gordetzeak ez du esportazioa berehala exekutatzen.
 
-## <a name="export-the-data"></a>Esportatu datuak
+Esportazioa guztiekin egiten da [freskatze programatua](system.md#schedule-tab). Ere egin dezakezu [esportatu eskariaren arabera](export-destinations.md#run-exports-on-demand). 
 
-Esportazioa laster hasiko da esportaziorako baldintza guztiak bete badira. Esportazioa guztiekin ere exekutatuko da [programatutako freskapen](system.md#schedule-tab).
-Esportazioa behar bezala burututa, LiveRamp Onboarding zerbitzuan saioa egin dezakezu zure datuak aktibatzeko eta banatzeko.
 
 ## <a name="data-privacy-and-compliance"></a>Datuen pribatutasuna eta arau-gordetzea
 
 Dynamics 365 Customer Insights gaitzen duzunean datuak Liveramp-era bidaltzeko, datuak betetzeko mugatik kanpo transferitzea baimentzen duzu Dynamics 365 Customer Insights-erako, datu pertsonalak bezalako datu sentikorrak barne. Microsoft-ek datu horiek transferituko ditu zure aginduz, baina zure ardura da Liveramp-ek pribatutasun- edo segurtasun-betebeharrak betetzen dituela ziurtatzea. Informazio gehiago eskuratzeko, ikusi [Microsoft-en pribatutasun-adierazpena](https://go.microsoft.com/fwlink/?linkid=396732).
 Funtzio hau erabiltzeari uzteko, Dynamics 365 Customer Insights-en administratzaileak esportazioaren helburuko kokalekua edonoiz ken dezake.
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

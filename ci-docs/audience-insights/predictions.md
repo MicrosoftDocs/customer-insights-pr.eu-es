@@ -1,24 +1,28 @@
 ---
 title: Osatu datu partzialak iragarpenak erabiliz
 description: Erabili iragarpenak bezeroen datu osatugabeak betetzeko.
-ms.date: 05/05/2020
-ms.service: customer-insights
+ms.date: 11/01/2021
 ms.subservice: audience-insights
 ms.topic: how-to
 author: zacookmsft
 ms.author: zacook
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 7ca42334420a27a8739d7c28bb72606c3ed91f3c
-ms.sourcegitcommit: 53b133a716c73cb71e8bcbedc6273cec70ceba6c
-ms.translationtype: HT
+searchScope:
+- ci-predictions
+- ci-custom-models
+- customerInsights
+ms.openlocfilehash: 9634523f61e27a0ed183186a788ab0cef3c0491b
+ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
+ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "7645019"
+ms.lasthandoff: 02/25/2022
+ms.locfileid: "8353988"
 ---
-# <a name="complete-your-partial-data-with-predictions"></a>Osatu zure datu partzialak iragarpenekin
+# <a name="complete-your-partial-data-with-predictions-deprecated"></a>Osatu zure datu partzialak iragarpenekin (zaharkituta)
 
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
+> [!IMPORTANT]
+> Ezaugarri hau izango da **zaharkitua** bezala **2021eko azaroaren 5a**. Uneko inplementazioek funtzionatzen jarraituko dute eginbidea kendu arte, baina ezin izango duzu integrazio berririk sortu beheko argibideak erabiliz.
 
 Aurreikuspenek erraz iragarritako balioak sor ditzakezu bezeroaren ulermena hobetzeko. **Adimena** > **Iragarpenak** orrian, **Nire iragarpenak** atala hauta dezakezu hartzaileei buruzko xehetasunen beste atal batzuetan konfiguratu dituzun iragarpenak ikusteko eta pertsonalizatzeko aukera ematen dizu.
 
@@ -60,6 +64,8 @@ Informazio gehiago lortzeko, ikusi [Sortu ingurune berri bat](create-environment
    > ![Adibidez, mapen eremuaren balioak kategorietan erakusteko.](media/intelligence-categorymapping.png "Adibidez, mapen eremuaren balioak kategorietan erakusteko")
 
 8. Aukeratu **Egina** eta iragarpena prozesatuko da. Tratamenduak denbora gutxi iraungo du, datuen tamainaren eta konplexutasunaren arabera. Emaitzak entitate berri batean egongo dira eskuragarri **Irteerako entitatearen izena** sortu zenuen iragarpenaz.
+
+[!INCLUDE [progress-details-include](../includes/progress-details-pane.md)]
 
 ## <a name="create-a-prediction-while-creating-a-segment"></a>Sortu iragarpenak segmentu bat sortzen duzun bitartean
 
@@ -110,7 +116,7 @@ Fluxu horren baitan atributu zehatz bat aukeratu behar duzu zure segmentua nola 
 
 ## <a name="edit-a-prediction"></a>Editatu iragarpena
 
-Aurreikuspen bat sortu ondoren, AI Builder-en eredua pertsonalizatu dezakezu zure ereduaren eraginkortasuna areagotzeko.  
+Iragarpen bat sortu ondoren, eredua pertsonaliza dezakezu AI Builder zure ereduaren eraginkortasuna areagotzeko.  
 
 1. Hartzaileen xehetasunetan, joan hona: **Adimena** > **Iragarpenak** > **Nire iragarpenak**.
 
@@ -118,14 +124,14 @@ Aurreikuspen bat sortu ondoren, AI Builder-en eredua pertsonalizatu dezakezu zur
 
 3. Hautatu elipsi eremuan **Ekintzak** zutabea eta aukeratu **ikusi**.
 
-4. Hautatu **Pertsonalizatu AI Builder-en**.
+4. Hautatu **Pertsonalizatu AI Builder**.
 
-5. Eguneratu zure eredua AI Builder-en. [Argibide gehiago AI builder ereduak kudeatzeari buruz](/ai-builder/manage-model#retrain-and-republish-existing-models).
+5. Eguneratu zure eredua AI Builder. [Argibide gehiago AI builder ereduak kudeatzeari buruz](/ai-builder/manage-model#retrain-and-republish-existing-models).
 
 Zure iragarpenaren hurrengo exekutatuak sortu duzun eredu eguneratua erabiliko du.
 
 > [!NOTE]
-> AI Builder-en sortutako eredu berriak ez dira hartzaileen xehetasunetan bistaratuko, eredua goian zerrendatutako esperientzietatik sortu izan ezean.
+> Urtean sortutako eredu berriak AI Builder ez da ikusleen ikuspegietan erakutsiko eredua goian zerrendatutako esperientzietatik sortu ez bada.
 
 ## <a name="remove-a-prediction"></a>Kendu iragarpena
 

@@ -1,40 +1,47 @@
 ---
 title: Esportatu Customer Insights datuak AdRoll-era
-description: Ikasi AdRoll-erako konexioa nola konfiguratu.
-ms.date: 02/15/2021
+description: Ikasi konexioa nola konfiguratu eta AdRoll-era esportatu.
+ms.date: 10/08/2021
 ms.reviewer: mhart
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 6fedd549c2e7de362f36e3fb23d363200bb92a04
-ms.sourcegitcommit: d24e52150fe5a4fab45128e12d6a03637771d9b9
-ms.translationtype: HT
+ms.openlocfilehash: 3a318750077c71a17e5a47c40722f6153e6640f3
+ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
+ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "5697059"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8227605"
 ---
-# <a name="connector-for-adroll-preview"></a>AdRoll-eko konektorea (aurrebista)
+# <a name="export-segments-to-adroll-preview"></a>Esportatu segmentuak AdRoll-era (aurrebista)
 
 Esportatu bezeroen profil bateratuen segmentuak AdRoll-era eta erabili iragarkietarako. 
 
-## <a name="prerequisites"></a>Aurrebaldintzak
+## <a name="prerequisites-for-a-connection"></a>Konexioaren aurrebaldintzak
 
 -   Baduzu [AdRoll kontua](https://www.adroll.com/) eta dagozkion administratzaile kredentzialak.
 -   Badituzu [konfiguratutako segmentuak](segments.md) hartzaileei buruzko xehetasunetan.
 -   Esportatutako segmentuetako bezeroen profil bateratuek helbide elektronikoa adierazten duen eremua dute.
 
-## <a name="connect-to-adroll"></a>Konektatu AdRoll-era
+## <a name="known-limitations"></a>Muga ezagunak
 
-1. Joan **Administratzailea** > **Esportazio-helburuak** atalera.
+- Gehienez 250.000 bezero-profil esporta ditzakezu aldi bakoitzean AdRoll-era.
+- Ezin dituzu esportatu 100 bezero profil baino gutxiago dituzten segmentuak AdRoll-era. 
+- AdRoll-era esportatzea segmentuetara mugatuta dago.
+- 250.000 arte bezero profil AdRoll-en dituzten segmentuak esportatzen 10 minutu behar izan ditzakete osatzeko. 
+- AdRoll-era esporta ditzakezun bezeroen profil kopurua AdRoll-ekin duzun kontratuaren menpe dago eta mugatua da.
 
-1. **AdRoll** atalean hautatu **Konfiguratu**.
+## <a name="set-up-connection-to-adroll"></a>Konfiguratu konexioa AdRoll-ra
 
-1. Eman zure esportatze-helmugari izen bat **Bistaratu izena** eremuan.
+1. Joan **Administratzailea** > **Konexioak**.
 
-   :::image type="content" source="media/AdRoll_config.PNG" alt-text="AdRoll konexioaren konfigurazio panela.":::
+1. Hautatu **Gehitu konexioa** eta aukeratu **AdRoll** konexioa konfiguratzeko.
+
+1. Eman zure konexioa ezaguna den izena **Bistaratze izena** eremua. Izena eta konexio motak konexio bat deskribatzen du. Konexio honen xedea eta xedea azaltzen duen izena aukeratzea gomendatzen dugu.
+
+1. Aukeratu nork erabil dezakeen konexioa. Inolako neurririk hartzen ez baduzu, lehenetsia izango da Administratzaileak. Informazio gehiagorako, ikus [Baimendu laguntzaileei esportazioetarako konexioa erabiltzea](connections.md#allow-contributors-to-use-a-connection-for-exports).
 
 1. Aukeratu **ados** baieztatzeko **Datuen pribatutasuna eta betetzea**.
 
@@ -44,29 +51,32 @@ Esportatu bezeroen profil bateratuen segmentuak AdRoll-era eta erabili iragarkie
 
 1. Aukeratu **Gehitu zeure burua esportazio erabiltzaile gisa** eta eman zure Customer Insights kredentzialak.
 
-1. Sartu zure **AdRoll iragarlearen IDa** [AdRoll iragarkia](https://help.adroll.com/hc/en-us/articles/212011838-Advertiser-Profiles).
+1. Hautatu **Gorde** konexioa osatzeko.
 
-1. Aukeratu **hurrengoa** esportazioa konfiguratzeko.
+## <a name="configure-an-export"></a>Konfiguratu esportazio bat
 
-## <a name="configure-the-connector"></a>Konfiguratu konektorea
+Esportazio hau konfigura dezakezu mota honetako konexiorako sarbidea baduzu. Informazio gehiagorako, ikusi [Esportazioa konfiguratzeko beharrezkoak diren baimenak](export-destinations.md#set-up-a-new-export).
 
-1. **Datuen bat etortzea** atalean, **Posta elektronikoa** eremuan, hautatu zure bezeroaren profil bateratuko eremua, bezero baten helbide elektronikoa adierazten duena. Segmentuak AdRoll-era esportatu behar dira.
+1. Joan **Datuak** > **Esportazioak**.
+
+1. Esportazio berria sortzeko, hautatu **Gehitu helmuga**.
+
+1. Hurrengoan **Konexioa esportatzeko** eremuan, aukeratu konexioa AdRoll sekzioan. Atal honen izena ikusten ez baduzu, mota honetako konexiorik ez duzu eskuragarri.
+
+1. Sartu zure **AdRoll iragarlearen IDa**. Informazio gehiagorako, ikus [AdRoll iragarkien profilak](https://help.adroll.com/hc/articles/212011838-Advertiser-Profiles).
+
+1. Urtean **Datuen bat etortzea** atalean, **Posta elektronikoa** eremua, hautatu bezeroaren helbide elektronikoa adierazten duen eremua. Segmentuak AdRoll-era esportatu behar dira.
 
 1. Hautatu esportatu nahi dituzun segmentuak. Aukeratu gutxienez 100 kide dituen segmentua. Ezin dituzu segmentu txikiagoak esportatu. Gainera, esportatzeko segmentu baten gehieneko tamaina 250.000 kide da esportazio bakoitzeko. 
 
 1. Sakatu **Gorde**.
 
-## <a name="export-the-data"></a>Esportatu datuak
+Esportazio bat gordetzeak ez du esportazioa berehala exekutatzen.
 
-Hurrengoa egin dezakezu [esportatu datuak eskatu ahala](export-destinations.md). Esportazioa guztiekin ere exekutatuko da [programatutako freskapen](system.md#schedule-tab).
+Esportazioa guztiekin egiten da [freskatze programatua](system.md#schedule-tab). 
 
-## <a name="known-limitations"></a>Muga ezagunak
+Ere egin dezakezu [esportatu eskariaren arabera](export-destinations.md#run-exports-on-demand). 
 
-- Guztira 250.000 bezero-profil esporta ditzakezu AdRoll-era esportatzeko.
-- Ezin dituzu esportatu 100 profil baino gutxiagoko segmentuak AdRoll-era. 
-- AdRoll-era esportatzea segmentuetara mugatuta dago.
-- 250.000 profila AdRoll-era esportatzeko 10 minutu behar izan ditzakezu osatzeko. 
-- AdRoll-era esporta ditzakezun profilen kopurua AdRoll-rekin duzun kontratuaren menpe dago eta mugatua da.
 
 ## <a name="data-privacy-and-compliance"></a>Datuen pribatutasuna eta arau-gordetzea
 

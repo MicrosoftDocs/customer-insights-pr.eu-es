@@ -1,21 +1,25 @@
 ---
 title: Aberastu bezeroen profil bateratuak
 description: Erabili gaitasunak zure bezeroaren datuak aberasteko.
-ms.date: 09/30/2021
+ms.date: 02/18/2022
 ms.reviewer: mhart
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
 ms.custom: intro-internal
-ms.openlocfilehash: bc0128c222c032e8cfe35e6f3baa0ea722bce7cb
-ms.sourcegitcommit: 31985755c7c973fb1eb540c52fd1451731d2bed2
-ms.translationtype: HT
+searchScope:
+- ci-enrichments
+- ci-enrichment-details
+- ci-enrichment-wizard
+- customerInsights
+ms.openlocfilehash: b44f5a4b74c63629811837b853b4e069dea63504
+ms.sourcegitcommit: bb1f9e96023490ab340c114f54200ab4dd48da78
+ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 10/22/2021
-ms.locfileid: "7672984"
+ms.lasthandoff: 03/02/2022
+ms.locfileid: "8372687"
 ---
 # <a name="enrichment-for-customer-profiles-preview"></a>Bezeroen profiletarako aberastea (aurrebista)
 
@@ -37,14 +41,18 @@ Gainean **Ezagutu** fitxa, onartutako aberasteko aukera guztiak aurkituko dituzu
 - Experian-ek eskainitako [datu demografikoak](enrichment-experian.md)
 - [Datu pertsonalizatuak](enrichment-SFTP-custom-import.md) fitxategiak modu seguruan transferitzeko protokoloaren (SFTP) bidez 
 - [Azure Maps](enrichment-azure-maps.md), Microsoft-ek eskainia
+- [Kokapen datuak](enrichment-here.md) HERE Technologies-ek emanak 
+- [Identitatea](enrichment-liveramp.md) LiveRamp AbiliTec-ek emandakoa
 
 # <a name="business-accounts-b-to-b"></a>[Negozio-kontuak (negoziotik negoziora)](#tab/b2b)
 
 - [Enpresaren datuak](enrichment-leadspace.md) , Leadspace-k emanak
 - [Helbide hobetuak](enrichment-enhanced-addresses.md) Microsoft-ek eskainita 
+- [Enpresaren datu hobetuak](enrichment-enhanced-company-data.md) Microsoft-ek emandakoa
 - [Kokapen datuak](enrichment-here.md) HERE Technologies-ek emanak 
 - [Datu pertsonalizatuak](enrichment-SFTP-custom-import.md) fitxategiak modu seguruan transferitzeko protokoloaren (SFTP) bidez 
 - [Azure Maps](enrichment-azure-maps.md), Microsoft-ek eskainia
+- [Kontuaren partaidetza-datuak](enrichment-office.md) Microsoft-ek emandakoa
 
 ---
 
@@ -73,6 +81,10 @@ Hirugarrenen aberastasunak erabiliz konfiguratzen dira [konexioak](connections.m
 ## <a name="multiple-enrichments-of-the-same-type"></a>Mota bereko hainbat aberastasun
 
 Aberastu nahi den entitatea aberasteko konfigurazioan zehazten da eta horrek zure profilen azpimultzo bat soilik aberastea ahalbidetzen du. Adibidez, aberastu datuak segmentu zehatz baterako soilik. Mota bereko hainbat aberastasun konfigura ditzakezu eta konexio bera berrerabili. Zenbait aberastasunek sor ditzaketen mota bereko aberastasunen kopuruak izango dituzte mugak. Mugak eta egungo erabilera webgunean ikus daitezke **Aberastea** orrialdea.
+
+## <a name="enrich-data-sources-before-unification"></a>Aberastu datu-iturriak bateratu aurretik
+
+Zure bezeroen datuak aberastu ditzakezu datuak bateratu aurretik, datuen bat-etortzeen kalitatea areagotzen laguntzeko. Informazio gehiagorako, ikus [datu-iturburu aberastea](data-sources-enrichment.md).
 
 ## <a name="see-the-progress-of-the-enrichment-process"></a>Ikusi aberaste-prozesuaren garapena
 

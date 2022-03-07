@@ -3,26 +3,29 @@ title: Produktuak gomendatzeko iragarpenaren adibide-gida
 description: Erabili gida hau erabiltzeko prest dagoen produktuak gomendatzeko iragarpen-eredua probatzeko.
 ms.date: 02/10/2021
 ms.reviewer: mhart
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: tutorial
-author: diegogranados117
-ms.author: digranad
+author: m-hartmann
+ms.author: wameng
 manager: shellyha
-ms.openlocfilehash: b219935dfbd9f7acc1104d83e2ca281801a1a4251ae4c19fc03d4b1ce46f4613
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
-ms.translationtype: HT
+searchScope:
+- ci-predictions
+- ci-create-prediction
+- customerInsights
+ms.openlocfilehash: 8ba54cfd466049c8df99c15f34626ab1914234f1
+ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
+ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7035170"
+ms.lasthandoff: 02/25/2022
+ms.locfileid: "8354632"
 ---
-# <a name="product-recommendation-prediction-preview-sample-guide"></a>Produktuak gomendatzeko iragarpenaren (aurreargitalpena) adibide-gida
+# <a name="product-recommendation-prediction-sample-guide"></a>Produktuak gomendatzeko iragarpenaren adibide-gida
 
 Produktuak gomendatzeko iragarpenaren adibide bat azalduko dizugu, behean emandako lagin datuak erabiliz.
 
 ## <a name="scenario"></a>Egoera
 
-Contoso kalitate handiko kafea eta kafe makinak ekoizten dituen enpresa da eta Contoso Coffee webgunearen bidez saltzen dituzte. Haien helburua da bezeroei zein produktu gomendatu behar dieten ulertzea. Bezero gehiago zer diren jakitea **erosteko litekeena**, marketineko ahalegina aurrezten lagun diezaiekete elementu zehatzetan arreta jarriz.
+Contoso kalitate handiko kafea eta kafe-makinak sortzen dituen enpresa bat da. Horiek Contoso Coffee webgunearen bidez saltzen dituzte. Haien helburua da bezeroei zein produktu gomendatu behar dieten ulertzea. Bezero gehiago zer diren jakitea **erosteko litekeena**, marketineko ahalegina aurrezten lagun diezaiekete elementu zehatzetan arreta jarriz.
 
 ## <a name="prerequisites"></a>Aurrebaldintzak
 
@@ -31,7 +34,7 @@ Contoso kalitate handiko kafea eta kafe makinak ekoizten dituen enpresa da eta C
 
 ## <a name="task-1---ingest-data"></a>1. zeregina - Datuen sarrera
 
-Berrikusi zehazki [datuen sarrerari](data-sources.md) eta [Power Query konektoreak erabiliz datu-iturburuak inportatzeari](connect-power-query.md) buruzko artikuluak. Honako informazio honetan, ulertzen da ohituta zaudela orokorrean datuen sarrerarekin.
+Berrikusi artikuluak [datuak sartzeari buruz](data-sources.md) eta [datu-iturriak erabiliz inportatzea Power Query konektoreak](connect-power-query.md) zehazki. Honako informazio honetan, ulertzen da ohituta zaudela orokorrean datuen sarrerarekin.
 
 ### <a name="ingest-customer-data-from-ecommerce-platform"></a>Sartu bezero-datuak merkataritza elektronikoko plataformatik
 

@@ -3,18 +3,17 @@ title: Probaren maiz egiten diren galderak - Dynamics 365 Customer Insights
 description: Customer Insights-en probako konfigurazioaren eta kudeaketarekin lotutako ohiko galderen irtenbideak. Ikasi plataformaren eta aplikazioen berariazko arazoak konpontzen.
 author: m-hartmann
 ms.author: mhart
-ms.date: 09/30/2021
+ms.date: 02/10/2022
 ms.topic: get-started
-ms.service: customer-insights
 ms.custom: template-trial-faq
 ms.reviewer: jeffhar
 manager: shellyha
-ms.openlocfilehash: 2837ae13b4150310193a2d09d59aed66b4a69c69
-ms.sourcegitcommit: e6020c178a61beb0ee31a031c11ded914d10d995
-ms.translationtype: HT
+ms.openlocfilehash: 9badd8370358b9f5745ba6347e8db42e89c5f3d3
+ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
+ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "7642842"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8229480"
 ---
 # <a name="dynamics-365-customer-insights-trial-faq"></a>Dynamics 365 Customer Insights probako bertsioaren FAQa
 
@@ -24,7 +23,7 @@ ms.locfileid: "7642842"
 
 Aplikazio hau hodeian oinarritutako zerbitzua da, eta ez du web-arakatzaile eguneratua ez den beste software berezirik, murrizketa batzuk dituen arren. Probako esperientziarik onena lortzeko, saiatu saiakuntza gunera inkognito moduan sartzea eta aukeratu gertuen duzun probako kokapena. [Informazio gehiago web-aplikazioaren eskakizunei buruz.](/power-platform/admin/web-application-requirements)
 
-### <a name="how-do-i-sign-up-for-the-trial-without-a-microsoft-365-tenant"></a>Nola erregistratu proban Microsoft 365 maizterrik gabe?
+### <a name="how-do-i-sign-up-for-the-trial-without-a-microsoft-365-tenant"></a>Nola eman izena epaiketarako arik gabe Microsoft 365 maizter?
 
 Lanekoa ez den helbide elektronikoa sar dezakezu eta kontu bat eta maizterra sortuko ditugu zuretzat.
 
@@ -43,7 +42,7 @@ Proban izena ematen duzunean, mezu elektroniko bat jasoko duzu probaren xehetasu
 
 ### <a name="how-do-i-add-more-users-to-a-trial"></a>Nola gehi ditzaket erabiltzaileak proba batean?
 
-Erabiltzaileak gehitzeko, joan [Microsoft 365 administrazio zentrora](https://admin.microsoft.com) probako administratzaile kontua erabiliz. Jarraitu [administrazio zentroaren orientazioa](/microsoft-365/admin/add-users/add-users) erabiltzaileak gehitzeko probarako lizentziaren mugaren barruan. Gehitzen ari zaren erabiltzaileak dagoeneko Microsoft 365 kontua badu, esleitu iezaiozu segurtasun-funtzio egokia probako organoan. Informazio gehiagorako, ikus [Esleitu erabiltzaile bati segurtasun-funtzioa](/power-platform/admin/create-users-assign-online-security-roles#assign-a-security-role-to-a-user).
+Erabiltzaileak gehitzeko, joan [Microsoft 365 administrazio-zentrora](https://admin.microsoft.com) probako administratzaile-kontua erabiliz. Jarraitu [administrazio zentroaren orientazioa](/microsoft-365/admin/add-users/add-users) erabiltzaileak gehitzeko probarako lizentziaren mugaren barruan. Gehitzen ari zaren erabiltzaileak dagoeneko badu Microsoft 365 kontua, esleitu segurtasun-funtzio egokia probako org-an. Informazio gehiagorako, ikus [Esleitu segurtasun-funtzio erabiltzaile bati](/power-platform/admin/create-users-assign-online-security-roles#assign-a-security-role-to-a-user).
 
 ### <a name="how-many-users-can-i-add-to-my-trial-environment"></a>Zenbat erabiltzaile gehitu ditzaket nire probako ingurunera?
 
@@ -63,7 +62,7 @@ Proban aplikazioan zuzenean luzatu dezakezu. Behin proba luzatu dezakezu.
 
 Orokorrean, zure datuekin berriro hastea gomendatzen dugu Customer Insights-en ordaindutako bertsiora eguneratzean. 
 
-Aukeran, publikoaren estatistikak soilik erabiltzen badituzu, zure datuak proba-ingurune batetik kopia ditzakezu Customer Insights erosten baduzu. Customer Insights probako administratzailea eta zure Microsoft 365 maizterraren administratzaile globala edo zure erakundeko Dynamics 365 administratzailea izan behar duzu ezarpenak probako ingurunetik ordaindutako ingurunera migratzeko. 
+Aukeran, publikoaren estatistikak soilik erabiltzen badituzu, zure datuak proba-ingurune batetik kopia ditzakezu Customer Insights erosten baduzu. Customer Insights probaren administratzailea eta zure administratzaile globala izan behar duzu Microsoft 365 maizterrak edo zure erakundeko Dynamics 365 administratzaileak ezarpenak probako ingurunetik ordaindutako ingurune batera migratzeko. 
 
 Customer Insights-en ordaindutako instantziarekin lehen aldiz saioa hasi ondoren, ingurune berri bat sortzeko eskatuko zaizu. Prozesu honetan, konfigurazioa lehendik dagoen ingurune batetik kopiatzea eta ezarpen gehienak migratzea aukera dezakezu. Goian aipatutako baimenak badituzu, proba-ingurunea zerrenda honetan agertuko da. Informazio gehiagorako, ikus [Kopiatu ingurunearen konfigurazioa](audience-insights/manage-environments.md#copy-the-environment-configuration).
 
@@ -82,8 +81,9 @@ Proban izena eman ondoren, aplikazioaren pantaila nagusira iritsiko zara. Pantai
 
 Customer Insights gaitasunen ezaugarri gehienak proban eskuragarri daude.
 
-Hurrengo eginbidea ez dago eskuragarri: 
+Honako ezaugarri hauek dira **ez dago eskuragarri**: 
 - Ezin dituzu zure Azure Data Lake biltegiratze kontua erabiltzen duten ingurune berriak sortu.
+- Ezin duzu probako ingurunea ezabatu. 
 
 ### <a name="how-long-does-the-trial-last"></a>Zenbat irauten du epaiketak?
 

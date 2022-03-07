@@ -1,20 +1,19 @@
 ---
-title: Bezeroen iritzietarako analisi semantikoa
+title: Bezeroen iritzia lortzeko sentimenduen analisia
 description: Ikasi bezeroen iritziei buruzko sentimenduen analisiaren eredua nola erabiltzen Dynamics 365 Customer Insights.
 ms.date: 12/23/2021
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.reviewer: mhart
 ms.topic: conceptual
 author: wmelewong
 ms.author: wameng
 manager: shellyha
-ms.openlocfilehash: 05e530a1bc96c5fd9c7a3bc0197563d8fe330387
-ms.sourcegitcommit: cb71e39de9b891c24bd5cd9c014eb3eeb537ac24
-ms.translationtype: HT
+ms.openlocfilehash: b06613b00a512a31479f9d30d539a010e17d33ba
+ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
+ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 01/10/2022
-ms.locfileid: "7951102"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8231450"
 ---
 # <a name="analyze-sentiment-in-customer-feedback-preview"></a>Aztertu sentimendua bezeroen iritzietan (Aurrebista)
 
@@ -24,7 +23,7 @@ Sentimenduen analisiak bezeroen sentimendua sintetizatu eta negozio-alderdiak ho
 
 ## <a name="overview"></a>Informazio orokorra
 
-Sentimenduak aztertzeko eginbideak bezero ID bakoitzeko bi informazio eratorri sortzen ditu. Sentimendu puntuazioa (-5etik 5era) eta negozio-alderdi aplikagarrien zerrenda (negozio-arloak) batera bezeroen iritzia hobeto ulertzen lagunduko dizu. 
+Sentimenduak aztertzeko eginbideak bezero ID bakoitzeko bi informazio eratorri sortzen ditu. Sentimendu puntuazioak (-5etik 5era) eta negozio-alderdi aplikagarrien zerrenda (negozio-arloak) batera bezeroen iritzia hobeto ulertzen lagunduko dizu. 
 
 Informazio honek emaitza hauek lortzen lagun zaitzake: 
 - Lortu bezeroen sentimenduen ikuspegi orokorra marka edo erakunde baten aurrean
@@ -38,7 +37,7 @@ Ereduen emaitzetan fida zaitezkeela ziurtatzeko, ereduek erabakiak nola hartzen 
 
 Bi erabiltzen ditugu **Hizkuntza Naturalaren Prozesamenduaren (NLP) ereduak** : Lehenengoak iritzi-iruzkin bakoitzari sentimendu puntuazio bat esleitzen dio. Bigarren ereduak feedback bakoitza aplikagarriak diren negozio-alderdi guztiekin lotzen du. Ereduak sare sozialetako, txikizkako, jatetxeetako, kontsumo-produktuetako eta automobilgintzako industrietako iturrietako datu publikoetan trebatzen dira.    
   
-- Ereduak feedback datuekin lotzeko aurrez definitutako negozio-alderdiak hauek dira:
+Ereduak feedback datuekin lotzeko aurrez definitutako negozio-alderdiak hauek dira:
 -   Kontuen kudeaketa
 -   Ordainketa eta ordainketa
 -   Bezeroentzako laguntza-zerbitzua
@@ -93,7 +92,7 @@ Datu-atributu hauek behar dira:
 
 1. urtean **Gehitu datuak** panela, aukeratu mota semantikoa **Iritzia** zerrendatik.
 
-   :::image type="content" source="media/sentiment-add-feedback-activities.png" alt-text="Konfigurazio-urratsa iritziak aztertzeko jarduerak hautatzeko.":::
+   :::image type="content" source="media/sentiment-add-feedback-activities.png" alt-text="Konfigurazio-urratsa iritziak aztertzeko iritzi-jarduerak hautatzeko.":::
 
 1. Hautatu sentimenduak aztertzeko erabili nahi dituzun jarduerak, eta hautatu **Hurrengoa**.
  
@@ -143,17 +142,17 @@ Emaitzen orrialdean datuen lau atal nagusi daude.
   
   :::image type="content" source="media/overall-customer-sentiment.png" alt-text="Bezeroen sentimendu orokorraren irudikapen bisuala.":::
 
-- **Bezeroen banaketa sentimendu puntuazioaren arabera** : Bezeroak talde negatibo, neutro eta positiboetan sailkatzen dira, euren sentimenduen puntuazioaren arabera. Pasatu sakatu histogramako barren gainetik talde bakoitzeko bezero kopurua eta batez besteko sentimenduaren puntuazioa ikusteko. Datu hauek lagun zaitzake [bezeroen segmentuak sortu](segments.md) beren sentimenduen puntuazioetan oinarrituta.  
+- **Bezeroen banaketa sentimendu puntuazioaren arabera** : Bezeroak talde negatibo, neutro eta positiboetan sailkatzen dira euren sentimenduen puntuazioaren arabera. Pasatu sakatu histogramako barren gainetik talde bakoitzeko bezero kopurua eta batez besteko sentimenduaren puntuazioa ikusteko. Datu hauek lagun zaitzake [bezeroen segmentuak sortu](segments.md) beren sentimendu puntuazioetan oinarrituta.  
 
   :::image type="content" source="media/distribution-customer-sentiment.png" alt-text="Barra-diagrama bezeroaren sentimendua erakusten duen hiru sentimendu taldeetan.":::
 
-- **Sentimenduaren batez besteko puntuazioa denboran zehar** : Bezeroaren sentimendua alda daiteke denborarekin. Zure bezeroen sentimenduen joerak ematen ditugu zure datuen denbora tarterako. Ikuspegi honek sasoiko sustapenek, produktuen aurkezpenek edo denbora mugatu duten beste esku-hartzeek bezeroen sentimenduan duten eragina neurtzen lagun zaitzake. Ikusi grafikoa goitibeherako menuan interesa duen urtea hautatuz. 
+- **Denboran zehar sentimenduaren batez besteko puntuazioa** : Bezeroaren sentimendua alda daiteke denborarekin. Zure bezeroen sentimenduen joerak ematen ditugu zure datuen denbora tarterako. Ikuspegi honek sasoiko sustapenek, produktuen aurkezpenek edo denbora mugatutako beste esku-hartzeek bezeroen sentimenduan duten eragina neurtzen lagun zaitzake. Ikusi grafikoa goitibeherako menuan interesa duen urtea hautatuz. 
 
   :::image type="content" source="media/sentiment-score-over-time.png" alt-text="Historia-diagrama, denboran zehar sentimenduaren puntuazioa lerro gisa irudikatuta.":::
  
-- **Negozioaren alderdien arteko sentimendua** : Taula honek negozioaren alderdien batez besteko sentimendua zerrendatzen du. Zure negozioaren zein alderdik dagoeneko bezeroak asetzen dituzten edo arreta handiagoa eskatzen duten alderdiak neurtzen lagun zaitzake. Onartutako negozio-alderdiren batekin lerrokatzen ez diren iritzi-erregistroak azpian sailkatuta daude **Bestela**. Taula alfabetikoki ordenatuta dago lehenespenez. Sailkapena alda dezakezu taulako goiburu bat hautatuta.
+- **Negozioaren alderdien arteko sentimendua** : Taula honek negozioaren alderdien batez besteko sentimendua zerrendatzen du. Zure negozioaren zein alderdik dagoeneko bezeroak asetzen dituzten edo arreta handiagoa eskatzen duten alderdiak neurtzen lagun zaitzake. Onartutako negozio-alderdiren batekin lerrokatzen ez diren iritzi-erregistroak azpian sailkatuta daude **Bestela**. Taula alfabetikoki ordenatuta dago lehenespenez. Sailkapena alda dezakezu taulako goiburu bat hautatuz.
 
-  :::image type="content" source="media/sentiment-across-business-aspects.png" alt-text="Lotutako sentimendu-balioa duten negozio-alderdien zerrenda eta hori aipatzen duten bezero-kopurua.":::
+  :::image type="content" source="media/sentiment-across-business-aspects.png" alt-text="Lotutako sentimendu-balioarekin eta hori aipatzen duten bezero-kopurua duten negozio-alderdien zerrenda.":::
  
   Hautatu negozio-alderdi baten izena ereduak negozio-alderdi bat nola identifikatzen duen informazio gehigarria ikusteko. Panel honetan bi zati daude: 
 

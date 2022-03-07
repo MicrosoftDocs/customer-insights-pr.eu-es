@@ -3,18 +3,17 @@ title: Datu subjektuen eskubideak (DSR) eskaerak DBAOren azpian | Microsoft Docs
 description: Erantzun Dynamics 365 Customer Insights hartzaileen xehetasunen gaitasunaren datuen jabearen eskaerei.
 ms.date: 08/11/2021
 ms.reviewer: mhart
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: m-hartmann
 ms.author: wimohabb
 manager: shellyha
-ms.openlocfilehash: 6faaeb6a1ee34c3e5c8e7d465b37cee589bc920c
-ms.sourcegitcommit: 5704002484cdf85ebbcf4e7e4fd12470fd8e259f
-ms.translationtype: HT
+ms.openlocfilehash: e095eb4f8e194f314d7d6baf6fa6a7a319319d2a
+ms.sourcegitcommit: 1946d7af0bd2ca216885bec3c5c95009996d9a28
+ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "7483638"
+ms.lasthandoff: 02/25/2022
+ms.locfileid: "8350254"
 ---
 # <a name="data-subject-rights-dsr-requests-under-gdpr"></a>Datu subjektuen eskubideak (DSR) eskaerak DBAOren azpian
 
@@ -79,71 +78,78 @@ Maizter administratzaileak urrats hauek jarraitzen ditu datuak esportatzeko:
 2. Onartu eskatutako erabiltzailearen datuak esportatzeko baieztapena.
 3. Jaso esportatutako datuak maizter admin helbide elektronikoaren bidez.
 
-## <a name="engagement-insights"></a>Parte-hartzearen xehetasunak
+## <a name="consent-management-preview"></a>Baimenaren kudeaketa (aurrebista)
 
-### <a name="deleting-and-exporting-event-data-containing-end-user-identifiable-information"></a>Azken erabiltzailearen identifikazio informazioa duten gertaeren datuak ezabatu eta esportatu
+Baimenak kudeatzeko gaitasunak ez ditu zuzenean erabiltzaileen datuak biltzen. Beste aplikazio batzuetan erabiltzaileek emandako baimen-datuak soilik inportatzen eta prozesatzen ditu.
 
-Ondorengo ataletan datu pertsonalak izan ditzaketen gertaeren datuak nola ezabatu eta esportatu azaltzen dira.
+Erabiltzaile espezifikoei buruzko adostasun-datuak kentzeko, kendu adostasuna kudeatzeko gaitasunean jasotako datu-iturrietatik. datu-iturburu freskatu ondoren, kendutako datuak Baimen Zentroan ere ezabatuko dira. Baimen-entitatea erabiltzen duten aplikazioek iturburuan kendutako datuak ere ezabatuko dituzte a ondoren [freskatu](audience-insights/system.md#refresh-processes). Datu-iturriak azkar freskatzea gomendatzen dugu datu-gaiaren eskaera bati erantzun ondoren erabiltzailearen datuak beste prozesu eta aplikazio guztietatik kentzeko.
 
-Datuak ezabatzeko edo esportatzeko:
 
-1. Datuak informazio pertsonalarekin dituzten gertaeren propietateak etiketatu.
-2. Ezabatu edo esportatu balio zehatzei lotutako datuak (adibidez: zehaztutako erabiltzaile IDa).
+<!-- ## Engagement insights (preview)
 
-#### <a name="tag-and-update-event-properties"></a>Etiketatu eta eguneratu gertaeren propietateak
+### Deleting and exporting event data containing end user identifiable information
 
-Datu pertsonalak gertaeren jabetza mailan etiketatuta daude. Lehenik eta behin, etiketatu ezabatzeko edo esportatzeko kontuan hartzen ari diren propietateak.
+The following sections describe how to delete and export event data that might contain personal data.
 
-Gertaeraren jabetza informazio pertsonala duela etiketatzeko, jarraitu urrats hauei:
+To delete or export data:
 
-1. Ireki gertaera duen lan eremua.
+1. Tag event properties that contain data with personal information.
+2. Delete or export data associated with specific values (for example: a specified user ID).
 
-1. Joan **Datuak** > **Ekitaldiak** hautatutako lan eremuan gertakarien zerrenda ikusteko.
+#### Tag and update event properties
+
+Personal data is tagged on an event property level. First, tag the properties being considered for deletion or export.
+
+To tag an event property as containing personal information, follow these steps:
+
+1. Open the workspace containing the event.
+
+1. Go to **Data** > **Events** to see the list of events in the selected workspace.
   
-1. Hautatu etiketatu nahi duzun gertaera.
+1. Select the event you want to tag.
 
-1. Aukeratu **Editatu propietateak** hautatutako gertaeraren propietate guztiak zerrendatzen dituen panela irekitzeko.
+1. Select **Edit properties** to open the pane listing all properties of the selected event.
      
-1. Aukeratu **...** eta gero aukeratu **Editatu** heltzeko **Eguneratu jabetza** elkarrizketa-koadroa.
+1. Select **...** and then choose **Edit** to reach the **Update property** dialog.
 
-   ![Editatu gertaera.](engagement-insights/media/edit-event.png "Editatu gertaera")
+   ![Edit event.](engagement-insights/media/edit-event.png "Edit event")
 
-1. Hurrengoan **Eguneratu jabetza** leihoa, aukeratu **...** goiko eskuineko izkinan, eta ondoren aukeratu **EUII dauka** kutxa. Aukeratu **Eguneratu** aldaketak gordetzeko.
+1. In the **Update Property** window, choose **...** in the upper right corner, and then choose the **Contains EUII** box. Choose **Update** to save your changes.
 
-   ![Gorde aldaketak.](engagement-insights/media/update-property.png "Gorde aldaketak")
+   ![Save your changes.](engagement-insights/media/update-property.png "Save your changes")
 
    > [!NOTE]
-   > Gertaeraren eskema aldatzen den bakoitzean edo gertaera berri bat sortzen duzun bakoitzean, lotutako gertaeren propietateak ebaluatzea eta datu pertsonalak dituztela etiketatzea edo etiketatzea gomendatzen da, beharrezkoa bada.
+   > Every time the event schema changes or you create a new event, it's recommended that you evaluate the associated event properties and tag or untag them as containing personal data, if necessary.
 
-#### <a name="delete-or-export-tagged-event-data"></a>Ezabatu edo esportatu etiketatutako gertaeren datuak
+#### Delete or export tagged event data
 
-Gertaeren propietate guztiak aurreko urratsean azaldu bezala egoki etiketatu badira, inguruneko administratzaile batek ezabatzeko eskaera egin dezake etiketatutako gertaeren datuen aurka.
+If all event properties have been tagged appropriately as described in the previous step, an environment admin can issue a deletion request against the tagged event data.
 
-EUII ezabatzeko edo esportatzeko eskaerak kudeatzeko
+To manage EUII deletion or export requests
 
-1. Joan **Administratu** > **Ingurunea** > **Ezarpenak**.
+1. Go to **Admin** > **Environment** > **Settings**.
 
-1. Hurrengoan **Kudeatu azken erabiltzailearen identifikazio informazioa (EUII)** atala, hautatu **Kudeatu EUII**.
+1. In the **Manage end user identifiable information (EUII)** section, select **Manage EUII**.
 
-##### <a name="deletion"></a>Ezabatzea
+##### Deletion
 
-Ezabatzeko, komaz bereizitako erabiltzaile IDen zerrenda sar dezakezu **Ezabatu azken erabiltzailearen identifikazio informazioa (EUII)** atala. ID horiek uneko inguruneko proiektu guztien etiketatutako gertaeren propietate guztiekin alderatuko dira kate zehatzen bidez. 
+For deletion, you can enter a list of comma-separated user IDs in the **Delete end user identifiable information (EUII)** section. These IDs will then be compared with all tagged event properties of all projects in the current environment via exact string matching. 
 
-Jabetzaren balioa emandako IDetako batekin bat badator, lotutako gertaera behin betiko ezabatuko da. Ekintza honen atzeraezintasuna dela eta, hautatu ondoren ezabaketa berretsi behar duzu **Ezabatu**.
+If a property value matches one of the provided IDs, the associated event will be permanently deleted. Due to the irreversibility of this action, you must confirm the deletion after selecting **Delete**.
 
-##### <a name="export"></a>Export
+##### Export
 
-Esportazio prozesua ezabatze prozesuaren berdina da gertaeren propietateen balioak definitzeko orduan **Esportatu azken erabiltzailearen identifikazio informazioa (EUII)** atala. Gainera, fitxategi bat eman beharko duzu **Azure blob biltegiratze URLa** esportazio helmuga zehazteko. Azure Blob URLak a izan behar du [Sarbide partekatuko sinadura (SAS)](/azure/storage/common/storage-sas-overview).
+The export process is identical to the deletion process when it comes to defining event property values in the **Export end user identifiable information (EUII)** section. Additionally, you'll need to provide an **Azure blob storage URL** to specify the export destination. The Azure Blob URL must include a [Shared Access Signature (SAS)](/azure/storage/common/storage-sas-overview).
 
-Aukeratu ondoren **Esportatu**, bat datozen etiketatutako propietateak dituzten uneko taldearen gertaera guztiak CSV formatuan esportatuko dira esportazio helmugara.
+After selecting **Export**, all events of the current team that contain matching tagged properties will be exported in CSV format to the export destination.
 
-### <a name="good-practices"></a>Jardunbide egokiak
+### Good practices
 
-* Saiatu datu pertsonalak dituzten gertaerak ez bidaltzea saihesten.
-* EUII datuak dituzten gertaerak bidali behar badituzu, mugatu EUII datuak dituzten gertaeren eta gertaeren propietate kopurua. Egokiena, mugatu horrelako gertaera batera.
-* Ziurtatu ahalik eta jende gutxik duela bidalitako datu pertsonaletara sarbidea.
-* Datu pertsonalak dituzten gertaeretan, ziurtatu propietate bat ezartzen duzula identifikatzaile bakarra igortzeko, erabiltzaile jakin batekin (adibidez, erabiltzaile IDarekin) erraz lotzeko modukoa. Horrek datuak bereiztea eta datu egokiak esportatzea edo ezabatzea errazten du.
-* Etiketatu gertaera bakoitzeko datu bakarra duten datu gisa. Egokiena identifikatzaile bakarra duen bakarra.
-* Ez etikotu xehetasun balioak dituzten propietateak (adibidez, eskaera gorputz osoa). Elkarreragin xehetasunen gaitasunak kateen bat etortze zehatza erabiltzen du zein gertaera ezabatu edo esportatu erabakitzeko orduan.
+* Try to avoid sending any events that contain personal data.
+* If you need to send events containing EUII data, limit the number of events and event properties that contain EUII data. Ideally, limit yourself to one such event.
+* Make sure that as few people as possible have access to the sent personal data.
+* For events containing personal data, make sure that you set one property to emit a unique identifier that can easily be linked to a specific user (for example, a user ID). This makes it easier to segregate data and to export or delete the right data.
+* Only tag one property per event as containing personal data. Ideally one that only contains a unique identifier.
+* Do not tag properties containing verbose values (for example, an entire request body). Engagement insights capability uses exact string matching when deciding which events to delete or export. -->
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

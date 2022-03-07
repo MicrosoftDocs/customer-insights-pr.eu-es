@@ -4,17 +4,16 @@ description: Nola erabili inbutu-txostenak ikusleak erabakiak nola hartzen ditue
 ms.reviewer: mhart
 ms.author: kamacdon
 author: kamacdon
-ms.date: 09/17/2021
-ms.service: customer-insights
+ms.date: 09/21/2021
 ms.subservice: engagement-insights
 ms.topic: how-to
 ms.manager: shellyha
-ms.openlocfilehash: 901e7ec50037d66c7c5ceb635d1c6cda6cfff83b
-ms.sourcegitcommit: 3bafa27adae113948636b30c7462e0af060c7131
-ms.translationtype: HT
+ms.openlocfilehash: 7bb961c5ba8d42f704eefe0dcb22e561367f3efb
+ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
+ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 09/17/2021
-ms.locfileid: "7498627"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8226245"
 ---
 # <a name="create-and-manage-funnel-reports"></a>Sortu eta kudeatu inbutu-txostenak
 
@@ -163,13 +162,23 @@ Inbutuko txosten baten izena aldatu, ezabatu edo txosteneko urratsak alda ditzak
 
 Parte-hartzearen xehetasunek inbutuaren xehetasunak eskaintzen dituzte bezeroentzat. Erabili inbutuaren xehetasunak inbutuaren txosteneko urratsei buruzko bezeroaren portaera hobeto ulertzeko. Inbutuaren txosten bat sortu eta gordetzerakoan, txostenerako inbutuaren xehetasunak automatikoki sortzen dira. 
 
+:::image type="content" source="media/funnel-insights.png" alt-text="Inbutuaren xehetasunak.":::
+
+> [!NOTE]
+> Inbutuaren estatistikak neurri pertsonalizaturik **ez duten** inbutuaren urratsetarako bakarrik sor daitezke. Inbutuaren urrats guztietarako inbutuari buruzko informazioa sortzeko, erabili parte hartzearen inguruko xehetasunen erabiltzeko prest dauden dimentsioak inbutuaren urratsak sortzeko. 
+
 Inbutuaren xehetasunak honako kategoria hauen bidez ikus ditzakezu, bai maila nagusi eta urrats mailan: 
 
- - Bihurketa-tasa 
+ - Bihurketa-tasa
+ -    Erosketa amaitzearen eta erosketaren arteko bihurketa-tasa % 22koa da.
  - Trantsizio-denbora 
+ -    Saskiaren eta erosketa amaitzearen arteko batez besteko denbora 23 minutukoa da. 
  - Osatze-ordua 
+ -    Bezeroek inbutua osatzeko behar duten batez besteko denbora 47 minutukoa da. 
 
 Erabili xehetasun horiek bezeroaren portaera sakonago arakatzeko eta inbutuaren txosteneko entrega-puntuak eta bihurketak hobeto ulertzeko. 
+
+Urrats desberdinetako estatistikak alderatzeko, hautatu **Ikusi urratsen banaketa** edo **Konparatu beste urrats batzuekin** ikuspegi txarteletatik. Hauek barra-grafikoa bistaratuko dute inbutuko urrats bakoitzeko metrikak alderatuz. 
 
 Inbutuaren xehetasunak 24 orduro kalkulatzen dira edo inbutuaren txostena **Gordetzen** duzunero. 
 

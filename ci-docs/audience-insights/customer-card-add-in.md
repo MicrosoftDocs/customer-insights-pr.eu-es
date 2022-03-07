@@ -1,20 +1,24 @@
 ---
-title: Dynamics 365 aplikazioetarako Bezero Txartelaren gehigarria (bideoa dauka)
+title: Dynamics 365 aplikazioetarako Bezero txartelaren gehigarria (bideoa dauka)
 description: Erakutsi audientzia estatistiken datuak Dynamics 365 aplikazioetan gehigarri honekin.
 ms.date: 02/02/2022
 ms.reviewer: mhart
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: Nils-2m
 ms.author: nikeller
 manager: shellyha
-ms.openlocfilehash: ce6c8fab84fd4c5dfc9f78b91dde3483a1d358c1
-ms.sourcegitcommit: 11308ed275b4b25a35576eccfcae9dda9e2c2784
-ms.translationtype: HT
+searchScope:
+- ci-customers-page
+- ci-search-filter
+- ci-customer-card
+- customerInsights
+ms.openlocfilehash: d67d8e2cb30cf20de204bfb293bb8ce81c7bb2f4
+ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
+ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "8085192"
+ms.lasthandoff: 02/25/2022
+ms.locfileid: "8353850"
 ---
 # <a name="customer-card-add-in-preview"></a>Bezeroaren txartelaren osagarria (aurrebista)
 
@@ -27,7 +31,7 @@ Lortu zure bezeroen 360 graduko ikuspegia zuzenean Dynamics 365 aplikazioetan. B
 ## <a name="prerequisites"></a>Aurrebaldintzak
 
 - Gehigarriak Dynamics 365 ereduak gidatutako aplikazioekin soilik funtzionatzen du, hala nola Sales edo bezeroarentzako arreta-zerbitzu, 9.0 bertsioa eta berriagoak.
-- Dynamics 365 datuak ikusleei buruzko informazio-bezero-profiletara mapatzeko, gomendatzen dugu [Dynamics 365 aplikaziotik irentsitakoa erabiliz Microsoft Dataverse konektorea](connect-power-query.md). Dynamics 365 kontaktuak (edo kontuak) irensteko beste metodo bat erabiltzen baduzu, ziurtatu behar duzu`contactid` (edo`accountid`) eremua gisa ezartzen da [datu-iturburu horren lehen gakoa datuak bateratzeko prozesuaren mapa-urratsean](map-entities.md#select-primary-key-and-semantic-type-for-attributes). 
+- Dynamics 365 datuak ikusleei buruzko informazio-bezero-profiletara mapatzeko, gomendatzen dugu [Dynamics 365 aplikaziotik irentsita Microsoft Dataverse konektorea](connect-power-query.md). Dynamics 365 kontaktuak (edo kontuak) irensteko beste metodo bat erabiltzen baduzu, ziurtatu behar duzu`contactid` (edo`accountid`) eremua gisa ezartzen da [datu-iturburu horren lehen gakoa datuak bateratzeko prozesuaren mapa-urratsean](map-entities.md#select-primary-key-and-semantic-type-for-attributes). 
 - Bezero txartelaren gehigarriaren Dynamics 365 erabiltzaile guztiek izan behar dute [erabiltzaile gisa gehitu da](permissions.md) datuak ikusteko ikusleei buruzko informazioetan.
 - [Bilaketa eta iragazki gaitasunak konfiguratuta](search-filter-index.md) audientziari buruzko datuetan funtzionatu behar da.
 - Gehigarrien kontrol bakoitza datu zehatzetan oinarritzen da ikusleen estatistiketan. Datu eta kontrol batzuk mota jakin batzuetako inguruneetan soilik daude eskuragarri. Gehigarrien konfigurazioak hautatutako ingurune mota dela eta kontrolik eskuragarri ez dagoen jakinaraziko dizu. Ikasi gehiago hurrengoari buruz [ingurunearen erabilera-kasuak](work-with-business-accounts.md).
@@ -120,7 +124,7 @@ Bezeroaren txartelaren gehigarria ez da automatikoki eguneratzen. Azken bertsior
 
 ## <a name="troubleshooting"></a>Arazoak konpontzea
 
-### <a name="controls-from-customer-card-add-in-dont-find-data"></a>Bezero txartelaren gehigarriko kontrolak ez dute daturik aurkitzen
+### <a name="controls-from-customer-card-add-in-dont-find-data"></a>Bezero Txartelaren Gehigarriko kontrolek ez dute daturik aurkitzen
 
 **Arazoa:**
 

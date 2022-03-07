@@ -1,24 +1,26 @@
 ---
 title: Esportatu Customer Insights datuak Google Ads-era
 description: Ikasi konexioa konfiguratzen eta Google Ads-era esportatzen.
-ms.date: 03/03/2021
-ms.service: customer-insights
+ms.date: 09/27/2021
 ms.subservice: audience-insights
 ms.topic: how-to
 author: pkieffer
 ms.author: philk
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: c16967bf8ea1fd02b3f991d7b7d3715a71fa8681
-ms.sourcegitcommit: 9a99e48e96dfb3d895db428f37c30ae55eea66b7
-ms.translationtype: HT
+ms.openlocfilehash: 28e2b35c5a47a025b8cdcccdb3f61c79878bf056
+ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
+ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 07/14/2021
-ms.locfileid: "6604262"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8226995"
 ---
 # <a name="export-segments-to-google-ads-preview"></a>Esportatu segmentuak Google Ads-era (aurrebista)
 
 Esportatu bezeroen profil bateratuen segmentuak Google Ads audientzia-zerrenda batera eta erabili Google Bilaketa, Gmail, iragarkiak YouTube, eta Google Display Network. 
+
+> [!IMPORTANT]
+> Une honetan, konexio berri bat sor dezakezu eta datuak Google Ads-era esporta ditzakezu dagoeneko onartutako Google Ads garatzaile token bat baduzu. Politika aldaketak direla eta, Google Ads esportazioa laster eguneratu eta garatzaile tokenik behar ez duen esportazio aukera emango dugu zure esperientziaren jarraipena ziurtatzeko eta Google Ads-era esportazioa errazteko. Google Ads-ekin konexio gehiago ez konfiguratzea gomendatzen dugu esportazio aukera berrira errazago aldatzeko.
 
 ## <a name="prerequisites-for-connection"></a>Konexioaren aurrebaldintzak
 
@@ -32,9 +34,9 @@ Esportatu bezeroen profil bateratuen segmentuak Google Ads audientzia-zerrenda b
 
 ## <a name="known-limitations"></a>Muga ezagunak
 
-- Gehienez milioi bat profil Google Ads-era esportatzeko.
+- Gehienez milioi bat bezero-profil Google Ads-era esportatzeko.
 - Google Ads-era esportatzea segmentuetara mugatuta dago.
-- Guztira 1 milioi profil dituzten segmentuak esportatzeak 5 minutu arte iraun dezake hornitzailearen aldetik mugak direla eta. 
+- Guztira 1 milioi bezero profil dituzten segmentuak esportatzeak 5 minutu arte iraun dezake hornitzailearen aldetik mugak daudelako. 
 - Google Ads zerbitzuan bat etortzeak 48 ordu iraun dezake.
 
 ## <a name="set-up-connection-to-google-ads"></a>Konfiguratu konexioa Google Ads-era
@@ -71,7 +73,7 @@ Esportazio hau konfigura dezakezu mota honetako konexiorako sarbidea baduzu. Inf
 
 1. Sartu zure **[Google Ads hartzaileen IDa](https://support.google.com/google-ads/answer/7558048?hl=en#:~:text=Audience%20lists%20is%20a%20section,Display%20Network%20through%20remarketing%20campaigns.)** eta hautatu **Konektatu** Google Ads-eko konexioa hasieratzeko.
 
-1. **Datuen bat etortzea** atalean, **Posta elektronikoa** eremuan, hautatu zure bezeroaren profil bateratuko eremua, bezero baten helbide elektronikoa adierazten duena.
+1. Urtean **Datuen bat etortzea** atalean, **Posta elektronikoa** eremua, hautatu bezeroaren helbide elektronikoa adierazten duen eremua.
 
 1. Hautatu esportatu nahi dituzun segmentuak. Guztira 1 milioi bezero profil esporta ditzakezu Google Ads-era.
 

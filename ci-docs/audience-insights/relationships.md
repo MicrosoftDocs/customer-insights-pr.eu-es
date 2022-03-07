@@ -1,20 +1,32 @@
 ---
 title: Entitateen eta entitateen bide-izenen arteko erlazioak
 description: Sortu eta kudeatu datu-iturburu anitzetako entitateen arteko harremanak.
-ms.date: 06/01/2020
+ms.date: 09/27/2021
 ms.reviewer: mhart
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
-author: MichelleDevaney
-ms.author: midevane
+author: CadeSanthaMSFT
+ms.author: cadesantha
 manager: shellyha
-ms.openlocfilehash: d5b9566ec88096fec31d8e164a51598159ec26d4
-ms.sourcegitcommit: ece48f80a7b470fb33cd36e3096b4f1e9190433a
-ms.translationtype: HT
+searchScope:
+- ci-semantic-mapping
+- ci-entities
+- ci-relationships
+- ci-activities
+- ci-activities-wizard
+- ci-measures
+- ci-segments
+- ci-segment-builder
+- ci-measure-builder
+- ci-measure-template
+- ci-permissions
+- customerInsights
+ms.openlocfilehash: db8822aa9e89afb9dc16428af6ca202de789ba1c
+ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
+ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 06/03/2021
-ms.locfileid: "6171149"
+ms.lasthandoff: 02/25/2022
+ms.locfileid: "8355690"
 ---
 # <a name="relationships-between-entities"></a>Harremanak entitateen artean
 
@@ -68,6 +80,20 @@ Harremanak atzerriko gakoa duen *iturburu-entitatea* eta iturburuko entitatearen
 
 4. Erlazio pertsonalizatua sortzeko, hautatu **Gorde**.
 
+## <a name="set-up-account-hierarchies"></a>Konfiguratu kontuaren hierarkiak
+
+Negozio kontuak helburu publiko nagusitzat erabiltzeko konfiguratuta dauden inguruneek kontu hierarkiak konfigura ditzakete erlazionatutako negozio kontuetarako. Adibidez, negozio unitate bereiziak dituen enpresa. 
+
+Erakundeek kontuen hierarkiak sortzen dituzte kontuak eta elkarren arteko harremanak hobeto kudeatzeko. Ikusleei buruzko informazioaren gaitasunak irentsitako bezeroen datuetan lehendik dauden guraso-seme-alaben kontuen hierarkiak onartzen ditu. Adibidez, Dynamics 365 Sales-eko kontuak. Hierarkia hauek konfiguratu daitezke **Harremanak** orria ikusleen estatistiketan, kontu hierarkia fitxan.
+
+1. Joan **Datuak** > **Harremanak**.
+1. Hautatu **Kontuaren hierarkia** fitxa.
+1. Hautatu **Kontu berriaren hierarkia**. 
+1. Urtean **Kontuen hierarkia** panelean, eman hierarkiari izena. Sistemak irteerako entitatearen izena sortzen du. Irteerako izen entitatearen izena alda dezakezu.
+1. Aukeratu zure kontuaren hierarkia duen entitatea. Normalean kontuak dituen entitate berean izaten da.
+1. Aukeratu **Kontuaren IDa** eta **Kontuaren guraso IDa** hautatutako entitatetik 
+1. Aukeratu **Gorde** ezarpenak aplikatzeko eta kontu hierarkia amaitzeko.
+
 ## <a name="view-relationships"></a>Ikusi erlazioak
 
 Harremanak orrian sortu diren harreman guztiak zerrendatzen dira. Errenkada bakoitzak erlazio bat adierazten du, iturburu-entitateari, xede-entitateari eta kardinalitateari buruzko xehetasunak ere biltzen dituena. 
@@ -82,7 +108,7 @@ Orrialde honek lehendik dauden eta harreman berrietarako aukera multzo bat eskai
 
 ### <a name="explore-the-relationship-visualizer"></a>Arakatu harremanen bistaratzailea
 
-Harremanen bistaratzaileak konektatuta dauden entitateeen eta haien kardinalitatearen sare-diagrama erakusten du.
+Harremanen bistaratzaileak konektatuta dauden entitateeen eta haien kardinalitatearen sare-diagrama erakusten du. Harremanen bidea ere bistaratzen du.
 
 Ikuspegia pertsonalizatzeko, koadroen kokapena alda dezakezu mihisean arrastatuz.
 
@@ -92,6 +118,56 @@ Aukera erabilgarriak:
 - **Esportatu irudi gisa**: Uneko ikuspegia irudi fitxategi gisa gorde.
 - **Aldatu diseinu horizontal / bertikalera**: Entitateen eta harremanen lerrokatzea aldatu.
 - **Editatu**: Harreman pertsonalizatuen propietateak eguneratu editatzeko panelean eta gorde aldaketak.
+
+## <a name="relationship-paths"></a>Erlazioaren bide-izenak
+
+Erlazioaren bide-izen batek iturburu entitate baten eta xede entitate baten arteko harremanekin lotura duten entitateak deskribatzen ditu. Profil bateratuaren entitatea ez den beste entitate batzuk biltzen dituen segmentu edo neurri bat sortzean erabiltzen da eta profil anitzeko entitate horretara iristeko aukera ugari daude. 
+
+Erlazioaren bide-izen batek profil bateratuko entitatera sartzeko zein harremanen gaineko sistemaren berri ematen du. Harreman bide desberdinek emaitza desberdinak eman ditzakete.
+
+Adibidez, entitatea *eCommerce_eCommerceErosketak* profil bateratuarekin harreman hauek ditu *Bezeroa* entitatea:
+
+- eCommerce_eCommercePurchases > Bezeroa
+- eCommerce_eCommercePurchases > eCommerce_eCommerceContacts > POS_posPurchases > Bezeroa
+- eCommerce_eCommercePurchases > eCommerce_eCommerceContacts > POS_posPurchases > loyaltyScheme_loyCustomers > Bezeroa 
+
+Erlazioaren bide-izen batek zehazten du zein entitate erabil ditzakezun neurri edo segmentuetarako arauak sortzerakoan. Harreman bide luzeena duen aukera aukeratzeak emaitza gutxiago lortuko du ziurrenik bat datozen erregistroek entitate guztien parte izan behar dutelako. Adibide honetan, bezeroak merkataritza elektronikoaren bidez (eCommerce_eCommercePurchases), salmenta puntu batean (POS_posPurchases) erosi behar ditu ondasunak eta gure fidelizazio programan parte hartu (loyaltyScheme_loyCustomers). Lehen aukera aukeratzerakoan, emaitza gehiago lortuko zenituzke, bezeroek entitate osagarri batean bakarrik egon behar dutelako.
+
+### <a name="direct-relationship"></a>Erlazio zuzena
+
+Harreman bat **harreman zuzena** bezala sailkatzen da iturburu-entitate bat harreman bakarra duen xede-entitate batekin erlazionatzen denean.
+
+Adibidez, *eCommerce_eCommercePurchases* izeneko jarduera entitate bat helburuko entitate batekin konektatzen bada *eCommerce_eCommerceContacts* entitatea *ContactId* elementuaren bidez soilik, harreman zuzena da.
+
+:::image type="content" source="media/direct_Relationship.png" alt-text="Jatorrizko entitatea zuzenean konektatzen da xede entitatearekin.":::
+
+#### <a name="multi-path-relationship"></a>Bide-izen anitzeko erlazioa
+
+**Bide-izen anitzeko harremana** iturri-entitate bat xede-entitate bat baino gehiagorekin konektatzen duen harreman zuzeneko mota berezia da.
+
+Adibidez, *eCommerce_eCommercePurchases* izeneko jarduera-entitate bat xede duten bi entitateekin lotzen bada, *eCommerce_eCommerceContacts* eta *loyaltyScheme_loyCustomers*, bide-izen anitzeko harremana da.
+
+:::image type="content" source="media/multi-path_relationship.png" alt-text="Iturburuko entitatea zuzenean xede duen entitate batekin baino gehiagorekin konektatzen da salto anitzeko harreman baten bidez.":::
+
+### <a name="indirect-relationship"></a>Zeharkako erlazioa
+
+Harreman bat **zeharkako harreman** bezala sailkatzen da iturburu-entitate bat hainbat entitaterekin erlazionatzen bada xede-entitate batekin erlazionatu aurretik.
+
+#### <a name="multi-hop-relationship"></a>Salto anitzeko erlazioa
+
+*Salto anitzeko erlazio* bat da *zeharkako harremana* iturburu-entitate bat xede-entitate batekin beste bitartekari-entitate baten edo gehiagoren bidez konektatzeko aukera ematen duena.
+
+Adibidez, *eCommerce_eCommercePurchasesWest* izeneko jarduera-entitate bat konektatzen bada *eCommerce_eCommercePurchasesEast* izeneko tarteko entitate batekin eta, ondoren, *eCommerce_eCommerceContacts* izeneko xede-entitate batera konektatzen bada, salto anitzeko harremana da.
+
+:::image type="content" source="media/multi-hop_relationship.png" alt-text="Jatorrizko entitatea zuzenean konektatzen da xede duen entitate batekin tarteko entitate batekin.":::
+
+### <a name="multi-hop-multi-path-relationship"></a>Salto eta bide-izen anitzeko erlazioa
+
+Salto anitzeko eta bide anitzeko erlazioak batera erabil daitezke sortzeko **salto eta bide-izen anitzeko erlazioak**. Mota berezi honek **salto anitzeko** eta **bide-izen anitzeko erlazioak** funtzioen funtzioak konbinatzen ditu. Helburuko entitate bat baino gehiagorekin konektatzeko aukera ematen du bitarteko entitateak erabiltzen ari zaren bitartean.
+
+Adibidez, *eCommerce_eCommercePurchasesWest* izeneko jarduera-entitate bat konektatzen bada *eCommerce_eCommercePurchasesEast* izeneko tarteko entitate batekin eta, ondoren, *eCommerce_eCommerceContacts* eta *loyaltyScheme_loyCustomers* izeneko bi xede-entitatetara konektatzen bada, salto eta bide-izen anitzeko harremana da.
+
+:::image type="content" source="media/multi-hop_multi-path_relationship.png" alt-text="Iturburu-entitatea zuzenean konektatzen da xede-entitate batekin eta beste xede-entitate batera konektatzen da tarteko entitate baten bidez.":::
 
 ## <a name="manage-existing-relationships"></a>Kudeatu lehendik dauden erlazioak 
 
@@ -105,6 +181,6 @@ Aukeratu harremana eta aukeratu aukera hauetako bat:
 
 ## <a name="next-step"></a>Hurrengo urratsa
 
-Sistema eta pertsonalizatutako harremanak sekretuak isilik ez dituzten datu iturri anitzetan oinarritutako [segmentuak sortzeko](segments.md) erabiltzen dira.
+Sistema eta harreman pertsonalizatuak ohituta daude [segmentuak sortu](segments.md) eta [neurriak](measures.md) jada isilarazi gabeko datu iturri anitzetan oinarrituta.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

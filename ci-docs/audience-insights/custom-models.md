@@ -3,18 +3,20 @@ title: Ikaskuntza automatiko eredu pertsonalizatuak | Microsoft Docs
 description: Azure Ikaskuntza automatiko-en eredu pertsonalizatuekin lan egin Dynamics 365 Customer Insights.
 ms.date: 12/01/2021
 ms.reviewer: mhart
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: tutorial
 author: zacookmsft
 ms.author: zacook
 manager: shellyha
-ms.openlocfilehash: 47e2e5109ef8f21a782f6c8f87088009f8a40fdf
-ms.sourcegitcommit: 58651d33e0a7d438a2587c9ceeaf7ff58ae3b648
-ms.translationtype: HT
+searchScope:
+- ci-custom-models
+- customerInsights
+ms.openlocfilehash: 460b68e1e65b3033af0a03d1bcc27e718c79d7aa
+ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
+ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 12/02/2021
-ms.locfileid: "7881769"
+ms.lasthandoff: 02/25/2022
+ms.locfileid: "8355036"
 ---
 # <a name="custom-machine-learning-models"></a>Ikaskuntza automatiko eredu pertsonalizatuak
 
@@ -32,7 +34,7 @@ Iragarpenek bezeroen esperientzia hobeak sortzeko, negozio gaitasunak eta diru s
 
 ## <a name="prerequisites"></a>Aurrebaldintzak
 
-- Eginbide honek bidez argitaratutako web zerbitzuak onartzen ditu [Azure Ikaskuntza automatiko sorta-hodiak](/azure/machine-learning/concept-ml-pipelines).
+- Eginbide honek bidez argitaratutako web zerbitzuak onartzen ditu [Azure Ikaskuntza automatiko loteen kanalizazioak](/azure/machine-learning/concept-ml-pipelines).
 
 - Ezaugarri hau erabiltzeko Azure Studio Lake instantziarekin lotutako Azure Data Lake Gen2 biltegiratze kontua behar duzu. Informazio gehiago lortzeko, ikusi [Sortu Azure Data Lake Storage Gen2 biltegiratze kontua](/azure/storage/blobs/data-lake-storage-quickstart-create-account).
 
@@ -40,6 +42,8 @@ Iragarpenek bezeroen esperientzia hobeak sortzeko, negozio gaitasunak eta diru s
 
    > [!NOTE]
    > Datuak zure Customer Insights instantzien eta laneko fluxuko hautatutako Azure web zerbitzu edo kanalizazioen artean transferitzen dira. Datuak Azure zerbitzu batera transmititzen dituzunean, ziurtatu zerbitzua datuak prozesatzeko konfiguratuta dagoen moduak eta kokalekuak betetzen dituela erakundeko datu horien eskakizun legal guztiak.
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWRElk]
 
 ## <a name="add-a-new-workflow"></a>Gehitu lan-fluxu bat
 

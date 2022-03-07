@@ -1,20 +1,19 @@
 ---
 title: Enpresaren datuen hobekuntza
 description: Aberastu eta normalizatu enpresaren datuak Microsoft-en ereduekin.
-ms.date: 11/15/2021
+ms.date: 01/19/2022
 ms.reviewer: mhart
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
 author: kishorem-ms
 ms.author: kishorem
 manager: shellyha
-ms.openlocfilehash: d11700c87f31cedc40d32b201251d8a9e2e2c312
-ms.sourcegitcommit: dfc4843cc78857f1e3ca49d7b938e3ba77969169
+ms.openlocfilehash: 7a576621c71b925bd1563827aca10cad4ef9b4eb
+ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "7813905"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8229388"
 ---
 # <a name="enrichment-of-company-profiles-with-enhanced-company-data"></a>Enpresaren profilak aberastea enpresaren datu hobetuekin
 
@@ -82,7 +81,17 @@ Aberasteko prozesua hasteko, hautatu **Korrika egin** komando barratik. Gainera,
 
 Aberasteko prozesua amaitu ondoren, aberastu berri diren bezeroen profilen datuak berrikus ditzakezu atalean **Nire aberastasunak**. Gainera, azken eguneratzearen ordua eta profil aberastuen kopurua aurkituko dituzu.
 
-Aberastutako profil bakoitzaren ikuspegi zehatza sar dezakezu hautatuta **Ikusi aberastutako datuak**.
+Aberastutako datuen lagin bat ikus dezakezu **Bezeroen aurrebista aberastua** teila. Hautatu **Gehiago ikusi** eta hautatu **Datuak** fitxa aberastutako profil bakoitzaren ikuspegi zehatzera sartzeko.
+
+### <a name="overview-card"></a>Ikuspegiko txartela
+
+Ikuspegi-txartelak aberastearen estaldurari buruzko xehetasunak erakusten ditu. 
+
+* **Enpresak prozesatu eta aldatu** : arrakastaz aberastu diren bezero-enpresa-profilen kopurua.
+
+* **Enpresak tramitatu eta aldatu gabe** : aitortu baina aldatu ez diren bezero-enpresa-profilen kopurua. Hau normalean sarrerako datuak baliozkoak direnean eta aberastearekin hobetu ezin direnean gertatzen da.
+
+* **Enpresak ez izapidetu eta ez aldatu** : Aitortu ez diren bezero-enpresa-profilen kopurua. Hau normalean baliogabeak diren edo aberasteak onartzen ez dituen sarrerako datuekin gertatzen da.
 
 ## <a name="next-steps"></a>Hurrengo urratsak
 

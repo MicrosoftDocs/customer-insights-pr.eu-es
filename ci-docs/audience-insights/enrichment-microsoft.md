@@ -1,37 +1,44 @@
 ---
 title: Aberastu bezeroen profilak Microsoften datuekin
-description: Erabili Microsoft-en jabedun datuak bezeroen datuak marka eta interes kidetasunekin aberasteko.
-ms.date: 06/14/2021
+description: Erabili Microsoft-en jabedun datuak zure bezeroen datuak afinitateekin eta ahots-partekatzeekin aberasteko.
+ms.date: 03/02/2022
 ms.reviewer: mhart
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
 author: kishorem-MS
 ms.author: kishorem
 manager: shellyha
-ms.openlocfilehash: 1b11c325649b91ebb47cde924227eacedae64b7a
-ms.sourcegitcommit: d84d664e67f263bfeb741154d309088c5101b9c3
-ms.translationtype: HT
+searchScope:
+- ci-enrichments
+- ci-enrichment-wizard
+- customerInsights
+ms.openlocfilehash: 12704ec46832e9463e6115db6c4df64e72bf4f97
+ms.sourcegitcommit: bb1f9e96023490ab340c114f54200ab4dd48da78
+ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "6305141"
+ms.lasthandoff: 03/02/2022
+ms.locfileid: "8372658"
 ---
-# <a name="enrich-customer-profiles-with-brand-and-interest-affinities-preview"></a>Aberastu bezeroen profilak marka eta interes kidetasunekin (aurrebista)
+# <a name="enrich-customer-profiles-with-affinities-and-share-of-voice-preview"></a>Aberastu bezeroen profilak afinitateekin eta ahots partekatuekin (aurrebista)
 
-Erabili Microsoft-en jabedun datuak bezeroen datuak marka eta interes kidetasunekin aberasteko. Afinitate hauek zure bezeroen demografia antzekoko jendearen datuetan oinarritzen dira. Informazio honek bezeroak hobeto ulertzen eta segmentatzen laguntzen du, marka eta interes jakin batzuen arabera.
+Erabili Microsoft-en jabedun datuak zure bezeroen datuak aberasteko marka-akidetasunekin, intereseko kidetasunekin eta ahots-partekatzearekin (SoV). Afinitate hauek eta SoV zure bezeroen antzeko demografia duten pertsonen datuetan oinarritzen dira. Informazio honek zure bezeroak hobeto ulertzen eta segmentatzen laguntzen dizu marka eta interes zehatzekiko duten kidetasunen edo SoVren arabera.
 
 Hartzaileen xehetasunetan, joan hona: **Datuak** > **Aberastea** [aberasteak konfiguratu eta ikusteko](enrichment-hub.md).
 
-Marka afinitateak aberastea konfiguratzeko, joan **Ezagutu** fitxa eta aukeratu **Aberastu nire datuak** gainean **Markak** teila.
+Marka-afintasunak eta SoV aberastea konfiguratzeko, joan hona **Ezagutu** fitxa eta hautatu **Aberastu nire datuak** gainean **Markak** teila.
 
-Interes afinitateak aberastea konfiguratzeko, joan **Ezagutu** fitxa eta aukeratu **Aberastu nire datuak** gainean **Interesak** teila.
+Interes-afintasunak eta SoV aberastea konfiguratzeko, joan **Ezagutu** fitxa eta hautatu **Aberastu nire datuak** gainean **Interesak** teila.
 
    > [!div class="mx-imgBorder"]
-   > ![Markak eta zaletasunak lauzak](media/BrandsInterest-tile-Hub.png "Markak eta zaletasunen lauzak")
+   > ![Markak eta zaletasunak lauzak.](media/BrandsInterest-tile-Hub.png "Markak eta zaletasunen lauzak")
 
-## <a name="how-we-determine-affinities"></a>Afinitateak nola zehazten ditugun
+## <a name="how-we-determine-affinities-and-sov"></a>Nola zehazten ditugun afinitateak eta SoV
 
-Microsoften lineako bilaketa-datuak erabiltzen ditugu marka eta interesen arteko afinitateak aurkitzeko hainbat segmentu demografikotan (adinaren, generoaren edo kokapenaren arabera definituak). Marka edo interes baten bilaketa-bolumenak zehazten du zein den afinitate batek segmentu demografiko batek, beste segmentu batzuekin alderatuta, marka edo interes hori.
+Microsoft-en lineako bilaketa-datuak erabiltzen ditugu hainbat segmentu demografikotan (adinaren, generoaren edo kokapenaren arabera definitutako marken eta interesen arteko afinitateak eta SoV) aurkitzeko. Marka edo interes baten lineako bilaketa-bolumena afinitatea edo SoV zehazteko oinarria da. Hala ere, bakoitzak ikuspegi ezberdin bat eskaintzen du zure bezeroak ulertzeko.
+
+- Afinitatea segmentu demografikoen arteko konparazio bat da. Informazio hau erabil dezakezu marka edo interes jakin batekin afinitate handiena duten segmentu demografikoak identifikatzeko, beste segmentuekin alderatuta.
+
+- Ahots-partekatzea hautatutako marken edo interesen arteko konparazio bat da. Informazio hau erabil dezakezu zein marka edo interes duen segmentu demografiko jakin baterako ahots-parte handiena zein den identifikatzeko, hautatu dituzun beste marka edo interes batzuekin alderatuta.
 
 ## <a name="affinity-level-and-score"></a>Afinitate-maila eta puntuazioa
 
@@ -48,6 +55,10 @@ Bezeroen profil aberastu guztietan, erlazionatutako bi balio ematen ditugu: afin
 |Txikia     | 1-34        |
 
 Afinitatea neurtzeko nahi duzun xehetasunen arabera, afinitate maila edo puntuazioa erabil dezakezu. Afinitate-puntuazioak kontrol zehatzagoa ematen dizu.
+
+## <a name="share-of-voice-sov"></a>Ahotsaren partekatzea (SoV)
+
+SoV 100 puntuko eskalan kalkulatzen dugu. Bezeroen profil aberastu bakoitzeko marka edo interes guztien SoV osoa 100 gehitzen da. Afinitateak ez bezala, SoV hautatzen dituzun marken eta interesekiko erlatiboa da. Adibidez, 'Microsoft'-en SoV balioak desberdinak izan daitezke hautatutako markak ('Microsoft', 'GitHub') eta ('Microsoft', 'LinkedIn') badira.
 
 ## <a name="supported-countriesregions"></a>Lagundutako herrialde / eskualdeak
 
@@ -82,7 +93,7 @@ Berrikusi aberastasun lehentasun lehenetsiak eta eguneratu behar dituzun moduan.
 
 ### <a name="select-entity-to-enrich"></a>Hautatu aberasteko entitatea
 
-Hautatu **Aberastutako entitatea** eta aukera datuak ezartzeko aberastu nahi duzuna konpainiaren datuekin Microsoft-etik. Bezeroen entitatea hauta dezakezu zure bezeroen profil guztiak aberasteko edo segmentu-entitate bat hauta dezakezu segmentu horretan dauden bezeroen profilak soilik aberasteko.
+Hautatu **Entitate aberastua** eta aukeratu Microsoft-en datuekin aberastu nahi duzun datu multzoa. Bezeroen entitatea hauta dezakezu zure bezeroen profil guztiak aberasteko edo segmentu-entitate bat hauta dezakezu segmentu horretan dauden bezeroen profilak soilik aberasteko.
 
 ### <a name="map-your-fields"></a>Esleitu eremuak
 
@@ -116,26 +127,25 @@ Exekutatu aberastasuna marka, interesak eta eremuen mapak konfiguratu ondoren de
 
 Bezeroaren datuen tamainaren arabera, minutu batzuk behar izango dira aberasteko exekuzioa osatzeko.
 
-> [!TIP]
-> Zereginen/prozesuen [sei egoera mota](system.md#status-types) daude. Gainera, prozesu gehienak [downstream-eko beste prozesu batzuen mende daude](system.md#refresh-policies). Aukeratu prozesu baten egoera, egon zen lan osoaren aurrerapen xehetasunak ikusteko. Aukeratu ondoren **Ikusi xehetasunak** lanaren zereginetako baterako, informazio osagarria aurkituko duzu: prozesatzeko denbora, azken prozesatze data eta zereginarekin lotutako akats eta abisu guztiak.
+[!INCLUDE [progress-details-include](../includes/progress-details-pane.md)]
 
 ## <a name="enrichment-results"></a>Aberastearen emaitzak
 
 Aberaste prozesua exekutatu ostean, joan **Nire aberasteak** berrikusteko guztira aberastutako bezeroen kopurua eta aberastutako bezeroen profilen marka eta interesen banaketa.
 
-:::image type="content" source="media/my-enrichments.png" alt-text="Abantaila prozesua exekutatu ondoren, emaitzen aurrebista":::
+:::image type="content" source="media/my-enrichments.png" alt-text="Abantaila prozesua exekutatu ondoren, emaitzen aurrebista.":::
 
-Berrikusi aberastutako datuak, hautatuta **Ikusi aberastutako datuak** grafikoan. Marken datu aberastuak: **BrandAffinityFromMicrosoft** Erakunde. Interesen datuak datuak daude **InterestAffinityFromMicrosoft** Erakunde. Erakunde hauek zerrendan aurkituko dituzu **aberastea** taldean **Datuak** > **erakundeak** atalean.
+Taula bat aurkituko duzu denboran zehar aberastutako bezero-profilen kopuruarekin eta aberastutako entitateen aurrebistarekin. Berrikusi aberastutako datuak hautatuz **Gehiago ikusi** urtean **Afinitate maila** edo **Ahotsaren partekatzea** taulak. Marken datu aberastuak **BrandAffinityFromMicrosoft** eta **BrandShareOfVoiceFromMicrosoft** entitateak. Interesen datuak atalean daude **InterestAffinityFromMicrosoft** eta **InterestShareOfVoiceFromMicrosoft** entitateak. Erakunde hauek zerrendan aurkituko dituzu **aberastea** taldean **Datuak** > **erakundeak** atalean.
 
 ## <a name="see-enrichment-data-on-the-customer-card"></a>Ikusi aberastasun datuak bezeroaren txartelean
 
-Marka eta interes kidetasunak bezero banakako txarteletan ere ikus daitezke. Joan **Bezeroak** atalera eta hautatu bezeroaren profila. Bezeroaren txartelean, bezeroaren demografia profil horretako pertsonek afinitatea duten marken edo interesen zerrendak aurkituko dituzu.
+Marka eta interesa SoV bezero banakako txarteletan ere ikus daiteke. Joan **Bezeroak** atalera eta hautatu bezeroaren profila. Bezero-txartelean, marka edo interes SoVrako grafikoak aurkituko dituzu bezero horren profil demografikoko pertsonen arabera.
 
-:::image type="content" source="media/enrichment-customer-card.png" alt-text="Aberastutako datuak dituen bezeroaren txartela":::
+:::image type="content" source="media/enrichment-customer-card.png" alt-text="Aberastutako datuak dituen bezeroaren txartela.":::
 
 ## <a name="next-steps"></a>Hurrengo urratsak
 
-Eraiki zure bezeroen datu aberastuen gainean. Sortu [Segmentuak](segments.md) eta [Neurriak](measures.md), eta are [datuak esportatu](export-destinations.md) zure bezeroei esperientzia pertsonalizatuak emateko.
+[!INCLUDE [next-steps-enrichment](../includes/next-steps-enrichment.md)]
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -1,30 +1,35 @@
 ---
 title: Konektatu tauletara Microsoft Dataverse-en
 description: Inportatu datuak Microsoft Dataverse kudeatutako datu-biltegia.
-ms.date: 07/23/2021
-ms.service: customer-insights
+ms.date: 12/06/2021
 ms.subservice: audience-insights
 ms.topic: how-to
 author: adkuppa
 ms.author: adkuppa
 manager: shellyha
 ms.reviewer: mhart
-ms.openlocfilehash: f92d64723e6a4d2fcebdbb3758519d4bfd4aeaf4
-ms.sourcegitcommit: 8cc70f30baaae13dfb9c4c201a79691f311634f5
-ms.translationtype: HT
+searchScope:
+- ci-dataverse
+- customerInsights
+ms.openlocfilehash: 8e11b60295fa5c187b1ac4877fb347e2d9bb41a1
+ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
+ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 07/30/2021
-ms.locfileid: "6692559"
+ms.lasthandoff: 02/25/2022
+ms.locfileid: "8354126"
 ---
 # <a name="connect-to-data-in-a-microsoft-dataverse-managed-data-lake"></a>Konektatu datuekin Microsoft Dataverse kudeatutako data lake-ra
 
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
 
-Artikulu honetan azaltzen da Dataverse erabiltzaileak nola azkar konektatu daitezkeen beren entitate analitikoetara Dataverse-k kudeatutako biltegi batean. Administratzailea izan behar duzu Dataverse erakundeak aurrera egiteko eta kudeatutako aintziran dauden entitateen zerrenda ikusteko.
+
+Artikulu honek nolako informazioa ematen du Dataverse erabiltzaileak azkar konektatu daitezke entitate analitikoetara Microsoft Dataverse kudeatutako lakua. 
+
+> [!NOTE]
+> Admin izan behar duzu Dataverse erakundeak aurrera egin eta kudeatutako lakuan eskuragarri dauden entitateen zerrenda ikusteko.
 
 ## <a name="important-considerations"></a>Gogoeta garrantzitsuak
 
-Lineako zerbitzuetan gordetako datuak, esaterako Azure Data Lake Storage datuak prozesatu edo biltegiratutako beste toki batean gorde daitezke Dynamics 365 Customer Insights.Lineako zerbitzuetan gordetako datuak inportatuz edo konektatuz onartu egiten duzu Dynamics 365 Customer Insights-rekin transferitu eta biltegiratu daitezkeen datuak. [Ezagutu gehiago Microsoft Trust Center-en.](https://www.microsoft.com/trust-center)
+Lineako zerbitzuetan gordetako datuak, esaterako Azure Data Lake Storage datuak prozesatu edo biltegiratutako beste toki batean gorde daitezke Dynamics 365 Customer Insights.Lineako zerbitzuetan gordetako datuak inportatuz edo konektatuz gero, onartzen duzu datuak batera transferitu eta gorde daitezkeela.Dynamics 365 Customer Insights . [Lortu informazio gehiago Microsoft Trust Center-en](https://www.microsoft.com/trust-center).
 
 ## <a name="connect-to-a-dataverse-managed-lake"></a>Konektatu a Dataverse lake kudeatu
 
@@ -32,12 +37,9 @@ Lineako zerbitzuetan gordetako datuak, esaterako Azure Data Lake Storage datuak 
 
 2. Hautatu **Gehitu datu-iturburua**.
 
-3. Aukeratu **Konektatu Microsoft Dataverse-k kudeatutako biltegira** eta hautatu **Hurrengoa**.
+3. Hautatu **Microsoft Dataverse** eta hautatu **Hurrengoa**.
 
-4. Idatzi **Izena** datu-iturbururako eta hautatu **Hurrengoa**. Jarri izena jarraibideei: 
-   - Hasi letra batekin.
-   - Erabili letrak eta zenbakiak soilik. Ezin da idatzi karaktere berezirik edo zuriunerik.
-   - Erabili 3 eta 64 karaktere artean.
+4. Idatzi **Izena** datu-iturbururako eta hautatu **Hurrengoa**. 
 
 5. Eman **Zerbitzariaren helbidea** Dataverse erakundearena, eta hautatu **saioa hasi**.
 

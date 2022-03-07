@@ -3,26 +3,28 @@ title: Harpidetzaren galera-tasaren iragarpenaren lagin-gida
 description: Erabil ezazu lagin-gida hau harpidetzen galera-tasaren iragarpenaren eredua probatzeko.
 ms.date: 11/19/2020
 ms.reviewer: mhart
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: tutorial
-author: diegogranados117
-ms.author: digranad
+author: m-hartmann
+ms.author: wameng
 manager: shellyha
-ms.openlocfilehash: fa460fa5c79bc8a356ec5e90050ec85e05c55be8
-ms.sourcegitcommit: 0b754d194d765afef70d1008db7b347dd1f0ee40
-ms.translationtype: HT
+searchScope:
+- ci-create-prediction
+- customerInsights
+ms.openlocfilehash: 5de57155b47b74efa4c5ef2fe63a3c87505644be
+ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
+ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "6306288"
+ms.lasthandoff: 02/25/2022
+ms.locfileid: "8355598"
 ---
-# <a name="subscription-churn-prediction-preview-sample-guide"></a>Harpidetzaren galera-tasaren iragarpenaren (aurrebista) lagin-gida
+# <a name="subscription-churn-prediction-sample-guide"></a>Harpidetzaren galera-tasaren iragarpenaren lagin-gida
 
 Harpidetzaren galera-tasaren iragarpenaren adibide bat azalduko dizugu, behean emandako lagin datuak erabiliz. 
 
 ## <a name="scenario"></a>Egoera
 
-Contoso kalitate handiko kafea eta kafe makinak ekoizten dituen enpresa da eta Contoso Coffee webgunearen bidez saltzen dituzte. Berriki harpidetza negozioa hasi zuten euren bezeroek aldiro kafea hartzeko. Haien helburua da ulertzea harpidetutako bezeroetako zeintzuk utz dezaketen harpidetza bertan behera hurrengo hilabeteetan. Zein bezero **galtzeko arriskua** dagoen jakiteak marketinarekin erlazionatutako ahalegina bideratzen lagun diezaioke enpresari, arreta bezero horiengan jarrita.
+Contoso kalitate handiko kafea eta kafe-makinak sortzen dituen enpresa bat da. Horiek Contoso Coffee webgunearen bidez saltzen dituzte. Berriki harpidetza negozioa hasi zuten euren bezeroek aldiro kafea hartzeko. Haien helburua da ulertzea harpidetutako bezeroetako zeintzuk utz dezaketen harpidetza bertan behera hurrengo hilabeteetan. Zein bezero **galtzeko arriskua** dagoen jakiteak marketinarekin erlazionatutako ahalegina bideratzen lagun diezaioke enpresari, arreta bezero horiengan jarrita.
 
 ## <a name="prerequisites"></a>Aurrebaldintzak
 
@@ -31,7 +33,7 @@ Contoso kalitate handiko kafea eta kafe makinak ekoizten dituen enpresa da eta C
 
 ## <a name="task-1---ingest-data"></a>1. zeregina - Datuen sarrera
 
-Berrikusi zehazki [datuen sarrerari](data-sources.md) eta [Power Query konektoreak erabiliz datu-iturburuak inportatzeari](connect-power-query.md) buruzko artikuluak. Honako informazio honetan, ulertzen da ohituta zaudela orokorrean datuen sarrerarekin. 
+Berrikusi artikuluak [datuak sartzeari buruz](data-sources.md) eta [datu-iturriak erabiliz inportatzea Power Query konektoreak](connect-power-query.md) zehazki. Honako informazio honetan, ulertzen da ohituta zaudela orokorrean datuen sarrerarekin. 
 
 ### <a name="ingest-customer-data-from-ecommerce-platform"></a>Sartu bezero-datuak merkataritza elektronikoko plataformatik
 
@@ -168,7 +170,7 @@ Behin datuak sartuta, **Esleitu, bat etorri, konbinatu** prozesuarekin hasiko ga
 
 ## <a name="task-3---configure-the-subscription-churn-prediction"></a>3. zeregina - Konfiguratu harpidetzen galera-tasaren iragarpena
 
-Bezeroen profil bateratuak behar bezala jarrita, harpidetzaren galera-tasaren iragarpena exekutatu dezakegu. Urrats zehatzetarako, ikusi [Harpidetzaren galera-tasaren iragarpena (aurrebista)](predict-subscription-churn.md) artikulu. 
+Bezeroen profil bateratuak behar bezala jarrita, harpidetzaren galera-tasaren iragarpena exekutatu dezakegu. Urrats zehatzak ikusteko, ikusi [Harpidetza txanda iragarpen](predict-subscription-churn.md) Artikulu. 
 
 1. Joan **Adimena** > **Ezagutu** atalera eta hautatu **Bezeroen galera-tasaren eredua**.
 

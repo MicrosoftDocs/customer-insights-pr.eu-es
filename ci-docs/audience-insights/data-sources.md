@@ -1,64 +1,62 @@
 ---
 title: Erabili datu-iturburuak datuak sartzeko
 description: Ikasi iturri desberdinetako datuak nola inportatu.
-ms.date: 04/12/2021
-ms.service: customer-insights
+ms.date: 12/06/2021
 ms.subservice: audience-insights
-ms.topic: conceptual
+ms.topic: overview
 author: adkuppa
 ms.author: adkuppa
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 0fc13d3ac0a5176637b6fe481dabe0b2aec11649
-ms.sourcegitcommit: d89b19b2a3497722b78362aeee688ae7e94915d9
-ms.translationtype: HT
+searchScope:
+- ci-data-sources
+- ci-create-data-source
+- customerInsights
+ms.openlocfilehash: e7bcf82c4fe3625ef791ec2b0a7651be0356a006
+ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
+ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5887879"
+ms.lasthandoff: 02/25/2022
+ms.locfileid: "8354034"
 ---
 # <a name="data-sources-overview"></a>Datuen iturburuen ikuspegi orokorra
 
-[!INCLUDE [cc-data-platform-banner](../includes/cc-data-platform-banner.md)]
+
 
 Dynamics 365 Customer Insights-eko hartzaileen xehetasunen gaitasuna iturburu multzo zabal bateko datuekin konektatzen da. datu-iturburu-era konektatzearen prozesua sarritan aipatzen da *datuen irenstea*. Datuak irentsi ondoren, egin dezakezu [bateratu](data-unification.md) eta neurriak hartu.
 
 ## <a name="add-a-data-source"></a>Gehitu datu-iturburua
 
-datu-iturburu bat gehitzeko artikulu zehatzak ikusi, aukeratutako aukeraren arabera.
+Ikusi artikulu zehatzak datu-iturburu bat nola gehitu jakiteko, aukeratzen duzun aukeraren arabera.
 
-datu-iturburu bat gehi dezakezu hiru modu nagusitan:
+Datu iturri hauek gehi ditzakezu:
 
-- [Dozenaka Power Query lokailuren bidez](connect-power-query.md)
+- [Dozenaka bidez Power Query konektoreak](connect-power-query.md)
 - [Hurrengotik Common Data Model-eko karpeta bat](connect-common-data-model.md)
-- [Zuretik Common Data Service lakua](connect-common-data-service-lake.md)
+- [Zuretik Microsoft Dataverse lakua](connect-dataverse-managed-lake.md)
+- [Batetik Azure Synapse Analytics datu-basea](connect-synapse.md)
+
+> [!NOTE]
+> Probako bertsioa erabiltzen ari bazara, inportazio metodoen atalean a **Customer Insights datu-liburutegia** aukera. Aukeratu aukera hau hainbat industriatarako erabilgarri dagoen datu-multzo lagin bat hautatzeko. Informazio gehiagorako, ikus [Dynamics 365 Customer Insights epaiketa](../trial-signup.md).
 
 ## <a name="add-data-from-on-premises-data-sources"></a>Gehitu datuak lokal datu iturrietatik
 
-Oinarrian onartzen da lokal datu iturrietako datuak sartzea Audience Insights-en Power Platform datu-fluxuak. Datu-fluxuak Customer Insights-en gaitu daitezke [eskainiz Microsoft Dataverse inguruneko URLa](manage-environments.md#create-an-environment-in-an-existing-organization) ingurunea konfiguratzerakoan.
+Oinarrian onartzen da lokal datu iturrietako datuak sartzea parte-hartzaileen xehetasunen Microsoft Power Platform datu-fluxuak. Customer Insights-en Datu-fluxuak gaitu ditzakezu [emanez Microsoft Dataverse ingurunearen URLa](create-environment.md) ingurunea ezartzerakoan.
 
-Elkartu ondoren sortzen diren datu iturriak Dataverse Customer Insights-ekin ingurunea erabiliko da [Power Platform datu-fluxuak](/power-query/dataflows/overview-dataflows-across-power-platform-dynamics-365) lehenetsiz. Datu fluxuek on-prem konektibitatea onartzen dute datu pasabideak erabiliz. Aurretik zeuden datu iturriak kendu eta birsortu Dataverse ingurunea lokal datu atebideak erabiltzeko lotu zen.
+A elkartu ondoren sortzen diren datu-iturriak Dataverse Customer Insights erabilera duen ingurunea [Power Platform datu-fluxuak](/power-query/dataflows/overview-dataflows-across-power-platform-dynamics-365) lehenetsiz. Datu fluxuek konektibitate lokala onartzen dute datuetarako atebidea erabiliz. Aurretik zeuden datu-iturriak kendu eta birsor ditzakezu Dataverse ingurunea lotzen zen [lokal datu-pasabideak erabiliz](/data-integration/gateway/service-gateway-app).
 
-Dagoen batetik datozen atebideak Power BI edo Power Apps ingurunea ikusgai egongo da eta Customer Insights-en berrerabili dezakezu. Datu iturrien orrira joateko estekak agertzen dira Power Platform lokal datu atebideak ikusi eta konfiguratzeko ingurunea.
-
-:::image type="content" source="media/data-sources-onpremises-gateways.png" alt-text="Datu iturrien orriaren pantaila-argazkia Power Platform ingurunea.":::
+Dagoen batetik datozen atebideak Power BI edo Power Apps ingurunea ikusgai egongo da eta Customer Insights-en berrerabili dezakezu. Datu iturrien orriak estekara erakusten du Microsoft Power Platform lokal datu atebideak ikusi eta konfiguratzeko ingurunea.
 
 ## <a name="review-ingested-data"></a>Berrikusi sartutako datuak
 
 Irentsitako datu-iturburu bakoitzaren izena, bere egoera eta iturri horretako datuak berritu ziren azken aldia ikusiko dituzu. Datu-iturburuen zerrenda zutabe bakoitzaren arabera ordenatu dezakezu.
 
 > [!div class="mx-imgBorder"]
-> ![Gehitutako datu-iturriak](media/configure-data-datasource-added.png "Gehitutako datu-iturriak")
+> ![Gehitutako datu-iturriak.](media/configure-data-datasource-added.png "Gehitutako datu-iturriak")
 
-|Egoera  |Deskribapena  |
-|---------|---------|
-|Ongi egin da   |Datu-iturburu sartu da **Freskatuta** zutabean denbora-tartea adierazten bada.
-|Ez da hasi   |Datu-iturburuak oraindik ez du daturik sartu edo oraindik zirriborro moduan daude.         |
-|Freskatzen    |Datuen horniketa martxan da. Eragiketa hau bertan behera utzi dezakezu **Utzi freskagarria** herrian **Ekintzak** zutabea. datu-iturburu-en freskagarria gelditzeak azken freskatze egoeran itzuliko du.       |
-|Ezin izan da egin     |Datuen iradokizunak akatsak izan ditu.         |
+[!INCLUDE [progress-details-include](../includes/progress-details-pane.md)]
 
-Hautatu balioa **Egoera** datu-iturburu edozein zutabetan xehetasun gehiago berrikusteko. **Aurrerapenaren xehetasunak** panelean, zabaldu **Datu-iturburuak**. Aukeratu **Ikusi xehetasunak** freskatze egoerari buruzko xehetasun gehiago berrikusteko, erroreen xehetasunak eta beherako prozesuen eguneratzeak barne.
-
-Datuak kargatzea denbora har dezake. Freskatu ondoren, iradokitako datuak berrikusi daitezke **erakundeak** orria. Informazio gehiago lortzeko, [Entitateak](entities.md).
+Datuak kargatzeak denbora behar dezake. Freskatu ondoren, iradokitako datuak berrikusi daitezke **erakundeak** orria. Informazio gehiago lortzeko, [Entitateak](entities.md).
 
 ## <a name="refresh-a-data-source"></a>Freskatu datu-iturburu bat
 
@@ -68,9 +66,9 @@ Joan **Administratzailea** > **Sistema** > [**Antolaketa**](system.md#schedule-t
 
 Eskatu ahalako datu-iturburu bat freskatzeko, jarraitu urrats hauek:
 
-1. Hartzaileei buruzko xehetasunetan, joan hona: **Datuak** > **Datu-iturburuak**
+1. Hartzaileei buruzko xehetasunetan, joan hona: **Datuak** > **Datu-iturburuak**.
 
-2. Hautatu freskatu nahi duzun datu-iturburuaren ondoko elipsi bertikala eta hautatu **Freskatu** goitibeherako zerrendatik.
+2. Aukeratu elipsi bertikala freskatu eta hautatu nahi duzun datu-iturburu ondoan **Freskatu** goitibeherako zerrendatik.
 
 3. Datu-iturburua eskuz eguneratzeko aktibatuta dago. datu-iturburu freskatzeak entitatearen eskema eta datuak eguneratuko ditu datu-iturburu-en zehaztutako entitate guztientzat.
 
@@ -80,7 +78,7 @@ Eskatu ahalako datu-iturburu bat freskatzeko, jarraitu urrats hauek:
 
 1. Hartzaileei buruzko xehetasunetan, joan hona: **Datuak** > **Datu-iturburuak**.
 
-2. Hautatu kendu nahi duzun datu-iturburu ondoko elipsi bertikala eta hautatu **Ezabatu** goitibeherako menuan.
+2. Aukeratu elipsi bertikala ezabatu eta hautatu nahi duzun datu-iturburu ondoan **Ezabatu** goitibeherako menutik.
 
 3. Berretsi ezabatu nahi duzula.
 
