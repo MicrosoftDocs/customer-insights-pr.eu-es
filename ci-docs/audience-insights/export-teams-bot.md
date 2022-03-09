@@ -1,20 +1,19 @@
 ---
 title: Microsoft Teams-eko bot-a
 description: Bilatu bezeroen profil bateratuak Microsoft Teams-en bot baten laguntzarekin.
-ms.date: 04/21/2020
+ms.date: 10/08/2021
 ms.reviewer: mhart
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
 author: stefanie-msft
 ms.author: sthe
 manager: shellyha
-ms.openlocfilehash: e563619f40be859f3f02638adbd60b80423182b3
-ms.sourcegitcommit: dab2cbf818fafc9436e685376df94c5e44e4b144
-ms.translationtype: HT
+ms.openlocfilehash: d6b016c1ec35e26ce6449333234edfd218bc9354
+ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
+ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "6554329"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8232087"
 ---
 # <a name="teams-bot-for-dynamics-365-customer-insights-preview"></a>Teams-en bot-a Dynamics 365 Customer Insights-erako (aurrebista)
 
@@ -31,7 +30,10 @@ Bot-a konfiguratzeko eta konfiguratzeko, honako baldintza hauek bete behar dira:
 - [Bateratze prozesua](data-unification.md) osatu da.
 - Eremuak gehitzen dira [bilaketa eta iragazki indizea](search-filter-index.md).
 - Customer Insights eta taldeak antolaketa berean daude.
+- Zure inguruneak bezero partikularrei ezarri die helburu nagusia. Enpresa kontuak ez dira onartzen.
 
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWRElj]
 ## <a name="configure-the-bot"></a>Konfiguratu bota
 
 1. Hartzaileei buruzko xehetasunetan, joan hona: **Administratzailea** > **Esportatu helburuak**.

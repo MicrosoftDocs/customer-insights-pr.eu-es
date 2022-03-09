@@ -5,26 +5,25 @@ author: mochimochi016
 ms.reviewer: mhart
 ms.author: jefhar
 ms.date: 06/09/2021
-ms.service: customer-insights
 ms.subservice: engagement-insights
 ms.topic: conceptual
 ms.manager: shellyha
-ms.openlocfilehash: e6b69a6f681c929ddc4fe1877e4ad1c45ffe5c57b42f1485f55728eb4f9988b6
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
-ms.translationtype: HT
+ms.openlocfilehash: 101888ecc3a741a1ab6eb87c20055644eb8022b2
+ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
+ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7774116"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8228068"
 ---
 # <a name="microsoft-dynamics-365-customer-insights--engagement-insights-preview"></a>MICROSOFT DYNAMICS 365 CUSTOMER INSIGHTS - Elkarreragin xehetasunak (aurrebista) 
 
-Engagement insights (aurrebista) kaleratu aurreko aurrebista-gaitasuna da, hau da, Dynamics 365 Customer Insights-en orokorrean eskuragarri dauden eginbide eta gaitasunek baino segurtasun-, pribatutasun- eta datu-kokapen-neurri gutxiago edo desberdinak dituela. Ikusi beheko baldintzak eta produktuaren dokumentazioa konpromisoari buruzko datuak (aurrebista) zure datuetarako egokiak diren ala ez jakiteko.
+Elkarreragin xehetasunak (aurrebista) estreinatu aurreko aurrebista gaitasuna da, hau da, segurtasun, pribatutasun eta datuen kokapen neurri gutxiago edo desberdinak ditu, orokorrean hemen eskuragarri dauden funtzioak eta gaitasunak baino Dynamics 365 Customer Insights. Ikusi beheko baldintzak eta produktuaren dokumentazioa konpromisoari buruzko datuak (aurrebista) zure datuetarako egokiak diren ala ez jakiteko.
 
 ## <a name="preview-terms-of-service"></a>AURREBISTA ZERBITZU-BALDINTZAK
 
 AZKEN EGUNERATZEA 2020KO URRIA 
 
-Dynamics 365 Customer Insights - Engagement insights zerbitzuen aurrebista atzitzean edo erabiliz gero (Microsoft-ek emandako datu-iturriekin batera, "Zerbitzuak"), Akordio honetako zehaztapenak eta baldintzak onartzen dituzu. Ez badituzu onartzen, ez sartu edo erabili Zerbitzuetara.
+Zerbitzuaren aurrebista zerbitzura sartuz edo erabiliz Dynamics 365 Customer Insights - Konpromisoari buruzko informazioarekin (Microsoft-ek emandako edozein datu-iturrirekin batera, "Zerbitzuak"), hitzarmen honetako baldintzak onartzen dituzu. Ez badituzu onartzen, ez sartu edo erabili Zerbitzuetara.
 
 ## <a name="1-what-this-agreement-covers"></a>1. HITZARMEN HONEK ZER ESTATZEN DU
 
@@ -154,7 +153,7 @@ LEGEAK BAIMENDUTAKO GEHIENEKO NEURRIAN, MICROSOFT-EK EZ DU INOLAKO HITZARMEN HOR
 
 ### <a name="111-term"></a>11.1. Terminoa
 
-Hitzarmen hau indarrean dago lehenengo aldiz onartzen duzun egunean. Akordio honek Dynamics 365 Product Insights edo aurreko zerbitzuren bat erabiltzen ari zaren aurreko edozein akordio ordezkatzen du. Akordio hau (i) zerbitzuen merkataritza-oharra lehen aldiz eskuragarri dagoen egunean amaituko da (inoiz izanez gero) edo (ii) Microsoftek baja emateko oharra ematen duen egunean. Microsoft-ek Zerbitzu guztietarako edo zati batzuetarako zure erabilera eta sarbidea bertan behera utzi edo bertan behera utz dezake edo hitzarmen hau bertan behera utzi dezake edozein unetan edozein arrazoirengatik eta bere nahierara.
+Hitzarmen hau indarrean dago lehenengo aldiz onartzen duzun egunean. Hitzarmen honek erabiltzen zenituen aurreko akordioak ordezkatzen ditu Dynamics 365 Product Insights edo edozein zerbitzu aitzindari. Akordio hau (i) zerbitzuen merkataritza-oharra lehen aldiz eskuragarri dagoen egunean amaituko da (inoiz izanez gero) edo (ii) Microsoftek baja emateko oharra ematen duen egunean. Microsoft-ek Zerbitzu guztietarako edo zati batzuetarako zure erabilera eta sarbidea bertan behera utzi edo bertan behera utz dezake edo hitzarmen hau bertan behera utzi dezake edozein unetan edozein arrazoirengatik eta bere nahierara.
 
 ### <a name="112-effect-of-termination"></a>11.2. Bukaeraren eragina
 

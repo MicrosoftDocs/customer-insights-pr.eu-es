@@ -1,20 +1,19 @@
 ---
 title: Esportatu Customer Insights datuak Autopilot-era
 description: Ikasi konexioa konfiguratzen eta pilotu automatora esportatzen.
-ms.date: 03/03/2021
+ms.date: 10/08/2021
 ms.reviewer: mhart
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: c9ada8a6f4e4546990a1360567b400033050119c4c4c9a3df1af8fcaab75e157
-ms.sourcegitcommit: aa0cfbf6240a9f560e3131bdec63e051a8786dd4
-ms.translationtype: HT
+ms.openlocfilehash: 7a7a67a52fcf39da8d50bd95817d25470fc90b6f
+ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
+ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 08/10/2021
-ms.locfileid: "7032010"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8227651"
 ---
 # <a name="export-segments-to-autopilot-preview"></a>Esportatu segmentuak Autopilot-era (aurrebista)
 
@@ -28,10 +27,10 @@ Esportatu bezeroen profil bateratuen segmentuak Autopilot kontaktu zerrendetara 
 
 ## <a name="known-limitations"></a>Muga ezagunak
 
-- Guztira 100.000 bezero-profil esporta ditzakezu Autopilot-era.
+- Esportazio bakoitzeko 100.000 bezero profila guztira Autopilot-en.
 - Autopilot-era esportatzea segmentuetara mugatuta dago.
-- Autopilot-era 100.000 profil gehienera esportatzeak ordu batzuk behar izan ditzake osatzeko. 
-- Autopilot-era esporta ditzakezun profilen kopurua Autopilot-ekin duzun kontratuaren menpe dago eta mugatua da.
+- 100.000 arte bezero profil Autopilot-en dituzten segmentuak esportatzen ordu gutxi behar izan ditzakete osatzeko. 
+- Autopilot-era esporta ditzakezun bezeroen profil kopurua Autopilot-ekin duzun kontratuaren menpe dago eta mugatua da.
 
 ## <a name="set-up-connection-to-autopilot"></a>Konfiguratu konexioa Autopilot-era
 
@@ -43,7 +42,7 @@ Esportatu bezeroen profil bateratuen segmentuak Autopilot kontaktu zerrendetara 
 
 1. Aukeratu nork erabil dezakeen konexioa. Inolako neurririk hartzen ez baduzu, lehenetsia izango da Administratzaileak. Informazio gehiagorako, ikus [Baimendu laguntzaileei esportazioetarako konexioa erabiltzea](connections.md#allow-contributors-to-use-a-connection-for-exports).
 
-3. Sartu zure [Pilotatze automatikoaren API gakoa](https://autopilot.docs.apiary.io/#).
+1. Sartu zure [Pilotatze automatikoaren API gakoa](https://autopilot.docs.apiary.io/#).
 
 1. Aukeratu **ados** baieztatzeko **Datuen pribatutasuna eta betetzea**.
 
@@ -63,7 +62,7 @@ Esportazio hau konfigura dezakezu mota honetako konexiorako sarbidea baduzu. Inf
 
 1. Hurrengoan **Konexioa esportatzeko** eremuan, aukeratu konexioa Autopilot sekzioan. Atal honen izena ikusten ez baduzu, ez dago mota honetako konexiorik erabilgarri.
 
-3. **Datuen bat etortzea** atalean, **Posta elektronikoa** eremuan, hautatu zure bezeroaren profil bateratuko eremua, bezero baten helbide elektronikoa adierazten duena. Errepikatu urrats berak aukerako beste eremu batzuetarako, esaterako **izena** eta **abizena**.
+1. Urtean **Datuen bat etortzea** atalean, **Posta elektronikoa** eremua, hautatu bezeroaren helbide elektronikoa adierazten duen eremua. Errepikatu urrats berak aukerako beste eremu batzuetarako, esaterako **izena** eta **abizena**.
 
 1. Hautatu esportatu nahi dituzun segmentuak. Biziki **gomendatzen dugu 100.000 bezero profil baino gehiago ez esportatzea guztira** Autopilot-era. 
 

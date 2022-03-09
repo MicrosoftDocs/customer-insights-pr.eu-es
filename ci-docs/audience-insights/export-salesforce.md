@@ -1,20 +1,19 @@
 ---
 title: Esportatu Customer Insights datuak Salesforce Marketing Cloudera
 description: Ikasi konexioa nola konfiguratu eta Salesforce Marketing Cloud-era esportatu.
-ms.date: 06/24/2021
+ms.date: 07/23/2021
 ms.reviewer: mhart
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 123f8b2dbb6140785dec6c1b4164d2f513f66a53
-ms.sourcegitcommit: 057079532e31c12bac36f374857ba3dc847d6ad0
-ms.translationtype: HT
+ms.openlocfilehash: 17a608a64433cdc395e0b503a42b6290db5c39ec
+ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
+ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "6314570"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8230189"
 ---
 # <a name="export-segments-and-other-data-to-salesforce-marketing-cloud-preview"></a>Esportatu segmentuak eta bestelako datuak Salesforce Marketing Cloud-era (aurrebista)
 
@@ -23,11 +22,6 @@ Erabili zure bezeroen datuak Salesforce Marketing Cloud-en esportatuz fitxategi 
 ## <a name="prerequisites-for-connection"></a>Konexioaren aurrebaldintzak
 
 - SFTP ostalariaren eta dagozkien administratzaile kredentzialen erabilgarritasuna. [Nola konfiguratu SFTP kokapenak Salesforce Marketing Cloud-erako](https://help.salesforce.com/articleView?id=sf.mc_es_configure_enhanced_ftp.htm&type=5) 
-
-## <a name="known-limitations"></a>Muga ezagunak
-
-- Esportazio baten iraupena zure sistemaren errendimenduaren araberakoa da. Bi PUZ nukleo eta 1 Gb memoria gomendatzen dizugu zure zerbitzariaren gutxieneko konfigurazio gisa. 
-- Gehienez 100 milioi bezero profil dituzten entitate esportatzaileek 90 minutu iraun dezakete gomendatutako gutxieneko konfigurazioa erabiltzean. 
 
 ## <a name="set-up-the-connection-to-salesforce-marketing-cloud"></a>Konfiguratu konexioa Salesforce Marketing Cloud-era
 

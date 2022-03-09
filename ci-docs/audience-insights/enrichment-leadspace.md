@@ -1,32 +1,31 @@
 ---
 title: Enpresako profilak aberastea hirugarrenen Leadspace aberastearekin
 description: Leadspace-ren hirugarrenen aberasteari buruzko informazio orokorra.
-ms.date: 04/09/2021
+ms.date: 09/30/2021
 ms.reviewer: mhart
-ms.service: customer-insights
 ms.subservice: audience-insights
 ms.topic: how-to
-author: kishorem-MS
-ms.author: kishorem
+author: jodahlMSFT
+ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: ccf4f661ecffb281556a4545b1f26ee809c697cd
-ms.sourcegitcommit: aaa275c60c0c77c88196277b266a91d653f8f759
+ms.openlocfilehash: f89ef6842c21cf6b78154586f818beffbcdcffb9
+ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "5895898"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8230619"
 ---
 # <a name="enrichment-of-company-profiles-with-leadspace-preview"></a>Enpresen profilak aberastea Leadspace-rekin (aurrebista)
 
-Leadspace B2B Bezeroaren Datuen Plataforma eskaintzen duen datuen zientzia enpresa da. Enpresentzako bezeroen profil bateratuak dituzten bezeroei beren datuak aberasteko aukera ematen die. Aberasketek atributu gehiago biltzen dituzte, hala nola enpresaren tamaina, kokapena, industria eta abar.
+Leadspace datu-zientzietako enpresa bat da, B-to-B Bezeroentzako Datuen Plataforma eskaintzen duena. Kontuetan oinarritutako bezeroen profil bateratuak dituzten inguruneak ahalbidetzen ditu beren datuak aberasteko. Aberastu *Bezeroen profilak* enpresaren tamaina, kokapena edo industria bezalako atributuekin. Aberastu *Harremanetarako profilak* izenburua, pertsona edo posta elektronikoa egiaztatzea bezalako atributuekin.
 
 ## <a name="prerequisites"></a>Aurrebaldintzak
 
 Leadspace konfiguratzeko eta konfiguratzeko, honako baldintza hauek bete behar dira:
 
 - Leadspace lizentzia aktiboa duzu.
-- Duzu [bezeroen profil bateratuak](customer-profiles.md) enpresentzat.
-- Administratzaile batek konfiguratu du dagoeneko Leadspace konexioa edo zuk [administratzailea](permissions.md#administrator) baimenak eta "betiko giltza" (aipatzen da **Leadspace token**). Harremanetarako [Leadspace](https://www.leadspace.com/products/leadspace-on-demand/) zuzenean produktuaren inguruko xehetasunak lortzeko.
+- Baduzu [bezeroen profil bateratuak](customer-profiles.md) kontuetan oinarrituta.
+- Administratzaile batek konfiguratu du dagoeneko Leadspace konexioa edo zuk [administratzailea](permissions.md#administrator) baimenak eta "betiko giltza" (aipatzen da **Leadspace token**). Harremanetarako [Leadspace](https://www.leadspace.com/leadspace-microsoft-dynamics-365/) zuzenean produktuaren inguruko xehetasunak lortzeko.
 
 ## <a name="configure-the-enrichment"></a>Konfiguratu aberastea
 
@@ -36,7 +35,7 @@ Leadspace konfiguratzeko eta konfiguratzeko, honako baldintza hauek bete behar d
 
    :::image type="content" source="media/leadspace-tile.png" alt-text="Leadspace lauzaren pantaila-argazkia.":::
 
-1. Hautatu [konexioa](connections.md) goitibeherako zerrendatik. Jarri harremanetan administratzaile batekin konexiorik ez badago. Administratzailea bazara, sor dezakezu konexioa **Gehitu konexioa** hautatuz eta **Leadspace** aukeratuz. 
+1. Hautatu goitibeherako zerrendako [konexio](connections.md) bat. Jarri harremanetan administratzaile batekin konexiorik ez badago. Administratzailea bazara, sor dezakezu konexioa **Gehitu konexioa** hautatuz eta **Leadspace** aukeratuz. 
 
 1. Aukeratu **Konektatu Leadspace** konexioa berresteko.
 
@@ -50,6 +49,10 @@ Leadspace konfiguratzeko eta konfiguratzeko, honako baldintza hauek bete behar d
 
 1. Hautatu **Hurrengoa** eremuaren jarraipena osatzeko.
 
+1. Hautatu kontrol laukia baduzu *Harremanetarako profilak* aberastu nahiko zenukeela. Ikusleen estatistikek beharrezko eremuak automatikoki mapatuko dituzte.
+
+   :::image type="content" source="media/enrichment-leadspace-contacts.png" alt-text="Leadspace kontaktuak aberastu egiten du.":::
+ 
 1. Eman aberasturako izena eta hautatu **Aurreztu aberastasuna** zure aukerak aztertu ondoren.
 
 
@@ -57,13 +60,13 @@ Leadspace konfiguratzeko eta konfiguratzeko, honako baldintza hauek bete behar d
 
 Administratzailea izan behar duzu konexioak konfiguratzeko. Aukeratu **Gehitu konexioa** aberastasun bat konfiguratzerakoan *edo* joan **Administratzailea** > **Konexioak** eta hautatu **Konfiguratu** Leadspace fitxan.
 
-1. Hautatu **Hasi erabiltzen** 
+1. Hautatu **Hasi erabiltzen**. 
 
 1. Idatzi konexioaren izena **Bistaratzeko izena** kutxa.
 
 1. Hornitu balizoko Leadspace tokena.
 
-1. Berrikusi eta eman baimena **Datuen pribatutasuna eta betetzea** aukeratuz **ados** laukia
+1. Berrikusi eta eman zure baimena **Datuen pribatutasuna eta betetzea** hautatuz **Ados**.
 
 1. Aukeratu **Egiaztatu** konfigurazioa balioztatzeko.
 
@@ -81,12 +84,13 @@ Informazio gehiago lortzeko, ikus [Leadspace API](https://support.leadspace.com/
 
 ## <a name="next-steps"></a>Hurrengo urratsak
 
-Eraiki zure bezeroen datu aberastuen gainean. Sortu [segmentuak](segments.md), [Neurriak](measures.md), eta baita [datuak esportatu](export-destinations.md) zure bezeroei esperientzia pertsonalizatuak emateko.
+
+[!INCLUDE [next-steps-enrichment](../includes/next-steps-enrichment.md)]
 
 ## <a name="data-privacy-and-compliance"></a>Datuen pribatutasuna eta arau-gordetzea
 
 Dynamics 365 Customer Insights gaitzen duzunean datuak Leadspace-ra bidaltzeko, datuak betetzeko mugatik kanpo transferitzea baimentzen duzu Dynamics 365 Customer Insights-erako, datu pertsonalak bezalako datu sentikorrak barne. Microsoft-ek datu horiek transferituko ditu zure aginduz, baina zure ardura da Leadspace-k pribatutasun- edo segurtasun-betebeharrak betetzen dituela ziurtatzea. Informazio gehiago eskuratzeko, ikusi [Microsoft-en pribatutasun-adierazpena](https://go.microsoft.com/fwlink/?linkid=396732).
-Dynamics 365 Customer Insights administratzaileak edonoiz ken dezake aberastea funtzio hau erabiltzeari uzteko.
+Dynamics 365 Customer Insights administratzailea edonoiz ken dezake aberastea funtzio hau erabiltzeari uzteko.
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

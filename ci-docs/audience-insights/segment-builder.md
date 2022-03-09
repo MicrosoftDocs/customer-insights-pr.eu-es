@@ -1,20 +1,24 @@
 ---
 title: Sortu segmentuak segmentu-egilearekin
 description: Sortu bezeroen segmentuak, hainbat atributuren arabera taldekatzeko.
-ms.date: 09/07/2021
-ms.service: customer-insights
+ms.date: 10/18/2021
 ms.subservice: audience-insights
 ms.topic: how-to
 author: JimsonChalissery
 ms.author: jimsonc
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: e089c475234935742fc42fc3f2bada47711305bf
-ms.sourcegitcommit: 5d82e5b808517e0e99fdfdd7e4a4422a5b8ebd5c
-ms.translationtype: HT
+searchScope:
+- ci-segments
+- ci-segment-builder
+- ci-segment-details
+- customerInsights
+ms.openlocfilehash: 6fa6f0738bf7fba94b2fb84a70ea17483aae8dac
+ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
+ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 10/11/2021
-ms.locfileid: "7622856"
+ms.lasthandoff: 02/25/2022
+ms.locfileid: "8354540"
 ---
 # <a name="create-segments"></a>Sortu segmentuak
 
@@ -23,6 +27,7 @@ Definitu iragazki konplexuak bezero entitate bateratuaren eta hari lotutako enti
 > [!TIP]
 > - Segmentu bizkorrak inguruneetarako soilik onartzen dira **bezero partikularrak**.    
 > - Oinarritutako segmentuak **bezero partikularrak** automatikoki sartu segmentuko kideentzako eskuragarri dagoen informazioa. Inguruneetan **negozio kontuak**, segmentuak kontuetan (enpresak edo filialak) oinarritzen dira. Kontaktu informazioa segmentu batean sartzeko, erabili **Proiektuaren atributuak** funtzionalitatea segmentu eraikitzailean.
+>    - Ziurtatu harremanetarako datu-iturriak daudela [semantikoki mapatuta ContactProfile](semantic-mappings.md#define-a-contactprofile-semantic-entity-mapping) entitatera.
 
 ## <a name="segment-builder"></a>Segmentu-egilea
 
@@ -52,7 +57,7 @@ Goiko adibideak segmentazio-gaitasuna adierazten du. Segmentu bat definitu dugu 
 
 Segmentu berri bat sortzeko hainbat modu daude. Sekzio honetan segmentu bat hutsetik nola sortu azaltzen da. A ere sor dezakezu *segmentu azkarra* dauden entitateetan oinarrituta edo lortzeko Ikaskuntza automatiko ereduak *iradokitako segmentuak*. Informazio gehiagorako, joan [Segmentuen ikuspegi orokorra](segments.md).
 
-Segmentua sortu bitartean, zirriborroa gorde dezakezu. Zirriborro fasean, segmentu bat segmentu inaktibo gisa gordetzen da. Segmentuaren konfigurazioa amaitzen duzunean, exekutatu segmentua aktibatzeko. Bestela, egin dezakezu ***Aktibatu** _ segmentutik _ *Segmentu guztiak** orria.
+Segmentua sortu bitartean, zirriborroa gorde dezakezu. Zirriborro fasean, segmentu bat segmentu inaktibo gisa gordetzen da. Segmentuaren konfigurazioa amaitzen duzunean, exekutatu segmentua aktibatzeko. Bestela, egin dezakezu **Aktibatu** segmentu bat **Segmentu guztiak** orritik.
 
 1. Zoaz **Segmentuak** orrira.
 
@@ -86,17 +91,25 @@ Segmentua sortu bitartean, zirriborroa gorde dezakezu. Zirriborro fasean, segmen
 
    OR eragilea erabiltzean, baldintza guztiak erlazioaren bide-izenean dauden entitateetan oinarrituta egon behar dira.
 
-   - Hainbat arau sor ditzakezu bezeroen erregistro multzo desberdinak sortzeko. Taldeak konbinatu ditzakezu zure negozio kasurako behar diren bezeroak sartzeko. Arau berri bat sortzkeo, hautatu **Gehitu araua**. Zehazki, entitate bat ezin baduzu sartu arau batean zehaztutako erlazioaren bide-izena dela eta, beste arau bat sortu behar duzu, atributuak bertatik hautatzeko.
+   - Hainbat arau sor ditzakezu bezeroen erregistro multzo desberdinak sortzeko. Taldeak konbinatu ditzakezu zure negozio kasurako behar diren bezeroak sartzeko. Arau berri bat sortzkeo, hautatu **Gehitu araua**. Zehazki, ezin baduzu entitatea sartu arau batean zehaztutako erlazioaren bide-izenaren ondorioz, arau berri bat sortu beharko duzu berau osatzen duten atributuak aukeratzeko.
 
       :::image type="content" source="media/segment-rule-grouping.png" alt-text="Gehitu beste arau bat segmentu batena eta hautatu multzoko eragilea.":::
 
    - Aukeratu multzo operadoreetako bat: **Batasuna**, **Elkartu**, edo **Izan ezik**.
 
       - **Bateratzea** bi taldeak batzen ditu.
-      - **Gurutzatu** bi taldeak gainjartzen ditu. Bi taldeetako datu *komunak* soilik mantentzen dira talde bateratuan.
-      - **Salbuespena** bi taldeak batzen ditu. A eta B talde bietan *ez dauden* datuak soilik mantentzen dira.
+      - **Gurutzatu** bi taldeak gainjartzen ditu. Bi taldeek *komunean dituzten* datuak soilik geratzen dira talde bateratuan.
+      - **Salbuespena** bi taldeak batzen ditu. B taldearekiko *Komunak ez diren* A taldeko datuak soilik gordetzen dira B taldean.
 
-1. Lehenespenez, zehaztutako iragazkiekin bat datozen bezeroen profilen atributu guztiak dituzten irteerako entitateak sortzen dituzte segmentuek. Segmentu bat ez den beste entitate batzuetan oinarrituta badago *Bezeroa* entitatea, entitate hauetatik atributu gehiago gehi ditzakezu irteerako entitateari. Aukeratu **Proiektuaren atributuak** irteerako entitateari erantsiko zaizkion atributuak aukeratzeko.  
+1. Lehenespenez, zehaztutako iragazkiekin bat datozen bezeroen profilen atributu guztiak dituzten irteerako entitateak sortzen dituzte segmentuek. Segmentu bat ez den beste entitate batzuetan oinarrituta badago *Bezeroa* entitatea, entitate hauetatik atributu gehiago gehi ditzakezu irteerako entitateari. Aukeratu **Proiektuaren atributuak** irteerako entitateari erantsiko zaizkion atributuak aukeratzeko. 
+
+   > [!IMPORTANT]
+   > Negozio kontuetan oinarritutako segmentuetarako, *ContactProfile* entitateko kontu bakoitzaren kontaktu baten edo gehiagoren xehetasunak sartu behar dira segmentuan, segmentu hori harremanetarako informazioa behar duten helmugetara aktibatu edo esportatu ahal izateko. *ContactProfile* entitateari buruzko informazio gehiago lortzeko, ikus [Esleipen semantikoak](semantic-mappings.md).
+   > Kontaktuen proiektatutako atributuak dituzten negozio-kontuetan oinarritutako segmentu baten irteerako lagin bat honela izan daiteke: 
+   >
+   > |ID  |Kontuaren izena  |Diru-sarrerak  |Kontaktuaren izena  | Kontaktuaren funtzioa|
+   > |---------|---------|---------|---------|---|
+   > |10021     | Contoso | 100K | [Abbie Moss, Ruth Soto]  | [CEO, lorpenen kudeatzailea]
 
    :::image type="content" source="media/segments-project-attributes.png" alt-text="Alboko panelean hautatutako proiektatutako atributuen adibidea, irteerako entitatean gehitzeko.":::
   
@@ -107,13 +120,14 @@ Segmentua sortu bitartean, zirriborroa gorde dezakezu. Zirriborro fasean, segmen
    > - Proiektatu nahi duzun atributua saltotik bat baino gehiagora badago *Bezeroa* entitateak, harremanak definitzen duen moduan, atributu hori eraikitzen ari zaren segmentuaren kontsultaren arau guztietan erabili beharko litzateke. 
    > - Proiektatu nahi duzun atributua saltotik batera badago *Bezeroa* entitateak ez du presente egon behar atributu hori eraikitzen ari zaren segmentuaren kontsultaren arau guztietan erabiltzean. 
    > - Multzo operadoreak erabiltzean **proiektatutako atributuak** kontuan hartzen dira.
-   > - Negozio kontuetan oinarritutako segmentuetarako, kontu bakoitzaren kontaktu baten edo gehiagoren xehetasunak sartu behar dira segmentuan, segmentu hori harremanetarako informazioa behar duten helmugetara aktibatu edo esportatu ahal izateko.
 
 1. Segmentua gorde eta exekutatu aurretik, hautatu **editatu xehetasunak**, segmentuaren izenaren ondoan. Eman segmentuari izena eta eguneratu segmentuaren iradokitako **irteerako entitatearen izena**. Segmentuaren azalpena ere gehi dezakezu.
 
 1. Aukeratu **Exekutatu** segmentua gordetzeko, aktibatzeko eta zure segmentua prozesatzen hasteko arau eta baldintza guztietan oinarrituta. Bestela, segmentu inaktibo gisa gordeko da.
-
+   
 1. Aukeratu **Segurtasunetara itzuli** berriro ere **segmentuak** orria.
+
+1. Lehenespenez, segmentua segmentu dinamiko gisa sortzen da. Esan nahi du sistemaren freskatzeetan segmentua freskatzen dela. [Gelditzeko freskatze automatikoa](segments.md#manage-existing-segments), hautatu segmentua aukeratu **Estatikoa egin** aukera. Segmentu estatikoak [eskuz freskatu daitezke](segments.md#refresh-segments) edozein unetan.
 
 > [!TIP]
 > - Segmentu-egileak ez ditu entitateetako baliozko balioak iradokiko baldintzen eragileak ezartzean. Erabilgarri dauden balioak ikusteko, joan **Datuak** > **Entitateak** atalera eta deskargatu entitatearen datuak.
