@@ -8,16 +8,18 @@ ms.topic: how-to
 author: kishorem-ms
 ms.author: kishorem
 manager: shellyha
-ms.openlocfilehash: 7a576621c71b925bd1563827aca10cad4ef9b4eb
-ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
-ms.translationtype: HT
+ms.openlocfilehash: e9cf93f28ba6918c72039670e42d26c8aaa7f922
+ms.sourcegitcommit: 50d32a4cab01421a5c3689af789e20857ab009c4
+ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "8229388"
+ms.lasthandoff: 03/03/2022
+ms.locfileid: "8376307"
 ---
 # <a name="enrichment-of-company-profiles-with-enhanced-company-data"></a>Enpresaren profilak aberastea enpresaren datu hobetuekin
 
-Erabili Microsoft-en ereduak eta konpilatutako enpresako datuak zure enpresaren profilak zuzentzeko, osatzeko eta estandarizatzeko. Erabiliko dugu [Common Data Model formatua](/common-data-model/schema/core/applicationcommon/account) zehaztasun eta ikuspegi hobeak lortzeko.
+Erabili Microsoft-en ereduak eta konpilatutako enpresako datuak zure enpresaren profilak zuzentzeko, osatzeko eta estandarizatzeko. Erabiliko dugu [Common Data Model formatua](/common-data-model/schema/core/applicationcommon/account) zehaztasun eta ikuspegi hobea lortzeko.
+
+Zuk ere egin dezakezu [datu-iturriei buruzko enpresaren datuak hobetzea](data-sources-enrichment.md) datuen bateratze prozesuan partidaren zehaztasuna hobetzeko. 
 
 ## <a name="how-we-enhance-company-data"></a>Nola hobetzen ditugun enpresako datuak
 
@@ -26,7 +28,7 @@ Gure ereduak bi urratseko prozesu bat egiten du enpresaren profila hobetzeko. Le
 
 ### <a name="example"></a>Adibidez
 
-Baliteke zure enpresaren informazioak formatu estandar bat ez jarraitzea eta akats ortografikoak izatea. Eredua arazo hauek konpontzen eta informazio koherentea sortzen saiatzen da.
+Baliteke zure enpresaren informazioak formatu estandarizatu bat ez jarraitzea eta akats ortografikoak izatea. Eredua arazo hauek konpontzen eta informazio koherentea sortzen saiatzen da.
 
 ```Input
 Microsft
@@ -50,7 +52,7 @@ Datu hobetuekin muga batzuk daude. Beheko zerrendako elementuak ez ditu ereduak 
 
 1.  Enpresaren identitatea berretsi. Ez dugu egiaztatzen sarrera lehendik dagoen erakunde bat den edo enpresa batek irteera izen estandar gisa erabiltzen duen.
 2.  Estali orokorrean enpresak mundu osoan. Microsoft-ek bildutako konpainiaren datuek estaldura globala dute, baina estaldura gehien Australian, Kanadan, Erresuma Batuan eta Estatu Batuetan eskaintzen du.
-3.  Normalizatu enpresen helbideak mundu osoan. Gaur egun, herrialde edo eskualde hauetan helbideak estandarizatzea onartzen dugu: Australia, Kanada, Frantzia, Alemania, Italia, Japonia, Erresuma Batua eta Estatu Batuak.
+3.  Normalizatu enpresen helbideak mundu osoan. Gaur egun, herrialde edo eskualde hauetan helbideak estandarizatzen onartzen ditugu: Australia, Kanada, Frantzia, Alemania, Italia, Japonia, Erresuma Batua eta Estatu Batuak.
 4.  Datuen zehaztasuna edo freskotasuna bermatu. Enpresaren informazioa askotan aldatzen denez, ezin dugu bermatu emandako enpresaren datu hobetuak beti zehatzak edo eguneratuak direnik.
 
 ## <a name="configure-the-enrichment"></a>Konfiguratu aberastea
@@ -65,7 +67,7 @@ Datu hobetuekin muga batzuk daude. Beheko zerrendako elementuak ez ditu ereduak 
 
 1. Hautatu zure enpresa-profiletatik zein eremu mota erabili behar diren Microsoft-ek konpilatutako enpresa-datuekin bat etortzeko. Aukeraketa honek hurrengo urratsean atzitu ditzakezun mapen eremuei eragingo die.
 
-1.  Mapeatu zure bezero-entitate bateratuko konpainiaren eremuak. Zenbat eta gako-identifikatzaile eta eremu gehiago mapatu, orduan eta aukera handiagoa izango da bat-etortze-tasa handiagoa izateko.
+1.  Mapeatu zure bezero-entitate bateratuko konpainiaren eremuak. Zenbat eta gako-identifikatzaile eta eremu gehiago mapatu, orduan eta probabilitate handiagoa izango da bat-etortze-tasa handiagoa izateko.
 
     :::image type="content" source="media/enhanced-company-data-mapping.png" alt-text="Datuen mapak egiteko urratsa enpresa aberaste bat konfiguratzean.":::
 

@@ -8,12 +8,12 @@ ms.topic: how-to
 author: kishorem-ms
 ms.author: kishorem
 manager: shellyha
-ms.openlocfilehash: ad1023135516ca9c49818d19aa84df68d16b2e3c
-ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
-ms.translationtype: HT
+ms.openlocfilehash: efa26fa82a950063e074a4ab930ed95383c55334
+ms.sourcegitcommit: 50d32a4cab01421a5c3689af789e20857ab009c4
+ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "8229949"
+ms.lasthandoff: 03/03/2022
+ms.locfileid: "8376677"
 ---
 # <a name="enrich-customer-profiles-with-demographics-from-experian-preview"></a>Aberastu bezeroen profilak datu demografikoekin Experian (aurrebista)
 
@@ -25,7 +25,7 @@ Konfiguratzeko Experian, honako baldintza hauek bete behar dira:
 
 - Experian harpidetza aktiboa izan behar duzu. Harpidetza lortzeko, [harremanetarako Experian](https://www.experian.com/marketing-services/contact) zuzenean. [Lortu informazio gehiago Experian datuen eraginari buruz](https://www.experian.com/marketing-services/microsoft?cmpid=ems_web_mci_cdppage).
 
-- Administratzaile batek Experian konexioa konfiguratu du dagoeneko *edo* duzu [administratzailea](permissions.md#administrator) baimenak. Erabiltzaile IDa, Alderdiaren IDa eta Modelo zenbakia ere behar dituzu SSH gaitutako Garraio Seguru (ST) konturako Experian zuretzat sortua.
+- Administratzaile batek Experian konexioa konfiguratu du dagoeneko *edo* duzu [administratzailea](permissions.md#admin) baimenak. Erabiltzaile IDa, Alderdiaren IDa eta Modelo zenbakia ere behar dituzu SSH gaitutako Garraio Seguru (ST) konturako Experian zuretzat sortua.
 
 ## <a name="supported-countriesregions"></a>Lagundutako herrialde / eskualdeak
 

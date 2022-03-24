@@ -8,16 +8,16 @@ author: NimrodMagen
 ms.author: nimagen
 ms.reviewer: v-wendysmith
 manager: shellyha
-ms.openlocfilehash: eebaaf18795e80dd1ba16a15a23844d685c94c6e
-ms.sourcegitcommit: bb1f9e96023490ab340c114f54200ab4dd48da78
-ms.translationtype: HT
+ms.openlocfilehash: 56f6a8ad20224922f9968f0ad3b6a0e0a400214b
+ms.sourcegitcommit: 50d32a4cab01421a5c3689af789e20857ab009c4
+ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 03/02/2022
-ms.locfileid: "8373052"
+ms.lasthandoff: 03/03/2022
+ms.locfileid: "8376564"
 ---
 # <a name="enrichment-for-data-sources-preview"></a>Datu-iturburuetarako aberastea (aurrebista)
 
-Erabili Microsoft eta beste bazkide batzuen iturrietako datuak zure bezeroen datuak aberasteko datuak bateratu aurretik. datu-iturburu aberasteek datuen osotasun eta kalitate handiagoak lortzen laguntzen dute, eta horrek emaitza hobeak lortzen lagunduko dizu datuak bateratu ondoren. Esaterako, helbideetarako formatu normalizatu eta estandarizatu bat erabiltzeak bateren emaitzen kalitatea areagotzen du. Onartutako aberasteen zerrendarako, ikus [datu-iturburu aberasteko aukerak onartzen ditu](#supported-data-source-enrichments).
+Erabili Microsoft eta beste bazkide batzuen iturrietako datuak zure bezeroen datuak aberasteko datuak bateratu aurretik. datu-iturburu aberasteek datuen osotasun eta kalitate handiagoak lortzen laguntzen dute, eta horrek emaitza hobeak lortzen lagunduko dizu datuak bateratu ondoren. Esaterako, helbideetarako formatu normalizatu eta estandarizatu bat erabiltzeak bat emaitzen kalitatea areagotzen du. Onartutako aberasteen zerrendarako, ikus [datu-iturburu aberasteko aukerak onartzen ditu](#supported-data-source-enrichments).
 
 ## <a name="enrich-a-data-source"></a>Aberastu datu-iturburu
 
@@ -29,7 +29,7 @@ Kolaboratzaile edo Administratzaile baimenak izan behar dituzu aberasketak sortz
  
 1. Hautatu aberastu nahi duzun datu-iturburu ondoan dagoen elipsi bertikala eta hautatu **Aberastu**.
 
-   :::image type="content" source="media/data_sources_enrich_discover.png" alt-text="Datu iturriak aberasteko orria.":::
+   :::image type="content" source="media/data_sources_enrich_discover.png" alt-text="Datu-iturriak aberasteko orria.":::
 
    The **Ezagutu** fitxa bistaratzen du [datu-iturburu aberasteko aukerak onartzen ditu](#supported-data-source-enrichments).
 
@@ -40,7 +40,7 @@ Kolaboratzaile edo Administratzaile baimenak izan behar dituzu aberasketak sortz
 Une honetan datu-iturrietarako eskuragarri daude honako aberasgarri hauek. Berrikusi aberasterako urrats zehatzak nola konfiguratu ikasteko.
 
 - [Helbide hobetuak](enrichment-enhanced-addresses.md)
-- [LiveRamp-en nortasun-datuak](enrichment-liveramp.md)
+- [Enpresaren datu hobetuak](enrichment-enhanced-company-data.md)
 
 ## <a name="manage-existing-data-source-enrichments"></a>Kudeatu lehendik dauden datu-iturburu aberasgarriak
 

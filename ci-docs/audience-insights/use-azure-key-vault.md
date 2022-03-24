@@ -11,12 +11,12 @@ manager: shellyha
 searchScope:
 - ci-system-security
 - customerInsights
-ms.openlocfilehash: 5b22c1464b3f089551f485f98d6d93840ff77136
-ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
-ms.translationtype: HT
+ms.openlocfilehash: 418575f724090628da8bd01e2569a4cb9e646337
+ms.sourcegitcommit: 50d32a4cab01421a5c3689af789e20857ab009c4
+ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 02/25/2022
-ms.locfileid: "8355876"
+ms.lasthandoff: 03/03/2022
+ms.locfileid: "8376493"
 ---
 # <a name="bring-your-own-azure-key-vault-preview"></a>Ekarri zure Azure gako-ganga (aurrebista)
 
@@ -31,7 +31,7 @@ Entzuleen estatistiketan gako-ganga konfiguratzeko, honako baldintza hauek bete 
 
 - Azure harpidetza aktibo bat duzu.
 
-- Baduzu [Administratzailea](permissions.md#administrator) funtzioa hartzaileen xehetasunetan. Lortu informazio gehiago [erabiltzaileen baimenak ikusleen estatistiketan](permissions.md#assign-roles-and-permissions).
+- Baduzu [Administratzailea](permissions.md#admin) funtzioa hartzaileen xehetasunetan. Lortu informazio gehiago [erabiltzaileen baimenak ikusleen estatistiketan](permissions.md#assign-roles-and-permissions).
 
 - Baduzu [Laguntzailea](/azure/role-based-access-control/built-in-roles#contributor) eta [Erabiltzaile sarbide administratzailea](/azure/role-based-access-control/built-in-roles#user-access-administrator) gakoen gangan edo gako gangan dauden baliabideen taldean dauden rolak. Informazio gehiagorako, joan hona [Gehitu edo kendu Azure rolen esleipenak Azure ataria erabiliz](/azure/role-based-access-control/role-assignments-portal). Erabiltzaile sarbide administratzailearen rola ez baduzu gako gangan, roletan oinarritutako sarbide kontrol baimenak konfiguratu behar dituzu Azure zerbitzu nagusirako Dynamics 365 Customer Insights bereizita. Jarraitu urratsak [erabili Azure zerbitzu nagusia](connect-service-principal.md) lotu beharko litzatekeen gako-ganga.
 

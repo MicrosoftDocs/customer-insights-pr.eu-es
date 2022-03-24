@@ -11,12 +11,12 @@ manager: shellyha
 searchScope:
 - ci-system-diagnostic
 - customerInsights
-ms.openlocfilehash: 2e0801c2b6af591e48a7df485a8523903c07617c
-ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
-ms.translationtype: HT
+ms.openlocfilehash: d84ae8301bdf384c2484cdb1e7dd8eb75d406769
+ms.sourcegitcommit: 50d32a4cab01421a5c3689af789e20857ab009c4
+ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 02/25/2022
-ms.locfileid: "8354357"
+ms.lasthandoff: 03/03/2022
+ms.locfileid: "8376401"
 ---
 # <a name="log-forwarding-in-dynamics-365-customer-insights-with-azure-monitor-preview"></a>Saioa birbidaltzea Dynamics 365 Customer Insights Azure Monitor-ekin (aurrebista)
 
@@ -37,7 +37,7 @@ Customer Insights-ek gertaeren erregistro hauek bidaltzen ditu:
 Customer Insights-en diagnostikoak konfiguratzeko, aurrebaldintza hauek bete behar dira:
 
 - Aktibo bat duzu [Azure Harpidetza](https://azure.microsoft.com/pricing/purchase-options/pay-as-you-go/).
-- Zuk daukazu [Administratzailea](permissions.md#administrator) baimenak Customer Insights-en.
+- Zuk daukazu [Administratzailea](permissions.md#admin) baimenak Customer Insights-en.
 - Zuk daukazu **Laguntzailea** eta **Erabiltzaileen Sarbide Administratzailea** rola Azure-n helmugako baliabidean. Baliabidea Azure Storage kontu bat, Azure Event Hub bat edo Azure Log Analytics lan-eremu bat izan daiteke. Informazio gehiagorako, ikus [Gehitu edo kendu Azure rol-esleipenak Azure ataria erabiliz](/azure/role-based-access-control/role-assignments-portal).
 - [Helmugako baldintzak](/azure/azure-monitor/platform/diagnostic-settings#destination-requirements) Azure biltegiratzeko, Azure Event Hub edo Azure Log Analytics-ek betetzen ditu.
 - Gutxienez daukazu **Irakurlea** baliabidea dagokion baliabide taldean eginkizuna.
@@ -65,7 +65,7 @@ Customer Insights-en diagnostikoak konfiguratzeko, aurrebaldintza hauek bete beh
 
 1. Berretsi **Datuen pribatutasuna eta betetzea** adierazpena.
 
-1. Hautatu **Konektatu sistemara** helmugako baliabidera konektatzeko. Erregistroak 15 minuturen buruan helmugan agertzen hasten dira, APIa erabiltzen bada eta gertaerak sortzen baditu.
+1. Hautatu **Konektatu sistemara** helmugako baliabidera konektatzeko. Erregistroak helmugan agertzen hasten dira 15 minuturen buruan, APIa erabiltzen bada eta gertaerak sortzen baditu.
 
 ### <a name="remove-a-destination"></a>Helmuga bat kendu
 
@@ -75,7 +75,7 @@ Customer Insights-en diagnostikoak konfiguratzeko, aurrebaldintza hauek bete beh
 
 1. urtean **Ekintzak** zutabea, hautatu **Ezabatu** ikonoa.
 
-1. Berretsi ezabatzea erregistro-birbidaltzea geldiarazteko. Azure harpidetzako baliabidea ez da ezabatuko. Esteka hauta dezakezu **Ekintzak** zutabea hautatutako baliabiderako Azure ataria ireki eta bertan ezabatzeko.
+1. Berretsi ezabatzea erregistro-birbidaltzea geldiarazteko. Azure harpidetzako baliabidea ez da ezabatuko. Esteka aukera dezakezu **Ekintzak** zutabea hautatutako baliabiderako Azure ataria ireki eta bertan ezabatzeko.
 
 ## <a name="log-categories-and-event-schemas"></a>Erregistro-kategoriak eta gertaeren eskemak
 
@@ -132,7 +132,7 @@ APIko gertaerek eta lan-fluxuko gertaerek egitura eta xehetasun komunak dituzte 
 | `resultSignature` | String    | Aukerakoa          | Ekitaldiaren emaitzaren egoera. Eragiketa REST API dei bati badagokio, HTTP egoera kodea da.        | `200`             |
 | `durationMs`      | Long      | Aukerakoa          | Eragiketaren iraupena milisegundotan.     | `133`     |
 | `callerIpAddress` | String    | Aukerakoa          | Deitzailearen IP helbidea, eragiketa publikoki eskuragarri dagoen IP helbide batetik datorren API dei bati badagokio.                                                 | `144.318.99.233`         |
-| `identity`        | String    | Aukerakoa          | Eragiketa egin duen erabiltzailearen edo aplikazioaren identitatea deskribatzen duen JSON objektua.       | Ikusi [Identitatea](#identity-schema) atala.     |  |
+| `identity`        | String    | Aukerakoa          | Eragiketa egin duen erabiltzailearen edo aplikazioaren identitatea deskribatzen duen JSON objektua.       | Ikusi [Identitatea](#identity-schema) atala.     |  
 | `properties`      | String    | Aukerakoa          | Gertaeren kategoria jakin baterako propietate gehiago dituen JSON objektua.      | Ikusi [Propietateak](#api-properties-schema) atala.    |
 | `level`           | String    | Beharrezkoa          | Gertaeraren larritasun maila.    | `Informational`,`Warning`,`Error`, edo `Critical`.           |
 | `uri`             | String    | Aukerakoa          | Eskaera URI absolutua.    |               |
@@ -229,8 +229,8 @@ Lan-fluxuaren gertaerek propietate hauek dituzte.
 | Eremua              | Workflow | Zeregina | Deskribapenak            |
 | ------------------------------- | -------- | ---- | ----------- |
 | `properties.eventType`                       | Yes      | Yes  | Beti`WorkflowEvent`, gertaera lan-fluxuaren gertaera gisa markatuz.                                                                                                                                                                                                |
-| `properties.workflowJobId`                   | Yes      | Yes  | Lan-fluxuaren exekuzioaren identifikatzailea. Lan-fluxuaren exekuzioaren barruan dauden lan-fluxu eta zereginen gertaera guztiek berdinak dituzte `workflowJobId`.                                                                                                                                   |
-| `properties.operationType`                   | Yes      | Yes  | Eragiketaren identifikatzailea, ikusi [Eragiketa motak].(#operazio-motak)                                                                                                                                                                                       |
+| `properties.workflowJobId`                   | Yes      | Yes  | Lan-fluxuaren exekuzioaren identifikatzailea. Lan-fluxuaren exekuzioaren barruan dauden lan-fluxu eta ataza-gertaera guztiek gauza bera dute `workflowJobId`.                                                                                                                                   |
+| `properties.operationType`                   | Yes      | Yes  | Eragiketaren identifikatzailea, ikus[ Eragiketa motak].(#operation-types)                                                                                                                                                                                       |
 | `properties.tasksCount`                      | Yes      | No   | Lan-fluxua soilik. Lan-fluxuak abiarazten dituen ataza kopurua.                                                                                                                                                                                                       |
 | `properties.submittedBy`                     | Yes      | No   | Aukerakoa. Lan-fluxuaren gertaerak soilik. The Azure Active Directory [erabiltzailearen objectId](/azure/marketplace/find-tenant-object-id#find-user-object-id) nork eragin zuen lan-fluxua, ikus ere `properties.workflowSubmissionKind`.                                   |
 | `properties.workflowType`                    | Yes      | No   | `full` edo`incremental` freskatu.                                                                                                                                                                                                                            |
@@ -239,7 +239,7 @@ Lan-fluxuaren gertaerek propietate hauek dituzte.
 | `properties.startTimestamp`                  | Yes      | Yes  | UTC ordu-zigilua`yyyy-MM-ddThh:mm:ss.SSSSSZ`                                                                                                                                                                                                                  |
 | `properties.endTimestamp`                    | Yes      | Yes  | UTC ordu-zigilua`yyyy-MM-ddThh:mm:ss.SSSSSZ`                                                                                                                                                                                                                  |
 | `properties.submittedTimestamp`              | Yes      | Yes  | UTC ordu-zigilua`yyyy-MM-ddThh:mm:ss.SSSSSZ`                                                                                                                                                                                                                  |
-| `properties.instanceId`                      | Yes      | Yes  | Bezeroen ikuspegiak`instanceId`                                                                                                                                                                                                                              |  |
+| `properties.instanceId`                      | Yes      | Yes  | Bezeroen ikuspegiak`instanceId`                                                                                                                                                                                                                              |  
 | `properties.identifier`                      | No       | Yes  | - OperationType =`Export`, identifikatzailea esportazio-konfigurazioaren gida da. <br> - OperationType =`Enrichment`, aberastearen gidaria da <br> - OperationTyperako`Measures` eta`Segmentation`, identifikatzailea entitatearen izena da. |
 | `properties.friendlyName`                    | No       | Yes  | Esportazio edo prozesatzen den entitatearen izen atsegina.                                                                                                                                                                                           |
 | `properties.error`                           | No       | Yes  | Aukerakoa. Errore-mezua xehetasun gehiagorekin.                                                                                                                                                                                                                  |

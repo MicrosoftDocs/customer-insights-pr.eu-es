@@ -1,7 +1,7 @@
 ---
 title: Kudeatu erabiltzaile-baimenak
 description: Lortu baimenei eta erabiltzaile-funtzioei buruzko informazio gehiago.
-ms.date: 03/25/2021
+ms.date: 02/09/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -12,12 +12,12 @@ searchScope:
 - ci-permissions
 - ci-system-security
 - customerInsights
-ms.openlocfilehash: a3d21d55d86950953611967bb66712312eb42b4b
-ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
-ms.translationtype: HT
+ms.openlocfilehash: 85e1f4f93ac0e99ce6634dfc8fceab0c9a14885e
+ms.sourcegitcommit: 50d32a4cab01421a5c3689af789e20857ab009c4
+ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 02/25/2022
-ms.locfileid: "8355922"
+ms.lasthandoff: 03/03/2022
+ms.locfileid: "8376723"
 ---
 # <a name="user-permissions"></a>Erabiltzailearen baimenak
 
@@ -48,7 +48,7 @@ Hiru funtzio mota daude:
 - Kudeatu eta konfiguratu bezeroen profilak **aberastea** orria (lehen alderdiko aberasketetarako bakarrik).
 - Kudeatu eta sortu esportazioak laguntzaileekin partekatutako konexioetan oinarrituta. [Lortu informazio gehiago administratzaileek laguntzaileei nola esportazioetarako konexio bat erabiltzea onartzen duten jakiteko](connections.md#allow-contributors-to-use-a-connection-for-exports).
 
-## <a name="administrator"></a>Administratzailea
+## <a name="admin"></a>Admin
 
 - Kolaboratzailearen esku dauden baimen guztiak.
 - Aldatu ezarpenak **Sistema** orrian, zure sistemaren prozesuetarako laneko hizkuntza eta freskatze ordutegiak barne.
@@ -60,6 +60,12 @@ Hiru funtzio mota daude:
 - Instalatu eta erabili **Bezeroaren txartelaren osagarria**.
 - Gehitu eta erabili **Power Apps konektorea**.
 - Gaitu [Customer Insights APIen](apis.md) erabilera.
+- [Esleitu ingurumenaren jabetza](manage-environments.md#change-the-owner-of-an-environment) beste administratzaile bati.
+
+## <a name="admin-owner"></a>Administratzailea (jabea)
+
+- Administratzailearen eskura dauden baimen guztiak.
+- [Berrezarri eta ezabatu](manage-environments.md#reset-an-existing-environment) Ingurumena.
 
 ## <a name="assign-roles-and-permissions"></a>Rolak eta baimenak esleitu
 

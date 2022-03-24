@@ -1,7 +1,7 @@
 ---
 title: Sortu eta kudeatu inguruneak
 description: Ikasi zerbitzuan izena ematen eta inguruneak kudeatzen.
-ms.date: 12/06/2021
+ms.date: 02/09/2022
 ms.subservice: audience-insights
 ms.topic: how-to
 ms.reviewer: mhart
@@ -11,16 +11,14 @@ manager: shellyha
 searchScope:
 - ci-system-about
 - customerInsights
-ms.openlocfilehash: d9e0ee726dbbfcf330022c4d95747551d3114e7e
-ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
+ms.openlocfilehash: 4f4e5a8415f6c2128b0480edf67f317124eeeba9
+ms.sourcegitcommit: 50d32a4cab01421a5c3689af789e20857ab009c4
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 02/25/2022
-ms.locfileid: "8354264"
+ms.lasthandoff: 03/03/2022
+ms.locfileid: "8376861"
 ---
 # <a name="manage-environments"></a>Kudeatu inguruneak
-
-
 
 ## <a name="switch-environments"></a>Aldatu inguruneak
 
@@ -98,9 +96,29 @@ Datu iturriak freskatu ondoren, joan **Datuak** > **bateratzeko**. Hemen iturbur
 
 Datuen bateratzea amaitutakoan, joan **Neurriak** eta **segmentuak** haiek freskatzeko ere.
 
+## <a name="change-the-owner-of-an-environment"></a>Ingurune baten jabea aldatu
+
+Hainbat erabiltzailek Customer Insights-en administratzaile-baimenak izan ditzaketen arren, erabiltzaile bakarra da ingurune baten jabea. Lehenespenez, administratzailea da hasiera batean ingurune bat sortzen duena. Ingurune baten administratzaile gisa, administratzaile baimenak dituen beste erabiltzaile bati jabetza esleitu diezaiokezu.
+
+1. Hautatu **Ingurunea** hautatzailea aplikazioaren goiburuan.
+
+1. Hautatu **Editatu** ikonoa.
+
+1. urtean **Editatu ingurunea** kutxa, joan **Oinarrizko informazioa** urratsa.
+
+1. urtean **Ingurunearen jabea aldatu** eremuan, aukeratu ingurunearen jabe berria.  
+
+1. Hautatu **Berrikusi eta amaitu**, orduan **Eguneratu** aldaketak aplikatzeko. 
+
+## <a name="claim-ownership-of-an-environment"></a>Ingurune baten jabetza aldarrikatu
+
+Ingurune baten jabeak erakundea uzten badu edo bere erabiltzaile-kontua ezabatzen bada, inguruneak ez du jaberik izango. Administratzaile-baimenak dituen erabiltzaileak jabetza erreklamatu eta jabe berria izan daiteke. Inguruaren jabe izaten jarraitu dezakete edo [aldatu jabetza beste administratzaile bati](#change-the-owner-of-an-environment). 
+
+Jabetza erreklamatzeko, hautatu **Jabetu** Customer Insights-en orrialde bakoitzaren goialdean agertzen den botoia, jatorrizko jabeak erakundea utzi zuenean.
+
 ## <a name="reset-an-existing-environment"></a>Berrezarri lehendik dagoen ingurunea
 
-Administratzaile gisa, ingurunea egoera hutsera berrezar dezakezu konfigurazio guztiak ezabatu eta sartutako datuak kendu nahi badituzu.
+Ingurune baten jabe gisa, ingurune bat egoera huts batera berrezarri dezakezu konfigurazio guztiak ezabatu eta irentsitako datuak kendu nahi badituzu.
 
 1.  Hautatu **Ingurunea** hautatzailea aplikazioaren goiburuan. 
 
@@ -112,7 +130,7 @@ Administratzaile gisa, ingurunea egoera hutsera berrezar dezakezu konfigurazio g
 
 ## <a name="delete-an-existing-environment"></a>Aurretik bazegoen ingurune bat ezabatu
 
-Administratzaile gisa, kudeatzen duzun ingurunea ezabatu dezakezu.
+Ingurune baten jabe gisa, zuk kudeatzen duzun ingurune bat ezaba dezakezu.
 
 1.  Hautatu **Ingurunea** hautatzailea aplikazioaren goiburuan.
 

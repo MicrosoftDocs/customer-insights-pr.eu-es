@@ -13,12 +13,12 @@ searchScope:
 - ci-merge
 - ci-map
 - customerInsights
-ms.openlocfilehash: 3c0dd9c417e569ed37d8122c637072893732418a
-ms.sourcegitcommit: bb1f9e96023490ab340c114f54200ab4dd48da78
-ms.translationtype: HT
+ms.openlocfilehash: ab4ab0dba1bd91b1893cd4b16b8d51381d5b6ef8
+ms.sourcegitcommit: 50d32a4cab01421a5c3689af789e20857ab009c4
+ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 03/02/2022
-ms.locfileid: "8372612"
+ms.lasthandoff: 03/03/2022
+ms.locfileid: "8376907"
 ---
 # <a name="match-entities"></a>Batu entitateak
 
@@ -50,7 +50,7 @@ Bat-etortze-ordena zehaztu ondoren, definitutako bat-etortze-bikoteak agertzen d
 
 :::image type="content" source="media/match-page.png" alt-text="Partiduen orrialdearen pantaila-argazkia datuak bateratzeko prozesuaren bateratu eremuan.":::
   
-Entitate nagusia *eCommerce: eCommerceContacts* hurrengo entitatearekin bat dator *LoyaltyScheme: loyCustomers*. Lehenengo bat-etortze-urratsetik ateratzen den datu-multzoa hurrengo entitatearekin bat dator bi entitate baino gehiago badituzu.
+Entitate nagusia *eCommerce: eCommerceContacts* hurrengo entitatearekin bat dator *LoyaltyScheme: loyCustomers*. Lehen bat-etortze-urratsetik ateratzen den datu-multzoa hurrengo entitatearekin bat dator bi entitate baino gehiago badituzu.
 
 ## <a name="define-rules-for-match-pairs"></a>Partiduen bikoteen arauak zehaztu
 
@@ -181,9 +181,11 @@ Bikoiztuak desegiteko irteerako entitate batek informazio hau dauka:
 - Bikoiztuak desegiteko arauak definitzeko erabiltzen diren eremuak.
 - Arau eta Puntuazio eremuak bikoiztuak desegiteko arauetatik zein aplikatu den eta bat datorren algoritmoak emandako puntuazioa adierazteko.
  
-## <a name="include-enriched-entities-preview"></a>Sartu entitate aberastuak (aurrebista)
+## <a name="include-enriched-entities-preview"></a>Sartu entitate aberastuak (Aurrebista)
 
 datu-iturburu mailan entitateak aberastu badituzu, hautatu itzazu parekatze-prozesua exekutatu aurretik. Entitate aberastuek zure bateratzearen emaitzak hobe ditzakete. Informazio gehiagorako, ikus [Datu iturrietarako aberastea](data-sources-enrichment.md). 
+
+Entitate aberastuak jatorrizko datu-iturburu eremuak eta eremu aberastuak ditu. Beraz, entitate aberastuarekin lan egitea aukeratzen baduzu, lehendik dagoen konfigurazioan ez da eraginik izango. Hala ere, baliteke bat-etortze-arauak eguneratu behar izatea eremu aberastuak erabiltzeko.
 
 1. Joan **Datuak** > **Bateratu** > **Partidua** eta hautatu **Erabili entitate aberastuak** orriaren goialdean.
 
@@ -274,7 +276,7 @@ Bat-etortze-logika lehenetsia gainidazten duten baldintzak zehaztu ditzakezu. La
 
 1. urtean **Pertsonalizatua** panela, joan **Erregistroak** fitxa.
 
-1. Aukeratu bat-etortze pertsonalizatua aukera **Mota pertsonalizatua** goitibeherako eta hautatu **Deskargatu txantiloia**. Bat-etortze-aukera bakoitzerako txantiloi bat behar duzu.
+1. Aukeratu bat-etortze pertsonalizatu aukera aukeran **Mota pertsonalizatua** goitibeherako eta hautatu **Deskargatu txantiloia**. Txantiloi bereizi bat behar duzu bat-etortze-aukera bakoitzerako.
 
 1. Ireki deskargatutako txantiloi fitxategia eta bete xehetasunak. Txantiloiak entitateak eta entitatearen gako nagusien balioak pertsonalizatutako partidan zehazteko eremuak ditu. Adibidez, gako nagusia nahi baduzu *12345* hurrengotik *Salmentak* entitatea beti lehen mailako gakoarekin bat etortzeko *34567* hurrengotik *Harremanetarako* entitatea, bete txantiloia:
     - Entitate1: Salmentak
