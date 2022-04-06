@@ -1,7 +1,7 @@
 ---
 title: Konektatu tauletara Microsoft Dataverse-en
 description: Inportatu datuak Microsoft Dataverse kudeatutako datu-biltegia.
-ms.date: 12/06/2021
+ms.date: 03/18/2022
 ms.subservice: audience-insights
 ms.topic: how-to
 author: adkuppa
@@ -11,16 +11,14 @@ ms.reviewer: mhart
 searchScope:
 - ci-dataverse
 - customerInsights
-ms.openlocfilehash: 8e11b60295fa5c187b1ac4877fb347e2d9bb41a1
-ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
+ms.openlocfilehash: 81412ea8259e690eb839676d82ab31847854a97e
+ms.sourcegitcommit: a8e99cf8b23ccc00d76c1dee22afd808a160a5c8
 ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 02/25/2022
-ms.locfileid: "8354126"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "8464051"
 ---
 # <a name="connect-to-data-in-a-microsoft-dataverse-managed-data-lake"></a>Konektatu datuekin Microsoft Dataverse kudeatutako data lake-ra
-
-
 
 Artikulu honek nolako informazioa ematen du Dataverse erabiltzaileak azkar konektatu daitezke entitate analitikoetara Microsoft Dataverse kudeatutako lakua. 
 
@@ -29,7 +27,8 @@ Artikulu honek nolako informazioa ematen du Dataverse erabiltzaileak azkar konek
 
 ## <a name="important-considerations"></a>Gogoeta garrantzitsuak
 
-Lineako zerbitzuetan gordetako datuak, esaterako Azure Data Lake Storage datuak prozesatu edo biltegiratutako beste toki batean gorde daitezke Dynamics 365 Customer Insights.Lineako zerbitzuetan gordetako datuak inportatuz edo konektatuz gero, onartzen duzu datuak batera transferitu eta gorde daitezkeela.Dynamics 365 Customer Insights . [Lortu informazio gehiago Microsoft Trust Center-en](https://www.microsoft.com/trust-center).
+1. Lineako zerbitzuetan gordetako datuak, esaterako Azure Data Lake Storage datuak prozesatu edo biltegiratutako beste toki batean gorde daitezke Dynamics 365 Customer Insights.Lineako zerbitzuetan gordetako datuak inportatuz edo konektatuz gero, onartzen duzu datuak batera transferitu eta gorde daitezkeela.Dynamics 365 Customer Insights . [Lortu informazio gehiago Microsoft Trust Center-en](https://www.microsoft.com/trust-center).
+2. Bakarrik Dataverse duten entitateak [aldaketen jarraipena](/power-platform/admin/enable-change-tracking-control-data-synchronization) gaituta daude ikusgai. Entitate hauek honera esporta daitezke Dataverse -kudeatutako datu-lakua eta Customer Insights-en erabiltzen da. Kutxaz kanpo Dataverse taulek aldaketen jarraipena gaituta dute lehenespenez. Aldaketen jarraipena aktibatu behar duzu taula pertsonalizatuetarako. A ala ez egiaztatzeko Dataverse taula aldaketen jarraipena egiteko gaituta dago, joan hona [Power Apps](https://make.powerapps.com) > **Datuak** > **Taulak**. Aurkitu zure intereseko taula eta hautatu. Joan **Ezarpenak** > **Aukera aurreratuak** eta berrikusi **Aldaketen jarraipena** ezarpena.
 
 ## <a name="connect-to-a-dataverse-managed-lake"></a>Konektatu a Dataverse lake kudeatu
 

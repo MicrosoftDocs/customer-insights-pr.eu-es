@@ -1,23 +1,23 @@
 ---
 title: Sortu inguruneak Customer Insights-en
 description: Lizentziapeko harpidetza duten inguruneak sortzeko urratsak Dynamics 365 Customer Insights.
-ms.date: 02/24/2022
+ms.date: 03/28/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: how-to
-author: MichelleDevaney
-ms.author: midevane
+author: adkuppa
+ms.author: adkuppa
 manager: shellyha
 ms.custom: intro-internal
 searchScope:
 - ci-home
 - customerInsights
-ms.openlocfilehash: c37afd5649f8cf40d5379f3d39d0cbd96cde3bd3
-ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
+ms.openlocfilehash: a538237322615f69f0a5cb43d394275bf79af00b
+ms.sourcegitcommit: ae02ac950810242e2505d7d371b80210dc8a0777
 ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 02/25/2022
-ms.locfileid: "8354080"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "8491898"
 ---
 # <a name="create-an-environment-in-audience-insights"></a>Sortu ingurune bat audientziaren xehetasunetan
 
@@ -83,14 +83,16 @@ Eman zurea Microsoft Dataverse Datuak (profilak eta ikuspegiak) oinarritutako ne
 Zurera konektatzen Dataverse inguruneak ere aukera ematen dizu [irensi lokal datu-iturburuetako datuak erabiliz Power Platform datu-fluxuak eta pasabideak](data-sources.md#add-data-from-on-premises-data-sources). Erabili ere egin dezakezu [kutxaz kanpoko iragarpen ereduak](predictions-overview.md?tabs=b2c#out-of-box-models) batera konektatuz Dataverse ingurunea.
 
 > [!IMPORTANT]
-> Bezeroen ikuspegiak eta Dataverse Eskualde berean egon behar da datuak partekatzea gaitzeko.
+> 1. Bezeroen ikuspegiak eta Dataverse Eskualde berean egon behar da datuak partekatzea ahalbidetzeko.
+> 1. Administratzaile global rola izan behar duzu Dataverse ingurunea. Egiaztatu hau bada [Dataverse ingurunea lotzen da](/power-platform/admin/control-user-access#associate-a-security-group-with-a-dataverse-environment) segurtasun-talde jakin batzuetara eta ziurtatu segurtasun-talde horietan gehitzen zarela.
+> 1. Lehendik dagoen Customer Insights ingurunerik ez dago horrekin lotuta Dataverse ingurunea. Ikasi nola egin [kendu lehendik dagoen konexio bat a Dataverse ingurunea](manage-environments.md#remove-an-existing-connection-to-a-dataverse-environment).
 
 :::image type="content" source="media/dataverse-provisioning.png" alt-text="datuak partekatzearekin Microsoft Dataverse automatikoki gaituta instantzia garbi berrietarako.":::
 
-> [!NOTE]
-> Customer Insights-ek ez ditu onartzen hurrengo datuak partekatzeko egoerak:
-> - Datu guztiak zure kabuz gordetzen badituzu Azure Data Lake Storage, ezin izango duzu datuak partekatzea gaitu Dataverse Kudeatutako Data Lake.
-> - Datuak Dataverse-rekin partekatzea gaitzen baduzu, ezin izango duzu [sortu aurreikusitako edo falta diren balioak entitate batean](predictions.md).
+Honekin datuak partekatzea gaitzeari buruzko informazio gehiago lortzeko Microsoft Dataverse zuretik Azure Data Lake Storage, ikusi [Konektatu Microsoft Dataverse](manage-environments.md#connect-to-microsoft-dataverse).
+
+Customer Insights-ek ez ditu onartzen hurrengo datuak partekatzeko egoerak:
+- Datuak Dataverse-rekin partekatzea gaitzen baduzu, ezin izango duzu [sortu aurreikusitako edo falta diren balioak entitate batean](predictions.md).
 
 ### <a name="step-4-finalize-the-settings"></a>4. urratsa: Amaitu Ezarpenak
 

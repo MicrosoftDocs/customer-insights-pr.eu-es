@@ -14,18 +14,20 @@ searchScope:
 - ci-activities
 - ci-activities-wizard
 - customerInsights
-ms.openlocfilehash: 3a17716508a14020c56640c7d68f300a9d721af4
-ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
+ms.openlocfilehash: 074d84eff65d52b083fff6c161282d4fafa1af85
+ms.sourcegitcommit: 5bd07f3a1288f003704acd576741cf6aedc1ac33
 ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 02/25/2022
-ms.locfileid: "8354863"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "8523701"
 ---
 # <a name="customer-profiles"></a>Bezeroen profilak
 
 **Bezeroak** orrialdeak zure bezeroen profil bateratuen ikuspegi konbinatua erakusten du. Bezeroen profilak behin eskuragarri daude [sortu du Bezeroen entitate bateratua](data-unification.md). Orriak bezeroak bilatzeko eta bilaketa horretarako aurkibidea definitzeko aukera ematen dizu.
 
-Bezeroak norbanakoak edo erakundeak izan daitezke. Bezeroen profil bakoitza fitxa baten bidez irudikatzen da. Erabili paginazio kontrolak erregistro gehiago lortzeko. Txartelak eremuko eremuak erakusten ditu *Bezeroa* fitxategian definitutako entitatea **Bilatu eta iragazi indizea**. Aukeratu fitxa bat hautatutako bezeroarentzako datuak ikusteko izeneko orri dedikatu batean [Bezeroaren xehetasunen orria](customer-profiles.md#customer-details-page).
+Bezeroak norbanakoak edo erakundeak izan daitezke. Bezeroen profil bakoitza fitxa baten bidez irudikatzen da. Erabili paginazio kontrolak erregistro gehiago lortzeko. Txartelak eremuko eremuak erakusten ditu *Bezeroa* fitxategian definitutako entitatea **Bilatu eta iragazi indizea**. Txartel bakoitzaren barruko eremuen ordena sistemak hautatzen du.
+
+Aukeratu fitxa bat hautatutako bezeroarentzako datuak ikusteko izeneko orri dedikatu batean [Bezeroaren xehetasunen orria](customer-profiles.md#customer-details-page).
 
 > [!div class="mx-imgBorder"] 
 > ![Bezeroen orria emaitza fitxak erakusten ditu](media/customers-page-result-tiles-B2C.png "Bezeroen orria emaitza fitxak erakusten ditu")

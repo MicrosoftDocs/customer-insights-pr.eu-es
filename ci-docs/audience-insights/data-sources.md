@@ -1,7 +1,7 @@
 ---
 title: Erabili datu-iturburuak datuak sartzeko
 description: Ikasi iturri desberdinetako datuak nola inportatu.
-ms.date: 12/06/2021
+ms.date: 03/18/2022
 ms.subservice: audience-insights
 ms.topic: overview
 author: adkuppa
@@ -12,12 +12,12 @@ searchScope:
 - ci-data-sources
 - ci-create-data-source
 - customerInsights
-ms.openlocfilehash: e7bcf82c4fe3625ef791ec2b0a7651be0356a006
-ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
+ms.openlocfilehash: 9cf97c3e30d7501ba1f188a0e25a1a103299aa7f
+ms.sourcegitcommit: a8e99cf8b23ccc00d76c1dee22afd808a160a5c8
 ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 02/25/2022
-ms.locfileid: "8354034"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "8463998"
 ---
 # <a name="data-sources-overview"></a>Datuen iturburuen ikuspegi orokorra
 
@@ -37,7 +37,7 @@ Datu iturri hauek gehi ditzakezu:
 - [Batetik Azure Synapse Analytics datu-basea](connect-synapse.md)
 
 > [!NOTE]
-> Probako bertsioa erabiltzen ari bazara, inportazio metodoen atalean a **Customer Insights datu-liburutegia** aukera. Aukeratu aukera hau hainbat industriatarako erabilgarri dagoen datu-multzo lagin bat hautatzeko. Informazio gehiagorako, ikus [Dynamics 365 Customer Insights epaiketa](../trial-signup.md).
+> Probako bertsioa erabiltzen ari bazara, inportazio metodoen atalean a **Customer Insights datu-liburutegia** aukera. Aukeratu aukera hau hainbat industriarentzat erabilgarri dagoen datu-multzo lagin bat hautatzeko. Informazio gehiagorako, ikus [Dynamics 365 Customer Insights epaiketa](../trial-signup.md).
 
 ## <a name="add-data-from-on-premises-data-sources"></a>Gehitu datuak lokal datu iturrietatik
 
@@ -47,7 +47,18 @@ A elkartu ondoren sortzen diren datu-iturriak Dataverse Customer Insights erabil
 
 Dagoen batetik datozen atebideak Power BI edo Power Apps ingurunea ikusgai egongo da eta Customer Insights-en berrerabili dezakezu. Datu iturrien orriak estekara erakusten du Microsoft Power Platform lokal datu atebideak ikusi eta konfiguratzeko ingurunea.
 
+> [!IMPORTANT]
+> Ziurtatu atebideak azken bertsiora eguneratuta daudela. Eguneratze bat instalatu eta atebide bat birkonfigura dezakezu atebidearen pantailan agertzen den gonbita batetik zuzenean edo [deskargatu azken bertsioa](https://powerapps.microsoft.com/downloads/). Ez baduzu azken atebidearen bertsioa erabiltzen, datu-fluxua freskatzeak huts egingo du errore-mezuekin **Gako-hitza ez da onartzen: konfigurazio-propietateak. Parametroaren izena: gako-hitza**.
+
 ## <a name="review-ingested-data"></a>Berrikusi sartutako datuak
+Zure inguruneak badu Power Platform datu-fluxuak, **Datu-iturriak** orrialdeak hiru atal ditu: 
+- **Partekatua** : Customer Insights administratzaile guztiek kudeatu ditzaketen datu-iturriak. Power BI datu-fluxuak, zure biltegiratze-kontua eta a Dataverse -kudeatutako data lake partekatutako datu-iturrien adibideak dira.
+- **Nik kudeatzen dut** :Power Platform sortu eta zuk bakarrik kudea ditzakezu datu-fluxuak. Customer Insights-eko beste administratzaileek datu-fluxu hauek soilik ikus ditzakete, baina ez editatu, freskatu edo ezabatu.
+- **Beste batzuek kudeatzen dute** :Power Platform beste administratzaileek sortutako datu-fluxuak. Bakarrik ikus ditzakezu. Edozein laguntza lortzeko harremanetan jartzeko datu-fluxuaren jabea zerrendatzen du.
+> [!NOTE]
+> Entitate guztiak beste erabiltzaileek ikusi eta erabil ditzakete. Erabiltzaileen testuingurua datu-iturburuei soilik aplikatzen zaie eta ez datu-fluxu horien ondoriozko entitateei.
+
+Ezetz bada Power Platform datu-fluxuak erabiltzen dira, ez duzu talde edo atalik ikusiko. The **Datu-iturriak** orrialdeak datu-iturburu guztien zerrenda baino ez dauka.
 
 Irentsitako datu-iturburu bakoitzaren izena, bere egoera eta iturri horretako datuak berritu ziren azken aldia ikusiko dituzu. Datu-iturburuen zerrenda zutabe bakoitzaren arabera ordenatu dezakezu.
 

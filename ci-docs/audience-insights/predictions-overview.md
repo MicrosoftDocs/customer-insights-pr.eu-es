@@ -1,19 +1,19 @@
 ---
 title: Onartutako iragarpen agertokiei buruzko ikuspegi orokorra
 description: Dynamics 365 Customer Insights aplikazioak lantzen dituen iragarpen agertokiak eta aukerak.
-ms.date: 12/21/2021
+ms.date: 03/24/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: overview
 author: zacookmsft
 ms.author: zacook
 manager: shellyha
-ms.openlocfilehash: c692785c7d81ab660ba2e07411e986c67c1a5d0a
-ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
+ms.openlocfilehash: 11b0efeecf8bea893272e67d29b1c6622771110c
+ms.sourcegitcommit: a5e4503cf9ce0cea562bab9389748d8ca1451f9d
 ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "8228170"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "8487479"
 ---
 # <a name="predictions-overview"></a>Iragarpenen ikuspegi orokorra
 
@@ -36,6 +36,11 @@ Datuak aurreikusten hasteko modurik errazena aurrez zehaztutako ereduak dira, ma
 - [Transakzioen galera-tasa](predict-transactional-churn.md): Aurreikusi bezero batek zure produktuak edo zerbitzuak denbora tarte jakin batean erosiko ez dituen ala ez.
 
 ---
+
+> [!TIP]
+> Kutxaz kanpoko ereduak aldizka freskatzea gomendatzen dugu datu eguneratuekin, zure negozioaren erabilera kasua zehatz-mehatz informatzen dutela ziurtatzeko. Datuak ad hoc freskatzen dira sistemak datu-iturri berriak edo eguneratuak sartzen dituenean. Hala ere, ereduek kasu honetan soilik berregokituko dute eta lehendik dauden prestakuntza-datuak erabiltzen jarraituko dute.
+> 
+> Bat konfigura dezakezu **Eguneratu ordutegia** konfigurazio-esperientzian eredua birziklatzeko egutegia ezarriz. Eredua berriro trebatu eta puntuatu egingo da ordutegi honetan, eta edozein unetan alda dezakezu.
 
 
 ## <a name="azure-machine-learning-integration"></a>Azure ikaskuntza automatikoaren integrazioa

@@ -1,7 +1,7 @@
 ---
 title: Aberastu bezeroen profil bateratuak
 description: Erabili gaitasunak zure bezeroaren datuak aberasteko.
-ms.date: 02/18/2022
+ms.date: 03/29/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -14,12 +14,12 @@ searchScope:
 - ci-enrichment-details
 - ci-enrichment-wizard
 - customerInsights
-ms.openlocfilehash: b44f5a4b74c63629811837b853b4e069dea63504
-ms.sourcegitcommit: bb1f9e96023490ab340c114f54200ab4dd48da78
+ms.openlocfilehash: 510a20306e793a5ba522a6ac0d9c7194f03472d2
+ms.sourcegitcommit: ae02ac950810242e2505d7d371b80210dc8a0777
 ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 03/02/2022
-ms.locfileid: "8372687"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "8491933"
 ---
 # <a name="enrichment-for-customer-profiles-preview"></a>Bezeroen profiletarako aberastea (aurrebista)
 
@@ -97,5 +97,19 @@ Aberastearen egoera ikusteko
 1. **Garapenaren xehetasunen** panelean, zabaldu **Aberasteak** sekzioa. 
 1. Ikusi nahi duzun aberastearen egoeran, hautatu **ikusi xehetasunak**. 
 1. **Zereginaren xehetasunak** panelean, hautatu **erakutsi xehetasunak** aberastea eta bere egoera eguneratzeko eragiketan dauden prozesuak ikusteko. 
+
+## <a name="enrichment-results"></a>Aberastearen emaitzak
+
+Aberaste-exekutapen baten ondoren, aberastearen emaitzak berrikus ditzakezu.
+
+1. Joan **Datuak** > **Aberastua**. 
+1. Hautatu informazioa nahi duzun aberastasuna.
+
+Aberaste guztiek oinarrizko informazioa erakusten dute, hala nola profil aberastuen kopurua, sortutako aberaste-entitatearen aurrebista eta denboran zehar aberastutako profil kopurua. Eskuragarri badago, **Alorka aberastutako bezero kopurua** aberasturiko eremu bakoitzaren estaldura sakontzen du.
+
+:::image type="content" source="media/enrichments-results.png" alt-text="Aberasteen emaitzen orria.":::
+
+Aberaste batzuek aberastasun motari dagokion informazioa ere erakusten dute. Informazio gehiago lortzeko dagokion aberasteari buruzko dokumentazioa kontsultatu.
+
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

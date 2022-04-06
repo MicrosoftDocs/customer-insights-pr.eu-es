@@ -11,12 +11,12 @@ manager: shellyha
 searchScope:
 - ci-system-diagnostic
 - customerInsights
-ms.openlocfilehash: d84ae8301bdf384c2484cdb1e7dd8eb75d406769
-ms.sourcegitcommit: 50d32a4cab01421a5c3689af789e20857ab009c4
+ms.openlocfilehash: 18fc072d129be6b4fc5470b1057f592dc2638216
+ms.sourcegitcommit: 5bd07f3a1288f003704acd576741cf6aedc1ac33
 ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 03/03/2022
-ms.locfileid: "8376401"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "8523653"
 ---
 # <a name="log-forwarding-in-dynamics-365-customer-insights-with-azure-monitor-preview"></a>Saioa birbidaltzea Dynamics 365 Customer Insights Azure Monitor-ekin (aurrebista)
 
@@ -91,7 +91,7 @@ Customer Insights-ek bi kategoria eskaintzen ditu:
 
 ## <a name="configuration-on-the-destination-resource"></a>Helmugako baliabidearen konfigurazioa
 
-Baliabide motaren aukeran oinarrituta, urrats hauek automatikoki aplikatuko dira:
+Baliabide motaren aukeran oinarrituta, pauso hauek automatikoki aplikatuko dira:
 
 ### <a name="storage-account"></a>Biltegiratze-kontua
 
@@ -160,7 +160,7 @@ The`identity` JSON objektuak honako egitura du
 | Eremua                         | Deskribapenak                                                                                                                          |
 | ----------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
 | `Authorization.UserRole`      | Erabiltzaileari edo aplikazioari esleitutako rola. Informazio gehiagorako, ikus [erabiltzailearen baimenak](permissions.md).                                     |
-| `Authorization.RequiredRoles` | Eragiketa egiteko beharrezkoak diren rolak. `Admin` rolak eragiketa guztiak egiteko baimena du.                                                    |
+| `Authorization.RequiredRoles` | Eragiketa egiteko beharrezkoak diren rolak. `Admin` rola baimenduta dago eragiketa guztiak egiteko.                                                    |
 | `Claims`                      | Erabiltzailearen edo aplikazioaren JSON web token (JWT) erreklamazioak. Erreklamazio-propietateak erakundearen eta erakundearen arabera aldatzen dira Azure Active Directory konfigurazioa. |
 
 #### <a name="api-properties-schema"></a>APIaren propietateen eskema
@@ -230,7 +230,7 @@ Lan-fluxuaren gertaerek propietate hauek dituzte.
 | ------------------------------- | -------- | ---- | ----------- |
 | `properties.eventType`                       | Yes      | Yes  | Beti`WorkflowEvent`, gertaera lan-fluxuaren gertaera gisa markatuz.                                                                                                                                                                                                |
 | `properties.workflowJobId`                   | Yes      | Yes  | Lan-fluxuaren exekuzioaren identifikatzailea. Lan-fluxuaren exekuzioaren barruan dauden lan-fluxu eta ataza-gertaera guztiek gauza bera dute `workflowJobId`.                                                                                                                                   |
-| `properties.operationType`                   | Yes      | Yes  | Eragiketaren identifikatzailea, ikus[ Eragiketa motak].(#operation-types)                                                                                                                                                                                       |
+| `properties.operationType`                   | Yes      | Yes  | Eragiketaren identifikatzailea, ikus [Eragiketa motak](#operation-types).                                                                                                                                                                               |
 | `properties.tasksCount`                      | Yes      | No   | Lan-fluxua soilik. Lan-fluxuak abiarazten dituen ataza kopurua.                                                                                                                                                                                                       |
 | `properties.submittedBy`                     | Yes      | No   | Aukerakoa. Lan-fluxuaren gertaerak soilik. The Azure Active Directory [erabiltzailearen objectId](/azure/marketplace/find-tenant-object-id#find-user-object-id) nork eragin zuen lan-fluxua, ikus ere `properties.workflowSubmissionKind`.                                   |
 | `properties.workflowType`                    | Yes      | No   | `full` edo`incremental` freskatu.                                                                                                                                                                                                                            |

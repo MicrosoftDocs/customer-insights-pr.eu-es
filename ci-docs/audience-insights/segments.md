@@ -1,7 +1,7 @@
 ---
 title: Hartzaileen xehetasunen segmentuak
 description: Segmentuen ikuspegi orokorra eta nola sortu eta kudeatu.
-ms.date: 11/01/2021
+ms.date: 03/30/2022
 ms.subservice: audience-insights
 ms.topic: overview
 author: JimsonChalissery
@@ -14,12 +14,12 @@ searchScope:
 - ci-segments
 - ci-segment-details
 - customerInsights
-ms.openlocfilehash: c58f79c2beda1083d19bd36d94549ff1a46b096e
-ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
-ms.translationtype: MT
+ms.openlocfilehash: 340a7b7326f5b4a8cbde8683b8d41cb53dc557b0
+ms.sourcegitcommit: 0bd5f53e4e7e37359afd087ee16b779a6b3a9183
+ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 02/25/2022
-ms.locfileid: "8355968"
+ms.lasthandoff: 03/30/2022
+ms.locfileid: "8508551"
 ---
 # <a name="segments-overview"></a>Segmentuen informazio orokorra
 
@@ -68,7 +68,9 @@ Segmentu bat hautatzean ekintza hauek erabilgarri daude:
 
 ## <a name="refresh-segments"></a>Freskatu segmentuak
 
-Segmentu guztiak freskatu ditzakezu aldi berean hautatuta **Freskatu guztiak** gainean **segmentuak** orrialdea edo segmentu bat edo gehiago freskatu ditzakezu hautatzen dituzunean eta aukeratutakoan **Freskatu** aukeren artean. Bestela, berriztagarria den aldizka konfigura dezakezu **administratzailea** > **Sistema** > **Ordutegiak**.
+Segmentu guztiak freskatu ditzakezu aldi berean hautatuta **Freskatu guztiak** gainean **segmentuak** orrialdea edo segmentu bat edo gehiago freskatu ditzakezu hautatzen dituzunean eta aukeratutakoan **Freskatu** aukeren artean. Bestela, berriztagarria den aldizka konfigura dezakezu **administratzailea** > **Sistema** > **Ordutegiak**. Berriro errepikatzen den freskagarri bat konfiguratzen denean, arau hauek aplikatzen dira:
+- Mota duten segmentu guztiak **Dinamikoa** edo **Hedapena** ezarritako kadentzian automatikoki freskatuko da. Freskatzea amaitzen denean **Egoera** segmentua freskatzeko arazoren bat egon den adierazten du. The **Azken freskatua** Azken freskatze arrakastatsuaren denbora-zigilua erakusten du. Errore bat gertatzen bada, hautatu errorea gertatu denari buruzko xehetasunak ikusteko.
+- Mota duten segmentuak **Estatikoa** *ez* automatikoki freskatu. The **Azken freskatua** Segmentu estatikoak eskuz exekutatu edo freskatu ziren azken aldiaren denbora-zigilua erakusten du.
 
 [!INCLUDE [progress-details-include](../includes/progress-details-pane.md)]
 

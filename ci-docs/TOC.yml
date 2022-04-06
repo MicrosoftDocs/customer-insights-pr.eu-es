@@ -24,8 +24,6 @@
       href: trial-signup.md
     - name: Probaren FAQa
       href: trial-FAQ.md
-- name: Hasi ordaindutako lizentziarekin
-  href: paid-license.md
 - name: Atzitu ingurunea
   href: 'https://home.ci.ai.dynamics.com/'
 - name: Hartzaileen xehetasunak
@@ -36,16 +34,18 @@
       href: audience-insights/overview.md
     - name: Eginbide eguneratuak eta hobetuak
       href: audience-insights/whats-new-audience-insights.md
-    - name: Hasi erabiltzen
+    - name: Lehenengo urratsak
       items:
         - name: Hasiera bizkorreko gida
           href: audience-insights/get-started.md
+        - name: Hasi ordaindutako lizentziarekin
+          href: paid-license.md
         - name: Sortu ingurune bat
           href: audience-insights/create-environment.md
         - name: Arakatu hartzaileen xehetasunak
           href: audience-insights/home.md
-    - name: Egin lan negozio-kontuekin
-      href: audience-insights/work-with-business-accounts.md
+        - name: Egin lan negozio-kontuekin
+          href: audience-insights/work-with-business-accounts.md
     - name: Datu-iturburuak
       items:
         - name: Datuen iturburuen ikuspegi orokorra
@@ -64,8 +64,6 @@
           href: audience-insights/incremental-refresh-data-sources.md
         - name: Denbora errealeko iragazkiak (aurrebista)
           href: audience-insights/real-time-data-ingestion.md
-        - name: Entitateak eta datu multzoak ulertu
-          href: audience-insights/entities.md
     - name: Datuak bateratzea
       items:
         - name: Datuak bateratzeko ikuspegi orokorra
@@ -76,16 +74,6 @@
           href: audience-insights/match-entities.md
         - name: Konbinatu entitateak
           href: audience-insights/merge-entities.md
-        - name: Aztertu bateratutako bezeroen profilak
-          href: audience-insights/customer-profiles.md
-        - name: Iragazi bateratutako bezeroen profilak
-          href: audience-insights/search-filter-index.md
-        - name: Harremanak eta konektatutako entitateak eraiki
-          href: audience-insights/relationships.md
-        - name: Bezeroaren jardueren zerrenda
-          href: audience-insights/activities.md
-        - name: Definitu esleipen semantikoak
-          href: audience-insights/semantic-mappings.md
     - name: Datu-aberastea
       items:
         - name: Aberastu bezeroen profilak
@@ -110,6 +98,14 @@
           href: audience-insights/enrichment-office.md
         - name: Aberastu SFTP inportazio pertsonalizatuarekin
           href: audience-insights/enrichment-SFTP-custom-import.md
+    - name: Bateratutako profilak
+      items:
+        - name: Aztertu bateratutako bezeroen profilak
+          href: audience-insights/customer-profiles.md
+        - name: Iragazi bateratutako bezeroen profilak
+          href: audience-insights/search-filter-index.md
+        - name: Bezeroen jarduerak definitu
+          href: audience-insights/activities.md
     - name: Segmentuak
       items:
         - name: Segmentuen informazio orokorra
@@ -190,6 +186,8 @@
               href: audience-insights/export-adobe-campaign-standard.md
             - name: Adobe Experience Platform
               href: audience-insights/export-adobe-experience-platform.md
+            - name: Braze
+              href: audience-insights/export-braze.md
             - name: Campaign Monitor
               href: audience-insights/export-campaign-monitor.md
             - name: Constant Contact
@@ -198,12 +196,14 @@
               href: audience-insights/export-dotdigital.md
             - name: Dynamics 365 Marketing
               href: audience-insights/export-dynamics365-marketing.md
-            - name: "Dynamics\_365\_Sales"
+            - name: "Dynamics\_365 Sales"
               href: audience-insights/export-dynamics365-sales.md
             - name: Facebook Iragarkien kudeatzailea
               href: audience-insights/export-facebook.md
             - name: Google Ads
               href: audience-insights/export-google-ads.md
+            - name: Iteragarria
+              href: audience-insights/export-iterable.md
             - name: Klaviyo
               href: audience-insights/export-klaviyo.md
             - name: LinkedIn Ads
@@ -242,6 +242,18 @@
               href: audience-insights/export-power-automate.md
             - name: Power BI
               href: audience-insights/export-power-bi.md
+    - name: Entitateak
+      items:
+        - name: Ulertu entitateak
+          href: audience-insights/entities.md
+        - name: Berrikusi entitateen eskema datu arrunten ereduan
+          href: audience-insights/entity-schemas.md
+        - name: Customer Insights datuak Dataverse-n
+          href: audience-insights/customer-insights-dataverse.md
+        - name: Harremanak eta konektatutako entitateak eraiki
+          href: audience-insights/relationships.md
+        - name: Definitu esleipen semantikoak
+          href: audience-insights/semantic-mappings.md
     - name: Administrazioa
       items:
         - name: Konfiguratu sistemaren konfigurazioa
@@ -252,15 +264,17 @@
           href: audience-insights/connections.md
         - name: Kudeatu ingurune anizkoitzak
           href: audience-insights/manage-environments.md
-        - name: Segurtasuna
-          items:
-            - name: Ekarri zure Key Vault
-              href: audience-insights/use-azure-key-vault.md
-            - name: Konektatu ADLS biltegiratze-kontura zerbitzuaren entitatearekin
-              href: audience-insights/connect-service-principal.md
-            - name: Esportatu diagnostikoen erregistroak
-              href: audience-insights/diagnostics.md
-    - name: Hedagarritasuna
+        - name: Ekarri zure Key Vault
+          href: audience-insights/use-azure-key-vault.md
+        - name: Konektatu biltegiratze-kontu batera Service Principal erabiliz
+          href: audience-insights/connect-service-principal.md
+        - name: Esportatu diagnostikoen erregistroak
+          href: audience-insights/diagnostics.md
+        - name: Zerbitzuaren mugak
+          href: service-limits.md
+        - name: DSR eskubideak eta eskaerak
+          href: dsr-rights-requests.md
+    - name: APIak
       items:
         - name: Berrikusi entitateen eskema datu arrunten ereduan
           href: audience-insights/entity-schemas.md
@@ -306,9 +320,5 @@
           href: consent-management/predictions-consent-data.md
 - name: Parte-hartzearen xehetasunak (aurreargitalpena)
   href: engagement-insights/overview.md
-- name: Zerbitzuaren mugak
-  href: service-limits.md
-- name: DSR eskubideak eta eskaerak
-  href: dsr-rights-requests.md
 - name: Lortu laguntza
   href: /power-platform/admin/get-help-support
