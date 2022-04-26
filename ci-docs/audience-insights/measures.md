@@ -1,12 +1,12 @@
 ---
 title: Neurriak ulertzea eta kudeatzea
 description: Ikasi neurriek nola laguntzen duten zure negozioaren errendimendua aztertzen eta islatzen.
-ms.date: 02/28/2022
+ms.date: 03/24/2022
 ms.subservice: audience-insights
 ms.topic: conceptual
-author: m-hartmann
+author: v-wendysmith
 ms.author: wameng
-ms.reviewer: mhart
+ms.reviewer: v-wendysmith
 manager: shellyha
 searchScope:
 - ci-measures
@@ -14,12 +14,12 @@ searchScope:
 - ci-measure-template
 - ci-enrichment-details
 - customerInsights
-ms.openlocfilehash: c46fcc3baba1d6c92c2c0fe459a62277343cc0e4
-ms.sourcegitcommit: cf6a0ed44915908a44c70889a2dd199a9d0d4798
-ms.translationtype: HT
+ms.openlocfilehash: ef10f480086ccac4fa5c6c58818e35ecae67532c
+ms.sourcegitcommit: 9ef2cf99b847e7bd8f890f83d84b3a4045aaf8cc
+ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 02/28/2022
-ms.locfileid: "8359758"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "8529662"
 ---
 # <a name="measures-overview"></a>Neurrien ikuspegi orokorra
 
@@ -27,7 +27,7 @@ Neurriek bezeroen portaerak eta negozioaren errendimendua hobeto ulertzen lagund
 
 Neurriak sortzen dira [neurri-eraikitzailea erabiliz](measure-builder.md), hainbat operadore eta mapa-aukera errazak dituen datuak kontsultatzeko plataforma. Datuak iragazteko, taldekatzeko emaitzak, detektatzeko aukera ematen du [entitate harreman bideak](relationships.md), eta irteera aurreikusi. Ahal duzu [erabili aurrez zehaztutako txantiloiak](measure-templates.md) erabili ohi diren neurriak eraginkortasunez konfiguratzeko.
 
-Erabili neurri-sortzailea negozio-jarduerak planifikatzeko bezeroen datuak kontsultatuz eta estatistikak aterata. Adibidez, neurri bat sortzea *bezero bakoitzeko guztizko gastua* eta *bezeroaren itzulketa osoa* gastu handia baina errentagarritasuna handia duten bezero talde bat identifikatzen laguntzen du. Ahal duzu [segmentu bat sortu](segments.md) neurri horietan oinarrituta hurrengo ekintza onenak bultzatzeko. 
+Erabili neurri-sortzailea negozio-jarduerak planifikatzeko bezeroen datuak kontsultatuz eta estatistikak aterata. Adibidez, neurri bat sortzea *bezero bakoitzeko guztizko gastua* eta *bezeroaren itzulketa osoa* gastu handia baina errentagarritasuna handia duten bezero talde bat identifikatzen laguntzen du. Ahal duzu [segmentu bat sortu](segments.md) neurri horietan oinarrituta hurrengo ekintza onenak bultzatzeko.
 
 ## <a name="manage-your-measures"></a>Kudeatu neurriak
 
@@ -35,18 +35,17 @@ Hemen aurkituko dituzu neurrien zerrenda **Neurriak** orrialdea.
 
 Neurri motari, sortzaileari, sortze datari, egoerari eta egoerari buruzko informazioa aurkituko duzu. Zerrendako neurri bat hautatzen duzunean, irteera aurreikusi eta CSV fitxategia deskarga dezakezu.
 
-Neurri guztiak aldi berean freskatzeko, hautatu **Freskatu guztiak** neurri zehatz bat aukeratu gabe.
+:::image type="content" source="media/measures-actions.png" alt-text="Neurri bakarrak kudeatzeko ekintzak."lightbox="media/measures-actions.png":::
 
-:::image type="content" source="media/measure-actions.png" alt-text="Neurri bakarrak kudeatzeko ekintzak.":::
+Ekintza hauek erabilgarri daude neurri bat hautatzen duzunean:
 
-Aukeratu neurri bat zerrendan aukera hauetarako:
-
-- Hautatu neurriaren izena, haren xehetasunak ikusteko.
 - **Editatu** neurriaren konfigurazioa.
-- **Freskatu** neurria azken datuetan oinarrituta.
+- **Bikoiztu** neurri bat. Bere propietateak berehala editatzea edo bikoiztua gordetzea aukeratu dezakezu.
+- **Freskatu** neurria azken datuetan oinarrituta. Neurri guztiak aldi berean freskatzeko, hautatu neurri guztiak eta gero **Freskatu**.
 - **Aldatu izena** neurria.
-- **Ezabatu** neurria.
 - **Aktibatu** edo **Desaktibatu**. Neurri inaktiboak ez dira freskatuko [freskatze programatuan](system.md#schedule-tab).
+- **Etiketa** to [kudeatu etiketak](work-with-tags-columns.md#manage-tags) segmenturako.
+- **Ezabatu** neurria.
 
 [!INCLUDE [progress-details-include](../includes/progress-details-pane.md)]
 

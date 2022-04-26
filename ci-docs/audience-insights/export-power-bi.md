@@ -8,12 +8,12 @@ ms.topic: how-to
 author: stefanie-msft
 ms.author: sthe
 manager: shellyha
-ms.openlocfilehash: dccc069a355725bae09c1fece9292b9aee374e6d
-ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
-ms.translationtype: HT
+ms.openlocfilehash: 06c5bed74b82f9ae2a764a2eb363348e0edab531
+ms.sourcegitcommit: 4b2ad63aa7a4d4f31b573870bccbc40befe5f8fd
+ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "8225500"
+ms.lasthandoff: 04/07/2022
+ms.locfileid: "8552041"
 ---
 # <a name="connector-for-power-bi-preview"></a>Konektorea Power BI-rako (aurrebista)
 
@@ -72,6 +72,6 @@ Bikoiztutako harremanak kendu ondoren, saiatu konfiguratzen Power BI konektorea 
 
 UUUU/HH/EE bezalako data formatua duten eremuak dituzten entitateak kargatzean, akatsak topatuko dituzu bat ez datozen lokal formatuak direla eta. Desberdintasun hau zure Power BI Desktop fitxategia ingelesa (Estatu Batuak) ez den beste ezarpen batekin ezarrita dagoenean gertatzen da, hartzaileei buruzko xehetasunen data eremuak AEBetako formatuan gordetzen baitira.
 
-Power BI Desktop fitxategiak ezarpen lokal bakarra du, datuak berreskuratzean aplikatzen dena. Data-eremu hauek behar bezala interpretatu ahal izateko, ezarri .BPI fitxategiaren lokalizazioa ingelesera (Estatu Batuak). [Ikasi webgune baten eskualdeko eremuak nola aldatu Power BI mahaigaineko fitxategian](/power-bi/fundamentals/supported-languages-countries-regions.md#choose-the-locale-for-importing-data-into-power-bi-desktop).
+Power BI Desktop fitxategiak ezarpen lokal bakarra du, datuak berreskuratzean aplikatzen dena. Data-eremu hauek behar bezala interpretatu ahal izateko, ezarri .BPI fitxategiaren lokalizazioa ingelesera (Estatu Batuak). [Ikasi webgune baten eskualdeko eremuak nola aldatu Power BI mahaigaineko fitxategian](/power-bi/fundamentals/supported-languages-countries-regions#choose-the-language-or-locale-of-power-bi-desktop).
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

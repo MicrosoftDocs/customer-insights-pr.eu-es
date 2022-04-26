@@ -6,12 +6,12 @@ ms.author: mhart
 ms.date: 07/30/2021
 ms.topic: overview
 ms.manager: shellyha
-ms.openlocfilehash: 82b335388002158885fa55b61562db6c8370dc9d
-ms.sourcegitcommit: 1946d7af0bd2ca216885bec3c5c95009996d9a28
+ms.openlocfilehash: ff3d23d00a565bf9e5693e7cd5db644ddfe4887e
+ms.sourcegitcommit: 9f6733b2f2c273748c1e7b77f871e9b4e5a8666e
 ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 02/25/2022
-ms.locfileid: "8350162"
+ms.lasthandoff: 04/11/2022
+ms.locfileid: "8560418"
 ---
 # <a name="product-overview-for-dynamics-365-customer-insights"></a>Dynamics 365 Customer Insights-en produktuaren ikuspegi orokorra
 
@@ -19,7 +19,7 @@ ms.locfileid: "8350162"
 
 [Hartzaileen argibideak](audience-insights/overview.md) zure negozioa bezeroari zuzendutako erakunde bihurtzen laguntzen dizu. Marketin, salmentak eta zerbitzuetako profesionalek esperientziak pertsonalizatzeko behar dituzten argibideak dituzte. Konektatu transakzio, portaera eta behaketa iturrietako datuak 360 graduko bezeroaren ikuspegia sortzeko. Ikusi emaitzak azkarrago landu daitezkeen xehetasunak emateko diseinatutako CDP batekin. 
 
-[Engaiamenduaren ikuspegiak](engagement-insights/overview.md) Customer Insights-en aurrebista-gaitasun bat zen, web- eta mugikorreko gertaerak biltzera bideratzen dena informazio gehiago lortzeko Aurrebista 2022ko otsailaren 15ean amaitu da.
+[Engaiamenduaren ikuspegiak](engagement-insights/overview.md) Customer Insights-en aurrebista-gaitasun bat zen, web eta mugikorreko gertaerak biltzera bideratzen dena informazio gehiago lortzeko. Aurrebista 2022ko otsailaren 15ean amaitu da.
  
 ## <a name="choose-a-capability"></a>Aukeratu gaitasun bat
 

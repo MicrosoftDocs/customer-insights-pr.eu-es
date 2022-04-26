@@ -1,23 +1,23 @@
 ---
 title: Bilatu IA duten antzeko bezeroak (bideoa dauka)
 description: Aurkitu antzeko bezeroen segmentuak adimen artifizialarekin.
-ms.date: 06/25/2020
+ms.date: 03/25/2022
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: JimsonChalissery
 ms.author: jimsonc
-ms.reviewer: mhart
+ms.reviewer: v-wendysmith
 manager: shellyha
 searchScope:
 - ci-segment-builder
 - ci-segment-insights
 - customerInsights
-ms.openlocfilehash: 5626b980ad8802aae9657052e3ca51a70c49baf9
-ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
-ms.translationtype: HT
+ms.openlocfilehash: 851ea2c3388de603c1beef4a58e359aa989c9c46
+ms.sourcegitcommit: e129a1fa8b020b6bfb6efc3c53fa9d89e1614ad1
+ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 02/25/2022
-ms.locfileid: "8355230"
+ms.lasthandoff: 04/12/2022
+ms.locfileid: "8561510"
 ---
 # <a name="similar-customers-preview"></a>Bezero antzekoak (aurrebista)
 
@@ -36,6 +36,8 @@ Ezaugarri honek adimen artifiziala erabiliz zure bezero basean antzeko bezeroak 
 
 1. Berrikusi zure segmentu berrirako iradokitako izena eta aldatu behar izanez gero.
 
+1. Aukeran, gehitu [etiketak](work-with-tags-columns.md#manage-tags) segmentu berrira.
+
 1. Berrikusi zure segmentu berria definitzen duten eremuak. Eremu hauek zehazten dute sistemaren oinarria zure bezero iturriaren antzeko bezeroak bilatzen saiatuko dela. Sistemak gomendatutako eremuak aukeratuko ditu lehenespenez.
   Ereduaren errendimendua nabarmen murrizteko eremuak automatikoki baztertzen dira:
   
@@ -44,9 +46,9 @@ Ezaugarri honek adimen artifiziala erabiliz zure bezero basean antzeko bezeroak 
 
 1. Aukeratu barneratu nahi baduzu **Bezero guztiak** edo bezeroak bakarrik **Lehendik dagoen segmentu espezifikoa** zure segmentu berrian.
 
-1. Baztertu zure iturburuko segmentuko bezeroak aukeratuz **Baztertu iturri-segmentuko denak** laukia.
-
 1. Berez, sistemak iradokitzen du zure irteeran xede-audientziaren tamainaren % 20 soilik sartzea. Editatu atalasea behar den moduan. Atalasea handitzeak zehaztasuna murriztuko du.
+
+1. Sartu bezeroak zure iturburu-segmentuan hautatuta **Sartu iturri-segmentuko kideak antzeko atributuak dituzten bezeroez gain** kontrol-laukia.
 
 1. Aukeratu **Exekutatu** orriaren behealdean sailkapen binarioko zeregin bat hasteko (Ikaskuntza automatiko metodo bat) datu multzoa aztertzen duena.
 
@@ -67,7 +69,7 @@ Ahal duzu [antzeko segmentu baten irteerarekin lan egin](segments.md) beste segm
 
 Antzeko segmentua freskatzeko, hautatu botoian **segmentuak** orria eta hautatu **Freskatu** ekintza barran.
 
-Antzeko segmentua editatzean zure datuak berriro prozesatuko dira. Aurretik sortutako segmentua eguneratutako datuekin eguneratzen da.    
+Antzeko segmentua editatzean zure datuak berriro prozesatuko dira. Aurretik sortutako segmentua eguneratutako datuekin eguneratzen da.
 Antzeko segmentua editatzeko, hautatu botoian **segmentuak** orria eta hautatu **Editatu** ekintza barran. Aplikatu aldaketak eta hautatu **Exekutatu** prozesatzen hasteko.
 
 ## <a name="delete-a-similar-segment"></a>Ezabatu antzeko segmentua
@@ -84,6 +86,5 @@ Ikaskuntza automatiko eredu bitarren sailkapenak puntuazio bat ematen die antzek
 - Antzekotasun-puntuazioak 0.85 eta 1 artekoak dira *oso antzekoak*
 
 Ez dira ereduaren irteeraren barruan sartzen 0.4 azpitik dituzten antzekotasunak dituzten bezeroak. Sistemak ez ditu iturburu-segmentuaren antzekoak.
-
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

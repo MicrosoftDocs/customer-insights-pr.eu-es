@@ -6,7 +6,7 @@ ms.subservice: audience-insights
 ms.topic: overview
 author: JimsonChalissery
 ms.author: jimsonc
-ms.reviewer: mhart
+ms.reviewer: v-wendysmith
 manager: shellyha
 searchScope:
 - ci-customers-page
@@ -14,12 +14,12 @@ searchScope:
 - ci-segments
 - ci-segment-details
 - customerInsights
-ms.openlocfilehash: 340a7b7326f5b4a8cbde8683b8d41cb53dc557b0
-ms.sourcegitcommit: 0bd5f53e4e7e37359afd087ee16b779a6b3a9183
-ms.translationtype: HT
+ms.openlocfilehash: 68e71df3853470af47228c7365f25db3a71d15b0
+ms.sourcegitcommit: 9ef2cf99b847e7bd8f890f83d84b3a4045aaf8cc
+ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 03/30/2022
-ms.locfileid: "8508551"
+ms.lasthandoff: 04/01/2022
+ms.locfileid: "8529524"
 ---
 # <a name="segments-overview"></a>Segmentuen informazio orokorra
 
@@ -47,29 +47,35 @@ Segmentu berri bat sortzeko hainbat modu daude:
 
 ## <a name="manage-existing-segments"></a>Kudeatu lehendik dauden segmentuak
 
-Joan **Segmentuak** orrian, gordetako segmentu guztiak ikusi eta kudeatzeko.
+Joan zaitez **Segmentuak** orrialdean gordetako segmentu guztiak ikusteko eta kudeatzeko.
 
 Segmentu bakoitza segmentuari buruzko informazio osagarria biltzen duen errenkada batez irudikatuta dago.
 
-:::image type="content" source="media/segments-selected-segment.png" alt-text="Aukeratutako segmentua aukerak goitibeherako zerrendarekin eta eskuragarri dauden aukerekin.":::
+:::image type="content" source="media/segments-selected-segment.png" alt-text="Aukeratutako segmentua aukerak goitibeherako zerrendarekin eta eskuragarri dauden aukerekin." lightbox="media/segments-selected-segment.png":::
 
-Segmentu bat hautatzean ekintza hauek erabilgarri daude:
+Ekintza hauek erabilgarri daude segmentu bat hautatzen duzunean:
 
 - **ikusi** segmentuko xehetasunak, kideen zenbaketa joera segmentuko kideen aurrebista barne.
+- **Deskargatu** .CSV fitxategi gisa segmentuko kideen zerrenda.
 - **Editatu** segmentuak bere propietateak aldatzeko.
 - **Sortu bikoiztuak** segmentu baten. Bere propietateak berehala editatzea edo bikoiztua gordetzea aukeratu dezakezu.
 - **Freskatu** segmentuak azken datuak sartuko ditu.
-- **Aktibatu** edo **Desaktibatu** segmentua. Segmentuek bi egoera posible dituzte: aktiboak edo inaktiboak. Egoera hauek oso ondo etortzen dira segmentu bat editatzerakoan. Segmentu inaktiboetan, segmentuaren definizioa badago, baina oraindik ez du bezeroik. Segmentu bat aktibatzean, egoera "inaktibo" izatetik "aktibo" izatera pasatzen da eta segmentuaren definizioarekin bat datozen bezeroak bilatzen hasiko da. A bada [freskatze programatua](system.md#schedule-tab) konfiguratuta dago, segmentu inaktiboek dute **Egoera** gisa zerrendatuta **Saltatuta**, freskatzen saiatu ere ez zela egin adieraziz. Segmentu inaktiboa aktibatzen denean, freskatu egingo da eta programatutako freskapenetan sartuko da.
+- **Aktibatu** edo **Desaktibatu** segmentua. Segmentu inaktiboetan, segmentuaren definizioa badago, baina oraindik ez du bezeroik. Segmentu aktibo batek segmentuaren definizioarekin bat datozen bezeroak bilatzen ditu. A bada [freskatze programatua](system.md#schedule-tab) konfiguratuta dago, segmentu inaktiboek dute **Egoera** gisa zerrendatuta **Saltatuta**, freskatzen saiatu ere ez zela egin adieraziz. Segmentu inaktiboa aktibatzen denean, freskatu egingo da eta programatutako freskapenetan sartuko da.
   Bestela, erabil dezakezu **Ordutegiak beranduago** funtzionaltasuna **Aktibatu / Desaktibatu** goitibehera, segmentu jakin bat aktibatzeko eta desaktibatzeko etorkizuneko data eta ordua zehazteko.
+- **[Bilatu antzeko bezeroak](find-similar-customer-segments.md)** segmentutik.
 - **Aldatu izena** segmentuari.
+- **Etiketa** to [kudeatu etiketak](work-with-tags-columns.md#manage-tags) segmenturako.
 - **Deskargatu** .CSV fitxategi gisa segmentuko kideen zerrenda.
 - **Kudeatu esportazioak** esportazioekin lotutako segmentua ikusteko eta kudeatzeko. [Lortu esportazioei buruzko informazio gehiago.](export-destinations.md)
 - **Ezabatu** segmentua.
+- **Zutabeak** to [pertsonalizatu zutabeak](work-with-tags-columns.md#customize-columns) pantaila hori.
+- **Iragazkia** to [iragazkia etiketetan](work-with-tags-columns.md#filter-on-tags).
+- **Bilatu izena** segmentuaren izenaren arabera bilatzeko.
 
 ## <a name="refresh-segments"></a>Freskatu segmentuak
 
 Segmentu guztiak freskatu ditzakezu aldi berean hautatuta **Freskatu guztiak** gainean **segmentuak** orrialdea edo segmentu bat edo gehiago freskatu ditzakezu hautatzen dituzunean eta aukeratutakoan **Freskatu** aukeren artean. Bestela, berriztagarria den aldizka konfigura dezakezu **administratzailea** > **Sistema** > **Ordutegiak**. Berriro errepikatzen den freskagarri bat konfiguratzen denean, arau hauek aplikatzen dira:
-- Mota duten segmentu guztiak **Dinamikoa** edo **Hedapena** ezarritako kadentzian automatikoki freskatuko da. Freskatzea amaitzen denean **Egoera** segmentua freskatzeko arazoren bat egon den adierazten du. The **Azken freskatua** Azken freskatze arrakastatsuaren denbora-zigilua erakusten du. Errore bat gertatzen bada, hautatu errorea gertatu denari buruzko xehetasunak ikusteko.
+- Mota duten segmentu guztiak **Dinamikoa** edo **Hedapena** ezarritako kadentzian automatikoki freskatuko da. Freskatzea amaitzen denean **Egoera** segmentua freskatzeko arazoren bat egon den adierazten du. The **Azken freskatua** Azken freskatze arrakastatsuaren denbora-zigilua erakusten du. Errore bat gertatzen bada, hautatu errorea gertatutakoari buruzko xehetasunak ikusteko.
 - Mota duten segmentuak **Estatikoa** *ez* automatikoki freskatu. The **Azken freskatua** Segmentu estatikoak eskuz exekutatu edo freskatu ziren azken aldiaren denbora-zigilua erakusten du.
 
 [!INCLUDE [progress-details-include](../includes/progress-details-pane.md)]

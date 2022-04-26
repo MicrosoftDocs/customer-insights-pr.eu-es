@@ -1,7 +1,7 @@
 ---
 title: Customer Insights datuak Microsoft Dataverse-n
 description: Erabili Customer Insights entitateak taula gisa Microsoft Dataverse-n.
-ms.date: 11/25/2021
+ms.date: 04/05/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -11,31 +11,33 @@ manager: shellyha
 searchScope:
 - ci-system-diagnostic
 - customerInsights
-ms.openlocfilehash: 9f730f5856221592cddf34b714beeaca24c52130
-ms.sourcegitcommit: 73cb021760516729e696c9a90731304d92e0e1ef
-ms.translationtype: HT
+ms.openlocfilehash: bbbbf2a7f5edb81ee75f6e33988cd4721134b6e7
+ms.sourcegitcommit: 0363559a1af7ae16da2a96b09d6a4a8a53a8cbb8
+ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 02/25/2022
-ms.locfileid: "8355414"
+ms.lasthandoff: 04/05/2022
+ms.locfileid: "8547611"
 ---
 # <a name="work-with-customer-insights-data-in-microsoft-dataverse"></a>Egin lan Customer Insights datuekin Microsoft Dataverse-n
 
-Customer Insights-ek irteerako entitateak hemen eskuragarri jartzeko aukera eskaintzen du: [Microsoft Dataverse](/powerapps/maker/data-platform/data-platform-intro.md). Integrazio honek datuak partekatzeko eta pertsonalizatzeko garapen erraza ahalbidetzen du kode baxuko / koderik gabeko ikuspegiaren bidez. Irteerako entitateak taulan erabilgarri egongo dira Dataverse-n. Taula hauek bezalako agertokiak gaitzen dituzte: [laneko fluxu automatizatuak Power Automate-n](/power-automate/getting-started), [ereduetan oinarritutako aplikazioak](/powerapps/maker/model-driven-apps/) eta [mihise aplikazioak](/powerapps/maker/canvas-apps/) Power Apps-en bidez. Dataverse tauletan oinarritutako beste edozein aplikaziotan erabil ditzakezu datuak. Uneko inplementazioak batez ere hartzaile eskuragarrien xehetasunen entitateen datuak bezero ID jakin baterako eskuratu daitezkeen bilaketak onartzen ditu.
+Customer Insights-ek irteerako entitateak hemen eskuragarri jartzeko aukera eskaintzen du: [Microsoft Dataverse](/powerapps/maker/data-platform/data-platform-intro). Integrazio honek datuak partekatzeko erraza eta garapen pertsonalizatua ahalbidetzen du kode baxuko/koderik gabeko ikuspegi baten bidez. The [irteerako entitateak](#output-entities) taula gisa eskuragarri daude a Dataverse ingurunea. Datuak oinarritutako beste edozein aplikaziotarako erabil ditzakezu Dataverse mahaiak. Taula hauek lan-fluxu automatizatuak bezalako eszenatokiak ahalbidetzen dituzte Power Automate edo aplikazioak eraikitzearekin Power Apps. Egungo inplementazioak batez ere bilaketak onartzen ditu, non eskuragarri dauden Customer Insights entitateen datuak eskura daitezkeen bezero ID jakin baterako.
 
 ## <a name="attach-a-dataverse-environment-to-customer-insights"></a>Erantsi Dataverse ingurunea Customer Insights-era
 
-**Lehendik dauden Dataverse inguruneak dituzten erakundeak**
+**Dauden erakundea**
 
-Dagoeneko Dataverse erabiltzen duten erakundeek [lehendik dagoen Dataverse inguruneetako bat](create-environment.md) erabil dezakete administratzaile batek hartzaileen xehetasunak konfiguratzen dituenean. Dataverse ingurunearen URLa emanez, entzuleen xehetasunen ingurune berriarekin lotzen da. Ahalik eta errendimendu onena bermatzeko, Customer Insights eta Dataverse inguruneek eskualde berean egon behar dute.
+Administratzaileek Customer Insights konfigura dezakete [lehendik dagoen bat erabili Dataverse ingurunea](create-environment.md) Customer Insights ingurunea sortzen dutenean. Dataverse ingurunearen URLa emanez, entzuleen xehetasunen ingurune berriarekin lotzen da. Bezeroen ikuspegiak eta Dataverse inguruneak eskualde berean egon behar dira. 
+
+Lehendik dagoen bat erabili nahi ez baduzu Dataverse ingurunea, sistemak ingurune berri bat sortzen du zure maizterren Customer Insights datuetarako. 
+
+> [!NOTE]
+> Zure erakundeek dagoeneko erabiltzen badute Dataverse beren maizterrean, garrantzitsua da gogoratzea [Dataverse ingurunea sortzea administratzaile batek kontrolatzen duela](/power-platform/admin/control-environment-creation) . Adibidez, zure erakundearen kontuarekin hartzaileen xehetasunen ingurune berria konfiguratzen ari bazara eta administratzaileak desgaitu badu Dataverse probako inguruneak sortzea administratzaileentzat izan ezik, ezin duzu probako ingurune berririk sortu.
+> 
+> Customer Insights-en sortutako Dataverse probako inguruneek 3 GB-ko biltegiratzea dute, eta ez dira maizterrari dagokion edukiera osorako balioko. Ordaindutako harpidetzek Dataverse 15 GBko datu-baserako eta 20 GBko fitxategiak biltegiratzeko eskubidea dute.
 
 **Erakunde berria**
 
-Customer Insights konfiguratzerakoan erakunde berri bat sortzen baduzu, automatikoki Dataverse ingurune berri bat lortuko duzu.
-
-> [!NOTE]
-> Zure erakundeek dagoeneko erabiltzen badute Dataverse beren maizterrean, garrantzitsua da gogoratzea [Dataverse ingurunea sortzea administratzaile batek kontrolatzen duela](/power-platform/admin/control-environment-creation.md) . Adibidez, zure erakundearen kontuarekin hartzaileen xehetasunen ingurune berria konfiguratzen ari bazara eta administratzaileak desgaitu badu Dataverse probako inguruneak sortzea administratzaileentzat izan ezik, ezin duzu probako ingurune berririk sortu.
-> 
-> Customer Insights-en sortutako Dataverse probako inguruneek 3 GB-ko biltegiratzea dute, eta ez dira maizterrari dagokion edukiera osorako balioko. Ordaindutako harpidetzek Dataverse 15 GBko datu-baserako eta 20 GBko fitxategiak biltegiratzeko eskubidea dute.
+Customer Insights konfiguratzean erakunde berri bat sortzen baduzu, sistemak automatikoki berri bat sortzen du Dataverse zure erakundeko ingurunea zuretzat.
 
 ## <a name="output-entities"></a>Irteerako entitateak
 
@@ -129,11 +131,11 @@ Taula honetan ereduaren iragarpenen irteera dago.
 
 Taula honek bezeroen profilen segmentu-kidetasunaren informazioa dauka.
 
-| Column        | Idatzi | Deskribapenak                        |
+| Column        | Idatzi | Deskribapenak                        |
 |--------------------|--------------|-----------------------------|
-| Bezeroaren IDa        | String       | Bezero-profilaren IDa        |
-| SegmentProvider      | String       | Segmentuak argitaratzen dituen aplikazioa. Lehenetsia: ikusleen estatistikak         |
-| SegmentMembershipType | String       | Bezero mota segmentu honetako kidetzaren erregistroa. Hainbat mota onartzen ditu, hala nola Bezeroa, Kontaktua edo Kontua. Lehenetsia: Bezeroa  |
-| Segmentuak       | JSON katea  | Bezeroaren profila kide den segmentu berezien zerrenda      |
-| msdynci_identifier  | String   | Segmentuko kidetzaren erregistroaren identifikatzaile bakarra. `CustomerId|SegmentProvider|SegmentMembershipType|Name`  |
+| Bezeroaren IDa        | String       | Bezero-profilaren IDa        |
+| SegmentProvider      | String       | Segmentuak argitaratzen dituen aplikazioa. Lehenetsia: ikusleen estatistikak         |
+| SegmentMembershipType | String       | Bezero mota segmentu honetako kidetzaren erregistroa. Hainbat mota onartzen ditu, hala nola Bezeroa, Kontaktua edo Kontua. Lehenetsia: Bezeroa  |
+| Segmentuak       | JSON katea  | Bezeroaren profila kide den segmentu berezien zerrenda      |
+| msdynci_identifier  | String   | Segmentuko kidetzaren erregistroaren identifikatzaile bakarra. `CustomerId|SegmentProvider|SegmentMembershipType|Name`  |
 | msdynci_segmentmembershipid | GUIDa      | Hemendik sortutako GUID deterministikoa`msdynci_identifier`          |
