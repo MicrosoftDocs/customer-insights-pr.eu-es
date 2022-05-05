@@ -1,39 +1,41 @@
 ---
-title: Produktuaren ikuspegi orokorra
+title: Dynamics 365 Customer Insights produktuaren ikuspegi orokorra
 author: m-hartmann
-description: Ikusi Dynamics 365 Customer Insights-en eta bere gaitasunen ikuspegi orokorra.
+description: Lortu ikuspegi orokorra Dynamics 365 Customer Insights eta bere ezaugarri nagusiak.
 ms.author: mhart
-ms.date: 07/30/2021
+ms.date: 04/12/2022
 ms.topic: overview
 ms.manager: shellyha
-ms.openlocfilehash: ff3d23d00a565bf9e5693e7cd5db644ddfe4887e
-ms.sourcegitcommit: 9f6733b2f2c273748c1e7b77f871e9b4e5a8666e
+ms.openlocfilehash: 4d5b4ec61614877c26468ffe8d07f2448b43bac6
+ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
 ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "8560418"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8641885"
 ---
 # <a name="product-overview-for-dynamics-365-customer-insights"></a>Dynamics 365 Customer Insights-en produktuaren ikuspegi orokorra
 
-[Dynamics 365 Customer Insights](https://dynamics.microsoft.com/ai/customer-insights/) Microsoft-en bezeroaren datu-plataformaren (CDP) zati bat da eta laguntzen du banatzen pertsonalizatutako bezeroaren esperientziak. Plataformaren gaitasunak zure bezeroak nor diren eta zure plataformarekin nola lotzen diren jakiteko aukera ematen du. Bateratu bezeroen datuak hainbat iturburu sortatan, bezeroen ikuspegi bakarra lortzeko.
+[Dynamics 365 Customer Insights](https://dynamics.microsoft.com/ai/customer-insights/) Microsoft-en bezeroen datuen plataforma (CDP) da, bezeroen esperientzia pertsonalizatuak eskaintzen laguntzen duena. Aplikazioak bezeroen ikuspegi holistikoa eskaintzen du, ezagutzarako denbora paregabearekin. Lortu zure bezeroen ikuspegirik zabalena bezeroen datuak denbora errealean operatibo eta IoT datuekin bateratuz. Aberastu bezeroen profilak lehen eta hirugarrenen datu iturriekin. 
 
-[Hartzaileen argibideak](audience-insights/overview.md) zure negozioa bezeroari zuzendutako erakunde bihurtzen laguntzen dizu. Marketin, salmentak eta zerbitzuetako profesionalek esperientziak pertsonalizatzeko behar dituzten argibideak dituzte. Konektatu transakzio, portaera eta behaketa iturrietako datuak 360 graduko bezeroaren ikuspegia sortzeko. Ikusi emaitzak azkarrago landu daitezkeen xehetasunak emateko diseinatutako CDP batekin. 
-
-[Engaiamenduaren ikuspegiak](engagement-insights/overview.md) Customer Insights-en aurrebista-gaitasun bat zen, web eta mugikorreko gertaerak biltzera bideratzen dena informazio gehiago lortzeko. Aurrebista 2022ko otsailaren 15ean amaitu da.
+Customer Insights-ek zure negozioa bezeroan zentratutako erakunde bilakatzen laguntzen dizu, zure marketin, salmenta eta zerbitzuetako profesionalei ahalmena emanez 1:1 interakzioak neurrira egokitzeko. Microsoft-ekin eta hirugarrenen aplikazioekin giltza eskuan integrazioak denbora errealeko ikuspegiak aktibatzeko erabil daitezke ekintza esanguratsuak bultzatzeko.
  
-## <a name="choose-a-capability"></a>Aukeratu gaitasun bat
+Konektatu transakzio-, portaera- eta datu demografikoetako datu-iturrietako datuak 360 graduko bezeroen ikuspegiak sortzeko. Lortu informazio berriak aurrez eraikitako AI ereduekin edo azkar eraiki, probatu eta zabaldu AI/ML eredu pertsonalizatuak eskala mugagabeko analitiko irtenbide aurreratuak erabiliz.
 
-:::image type="content" source="engagement-insights/media/choose_focus.png" alt-text="Customer Insights orria, ikusleen edo konpromisoen estatistiketara nabigatzeko aukera ematen duena.":::
-
-Gaitasun bat aukeratzea
-
-1. Nabigazio panelean, hautatu **Aplikazio guztiak** irekitzeko **Aukeratu zure ikuspegia** leihoa.
-1. Aukeratu **Joan orain** nahi duzun gaitasunera nabigatzeko.
+Mantendu zure bezeroen datuen kontrol osoa, datuen gobernantza eta betetze maila gorena bermatzeko, autozerbitzua duen enpresa-mailako CDP batekin Microsoft Azure. Onartu Datuak Babesteko Erregelamendu Orokorra (GDPR) eta beste lege-eskakizunak eta industria estandarrak pribatutasun, segurtasun eta gobernantza eta baimena kudeatzeko tresnen bidez.
 
 ## <a name="pricing-and-licensing"></a>Prezioak eta lizentziak
+Customer Insights-ek maizter bakoitzeko lizentzia du eta enpresa-kontsumitzaile (B2C) eta enpresa-enpresa (B2B) gaitasunak barne hartzen ditu. Ahalmen gehigarria eros dezakezu gehigarrien lizentziarekin profil eta kontu kopurua handitzeko.
 
-Customer Insights maizter bakoitzeko lizentzia du eta hainbat gaitasun ditu. Edukiera eta lizentzia osagarriak eros ditzakezu kuota lehenetsia handitzeko. 
 - [Prezioen informazio orokorra](https://dynamics.microsoft.com/ai/customer-insights/pricing/)
 - Gaitasuna eta eskubideak: [Dynamics 365 lizentzien gida](https://go.microsoft.com/fwlink/?LinkId=866544)
+- [Microsoft Bolumen Lizentzien webgunea](https://www.microsoft.com/licensing/how-to-buy/how-to-buy)
+
+## <a name="try-customer-insights-and-get-started"></a>Probatu Customer Insights eta hasi
+
+Hasi a [Doako Customer Insights proba](https://signup.microsoft.com/create-account/signup?SKU=036c2481-aa8a-47cd-ab43-324f0c157c2d&ali=1&RU=https:%2F%2Fhome.ci.ai.dynamics.com%2Fstart%2Ftrial&products=036c2481-aa8a-47cd-ab43-324f0c157c2d) gaur aplikazioa probatzeko zure bezeroen datuekin. [Aurki itzazu aplikazioaren funtsezko eginbide asko nola atzitu eta araka ditzakezun azkar](trial-signup.md). 
+
+Arakatu [ageri diren ikaskuntza baliabideak](https://dynamics.microsoft.com/ai/customer-insights/resources/) besteak beste, analisten txostenak, eskaeraren araberako webinar-ak eta bezeroen istorioak.
+
+Ikasi gure bezeroen ulermen sakonagoa nola eraiki dezakezun [hasteko gida](get-started.md).
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

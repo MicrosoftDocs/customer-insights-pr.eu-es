@@ -8,12 +8,12 @@ ms.topic: get-started
 ms.custom: template-trial-faq
 ms.reviewer: jeffhar
 manager: shellyha
-ms.openlocfilehash: 9badd8370358b9f5745ba6347e8db42e89c5f3d3
-ms.sourcegitcommit: e7cdf36a78a2b1dd2850183224d39c8dde46b26f
+ms.openlocfilehash: 4a269a223efa08f71db09eef2ec9a8f8a077f7a7
+ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
 ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "8229480"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8641793"
 ---
 # <a name="dynamics-365-customer-insights-trial-faq"></a>Dynamics 365 Customer Insights probako bertsioaren FAQa
 
@@ -62,13 +62,13 @@ Proban aplikazioan zuzenean luzatu dezakezu. Behin proba luzatu dezakezu.
 
 Orokorrean, zure datuekin berriro hastea gomendatzen dugu Customer Insights-en ordaindutako bertsiora eguneratzean. 
 
-Aukeran, publikoaren estatistikak soilik erabiltzen badituzu, zure datuak proba-ingurune batetik kopia ditzakezu Customer Insights erosten baduzu. Customer Insights probaren administratzailea eta zure administratzaile globala izan behar duzu Microsoft 365 maizterrak edo zure erakundeko Dynamics 365 administratzaileak ezarpenak probako ingurunetik ordaindutako ingurune batera migratzeko. 
+Aukeran, Customer Insights soilik erabiltzen baduzu, zure datuak proba-ingurune batetik kopiatu ditzakezu Customer Insights erosten baduzu. Customer Insights probaren administratzailea eta zure administratzaile globala izan behar duzu Microsoft 365 maizterrak edo zure erakundeko Dynamics 365 administratzaileak ezarpenak probako ingurunetik ordaindutako ingurune batera migratzeko. 
 
-Customer Insights-en ordaindutako instantziarekin lehen aldiz saioa hasi ondoren, ingurune berri bat sortzeko eskatuko zaizu. Prozesu honetan, konfigurazioa lehendik dagoen ingurune batetik kopiatzea eta ezarpen gehienak migratzea aukera dezakezu. Goian aipatutako baimenak badituzu, proba-ingurunea zerrenda honetan agertuko da. Informazio gehiagorako, ikus [Kopiatu ingurunearen konfigurazioa](audience-insights/manage-environments.md#copy-the-environment-configuration).
+Customer Insights-en ordaindutako instantziarekin lehen aldiz saioa hasi ondoren, ingurune berri bat sortzeko eskatuko zaizu. Prozesu honetan, konfigurazioa lehendik dagoen ingurune batetik kopiatzea eta ezarpen gehienak migratzea aukera dezakezu. Goian aipatutako baimenak badituzu, proba-ingurunea zerrenda honetan agertuko da. Informazio gehiagorako, ikus [Kopiatu ingurunearen konfigurazioa](manage-environments.md#copy-the-environment-configuration).
 
 ### <a name="what-are-the-trial-limits-and-quotas"></a>Zein dira probaren mugak eta kuotak?
 
-- Ezin duzu zure Azure Data Lake biltegiratze kontua erabili ikusleen estatistiken proba bertsioan irteerako datuak gordetzeko. Hala ere, datuak Data Lake biltegiratze kontu batetik har ditzakezu.
+- Ezin duzu zure Azure Data Lake biltegiratze kontua erabili irteerako datuak gordetzeko Customer Insights-en probako bertsioan. Hala ere, datuak Data Lake biltegiratze kontu batetik har ditzakezu.
 - 3 GB datu gorde ditzakezu Customer Insights abiaraztean automatikoki hornitzen den Dataverse ingurunean.
 
 ## <a name="customer-insights-specific-questions"></a>Customer Insights-eri buruzko galderak

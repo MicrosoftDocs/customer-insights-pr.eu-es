@@ -8,38 +8,23 @@ author: JimsonChalissery
 ms.author: jimsonc
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 9bf8f03b785fb3035e3fc979a3304d4e98fd8d28
-ms.sourcegitcommit: 1946d7af0bd2ca216885bec3c5c95009996d9a28
+ms.openlocfilehash: e2e7fc3033c25646693831d4c4c800d84ae6d6da
+ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
 ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 02/25/2022
-ms.locfileid: "8350392"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8641747"
 ---
-# <a name="service-limits-in-customer-insights-capabilities"></a>Zerbiztuaren mugak Customer Insights-en gaitasunetan
+# <a name="service-limits-in-customer-insights"></a>Zerbitzuen mugak Customer Insights-en
 
 Artikulu honek Customer Insights zerbitzuaren muga integratuak deskribatzen ditu, zerbitzuaren fidagarritasuna eta egonkortasuna ziurtatzeko diseinatuta daude. Aldaketak egiteko eskaerak [Ideien foroa](https://go.microsoft.com/fwlink/?linkid=2074172). 
 
-## <a name="audience-insights"></a>Hartzaileen xehetasunak
+## <a name="customer-insights"></a>Customer Insights
 
 | Area  | Mugak  | Oharrak |
 |-------------|---------------------------------------------------------------------|---------------------------------------------------------------------|
-| Segmentuak, neurriak eta iragarpenak | 300  | Guztizko kopurua [segmentuak](audience-insights/segments.md),[neurriak](audience-insights/measures.md), eta [iragarpenak](audience-insights/predictions.md) bateratuta, ezin dira 300 baino gehiago.  |
-| Erlazioak | 20 sakontasun maila entitate bideetako erlazioetan. | Sortzerakoan [segmentuak](audience-insights/segments.md) edo [neurriak](audience-insights/measures.md) eraikitzailearen interfazea erabiliz, entitate bide-izenek 20 harreman salto izan ditzakete hasierako entitatearen eta xede entitatearen artean.  |
+| Segmentuak, neurriak eta iragarpenak | 300  | Guztizko kopurua [segmentuak](segments.md),[neurriak](measures.md), eta [iragarpenak](predictions.md) bateratuta, ezin dira 300 baino gehiago.  |
+| Erlazioak | 20 sakontasun maila entitate bideetako erlazioetan. | Sortzerakoan [segmentuak](segments.md) edo [neurriak](measures.md) eraikitzailearen interfazea erabiliz, entitate bide-izenek 20 harreman salto izan ditzakete hasierako entitatearen eta xede entitatearen artean.  |
 
-<!--
-## Engagement insights
 
-### Workspace and event quotas
-
-Engagement insights is a highly scalable application that can support millions of events per second. During public preview, events have a volume threshold. There's also a limit to the number of workspaces in an organization.
-
-### Engagement insights limits
-
-- Maximum event volume per workspace  = 100 events per second
-
-- Maximum number of workspaces per organization = 100
-
-When events exceed the threshold, it can lead to loss of data in reports based on those events. You can [contact support](https://go.microsoft.com/fwlink/?linkid=2145734) to request a volume increase before you exceed limits. We'll work with you to determine your need for a volume increase and support your request.
--->
-
-[!INCLUDE[footer-include](includes/footer-banner.md)]
+[!INCLUDE [footer-include](includes/footer-banner.md)]
