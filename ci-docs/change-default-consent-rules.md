@@ -3,20 +3,20 @@ title: Kudeatu adostasun-arau lehenetsiak segmentuetan
 description: Adostasuna kudeatzeko gaitasunarekin, baimen-arau lehenetsiak desgaitu edo alda ditzakezu gainidatziak gaituta badaude.
 ms.date: 12/01/2021
 ms.topic: how-to
-author: smithy7
-ms.author: smithc
+author: anubhav-t
+ms.author: antando
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 43f03ea97765e112a8ea2a7da97cc548c8c84dfc
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: 764eeca9d99c95a34d9bd4c11d79f8b8e90701e2
+ms.sourcegitcommit: 4ae316c856b8de0f08a4605f73e75a8c2cf51c4e
 ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8642094"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "8755201"
 ---
 # <a name="disable-or-change-default-consent-rules"></a>Desgaitu edo aldatu baimen-arau lehenetsiak
 
-Zure erakundeek erabiltzen badute [baimena kudeatzeko gaitasuna](consent-management/overview.md) rekin Dynamics 365 Customer Insights,[administratzaileek baimenaren arauak bete ditzakete](activate-consent.md) segmentuetarako. 
+Zure erakundeek erabiltzen badute [baimena kudeatzeko gaitasuna](consent-management/overview.md) rekin Dynamics 365 Customer Insights,[administratzaileek baimen-arauak bete ditzakete](activate-consent.md) segmentuetarako. 
 
 Segmentu-eremuan betearazitako baimen-arauekin, segmentu bakoitzak baimenaren egiaztapenaren eta arauen egoeraren berri ematen du. Gainidatzeak onartzen badira, adostasun-arau lehenetsiak desaktibatu egingo dira segmentu zehatzetarako. Segmentu baten sortzaile bakoitzak adostasun-arau gehiago gehi diezazkioke arau lehenetsien gainean segmentu bati. 
 

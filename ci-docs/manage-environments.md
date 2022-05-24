@@ -11,12 +11,12 @@ manager: shellyha
 searchScope:
 - ci-system-about
 - customerInsights
-ms.openlocfilehash: fcdb7f073ff73322ff69d0a8684391819a809d00
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
-ms.translationtype: MT
+ms.openlocfilehash: 599cbaf4e19c3a7331e92bfc54c701fefe6c69b3
+ms.sourcegitcommit: 6a5f4312a2bb808c40830863f26620daf65b921d
+ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8642152"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "8741026"
 ---
 # <a name="manage-environments"></a>Kudeatu inguruneak
 
@@ -66,7 +66,7 @@ Zure ingurunea zurea erabiltzeko konfiguratuta badago Azure Data Lake Storage Cu
    
 #### <a name="prerequisites"></a>Aurrebaldintzak
 
-PowerShell scriptak exekutatzeko honako hiru modulu hauek inportatu behar dituzu. 
+PowerShell scriptak exekutatzeko hiru modulu hauek inportatu behar dituzu. 
 
 1. Instalatu azken bertsioa [Azure Active Directory PowerShell for Graph](/powershell/azure/active-directory/install-adv2).
    1. Zure ordenagailuan, hautatu Windows tekla teklatuan eta bilatu **Windows PowerShell** eta hautatu **Exekutatu administratzaile gisa**.
@@ -82,10 +82,10 @@ PowerShell scriptak exekutatzeko honako hiru modulu hauek inportatu behar dituzu
        - Behar duzu *maizter admin* PowerShell script hau exekutatzeko baimenak. 
        - PowerShell script honek bi segurtasun talde sortzen ditu zure Azure harpidetzan. Bat Irakurle taldearentzat eta beste bat Kolaboratzaile taldearentzat eta egingo du Microsoft Dataverse Zerbitzua bi segurtasun talde hauen jabe gisa.
        - Exekutatu PowerShell script hau Windows PowerShell-en zurea duen Azure harpidetza IDa emanez Azure Data Lake Storage. Ireki PowerShell script-a editore batean informazio gehigarria eta inplementatutako logika berrikusteko.
-       - Gorde script honek sortutako segurtasun-taldeen ID balioak, hauek erabiliko ditugulako`ByolSetup.ps1` gidoia.
+       - Gorde script honek sortutako segurtasun-taldeen ID balioak, horiek erabiliko ditugulako`ByolSetup.ps1` gidoia.
        
         > [!NOTE]
-        > Segurtasun-taldeen sorrera desgaitu daiteke maizterrean. Kasu horretan, eskuzko konfigurazioa beharko litzateke eta zure Azure AD administratzaileak beharko luke [gaitu segurtasun taldeak sortzea](/azure/active-directory/enterprise-users/groups-self-service-management).
+        > Segurtasun-taldeen sorrera desgaitu daiteke zure maizterrean. Kasu horretan, eskuzko konfigurazioa beharko litzateke eta zure Azure AD administratzaileak beharko luke [gaitu segurtasun taldeak sortzea](/azure/active-directory/enterprise-users/groups-self-service-management).
 
     2. `ByolSetup.ps1`
         - Behar duzu *Biltegiratze Blob Datuen jabea* biltegiratze kontu/edukiontzi mailan baimenak script hau exekutatzeko edo script honek bat sortuko dizu. Zure rol-esleipena eskuz ken daiteke scripta behar bezala exekutatu ondoren.
@@ -127,11 +127,11 @@ Zure erakundearen eskura dauden ingurune guztien zerrenda ikusiko duzu non datua
 Hurrengo konfigurazio ezarpenak kopiatzen dira:
 
 - Hornitutako edo inportatutako datu-iturburuak
-- Datuen bateratzea (mapa, bat etorri, batu) konfigurazioa
+- Datuak bateratzeko konfigurazioa
 - Segmentuak
-- Neurriak
+- Neurketak
 - Erlazioak
-- Jarduerak
+- Ekintzak
 - Bilaketa eta iragazkien indizea
 - Esportatze-helburuak
 - Programatutako freskatzea

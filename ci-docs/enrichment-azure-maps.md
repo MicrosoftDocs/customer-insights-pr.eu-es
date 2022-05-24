@@ -8,12 +8,12 @@ ms.topic: how-to
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: 6a1c3791076a7dda4531664ca88632f7f1b914e3
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: 6d43dc2ca82c034fbd396d92637e7aea8179df77
+ms.sourcegitcommit: 4ae316c856b8de0f08a4605f73e75a8c2cf51c4e
 ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8642002"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "8755339"
 ---
 # <a name="enrichment-of-customer-profiles-with-azure-maps-preview"></a>Bezeroen profilen aberastea Azure Maps-ekin (aurreargitalpena)
 
@@ -51,7 +51,7 @@ Azure Maps-en datuen aberastea konfiguratzeko, aurrebaldintza hauek bete behar d
 
 1. Hautatu **Hurrengoa** eremuaren jarraipena osatzeko.
 
-1. Ebaluatu **ezarpen aurreratuak** aldatu nahi dituzun. Horiek ematen dira erabilera aurreratuko kasuak kudeatzeko malgutasun handienarekin, baina balio lehenetsiak egokiak izango dira kasu gehienetan:
+1. Ebaluatu **ezarpen aurreratuak** aldatu nahi dituzun. Ezarpen hauek erabilera-kasu aurreratuak kudeatzeko malgutasun handiena emateko eskaintzen dira, baina balio lehenetsiak egokiak izango dira kasu gehienetan:
    - **Helbide motak**: portaera lehenetsia da aberasteak helbiderik egokiena itzuliko duela, nahiz eta osatuta ez egon. Helbide osoak soilik lortzeko,&mdash;adibidez, etxearen zenbakia duten helbideak,&mdash;garbitu kontrol-lauki guztiak **Seinalatu helbideak** izan ezik. 
    - **Hizkuntza**: lehenespenez, helbideak itzultzen dira helbideari dagokiola adierazi den eskualdearen hizkuntzan. Helbideen hizkuntza estandarizatua aplikatzeko, hautatu hizkuntza goitibeherako menutik. Adibidez, **Ingelesa** hautatuta, **Copenhagen, Denmark** itzuliko ditu **København, Danmark** itzuli ordez.
 
@@ -89,7 +89,7 @@ Aberastutako profil bakoitzaren ikuspegi zehatza sar dezakezu hautatuta **Ikusi 
 
 ## <a name="data-privacy-and-compliance"></a>Datuen pribatutasuna eta arau-gordetzea
 
-Datuak Azure Maps-era transmititzeko aukera gaituz gero Dynamics 365 Customer Insights-en, onartu egingo duzu datuak Dynamics 365 Customer Insights-en arau-gordetze eremutik kanpora transferitzea (kontuzkoak izan daitezkeen datuak barne, hala nola datu pertsonalak). Microsoft-ek halako datuak transferituko ditu hala eskatuz gero, baina zu izango zara erantzule Azure Maps-ek izan ditzakezun pribatutasun- edo segurtasun-betekizunak betetzen dituela ziurtatzeaz. Informazio gehiago eskuratzeko, joan [Microsoft-en pribatutasun adierazpenera](https://go.microsoft.com/fwlink/?linkid=396732).
+Datuak Azure Maps-era transmititzeko aukera gaituz gero Dynamics 365 Customer Insights-en, onartu egingo duzu datuak Dynamics 365 Customer Insights-en arau-gordetze eremutik kanpora transferitzea (kontuzkoak izan daitezkeen datuak barne, hala nola datu pertsonalak). Microsoft-ek datu horiek transferituko ditu zure aginduetara, baina zu zara Azure Maps-ek izan ditzakezun pribatutasun- edo segurtasun-betebeharrak betetzen dituela ziurtatzeaz. Informazio gehiago eskuratzeko, joan [Microsoft-en pribatutasun adierazpenera](https://go.microsoft.com/fwlink/?linkid=396732).
 Dynamics 365 Customer Insights administratzaileak edonoiz ken dezake aberastea funtzio hau erabiltzeari uzteko.
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

@@ -17,16 +17,16 @@ searchScope:
 - ci-measures
 - ci-segment-suggestions
 - customerInsight
-ms.openlocfilehash: 29b5d3f5848d36abd8e941136a6330dbb7730016
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: 6c0a1bc5d9a42806b458142804199c733ff530ec
+ms.sourcegitcommit: 4ae316c856b8de0f08a4605f73e75a8c2cf51c4e
 ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8642110"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "8755483"
 ---
 # <a name="customer-activities"></a>Bezeroen jarduerak
 
-Konbinatu bezeroaren jarduerak [hainbat datu iturri](data-sources.md) hurrengoan Dynamics 365 Customer Insights jarduerak kronologikoki zerrendatuko dituen kronograma sortzeko. Sartu kronograma Dynamics 365 aplikazioetan [Bezero txartelaren gehigarria](customer-card-add-in.md) irtenbide batean edo Power BI arbela.
+Konbinatu bezeroen jarduerak [hainbat datu-iturri](data-sources.md) Dynamics 365 Customer Insights-en. Sortu jarduerak kronologikoki zerrendatzen dituen denbora-lerroa. Sartu denbora-lerroa Dynamics 365 aplikazioetan [Bezero Txartelaren gehigarria](customer-card-add-in.md) irtenbidea.
 
 ## <a name="define-an-activity"></a>Definitu jarduera
 
@@ -78,7 +78,7 @@ Entitate batek gutxienez motako atributu bat izan behar du **Data** bezeroaren d
 
 1. Hautatu **Hurrengoa** hurrengo urratsera mugitzeko. Aukeratu dezakezu **Amaitu eta berrikusi** aktibitatea orain gordetzeko, jarduera mota gisa ezarrita **Beste batzuk**. 
 
-1. Hurrengoan **Jarduera mota** urratsa, aukeratu jarduera mota eta hautatu aukeran Customer Insights beste arlo batzuetan erabiltzeko jarduera mota batzuk semantikoki mapatu nahi dituzun. Unean, *Feedback*, *Loyalty*, *SalesOrder*, *SalesOrderLine*, eta *Subscription* jarduera motak semantikoki esleitu daitezke, eremuak esleitzea onartu ondoren. Jarduera mota bat jarduera berrirako garrantzitsua ez bada, hauta dezakezu *Beste batzuk* edo *Sortu berria* jarduera mota pertsonalizatua lortzeko.
+1. Hurrengoan **Jarduera mota** urratsa, aukeratu jarduera mota eta hautatu aukeran Customer Insights beste arlo batzuetan erabiltzeko jarduera mota batzuk semantikoki mapatu nahi dituzun. Gaur egun, *Iritzia*, *·*, *Eskaera*, *·*, eta *Harpidetza* jarduera motak semantika onartzen dute eremuak mapatzea onartu ondoren. Jarduera mota bat jarduera berrirako garrantzitsua ez bada, hauta dezakezu *Beste batzuk* edo *Sortu berria* jarduera mota pertsonalizatua lortzeko.
 
 1. Hautatu **Hurrengoa** hurrengo urratsera mugitzeko. 
 
@@ -110,7 +110,7 @@ Bezeroen jarduerak konfiguratu ondoren, hautatu **Erakutsi jardueren kronograman
 
 Bezero baten kronograma irekitzeko, joan hona: **Bezeroak** eta aukeratu ikusi nahi duzun bezeroaren profila.
 
-Bezero batek konfiguratu duzun jarduera batean parte hartu badu, helbidean aurkituko duzu **Jardueren kronograma** atala.
+Bezero batek konfiguratutako jarduera batean parte hartu badu, atalean aurkituko duzu **Jardueren kronograma** atala.
 
 :::image type="content" source="media/Activity_Timeline1.PNG" alt-text="Ikusi konfiguratutako jarduerak Bezeroen profiletan.":::
 

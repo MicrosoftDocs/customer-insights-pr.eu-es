@@ -1,110 +1,83 @@
 ---
-title: Mapatu datuak bateratzeko entitateak eta atributuak
-description: Aukeratu entitateak, atributuak, gako nagusiak eta mota semantikoak datuak bezeroaren profil bateratura mapatzeko.
-ms.date: 10/18/2020
+title: Hautatu iturri-eremuak datuak bateratzeko
+description: Bateratze-prozesuaren lehen urratsa entitateak, atributuak, gako nagusiak eta mota semantikoak hautatzea da datuak bezeroen profil bateratuarekin mapatzeko.
+recommendations: false
+ms.date: 04/22/2022
 ms.subservice: audience-insights
 ms.topic: tutorial
-author: adkuppa
-ms.author: adkuppa
-ms.reviewer: mhart
+author: v-wendysmith
+ms.author: mukeshpo
+ms.reviewer: v-wendysmith
 manager: shellyha
 searchScope:
 - ci-map
 - ci-match
 - customerInsights
-ms.openlocfilehash: bebc600e91db471c3cd50eccb5e42be309ff09c9
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: a962f1353b6e25b40c60b39a81ac936873f34d92
+ms.sourcegitcommit: 6a5f4312a2bb808c40830863f26620daf65b921d
 ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8642086"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "8740980"
 ---
-# <a name="map-entities-and-attributes"></a>Mapen entitateak eta atributuak
+# <a name="select-source-fields-for-data-unification"></a>Hautatu iturri-eremuak datuak bateratzeko
 
-**Mapa** datuak bateratzeko prozesuaren lehen etapa da. Kartografiak hiru fase ditu:
+[!INCLUDE [m3-prod-trial-note](includes/m3-prod-trial-note.md)]
 
-- *Erakundeen hautaketa*: Identifikatu datu multzo batera daramaten entitate konbinagarriek zure bezeroei buruzko informazio osoagoa.
-- *Ezaugarri hautaketa*: Entitate bakoitzeko, identifikatu konbinatu eta bateratu nahi dituzun zutabeak *bat-etortze* eta *konbinatu* faseak. Zutabe horiei *Atributuak* deitzen zaie.
-- *Gako nagusia eta mota semantikoa hautatzea*: Entitate bakoitzerako, identifikatu entitate horren gako nagusi gisa definitu nahi duzun atributu bat eta atributu bakoitzerako, identifikatu atributu hori hobekien deskribatzen duen mota semantikoa.
+Bateratzearen lehen urratsa batu nahi dituzun zure datu-multzoetako entitateak eta eremuak hautatzea da. Hautatu bezeroekin lotutako xehetasunak dituzten entitateak, hala nola izena, helbidea, telefono zenbakia eta posta elektronikoa. Entitate bat edo gehiago hauta ditzakezu.
 
-Informazio gehiago lortzeko datuen bateratzeari buruzko informazio gehiago lortzeko, ikus [bateratzeko](data-unification.md).
+## <a name="select-entities-and-fields"></a>Hautatu entitateak eta eremuak
 
-## <a name="select-the-first-entities"></a>Hautatu lehenengo entitateak
+1. Joan **Datuak** > **Bateratu**.
 
-1. Joan hona: **Datuak** > **Bateratu** > **Esleitu**.
+   :::image type="content" source="media/m3_unify_land.png" alt-text="Lehen exekuzio esperientziarako bateratze-orriaren pantaila-argazkia Hasi nabarmenduta.":::
 
-2. Hasi mapa fasea aukeratuz **Erakundeak hautatu**.
+1. Hautatu **Hasi erabiltzen**.
 
-3. Aukeratu erabili nahi dituzun entitateak eta atributuak *partida* eta *batu* faseak. Beharrezko atributuak banaka hauta ditzakezu entitate batetik edo entitate bateko atributu guztiak sar ditzakezu **Sartu eremu guztiak** kontrol-laukia entitate mailan. Gutxienez bi entitate hautatzea gomendatzen dugu datuak bateratzeko prozesuan etekina ateratzeko.
+1. Gainean **Iturburu-eremuak** orrialdea, hautatu **Hautatu entitateak eta eremuak**. The **Hautatu entitateak eta eremuak** panelak bistaratzen ditu.
 
-   > [!div class="mx-imgBorder"]
-   > ![Gehitu entitateak adibidea.](media/data-manager-configure-map-add-entities-example.png "Gehitu entitateak adibidea")
+1. Hautatu gutxienez entitate bat.
 
-   Adibide honetan, **eCommerceContacts** eta **loyBezeroak** entitateak. Entitate horiek aukeratuta, lineako negozioen bezeroak fidelizazio programako kide diren jakiteko.
-   
-   Atributu eta entitate guztietan gako-hitzak bilatu ditzakezu mapatu nahi dituzun beharrezko atributuak hautatzeko.
-   
-     > [!div class="mx-imgBorder"]
-   > ![Bilatu eremuen adibidea.](media/data-manager-configure-map-search-fields-example.png "Bilatu eremuen adibidea")
+1. Hautatutako entitate bakoitzeko, identifikatu bezeroen erregistroekin bat etortzeko erabili nahi dituzun eremuak eta profil bateratuan sartzeko. Eremu horiei deitzen zaie *Atributuak*. Beharrezko atributuak hauta ditzakezu banan-banan entitate batetik edo entitate bateko atributu guztiak sar ditzakezu entitate mailan kontrol-laukia hautatuta. Atributu eta entitate guztietan gako-hitzak bilatu ditzakezu mapatu nahi dituzun beharrezko atributuak hautatzeko.
 
-4. Aukeratu **Aplikatu** zure hautapenak baieztatzeko.
+   :::image type="content" source="media/m3_select_entities.png" alt-text="Hautatutako entitateen eta atributuen pantaila-argazkia.":::
+
+   Adibide honetan, gehitzen ari gara **Kontaktuak** eta **Bezeroen Leialtasuna** entitateak. Entitate horiek aukeratuta, lineako negozioen bezeroak fidelizazio programako kide diren jakiteko.
+
+1. Aukeratu **Aplikatu** zure hautapenak baieztatzeko. Hautatutako entitateak eta atributuak bistaratzen dira.
 
 ## <a name="select-primary-key-and-semantic-type-for-attributes"></a>Aukeratu gako nagusia eta mota semantikoa atributuetarako
 
-Zure entitateak hautatu ondoren, **Mapa** orrialdeak zure berrikuspenerako hautatutako entitateak zerrendatzen ditu. Definitu entitate baten gako nagusia eta identifikatu entitatean atributu baten mota semantikoa.
+   :::image type="content" source="media/m3_select_primary.png" alt-text="Hautatutako entitateen pantaila-argazkia, gako nagusia hautatu gabe." lightbox="media/m3_select_primary.png":::
 
-- **Lehen mailako gakoa**: Aukeratu ezazu atributu bat entitate bakoitzerako gako nagusi gisa. Atributu bat baliozko gako nagusia izan dadin, ez lituzke balio bikoiztuak, falta diren balioak edo balio baliorik sartu behar. Katea, osoko zenbakia eta GUID datu motaren atributuak gako nagusi gisa onartzen dira eta aukeratu ahal izateko eremu batean bistaratuko dira.
+Entitate bakoitzeko, egin urrats hauek.
 
-- **Atributu semantiko mota**: Zure atributuen kategoriak, hala nola helbide elektronikoa edo izena. AI ereduak semantika iragarpen adimendunetarako erabiltzeko, denbora aurreztu eta zehaztasuna hobetzeko, ezarri **Kartografia adimenduna** hurrengora **Aktibatu**. Kartografia adimendunak AI-n oinarritutako semantika gomendioa nabarmentzen du **Mota** zelaia. Ezartzen baduzu **Itzali**, gure ohiko mapen gomendioak ikusiko dituzu. Edozein mota semantiko hauta dezakezu eskuragarri dauden aukeren zerrendan eta iradokitako hautaketa gainidatzi.
+1. Aukeratu **Lehen gakoa**. Gako nagusia entitatearen atributu bakarra da. Atributu bat baliozko gako nagusia izan dadin, ez lituzke balio bikoiztuak, falta diren balioak edo balio baliorik sartu behar. Katea, osokoa eta GUID datu motako atributuak gako nagusi gisa onartzen dira.
 
-> [!div class="mx-imgBorder"]
-> ![Atributu mota eta iragarpen semantikoa.](media/data-manager-configure-map-add-attributes-semantic-prediction.png "Atributu mota eta iragarpen semantikoa")
+1. Semantika iragarpen adimentsurako AI ereduak erabiltzeko, aurreztu denbora eta hobetu zehaztasuna, ziurtatu **Kartografia adimentsua** piztuta dago. Kartografia adimendunak AI-n oinarritutako semantika gomendioa nabarmentzen du **Mota** zelaia. Iradokitako hautapena gainidatzi dezakezu eskuragarri dagoen aukeren zerrendatik edozein mota semantiko aukeratuz.
 
-Semantika pertsonalizatu mota bat gehitzea ere posible da. Hautatu atributu horren mota-eremua eta idatzi zure semantika-mota pertsonalizatutako izena. Modu honetan, sistemak auto-identifikatutako auto atributu motak ere alda ditzakezu.
+1. Atributu bakoitzeko, aukeratu semantiko bat **Mota** atributu hori hobekien deskribatzen duena, hala nola izena, hiria edo helbide elektronikoa.
 
-Mota semantikoa automatikoki identifikatzen den atributu guztiak taldean biltzen dira **Berrikusi mapatutako eremuak** atala. Berrikusi atributu hauek eta horien mota semantikoak, zure erakundeak datuen bateratzearen bateratze-urratsean konbinatzeko erabiliko direlako.
+   > [!NOTE]
+   > Eremu batek mota semantikoarekin mapatu behar du *Pertsona.Izen osoa* bezeroaren izena bezero-txartelean betetzeko. Bestela, bezeroen txartelak izenik gabe agertuko dira.
 
-Automatikoki mota semantiko batera mapatzen ez diren atributuak fitxategian biltzen dira **Definitu datuak mapatu gabeko eremuetan** atala. Hautatu mapatu gabeko atributuen mota semantikoaren eremua edo idatzi zure atributu mota izen pertsonalizatua.
+   1. Sistemak identifikatutako atributu mota bat aldatzeko, hautatu beste mota bat. Mota ez badago, sortu mota semantiko pertsonalizatu bat hautatuta **Mota** atributuaren eremua eta zure mota semantiko pertsonalizatuaren izena sartu.
 
-> [!div class="mx-imgBorder"]
-> ![Gako nagusia eta atributu mota.](media/data-manager-configure-map-add-attributes.png "Gako nagusia eta atributu mota")
+   1. URL bat duen atributu bat gehitzeko publikoki eskuragarri dauden profileko irudi edo logotipoetan, hautatu URLa duen entitatea eta eremua. urtean **Mota** eremuan, idatzi honako hau:
+      - Pertsona batentzat: Pertsona.ProfileImage
+      - Erakunde batentzat: Organization.LogoImage
 
-> [!NOTE]
-> Eremu batek Person.FullName mota semantikoarekin mapatu beharko luke bezeroaren izena bezero txartelean betetzeko. Bestela, bezeroen txartelak izenik gabe agertuko dira. 
+   1. Kontuaren izenaren atributu baterako, idatzi "Organization.Name" atalean **Mota** eremua.
 
-## <a name="add-and-remove-attributes-and-entities"></a>Gehitu eta kendu atributuak eta entitateak
+1. Berrikusi mota semantiko bat automatikoki identifikatzen diren atributuak. Atributu hauek azpian daude zerrendatuta **Berrikusi mapatutako eremuak**. Mota bereko atributuak soilik konbina daitezke **Bezeroen eremu bateratuak** urratsa. Mota semantikoak ikuspegiak automatikoki iradokitzeko erabiltzen dira. Ziurtatu aukeratu dituzun motak koherenteak direla hautatutako entitate guztietan.
 
-1. Aktibatuta **Bat egin** > **Mapa**, hautatu **Editatu eremuak**.
+1. Mota semantiko batekin automatikoki mapatzen ez diren atributuetarako, hautatu mota semantikoko eremu bat, idatzi zure atributu mota pertsonalizatuaren izena edo utzi mapatu gabe. Atributu hauek azpian daude zerrendatuta **Definitu datuak mapatu gabeko eremuetan**.
 
-2. **Editatu eremuak** panelean, gehitu edo kendu atributuak eta entitateak. Erabili bilaketa edo korritua zure atributuak eta intereseko entitateak aurkitzeko eta hautatzeko. Ezin duzu atributu edo entitate bat kendu dagoeneko parekatuta badaude.
+1. Entitate bakoitzaren urratsak amaitu ondoren, hautatu **Gorde iturri-eremuak**.
 
-   > [!div class="mx-imgBorder"]
-   > ![Gehitu edo kendu atributuak.](media/configure-data-map-edit.png "Gehitu edo kendu atributuak")
+1. Hautatu **Hurrengoa**.
 
-3. Hautatu **Aplikatu**.
-
-## <a name="add-images-to-profiles"></a>Gehitu irudiak profiletan
-
-Entitateak URLak baditu jendaurrean eskuragarri dauden profileko irudiak edo logotipoak bidaltzeko, bezeroaren profil bateratuari gehitu diezaiokezu.
-
-Hautatu entitatea eta aurkitu URLa duen profila irudia duen eremua. **Mota** sarrerako eremuan eskuz sartu hurrengo balioa: 
-- Pertsona batentzat: Pertsona.ProfileImage
-- Erakunde batentzat: Organization.LogoImage
-
-Jarraitu bateratze urratsekin eta ziurtatu irudiaren URLa duen atributua gehitzen dela [Batu](merge-entities.md) urratsa.
-
-## <a name="set-attributes-for-organizations"></a>Ezarri erakundeentzako atributuak
-
-Erakundeentzako (aurrebista), atributu mota "Organization.Name" kokatu behar da
-> [!div class="mx-imgBorder"]
-> ![Gako nagusia eta B-to-B motako atributua.](media/configure-data-map-edit-b2b.png "Gako nagusia eta B-to-B motako atributua")
-
-## <a name="next-step"></a>Hurrengo urratsa
-
-Datuak bateratzeko prozesuaren baitan, joan **Bat-etortzea** orria. Bisitatu [**Bat-etortzea**](match-entities.md) fase honen berri izateko.
-
-> [!TIP]
-> Ikusi hurrengo bideoa: [Lehen urratsak: Bezeroaren profil bateratua sortzea](https://youtu.be/oBfGEhucAxs).
-
+> [!div class="nextstepaction"]
+> [Hurrengo urratsa: Kendu bikoiztuak](remove-duplicates.md)
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

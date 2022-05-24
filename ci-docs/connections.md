@@ -11,12 +11,12 @@ manager: shellyha
 searchScope:
 - ci-connections
 - customerInsights
-ms.openlocfilehash: 10704e287960c1a9171031135ff8f78a45b6e965
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: d85de28a12565e1a2e36278d0e8b74f6de286b20
+ms.sourcegitcommit: 4ae316c856b8de0f08a4605f73e75a8c2cf51c4e
 ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8642122"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "8755294"
 ---
 # <a name="connections-preview-overview"></a>Konexioen ikuspegi orokorra (aurrebista)
 
@@ -24,15 +24,15 @@ Konexioak dira Customer Insights-etik eta horretatik datuak partekatzea ahalbide
 
 Joan **Administratzailea** > **Konexioak** konexioak sortzeko eta ikusteko.
 
-**Konexioak** fitxak konexio aktibo guztiak erakusten dizkizu. Zerrendan konexio bakoitzerako errenkada bat agertzen da. 
+**Konexioak** fitxak konexio aktibo guztiak erakusten dizkizu. Zerrendan konexio bakoitzerako errenkada bat agertzen da.
 
 Lortu ikuspegi orokorra, deskribapena eta jakin zer egin dezakezun **Ezagutu** fitxa.
 
-### <a name="exports"></a>Esportazioak
+## <a name="exports"></a>Esportazioak
 
 Administratzaileek soilik konfigura ditzakete konexio berriak, baina laguntzaileei sarbidea eman diezaiekete lehendik dauden konexioak erabiltzeko. Administratzaileek datuak nora joan daitezkeen kontrolatzen dute, laguntzaileek beren beharretara egokitzen duten karga eta maiztasuna definitzen dute. Informazio gehiagorako, ikus [Baimendu laguntzaileei esportazioetarako konexioa erabiltzea](#allow-contributors-to-use-a-connection-for-exports).
 
-### <a name="enrichments"></a>Aberasteak
+## <a name="enrichments"></a>Aberasteak
 
 Administratzaileek soilik konfigura ditzakete konexio berriak, baina sortutako konexioak beti daude eskuragarri administratzaile zein laguntzaileentzat. Administratzaileek egiaztagiriak kudeatzen dituzte eta datuen transferentziei baimena ematen diete. Konexioak administratzaileek eta laguntzaileek aberasteko erabil ditzakete.
 
@@ -46,9 +46,9 @@ Konexioak gehitzeko, eduki behar duzu [administratzaile baimenak](permissions.md
 
 1. Hautatu **Gehitu konexioa** konexio berri bat sortzeko. Aukeratu goitibeherako menuan zein konexio mota sortu nahi duzun.
 
-1. Hurrengoan **Konfiguratu konexioa** panelean, eman beharrezko xehetasunak. 
+1. Hurrengoan **Konfiguratu konexioa** panelean, eman beharrezko xehetasunak.
    1. **Bistaratzeko izena** eta konexio motak konexio bat deskribatzen du. Konexio honen xedea eta xedea azaltzen duen izena aukeratzea gomendatzen dugu.
-   1. Eremu zehatzak zein zerbitzuetara konektatzen zaren araberakoak dira. Konexio mota zehatz baten xehetasunak ezagutu ditzakezu xede zerbitzuaren inguruko artikulua.
+   1. Eremu zehatzak konektatzen ari zaren zerbitzuaren araberakoak dira. Konexio mota zehatz baten xehetasunak ezagutu ditzakezu xede zerbitzuaren inguruko artikulua.
    1. Bada [erabili zure Key Vault](use-azure-key-vault.md) sekretuak gordetzeko, aktibatu **Erabili Key Vault** eta aukeratu zerrendako sekretua.
 
 1. Konexioa sortzeko, hautatu **Gorde**.
@@ -59,7 +59,7 @@ Aukeratu ere egin dezakezu **Konfiguratu** teila batean **Ezagutu** fitxa.
 
 Esportazio konexioa konfiguratu edo editatzerakoan, aukeratzen duzu zein erabiltzaile konexio zehatz hau erabili ahal izateko definitzeko [esportazioak](export-destinations.md). Berez, konexioa erabilgarri dago administratzaile funtzioa duten erabiltzaileentzat. Ezarpen hau alda dezakezu **Aukeratu nork erabil dezakeen konexio hau** eta lagundu laguntzaile rolak dituzten erabiltzaileei konexio hau erabiltzeko.
 
-- Laguntzaileek ezin izango dute konexioa ikusi edo editatu. Bistaratzeko izena eta mota esportazio bat sortzerakoan soilik ikusiko dute.
+- Laguntzaileek ezin izango dute konexioa ikusi edo editatu. Bistaratzeko izena eta haren mota soilik ikusiko dituzte esportazio bat sortzean.
 - Konexioa partekatuz gero, laguntzaileei konexioa erabiltzeko baimena ematen diezu. Laguntzaileek partekatutako konexioak ikusiko dituzte esportazioak konfiguratzen dituztenean. Konexio zehatz hau erabiltzen duten esportazio guztiak kudea ditzakete.
 - Ezarpen hau alda dezakezu laguntzaileek definitutako esportazioak mantenduz.
 
@@ -77,7 +77,7 @@ Esportazio konexioa konfiguratu edo editatzerakoan, aukeratzen duzu zein erabilt
 
 ## <a name="remove-a-connection"></a>Konexioa kendu nahi duzu
 
-Kentzen ari zaren konexioa aberastasunek edo esportazioek erabiltzen badute, lehenengo deskonektatu edo kendu behar dituzu. Kendu elkarrizketa-koadroak aberastasun edo esportazio garrantzitsuetara eramango zaitu. 
+Kentzen ari zaren konexioa aberasteek edo esportazioek erabiltzen badute, lehenik kendu edo kendu behar dituzu. Kendu elkarrizketa-koadroak aberastasun edo esportazio garrantzitsuetara eramango zaitu.
 
 Bereizitako aberastasunak eta esportazioak inaktibo bihurtzen dira. Berriro aktibatuko dituzu haiekin beste konexio bat gehituz [Aberastasunak](enrichment-hub.md) edo [Esportazioak](export-destinations.md) orrialdea.
 
@@ -91,7 +91,7 @@ Bereizitako aberastasunak eta esportazioak inaktibo bihurtzen dira. Berriro akti
 
    1. Konexio hau erabiltzen duten aberastasunak edo esportazioak badaude, hautatu botoia konexioa erabiltzen ari dena ikusteko.
       - **Esportazioak:** Konexioa kendu ahal izateko esportazioak kentzea edo deskonektatzea aukera dezakezu. Esportazio bat deskonektatzeko, administratzaileek **Deskonektatu** ekintza. Ekintza hau eskuragarri dago banakako eta hautatutako esportazio anitzetarako. Deskonektatuta esportazio konfigurazioa mantenduko duzu, baina ez da exekutatuko beste konexio bat gehitu arte.
-      - **Aberasteak:** Konexioa kendu ahal izateko aberasteak desaktibatzea edo kentzea aukera dezakezu. 
+      - **Aberasteak:** Konexioa kendu ahal izateko aberasteak desaktibatzea edo kentzea aukera dezakezu.
    1. Konexioak mendekotasun gehiago ez duenean, itzuli berriro **Administratzailea** > **Konexioak** eta saiatu berriro konexioa kentzen.
 
 1. Ezabapena berresteko hautatu **Kendu**.

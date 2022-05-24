@@ -1,8 +1,8 @@
 ---
 title: Harpidetzaren galera-tasaren iragarpenaren lagin-gida
 description: Erabil ezazu lagin-gida hau harpidetzen galera-tasaren iragarpenaren eredua probatzeko.
-ms.date: 11/19/2020
-ms.reviewer: mhart
+ms.date: 03/31/2022
+ms.reviewer: v-wendysmith
 ms.subservice: audience-insights
 ms.topic: tutorial
 author: m-hartmann
@@ -11,12 +11,12 @@ manager: shellyha
 searchScope:
 - ci-create-prediction
 - customerInsights
-ms.openlocfilehash: 2aea6c62421b308705899e4f8af64f64bfcb2d3d
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: 5a8eeafecacef3d0bb4a798b698cf490423ca98d
+ms.sourcegitcommit: 6a5f4312a2bb808c40830863f26620daf65b921d
 ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8642148"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "8741396"
 ---
 # <a name="subscription-churn-prediction-sample-guide"></a>Harpidetzaren galera-tasaren iragarpenaren lagin-gida
 
@@ -112,61 +112,7 @@ Berrikusi artikuluak [datuak sartzeari buruz](data-sources.md) eta [datu-iturria
 
 ## <a name="task-2---data-unification"></a>2. zeregina - Datuen bateratzea
 
-Behin datuak sartuta, **Esleitu, bat etorri, konbinatu** prozesuarekin hasiko gara, bezeroaren profil bateratu bat sortzeko. Informazio gehiago lortzeko, ikusi [Datuen bateratzea](data-unification.md).
-
-### <a name="map"></a>Esleitu
-
-1. Behin datuak sartuta, esleitu merkataritza elektronikoko eta fideltasun-datuetako kontaktuak ohiko datu motei. Joan hona: **Datuak** > **Bateratu** > **Esleitu**.
-
-1. Hautatu bezeroaren profila adierazten duten entitateak – **eCommerceContacts** eta **loyCustomers**. 
-
-   :::image type="content" source="media/unify-ecommerce-loyalty.PNG" alt-text="bateratu ecommerce eta loyalty datu-iturburuak.":::
-
-1. Hautatu **ContactId** **eCommerceContacts** entitatearen gako nagusi gisa eta **LoyaltyID** **loyCustomers** entitatearen gako nagusi gisa.
-
-   :::image type="content" source="media/unify-loyaltyid.PNG" alt-text="Bateratu LoyaltyId gako nagusi gisa.":::
-
-### <a name="match"></a>Lotu
-
-1. Joan **Bat etorri** fitxara eta hautatu **Ezarri ordena**.
-
-1. Urtean **Lehen Hezkuntza** goitibeherako zerrenda, aukeratu **eCommerceContacts: eCommerce** iturri nagusi gisa eta erregistro guztiak barne.
-
-1. Urtean **2. entitatea** goitibeherako zerrenda, aukeratu **loyCustomers: LoyaltyScheme** eta erregistro guztiak sartu.
-
-   :::image type="content" source="media/unify-match-order.PNG" alt-text="Bateratu eCommerce eta Loyalty bat-etortzea.":::
-
-1. Hautatu **Sortu beste arau bat**
-
-1. Gehitu lehenengo baldintza FullName erabilita.
-
-   * ECommerceContacts aukeratzeko **Izen abizenak** goitibeherakoan.
-   * loyCustomers aukeratzeko **Izen abizenak** goitibeherakoan.
-   * Aukeratu **Normalizatu** goitibeherako zerrendan eta aukeratu **Mota (Telefonoa, Izena, Helbidea, ...)**.
-   * Ezarri **Zehaztasun maila**: **Oinarrizkoa** eta **Balioa**: **Altua**.
-
-1. Idatzi arau berriaren **Izen osoa, posta elektronikoa** izena.
-
-   * Gehitu helbide elektronikoaren bigarren baldintza bat **Gehitu baldintza** hautatuta
-   * ECommerceContacts entitateari dagokionez, aukeratu **Mezu elektronikoa** goitibeherakoan.
-   * loyCustomers entitateari dagokionez, aukeratu **Mezu elektronikoa** goitibeherakoan. 
-   * "Normalizatu" hutsik utzi. 
-   * Ezarri **Zehaztasun maila**: **Oinarrizkoa** eta **Balioa**: **Altua**.
-
-   :::image type="content" source="media/unify-match-rule.PNG" alt-text="Bateratu izenaren eta helbide elektronikoaren bat-etortze araua.":::
-
-7. Hautatu **gorde** eta **exekutatu**.
-
-### <a name="merge"></a>Konbinazioa
-
-1. Joan **konbinatu** fitxara.
-
-1. **loyCustomers** entitatearen **Kontaktuaren IDa** atalean, aldatu bistaratzeko izena **ContactIdLOYALTY** izenera, sartutako beste IDetatik bereizteko.
-
-   :::image type="content" source="media/unify-merge-contactid.PNG" alt-text="aldatu leialtasun IDaren kontaktuaren IDa.":::
-
-1. Aukeratu **Gorde** eta **exekutatu** konbinatzeko prozesua hasteko.
-
+[!INCLUDE [sample-guide-unification](includes/sample-guide-unification.md)]
 
 ## <a name="task-3---configure-the-subscription-churn-prediction"></a>3. zeregina - Konfiguratu harpidetzen galera-tasaren iragarpena
 

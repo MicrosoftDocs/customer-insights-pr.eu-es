@@ -8,12 +8,12 @@ ms.topic: conceptual
 author: mukeshpo
 ms.author: mukeshpo
 manager: shellyha
-ms.openlocfilehash: e155f75ffbc2c1bb228bece1b3e34846df794543
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: 33a0562854e97b9ac5218e060f965996305627fd
+ms.sourcegitcommit: d45c00a5f6cb106714366af81e8070e7f53654b3
 ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8642126"
+ms.lasthandoff: 05/15/2022
+ms.locfileid: "8757417"
 ---
 # <a name="entity-schemas-in-common-data-model"></a>Entitateen eskema datu arrunten ereduan
 
@@ -23,7 +23,7 @@ ms.locfileid: "8642126"
 
 Hau partekatutako datuen eredua da, aplikazioei eta datuen integratzaileei errazago lankidetzan aritzeko aukera ematea, datuen definizio bateratua emanez. Datu arrunten ereduak metadatuen sistema aberatsa biltzen du entitate estandarrak, harremanak, hierarkiak, ezaugarriak eta beste. Dynamics 365 aplikazioetatik du jatorria eta GitHuben irekita dago 260 estandar entitate baino gehiagorekin. Barneko eta kanpoko bazkideen sistema handi batek industriari buruzko kontzeptuak laguntzen ditu Datu Eredu Orokorrean.
 
-Sistema eta plataforma ugarik datu arruntaren eredua ezartzen dute gaur egun, besteak beste Power BI datu fluxuak eta Azure Data zerbitzuak. Dagoeneko onartzen da Microsoft Dataverse, Dynamics 365, Power Apps, Power BI, eta datozen Azure datu zerbitzuetan, zuzenean [Open Data Initiative](https://www.microsoft.com/open-data-initiative) zerbitzuaren balioetara gerturatuz.
+Sistema eta plataforma ugarik datu arruntaren eredua ezartzen dute gaur egun, besteak beste Power BI datu fluxuak eta Azure Data zerbitzuak. Dagoeneko onartzen da Microsoft Dataverse, Dynamics 365, Power Apps, Power BI, eta datozen Azure datu zerbitzuetan, zuzenean [Open Data Initiative](https://dynamics.microsoft.com/en-us/open-data-initiative/) zerbitzuaren balioetara gerturatuz.
 
 ## <a name="customer-insights-entity-schemas"></a>Customer Insights entitatearen eskemak
 

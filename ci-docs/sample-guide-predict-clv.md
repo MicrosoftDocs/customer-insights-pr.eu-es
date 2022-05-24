@@ -1,19 +1,19 @@
 ---
 title: Bezeroaren bizi-iraupenaren balioa iragarpenaren lagin gida
 description: Erabili lagin gida hau bezeroaren bizi-iraupenaren balio osorako iragarpen modeloa probatzeko.
-ms.date: 05/25/2021
-ms.reviewer: mhart
+ms.date: 03/31/2022
+ms.reviewer: v-wendysmith
 ms.subservice: audience-insights
 ms.topic: tutorial
 author: yashlundia
 ms.author: yalundia
 manager: shellyha
-ms.openlocfilehash: 9f8d1d0f0757d8003ad3859fab75362f3988cd00
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: 351946c734f5a1054eb3769b2d9cced3bed48e15
+ms.sourcegitcommit: 6a5f4312a2bb808c40830863f26620daf65b921d
 ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8642150"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "8740796"
 ---
 # <a name="customer-lifetime-value-clv-prediction-sample-guide"></a>Bezeroaren bizi-iraupenaren balioaren iragarpenaren lagin gida
 
@@ -102,64 +102,7 @@ Berrikusi artikuluak [datuak sartzeari buruz](data-sources.md) eta [datu-iturria
 
 ## <a name="task-2---data-unification"></a>2. zeregina - Datuen bateratzea
 
-Datuak irentsi ondoren, datuak bateratzeko prozesua hasten dugu bezeroaren profil bateratua sortzeko. Informazio gehiago lortzeko, ikusi [Datuen bateratzea](data-unification.md).
-
-### <a name="map"></a>Esleitu
-
-1. Behin datuak sartuta, esleitu merkataritza elektronikoko eta fideltasun-datuetako kontaktuak ohiko datu motei. Joan hona: **Datuak** > **Bateratu** > **Esleitu**.
-
-1. Hautatu bezeroaren profila adierazten duten entitateak – **eCommerceContacts** eta **loyCustomers**. Ondoren, hautatu **Aplikatu**.
-
-   ![bateratu ecommerce eta loyalty datu-iturburuak.](media/unify-ecommerce-loyalty.png)
-
-1. Hautatu **ContactId** **eCommerceContacts** entitatearen gako nagusi gisa eta **LoyaltyID** **loyCustomers** entitatearen gako nagusi gisa.
-
-   ![Bateratu LoyaltyId gako nagusi gisa.](media/unify-loyaltyid.png)
-
-1. Sakatu **Gorde**.
-
-### <a name="match"></a>Lotu
-
-1. Joan **Bat etorri** fitxara eta hautatu **Ezarri ordena**.
-
-1. Urtean **Lehen Hezkuntza** goitibeherako zerrenda, aukeratu **eCommerceContacts: eCommerce** iturri nagusi gisa eta erregistro guztiak barne.
-
-1. Urtean **2. entitatea** goitibeherako zerrenda, aukeratu **loyCustomers: LoyaltyScheme** eta erregistro guztiak sartu.
-
-   ![Bateratu eCommerce eta Loyalty bat-etortzea.](media/unify-match-order.png)
-
-1. Hautatu **Gehitu araua**
-
-1. Gehitu lehenengo baldintza FullName erabilita.
-
-   - ECommerceContacts aukeratzeko **Izen abizenak** goitibeherakoan.
-   - loyCustomers aukeratzeko **Izen abizenak** goitibeherakoan.
-   - Aukeratu **Normalizatu** goitibehera eta aukeratu **Mota (Telefonoa, Izena, Helbidea, ...)**.
-   - Ezarri **Zehaztasun maila**: **Oinarrizkoa** eta **Balioa**: **Altua**.
-
-1. Idatzi arau berriaren **Izen osoa, posta elektronikoa** izena.
-
-   - Gehitu helbide elektronikoaren bigarren baldintza bat **Gehitu baldintza** hautatuta
-   - ECommerceContacts entitateari dagokionez, aukeratu **Mezu elektronikoa** goitibeherakoan.
-   - loyCustomers entitateari dagokionez, aukeratu **Mezu elektronikoa** goitibeherakoan.
-   - "Normalizatu" hutsik utzi.
-   - Ezarri **Zehaztasun maila**: **Oinarrizkoa** eta **Balioa**: **Altua**.
-
-   ![Bateratu izenaren eta helbide elektronikoaren bat-etortze araua.](media/unify-match-rule.png)
-
-1. Hautatu **Eginda**.
-
-1. Hautatu **gorde** eta **exekutatu**.
-
-### <a name="merge"></a>Konbinazioa
-
-1. Joan **konbinatu** fitxara.
-
-1. **loyCustomers** entitatearen **Kontaktuaren IDa** atalean, aldatu bistaratzeko izena **ContactIdLOYALTY** izenera, sartutako beste IDetatik bereizteko.
-
-   ![aldatu leialtasun IDaren kontaktuaren IDa.](media/unify-merge-contactid.png)
-
-1. Hautatu **gorde** eta **exekutatu konbinazio eta beherako prozesuak**.
+[!INCLUDE [sample-guide-unification](includes/sample-guide-unification.md)]
 
 ## <a name="task-3---configure-customer-lifetime-value-prediction"></a>3. ataza - Konfiguratu bezeroaren bizi-iraupenaren balioaren iragarpena
 

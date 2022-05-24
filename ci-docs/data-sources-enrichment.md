@@ -8,12 +8,12 @@ author: NimrodMagen
 ms.author: nimagen
 ms.reviewer: v-wendysmith
 manager: shellyha
-ms.openlocfilehash: 56f6a8ad20224922f9968f0ad3b6a0e0a400214b
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
-ms.translationtype: MT
+ms.openlocfilehash: d1e14d2d4e718d71ccbd2afd259a350ad5c9e69a
+ms.sourcegitcommit: 4ae316c856b8de0f08a4605f73e75a8c2cf51c4e
+ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8642006"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "8755671"
 ---
 # <a name="enrichment-for-data-sources-preview"></a>Datu-iturburuetarako aberastea (aurrebista)
 
@@ -26,7 +26,7 @@ Kolaboratzaile edo Administratzaile baimenak izan behar dituzu aberasketak sortz
 1. Joan **Datuak** > **Bateratu**. Hautatu aberastu nahi duzun entitatea eta hautatu atributu bat entitatearen gako nagusi gisa. Informazio gehiagorako, ikus [Hautatu gako nagusia](map-entities.md#select-primary-key-and-semantic-type-for-attributes).
 
 1. Joan **Datuak** > **Datu-iturburuak**.
- 
+
 1. Hautatu aberastu nahi duzun datu-iturburu ondoan dagoen elipsi bertikala eta hautatu **Aberastu**.
 
    :::image type="content" source="media/data_sources_enrich_discover.png" alt-text="Datu iturriak aberasteko orria.":::
@@ -37,7 +37,7 @@ Kolaboratzaile edo Administratzaile baimenak izan behar dituzu aberasketak sortz
 
 ## <a name="supported-data-source-enrichments"></a>datu-iturburu aberasgarriak onartzen dira
 
-Une honetan datu-iturrietarako eskuragarri daude honako aberasgarri hauek. Berrikusi aberasteko urrats zehatzak nola konfiguratu ikasteko.
+Une honetan datu-iturrietarako eskuragarri daude honako aberasgarri hauek. Berrikusi aberasterako urrats zehatzak nola konfiguratu ikasteko.
 
 - [Helbide hobetuak](enrichment-enhanced-addresses.md)
 - [Enpresaren datu hobetuak](enrichment-enhanced-company-data.md)

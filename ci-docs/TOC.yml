@@ -66,12 +66,18 @@
   items:
     - name: Datuak bateratzeko ikuspegi orokorra
       href: data-unification.md
-    - name: Mapen entitateak eta atributuak
+    - name: Hautatu iturri-eremuak
       href: map-entities.md
-    - name: Batu entitateak
+    - name: Kendu erregistro bikoiztuak
+      href: remove-duplicates.md
+    - name: Partiduen baldintzak
       href: match-entities.md
-    - name: Konbinatu entitateak
+    - name: Bateratu bezeroen eremuak
       href: merge-entities.md
+    - name: Berrikusi datuen bateratzea
+      href: review-unification.md
+    - name: Eguneratu bateratze-ezarpenak
+      href: data-unification-update.md
 - name: Datu-aberastea
   items:
     - name: Aberastu bezeroen profilak
@@ -282,6 +288,8 @@
       href: apis.md
     - name: API erreferentzia
       href: 'https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights'
+    - name: OData lagin-kontsultak
+      href: odata-examples.md
 - name: Baimenaren kudeaketa (aurrebista)
   items:
     - name: Laguntza-atala

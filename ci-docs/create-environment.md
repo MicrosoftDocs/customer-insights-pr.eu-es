@@ -12,12 +12,12 @@ ms.custom: intro-internal
 searchScope:
 - ci-home
 - customerInsights
-ms.openlocfilehash: 0efda9d2997bcfd069b6d2445b69d159d7d3e59b
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
-ms.translationtype: MT
+ms.openlocfilehash: c64ac94a7e0e743d3c13e32e394cc5d409420622
+ms.sourcegitcommit: c00441bc60b978e25f930b06c9d97b46fe462538
+ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8642011"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8712887"
 ---
 # <a name="create-an-environment-in-customer-insights"></a>Sortu ingurune bat Customer Insights-en
 
@@ -63,8 +63,7 @@ Bi aukera izango dituzu: **Customer Insights biltegiratzea** (Customer Insights 
 Datuak gordeta Azure Data Lake Storage, onartzen duzu datuak Azure biltegiratze kontu horretarako kokapen geografiko egokira transferitu eta gordeko direla. Kokapen hau datuak gordetzen diren tokitik desberdina izan daiteke Dynamics 365 Customer Insights. Ikasi gehiago [Microsoft Trust Center](https://www.microsoft.com/trust-center).
 
 > [!NOTE]
-> Customer Insights-ek gaur egun honako hau onartzen du:
-> - Entitate ingestatuak Power BI batean gordetako datu-fluxuak Microsoft Dataverse -kudeatutako Data Lake.  
+> Customer Insights-ek gaur egun honako hau onartzen du:  
 > - Azure Data Lake Storage ingurunea sortzerakoan hautatu zenuen Azure eskualde bereko kontuak.
 > - Azure Data Lake Storage Gen2 diren eta dituzten kontuak *izen-espazio hierarkikoa* gaituta. Azure Data Lake Gen1 biltegiratze-kontuak ez dira onartzen.
 
@@ -80,7 +79,7 @@ Customer Insights-eko hainbat ingurune sortzen badituzu eta irteerako entitateak
 
 Eman zurea Microsoft Dataverse Datuak (profilak eta ikuspegiak) oinarritutako negozio-aplikazioekin partekatzeko ingurunea Dataverse, Dynamics 365 Marketing edo ereduetan oinarritutako aplikazioak bezala Power Apps. Utzi eremu hau hutsik zurea ez baduzu Dataverse ingurumena eta bat emango dizugu.
 
-Zurera konektatzen Dataverse inguruneak ere aukera ematen dizu [irensi lokal datu-iturburuetako datuak erabiliz Power Platform datu-fluxuak eta pasabideak](data-sources.md#add-data-from-on-premises-data-sources). Erabili ere egin dezakezu [kutxaz kanpoko iragarpen ereduak](predictions-overview.md?tabs=b2c#out-of-box-models) batera konektatuz Dataverse ingurunea.
+Zurera konektatzen Dataverse inguruneak ere aukera ematen dizu [irensi lokal datu-iturburuetako datuak erabiliz Power Platform datu-fluxuak eta pasabideak](data-sources.md#add-data-from-on-premises-data-sources).
 
 > [!IMPORTANT]
 > 1. Bezeroen ikuspegiak eta Dataverse Eskualde berean egon behar da datuak partekatzea ahalbidetzeko.

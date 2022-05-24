@@ -1,7 +1,7 @@
 ---
 title: Hasierako orria Customer Insights-en
 description: Hasi aplikazioa arakatzen Etxeko orrian.
-ms.date: 04/12/2022
+ms.date: 05/11/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -11,38 +11,55 @@ manager: shellyha
 searchScope:
 - ci-home
 - customerInsights
-ms.openlocfilehash: ebc5eb6b2dfaa9b013cfa0c9ce60c8a0a57a065d
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
-ms.translationtype: MT
+ms.openlocfilehash: cdeb48df2172785ed8adad0f21943974ec39d14d
+ms.sourcegitcommit: 94de4dacdb8a7f4bc0f5914e7398622e70b81ff3
+ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8642158"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "8743398"
 ---
 # <a name="explore-customer-insights"></a>Arakatu bezeroen ikuspegiak
 
-Ahal duzu [Dynamics 365 Customer Insights](https://home.ci.ai.dynamics.com/) URL honetan: [https://home.ci.ai.dynamics.com/](https://home.ci.ai.dynamics.com/).
+Sar zaitezke [Dynamics 365 Customer Insights](https://home.ci.ai.dynamics.com/) URL honetan: [https://home.ci.ai.dynamics.com/](https://home.ci.ai.dynamics.com/).
 
-**Etxea** orriak segmentuen, neurrien eta aberasteko datuen ikuspegi orokorra erakusten du (konfiguratuta badago) [mapa](map-entities.md), [bat-etortzea](match-entities.md) eta [konbinatu](merge-entities.md) faseak.
+The **Hasiera** orrialdeak ezaugarri nagusien konfigurazio-prozesuan gidatzen zaitu eta segmentuen, neurrien eta aberaste-datuen ikuspegi orokorra eskaintzen du.
 
 :::image type="content" source="media/home-page.png" alt-text="Hasierako pantailaren pantaila-argazkia lagin-estatistikak erakusten dituena.":::
 
-Customer Insights-en funtsezko kontrolak:
+## <a name="left-side-pane"></a>Ezkerreko alboko panela
 
-- Ezkerreko panela: Aldatu helburu nagusien artean B2C eta B2B ingurunea baduzu
+Erabili ezkerreko panela Customer Insights eremu ezberdinen artean nabigatzeko. 
 
-- Ezkerreko panela: nabigatu eremu ezberdinen artean eta aukeratu helburu nagusia
+Enpresa-kontuekin eta kontsumitzaile indibidualekin lan egiten baduzu, zure ikusle nagusia hauta dezakezu zure fokua horren arabera ezartzeko. 
 
-- Goiburua: aldatu lan egiten duzun ingurunea eta kudeatu administratzaile gisa
+## <a name="application-header"></a>Aplikazioaren goiburua
 
-- Goiburua: zehaztu Customer Insights-en ezarpen pertsonalak eta lortu laguntza aukerak
+The **Ingurumena** hautatzaileak lan egiten duzun ingurunea erakusten du eta administratzaile gisa inguruneak sortu edo kudeatzen uzten dizu.
 
-Orain atal hauek ikus ditzakezu hasierako orrian:
+Irribarrearen ikonoa da **Iritzia** kontrola. Hautatu ezazu Customer Insights-ekin duzun esperientzia kontatzeko. Zure iritzia aktiboki entzuten ari gara eta aldez aurretik eskertzen dizugu zer gustatzen zaizun eta nola hobetu dezakegun jakinarazteagatik.
 
-- **Azken segmentuak** bezero-taldeak erakusten ditu zuk definitu dituzun atributu demografiko, portaera edo transakzioetan oinarrituta. [Segmentuak sortzea](segments.md) zure bezero-taldea taldekatzen eta zure negozio-jarduerak hobeto bideratzen laguntzen dizu.
+The **Ezarpenak** kontrolak, engranajearen ikono batek adierazten duena, Customer Insights-en saioaren xehetasunak biltzeko eta zure ezarpen globalak konfiguratzeko aukera ematen dizu.Microsoft 365 profila. 
 
-- **Azken enpresa neurriak** fitxak erakusten ditu [Errendimenduaren adierazle nagusiak (KPI)](measures.md) definitu duzuna. Adibidez, bezero baten batez besteko probabilitatea edo bezero bakoitzeko batez besteko lineako gastua.
+**Laguntza** aukerak, galdera-ikurraren ikono batekin bistaratzen dira, testuingururako laguntza estekak eta bestelako baliabide lagungarriak eskaintzen dituzte.
 
-- **Azken aberasteak** Duela gutxi burutu diren aberaste-lanen emaitzak zerrendatzen ditu. [Aberasteek](enrichment-hub.md) zure bezero-baseari buruzko informazioa gehitzen dute. Adibidez, haienganako interesak eta markak ulertuz.
+Zure profileko argazkia irekitzen da **Kontu-kudeatzailea** zuretzat Microsoft 365 profila. Hautatu **Nire kontua** zure ezarpen pertsonalak kudeatzeko.
+
+## <a name="getting-started-with-customer-insights-section"></a>Bezeroen Insights atalean hastea
+
+Atal honek zure Customer Insights ingurunea konfiguratzeko prozesuan ibiltzen lagunduko dizuten txartelak ditu. 
+
+1. The **Gehitu datuak** txartelak zure datuak inportatzen laguntzen dizu. Customer Insights-ek onartzen du [hainbat aukera zure bezeroei buruzko datuak sartzeko](data-sources.md). Hautatu **Gehitu datu-iturriak** hasteko.
+1. Hasierako datuen inportazioa behar bezala amaitutakoan, erabil dezakezu **Datuak bateratu** datuak harmonizatzeko txartela eta [sortu bezeroen profil bateratuak](data-unification.md) iturri ezberdinetatik. 
+1. Bezeroen profil bateratuak ezarrita, berrikusteko garaia da **Datuak aztertu** aukerak eta lortu informazio gehiago. Saia zaitez sortzen [enpresa neurriak](measures.md) KPIak jarraitzeko, [segmentuak definitu](segments.md) publiko zehatzetara iristeko, edo [iragarpenak konfiguratu](predictions-overview.md) AIren laguntzarekin.
+1. Orain zure bezeroen datuak inportatu, bateratu eta txukun egituratuta daudenez, gurea erabiltzen duzu [esportazio-helmuga desberdinak](export-destinations.md) datuei buruzko neurriak hartzeko. Hautatu **Gehitu konexioak** zure gogoko zerbitzuak konektatzeko. Adibidez, esportatu datuak Dynamics 365 Marketing-era irteerako marketin-kanpainak sortzeko edo bezeroen bidaiak sortzeko. 
+
+## <a name="your-customer-insights-section"></a>Zure bezeroei buruzko informazio atala
+
+- **Segmentuak** bezero-taldeak erakusten ditu zuk definitu dituzun atributu demografiko, portaera edo transakzioetan oinarrituta. [Segmentuak sortzea](segments.md) zure bezero-taldea taldekatzen eta zure negozio-jarduerak hobeto bideratzen laguntzen dizu.
+
+- **Enpresa neurriak** fitxak erakusten ditu [Errendimenduaren adierazle nagusiak (KPI)](measures.md) definitu duzuna. Adibidez, bezero baten batez besteko probabilitatea edo bezero bakoitzeko batez besteko lineako gastua.
+
+- **Aberasgarriak** Duela gutxi burutu diren aberastasun-exekutuen emaitzak zerrendatzen ditu. [Aberasteek](enrichment-hub.md) zure bezero-baseari buruzko informazioa gehitzen dute. Adibidez, haienganako interesak eta markak ulertuz.
 
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

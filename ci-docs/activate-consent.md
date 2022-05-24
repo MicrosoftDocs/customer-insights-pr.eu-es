@@ -1,23 +1,22 @@
 ---
 title: Aktibatu adostasun-arauak segmentuetarako
-description: Jarraitu urrats hauek baimenaren datuak lotzeko eta baimenaren egiaztapenak aktibatzeko Dynamics 365 Customer Insights. Administratzaile batek baimenaren egiaztapenak ere desgaitu ditzake.
-ms.date: 11/12/2021
-ms.subservice: audience-insights
+description: Jarraitu urrats hauek baimenaren datuak lotzeko eta baimenaren egiaztapenak aktibatzeko Dynamics 365 Customer Insights. Administratzaile batek baimenaren egiaztapenak ere desgai ditzake.
+ms.date: 04/27/2022
 ms.topic: how-to
-author: smithy7
-ms.author: smithc
+author: anubhav-t
+ms.author: antando
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: bfa03f4b7b56b300a74ebd04721cd64b893879f1
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: f82e3a4031fee8bcaa88575cbd68b37385a7fffb
+ms.sourcegitcommit: 4ae316c856b8de0f08a4605f73e75a8c2cf51c4e
 ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8642013"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "8755155"
 ---
 # <a name="activate-consent-rules"></a>Aktibatu adostasun-arauak
 
-The [Adostasun Zentroa (aurrebista)](consent-management/overview.md) Hainbat iturritako adostasun-datuak harmonizatzen laguntzen dizu. Erabili bateratua *Adostasuna* entitateak baimen-kontrol lehenetsiak aplikatzeko. Adostasun-datuak Adostasun Zentrora inportatu eta datuetarako arauak konfiguratu ondoren, *Adostasuna* entitatea automatikoki sinkronizatzen da Dynamics 365 Customer Insights.
+The [Adostasun Zentroa (aurrebista)](consent-management/overview.md) Hainbat iturritako adostasun-datuak harmonizatzen laguntzen dizu. Erabili bateratua *Adostasuna* entitateak baimenaren egiaztapen lehenetsiak aplikatzeko. Adostasun-datuak inportatu eta mapa-arauak konfiguratu ondoren, *Adostasuna* entitatea automatikoki sinkronizatzen da Dynamics 365 Customer Insights.
 
 ## <a name="enable-consent-checks"></a>Gaitu onarpen-egiaztapenak
 

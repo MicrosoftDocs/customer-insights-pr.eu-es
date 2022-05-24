@@ -11,12 +11,12 @@ manager: shellyha
 searchScope:
 - ci-system-diagnostic
 - customerInsights
-ms.openlocfilehash: 18fc072d129be6b4fc5470b1057f592dc2638216
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: 03169f0218dfad55cf20ecaf1c1596c652e5f601
+ms.sourcegitcommit: 4ae316c856b8de0f08a4605f73e75a8c2cf51c4e
 ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8642004"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "8755247"
 ---
 # <a name="log-forwarding-in-dynamics-365-customer-insights-with-azure-monitor-preview"></a>Saioa birbidaltzea Dynamics 365 Customer Insights Azure Monitor-ekin (aurrebista)
 
@@ -27,8 +27,8 @@ Customer Insights-ek gertaeren erregistro hauek bidaltzen ditu:
 - **Ikuskaritza Gertaerak**
   - **APIEgertaera** - Aldaketen jarraipena gaitzen du Dynamics 365 Customer Insights UI.
 - **Gertaera Operatiboak**
-  - **WorkflowEvent** - Workflow-ak konfiguratzeko aukera ematen du [Datu-iturriak](data-sources.md),[bateratu](data-unification.md) eta [aberastu](enrichment-hub.md) eta azkenean [esportatu](export-destinations.md) datuak beste sistema batzuetara. Urrats horiek guztiak banan-banan egin daitezke (adibidez, esportazio bakarra abiarazi) edo orkestratu (adibidez, datu-iturrietako datuak freskatzea, aberastasun gehigarriak ekarriko dituen bateratze-prozesua abiarazten duten datu-iturrietako datuak eta behin datuak beste sistema batera esportatu ondoren). Xehetasun gehiagorako, ikusi [WorkflowEvent eskema](#workflow-event-schema).
-  - **APIEgertaera** - API dei guztiak bezeroen instantziari Dynamics 365 Customer Insights. Xehetasun gehiagorako, ikusi [APIEgertaera eskema](#api-event-schema).
+  - **WorkflowEvent** - Lan-fluxuak konfiguratzeko aukera ematen dizu [Datu-iturriak](data-sources.md),[bateratu](data-unification.md),[aberastu](enrichment-hub.md), eta azkenean [esportatu](export-destinations.md) datuak beste sistema batzuetara. Urrats horiek guztiak banaka egin daitezke (adibidez, esportazio bakarra abiarazi). Orkestratuta ere exekutatu daiteke (adibidez, bateratze-prozesua abiarazten duen datu-iturburuetako datuak freskatzea, aberasketak sartu eta datuak beste sistema batera esportatu ondoren). Informazio gehiagorako, ikusi [WorkflowEvent eskema](#workflow-event-schema).
+  - **APIEgertaera** - API dei guztiak bezeroen instantziari Dynamics 365 Customer Insights. Informazio gehiagorako, ikusi [APIEgertaera eskema](#api-event-schema).
 
 ## <a name="set-up-the-diagnostic-settings"></a>Konfiguratu diagnostiko ezarpenak
 
@@ -55,7 +55,7 @@ Customer Insights-en diagnostikoak konfiguratzeko, aurrebaldintza hauek bete beh
 
 1. Aukeratu **Maizterrak** Azure harpidetzaren xede-baliabidearekin eta hautatu **saioa hasi**.
 
-1. Hautatu **Baliabide mota** (Biltegiratze-kontua, Gertaeren Hub edo erregistro-analisiak).
+1. Hautatu **Baliabide mota** (Biltegiratze-kontua, gertaeren zentroa edo erregistro-analisiak).
 
 1. Hautatu **Harpidetza** helmuga baliabiderako.
 
@@ -75,7 +75,7 @@ Customer Insights-en diagnostikoak konfiguratzeko, aurrebaldintza hauek bete beh
 
 1. urtean **Ekintzak** zutabea, hautatu **Ezabatu** ikonoa.
 
-1. Berretsi ezabatzea erregistro-birbidaltzea geldiarazteko. Azure harpidetzako baliabidea ez da ezabatuko. Esteka aukera dezakezu **Ekintzak** zutabea hautatutako baliabiderako Azure ataria ireki eta bertan ezabatzeko.
+1. Berretsi ezabatzea erregistro-birbidaltzea geldiarazteko. Azure harpidetzako baliabidea ez da ezabatuko. Esteka hauta dezakezu **Ekintzak** zutabea hautatutako baliabiderako Azure ataria ireki eta bertan ezabatzeko.
 
 ## <a name="log-categories-and-event-schemas"></a>Erregistro-kategoriak eta gertaeren eskemak
 
@@ -182,7 +182,7 @@ The`identity` JSON objektuak honako egitura du
 
 ### <a name="workflow-event-schema"></a>Lan-fluxuaren gertaeren eskema
 
-Lan-fluxuak hainbat urrats ditu. [Hartu datu-iturriak](data-sources.md),[bateratu](data-unification.md),[aberastu](enrichment-hub.md), eta [esportatu](export-destinations.md) datuak. Urrats horiek guztiak banaka edo ondorengo prozesuekin orkestratu daitezke. 
+Lan-fluxuak hainbat urrats ditu. [Hartu datu-iturriak](data-sources.md),[bateratu](data-unification.md),[aberastu](enrichment-hub.md), eta [esportatu](export-destinations.md) datuak. Urrats horiek guztiak banaka edo ondorengo prozesuekin orkestratu daitezke.
 
 #### <a name="operation-types"></a>Eragiketa motak
 
@@ -215,7 +215,7 @@ Lan-fluxuak hainbat urrats ditu. [Hartu datu-iturriak](data-sources.md),[baterat
 | `time`          | Denbora-zigilua | Beharrezkoa          | Gertaeraren ordu-zigilua (UTC).                                                                                                                                 | `2020-09-08T09:48:14.8050869Z`                                                                                                                                           |
 | `resourceId`    | String    | Beharrezkoa          | Gertaera igorri duen instantziaren ResourceId.                                                                                                            | `/SUBSCRIPTIONS/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXX/RESOURCEGROUPS/<RESOURCEGROUPNAME>/`<br>`PROVIDERS/MICROSOFT.D365CUSTOMERINSIGHTS/`<br>`INSTANCES/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXX` |
 | `operationName` | String    | Beharrezkoa          | Gertaera honek adierazten duen eragiketaren izena. `{OperationType}.[WorkFlow|Task][Started|Completed]`. Ikusi [Eragiketa Motak](#operation-types) erreferentziarako. | `Segmentation.WorkflowStarted`,<br> `Segmentation.TaskStarted`, <br> `Segmentation.TaskCompleted`, <br> `Segmentation.WorkflowCompleted`                                 |
-| `category`      | String    | Beharrezkoa          | Gertaeraren erregistro-kategoria. Beti`Operational` Workflow ekitaldietarako                                                                                           | `Operational`                                                                                                                                                            | 
+| `category`      | String    | Beharrezkoa          | Gertaeraren erregistro-kategoria. Beti`Operational` Workflow ekitaldietarako                                                                                           | `Operational`                                                                                                                                                            |
 | `resultType`    | String    | Beharrezkoa          | Ekitaldiaren egoera. `Running`,`Skipped`,`Successful`,`Failure`                                                                                            |                                                                                                                                                                          |
 | `durationMs`    | Long      | Aukerakoa          | Eragiketaren iraupena milisegundotan.                                                                                                                    | `133`                                                                                                                                                                    |
 | `properties`    | String    | Aukerakoa          | Gertaeren kategoria jakin baterako propietate gehiago dituen JSON objektua.                                                                                        | Ikus azpiatala [Lan-fluxuaren propietateak](#workflow-properties-schema)                                                                                                       |

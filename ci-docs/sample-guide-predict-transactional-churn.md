@@ -1,19 +1,19 @@
 ---
 title: Transakzioen galera-tasaren iragarpenari buruzko adibide-gida
 description: Erabili gida hau erabiltzeko prest dagoen transakzioen galera-tasaren iragarpen-eredua probatzeko.
-ms.date: 11/19/2020
+ms.date: 05/11/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: tutorial
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: 05c221c634b8e0f582a6c6d3f4d90e971aa9707e
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: 3edbf2a471313379c28db874d7f19c3265a23299
+ms.sourcegitcommit: 6a5f4312a2bb808c40830863f26620daf65b921d
 ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8642165"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "8741304"
 ---
 # <a name="transactional-churn-prediction-sample-guide"></a>Transakzioen galera-tasaren iragarpenari buruzko adibide-gida
 
@@ -86,69 +86,13 @@ Berrikusi artikuluak [datuak sartzeari buruz](data-sources.md) eta [datu-iturria
 
 1. Gorde datu-iturburua.
 
-
 ## <a name="task-2---data-unification"></a>2. zeregina - Datuen bateratzea
 
-Behin datuak sartuta, **Esleitu, bat etorri, konbinatu** prozesuarekin hasiko gara, bezeroaren profil bateratu bat sortzeko. Informazio gehiago lortzeko, ikusi [Datuen bateratzea](data-unification.md).
-
-### <a name="map"></a>Esleitu
-
-1. Behin datuak sartuta, esleitu merkataritza elektronikoko eta fideltasun-datuetako kontaktuak ohiko datu motei. Joan hona: **Datuak** > **Bateratu** > **Esleitu**.
-
-1. Hautatu bezeroaren profila adierazten duten entitateak – **eCommerceContacts** eta **loyCustomers**. 
-
-   :::image type="content" source="media/unify-ecommerce-loyalty.PNG" alt-text="bateratu ecommerce eta loyalty datu-iturburuak.":::
-
-1. Hautatu **ContactId** **eCommerceContacts** entitatearen gako nagusi gisa eta **LoyaltyID** **loyCustomers** entitatearen gako nagusi gisa.
-
-   :::image type="content" source="media/unify-loyaltyid.PNG" alt-text="Bateratu LoyaltyId gako nagusi gisa.":::
-
-### <a name="match"></a>Lotu
-
-1. Joan **Bat etorri** fitxara eta hautatu **Ezarri ordena**.
-
-1. Urtean **Lehen Hezkuntza** goitibeherako zerrenda, aukeratu **eCommerceContacts: eCommerce** iturri nagusi gisa eta erregistro guztiak barne.
-
-1. Urtean **2. entitatea** goitibeherako zerrenda, aukeratu **loyCustomers: LoyaltyScheme** eta erregistro guztiak sartu.
-
-   :::image type="content" source="media/unify-match-order.PNG" alt-text="Bateratu eCommerce eta Loyalty bat-etortzea.":::
-
-1. Hautatu **Sortu beste arau bat**
-
-1. Gehitu lehenengo baldintza FullName erabilita.
-
-   * ECommerceContacts aukeratzeko **Izen abizenak** goitibeherakoan.
-   * loyCustomers aukeratzeko **Izen abizenak** goitibeherakoan.
-   * Aukeratu **Normalizatu** goitibeherako zerrendan eta aukeratu **Mota (Telefonoa, Izena, Helbidea, ...)**.
-   * Ezarri **Zehaztasun maila**: **Oinarrizkoa** eta **Balioa**: **Altua**.
-
-1. Idatzi arau berriaren **Izen osoa, posta elektronikoa** izena.
-
-   * Gehitu helbide elektronikoaren bigarren baldintza bat **Gehitu baldintza** hautatuta
-   * ECommerceContacts entitateari dagokionez, aukeratu **Mezu elektronikoa** goitibeherakoan.
-   * loyCustomers entitateari dagokionez, aukeratu **Mezu elektronikoa** goitibeherakoan. 
-   * "Normalizatu" hutsik utzi. 
-   * Ezarri **Zehaztasun maila**: **Oinarrizkoa** eta **Balioa**: **Altua**.
-
-   :::image type="content" source="media/unify-match-rule.PNG" alt-text="Bateratu izenaren eta helbide elektronikoaren bat-etortze araua.":::
-
-7. Hautatu **gorde** eta **exekutatu**.
-
-### <a name="merge"></a>Konbinazioa
-
-1. Joan **konbinatu** fitxara.
-
-1. **loyCustomers** entitatearen **Kontaktuaren IDa** atalean, aldatu bistaratzeko izena **ContactIdLOYALTY** izenera, sartutako beste IDetatik bereizteko.
-
-   :::image type="content" source="media/unify-merge-contactid.PNG" alt-text="aldatu leialtasun IDaren kontaktuaren IDa.":::
-
-1. Aukeratu **Gorde** eta **exekutatu** konbinatzeko prozesua hasteko.
-
-
+[!INCLUDE [sample-guide-unification](includes/sample-guide-unification.md)]
 
 ## <a name="task-3---configure-transaction-churn-prediction"></a>3. zeregina - Konfiguratu transakzioen galera-tasaren iragarpena
 
-Bezeroen profil bateratuak behar bezala jarrita, harpidetzaren galera-tasaren iragarpena exekutatu dezakegu. Urrats zehatzak ikusteko, ikusi [Harpidetza txanda iragarpen](predict-subscription-churn.md) Artikulu. 
+Bezeroen profil bateratuak ezarrita, orain iragarpen transakzioen txanda exekutatu dezakegu. Urrats zehatzak ikusteko, ikusi [Transakzio txanda iragarpen](predict-transactional-churn.md) Artikulu. 
 
 1. Joan **Adimena** > **Ezagutu** atalera eta hautatu **Bezeroen galera-tasaren eredua**.
 
@@ -180,7 +124,7 @@ Bezeroen profil bateratuak behar bezala jarrita, harpidetzaren galera-tasaren ir
 
 ## <a name="task-4---review-model-results-and-explanations"></a>4. zeregina - Berrikusi ereduen emaitzak eta azalpenak
 
-Ereduak datuen prestakuntza eta puntuazioa osatuko ditu. Harpidetzen galera-tasaren ereduaren azalpenak berrikus ditzakezu. Informazio gehiagorako, ikusi [Berrikusi iragarpen-egoera eta emaitzak](predict-subscription-churn.md#review-a-prediction-status-and-results).
+Ereduak datuen prestakuntza eta puntuazioa osatuko ditu. Orain birrintze ereduaren azalpenak berrikus ditzakezu. Informazio gehiagorako, ikusi [Berrikusi iragarpen-egoera eta emaitzak](predict-transactional-churn.md#review-a-prediction-status-and-results).
 
 ## <a name="task-5---create-a-segment-of-high-churn-risk-customers"></a>5. zeregina - Sortu galera-arrisku handiko bezeroen segmentu bat
 
@@ -192,14 +136,12 @@ Ereduak sortutako entitatean oinarritutako segmentu berri bat sor dezakezu.
 
    :::image type="content" source="media/segment-intelligence.PNG" alt-text="Ereduaren irteerarekin segmentu bat sortzea.":::
 
-1. Aukeratu **OOBSubscriptionChurnPrediction** amaiera-puntua eta definitu segmentua: 
+1. Hautatu **OOBeCommerceChurnPrediction** amaierako puntua eta definitu segmentua: 
    - Eremua: ChurnScore
    - Eragilea: hau baino handiagoa
    - Balioa: 0.6
-   
-   :::image type="content" source="media/segment-setup-subs.PNG" alt-text="Konfiguratu harpidetzaren galera-tasaren segmentua.":::
 
-Harpidetza-negozio honen galera-arrisku handiko bezeroak identifikatzen dituen segmentu dinamikoki eguneratua duzu.
+Orain dinamikoki eguneratzen den segmentu bat duzu, arrisku handiko bezeroak identifikatzen dituena.
 
 Informazio gehiagorako, ikusi [Sortu eta kudeatu segmentuak](segments.md).
 

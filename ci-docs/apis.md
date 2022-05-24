@@ -11,12 +11,12 @@ manager: shellyha
 searchScope:
 - ci-system-api-usage
 - customerInsights
-ms.openlocfilehash: ecc8bb3dbec1d4583c4bf2a58058145343945299
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
-ms.translationtype: MT
+ms.openlocfilehash: a460ec87ec85f0614f944d352588d4ca899f8120
+ms.sourcegitcommit: 4ae316c856b8de0f08a4605f73e75a8c2cf51c4e
+ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8642109"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "8755435"
 ---
 # <a name="work-with-customer-insights-apis"></a>Lan egin Customer Insights APIekin
 
@@ -25,7 +25,7 @@ Dynamics 365 Customer Insights APIak eskaintzen ditu zure datuetan oinarritutako
 > [!IMPORTANT]
 > API horien xehetasunak hemen daude zerrendatuta: [Customer Insights APIen erreferentzia](https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights). Eragiketei, parametroei eta erantzunen inguruko informazio osagarria biltzen dute.
 
-Artikulu honetan Customer Insights APIak nola sartu, Azure aplikazioen erregistroa sortu eta eskuragarri dauden bezero liburutegiekin nola hasi deskribatzen da.
+Artikulu honek deskribatzen du nola atzitu Customer Insights APIetara, nola sortu Azure App erregistroa eta nola hasi bezeroen liburutegiekin.
 
 ## <a name="get-started-trying-the-customer-insights-apis"></a>Hasi Customer Insights APIak probatzen
 
@@ -83,13 +83,13 @@ Aplikazioaren / Bezeroaren IDa erabil dezakezu Microsoft Authentication Library 
 
 MSAL-i buruzko informazio gehiago lortzeko, ikusi [Microsoft Authentication Library (MSAL) zerbitzuaren ikuspegi orokorra](/azure/active-directory/develop/msal-overview).
 
-Azure aplikazioen erregistroari buruzko informazio gehiago lortzeko, ikusi [Erregistratu eskaera bat](/azure/active-directory/develop/quickstart-register-app.md#register-an-application).
+Azure aplikazioen erregistroari buruzko informazio gehiago lortzeko, ikusi [Erregistratu eskaera bat](/graph/auth-register-app-v2).
 
 APIak gure bezeroen liburutegietan erabiltzeari buruzko informazioa lortzeko, ikusi [Customer Insights bezero liburutegiak](#customer-insights-client-libraries).
 
 ### <a name="server-to-server-application-permissions"></a>Zerbitzaritik zerbitzarirako aplikazioen baimenak
 
-[Aplikazioak erregistratzeko atalak](#create-a-new-app-registration-in-the-azure-portal) erabiltzaileak autentikatzeko saioa hastea eskatzen duen aplikazio bat nola erregistratu azaltzen du. Ikasi erabiltzaileen elkarrekintzarik behar ez duen eta zerbitzarian exekutatu daitekeen aplikazioen erregistroa nola sortu.
+[Aplikazioak erregistratzeko atalak](#create-a-new-app-registration-in-the-azure-portal) erabiltzaileak autentikatzeko saioa hastea eskatzen duen aplikazio bat nola erregistratu azaltzen du. Ikasi erabiltzailearen interakziorik behar ez duen eta zerbitzari batean exekutatu daitekeen aplikazioen erregistroa nola sortu.
 
 1. Azure atariko aplikazioaren erregistroan, joan hona: **API baimenak**.
 
@@ -112,6 +112,10 @@ APIak gure bezeroen liburutegietan erabiltzeari buruzko informazioa lortzeko, ik
    Ireki Customer Insights, joan hona: **Administratzailea** > **Baimenak** eta hautatu **Gehitu erabiltzailea**.
 
 1. Bilatu zure aplikazioaren erregistroaren izena, hautatu bilaketaren emaitzetan eta hautatu **Gorde**.
+
+## <a name="sample-queries"></a>Lagin-kontsultak
+
+OData lagin-kontsulten zerrenda labur bat osatu dugu APIekin lan egiteko: [OData kontsultaren adibideak](odata-examples.md).
 
 ## <a name="customer-insights-client-libraries"></a>Customer Insights bezero liburutegiak
 
@@ -137,7 +141,7 @@ Ikasi NuGet.org orrialdetik C# bezero liburutegiak erabiltzen hasten. NuGet pake
 
 1. Erabili [Microsoft autentifikazio liburutegia (MSAL)](/azure/active-directory/develop/msal-overview) `AccessToken` bat lortzeko lehendik duzun [Azure aplikazioaren erregistroa](#create-a-new-app-registration-in-the-azure-portal) erabiliz.
 
-1. Token bat ongi autentifikatu eta eskuratu ondoren, eraiki berria edo erabili lehendik dagoen bat`HttpClient` gehigarriarekin **DefaultRequestHeaders "Baimena"** ezarri **Eramailearen "sarbide-tokena"** eta **Ocp-Apim-Harpidetza-gakoa** ezarri [**harpidetza-gakoa** zure Customer Insights ingurunetik](#get-started-trying-the-customer-insights-apis).   
+1. Token bat ongi autentifikatu eta eskuratu ondoren, eraiki berria edo erabili lehendik dagoen bat`HttpClient` nirekin **DefaultRequestHeaders "Baimena"** ezarri **Eramailearen "sarbide-tokena"** eta **Ocp-Apim-Harpidetza-gakoa** ezarri [**harpidetza-gakoa** zure Customer Insights ingurunetik](#get-started-trying-the-customer-insights-apis).   
  
    Berrezarri **Baimena** goiburua egokia denean. Adibidez, token-a iraungi denean.
 
@@ -147,7 +151,7 @@ Ikasi NuGet.org orrialdetik C# bezero liburutegiak erabiltzen hasten. NuGet pake
 
 1. Egin deiak bezeroekin "luzapen metodoetara", adibidez, `GetAllInstancesAsync`. Azpiko `Microsoft.Rest.HttpOperationResponse`-rako sarbidea hobetsi bada, erabili "http mezuen metodoak" erabili, adibidez, `GetAllInstancesWithHttpMessagesAsync`.
 
-1. Erantzuna `object` motakoa izango da ziurrenik, metodoak hainbat mota itzul ditzakeelako (adibidez, `IList<InstanceInfo>` eta `ApiErrorResult`). Itzulera mota egiaztatzeko, objektuak segurtasunez bihur ditzakezu eragiketaren [APIaren xehetasunen orrian](https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights) zehaztutako erantzun motara.    
+1. Erantzuna `object` motakoa izango da ziurrenik, metodoak hainbat mota itzul ditzakeelako (adibidez, `IList<InstanceInfo>` eta `ApiErrorResult`). Itzultze-mota egiaztatzeko, gailuan zehaztutako erantzun-motetako objektuak erabiltzen dituzu [API xehetasunen orria](https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights) eragiketa horretarako.    
    
    Eskaerari buruzko informazio gehiago behar izanez gero, erabili **http mezuen metodoak** erantzun gordineko objektuan sartzeko.
 

@@ -1,25 +1,25 @@
 ---
 title: Produktuen gomendioen iragarpena
 description: Aurreikusi litekeena dela bezeroak eros ditzakeen produktuak edo haiekin elkarreragitea.
-ms.date: 01/13/2022
+ms.date: 05/09/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: wmelewong
 ms.author: wameng
 manager: shellyha
-ms.openlocfilehash: fe6c0e8ba8236243682a4105535a0026c4343c3d
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: 9b3e60c49d294d031f43ef0594cb69707bb64019
+ms.sourcegitcommit: 82f417cfb0a16600e9f552d7a21d598cc8f5a267
 ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8642174"
+ms.lasthandoff: 05/16/2022
+ms.locfileid: "8762717"
 ---
 # <a name="product-recommendation-prediction"></a>Produktuen gomendioen iragarpena
 
 Produktuen gomendio ereduak produktu iragarleentzako gomendio multzoak sortzen ditu. Gomendioak aurreko erosketa portaeran eta antzeko erosketa ereduak dituzten bezeroetan oinarritzen dira. Produktu gomendioen iragarpen berriak sor ditzakezu **Adimena** > **Iragarpenak** orrialdea. Aukeratu **Nire iragarpenak** sortu dituzun beste iragarpen batzuk ikusteko.
 
-Produktuen gomendioak tokiko lege eta araudien eta bezeroen itxaropenen mende egon daitezke, eredua bereziki kontuan hartzeko diseinatuta ez dagoena.  Aurreikuspen gaitasun honen erabiltzaile gisa, **gomendioak berrikusi behar dituzu zure bezeroei entregatu aurretik** aplika daitezkeen lege edo arauak eta bezeroen itxaropenak gomendatzen dituzunaren arabera betetzen dituzula ziurtatzeko. 
+Produktuen gomendioak tokiko lege eta araudien eta bezeroen itxaropenen mende egon daitezke, eredua bereziki kontuan hartzeko diseinatuta ez dagoena.  Aurreikuspen gaitasun honen erabiltzaile gisa, **gomendioak berrikusi behar dituzu zure bezeroei entregatu aurretik** aplika daitezkeen lege edo arauak eta bezeroen itxaropenak gomendatzen dituzunaren arabera betetzen dituzula ziurtatzeko.
 
 Gainera, modelo honen irteerak produktuaren IDan oinarritutako gomendioak emango dizkizu. Bidalketa-mekanismoak aurreikusitako produktuaren IDak mapatu beharko ditu zure bezeroek eduki egokia izan dezaten, lokalizazioa, irudiaren edukia eta negozioaren inguruko bestelako edukia edo portaera kontuan izan dezaten.
 
@@ -33,29 +33,31 @@ Ezaugarri hau probatzea interesatzen bazaizu baina beheko baldintzak betetzeko d
 
 - Negozioaren ezagutza zure negozioarentzako produktu mota desberdinak ulertzeko eta zure bezeroek haiekin nola elkarreragiten duten jakiteko. Zure bezeroek aurretik erositako produktuak gomendatzea edo produktu berrietarako gomendioak onartzen ditugu.
 
+- Zure ingurunea horretarako konfiguratu behar da **kontsumitzaile indibidualak** helburu nagusiko publikoa.
+
 - Zure transakzio eta erosketen inguruko datuak eta horien historia:
-    - Erosketak edo transakzioak bereizteko transakzio identifikatzaileak.
-    - Bezeroen identifikadoreak, transakzioak zure bezeroei esleitzeko.
-    - Transakzioen gertaeren datak, transakzioaren datak zehazten dituztenak.
-    - Transakzioaren produktuaren IDa.
-    - (Aukerakoa) Produktuen katalogoko datuen entitatea produktuen iragazkia erabiltzeko.
-    - (Aukerakoa) Transakzio bat itzultze bat den.
-    - Datu semantikoen eskemak informazio hau behar du:
-        - **Transakzioaren IDa:** Erosketa edo transakzio baten identifikatzaile bakarra.
-        - **Transakzioaren data:** Erosketaren edo transakzioaren data.
-        - **Transakzioaren balioa:** transakzioaren edo elementuaren zenbakizko balioa.
-        - **Produktuaren ID esklusiboa:** erositako produktuaren edo zerbitzuaren IDa, zure datuak lerro-elementuaren mailan badaude.
-        - (Aukerakoa) **Erosi edo itzuli:** Balioa duen eremu boolearra *egia* transakzio bat itzulketa izan zela identifikatzen du. Erosketa edo Itzulketa datuak ematen ez badira eredua eta **Transakzioaren balioa** negatiboa da, informazio hau itzulera bat ondorioztatzeko ere erabiliko dugu.
+  - Erosketak edo transakzioak bereizteko transakzio identifikatzaileak.
+  - Bezeroen identifikadoreak, transakzioak zure bezeroei esleitzeko.
+  - Transakzioen gertaeren datak, transakzioaren datak zehazten dituztenak.
+  - Transakzioaren produktuaren IDa.
+  - (Aukerakoa) Produktuen katalogoko datuen entitatea produktuen iragazkia erabiltzeko.
+  - (Aukerakoa) Transakzio bat itzultze bat den.
+  - Datu semantikoen eskemak informazio hau behar du:
+    - **Transakzioaren IDa:** Erosketa edo transakzio baten identifikatzaile bakarra.
+    - **Transakzioaren data:** Erosketaren edo transakzioaren data.
+    - **Transakzioaren balioa:** transakzioaren edo elementuaren zenbakizko balioa.
+    - **Produktuaren ID esklusiboa:** erositako produktuaren edo zerbitzuaren IDa, zure datuak lerro-elementuaren mailan badaude.
+    - (Aukerakoa) **Erosi edo itzuli:** Balioa duen eremu boolearra *egia* transakzio bat itzulketa izan zela identifikatzen du. Erosketa edo Itzulketa datuak ematen ez badira eredua eta **Transakzioaren balioa** negatiboa da, informazio hau itzulera bat ondorioztatzeko ere erabiliko dugu.
 - Iradokitako datuen ezaugarriak:
-    - Datu historiko nahikoak: gutxienez urtebeteko datu transakzionalak, ahal izanez gero, bizpahiru urte, urtaroak sartzeko.
-    - Erosketa anitz bezero bakoitzeko: hiru transakzio edo gehiago Bezeroaren ID bakoitzeko
-    - Bezero kopurua: gutxienez 100 bezero, ahal dela 10.000 bezero baino gehiago. Ereduak huts egingo du 100 bezero baino gutxiagorekin.
+  - Datu historiko nahikoak: gutxienez urtebeteko datu transakzionalak, ahal izanez gero, bizpahiru urte, urtaroak sartzeko.
+  - Erosketa anitz bezero bakoitzeko: hiru transakzio edo gehiago Bezeroaren ID bakoitzeko
+  - Bezero kopurua: gutxienez 100 bezero, ahal dela 10.000 bezero baino gehiago. Ereduak huts egingo du 100 bezero baino gutxiagorekin.
 
 > [!NOTE]
+>
 > - Ereduak zure bezeroen transakzioen historia eskatzen du. Transakzio baten definizioa nahiko malgua da. Erabiltzaile-produktu elkarreragina deskribatzen duten datu guztiek sarrera gisa funtziona dezakete. Adibidez, produktu bat erostea, klasea hartzea edo ekitaldi batera joatea.
 > - Une honetan transakzioen historiako entitate bakarra konfigura daiteke. Erosketa-entitate anitz badaude, elkartu itzazu Power Query datuak sartu aurretik.
 > - Ordena eta eskaeraren xehetasunak entitate desberdinak badira, batu haiekin ereduan erabili aurretik. Ereduak ez du entitate bateko eskaera IDarekin edo ordainagiriaren IDarekin soilik funtzionatzen.
-
 
 ## <a name="create-a-product-recommendation-prediction"></a>Sortu produktuak gomendatzeko iragarpena
 
@@ -76,7 +78,7 @@ Ezaugarri hau probatzea interesatzen bazaizu baina beheko baldintzak betetzeko d
 ### <a name="define-product-recommendation-configuration"></a>Definitu produktuaren gomendioen konfigurazioa
 
 1. Ezarri **Produktu kopurua** bezero bati gomendatu nahi diozu. Balio hori zure bidalketa metodoak datuak nola betetzen dituen araberakoa da. Hiru produktu gomendatzen badituzu, ezarri balio hori horren arabera.
-   
+
    >[!TIP]
    > Hautatu dezakezu **Gorde zirriborroa** edozein unetan iragarpen zirriborro gisa gordetzeko. Iragarpen zirriborroa hemen aurkituko duzu **Nire iragarpenak** fitxa.
 
@@ -98,14 +100,13 @@ Ezaugarri hau probatzea interesatzen bazaizu baina beheko baldintzak betetzeko d
 
    :::image type="content" source="media/product-recommendation-set-activity-type.PNG" alt-text="Jarduera mota ezartzen duen orria.":::
 
-1. Behin jarduera esleituta dagokion mota semantikoari, hautatu **hurrengoa** jarraitzeko 
- 
+1. Jarduera dagokion mota semantikoarekin mapatu ondoren, hautatu **Hurrengoa** aurrera egiteko.
+
 1. Esleitu atributu semantikoak eredua exekutatu ahal izateko behar diren eremuei.
 
 1. Sakatu **Gorde**.
 
 1. Hautatu **Hurrengoa**.
-
 
 ### <a name="configure-product-filters"></a>Konfiguratu produktu-iragazkiak
 
@@ -113,11 +114,11 @@ Batzuetan, produktu batzuk bakarrik dira onuragarriak edo egokiak eraikitzen duz
 
 1. Hurrengoan **Gehitu produktuaren informazioa** urratsa, gehitu zure produktuen katalogoa produktu bakoitzari buruzko informazioarekin. Mapan hautatu behar den informazioa **Hurrengoa**.
 
-3. Hurrengoan **Produktuen iragazkiak** urratsa, aukeratu aukera hauen artean.
+1. Hurrengoan **Produktuen iragazkiak** urratsa, aukeratu aukera hauen artean.
 
-   * **Ez dago iragazkirik**: Erabili produktu guztiak iragarpen gomendioan.
+   - **Ez dago iragazkirik**: Erabili produktu guztiak iragarpen gomendioan.
 
-   * **Produktu iragazki zehatzak zehaztu**: Erabili produktu zehatzak produktuaren gomendioan iragarpen.
+   - **Produktu iragazki zehatzak zehaztu**: Erabili produktu zehatzak produktuaren gomendioan iragarpen.
 
 1. Hautatu **Hurrengoa**.
 
@@ -126,7 +127,7 @@ Batzuetan, produktu batzuk bakarrik dira onuragarriak edo egokiak eraikitzen duz
    :::image type="content" source="media/product-filters-sidepane.png" alt-text="Produktuen katalogoaren entitatean egotzitako alboko panela, produktuen iragazkiak hautatzeko.":::
 
 1. Aukeratu produktuaren iragazkia erabiltzea nahi duzun **eta** edo **edo** konektoreak produktuaren katalogoko atributuen hautaketa logikoki konbinatzeko.
-   
+
    :::image type="content" source="media/product-filters-sample.png" alt-text="Produktuen iragazkien laginaren konfigurazioa AND konektoreak logikoekin konbinatuta.":::
 
 1. Hautatu **Hurrengoa**.
@@ -150,7 +151,7 @@ Batzuetan, produktu batzuk bakarrik dira onuragarriak edo egokiak eraikitzen duz
 1. Hautatu berrikusi nahi duzun iragarpena.
    - **Iragarpen izena:** Sortzerakoan emandako iragarpenaren izena.
    - **Iragarpen mota:** Iragarpenak egiteko erabilitako eredu mota
-   - **Irteerako entitatea:** Iragarpenaren irteera gordetzeko entitatearen izena. Izen hori duen entitate bat aurki dezakezu **Datuak** > **erakundeak**.    
+   - **Irteerako entitatea:** Iragarpenaren irteera gordetzeko entitatearen izena. Izen hori duen entitate bat aurki dezakezu **Datuak** > **erakundeak**.
       *Puntuazioa* irteerako entitatean gomendioaren neurri kuantitatiboa da. Ereduak puntuazio altuagoa duten produktuak gomendatzen ditu puntuazio txikiagoa duten produktuen aldean.
    - **Aurreikusitako eremua:** Eremu hau iragarpen mota batzuetarako bakarrik betetzen da eta ez da erabiltzen Produktuen gomendioan iragarpen.
    - **Egoera:** Iragarpenaren exekutatutako egoera.
@@ -171,28 +172,27 @@ Batzuetan, produktu batzuk bakarrik dira onuragarriak edo egokiak eraikitzen duz
             - **A** eredua kontuan hartuko da **A** motako kalitatea "Arrakasta @ K" metrika oinarrizko lerroan gutxienez % 10 bada. 
             - **B** eredua kontuan hartuko da **B** motako kalitatea "Arrakasta @ K" metrika oinarrizko lerroan gutxienez % 0-10 bada.
             - **C** eredua kontuan hartuko da **C** motako kalitatea "Arrakasta @ K" metrika oinarrizko lerroan baino gutxiago bada.
-               
+
                > [!div class="mx-imgBorder"]
                > ![Ereduaren errendimenduaren emaitza ikusi.](media/product-recommendation-modelperformance.PNG "Ereduaren errendimenduaren emaitza ikusi")
             - **Oinarria**: ereduak bezero guztien artean erosketa kopuruaren arabera gomendatzen diren produktu onenak hartzen ditu eta ereduak identifikatutako ikasitako arauak erabiltzen ditu bezeroentzako gomendio multzo bat sortzeko. Iragarpenak goiko produktuekin alderatzen dira, produktua erosi zuten bezero kopuruaren arabera kalkulatuta. Bezero batek gutxienez erositako produktuetan ere ikusi den produktu bat gutxienez gomendatutako produktuetan baldin badu, oinarrizko oinarritzat hartzen da. 100 bezeroen artean produktu gomendatua erosi duten 10 bezero horien artean, oinarrizko % 10 izango litzateke.
             - **Arrakasta @ K**: transakzioen balidazio multzoa erabiliz, gomendioak sortzen dira bezero guztientzat eta transakzioen balidazio multzoarekin alderatzen dira. Adibidez, 12 hilabeteko epean, 12. hilabetea datuen balidazio multzo gisa alboratu daiteke. Ereduak gutxienez 12. hilean erosiko zenukeen gauza bat iragartzen badu aurreko 11 hilabeteetan ikasitakoaren arabera, bezeroak "Arrakasta @ K" metrika handituko luke.
-    
+
     1. **Iradokitako produktu gehienak (kalkuluarekin):** Zure bezeroentzat aurreikusitako lehen bost produktuak.
        > [!div class="mx-imgBorder"]
        > ![Gomendatutako 5 produktu onenak erakusten dituen grafikoa.](media/product-recommendation-topproducts.PNG "Gomendatutako 5 produktu onenak erakusten dituen grafikoa")
-    
+
     1. **Gomendio faktore nagusiak:** Ereduak bezeroen transakzioen historia erabiltzen du produktuen gomendioak emateko. Iraganeko erosketetan oinarritutako ereduak ikasten ditu eta bezeroen eta produktuen arteko antzekotasunak aurkitzen ditu. Antzekotasun horiek produktuen gomendioak sortzeko erabiltzen dira.
-    Jarraian, ereduak sortutako produktuaren gomendioan eragina izan dezaketen faktoreak daude. 
-        - **Iraganeko transakzioak**: Iraganeko erosketa ereduak modeloak erabiltzen zituen produktuen gomendioak sortzeko. Adibidez, ereduak a gomendatu dezake _Azaleko arku sagua_ duela gutxi norbaitek erosi badu _3. azaleko liburua_ eta _Azaleko boligrafoa_. Ereduak jakin zuen historikoki bezero askok erosi zutela _Azaleko arku sagua_ erosi ondoren _3. azaleko liburua_ eta _Azaleko boligrafoa_.
-        - **Bezeroen antzekotasuna**: Gomendatutako produktu bat antzeko erosketa ereduak erakusten dituzten beste bezero batzuek erosi zuten historikoki. Adibidez, John gomendatu zuten _Azaleko entzungailuak 2_ izan ere, duela gutxi Jennifer eta Bradek erosi dute _Azaleko entzungailuak 2_. Ereduak uste du John Jennifer eta Braden antzekoa dela historikoki erosketa eredu antzekoak izan dituztelako.
-        - **Produktuaren antzekotasuna**: Gomendatutako produktu bat bezeroak aurretik erositako beste produktu batzuen antzekoa da. Ereduak bi produktu antzekoak direla uste du elkarrekin edo antzeko bezeroek erosi badituzte. Adibidez, norbaitek gomendio bat jasotzen du _USB biltegiratze unitatea_ aurretik erosi dutelako _USB-C-tik USB egokitzailea_ eta ereduak hori uste du _USB biltegiratze unitatea_ antzekoa da _USB-C-tik USB egokitzailea_ erosketa eredu historikoetan oinarrituta.
+    Jarraian, ereduak sortutako produktuaren gomendioan eragina izan dezaketen faktoreak daude.
+        - **Iraganeko transakzioak**: Iraganeko erosketa ereduak modeloak erabiltzen zituen produktuen gomendioak sortzeko. Adibidez, ereduak a gomendatu dezake *Azaleko arku sagua* duela gutxi norbaitek erosi badu *3. azaleko liburua* eta *Azaleko boligrafoa*. Ereduak jakin zuen historikoki bezero askok erosi zutela *Azaleko arku sagua* erosi ondoren *3. azaleko liburua* eta *Azaleko boligrafoa*.
+        - **Bezeroen antzekotasuna**: Gomendatutako produktu bat antzeko erosketa ereduak erakusten dituzten beste bezero batzuek erosi zuten historikoki. Adibidez, John gomendatu zuten *Azaleko entzungailuak 2* izan ere, duela gutxi Jennifer eta Bradek erosi dute *Azaleko entzungailuak 2*. Ereduak uste du John Jennifer eta Braden antzekoa dela historikoki erosketa eredu antzekoak izan dituztelako.
+        - **Produktuaren antzekotasuna**: Gomendatutako produktu bat bezeroak aurretik erositako beste produktu batzuen antzekoa da. Ereduak bi produktu antzekoak direla uste du elkarrekin edo antzeko bezeroek erosi badituzte. Adibidez, norbaitek gomendio bat jasotzen du *USB biltegiratze unitatea* aurretik erosi dutelako *USB-C-tik USB egokitzailea* eta ereduak hori uste du *USB biltegiratze unitatea* antzekoa da *USB-C-tik USB egokitzailea* erosketa eredu historikoetan oinarrituta.
 
         Produktuen gomendio guztietan faktore horietako batek edo gehiagok eragiten dute. Eragindako faktore bakoitzak rol bat izan duen gomendioen ehunekoa taula batean ikus daiteke. Hurrengo adibidean, gomendioen % 100ek iraganeko transakzioen eragina izan zuten, % 60ek bezeroen antzekotasunaren eta % 22 produktuaren antzekotasunaren arabera. Pasa zaitez diagramako barren gainean eragin faktoreek zer portzentaia izan duten jakiteko.
 
         > [!div class="mx-imgBorder"]
         > ![Gomendioen faktore gakoak.](media/product-recommendation-keyrecommendationfactors.png "Ereduak produktuaren gomendioak sortzeko ikasitako funtsezko gomendio faktoreak")
-       
-     
+
    1. **Datuen estatistikak**: Kontuan hartu den ereduaren transakzioen, bezeroen eta produktuen kopuruaren ikuspegi orokorra ematen du. Ereduak ikasteko eta produktuen gomendioak sortzeko erabili ziren sarrerako datuetan oinarritzen da.
 
       > [!div class="mx-imgBorder"]
@@ -208,6 +208,5 @@ Batzuetan, produktu batzuk bakarrik dira onuragarriak edo egokiak eraikitzen duz
 ## <a name="manage-predictions"></a>Iragarpenak kudeatu
 
 Iragarpenak optimizatzea, konpontzea, freskatzea edo ezabatzea posible da. Berrikusi sarrerako datuen erabilgarritasun txostena iragarpen azkarragoa eta fidagarriagoa nola egin jakiteko. Informazio gehiago lortzeko, ikusi [Kudeatu iragarpenak](manage-predictions.md).
-
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]
