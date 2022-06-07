@@ -12,18 +12,18 @@ searchScope:
 - ci-data-sources
 - ci-create-data-source
 - customerInsights
-ms.openlocfilehash: 50258365c3134c588aa79ec72c66d0de329e0ff1
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: 4db97ec02eb96662d30a8536ea42372f81f318d2
+ms.sourcegitcommit: b515120bebd2638f2639004422cee3cff42fbdf7
 ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8642125"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "8800129"
 ---
 # <a name="connect-to-a-power-query-data-source"></a>Konektatu a Power Query datu-iturburu
 
 Power Query datuak irensteko konektore multzo zabala eskaintzen du. Konektore hauetako gehienek onartzen dute Dynamics 365 Customer Insights. 
 
-Oinarritutako datu-iturriak gehitzea Power Query konektoreak, oro har, atal honetan azaltzen diren urratsak jarraitzen ditu. Hala ere, erabiltzen duzun konektorearen arabera, informazio desberdina behar da. Gehiago jakiteko, ikusi konektore indibidualei buruzko dokumentazioa [Power Query konektorearen erreferentzia](/power-query/connectors/).
+Oinarritutako datu-iturriak gehitzea Power Query konektoreak, oro har, atal honetan adierazitako urratsak jarraitzen ditu. Hala ere, erabiltzen duzun konektorearen arabera, informazio desberdina behar da. Gehiago jakiteko, ikusi konektore indibidualei buruzko dokumentazioa [Power Query konektorearen erreferentzia](/power-query/connectors/).
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWN6EK]
 
@@ -65,7 +65,7 @@ Oinarritutako datu-iturriak gehitzea Power Query konektoreak, oro har, atal hone
 
 Ikusi [Power Query konektorearen erreferentzia](/power-query/connectors/) Customer Insights-era datuak inportatzeko erabil ditzakezun konektoreen zerrendarako. 
 
-Konektoreak kontrol-marka duten **Bezeroei buruzko informazioa (Datu-fluxuak)** zutabea erabilgarri dago datu-iturri berriak sortzeko Power Query. Berrikusi konektore zehatz baten dokumentazioa, bere aurretiazko baldintzak, mugak eta bestelako xehetasunak ezagutzeko.
+Konektoreak kontrol-marka duten **Bezeroei buruzko informazioa (Datu-fluxuak)** zutabea erabilgarri dago oinarrituta datu-iturri berriak sortzeko Power Query. Berrikusi konektore zehatz baten dokumentazioa, bere aurretiazko baldintzak, mugak eta bestelako xehetasunak ezagutzeko.
 
 ## <a name="edit-power-query-data-sources"></a>Editatu Power Query datu-iturriak
 
@@ -76,7 +76,7 @@ Konektoreak kontrol-marka duten **Bezeroei buruzko informazioa (Datu-fluxuak)** 
 
 1. Joan **Datuak** > **Datu-iturburuak**.
 
-2. Aukeratu elipsi bertikala aldatu eta hautatu nahi duzun datu-iturburu ondoan **Editatu** goitibeherako menutik.
+2. Hautatu elipsi bertikala (&vellip;) aldatu eta hautatu nahi duzun datu-iturburu ondoan **Editatu** goitibeherako menutik.
 
    > [!div class="mx-imgBorder"]
    > ![Editatu aukera.](media/edit-option-data-sources.png "Editatu aukera")

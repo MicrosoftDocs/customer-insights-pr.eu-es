@@ -11,12 +11,12 @@ manager: shellyha
 searchScope:
 - ci-measure-builder
 - customerInsights
-ms.openlocfilehash: 6370df0287362a5512a837cdb588f5d20ef03d3b
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: d003d054145343cc2feeefeeee413810df43185a
+ms.sourcegitcommit: b515120bebd2638f2639004422cee3cff42fbdf7
 ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8642167"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "8800311"
 ---
 # <a name="use-measure-builder-to-create-measures-from-scratch"></a>Erabili neurrien eraikitzailea neurriak hutsetik sortzeko
 
@@ -88,7 +88,7 @@ Bezero indibidualen mailan (bezeroaren atributua, bezeroaren neurria) edo negozi
 
 1. Neurriaren kalkulu gehiago gehitzeko, hautatu **Kalkulu berria**. Entitate bide bereko entitateak soilik erabil ditzakezu kalkulu berrietarako. Kalkulu gehiago irteerako entitateko zutabe berri gisa agertuko dira.
 
-1. Aukeratu **...** kalkuluan balioa **Bikoizteko**, **Izena aldatzeko** edo **Kentzeko** neurri batetik.
+1. Hautatu elipsi bertikala (&vellip;) kalkuluari buruz **Bikoiztu**, **izena**, edo **Kendu** neurri batetik kalkulua.
 
 1. **Aurrebista** eremuan, neurketaren irteerako entitatearen datu-eskema ikusiko duzu, iragazkiak eta neurriak barne. Aurrebistak dinamikoki erreakzionatzen du konfigurazioko aldaketen aurrean.
 
@@ -158,7 +158,7 @@ Banakako kontuen mailan (bezeroaren neurria) edo kontu guztien mailan (negozioar
    1. Aukeratu **Harreman bide** eta aukeratu zure neurria identifikatzeko erabili beharreko entitate bidea. Bide bakarra bada *Bezeroa* entitatea, kontrol hau ez da erakutsiko.
    1. Aukeratu **Eginda** zure hautaketa aplikatzeko.
 
-1. Aukeratu **...** kalkuluan balioa **Bikoizteko**, **Izena aldatzeko** edo **Kentzeko** neurri batetik.
+1. Hautatu elipsi bertikala (&vellip;) kalkuluari buruz **Bikoiztu**, **izena**, edo **Kendu** neurri batetik kalkulua.
 
 1. **Aurrebista** eremuan, neurketaren irteerako entitatearen datu-eskema ikusiko duzu, iragazkiak eta neurriak barne. Aurrebistak dinamikoki erreakzionatzen du konfigurazioko aldaketen aurrean.
 

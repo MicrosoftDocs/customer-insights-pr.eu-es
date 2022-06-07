@@ -12,12 +12,12 @@ searchScope:
 - ci-data-sources
 - ci-create-data-source
 - customerInsights
-ms.openlocfilehash: 1fe8d6e8098831ecc8ff28e571340c56a654de6d
-ms.sourcegitcommit: a50c5e70d2baf4db41a349162fd1b1f84c3e03b6
+ms.openlocfilehash: 355d52eabde90e0764817cf479821264ebb2e5eb
+ms.sourcegitcommit: b515120bebd2638f2639004422cee3cff42fbdf7
 ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "8739193"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "8800451"
 ---
 # <a name="data-sources-overview"></a>Datuen iturburuen ikuspegi orokorra
 
@@ -45,7 +45,7 @@ A elkartu ondoren sortzen diren datu-iturriak Dataverse Customer Insights erabil
 Dagoen batetik datozen atebideak Power BI edo Power Apps ingurunea ikusgai egongo da eta Customer Insights-en berrerabili dezakezu. Datu iturrien orriak estekara erakusten du Microsoft Power Platform lokal datu atebideak ikusi eta konfiguratzeko ingurunea.
 
 > [!IMPORTANT]
-> Ziurtatu atebideak azken bertsiora eguneratuta daudela. Eguneratze bat instalatu eta atebide bat birkonfigura dezakezu atebidearen pantailan agertzen den gonbit batetik zuzenean edo [deskargatu azken bertsioa](https://powerapps.microsoft.com/downloads/). Ez baduzu azken atebidearen bertsioa erabiltzen, datu-fluxua freskatzeak huts egingo du errore-mezuekin **Gako-hitza ez da onartzen: konfigurazio-propietateak. Parametroaren izena: gako-hitza**.
+> Ziurtatu atebideak azken bertsiora eguneratuta daudela. Eguneratze bat instalatu eta atebide bat birkonfigura dezakezu atebidearen pantailan agertzen den gonbita batetik zuzenean edo [deskargatu azken bertsioa](https://powerapps.microsoft.com/downloads/). Ez baduzu azken atebidearen bertsioa erabiltzen, datu-fluxua freskatzeak huts egingo du errore-mezuekin **Gako-hitza ez da onartzen: konfigurazio-propietateak. Parametroaren izena: gako-hitza**.
 
 ## <a name="review-ingested-data"></a>Berrikusi sartutako datuak
 Zure inguruneak badu Power Platform datu-fluxuak, **Datu-iturriak** orrialdeak hiru atal ditu: 
@@ -76,7 +76,7 @@ Eskatu ahalako datu-iturburu bat freskatzeko, jarraitu urrats hauek:
 
 1. Joan **Datuak** > **Datu-iturburuak**.
 
-2. Aukeratu elipsi bertikala freskatu eta hautatu nahi duzun datu-iturburu ondoan **Freskatu** goitibeherako zerrendatik.
+2. Hautatu elipsi bertikala (&vellip;) freskatu eta hautatu nahi duzun datu-iturburu ondoan **Freskatu** goitibeherako zerrendatik.
 
 3. Datu-iturburua eskuz eguneratzeko aktibatuta dago. datu-iturburu freskatzeak entitatearen eskema eta datuak eguneratuko ditu datu-iturburu-en zehaztutako entitate guztientzat.
 
@@ -86,7 +86,7 @@ Eskatu ahalako datu-iturburu bat freskatzeko, jarraitu urrats hauek:
 
 1. Joan **Datuak** > **Datu-iturburuak**.
 
-2. Aukeratu elipsi bertikala ezabatu eta hautatu nahi duzun datu-iturburu ondoan **Ezabatu** goitibeherako menutik.
+2. Hautatu elipsi bertikala (&vellip;) kendu eta hautatu nahi duzun datu-iturburu ondoan **Ezabatu** goitibeherako menutik.
 
 3. Berretsi ezabatu nahi duzula.
 

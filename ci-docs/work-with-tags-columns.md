@@ -14,12 +14,12 @@ searchScope:
 - ci-segments
 - ci-segment-details
 - customerInsights
-ms.openlocfilehash: 04ae4ffd303a47add15044f313c96a23e5efcd76
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: c0d23a74b5ca68162ee21307705b1f781a7eb97e
+ms.sourcegitcommit: b515120bebd2638f2639004422cee3cff42fbdf7
 ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8642162"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "8800544"
 ---
 # <a name="work-with-tags-and-columns"></a>Etiketa eta zutabeekin lan egin
 
@@ -37,7 +37,7 @@ Elementu batetik etiketak ikusi, gehitu eta kendu ditzakezu. Gehitu etiketak ele
 
 1. Hautatu zeinen etiketak kudeatu nahi dituzun elementua.
 
-1. Hautatu **Erakutsi gehiago (...)** eta hautatu **Etiketa**.
+1. Hautatu elipsi bertikala (&vellip;) eta hautatu **Etiketa**.
 
    :::image type="content" source="media/segments_list_tag.png" alt-text="Aukeratutako segmentua aukerak goitibeherako zerrendarekin eta eskuragarri dauden aukerekin."lightbox="media/segments_list_tag.png":::
 
@@ -61,7 +61,7 @@ Erabili etiketak zure elementuen zerrenda iragazteko.
 
 1. Bilatu eta hautatu iragazi nahi dituzun etiketak.
 
-1. Hautatu **Aplikatu**. Iragazkien etiketekin bat datozen erregistroak soilik bistaratzen dira. Zure iragazkien hautaketa gordeko da saio honetan saioa amaitzen duzun arte edo arakatzailea aldatu arte.
+1. Hautatu **Aplikatu**. Iragazkien etiketekin bat datozen erregistroak bakarrik bistaratzen dira. Zure iragazkien hautaketa gordeko da saio honetan saioa amaitzen duzun arte edo arakatzailea aldatu arte.
 
 1. Iragazkia garbitzeko, hautatu **Iragazkia** eta **Garbitu dena**.
 

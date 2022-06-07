@@ -1,19 +1,19 @@
 ---
 title: datu-iturburu aberastea
 description: Aberastu datu-iturriak datuak bateratze-prozesua igaro aurretik.
-ms.date: 03/02/2022
+ms.date: 05/20/2022
 ms.subservice: audience-insights
 ms.topic: how-to
 author: NimrodMagen
 ms.author: nimagen
 ms.reviewer: v-wendysmith
 manager: shellyha
-ms.openlocfilehash: d1e14d2d4e718d71ccbd2afd259a350ad5c9e69a
-ms.sourcegitcommit: 4ae316c856b8de0f08a4605f73e75a8c2cf51c4e
-ms.translationtype: HT
+ms.openlocfilehash: 1225482c4bf432ed747537b2c9bec9ab0e692a51
+ms.sourcegitcommit: b515120bebd2638f2639004422cee3cff42fbdf7
+ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 05/13/2022
-ms.locfileid: "8755671"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "8800266"
 ---
 # <a name="enrichment-for-data-sources-preview"></a>Datu-iturburuetarako aberastea (aurrebista)
 
@@ -27,7 +27,7 @@ Kolaboratzaile edo Administratzaile baimenak izan behar dituzu aberasketak sortz
 
 1. Joan **Datuak** > **Datu-iturburuak**.
 
-1. Hautatu aberastu nahi duzun datu-iturburu ondoan dagoen elipsi bertikala eta hautatu **Aberastu**.
+1. Hautatu elipsi bertikala (&vellip;) aberastu eta hautatu nahi duzun datu-iturburu ondoan **Aberastu**.
 
    :::image type="content" source="media/data_sources_enrich_discover.png" alt-text="Datu iturriak aberasteko orria.":::
 
@@ -41,11 +41,12 @@ Une honetan datu-iturrietarako eskuragarri daude honako aberasgarri hauek. Berri
 
 - [Helbide hobetuak](enrichment-enhanced-addresses.md)
 - [Enpresaren datu hobetuak](enrichment-enhanced-company-data.md)
+- [LiveRamp-en nortasun-datuak](enrichment-liveramp.md)
 
 ## <a name="manage-existing-data-source-enrichments"></a>Kudeatu lehendik dauden datu-iturburu aberasgarriak
 
 Joan **Nire aberastasunak** fitxa konfiguratutako aberastasun guztiak ikusteko.
 
-Aukeratu aberastea eskuragarri dauden aukerak ikusteko. Zerrenda bateko elipsia (...) ere hauta dezakezu aukerak ikusteko. Zenbait aberaste konfiguratu badituzu, bilaketa-koadroa erabil dezakezu azkar aurkitzeko.
+Aukeratu aberastea eskuragarri dauden aukerak ikusteko. Elipse bertikala ere hauta dezakezu (&vellip;) zerrendako elementu batean aukerak ikusteko. Zenbait aberaste konfiguratu badituzu, bilaketa-koadroa erabil dezakezu azkar aurkitzeko.
 
 datu-iturburu aberaste bat ikusi, editatu, exekutatu edo ezabatu dezakezu. Informazio gehiagorako, ikus [Dauden aberastasunak kudeatu](enrichment-hub.md).

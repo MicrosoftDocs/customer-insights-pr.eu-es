@@ -6,7 +6,9 @@
   href: whats-new-customer-insights.md
 - name: Ikasketa-katalogoa
   items:
-    - name: Lehenengo urratsak
+    - name: Ziurta ezazu Microsoft Customer Data Platform Specialist gisa
+      href: /learn/certifications/exams/mb-260?tab=tab-instructor-led
+    - name: Hasi Customer Insights erabiltzen
       href: /learn/modules/get-started-customer-data-platform/
     - name: Sartu datuak
       href: /learn/modules/ingest-data-customer-insights/
@@ -34,8 +36,6 @@
       href: get-started.md
     - name: Hasi ordaindutako lizentziarekin
       href: paid-license.md
-    - name: Sortu ingurune bat
-      href: create-environment.md
     - name: Arakatu bezeroen ikuspegiak
       href: home.md
     - name: Etiketa eta zutabeekin lan egin
@@ -198,6 +198,8 @@
           href: export-campaign-monitor.md
         - name: Constant Contact
           href: export-constant-contact.md
+        - name: Kriteo
+          href: export-criteo.md
         - name: DotDigital
           href: export-dotdigital.md
         - name: Dynamics 365 Marketing
@@ -254,12 +256,22 @@
       href: entities.md
     - name: Berrikusi entitateen eskema datu arrunten ereduan
       href: entity-schemas.md
-    - name: Customer Insights datuak Dataverse-n
-      href: customer-insights-dataverse.md
     - name: Harremanak eta konektatutako entitateak eraiki
       href: relationships.md
     - name: Definitu esleipen semantikoak
       href: semantic-mappings.md
+- name: Inguruneak
+  items:
+    - name: Sortu ingurune bat
+      href: create-environment.md
+    - name: Konektatu Microsoft Dataverse-ra
+      href: customer-insights-dataverse.md
+    - name: Erabili zurea Azure Data Lake Storage
+      href: own-data-lake-storage.md
+    - name: Kudeatu ingurunearen ezarpenetara
+      href: manage-environments.md
+    - name: Konektatu biltegiratze-kontu batera Service Principal erabiliz
+      href: connect-service-principal.md
 - name: Administrazioa
   items:
     - name: Konfiguratu sistemaren konfigurazioa
@@ -268,20 +280,12 @@
       href: security-overview.md
     - name: Esleitu erabiltzaile-baimenak
       href: permissions.md
-    - name: Konexioen ikuspegi orokorra
-      href: connections.md
-    - name: Kudeatu ingurune anizkoitzak
-      href: manage-environments.md
     - name: Ekarri zure Key Vault
       href: use-azure-key-vault.md
-    - name: Konektatu biltegiratze-kontu batera Service Principal erabiliz
-      href: connect-service-principal.md
     - name: Esportatu diagnostikoen erregistroak
       href: diagnostics.md
-    - name: Zerbitzuaren mugak
-      href: service-limits.md
-    - name: DSR eskubideak eta eskaerak
-      href: dsr-rights-requests.md
+    - name: Konexioen ikuspegi orokorra
+      href: connections.md
 - name: APIak
   items:
     - name: Egin lan API-ekin
@@ -324,5 +328,9 @@
       items:
         - name: Sortu aurreikuspenak adostasun datuekin
           href: consent-management/predictions-consent-data.md
+- name: Zerbitzuaren mugak
+  href: service-limits.md
+- name: DSR eskubideak eta eskaerak
+  href: dsr-rights-requests.md
 - name: Lortu laguntza
   href: /power-platform/admin/get-help-support

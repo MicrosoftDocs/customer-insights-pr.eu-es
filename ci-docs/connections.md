@@ -11,12 +11,12 @@ manager: shellyha
 searchScope:
 - ci-connections
 - customerInsights
-ms.openlocfilehash: d85de28a12565e1a2e36278d0e8b74f6de286b20
-ms.sourcegitcommit: 4ae316c856b8de0f08a4605f73e75a8c2cf51c4e
+ms.openlocfilehash: 2a3175737ac95e10d75fad4a69db303b0564c6cc
+ms.sourcegitcommit: b515120bebd2638f2639004422cee3cff42fbdf7
 ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 05/13/2022
-ms.locfileid: "8755294"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "8800357"
 ---
 # <a name="connections-preview-overview"></a>Konexioen ikuspegi orokorra (aurrebista)
 
@@ -69,7 +69,7 @@ Esportazio konexioa konfiguratu edo editatzerakoan, aukeratzen duzu zein erabilt
 
 1. Joan **Konexioak** fitxara.
 
-1. Hautatu elipsi bertikala editatu nahi duzun konexiorako.
+1. Hautatu elipsi bertikala (&vellip;) editatu nahi duzun konexiorako.
 
 1. Hautatu **Editatu**.
 
@@ -85,7 +85,7 @@ Bereizitako aberastasunak eta esportazioak inaktibo bihurtzen dira. Berriro akti
 
 1. Joan **Konexioak** fitxara.
 
-1. Hautatu elipsi bertikala kendu nahi duzun konexiorako.
+1. Hautatu elipsi bertikala (&vellip;) kendu nahi duzun konexiorako.
 
 1. Hautatu **Kendu** goitibeherako menuan. Berresteko elkarrizketa agertzen da.
 

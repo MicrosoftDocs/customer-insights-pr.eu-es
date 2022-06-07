@@ -11,12 +11,12 @@ ms.reviewer: mhart
 searchScope:
 - ci-dataverse
 - customerInsights
-ms.openlocfilehash: e8a294a4bad1581539b5905160cddcd625699d90
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: 7140e9254108bc6f0d518b3ccf4b10fc33cde115
+ms.sourcegitcommit: b515120bebd2638f2639004422cee3cff42fbdf7
 ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8642012"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "8800146"
 ---
 # <a name="connect-to-data-in-a-microsoft-dataverse-managed-data-lake"></a>Konektatu datuekin Microsoft Dataverse kudeatutako data lake-ra
 
@@ -62,7 +62,7 @@ Beste Dataverse datu biltegi batekin konektatzeko, [sortu datu-iturburu berria](
 
 1. Joan **Datuak** > **Datu-iturburuak**.
 
-2. Eguneratu nahi duzun datu-iturburu ondoan, hautatu elipsia.
+2. Eguneratu nahi duzun datu-iturburu ondoan, hautatu elipsi bertikala (&vellip;).
 
 3. Hautatu **Editatu** aukera zerrendan.
 

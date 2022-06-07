@@ -13,12 +13,12 @@ searchScope:
 - ci-segment-builder
 - ci-segment-details
 - customerInsights
-ms.openlocfilehash: c8e9e4976ade36c1c3c4f688a667b329bfde6e3e
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: e1a9cd0e3c0347285026d937ca7d951a602e7160
+ms.sourcegitcommit: b515120bebd2638f2639004422cee3cff42fbdf7
 ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8642146"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "8800081"
 ---
 # <a name="create-segments"></a>Sortu segmentuak
 
@@ -134,8 +134,9 @@ Segmentua sortu bitartean, zirriborroa gorde dezakezu. Zirriborro fasean, segmen
 > - Segmentu-egileak ez ditu entitateetako baliozko balioak iradokiko baldintzen eragileak ezartzean. Erabilgarri dauden balioak ikusteko, joan **Datuak** > **Entitateak** atalera eta deskargatu entitatearen datuak.
 > - Datetan oinarritutako baldintzek data finkoen eta data-tarte mugikorren artean aldatzeko aukera ematen dute.
 > - Segmenturako arau ugari badituzu, editatzen ari zaren arauak lerro urdin bertikala du ondoan.
-> - Arauak eta baldintzak segmentuaren definizioko beste lekuetara eraman ditzakezu. Hautatu [...] arau edo baldintza baten ondoan eta hautatu nola eta nora eraman.
+> - Arauak eta baldintzak segmentuaren definizioko beste lekuetara eraman ditzakezu. Hautatu elipsi bertikala (&vellip;) arau edo baldintza baten ondoan eta aukeratu nola eta nora eraman.
 > - **Desegin** eta **Berregin** Komando-barrako kontrolek aldaketak atzeratzeko aukera ematen dute.
+> - Segmentu bat sortu ondoren, segmentu batzuek aukera ematen dute [jarraipena segmentuaren erabilera](segments.md#track-usage-of-a-segment).
 
 ## <a name="quick-segments"></a>Segmentu azkarrak
 

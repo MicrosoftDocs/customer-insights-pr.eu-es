@@ -8,12 +8,12 @@ ms.topic: get-started
 ms.custom: template-trial-faq
 ms.reviewer: jeffhar
 manager: shellyha
-ms.openlocfilehash: 4a269a223efa08f71db09eef2ec9a8f8a077f7a7
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: c0db75afdde91bbd60fbece77eb2660a38b84860
+ms.sourcegitcommit: f5af5613afd9c3f2f0695e2d62d225f0b504f033
 ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8641793"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "8833753"
 ---
 # <a name="dynamics-365-customer-insights-trial-faq"></a>Dynamics 365 Customer Insights probako bertsioaren FAQa
 
@@ -42,7 +42,7 @@ Proban izena ematen duzunean, mezu elektroniko bat jasoko duzu probaren xehetasu
 
 ### <a name="how-do-i-add-more-users-to-a-trial"></a>Nola gehi ditzaket erabiltzaileak proba batean?
 
-Erabiltzaileak gehitzeko, joan [Microsoft 365 administrazio-zentrora](https://admin.microsoft.com) probako administratzaile-kontua erabiliz. Jarraitu [administrazio zentroaren orientazioa](/microsoft-365/admin/add-users/add-users) erabiltzaileak gehitzeko probarako lizentziaren mugaren barruan. Gehitzen ari zaren erabiltzaileak dagoeneko badu Microsoft 365 kontua, esleitu segurtasun-funtzio egokia probako org-an. Informazio gehiagorako, ikus [Esleitu segurtasun-funtzio erabiltzaile bati](/power-platform/admin/create-users-assign-online-security-roles#assign-a-security-role-to-a-user).
+Erabiltzaileak gehitzeko, joan [Microsoft 365 administrazio-zentrora](https://admin.microsoft.com) probako administratzaile-kontua erabiliz. Jarraitu [administrazio zentroaren orientazioa](/microsoft-365/admin/add-users/add-users) erabiltzaileak gehitzeko probarako lizentziaren mugaren barruan. Gehitzen ari zaren erabiltzaileak dagoeneko badu Microsoft 365 kontua, esleitu segurtasun-funtzio egokia proba-organoan. Informazio gehiagorako, ikus [Esleitu segurtasun-funtzio erabiltzaile bati](/power-platform/admin/create-users-assign-online-security-roles#assign-a-security-role-to-a-user).
 
 ### <a name="how-many-users-can-i-add-to-my-trial-environment"></a>Zenbat erabiltzaile gehitu ditzaket nire probako ingurunera?
 
@@ -62,9 +62,9 @@ Proban aplikazioan zuzenean luzatu dezakezu. Behin proba luzatu dezakezu.
 
 Orokorrean, zure datuekin berriro hastea gomendatzen dugu Customer Insights-en ordaindutako bertsiora eguneratzean. 
 
-Aukeran, Customer Insights soilik erabiltzen baduzu, zure datuak proba-ingurune batetik kopiatu ditzakezu Customer Insights erosten baduzu. Customer Insights probaren administratzailea eta zure administratzaile globala izan behar duzu Microsoft 365 maizterrak edo zure erakundeko Dynamics 365 administratzaileak ezarpenak probako ingurunetik ordaindutako ingurune batera migratzeko. 
+Aukeran, Customer Insights soilik erabiltzen baduzu, zure datuak proba-ingurune batetik kopiatu ditzakezu Customer Insights erosten baduzu. Customer Insights probaren administratzailea eta zure administratzaile globala izan behar duzu Microsoft 365 maizterrak edo zure erakundeko Dynamics 365 administratzaileak ezarpenak probako ingurunetik ordaindutako ingurune batera migratzeko.
 
-Customer Insights-en ordaindutako instantziarekin lehen aldiz saioa hasi ondoren, ingurune berri bat sortzeko eskatuko zaizu. Prozesu honetan, konfigurazioa lehendik dagoen ingurune batetik kopiatzea eta ezarpen gehienak migratzea aukera dezakezu. Goian aipatutako baimenak badituzu, proba-ingurunea zerrenda honetan agertuko da. Informazio gehiagorako, ikus [Kopiatu ingurunearen konfigurazioa](manage-environments.md#copy-the-environment-configuration).
+Customer Insights-en ordaindutako instantziarekin lehen aldiz saioa hasi ondoren, ingurune berri bat sortzeko eskatuko zaizu. Prozesu honetan, konfigurazioa lehendik dagoen ingurune batetik kopiatzea eta ezarpen gehienak migratzea aukera dezakezu. Goian aipatutako baimenak badituzu, proba-ingurunea zerrenda honetan agertuko da. Informazio gehiagorako, ikus [Kopiatu ingurunearen konfigurazioa](create-environment.md#copy-the-environment-configuration).
 
 ### <a name="what-are-the-trial-limits-and-quotas"></a>Zein dira probaren mugak eta kuotak?
 
@@ -81,9 +81,10 @@ Proban izena eman ondoren, aplikazioaren pantaila nagusira iritsiko zara. Pantai
 
 Customer Insights gaitasunen ezaugarri gehienak proban eskuragarri daude.
 
-Honako ezaugarri hauek dira **ez dago eskuragarri**: 
+Honako ezaugarri hauek dira **ez dago eskuragarri**:
+
 - Ezin dituzu zure Azure Data Lake biltegiratze kontua erabiltzen duten ingurune berriak sortu.
-- Ezin duzu probako ingurunea ezabatu. 
+- Ezin duzu probako ingurunea ezabatu.
 
 ### <a name="how-long-does-the-trial-last"></a>Zenbat irauten du epaiketak?
 

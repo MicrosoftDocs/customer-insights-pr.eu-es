@@ -11,26 +11,26 @@ manager: shellyha
 searchScope:
 - ci-home
 - customerInsights
-ms.openlocfilehash: cdeb48df2172785ed8adad0f21943974ec39d14d
-ms.sourcegitcommit: 94de4dacdb8a7f4bc0f5914e7398622e70b81ff3
-ms.translationtype: HT
+ms.openlocfilehash: 621977068dc49b55f50f00e9762a4a5952d7b453
+ms.sourcegitcommit: ba29fd7c89bdeba7260b4783662d8da8e1e1e30e
+ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 05/12/2022
-ms.locfileid: "8743398"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "8768316"
 ---
 # <a name="explore-customer-insights"></a>Arakatu bezeroen ikuspegiak
 
 Sar zaitezke [Dynamics 365 Customer Insights](https://home.ci.ai.dynamics.com/) URL honetan: [https://home.ci.ai.dynamics.com/](https://home.ci.ai.dynamics.com/).
 
-The **Hasiera** orrialdeak ezaugarri nagusien konfigurazio-prozesuan gidatzen zaitu eta segmentuen, neurrien eta aberaste-datuen ikuspegi orokorra eskaintzen du.
+The **Hasiera** orrialdeak funtzio nagusien konfigurazio-prozesuan zehar gidatzen zaitu eta segmentuen, neurrien eta aberaste-datuen ikuspegi orokorra eskaintzen du.
 
 :::image type="content" source="media/home-page.png" alt-text="Hasierako pantailaren pantaila-argazkia lagin-estatistikak erakusten dituena.":::
 
 ## <a name="left-side-pane"></a>Ezkerreko alboko panela
 
-Erabili ezkerreko panela Customer Insights eremu ezberdinen artean nabigatzeko. 
+Erabili ezkerreko panela Customer Insights-en eremu ezberdinetan nabigatzeko.
 
-Enpresa-kontuekin eta kontsumitzaile indibidualekin lan egiten baduzu, zure ikusle nagusia hauta dezakezu zure fokua horren arabera ezartzeko. 
+Enpresa-kontuekin eta kontsumitzaile indibidualekin lan egiten baduzu, zure ikusle nagusia hauta dezakezu zure fokua horren arabera ezartzeko.
 
 ## <a name="application-header"></a>Aplikazioaren goiburua
 
@@ -38,7 +38,7 @@ The **Ingurumena** hautatzaileak lan egiten duzun ingurunea erakusten du eta adm
 
 Irribarrearen ikonoa da **Iritzia** kontrola. Hautatu ezazu Customer Insights-ekin duzun esperientzia kontatzeko. Zure iritzia aktiboki entzuten ari gara eta aldez aurretik eskertzen dizugu zer gustatzen zaizun eta nola hobetu dezakegun jakinarazteagatik.
 
-The **Ezarpenak** kontrolak, engranajearen ikono batek adierazten duena, Customer Insights-en saioaren xehetasunak biltzeko eta zure ezarpen globalak konfiguratzeko aukera ematen dizu.Microsoft 365 profila. 
+The **Ezarpenak** kontrolak, engranajearen ikono batek adierazten duena, Customer Insights-en saioaren xehetasunak biltzeko eta zure ezarpen globalak konfiguratzeko aukera ematen dizu.Microsoft 365 profila.
 
 **Laguntza** aukerak, galdera-ikurraren ikono batekin bistaratzen dira, testuingururako laguntza estekak eta bestelako baliabide lagungarriak eskaintzen dituzte.
 
@@ -46,7 +46,7 @@ Zure profileko argazkia irekitzen da **Kontu-kudeatzailea** zuretzat Microsoft 3
 
 ## <a name="getting-started-with-customer-insights-section"></a>Bezeroen Insights atalean hastea
 
-Atal honek zure Customer Insights ingurunea konfiguratzeko prozesuan ibiltzen lagunduko dizuten txartelak ditu. 
+Atal honek zure Customer Insights ingurunea konfiguratzeko prozesuan ibiltzen lagunduko dizuten txartelak ditu.
 
 1. The **Gehitu datuak** txartelak zure datuak inportatzen laguntzen dizu. Customer Insights-ek onartzen du [hainbat aukera zure bezeroei buruzko datuak sartzeko](data-sources.md). Hautatu **Gehitu datu-iturriak** hasteko.
 1. Hasierako datuen inportazioa behar bezala amaitutakoan, erabil dezakezu **Datuak bateratu** datuak harmonizatzeko txartela eta [sortu bezeroen profil bateratuak](data-unification.md) iturri ezberdinetatik. 
@@ -59,7 +59,7 @@ Atal honek zure Customer Insights ingurunea konfiguratzeko prozesuan ibiltzen la
 
 - **Enpresa neurriak** fitxak erakusten ditu [Errendimenduaren adierazle nagusiak (KPI)](measures.md) definitu duzuna. Adibidez, bezero baten batez besteko probabilitatea edo bezero bakoitzeko batez besteko lineako gastua.
 
-- **Aberasgarriak** Duela gutxi burutu diren aberastasun-exekutuen emaitzak zerrendatzen ditu. [Aberasteek](enrichment-hub.md) zure bezero-baseari buruzko informazioa gehitzen dute. Adibidez, haienganako interesak eta markak ulertuz.
+- **Aberasgarriak** Duela gutxi burutu diren aberaste-lanen emaitzak zerrendatzen ditu. [Aberasteek](enrichment-hub.md) zure bezero-baseari buruzko informazioa gehitzen dute. Adibidez, haienganako interesak eta markak ulertuz.
 
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

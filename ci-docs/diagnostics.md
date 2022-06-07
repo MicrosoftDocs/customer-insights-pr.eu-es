@@ -11,12 +11,12 @@ manager: shellyha
 searchScope:
 - ci-system-diagnostic
 - customerInsights
-ms.openlocfilehash: 03169f0218dfad55cf20ecaf1c1596c652e5f601
-ms.sourcegitcommit: 4ae316c856b8de0f08a4605f73e75a8c2cf51c4e
+ms.openlocfilehash: 15ae772617efa4c64cf79d0bac10a0c3cb28ca30
+ms.sourcegitcommit: a92bf5985263240fd07bad98d8e119b88cf2c9d9
 ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 05/13/2022
-ms.locfileid: "8755247"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "8807566"
 ---
 # <a name="log-forwarding-in-dynamics-365-customer-insights-with-azure-monitor-preview"></a>Saioa birbidaltzea Dynamics 365 Customer Insights Azure Monitor-ekin (aurrebista)
 
@@ -38,7 +38,7 @@ Customer Insights-en diagnostikoak konfiguratzeko, aurrebaldintza hauek bete beh
 
 - Aktibo bat duzu [Azure Harpidetza](https://azure.microsoft.com/pricing/purchase-options/pay-as-you-go/).
 - Zuk daukazu [Administratzailea](permissions.md#admin) baimenak Customer Insights-en.
-- Zuk daukazu **Laguntzailea** eta **Erabiltzaileen Sarbide Administratzailea** rola Azure-n helmugako baliabidean. Baliabidea Azure Storage kontu bat, Azure Event Hub bat edo Azure Log Analytics lan-eremu bat izan daiteke. Informazio gehiagorako, ikus [Gehitu edo kendu Azure rol-esleipenak Azure ataria erabiliz](/azure/role-based-access-control/role-assignments-portal).
+- Zuk daukazu **Laguntzailea** eta **Erabiltzaileen Sarbide Administratzailea** rola Azure-n helmugako baliabidean. Baliabidea an izan daiteke Azure Data Lake Storage kontua, Azure Event Hub bat edo Azure Log Analytics lan-eremu bat. Informazio gehiagorako, ikus [Gehitu edo kendu Azure rol-esleipenak Azure ataria erabiliz](/azure/role-based-access-control/role-assignments-portal). Baimen hau beharrezkoa da Customer Insights-en diagnostiko-ezarpenak konfiguratzen dituzun bitartean, konfiguratu ondoren alda daiteke.
 - [Helmugako baldintzak](/azure/azure-monitor/platform/diagnostic-settings#destination-requirements) Azure biltegiratzeko, Azure Event Hub edo Azure Log Analytics-ek betetzen ditu.
 - Gutxienez daukazu **Irakurlea** baliabidea dagokion baliabide taldean eginkizuna.
 
@@ -243,7 +243,7 @@ Lan-fluxuaren gertaerek propietate hauek dituzte.
 | `properties.identifier`                      | No       | Yes  | - OperationType =`Export`, identifikatzailea esportazio-konfigurazioaren gida da. <br> - OperationType =`Enrichment`, aberastearen gidaria da <br> - OperationTyperako`Measures` eta`Segmentation`, identifikatzailea entitatearen izena da. |
 | `properties.friendlyName`                    | No       | Yes  | Esportazio edo prozesatzen den entitatearen izen atsegina.                                                                                                                                                                                           |
 | `properties.error`                           | No       | Yes  | Aukerakoa. Errore-mezua xehetasun gehiagorekin.                                                                                                                                                                                                                  |
-| `properties.additionalInfo.Kind`             | No       | Yes  | Aukerakoa. OperationTyperako`Export` bakarrik. Esportazio mota identifikatzen du. Informazio gehiagorako, ikus [esportazio-helmuguen ikuspegi orokorra](export-destinations.md).                                                                                          |
+| `properties.additionalInfo.Kind`             | No       | Yes  | Aukerakoa. OperationTyperako`Export` bakarrik. Esportazio mota identifikatzen du. Informazio gehiagorako, ikus [esportazio-helmugen ikuspegi orokorra](export-destinations.md).                                                                                          |
 | `properties.additionalInfo.AffectedEntities` | No       | Yes  | Aukerakoa. OperationTyperako`Export` bakarrik. Esportazioan konfiguratutako entitateen zerrenda dauka.                                                                                                                                                            |
 | `properties.additionalInfo.MessageCode`      | No       | Yes  | Aukerakoa. OperationTyperako`Export` bakarrik. Esportaziorako mezu zehatza.                                                                                                                                                                                 |
 | `properties.additionalInfo.entityCount`      | No       | Yes  | Aukerakoa. OperationTyperako`Segmentation` bakarrik. Segmentuak zenbat kide dituen adierazten du.                                                                                                                                                    |

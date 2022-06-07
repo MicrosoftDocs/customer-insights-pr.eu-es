@@ -6,12 +6,12 @@ ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
 manager: shellyha
-ms.openlocfilehash: 45c59465771e4ad25ed36d5da1568e67b94cf994
-ms.sourcegitcommit: cf74b8c20d88eb96e1ac86e18cd44fe27aad5ab9
+ms.openlocfilehash: 4cc3cbde97d0f9da198652e86c0843476393b646
+ms.sourcegitcommit: f5af5613afd9c3f2f0695e2d62d225f0b504f033
 ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 04/28/2022
-ms.locfileid: "8653770"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "8833293"
 ---
 # <a name="work-with-unified-customer-profiles-in-dynamics-365-marketing"></a>Lan egin bezeroen profil bateratuekin Dynamics 365 Marketing-en
 
@@ -24,10 +24,9 @@ Customer Insights datuak Marketing-ekin konektatuz, hau egin dezakezu:
 - Kargatu Marketing-eko datuak Customer Insights-en eta konbinatu beste iturri batzuetako bezeroen datuekin.
 - Aplikatu Customer Insights datuak garbitzeko, aberasteko eta parekatzeko tresna lausoak.
 
-
 ## <a name="use-rich-customer-profiles-in-real-time-marketing"></a>Erabili bezeroen profil aberatsak denbora errealeko marketinean
 
-Denbora errealeko marketinak sortzeko aukera ematen dizu [abiarazle pertsonalizatuak](/dynamics365/marketing/real-time-marketing-custom-triggers) bezeroen bidaiak abiarazten dituztenak bezeroaren edozein ekintzatan oinarrituta. Zenbat eta pertsonalizatuago zure datuak, orduan eta garrantzitsuago eta pertsonalizatuagoak izango dira zure bidaiak. Hori da marketina eta bezeroen ikuspegia konbinatzea hain indartsua. Ahal duzu [datuak bateratu](data-unification.md) edozein iturritatik, gero erabili bezeroen bidaia hiperpertsonalizatuak elikatzeko.
+Denbora errealeko marketinak sortzeko aukera ematen dizu [abiarazle pertsonalizatuak](/dynamics365/marketing/real-time-marketing-custom-triggers) bezeroen bidaiak abiarazten dituztenak bezeroaren edozein ekintzatan oinarrituta. Zenbat eta pertsonalizatuago zure datuak, orduan eta garrantzitsuago eta pertsonalizatuagoak izango dira zure bidaiak. Hori da marketina eta bezeroen ikuspegia konbinatzea hain indartsua. Ahal duzu [datuak bateratu](data-unification.md) edozein iturritatik, erabili bezeroen bidaia hiperpertsonalizatuak elikatzeko.
 
 Gehiago ikasi: [Erabili Customer Insights profilak eta segmentuak denbora errealeko marketinean](/dynamics365/marketing/real-time-marketing-ci-profile)
 
@@ -41,4 +40,4 @@ Gehiago ikasi: [Erabili segmentuak Dynamics 365 Customer Insights Dynamics 365 M
 
 Ez zara hodeiko biltegiratzera mugatzen Customer Insights datuak Marketing-ekin erabili nahi badituzu. Dagoeneko zurea baduzu Azure Data Lake Storage konfiguratu, Customer Insights-ekin konekta zaitezke, gero datuak Marketing aplikazioarekin parteka ditzakezu hodeian oinarritutako konfigurazio batekin egingo zenukeen bezala.
 
-Gehiago ikasi: [Gaitu honekin datuak partekatzea Dataverse zuretik Azure Data Lake Storage](manage-environments.md#enable-data-sharing-with-dataverse-from-your-own-azure-data-lake-storage-preview)
+Gehiago ikasi: [Gaitu honekin datuak partekatzea Dataverse zuretik Azure Data Lake Storage](customer-insights-dataverse.md#enable-data-sharing-with-dataverse-from-your-own-azure-data-lake-storage-preview)

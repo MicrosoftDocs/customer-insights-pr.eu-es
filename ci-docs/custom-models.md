@@ -11,12 +11,12 @@ manager: shellyha
 searchScope:
 - ci-custom-models
 - customerInsights
-ms.openlocfilehash: f392c5cc5ac88a971565f0ccaf309ce89ce12660
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: a44d1f2c00c90de3ed5a9425e3a197e109cb28e0
+ms.sourcegitcommit: b515120bebd2638f2639004422cee3cff42fbdf7
 ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8642093"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "8800405"
 ---
 # <a name="custom-machine-learning-models"></a>Ikaskuntza automatiko eredu pertsonalizatuak
 
@@ -92,7 +92,7 @@ Iragarpenek bezeroen esperientzia hobeak sortzeko, negozio gaitasunak eta diru s
 
 ## <a name="edit-a-workflow"></a>Editatu lan-fluxua
 
-1. Gainean **Neurrira egindako ereduak** orrialdean, hautatu elipsis bertikala **Ekintzak** lehen sortu eta hautatu duzun fluxu ondoko zutabea **Editatu**.
+1. Gainean **Eredu pertsonalizatuak** orrialdea, hautatu elipsi bertikala (&vellip;)-n **Ekintzak** zutabea aurrez sortu eta hautatu duzun lan-fluxu baten ondoan **Editatu**.
 
 1. Laneko fluxuaren izen ezaguna eguneratu dezakezu **Bistaratzeko izena** eremuan, baina ezin duzu konfiguratutako web zerbitzu edo bideratzea aldatu. Hautatu **Hurrengoa**.
 
@@ -108,7 +108,7 @@ Iragarpenek bezeroen esperientzia hobeak sortzeko, negozio gaitasunak eta diru s
 
 ## <a name="run-a-workflow"></a>Lan-fluxuak exekutau
 
-1. **Pertsonalizatutako ereduak** orrian, hautatu elipsi bertikala **Ekintzak** zutabean aurrez sortu duzun lan-korrontearen ondoan.
+1. Gainean **Eredu pertsonalizatuak** orrialdea, hautatu elipsi bertikala (&vellip;)-n **Ekintzak** zutabea aurrez sortu duzun lan-fluxu baten ondoan.
 
 1. Hautatu **Exekutatu**.
 
@@ -116,7 +116,7 @@ Zure lan-fluxua automatikoki exekutatzen da programatutako freskagarri bakoitzar
 
 ## <a name="delete-a-workflow"></a>Ezabatu lan-fluxua
 
-1. **Pertsonalizatutako ereduak** orrian, hautatu elipsi bertikala **Ekintzak** zutabean aurrez sortu duzun lan-korrontearen ondoan.
+1. Gainean **Eredu pertsonalizatuak** orrialdea, hautatu elipsi bertikala (&vellip;)-n **Ekintzak** zutabea aurrez sortu duzun lan-fluxu baten ondoan.
 
 1. Hautatu **Ezabatu** eta berretsi ezabatzea.
 

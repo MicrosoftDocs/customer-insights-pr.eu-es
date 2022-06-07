@@ -8,12 +8,12 @@ ms.topic: conceptual
 author: m-hartmann
 ms.author: wimohabb
 manager: shellyha
-ms.openlocfilehash: 5b39452d7a4612242739e8000e57217954c71289
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: af2583295627f98e980adbca4f216b9c34c3cad8
+ms.sourcegitcommit: bf65bc0a54cdab71680e658e1617bee7b2c2bb68
 ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8641501"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "8808531"
 ---
 # <a name="data-subject-rights-dsr-requests-under-gdpr"></a>Datu subjektuen eskubideak (DSR) eskaerak DBAOren azpian
 
@@ -41,7 +41,7 @@ Customer Insights kudeatzaile batek urrats hauek jarraitu ditzake datu-iturburu-
 1. Hasi saioa Dynamics 365 Customer Insights aplikazioan.
 2. Joan **Datuak** > **Datu iturriak**
 3. Ezabatutako bezeroen datuak biltzen dituen zerrendan datu-iturburu bakoitzeko:
-   1. Hautatu (...) eta ondoren, hautatu **Freskatu**.
+   1. Hautatu elipsi bertikala (&vellip;) eta gero hautatu **Freskatu**.
    2. Begiratu datu-iturburu azpian **Egoera**. Marka egiaztatzeak freskagarria izan dela esan nahi du. Abisu triangelu batek zerbait gaizki joan dela esan nahi du. Abisu triangelua bistaratzen bada, jarri harremanetan D365CI@microsoft.com.
 
 > [!div class="mx-imgBorder"]
@@ -52,7 +52,7 @@ Customer Insights kudeatzaile batek urrats hauek jarraitu ditzake datu-iturburu-
 Customer Insights kudeatzaile batek urrats hauek jarraitu ditzake Customer Insights erabiltzailearen datuak ezabatzeko:
 
 1. Hasi saioa Dynamics 365 Customer Insights aplikazioan.
-2. Joan **Admin** > **Baimenak**.
+2. Joan **Admin** > **Segurtasuna** > **Baimenak**.
 3. Hautatu ezabatu nahi dituzun erabiltzailearen kontrol-laukiak.
 4. Hautatu **Kendu**.
 

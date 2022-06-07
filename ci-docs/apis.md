@@ -11,12 +11,12 @@ manager: shellyha
 searchScope:
 - ci-system-api-usage
 - customerInsights
-ms.openlocfilehash: a460ec87ec85f0614f944d352588d4ca899f8120
-ms.sourcegitcommit: 4ae316c856b8de0f08a4605f73e75a8c2cf51c4e
-ms.translationtype: HT
+ms.openlocfilehash: 9a04276f7326533cd389cba6554f468123463bac
+ms.sourcegitcommit: bf65bc0a54cdab71680e658e1617bee7b2c2bb68
+ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 05/13/2022
-ms.locfileid: "8755435"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "8808491"
 ---
 # <a name="work-with-customer-insights-apis"></a>Lan egin Customer Insights APIekin
 
@@ -31,11 +31,11 @@ Artikulu honek deskribatzen du nola atzitu Customer Insights APIetara, nola sort
 
 1. [Hasi saioa](https://home.ci.ai.dynamics.com) Customer Insights-en. Harpidetzarik ez baduzu oraindik, [erregistratu Customer Insights-en probako bertsiorako](https://aka.ms/tryci).
 
-1. Customer Insights ingurunean APIak gaitzeko, joan hona: **Administratzailea** > **Baimenak**. Administratzaile baimenak beharko dituzu horretarako.
+1. Customer Insights ingurunean APIak gaitzeko, joan hona **Admin** > **Segurtasuna**. Administratzaile baimenak beharko dituzu horretarako.
 
 1. Joan **APIak** fitxara eta hautatu **Gaitu** botoia.    
  
-   APIak gaitzeak API eskaeretan erabiltzen den harpidetza gako nagusia eta bigarren mailakoa sortzen ditu zure instantziarako. Gakoak birsortu ditzakezu **Birsortu nagusia** edo **Birsortu bigarren mailakoa** hautatuz hemen: **Administratzailea** > **Baimenak** > **APIak**.
+   APIak gaitzeak API eskaeretan erabiltzen den harpidetza gako nagusia eta bigarren mailakoa sortzen ditu zure instantziarako. Teklak birsor ditzakezu hautatuta **Birsortu primarioa** edo **Bigarren mailako birsortzea** on **Admin** > **Segurtasuna** > **APIak**.
 
 <!--  :::image type="content" source="media/enable-apis.gif" alt-text="Enable Customer Insights APIs."::: -->
 
@@ -62,14 +62,12 @@ Urrats hauei esker, Azure aplikazio batean Customer Insights APIak erabiltzen ha
 1. Ezkerrean, hautatu **Aplikazioen erregistroak**.
 
 1. Aukeratu **Erregistro berria**, eman aplikazioaren izena eta aukeratu kontu mota.
- 
+
    Aukeran, gehitu birbideratzeko URLa. http://localhost nahikoa da zure ordenagailu lokalean aplikazio bat garatzeko.
 
 1. Aplikazio berriaren erregistroan, joan hona: **API baimenak**.
 
-<!--   :::image type="content" source="media/app-registration-1.gif" alt-text="How to set API permissions in App registration."::: -->
-
-1. Aukeratu **Gehitu baimena** eta hautatu **Customer Insights** alboko panelean.
+1. Hautatu **Gehitu baimena** eta hautatu **Dynamics 365 AI Customer Insights-erako** alboko panelean.
 
 1. **Baimen mota**, hautatu **Baimen delegatuak** eta, ondoren, hautatu **user_impersonation** baimena.
 
@@ -109,7 +107,7 @@ APIak gure bezeroen liburutegietan erabiltzeari buruzko informazioa lortzeko, ik
 
 1. Amaitzeko, aplikazioaren erregistroaren izena gehitu behar dugu erabiltzaile gisa Customer Insights-en.  
    
-   Ireki Customer Insights, joan hona: **Administratzailea** > **Baimenak** eta hautatu **Gehitu erabiltzailea**.
+   Ireki Customer Insights, joan hona **Admin** > **Segurtasuna** eta hautatu **Gehitu erabiltzailea**.
 
 1. Bilatu zure aplikazioaren erregistroaren izena, hautatu bilaketaren emaitzetan eta hautatu **Gorde**.
 

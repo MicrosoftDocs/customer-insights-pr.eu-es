@@ -11,12 +11,12 @@ manager: shellyha
 searchScope:
 - ci-system-security
 - customerInsights
-ms.openlocfilehash: 9eb06a1190fe4e8012ecd3d6742b8b3f5f4d6349
-ms.sourcegitcommit: cf74b8c20d88eb96e1ac86e18cd44fe27aad5ab9
+ms.openlocfilehash: d4f2d5ebc828053c40e22065f4915c4d0f84153f
+ms.sourcegitcommit: 6ec4626a185892dfb781d3c7af4384f9c13f3723
 ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 04/28/2022
-ms.locfileid: "8653462"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "8763564"
 ---
 # <a name="bring-your-own-azure-key-vault-preview"></a>Ekarri zure Azure gako-ganga (aurrebista)
 
@@ -37,7 +37,7 @@ Customer Insights-en gakoen biltegia konfiguratzeko, aurrebaldintza hauek bete b
 
 - Gako gangak Key Vault suebakia izan behar du **desgaituta**.
 
-- Gako ganga berean dago [Azure kokapena](https://azure.microsoft.com/global-infrastructure/geographies/#overview) Customer Insights ingurune gisa. Customer Insights-en ingurunearen eskualdea azpian ageri da **Admin** > **Sistema** > **Buruz** > **Eskualdea**.
+- Giltza-ganga berean dago [Azure kokapena](https://azure.microsoft.com/global-infrastructure/geographies/#overview) Customer Insights ingurune gisa. Customer Insights-en ingurunearen eskualdea azpian ageri da **Admin** > **Sistema** > **Buruz** > **Eskualdea**.
 
 ### <a name="link-a-key-vault-to-the-environment"></a>Lotu gako-ganga ingurunearekin
 
@@ -89,9 +89,9 @@ Honako baimen hauek ematen zaizkio Customer Insights-i estekatutako gako-biltegi
 
 | Mota        | Baimenak          |
 | ----------- | -------------------- |
-| Tekla         | [Lortu Gakoak](/rest/api/keyvault/get-keys), [Lortu Gakoa](/rest/api/keyvault/get-key)                                 |
-| Dun & Bradstreet proiektuaren eskualdea      | [Lortu sekretuak](/rest/api/keyvault/get-secrets), [Lortu sekretua](/rest/api/keyvault/get-secret)                     |
-| Ziurtagiria | [Lortu ziurtagiriak](/rest/api/keyvault/get-certificates), [Lortu ziurtagiria](/rest/api/keyvault/get-certificate) |
+| Tekla         | [Lortu Gakoak](/rest/api/keyvault/keys/get-keys/get-keys), [Lortu Gakoa](/rest/api/keyvault/keys/get-key/get-key)                                 |
+| Dun & Bradstreet proiektuaren eskualdea      | [Lortu sekretuak](/rest/api/keyvault/secrets/get-secrets/get-secrets), [Lortu sekretua](/rest/api/keyvault/secrets/get-secret/get-secret)                     |
+| Ziurtagiria | [Lortu ziurtagiriak](/rest/api/keyvault/certificates/get-certificates/get-certificates), [Lortu ziurtagiria](/rest/api/keyvault/certificates/get-certificate/get-certificate) |
 
 Aurreko balioak exekuzioan zehar zerrendatzeko eta irakurtzeko gutxienekoak dira.
 

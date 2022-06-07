@@ -12,12 +12,12 @@ searchScope:
 - ci-predictions
 - ci-custom-models
 - customerInsights
-ms.openlocfilehash: e2cace3547a0b584dbf26ae5eecf86f3b256649f
-ms.sourcegitcommit: 6a5f4312a2bb808c40830863f26620daf65b921d
+ms.openlocfilehash: 57ef46416db0a11cde9f9d7650a0b502a01bf0ab
+ms.sourcegitcommit: b515120bebd2638f2639004422cee3cff42fbdf7
 ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "8740704"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "8800635"
 ---
 # <a name="complete-your-partial-data-with-predictions-deprecated"></a>Osatu zure datu partzialak iragarpenekin (zaharkituta)
 
@@ -95,7 +95,7 @@ Fluxu horren baitan atributu zehatz bat aukeratu behar duzu zure segmentua nola 
 
 2. Hautatu berrikusi nahi duzun iragarpena.
 
-3. Hautatu elipsi eremuan **Ekintzak** zutabea eta aukeratu **ikusi**.
+3. Hautatu elipsi bertikala (&vellip;)-n **Ekintzak** zutabea eta aukeratu **Ikusi**.
 
 4. Zure iragarpena ikusita hainbat datu puntu ikusiko dituzu.
    > [!div class="mx-imgBorder"]
@@ -122,7 +122,7 @@ Iragarpen bat sortu ondoren, eredua pertsonaliza dezakezu AI Builder zure eredua
 
 2. Hautatu editatu nahi duzun iragarpena.
 
-3. Hautatu elipsi eremuan **Ekintzak** zutabea eta aukeratu **ikusi**.
+3. Hautatu elipsi bertikala (&vellip;)-n **Ekintzak** zutabea eta aukeratu **Ikusi**.
 
 4. Hautatu **Pertsonalizatu AI Builder**.
 
@@ -139,7 +139,7 @@ Zure iragarpenaren hurrengo exekutatuak sortu duzun eredu eguneratua erabiliko d
 
 2. Hautatu ezabatu nahi duzun iragarpena.
 
-3. Hautatu elipsi eremuan **Ekintzak** zutabea eta aukeratu **Ezabatu**.
+3. Hautatu elipsi bertikala (&vellip;)-n **Ekintzak** zutabea eta aukeratu **Ezabatu**.
 
 4. Berretsi ezabatzea.
 
@@ -153,7 +153,7 @@ Eranskina ezin baduzu osatu Dataverse prozesua akats bat dela eta, prozesua esku
 - Aplikazio baimenak ez dira eman.
     1. Joan [https://admin.powerplatform.microsoft.com](https://admin.powerplatform.microsoft.com)-ra.
     1. Hautatu **Inguruneak**.
-    1. Hautatu baimena gehitu eta aukeratu nahi duzun ingurunearen ondoan **ezarpenak**.
+    1. Hautatu elipsi bertikala (&vellip;) baimena gehitu eta hautatu nahi duzun ingurunearen ondoan **Ezarpenak**.
     1. Zabaldu **Erabiltzaileak + baimenak** eta hautatu **erabiltzaileak**.
     1. Aukeratu **+ Berria** eta hautatu **Erabiltzailea**.
     1. Aukeratu **Aplikazioaren erabiltzailea** hautatuta ez badago, eta sartu informazio hau:

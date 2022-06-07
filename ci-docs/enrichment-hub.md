@@ -14,12 +14,12 @@ searchScope:
 - ci-enrichment-details
 - ci-enrichment-wizard
 - customerInsights
-ms.openlocfilehash: 5c14e6c96d2f907ba161331b6f92277191cbdbef
-ms.sourcegitcommit: cf74b8c20d88eb96e1ac86e18cd44fe27aad5ab9
+ms.openlocfilehash: abc1b6af80e8854ee3bc930453634ef67376c4af
+ms.sourcegitcommit: b515120bebd2638f2639004422cee3cff42fbdf7
 ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 04/28/2022
-ms.locfileid: "8653508"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "8800590"
 ---
 # <a name="enrichment-for-customer-profiles-preview"></a>Bezeroen profiletarako aberastea (aurrebista)
 
@@ -63,7 +63,7 @@ Gainean **Nire aberastasunak** fitxan, konfiguratutako aberastasunak eta haien p
 
 Joan **Nire aberastasunak** fitxa konfiguratutako aberastasun guztiak ikusteko. Aberastu bakoitza aberastearen inguruko informazio osagarria biltzen duen errenkada gisa irudikatzen da.
 
-Aukeratu aberastea eskuragarri dauden aukerak ikusteko. Zerrenda bateko elipsia (...) ere hauta dezakezu aukerak ikusteko. Zenbait aberaste konfiguratu badituzu, bilaketa-koadroa erabil dezakezu azkar aurkitzeko.
+Aukeratu aberastea eskuragarri dauden aukerak ikusteko. Elipse bertikala ere hauta dezakezu (&vellip;) zerrendako elementu batean aukerak ikusteko. Zenbait aberaste konfiguratu badituzu, bilaketa-koadroa erabil dezakezu azkar aurkitzeko.
 
 :::image type="content" source="media/enrichment-hub-options-run.png" alt-text="Aberasteen zerrendan aberastasunak kudeatzeko aukerak.":::
 

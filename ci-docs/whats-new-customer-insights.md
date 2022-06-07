@@ -8,12 +8,12 @@ author: m-hartmann
 ms.author: mhart
 ms.reviewer: skumm
 manager: shellyha
-ms.openlocfilehash: 386198c838929a20e136288fffb1015707654d8d
-ms.sourcegitcommit: 9f256af5c4f7e99305bf09087f7ec05eebeae6a0
-ms.translationtype: MT
+ms.openlocfilehash: af79c8369dd608e8ce1c14c50bb9aef3a79b9029
+ms.sourcegitcommit: f5af5613afd9c3f2f0695e2d62d225f0b504f033
+ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8700922"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "8833615"
 ---
 # <a name="whats-new-in-dynamics-365-customer-insights"></a>Dynamics 365 Customer Insights-en berritasunak
 
@@ -43,9 +43,9 @@ Informazio gehiagorako, ikus [Erabili neurri-sortzailea neurriak hutsetik sortze
 
 ### <a name="consolidation-of-customer-insights-documentation"></a>Customer Insights dokumentazioa bateratzea
 
-Gure dokumentazio-artikuluak berrikusi ditugu, eta konpromiso-estatistiken eta ikusleen informazio-gaitasunen aipamenak kendu ditugu. Aurrerantzean, produktuaren Customer Insights koherentziaz aipatuko dugu aplikazioaren oinarrizko ezaugarriei buruz idazten dugunean. Aldaketa honek, gainera, edukien taula, URL egitura eta azpiko dokumentazio biltegiko fitxategi-bideen berregituraketa nabarmena dakar. Zure laster-markek edo lehendik dauden estekek funtzionatzen jarraitzen dute eta eguneratutako URLetara birbideratzen jarraitzen dute.
+Gure dokumentazio-artikuluak berrikusi ditugu eta konpromiso-estatistiken eta ikusleen estatistiken gaitasunei buruzko aipamenak kendu ditugu. Aurrerantzean, produktuaren Customer Insights koherentziaz aipatuko dugu aplikazioaren oinarrizko ezaugarriei buruz idazten dugunean. Aldaketa honek, gainera, edukien taula, URL egitura eta azpiko dokumentazio biltegiko fitxategi-bideen berregituraketa nabarmena dakar. Zure laster-markek edo lehendik dauden estekek funtzionatzen jarraitzen dute eta eguneratutako URLetara birbideratzen jarraitzen dute.
 
-Aldaketa hori nola hautematen duzun edo espero bezala funtzionatzen ez duen zerbait ikusi nahi badiguzu, esaiguzu: [orrialde honetarako iritzia bidaltzen](https://github.com/MicrosoftDocs/customer-insights/issues/new?title=&body=%0A%0A%5BEnter%20feedback%20here%5D%0A%0A%0A---%0A%23%23%23%23%20Document%20Details%0A%0A%E2%9A%A0%20*Do%20not%20edit%20this%20section.%20It%20is%20required%20for%20docs.microsoft.com%20%E2%9E%9F%20GitHub%20issue%20linking.*%0A%0A*%20ID%3A%20d323ba46-f96e-1972-bc52-9b88f7d9cdfa%0A*%20Version%20Independent%20ID%3A%20d323ba46-f96e-1972-bc52-9b88f7d9cdfa%0A*%20Content%3A%20%5BNew%20and%20upcoming%20features%20-%20Dynamics%20365%20Customer%20Insights%5D(https%3A%2F%2Fdocs.microsoft.com%2Fen-us%2Fdynamics365%2Fcustomer-insights%2Fwhats-new-customer-insights)%0A*%20Content%20Source%3A%20%5Bci-docs%2Fwhats-new-customer-insights.md%5D(https%3A%2F%2Fgithub.com%2FMicrosoftDocs%2Fcustomer-insights%2Fblob%2Fmain%2Fci-docs%2Fwhats-new-customer-insights.md)%0A*%20Service%3A%20**customer-insights**%0A*%20Sub-service%3A%20**audience-insights**%0A*%20GitHub%20Login%3A%20%40m-hartmann%0A*%20Microsoft%20Alias%3A%20**mhart**).
+Aldaketa hori nola hautematen duzun edo espero bezala funtzionatzen ez duen zerbait ikusi nahi baduzu, esan iezaguzu: [orrialde honetarako iritzia bidaltzen](https://github.com/MicrosoftDocs/customer-insights/issues/new?title=&body=%0A%0A%5BEnter%20feedback%20here%5D%0A%0A%0A---%0A%23%23%23%23%20Document%20Details%0A%0A%E2%9A%A0%20*Do%20not%20edit%20this%20section.%20It%20is%20required%20for%20docs.microsoft.com%20%E2%9E%9F%20GitHub%20issue%20linking.*%0A%0A*%20ID%3A%20d323ba46-f96e-1972-bc52-9b88f7d9cdfa%0A*%20Version%20Independent%20ID%3A%20d323ba46-f96e-1972-bc52-9b88f7d9cdfa%0A*%20Content%3A%20%5BNew%20and%20upcoming%20features%20-%20Dynamics%20365%20Customer%20Insights%5D(https%3A%2F%2Fdocs.microsoft.com%2Fen-us%2Fdynamics365%2Fcustomer-insights%2Fwhats-new-customer-insights)%0A*%20Content%20Source%3A%20%5Bci-docs%2Fwhats-new-customer-insights.md%5D(https%3A%2F%2Fgithub.com%2FMicrosoftDocs%2Fcustomer-insights%2Fblob%2Fmain%2Fci-docs%2Fwhats-new-customer-insights.md)%0A*%20Service%3A%20**customer-insights**%0A*%20Sub-service%3A%20**audience-insights**%0A*%20GitHub%20Login%3A%20%40m-hartmann%0A*%20Microsoft%20Alias%3A%20**mhart**).
 
 ## <a name="march-2022-updates"></a>2022ko martxoko eguneraketak
 
@@ -58,16 +58,17 @@ LiveRamp-ek bezeroen datuen identitatearen ebazpena eta finkatzea eskaintzen du.
 Informazio gehiagorako, ikus [Aberastu bezeroen profilak LiveRamp-eko identitate-datuekin (aurrebista)](enrichment-liveramp.md).
 
 ### <a name="organize-segments-and-measures-with-tags-and-filters"></a>Antolatu segmentuak eta neurriak etiketa eta iragazkiekin
-Zure erakundeak segmentu edo neurri asko mantentzen baditu, egokia aurkitzea batzuetan zaila izan daiteke. Ezaugarri berri honek etiketak eta zutabeak erabiliz zerrendak antolatzeko aukera ematen dizu. Datuak azkar eta erraz aurkitzen eta ikuspegiak pertsonalizatzen laguntzen du.
+
+Zure erakundeak segmentu edo neurri asko mantentzen baditu, egokia aurkitzea zaila izan daiteke batzuetan. Ezaugarri berri honek etiketak eta zutabeak erabiliz zerrendak antolatzeko aukera ematen dizu. Datuak azkar eta erraz aurkitzen eta ikuspegiak pertsonalizatzen laguntzen du.
 
 Informazio gehiagorako, ikus [Etiketa eta zutabeekin lan egin](work-with-tags-columns.md).
 
 ### <a name="enable-data-sharing-with-dataverse-when-using-your-own-storage-account"></a>Gaitu honekin datuak partekatzea Dataverse zure biltegiratze kontua erabiltzen duzunean
 
 Zure inguruneak erabiltzen badu Azure Data Lake Storage Customer Insights datuak gordetzeko, datuak partekatzeko Microsoft Dataverse konfigurazio gehigarri bat behar du.
-Lehenago, datuen partekatzea soilik gaitu dezakezu Dataverse zure datuak gure kudeatutako datu-lakuan gorde zirenean. 
+Lehenago, datuen partekatzea soilik gaitu dezakezu Dataverse zure datuak gure kudeatutako datu-lakuan gorde zirenean.
 
-Informazio gehiagorako, ikus [Gaitu honekin datuak partekatzea Dataverse zuretik Azure Data Lake Storage (Aurrebista)](manage-environments.md#enable-data-sharing-with-dataverse-from-your-own-azure-data-lake-storage-preview).
+Informazio gehiagorako, ikus [Gaitu honekin datuak partekatzea Dataverse zuretik Azure Data Lake Storage (Aurrebista)](customer-insights-dataverse.md#enable-data-sharing-with-dataverse-from-your-own-azure-data-lake-storage-preview).
 
 ### <a name="new-export-destinations-iterable-and-braze"></a>Esportazio-helmuga berriak: Iterable eta Braze
 
@@ -82,7 +83,6 @@ Konektatutako zerbitzuetan APIak aldatzeak konektoreen eguneraketak ekartzen dit
 - Google Ads: Google Ads esportazio-konektorearen bertsio berriak autentifikazio-esperientzia errazten du eta orain Google Ads-eko audientzia berriak automatikoki sortzeko aukera ematen dizu. 
 - Marketo: Marketo esportazio-konektorearen bertsio berriak Marketo IDrako euskarria eskaintzen du, eta horri esker, datuak bikoiztu, lehendik dauden erregistroak eguneratu eta Marketo-n erregistro berriak sortu ditzakezu. 
 
-
 ## <a name="february-2022-updates"></a>2022ko otsaileko eguneraketak
 
 2022ko otsaileko eguneratzeek ezaugarri berriak, errendimenduaren hobekuntzak eta akatsen konponketak barne hartzen dituzte.
@@ -95,7 +95,7 @@ Informazio gehiagorako, ikus [Iragarpenen ikuspegi orokorra](predictions-overvie
 
 ### <a name="new-data-source-integration-with-azure-synapse-analytics-preview"></a>datu-iturburu berria: bateratzea Azure Synapse Analytics (Aurrebista)
 
-Azure Synapse Analytics datu biltegietan eta datu handien sistemetan informaziorako denbora azkartzen duen enpresa analitika-zerbitzu bat da.
+Azure Synapse Analytics datu biltegietan eta datu handien sistemetan informaziorako denbora azkartzen duen enpresa analitika zerbitzu bat da.
 
 Dagoeneko erabiltzen duten erakundeak Azure Synapse Analytics Datu horiek Customer Insights-en har ditzake. 
 
@@ -138,7 +138,7 @@ Trantsizio-aldi baterako, lehendik dauden aurrebista-parte-hartzaileek aurrebist
 - Ikusi gertaerak eta gertaeren propietateak 
 - Hobetu profil bateratuak irensten eta findutako gertaerekin, bezeroen datuen balio osoaz baliatzeko
   
-Trantsizio-aldian, harrapatutako gertaerak konektatutako Data Lake-ra igortzen dira oraindik. Funtzio hori desaktibatuta dagoenean, datuak partekatzea geldituko da eta ez da gertaera berririk bidaliko konektatutako biltegira.
+Trantsizio-aldian, harrapatutako gertaerak konektatutako Data Lake-ra igortzen dira oraindik. Funtzio hau desaktibatuta dagoenean, datuak partekatzea geldituko da eta ez da gertaera berririk bidaliko konektatutako biltegira.
 Jarri harremanetan zure Microsoft kontuko taldearekin zuzenean gaitasunen aurrebistaren amaierari buruzko galderarik baduzu. Zure Kontu-taldeak datozen aurkezpenen berri emango dizu. 
 
 ## <a name="january-2022-updates"></a>2022ko urtarrileko eguneraketak
@@ -147,7 +147,7 @@ Jarri harremanetan zure Microsoft kontuko taldearekin zuzenean gaitasunen aurreb
 
 ### <a name="sentiment-analysis-of-your-customers-feedback"></a>Zure bezeroen iritzien analisia
 
-Customer Insights-ek AI-k bultzatutako funtzio berri bat eskaintzen du bezeroen sentimendua sintetizatzeko eta negozio-alderdi espezifikoak identifikatzeko, hobekuntzak hobetzeko aukera gisa. Zure bezeroen idatzizko iritziak aztertuz gero, informazio zehatzak lor ditzakezu kostu baxuan. Sentimenduen analisia Lengoaia Naturaleko Prozesamenduaren (NLP) ereduek bultzatuta, bezeroaren ID bakoitzeko bi informazio eratorri sortzen dituztenak. Sentimendu puntuazioa (-5etik 5era) eta negozio-alderdi aplikagarrien zerrenda. 
+Customer Insights-ek AI-k bultzatutako funtzio berri bat eskaintzen du bezeroen sentimendua sintetizatzeko eta negozio-alderdi espezifikoak identifikatzeko, hobekuntzak hobetzeko aukera gisa. Zure bezeroen idatzizko iritziak aztertuta, informazio zehatzak lor ditzakezu kostu baxuan. Sentimenduen analisia Lengoaia Naturaleko Prozesamenduaren (NLP) ereduek bultzatuta, bezeroaren ID bakoitzeko bi informazio eratorri sortzen dituztenak. Sentimendu puntuazioa (-5etik 5era) eta negozio-alderdi aplikagarrien zerrenda. 
 
 Informazio gehiagorako, ikus [Aztertu sentimendua bezeroen iritzietan (Aurrebista)](sentiment-analysis.md).
 

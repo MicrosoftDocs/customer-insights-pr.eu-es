@@ -1,7 +1,7 @@
 ---
 title: Segmentuak Customer Insights-en
 description: Segmentuen ikuspegi orokorra eta nola sortu eta kudeatu.
-ms.date: 03/30/2022
+ms.date: 05/20/2022
 ms.subservice: audience-insights
 ms.topic: overview
 author: JimsonChalissery
@@ -14,12 +14,12 @@ searchScope:
 - ci-segments
 - ci-segment-details
 - customerInsights
-ms.openlocfilehash: 9791e971387eb7db91ed7c4e4fe76552656013ba
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: d616ec8273115203dddb59334a348c66e72fa678
+ms.sourcegitcommit: b515120bebd2638f2639004422cee3cff42fbdf7
 ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8642145"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "8800727"
 ---
 # <a name="segments-overview"></a>Segmentuen informazio orokorra
 
@@ -58,7 +58,7 @@ Ekintza hauek erabilgarri daude segmentu bat hautatzen duzunean:
 - **ikusi** segmentuko xehetasunak, kideen zenbaketa joera segmentuko kideen aurrebista barne.
 - **Deskargatu** .CSV fitxategi gisa segmentuko kideen zerrenda.
 - **Editatu** segmentuak bere propietateak aldatzeko.
-- **Sortu bikoiztuak** segmentu baten. Bere propietateak berehala editatzea edo bikoiztua gordetzea aukeratu dezakezu.
+- **Sortu bikoiztuak** segmentu baten. Bere propietateak berehala editatzea edo bikoiztua gordetzea aukera dezakezu.
 - **Freskatu** segmentuak azken datuak sartuko ditu.
 - **Aktibatu** edo **Desaktibatu** segmentua. Segmentu inaktiboetan, segmentuaren definizioa badago, baina oraindik ez du bezeroik. Segmentu aktibo batek segmentuaren definizioarekin bat datozen bezeroak bilatzen ditu. A bada [freskatze programatua](system.md#schedule-tab) konfiguratuta dago, segmentu inaktiboek dute **Egoera** gisa zerrendatuta **Saltatuta**, freskatzen saiatu ere ez zela egin adieraziz. Segmentu inaktiboa aktibatzen denean, freskatu egingo da eta programatutako freskapenetan sartuko da.
   Bestela, erabil dezakezu **Ordutegiak beranduago** funtzionaltasuna **Aktibatu / Desaktibatu** goitibehera, segmentu jakin bat aktibatzeko eta desaktibatzeko etorkizuneko data eta ordua zehazteko.
@@ -75,8 +75,9 @@ Ekintza hauek erabilgarri daude segmentu bat hautatzen duzunean:
 ## <a name="refresh-segments"></a>Freskatu segmentuak
 
 Segmentu guztiak freskatu ditzakezu aldi berean hautatuta **Freskatu guztiak** gainean **segmentuak** orrialdea edo segmentu bat edo gehiago freskatu ditzakezu hautatzen dituzunean eta aukeratutakoan **Freskatu** aukeren artean. Bestela, berriztagarria den aldizka konfigura dezakezu **administratzailea** > **Sistema** > **Ordutegiak**. Berriro errepikatzen den freskagarri bat konfiguratzen denean, arau hauek aplikatzen dira:
-- Mota duten segmentu guztiak **Dinamikoa** edo **Hedapena** ezarritako kadentzian automatikoki freskatuko da. Freskatzea amaitzen denean **Egoera** segmentua freskatzeko arazoren bat egon den adierazten du. The **Azken freskatua** Azken freskatze arrakastatsuaren denbora-zigilua erakusten du. Errore bat gertatzen bada, hautatu errorea gertatu denari buruzko xehetasunak ikusteko.
-- Mota duten segmentuak **Estatikoa** *ez* automatikoki freskatu. The **Azken freskatua** Segmentu estatikoak eskuz exekutatu edo freskatu ziren azken aldiaren denbora-zigilua erakusten du.
+
+- Mota duten segmentu guztiak **Dinamikoa** edo **Hedapena** ezarritako kadentzian automatikoki freskatuko da. Freskatzea amaitutakoan **Egoera** segmentua freskatzeko arazoren bat egon den adierazten du. The **Azken freskatua** Azken freskatze arrakastatsuaren denbora-zigilua erakusten du. Errore bat gertatzen bada, hautatu errorea gertatu denari buruzko xehetasunak ikusteko.
+- Mota duten segmentuak **Estatikoa** *ez* automatikoki freskatu. The **Azken freskatua** Segmentu estatikoak eskuz exekutatu edo freskatu diren azkeneko denbora-zigilua erakusten du.
 
 [!INCLUDE [progress-details-include](includes/progress-details-pane.md)]
 
@@ -86,17 +87,37 @@ Segmentu bat esportatu dezakezu segmentuen orrialdetik edo [esportazioen orritik
 
 1. Zoaz **Segmentuak** orrira.
 
-1. Esportatu nahi duzun segmenturako, hautatu **erakutsi gehiago [...]**.
+1. Hautatu elipsi bertikala (&vellip;) esportatu nahi duzun segmenturako.
 
 1. Aukeratu **Kudeatu esportazioak** ekintzen goitibeherako zerrendatik.
 
 1. **Segmentuaren esportazioak (aurrebista)** orria irekitzen da. Konfiguratutako esportazio guztiak uneko segmentua duten edo ez taldeka ikus ditzakezu.
 
-   1. Aukeratutako segmentua esportazio batera gehitzeko, **Editatu** dagokion esportazioa dagokion segmentua hautatzeko eta, ondoren, gorde. Banakako bezeroentzako inguruneetan zerrendako esportazioa aukeratu eta hautatu dezakezu **Gehitu segmentua** emaitza bera lortzeko.
+   1. Aukeratutako segmentua esportazio batera gehitzeko, **Editatu** dagokion esportazioa dagokion segmentua hautatzeko eta, ondoren, gorde. Bezero indibidualentzako inguruneetan, horren ordez esportazioa hautatu dezakezu zerrendan eta hautatu **Gehitu segmentua** emaitza bera lortzeko.
 
    1. Aukeratutako segmentuarekin esportazio berri bat sortzeko, hautatu **Gehitu esportazioa**. Esportazioak sortzeari buruzko informazio gehiago lortzeko, ikusi [Konfiguratu esportazio berria](export-destinations.md#set-up-a-new-export).
 
 1. Aukeratu **Itzuli** segmentuen orri nagusira itzultzeko.
+
+## <a name="track-usage-of-a-segment"></a>Jarraitu segmentu baten erabilera
+
+Aplikazioetan segmentuak erabiltzen badituzu, berdinetan oinarritzen direnak Microsoft Dataverse Customer Insights-ekin konektatuta dagoen erakundea, segmentu baten erabileraren jarraipena egin dezakezu. Izan ere [Dynamics 365 Marketing-en bezeroen bidaietan erabiltzen diren Customer Insights segmentuak](/dynamics365/marketing/real-time-marketing-ci-profile), sistemak segmentu horren erabileraren berri ematen dizu.
+
+Customer Insights ingurunean edo marketineko bezero-bidaia batean erabiltzen ari den segmentu bat editatzean, pankarta bat [segmentu eraikitzailea](segment-builder.md) mendekotasunen berri ematen dizu. Mendekotasunaren xehetasunak zuzenean ikus ditzakezu pankartatik edo hautatuz **Erabilera** segmentu-eraikitzailean.
+
+The **Segmentuaren erabilera** panelean segmentu honen erabilerari buruzko xehetasunak erakusten ditu Dataverse oinarritutako aplikazioak. Bezeroen bidaietan erabiltzen diren segmentuetarako, segmentu hori erabiltzen den Marketing-en bidaia ikuskatzeko esteka aurkituko duzu. Marketing aplikaziora sartzeko baimenak badituzu, xehetasun gehiago atzi ditzakezu bertan.
+
+:::image type="content" source="media/segment-usage-pane.png" alt-text="Alboko panela segmentuen erabileraren xehetasunekin segmentu-sortzailean.":::
+
+Sistemak jarraipenaren segmentu baten erabileraren berri ematen dizu hura ezabatzen saiatzen zarenean. Ezabatzera zoazen segmentua Marketing-en bezero-bidaia batean erabiltzen bada, bidaia hori gelditu egingo da segmentuko erabiltzaile guztientzat. Bidaia marketin kanpaina baten parte bada, ezabatzeak kanpaina horri berari eragingo dio. Hala ere, oraindik segmentua ezaba dezakezu abisuak izan arren.
+
+:::image type="content" source="media/segment-usage-delete.png" alt-text="Elkarrizketa-koadroa segmentua ezabatzea berresteko, segmentu bat erabiltzen denean Dataverse aplikazio.":::
+
+### <a name="supported-apps"></a>Onartutako aplikazioak
+
+Une honetan erabileraren jarraipena egiten da Dataverse - Oinarritutako aplikazioak:
+
+- [Bezeroen bidaiak Dynamics 365 Marketing-en](/dynamics365/marketing/real-time-marketing-ci-profile)
 
 ## <a name="view-processing-history-and-segment-members"></a>Ikusi prozesaketaren historia eta segmentuko kideak
 
@@ -117,6 +138,5 @@ Beheko aldean segmentuko kideen zerrenda dago.
 > Zerrenda honetan agertzen diren eremuak zure segmentuko entitateen atributuetan oinarrituta daude.
 >
 >Zerrenda bat datorren segmentuko kideen aurrebista da eta zure segmentuko lehen 100 erregistroak erakusten ditu, behar bezala baloratu eta haren definizioak berrikusteko. Bat datozen erregistro guztiak ikusteko, beharrezkoa da [esportatu segmentua](export-destinations.md).
-
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]
