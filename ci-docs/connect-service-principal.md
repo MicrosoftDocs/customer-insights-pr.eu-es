@@ -11,12 +11,12 @@ manager: shellyha
 searchScope:
 - ci-system-security
 - customerInsights
-ms.openlocfilehash: b18d1f42b9510ebf23f0666322819865d132173b
-ms.sourcegitcommit: f5af5613afd9c3f2f0695e2d62d225f0b504f033
+ms.openlocfilehash: 36ad957f59b23df6ee83d9d90898ef03ddfd320a
+ms.sourcegitcommit: 5e26cbb6d2258074471505af2da515818327cf2c
 ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 06/01/2022
-ms.locfileid: "8833360"
+ms.lasthandoff: 06/14/2022
+ms.locfileid: "9011826"
 ---
 # <a name="connect-to-an-azure-data-lake-storage-account-by-using-an-azure-service-principal"></a>Konektatu Azure Data Lake Storage kontu nagusia Azure zerbitzuaren nagusia erabiliz
 
@@ -47,11 +47,17 @@ Customer Insights-en zerbitzu nagusi berri bat sortu aurretik, egiaztatu zure er
 
    :::image type="content" source="media/ADLS-SP-AlreadyProvisioned.png" alt-text="Lehendik dagoen zerbitzu nagusia erakusten duen pantaila-argazkia.":::
 
-6. Emaitzarik ez bada itzultzen, egin dezakezu [zerbitzu nagusi berri bat sortu](#create-a-new-service-principal). Kasu gehienetan, dagoeneko existitzen da eta zerbitzu nagusiaren baimenak soilik eman behar dizkiozu biltegiratze-kontura sartzeko.
+6. Emaitzarik ez bada itzultzen, egin dezakezu [zerbitzu nagusi berri bat sortu](#create-a-new-service-principal). Kasu gehienetan, dagoeneko existitzen da eta zerbitzu nagusiak biltegiratze-kontura sartzeko baimenak soilik eman behar dizkiozu.
 
 ## <a name="grant-permissions-to-the-service-principal-to-access-the-storage-account"></a>Eman baimenak zerbitzuaren entitateari biltegiratze kontura sartzeko
 
-Joan Azure atarira Customer Insights-en erabili nahi duzun biltegiratze-kontuaren zerbitzu nagusiari baimenak emateko.
+Joan Azure atarira Customer Insights-en erabili nahi duzun biltegiratze-kontuaren zerbitzu nagusiari baimenak emateko. Biltegiratze-kontuari edo edukiontziari eginkizun hauetako bat esleitu behar zaio:
+
+|Kredentziala|Eskakizunak|
+|----------|------------|
+|Momentu honetan saioa hasita dagoen erabiltzailea|**Rola** : biltegiratze-blob-en datuen irakurgailua, biltegiratze-blob-en laguntzailea edo biltegiratze-blob-en jabea.<br>**Maila** : Biltegiratze-kontuan edo edukiontzian baimenak eman daitezke.</br>|
+|Bezeroei buruzko informazio-zerbitzu nagusia -<br>Erabiliz Azure Data Lake Storage datu-iturburu gisa</br>|1. aukera<ul><li>**Rola** : biltegiratze blob datu-irakurlea, biltegiratze blob datuen laguntzailea edo biltegiratze blob datuen jabea.</li><li>**Maila** : Baimenak biltegiratze-kontuan eman behar dira.</li></ul>2. aukera *(Zerbitzu nagusia biltegiratze konturako sarbidea partekatu gabe)*<ul><li>**1. rola** : biltegiratze blob datu-irakurlea, biltegiratze blob datuen laguntzailea edo biltegiratze blob datuen jabea.</li><li>**Maila** : baimenak edukiontzian eman behar dira.</li><li>**2. rola** : Biltegiratze Blob Datuen Delegatzailea.</li><li>**Maila** : Baimenak biltegiratze-kontuan eman behar dira.</li></ul>|
+|Bezeroei buruzko informazio-zerbitzu nagusia - <br>Erabiliz Azure Data Lake Storage irteera edo helmuga gisa</br>|1. aukera<ul><li>**Rola** : Storage Blob datuen laguntzailea edo Storage Blob jabea.</li><li>**Maila** : Baimenak biltegiratze-kontuan eman behar dira.</li></ul>2. aukera *(Zerbitzu nagusia biltegiratze konturako sarbidea partekatu gabe)*<ul><li>**Rola** : Storage Blob datuen laguntzailea edo Storage Blob jabea.</li><li>**Maila** : baimenak edukiontzian eman behar dira.</li><li>**2. rola** : Biltegiratze blob delegatzailea.</li><li>**Maila** : Baimenak biltegiratze-kontuan eman behar dira.</li></ul>|
 
 1. Joan [Azure administratzaile-atarira](https://portal.azure.com) eta hasi saioa zure erakundean.
 
@@ -62,7 +68,7 @@ Joan Azure atarira Customer Insights-en erabili nahi duzun biltegiratze-kontuare
    :::image type="content" source="media/ADLS-SP-AddRoleAssignment.png" alt-text="Azure ataria erakusten duen pantaila-argazkia eginkizuna esleitzen duzun bitartean.":::
 
 1. Gainean **Gehitu rol esleipena** panelean, ezarri propietate hauek:
-   - Funtzioa: **Biltegiratze blob-aren datuen kolaboratzailea**
+   - Eginkizuna: biltegiratze-blob-en datu-irakurlea, biltegiratze-blob-eko kolaboratzailea edo biltegiratze-blob-en jabea goian zerrendatutako kredentzialetan oinarrituta.
    - Esleitu sarbidea hauei: **Erabiltzailea, taldea edo zerbitzuaren entitatea**
    - Aukeratu kideak: **Dynamics 365 AI Customer Insights-erako** (a [zerbitzu nagusia](#create-a-new-service-principal) lehenago begiratu duzu prozedura honetan)
 

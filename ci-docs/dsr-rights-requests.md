@@ -1,19 +1,19 @@
 ---
 title: Datu subjektuen eskubideak (DSR) eskaerak DBAOren azpian | Microsoft Docs
 description: Datu Gaien eskaerei erantzutea Dynamics 365 Customer Insights.
-ms.date: 08/11/2021
+ms.date: 05/23/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: m-hartmann
 ms.author: wimohabb
 manager: shellyha
-ms.openlocfilehash: af2583295627f98e980adbca4f216b9c34c3cad8
-ms.sourcegitcommit: bf65bc0a54cdab71680e658e1617bee7b2c2bb68
+ms.openlocfilehash: c71305ab835b0f4f75adcce716e795959f898e47
+ms.sourcegitcommit: 8e9f0a9693fd8d91ad0227735ff03688fef5406f
 ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "8808531"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "8947353"
 ---
 # <a name="data-subject-rights-dsr-requests-under-gdpr"></a>Datu subjektuen eskubideak (DSR) eskaerak DBAOren azpian
 
@@ -77,11 +77,5 @@ Maizter administratzaileak urrats hauek jarraitzen ditu datuak esportatzeko:
 1. Bidali mezu elektroniko bat helbidera D365CI@microsoft.com erabiltzailearen helbide elektronikoa eskaeran zehaztuz. Customer Insights taldeak mezu elektroniko bat bidaliko du erregistratutako maizter kudeatzaileko helbide elektronikora, datuak esportatzeko berrespena eskatuko du.
 2. Onartu eskatutako erabiltzailearen datuak esportatzeko baieztapena.
 3. Jaso esportatutako datuak maizter admin helbide elektronikoaren bidez.
-
-## <a name="consent-management-preview"></a>Baimenaren kudeaketa (aurrebista)
-
-Baimenak kudeatzeko gaitasunak ez ditu zuzenean erabiltzaileen datuak biltzen. Beste aplikazio batzuetan erabiltzaileek emandako baimen-datuak soilik inportatzen eta prozesatzen ditu.
-
-Erabiltzaile espezifikoei buruzko adostasun-datuak kentzeko, kendu baimena kudeatzeko gaitasunean jasotako datu-iturrietatik. datu-iturburu freskatu ondoren, kendutako datuak Baimen Zentroan ere ezabatuko dira. Baimen-entitatea erabiltzen duten aplikazioek iturburuan kendutako datuak ere ezabatuko dituzte a ondoren [freskatu](system.md#refresh-processes). Datu-iturriak azkar freskatzea gomendatzen dugu datu-gaiaren eskaera bati erantzun ondoren erabiltzailearen datuak beste prozesu eta aplikazio guztietatik kentzeko.
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

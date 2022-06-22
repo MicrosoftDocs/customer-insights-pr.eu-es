@@ -8,12 +8,12 @@ ms.topic: how-to
 author: stefanie-msft
 ms.author: sthe
 manager: shellyha
-ms.openlocfilehash: 8b14992f8312d333d8a12501e8a28496c8434779
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: 22eee11666752459a1750d728c4e254ab0c59e58
+ms.sourcegitcommit: 8e9f0a9693fd8d91ad0227735ff03688fef5406f
 ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8642105"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "8947215"
 ---
 # <a name="export-segment-list-and-other-data-to-azure-data-lake-storage-gen2-preview"></a>Esportatu segmentuen zerrenda eta beste datu batzuk Azure Data Lake Storage Gen2 (aurrebista)
 
@@ -21,11 +21,9 @@ Gorde Customer Insights datuak Azure Data Lake Storage Gen2 kontua edo erabili d
 
 ## <a name="known-limitations"></a>Muga ezagunak
 
-1. Hurrengorako Azure Data Lake Storage Gen2 aukera dezakezu [Errendimendu estandarra eta Premium errendimendu maila](/azure/storage/blobs/create-data-lake-storage-account) zure datu lakurako biltegiratze kontua sortzen ari zarenean. Premium errendimendu maila aukeratzen baduzu, hautatu bloke premium blobak kontu mota gisa. 
+1. Hurrengorako Azure Data Lake Storage Gen2 aukera dezakezu [Errendimendu estandarra eta Premium errendimendu maila](/azure/storage/blobs/create-data-lake-storage-account) zure datu lakurako biltegiratze kontua sortzen ari zarenean. Premium errendimendu maila aukeratzen baduzu, hautatu bloke premium blobak kontu mota gisa.
 
-
-## <a name="set-up-the-connection-to-azure-data-lake-storage-gen2"></a>Konfiguratu konexioa Azure Data Lake Storage Gen2 
-
+## <a name="set-up-the-connection-to-azure-data-lake-storage-gen2"></a>Konfiguratu konexioa Azure Data Lake Storage Gen2
 
 1. Joan **Administratzailea** > **Konexioak**.
 
@@ -39,7 +37,7 @@ Gorde Customer Insights datuak Azure Data Lake Storage Gen2 kontua edo erabili d
     - Erabiltzeko biltegiratze kontua nola sortu jakiteko Azure Data Lake Storage Gen2-rekin, ikusi [Sortu biltegiratze kontua](/azure/storage/blobs/create-data-lake-storage-account). 
     - Azure Data Lake 2. belaunaldia biltegiratze-kontuaren izena eta kontuaren gakoari buruz gehiago jakiteko, ikusi [Kudeatu biltegiratze kontuaren ezarpenak Azure atarian](/azure/storage/common/storage-account-manage).
 
-1. Hautatu **Gorde** konexioa osatzeko. 
+1. Hautatu **Gorde** konexioa osatzeko.
 
 ## <a name="configure-an-export"></a>Konfiguratu esportazio bat
 
@@ -57,8 +55,12 @@ Esportazio hau konfigura dezakezu mota honetako konexiorako sarbidea baduzu. Inf
 
 Esportazio bat gordetzeak ez du esportazioa berehala exekutatzen.
 
-Esportazioa guztiekin egiten da [freskatze programatua](system.md#schedule-tab). Ere egin dezakezu [esportatu eskariaren arabera](export-destinations.md#run-exports-on-demand). 
+Esportazioa guztiekin egiten da [freskatze programatua](system.md#schedule-tab).
+Ere egin dezakezu [esportatu eskariaren arabera](export-destinations.md#run-exports-on-demand).
 
-Esportatutako datuak konfiguratu duzun Azure Data Lake 2. belaunaldiaren biltegirako edukiontzian gordetzen dira. 
+Esportatutako datuak konfiguratu duzun Azure Data Lake 2. belaunaldiaren biltegirako edukiontzian gordetzen dira.
+
+> [!TIP]
+> Datu kopuru handia duten entitateen esportazioak CSV fitxategi anitz ekar ditzake esportazio bakoitzerako karpeta berean. Esportazioen zatiketa errendimendu arrazoiengatik gertatzen da esportazio bat burutzeko behar den denbora minimizatzeko.
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

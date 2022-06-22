@@ -48,14 +48,14 @@
   items:
     - name: Datuen iturburuen ikuspegi orokorra
       href: data-sources.md
+    - name: Konektatu datuetara Azure Data Lake Storage-en
+      href: connect-common-data-model.md
+    - name: Konektatu Azure Synapse Analytics-ra
+      href: connect-synapse.md
+    - name: Konektatu datuekin Microsoft Dataverse kudeatutako data lake-ra
+      href: connect-dataverse-managed-lake.md
     - name: Gehitu datu-iturriak bidez Power Query konektoreak
       href: connect-power-query.md
-    - name: Gehitu datu arrunten ereduaren karpeta datu-iturburu
-      href: connect-common-data-model.md
-    - name: Gehitu Dataverse kudeatutako data lake
-      href: connect-dataverse-managed-lake.md
-    - name: Gehitu Azure Synapse Analytics
-      href: connect-synapse.md
     - name: Datu iturrietarako aberastea
       href: data-sources-enrichment.md
     - name: Datu iturrietarako freskatze gehigarria
@@ -82,27 +82,27 @@
   items:
     - name: Aberastu bezeroen profilak
       href: enrichment-hub.md
+    - name: '-ko kontuak Office 365 datuak'
+      href: enrichment-office.md
     - name: Markak eta zaletasunak
       href: enrichment-microsoft.md
+    - name: Dun & Bradstreet-en konpainiaren datuak
+      href: enrichment-dnb.md
+    - name: Leadspace-eko enpresa-datuak
+      href: enrichment-leadspace.md
+    - name: Demografiarekin Experian
+      href: enrichment-experian.md
     - name: Helbide hobetuak
       href: enrichment-enhanced-addresses.md
     - name: Enpresaren datu hobetuak
       href: enrichment-enhanced-company-data.md
-    - name: Aberastu Azure Maps-ekin
-      href: enrichment-azure-maps.md
-    - name: Aberastu Dun & Bradstreet-ekin
-      href: enrichment-dnb.md
-    - name: Aberastu HERE Technologies-ekin
-      href: enrichment-here.md
-    - name: Aberastu Leadspace-rekin
-      href: enrichment-leadspace.md
-    - name: Aberastu LiveRamp-ekin
+    - name: LiveRamp-ekin identitatea
       href: enrichment-liveramp.md
-    - name: Aberastu Experian-ekin
-      href: enrichment-experian.md
-    - name: Aberastu Office 365 datuak
-      href: enrichment-office.md
-    - name: Aberastu SFTP inportazio pertsonalizatuarekin
+    - name: Kokapena Azure Maps-etik
+      href: enrichment-azure-maps.md
+    - name: HERE Technologies-eko kokalekua
+      href: enrichment-here.md
+    - name: SFTP pertsonalizatutako inportazioa
       href: enrichment-SFTP-custom-import.md
 - name: Bateratutako profilak
   items:
@@ -112,6 +112,8 @@
       href: search-filter-index.md
     - name: Bezeroen jarduerak definitu
       href: activities.md
+    - name: Customer Insights-en baimena kudeatzea
+      href: consent-management.md
 - name: Segmentuak
   items:
     - name: Segmentuen informazio orokorra
@@ -294,40 +296,6 @@
       href: 'https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights'
     - name: OData lagin-kontsultak
       href: odata-examples.md
-- name: Baimenaren kudeaketa (aurrebista)
-  items:
-    - name: Laguntza-atala
-      href: consent-management/index.yml
-    - name: Gaitasunaren ikuspegi orokorra
-      href: consent-management/overview.md
-    - name: Lehenengo urratsak
-      items:
-        - name: Lehenengo urratsak
-          href: consent-management/get-started.md
-        - name: Kontzeptuak eta terminologia
-          href: consent-management/glossary.md
-    - name: Inportatu onarpen-datuak
-      items:
-        - name: Inportatu onarpen-datuak
-          href: consent-management/import-consent-data.md
-        - name: Ezarri baimenaren datuak eta aplikatu baimenaren hobespenak
-          href: consent-management/set-consent-rules.md
-    - name: Kudeatu baimenaren datuak
-      items:
-        - name: Gaitu baimen-arauak Customer Insights-en
-          href: activate-consent.md
-        - name: Kudeatu baimen-arau lehenetsiak Customer Insights segmentuetan
-          href: change-default-consent-rules.md
-    - name: Kudeatu ezarpenak eta erabiltzaileak
-      items:
-        - name: Konfiguratu sistemaren ezarpenak
-          href: consent-management/system-settings.md
-        - name: Kudeatu erabiltzaileak eta baimenak
-          href: consent-management/manage-users.md
-    - name: Erabili baimenaren datuak
-      items:
-        - name: Sortu aurreikuspenak adostasun datuekin
-          href: consent-management/predictions-consent-data.md
 - name: Zerbitzuaren mugak
   href: service-limits.md
 - name: DSR eskubideak eta eskaerak

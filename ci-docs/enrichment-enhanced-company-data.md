@@ -1,25 +1,25 @@
 ---
 title: Enpresaren datuen hobekuntza
 description: Aberastu eta normalizatu enpresaren datuak Microsoft-en ereduekin.
-ms.date: 04/22/2022
+ms.date: 06/10/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: how-to
 author: kishorem-ms
 ms.author: kishorem
 manager: shellyha
-ms.openlocfilehash: 6aa38afa7f92b512d19b4967fc1652b5e43ad094
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: 4247d59806468907d93fc7848231ec5a2985580e
+ms.sourcegitcommit: 27c5473eecd851263e60b2b6c96f6c0a99d68acb
 ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8642000"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "8953934"
 ---
 # <a name="enrichment-of-company-profiles-with-enhanced-company-data"></a>Enpresaren profilak aberastea enpresaren datu hobetuekin
 
 Erabili Microsoft-en ereduak eta konpilatutako enpresako datuak zure enpresaren profilak zuzentzeko, osatzeko eta estandarizatzeko. Erabiliko dugu [Common Data Model formatua](/common-data-model/schema/core/applicationcommon/account) zehaztasun eta ikuspegi hobea lortzeko.
 
-Zuk ere egin dezakezu [datu-iturriei buruzko enpresaren datuak hobetzea](data-sources-enrichment.md) datuen bateratze prozesuan partidaren zehaztasuna hobetzeko. 
+Zuk ere egin dezakezu [datu-iturriei buruzko enpresaren datuak hobetzea](data-sources-enrichment.md) datuen bateratze prozesuan partidaren zehaztasuna hobetzeko.
 
 Estatu Batuetako enpresa publikoentzat, diru-sarrerak, akzioen ticker, industria eta abar bezalako informazioa eskuragarri dago.  
 
@@ -27,10 +27,9 @@ Estatu Batuetako enpresa publikoentzat, diru-sarrerak, akzioen ticker, industria
 
 Gure ereduak bi urratseko prozesu bat egiten du enpresaren profila hobetzeko. Lehenik eta behin, enpresaren izena normalizatzen du. Adibidez, *Microsoft Corp* zuzendu eta estandarizatu egingo da *Microsoft Corporation*. Microsoft-ek konpilatutako enpresaren datuetan bat-etortze bat bilatzen saiatzen da. Bat-etortze bat aurkitzen bada, konpainiaren profila aberasten dugu gure konpainiaren datuen informazioarekin, enpresaren izena barne.
 
-
 ### <a name="example"></a>Adibidez
 
-Baliteke zure enpresaren informazioak formatu estandar bat ez jarraitzea eta akats ortografikoak izatea. Eredua arazo hauek konpontzen eta informazio koherentea sortzen saiatzen da.
+Baliteke zure enpresaren informazioak formatu estandar bat ez jarraitzea eta akats ortografikoak izatea. Eredua arazo horiek konpontzen eta informazio koherentea sortzen saiatzen da.
 
 ```Input
 Microsft
@@ -50,52 +49,52 @@ Microsft
 
 ## <a name="limitations"></a>Murriztapenak
 
-Datu hobetuekin muga batzuk daude. Beheko zerrendako elementuak ez ditu ereduak onartzen.
+Ereduak ez du:
 
-1.  Enpresaren identitatea berretsi. Ez dugu egiaztatzen sarrera lehendik dagoen erakunde bat den edo enpresa batek irteera izen estandar gisa erabiltzen duen.
-2.  Estali orokorrean enpresak mundu osoan. Microsoft-ek bildutako konpainiaren datuek estaldura globala dute, baina estaldura gehien Australian, Kanadan, Erresuma Batuan eta Estatu Batuetan eskaintzen du.
-3.  Normalizatu enpresen helbideak mundu osoan. Gaur egun, herrialde edo eskualde hauetan helbideak estandarizatzen onartzen ditugu: Australia, Kanada, Frantzia, Alemania, Italia, Japonia, Erresuma Batua eta Estatu Batuak.
-4.  Datuen zehaztasuna edo freskotasuna bermatu. Enpresaren informazioa askotan aldatzen denez, ezin dugu bermatu emandako enpresaren datu hobetuak beti zehatzak edo eguneratuak direnik.
+- Enpresaren identitatea berretsi. Ez dugu egiaztatzen sarrera lehendik dagoen erakunde bat den edo enpresa batek irteera izen estandar gisa erabiltzen duen.
+- Estali orokorrean enpresak mundu osoan. Microsoft-ek bildutako konpainiaren datuek estaldura globala dute, baina estaldura gehien Australian, Kanadan, Erresuma Batuan eta Estatu Batuetan eskaintzen du.
+- Normalizatu enpresen helbideak mundu osoan. Gaur egun, herrialde edo eskualde hauetan helbideak estandarizatzea onartzen dugu: Australia, Kanada, Frantzia, Alemania, Italia, Japonia, Erresuma Batua eta Estatu Batuak.
+- Datuen zehaztasuna edo freskotasuna bermatu. Enpresaren informazioa askotan aldatzen denez, ezin dugu bermatu emandako enpresaren datu hobetuak beti zehatzak edo eguneratuak direnik.
 
 ## <a name="configure-the-enrichment"></a>Konfiguratu aberastea
 
-1. Joan **Datuak** > **Aberastua**.
+1. Joan **Datuak** > **Aberastea** eta hautatu **Deskubritu** fitxa.
 
 1. Hautatu **Aberastu nire datuak** gainean **Enpresaren datu hobetuak** teila.
 
    :::image type="content" source="media/enhanced-company-data-tile.png" alt-text="Aberaste-lauza enpresaren datuetarako aberaste-zentroan.":::
 
-1. Aukeratu **Bezeroen datu multzoa** eta aukeratu aberastu nahi dituzun helbideak dituen entitatea. Aukeratu dezakezu *Bezeroa* entitateak helbideak aberastu ditzan zure bezeroen profil guztietan edo hautatu segmentu bat entitateak helbideak segmentu horretan dauden bezeroen profiletan soilik aberasteko.
+1. Berrikusi ikuspegi orokorra eta, ondoren, hautatu **Hurrengoa**.
 
-1. Hautatu zure enpresa-profiletatik zein eremu mota erabili behar diren Microsoft-ek bildutako enpresa-datuekin bat etortzeko. Aukeraketa honek hurrengo urratsean atzitu ditzakezun mapen eremuei eragingo die.
+1. Hautatu **Bezeroaren datu multzoa** eta aukeratu aberastu nahi duzun profila edo segmentua. The *Bezeroa* entitateak zure bezero-profil guztiak aberasten ditu, eta segmentu batek segmentu horretan dauden bezero-profilak soilik aberasten ditu.
 
-1.  Mapeatu zure bezero-entitate bateratuko konpainiaren eremuak. Zenbat eta gako-identifikatzaile eta eremu gehiago mapatu, orduan eta aukera handiagoa izango da bat-etortze-tasa handiagoa izateko.
+1. Hautatu zure enpresaren profiletatik zein eremu mota erabili nahi dituzun Microsoft-ek bildutako enpresaren datuekin bat etortzeko. Aukeraketa honek hurrengo urratsean atzitu ditzakezun mapen eremuei eragingo die.
+
+1. Hautatu **Hurrengoa**.
+
+1. Mapeatu zure enpresaren eremuak Microsoft-en enpresaren datuekin. Bat-etortzeen zehaztasun handiagoa lortzeko, gehitu eremu gehiago.
 
     :::image type="content" source="media/enhanced-company-data-mapping.png" alt-text="Datuen mapak egiteko urratsa enpresa aberaste bat konfiguratzean.":::
 
 1. Hautatu **Hurrengoa** eremuaren jarraipena osatzeko.
 
-1. Hornitu aberastearen izena eta irteerako entitatearen izena.
+1. Eman a **Izena** aberasteko eta **Irteerako entitatea**.
 
 1. Aukeratu **Aurreztu aberastasuna** zure aukerak aztertu ondoren.
 
+1. Hautatu **Korrika egin** aberaste-prozesua hasteko edo hurbiltzeko **Aberasgarriak** orrialdea.
+
 ## <a name="enrichment-results"></a>Aberastearen emaitzak
 
-Aberasteko prozesua hasteko, hautatu **Korrika egin** komando barratik. Gainera, sistemak aberastea automatikoki exekutatzen utzi dezakezu [freskatze programatua](system.md#schedule-tab). Prozesatzeko denbora zure bezeroen datuen tamainaren araberakoa da.
-
-Aberasteko prozesua amaitu ondoren, aberastu berri diren bezeroen profilen datuak berrikus ditzakezu atalean **Nire aberastasunak**. Gainera, azken eguneratzearen ordua eta profil aberastuen kopurua aurkituko dituzu.
-
-Aberastutako datuen lagin bat ikus dezakezu **Bezeroen aurrebista aberastua** teila. Hautatu **Gehiago ikusi** eta hautatu **Datuak** fitxa aberastutako profil bakoitzaren ikuspegi zehatzera sartzeko.
+[!INCLUDE [enrichment-results](includes/enrichment-results.md)]
 
 ### <a name="overview-card"></a>Ikuspegiko txartela
 
-Ikuspegi-txartelak aberastearen estaldurari buruzko xehetasunak erakusten ditu. 
+The **Bezeroek ikuspegi orokorra aldatzen dute** fitxak aberastearen estaldurari buruzko xehetasunak erakusten ditu
 
-* **Enpresak prozesatu eta aldatu** : arrakastaz aberastu diren bezero-enpresa-profilen kopurua.
-
-* **Enpresak tramitatu eta aldatu gabe** : aitortu baina aldatu ez diren bezero-enpresa-profilen kopurua. Hau normalean sarrerako datuak baliozkoak direnean eta aberastearekin hobetu ezin direnean gertatzen da.
-
-* **Enpresak ez izapidetu eta ez aldatu** : Aitortu ez diren bezero-enpresa-profilen kopurua. Hau normalean baliogabeak diren edo aberasteak onartzen ez dituen sarrerako datuekin gertatzen da.
+- **Enpresak prozesatu eta aldatu** : arrakastaz aberastu diren bezero-enpresa-profilen kopurua.
+- **Enpresak tramitatu eta aldatu gabe** : aitortu baina aldatu ez diren bezero-enpresa-profilen kopurua. Hau normalean sarrerako datuak baliozkoak direnean eta aberastearekin hobetu ezin direnean gertatzen da.
+- **Enpresak ez izapidetu eta ez aldatu** : Aitortu ez diren bezero-enpresa-profilen kopurua. Hau normalean baliogabeak diren edo aberasteak onartzen ez dituen sarrerako datuekin gertatzen da.
 
 ## <a name="next-steps"></a>Hurrengo urratsak
 

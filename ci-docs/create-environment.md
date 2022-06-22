@@ -12,12 +12,12 @@ ms.custom: intro-internal
 searchScope:
 - ci-home
 - customerInsights
-ms.openlocfilehash: 795eaa3598257f5188070f6ea02d04e4423b66eb
-ms.sourcegitcommit: f5af5613afd9c3f2f0695e2d62d225f0b504f033
+ms.openlocfilehash: 6dfaa09cd80498e9a4e4dea6a07ce6e9d29105e2
+ms.sourcegitcommit: 5e26cbb6d2258074471505af2da515818327cf2c
 ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 06/01/2022
-ms.locfileid: "8833543"
+ms.lasthandoff: 06/14/2022
+ms.locfileid: "9011530"
 ---
 # <a name="how-to-create-a-new-environment"></a>Nola: Ingurune berri bat sortu
 
@@ -67,6 +67,7 @@ Bi aukera dituzu aukeran:
 ## <a name="step-3-connect-to-microsoft-dataverse"></a>3. urratsa: konektatu Microsoft Dataverse
 
 **Microsoft Dataverse** urratsak Customer Insights zurekin konektatzeko aukera ematen dizu Dataverse ingurunea. Partekatu datuak Dataverse oinarritutako negozio-aplikazioekin erabiltzeko Dataverse, Dynamics 365 Marketing edo ereduetan oinarritutako aplikazioak bezala Power Apps.
+
 
 Utzi eremu hau hutsik zurea ez baduzu Dataverse ingurunea eta zuretzat bat sortuko dugu.
 

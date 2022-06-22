@@ -1,19 +1,19 @@
 ---
 title: Esportatu Customer Insights datuak Snapchat-era
 description: Ikasi konexioa konfiguratzen eta esportatzen Snapchat.
-ms.date: 10/08/2021
+ms.date: 06/08/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 171b8bf0f4a034c78e872b671602ae7653271da7
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: d64b482c322af8632e29ec41d6e34c390c5e646c
+ms.sourcegitcommit: 8e9f0a9693fd8d91ad0227735ff03688fef5406f
 ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8642153"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "8947261"
 ---
 # <a name="export-segments-to-snapchat-preview"></a>Esportatu segmentuak Snapchat-era (aurrebista)
 
@@ -21,7 +21,8 @@ Esportatu bezeroen profil bateratuen segmentuak Snapchat eta erabili iragarkieta
 
 ## <a name="prerequisites-for-a-connection"></a>Konexioaren aurrebaldintzak
 
--   Baduzu [Snapchat mailako kontua](https://business.snapchat.com/), [Snapchat iragarkien kontua](https://ads.snapchat.com/) eta dagozkien administratzaile egiaztagiriak.
+-   Baduzu [Snapchat mailako kontua](https://business.snapchat.com/), [Snapchat iragarkien kontua](https://ads.snapchat.com/) eta dagozkien administratzaile egiaztagiriak. Gutxienez Erakunde-kontu bateko kide eta Iragarki-kontu zehatz bateko Datu-kudeatzailea izan behar duzu. 
+-   Gutxienez publiko bat duzu Snapchat Audience kudeatzailean SAM (Snap Audience Match) motako. 
 -   Zuk daukazu [konfiguratutako segmentuak](segments.md) Bezeroen Insights-en.
 -   Esportatutako segmentuetako bezeroen profil bateratuek helbide elektronikoa adierazten duen eremua dute.
 
@@ -60,7 +61,7 @@ Esportazio hau konfigura dezakezu mota honetako konexiorako sarbidea baduzu. Inf
 
 1. Hurrengoan **Konexioa esportatzeko** eremuan, aukeratu konexioa Snapchat sekzioan. Atal honen izena ikusten ez baduzu, ez dago mota honetako konexiorik erabilgarri.
 
-1. Sartu [**Snapchat Audience IDa**](https://businesshelp.snapchat.com/s/article/custom-audiences).
+1. Sartu [**Snapchat Segmentua/Ikusleen IDa**](https://businesshelp.snapchat.com/s/article/custom-audiences). Entzuleen IDa URLan aurki daiteke Snapchat Audience Manager-en audientzia hautatu ondoren. 
 
 1. Urtean **Datuen bat etortzea** atalean, **Posta elektronikoa** eremua, hautatu bezeroaren helbide elektronikoa adierazten duen eremua. Segmentuak esportatu behar dira Snapchat.
 

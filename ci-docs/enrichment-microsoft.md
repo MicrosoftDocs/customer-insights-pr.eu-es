@@ -1,5 +1,5 @@
 ---
-title: Aberastu bezeroen profilak Microsoften datuekin
+title: Aberastu bezeroen profilak Microsoft-en marken eta interesen datuekin
 description: Erabili Microsoft-en jabedun datuak zure bezeroen datuak afinitateekin eta ahots-partekatzeekin aberasteko.
 ms.date: 03/02/2022
 ms.reviewer: mhart
@@ -12,25 +12,16 @@ searchScope:
 - ci-enrichments
 - ci-enrichment-wizard
 - customerInsights
-ms.openlocfilehash: 5c016a394fdf485057a190d03bfed9ce5481f435
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: 61262980cafdcd130430e200e466ce7da6cc4d07
+ms.sourcegitcommit: 27c5473eecd851263e60b2b6c96f6c0a99d68acb
 ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8642113"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "8953750"
 ---
 # <a name="enrich-customer-profiles-with-affinities-and-share-of-voice-preview"></a>Aberastu bezeroen profilak afinitateekin eta ahots partekatuekin (aurrebista)
 
 Erabili Microsoft-en jabedun datuak zure bezeroen datuak aberasteko marka-akidetasunekin, intereseko kidetasunekin eta ahots-partekatzearekin (SoV). Afinitate hauek eta SoV zure bezeroen antzeko demografia duten pertsonen datuetan oinarritzen dira. Informazio honek zure bezeroak hobeto ulertzen eta segmentatzen laguntzen dizu marka eta interes zehatzekiko duten kidetasunen edo SoVren arabera.
-
-Joan **Datuak** > **Aberastea** to [aberasgarriak konfiguratu eta ikusi](enrichment-hub.md).
-
-Marka-afintasunak eta SoV aberastea konfiguratzeko, joan hona **Ezagutu** fitxa eta hautatu **Aberastu nire datuak** gainean **Markak** teila.
-
-Interes-afintasunak eta SoV aberastea konfiguratzeko, joan **Ezagutu** fitxa eta hautatu **Aberastu nire datuak** gainean **Interesak** teila.
-
-   > [!div class="mx-imgBorder"]
-   > ![Markak eta zaletasunak lauzak.](media/BrandsInterest-tile-Hub.png "Markak eta zaletasunen lauzak")
 
 ## <a name="how-we-determine-affinities-and-sov"></a>Nola zehazten ditugun afinitateak eta SoV
 
@@ -45,7 +36,6 @@ Microsoft-en lineako bilaketa-datuak erabiltzen ditugu hainbat segmentu demograf
 Bezeroen profil aberastu guztietan, erlazionatutako bi balio ematen ditugu: afinitate-maila eta afinitate-puntuazioa. Balio horiei esker, profil horren segmentu demografikoarekiko, marka edo interesekiko, beste segmentu demografiko batzuekiko duten afinitatea zehazten lagunduko dizute.
 
 *Afinitate-maila* lau maila ditu eta *afinitate puntuazioa* afinitate mailetara esleitzen den 100 puntuko eskalan kalkulatzen da.
-
 
 |Afinitate-maila |Afinitate-puntuazioa  |
 |---------|---------|
@@ -64,78 +54,65 @@ SoV 100 puntuko eskalan kalkulatzen dugu. Bezeroen profil aberastu bakoitzeko ma
 
 Egun, herrialde / eskualdeko aukerak onartzen ditugu: Australia, Kanada (ingelesa), Frantzia, Alemania, Erresuma Batua edo Estatu Batuak (ingelesa).
 
-Herrialde edo eskualde bat hautatzeko, ireki **Markak aberastea** edo **Interesa aberastea** eta hautatu **Aldaketa** Alboan **Herrialdea/Eskualdea**. Sarbidean **Herrialdearen eta eskualdeen ezarpenak** panela, aukeratu aukera bat eta hautatu **aplikatu**.
+## <a name="configure-the-enrichment"></a>Konfiguratu aberastea
 
-### <a name="implications-related-to-country-selection"></a>Herrialdearen hautaketarekin lotutako ondorioak
+1. Joan **Datuak** > **Aberastea** eta hautatu **Deskubritu** fitxa.
 
-- [Zure markak aukeratzen dituzunean](#define-your-brands-or-interests), sistemak hautatutako herrialdean edo eskualdean oinarritutako iradokizunak eskaintzen ditu.
+   - Marka-afintasunak eta SoV aberastea konfiguratzeko, hautatu **Aberastu nire datuak** gainean **Markak** teila.
 
-- [Sektorea aukeratzean](#define-your-brands-or-interests), hautatutako herrialdean edo eskualdean oinarritutako marka edo interes garrantzitsuenak lortuko dituzu.
+   - Interes-afintasunak eta SoV aberastea konfiguratzeko, hautatu **Aberastu nire datuak** gainean **Interesak** teila.
 
-- Noiz [profil aberasgarriak](#refresh-enrichment), aberastuko ditugu hautatutako marken eta interesen datuak lortzeko bezeroen profil guztiak, hautatutako herrialdean edo eskualdean ez dauden profilak barne. Adibidez, Alemania aukeratu baduzu, Estatu Batuetan kokatutako profilak aberastuko ditugu AEBetan hautatutako marka eta interesetarako datuak eskuragarri baditugu.
+   > [!div class="mx-imgBorder"]
+   > ![Markak eta zaletasunak lauzak.](media/BrandsInterest-tile-Hub.png "Markak eta zaletasunen lauzak")
 
-## <a name="configure-enrichment"></a>Aberastea konfiguratzea
+1. Berrikusi ikuspegi orokorra eta, ondoren, hautatu **Hurrengoa**.
 
-Esperientzia gidatu batek aberastasunak konfiguratzen lagunduko dizu. 
+1. Zure herrialdea edo eskualdea aldatzeko, hautatu **Aldatu** Alboan **Herrialdea/Eskualdea**. urtean **Herrialde/Eskualde ezarpenak** panela, aukeratu a [onartzen den herrialdea/eskualdea](#supported-countriesregions) eta hautatu **Aplikatu**.
 
-### <a name="define-your-brands-or-interests"></a>Zehaztu zure markak edo zaletasunak
+   > [!NOTE]
+   > Zure markak aukeratzen dituzunean, sistemak hautatutako herrialdean edo eskualdean oinarritutako iradokizunak eskaintzen ditu. Sektorea aukeratzean, hautatutako herrialdean edo eskualdean oinarritutako marka edo interes garrantzitsuenak lortuko dituzu.
 
-Aukeratu gehienez bost marka edo interes aukera hauetako bat edo biak erabiliz:
+1. Aukeratu gehienez bost marka edo interes aukera hauetako bat edo biak erabiliz:
 
-- **Industria**: Aukeratu zure industria goitibeherako zerrendan eta aukeratu industria horretako marka edo interes gorenen artean.
-- **Aukeratu zeurea**: Sartu zure erakundearentzako garrantzitsua den marka edo interesa eta aukeratu bat datorren iradokizunen artean. Bilatzen ari zaren marka edo interesa zerrendatzen ez badugu, bidal iezaguzu iritzia erabilita **Proposatu** esteka.
+   - **Industria**: Aukeratu zure industria goitibeherako zerrendan eta aukeratu industria horretako marka edo interes gorenen artean.
+   - **Aukeratu zeurea**: Sartu zure erakundearentzako garrantzitsua den marka edo interesa eta aukeratu bat datorren iradokizunen artean. Bilatzen ari zaren marka edo interesa zerrendatzen ez badugu, bidal iezaguzu iritzia erabilita **Proposatu** esteka.
 
-### <a name="review-enrichment-preferences"></a>Berrikusi aberaste-hobespenak
+1. Hautatu **Hurrengoa** eta berrikusi zure aberaste-hobespen lehenetsiak eta eguneratu behar izanez gero.
 
-Berrikusi aberastasun lehentasun lehenetsiak eta eguneratu behar dituzun moduan.
+   :::image type="content" source="media/affinity-enrichment-preferences.png" alt-text="Aberasteko lehentasunen leihoaren pantaila-argazkia.":::
 
-:::image type="content" source="media/affinity-enrichment-preferences.png" alt-text="Aberasteko lehentasunen leihoaren pantaila-argazkia.":::
+1. Hautatu **Hurrengoa**.
 
-### <a name="select-entity-to-enrich"></a>Hautatu aberasteko entitatea
+1. Hautatu **Bezeroaren datu multzoa** eta aukeratu Microsoft-en datuekin aberastu nahi duzun profila edo segmentua. The *Bezeroa* entitateak zure bezero-profil guztiak aberasten ditu, eta segmentu batek segmentu horretan dauden bezero-profilak soilik aberasten ditu.
 
-Hautatu **Entitate aberastua** eta aukeratu Microsoft-en datuekin aberastu nahi duzun datu multzoa. Bezeroen entitatea hauta dezakezu zure bezeroen profil guztiak aberasteko edo segmentu-entitate bat hauta dezakezu segmentu horretan dauden bezeroen profilak soilik aberasteko.
+1. Hautatu **Hurrengoa**.
 
-### <a name="map-your-fields"></a>Esleitu eremuak
+1. Mapeatu zure eremuak zure bezero-entitate bateratutik Microsoft-eko datuetara.
 
-Esleitu zure bezero entitate bateratuko eremuak sistemak zure bezeroaren datuak aberasteko erabili nahi duzun segmentu demografikoa definitzeko. Esleitu herrialdea/eskualdea eta gutxienez Jaiotze-data edo Generoa atributuak. Gainera, herrialdea/eskualdea esleitu behar duzu. Halaber, hiri bat (eta estatua/probintzia) edo posta-kode bat esleitu behar dituzu gutxienez. Aukeratu **Editatu** eremuen mapa zehaztu eta hautatu **aplikatu** amaitutakoan. Aukeratu **Gorde** eremuaren mapa osatzeko.
+   > [!NOTE]
+   > Jaiotze-data edo genero-atributuak gutxienez behar dira. Herrialdea/eskualdea eta gutxienez hiria (eta estatua/probintzia) edo posta kodea behar dira. Datuak sartzen direnean jaiotze-data DateTime motara bihurtzea gomendatzen dugu. Bestela, katea izan daiteke [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) formatua "aaaa-MM-dd" edo "aaaa-MM-ddTHH: mm: ss".
 
-Formatu eta balio hauek onartzen dira (balioak ez dira maiuskulak):
+1. Hautatu **Hurrengoa** eremuaren jarraipena osatzeko.
 
-- **Jaioteguna**: Jaiotze-data DataTime motara bihurtzea gomendatzen dugu datuak irensten diren bitartean. Bestela, katea izan daiteke [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) formatua "aaaa-MM-dd" edo "aaaa-MM-ddTHH: mm: ss".
-- **Generoa**: Gizona, Emakumezkoa, Ezezaguna.
-- **Posta kodea**: Estatu Batuetako bost digituko posta kodeak, beste edozein lekutan posta kodea estandarra.
-- **Hiria**: Hiria izena ingelesez.
-- **Estatua / Probintzia**: AEB eta Kanadako bi gutun-laburdura. Bi edo hiru gutun-laburdura Australiarako. Ez da aplikagarria Frantzian, Alemanian edo Erresuma Batuan.
-- **Herrialdea/Eskualdea**:
+1. Idatzi aberastearen izena. The **Irteerako entitatearen izena** automatikoki hautatzen da.
 
-  - AEB: Ameriketako Estatu Batuak, Estatu Batuak, AEBak, AEBak, Amerika
-  - CA: Kanada, CA
-  - GB: Erresuma Batua, Erresuma Batua, Britainia Handia, GB, Britainia Handia eta Ipar Irlanda, Erresuma Batua
-  - AU: Australia, AU, Australiako Mankomunitatea
-  - FR: Frantzia, FR, Frantziar Errepublika
-  - DE: Alemania, Alemania, Deutschland, Allemagne, DE, Alemaniako Errepublika Federala, Alemaniako Errepublika
+   :::image type="content" source="media/enrichment-interests-summary.png" alt-text="Interesak berrikusteko eta izendatzeko orria.":::
 
-## <a name="review-and-name-the-enrichment"></a>Aberaspena berrikusi eta izendatu
+1. Aukeratu **Aurreztu aberastasuna** zure aukerak aztertu ondoren.
 
-Azkenean, informazioa berrikusi eta aberasteko izena eman dezakezu.
+1. Hautatu **Korrika egin** aberaste-prozesua hasteko edo hurbiltzeko **Aberasgarriak** orrialdea.
 
-:::image type="content" source="media/enrichment-interests-summary.png" alt-text="Interesak berrikusteko eta izendatzeko orria.":::
-
-## <a name="refresh-enrichment"></a>Freskatu aberastea
-
-Exekutatu aberastasuna marka, interesak eta eremuen mapak konfiguratu ondoren demografiarako. Prozesua hasteko, hautatu **Korrika egin** marka edo interesen konfigurazio orrian. Gainera, sistemak aberastasuna automatikoki utz dezakezu planifikatu gabeko freskatze baten baitan.
-
-Bezeroaren datuen tamainaren arabera, minutu batzuk behar izango dira aberasteko exekuzioa osatzeko.
-
-[!INCLUDE [progress-details-include](includes/progress-details-pane.md)]
+   Noiz profil aberasgarriak, aberastuko ditugu hautatutako marken eta interesen datuak lortzeko bezeroen profil guztiak, hautatutako herrialdean edo eskualdean ez dauden profilak barne. Adibidez, Alemania aukeratu baduzu, Estatu Batuetan kokatutako profilak aberastuko ditugu AEBetan hautatutako marka eta interesetarako datuak eskuragarri baditugu.
 
 ## <a name="enrichment-results"></a>Aberastearen emaitzak
 
-Aberaste prozesua exekutatu ostean, joan **Nire aberasteak** berrikusteko guztira aberastutako bezeroen kopurua eta aberastutako bezeroen profilen marka eta interesen banaketa.
+[!INCLUDE [enrichment-results](includes/enrichment-results.md)]
 
 :::image type="content" source="media/my-enrichments.png" alt-text="Abantaila prozesua exekutatu ondoren, emaitzen aurrebista.":::
 
-Taula bat aurkituko duzu denboran zehar aberastutako bezero-profilen kopuruarekin eta aberastutako entitateen aurrebistarekin. Berrikusi aberastutako datuak hautatuz **Gehiago ikusi** urtean **Afinitate maila** edo **Ahotsaren partekatzea** taulak. Marken datu aberastuak **BrandAffinityFromMicrosoft** eta **BrandShareOfVoiceFromMicrosoft** entitateak. Interesen datuak atalean daude **InterestAffinityFromMicrosoft** eta **InterestShareOfVoiceFromMicrosoft** entitateak. Erakunde hauek zerrendan aurkituko dituzu **aberastea** taldean **Datuak** > **erakundeak** atalean.
+Emaitzak barne hartzen ditu **Afinitate maila** edo **Ahotsaren partekatzea** taulak.
+
+Aberasteetatik sortutako entitateak azpian daude zerrendatuta **Aberastea** taldean **Datuak** > **Entitateak**. Marken datu aberastuak **BrandAffinityFromMicrosoft** eta **BrandShareOfVoiceFromMicrosoft** entitateak. Interesen datuak atalean daude **InterestAffinityFromMicrosoft** eta **InterestShareOfVoiceFromMicrosoft** entitateak.
 
 ## <a name="see-enrichment-data-on-the-customer-card"></a>Ikusi aberastasun datuak bezeroaren txartelean
 

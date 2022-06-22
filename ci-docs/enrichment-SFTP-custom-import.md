@@ -1,19 +1,19 @@
 ---
 title: Aberastea SFTP inportazio pertsonalizatuarekin
 description: SFTP pertsonalizatutako inportazio aberasteari buruzko informazio orokorra.
-ms.date: 04/09/2021
+ms.date: 06/10/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: how-to
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: f52d24cbe793bee7948ad2af31059cd3edf40f94
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: 657afb6fcb68429680eb677734b4115e69769008
+ms.sourcegitcommit: 27c5473eecd851263e60b2b6c96f6c0a99d68acb
 ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8642003"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "8953704"
 ---
 # <a name="enrich-customer-profiles-with-custom-data-preview"></a>Aberastu bezeroen profilak datu pertsonalizatuekin (aurrebista)
 
@@ -21,54 +21,13 @@ Fitxategiak modu seguruan transferitzeko protokoloaren (SFTP) inportazio pertson
 
 ## <a name="prerequisites"></a>Aurrebaldintzak
 
-SFTP inportazio pertsonalizatua konfiguratzeko, honako baldintza hauek bete behar dira:
+- SFTP ostalarian inportatu beharreko fitxategiaren izena eta kokapena (bidea) ezagutzen da.
 
-- SFTP ostalarian inportatu beharreko fitxategiaren izena eta kokapena (bidea) dituzu.
-- Badago *eredua.json* zehazten duen fitxategia [Datuen eredu arruntaren eskema](/common-data-model/) datuak inportatzeko. Fitxategi honek inportatzeko fitxategiaren direktorio berean egon behar du.
-- Administratzaile batek SFTP konexioa konfiguratu du dagoeneko *edo* duzu [administratzailea](permissions.md#admin) baimenak. Datuak inportatu nahi dituzun SFTP kokapenerako erabiltzaile kredentzialak, URLa eta ataka zenbakia beharko dituzu.
+- A *eredua.json* Inportatu beharreko datuetarako Common Data Model eskema zehazten duen fitxategia eskuragarri dago. Fitxategi honek inportatzeko fitxategiaren direktorio berean egon behar du.
 
+- SFTP bat [konexioa](connections.md) da [konfiguratuta](#configure-the-connection-for-sftp-custom-import).
 
-## <a name="configure-the-import"></a>Konfiguratu inportatzea
-
-1. Joan **Datuak** > **Aberastea** eta hautatu **Deskubritu** fitxa.
-
-1. Hurrengoan **SFTP pertsonalizatutako inportazio-lauza**, hautatu **Aberastu nire datuak** eta gero hautatu **Hasi**.
-
-   :::image type="content" source="media/SFTP_Custom_Import_tile.png" alt-text="SFTP inportazio pertsonalizatuaren lauza.":::
-
-1. Hautatu goitibeherako zerrendako [konexio](connections.md) bat. Jarri harremanetan administratzaile batekin konexiorik ez badago. Administratzailea bazara, konexioa sor dezakezu hautatuta **Gehitu konexioa** eta aukeratzea **SFTP inportazio pertsonalizatua** goitibeherako zerrendatik.
-
-1. Aukeratu **Konektatu Inportazio pertsonalizatura** hautatutako konexioa berresteko.
-
-1.  Aukeratu **Hurrengoa** eta sartu **Bidea** eta **Fitxategi izena** inportatu nahi duzun datu fitxategiaren.
-
-    :::image type="content" source="media/enrichment-SFTP-path-and-filename.png" alt-text="Pantaila argazkia datuak kokatzerakoan.":::
-
-1. Aukeratu **Hurrengoa** eta aukeratu bezeroaren datu multzoa. Hau bezeroen profil guztiak edo segmentu bat izan daiteke.
-
-1. Aukeratu **Hurrengoa** eta eman aberasturako izena eta irteerako entitatearen izena. 
-
-1. Aukeratu **Aurreztu aberastasuna** zure aukerak aztertu ondoren.
-
-## <a name="configure-the-connection-for-sftp-custom-import"></a>Konfiguratu konexioa SFTP pertsonalizatutako inportaziorako 
-
-Administratzailea izan behar duzu konexioak konfiguratzeko. Aukeratu **Gehitu konexioa** aberastasun bat konfiguratzerakoan *edo* joan **Administratzailea** > **Konexioak** eta hautatu **Konfiguratu** inportazio pertsonalizatuaren fitxan.
-
-1. Idatzi konexioaren izena **Bistaratzeko izena** kutxa.
-
-1. Idatzi balio duen erabiltzaile izena, pasahitza eta ostalariaren URLa inportatu beharreko datuak dauden SFTP zerbitzariarentzat.
-
-1. Berrikusi eta eman baimena **Datuen pribatutasuna eta betetzea** aukeratuz **ados** laukia.
-
-1. Aukeratu **Egiaztatu** konfigurazioa balioztatzeko.
-
-1. Egiaztapena amaitutakoan, konexioa hautatuta gorde daiteke **Gorde**.
-
-   > [!div class="mx-imgBorder"]
-   > ![Experian konexioaren konfigurazio-orria.](media/enrichment-SFTP-connection.png "Experian konexioaren konfigurazio-orria")
-
-
-## <a name="defining-field-mappings"></a>Eremu-esleipenak definitzen 
+## <a name="file-schema-example"></a>Fitxategi-eskema adibidea
 
 SFTP zerbitzarian inportatu beharreko fitxategia duen direktorioak ere eduki behar du *model.json* fitxategia. Fitxategi honek datuak inportatzeko erabili beharreko eskema definitzen du. Eskemak erabili behar du [Common Data Model](/common-data-model/) eremuen mapaketa zehazteko. model.json fitxategi baten adibide soil batek itxura hau du:
 
@@ -82,12 +41,12 @@ SFTP zerbitzarian inportatu beharreko fitxategia duen direktorioak ere eduki beh
             "attributes": [
                 {
                     "name": "CustomerId",
-                    "friendlyName": "Client id",
+                    "friendlyName": "Client ID",
                     "dataType": "string"
                 },
                 {
                     "name": "PreferredCity",
-                    "friendlyName": "Preferred City for vacation",
+                    "friendlyName": "Preferred city for vacation",
                     "dataType": "string"
                 },
                 {
@@ -114,13 +73,56 @@ SFTP zerbitzarian inportatu beharreko fitxategia duen direktorioak ere eduki beh
 }
 ```
 
+## <a name="configure-the-connection-for-sftp-custom-import"></a>Konfiguratu konexioa SFTP pertsonalizatutako inportaziorako
+
+Bat izan behar duzu [administratzailea](permissions.md#admin) Customer Insights-en eta datuak inportatu nahi dituzun SFTP kokapenaren erabiltzailearen kredentzialak, URLa eta ataka-zenbakia izan.
+
+1. Hautatu **Gehitu konexioa** aberaste bat konfiguratzean edo joan **Admin** > **Konexioak** eta hautatu **Konfiguratu** Inportazio pertsonalizatua fitxan.
+
+   :::image type="content" source="media/enrichment-SFTP-connection.png" alt-text="Inportazio pertsonalizatua konexioaren konfigurazio orria.":::
+
+1. Sartu konexiorako izen bat.
+
+1. Idatzi balio duen erabiltzaile izena, pasahitza eta ostalariaren URLa inportatu beharreko datuak dauden SFTP zerbitzariarentzat.
+
+1. Berrikusi eta eman zure baimena [Datuen pribatutasuna eta betetzea](#data-privacy-and-compliance) hautatuz **Ados**.
+
+1. Hautatu **Egiaztatu** konfigurazioa balioztatzeko eta gero hautatu **Gorde**.
+
+### <a name="data-privacy-and-compliance"></a>Datuen pribatutasuna eta arau-gordetzea
+
+Gaitzen duzunean Dynamics 365 Customer Insights Inportazio pertsonalizatua erabiliz datuak transmititzeko, datuak betetze-mugatik kanpo transferitzea onartzen duzu Dynamics 365 Customer Insights, potentzialki sentikorrak diren datuak barne, hala nola Datu Pertsonalak. Microsoft-ek datu horiek zuk agindutakoan transferituko ditu, baina zure ardura zara datuek izan ditzakezun pribatutasun- edo segurtasun-betebeharrak betetzen dituztela ziurtatzeaz. Informazio gehiago eskuratzeko, ikusi [Microsoft-en pribatutasun-adierazpena](https://go.microsoft.com/fwlink/?linkid=396732).
+Dynamics 365 Customer Insights administratzailea edonoiz ken dezake aberastea funtzio hau erabiltzeari uzteko.
+
+## <a name="configure-the-import"></a>Konfiguratu inportatzea
+
+1. Joan **Datuak** > **Aberastea** eta hautatu **Deskubritu** fitxa.
+
+1. Hautatu **Aberastu nire datuak** gainean **SFTP pertsonalizatutako inportazioa** teila.
+
+   :::image type="content" source="media/SFTP_Custom_Import_tile.png" alt-text="SFTP inportazio pertsonalizatuaren lauza.":::
+
+1. Berrikusi ikuspegi orokorra eta, ondoren, hautatu **Hurrengoa**.
+
+1. Hautatu konexioa. Jarri harremanetan administratzaile batekin erabilgarri ez badago.
+
+1. Hautatu **Bezeroaren datu multzoa** eta aukeratu aberastu nahi duzun profila edo segmentua. The *Bezeroa* entitateak zure bezero-profil guztiak aberasten ditu, eta segmentu batek segmentu horretan dauden bezero-profilak soilik aberasten ditu.
+
+1. Hautatu **Hurrengoa**.
+
+1. Sartu **Bidea** eta **Fitxategi izena** inportatu nahi duzun datu-fitxategiarena.
+
+1. Hautatu **Hurrengoa**.
+
+1. Eman a **Izena** aberasteko eta **Irteerako entitatearen izena**.
+
+1. Aukeratu **Aurreztu aberastasuna** zure aukerak aztertu ondoren.
+
+1. Hautatu **Korrika egin** aberaste-prozesua hasteko edo hurbiltzeko **Aberasgarriak** orrialdea.
+
 ## <a name="enrichment-results"></a>Aberastearen emaitzak
 
-Aberasteko prozesua hasteko, hautatu **Korrika egin** komando barratik. Gainera, sistemak aberastea automatikoki exekutatzen utzi dezakezu [freskatze programatua](system.md#schedule-tab). Prozesatzeko denbora inportatu beharreko datuen tamainaren eta SFTP zerbitzarirako konexioaren araberakoa izango da.
-
-Aberaste-prozesua amaitu ondoren, inportatutako aberaste pertsonalizatuko datuak berrikus ditzakezu **Nire aberasteak** atalean. Gainera, azken eguneratzearen ordua eta profil aberastuen kopurua aurkituko dituzu.
-
-Aberastutako profil bakoitzaren ikuspegi zehatza sar dezakezu hautatuta **Ikusi aberastutako datuak**.
+[!INCLUDE [enrichment-results](includes/enrichment-results.md)]
 
 ## <a name="next-steps"></a>Hurrengo urratsak
 

@@ -1,7 +1,7 @@
 ---
 title: Ikusi bezeroen profilak
 description: Lortu zure bezeroen datu bateratuen ikuspegi konbinatua.
-ms.date: 05/13/2022
+ms.date: 06/08/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -14,12 +14,12 @@ searchScope:
 - ci-activities
 - ci-activities-wizard
 - customerInsights
-ms.openlocfilehash: 9bb7abc04afe38d73e1df9b252e1864fa6570d7e
-ms.sourcegitcommit: 4ae316c856b8de0f08a4605f73e75a8c2cf51c4e
+ms.openlocfilehash: 1e9e59d7ae6c16ed8b33f2ea482563c3520ab885
+ms.sourcegitcommit: 8e9f0a9693fd8d91ad0227735ff03688fef5406f
 ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 05/13/2022
-ms.locfileid: "8755766"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "8947031"
 ---
 # <a name="customer-profiles"></a>Bezeroen profilak
 
@@ -55,9 +55,9 @@ Bezeroen arabera iragazi ditzakezu *Bezeroa* entitate eremuak. Bilaketaren antze
 
 Aukeratu bezeroaren lauzetako bat **Bezeroaren xehetasunen orria** irekitzeko. Ikuspegi honek aukeratutako bezeroaren informazio bateratua du. Bezeroaren datuen artean honako eduki hau dago:
 
-**Bezeroaren profilaren fitxa**: Fitxa honek bateratuaren balio desberdinak erakusten ditu *Bezeroa* entitatea. Eremu batek aukeratutako bezeroaren profilerako baliorik ez badu, ez da erakutsiko. Fitxa ataletan egituratuta dago:
+**Bezeroaren profilaren fitxa**: Fitxa honek bateratuaren balio desberdinak erakusten ditu *Bezeroa* entitatea. Eremu batek hautatutako bezero-profilerako baliorik ez badu, ez da agertuko helbidearen eremua izan ezik. Fitxa ataletan egituratuta dago:
 
-- Lehenengo atalean aurrez zehaztutako eremu multzo bat agertzen da eta jarraian bilaketa eta iragazki indizearen zati diren eremu guztiak agertzen dira. Helbideekin lotutako eremu guztiak lerro bakarrean konbinatzen dira profilak eremu horiek baditu.
+- Lehenengo atalean aurrez zehaztutako eremu multzo bat agertzen da eta jarraian bilaketa eta iragazki indizearen zati diren eremu guztiak agertzen dira. Helbideekin erlazionatutako eremu guztiak lerro bakarrean konbinatzen dira, profilak helbide-informaziorik ez badu ere erakusten du.
 - **Bezero honen kontaktuak**: Enpresa kontuetarako inguruneetan, bezero honi lotutako kontaktu guztiak ikusiko dituzu bigarren atal gisa. Kontaktu bakoitza bere eremuekin erakusten da. Eremu hutsak ezkutatuta daude.
 - **Eremu osagarriak**: Aukeratutako bezeroaren gainerako eremuak erakusten ditu, IDak izan ezik.
 - **IDak**: ID guztiak dagokien entitatearen izenarekin zerrendatzen ditu. Eremuak beren semantikaren bidez identifikatzen dira ID gisa, eta horrela sailkatzen dituzte.

@@ -3,17 +3,17 @@ title: Erabili zurea Azure Data Lake Storage Gen2 kontua
 author: mukeshpo
 description: Ezagutu zurea erabiltzeko baldintzak Azure Data Lake Storage kontua Customer Insights datuak gordetzeko.
 ms.author: mukeshpo
-ms.date: 05/30/2022
+ms.date: 06/08/2022
 ms.topic: conceptual
 ms.manager: shellyha
 ms.custom: intro-internal
 ms.reviewer: mhart
-ms.openlocfilehash: 9fcd7645e34bf310ac3a1b98a0dd9a60598b19dc
-ms.sourcegitcommit: f5af5613afd9c3f2f0695e2d62d225f0b504f033
+ms.openlocfilehash: 5acb58906c1a9db54337f3b4dc2ab7891db7954e
+ms.sourcegitcommit: 5e26cbb6d2258074471505af2da515818327cf2c
 ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 06/01/2022
-ms.locfileid: "8833939"
+ms.lasthandoff: 06/14/2022
+ms.locfileid: "9011918"
 ---
 # <a name="use-your-own-azure-data-lake-storage-gen2-account"></a>Erabili zurea Azure Data Lake Storage Gen2 kontua
 
@@ -37,6 +37,7 @@ Ingurune berri bat sortzen duzunean, ziurtatu Data Lake Storage kontua badagoela
 1. Aukeratu nola egin **Konektatu biltegia**. Baliabideetan oinarritutako aukera eta autentifikaziorako harpidetzan oinarritutako aukera bat aukeratu dezakezu. Informazio gehiagorako, ikus [Konektatu batera Azure Data Lake Storage kontua Azure Service Principal bat erabiliz](connect-service-principal.md).
    - Izan ere **Azure harpidetza**, aukeratu **Harpidetza**, **taldea**, eta **Biltegiratze kontua** daukan`customerinsights` edukiontzia.
    - Izan ere **Kontuaren gakoa**, eman **Kontuaren izena** eta **Kontuaren gakoa** Data Lake Storage konturako. Autentifikazio-metodo hau erabiltzeak zure erakundeak gakoak biratzen dituen ala ez jakinarazten dizula esan nahi du. Behar duzu [eguneratu ingurunearen konfigurazioa](manage-environments.md#edit-an-existing-environment) giltza berriarekin biratzen denean.
+1. Aukeratu Azure Private Link erabili nahi duzun biltegiratze-kontura konektatzeko eta [sortu konexioa Esteka pribaturako](security-overview.md#private-links-tab) bi urratseko prozesu batekin.
 
 Sistemak datuak sartzea bezalako prozesuak amaitzen direnean, sistemak dagozkien karpetak sortzen ditu biltegiratze-kontuan. Datu fitxategiak eta *model.json* fitxategiak sortzen dira eta karpetetan gehitzen dira prozesuaren izenean oinarrituta.
 

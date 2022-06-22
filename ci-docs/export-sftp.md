@@ -1,19 +1,19 @@
 ---
 title: Esportatu Customer Insights datuak SFTP ostalarietara (bideoa dauka)
 description: Ikasi konexioa nola konfiguratu eta SFTP kokapen batera esportatu.
-ms.date: 03/03/2021
+ms.date: 06/09/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 5170ec4ca35ad2a94f02e9d696c44a32da888120
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: b56d628c8286ba6697cccc9b002f609aa929951b
+ms.sourcegitcommit: 8e9f0a9693fd8d91ad0227735ff03688fef5406f
 ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8642101"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "8947169"
 ---
 # <a name="export-segments-and-other-data-to-sftp-preview"></a>Esportatu segmentuak eta beste datu batzuk SFTP-ra (aurrebista)
 
@@ -28,8 +28,8 @@ Erabili zure bezeroen datuak hirugarrenen aplikazioetan, fitxategi transferentzi
 ## <a name="known-limitations"></a>Muga ezagunak
 
 - Suebakien atzean dauden SFTP helmugak ez dira onartzen oraingoz. 
-- Esportazio baten iraupena zure sistemaren errendimenduaren araberakoa da. Bi PUZ nukleo eta 1 Gb memoria gomendatzen dizugu zure zerbitzariaren gutxieneko konfigurazio gisa. 
-- Gehienez 100 milioi bezero profil dituzten entitate esportatzaileek 90 minutu iraun dezakete gomendatutako gutxieneko konfigurazioa erabiltzen duten bi PUZ nukleorekin eta 1 Gb memoria. 
+- Esportazio baten iraupena zure sistemaren errendimenduaren araberakoa da. Bi PUZ nukleo eta 1 Gb memoria gomendatzen dizugu zure zerbitzariaren gutxieneko konfigurazio gisa.
+- Gehienez 100 milioi bezero profil dituzten entitate esportatzaileek 90 minutu iraun dezakete gomendatutako gutxieneko konfigurazioa erabiltzen duten bi PUZ nukleorekin eta 1 Gb memoria.
 
 ## <a name="set-up-connection-to-sftp"></a>Konfiguratu konexioa SFTP-en
 
@@ -64,13 +64,17 @@ Esportazio hau konfigura dezakezu mota honetako konexiorako sarbidea baduzu. Inf
 1. Aukeratu entitateak, adibidez, esportatu nahi dituzun segmentuak.
 
    > [!NOTE]
-   > Aukeratutako entitate bakoitza bost irteerako fitxategitan banatuko da esportatzerakoan. 
+   > Aukeratutako entitate bakoitza bost irteerako fitxategitan banatuko da esportatzerakoan.
 
 1. Sakatu **Gorde**.
 
 Esportazio bat gordetzeak ez du esportazioa berehala exekutatzen.
 
-Esportazioa guztiekin egiten da [freskatze programatua](system.md#schedule-tab). Ere egin dezakezu [esportatu eskariaren arabera](export-destinations.md#run-exports-on-demand). 
+Esportazioa guztiekin egiten da [freskatze programatua](system.md#schedule-tab).
+Ere egin dezakezu [esportatu eskariaren arabera](export-destinations.md#run-exports-on-demand).
+
+> [!TIP]
+> Datu kopuru handia duten entitateen esportazioak CSV fitxategi anitz ekar ditzake esportazio bakoitzerako karpeta berean. Esportazioen zatiketa errendimendu arrazoiengatik gertatzen da esportazio bat burutzeko behar den denbora minimizatzeko.
 
 ## <a name="data-privacy-and-compliance"></a>Datuen pribatutasuna eta arau-gordetzea
 

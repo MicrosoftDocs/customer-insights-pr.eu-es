@@ -11,23 +11,23 @@ manager: shellyha
 searchScope:
 - ci-system-diagnostic
 - customerInsights
-ms.openlocfilehash: 3848e143bc7cb2f345bc698a274b92148ef00669
-ms.sourcegitcommit: f5af5613afd9c3f2f0695e2d62d225f0b504f033
+ms.openlocfilehash: 252723b8c174cb1ec488388c26fd2a1d398e9002
+ms.sourcegitcommit: 5e26cbb6d2258074471505af2da515818327cf2c
 ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 06/01/2022
-ms.locfileid: "8833661"
+ms.lasthandoff: 06/14/2022
+ms.locfileid: "9011505"
 ---
 # <a name="work-with-customer-insights-data-in-microsoft-dataverse"></a>Egin lan Customer Insights datuekin Microsoft Dataverse-n
 
 Customer Insights-ek irteerako entitateak gisa erabilgarri jartzeko aukera eskaintzen du [Microsoft Dataverse](/powerapps/maker/data-platform/data-platform-intro). Integrazio honek datuak partekatzeko erraza eta garapen pertsonalizatua ahalbidetzen du kode baxuko/koderik gabeko ikuspegi baten bidez. The [irteerako entitateak](#output-entities) taula gisa eskuragarri daude a Dataverse ingurunea. Datuak oinarritutako beste edozein aplikaziotarako erabil ditzakezu Dataverse mahaiak. Taula hauek lan-fluxu automatizatuak bezalako eszenatokiak ahalbidetzen dituzte Power Automate edo aplikazioak eraikitzearekin Power Apps.
 
-Zurera konektatzen Dataverse inguruneak ere aukera ematen dizu [irensi lokal datu-iturburuetako datuak erabiliz Power Platform datu-fluxuak eta pasabideak](data-sources.md#add-data-from-on-premises-data-sources).
+Zurera konektatzen Dataverse inguruneak ere aukera ematen dizu [irensi lokal datu-iturburuetako datuak erabiliz Power Platform datu-fluxuak eta pasabideak](connect-power-query.md#add-data-from-on-premises-data-sources).
 
 ## <a name="prerequisites"></a>Aurrebaldintzak
 
 - Bezeroen ikuspegiak eta Dataverse inguruneak eskualde berean egon behar dira.
-- Administratzaile rol globala izan behar duzu Dataverse ingurunea. Egiaztatu hau bada [Dataverse ingurunea lotzen da](/power-platform/admin/control-user-access#associate-a-security-group-with-a-dataverse-environment) segurtasun-talde jakin batzuetara eta ziurtatu segurtasun-talde horietan gehitzen zarela.
+- Administratzaile global rola izan behar duzu Dataverse ingurunea. Egiaztatu hau bada [Dataverse ingurunea lotzen da](/power-platform/admin/control-user-access#associate-a-security-group-with-a-dataverse-environment) segurtasun-talde jakin batzuetara eta ziurtatu segurtasun-talde horietan gehitzen zarela.
 - Ez dago beste Customer Insights ingurunerik dagoeneko lotuta Dataverse konektatu nahi duzun ingurunea. Ikasi nola egin [kendu lehendik dagoen konexio bat a Dataverse ingurunea](#remove-an-existing-connection-to-a-dataverse-environment).
 - A Microsoft Dataverse ingurunea biltegiratze-kontu bakar batera bakarrik konekta daiteke. Ingurunea konfiguratzen baduzu soilik aplikatzen da [erabili zure Azure Data Lake Storage](own-data-lake-storage.md).
 
@@ -57,7 +57,7 @@ Datuak partekatzeko aukera gaitu Microsoft Dataverse zure ingurunea denean [zure
 Erabiltzerakoan bi muga daude Dataverse zurearekin Azure Data Lake Storage kontua:
 
 - A-ren arteko bat-bateko mapeoa dago Dataverse antolakuntza eta an Azure Data Lake Storage kontua. Behin a Dataverse erakundea biltegiratze-kontu batera konektatuta dago, ezin da beste biltegiratze-kontu batera konektatu. Muga horrek eragozten du a Dataverse ez ditu biltegiratze-kontu bat baino gehiago betetzen.
-- Datuak partekatzeak ez du funtzionatuko Azure Private Link konfigurazio bat behar bada zure Azure Data Lake biltegiratze-kontura sartzeko, suebaki baten atzean dagoelako. Dataverse Une honetan ez du onartzen esteka pribatuaren bidez amaierako puntu pribatuetarako konexioa.
+- Datuak partekatzeak ez du funtzionatuko zure atzitzeko Azure Private Link konfigurazio bat behar bada Azure Data Lake Storage kontua suebaki baten atzean dagoelako. Dataverse Une honetan ez du onartzen esteka pribatuaren bidez amaierako puntu pribatuetarako konexioa.
 
 ### <a name="set-up-powershell"></a>Konfiguratu PowerShell
 
@@ -107,7 +107,7 @@ EDO
 1. Joan **Ezarpen aurreratuak** > **Irtenbideak**.
 1. Desinstalatu **CustomerInsightsCustomerCard** irtenbidea.
 
-Menpekotasunengatik konexioa kentzeak huts egiten badu, mendekotasunak ere kendu behar dituzu. Informazio gehiagorako, ikus [Mendekotasunak kentzea](/power-platform/alm/removing-dependencies).
+Mendekotasunengatik konexioa kentzeak huts egiten badu, mendekotasunak ere kendu behar dituzu. Informazio gehiagorako, ikus [Mendekotasunak kentzea](/power-platform/alm/removing-dependencies).
 
 ## <a name="output-entities"></a>Irteerako entitateak
 
@@ -123,7 +123,7 @@ Customer Insights-en irteerako entitate batzuk taula gisa eskuragarri daude Data
 
 ### <a name="customerprofile"></a>Bezero-profila
 
-Taula honetan Customer Insights-eko bezeroen profil bateratua dago. Bezeroen profil bateratuaren eskema datuak bateratzeko prozesuan erabiltzen diren entitateen eta atributuen araberakoa da. Bezeroaren profilaren eskemak normalean atributuen azpimultzo bat dauka [Common Data Model-en CustomerProfile-ri buruzko definiziokoa](/common-data-model/schema/core/applicationcommon/foundationcommon/crmcommon/solutions/customerinsights/customerprofile).
+Taula honetan Customer Insights-eko bezeroen profil bateratua dago. Bezeroen profil bateratu baten eskema datuak bateratzeko prozesuan erabiltzen diren entitate eta atributuen araberakoa da. Bezeroaren profilaren eskemak normalean atributuen azpimultzo bat dauka [Common Data Model-en CustomerProfile-ri buruzko definiziokoa](/common-data-model/schema/core/applicationcommon/foundationcommon/crmcommon/solutions/customerinsights/customerprofile).
 
 ### <a name="alternatekey"></a>AlternateKey
 

@@ -1,7 +1,7 @@
 ---
 title: Eguneratu bateratze-ezarpenak
 description: Eguneratu bikoiztutako arauak, bat-etortze-arauak edo eremu bateratuak bateratze-ezarpenetan.
-ms.date: 05/04/2022
+ms.date: 06/01/2022
 ms.subservice: audience-insights
 ms.topic: tutorial
 author: v-wendysmith
@@ -13,12 +13,12 @@ searchScope:
 - ci-merge
 - ci-relationships
 - customerInsights
-ms.openlocfilehash: be399da9b98d8803d7d1a90f44a40e0d638a8d47
-ms.sourcegitcommit: 4ae316c856b8de0f08a4605f73e75a8c2cf51c4e
+ms.openlocfilehash: 590a2996cf8b2b1c6def59b78583169ec1910b59
+ms.sourcegitcommit: 760fbac397c738407c7dea59297d54cae19b6f57
 ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 05/13/2022
-ms.locfileid: "8755575"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8844025"
 ---
 # <a name="update-the-unification-settings"></a>Eguneratu bateratze-ezarpenak
 
@@ -43,8 +43,9 @@ Profil bateratua sortu ondoren bateratze-ezarpenak berrikusteko edo aldatzeko, e
 
    :::image type="content" source="media/m3_run_match_merge.png" alt-text="Datuak bateratzea orriaren pantaila-argazkia bateratu aukerak nabarmenduta.":::
 
-   - Bezeroen profil bateratua eguneratzeko (mendekotasunekin edo gabe), ikus [Exekutatu bezeroaren profilaren eguneraketak](#run-updates-to-the-unified-customer-profile).
-   - Zure parekatze-baldintzen kalitatea ebaluatzeko profil bateratua eguneratu gabe, ikus [Exekutatu bat datozen baldintzak](#run-matching-conditions). The **Exekutatu bat datozen baldintzak soilik** aukera ez da bistaratzen entitate bakarrerako.
+   - [Exekutatu bat datozen baldintzak](#run-matching-conditions) zure bat-etortze-baldintzen kalitatea azkar ebaluatzeko (desduplicazioa eta bat-etortze-arauak) profil bateratua eguneratu gabe. The **Exekutatu bat datozen baldintzak soilik** aukera ez da bistaratzen entitate bakarrerako.
+   - [Bateratu bezeroen profilak](#run-updates-to-the-unified-customer-profile) bat datozen baldintzak exekutatzeko eta bezeroen profil bateratuaren entitatea eguneratzeko, mendekotasunetan eragin gabe (aberastasunak, segmentuak edo neurriak, esaterako). Menpeko prozesuak ez dira exekutatzen, baina gisa eguneratuko dira [freskatze programazioan zehaztuta](system.md#schedule-tab).
+   - [Bezeroen profilak eta mendekotasunak bateratzea](#run-updates-to-the-unified-customer-profile) bat datozen baldintzak exekutatu eta bezeroaren profil bateratua eta menpekotasun guztiak eguneratzeko (adibidez, aberasketak, segmentuak edo neurriak). Prozesu guztiak automatikoki berriro exekutatzen dira.
 
 ## <a name="edit-source-fields"></a>Editatu iturburu-eremuak
 
@@ -84,7 +85,7 @@ Ezin duzu kendu atributu edo entitate bat dagoeneko bateratuta badaude.
    1. Hautatu **Editatu bateratze-hobespenak** eta aldatu **Gorde beharreko erregistroa** aukera.
    1. Entitate baten atributu indibidualetan bateratze-hobespenak aldatzeko, hautatu **Aurreratua** eta beharrezko aldaketak egin.
 
-      :::image type="content" source="media/m3_adv_merge.png" alt-text="Bateratze-hobespen aurreratuen pantaila-argazkia, posta elektroniko berriena eta helbide osatuena erakusten duena":::
+      :::image type="content" source="media/m3_adv_merge.png" alt-text="Bateratze hobespen aurreratuen pantaila-argazkia, posta elektroniko berriena eta helbide osatuena erakusten duena":::
 
    1. Hautatu **Eginda**.
 
@@ -135,11 +136,13 @@ Partiduen parametro gehienak birkonfigura eta doitu ditzakezu. Ezin dituzu entit
 
 ## <a name="run-matching-conditions"></a>Exekutatu bat datozen baldintzak
 
+Exekutatu bat datozen baldintzak desbikoiztu eta bat datozen arauak soilik exekutatzen ditu eta eguneratzen du *Desbikoizpena_* eta *ConflationMatchPair* entitateak.
+
 1. Tik **Datuak** > **Bateratu** orrialdea, hautatu **Exekutatu bat datozen baldintzak soilik**.
 
-   The **Erregistro bikoiztuak** eta **Bat datozen baldintzak** fitxak erakusten **Ilaran jarrita** edo **Freskagarria**.
+   The **Erregistro bikoiztuak** eta **Bat datozen baldintzak** fitxak erakusten **Ilaran jarrita** edo **Freskagarria** egoera.
 
-   [!INCLUDE [m3-task-details-include](includes/m3-task-details.md)]
+   [!INCLUDE [progress-details-pane-include](includes/progress-details-pane.md)]
 
 1. Lotze-prozesua amaitzen denean, hautatu **Editatu** gainean **Bat datozen baldintzak** teila.
 
@@ -153,10 +156,12 @@ Partiduen parametro gehienak birkonfigura eta doitu ditzakezu. Ezin dituzu entit
 
 1. Tik **Datuak** > **Bateratu** orrialdea, hautatu:
 
-   - **Bateratu bezeroen profilak** : bezeroen profil bateratuaren entitatea eguneratzen du mendekotasunetan eragin gabe (aberastasunak, segmentuak edo neurriak, esaterako). Menpeko prozesuak ez dira exekutatzen, baina gisa eguneratuko dira [freskatze programazioan zehaztuta](system.md#schedule-tab).
+   - **Bateratu bezeroen profilak** : Bat datozen baldintzak exekutatzen ditu eta bezeroaren profil bateratuaren entitatea eguneratzen du, mendekotasunetan eragin gabe (aberastasunak, segmentuak edo neurriak, esaterako). Menpeko prozesuak ez dira exekutatzen, baina gisa eguneratuko dira [freskatze programazioan zehaztuta](system.md#schedule-tab).
 
-   - **Bezeroen profilak eta menpekotasunak bateratzea** : profil bateratua eta mendekotasun guztiak eguneratzen ditu. Prozesu guztiak automatikoki berriro exekutatzen dira. Beheko prozesu guztiak amaitu ondoren, bezeroaren profilak eguneratutako datuak islatzen ditu.
+   - **Bezeroen profilak eta mendekotasunak bateratzea** : Bat datozen baldintzak exekutatzen ditu eta profil bateratua eta mendekotasun guztiak eguneratzen ditu. Prozesu guztiak automatikoki berriro exekutatzen dira. Beheko prozesu guztiak amaitu ondoren, bezeroaren profilak eguneratutako datuak islatzen ditu.
 
-   The **Erregistro bikoiztuak**, **datozen baldintzak**, eta **Bezeroen eremu bateratuak** fitxak erakusten **Ilaran jarrita** edo **Freskagarria**.
+   The **Erregistro bikoiztuak**, **datozen baldintzak**, eta **Bezeroen eremu bateratuak** fitxak erakusten **Ilaran jarrita** edo **Freskagarria** egoera.
 
-   [!INCLUDE [m3-task-details-include](includes/m3-task-details.md)]
+   [!INCLUDE [progress-details-pane-include](includes/progress-details-pane.md)]
+
+Korrika arrakastatsu baten emaitzak bistaratzen dira **Bateratu** bezeroen profil bateratuen kopurua erakusten duen orrialdea.
