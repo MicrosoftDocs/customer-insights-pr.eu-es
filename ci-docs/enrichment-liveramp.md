@@ -1,5 +1,5 @@
 ---
-title: LiveRamp identitate-datuak aberastea
+title: Aberastu bezeroen profilak LiveRamp-eko identitate-datuekin (aurrebista)
 description: Aberastu bezeroen profilak LiveRamp datuekin.
 ms.date: 06/10/2022
 ms.reviewer: mhart
@@ -8,16 +8,16 @@ ms.topic: how-to
 author: kishorem-ms
 ms.author: kishorem
 manager: shellyha
-ms.openlocfilehash: e8a130865267b57c89157b44be3d4bba3dc2fb4e
-ms.sourcegitcommit: 27c5473eecd851263e60b2b6c96f6c0a99d68acb
+ms.openlocfilehash: 334440493c50448005ec90d0cfac11358d677b73
+ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
 ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "8953980"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9082190"
 ---
 # <a name="enrich-customer-profiles-with-identity-data-from-liveramp-preview"></a>Aberastu bezeroen profilak LiveRamp-eko identitate-datuekin (aurrebista)
 
-LiveRamp-ek lineaz kanpoko identitatearen ebazpen deterministikoa eta bezeroen datuen finkapena eskaintzen du. Zure bezeroen datuetan identifikatzaile pertsonalak mapa ditzakezu AbiliTec identitate grafikoarekin eta AbiliTec IDak jaso. Orduan ID hauek erabil ditzakezu zure bezeroen datuak hobeto bateratzeko.
+LiveRamp-ek lineaz kanpoko identitatearen ebazpen deterministikoa eta bezeroen datuen finkapena eskaintzen du. Zure bezeroen datuetan identifikatzaile pertsonalak mapa ditzakezu AbiliTec identitate grafikoarekin eta AbiliTec IDak jaso ditzakezu. Orduan ID hauek erabil ditzakezu zure bezeroen datuak hobeto bateratzeko.
 
 ## <a name="supported-countriesregions"></a>Lagundutako herrialde / eskualdeak
 
@@ -47,7 +47,7 @@ Bat izan behar duzu [administratzailea](permissions.md#admin) Customer Insights-
 
 ### <a name="data-privacy-and-compliance"></a>Datuen pribatutasuna eta arau-gordetzea
 
-Gaitzen duzunean Dynamics 365 Customer Insights LiveRamp-era datuak transmititzeko, datuak betetze-mugatik kanpo transferitzea onartzen duzu Dynamics 365 Customer Insights, potentzialki sentikorrak diren datuak barne, hala nola Datu Pertsonalak. Microsoft-ek datu horiek transferituko ditu zure aginduetara, baina LiveRamp-ek izan ditzakezun pribatutasun- edo segurtasun-betebeharrak betetzen dituela ziurtatzeko ardura zara. Informazio gehiagorako, berrikusi [Microsoft Pribatutasun-adierazpena](https://go.microsoft.com/fwlink/?linkid=396732). Dynamics 365 Customer Insights administratzaileak edonoiz ken dezake aberastea funtzio hau erabiltzeari uzteko.
+Gaitzen duzunean Dynamics 365 Customer Insights LiveRamp-era datuak transmititzeko, datuak betetze-mugetatik kanpo transferitzea onartzen duzu Dynamics 365 Customer Insights, potentzialki sentikorrak diren datuak barne, hala nola Datu Pertsonalak. Microsoft-ek datu horiek transferituko ditu zure aginduetara, baina LiveRamp-ek izan ditzakezun pribatutasun- edo segurtasun-betebeharrak betetzen dituela ziurtatzeko ardura zara. Informazio gehiagorako, berrikusi [Microsoft Pribatutasun-adierazpena](https://go.microsoft.com/fwlink/?linkid=396732). Dynamics 365 Customer Insights administratzaileak edonoiz ken dezake aberastea funtzio hau erabiltzeari uzteko.
 
 ## <a name="configure-the-enrichment"></a>Konfiguratu aberastea
 
@@ -79,7 +79,7 @@ Gaitzen duzunean Dynamics 365 Customer Insights LiveRamp-era datuak transmititze
 
 1. Hautatu **Korrika egin** aberaste-prozesua hasteko edo hurbiltzeko **Aberasgarriak** orrialdea.
 
-## <a name="enrichment-results"></a>Aberastearen emaitzak
+## <a name="view-enrichment-results"></a>Ikusi aberaste-emaitzak
 
 [!INCLUDE [enrichment-results](includes/enrichment-results.md)]
 

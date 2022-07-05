@@ -1,5 +1,5 @@
 ---
-title: Ikuskaritza Dynamics 365 Customer Insights Azure Monitor-ekin
+title: Saioa birbidaltzea Dynamics 365 Customer Insights Azure Monitor-arekin (aurrebista)
 description: Ikasi erregistroak nola bidali Microsoft Azure Monitorea.
 ms.date: 12/14/2021
 ms.reviewer: mhart
@@ -11,14 +11,14 @@ manager: shellyha
 searchScope:
 - ci-system-diagnostic
 - customerInsights
-ms.openlocfilehash: 15ae772617efa4c64cf79d0bac10a0c3cb28ca30
-ms.sourcegitcommit: a92bf5985263240fd07bad98d8e119b88cf2c9d9
+ms.openlocfilehash: 8c72df7054a682244215bbee54968d6aef4bbf59
+ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
 ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 05/26/2022
-ms.locfileid: "8807566"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9052638"
 ---
-# <a name="log-forwarding-in-dynamics-365-customer-insights-with-azure-monitor-preview"></a>Saioa birbidaltzea Dynamics 365 Customer Insights Azure Monitor-ekin (aurrebista)
+# <a name="log-forwarding-in-dynamics-365-customer-insights-with-azure-monitor-preview"></a>Saioa birbidaltzea Dynamics 365 Customer Insights Azure Monitor-arekin (aurrebista)
 
 Dynamics 365 Customer Insights Azure Monitor-ekin integrazio zuzena eskaintzen du. Azure Monitor baliabideen erregistroek erregistroak kontrolatzeko eta hara bidaltzeko aukera ematen dizute [Azure biltegiratzea](https://azure.microsoft.com/services/storage/),[Azure Log Analytics](/azure/azure-monitor/logs/log-analytics-overview), edo igor itzazu [Azure Event Hubs](https://azure.microsoft.com/services/event-hubs/).
 
@@ -129,7 +129,7 @@ APIko gertaerek eta lan-fluxuko gertaerek egitura eta xehetasun komunak dituzte 
 | `operationName`   | String    | Beharrezkoa          | Gertaera honek adierazten duen eragiketaren izena.                                                                                                                | `Workflows.GetWorkFlowStatusAsync`                                                                                                                                       |
 | `category`        | String    | Beharrezkoa          | Gertaeraren erregistro-kategoria. Edota`Operational` edo `Audit`. POST/PUT/PATCH/DELETE HTTP eskaera guztiak etiketatuta daude`Audit`, gainontzeko guztiarekin`Operational` | `2020-09-08T09:48:14.8050869Z`                                                                                                                                           |
 | `resultType`      | String    | Beharrezkoa          | Ekitaldiaren egoera. `Success`,`ClientError`,`Failure`                                                                                                        |                                                                                                                                                                          |
-| `resultSignature` | String    | Aukerakoa          | Ekitaldiaren emaitzaren egoera. Eragiketa REST API dei bati badagokio, HTTP egoera kodea da.        | `200`             |
+| `resultSignature` | String    | Aukerakoa          | Ekitaldiaren emaitzaren egoera. Eragiketa REST API dei bati dagokiona bada, HTTP egoera kodea da.        | `200`             |
 | `durationMs`      | Long      | Aukerakoa          | Eragiketaren iraupena milisegundotan.     | `133`     |
 | `callerIpAddress` | String    | Aukerakoa          | Deitzailearen IP helbidea, eragiketa publikoki eskuragarri dagoen IP helbide batetik datorren API dei bati badagokio.                                                 | `144.318.99.233`         |
 | `identity`        | String    | Aukerakoa          | Eragiketa egin duen erabiltzailearen edo aplikazioaren identitatea deskribatzen duen JSON objektua.       | Ikusi [Identitatea](#identity-schema) atala.     |  
@@ -160,7 +160,7 @@ The`identity` JSON objektuak honako egitura du
 | Eremua                         | Deskribapenak                                                                                                                          |
 | ----------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
 | `Authorization.UserRole`      | Erabiltzaileari edo aplikazioari esleitutako rola. Informazio gehiagorako, ikus [erabiltzailearen baimenak](permissions.md).                                     |
-| `Authorization.RequiredRoles` | Eragiketa egiteko beharrezkoak diren rolak. `Admin` rolak eragiketa guztiak egiteko baimena du.                                                    |
+| `Authorization.RequiredRoles` | Eragiketa egiteko beharrezkoak diren rolak. `Admin` rola baimenduta dago eragiketa guztiak egiteko.                                                    |
 | `Claims`                      | Erabiltzailearen edo aplikazioaren JSON web token (JWT) erreklamazioak. Erreklamazio-propietateak erakundearen eta erakundearen arabera aldatzen dira Azure Active Directory konfigurazioa. |
 
 #### <a name="api-properties-schema"></a>APIaren propietateen eskema

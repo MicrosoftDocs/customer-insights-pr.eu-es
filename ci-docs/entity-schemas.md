@@ -1,5 +1,5 @@
 ---
-title: Customer Insights entitateen eskemak Common Data Model-en
+title: Entitateen eskema datu arrunten ereduan
 description: Egin lan entitateekin Common Data Model-en.
 ms.date: 08/13/2021
 ms.reviewer: mhart
@@ -8,16 +8,14 @@ ms.topic: conceptual
 author: mukeshpo
 ms.author: mukeshpo
 manager: shellyha
-ms.openlocfilehash: 33a0562854e97b9ac5218e060f965996305627fd
-ms.sourcegitcommit: d45c00a5f6cb106714366af81e8070e7f53654b3
+ms.openlocfilehash: 92d37fc0950fefcb5c2a5d26214a469d3693980d
+ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
 ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 05/15/2022
-ms.locfileid: "8757417"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9054739"
 ---
 # <a name="entity-schemas-in-common-data-model"></a>Entitateen eskema datu arrunten ereduan
-
-
 
 [Datu eredu arrunta](/common-data-model/) adierazpen-zehaztapena da, eta negozioen eta produktibitatearen aplikazioetan gehien erabiltzen diren kontzeptuak eta jarduerak ordezkatzen dituzten entitate estandarren definizioa. Eredu hori datu behaketa eta analitikoetara ere hedatzen ari da. Datu arrunten ereduak negozio-erakunde zehaztuak, modularrak eta hedagarriak eskaintzen ditu (hala nola, Kontua, Negozio Unitatea, Kasua, Kontaktua, Leadea, Aukera eta Produktua), baita saltzaileekin, langileekin eta bezeroekin elkarreraginak ere, hala nola jarduerak eta zerbitzua maila hitzarmenak. Edonork eraiki eta hedatu ahal izango ditu Datu Ereduen eredu arrunten definizioak negozioetarako berariazko ideiak osatzeko.
 

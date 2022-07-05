@@ -1,5 +1,5 @@
 ---
-title: Esportatu Customer Insights datuak Iterable-ra
+title: Esportatu segmentuak Iterablera (aurrebista)
 description: Ikasi konexioa konfiguratzen eta Iterablera esportatzen.
 ms.date: 03/29/2022
 ms.reviewer: mhart
@@ -8,14 +8,14 @@ ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 714a1323521be7d2f29ccaacd7799b2174e2937d
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: 98d5aeab6b0e932d291213053d509ec72da82e47
+ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
 ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8642180"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9052220"
 ---
-# <a name="export-segment-lists-to-iterable-preview"></a>Esportatu segmentu-zerrendak Iterable-ra (aurrebista)
+# <a name="export-segments-to-iterable-preview"></a>Esportatu segmentuak Iterablera (aurrebista)
 
 Esportatu bezeroen profil bateratuen segmentuak Iterablera eta erabili marketin-jardueretarako.
 
@@ -31,7 +31,7 @@ Esportatu bezeroen profil bateratuen segmentuak Iterablera eta erabili marketin-
 - Gehienez 1 milioi bezero-profil Iterablera esportatzeak 30 minutu behar izan ditzake osatzeko. 
 - Iterable-ra esporta dezakezun bezero-profilen kopurua Iterable-rekin duzun kontratuaren menpe dago eta mugatuta dago.
 
-## <a name="set-up-connection-to-iterable"></a>Konfiguratu konexioa Iterable-rekin
+## <a name="set-up-connection-to-iterable"></a>Konfiguratu Iterable-ra konexioa
 
 1. Joan **Administratzailea** > **Konexioak**.
 

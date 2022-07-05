@@ -1,5 +1,5 @@
 ---
-title: Probaren maiz egiten diren galderak - Dynamics 365 Customer Insights
+title: Dynamics 365 Customer Insights probako bertsioaren FAQa
 description: Customer Insights-en probako konfigurazioaren eta kudeaketarekin lotutako ohiko galderen irtenbideak. Ikasi plataformaren eta aplikazioen berariazko arazoak konpontzen.
 author: m-hartmann
 ms.author: mhart
@@ -8,12 +8,12 @@ ms.topic: get-started
 ms.custom: template-trial-faq
 ms.reviewer: jeffhar
 manager: shellyha
-ms.openlocfilehash: 46a67e58f79029246029e2d06789525c2131f100
-ms.sourcegitcommit: 5e26cbb6d2258074471505af2da515818327cf2c
+ms.openlocfilehash: 41f112466d54c9923d0daf7c55d343f9b5c81d98
+ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
 ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 06/14/2022
-ms.locfileid: "9011872"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9051484"
 ---
 # <a name="dynamics-365-customer-insights-trial-faq"></a>Dynamics 365 Customer Insights probako bertsioaren FAQa
 
@@ -42,7 +42,7 @@ Proban izena ematen duzunean, mezu elektroniko bat jasoko duzu probaren xehetasu
 
 ### <a name="how-do-i-add-more-users-to-a-trial"></a>Nola gehi ditzaket erabiltzaileak proba batean?
 
-Erabiltzaileak gehitzeko, joan [Microsoft 365 administrazio-zentrora](https://admin.microsoft.com) probako administratzaile-kontua erabiliz. Jarraitu [administrazio zentroaren orientazioa](/microsoft-365/admin/add-users/add-users) erabiltzaileak gehitzeko probarako lizentziaren mugaren barruan. Gehitzen ari zaren erabiltzaileak dagoeneko badu Microsoft 365 kontua, esleitu segurtasun-funtzio egokia proba-organoan. Informazio gehiagorako, ikus [Esleitu segurtasun-funtzio erabiltzaile bati](/power-platform/admin/create-users-assign-online-security-roles#assign-a-security-role-to-a-user).
+Erabiltzaileak gehitzeko, joan [Microsoft 365 administrazio-zentrora](https://admin.microsoft.com) probako administratzaile-kontua erabiliz. Jarraitu [administrazio zentroaren orientazioa](/microsoft-365/admin/add-users/add-users) erabiltzaileak gehitzeko probarako lizentziaren mugaren barruan. Gehitzen ari zaren erabiltzaileak dagoeneko badu Microsoft 365 kontua, esleitu segurtasun-funtzio egokia probako org-an. Informazio gehiagorako, ikus [Esleitu segurtasun-funtzio erabiltzaile bati](/power-platform/admin/create-users-assign-online-security-roles#assign-a-security-role-to-a-user).
 
 ### <a name="how-many-users-can-i-add-to-my-trial-environment"></a>Zenbat erabiltzaile gehitu ditzaket nire probako ingurunera?
 

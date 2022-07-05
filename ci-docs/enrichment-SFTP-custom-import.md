@@ -1,5 +1,5 @@
 ---
-title: Aberastea SFTP inportazio pertsonalizatuarekin
+title: Aberastu bezeroen profilak SFTP pertsonalizatutako inportazioarekin (aurrebista)
 description: SFTP pertsonalizatutako inportazio aberasteari buruzko informazio orokorra.
 ms.date: 06/10/2022
 ms.reviewer: mhart
@@ -8,14 +8,14 @@ ms.topic: how-to
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: 657afb6fcb68429680eb677734b4115e69769008
-ms.sourcegitcommit: 27c5473eecd851263e60b2b6c96f6c0a99d68acb
+ms.openlocfilehash: 88fc366ab9478c3b67034af794e237ff4573da7c
+ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
 ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "8953704"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9082316"
 ---
-# <a name="enrich-customer-profiles-with-custom-data-preview"></a>Aberastu bezeroen profilak datu pertsonalizatuekin (aurrebista)
+# <a name="enrich-customer-profiles-with-sftp-custom-import-preview"></a>Aberastu bezeroen profilak SFTP pertsonalizatutako inportazioarekin (aurrebista)
 
 Fitxategiak modu seguruan transferitzeko protokoloaren (SFTP) inportazio pertsonalizatuari esker, datuak bateratzeko prozesua igaro behar ez duten datu-aberasteak inporta ditzakezu. Zure datuak ekartzeko modu malgua, segurua eta erraza da. SFTP inportazio pertsonalizatua erabil daiteke [SFTP esportazioarekin batera](export-sftp.md). Horrek aberastu behar den bezeroen profileko datuak esportatzen uzten dizu. Ondoren, datuak prozesatu eta aberastu daitezke, eta SFTP pertsonalizatutako inportazioa erabil daiteke aberastutako datuak itzultzeko Dynamics 365 Customer Insights.
 
@@ -120,7 +120,7 @@ Dynamics 365 Customer Insights administratzailea edonoiz ken dezake aberastea fu
 
 1. Hautatu **Korrika egin** aberaste-prozesua hasteko edo hurbiltzeko **Aberasgarriak** orrialdea.
 
-## <a name="enrichment-results"></a>Aberastearen emaitzak
+## <a name="view-enrichment-results"></a>Ikusi aberaste-emaitzak
 
 [!INCLUDE [enrichment-results](includes/enrichment-results.md)]
 

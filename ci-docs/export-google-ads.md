@@ -1,5 +1,5 @@
 ---
-title: Esportatu Customer Insights datuak Google Ads-era
+title: Esportatu segmentuak Google Ads-era (aurrebista)
 description: Ikasi konexioa konfiguratzen eta Google Ads-era esportatzen.
 ms.date: 03/31/2022
 ms.subservice: audience-insights
@@ -8,12 +8,12 @@ author: pkieffer
 ms.author: philk
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 3e0eb91be97d69a999e90708d29c572f0055527e
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: b7f08936d7d90322cb4e62396a2961fe06273b76
+ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
 ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8642129"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9082988"
 ---
 # <a name="export-segments-to-google-ads-preview"></a>Esportatu segmentuak Google Ads-era (aurrebista)
 
@@ -26,7 +26,7 @@ Esportatu bezeroen profil bateratuen segmentuak Google Ads audientzia-zerrenda b
 -   Webgunearen baldintzak betetzen dituzu [Bezeroen arteko lotura politika](https://support.google.com/adspolicy/answer/6299717).
 -   Webgunearen baldintzak betetzen dituzu [berriro merkaturatzeko zerrenden tamainak](https://support.google.com/google-ads/answer/7558048).
 -   [Konfiguratutako segmentuak](segments.md) dituzu.
--   Esportatutako segmentuetako bezeroen profil bateratuek helbide elektronikoa, telefonoa, mugikorreko iragarle IDa, hirugarrenen erabiltzaile IDa edo helbidea adierazten duten eremuak dituzte.
+-   Esportatutako segmentuetako bezero-profil bateratuek helbide elektronikoa, telefonoa, mugikorreko iragarle IDa, hirugarrenen erabiltzaile IDa edo helbidea adierazten duten eremuak dituzte.
 
 ## <a name="known-limitations"></a>Muga ezagunak
 

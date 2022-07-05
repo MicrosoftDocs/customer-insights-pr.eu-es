@@ -1,6 +1,6 @@
 ---
-title: Nola - Sortu ingurune berri bat
-description: For-rekin inguruneak sortzeko urratsak Dynamics 365 Customer Insights.
+title: 'Nola: Ingurune berri bat sortu'
+description: Inguruak sortzeko urratsak Dynamics 365 Customer Insights.
 ms.date: 05/31/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
@@ -12,16 +12,16 @@ ms.custom: intro-internal
 searchScope:
 - ci-home
 - customerInsights
-ms.openlocfilehash: 6dfaa09cd80498e9a4e4dea6a07ce6e9d29105e2
-ms.sourcegitcommit: 5e26cbb6d2258074471505af2da515818327cf2c
+ms.openlocfilehash: 62969527ceed906ff06fb9be90b972496323ce0a
+ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
 ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 06/14/2022
-ms.locfileid: "9011530"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9052730"
 ---
 # <a name="how-to-create-a-new-environment"></a>Nola: Ingurune berri bat sortu
 
-Ondoren [harpidetza lizentzia erostea Dynamics 365 Customer Insights](paid-license.md),-ren administratzaile globala Microsoft 365 maizterrak ingurunea sortzera gonbidatzen duen mezu elektroniko bat jasotzen du. Erabiltzen hasteko, joan hona: [https://home.ci.ai.dynamics.com/start](https://home.ci.ai.dynamics.com/start). Egoera honetan, zuzenean joan zaitezke [1. urratsa: oinarrizko informazioa eman](#step-1-provide-basic-information).
+Ondoren [harpidetza lizentzia erostea Dynamics 365 Customer Insights](paid-license.md), ren administratzaile globala Microsoft 365 maizterrak ingurunea sortzera gonbidatzen duen mezu elektroniko bat jasotzen du. Erabiltzen hasteko, joan hona: [https://home.ci.ai.dynamics.com/start](https://home.ci.ai.dynamics.com/start). Egoera honetan, zuzenean joan zaitezke [1. urratsa: oinarrizko informazioa ematea](#step-1-provide-basic-information).
 
 Lehenengo ingurunea sortu ondoren, honen administratzaile globala Microsoft 365 maizterrak ahal du [gehitu erabiltzaileak beren erakundetik administratzaile gisa](permissions.md). Aurrerantzean, administratzaile hauek erabiltzaileak eta inguruneak kudea ditzakete. Zure erakundeak lizentzia bat baino gehiago erosten badu Customer Insights-erako, [jarri harremanetan gure laguntza-taldearekin](https://go.microsoft.com/fwlink/?linkid=2079641) erabilgarri dauden inguruneen kopurua handitzeko. Edukierari eta gehigarriei buruzko informazio gehiago lortzeko, berrikusi [Dynamics 365 lizentzien gida](https://go.microsoft.com/fwlink/?LinkId=866544).
 
@@ -40,7 +40,7 @@ Behar duzu [administratzaile-baimenak](permissions.md) Customer Insights-en ingu
 
 1. Jarraitu hurrengo ataletan azaltzen den esperientzia gidatuari ingurune berri baterako beharrezko informazio guztia emateko. Ingurune bat lehenago konfiguratu baduzu, ere egin dezakezu [kopiatu konfigurazioa](#copy-the-environment-configuration).
 
-## <a name="step-1-provide-basic-information"></a>1. urratsa: oinarrizko informazioa eman
+## <a name="step-1-provide-basic-information"></a>1. urratsa: oinarrizko informazioa ematea
 
 Urtean **Oinarrizko informazioa** urratsa, aukeratu hutsetik ingurunea sortu nahi duzun edo [kopiatu datuak beste ingurune batetik](#copy-the-environment-configuration).
 
@@ -59,7 +59,7 @@ urtean **Datuak biltegiratzea** urratsa, aukeratu non gorde Customer Insights da
 
 Bi aukera dituzu aukeran:
 
-- **Bezeroen estatistikak biltegiratzea** : Datuen biltegiratzea Customer Insights taldeak kudeatzen du. Aukera lehenetsia da eta zure biltegiratze-kontuan datuak gordetzeko eskakizun zehatzik ez badago, aukera hau erabiltzea gomendatzen dugu.
+- **Bezeroei buruzko informazio biltegiratzea** : Datuen biltegiratzea Customer Insights taldeak kudeatzen du. Aukera lehenetsia da eta zure biltegiratze-kontuan datuak gordetzeko eskakizun zehatzik ez badago, aukera hau erabiltzea gomendatzen dugu.
 - **Azure Data Lake Storage**: Zehaztu zurea Azure Data Lake Storage kontua datuak gordetzeko, datuak non gordetzen diren kontrol osoa izan dezazun. Informazio gehiagorako, ikus [Erabili zurea Azure Data Lake Storage kontua](own-data-lake-storage.md).
 
 :::image type="content" source="media/data-storage-environment.png" alt-text="Aukeratu hobetsitako aukera zure datuak gordetzeko.":::
@@ -120,7 +120,7 @@ Ingurunearen konfigurazioa kopiatzen duzunean, beste urrats batzuk egin behar di
 
 - Bezeroen profilak. Lehenik eta behin, autentifikatu eta hartu zure datu-iturriak eta exekutatu datuen bateratzea bezeroen profilak birsortzeko.
 - Datu-iturburuaren kredentzialak. datu-iturburu bakoitzaren kredentzialak eman behar dituzu datu-iturriak eskuz autentifikatzeko eta freskatzeko.
-- Datu-iturriak Common Data Model karpetatik eta Dataverse. Datu-iturri horiek eskuz sortu behar dituzu iturburu-inguruneko izen berarekin.
+- Datu-iturriak Common Data Model karpetatik eta Dataverse. Datu-iturri horiek eskuz sortu behar dituzu iturburu-ingurunean dagoen izen berarekin.
 - Esportazioetarako eta aberasteko erabiltzen diren konexio sekretuak. Konexioak berriro autentifikatu eta gero aberasketak eta esportazioak berriro aktibatu behar dituzu.
 
 Berrespen-mezu bat ikusiko duzu kopiatutako ingurunea sortzen denean. Aukeratu **Joan datu iturrietara** datu-iturrien zerrenda ikusteko.
@@ -133,6 +133,6 @@ Datu iturriak freskatu ondoren, joan **Datuak** > **bateratzeko**. Hemen iturbur
 
 Datuen bateratzea amaitutakoan, joan **Neurriak** eta **segmentuak** haiek freskatzeko ere.
 
-Esportazio eta aberasketak berriro aktibatu aurretik, joan hona **Admin** > **Konexioak** zure ingurune berriko konexioak berriro autentifikatzeko.
+Esportazio eta aberasgarriak berriro aktibatu aurretik, joan hona **Admin** > **Konexioak** zure ingurune berriko konexioak berriro autentifikatzeko.
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

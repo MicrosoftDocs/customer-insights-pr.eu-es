@@ -1,5 +1,5 @@
 ---
-title: Esportatu Customer Insights datuak ActiveCampaign-ra
+title: Esportatu segmentuak ActiveCampaign-era
 description: Ikasi konexioa nola konfiguratu eta ActiveCampaign-ra esportatu.
 ms.date: 10/08/2021
 ms.reviewer: mhart
@@ -8,12 +8,12 @@ ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 5d15b9bf7383d06070ac92d7a729fc6e6e00c9d7
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: eb6f2bb69bb30c319e17390562b3f33512f33ff1
+ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
 ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8642131"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9054693"
 ---
 # <a name="export-segments-to-activecampaign-preview"></a>Esportatu segmentuak ActiveCampaign-ra (aurrebista)
 
@@ -21,9 +21,9 @@ Esportatu bezero profil bateratuen segmentuak ActiveCampaign-era eta erabili mar
 
 ## <a name="prerequisites"></a>Aurrebaldintzak
 
--   Baduzu [ActiveCampaign kontua](https://www.activecampaign.com/) eta dagozkien administratzaile egiaztagiriak.
--   Zuk daukazu [konfiguratutako segmentuak](segments.md) Bezeroen Insights-en.
--   Esportatutako segmentuetako bezeroen profil bateratuek helbide elektronikoa duen eremu bat dute.
+- Baduzu [ActiveCampaign kontua](https://www.activecampaign.com/) eta dagozkien administratzaile egiaztagiriak.
+- Zuk daukazu [konfiguratutako segmentuak](segments.md) Bezeroen Insights-en.
+- Esportatutako segmentuetako bezeroen profil bateratuek helbide elektronikoa duen eremu bat dute.
 
 ## <a name="known-limitations"></a>Muga ezagunak
 

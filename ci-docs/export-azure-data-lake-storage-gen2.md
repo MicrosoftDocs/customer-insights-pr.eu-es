@@ -1,5 +1,5 @@
 ---
-title: Esportatu Customer Insights datuak Azure Data Lake Storage Gen2-ra
+title: Esportatu datuak hona Azure Data Lake Storage 2. belaunaldia (aurrebista)
 description: Ikasi Azure Data Lake Storage Gen2-rako konexioa nola konfiguratu.
 ms.date: 10/06/2021
 ms.reviewer: mhart
@@ -8,14 +8,14 @@ ms.topic: how-to
 author: stefanie-msft
 ms.author: sthe
 manager: shellyha
-ms.openlocfilehash: 22eee11666752459a1750d728c4e254ab0c59e58
-ms.sourcegitcommit: 8e9f0a9693fd8d91ad0227735ff03688fef5406f
+ms.openlocfilehash: c2446fba425203d2910b82134b73543a73c7ecf8
+ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
 ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "8947215"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9082652"
 ---
-# <a name="export-segment-list-and-other-data-to-azure-data-lake-storage-gen2-preview"></a>Esportatu segmentuen zerrenda eta beste datu batzuk Azure Data Lake Storage Gen2 (aurrebista)
+# <a name="export-data-to-azure-data-lake-storage-gen2-preview"></a>Esportatu datuak hona Azure Data Lake Storage 2. belaunaldia (aurrebista)
 
 Gorde Customer Insights datuak Azure Data Lake Storage Gen2 kontua edo erabili datuak beste aplikazio batzuetara transferitzeko.
 

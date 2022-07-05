@@ -1,5 +1,5 @@
 ---
-title: Bateratu bezeroaren edo kontuaren eremuak
+title: Batu bezeroen eremuak datuak bateratzeko
 description: Konbinatu entitateak bezeroen profil bateratuak sortzeko.
 recommendations: false
 ms.date: 05/04/2022
@@ -14,14 +14,14 @@ searchScope:
 - ci-match
 - ci-relationships
 - customerInsights
-ms.openlocfilehash: 78e2528d4a3058f879d83952f72ed88a1da065b6
-ms.sourcegitcommit: 6a5f4312a2bb808c40830863f26620daf65b921d
+ms.openlocfilehash: ceb2724ad490c1ba44fd9b7ff2be04721892fca4
+ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
 ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "8740842"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9082946"
 ---
-# <a name="unify-customer-fields"></a>Bateratu bezeroen eremuak
+# <a name="unify-customer-fields-for-data-unification"></a>Batu bezeroen eremuak datuak bateratzeko
 
 [!INCLUDE [m3-prod-trial-note](includes/m3-prod-trial-note.md)]
 
@@ -145,7 +145,7 @@ Tratatu eremu multzo bat unitate bakar gisa. Adibidez, gure erregistroek Helbide
 
 Definitu nola sortu bezeroaren ID balioak, bezeroen profilaren identifikatzaile esklusiboak. Datuak bateratzeko prozesuko eremuak bateratzeko urratsak bezeroaren profilaren identifikatzaile esklusiboa sortzen du. Identifikatzailea da *BezeroarenId* urtean *Bezeroa* datuak bateratzeko prozesuaren ondoriozko entitatea.
 
-The *BezeroarenId*  nuluak ez diren irabazlearen gako nagusien lehen balioaren hash batean oinarritzen da. Gako hauek datuak bateratzeko erabiltzen diren entitateetatik datoz eta bat-etortze-ordenaren eragina dute.Beraz, sortutako bezero IDa alda daiteke lehen mailako gako-balioa bat-etortze-ordenaren entitate nagusian aldatzen denean. Baliteke gako nagusiaren balioa ez izatea beti bezero bera ordezkatzea.
+The *BezeroarenId*  nuluak ez diren irabazlearen gako nagusien lehen balioaren hash batean oinarritzen da. Gako hauek datuak bateratzeko erabiltzen diren entitateetatik datoz eta bat-etortze-ordenaren eragina dute.Beraz, sortutako bezero IDa alda daiteke lehen mailako gako-balio bat bat-etortze-ordenaren entitate nagusian aldatzen denean. Baliteke gako nagusiaren balioa ez izatea beti bezero bera ordezkatzea.
 
 Bezeroaren ID egonkor bat sortzeak portaera hori ekiditeko aukera ematen dizu.
 

@@ -1,5 +1,5 @@
 ---
-title: Enpresako profilak aberastea hirugarrenen Leadspace aberastearekin
+title: Aberastu enpresaren profilak Leadspace-rekin (aurrebista)
 description: Leadspace-ren hirugarrenen aberasteari buruzko informazio orokorra.
 ms.date: 06/10/2022
 ms.reviewer: mhart
@@ -8,14 +8,14 @@ ms.topic: how-to
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: ca53f15bd7c71b3b4acb396c4daf52d7c7aff9eb
-ms.sourcegitcommit: 27c5473eecd851263e60b2b6c96f6c0a99d68acb
+ms.openlocfilehash: b58532a541ee22a5e34d0af1a3334ccbd53627b2
+ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
 ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "8954164"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9082358"
 ---
-# <a name="enrichment-of-company-profiles-with-leadspace-preview"></a>Enpresen profilak aberastea Leadspace-rekin (aurrebista)
+# <a name="enrich-company-profiles-with-leadspace-preview"></a>Aberastu enpresaren profilak Leadspace-rekin (aurrebista)
 
 Leadspace datu-zientzietako enpresa bat da, B-to-B Bezeroentzako Datuen Plataforma eskaintzen duena. Kontuetan oinarritutako bezeroen profil bateratuak dituzten inguruneak ahalbidetzen ditu beren datuak aberasteko. Aberastu *Bezeroen profilak* enpresaren tamaina, kokapena edo industria bezalako atributuekin. Aberastu *Harremanetarako profilak* izenburua, pertsona edo posta elektronikoa egiaztatzea bezalako atributuekin.
 
@@ -27,7 +27,7 @@ Leadspace datu-zientzietako enpresa bat da, B-to-B Bezeroentzako Datuen Platafor
 
 ## <a name="configure-the-connection-for-leadspace"></a>Konfiguratu konexioa Leadspace-rako
 
-Bat izan behar duzu [administratzailea](permissions.md#admin) Customer Insights-en eta "betiko gakoa" dute (deitzen dena **Leadspace tokena**).
+Bat izan behar duzu [administratzailea](permissions.md#admin) Customer Insights-en eta "betiko giltza" dute (deitzen dena **Leadspace tokena**).
 
 1. Hautatu **Gehitu konexioa** aberaste bat konfiguratzean edo joan **Admin** > **Konexioak** eta hautatu **Konfiguratu** Leadspace fitxan.
 
@@ -82,7 +82,7 @@ Dynamics 365 Customer Insights administratzailea edonoiz ken dezake aberastea fu
 
 1. Hautatu **Korrika egin** aberaste-prozesua hasteko edo hurbiltzeko **Aberasgarriak** orrialdea.
 
-## <a name="enrichment-results"></a>Aberastearen emaitzak
+## <a name="view-enrichment-results"></a>Ikusi aberaste-emaitzak
 
 [!INCLUDE [enrichment-results](includes/enrichment-results.md)]
 

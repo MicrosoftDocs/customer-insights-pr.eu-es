@@ -80,7 +80,7 @@
       href: data-unification-update.md
 - name: Datu-aberastea
   items:
-    - name: Aberastu bezeroen profilak
+    - name: Datuak aberasteko ikuspegi orokorra
       href: enrichment-hub.md
     - name: '-ko kontuak Office 365 datuak'
       href: enrichment-office.md
@@ -98,7 +98,7 @@
       href: enrichment-enhanced-company-data.md
     - name: LiveRamp-ekin identitatea
       href: enrichment-liveramp.md
-    - name: Kokapena Azure Maps-etik
+    - name: Azure Maps-en kokapena
       href: enrichment-azure-maps.md
     - name: HERE Technologies-eko kokalekua
       href: enrichment-here.md
@@ -112,7 +112,7 @@
       href: search-filter-index.md
     - name: Bezeroen jarduerak definitu
       href: activities.md
-    - name: Customer Insights-en baimena kudeatzea
+    - name: Erabili baimenaren kudeaketa
       href: consent-management.md
 - name: Segmentuak
   items:
@@ -212,6 +212,8 @@
           href: export-facebook.md
         - name: Google Ads
           href: export-google-ads.md
+        - name: InMobi
+          href: export-inmobi.md
         - name: Iteragarria
           href: export-iterable.md
         - name: Klaviyo

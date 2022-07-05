@@ -1,5 +1,5 @@
 ---
-title: Aberastu bezeroen profilak Azure Maps-eko kokalekuen datuekin
+title: Aberastu bezeroen profilak Azure Maps-en kokapen-datuekin (aurrebista)
 description: Azure Maps-en lehenengoen aberasteari buruzko informazio orokorra.
 ms.date: 06/10/2022
 ms.reviewer: mhart
@@ -8,14 +8,14 @@ ms.topic: how-to
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: a806b2d0c791972c967c90694527608b4def9f3f
-ms.sourcegitcommit: 27c5473eecd851263e60b2b6c96f6c0a99d68acb
+ms.openlocfilehash: dfadc08f67beac3fded1a97e557ee9e1880664e0
+ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
 ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "8953613"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9052592"
 ---
-# <a name="enrichment-of-customer-profiles-with-azure-maps-preview"></a>Bezeroen profilen aberastea Azure Maps-ekin (aurreargitalpena)
+# <a name="enrich-customer-profiles-with-location-data-from-azure-maps-preview"></a>Aberastu bezeroen profilak Azure Maps-en kokapen-datuekin (aurrebista)
 
 Azure Maps-ek kokapenean oinarritutako datuak eta zerbitzuak eskaintzen ditu datu geoespazialetan oinarritutako esperientziak eskaintzeko, kokapen adimen integratuta. Azure Maps-en datuak aberasteko zerbitzuek bezeroei buruzko kokalekuaren informazioaren zehaztasuna hobetzen dute. Helbideen normalizazioa edo latitudea eta longitudea ateratzeko gaitasunak ekartzen ditu Dynamics 365 Customer Insights-era.
 
@@ -82,7 +82,7 @@ Dynamics 365 Customer Insights administratzaileak edonoiz ken dezake aberastea f
 
 1. Hautatu **Korrika egin** aberaste-prozesua hasteko edo hurbiltzeko **Aberasgarriak** orrialdea.
 
-## <a name="enrichment-results"></a>Aberastearen emaitzak
+## <a name="view-enrichment-results"></a>Ikusi aberaste-emaitzak
 
 [!INCLUDE [enrichment-results](includes/enrichment-results.md)]
 

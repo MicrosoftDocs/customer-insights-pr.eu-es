@@ -1,5 +1,5 @@
 ---
-title: Hasierako orria Customer Insights-en
+title: Arakatu bezeroen ikuspegiak
 description: Hasi aplikazioa arakatzen Etxeko orrian.
 ms.date: 05/11/2022
 ms.reviewer: mhart
@@ -11,12 +11,12 @@ manager: shellyha
 searchScope:
 - ci-home
 - customerInsights
-ms.openlocfilehash: 621977068dc49b55f50f00e9762a4a5952d7b453
-ms.sourcegitcommit: ba29fd7c89bdeba7260b4783662d8da8e1e1e30e
+ms.openlocfilehash: 13b4bfa2f0b0cd69454c025e2f59de3dd6bb75a3
+ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
 ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "8768316"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9053282"
 ---
 # <a name="explore-customer-insights"></a>Arakatu bezeroen ikuspegiak
 
@@ -30,7 +30,7 @@ The **Hasiera** orrialdeak funtzio nagusien konfigurazio-prozesuan zehar gidatze
 
 Erabili ezkerreko panela Customer Insights-en eremu ezberdinetan nabigatzeko.
 
-Enpresa-kontuekin eta kontsumitzaile indibidualekin lan egiten baduzu, zure ikusle nagusia hauta dezakezu zure fokua horren arabera ezartzeko.
+Enpresa-kontuekin eta kontsumitzaile indibidualekin lan egiten baduzu, zure audientzia nagusia hauta dezakezu zure fokua horren arabera ezartzeko.
 
 ## <a name="application-header"></a>Aplikazioaren goiburua
 
@@ -38,7 +38,7 @@ The **Ingurumena** hautatzaileak lan egiten duzun ingurunea erakusten du eta adm
 
 Irribarrearen ikonoa da **Iritzia** kontrola. Hautatu ezazu Customer Insights-ekin duzun esperientzia kontatzeko. Zure iritzia aktiboki entzuten ari gara eta aldez aurretik eskertzen dizugu zer gustatzen zaizun eta nola hobetu dezakegun jakinarazteagatik.
 
-The **Ezarpenak** kontrolak, engranajearen ikono batek adierazten duena, Customer Insights-en saioaren xehetasunak biltzeko eta zure ezarpen globalak konfiguratzeko aukera ematen dizu.Microsoft 365 profila.
+The **Ezarpenak** kontrolak, engranaje-ikono batek adierazten duena, Customer Insights-en saioaren xehetasunak biltzeko eta zure ezarpen globalak konfiguratzeko aukera ematen dizu.Microsoft 365 profila.
 
 **Laguntza** aukerak, galdera-ikurraren ikono batekin bistaratzen dira, testuingururako laguntza estekak eta bestelako baliabide lagungarriak eskaintzen dituzte.
 
@@ -59,7 +59,7 @@ Atal honek zure Customer Insights ingurunea konfiguratzeko prozesuan ibiltzen la
 
 - **Enpresa neurriak** fitxak erakusten ditu [Errendimenduaren adierazle nagusiak (KPI)](measures.md) definitu duzuna. Adibidez, bezero baten batez besteko probabilitatea edo bezero bakoitzeko batez besteko lineako gastua.
 
-- **Aberasgarriak** Duela gutxi burutu diren aberaste-lanen emaitzak zerrendatzen ditu. [Aberasteek](enrichment-hub.md) zure bezero-baseari buruzko informazioa gehitzen dute. Adibidez, haienganako interesak eta markak ulertuz.
+- **Aberasgarriak** Duela gutxi burutu diren aberastasun-exekutuen emaitzak zerrendatzen ditu. [Aberasteek](enrichment-hub.md) zure bezero-baseari buruzko informazioa gehitzen dute. Adibidez, haienganako interesak eta markak ulertuz.
 
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

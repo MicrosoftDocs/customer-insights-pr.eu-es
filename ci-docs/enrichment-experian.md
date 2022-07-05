@@ -1,5 +1,5 @@
 ---
-title: Aberastea hirugarrenen aberastasunarekin Experian
+title: Aberastu bezeroen profilak datu demografikoekin Experian (aurrebista)
 description: -Ri buruzko informazio orokorra Experian hirugarrenen aberastea.
 ms.date: 06/10/2022
 ms.reviewer: mhart
@@ -8,12 +8,12 @@ ms.topic: how-to
 author: kishorem-ms
 ms.author: kishorem
 manager: shellyha
-ms.openlocfilehash: 735da18e584b0d9db76b557f4d16dbdf1757f33c
-ms.sourcegitcommit: 27c5473eecd851263e60b2b6c96f6c0a99d68acb
+ms.openlocfilehash: a30e98b06ed07590ab95cae1d8db8023e49ff7f9
+ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
 ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "8954072"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9053006"
 ---
 # <a name="enrich-customer-profiles-with-demographics-from-experian-preview"></a>Aberastu bezeroen profilak datu demografikoekin Experian (aurrebista)
 
@@ -39,7 +39,7 @@ Bat izan behar duzu [administratzailea](permissions.md#admin) Customer Insights-
 
    :::image type="content" source="media/enrichment-Experian-connection.png" alt-text="Experian konexioaren konfigurazio-panela.":::
 
-1. Sartu konexiorako izen bat eta baliozko Erabiltzaile IDa, Party IDa eta Modelo Zenbakia Experian Garraio Seguru kontua.
+1. Sartu konexiorako izen bat eta baliozko Erabiltzaile ID, Party ID eta Model Zenbakia zuretzako Experian Garraio Seguru kontua.
 
 1. Berrikusi eta eman zure baimena [Datuen pribatutasuna eta betetzea](#data-privacy-and-compliance) hautatuz **Ados**.
 
@@ -55,7 +55,7 @@ Gaitzen duzunean Dynamics 365 Customer Insights datuak transmititzeko Experian, 
 
 1. Hautatu **Aberastu nire datuak** gainean **Demografia** tik Experian teila.
 
-   :::image type="content" source="media/experian-tile.png" alt-text="Experian lauza aberastearen ikuspegi orokorraren orrian.":::
+   :::image type="content" source="media/experian-tile.png" alt-text="Experian lauza aberastearen ikuspegi orokorra orrialdean.":::
 
 1. Berrikusi ikuspegi orokorra eta, ondoren, hautatu **Hurrengoa**.
 
@@ -79,7 +79,7 @@ Gaitzen duzunean Dynamics 365 Customer Insights datuak transmititzeko Experian, 
 
 1. Hautatu **Korrika egin** aberaste-prozesua hasteko edo hurbiltzeko **Aberasgarriak** orrialdea.
 
-## <a name="enrichment-results"></a>Aberastearen emaitzak
+## <a name="view-enrichment-results"></a>Ikusi aberaste-emaitzak
 
 [!INCLUDE [enrichment-results](includes/enrichment-results.md)]
 

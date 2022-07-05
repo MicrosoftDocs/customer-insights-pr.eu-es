@@ -1,37 +1,38 @@
 ---
-title: Esportatu Customer Insights datuak Braze-ra
+title: Esportatu segmentuak Braze-ra (aurrebista)
 description: Ikasi nola konfiguratu konexioa eta Braze-ra esportatzen.
-ms.date: 03/29/2022
+ms.date: 06/29/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: bfc9b34506dc3385b5edf12b31e74d05f2d20655
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: 314a61f82c4040a8dbd6dff1dd5d92e20464f82a
+ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
 ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8642082"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9082673"
 ---
-# <a name="export-segment-lists-to-braze-preview"></a>Esportatu segmentu-zerrendak Braze-ra (aurrebista)
+# <a name="export-segments-to-braze-preview"></a>Esportatu segmentuak Braze-ra (aurrebista)
 
 Esportatu bezeroen profil bateratuen segmentuak Braze-ra eta erabili marketin-jardueretarako.
 
 ## <a name="prerequisites"></a>Aurrebaldintzak
 
--   Bat daukazu [Braze kontua](https://www.braze.com/) eta dagozkion administratzaile-kreditazioak.
--   Zuk daukazu [konfiguratutako segmentuak](segments.md) Bezeroen Insights-en.
--   Esportatutako segmentuetako bezero profil bateratuek helbide elektroniko bat eta Braze bezero ID bat adierazten duten eremu bat dute. 
+- A [Braze kontua](https://www.braze.com/) eta dagozkion administratzaile-kreditazioak.
+- Dauden [segmentuak Braze-n](https://www.braze.com/docs/user_guide/engagement_tools/segments/creating_a_segment/).
+- [Konfiguratutako segmentuak](segments.md) Bezeroen Insights-en.
+- Esportatutako segmentuetako bezero profil bateratuek helbide elektroniko bat eta Braze bezero ID bat adierazten duten eremu bat dute.
 
 ## <a name="known-limitations"></a>Muga ezagunak
 
 - Braze-ra esportatzea segmentuetara mugatzen da.
-- Gehienez milioi bat bezero-profil Braze-ra esportatzeak 40 minutu behar izan ditzake osatzeko. 
-- Braze-ra esporta ditzakezun bezero-profilen kopurua Braze-rekin duzun kontratuaren menpe dago eta mugatuta dago.
+- Gehienez 1 milioi bezero-profil Brazera esportatzeak 40 minutu behar izan ditzake osatzeko.
+- Braze-ra esporta dezakezun bezero-profilen kopurua Braze-rekin duzun kontratuaren menpe dago eta mugatuta dago.
 
-## <a name="set-up-connection-to-braze"></a>Konfiguratu Braze-rekin konexioa
+## <a name="set-up-connection-to-braze"></a>Konfiguratu konexioa Braze-rekin
 
 1. Joan **Administratzailea** > **Konexioak**.
 
@@ -41,7 +42,7 @@ Esportatu bezeroen profil bateratuen segmentuak Braze-ra eta erabili marketin-ja
 
 1. Aukeratu nork erabil dezakeen konexioa. Inolako neurririk hartzen ez baduzu, lehenetsia izango da Administratzaileak. Informazio gehiagorako, ikus [Baimendu laguntzaileei esportazioetarako konexioa erabiltzea](connections.md#allow-contributors-to-use-a-connection-for-exports).
 
-1. Eman zure [Braze API gakoa](https://www.braze.com/docs/api/basics/) saioa hasten jarraitzeko. 
+1. Eman zure [Braze API gakoa](https://www.braze.com/docs/api/basics/) saioa hasten jarraitzeko.
 
 1. Aukeratu **ados** baieztatzeko **Datuen pribatutasuna eta betetzea**.
 
@@ -59,9 +60,13 @@ Esportazio hau konfigura dezakezu mota honetako konexiorako sarbidea baduzu. Inf
 
 1. Esportazio berria sortzeko, hautatu **Gehitu helmuga**.
 
-1. urtean **Esportatzeko konexioa** eremuan, aukeratu konexio bat Braze ataleko. Atal honen izena ikusten ez baduzu, ez dago mota honetako konexiorik erabilgarri.  
+1. urtean **Esportatzeko konexioa** eremuan, aukeratu konexio bat Braze ataleko. Atal hau ikusten ez baduzu, ez dago mota honetako konexiorik eskuragarri.  
 
-3. urtean **Datuen parekatzea** atalean, in **Posta elektronikoa** eremuan, hautatu bezero baten helbide elektronikoa adierazten duen eremua, "Bezeroaren IDa" eremuan, hautatu bezeroaren Braze IDa adierazten duen eremua. Beharrezkoa da segmentuak Braze-ra esportatzeko. Braze-ko segmentuak atalean dagoen segmentuaren izen berarekin sortuko dira Dynamics 365 Customer Insights. Datuak parekatzeko aukerako eremu osagarriak hauta ditzakezu. 
+1. Gehitu a **Bistaratzeko izena** zure esportaziorako.
+
+1. Gehitu esportatu nahi duzun Braze segmentuaren API identifikatzailea **Braze Segment API Identifier** eremua. Identifikatzailea Braze plataformako segmentuaren xehetasunetan aurki dezakezu.
+
+1. Urtean **Datuen bat etortzea** atalean, **Posta elektronikoa** eremua, hautatu bezeroaren helbide elektronikoa adierazten duen eremua. urtean **Bezeroaren IDa** eremuan, hautatu bezeroaren Braze IDa adierazten duen eremua. Beharrezkoa da segmentuak Braze-ra esportatzeko. Eremu gehiago hauta ditzakezu aukeran.
 
 1. Sakatu **Gorde**.
 
@@ -72,6 +77,6 @@ Esportazioa guztiekin egiten da [freskatze programatua](system.md#schedule-tab).
 
 ## <a name="data-privacy-and-compliance"></a>Datuen pribatutasuna eta arau-gordetzea
 
-Gaitzen duzunean Dynamics 365 Customer Insights Braze-ra datuak transmititzeko, datuen transferentzia onartzen duzu betetze-mugatik kanpo Dynamics 365 Customer Insights, potentzialki sentikorrak diren datuak barne, hala nola Datu Pertsonalak. Microsoft-ek datu horiek transferituko ditu zure aginduetara, baina Braze-k izan ditzakezun pribatutasun- edo segurtasun-betebeharrak betetzen dituela ziurtatzeko ardura duzu. Informazio gehiago eskuratzeko, ikusi [Microsoft-en pribatutasun-adierazpena](https://go.microsoft.com/fwlink/?linkid=396732).
+Gaitzen duzunean Dynamics 365 Customer Insights Braze-ri datuak transmititzeko, datuen transferentzia onartzen duzu betetze-mugatik kanpo Dynamics 365 Customer Insights, potentzialki sentikorrak diren datuak barne, hala nola Datu Pertsonalak. Microsoft-ek datu horiek transferituko ditu zure aginduetara, baina Braze-k izan ditzakezun pribatutasun- edo segurtasun-betebeharrak betetzen dituela ziurtatzeko ardura zara. Informazio gehiago eskuratzeko, ikusi [Microsoft-en pribatutasun-adierazpena](https://go.microsoft.com/fwlink/?linkid=396732).
 
 Funtzio hau erabiltzeari uzteko, Dynamics 365 Customer Insights-en administratzaileak esportazioaren helburuko kokalekua edonoiz ken dezake.

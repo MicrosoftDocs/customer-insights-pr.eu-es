@@ -1,5 +1,5 @@
 ---
-title: Esportatu Customer Insights datuak Criteora
+title: Esportatu segmentuak Criteo-ra (aurrebista)
 description: Ikasi nola konfiguratu konexioa eta nola esportatu Criteora.
 ms.date: 05/27/2022
 ms.reviewer: mhart
@@ -8,12 +8,12 @@ ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 854f5f0c53f053fc5d742d69a045db1926fec00c
-ms.sourcegitcommit: bf65bc0a54cdab71680e658e1617bee7b2c2bb68
+ms.openlocfilehash: ace9056d200a3179e442132004324a01f0d247b6
+ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
 ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "8808784"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9082778"
 ---
 # <a name="export-segments-to-criteo-preview"></a>Esportatu segmentuak Criteo-ra (aurrebista)
 
@@ -30,7 +30,7 @@ Esportatu bezeroen profil bateratuen segmentuak kanpainak sortzeko, posta elektr
 - Gehienez milioi bat bezero profil Criteora esportatzeko.
 - Criteora esportatzea segmentuetara mugatzen da.
 - Guztira 1 milioi bezero profil dituzten segmentuak esportatzeak 30 minutu arte iraun dezake. 
-- Criteora esporta ditzakezun bezero-profilen kopurua Criteorekin duzun kontratuaren menpe dago eta mugatuta dago.
+- Criteora esporta ditzakezun bezero-profilen kopurua Criteorekin duzun kontratuaren menpekoa eta mugatua da.
 
 ## <a name="set-up-connection-to-criteo"></a>Konfiguratu Criteo-rekin konexioa
 
@@ -74,7 +74,7 @@ Esportazioa guztiekin egiten da [freskatze programatua](system.md#schedule-tab).
 
 ## <a name="data-privacy-and-compliance"></a>Datuen pribatutasuna eta arau-gordetzea
 
-Gaitzen duzunean Dynamics 365 Customer Insights Criteori datuak transmititzeko, datuak betetze-mugatik kanpo transferitzea onartzen duzu Dynamics 365 Customer Insights, potentzialki sentikorrak diren datuak barne, hala nola Datu Pertsonalak. Microsoft-ek datu horiek transferituko ditu zure aginduetara, baina zure ardura zara Criteok izan ditzakezun pribatutasun- edo segurtasun-betebeharrak betetzen dituela ziurtatzeaz. Informazio gehiago eskuratzeko, ikusi [Microsoft-en pribatutasun-adierazpena](https://go.microsoft.com/fwlink/?linkid=396732).
+Gaitzen duzunean Dynamics 365 Customer Insights datuak Criteori transmititzeko, datuak betetzeko mugatik kanpo transferitzea onartzen duzu Dynamics 365 Customer Insights, potentzialki sentikorrak diren datuak barne, hala nola Datu Pertsonalak. Microsoft-ek datu horiek transferituko ditu zure aginduetara, baina zure ardura zara Criteok izan ditzakezun pribatutasun- edo segurtasun-betebeharrak betetzen dituela ziurtatzeaz. Informazio gehiago eskuratzeko, ikusi [Microsoft-en pribatutasun-adierazpena](https://go.microsoft.com/fwlink/?linkid=396732).
 Funtzio hau erabiltzeari uzteko, Dynamics 365 Customer Insights-en administratzaileak esportazioaren helburuko kokalekua edonoiz ken dezake.
 
 

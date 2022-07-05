@@ -11,16 +11,16 @@ manager: shellyha
 searchScope:
 - ci-semantic-mapping
 - customerInsights
-ms.openlocfilehash: a60855f6d5616ca9b958752836d1071ae3433db0
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: b3a0643ab71c98ce212f4e4581a584d8382c67eb
+ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
 ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8642144"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9083135"
 ---
 # <a name="semantic-mappings-preview"></a>Esleipen semantikoak (aurreargitalpena)
 
-Kartografia semantikoek jarduerarik gabeko datuak aurrez definitutako eskemetara mapatzen uzten dizute. Eskema hauek Customer Insights-i zure datuen atributuak hobeto ulertzen laguntzen dute. Mapa semantikoak eta emandako datuek ikuspegi eta eginbide berriak ahalbidetzen dituzte Customer Insights-en. Zure jardueren datuak eskemetara mapatzeko, berrikusi [jarduerak](activities.md) dokumentazioa.
+Kartografia semantikoek jarduerarik gabeko datuak aurrez definitutako eskemetara mapatzen uzten dizute. Eskema hauek Customer Insights-i zure datuen atributuak hobeto ulertzen laguntzen dute. Mapa semantikoak eta emandako datuek Customer Insights-en ikuspegi eta eginbide berriak ahalbidetzen dituzte. Zure jardueren datuak eskemetara mapatzeko, berrikusi [jarduerak](activities.md) dokumentazioa.
 
 **Gaur egun mapaketa semantikoak gaituta daude negozio kontuetan oinarritutako inguruneetan**. *Harremanetarako Profila* Customer Insights-en gaur egun eskuragarri dagoen mapa semantiko mota bakarra da.
 
@@ -95,10 +95,10 @@ Aktibatuta **Datuak** > **Kartografia semantikoak (aurrebista)**, gordetako mapa
 
 ## <a name="use-a-contactprofile-semantic-entity-mapping-to-create-contact-level-activities"></a>Erabili ContactProfile entitate semantikoen mapaketa kontaktu mailako jarduerak sortzeko
 
-Bat sortu ondoren *Harremanetarako Profila* entitate semantikoen mapak, kontaktuen jarduerak har ditzakezu. Kontu bateko jardueren kronograman ikus dezakezu zein kontaktu zen jarduera bakoitzaren arduraduna. Urrats gehienek jarduera-mapearen konfigurazio tipikoari jarraitzen diote.
+Bat sortu ondoren *Harremanetarako Profila* entitate semantikoen mapak, kontaktuen jarduerak har ditzakezu. Kontu baten jardueraren kronograman ikus dezakezu zein kontaktu zen jarduera bakoitzaren arduraduna. Urrats gehienek jarduera-mapearen konfigurazio tipikoari jarraitzen diote.
 
    > [!NOTE]
-   > Kontaktu mailako jarduerak funtzionatzeko, biak izan behar dituzu **Kontuaren ID** eta **Kontaktu ID** zure jarduera-datuen barruan erregistro bakoitzerako atributuak.
+   > Kontaktu mailako jarduerak funtzionatzeko, biak izan behar dituzu **Kontuaren ID** eta **Kontaktu ID** zure jarduera-datuen barruan erregistro bakoitzeko atributuak.
 
 1. [Definitu a *Harremanetarako Profila* entitate semantikoen mapaketa.](#define-a-contactprofile-semantic-entity-mapping) Eta exekutatu mapa semantikoa.
 
@@ -125,7 +125,7 @@ Bat sortu ondoren *Harremanetarako Profila* entitate semantikoen mapak, kontaktu
 
 ### <a name="contact-level-activity-timeline-filtering"></a>Kontaktu-mailako jardueren denbora-lerroaren iragazketa
 
-Kontaktu-mailako jardueren mapa konfiguratu eta exekutatu ondoren, zure bezeroen jarduera-kronologia eguneratuko da. Beren ID edo izenak biltzen ditu, zurearen arabera *Harremanetarako Profila* konfigurazioa, jardun zuten jardueretarako. Jarduerak kontaktuen arabera iragazi ditzakezu denbora-lerroan interesatzen zaizkizun kontaktu zehatzak ikusteko. Gainera, kontaktu zehatz bati esleituta ez dauden jarduera guztiak ikus ditzakezu hautatuta **Kontaktu bati mapatu gabeko jarduerak**.
+Kontaktu-mailako jardueren mapa konfiguratu eta exekutatu ondoren, zure bezeroen jardueren kronograma eguneratuko da. Beren ID edo izenak biltzen ditu, zurearen arabera *Harremanetarako Profila* konfigurazioa, jardun zuten jardueretarako. Jarduerak kontaktuen arabera iragazi ditzakezu denbora-lerroan interesatzen zaizkizun kontaktu zehatzak ikusteko. Gainera, kontaktu zehatz bati esleituta ez dauden jarduera guztiak ikus ditzakezu hautatuta **Kontaktu bati mapatu gabeko jarduerak**.
 
    :::image type="content" source="media/Contact_Activities3.png" alt-text="Kontaktu mailako jardueretarako eskuragarri dauden iragazketa-aukerak.":::
 

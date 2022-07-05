@@ -1,5 +1,5 @@
 ---
-title: Helbidea hobetzeko aberastea (bideoa dauka)
+title: Aberastu bezeroen profilak helbide hobetuekin (bideoa dauka)
 description: Aberastu eta normalizatu bezeroen profilen helbideen informazioa Microsoft-en ereduekin.
 ms.date: 06/10/2022
 ms.reviewer: mhart
@@ -14,14 +14,14 @@ searchScope:
 - ci-enrichments
 - ci-enrichment-wizard
 - customerInsights
-ms.openlocfilehash: f6279b9bb721d99d66f73e8dc839a92f1ad90140
-ms.sourcegitcommit: 27c5473eecd851263e60b2b6c96f6c0a99d68acb
+ms.openlocfilehash: 01f1c917c75e932cc69f4c7251e57524fc859dce
+ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
 ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "8953796"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9082064"
 ---
-# <a name="enrichment-of-customer-profiles-with-enhanced-addresses"></a>Bezeroen profilak aberastu helbide hobetuekin
+# <a name="enrich-customer-profiles-with-enhanced-addresses"></a>Aberastu bezeroen profilak helbide hobetuekin
 
 Zure datuetako helbideak desegituratuak, osatugabeak edo okerrak izan daitezke. Erabili Microsoft-en ereduak zure helbideak normalizatzeko eta aberasteko [Common Data Model formatua](/common-data-model/schema/core/applicationcommon/address) zehaztasun eta ikuspegi hobeak lortzeko.
 
@@ -101,7 +101,7 @@ Gaur egun herrialde edo eskualde hauetan helbide aberasgarriak onartzen ditugu:
 
 1. Aukeratu **Aurreztu aberastasuna** zure aukerak aztertu ondoren.
 
-## <a name="enrichment-results"></a>Aberastearen emaitzak
+## <a name="view-enrichment-results"></a>Ikusi aberaste-emaitzak
 
 [!INCLUDE [enrichment-results](includes/enrichment-results.md)]
 
@@ -113,7 +113,7 @@ The **Bezeroek ikuspegi orokorra aldatzen dute** txartelak aberastearen estaldur
 
 - **Helbideak prozesatu eta aldatu** : arrakastaz aberastu diren helbideak dituzten bezero-profilen kopurua.
 - **Helbideak prozesatu eta aldatu gabe** : Aitortu baina aldatu ez diren helbideak dituzten bezero-profilen kopurua. Normalean, sarrerako datuak baliozkoak direnean eta aberastearekin hobetu ezin direnean gertatzen da.
-- **Helbideak ez dira prozesatu eta ez dira aldatu** : Ezagutzen ez diren helbideak dituzten profilen kopurua. Normalean baliogabeak diren edo aberastasunak onartzen ez dituen sarrerako datuetarako.
+- **Helbideak ez dira prozesatu eta ez dira aldatu** : Ezagutzen ez ziren helbideak dituzten profil kopurua. Normalean baliogabeak diren edo aberastasunak onartzen ez dituen sarrerako datuetarako.
 
 ## <a name="next-steps"></a>Hurrengo urratsak
 

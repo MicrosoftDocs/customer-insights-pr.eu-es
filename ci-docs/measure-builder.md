@@ -11,20 +11,20 @@ manager: shellyha
 searchScope:
 - ci-measure-builder
 - customerInsights
-ms.openlocfilehash: d003d054145343cc2feeefeeee413810df43185a
-ms.sourcegitcommit: b515120bebd2638f2639004422cee3cff42fbdf7
+ms.openlocfilehash: f3ec86806074a12c1107648303ed2d65e97ebc69
+ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
 ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "8800311"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9083009"
 ---
-# <a name="use-measure-builder-to-create-measures-from-scratch"></a>Erabili neurrien eraikitzailea neurriak hutsetik sortzeko
+# <a name="create-new-measures-with-the-measure-builder"></a>Sortu neurri berriak neurrien eraikitzailearekin
 
 Artikulu honek berri bat nola sortu azaltzen du [neurria](measures.md) hutsetik. Neurri-sortzaileak kalkuluak definitzeko aukera ematen dizu operadore matematikoak, agregazio-funtzioak eta iragazkiak erabiliz. Neurri bat eraiki dezakezu bateratuarekin erlazionatutako entitateen atributuekin *Bezeroa* entitate.
 
 B-to-C eta B-to-B inguruneetan neurriak sortzeak berdin funtzionatzen du. Hala ere, B-to-B ingurunea bazara [hierarkiak dituzten kontuak erabiltzen ditu](relationships.md#set-up-account-hierarchies), neurria erlazionatutako azpikontuetan bateratzea aukera dezakezu.
 
-Neurri bat azkar sor dezakezu normalean erabilitako eta aurrez zehaztutako neurri multzo batetik aukeratuz. Informazio gehiagorako, ikus [Erabili txantiloi bat neurri bat eraikitzeko](measure-templates.md).
+Neurri bat azkar sor dezakezu normalean erabilitako eta aurrez zehaztutako neurrien artean aukeratuz. Informazio gehiagorako, ikus [Erabili txantiloi bat neurri bat eraikitzeko](measure-templates.md).
 
 # <a name="individual-consumers-b-to-c"></a>[Banakako kontsumitzaileak (negoziotik bezerora)](#tab/b2c)
 

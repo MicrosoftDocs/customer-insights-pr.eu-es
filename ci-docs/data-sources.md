@@ -1,7 +1,7 @@
 ---
-title: Erabili datu-iturburuak datuak sartzeko
-description: Ikasi iturri desberdinetako datuak nola inportatu.
-ms.date: 05/31/2022
+title: Datuen iturburuen ikuspegi orokorra
+description: Ikasi hainbat iturritatik datuak inportatu edo sartzen.
+ms.date: 05/18/2022
 ms.subservice: audience-insights
 ms.topic: overview
 author: mukeshpo
@@ -12,12 +12,12 @@ searchScope:
 - ci-data-sources
 - ci-create-data-source
 - customerInsights
-ms.openlocfilehash: e22977107565a0b28b74f41576a1c7ccc74f6dc1
-ms.sourcegitcommit: 5e26cbb6d2258074471505af2da515818327cf2c
+ms.openlocfilehash: fbe44f655bdbc20ef7f0956022395e2dcb570adf
+ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
 ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 06/14/2022
-ms.locfileid: "9011734"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9051438"
 ---
 # <a name="data-sources-overview"></a>Datuen iturburuen ikuspegi orokorra
 
@@ -41,7 +41,7 @@ Datu iturri lokalak, Microsoft edo hirugarrenen datuak erabiltzen badituzu, inpo
 
 ## <a name="review-data-sources"></a>Berrikusi datu-iturriak
 
-Zure ingurunea Customer Insights biltegiratzea erabiltzeko konfiguratuta badago eta tokiko datu-iturburuak erabiltzen badituzu, erabiltzen duzu Power Platform datu-fluxuak. Horrekin Power Platform datu-fluxuak, partekatutako datu-iturriak eta besteek kudeatutako datu-iturriak ikus ditzakezu. The **Datu-iturriak** orrialdeak hiru ataletan zerrendatzen ditu datu-iturriak:
+Zure ingurunea Customer Insights biltegia erabiltzeko konfiguratuta badago eta tokiko datu-iturburuak erabiltzen badituzu, erabiliko duzu Power Platform datu-fluxuak. Horrekin Power Platform datu-fluxuak, partekatutako datu-iturriak eta besteek kudeatutako datu-iturriak ikus ditzakezu. The **Datu-iturriak** orrialdeak hiru ataletan zerrendatzen ditu datu-iturriak:
 - **Partekatua** : Customer Insights administratzaile guztiek kudeatu ditzaketen datu-iturriak. Power Platform datu-fluxuak, zure biltegiratze-kontua eta a Dataverse -kudeatutako data lake partekatutako datu-iturrien adibideak dira.
 - **Nik kudeatzen dut** :Power Platform Zuk bakarrik sortu eta kudeatutako datu-fluxuak. Customer Insights-eko beste administratzaileek datu-fluxu hauek soilik ikus ditzakete, baina ez editatu, freskatu edo ezabatu.
 - **Beste batzuek kudeatzen dute** :Power Platform beste administratzaileek sortutako datu-fluxuak. Horiek bakarrik ikus ditzakezu. Edozein laguntza lortzeko harremanetan jartzeko datu-fluxuaren jabea zerrendatzen du.

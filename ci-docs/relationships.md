@@ -21,14 +21,14 @@ searchScope:
 - ci-measure-template
 - ci-permissions
 - customerInsights
-ms.openlocfilehash: a7b10d985d5cba64b25595a3d7c101d6cb5c62a5
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: 5477798a8b9e0771d390e403379b7447eb7baddd
+ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
 ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8642171"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9082568"
 ---
-# <a name="relationships-between-entities"></a>Harremanak entitateen artean
+# <a name="relationships-between-entities-and-entity-paths"></a>Entitateen eta entitateen bide-izenen arteko erlazioak
 
 Harremanek entitateak konektatzen dituzte eta zure datuen grafikoa definitzen dute entitateek identifikatzaile komuna partekatzen dutenean, atzerriko gakoa. Atzerriko gako honi entitate batetik bestera erreferentzia egin dakioke. Konektatutako entitateek datu-iturri anitzetan oinarritutako segmentuak eta neurriak definitzeko aukera ematen dute.
 

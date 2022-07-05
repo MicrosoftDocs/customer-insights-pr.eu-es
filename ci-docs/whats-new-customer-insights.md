@@ -1,5 +1,5 @@
 ---
-title: Eginbide eguneratuak eta hobetuak
+title: Dynamics 365 Customer Insights-en berritasunak
 description: Ezaugarri berriei, hobekuntzei eta akatsak konpontzeko ezaugarriei buruzko informazioa.
 ms.date: 06/02/2022
 ms.subservice: audience-insights
@@ -8,12 +8,12 @@ author: m-hartmann
 ms.author: mhart
 ms.reviewer: skumm
 manager: shellyha
-ms.openlocfilehash: d06f8be114f558d7adadf2913107c5fd69686875
-ms.sourcegitcommit: 9dd767051014e06d8d9f2f616e248573f24df4cb
+ms.openlocfilehash: 4b5b95d1774d22827b3c08c2b6ccbb7858f1b04b
+ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
 ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "8843332"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9054003"
 ---
 # <a name="whats-new-in-dynamics-365-customer-insights"></a>Dynamics 365 Customer Insights-en berritasunak
 
@@ -52,13 +52,13 @@ Informazio gehiagorako, ikus [Esportatu segmentuak Criteo-ra (aurrebista)](expor
 
 ### <a name="refined-documentation-structure-for-environment-creation"></a>Ingurumena sortzeko dokumentazio egitura findua
 
-Customer Insights-en inguruneak sortzeari eta kudeatzeari lotutako laguntza-dokumentuak berrikusi ditugu. Artikuluak aurkibideko Ingurune nodoaren azpian daude bilduta. Berregituratutako artikuluek orientazio gehiago ematen dute inguruneak konfiguratzeko eta egitura argiagoa izateko modu ezberdinetarako. Partekatzeko iritzia baduzu, esan iezaguzu kontrolen bidez laguntza-artikuluen amaieran.
+Customer Insights-en inguruneak sortzeari eta kudeatzeari lotutako laguntza-dokumentuak berrikusi ditugu. Artikuluak aurkibideko Ingurune nodoaren azpian daude bilduta. Berregituratutako artikuluek orientazio gehiago ematen dute inguruneak konfiguratzeko eta egitura argiagoa izateko modu desberdinetarako. Partekatzeko iritzia baduzu, esan iezaguzu kontrolen bidez laguntza-artikuluen amaieran.
 
 Informazio gehiagorako, ikus [Nola: Ingurune berri bat sortu](create-environment.md).
 
 ## <a name="april-2022-updates"></a>2022ko apirileko eguneraketak
 
-2022ko apirileko eguneraketak eginbide berriak, errendimenduaren hobekuntzak eta akatsen konponketak barne hartzen ditu.
+2022ko apirileko eguneratzeek ezaugarri berriak, errendimenduaren hobekuntzak eta akatsen konponketak barne hartzen dituzte.
 
 ### <a name="dun--bradstreet-enrichment-preview"></a>Dun & Bradstreet-en aberastea (aurrebista)
 
@@ -74,23 +74,23 @@ Informazio gehiagorako, ikus [Erabili neurri-sortzailea neurriak hutsetik sortze
 
 ### <a name="consolidation-of-customer-insights-documentation"></a>Customer Insights dokumentazioa bateratzea
 
-Gure dokumentazio-artikuluak berrikusi ditugu, eta konpromiso-estatistiken eta ikusleen informazio-gaitasunen aipamenak kendu ditugu. Aurrerantzean, produktuaren Customer Insights koherentziaz aipatuko dugu aplikazioaren oinarrizko ezaugarriei buruz idazten dugunean. Aldaketa honek, gainera, edukien taula, URL egitura eta azpiko dokumentazio biltegiko fitxategi-bideen berregituraketa nabarmena dakar. Zure laster-markek edo lehendik dauden estekek funtzionatzen jarraitzen dute eta eguneratutako URLetara birbideratzen jarraitzen dute.
+Gure dokumentazio-artikuluak berrikusi ditugu eta konpromiso-estatistiken eta ikusleen estatistiken gaitasunei buruzko aipamenak kendu ditugu. Aurrerantzean, produktuaren Customer Insights koherentziaz aipatuko dugu aplikazioaren oinarrizko ezaugarriei buruz idazten dugunean. Aldaketa honek, gainera, edukien taula, URL egitura eta azpiko dokumentazio biltegiko fitxategi-bideen berregituraketa nabarmena dakar. Zure laster-markek edo lehendik dauden estekek funtzionatzen jarraitzen dute eta eguneratutako URLetara birbideratzen jarraitzen dute.
 
-Aldaketa hori nola hautematen duzun edo espero bezala funtzionatzen ez duen zerbait ikusi nahi badiguzu, esaiguzu: [orrialde honetarako iritzia bidaltzen](https://github.com/MicrosoftDocs/customer-insights/issues/new?title=&body=%0A%0A%5BEnter%20feedback%20here%5D%0A%0A%0A---%0A%23%23%23%23%20Document%20Details%0A%0A%E2%9A%A0%20*Do%20not%20edit%20this%20section.%20It%20is%20required%20for%20docs.microsoft.com%20%E2%9E%9F%20GitHub%20issue%20linking.*%0A%0A*%20ID%3A%20d323ba46-f96e-1972-bc52-9b88f7d9cdfa%0A*%20Version%20Independent%20ID%3A%20d323ba46-f96e-1972-bc52-9b88f7d9cdfa%0A*%20Content%3A%20%5BNew%20and%20upcoming%20features%20-%20Dynamics%20365%20Customer%20Insights%5D(https%3A%2F%2Fdocs.microsoft.com%2Fen-us%2Fdynamics365%2Fcustomer-insights%2Fwhats-new-customer-insights)%0A*%20Content%20Source%3A%20%5Bci-docs%2Fwhats-new-customer-insights.md%5D(https%3A%2F%2Fgithub.com%2FMicrosoftDocs%2Fcustomer-insights%2Fblob%2Fmain%2Fci-docs%2Fwhats-new-customer-insights.md)%0A*%20Service%3A%20**customer-insights**%0A*%20Sub-service%3A%20**audience-insights**%0A*%20GitHub%20Login%3A%20%40m-hartmann%0A*%20Microsoft%20Alias%3A%20**mhart**).
+Aldaketa hori nola hautematen duzun edo espero bezala funtzionatzen ez duen zerbait ikusi nahi baduzu, esan iezaguzu: [orrialde honetarako iritzia bidaltzen](https://github.com/MicrosoftDocs/customer-insights/issues/new?title=&body=%0A%0A%5BEnter%20feedback%20here%5D%0A%0A%0A---%0A%23%23%23%23%20Document%20Details%0A%0A%E2%9A%A0%20*Do%20not%20edit%20this%20section.%20It%20is%20required%20for%20docs.microsoft.com%20%E2%9E%9F%20GitHub%20issue%20linking.*%0A%0A*%20ID%3A%20d323ba46-f96e-1972-bc52-9b88f7d9cdfa%0A*%20Version%20Independent%20ID%3A%20d323ba46-f96e-1972-bc52-9b88f7d9cdfa%0A*%20Content%3A%20%5BNew%20and%20upcoming%20features%20-%20Dynamics%20365%20Customer%20Insights%5D(https%3A%2F%2Fdocs.microsoft.com%2Fen-us%2Fdynamics365%2Fcustomer-insights%2Fwhats-new-customer-insights)%0A*%20Content%20Source%3A%20%5Bci-docs%2Fwhats-new-customer-insights.md%5D(https%3A%2F%2Fgithub.com%2FMicrosoftDocs%2Fcustomer-insights%2Fblob%2Fmain%2Fci-docs%2Fwhats-new-customer-insights.md)%0A*%20Service%3A%20**customer-insights**%0A*%20Sub-service%3A%20**audience-insights**%0A*%20GitHub%20Login%3A%20%40m-hartmann%0A*%20Microsoft%20Alias%3A%20**mhart**).
 
 ## <a name="march-2022-updates"></a>2022ko martxoko eguneraketak
 
-2022ko martxoko eguneratzeek eginbide berriak, errendimenduaren hobekuntzak eta akatsen konponketak barne hartzen dituzte.
+2022ko martxoko eguneratzeek ezaugarri berriak, errendimendu-berritzeak eta akatsen konponketak barne hartzen dituzte.
 
 ### <a name="liveramp-abilitec-enrichment-preview"></a>LiveRamp AbiliTec aberastea (aurrebista)
 
-LiveRamp-ek bezeroen datuen identitatearen ebazpena eta finkatzea eskaintzen du. Zure bezeroen datuetan identifikatzaile pertsonalak mapa ditzakezu AbiliTec identitate grafikoarekin eta AbiliTec IDak jaso. Orduan ID hauek erabil ditzakezu zure bezeroen datuak hobeto bateratzeko.
+LiveRamp-ek bezeroen datuen identitatearen ebazpena eta finkatzea eskaintzen du. Zure bezeroen datuetan identifikatzaile pertsonalak mapa ditzakezu AbiliTec identitate grafikoarekin eta AbiliTec IDak jaso ditzakezu. Orduan ID hauek erabil ditzakezu zure bezeroen datuak hobeto bateratzeko.
 
 Informazio gehiagorako, ikus [Aberastu bezeroen profilak LiveRamp-eko identitate-datuekin (aurrebista)](enrichment-liveramp.md).
 
 ### <a name="organize-segments-and-measures-with-tags-and-filters"></a>Antolatu segmentuak eta neurriak etiketa eta iragazkiekin
 
-Zure erakundeak segmentu edo neurri asko mantentzen baditu, egokia aurkitzea batzuetan zaila izan daiteke. Ezaugarri berri honek etiketak eta zutabeak erabiliz zerrendak antolatzeko aukera ematen dizu. Datuak azkar eta erraz aurkitzen eta ikuspegiak pertsonalizatzen laguntzen du.
+Zure erakundeak segmentu edo neurri asko mantentzen baditu, egokia aurkitzea zaila izan daiteke batzuetan. Ezaugarri berri honek etiketak eta zutabeak erabiliz zerrendak antolatzeko aukera ematen dizu. Datuak azkar eta erraz aurkitzen eta ikuspegiak pertsonalizatzen laguntzen du.
 
 Informazio gehiagorako, ikus [Etiketa eta zutabeekin lan egin](work-with-tags-columns.md).
 
@@ -134,7 +134,7 @@ Informazio gehiagorako, ikus [Konektatu bat Azure Synapse datu-iturburu (Aurrebi
 
 ### <a name="liveramp-enrichment-preview"></a>LiveRamp aberastea (aurrebista)
 
-LiveRamp-ek bezeroen datuen identitatearen ebazpena eta finkatzea eskaintzen du. Zure bezeroen datuetan identifikatzaile pertsonalak mapa ditzakezu AbiliTec identitate grafikoarekin eta AbiliTec IDak jaso. Orduan ID hauek erabil ditzakezu zure bezeroen datuak hobeto bateratzeko.
+LiveRamp-ek bezeroen datuen identitatearen ebazpena eta finkatzea eskaintzen du. Zure bezeroen datuetan identifikatzaile pertsonalak mapa ditzakezu AbiliTec identitate grafikoarekin eta AbiliTec IDak jaso ditzakezu. Orduan ID hauek erabil ditzakezu zure bezeroen datuak hobeto bateratzeko.
 
 Informazio gehiagorako, ikus [Aberastu bezeroen profilak LiveRamp-eko identitate-datuekin (aurrebista)](enrichment-liveramp.md).
 

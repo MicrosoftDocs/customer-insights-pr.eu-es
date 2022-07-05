@@ -1,6 +1,6 @@
 ---
-title: Ekarri zure Azure gako-ganga sekretuak kudeatzeko
-description: Ikasi Customer Insights nola konfiguratu zure Azure gako-ganga erabiltzeko.
+title: Ekarri zure Azure gako-ganga (aurrebista)
+description: Ikasi nola konfiguratu Customer Insights zure Azure gakoen ganga erabiltzeko sekretuak kudeatzeko.
 ms.date: 10/06/2021
 ms.reviewer: mhart
 ms.subservice: audience-insights
@@ -11,12 +11,12 @@ manager: shellyha
 searchScope:
 - ci-system-security
 - customerInsights
-ms.openlocfilehash: d4f2d5ebc828053c40e22065f4915c4d0f84153f
-ms.sourcegitcommit: 6ec4626a185892dfb781d3c7af4384f9c13f3723
+ms.openlocfilehash: 8fdb131de35c7d936d2921265f03faa5682db6f6
+ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
 ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "8763564"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9082631"
 ---
 # <a name="bring-your-own-azure-key-vault-preview"></a>Ekarri zure Azure gako-ganga (aurrebista)
 
@@ -129,4 +129,4 @@ Jakinarazpen bat agertzen da Customer Insights-en ezin duenean atzitu gakoen gan
 
 - Customer Insights zerbitzu nagusiaren baimenak kendu dira. Eskuz leheneratu behar dira.
 
-- Gako gangaren suebakia gaituta dago. Suebakia desgaitu egin behar da Customer Insights-en gakoen biltegia berriro erabilgarri izan dadin.
+- Gako gangaren suebakia gaituta dago. Suebakia desgaitu egin behar da Customer Insights-en gakoen ganga berriro erabilgarri izan dadin.

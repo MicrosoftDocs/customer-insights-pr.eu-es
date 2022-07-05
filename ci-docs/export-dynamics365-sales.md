@@ -1,5 +1,5 @@
 ---
-title: Esportatu Customer Insights datuak Dynamics 365 Sales-era
+title: Esportatu segmentuak Dynamics 365 Sales-era (aurrebista)
 description: Ikasi konexioa nola konfiguratu eta Dynamics 365 Sales-era esportatu.
 ms.date: 03/03/2021
 ms.reviewer: mhart
@@ -11,22 +11,20 @@ manager: shellyha
 searchScope:
 - ci-export
 - customerInsights
-ms.openlocfilehash: 987690283090ec83ca75f50bf8f3cd8da9295887
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: b8e756313ca037dca41cb25587229808f0c584c9
+ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
 ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8642118"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9082379"
 ---
-# <a name="use-segments-in-dynamics-365-sales-preview"></a>Erabili segmentuak Dynamics 365 Sales-en (aurrebista)
-
-
+# <a name="export-segments-to-dynamics-365-sales-preview"></a>Esportatu segmentuak Dynamics 365 Sales-era (aurrebista)
 
 Dynamics 365 Sales-ekin marketin-zerrendak sortzeko, lan-fluxuen segimendua egiteko eta eskaintzak bidaltzeko, erabili bezeroen datuak.
 
 ## <a name="known-limitations"></a>Muga ezagunak
 
-- Dynamics 365 Sales-era esportatzeak 100.000 kidetara mugatzen dira segmentu bakoitzeko.
+- Dynamics 365 Sales-era esportazioak 100.000 kidera mugatzen dira segmentu bakoitzeko.
 - Dynamics 365 Sales-era segmentuen esportazioak gehienez 3 ordu behar izan ditzake osatzeko. 
 
 ## <a name="prerequisite-for-connection"></a>Konexiorako aurrebaldintza

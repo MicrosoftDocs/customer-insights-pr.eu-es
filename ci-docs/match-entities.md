@@ -1,5 +1,5 @@
 ---
-title: Lotu entitateak datuak bateratzeko
+title: Datuak bateratzeko baldintzak bat etortzea
 description: Lotu entitateak bezeroen profil bateratuak sortzeko.
 recommendations: false
 ms.date: 05/05/2022
@@ -14,14 +14,14 @@ searchScope:
 - ci-merge
 - ci-map
 - customerInsights
-ms.openlocfilehash: bc470dd932c2c981adc5840bb52d60f8dfe0de61
-ms.sourcegitcommit: 6a5f4312a2bb808c40830863f26620daf65b921d
+ms.openlocfilehash: 770a18f3a7471714a7e044ae034da168a2601010
+ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
 ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "8740934"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9082400"
 ---
-# <a name="match-conditions"></a>Partiduen baldintzak
+# <a name="match-conditions-for-data-unification"></a>Datuak bateratzeko baldintzak bat etortzea
 
 [!INCLUDE [m3-prod-trial-note](includes/m3-prod-trial-note.md)]
 
@@ -52,11 +52,11 @@ Partida bakoitzak bi entitate edo gehiago bateratzen ditu entitate bakar eta bat
 > - Aukeratu zure bezeroei buruzko profil-datu osatuena eta fidagarriena duen entitatea entitate nagusi gisa.
 > - Aukeratu beste entitate batzuekin komunean hainbat atributu dituen entitatea (adibidez, izena, telefono-zenbakia edo helbide elektronikoa) entitate nagusi gisa.
 
-1. Gainean **Bat datozen baldintzak** orrialdean, erabili gora eta behera mugitzeko geziak entitateak nahi duzun ordenan mugitzeko, edo arrastatu eta jaregin. Adibidez, hautatu **Kontaktuak: merkataritza elektronikoa** entitate nagusi gisa eta **Bezeroaren Leialtasuna: Leialtasuna** bigarren entitate gisa.
+1. Gainean **Bat datozen baldintzak** orrialdean, erabili gora eta behera mugitu geziak entitateak nahi duzun ordenan mugitzeko, edo arrastatu eta jaregin. Adibidez, hautatu **Kontaktuak: merkataritza elektronikoa** entitate nagusi gisa eta **Bezeroaren Leialtasuna: Leialtasuna** bigarren entitate gisa.
 
 1. Entitateko erregistro guztiak bezero esklusibo gisa edukitzeko, bat-etortzerik aurkitzen bada ere, hautatu **Sartu erregistro guztiak**. Entitate honetako erregistroak beste edozein entitatetako erregistroekin bat ez datozenak profil bateratuan sartzen dira. Partidurik ez duten erregistroei singleton deitzen zaie.
   
-Lehen entitatea *Kontaktuak: merkataritza elektronikoa* hurrengo entitatearekin parekatzen da *Bezeroaren Leialtasuna: Leialtasuna*. Lehen bat-etortze-urratsetik ateratzen den datu-multzoa hurrengo entitatearekin bat dator bi entitate baino gehiago badituzu.
+Lehen entitatea *Kontaktuak: merkataritza elektronikoa* hurrengo entitatearekin parekatzen da *Bezeroaren Leialtasuna: Leialtasuna*. Lehenengo bat-etortze-urratsetik ateratzen den datu-multzoa hurrengo entitatearekin bat dator bi entitate baino gehiago badituzu.
 
 :::image type="content" source="media/m3_match.png" alt-text="Entitateetarako hautatutako bat-etortze-ordenaren pantaila-argazkia." lightbox="media/m3_match.png":::
 
@@ -74,7 +74,7 @@ Entitate-izen baten ondoan dagoen abisuak esan nahi du ez dagoela bat-etortze-ar
 
    - **Hautatu Entitatea/Eremua (lehen lerroa)** : Aukeratu erlazionatutako entitate bat eta atributu bat bezero batentzat litekeena den erregistro-propietate bat zehazteko. Adibidez, telefono zenbaki bat edo helbide elektronikoa. Saihestu jarduera motako atributuen arabera parekatzea. Esate baterako, erosketa IDak ez du bat-etortzerik izango beste erregistro mota batzuetan.
 
-   - **Hautatu Entitatea/Eremua (bigarren errenkada)** : Aukeratu lehen lerroan zehaztutako entitatearen atributuarekin erlazionatutako atributu bat.
+   - **Hautatu Entitatea/Eremua (bigarren errenkada)** : Aukeratu lehen errenkadan zehaztutako entitatearen atributuarekin erlazionatutako atributu bat.
 
    - **Normalizatu**: Aukeratu hautatutako atributuen normalizazio aukera hauetatik.
      - **Zenbakiak** : Beste zenbaki-sistema batzuk, esate baterako, zenbaki erromatarrak, zenbaki arabiar bihurtzen ditu. *VIII* bihurtzen *8*.
@@ -118,7 +118,7 @@ Partiduen arauek baldintza multzoak adierazten dituzte. Entitateak hainbat atrib
 
 ### <a name="add-exceptions-to-a-rule"></a>Gehitu salbuespenak arau bati
 
-Kasu gehienetan, entitateen parekatzeak datu bateratuak dituzten bezero-profil bakarrak dakartza. Positibo faltsuen eta negatibo faltsuen kasu bakanak modu dinamikoan zuzentzeko, bat-etortze-arau baterako salbuespenak defini ditzakezu. Salbuespenak bat-etortze-arauak prozesatu ondoren aplikatzen dira eta salbuespen-irizpideak betetzen dituzten erregistro guztiak bat etortzea saihesten da.
+Kasu gehienetan, entitateen parekatzeak datu bateratuak dituzten bezero-profil bakarrak eramaten ditu. Positibo faltsuen eta negatibo faltsuen kasu bakanak modu dinamikoan zuzentzeko, bat-etortze-arau baterako salbuespenak defini ditzakezu. Salbuespenak bat-etortze-arauak prozesatu ondoren aplikatzen dira eta salbuespen-irizpideak betetzen dituzten erregistro guztiak bat etortzea saihesten da.
 
 Adibidez, zure parekatze-arauak abizen, hiria eta jaioteguna konbinatzen baditu, sistemak profil berdinarekin bizi diren abizen bera duten bikiak identifikatuko lituzke. Profilekin bat ez datorren salbuespen bat zehaztu dezakezu konbinatzen dituzun entitateetako izen berdinak ez badira.
 
@@ -143,7 +143,7 @@ Bat-etortze-logika lehenetsia gainidazten duten baldintzak zehaztu ditzakezu. La
 
    :::image type="content" source="media/m3_match_custom.png" alt-text="Botoi pertsonalizatua":::
 
-1. Aukeratu **Mota pertsonalizatua** eta hautatu **Deskargatu txantiloia**. Txantiloi bereizi bat behar duzu bat-etortze-aukera bakoitzerako.
+1. Aukeratu **Mota pertsonalizatua** eta hautatu **Deskargatu txantiloia**. Bat-etortze-aukera bakoitzerako txantiloi bat behar duzu.
 
 1. Ireki deskargatutako txantiloi fitxategia eta bete xehetasunak. Txantiloiak entitateak eta entitatearen gako nagusien balioak pertsonalizatutako partidan zehazteko eremuak ditu. Adibidez, gako nagusia nahi baduzu *12345* hurrengotik *Salmentak* entitatea beti lehen mailako gakoarekin bat etortzeko *34567* hurrengotik *Harremanetarako* entitatea, bete txantiloia:
     - Entitate1: Salmentak

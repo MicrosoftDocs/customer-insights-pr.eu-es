@@ -1,17 +1,17 @@
 ---
-title: Dynamics 365 Customer Insights produktuaren ikuspegi orokorra
+title: Dynamics 365 Customer Insights-en produktuaren ikuspegi orokorra
 author: m-hartmann
 description: Lortu ikuspegi orokorra Dynamics 365 Customer Insights eta bere ezaugarri nagusiak.
 ms.author: mhart
 ms.date: 04/12/2022
 ms.topic: overview
 ms.manager: shellyha
-ms.openlocfilehash: 820d295a95e1536be1ffcbebc5ca153c10ad60ea
-ms.sourcegitcommit: 8e9f0a9693fd8d91ad0227735ff03688fef5406f
+ms.openlocfilehash: a8b982d761b6598fb5c582963dbc00852089a396
+ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
 ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "8947077"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9051116"
 ---
 # <a name="product-overview-for-dynamics-365-customer-insights"></a>Dynamics 365 Customer Insights-en produktuaren ikuspegi orokorra
 
@@ -24,7 +24,7 @@ Konektatu transakzio-, portaera- eta datu demografikoetako datu-iturrietako datu
 Mantendu zure bezeroen datuen kontrol osoa, datuen gobernantza eta betetze maila gorena bermatzeko, autozerbitzua duen enpresa-mailako CDP batekin Microsoft Azure. Onartu Datuak Babesteko Erregelamendu Orokorra (GDPR) eta beste lege-eskakizunak eta industria estandarrak pribatutasun, segurtasun eta gobernantza tresnen bidez.
 
 ## <a name="pricing-and-licensing"></a>Prezioak eta lizentziak
-Customer Insights-ek maizter bakoitzeko lizentzia du eta enpresa-kontsumitzaile (B2C) eta enpresa-enpresa (B2B) gaitasunak barne hartzen ditu. Ahalmen gehigarria eros dezakezu gehigarrien lizentziarekin profil eta kontu kopurua handitzeko.
+Customer Insights-ek maizter bakoitzeko lizentzia du eta enpresa-kontsumitzaile (B2C) eta enpresa-enpresa (B2B) gaitasunak barne hartzen ditu. Ahalmen gehigarria eros dezakezu lizentzia gehigarriekin profil eta kontu kopurua handitzeko.
 
 - [Prezioen informazio orokorra](https://dynamics.microsoft.com/ai/customer-insights/pricing/)
 - Gaitasuna eta eskubideak: [Dynamics 365 lizentzien gida](https://go.microsoft.com/fwlink/?LinkId=866544)
@@ -32,10 +32,10 @@ Customer Insights-ek maizter bakoitzeko lizentzia du eta enpresa-kontsumitzaile 
 
 ## <a name="try-customer-insights-and-get-started"></a>Probatu Customer Insights eta hasi
 
-Hasi a [Doako Customer Insights proba](https://signup.microsoft.com/create-account/signup?SKU=036c2481-aa8a-47cd-ab43-324f0c157c2d&ali=1&RU=https:%2F%2Fhome.ci.ai.dynamics.com%2Fstart%2Ftrial&products=036c2481-aa8a-47cd-ab43-324f0c157c2d) gaur aplikazioa probatzeko zure bezeroen datuekin. [Aurki itzazu aplikazioaren funtsezko eginbide asko nola atzitu eta araka ditzakezun azkar](trial-signup.md). 
+Hasi a [Doako Customer Insights proba](https://signup.microsoft.com/create-account/signup?SKU=036c2481-aa8a-47cd-ab43-324f0c157c2d&ali=1&RU=https:%2F%2Fhome.ci.ai.dynamics.com%2Fstart%2Ftrial&products=036c2481-aa8a-47cd-ab43-324f0c157c2d) gaur aplikazioa probatzeko zure bezeroen datuekin. [Aurki ezazu aplikazioaren funtsezko eginbide asko nola atzitu eta araka ditzakezun azkar](trial-signup.md). 
 
-Arakatu [aipatutako ikaskuntza baliabideak](https://dynamics.microsoft.com/ai/customer-insights/resources/) besteak beste, analisten txostenak, eskaeraren araberako webinar-ak eta bezeroen istorioak.
+Arakatu [ikasteko baliabide aipagarriak](https://dynamics.microsoft.com/ai/customer-insights/resources/) besteak beste, analisten txostenak, eskaeraren araberako webinar-ak eta bezeroen istorioak.
 
-Ikasi gure bezeroen ulermen sakonagoa nola eraiki dezakezun [hasteko gida](get-started.md).
+Ikasi gure bezeroen ulermen sakonago bat nola eraiki dezakezun [hasteko gida](get-started.md).
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

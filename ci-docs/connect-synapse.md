@@ -1,5 +1,5 @@
 ---
-title: Hartu datuak Azure Synapse Analytics
+title: Konektatu bat Azure Synapse datu-iturburu (aurrebista)
 description: Erabili datu-base bat Azure Synapse urtean datu-iturburu gisa Dynamics 365 Customer Insights.
 ms.date: 03/25/2022
 ms.reviewer: v-wendysmith
@@ -9,12 +9,12 @@ ms.topic: how-to
 author: mukeshpo
 ms.author: mukeshpo
 manager: shellyha
-ms.openlocfilehash: 6f94cdbcc203fc4518544f7a945bd80e871b36c1
-ms.sourcegitcommit: 5e26cbb6d2258074471505af2da515818327cf2c
+ms.openlocfilehash: c4ae65613a02df38a30f907dae72d413bf1a702f
+ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
 ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 06/14/2022
-ms.locfileid: "9011412"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9052684"
 ---
 # <a name="connect-an-azure-synapse-analytics-data-source-preview"></a>Konektatu bat Azure Synapse Analytics datu-iturburu (aurrebista)
 
@@ -59,10 +59,10 @@ Informazio gehiagorako, ikus [Azure Synapse ikuspegi orokorra](/azure/synapse-an
 
 1. Aukeratu bat [eskuragarri dagoen konexioa](connections.md) to Azure Synapse Analytics edo sortu berri bat.
 
-1. Aukeratu a **Datu-basea** hautatutako lan-espaziotik Azure Synapse Analytics konexioa eta hautatu **Hurrengoa**.
+1. Aukeratu a **Datu-basea** hautatutako lan-espaziotik Azure Synapse Analytics konexioa eta hautatu **Hurrengoa**. Gaur egun, datu-base mota soilik onartzen dugu *Lakuaren datu-basea*.
 
 1. Hautatu konektatutako datu-basetik sartu beharreko entitateak eta hautatu **Hurrengoa**.
 
 1. Aukeran, aukeratu datu-entitateak datuen profila onartzeko.
 
-1. Hautatu **Gorde** zure hautapena aplikatzeko eta sortu berri den datu-iturburu Lake datu-baseen taulei lotuta dauden datuak sartzen hasteko.Azure Synapse Analytics. The **Datu iturriak** orrialdea irekitzen da datu-iturburu berria erakusten **Freskagarria** egoera.
+1. Hautatu **Gorde** zure hautapena aplikatzeko eta sortu berri den datu-iturburu Lake datu-baseko taulei lotuta dauden datuak sartzen hasteko.Azure Synapse Analytics. The **Datu iturriak** orrialdea irekitzen da datu-iturburu berria erakusten **Freskagarria** egoera.

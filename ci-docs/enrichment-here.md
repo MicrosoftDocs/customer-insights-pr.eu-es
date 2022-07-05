@@ -1,5 +1,5 @@
 ---
-title: HERE Technologies Aberastea hirugarrenen aberastasunarekin
+title: Aberastu bezeroen profilak HERE Teknologiekin (aurrebista)
 description: HERE Technologies-en hirugarrenen aberasteari buruzko informazio orokorra.
 ms.date: 06/10/2022
 ms.reviewer: mhart
@@ -8,14 +8,14 @@ ms.topic: how-to
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: 171ead92427924083a13e2a3d52e7a7da417c801
-ms.sourcegitcommit: 27c5473eecd851263e60b2b6c96f6c0a99d68acb
+ms.openlocfilehash: d88085b6be156dd1c895e9e5b38cc9d77acbdb95
+ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
 ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "8953658"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9052036"
 ---
-# <a name="enrichment-of-customer-profiles-with-here-technologies-preview"></a>Bezeroen profilak aberastea HERE Technologies-ekin (aurrebista)
+# <a name="enrich-customer-profiles-with-here-technologies-preview"></a>Aberastu bezeroen profilak HERE Teknologiekin (aurrebista)
 
 HERE Technologies kokapen-plataformako enpresa da, kokapenari buruzko datuak eta zerbitzuak eskaintzen dituena. HERE Technologies-en datuak aberasteko zerbitzuek zure bezeroei buruzko kokapen-informazioaren zehaztasuna hobetzen dute. Helbideen normalizazioa, latitudea eta longitudea ateratzea eta abar eskaintzen ditu.
 
@@ -72,7 +72,7 @@ Dynamics 365 Customer Insights administratzailea edonoiz ken dezake aberastea fu
 
 1. Hautatu **Korrika egin** aberaste-prozesua hasteko edo hurbiltzeko **Aberasgarriak** orrialdea.
 
-## <a name="enrichment-results"></a>Aberastearen emaitzak
+## <a name="view-enrichment-results"></a>Ikusi aberaste-emaitzak
 
 [!INCLUDE [enrichment-results](includes/enrichment-results.md)]
 

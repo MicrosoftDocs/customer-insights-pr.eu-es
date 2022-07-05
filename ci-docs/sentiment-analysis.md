@@ -1,5 +1,5 @@
 ---
-title: Bezeroen iritzia lortzeko sentimenduen analisia
+title: Aztertu bezeroen iritzia (aurrebista)
 description: Ikasi bezeroen iritziei buruzko sentimenduen analisiaren eredua nola erabiltzen Dynamics 365 Customer Insights.
 ms.date: 12/23/2021
 ms.subservice: audience-insights
@@ -8,34 +8,34 @@ ms.topic: conceptual
 author: wmelewong
 ms.author: wameng
 manager: shellyha
-ms.openlocfilehash: e51225bbfcd445180b12661cba12256c3f042045
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: af1afd3eff8a795a9e199b1c1d411b79dc2841b4
+ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
 ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8642143"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9055521"
 ---
-# <a name="analyze-sentiment-in-customer-feedback-preview"></a>Aztertu sentimendua bezeroen iritzietan (Aurrebista)
+# <a name="analyze-sentiment-in-customer-feedback-preview"></a>Aztertu sentimendua bezeroen iritzietan (aurrebista)
 
-Bezeroek kalitate handiko produktuak, zerbitzuak eta esperientziak espero dituzte egun. Batez ere iritzia partekatzen duten bezeroak. Erakundeentzat oso zaila da gero eta datu-bolumena aztertzea zehaztasuna eta lan-kostu handiagoak murriztu gabe. Dynamics 365 Customer Insights sentimenduen analisi-eredu bat eskaintzen du bezeroen iritzietarako, erakundeei beren datuak zehatzago eta kostu txikiagoan aztertzeko aukera ematen diena.
+Bezeroek kalitate handiko produktuak, zerbitzuak eta esperientziak espero dituzte egun. Batez ere iritzia partekatzen duten bezeroak. Erakundeentzat oso zaila da gero eta datu-bolumena aztertzea zehaztasuna eta lan-kostu handiagoak murriztu gabe. Dynamics 365 Customer Insights sentimenduak aztertzeko eredu bat eskaintzen du bezeroen iritzietarako, erakundeei beren datuak zehatzago eta kostu txikiagoan aztertzeko aukera ematen diena.
 
-Sentimenduen analisiak bezeroen sentimendua sintetizatu eta negozio-alderdiak hobetzeko aukera gisa identifikatzea ahalbidetzen dizu. Customer Insights eginbide honek ondo zer funtzionatzen duen eta zer zuzendu behar duzun ulertzen laguntzen dizu. Zentratu negozioaren arlo garrantzitsu eta eragingarrienetan zure bezeroen esperientzia hobetzeko. Azken finean, bezeroen gogobetetze eta leialtasun handia eragiten duten esperientziak ahalbidetzen dituzten negozio-ekintzak gidatzen lagun zaitzake.
+Sentimenduen analisiak bezeroen sentimendua sintetizatzeko eta negozio-alderdiak hobetzeko aukera gisa identifikatzea ahalbidetzen dizu. Customer Insights eginbide honek ondo zer funtzionatzen duen eta zer zuzendu behar duzun ulertzen laguntzen dizu. Zentratu negozioaren arlo garrantzitsu eta eragingarrienetan zure bezeroen esperientzia hobetzeko. Azken finean, bezeroen gogobetetze eta leialtasun handia eragiten duten esperientziak ahalbidetzen dituzten negozio-ekintzak bultzatzen lagun zaitzake.
 
 ## <a name="overview"></a>Informazio orokorra
 
-Sentimenduak aztertzeko eginbideak bezero ID bakoitzeko bi informazio eratorri sortzen ditu. Sentimendu puntuazioak (-5etik 5era) eta negozio-alderdi aplikagarrien zerrenda (negozio-arloak) batera bezeroen iritzia hobeto ulertzen lagunduko dizute. 
+Sentimenduak aztertzeko eginbideak bezero ID bakoitzeko bi informazio eratorri sortzen ditu. Sentimendu puntuazioak (-5etik 5era) eta negozio-alderdi aplikagarrien zerrenda (negozio-arloak) batera bezeroen iritzia hobeto ulertzen lagunduko dizu. 
 
 Informazio honek emaitza hauek lortzen lagun zaitzake: 
 - Lortu bezeroen sentimenduen ikuspegi orokorra marka edo erakunde baten aurrean
 - Identifikatu sentimendu negatiboa duten bezeroak zure kanpainak eta konpromisoak bideratzeko eta etekin handiagoa lortzeko optimizatzeko  
 - Bezeroek adierazitako arazoekin negozio-alderdiak identifikatzea  
-- Segmentatu bezeroak beren sentimenduaren arabera kanpaina pertsonalizatuak egiteko salmenta, marketina eta laguntza esfortzuekin
+- Segmentatu bezeroak beren sentimenduaren arabera kanpaina pertsonalizatuak egiteko, salmenta, marketina eta laguntza esfortzuekin
 - Optimizatu negozio-eragiketak bezeroek aipatu dituzten kezka edo aukerei zuzenduta
 - Ongi dabiltzan negozio-alderdiak ezagutzea eta bezero pozik saritzea leialtasun eta sustapen programen bidez
 
 Ereduen emaitzetan fida zaitezkeela ziurtatzeko, ereduek erabakiak nola hartzen dituztenei buruzko informazio gardena eskaintzen dugu. Iritzi-iruzkinei iritzi-puntuazio edo negozio-alderdi jakin bat esleitzeko ereduen erabakia eragin duten hitzen zerrenda jasoko duzu.  
 
-Bi erabiltzen ditugu **Hizkuntza Naturalaren Prozesamenduaren (NLP) ereduak** : Lehenengoak iritzi-iruzkin bakoitzari sentimendu puntuazio bat esleitzen dio. Bigarren ereduak feedback bakoitza aplikagarriak diren negozio-alderdi guztiekin lotzen du. Ereduak sare sozialetako, txikizkako, jatetxeetako, kontsumo-produktuetako eta automobilgintzako industrietako iturrietako datu publikoetan trebatzen dira.    
+Bi erabiltzen ditugu **Hizkuntza Naturalaren Prozesamenduaren (NLP) ereduak** : Lehenengoak iritzi-iruzkin bakoitzari sentimendu puntuazio bat esleitzen dio. Bigarren ereduak feedback bakoitza aplikagarriak diren negozio-alderdi guztiekin lotzen du. Ereduak sare sozialetako, txikizkako, jatetxeetako, kontsumoko produktuetako eta automobilgintzako industrietako iturrietako datu publikoetan trebatzen dira.    
   
 Ereduak feedback datuekin lotzeko aurrez definitutako negozio-alderdiak hauek dira:
 -   Kontuen kudeaketa
@@ -61,7 +61,7 @@ Sentimenduen analisia testu-erantzunaren datuetan oinarritzen da [datuak baterat
 
 Sentimenduen analisi-eredu bat konfiguratzeko, behar duzu gutxienez [Kolaboratzaileen baimenak](permissions.md).
 
-Customer Insights-ek gehienez 10 milioi feedback-erregistro prozesatu ditzake eredu bakarrerako. Ereduak 128 hitz arteko iruzkinak azter ditzake. Iritzi-iruzkin bat luzeagoa bada, analisiak lehen 128 hitzak bakarrik hartzen ditu kontuan.
+Customer Insights-ek gehienez 10 milioi iritzi-erregistro prozesatu ditzake eredu bakarrerako. Ereduak 128 hitz arteko iruzkinak azter ditzake. Iritzi-iruzkin bat luzeagoa bada, analisiak lehen 128 hitzak bakarrik hartzen ditu kontuan.
 
 ### <a name="data-requirements"></a>Datuen eskakizunak
   
@@ -150,13 +150,13 @@ Emaitzen orrialdean datuen lau atal nagusi daude.
 
   :::image type="content" source="media/sentiment-score-over-time.png" alt-text="Historia-diagrama, denboran zehar sentimenduaren puntuazioa lerro gisa irudikatuta.":::
  
-- **Negozioaren alderdien arteko sentimendua** : Taula honek negozioaren alderdien batez besteko sentimendua zerrendatzen du. Zure negozioaren zein alderdik dagoeneko bezeroak asetzen dituzten edo arreta handiagoa eskatzen duten alderdiak neurtzen lagun zaitzake. Onartutako negozio-alderdiren batekin lerrokatzen ez diren iritzi-erregistroak azpian sailkatuta daude **Bestela**. Taula alfabetikoki ordenatuta dago lehenespenez. Sailkapena alda dezakezu taulako goiburu bat hautatuz.
+- **Negozioaren alderdien arteko sentimendua** : Taula honek negozioaren alderdien batez besteko sentimendua zerrendatzen du. Zure negozioaren zein alderdik asetzen dituzten bezeroak edo arreta handiagoa eskatzen duten alderdiak neurtzen lagun zaitzake. Onartutako negozio-alderdiren batekin lerrokatzen ez diren iritzi-erregistroak azpian sailkatuta daude **Bestela**. Taula alfabetikoki ordenatuta dago lehenespenez. Sailkapena alda dezakezu taulako goiburu bat hautatuz.
 
   :::image type="content" source="media/sentiment-across-business-aspects.png" alt-text="Lotutako sentimendu-balioa duten negozio-alderdien zerrenda eta hori aipatzen duten bezero-kopurua.":::
  
   Hautatu negozio-alderdi baten izena ereduak negozio-alderdi bat nola identifikatzen duen informazio gehigarria ikusteko. Panel honetan bi zati daude: 
 
-  - **Eragin handiko hitzak** : bezeroen iritzietan AI ereduak negozio-alderdi baten identifikazioan eragina izan duten hitz nagusiak erakusten ditu. 
+  - **Eragin handiko hitzak** : AI ereduak negozio-alderdi baten identifikazioan eragina izan duten hitz nagusiak erakusten ditu bezeroen iritzietan. 
     **Erakutsi hitz iraingarriak** : Jatorrizko bezeroen iritzien datuen zerrendan hitz iraingarriak sartzeko aukera ematen dizu. Lehenespenez, desaktibatuta dago.  Hitz iraingarrien maskaratzeak AI eredu batek funtzionatzen du eta baliteke hitz iraingarri guztiak ez hautemateko. Sailkapena errepikatzen eta entrenatzen jarraitzen dugu errendimendu optimorako. Espero bezala iragazi ez den hitz iraingarri bat hautematen baduzu, jakinarazi iezaguzu. 
     
     :::image type="content" source="media/offensive-words-sentiment.png" alt-text="Eragin handiko hitzen zerrenda, hitz iraingarriak erakusteko edo ezkutatzeko etengailuarekin.":::
@@ -166,10 +166,10 @@ Emaitzen orrialdean datuen lau atal nagusi daude.
 
 ### <a name="influential-words-analysis-tab"></a>Eragin handiko hitzak aztertzeko fitxa
 
-Sentimendu ereduak nola funtzionatzen duen azaltzen duten informazio gehigarriko hiru atal daude.
+Sentimendu ereduak nola funtzionatzen duen azaltzen duten informazio osagarriaren hiru atal daude.
   
 1. **Sentimendu positiboan laguntzen duten hitz nagusiak** : Bezeroen iritzietan AI ereduak sentimendu positiboaren identifikazioan eragina izan duten hitz nagusiak erakusten ditu.  
-2. **Sentimendu negatiboan laguntzen duten hitz nagusiak** : AI ereduak sentimendu negatiboa identifikatzean eragina izan duten hitz nagusiak erakusten ditu bezeroen iritzietan.  
+2. **Sentimendu negatiboan laguntzen duten hitz nagusiak** : bezeroen iritzietan AI ereduak sentimendu negatiboa identifikatzean eragina izan duten hitz nagusiak erakusten ditu.  
 3. **Feedback laginak** : benetako iritzien erregistroak erakusten ditu, bata sentimendu negatiboa duena eta bestea sentimendu positiboa duena. Iritzi-erregistroetako hitzak esleitutako sentimendu puntuazioari egindako ekarpenaren arabera nabarmentzen dira. Sentimendu positiboa lortzen laguntzen duten hitzak berdez nabarmentzen dira. Puntuazio negatiboa lortzen duten hitzak gorriz nabarmentzen dira.
    Hautatu **Gehiago ikusi** sentimendu-ereduaren funtzionamenduari buruzko informazio eta testuinguru gehiago ematen duten iritzi-lagin gehiago kargatzeko.
    
@@ -187,7 +187,7 @@ Erraz has zaitezke bezeroen segmentu berriak sortzen sentimenduen analisiaren em
 
 Adimen artifizial iragarlea erabiltzen duen edozein eginbiderekin gertatzen den bezala, bezeroen sentimendua iragartzeko erabiltzen dituzun datuen alborapen potentzialaz jabetu beharko zenuke. Esaterako, iritziak digitalki bakarrik biltzen badituzu, zurekin batez ere negozioak egiten dituzten bezeroen iritziak galdu ditzakezu, eta horrek eginbidearen irteeran eragina izan dezake.
 
-Ezaugarri honek datuak ebaluatzeko eta datu horietan oinarritutako iragarpenak egiteko bitarteko automatizatuak erabiltzen dituenez, beraz, profila egiteko metodo gisa erabiltzeko gaitasuna du, termino hori Datuak Babesteko Erregelamendu Orokorrak ("GDPR") definitzen baitu. Ezaugarri hau datuak tratatzeko zure erabilera DBAO edo beste lege edo arau batzuen menpe egon daiteke. Zure erabilera ziurtatzeaz arduratzen zara Dynamics 365 Customer Insights, sentimenduen azterketa barne, aplikagarriak diren lege eta araudi guztiak betetzen ditu, pribatutasunarekin, datu pertsonalekin, datu biometrikoekin, datuen babesarekin eta komunikazioen konfidentzialtasunarekin lotutako legeak barne.
+Ezaugarri honek datuak ebaluatzeko eta datu horietan oinarritutako iragarpenak egiteko bitarteko automatizatuak erabiltzen dituenez, beraz, profila egiteko metodo gisa erabiltzeko gaitasuna du, termino hori Datuak Babesteko Erregelamendu Orokorrak ("GDPR") definitzen baitu. Ezaugarri hau datuak tratatzeko zure erabilera DBAO edo beste lege edo arau batzuen menpe egon daiteke. Zure erabilera ziurtatzeaz arduratzen zara Dynamics 365 Customer Insights, sentimenduen analisia barne, aplikagarriak diren lege eta araudi guztiak betetzen ditu, pribatutasunari, datu pertsonalei, datu biometrikoei, datuen babesari eta komunikazioen konfidentzialtasunari lotutako legeak barne.
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]
 

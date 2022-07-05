@@ -1,5 +1,5 @@
 ---
-title: Aberastu bezeroen profilak Microsoft-en marken eta interesen datuekin
+title: Aberastu bezeroen profilak Microsoft-en marka eta interesen datuekin (aurrebista)
 description: Erabili Microsoft-en jabedun datuak zure bezeroen datuak afinitateekin eta ahots-partekatzeekin aberasteko.
 ms.date: 03/02/2022
 ms.reviewer: mhart
@@ -12,14 +12,14 @@ searchScope:
 - ci-enrichments
 - ci-enrichment-wizard
 - customerInsights
-ms.openlocfilehash: 61262980cafdcd130430e200e466ce7da6cc4d07
-ms.sourcegitcommit: 27c5473eecd851263e60b2b6c96f6c0a99d68acb
+ms.openlocfilehash: e1827adca10a3b193c02a20c4abccacf73194a77
+ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
 ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "8953750"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9082694"
 ---
-# <a name="enrich-customer-profiles-with-affinities-and-share-of-voice-preview"></a>Aberastu bezeroen profilak afinitateekin eta ahots partekatuekin (aurrebista)
+# <a name="enrich-customer-profiles-with-brands-and-interests-data-from-microsoft-preview"></a>Aberastu bezeroen profilak Microsoft-en marka eta interesen datuekin (aurrebista)
 
 Erabili Microsoft-en jabedun datuak zure bezeroen datuak aberasteko marka-akidetasunekin, intereseko kidetasunekin eta ahots-partekatzearekin (SoV). Afinitate hauek eta SoV zure bezeroen antzeko demografia duten pertsonen datuetan oinarritzen dira. Informazio honek zure bezeroak hobeto ulertzen eta segmentatzen laguntzen dizu marka eta interes zehatzekiko duten kidetasunen edo SoVren arabera.
 
@@ -104,7 +104,7 @@ Egun, herrialde / eskualdeko aukerak onartzen ditugu: Australia, Kanada (ingeles
 
    Noiz profil aberasgarriak, aberastuko ditugu hautatutako marken eta interesen datuak lortzeko bezeroen profil guztiak, hautatutako herrialdean edo eskualdean ez dauden profilak barne. Adibidez, Alemania aukeratu baduzu, Estatu Batuetan kokatutako profilak aberastuko ditugu AEBetan hautatutako marka eta interesetarako datuak eskuragarri baditugu.
 
-## <a name="enrichment-results"></a>Aberastearen emaitzak
+## <a name="view-enrichment-results"></a>Ikusi aberaste-emaitzak
 
 [!INCLUDE [enrichment-results](includes/enrichment-results.md)]
 

@@ -1,5 +1,5 @@
 ---
-title: Enpresa-profilak aberastea Dun & Bradstreet-ekin
+title: Aberastu konpainiaren profilak Dun & Bradstreet-ekin (aurrebista)
 description: Dun & Bradstreet hirugarrenen aberasteari buruzko informazio orokorra.
 ms.date: 06/10/2022
 ms.reviewer: mhart
@@ -9,14 +9,14 @@ ms.topic: how-to
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: b1038970b6aee3bbdd7f79cc457f79aaf1c38222
-ms.sourcegitcommit: 27c5473eecd851263e60b2b6c96f6c0a99d68acb
+ms.openlocfilehash: 51f2e4e46aa25d10502d0feb5ea42eb7d2d637b9
+ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
 ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "8953873"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9082547"
 ---
-# <a name="enrichment-of-company-profiles-with-dun--bradstreet-preview"></a>Enpresaren profilak aberastea Dun & Bradstreet-ekin (aurrebista)
+# <a name="enrich-company-profiles-with-dun--bradstreet-preview"></a>Aberastu konpainiaren profilak Dun & Bradstreet-ekin (aurrebista)
 
 Dun & Bradstreet-ek negozioentzako datu komertzialak, analitikoak eta ikuspegiak eskaintzen ditu. Enpresentzako bezeroen profil bateratuak dituzten bezeroei beren datuak aberasteko aukera ematen die. Aberasteen artean, DUNS zenbakia, enpresaren tamaina, kokapena, industria eta abar bezalako atributuak daude.
 
@@ -102,7 +102,7 @@ Une honetan herrialde/eskualde aukera hauek onartzen ditugu: Kanada (ingelesa) e
 
 1. Hautatu **Korrika egin** aberaste-prozesua hasteko edo hurbiltzeko **Aberasgarriak** orrialdea.
 
-## <a name="enrichment-results"></a>Aberastearen emaitzak
+## <a name="view-enrichment-results"></a>Ikusi aberaste-emaitzak
 
 [!INCLUDE [enrichment-results](includes/enrichment-results.md)]
 

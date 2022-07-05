@@ -1,5 +1,5 @@
 ---
-title: Konektatu Azure Data Lake Storage kontu nagusia zerbitzuaren nagusia erabiliz
+title: Konektatu Azure Data Lake Storage kontu nagusia Azure zerbitzuaren nagusia erabiliz
 description: Erabili Azure zerbitzu nagusia zure data lake konektatzeko.
 ms.date: 05/31/2022
 ms.subservice: audience-insights
@@ -11,12 +11,12 @@ manager: shellyha
 searchScope:
 - ci-system-security
 - customerInsights
-ms.openlocfilehash: 36ad957f59b23df6ee83d9d90898ef03ddfd320a
-ms.sourcegitcommit: 5e26cbb6d2258074471505af2da515818327cf2c
+ms.openlocfilehash: 949caa73578dbe0a511726ec045c0fd5f4621de4
+ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
 ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 06/14/2022
-ms.locfileid: "9011826"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9082232"
 ---
 # <a name="connect-to-an-azure-data-lake-storage-account-by-using-an-azure-service-principal"></a>Konektatu Azure Data Lake Storage kontu nagusia Azure zerbitzuaren nagusia erabiliz
 
@@ -47,7 +47,7 @@ Customer Insights-en zerbitzu nagusi berri bat sortu aurretik, egiaztatu zure er
 
    :::image type="content" source="media/ADLS-SP-AlreadyProvisioned.png" alt-text="Lehendik dagoen zerbitzu nagusia erakusten duen pantaila-argazkia.":::
 
-6. Emaitzarik ez bada itzultzen, egin dezakezu [zerbitzu nagusi berri bat sortu](#create-a-new-service-principal). Kasu gehienetan, dagoeneko existitzen da eta zerbitzu nagusiak biltegiratze-kontura sartzeko baimenak soilik eman behar dizkiozu.
+6. Emaitzarik ez bada itzultzen, egin dezakezu [zerbitzu nagusi berri bat sortu](#create-a-new-service-principal). Kasu gehienetan, dagoeneko existitzen da eta zerbitzu nagusiaren baimenak soilik eman behar dizkiozu biltegiratze-kontura sartzeko.
 
 ## <a name="grant-permissions-to-the-service-principal-to-access-the-storage-account"></a>Eman baimenak zerbitzuaren entitateari biltegiratze kontura sartzeko
 

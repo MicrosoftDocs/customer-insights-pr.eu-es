@@ -1,5 +1,5 @@
 ---
-title: Esportatu Customer Insights datuak Adobe Campaign Standard
+title: Esportatu Customer Insights segmentuak hona Adobe Kanpainaren estandarra (aurrebista)
 description: Ikasi nola erabiltzen diren Customer Insights segmentuak Adobe Kanpainaren estandarra.
 ms.date: 03/29/2021
 ms.reviewer: mhart
@@ -8,24 +8,24 @@ ms.topic: conceptual
 author: stefanie-msft
 ms.author: antando
 manager: shellyha
-ms.openlocfilehash: 2a62d2f889f199222eeb8cc969fce62fa89fa6f0
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: 9915591cd969bf825f5d1669de43ed4f9953f898
+ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
 ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8642135"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9082337"
 ---
-# <a name="use-customer-insights-segments-in-adobe-campaign-standard-preview"></a>Erabili Customer Insights segmentuak atalean Adobe Campaign Standard (aurrebista)
+# <a name="export-customer-insights-segments-to-adobe-campaign-standard-preview"></a>Esportatu Customer Insights segmentuak hona Adobe Kanpainaren estandarra (aurrebista)
 
-Erabiltzaile gisa Dynamics 365 Customer Insights, baliteke segmentuak sortu izana zure marketin-kanpainak eraginkorragoak izan daitezen, publiko garrantzitsuak zuzenduta. Customer Insights-en segmentu bat erabiltzeko Adobe Experience Platform eta bezalako aplikazioak Adobe Kanpainaren estandarra, artikulu honetan azaltzen diren urrats batzuk jarraitu behar dituzu.
+-ren erabiltzaile gisa Dynamics 365 Customer Insights, baliteke segmentuak sortu izana zure marketin-kanpainak eraginkorragoak izan daitezen, publiko garrantzitsuak zuzenduta. Customer Insights-en segmentu bat erabiltzeko Adobe Experience Platform eta bezalako aplikazioak Adobe Kanpainaren estandarra, artikulu honetan azaltzen diren urrats batzuk jarraitu behar dituzu.
 
 :::image type="content" source="media/ACS-flow.png" alt-text="Artikulu honetan azaldutako urratsen prozesuaren diagrama.":::
 
 ## <a name="prerequisites"></a>Aurrebaldintzak
 
--   Dynamics 365 Customer Insights lizentzia
--   Adobe Campaign Standard lizentzia
--   Azure blob-biltegia kontua
+- Dynamics 365 Customer Insights lizentzia
+- Adobe Campaign Standard lizentzia
+- Azure blob-biltegia kontua
 
 ## <a name="campaign-overview"></a>Kanpainaren informazio orokorra
 

@@ -1,5 +1,5 @@
 ---
-title: Sortu zure bezeroen ikuspegi bateratua
+title: Datuak bateratzeko ikuspegi orokorra
 description: Joan datuak bateratzeko prozesua zure datuekin bezeroen profil bateratuen datu multzo bakarra sortzeko.
 ms.date: 05/10/2022
 ms.reviewer: v-wendysmith
@@ -11,12 +11,12 @@ manager: shellyha
 searchScope:
 - ci-map
 - customerInsights
-ms.openlocfilehash: bb8da6f4b9f92f2b265ff9807e04638edae4f814
-ms.sourcegitcommit: 4ae316c856b8de0f08a4605f73e75a8c2cf51c4e
+ms.openlocfilehash: 0dbc3b2c75365e94758a1b6330e8cb557e6bd768
+ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
 ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 05/13/2022
-ms.locfileid: "8755719"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9082211"
 ---
 # <a name="data-unification-overview"></a>Datuak bateratzeko ikuspegi orokorra
 
@@ -30,7 +30,7 @@ Datuak entitate bakarrean edo entitate anitzetan batera daitezke. Bateratze orde
 
 1. [Erregistro bikoiztuak](remove-duplicates.md) (aurretik Match-en parte da): Erregistro bikoiztuak urratsean, aukeran zehaztu arauak entitate bakoitzaren barruan bezeroen erregistro bikoiztuak kentzeko.
 
-1. [Bat datozen baldintzak](match-entities.md) (lehen Bat-etortzea deitzen zen): bat-etortze-baldintzak urratsean, definitu entitateen arteko bezero-erregistroak bat datozen arauak. Bezero bat bi entitate edo gehiagotan aurkitzen denean, erregistro bateratu bakarra sortzen da entitate bakoitzeko zutabe eta datu guztiekin.
+1. [Bat datozen baldintzak](match-entities.md) (aurretik Bat-etortzea deitzen zen): bat-etortze-baldintzak urratsean, definitu entitateen arteko bezero-erregistroak bat datozen arauak. Bezero bat bi entitate edo gehiagotan aurkitzen denean, erregistro bateratu bakarra sortzen da entitate bakoitzeko zutabe eta datu guztiekin.
 
 1. [Bezeroen eremu bateratuak](merge-entities.md) (aurretik Bateratu deitua): bezeroen eremu bateratuen urratsean, zehaztu zein iturburu-eremu sartu, baztertu edo batu behar diren bezero-profil bateratu batean.  
 

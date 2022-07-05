@@ -1,5 +1,5 @@
 ---
-title: Esportatu Customer Insights datuak Adobe Experience Platform
+title: Esportatu segmentuak hona Adobe Experience Platform (aurrebista)
 description: Ikasi Customer Insights segmentuak erabiltzen Adobe Experience Platform.
 ms.date: 03/29/2021
 ms.reviewer: mhart
@@ -8,16 +8,16 @@ ms.topic: conceptual
 author: stefanie-msft
 ms.author: antando
 manager: shellyha
-ms.openlocfilehash: 42a4e0c6bce67a63b449a541299620ef2f4a3259
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: c29b8264019669ffd954a298ce3a633c852477fa
+ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
 ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8642164"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "9052496"
 ---
-# <a name="use-customer-insights-segments-in-adobe-experience-platform-preview"></a>Erabili Customer Insights segmentuak Adobe Experience Platform (aurrebista)
+# <a name="export-segments-to-adobe-experience-platform-preview"></a>Esportatu segmentuak hona Adobe Experience Platform (aurrebista)
 
--ren erabiltzaile gisa Dynamics 365 Customer Insights, baliteke segmentuak sortu izana zure marketin-kanpainak eraginkorragoak izateko, publiko garrantzitsuak zuzenduta. Customer Insights-en segmentu bat erabiltzeko Adobe Experience Platform eta bezalako aplikazioak Adobe Kanpainaren estandarra, artikulu honetan azaltzen diren urrats batzuk jarraitu behar dituzu.
+-ren erabiltzaile gisa Dynamics 365 Customer Insights, baliteke segmentuak sortu izana zure marketin-kanpainak eraginkorragoak izan daitezen, publiko garrantzitsuak zuzenduta. Customer Insights-en segmentu bat erabiltzeko Adobe Experience Platform eta bezalako aplikazioak Adobe Kanpainaren estandarra, artikulu honetan azaltzen diren urrats batzuk jarraitu behar dituzu.
 
 :::image type="content" source="media/AEP-flow.png" alt-text="Artikulu honetan azaldutako urratsen prozesuaren diagrama.":::
 
