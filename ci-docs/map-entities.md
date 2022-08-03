@@ -13,18 +13,16 @@ searchScope:
 - ci-map
 - ci-match
 - customerInsights
-ms.openlocfilehash: a962f1353b6e25b40c60b39a81ac936873f34d92
-ms.sourcegitcommit: 6a5f4312a2bb808c40830863f26620daf65b921d
+ms.openlocfilehash: a75218c996b277e00924f2b7b38ea686a1f4dc38
+ms.sourcegitcommit: 3c5b0b40b2b45e420015bbdd228ce0e610245e6f
 ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "8740980"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "9139767"
 ---
 # <a name="select-source-fields-for-data-unification"></a>Hautatu iturri-eremuak datuak bateratzeko
 
-[!INCLUDE [m3-prod-trial-note](includes/m3-prod-trial-note.md)]
-
-Bateratzearen lehen urratsa batu nahi dituzun zure datu-multzoetako entitateak eta eremuak hautatzea da. Hautatu bezeroekin lotutako xehetasunak dituzten entitateak, hala nola izena, helbidea, telefono zenbakia eta posta elektronikoa. Entitate bat edo gehiago hauta ditzakezu.
+Bateratzearen lehen urratsa bateratu nahi dituzun zure datu multzoetako entitateak eta eremuak hautatzea da. Hautatu bezeroekin erlazionatutako xehetasunak dituzten entitateak, hala nola izena, helbidea, telefono zenbakia eta posta elektronikoa. Entitate bat edo gehiago hauta ditzakezu.
 
 ## <a name="select-entities-and-fields"></a>Hautatu entitateak eta eremuak
 
@@ -54,14 +52,14 @@ Entitate bakoitzeko, egin urrats hauek.
 
 1. Aukeratu **Lehen gakoa**. Gako nagusia entitatearen atributu bakarra da. Atributu bat baliozko gako nagusia izan dadin, ez lituzke balio bikoiztuak, falta diren balioak edo balio baliorik sartu behar. Katea, osokoa eta GUID datu motako atributuak gako nagusi gisa onartzen dira.
 
-1. Semantika iragarpen adimentsurako AI ereduak erabiltzeko, aurreztu denbora eta hobetu zehaztasuna, ziurtatu **Kartografia adimentsua** piztuta dago. Kartografia adimendunak AI-n oinarritutako semantika gomendioa nabarmentzen du **Mota** zelaia. Iradokitako hautapena gainidatzi dezakezu eskuragarri dagoen aukeren zerrendatik edozein mota semantiko aukeratuz.
+1. Semantika iragarpen adimentsurako AI ereduak erabiltzeko, aurreztu denbora eta hobetu zehaztasuna, ziurtatu **Kartografia adimenduna** piztuta dago. Kartografia adimendunak AI-n oinarritutako semantika gomendioa nabarmentzen du **Mota** zelaia. Iradokitako hautaketa gainidatzi dezakezu eskuragarri dagoen aukeren zerrendatik edozein mota semantiko aukeratuz.
 
-1. Atributu bakoitzeko, aukeratu semantiko bat **Mota** atributu hori hobekien deskribatzen duena, hala nola izena, hiria edo helbide elektronikoa.
+1. Atributu bakoitzeko, aukeratu semantika bat **Mota** atributu hori hobekien deskribatzen duena, hala nola izena, hiria edo helbide elektronikoa.
 
    > [!NOTE]
-   > Eremu batek mota semantikoarekin mapatu behar du *Pertsona.Izen osoa* bezeroaren izena bezero-txartelean betetzeko. Bestela, bezeroen txartelak izenik gabe agertuko dira.
+   > Eremu batek mota semantikoarekin mapatu behar du *Pertsona.Izen osoa* bezero-txartelean bezeroaren izena betetzeko. Bestela, bezeroen txartelak izenik gabe agertuko dira.
 
-   1. Sistemak identifikatutako atributu mota bat aldatzeko, hautatu beste mota bat. Mota ez badago, sortu mota semantiko pertsonalizatu bat hautatuta **Mota** atributuaren eremua eta zure mota semantiko pertsonalizatuaren izena sartu.
+   1. Sistemak identifikatutako atributu mota bat aldatzeko, hautatu beste mota bat. Mota ez badago, sortu mota semantiko pertsonalizatu bat hautatuta **Mota** atributuaren eremua eta zure mota semantiko pertsonalizatuaren izena idatziz.
 
    1. URL bat duen atributu bat gehitzeko publikoki eskuragarri dauden profileko irudi edo logotipoetan, hautatu URLa duen entitatea eta eremua. urtean **Mota** eremuan, idatzi honako hau:
       - Pertsona batentzat: Pertsona.ProfileImage

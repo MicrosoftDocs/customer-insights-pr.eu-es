@@ -1,7 +1,7 @@
 ---
 title: Bezeroen jarduerak
 description: Definitu bezeroen jarduerak eta ikusi denbora-lerroan bezeroen profiletan.
-ms.date: 11/01/2021
+ms.date: 07/22/2022
 ms.subservice: audience-insights
 ms.reviewer: mhart
 ms.topic: conceptual
@@ -17,51 +17,51 @@ searchScope:
 - ci-measures
 - ci-segment-suggestions
 - customerInsight
-ms.openlocfilehash: 6c0a1bc5d9a42806b458142804199c733ff530ec
-ms.sourcegitcommit: 4ae316c856b8de0f08a4605f73e75a8c2cf51c4e
+ms.openlocfilehash: cc21b0eeb368156437e60d851c2d144f3974c066
+ms.sourcegitcommit: c45c3e044034bf866b0662f80a59166cee4ababe
 ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 05/13/2022
-ms.locfileid: "8755483"
+ms.lasthandoff: 07/22/2022
+ms.locfileid: "9188124"
 ---
 # <a name="customer-activities"></a>Bezeroen jarduerak
 
-Konbinatu bezeroen jarduerak [hainbat datu-iturri](data-sources.md) Dynamics 365 Customer Insights-en. Sortu jarduerak kronologikoki zerrendatzen dituen denbora-lerroa. Sartu denbora-lerroa Dynamics 365 aplikazioetan [Bezero Txartelaren gehigarria](customer-card-add-in.md) irtenbidea.
+Bezeroen jarduerak bezeroek egindako ekintzak edo gertaerak dira. Adibidez, transakzioak, laguntza-deien iraupena, webguneen berrikuspenak, erosketak edo itzulketak. Jarduera hauek datu-iturri batean edo gehiagotan daude. Customers Insights-ekin, sendotu zure bezeroen jarduerak hauetatik [datu-iturriak](data-sources.md) eta bezeroen profilekin lotu. Jarduera hauek kronologikoki agertzen dira denbora-lerro batean bezeroaren profilean. Sartu denbora-lerroa Dynamics 365 aplikazioetan [Bezero txartelaren gehigarria](customer-card-add-in.md) irtenbidea.
 
 ## <a name="define-an-activity"></a>Definitu jarduera
 
-Zure datu-iturriak datu-iturri ugarietatik transakzio- eta jarduera-datuak izan ditzaketen entitateak dira. Identifika itzazu entitate horiek eta hautatu bezeroaren denbora-lerroan ikusi nahi dituzun jarduerak. Aukeratu zure xede-jarduera edo jarduerak biltzen dituen entitatea.
-
-Entitate batek gutxienez motako atributu bat izan behar du **Data** bezeroaren denbora-lerroan sartzeko eta ezin dituzu entitateak gehitu gabe **data** eremuak. The **Gehitu jarduera** kontrola ezgaitzen da horrelako entitate bat aurkitzen ez bada.
+Entitate batek gutxienez motako atributu bat izan behar du **Data** bezeroaren denbora-lerro batean sartzeko. The **Gehitu jarduera** kontrola ezgaitzen da horrelako entitate bat aurkitzen ez bada.
 
 1. Joan **Datuak** > **Jarduerak**.
 
-1. Aukeratu **Gehitu jarduera** jarduera konfiguratzeko prozesuaren esperientzia gidatua hasteko.
+1. Hautatu **Gehitu jarduera** esperientzia gidatua hasteko.
 
-1. Hurrengoan **Jardueren datuak** urratsa, ezarri eremu hauetako balioak:
+1. urtean **Jardueraren datuak** urratsa, sartu informazio hau:
 
-   - **Jardueraren izena**: Hautatu zure jarduerarako izen bat.
-   - **Erakunde**: Aukeratu transakzio- edo jarduera-datuak biltzen dituen entitatea.
-   - **Gako nagusia**: Hautatu erregistroa era esklusiboan identifikatzen duen eremua. Ez luke balio bikoizturik, balio hutsak edo falta diren balioak.
+   - **Jardueraren izena** : Zure jardueraren izena.
+   - **Jarduera-entitatea** : transakzio- edo jarduera-datuak barne hartzen dituen entitatea.
+   - **Lehen gakoa** : Erregistro bat modu esklusiboan identifikatzen duen eremua. Ez luke balio bikoizturik, balio hutsak edo falta diren balioak.
 
    :::image type="content" source="media/Activity_Wizard1.PNG" alt-text="Konfiguratu jardueraren datuak izena, entitatea eta gako nagusiarekin.":::
 
-1. Aukeratu **Hurrengoa** hurrengo urratsera joateko.
+1. Hautatu **Hurrengoa**.
 
-1. Urtean **Harremana** urratsa, konfiguratu xehetasunak zure jarduera-datuak dagozkien bezeroaren erregistroarekin konektatzeko. Urrats honek entitateen arteko konexioa bistaratzen du.  
+1. urtean **Harremana** urratsa, hautatu **Gehitu harremana** zure jarduera-datuak dagokion bezero-erregistroarekin konektatzeko. Urrats honek entitateen arteko konexioa bistaratzen du.  
 
-   - **Lehenengoa**: Zure jarduera entitatean atzerriko eremua, beste entitate batekin harremanak sortzeko erabiliko dena.
-   - **Bigarrena**: Zure jarduera entitatearekin erlazionatuko duen iturburu bezeroari dagokiona. Datuak bateratzeko prozesuan erabiltzen diren iturburu bezeroen entitateekin bakarrik lotu zaitezke.
-   - **Hirugarrena**: Jarduera entitate honen eta hautatutako iturburu bezero entitatearen arteko erlazioa badago jadanik, harremanaren izena irakurtzeko soilik moduan egongo da. Harreman hori existitzen ez bada, harreman berri bat sortuko da koadro honetan ematen duzun izenarekin.
+   - **Entitatearen atzerriko gakoa** : beste entitate batekin harremana ezartzeko erabiliko den zure jarduera-entitateko eremua.
+   - **Entitatearen izenari** : Zure jarduera-entitatearekin harremana izango duen iturburu-bezero-entitatea. Datuak bateratzeko prozesuan erabiltzen diren iturburu bezeroen entitateekin bakarrik lotu zaitezke.
+   - **Harremanaren izena** : Entitateen arteko harremana identifikatzen duen izena. Jarduera-entitate honen eta hautatutako iturburu-bezero-entitatearen arteko erlaziorik badago, erlazioaren izena irakurtzeko soilik da.
 
    :::image type="content" source="media/Activity_Wizard2.PNG" alt-text="Definitu entitate-harremana.":::
 
    > [!TIP]
    > B-to-B inguruneetan, kontuko entitateen eta beste entitate batzuen artean hauta dezakezu. Kontuko entitate bat hautatzen baduzu, harreman bidea automatikoki ezartzen da. Beste entitate batzuetarako, bitarteko entitate baten edo gehiagoren arteko harremana definitu behar duzu, kontuko entitate batera iritsi arte.
 
-1. Aukeratu **Hurrengoa** hurrengo urratsera joateko. 
+1. Hautatu **Aplikatu** harremana sortzeko.
 
-1. Hurrengoan **Jarduera bateratzea** urratsa, aukeratu jarduera gertaera eta zure jardueraren hasiera ordua. 
+1. Hautatu **Hurrengoa**.
+
+1. Hurrengoan **Jarduera bateratzea** urratsa, aukeratu jarduera gertaera eta zure jardueraren hasiera ordua.
    - **Beharrezko eremuak**
       - **Ekitaldi jarduera**: Jarduera honen gertaera den eremua.
       - **Denbora-marka**: Zure jardueraren hasiera ordua adierazten duen eremua.
@@ -76,61 +76,49 @@ Entitate batek gutxienez motako atributu bat izan behar du **Data** bezeroaren d
 
       :::image type="content" source="media/Activity_Wizard3.PNG" alt-text="Zehaztu bezeroaren jardueraren datuak Jarduera bateratuko entitate batean.":::
 
-1. Hautatu **Hurrengoa** hurrengo urratsera mugitzeko. Aukeratu dezakezu **Amaitu eta berrikusi** aktibitatea orain gordetzeko, jarduera mota gisa ezarrita **Beste batzuk**. 
+1. Hautatu **Hurrengoa** jarduera mota aukeratzeko edo hautatu **Amaitu eta berrikusi** jarduera gordetzeko jarduera mota gisa ezarrita **Bestela**.
 
 1. Hurrengoan **Jarduera mota** urratsa, aukeratu jarduera mota eta hautatu aukeran Customer Insights beste arlo batzuetan erabiltzeko jarduera mota batzuk semantikoki mapatu nahi dituzun. Gaur egun, *Iritzia*, *·*, *Eskaera*, *·*, eta *Harpidetza* jarduera motak semantika onartzen dute eremuak mapatzea onartu ondoren. Jarduera mota bat jarduera berrirako garrantzitsua ez bada, hauta dezakezu *Beste batzuk* edo *Sortu berria* jarduera mota pertsonalizatua lortzeko.
 
-1. Hautatu **Hurrengoa** hurrengo urratsera mugitzeko. 
+1. Hautatu **Hurrengoa**.
 
 1. Hurrengoan **Berrikuspena** urratsa, egiaztatu hautapenak. Itzuli aurreko edozein urratsetara eta eguneratu informazioa beharrezkoa bada.
 
-   :::image type="content" source="media/Activity_Wizard5.PNG" alt-text="Berrikusi jarduera baterako zehaztutako eremuak.":::
-   
-1. Aukeratu **Gorde jarduera** aldaketak aplikatzeko eta hautatu **Eginda** atzera joateko **Datuak** > **Jarduerak**. Hemen ikus ditzakezu zein jarduera erakutsiko diren kronograman. 
+1. Aukeratu **Gorde jarduera** aldaketak aplikatzeko eta hautatu **Eginda** atzera joateko **Datuak** > **Jarduerak**. Sortutako jarduera bistaratzen da.
 
-1. Gainean **Jarduerak** orrialdea, hautatu **Korrika egin** jarduera prozesatzeko. 
+1. Zure jarduera guztiak sortu ondoren, hautatu **Korrika egin** horiek prozesatzeko.
 
 [!INCLUDE [progress-details-include](includes/progress-details-pane.md)]
 
 ## <a name="manage-existing-activities"></a>Kudeatu lehendik dauden jarduerak
 
-Aktibatuta **Datuak** > **Jarduerak**, gordetako jarduera guztiak ikusi eta kudeatu ditzakezu. Jarduera bakoitza iturriari, entitateari eta jarduera motari buruzko xehetasunak ere biltzen dituen errenkada baten bidez irudikatzen da.
+Joan **Datuak** > **Jarduerak** gordetako jarduerak, haien iturburu-entitatea, jarduera mota eta bezeroen denbora-lerroan sartzen badira ikusteko. Jardueren zerrenda edozein zutaberen arabera ordena dezakezu edo bilaketa-koadroa erabili kudeatu nahi duzun jarduera aurkitzeko.
 
-Jarduera bat hautatzean ekintza hauek erabilgarri daude. 
+Hautatu jarduera bat erabilgarri dauden ekintzak ikusteko.
 
-- **Editatu**: Berrikuspen urratsean jarduera konfigurazioa irekitzen du. Urrats honetatik uneko konfigurazioaren zati bat edo guztia alda dezakezu. Konfigurazioa aldatu ondoren, hautatu **Gorde jarduera** eta, ondoren, hautatu **Korrika egin** aldaketak prozesatzeko.
-
-- **Aldatu izena**: Elkarrizketa-koadro bat irekitzen du eta bertan hautatutako jardueraren beste izen bat sar dezakezu. Aldaketak aplikatzeko, hautatu **Gorde**.
-
-- **Ezabatu**: Elkarrizketa bat irekitzen du hautatutako jardueraren ezabaketa berresteko. Jarduera bat baino gehiago aldi berean ezaba ditzakezu jarduerak hautatuta eta gero ezabatzeko ikonoa hautatuta. Hautatu **Ezabatu** ezabatzea baieztatzeko.
+- **Editatu** konfigurazioa aldatzeko jarduera. Konfigurazioa berrikuspen urratsean irekitzen da. Konfigurazioa aldatu ondoren, hautatu **Gorde jarduera** eta, ondoren, hautatu **Korrika egin** aldaketak prozesatzeko.
+- **Aldatu izena** jarduera. Aldaketak aplikatzeko, hautatu **Gorde**.
+- **Ezabatu** jarduera. Jarduera bat baino gehiago aldi berean ezabatzeko, hautatu jarduerak eta gero **Ezabatu**. Berretsi ezabatzea.
 
 ## <a name="view-activity-timelines-on-customer-profiles"></a>Ikusi jarduera profilak bezeroen profiletan
 
-Bezeroen jarduerak konfiguratu ondoren, hautatu **Erakutsi jardueren kronograman** jardueraren konfigurazioan zure bezeroaren jarduera guztiak bezeroaren profilean aurkitzeko.
+1. Hautatu baduzu **Erakutsi jardueren denbora-lerroan** jardueraren konfigurazioan, joan hona **Bezeroak** eta hautatu bezeroaren profil bat bezeroaren jarduerak ikusteko **Jardueren kronograma** atala.
 
-Bezero baten kronograma irekitzeko, joan hona: **Bezeroak** eta aukeratu ikusi nahi duzun bezeroaren profila.
+   :::image type="content" source="media/Activity_Timeline1.PNG" alt-text="Ikusi konfiguratutako jarduerak Bezeroen profiletan.":::
 
-Bezero batek konfiguratutako jarduera batean parte hartu badu, atalean aurkituko duzu **Jardueren kronograma** atala.
+1. Jarduerak jardueren denbora-lerroan iragazteko:
 
-:::image type="content" source="media/Activity_Timeline1.PNG" alt-text="Ikusi konfiguratutako jarduerak Bezeroen profiletan.":::
+   - Hautatu jarduera-ikonoetako bat edo gehiago zure emaitzak hobetzeko, hautatutako motak soilik sartzeko.
 
-Jardueren denbora-lerroan jarduerak iragazteko hainbat modu daude:
+     :::image type="content" source="media/Activity_Timeline2.PNG" alt-text="Iragazi jarduerak motaren arabera ikonoak erabiliz.":::
 
-- Jardueraren ikono bat edo gehiago hauta ditzakezu emaitzak fintzeko hautatutako motak soilik sartzeko.
+   - Hautatu **Iragazkia** iragazkien panel bat irekitzeko zure denbora-lerroko iragazkiak konfiguratzeko. Iragazi arabera *Jarduera mota* eta/edo *Data*. Hautatu **Aplikatu**.
 
-  :::image type="content" source="media/Activity_Timeline2.PNG" alt-text="Iragazi jarduerak motaren arabera ikonoak erabiliz.":::
+     :::image type="content" source="media/Activity_Timeline3.PNG" alt-text="Erabili iragazki panela iragazki baldintzak konfiguratzeko.":::
 
-- Aukeratu dezakezu **Iragazi** iragazki-panela irekitzeko zure denbora-lerroaren iragazkiak konfiguratzeko.
-
-   1. Iragazi dezakezu *Jarduera mota* eta *Data*
-   1. Aukeratu **Aplikatu** jardueren denbora-lerroan iragazkiak erabiltzeko.
-
-   :::image type="content" source="media/Activity_Timeline3.PNG" alt-text="Erabili iragazki panela iragazki baldintzak konfiguratzeko.":::
-
-Iragazkiak kentzeko, hautatu **x** kronogramari aplikatutako iragazki bakoitzaren ondoan edo hautatu **Garbitu iragazkiak**.
-
+1. Iragazkiak kentzeko, hautatu **Garbitu iragazkiak** edo hautatu **Iragazkia** eta garbitu iragazkia kontrol-laukia.
 
 > [!NOTE]
-> Jardueren iragazkiak bezeroaren profila uzten duzunean kentzen dira. Bezeroen profilean irekitzen duzun bakoitzean aplikatu behar dituzu.
+> Jardueren iragazkiak bezeroaren profila uzten duzunean kentzen dira. Bezero profila irekitzen duzun bakoitzean aplikatu behar dituzu.
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

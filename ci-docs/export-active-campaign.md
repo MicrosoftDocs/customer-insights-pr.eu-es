@@ -1,19 +1,19 @@
 ---
 title: Esportatu segmentuak ActiveCampaign-era
 description: Ikasi konexioa nola konfiguratu eta ActiveCampaign-ra esportatu.
-ms.date: 10/08/2021
+ms.date: 07/25/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: eb6f2bb69bb30c319e17390562b3f33512f33ff1
-ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
+ms.openlocfilehash: 178d2df8edf1abcec72664e19d73a88f2b97f12d
+ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
 ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9054693"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "9195551"
 ---
 # <a name="export-segments-to-activecampaign-preview"></a>Esportatu segmentuak ActiveCampaign-ra (aurrebista)
 
@@ -21,31 +21,34 @@ Esportatu bezero profil bateratuen segmentuak ActiveCampaign-era eta erabili mar
 
 ## <a name="prerequisites"></a>Aurrebaldintzak
 
-- Baduzu [ActiveCampaign kontua](https://www.activecampaign.com/) eta dagozkien administratzaile egiaztagiriak.
-- Zuk daukazu [konfiguratutako segmentuak](segments.md) Bezeroen Insights-en.
-- Esportatutako segmentuetako bezeroen profil bateratuek helbide elektronikoa duen eremu bat dute.
+- An [ActiveCampaign kontua](https://www.activecampaign.com/) eta dagozkion administratzailearen kredentzialak.
+- An [ActiveCampaign zerrendaren IDa](https://help.activecampaign.com/hc/articles/360000030559-How-to-create-a-list-in-ActiveCampaign).
+- An [ActiveCampaign API gakoa](https://help.activecampaign.com/hc/articles/207317590-Getting-started-with-the-API#how-to-obtain-your-activecampaign-api-url-and-key) eta REST Endpoint Hostname.
+- [Konfiguratutako segmentuak](segments.md) Bezeroen Insights-en.
+- Esportatutako segmentuetako bezeroen profil bateratuek helbide elektronikoa adierazten duen eremua dute.
 
 ## <a name="known-limitations"></a>Muga ezagunak
 
-- Esportazio bakoitzeko milioi bat bezero esportatu ditzakezu esportazio bakoitzeko ActiveCampaign-era eta 90 minutu behar izan ditzakezu osatzeko.
-- ActiveCampaign-era esportatzea segmentuetara mugatzen da.
-- ActiveCampaign-era esporta ditzakezun bezeroen profil kopurua ActiveCampaign-ekin duzun kontratuaren menpe dago eta mugatua da.
+- Gehienez milioi bat bezero-profil ActiveCampaign-era esportatzeko, eta hori osatzeko 90 minutu behar izan daitezke. ActiveCampaign-era esporta ditzakezun bezeroen profil kopurua ActiveCampaign-ekin duzun kontratuaren menpe dago eta mugatua da.
+- Segmentuak soilik.
 
 ## <a name="set-up-connection-to-activecampaign"></a>Konfiguratu ActiveCampaign-era konexioa
 
+[!INCLUDE [export-connection-include](includes/export-connection-admn.md)]
+
 1. Joan **Administratzailea** > **Konexioak**.
 
-1. Aukeratu **Gehitu konexioa** eta aukeratu **ActiveCampaign** konexioa konfiguratzeko.
+1. Hautatu **Gehitu konexioa** eta aukeratu **ActiveCampaign**.
 
 1. Eman zure konexioa ezaguna den izena **Bistaratze izena** eremua. Izena eta konexio motak konexio bat deskribatzen du. Konexio honen xedea eta xedea azaltzen duen izena aukeratzea gomendatzen dugu.
 
 1. Aukeratu nork erabil dezakeen konexioa. Berez, administratzaileak soilik dira. Informazio gehiagorako, ikus [Baimendu laguntzaileei esportazioetarako konexioa erabiltzea](connections.md#allow-contributors-to-use-a-connection-for-exports).
 
-1. Sartu zure [ActiveCampaign API gakoa eta REST amaiera puntuko ostalari izena](https://help.activecampaign.com/hc/articles/207317590-Getting-started-with-the-API#how-to-obtain-your-activecampaign-api-url-and-key). REST Endpoint ostalari izena ostalari izena soilik da, gabe https://. 
+1. Sartu zure ActiveCampaign API gakoa eta REST amaiera puntuko ostalari izena. REST Endpoint ostalari izena ostalari izena soilik da, gabe https://.
 
-1. Aukeratu **ados** baieztatzeko **Datuen pribatutasuna eta betetzea**.
+1. Berrikusi [datuen pribatutasuna eta betetzea](connections.md#data-privacy-and-compliance) eta hautatu **ados**.
 
-1. Aukeratu **Konektatu** ActiveCampaign konexioaren hautapena berresteko.
+1. Hautatu **Konektatu** konexioa hasieratzeko.
 
 1. Aukeratu **Gehitu zeure burua esportazio erabiltzaile gisa** eta eman zure Customer Insights kredentzialak.
 
@@ -53,27 +56,26 @@ Esportatu bezero profil bateratuen segmentuak ActiveCampaign-era eta erabili mar
 
 ## <a name="configure-an-export"></a>Konfiguratu esportazio bat
 
-Esportazio bat konfigura dezakezu mota honetako konexiorako sarbidea baduzu. Informazio gehiagorako, ikusi [Esportazioa konfiguratzeko beharrezkoak diren baimenak](export-destinations.md#set-up-a-new-export).
+[!INCLUDE [export-permission-include](includes/export-permission.md)]
 
 1. Joan **Datuak** > **Esportazioak**.
 
-1. Esportazio berria sortzeko, hautatu **Gehitu helmuga**.
+1. Hautatu **Gehitu esportazioa**.
 
-1. Urtean **Esportaziorako konexioa** eremuan, aukeratu konexio bat ActiveCampaign atalean. Atal honen izena ikusten ez baduzu, ez dago mota honetako konexiorik erabilgarri.
+1. Urtean **Esportaziorako konexioa** eremuan, aukeratu konexio bat ActiveCampaign atalean. Jarri harremanetan administratzaile batekin konexiorik ez badago.
 
-1. Sartu zure [**ActiveCampaign zerrendaren IDa**](https://help.activecampaign.com/hc/articles/360000030559-How-to-create-a-list-in-ActiveCampaign).    
+1. Idatzi esportaziorako izen bat.
 
-1. Urtean **Datuen bat etortzea** atalean, **Posta elektronikoa** eremua, hautatu bezeroaren helbide elektronikoa adierazten duen eremua. ActiveCampaign-era esportatzea segmentuetara beharrezkoa da. Aukeran, esporta dezakezu Izena, Abizena eta Telefonoa mezu elektroniko pertsonalizatuagoak sortzeko. Aukeratu Gehitu atributua eremu horiek esleitzeko.
+1. Sartu zure **ActiveCampaign zerrendaren IDa**.
+
+1. Urtean **Datuen bat etortzea** atalean, **Posta elektronikoa** eremua, hautatu bezeroaren helbide elektronikoa adierazten duen eremua.
+
+1. Aukeran, esportatu **izen**, **·**, eta **Mugikorra** mezu elektroniko pertsonalizatuagoak sortzeko. Aukeratu **Gehitu atributua** eremu horiek esleitzeko.
+
+1. Hautatu esportatu nahi dituzun segmentuak.
 
 1. Sakatu **Gorde**.
 
-Esportazio bat gordetzeak ez du esportazioa berehala exekutatzen.
+[!INCLUDE [export-saving-include](includes/export-saving.md)]
 
-Esportazioa guztiekin egiten da [freskatze programatua](system.md#schedule-tab). Ere egin dezakezu [esportatu eskariaren arabera](export-destinations.md#run-exports-on-demand). 
-
-
-## <a name="data-privacy-and-compliance"></a>Datuen pribatutasuna eta arau-gordetzea
-
-Gaitzen duzunean Dynamics 365 Customer Insights datuak transmititzeko ActiveCampaign-era, datuak betetze mugatik kanpo transferitzea baimentzen duzu, Dynamics 365 Customer Insights datu pertsonalak bezalako datu sentikorrak barne. Microsoft-ek datu hauek transferituko ditu zure aginduz, baina zu arduratuko zara hori ziurtatzeaz ActiveCampaign izan ditzakezun pribatutasun edo segurtasun betebeharrak betetzen ditu. Informazio gehiago eskuratzeko, ikusi [Microsoft-en pribatutasun-adierazpena](https://go.microsoft.com/fwlink/?linkid=396732).
-
-Funtzio hau erabiltzeari uzteko, Dynamics 365 Customer Insights-en administratzaileak esportazioaren helburuko kokalekua edonoiz ken dezake.
+[!INCLUDE [footer-include](includes/footer-banner.md)]

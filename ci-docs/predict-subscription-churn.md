@@ -8,12 +8,12 @@ ms.topic: how-to
 author: zacookmsft
 ms.author: zacook
 manager: shellyha
-ms.openlocfilehash: 415cd5d675512b4f434998afaa8265c8e45c562b
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: 72aa38242df21181f142833db03c825574455986
+ms.sourcegitcommit: 8a28e9458b857adf8e90e25e43b9bc422ebbb2cd
 ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8642172"
+ms.lasthandoff: 07/18/2022
+ms.locfileid: "9171034"
 ---
 # <a name="subscription-churn-prediction"></a>Harpidetza Churn iragarpen
 
@@ -121,7 +121,7 @@ Harpidetza aurreikuspena lagundu egiten du iragartzen bezeroren bat arriskuan da
    - **Iragarpen izena:** Sortzerakoan emandako iragarpenaren izena.
    - **Iragarpen mota:** Iragarpenak egiteko erabilitako eredu mota
    - **Irteerako entitatea:** Iragarpenaren irteera gordetzeko entitatearen izena. Izen hori duen entitate bat aurki dezakezu **Datuak** > **erakundeak**.    
-     Irteerako entitatean, *ChurnScore* da aurreikusitako txandaren probabilitatea eta *IsChurn* oinarritutako etiketa bitarra da *ChurnScore* 0,5 atalasearekin. Baliteke atalase lehenetsiak ez funtzionatzea zure eszenatokian. [Sortu segmentu berria](segments.md#create-a-new-segment) nahi duzun atalasearekin.
+     Irteerako entitatean, *ChurnScore* da aurreikusitako txandaren probabilitatea eta *IsChurn* oinarritutako etiketa bitarra da *ChurnScore* 0,5 atalasearekin. Baliteke atalase lehenetsiak ez funtzionatzea zure eszenatokian. [Sortu segmentu berria](segments.md#create-a-segment) nahi duzun atalasearekin.
    - **Iragarritako eremua:** Aurreikuspen mota batzuetarako bakarrik dago eremua, eta ez da harpidetzaren kutxa iragarpenean erabiltzen.
    - **Egoera:** Iragarpenaren exekutatutako egoera.
         - **ilaran:** Aurreikuspena beste prozesu batzuen zain egongo da.

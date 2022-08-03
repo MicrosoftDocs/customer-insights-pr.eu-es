@@ -11,25 +11,24 @@ manager: shellyha
 searchScope:
 - ci-measure-template
 - customerInsights
-ms.openlocfilehash: f6bcdfc45a49c36f22d6ebc6e919f43b27f899d8
-ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
+ms.openlocfilehash: 6dc7fce78d10ba91de4b2abf54c6c6ab1c919d3a
+ms.sourcegitcommit: 8a28e9458b857adf8e90e25e43b9bc422ebbb2cd
 ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9051668"
+ms.lasthandoff: 07/18/2022
+ms.locfileid: "9170758"
 ---
 # <a name="create-measures-from-templates"></a>Sortu neurriak txantiloietatik
 
-Erabili ohi diren aurredefinitutako txantiloiak erabil ditzakezu [neurriak](measures.md) horiek sortzeko. Txantiloien deskribapen zehatzak eta esperientzia gidatu batek neurrien sorrera eraginkorra izaten laguntzen dizute. Txantiloiak mapako datuen gainean eraikitzen dira *Jarduera bateratua* entitatea. Beraz, ziurtatu konfiguratu duzula [bezeroen jarduerak](activities.md) txantiloi batetik neurria sortu aurretik.
+Erabili ohiko erabilitako aurredefinitutako txantiloiak [neurriak](measures.md) horiek sortzeko. Txantiloiak mapako datuen gainean eraikitzen dira *Jarduera bateratua* entitatea. Beraz, ziurtatu konfiguratu duzula [bezeroen jarduerak](activities.md) txantiloi batetik neurria sortu aurretik.
 
-Neurri pertsonalizatuak sortzeko, ikus [Erabili neurri-sortzailea neurriak hutsetik sortzeko](measure-builder.md).
+Neurrien txantiloiak inguruneetan soilik onartzen dira **bezero indibidualak**. Neurri pertsonalizatuak sortzeko edo B-to-Brako neurriak sortzeko, ikus [Erabili neurri-sortzailea](measure-builder.md).
 
-# <a name="individual-consumers-b-to-c"></a>[Banakako kontsumitzaileak (negoziotik bezerora)](#tab/b2c)
-
-Neurketa txantiloi erabilgarriak: 
+Neurketa txantiloi erabilgarriak:
 - Transakzioen batezbesteko balioa
 - Transakzioaren balioa, guztira
 - Eguneko batezbesteko diru-sarrerak
+- Hileko batezbesteko diru-sarrerak
 - Urteko batezbesteko diru-sarrerak
 - Transakzio kopurua
 - Irabazitako fideltasun-puntuak
@@ -57,21 +56,22 @@ Neurketa txantiloi erabilgarriak:
 
 1. Hautatu **Eginda**.
 
-1. Hurrengoan **Ezarri denbora tartea** atalean, zehaztu erabili beharreko datuen denbora-tartea. Aukeratu neurri berriak datu multzo osoa estaltzea nahi baduzu hautatuz **Denbora guztian**, edo neurria a ardatz izatea nahi baduzu **Denbora-tarte zehatza**.
+1. urtean **Ezarri denbora-epea** atalean, zehaztu datuen denbora-tartea. Aukeratu neurri berriak datu multzo osoa estaltzea nahi baduzu hautatuz **Denbora guztian**, edo neurria a ardatz izatea nahi baduzu **Denbora-tarte zehatza**.
 
    :::image type="content" source="media/measure-set-time-period.png" alt-text="Neurria txantiloi batetik konfiguratzerakoan denbora tartea erakusten duen pantaila-argazkia.":::
 
 1. Hurrengo atalean, hautatu **Gehitu datuak** jarduerak aukeratzeko eta dagozkion datuak mapatzeko *Jarduera bateratua* entitatea.
 
-    1. 1. urratsa: 2. azpian **Jarduera mota**, aukeratu erabili nahi duzun entitatearen mota. Hurrengorako **Jarduerak**, hautatu mapatu nahi dituzun entitateak.
-    1. 2. urratsa 2: aukeratu atributua *Jarduera bateratua* formulak eskatzen duen osagaiaren entitatea. Adibidez, Transakzioaren batez besteko balioa, Transakzio balioa adierazten duen atributua da. Hurrengorako **Jardueren denbora-marka**, aukeratu aktibitatea jardueraren data eta ordua adierazten duen Jarduera bateratuko entitatearen artean.
-   
-1. Datuen mapak arrakasta izan ondoren, egoera honela ikus dezakezu **Osatua** eta mapatutako jardueren eta atributuen izena.
+    1. 1. urratsa: 2. azpian **Jarduera mota**, aukeratu erabili nahi duzun entitatearen mota. Izan ere **Jarduerak**, hautatu mapatu nahi dituzun entitateak eta, gero, hautatu **Hurrengoa**.
+    1. 2. urratsa 2: aukeratu atributua *Jarduera bateratua* formulak eskatzen duen osagaiaren entitatea. Adibidez, Transakzioaren batez besteko balioa, Transakzio balioa adierazten duen atributua da. Izan ere **Jardueraren denbora-zigilua**, aukeratu atributua *Jarduera bateratua* jardueraren data eta ordua adierazten duen entitatea.
+    1. Sakatu **Gorde**.
 
-1. Orain hauta dezakezu **Exekutatu** neurriaren emaitzak kalkulatzeko. Geroago fintzeko, hautatu **Gorde zirriborroa**.
+    Datuen mapaketa arrakastatsua denean, egoera erakusten da **Osatu** eta mapatutako jardueren eta atributuen izena bistaratzen dute.
 
-# <a name="business-accounts-b-to-b"></a>[Negozio-kontuak (negoziotik negoziora)](#tab/b2b)
+1. Hautatu **Korrika egin** neurriaren emaitzak kalkulatzeko. Hautatu **Gorde zirriborroa** uneko konfigurazioa mantendu eta neurria geroago exekutatu nahi baduzu. The **Neurriak** orrialdeak bistaratzen ditu.
 
-Funtzio hau bezero partikularrak helburu nagusi dituzten inguruneetan sortutako neurrietarako bakarrik dago erabilgarri.
+## <a name="next-step"></a>Hurrengo urratsa
 
----
+Erabili lehendik dauden neurriak sortzeko [bezeroen segmentu bat](segments.md).
+
+[!INCLUDE [footer-include](includes/footer-banner.md)]

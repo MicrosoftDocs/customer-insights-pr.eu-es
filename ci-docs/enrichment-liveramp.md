@@ -8,20 +8,20 @@ ms.topic: how-to
 author: kishorem-ms
 ms.author: kishorem
 manager: shellyha
-ms.openlocfilehash: 334440493c50448005ec90d0cfac11358d677b73
-ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
+ms.openlocfilehash: 49bf558209ca91ab9d8db945862a57adccee1f6b
+ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
 ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9082190"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "9196333"
 ---
 # <a name="enrich-customer-profiles-with-identity-data-from-liveramp-preview"></a>Aberastu bezeroen profilak LiveRamp-eko identitate-datuekin (aurrebista)
 
-LiveRamp-ek lineaz kanpoko identitatearen ebazpen deterministikoa eta bezeroen datuen finkapena eskaintzen du. Zure bezeroen datuetan identifikatzaile pertsonalak mapa ditzakezu AbiliTec identitate grafikoarekin eta AbiliTec IDak jaso ditzakezu. Orduan ID hauek erabil ditzakezu zure bezeroen datuak hobeto bateratzeko.
+LiveRamp-ek lineaz kanpoko identitatearen ebazpen determinista eta bezeroen datuen finkapena eskaintzen du. Zure bezeroen datuetan identifikatzaile pertsonalak mapa ditzakezu AbiliTec identitate grafikoarekin eta AbiliTec IDak jaso. Orduan ID hauek erabil ditzakezu zure bezeroen datuak hobeto bateratzeko.
 
 ## <a name="supported-countriesregions"></a>Lagundutako herrialde / eskualdeak
 
-Gaur egun, bezeroen profilak LiveRamp datuekin aberastea onartzen dugu Estatu Batuetan soilik.
+Une honetan, bezeroen profilak LiveRamp datuekin aberastea onartzen dugu Estatu Batuetan soilik.
 
 ## <a name="prerequisites"></a>Aurrebaldintzak
 
@@ -33,7 +33,7 @@ Gaur egun, bezeroen profilak LiveRamp datuekin aberastea onartzen dugu Estatu Ba
 
 ## <a name="configure-the-connection-for-liveramp"></a>Konfiguratu LiveRamp-erako konexioa
 
-Bat izan behar duzu [administratzailea](permissions.md#admin) Customer Insights-en eta LiveRamp bezero ID eta sekretu aktibo bat eduki.
+Bat izan behar duzu [administratzailea](permissions.md#admin) Customer Insights-en eta LiveRamp bezero ID eta sekretu aktibo bat izan.
 
 1. Hautatu **Gehitu konexioa** aberaste bat konfiguratzean, edo joan hona **Admin** > **Konexioak** eta hautatu **Konfiguratu** LiveRamp fitxan.
 
@@ -47,7 +47,7 @@ Bat izan behar duzu [administratzailea](permissions.md#admin) Customer Insights-
 
 ### <a name="data-privacy-and-compliance"></a>Datuen pribatutasuna eta arau-gordetzea
 
-Gaitzen duzunean Dynamics 365 Customer Insights LiveRamp-era datuak transmititzeko, datuak betetze-mugetatik kanpo transferitzea onartzen duzu Dynamics 365 Customer Insights, potentzialki sentikorrak diren datuak barne, hala nola Datu Pertsonalak. Microsoft-ek datu horiek transferituko ditu zure aginduetara, baina LiveRamp-ek izan ditzakezun pribatutasun- edo segurtasun-betebeharrak betetzen dituela ziurtatzeko ardura zara. Informazio gehiagorako, berrikusi [Microsoft Pribatutasun-adierazpena](https://go.microsoft.com/fwlink/?linkid=396732). Dynamics 365 Customer Insights administratzaileak edonoiz ken dezake aberastea funtzio hau erabiltzeari uzteko.
+Gaitzen duzunean Dynamics 365 Customer Insights LiveRamp-era datuak transmititzeko, datuen transferentzia onartzen duzu betetze-mugatik kanpo Dynamics 365 Customer Insights, potentzialki sentikorrak diren datuak barne, hala nola Datu Pertsonalak. Microsoft-ek datu horiek transferituko ditu zure aginduetara, baina LiveRamp-ek izan ditzakezun pribatutasun- edo segurtasun-betebeharrak betetzen dituela ziurtatzeko ardura zara. Informazio gehiagorako, berrikusi [Microsoft Pribatutasun-adierazpena](https://go.microsoft.com/fwlink/?linkid=396732). Dynamics 365 Customer Insights administratzaileak edonoiz ken dezake aberastea funtzio hau erabiltzeari uzteko.
 
 ## <a name="configure-the-enrichment"></a>Konfiguratu aberastea
 
@@ -59,11 +59,11 @@ Gaitzen duzunean Dynamics 365 Customer Insights LiveRamp-era datuak transmititze
 
 1. Berrikusi ikuspegi orokorra eta, ondoren, hautatu **Hurrengoa**.
 
-1. Hautatu konexioa. Jarri harremanetan administratzaile batekin erabilgarri ez badago.
+1. Hautatu konexioa. Jarri harremanetan administratzaile batekin konexiorik ez badago.
 
 1. Hautatu **Hurrengoa**.
 
-1. Hautatu **Bezeroaren datu multzoa** eta aukeratu LiveRamp-eko identitate-datuekin aberastu nahi duzun profila edo segmentua. The *Bezeroa* entitateak zure bezero-profil guztiak aberasten ditu, eta segmentu batek segmentu horretan dauden bezero-profilak soilik aberasten ditu.
+1. Hautatu **Bezeroaren datu multzoa** eta aukeratu LiveRamp-eko identitate-datuekin aberastu nahi duzun profila edo segmentua. The *Bezeroa* entitateak zure bezero-profil guztiak aberasten ditu, segmentu batek segmentu horretan dauden bezero-profilak soilik aberasten ditu.
 
 1. Definitu zure profil bateratuetako zein eremu mota erabili LiveRamp-eko identitate-datuak bat etortzeko. Gutxienez eremuetako bat **Izena eta helbidea**, **elektronikoa**, edo **Mugikorra** beharrezkoa da. Bat-etortzeen zehaztasun handiagoa lortzeko, gehitu beste eremu batzuk. Hautatu **Hurrengoa**.
 
@@ -83,7 +83,7 @@ Gaitzen duzunean Dynamics 365 Customer Insights LiveRamp-era datuak transmititze
 
 [!INCLUDE [enrichment-results](includes/enrichment-results.md)]
 
-The **Alorka aberastutako bezero kopurua** aberasturiko eremu bakoitzaren estaldura sakontzen du.
+The **Alorka aberastutako bezero kopurua** eremu aberastu bakoitzaren estaldura sakontzea eskaintzen du.
 
 ## <a name="next-steps"></a>Hurrengo urratsak
 

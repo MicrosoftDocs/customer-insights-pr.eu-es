@@ -13,18 +13,16 @@ searchScope:
 - ci-map
 - ci-match
 - customerInsights
-ms.openlocfilehash: 27dff3551ab411a12c273536d7431d651c48573e
-ms.sourcegitcommit: 6a5f4312a2bb808c40830863f26620daf65b921d
-ms.translationtype: MT
+ms.openlocfilehash: a838fbdabdb3bfffc6d3835a3f0e97306a43964a
+ms.sourcegitcommit: 3c5b0b40b2b45e420015bbdd228ce0e610245e6f
+ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "8742918"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "9139414"
 ---
 # <a name="remove-duplicates-before-unifying-data"></a>Kendu bikoiztuak datuak bateratu aurretik
 
-[!INCLUDE [m3-prod-trial-note](includes/m3-prod-trial-note.md)]
-
-Bateratze-urrats honek aukera ematen dizu entitate baten barruan erregistro bikoiztuak kudeatzeko arauak konfiguratzeko. *Desduplikatzea* erregistro bikoiztuak identifikatzen ditu eta erregistro batean batzen ditu. Iturburu erregistroak bateratutako erregistroarekin lotzen dira ID ordezkoekin. Arauak konfiguratzen ez badira, sistemak definitutako arauak aplikatuko dira.
+Bateratzearen urrats honek aukera ematen dizu entitate baten barruan erregistro bikoiztuak kudeatzeko arauak konfiguratzeko. *Desduplikatzea* erregistro bikoiztuak identifikatzen ditu eta erregistro batean batzen ditu. Iturburu erregistroak bateratutako erregistroarekin lotzen dira ID ordezkoekin. Arauak konfiguratzen ez badira, sistemak definitutako arauak aplikatuko dira.
 
 ## <a name="include-enriched-entities-preview"></a>Sartu entitate aberastuak (aurrebista)
 
@@ -48,11 +46,11 @@ datu-iturburu mailan entitateak aberastu badituzu zure bateratzearen emaitzak ho
         - **Zenbakiak** : Beste zenbaki-sistema batzuk, esate baterako, zenbaki erromatarrak, zenbaki arabiar bihurtzen ditu. *VIII* bihurtzen *8*.
         - **Sinboloak** : ikur eta karaktere berezi guztiak kentzen ditu. *Burua eta Sorbalda* bihurtzen da *HeadShoulder*.
         - **Testua minuskula bihurtu: karaktere guztiak minuskula bihurtzen ditu**. *MAIUSU GUZTIAK eta Izenburua* bihurtzen da *maiuskula guztiak eta izenburua*.
-        - **Mota (Telefonoa, Izena, Helbidea, Erakundea)** : Izenak, izenburuak, telefono zenbakiak, helbideak, etab estandarizatzen ditu.
+        - **Mota (Telefonoa, Izena, Helbidea, Erakundea)** : Izenak, izenburuak, telefono zenbakiak, helbideak eta abar estandarizatzen ditu.
         - **Unicode ASCIIra** : Unicode notazioa ASCII karaktere bihurtzen du. */u00B2* bihurtzen da *2*.
         - **Zuriunea** : zuriune guztiak kentzen ditu. *Kaixo   Mundua* bihurtzen da *KaixoMundua*.
       - **Zehaztasuna**: zehaztu baldintza hau aplikatzeko zehaztasun maila.
-        - **Oinarrizkoa** : Aukeratu *Baxua (%30)*, *(%60)*, *(%80)*, eta *Zehatza (% 100)*. Hautatu **Zehatza** ehuneko 100ean bat datozen erregistroak soilik lotzeko.
+        - **Oinarrizkoa** : Aukeratu *Baxua (%30)*, *(%60)*, *(%80)*, eta *Zehatza (%100)*. Hautatu **Zehatza** ehuneko 100ean bat datozen erregistroak soilik lotzeko.
         - **Pertsonalizatua**: ezarri erregistroek bat etorri behar duten ehunekoa. Sistemak atalase hori gainditzen duten erregistroak baino ez ditu bat etorriko.
       - **Izena** : Arauaren izena.
 
@@ -97,7 +95,7 @@ Desduplicazio-prozesuak desbikoiztutako entitate berri bat sortzen du iturburuko
 Bikoiztuak desegiteko irteerako entitate batek informazio hau dauka:
 
 - IDak eta gakoak
-  - Gako nagusia eta Ordezko ID eremuak. Ordezko ID eremua erregistro baterako identifikatutako ordezko ID guztiek osatzen dute.
+  - Gako nagusia eta ordezko ID eremuak. Ordezko ID eremua erregistro baterako identifikatutako ordezko ID guztiek osatzen dute.
   - Deduplication_GroupId eremuak zehaztutako bikoiztuak desegiteko eremuetan oinarritutako antzeko erregistro guztiak multzokatzen dituen entitate baten barruan identifikatutako taldea edo klusterra erakusten du. Sistema prozesatzeko helburuarekin erabiltzen da. Eskuzko bikoiztuak desegiteko araurik zehazten ez bada eta sistemak definitutako bikoiztuak desegiteko arauak aplikatzen badira, baliteke eremu hori bikoiztuak desegiteko irteerako entitatean ez aurkitzea.
   - Deduplication_WinnerId: eremu honek identifikatutako talde edo klusterren irabazlearen IDa dauka. Deduplication_WinnerId erregistroaren gako nagusiaren balioaren berdina bada, erregistroa irabazle erregistroa dela esan nahi du.
 - Bikoiztuak desegiteko arauak definitzeko erabiltzen diren eremuak.

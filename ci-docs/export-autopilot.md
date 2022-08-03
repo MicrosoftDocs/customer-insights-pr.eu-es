@@ -1,52 +1,53 @@
 ---
 title: Esportatu segmentuak Autopilot-era (aurrebista)
 description: Ikasi konexioa konfiguratzen eta pilotu automatora esportatzen.
-ms.date: 10/08/2021
+ms.date: 07/25/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: e3af3d03e70c4ce9d229c84c582ec4f302be8c9f
-ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
+ms.openlocfilehash: 449d2c5e32697e4a5d2c9dff4a5a1cbdb26aeb4d
+ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
 ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9082526"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "9195045"
 ---
 # <a name="export-segments-to-autopilot-preview"></a>Esportatu segmentuak Autopilot-era (aurrebista)
 
-Esportatu bezeroen profil bateratuen segmentuak Autopilot kontaktu zerrendetara eta erabili kanpainak eta posta elektronikoa merkaturatzeko Autopilot-en. 
+Esportatu bezeroen profil bateratuen segmentuak Autopilot kontaktu zerrendetara eta erabili kanpainak eta posta elektronikoa merkaturatzeko Autopilot-en.
 
 ## <a name="prerequisites-for-a-connection"></a>Konexioaren aurrebaldintzak
 
--   Baduzu [Autopilot kontua](https://www.autopilothq.com/) eta dagozkion administratzaile kredentzialak.
--   Zuk daukazu [konfiguratutako segmentuak](segments.md) Bezeroen Insights-en.
--   Esportatutako segmentuetako bezeroen profil bateratuek helbide elektronikoa adierazten duen eremua dute.
+- An [Pilotu automatikoaren kontua](https://www.autopilothq.com/) eta dagozkion administratzailearen kredentzialak.
+- An [Autopilot API gakoa](https://autopilot.docs.apiary.io/#)
+- [Konfiguratutako segmentuak](segments.md) Bezeroen Insights-en.
+- Esportatutako segmentuetako bezeroen profil bateratuek helbide elektronikoa adierazten duen eremua dute.
 
 ## <a name="known-limitations"></a>Muga ezagunak
 
-- Esportazio bakoitzeko 100.000 bezero profila guztira Autopilot-en.
-- Autopilot-era esportatzea segmentuetara mugatuta dago.
-- 100.000 arte bezero profil Autopilot-en dituzten segmentuak esportatzen ordu gutxi behar izan ditzakete osatzeko. 
-- Autopilot-era esporta ditzakezun bezeroen profil kopurua Autopilot-ekin duzun kontratuaren menpe dago eta mugatua da.
+- Gehienez 100.000 bezero-profil esportazio bakoitzeko Autopilot-era, eta hori osatzeko ordu batzuk behar izan daitezke. Autopilot-era esporta dezakezun bezero-profilen kopurua Autopilot-ekin duzun kontratuaren araberakoa da.
+- Segmentuak soilik.
 
 ## <a name="set-up-connection-to-autopilot"></a>Konfiguratu konexioa Autopilot-era
 
+[!INCLUDE [export-connection-include](includes/export-connection-admn.md)]
+
 1. Joan **Administratzailea** > **Konexioak**.
 
-1. Hautatu **Gehitu konexioa** eta aukeratu **Autopilot** konexioa konfiguratzeko.
+1. Hautatu **Gehitu konexioa** eta aukeratu **Pilotu automatikoa**.
 
 1. Eman zure konexioa ezaguna den izena **Bistaratze izena** eremua. Izena eta konexio motak konexio bat deskribatzen du. Konexio honen xedea eta xedea azaltzen duen izena aukeratzea gomendatzen dugu.
 
-1. Aukeratu nork erabil dezakeen konexioa. Inolako neurririk hartzen ez baduzu, lehenetsia izango da Administratzaileak. Informazio gehiagorako, ikus [Baimendu laguntzaileei esportazioetarako konexioa erabiltzea](connections.md#allow-contributors-to-use-a-connection-for-exports).
+1. Aukeratu nork erabil dezakeen konexioa. Berez, administratzaileak soilik dira. Informazio gehiagorako, ikus [Baimendu laguntzaileei esportazioetarako konexioa erabiltzea](connections.md#allow-contributors-to-use-a-connection-for-exports).
 
-1. Sartu zure [Pilotatze automatikoaren API gakoa](https://autopilot.docs.apiary.io/#).
+1. Sartu zure Pilotatze automatikoaren API gakoa.
 
-1. Aukeratu **ados** baieztatzeko **Datuen pribatutasuna eta betetzea**.
+1. Berrikusi [datuen pribatutasuna eta betetzea](connections.md#data-privacy-and-compliance) eta hautatu **ados**.
 
-1. Aukeratu **Konektatu** Autopilot-eko konexioa hasieratzeko.
+1. Hautatu **Konektatu** konexioa hasieratzeko.
 
 1. Aukeratu **Gehitu zeure burua esportazio erabiltzaile gisa** eta eman zure Customer Insights kredentzialak.
 
@@ -54,28 +55,24 @@ Esportatu bezeroen profil bateratuen segmentuak Autopilot kontaktu zerrendetara 
 
 ## <a name="configure-an-export"></a>Konfiguratu esportazio bat
 
-Esportazio hau konfigura dezakezu mota honetako konexiorako sarbidea baduzu. Informazio gehiagorako, ikusi [Esportazioa konfiguratzeko beharrezkoak diren baimenak](export-destinations.md#set-up-a-new-export).
+[!INCLUDE [export-permission-include](includes/export-permission.md)]
 
 1. Joan **Datuak** > **Esportazioak**.
 
-1. Esportazio berria sortzeko, hautatu **Gehitu helmuga**.
+1. Hautatu **Gehitu esportazioa**.
 
-1. Hurrengoan **Konexioa esportatzeko** eremuan, aukeratu konexioa Autopilot sekzioan. Atal honen izena ikusten ez baduzu, ez dago mota honetako konexiorik erabilgarri.
+1. Hurrengoan **Konexioa esportatzeko** eremuan, aukeratu konexioa Autopilot sekzioan. Jarri harremanetan administratzaile batekin konexiorik ez badago.
 
-1. Urtean **Datuen bat etortzea** atalean, **Posta elektronikoa** eremua, hautatu bezeroaren helbide elektronikoa adierazten duen eremua. Errepikatu urrats berak aukerako beste eremu batzuetarako, esaterako **izena** eta **abizena**.
+1. Idatzi esportaziorako izen bat.
 
-1. Hautatu esportatu nahi dituzun segmentuak. Biziki **gomendatzen dugu 100.000 bezero profil baino gehiago ez esportatzea guztira** Autopilot-era. 
+1. Urtean **Datuen bat etortzea** atalean, **Posta elektronikoa** eremua, hautatu bezeroaren helbide elektronikoa adierazten duen eremua.
+
+1. Aukeran, esportatu beste eremu batzuk, adibidez **izen** eta **abizen**.
+
+1. Hautatu esportatu nahi dituzun segmentuak ezagutzen diren mugei atxikita.
 
 1. Sakatu **Gorde**.
 
-Esportazio bat gordetzeak ez du esportazioa berehala exekutatzen.
-
-Esportazioa guztiekin egiten da [freskatze programatua](system.md#schedule-tab). Ere egin dezakezu [esportatu eskariaren arabera](export-destinations.md#run-exports-on-demand). 
-
-## <a name="data-privacy-and-compliance"></a>Datuen pribatutasuna eta arau-gordetzea
-
-Dynamics 365 Customer Insights gaitzen duzunean datuak Autopilot-era bidaltzeko, datuak betetzeko mugatik kanpo transferitzea baimentzen duzu Dynamics 365 Customer Insights-erako, datu pertsonalak bezalako datu sentikorrak barne. Microsoft-ek datu horiek transferituko ditu zure aginduz, baina zure ardura da Autopilot-ek pribatutasun- edo segurtasun-betebeharrak betetzen dituela ziurtatzea. Informazio gehiago eskuratzeko, ikusi [Microsoft-en pribatutasun-adierazpena](https://go.microsoft.com/fwlink/?linkid=396732).
-Funtzio hau erabiltzeari uzteko, Dynamics 365 Customer Insights-en administratzaileak esportazioaren helburuko kokalekua edonoiz ken dezake.
-
+[!INCLUDE [export-saving-include](includes/export-saving.md)]
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

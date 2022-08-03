@@ -1,7 +1,7 @@
 ---
 title: Datuen iturburuen ikuspegi orokorra
 description: Ikasi hainbat iturritatik datuak inportatu edo sartzen.
-ms.date: 05/18/2022
+ms.date: 07/26/2022
 ms.subservice: audience-insights
 ms.topic: overview
 author: mukeshpo
@@ -12,20 +12,20 @@ searchScope:
 - ci-data-sources
 - ci-create-data-source
 - customerInsights
-ms.openlocfilehash: fbe44f655bdbc20ef7f0956022395e2dcb570adf
-ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
+ms.openlocfilehash: 6ab97c535454e84c1bb18aca00bca2568eb65a2a
+ms.sourcegitcommit: 5807b7d8c822925b727b099713a74ce2cb7897ba
 ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9051438"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "9207076"
 ---
 # <a name="data-sources-overview"></a>Datuen iturburuen ikuspegi orokorra
 
 Dynamics 365 Customer Insights konexioak eskaintzen ditu iturri multzo zabal bateko datuak ekartzeko. datu-iturburu-era konektatzearen prozesua sarritan aipatzen da *datuen irenstea*. Datuak hartu ondoren, egin dezakezu [bateratu](data-unification.md), sortu ikuspegiak eta aktibatu datuak esperientzia pertsonalizatuak eraikitzeko.
 
-## <a name="add-data-sources"></a>Gehitu datu-iturburuak
+## <a name="add-or-edit-data-sources"></a>Gehitu edo editatu datu-iturriak
 
-Datu-iturriak erantsi edo inporta ditzakezu Customer Insights-era. Beheko esteketan datu-iturriak gehitzeko argibideak ematen dira.
+Datu-iturriak erantsi edo inporta ditzakezu Customer Insights-era. Beheko esteketan datu-iturriak gehitzeko eta editatzeko argibideak ematen dira.
 
 **Erantsi datu-iturburu bat**
 
@@ -41,22 +41,27 @@ Datu iturri lokalak, Microsoft edo hirugarrenen datuak erabiltzen badituzu, inpo
 
 ## <a name="review-data-sources"></a>Berrikusi datu-iturriak
 
-Zure ingurunea Customer Insights biltegia erabiltzeko konfiguratuta badago eta tokiko datu-iturburuak erabiltzen badituzu, erabiliko duzu Power Platform datu-fluxuak. Horrekin Power Platform datu-fluxuak, partekatutako datu-iturriak eta besteek kudeatutako datu-iturriak ikus ditzakezu. The **Datu-iturriak** orrialdeak hiru ataletan zerrendatzen ditu datu-iturriak:
+Zure ingurunea Customer Insights biltegia erabiltzeko konfiguratuta bazegoen eta tokiko datu-iturburuak erabiltzen badituzu, erabiltzen duzu Power Platform datu-fluxuak. Horrekin Power Platform datu-fluxuak, partekatutako datu-iturriak eta besteek kudeatutako datu-iturriak ikus ditzakezu. The **Datu-iturriak** orrialdeak hiru ataletan zerrendatzen ditu datu-iturriak:
 - **Partekatua** : Customer Insights administratzaile guztiek kudeatu ditzaketen datu-iturriak. Power Platform datu-fluxuak, zure biltegiratze-kontua eta a Dataverse -kudeatutako data lake partekatutako datu-iturrien adibideak dira.
 - **Nik kudeatzen dut** :Power Platform Zuk bakarrik sortu eta kudeatutako datu-fluxuak. Customer Insights-eko beste administratzaileek datu-fluxu hauek soilik ikus ditzakete, baina ez editatu, freskatu edo ezabatu.
-- **Beste batzuek kudeatzen dute** :Power Platform beste administratzaileek sortutako datu-fluxuak. Horiek bakarrik ikus ditzakezu. Edozein laguntza lortzeko harremanetan jartzeko datu-fluxuaren jabea zerrendatzen du.
+- **Beste batzuek kudeatzen dute** :Power Platform beste administratzaile batzuek sortutako datu-fluxuak. Horiek bakarrik ikus ditzakezu. Edozein laguntza lortzeko harremanetan jartzeko datu-fluxuaren jabea zerrendatzen du.
 > [!NOTE]
 > Entitate guztiak beste erabiltzaileek ikusi eta erabil ditzakete. Datu-iturriak sortu dituen erabiltzailearen jabetzakoak diren arren, datuen ingestetik sortutako entitateak Customer Insights-eko erabiltzaile guztiek erabil ditzakete.
 
 Zure inguruneak erabiltzen ez badu Power Platform datu-fluxuak, **Datu-iturriak** orrialdeak datu-iturburu guztien zerrenda baino ez dauka. Ez dago atalik bistaratzen.
 
-Joan **Datuak** > **Datu iturriak** irensten den datu-iturburu bakoitzaren izena, bere egoera eta iturri horren datuak azken aldiz freskatu diren ikusteko. Datu-iturburuen zerrenda zutabe bakoitzaren arabera ordenatu dezakezu.
+## <a name="manage-existing-data-sources"></a>Kudeatu lehendik dauden datu-iturriak
 
-:::image type="content" source="media/configure-data-datasource-added.png" alt-text="Gehitutako datu-iturriak.":::
+Joan **Datuak** > **Datu-iturriak** irensten den datu-iturburu bakoitzaren izena, bere egoera eta iturri horren datuak azken aldiz freskatu diren ikusteko. Datu-iturburuen zerrenda edozein zutaberen arabera ordena dezakezu edo bilaketa-koadroa erabili kudeatu nahi duzun datu-iturburu aurkitzeko.
 
-[!INCLUDE [progress-details-include](includes/progress-details-pane.md)]
+Hautatu datu-iturburu bat erabilgarri dauden ekintzak ikusteko.
 
-Datuak kargatzeak denbora behar dezake. Freskatu ondoren, iradokitako datuak berrikusi daitezke **erakundeak** orria. Informazio gehiago lortzeko, [Entitateak](entities.md).
+:::image type="content" source="media/data_sources_showmore.png" alt-text="Gehitutako datu-iturriak.":::
+
+- [**Editatu**](#add-or-edit-data-sources) datu-iturburu bere propietateak aldatzeko.
+- [**Freskatu**](#refresh-data-sources) datu-iturburu azken datuak sartzeko.
+- [**Aberastu**](data-sources-enrichment.md) datu-iturburu bateratu aurretik.
+- **Ezabatu** datu-iturburu. datu-iturburu bat ezabatu daiteke datuak prozesamendu batean erabiltzen ez badira, hala nola bateratzean, ikuspegietan, aktibazioetan edo esportazioetan.
 
 ## <a name="refresh-data-sources"></a>Freskatu datu-iturburuak
 
@@ -64,23 +69,12 @@ Datu-iturburuak antolaketa automatikoan freska daitezke edo eskuz freskatu, beha
 
 Joan **Admin** > **Sistema** > [**Ordutegia**](system.md#schedule-tab) sartutako datu-iturburuen sistemak programatutako freskaketak konfiguratzeko.
 
-Eskatu ahalako datu-iturburu bat freskatzeko, jarraitu urrats hauek:
+Eskaeraren arabera datu-iturburu bat freskatzeko:
 
 1. Joan **Datuak** > **Datu-iturburuak**.
 
-1. Hautatu elipsi bertikala (&vellip;) freskatu eta hautatu nahi duzun datu-iturburu ondoan **Freskatu** goitibeherako zerrendatik. Datu-iturburua eskuz eguneratzeko aktibatuta dago. datu-iturburu freskatzeak entitatearen eskema eta datuak eguneratuko ditu datu-iturburu-en zehaztutako entitate guztientzat.
+1. Hautatu freskatu nahi duzun datu-iturburu eta hautatu **Freskatu**. Datu-iturburua eskuz eguneratzeko aktibatuta dago. datu-iturburu freskatzeak entitatearen eskema eta datuak eguneratuko ditu datu-iturburu-en zehaztutako entitate guztientzat.
 
-1. Aukeratu **Freskatzeari utzi** lehendik dagoen freskatzea bertan behera utzi nahi baduzu, eta datu-iturburua bere azken eguneratze-egoerara itzuliko da.
-
-## <a name="delete-a-data-source"></a>Ezabatu datu-iturri bat
-
-datu-iturburu bat ezabatu daiteke datuak prozesamendu batean erabiltzen ez badira, hala nola bateratzean, ikuspegietan, aktibazioetan edo esportazioetan.
-
-1. Joan **Datuak** > **Datu-iturburuak**.
-
-2. Hautatu elipsi bertikala (&vellip;) kendu eta hautatu nahi duzun datu-iturburu ondoan **Ezabatu** goitibeherako menutik.
-
-3. Berretsi ezabatu nahi duzula.
-
+1. Hautatu egoera irekitzeko **Aurrerapen xehetasunak** panela eta ikusi aurrerapena. Lana bertan behera uzteko, hautatu **Utzi lana** panelaren behealdean.
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

@@ -1,7 +1,7 @@
 ---
-title: 'Bezeroen profilak: Bilatu eta iragazi indizea'
+title: Kudeatu bezeroen profilen bilaketa eta iragazki indizea
 description: Aurki itzazu zehaztutako atributuetarako bezeroen profil bateratuei eta iragazkiari buruzko informazioa.
-ms.date: 11/01/2021
+ms.date: 07/22/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -11,59 +11,64 @@ manager: shellyha
 searchScope:
 - ci-search-filter
 - customerInsights
-ms.openlocfilehash: fc076e341f744ac2922dcacdf5f20ae8ecbdbaa0
-ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
+ms.openlocfilehash: dfbfcbff3ffb3e4483252377e591229631d38556
+ms.sourcegitcommit: c45c3e044034bf866b0662f80a59166cee4ababe
 ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9050794"
+ms.lasthandoff: 07/22/2022
+ms.locfileid: "9187894"
 ---
-# <a name="customer-profiles-search--filter-index"></a>Bezeroen profilak: Bilatu eta iragazi indizea
+# <a name="manage-the-search--filter-index-for-customer-profiles"></a>Kudeatu bezeroen profilen bilaketa eta iragazki indizea
 
-Zure bezeroen datuak bateratzearen emaitza Bezeroaren Profilaren entitatea da zure bezero base guztiari ikuspegi bateratua ematen diona. Azkar egiteko [bezero edo talde jakin bati buruzko informazioa bilatu](customer-profiles.md), konfigura dezakezu **Bilatu** eta **Iragazi** gaitasunak **Bezeroak** orria. Irakurri gehiago administratzaileek gailuan atributuak edita ditzaketen jakiteko **Bilatu eta iragazi indizea** orrialdea, erabiltzaileak bilatzeko eta iragazteko erabilgarri daudenak.
+Zure bezeroen datuak bateratzearen emaitza a da *Bezeroa* zure bezero-base osoaren ikuspegi bateratua eskaintzen duen entitatea. Erabiltzaileek azkar egin dezaten [bezero edo bezero talde jakin bati buruzko informazioa aurkitzea](customer-profiles.md), administratzaile batek konfiguratu behar du **Bilatu** eta **Iragazkia** rako gaitasunak **Bezeroak** orrialdea.
 
    :::image type="content" source="media/search-filter.png" alt-text="Bilaketa-iragazkia":::
 
-[!INCLUDE [progress-details-include](includes/progress-details-pane.md)]
+## <a name="define-searchable-attributes-and-indexed-fields"></a>Definitu bilaketa daitezkeen atributuak eta indexatutako eremuak
 
-## <a name="add-fields-and-specify-attributes"></a>Gehitu eremuak eta zehaztu atributuak
+Administratzaile gisa bilaketa daitezkeen atributuak definitzen dituzun lehen aldia bada, definitu lehenik indexatutako eremuak. Erabiltzaileek bezeroak bilatu eta iragazi ditzaketen atributu guztiak aukeratzea gomendatzen dizugu **Bezeroak** orria. -n dauden atributuak soilik *Bezeroa* datuak bateratzeko prozesuan sortutako entitatea zehaztu daiteke.
 
-Bilaketa atributuak administratzaile gisa definitzen dituzun lehen aldia bada, indexatu beharreko eremuak lehenik definitu behar dituzu. Erabiltzaileek bezeroak bilatu eta iragazi ditzaketen atributu guztiak aukeratzea gomendatzen dizugu **Bezeroak** orria. Datuak bateratzeko prozesuan sortutako Bezero Profilaren entitatean dauden atributuak soilik zehaztu ditzakezu.
+1. Joan **Bezeroak** eta hautatu **Bilatu eta iragazi indizea**.
 
-1. Ireki **Bezeroak** orria eta hautatu **Bilatu eta iragazi indizea**.
+1. Hautatu **+ Gehitu**.
 
-2. Hautatu **+ Gehitu** zehazteko indexatutako eremuak.
+1. Hautatu indexatutako eremu gisa gehitu nahi dituzun zerrendako atributuak eta egin klik **Aplikatu**.
 
-3. Hautatu indexatutako eremu gisa gehitu nahi dituzun zerrendan atributuak. Atributu gehiago gehitu ditzakezu **Gehitu** hautatuta. Aukeratutako atributuak ere kendu ditzakezu **Kendu** sinboloa.
+1. Atributu gehiago gehitzeko, hautatu **Gehitu**. Hautatutako atributu bat kentzeko, hautatu atributua eta gero **Ezabatu**.
 
-## <a name="explore-the-indexed-customer-fields-table"></a>Arakatu indexatutako bezeroen eremuen taula
+   :::image type="content" source="media/search-filter-index.png" alt-text="Bilatu eta iragazi indize orria.":::
 
-Taulan aurkezten da hurrengo informazioa.
+1. Hautatu **Korrika egin** bilaketa eta iragazki ezarpenak aplikatzeko prest zaudenean. Aldaketak prozesatu ondoren, ikusi itzazu [bezeroen txartelak Bezeroaren orrian](customer-profiles.md).
 
-- **izena**: Atributuaren izena Bezero Profilaren entitatean agertzen den bezala adierazten du.
+## <a name="define-filtering-options-for-a-given-attribute"></a>Definitu atributu jakin baterako iragazteko aukerak
+
+Konfiguratu bezeroak iragazteko erabil daitezkeen eremuak **Bezeroak** orrialdea.
+
+1. Joan **Bezeroak** eta hautatu **Bilatu eta iragazi indizea**.
+
+1. Hautatu atributu bat eta **Gehitu iragazkia**. Definitu emaitza kopurua eta zein ordenatan antolatuko diren. Atributuaren datu-motaren arabera, panel hauetako bat agertuko da.
+
+   - Kate motako atributuak: zehaztu nahi den emaitza kopurua **Kate-iragazkia** panela eta antolatuko diren ordena-politika.
+
+   - Zenbakizko-motako atributuak: Zehaztu tarteak **Zenbaki-iragazkia** panela eta antolatuko diren ordena-politika.
+
+   - Data-motako atributuak: Zehaztu zein tarteak **Data-iragazkia** panela eta antolatuko diren ordena-politika.
+
+1. Hautatu **Ados**. Errepikatu iragazi nahi dituzun atributu guztietan.
+
+1. Hautatu **Korrika egin** bilaketa eta iragazki ezarpenak aplikatzeko prest zaudenean. Aldaketak prozesatu ondoren, ikusi itzazu [bezeroen txartelak Bezeroaren orrian](customer-profiles.md).
+
+## <a name="view-indexed-customer-fields"></a>Ikusi indexatutako bezeroen eremuak
+
+The **Bilatu eta iragazi indizea** orrialdeak informazio hau bistaratzen du:
+
+- **Izena** : atributuaren izena adierazten du *Bezeroa* entitate.
 - **Datu mota**: Datu mota katea, zenbakia edo data den zehazten du.
 - **Bilaketa barne**: Ezartzen du atributu hau bezeroan bilatzeko **Bezeroak** orrialdea **Bilatu** eremu.
 - **Gehitu iragazkia**: Kontrola atributu hau iragaztean nola erabil daitekeen definitzeko **Bezeroak** orria.
 
-## <a name="editing-filtering-options-for-a-given-attribute"></a>Emandako atributu baten iragazketa aukerak editatzea
-
-The **Iragazi** menuan **Bezeroak** orrialdeak hainbat atributu-maila izan ditzake (adibidez, bezeroak iragazteko adin-talde desberdinak).
-
-1. Aukeratu **Gehitu iragazkia** atributu jakin batentzako gaiari buruz **Bilatu eta iragazi indizea** orria. Emaitza kopurua eta zer antolatuko diren zehaztu dezakezu. Atributuaren datu motaren arabera, panela hau agertzen da.
-
-- Kate motako atributuak: zehaztu nahi duzun emaitzen kopurua **Kate-iragazkiaren aukerak** taulan eta emaitzok antolatzeko baldintzak.
-
-- Zenbaki motako atributuak: zehaztu **Zenbaki-iragazkiaren aukerak** taulan gehitzeko interbaloak eta hauek antolatzeko baldintzak.
-
-- Datu motako atributuak: zehaztu **Datu-iragazkiaren aukerak** taulan gehitzeko interbaloak eta hauek antolatzeko baldintzak.
-
-2. Aldaketak aplikatzeko, hautatu **Gorde**.
-
-3. Aukeratu **Exekutatu** zure ezarpenak aplikatzeko prest dagoenean. Behin aldaketak prozesatuta, [Bezeroen orriko bezero-txarteletan](customer-profiles.md) aurkituko dituzu. 
-
 ## <a name="next-steps"></a>Hurrengo urratsak
 
 Berrikusi [profil bateratuen orria](customer-profiles.md) profilak bilatzeko edo aurkitutako eremuak erabiltzeko profil bateratu guztien azpimultzoa ikusteko.
-
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

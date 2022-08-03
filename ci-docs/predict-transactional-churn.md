@@ -8,12 +8,12 @@ ms.topic: how-to
 author: zacookmsft
 ms.author: zacook
 manager: shellyha
-ms.openlocfilehash: e55ca8c6926fa0bda05aaf52fd799ca25f7f585f
-ms.sourcegitcommit: b7dbcd5627c2ebfbcfe65589991c159ba290d377
+ms.openlocfilehash: b8216b5a739964fdfff8cad7e6d6d7ce3f5308b5
+ms.sourcegitcommit: 8a28e9458b857adf8e90e25e43b9bc422ebbb2cd
 ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8642188"
+ms.lasthandoff: 07/18/2022
+ms.locfileid: "9171080"
 ---
 # <a name="transaction-churn-prediction"></a>Transakzio churn iragarpena
 
@@ -120,7 +120,7 @@ Negozio kontuetan oinarritutako inguruneetarako, kontu baten transazio transakti
    >[!TIP]
    > Hautatu dezakezu **Gorde zirriborroa** edozein unetan iragarpen zirriborro gisa gordetzeko. Zirriborroaren iragarpena hemen aurkituko duzu **Nire iragarpenak** jarraitzeko fitxa.
 
-1. Sartu churn definitzeko egun kopurua **Churn definizioa** eremua. Adibidez, bezeroak azken 30 egunetan erosketarik egin ez badu, zure negoziorako galdutzat har daitezke. 
+1. Sartu txandaka definitzeko egun kopurua **Churn definizioa** eremua. Adibidez, bezeroak azken 30 egunetan erosketarik egin ez badu, zure negoziorako galdutzat har daitezke. 
 
 1. Jarraitzeko, hautatu **Hurrengoa**.
 
@@ -240,7 +240,7 @@ Gehitu erreferentzia gisa erabili nahi dituzun negozioen bezeroen eta kontuen ze
    - **Iragarpenaren izena**: sortzean emandako iragarpenaren izena.
    - **Iragarpen mota**: iragarpenean erabilitako eredu mota
    - **Irteerako entitatea**: iragarpenaren irteera gordetzeko entitatearen izena. Izen hori duen entitate bat aurki dezakezu **Datuak** > **erakundeak**.
-     Irteerako entitatean, *ChurnScore* da aurreikusitako txandaren probabilitatea eta *IsChurn* oinarritutako etiketa bitarra da *ChurnScore* 0,5 atalasearekin. Baliteke atalase lehenetsiak ez funtzionatzea zure eszenatokian. [Sortu segmentu berria](segments.md#create-a-new-segment) nahi duzun atalasearekin.
+     Irteerako entitatean, *ChurnScore* da aurreikusitako txandaren probabilitatea eta *IsChurn* oinarritutako etiketa bitarra da *ChurnScore* 0,5 atalasearekin. Baliteke atalase lehenetsiak ez funtzionatzea zure eszenatokian. [Sortu segmentu berria](segments.md#create-a-segment) nahi duzun atalasearekin.
      Bezero guztiak ez dira nahitaez bezero aktiboak. Horietako batzuek agian ez dute jarduerarik izan aspalditik eta jadanik txundituta jotzen dira, zure txandaren definizioan oinarrituta. Ez da baliagarria lehendik nahastuta dauden bezeroen arriskua aurreikustea, ez baitira interesatzen zaien publikoa.
    - **Iragarritako eremua**: Eremu hau iragarpen mota batzuetarako bakarrik betetzen da eta ez da erabiltzen galera-tasaren iragarpenean.
    - **Egoera**: iragarpenaren exekuzioaren egoera.

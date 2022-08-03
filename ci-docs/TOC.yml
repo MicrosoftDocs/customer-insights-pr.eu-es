@@ -82,11 +82,11 @@
   items:
     - name: Datuak aberasteko ikuspegi orokorra
       href: enrichment-hub.md
-    - name: '-ko kontuak Office 365 datuak'
+    - name: Honen kontuak Office 365 datuak
       href: enrichment-office.md
     - name: Markak eta zaletasunak
       href: enrichment-microsoft.md
-    - name: Dun & Bradstreet-en konpainiaren datuak
+    - name: Dun & Bradstreet enpresaren datuak
       href: enrichment-dnb.md
     - name: Leadspace-eko enpresa-datuak
       href: enrichment-leadspace.md
@@ -98,28 +98,32 @@
       href: enrichment-enhanced-company-data.md
     - name: LiveRamp-ekin identitatea
       href: enrichment-liveramp.md
-    - name: Azure Maps-en kokapena
+    - name: Kokapena Azure Maps-etik
       href: enrichment-azure-maps.md
     - name: HERE Technologies-eko kokalekua
       href: enrichment-here.md
     - name: SFTP pertsonalizatutako inportazioa
       href: enrichment-SFTP-custom-import.md
-- name: Bateratutako profilak
+- name: Bezeroen profilak eta jarduerak
   items:
-    - name: Aztertu bateratutako bezeroen profilak
+    - name: Ikusi bezeroen profilak
       href: customer-profiles.md
-    - name: Iragazi bateratutako bezeroen profilak
+    - name: Kudeatu bilaketa eta iragazki indizea
       href: search-filter-index.md
     - name: Bezeroen jarduerak definitu
       href: activities.md
     - name: Erabili baimenaren kudeaketa
       href: consent-management.md
+    - name: Erabili web-datuak pertsonalizatzeko
+      href: unknown-to-known.md
 - name: Segmentuak
   items:
     - name: Segmentuen informazio orokorra
       href: segments.md
-    - name: Sortu segmentuak
+    - name: Sortu segmentu-sorgailuarekin
       href: segment-builder.md
+    - name: Sortu segmentu bizkorrekin
+      href: segment-quick.md
     - name: Neurrietan oinarritutako iradokitako segmentuak
       href: suggested-segments.md
     - name: Jardueretan oinarritutako iradokitako segmentuak
@@ -132,9 +136,9 @@
   items:
     - name: Neurrien ikuspegi orokorra
       href: measures.md
-    - name: Sortu neurri berri bat
+    - name: Sortu neurri-eraikitzailearekin
       href: measure-builder.md
-    - name: Erabili neurri txantiloia
+    - name: Sortu txantiloiekin
       href: measure-templates.md
 - name: Iragarpenak
   items:
@@ -180,6 +184,10 @@
           href: export-destinations.md
         - name: Kanpaina aktiboa
           href: export-active-campaign.md
+        - name: Adobe Campaign Standard
+          href: export-adobe-campaign-standard.md
+        - name: Adobe Experience Platform
+          href: export-adobe-experience-platform.md
         - name: AdRoll
           href: export-adroll.md
         - name: Autopilot
@@ -190,10 +198,6 @@
           href: export-azure-data-lake-storage-gen2.md
         - name: Azure Synapse Analytics
           href: export-azure-synapse-analytics.md
-        - name: Adobe Campaign Standard
-          href: export-adobe-campaign-standard.md
-        - name: Adobe Experience Platform
-          href: export-adobe-experience-platform.md
         - name: Braze
           href: export-braze.md
         - name: Campaign Monitor
@@ -228,6 +232,8 @@
           href: export-marketo.md
         - name: Microsoft Advertising
           href: export-microsoft-advertising.md
+        - name: MoEngage
+          href: export-moengage.md
         - name: Omnisend
           href: export-omnisend.md
         - name: RollWorks

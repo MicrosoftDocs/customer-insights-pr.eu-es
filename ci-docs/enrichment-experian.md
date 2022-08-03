@@ -8,12 +8,12 @@ ms.topic: how-to
 author: kishorem-ms
 ms.author: kishorem
 manager: shellyha
-ms.openlocfilehash: a30e98b06ed07590ab95cae1d8db8023e49ff7f9
-ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
+ms.openlocfilehash: 876853ab42e8c08ad1abacb8d8a205c0aadabcf7
+ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
 ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9053006"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "9195921"
 ---
 # <a name="enrich-customer-profiles-with-demographics-from-experian-preview"></a>Aberastu bezeroen profilak datu demografikoekin Experian (aurrebista)
 
@@ -39,7 +39,7 @@ Bat izan behar duzu [administratzailea](permissions.md#admin) Customer Insights-
 
    :::image type="content" source="media/enrichment-Experian-connection.png" alt-text="Experian konexioaren konfigurazio-panela.":::
 
-1. Sartu konexiorako izen bat eta baliozko Erabiltzaile ID, Party ID eta Model Zenbakia zuretzako Experian Garraio Seguru kontua.
+1. Sartu konexiorako izen bat eta baliozko erabiltzailearen IDa, alderdiaren IDa eta eredu-zenbakia Experian Garraio Seguru kontua.
 
 1. Berrikusi eta eman zure baimena [Datuen pribatutasuna eta betetzea](#data-privacy-and-compliance) hautatuz **Ados**.
 
@@ -59,11 +59,11 @@ Gaitzen duzunean Dynamics 365 Customer Insights datuak transmititzeko Experian, 
 
 1. Berrikusi ikuspegi orokorra eta, ondoren, hautatu **Hurrengoa**.
 
-1. Hautatu konexioa. Jarri harremanetan administratzaile batekin erabilgarri ez badago.
+1. Hautatu konexioa. Jarri harremanetan administratzaile batekin konexiorik ez badago.
 
 1. Hautatu **Hurrengoa**.
 
-1. Hautatu **Bezeroaren datu multzoa** eta aukeratu datu demografikoekin aberastu nahi duzun profila edo segmentua Experian. The *Bezeroa* entitateak zure bezero-profil guztiak aberasten ditu, eta segmentu batek segmentu horretan dauden bezero-profilak soilik aberasten ditu.
+1. Hautatu **Bezeroaren datu multzoa** eta aukeratu datu demografikoekin aberastu nahi duzun profila edo segmentua Experian. The *Bezeroa* entitateak zure bezero-profil guztiak aberasten ditu, segmentu batek segmentu horretan dauden bezero-profilak soilik aberasten ditu.
 
     :::image type="content" source="media/enrichment-Experian-configuration-customer-data-set.png" alt-text="Pantaila-argazkia bezeroaren datu multzoa aukeratzerakoan.":::
 
@@ -83,7 +83,7 @@ Gaitzen duzunean Dynamics 365 Customer Insights datuak transmititzeko Experian, 
 
 [!INCLUDE [enrichment-results](includes/enrichment-results.md)]
 
-The **Alorka aberastutako bezero kopurua** aberasturiko eremu bakoitzaren estaldura sakontzen du.
+The **Alorka aberastutako bezero kopurua** eremu aberastu bakoitzaren estaldura sakontzea eskaintzen du.
 
 ## <a name="next-steps"></a>Hurrengo urratsak
 

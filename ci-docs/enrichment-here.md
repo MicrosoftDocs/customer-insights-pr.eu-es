@@ -8,16 +8,16 @@ ms.topic: how-to
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: d88085b6be156dd1c895e9e5b38cc9d77acbdb95
-ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
+ms.openlocfilehash: 26de9fce863c9832b70adf3ce39cb2ae0ce43d0e
+ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
 ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9052036"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "9196241"
 ---
 # <a name="enrich-customer-profiles-with-here-technologies-preview"></a>Aberastu bezeroen profilak HERE Teknologiekin (aurrebista)
 
-HERE Technologies kokapen-plataformako enpresa da, kokapenari buruzko datuak eta zerbitzuak eskaintzen dituena. HERE Technologies-en datuak aberasteko zerbitzuek zure bezeroei buruzko kokapen-informazioaren zehaztasuna hobetzen dute. Helbideen normalizazioa, latitudea eta longitudea ateratzea eta abar eskaintzen ditu.
+HERE Technologies kokapen-plataformako enpresa da, kokapenari buruzko datuak eta zerbitzuak eskaintzen dituena. HERE Technologies-en datuak aberasteko zerbitzuek zure bezeroei buruzko kokapen-informazioaren zehaztasuna hobetzen dute. Helbideen normalizazioa, latitudea eta longitudea erauztea eta abar eskaintzen ditu.
 
 ## <a name="prerequisites"></a>Aurrebaldintzak
 
@@ -54,11 +54,11 @@ Dynamics 365 Customer Insights administratzailea edonoiz ken dezake aberastea fu
 
 1. Berrikusi ikuspegi orokorra eta, ondoren, hautatu **Hurrengoa**.
 
-1. Hautatu konexioa. Jarri harremanetan administratzaile batekin erabilgarri ez badago.
+1. Hautatu konexioa. Jarri harremanetan administratzaile batekin konexiorik ez badago.
 
 1. Hautatu **Hurrengoa**.
 
-1. Hautatu **Bezeroaren datu multzoa** eta aukeratu HERE Teknologien datuekin aberastu nahi duzun profila edo segmentua. The *Bezeroa* entitateak zure bezero-profil guztiak aberasten ditu, eta segmentu batek segmentu horretan dauden bezero-profilak soilik aberasten ditu.
+1. Hautatu **Bezeroaren datu multzoa** eta aukeratu HERE Teknologien datuekin aberastu nahi duzun profila edo segmentua. The *Bezeroa* entitateak zure bezero-profil guztiak aberasten ditu, segmentu batek segmentu horretan dauden bezero-profilak soilik aberasten ditu.
 
 1. Zehaztu zure profil bateratuetako zein eremu mota erabiliko dituzun parekatzeko: helbidea nagusia eta/edo bigarren mailakoa. Bi helbideen eremuen mapak zehaztu ditzakezu eta bi helbideen profilak bereiz aberastu. Adibidez, etxeko helbidea eta negozioaren helbidea. Hautatu **Hurrengoa**.
 
@@ -76,7 +76,7 @@ Dynamics 365 Customer Insights administratzailea edonoiz ken dezake aberastea fu
 
 [!INCLUDE [enrichment-results](includes/enrichment-results.md)]
 
-The **Alorka aberastutako bezero kopurua** aberasturiko eremu bakoitzaren estaldura sakontzen du.
+The **Alorka aberastutako bezero kopurua** eremu aberastu bakoitzaren estaldura sakontzea eskaintzen du.
 
 ## <a name="next-steps"></a>Hurrengo urratsak
 

@@ -1,19 +1,19 @@
 ---
 title: Esportatu datuak hona Azure Synapse Analytics (aurrebista)
 description: Ikasi konexioa nola konfiguratu Azure Synapse Analytics.
-ms.date: 06/29/2022
+ms.date: 07/25/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: how-to
 author: stefanie-msft
 ms.author: sthe
 manager: shellyha
-ms.openlocfilehash: 60bacb313e0426564310f3c1339bf3b732e17489
-ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
+ms.openlocfilehash: f9c9ee55f2874ae1dcaf82f2ff17ed0fbbb7804d
+ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
 ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9082862"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "9196379"
 ---
 # <a name="export-data-to-azure-synapse-analytics-preview"></a>Esportatu datuak hona Azure Synapse Analytics (aurrebista)
 
@@ -21,58 +21,54 @@ Azure Synapse datu-biltegi eta makrodatuen sistemen ikuspegi luzea lortzeko denb
 
 ## <a name="prerequisites"></a>Aurrebaldintzak
 
-Customer Insights-etik konexioa konfiguratzeko honako baldintza hauek bete behar dira Azure Synapse.
-
 > [!NOTE]
-> Ziurtatu guztiak ezartzen dituzula **funtzioak esleitzea** azaldu bezala.  
+> Ziurtatu guztiak ezartzen dituzula **funtzioak esleitzea** azaldu bezala.
 
-## <a name="prerequisites-in-customer-insights"></a>Customer Insights-eko aurrebaldintzak
+- Customer Insights atalean, zure Azure Active Directory (AD) erabiltzaile-kontuak bat izan behar du [Administratzaile rola](permissions.md#assign-roles-and-permissions).
 
-* Zure Azure Active Directory (AD) erabiltzaile-kontuak bat du **Administratzailea** Customer Insights-en eginkizuna. Lortu informazio gehiago [erabiltzaileen baimenak ezartzea](permissions.md#assign-roles-and-permissions).
-
-Azure-n: 
+Azure-n:
 
 - Azure harpidetza aktibo bat.
 
-- Berria erabiliz gero Azure Data Lake Storage Gen2 kontua, *Customer Insights-en zerbitzu nagusia* beharrak **Biltegiratze Blob Datuen Laguntzailea** baimenak. Lortu informazio gehiago [batekin konektatuz Azure Data Lake Storage Gen2 kontua Azure zerbitzu nagusiarekin Customer Insights-erako](connect-service-principal.md). Data Lake Storage Gen2-k **behar du** [izen-leku hierarkikoa](/azure/storage/blobs/data-lake-storage-namespace) gaituta.
+- Berria erabiliz gero Azure Data Lake Storage Gen2 kontua, [Customer Insights-en zerbitzu nagusia](connect-service-principal.md) ditu **Biltegiratze Blob Datuen Laguntzailea** baimenak. Data Lake Storage Gen2-k **behar du** [izen-leku hierarkikoa](/azure/storage/blobs/data-lake-storage-namespace) gaituta.
 
-- Baliabide taldean Azure Synapse lan-eremua kokatzen da, *zerbitzu nagusia* eta *Azure AD Customer Insights-en administratzaile-baimenak dituen erabiltzailea* esleitu behar dira gutxienez **Irakurlea** baimenak. Informazio gehiagorako, ikusi [Esleitu Azure funtzioak Azure ataria erabiliz](/azure/role-based-access-control/role-assignments-portal).
+- Baliabide taldean non Azure Synapse lan-eremua kokatzen da, *zerbitzu nagusia* eta *Azure AD Customer Insights-en administratzaile-baimenak dituen erabiltzailea* esleitu behar dira gutxienez **Irakurlea**[baimenak](/azure/role-based-access-control/role-assignments-portal).
 
-- The *Azure AD Customer Insights-en administratzaile-baimenak dituen erabiltzailea* beharrak **Biltegiratze Blob Datuen Laguntzailea** buruzko baimenak Azure Data Lake Storage Gen2 kontua non dauden datuak kokatuta eta honekin lotuta Azure Synapse lan-eremua. Lortu informazio gehiago [Azure ataria erabiliz bloke eta ilara datuetara sartzeko Azure rola esleitzeko](/azure/storage/common/storage-auth-aad-rbac-portal) eta [Biltegiratzearen blob-datuen laguntzailearen baimenak](/azure/role-based-access-control/built-in-roles#storage-blob-data-contributor).
+- The *Azure AD Customer Insights-en administratzaile-baimenak dituen erabiltzailea* ditu **Biltegiratze Blob Datuen Laguntzailea** baimenak Azure Data Lake Storage Datuak kokatuta dauden eta honekin lotuta dauden Gen2 kontua Azure Synapse lan-eremua. Lortu informazio gehiago [Azure ataria erabiliz bloke eta ilara datuetara sartzeko Azure rola esleitzeko](/azure/storage/common/storage-auth-aad-rbac-portal) eta [Biltegiratzearen blob-datuen laguntzailearen baimenak](/azure/role-based-access-control/built-in-roles#storage-blob-data-contributor).
 
-- *[Azure Synapse laneko eremuaren kudeatutako identitatea](/azure/synapse-analytics/security/synapse-workspace-managed-identity)* **Biltegiratzearen blob-datuen laguntzailea** baimenak behar ditu Azure Data Lake Storage Gen2 kontuan datuak non kokatzen diren eta Azure Synapse laneko arean. Lortu informazio gehiago [Azure ataria erabiliz bloke eta ilara datuetara sartzeko Azure rola esleitzeko](/azure/storage/common/storage-auth-aad-rbac-portal) eta [Biltegiratzearen blob-datuen laguntzailearen baimenak](/azure/role-based-access-control/built-in-roles#storage-blob-data-contributor).
+- The *[Azure Synapse laneko gune kudeatutako identitatea](/azure/synapse-analytics/security/synapse-workspace-managed-identity)* ditu **Biltegiratze Blob Datuen Laguntzailea** baimenak Azure Data Lake Storage Datuak kokatuta dauden eta honekin lotuta dauden Gen2 kontua Azure Synapse lan-eremua. Lortu informazio gehiago [Azure ataria erabiliz bloke eta ilara datuetara sartzeko Azure rola esleitzeko](/azure/storage/common/storage-auth-aad-rbac-portal) eta [Biltegiratzearen blob-datuen laguntzailearen baimenak](/azure/role-based-access-control/built-in-roles#storage-blob-data-contributor).
 
-- Gainean Azure Synapse lan-eremua, *Customer Insights-en zerbitzu nagusia* beharrak **Synapse Administratzailea** esleitutako rola. Informazio gehiagorako, ikus [Nola konfiguratu sarbide kontrola zure Synapse laneko areako](/azure/synapse-analytics/security/how-to-set-up-access-control).
+- Gainean Azure Synapse lan-eremua, *Customer Insights-en zerbitzu nagusia* ditu **Synapse Administratzailea**[esleitutako rola](/azure/synapse-analytics/security/how-to-set-up-access-control).
 
-## <a name="set-up-the-connection-and-export-to-azure-synapse"></a>Konfiguratu eta esportatu konexioa Azure Synapse-ra
+## <a name="set-up-connection-to-azure-synapse"></a>Konfiguratu konexioa Azure Synapse
 
-### <a name="configure-a-connection"></a>Konfiguratu konexioa
-
-Konexio bat sortzeko, zerbitzu nagusiak eta Customer Insights-en erabiltzaile-kontua behar dira **Irakurlea** buruzko baimenak *baliabide taldea* non dagoen Synapse Analytics lan-eremua. Gainera, zerbitzu nagusiak eta Synapse Analytics lan-eremuko erabiltzaileak behar ditu **Synapse Administratzailea** baimenak. 
+[!INCLUDE [export-connection-include](includes/export-connection-admn.md)]
 
 1. Joan **Administratzailea** > **Konexioak**.
 
-1. Hautatu **Gehitu konexioa** eta aukeratu **Azure Synapse Analytics** edo hautatu **Konfiguratu** gainean **Azure Synapse Analytics** fitxa konexioa konfiguratzeko.
+1. Hautatu **Gehitu konexioa** eta aukeratu **Azure Synapse Analytics**.
 
-1. Eman zure konexioa ezaguna den izena Bistaratze izena eremua. Izena eta konexio motak konexio bat deskribatzen du. Konexio honen xedea eta xedea azaltzen duen izena aukeratzea gomendatzen dugu.
+1. Eman zure konexioa ezaguna den izena **Bistaratze izena** eremua. Izena eta konexio motak konexio bat deskribatzen du. Konexio honen xedea eta xedea azaltzen duen izena aukeratzea gomendatzen dugu.
 
-1. Aukeratu nork erabil dezakeen konexioa. Inolako neurririk hartzen ez baduzu, lehenetsia izango da Administratzaileak. Informazio gehiagorako, ikus [Baimendu laguntzaileei esportazioetarako konexioa erabiltzea](connections.md#allow-contributors-to-use-a-connection-for-exports).
+1. Aukeratu nork erabil dezakeen konexioa. Berez, administratzaileak soilik dira. Informazio gehiagorako, ikus [Baimendu laguntzaileei esportazioetarako konexioa erabiltzea](connections.md#allow-contributors-to-use-a-connection-for-exports).
 
 1. Aukeratu edo bilatu Customer Insights datuak erabili nahi dituzun harpidetza. Harpidetza hautatu bezain laster, hauta dezakezu **Laneko area**, **Biltegiratze kontua**, eta **Edukiontzia**.
 
-1. Konexioa gordetzeko, hautatu **Gorde**.
+1. Berrikusi [datuen pribatutasuna eta betetzea](connections.md#data-privacy-and-compliance) eta hautatu **ados**.
 
-### <a name="configure-an-export"></a>Konfiguratu esportazio bat
+1. Hautatu **Gorde** konexioa osatzeko.
 
-Esportazio hau konfigura dezakezu mota honetako konexiorako sarbidea baduzu. Esportazioa partekatutako konexio batekin konfiguratzeko, gutxienez behar duzu **Laguntzailea** baimenak Customer Insights-en. Informazio gehiagorako, ikusi [Esportazioa konfiguratzeko beharrezkoak diren baimenak](export-destinations.md#set-up-a-new-export).
+## <a name="configure-an-export"></a>Konfiguratu esportazio bat
+
+[!INCLUDE [export-permission-include](includes/export-permission.md)] Esportazioa partekatutako konexio batekin konfiguratzeko, gutxienez behar duzu **Laguntzailea** baimenak Customer Insights-en.
 
 1. Joan **Datuak** > **Esportazioak**.
 
-1. Esportatze berria sortzeko, hautatu **Gehitu esportatzea**.
+1. Hautatu **Gehitu esportazioa**.
 
-1. urtean **Esportatzeko konexioa** eremuan, aukeratu konexio bat **Azure Synapse Analytics** atala. Atal honen izena ikusten ez baduzu, ez dago mota honetako [konexiorik](connections.md) erabilgarri.
+1. urtean **Esportatzeko konexioa** eremuan, aukeratu konexio bat Azure Synapse Analytics atala. Jarri harremanetan administratzaile batekin konexiorik ez badago.
 
-1. Ezagutzeko modukoa eman **Bistaratzeko izena** zure esportaziorako eta **Datu-basearen izena**. Esportazioan berri bat sortuko da [Azure Synapse lakuaren datu-basea](/azure/synapse-analytics/database-designer/concepts-lake-database) konexioan definitutako lan-espazioan.
+1. Ezagutzeko modukoa eman **Bistaratzeko izena** zure esportaziorako eta **Datu-basearen izena**. Esportazioa berri bat sortuko da [Azure Synapse lakuaren datu-basea](/azure/synapse-analytics/database-designer/concepts-lake-database) konexioan zehaztutako lan eremuan.
 
 1. Hautatu zein entitatetara esportatu nahi duzun Azure Synapse Analytics.
    > [!NOTE]
@@ -80,13 +76,11 @@ Esportazio hau konfigura dezakezu mota honetako konexiorako sarbidea baduzu. Esp
 
 1. Sakatu **Gorde**.
 
-Esportazio bat gordetzeak ez du esportazioa berehala exekutatzen.
+[!INCLUDE [export-saving-include](includes/export-saving.md)]
 
-Esportazioa guztiekin egiten da [freskatze programatua](system.md#schedule-tab). Ere egin dezakezu [esportatu eskariaren arabera](export-destinations.md#run-exports-on-demand).
+Synapse Analytics-era esportatu diren datuak kontsultatzeko, behar duzu **Biltegiratze Blob Datuen irakurgailua** esportazioen lan-eremuan helmugako biltegiratze sarbidea.
 
-Synapse Analytics-era esportatu diren datuak kontsultatzeko, behar duzu **Biltegiratze Blob Datuen irakurgailua** esportazioen lan-eremuan helmugako biltegiratze sarbidea. 
-
-### <a name="update-an-export"></a>Eguneratu esportazio bat
+## <a name="update-an-export"></a>Eguneratu esportazio bat
 
 1. Joan **Datuak** > **Esportazioak**.
 
@@ -95,3 +89,5 @@ Synapse Analytics-era esportatu diren datuak kontsultatzeko, behar duzu **Bilteg
    - **Gehitu** edo **Kendu** hautapeneko entitateak. Entitateak hautaketatik kentzen badira, ez dira Synapse Analytics datu basetik ezabatuko. Hala ere, etorkizuneko datuak freskatzeak ez ditu datu-base horretako kendutako entitateak eguneratuko.
 
    - **Datu-basearen izena aldatzea** Synapse Analytics datu-base berria sortzen du. Aurretik konfiguratutako izenaren datu baseak ez du eguneratzerik jasoko etorkizuneko freskatze-eragiketetan.
+
+[!INCLUDE [footer-include](includes/footer-banner.md)]

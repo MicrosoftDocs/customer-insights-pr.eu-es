@@ -1,61 +1,75 @@
 ---
 title: Esportatu segmentuak LiveRamp-era (aurrebista)
 description: Ikasi konexioa eta esportazioa LiveRamp-era nola konfiguratu.
-ms.date: 10/08/2021
+ms.date: 07/25/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: how-to
 author: kishorem-ms
 ms.author: kishorem
 manager: shellyha
-ms.openlocfilehash: 3e30a16dcb276fa6c951ad0b42ed0a4792f87ce3
-ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
+ms.openlocfilehash: 55eacea3af83f46583a3a43797d625479f56586b
+ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
 ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9050748"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "9196701"
 ---
 # <a name="export-segments-to-liverampreg-preview"></a>Esportatu segmentuak LiveRamp-era&reg; (aurrebista)
 
 Aktibatu zure datuak LiveRamp-en 500 plataforma baino gehiagorekin konektatzeko telebista digitaletan, sozialetan eta telebistetan. Lan egin LiveRamp-ekin zure datuekin iragarki-kanpainak zuzentzeko, ezabatzeko eta pertsonalizatzeko.
 
-## <a name="prerequisites-for-a-connection"></a>Konexioaren aurrebaldintzak
+## <a name="prerequisites"></a>Aurrebaldintzak
 
-- Konektore hau erabiltzeko LiveRamp-eko harpidetza behar duzu.
-- Harpidetza lortzeko, [jarri harremanetan LiveRamp-ekin](https://liveramp.com/contact/) zuzenean. [Argibide gehiago LiveRamp Onboarding-i buruz](https://liveramp.com/our-platform/data-onboarding/).
+- LiveRamp harpidetza bat konektore hau erabiltzeko. Harpidetza lortzeko, [jarri harremanetan LiveRamp-ekin](https://liveramp.com/contact/) zuzenean. [Argibide gehiago LiveRamp Onboarding-i buruz](https://liveramp.com/our-platform/data-onboarding/).
+
+## <a name="known-limitations"></a>Muga ezagunak
+
+- LiveRamp esportazioa SFTP esportazio bat erabiltzen ari da. Suebakien atzean dauden SFTP helmugak ez dira onartzen oraingoz.
+- Autentifikaziorako SSH gako bat erabiltzen baduzu, ziurtatu duzula [sortu zure gako pribatua](/azure/virtual-machines/linux/create-ssh-keys-detailed#basic-example) PEM edo SSH.COM formatuan. Putty erabiltzen ari bazara, bihurtu zure gako pribatua esportatuz Open SSH gisa. Gako pribatuen formatu hauek onartzen dira:
+  - RSA OpenSSL PEM eta ssh.com formatuan
+  - DSA OpenSSL PEM eta ssh.com formatuan
+  - ECDSA 256/384/521 OpenSSL PEM formatuan
+  - ED25519 eta RSA OpenSSH gako formatuan
+- Esportazio baten iraupena zure sistemaren errendimenduaren araberakoa da. Bi PUZ nukleo eta 1 Gb memoria gomendatzen dizugu zure zerbitzariaren gutxieneko konfigurazio gisa.
+- Gehienez 100 milioi bezero profil dituzten entitate esportatzaileek 90 minutu iraun dezakete gomendatutako gutxieneko konfigurazioa erabiltzen duten bi PUZ nukleorekin eta 1 Gb memoria.
+- LiveRamp-era esporta ditzakezun profil (edo datu) benetako kopurua LiveRamp-ekin duzun harpidetzaren araberakoa da.
 
 ## <a name="set-up-connection-to-liveramp"></a>Konfiguratu konexioa LiveRamp-era
 
+[!INCLUDE [export-connection-include](includes/export-connection-admn.md)]
+
 1. Joan **Administratzailea** > **Konexioak**.
 
-1. Hautatu **Gehitu konexioa** eta aukeratu **LiveRamp** konexioa konfiguratzeko.
+1. Hautatu **Gehitu konexioa** eta aukeratu **LiveRamp**.
 
 1. Eman zure konexioa ezaguna den izena **Bistaratze izena** eremua. Izena eta konexio motak konexio bat deskribatzen du. Konexio honen xedea eta xedea azaltzen duen izena aukeratzea gomendatzen dugu.
 
-1. Aukeratu nork erabil dezakeen konexioa. Inolako neurririk hartzen ez baduzu, lehenetsia izango da Administratzaileak. Informazio gehiagorako, ikus [Baimendu laguntzaileei esportazioetarako konexioa erabiltzea](connections.md#allow-contributors-to-use-a-connection-for-exports).
+1. Aukeratu nork erabil dezakeen konexioa. Berez, administratzaileak soilik dira. Informazio gehiagorako, ikus [Baimendu laguntzaileei esportazioetarako konexioa erabiltzea](connections.md#allow-contributors-to-use-a-connection-for-exports).
 
-1. Eman **Erabiltzaile izena** eta **Pasahitza** zure LiveRamp Secure FTP (SFTP) kontuan.
-Kredentzial hauek zure LiveRamp Onboarding kredentzialak desberdinak izan daitezke.
+1. Aukeratu zure konexiorako SSH edo erabiltzaile-izena/pasahitza bidez autentifikatu nahi duzun eta eman beharrezko xehetasunak.
 
 1. Aukeratu **Ziurtatu** LiveRamp-ekin konexioa probatzeko.
 
-1. Egiaztatu ondoren, eman baimena **Datuen pribatutasuna eta betetzea** aukeratuz **ados** laukia.
+1. Egiaztatu ondoren, berrikusi [datuen pribatutasuna eta betetzea](connections.md#data-privacy-and-compliance) eta hautatu **Ados**.
 
 1. Hautatu **Gorde** konexioa osatzeko.
 
 ## <a name="configure-an-export"></a>Konfiguratu esportazio bat
 
-Esportazio hau konfigura dezakezu mota honetako konexiorako sarbidea baduzu. Informazio gehiagorako, ikusi [Esportazioa konfiguratzeko beharrezkoak diren baimenak](export-destinations.md#set-up-a-new-export).
+[!INCLUDE [export-permission-include](includes/export-permission.md)]
 
 1. Joan **Datuak** > **Esportazioak**.
 
-1. Esportazio berria sortzeko, hautatu **Gehitu helmuga**.
+1. Hautatu **Gehitu esportazioa**.
 
-1. Hurrengoan **Konexioa esportatzeko** eremuan, aukeratu konexioa LiveRamp sekzioan. Atal honen izena ikusten ez baduzu, ez dago mota honetako konexiorik erabilgarri.
+1. Hurrengoan **Konexioa esportatzeko** eremuan, aukeratu konexioa LiveRamp sekzioan. Jarri harremanetan administratzaile batekin konexiorik ez badago.
 
-1. Sarbidean **Aukeratu zure gako identifikatzailea** eremua, hautatu **Emaila**, **Izena eta helbidea**, edo **Mugikorra** identitatearen ebazpenerako LiveRamp-era bidali.
-   > [!div class="mx-imgBorder"]
-   > ![LiveRamp konektorea atributuen mapak.](media/export-liveramp-segments.png "LiveRamp konektorea atributuen mapak")
+1. Idatzi esportaziorako izen bat.
+
+1. urtean **Konektatu datuak** eremua, hautatu **Posta elektronikoa**, **eta helbidea**, edo **Mugikorra** LiveRamp-era bidaltzeko identitatea konpontzeko.
+
+   :::image type="content" source="media/export-liveramp-segments.png" alt-text="LiveRamp konektorea atributuen mapak.":::
 
 1. Mapatu dagozkien atributuak zure *Bezeroa* hautatutako gako identifikatzailearen entitatea.
 
@@ -64,18 +78,10 @@ Esportazio hau konfigura dezakezu mota honetako konexiorako sarbidea baduzu. Inf
    > [!TIP]
    > LiveRamp erabiltzaileari gako identifikatzaile atributu gehiago bidaltzeak baliteke partidu tasa handiagoa lortzea.
 
-1. Hautatu LiveRamp-era esportatu nahi dituzun segmentuak.
+1. Hautatu esportatu nahi dituzun segmentuak.
 
 1. Sakatu **Gorde**.
 
-Esportazio bat gordetzeak ez du esportazioa berehala exekutatzen.
-
-Esportazioa guztiekin egiten da [freskatze programatua](system.md#schedule-tab). Ere egin dezakezu [esportatu eskariaren arabera](export-destinations.md#run-exports-on-demand). 
-
-
-## <a name="data-privacy-and-compliance"></a>Datuen pribatutasuna eta arau-gordetzea
-
-Dynamics 365 Customer Insights gaitzen duzunean datuak Liveramp-era bidaltzeko, datuak betetzeko mugatik kanpo transferitzea baimentzen duzu Dynamics 365 Customer Insights-erako, datu pertsonalak bezalako datu sentikorrak barne. Microsoft-ek datu horiek transferituko ditu zure aginduz, baina zure ardura da Liveramp-ek pribatutasun- edo segurtasun-betebeharrak betetzen dituela ziurtatzea. Informazio gehiago eskuratzeko, ikusi [Microsoft-en pribatutasun-adierazpena](https://go.microsoft.com/fwlink/?linkid=396732).
-Funtzio hau erabiltzeari uzteko, Dynamics 365 Customer Insights-en administratzaileak esportazioaren helburuko kokalekua edonoiz ken dezake.
+[!INCLUDE [export-saving-include](includes/export-saving.md)]
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

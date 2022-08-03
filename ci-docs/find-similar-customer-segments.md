@@ -12,69 +12,59 @@ searchScope:
 - ci-segment-builder
 - ci-segment-insights
 - customerInsights
-ms.openlocfilehash: d58b2e424fd81ad691db4b2576bdf5655038ed89
-ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
+ms.openlocfilehash: 09fe36a4da45d114cbfccf8dad1e7b80b4b7e320
+ms.sourcegitcommit: 8a28e9458b857adf8e90e25e43b9bc422ebbb2cd
 ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9054786"
+ms.lasthandoff: 07/18/2022
+ms.locfileid: "9170712"
 ---
 # <a name="find-similar-customers-with-ai-preview"></a>Bilatu antzeko bezeroak AIarekin (aurrebista)
 
-Ezaugarri honek adimen artifiziala erabiliz zure bezero basean antzeko bezeroak topa ditzakezu. Ezaugarri hau erabiltzeko gutxienez segmentu bat sortu behar duzu. Lehendik dagoen segmentu baten irizpideak zabaltzeak segmentu horren antzekoak diren bezeroak aurkitzen laguntzen du.
+Aurkitu zure bezero basean antzeko bezeroak adimen artifiziala erabiliz. Eginbide hau erabiltzeko gutxienez segmentu bat sortu behar duzu. Lehendik dagoen segmentu baten irizpideak zabaltzeak segmentu horren antzekoak diren bezeroak aurkitzen laguntzen du.
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWOFou]
 
 > [!NOTE]
-> *Aurkitu antzeko bezeroak* Datu horietan oinarritutako datuak ebaluatzeko eta iragarpenak egiteko bitarteko automatizatuak erabiltzen ditu eta, beraz, profil metodo gisa erabiltzeko gaitasuna du, termino hori Datuak Babesteko Erregelamendu Orokorrak ("DBAO") definitzen baitu. Bezeroak funtzio hau erabiltzeko datuak prozesatzeko DBAO edo beste lege edo arau batzuen menpe egon daiteke. Zu zara Dynamics 365 Customer Insights-en erabileraren arduradun, iragarpenez aplikagarriak diren lege eta arau guztiak betetzeaz barne, hala nola pribatutasunarekin, datu pertsonalekin, datu biometrikoekin, datuen babesarekin eta komunikazioen konfidentzialtasunarekin lotutako legeak.
+> *Bilatu antzeko bezeroak* bitarteko automatizatuak erabiltzen ditu datuak ebaluatzeko eta datu horietan oinarrituta iragarpenak egiteko. Beraz, profilak egiteko metodo gisa erabiltzeko gaitasuna du, termino hori Datuak Babesteko Erregelamendu Orokorrak ("GDPR") definitzen baitu. Bezeroak funtzio hau erabiltzeko datuak prozesatzeko DBAO edo beste lege edo arau batzuen menpe egon daiteke. Zu zara Dynamics 365 Customer Insights-en erabileraren arduradun, iragarpenez aplikagarriak diren lege eta arau guztiak betetzeaz barne, hala nola pribatutasunarekin, datu pertsonalekin, datu biometrikoekin, datuen babesarekin eta komunikazioen konfidentzialtasunarekin lotutako legeak.
 
-## <a name="finding-similar-customers"></a>Antzeko bezeroak aurkitzea
+## <a name="find-similar-customers"></a>Bilatu antzeko bezeroak
 
 1. Joan **Segmentuak** eta hautatu segmentu berria oinarritu nahi duzun segmentua. Hori da zurea *iturriaren segmentua*.
 
-1. Ekintza-barran, hautatu **Aurkitu antzeko bezeroak**.
+1. Hautatu **Bilatu antzeko bezeroak**.
 
 1. Berrikusi zure segmentu berrirako iradokitako izena eta aldatu behar izanez gero.
 
 1. Aukeran, gehitu [etiketak](work-with-tags-columns.md#manage-tags) segmentu berrira.
 
-1. Berrikusi zure segmentu berria definitzen duten eremuak. Eremu hauek zehazten dute sistemaren oinarria zure bezero iturriaren antzeko bezeroak bilatzen saiatuko dela. Sistemak gomendatutako eremuak aukeratuko ditu lehenespenez.
+1. Berrikusi zure segmentu berria definitzen duten eremuak. Eremu hauek zehazten dute sistemaren oinarria zure bezero iturriaren antzeko bezeroak bilatzen saiatuko dela. Sistemak gomendatutako eremuak hautatzen ditu lehenespenez. Behar izanez gero, gehitu eremu gehiago.
   Ereduaren errendimendua nabarmen murrizteko eremuak automatikoki baztertzen dira:
   
    - Datu mota hauek dituzten eremuak: StringType, BooleanType, CharType, LongType, IntType, DoubleType, FloatType, ShortType
    - 2 edo 30 baino gutxiagoko kardinalitatea (eremu bateko elementu kopurua) duten eremuak
 
-1. Aukeratu barneratu nahi baduzu **Bezero guztiak** edo bezeroak bakarrik **Lehendik dagoen segmentu espezifikoa** zure segmentu berrian.
+1. Aukeratu sartu nahi duzun ala ez **Bezero guztiak** iturburu-segmentua izan ezik edo bezeroak soilik batean **segmentu ezberdina** zure segmentu berrian.
 
 1. Berez, sistemak iradokitzen du zure irteeran xede-audientziaren tamainaren % 20 soilik sartzea. Editatu atalasea behar den moduan. Atalasea handitzeak zehaztasuna murriztuko du.
 
 1. Sartu bezeroak zure iturburu-segmentuan hautatuta **Sartu iturri-segmentuko kideak antzeko atributuak dituzten bezeroez gain** kontrol-laukia.
 
-1. Aukeratu **Exekutatu** orriaren behealdean sailkapen binarioko zeregin bat hasteko (Ikaskuntza automatiko metodo bat) datu multzoa aztertzen duena.
+1. Hautatu **Korrika egin** orriaren behealdean a hasteko [Sailkapen zeregin bitarra](#about-similarity-scores) (Ikaskuntza automatiko metodoa) datu multzoa aztertzen duena.
 
 ## <a name="view-the-similar-segment"></a>Ikusi antzeko segmentua
 
-Antzeko segmentua prozesatu ondoren, zerrendan agertzen den segmentu berria aurkituko duzu **segmentuak** orria.
+Antzeko segmentua prozesatu ondoren, atalean zerrendatutako segmentu berria aurkituko duzu **Segmentuak** orria motarekin **Hedapena**.
 
-> [!div class="mx-imgBorder"]
-> ![Antzeko bezeroen segmentua.](media/expanded-segment.png "Antzeko bezeroen segmentua")
+Hautatu **Ikusi** emaitzaren banaketa ikusteko [antzekotasun puntuazioak](#about-similarity-scores) eta antzekotasun puntuazioaren balioak azpian **Segmentuko kideen aurrebista**.
 
-Aukeratu **ikusi** segmentuko xehetasunak irekitzeko ekintza barran. Ikuspegi honek emaitzen banaketaren inguruko informazioa jasotzen du [antzekotasun puntuazioak](#about-similarity-scores). Antzekotasun puntuazioaren balioak ere aurkituko dituzu **Segmentuko kideen aurrebista**.
+:::image type="content" source="media/expanded-segment.png" alt-text="Antzeko bezeroen segmentua.":::
 
-## <a name="use-the-output-of-a-similar-segment"></a>Erabili antzeko segmentu baten irteera
+## <a name="manage-a-similar-segment"></a>Kudeatu antzeko segmentu bat
 
-Ahal duzu [antzeko segmentu baten irteerarekin lan egin](segments.md) beste segmentuekin egiten duzun bezala. Adibidez, esportatu segmentua edo neurri bat eraiki.
+[Antzeko segmentu batekin lan egin eta kudeatu](segments.md#manage-existing-segments) beste segmentuekin egiten duzun bezala. Adibidez, esportatu segmentua edo neurri bat eraiki.
 
-## <a name="refresh-and-edit-a-similar-segment"></a>Eguneratu antzeko segmentua eta editatu
-
-Antzeko segmentua freskatzeko, hautatu botoian **segmentuak** orria eta hautatu **Freskatu** ekintza barran.
-
-Antzeko segmentua editatzean zure datuak berriro prozesatuko dira. Aurretik sortutako segmentua eguneratutako datuekin eguneratzen da.
-Antzeko segmentua editatzeko, hautatu botoian **segmentuak** orria eta hautatu **Editatu** ekintza barran. Aplikatu aldaketak eta hautatu **Exekutatu** prozesatzen hasteko.
-
-## <a name="delete-a-similar-segment"></a>Ezabatu antzeko segmentua
-
-Hautatu segmentua **Segmentuak** orrian eta hautatu **Ezabatu** ekintza barran. Orduan baieztatu ezabatu nahi duzula.
+Editatu, freskatu, aldatu izena, deskargatu eta ezabatu antzeko segmentu bat. Antzeko segmentu bat editatzeak zure datuak birprozesatzen ditu. Aurretik sortutako segmentua eguneratutako datuekin eguneratzen da.
 
 ## <a name="about-similarity-scores"></a>Antzekotasun puntuazioari buruz
 

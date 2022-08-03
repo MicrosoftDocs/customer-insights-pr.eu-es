@@ -1,7 +1,7 @@
 ---
 title: Bezeroaren balio osoaren iragarpena (CLV)
 description: Aurreikusi etorkizunean bezero aktiboen diru-sarrerak.
-ms.date: 02/05/2021
+ms.date: 07/21/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: how-to
@@ -13,21 +13,22 @@ searchScope:
 - ci-create-prediction
 - ci-custom-models
 - customerInsights
-ms.openlocfilehash: ea7acd1ddbb0eb8d66fb82018637a85b6ffb369b
-ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
+ms.openlocfilehash: b6f6665d906cc96688efe84035336f64d2a39303
+ms.sourcegitcommit: 80d8436d8c940f1267e6f26b221b8d7ce02ed26b
 ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9055199"
+ms.lasthandoff: 07/22/2022
+ms.locfileid: "9186425"
 ---
 # <a name="customer-lifetime-value-clv-prediction"></a>Bezeroaren balio osoaren iragarpena (CLV)
 
 Aurreikusi bezero aktibo partikularrek zure negozioari ekarriko dioten balizko balioa (diru-sarrerak) etorkizunean zehaztutako denbora-tarte batean. Ezaugarri honek hainbat helburu lortzen lagun zaitzake:
+
 - Balio handiko bezeroak identifikatu eta ikuspegi hori prozesatu
 - Sortu bezeroen segmentu estrategikoak haien balio potentzialean oinarrituta kanpaina pertsonalizatuak egiteko bideratutako salmentekin, marketinarekin eta laguntza esfortzuekin
 - Produktuen garapena bideratu bezeroaren balioa handitzen duten ezaugarrietan oinarrituz
 - Optimizatu salmenten edo marketinaren estrategia eta aurrekontua zehatzago esleitu bezeroen dibulgaziorako
-- Balio handiko bezeroak aitortu eta saritu leialtasun edo sari programen bidez 
+- Balio handiko bezeroak aitortu eta saritu leialtasun edo sari programen bidez
 
 ## <a name="prerequisites"></a>Aurrebaldintzak
 
@@ -35,7 +36,7 @@ Hasi aurretik, islatu CLV-k duen garrantzia zure negoziorako. Gaur egun, transak
 
 CLV modeloa konfiguratzeak eta exekutatzeak denbora asko behar ez duenez, kontuan hartu sarrera hobespen desberdinak dituzten hainbat eredu sortzea eta alderatu modeloaren emaitzak, zure negozioaren beharretara hobekien egokitzen den eredua ikusteko.
 
-###  <a name="data-requirements"></a>Datuen eskakizunak
+### <a name="data-requirements"></a>Datuen eskakizunak
 
 Datu hauek beharrezkoak dira, eta aukerako gisa markatuta daudenean, gomendagarria da modeloaren errendimendua handitzeko. Zenbat eta datu gehiago prozesatu ereduak, orduan eta zehatzagoa izango da iragarpena. Hori dela eta, bezeroen jardueren datu gehiago sartzea gomendatzen dizugu, eskuragarri badago.
 
@@ -52,11 +53,12 @@ Datu hauek beharrezkoak dira, eta aukerako gisa markatuta daudenean, gomendagarr
     - Web-jarduerak: webgunearen bisiten historia, posta elektronikoaren historia
     - Leialtasun-jarduerak: leialtasuna saritzeko puntuak sortzearen eta amortizazioaren historia
     - Bezeroarentzako arreta-zerbitzu erregistroa, zerbitzuaren dei-, kexa- edo itzulketa-historia
+    - Bezeroaren profilaren informazioa
 - Bezeroen jarduerei buruzko datuak (aukerakoa):
     - Mota bereko jarduerak bereizteko jarduera identifikatzaileak
     - Bezeroaren identifikadoreak maparen jardueretan zure bezeroentzat
     - Jardueren izena eta jardueraren data biltzen dituen jarduera
-    - Jardueren datu semantikoen eskemak honakoak dira: 
+    - Jardueren datu semantikoen eskemak honakoak dira:
         - **Gako nagusia**: Jarduera baterako identifikatzaile bakarra
         - **Denbora-zigilua**: Giltza nagusian identifikatutako gertaeraren data eta ordua
         - **Gertaera (jardueraren izena)**: erabili nahi duzun gertaeraren izena
@@ -66,7 +68,7 @@ Datu hauek beharrezkoak dira, eta aukerako gisa markatuta daudenean, gomendagarr
     - Datu historiko nahikoak: gutxienez urtebeteko datu transakzionalak. Ahal izanez gero, bizpahiru urteko datu transakzionalak CLV urtebetez iragartzeko.
     - Erosketa anitz bezero bakoitzeko: Egokiena, gutxienez bizpahiru transakzio bezero ID bakoitzeko, ahal bada data anitzetan zehar.
     - Bezero kopurua: gutxienez 100 bezero esklusibo, ahal dela 10.000 bezero baino gehiago. Ereduak huts egingo du 100 bezero baino gutxiagorekin eta datu historiko nahikorik gabe
-    - Datuen osotasuna: % 20 baino gutxiago falta dira sarrerako datuetako beharrezko eremuetan   
+    - Datuen osotasuna: % 20 baino gutxiago falta dira sarrerako datuetako beharrezko eremuetan
 
 > [!NOTE]
 > - Ereduak zure bezeroen transakzioen historia eskatzen du. Une honetan transakzioen historiako entitate bakarra konfigura daiteke. Erosketa/transakzio entitate anitz badaude, horiek bateratu ditzakezu Power Query datuak sartu aurretik.
@@ -122,11 +124,11 @@ Datu hauek beharrezkoak dira, eta aukerako gisa markatuta daudenean, gomendagarr
 
 1. Hautatu **Hurrengoa**.
 
-### <a name="add-optional-data"></a>Gehitu aukerako datuak
+### <a name="add-optional-activity-data"></a>Gehitu aukerako jarduera-datuak
 
-Bezeroen interakzio nagusiak islatzen dituzten datuek (adibidez, webgunea, bezeroarentzako arreta-zerbitzu eta gertaeren erregistroak) testuingurua gehitzen dute transakzio erregistroetan. Zure bezeroen jardueren datuetan aurkitutako eredu gehiagok aurreikuspenen zehaztasuna hobe dezakete. 
+Bezeroen interakzio nagusiak islatzen dituzten datuek (adibidez, webgunea, bezeroarentzako arreta-zerbitzu eta gertaeren erregistroak) testuingurua gehitzen dute transakzio erregistroetan. Zure bezeroen jardueren datuetan aurkitutako eredu gehiagok aurreikuspenen zehaztasuna hobe dezakete.
 
-1. Urtean **Datu osagarriak (aukerakoa)** urratsa, hautatu **Gehitu datuak**. Aukeratu bezeroaren jardueren entitateari buruzko informazioa ematen duen entitatea [aurrebaldintzetan](#prerequisites) azaltzen den moduan.
+1. urtean **Datu gehigarriak (aukerakoa)** urratsa, hautatu **Gehitu datuak** azpian **Hobetu ereduaren estatistikak jarduera-datu gehigarriekin**. Aukeratu bezeroaren jardueren entitateari buruzko informazioa ematen duen entitatea [aurrebaldintzetan](#prerequisites) azaltzen den moduan.
 
 1. Esleitu eremu semantikoak bezeroaren jardueraren entitateko atributuetara eta hautatu **Hurrengoa**.
 
@@ -135,15 +137,34 @@ Bezeroen interakzio nagusiak islatzen dituzten datuek (adibidez, webgunea, bezer
 1. Aukeratu gehitzen ari zaren bezeroaren jarduera motarekin bat datorren jarduera mota. Aukeratu lehendik dauden jarduera moten artean edo gehitu jarduera mota berri bat.
 
 1. Konfiguratu harremana bezeroaren jarduera entitatetik *Bezeroa* entitatea.
-    
+
     1. Aukeratu bezeroaren jardueraren taulan bezeroa identifikatzen duen eremua. Zuzenean erlazionatuta egon daiteke zure *Bezero* entitatearen bezeroaren ID nagusiarekin.
     1. Hautatu botoia *Bezero* entitatea bat datorrena zure lehen *Bezeroa* entitatearekin.
     1. Idatzi izena deskribatzen duena harremana.
 
    :::image type="content" source="media/clv-additional-data.png" alt-text="Konfigurazio-fluxuko urratsaren irudia datu osagarriak gehitzeko eta jarduera konfiguratutako adibideekin konfiguratzeko.":::
 
-1. Sakatu **Gorde**.    
+1. Sakatu **Gorde**.
     Gehitu datu gehiago bezeroen beste jarduera batzuk sartu nahi badituzu.
+
+1. Gehitu aukerako bezeroaren datuak edo hautatu **Hurrengoa**.
+
+### <a name="add-optional-customer-data"></a>Gehitu aukerako bezeroen datuak
+
+Hautatu normalean erabiltzen diren bezeroen profilaren 18 atributuren artean, ereduan sarrera gisa sartzeko. Atributu hauek eredu-emaitza pertsonalizatuagoak, garrantzitsuagoak eta ekintzaileagoak lor ditzakete zure negozioaren erabilera-kasuetarako.
+
+Adibidez: Contoso Kafeak bezeroaren bizitzako balioa aurreikusi nahi du balio handiko bezeroei zuzenduta, espreso makina berriaren aurkezpenarekin lotutako eskaintza pertsonalizatu batekin. Contoso-ek CLV eredua erabiltzen du eta bezeroen profilaren 18 atributu guztiak gehitzen ditu euren balio handieneko bezeroetan zein faktorek eragiten duten ikusteko. Bezeroen kokapena bezero horiengan eragin handiena duen faktorea dela ikusten dute.
+Informazio horrekin, tokiko ekitaldi bat antolatzen dute espresso-makina abian jartzeko eta bertako saltzaileekin elkartzen dira eskaintza pertsonalizatuak eta ekitaldian esperientzia berezi bat izateko. Informazio hori gabe, baliteke Contoso-ek marketin-mezu generikoak soilik bidali eta balio handiko bezeroen tokiko segmentu honetarako pertsonalizatzeko aukera galdu izana.
+
+1. urtean **Datu gehigarriak (aukerakoa)** urratsa, hautatu **Gehitu datuak** azpian **Are gehiago, are gehiago areagotu ereduaren ezagutza bezeroen datu gehigarriekin**.
+
+1. Izan ere **Entitatea**, aukeratu **Bezeroa: CustomerInsights** bezeroaren atributuen datuekin mapatzen den bezeroaren profil taula bateratua hautatzeko. Izan ere **Bezeroaren IDa**, aukeratu **System.Customer.CustomerId**.
+
+1. Mapeatu eremu gehiago datuak zure bezeroen profil bateratuetan eskuragarri baldin badaude.
+
+   :::image type="content" source="media/clv-optional-customer-profile-mapping.png" alt-text="Bezeroen profilaren datuetarako mapatutako eremuen adibidea.":::
+
+1. Hautatu **Gorde** ereduak bezeroaren bizitzako balioa iragartzen laguntzeko erabili behar dituen atributuak mapatu ondoren.
 
 1. Hautatu **Hurrengoa**.
 

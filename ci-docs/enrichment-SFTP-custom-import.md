@@ -8,16 +8,16 @@ ms.topic: how-to
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: 88fc366ab9478c3b67034af794e237ff4573da7c
-ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
+ms.openlocfilehash: 81ef6c62240e26cb5c9475e6306e08edc7e5eb31
+ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
 ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9082316"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "9195781"
 ---
 # <a name="enrich-customer-profiles-with-sftp-custom-import-preview"></a>Aberastu bezeroen profilak SFTP pertsonalizatutako inportazioarekin (aurrebista)
 
-Fitxategiak modu seguruan transferitzeko protokoloaren (SFTP) inportazio pertsonalizatuari esker, datuak bateratzeko prozesua igaro behar ez duten datu-aberasteak inporta ditzakezu. Zure datuak ekartzeko modu malgua, segurua eta erraza da. SFTP inportazio pertsonalizatua erabil daiteke [SFTP esportazioarekin batera](export-sftp.md). Horrek aberastu behar den bezeroen profileko datuak esportatzen uzten dizu. Ondoren, datuak prozesatu eta aberastu daitezke, eta SFTP pertsonalizatutako inportazioa erabil daiteke aberastutako datuak itzultzeko Dynamics 365 Customer Insights.
+Fitxategiak modu seguruan transferitzeko protokoloaren (SFTP) inportazio pertsonalizatuari esker, datuak bateratzeko prozesua igaro behar ez duten datu-aberasteak inporta ditzakezu. Zure datuak ekartzeko modu malgua, segurua eta erraza da. SFTP inportazio pertsonalizatua erabil daiteke [SFTP esportazioarekin batera](export-sftp.md). Horrek aberastu behar den bezeroen profileko datuak esportatzen uzten dizu. Ondoren, datuak prozesatu eta aberastu daitezke, eta SFTP pertsonalizatutako inportazioa erabil daiteke datu aberastuak itzultzeko Dynamics 365 Customer Insights.
 
 ## <a name="prerequisites"></a>Aurrebaldintzak
 
@@ -91,7 +91,7 @@ Bat izan behar duzu [administratzailea](permissions.md#admin) Customer Insights-
 
 ### <a name="data-privacy-and-compliance"></a>Datuen pribatutasuna eta arau-gordetzea
 
-Gaitzen duzunean Dynamics 365 Customer Insights Inportazio pertsonalizatua erabiliz datuak transmititzeko, datuak betetze-mugatik kanpo transferitzea onartzen duzu Dynamics 365 Customer Insights, potentzialki sentikorrak diren datuak barne, hala nola Datu Pertsonalak. Microsoft-ek datu horiek zuk agindutakoan transferituko ditu, baina zure ardura zara datuek izan ditzakezun pribatutasun- edo segurtasun-betebeharrak betetzen dituztela ziurtatzeaz. Informazio gehiago eskuratzeko, ikusi [Microsoft-en pribatutasun-adierazpena](https://go.microsoft.com/fwlink/?linkid=396732).
+Gaitzen duzunean Dynamics 365 Customer Insights Inportazio pertsonalizatua erabiliz datuak transmititzeko, datuak betetze-mugatik kanpo transferitzea onartzen duzu Dynamics 365 Customer Insights, potentzialki sentikorrak diren datuak barne, hala nola Datu Pertsonalak. Microsoft-ek datu horiek zure aginduz transferituko ditu, baina zure ardura zara datuek izan ditzakezun pribatutasun- edo segurtasun-betebeharrak betetzen dituztela ziurtatzeaz. Informazio gehiago eskuratzeko, ikusi [Microsoft-en pribatutasun-adierazpena](https://go.microsoft.com/fwlink/?linkid=396732).
 Dynamics 365 Customer Insights administratzailea edonoiz ken dezake aberastea funtzio hau erabiltzeari uzteko.
 
 ## <a name="configure-the-import"></a>Konfiguratu inportatzea
@@ -104,9 +104,9 @@ Dynamics 365 Customer Insights administratzailea edonoiz ken dezake aberastea fu
 
 1. Berrikusi ikuspegi orokorra eta, ondoren, hautatu **Hurrengoa**.
 
-1. Hautatu konexioa. Jarri harremanetan administratzaile batekin erabilgarri ez badago.
+1. Hautatu konexioa. Jarri harremanetan administratzaile batekin konexiorik ez badago.
 
-1. Hautatu **Bezeroaren datu multzoa** eta aukeratu aberastu nahi duzun profila edo segmentua. The *Bezeroa* entitateak zure bezero-profil guztiak aberasten ditu, eta segmentu batek segmentu horretan dauden bezero-profilak soilik aberasten ditu.
+1. Hautatu **Bezeroaren datu multzoa** eta aukeratu aberastu nahi duzun profila edo segmentua. The *Bezeroa* entitateak zure bezero-profil guztiak aberasten ditu, segmentu batek segmentu horretan dauden bezero-profilak soilik aberasten ditu.
 
 1. Hautatu **Hurrengoa**.
 

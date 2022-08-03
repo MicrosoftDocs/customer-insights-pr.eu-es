@@ -1,19 +1,19 @@
 ---
 title: Power Automate konektorea (aurrebista) | Microsoft Docs
 description: Sortu fluxuak Microsoft Power Automate hurrengoan Dynamics 365 Customer Insights.
-ms.date: 06/24/2021
+ms.date: 07/25/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 29a861dad926072f6f849d738d868f0f3b9306be
-ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
+ms.openlocfilehash: f87bd6db7143294a264813f6c5c7d7963f303628
+ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
 ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9082442"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "9196103"
 ---
 # <a name="power-automate-connector-preview"></a>Power Automate konektorea (Aurrebista)
 
@@ -21,18 +21,18 @@ Konfiguratu datuak aldatzen direnean automatikoki abiaraziko diren gertaera zeha
 
 ## <a name="known-limitations"></a>Muga ezagunak
 
-- 60 segundoko 100 dei egin ditzakezu gehienez. API amaierako puntuari hainbat aldiz dei diezaiokezu $skip parametroa erabiliz. [Lortu informazio gehiago $skip parametroari buruz](/connectors/customerinsights/#get-items-from-an-entity).
+- Gehienez 100 dei 60 segundoko. Erabili [$skip parametroa](/connectors/customerinsights/#get-items-from-an-entity) API amaierako puntura hainbat aldiz deitzeko.
 
 ## <a name="power-automate-triggers"></a>Power Automate Abiarazleak
 
-Erabili abiarazleak hodei fluxuak sortzeko eta zeregin errepikakorrak automatizatzeko, hala nola jakinarazpenak edo ekintza aurreratuagoak.
+Erabili abiarazleak hodei fluxuak sortzeko eta zeregin errepikakorrak automatizatzeko, hala nola jakinarazpenak edo ekintza aurreratuagoak. Erabili abiarazleak noiz:
 
-- Aktibatu datu-iturburu freskatzeak huts egiten duenean.
-- Aktibatu datu-iturburu freskatzeak arrakasta duenean.
-- Abiarazi atalasea gainditzen denean segmentu batean. Harrapatzailea atalasearen gainetik zeharkatzera mugatzen da.
-- Abiarazi atalasea gainditzen denean negozio-neurketa batean. Dimentsiorik gabeko negozio-neurriak soilik onartzen dira. Harrapatzailea atalasearen gainetik zeharkatzera mugatzen da.
-- Abiarazi eguneratze osoa (datu iturriak, segmentuak, neurriak, ...) amaitzen denean.
-- Aktibatu bateratze-prozesua freskatzen denean.
+- datu-iturburu freskatzeak huts egin du.
+- datu-iturburu freskatzea arrakastatsua da.
+- Segmentu batean atalase bat gainditzen da. Harrapatzailea atalasearen gainetik zeharkatzera mugatzen da.
+- Negozio-neurri batean atalase bat gainditzen da. Dimentsiorik gabeko negozio-neurriak soilik onartzen dira. Harrapatzailea atalasearen gainetik zeharkatzera mugatzen da.
+- Programatutako freskatze osoa amaitu da. Abiarazle honek ez du funtzionatzen eskuz hasitako freskatzeetarako.
+- Bateratze-prozesuaren freskagarri bat amaitu da.
 
 [Konfiguratu zure abiarazleak Power Automate-n.](https://flow.microsoft.com/connectors/shared_customerinsights/dynamics-365-customer-insights-connector/)
 
@@ -42,7 +42,7 @@ Power Automate konektoreak erabilgarri dauden abiarazleak baino beste ekintza ba
 
 ## <a name="create-a-power-automate-flow"></a>Sortu Power Automate fluxu bat
 
-1. Joan **Administratzailea** > **Esportazio-helburuak** atalera.
+1. Joan **Administratzailea** > **Konexioak**.
 
 1. **Power Automate** fitxan, hautatu **Konfiguratu**.
 
@@ -53,7 +53,5 @@ Power Automate konektoreak erabilgarri dauden abiarazleak baino beste ekintza ba
 Fluxuak erabiltzeko adibideak: 
 - Bidali mezu bat Microsoft Teams kanalera datu-iturburu freskatzeak huts egiten badu. 
 - Bidali mezu elektronikoa datu jabeei segmentu bateko atalasea gainditzen denean.
-
-
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

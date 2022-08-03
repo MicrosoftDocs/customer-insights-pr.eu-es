@@ -1,7 +1,7 @@
 ---
 title: Konektatu bat Azure Synapse datu-iturburu (aurrebista)
 description: Erabili datu-base bat Azure Synapse urtean datu-iturburu gisa Dynamics 365 Customer Insights.
-ms.date: 03/25/2022
+ms.date: 07/26/2022
 ms.reviewer: v-wendysmith
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,16 +9,16 @@ ms.topic: how-to
 author: mukeshpo
 ms.author: mukeshpo
 manager: shellyha
-ms.openlocfilehash: c4ae65613a02df38a30f907dae72d413bf1a702f
-ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
+ms.openlocfilehash: 54247fbcdc27f6ed8314e0755164083eb461aa64
+ms.sourcegitcommit: 5807b7d8c822925b727b099713a74ce2cb7897ba
 ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9052684"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "9206892"
 ---
 # <a name="connect-an-azure-synapse-analytics-data-source-preview"></a>Konektatu bat Azure Synapse Analytics datu-iturburu (aurrebista)
 
-Azure Synapse Analytics datu biltegietan eta datu handien sistemetan informaziorako denbora azkartzen duen enpresa analitika-zerbitzu bat da. Azure Synapse Analytics Enpresako datuen biltegian erabiltzen diren SQL teknologia onenak biltzen ditu, datu handietarako erabiltzen diren Spark teknologiak, Data Explorer erregistro eta denbora serieen analisietarako, Pipelines datuak integratzeko eta ETL/ELT eta integrazio sakona beste Azure zerbitzu batzuekin, esaterako.Power BI,Cosmos DB, eta AzureML.
+Azure Synapse Analytics datu biltegietan eta big data sistemetan informaziorako denbora azkartzen duen enpresa analitika zerbitzu bat da. Azure Synapse Analytics Enpresako datuen biltegian erabiltzen diren SQL teknologia onenak biltzen ditu, datu handietarako erabiltzen diren Spark teknologiak, Data Explorer erregistro eta denbora serieen analisirako, Pipelines datuak integratzeko eta ETL/ELT eta integrazio sakona beste Azure zerbitzu batzuekin, esaterako.Power BI,Cosmos DB, eta AzureML.
 
 Informazio gehiagorako, ikus [Azure Synapse ikuspegi orokorra](/azure/synapse-analytics/overview-what-is).
 
@@ -53,9 +53,9 @@ Informazio gehiagorako, ikus [Azure Synapse ikuspegi orokorra](/azure/synapse-an
 
 1. Aukeratu **Azure Synapse Analytics (Aurrebista)** metodoa.
 
-   :::image type="content" source="media/data_sources_synapse.png" alt-text="Synapse Analytics datuetara konektatzeko elkarrizketa-koadroa":::
+   :::image type="content" source="media/data_sources_synapse.png" alt-text="Elkarrizketa-koadroa Synapse Analytics datuetara konektatzeko":::
   
-1. Sartu a **Izena** datu-iturburu eta aukerakoa **Deskribapena**.
+1. Sartu a **Izena** datu-iturburu eta aukerako bat **Deskribapena**.
 
 1. Aukeratu bat [eskuragarri dagoen konexioa](connections.md) to Azure Synapse Analytics edo sortu berri bat.
 
@@ -65,4 +65,10 @@ Informazio gehiagorako, ikus [Azure Synapse ikuspegi orokorra](/azure/synapse-an
 
 1. Aukeran, aukeratu datu-entitateak datuen profila onartzeko.
 
-1. Hautatu **Gorde** zure hautapena aplikatzeko eta sortu berri den datu-iturburu Lake datu-baseko taulei lotuta dauden datuak sartzen hasteko.Azure Synapse Analytics. The **Datu iturriak** orrialdea irekitzen da datu-iturburu berria erakusten **Freskagarria** egoera.
+1. Hautatu **Gorde** zure hautapena aplikatzeko eta sortu berri den datu-iturburu Lake datu-baseko taulei lotuta dauden datuak sartzen hasteko.Azure Synapse Analytics. The **Datu-iturriak** orrialdea irekitzen da datu-iturburu berria erakusten **Freskagarria** egoera.
+
+   [!INCLUDE [progress-details-include](includes/progress-details-pane.md)]
+
+Datuak kargatzeak denbora behar dezake. Freskatu arrakastatsu baten ondoren, irentsitako datuak berrikusi daitezke [**Entitateak**](entities.md) orrialdea.
+
+[!INCLUDE [footer-include](includes/footer-banner.md)]

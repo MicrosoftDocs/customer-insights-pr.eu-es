@@ -1,42 +1,70 @@
 ---
 title: Dynamics 365 Customer Insights-en berritasunak
 description: Ezaugarri berriei, hobekuntzei eta akatsak konpontzeko ezaugarriei buruzko informazioa.
-ms.date: 06/02/2022
+ms.date: 06/30/2022
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
 ms.reviewer: skumm
 manager: shellyha
-ms.openlocfilehash: 4b5b95d1774d22827b3c08c2b6ccbb7858f1b04b
-ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
+ms.openlocfilehash: f3ae0fe6631ee7c8d79664528be383ec53e93fe8
+ms.sourcegitcommit: 92e5a798ca75c7f10aa5025a9bbd2ffb4d4ae7d2
 ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9054003"
+ms.lasthandoff: 07/05/2022
+ms.locfileid: "9114231"
 ---
 # <a name="whats-new-in-dynamics-365-customer-insights"></a>Dynamics 365 Customer Insights-en berritasunak
 
 Gogotsu gaude gure eguneratze berrienak iragartzeko! Artikulu honek aurrebista publikoko eginbideak, aurrebistako funtzioak, erabilgarritasun orokorreko hobekuntzak, eta eginbideen eguneratzeak. Epe luzerako eginbide planak ikusteko, begiratu [Dynamics 365 eta Power Platform kaleratzeko planak](/dynamics365/release-plans/).
 
-Eguneratzeak eskualdeen arabera banatzen ditugu. Beraz, eskualde batzuek beste batzuen aurretik ezaugarriak ikus ditzakete. Modu ezberdinean zehaztu ezean, ez duzu inolako neurririk egin behar eta aplikazioa automatikoki eguneratuko dugu inolako denborarik gabe.
+Eguneratzeak eskualdeen arabera banatzen ditugu. Beraz, eskualde batzuek beste batzuen aurretik ezaugarriak ikus ditzakete. Bestela zehaztu ezean, ez duzu inolako neurririk egin behar, automatikoki eguneratuko dugu aplikazioa geldialdirik gabe.
 
 > [!TIP]
 > Bidali eta bozkatzeko eginbideak eskaerak eta produktuaren iradokizunak, joan [Dynamics 365 aplikazioaren ideiak atarira](https://experience.dynamics.com/ideas/categories/?forum=79a8c474-4e35-e911-a971-000d3a4f3343&forumName=Dynamics%20365%20Customer%20Insights).
 
+## <a name="june-2022-updates"></a>2022ko ekaineko eguneraketak
+
+2022ko ekaineko eguneratzeek ezaugarri berriak, errendimendu-berritzeak eta akatsen konponketak barne hartzen dituzte.
+
+### <a name="updated-user-experience-for-data-sources-and-data-ingestion"></a>Erabiltzaileen esperientzia eguneratua datu-iturburuetarako eta datuak sartzeko
+
+Datu-iturri askotariko datuak inportatzea da zure bezeroen datuak finkatzeko oinarria Dynamics 365 Customer Insights. Datu-iturriak inportatzeko eta konektatzeko erabiltzailearen esperientzia berrikusi dugu. Eguneratze honek Customer Insights-en datuak errazago sartzea du helburu.
+
+Informazio gehiagorako, ikus [Datu iturrien ikuspegi orokorra](data-sources.md).
+
+### <a name="export-to-inmobi"></a>Esportatu InMobi-ra
+
+InMobik markei kontsumitzaileak ulertzen, identifikatzen, parte hartzen eta eskuratzen laguntzen die. Segmentuak eta bestelako datuak InMobi zerbitzura esporta ditzakezu Azure Blob Storage kontuen bidez.
+
+Informazio gehiagorako, ikus [Esportatu InMobi-ra (aurrebista)](export-inmobi.md)
+
+### <a name="lockbox-support-in-customer-insights"></a>Lockbox-en laguntza Customer Insights-en
+
+Customer Lockbox interfaze bat eskaintzen du datuetara sartzeko eskaerak berrikusteko eta onartzeko (edo ukatzeko). Eskaera hauek laguntza-kasu bat konpontzeko bezeroen datuetarako sarbidea behar denean gertatzen dira.
+
+Informazio gehiagorako, ikus [Sartu segurtasunez bezeroen datuak Customer Lockbox-ekin (aurrebista)](security-overview.md#securely-access-customer-data-with-customer-lockbox-preview).
+
+### <a name="connect-to-your-data-using-azure-private-link"></a>Konektatu zure datuetara Azure Private Link erabiliz
+
+Azure Private Link-ek Customer Insights zurekin konekta ditzagun Azure Data Lake Storage kontua zure sare birtualeko amaierako puntu pribatu batean. Biltegiratze-kontu bateko datuetarako, Internet publikora ez dagoena, Private Link-ek sare mugatu horrekin konektatzea ahalbidetzen du.
+
+Informazio gehiagorako, ikus [Erabili esteka pribatua Customer Insights-en](security-overview.md#private-links-tab).
+
 ## <a name="may-2022-updates"></a>2022ko maiatzeko eguneraketak
 
-2022ko maiatzean egindako eguneratzeak ezaugarri berriak, errendimendu-berrikuntzak eta akatsen konponketak barne hartzen ditu.
+2022ko maiatzean egindako eguneratzeak ezaugarri berriak, errendimendu-berrikuntzak eta akatsen konponketak biltzen ditu.
 
 ### <a name="updated-data-unification-experience"></a>Datuak bateratzeko esperientzia eguneratua
 
- Datuen bateratzeak behin-behinean bereizten diren datu-iturriak bateratzeko aukera ematen dizu datu horien ikuspegi bateratua eskaintzen duen datu-multzo nagusi bakar batean. Datuak entitate bakarrean edo entitate anitzetan batera daitezke. Zu lehenengo [hautatu entitateak eta iturburu-eremuak](map-entities.md),[kendu erregistro bikoiztuak](remove-duplicates.md), zehaztu arauak [bat datozen baldintzak](match-entities.md), eta zehaztu zein [bezeroen profil bateratuetan sartzeko eremuak](merge-entities.md).
+ Datuen bateratzeak behin-behineko datu-iturburuak bateratzeko aukera ematen dizu datu horien ikuspegi bateratua eskaintzen duen datu-multzo nagusi bakar batean. Datuak entitate bakarrean edo entitate anitzetan batera daitezke. Zu lehenengo [hautatu entitateak eta iturburu-eremuak](map-entities.md),[kendu erregistro bikoiztuak](remove-duplicates.md), zehaztu arauak [bat datozen baldintzak](match-entities.md), eta zehaztu zein [bezeroen profil bateratuetan sartzeko eremuak](merge-entities.md).
 
 Informazio gehiagorako, ikus [Datuen bateratzearen ikuspegi orokorra](data-unification.md).
 
 ### <a name="refreshed-home-page-in-customer-insights"></a>Hasierako orria freskatua Customer Insights-en
 
-**Hasiera** Funtzio nagusien konfigurazio-prozesuan zehar gidatzen zaitu eta segmentuen, neurrien eta aberaste-datuen ikuspegi orokorra eskaintzen du. Esperientzia freskatu egin dugu begirada batean informazio garrantzitsuagoa eskaintzeko.
+**Hasiera** Funtzio nagusien konfigurazio-prozesuan zehar gidatzen zaitu eta segmentuen, neurrien eta aberaste-datuen ikuspegi orokorra eskaintzen du. Esperientzia freskatu dugu begirada batean informazio garrantzitsuagoa eskaintzeko.
 
 Informazio gehiagorako, ikus [Arakatu bezeroen ikuspegiak](home.md).
 
@@ -46,7 +74,7 @@ Orain egin dezakezu [segmentu baten erabileraren jarraipena](segments.md#track-u
 
 ### <a name="export-to-criteo"></a>Esportatu Criteora
 
-Criteo erabiltzaileei publizitate digitala kudeatzen laguntzen dien lineako plataforma bat da. Orain bezeroen profil bateratuen segmentuak esporta ditzakezu kanpainak sortzeko, posta elektronikoko marketina eskaintzeko eta bezero talde zehatzak erabiltzeko Criteorekin.
+Criteo erabiltzaileei publizitate digitala kudeatzen laguntzen dien lineako plataforma bat da. Orain bezeroen profil bateratuen segmentuak esportatu ditzakezu kanpainak sortzeko, posta elektronikoko marketina eskaintzeko eta bezero talde zehatzak erabiltzeko Criteorekin.
 
 Informazio gehiagorako, ikus [Esportatu segmentuak Criteo-ra (aurrebista)](export-criteo.md).
 
@@ -58,9 +86,9 @@ Informazio gehiagorako, ikus [Nola: Ingurune berri bat sortu](create-environment
 
 ## <a name="april-2022-updates"></a>2022ko apirileko eguneraketak
 
-2022ko apirileko eguneratzeek ezaugarri berriak, errendimenduaren hobekuntzak eta akatsen konponketak barne hartzen dituzte.
+2022ko apirileko eguneratzeek eginbide berriak, errendimenduaren hobekuntzak eta akatsen konponketak barne hartzen dituzte.
 
-### <a name="dun--bradstreet-enrichment-preview"></a>Dun & Bradstreet-en aberastea (aurrebista)
+### <a name="dun--bradstreet-enrichment-preview"></a>Dun & Bradstreet aberastea (aurrebista)
 
 Dun & Bradstreet-ek negozioentzako datu komertzialak, analitikoak eta ikuspegiak eskaintzen ditu. Enpresentzako bezeroen profil bateratuak dituzten bezeroei beren datuak aberasteko aukera ematen die. Aberasteen artean, DUNS zenbakia, enpresaren tamaina, kokapena, industria eta abar bezalako atributuak daude.
 
@@ -80,11 +108,11 @@ Aldaketa hori nola hautematen duzun edo espero bezala funtzionatzen ez duen zerb
 
 ## <a name="march-2022-updates"></a>2022ko martxoko eguneraketak
 
-2022ko martxoko eguneratzeek ezaugarri berriak, errendimendu-berritzeak eta akatsen konponketak barne hartzen dituzte.
+2022ko martxoko eguneratzeek eginbide berriak, errendimenduaren hobekuntzak eta akatsen konponketak barne hartzen dituzte.
 
 ### <a name="liveramp-abilitec-enrichment-preview"></a>LiveRamp AbiliTec aberastea (aurrebista)
 
-LiveRamp-ek bezeroen datuen identitatearen ebazpena eta finkatzea eskaintzen du. Zure bezeroen datuetan identifikatzaile pertsonalak mapa ditzakezu AbiliTec identitate grafikoarekin eta AbiliTec IDak jaso ditzakezu. Orduan ID hauek erabil ditzakezu zure bezeroen datuak hobeto bateratzeko.
+LiveRamp-ek bezeroen datuen identitatearen ebazpena eta finkatzea eskaintzen du. Zure bezeroen datuetan identifikatzaile pertsonalak mapa ditzakezu AbiliTec identitate grafikoarekin eta AbiliTec IDak jaso. Orduan ID hauek erabil ditzakezu zure bezeroen datuak hobeto bateratzeko.
 
 Informazio gehiagorako, ikus [Aberastu bezeroen profilak LiveRamp-eko identitate-datuekin (aurrebista)](enrichment-liveramp.md).
 
@@ -116,9 +144,9 @@ Konektatutako zerbitzuetan APIak aldatzeak konektoreen eguneraketak ekartzen dit
 
 ## <a name="february-2022-updates"></a>2022ko otsaileko eguneraketak
 
-2022ko otsaileko eguneratzeek ezaugarri berriak, errendimenduaren hobekuntzak eta akatsen konponketak barne hartzen dituzte.
+2022ko otsaileko eguneratzeek eginbide berriak, errendimenduaren hobekuntzak eta akatsen konponketak barne hartzen dituzte.
 
-### <a name="general-availability-for-prediction-models"></a>Iragarpen ereduen erabilgarritasun orokorra
+### <a name="general-availability-for-prediction-models"></a>Iragarpen modeloen erabilgarritasun orokorra
 
 Kutxaz kanpoko iragarpen ereduak, barne **harpidetza txanda**, **txandaka**, eta **bezeroaren bizitzako balioa (CLV)** orokorrean eskuragarri egongo da Customer Insights-en zati gisa. 
 
@@ -126,7 +154,7 @@ Informazio gehiagorako, ikus [Iragarpenen ikuspegi orokorra](predictions-overvie
 
 ### <a name="new-data-source-integration-with-azure-synapse-analytics-preview"></a>datu-iturburu berria: bateratzea Azure Synapse Analytics (Aurrebista)
 
-Azure Synapse Analytics datu biltegietan eta datu handien sistemetan informaziorako denbora azkartzen duen enpresa analitika-zerbitzu bat da.
+Azure Synapse Analytics datu biltegietan eta big data sistemetan informaziorako denbora azkartzen duen enpresa analitika zerbitzu bat da.
 
 Dagoeneko erabiltzen duten erakundeak Azure Synapse Analytics Datu horiek Customer Insights-en har ditzake. 
 
@@ -134,13 +162,13 @@ Informazio gehiagorako, ikus [Konektatu bat Azure Synapse datu-iturburu (Aurrebi
 
 ### <a name="liveramp-enrichment-preview"></a>LiveRamp aberastea (aurrebista)
 
-LiveRamp-ek bezeroen datuen identitatearen ebazpena eta finkatzea eskaintzen du. Zure bezeroen datuetan identifikatzaile pertsonalak mapa ditzakezu AbiliTec identitate grafikoarekin eta AbiliTec IDak jaso ditzakezu. Orduan ID hauek erabil ditzakezu zure bezeroen datuak hobeto bateratzeko.
+LiveRamp-ek bezeroen datuen identitatearen ebazpena eta finkatzea eskaintzen du. Zure bezeroen datuetan identifikatzaile pertsonalak mapa ditzakezu AbiliTec identitate grafikoarekin eta AbiliTec IDak jaso. Orduan ID hauek erabil ditzakezu zure bezeroen datuak hobeto bateratzeko.
 
 Informazio gehiagorako, ikus [Aberastu bezeroen profilak LiveRamp-eko identitate-datuekin (aurrebista)](enrichment-liveramp.md).
 
 ### <a name="enrichment-for-data-sources-preview"></a>Datu-iturburuetarako aberastea (aurrebista)
 
-Erabili Microsoft eta beste bazkide batzuen iturrietako datuak zure bezeroen datuak aberasteko datuak bateratu aurretik. datu-iturburu aberasteek datuen osotasun eta kalitate handiagoak lortzen laguntzen dute, eta horrek emaitza hobeak lortzen lagunduko dizu datuak bateratu ondoren.
+Erabili Microsoft eta beste bazkide batzuen iturrietako datuak zure bezeroen datuak aberasteko datuak bateratu aurretik. datu-iturburu aberasteek datuen osotasun eta kalitate handiagoa sortzen laguntzen dute, eta horrek emaitza hobeak lortzen lagunduko dizu datuak bateratu ondoren.
 
 Informazio gehiagorako, ikus [Datu-iturburuetarako aberastea (aurrebista)](data-sources-enrichment.md).
 
@@ -167,18 +195,18 @@ Trantsizio-aldi baterako, lehendik dauden aurrebista-parte-hartzaileek aurrebist
 
 - Lortu webguneak edo mugikorreko aplikazioak hornitzeko kodea 
 - Ikusi gertaerak eta gertaeren propietateak 
-- Hobetu profil bateratuak irensten eta findutako gertaerekin, bezeroen datuen balio osoaz baliatzeko
+- Hobetu profil bateratuak irentsitako eta findutako gertaerekin, bezeroen datuen balio osoaz baliatzeko
   
-Trantsizio-aldian, harrapatutako gertaerak konektatutako Data Lake-ra igortzen dira oraindik. Funtzio hori desaktibatuta dagoenean, datuak partekatzea geldituko da eta ez da gertaera berririk bidaliko konektatutako biltegira.
-Jarri harremanetan zure Microsoft kontuko taldearekin zuzenean gaitasunen aurrebistaren amaierari buruzko galderarik baduzu. Zure Kontu-taldeak datozen aurkezpenen berri emango dizu. 
+Trantsizio-aldian, harrapatutako gertaerak konektatutako Data Lake-ra igortzen dira oraindik. Funtzio hau desaktibatuta dagoenean, datuak partekatzea geldituko da eta ez da gertaera berririk bidaliko konektatutako biltegira.
+Jarri harremanetan zure Microsoft kontuko taldearekin zuzenean gaitasunen aurrebistaren amaierari buruzko galderarik baduzu. Zure Kontu-taldeak datozen abiarazteen berri emango dizu. 
 
 ## <a name="january-2022-updates"></a>2022ko urtarrileko eguneraketak
 
-2022ko urtarrileko eguneratzeek ezaugarri berriak, errendimenduaren hobekuntzak eta akatsen konponketak barne hartzen dituzte.
+2022ko urtarrileko eguneratzeek eginbide berriak, errendimenduaren hobekuntzak eta akatsen konponketak barne hartzen dituzte.
 
 ### <a name="sentiment-analysis-of-your-customers-feedback"></a>Zure bezeroen iritzien analisia
 
-Customer Insights-ek AI-k bultzatutako eginbide berri bat eskaintzen du bezeroen sentimendua sintetizatzeko eta negozio-alderdi zehatzak identifikatzeko, hobekuntzak hobetzeko aukera gisa. Zure bezeroen idatzizko iritziak aztertuz gero, informazio zehatzak lor ditzakezu kostu baxuan. Sentimenduen analisia Lengoaia Naturaleko Prozesamenduaren (NLP) ereduek bultzatuta, bezeroaren ID bakoitzeko bi informazio eratorri sortzen dituztenak. Sentimendu puntuazioa (-5etik 5era) eta negozio-alderdi aplikagarrien zerrenda. 
+Customer Insights-ek AI-k bultzatutako eginbide berri bat eskaintzen du bezeroen sentimendua sintetizatzeko eta negozio-alderdi zehatzak identifikatzeko, hobekuntzak hobetzeko aukera gisa. Zure bezeroen idatzizko iritziak aztertuz gero, informazio zehatzak lor ditzakezu kostu txikian. Sentimenduen analisia Lengoaia Naturaleko Prozesamenduaren (NLP) ereduek bultzatuta, bezeroaren ID bakoitzeko bi informazio eratorri sortzen dituztenak. Sentimendu puntuazioa (-5etik 5era) eta negozio-alderdi aplikagarrien zerrenda. 
 
 Informazio gehiagorako, ikus [Aztertu sentimendua bezeroen iritzietan (Aurrebista)](sentiment-analysis.md).
 

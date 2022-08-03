@@ -11,12 +11,12 @@ manager: shellyha
 searchScope:
 - ci-connections
 - customerInsights
-ms.openlocfilehash: a8b4b8a9bdcf7cf43c47a67d547405dd20dad60d
-ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
+ms.openlocfilehash: 4a0bc5dd4100b462a26660a0c51fda1fe92b6bb9
+ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
 ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9082085"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "9195159"
 ---
 # <a name="connections-preview-overview"></a>Konexioen ikuspegi orokorra (aurrebista)
 
@@ -27,6 +27,12 @@ Joan **Administratzailea** > **Konexioak** konexioak sortzeko eta ikusteko.
 **Konexioak** fitxak konexio aktibo guztiak erakusten dizkizu. Zerrendan konexio bakoitzerako errenkada bat agertzen da.
 
 Lortu ikuspegi orokorra, deskribapena eta jakin zer egin dezakezun **Ezagutu** fitxa.
+
+## <a name="data-privacy-and-compliance"></a>Datuen pribatutasuna eta arau-gordetzea
+
+Gaitzen duzunean Dynamics 365 Customer Insights hirugarrenei edo Microsoft-eko beste produktu batzuei datuak transmititzeko, datuak betetze-mugatik kanpo transferitzea onartzen duzu Dynamics 365 Customer Insights, potentzialki sentikorrak diren datuak barne, hala nola Datu Pertsonalak. Microsoft-ek datu horiek zure aginduetara transferituko ditu, baina hirugarrenak izan ditzakezun pribatutasun- edo segurtasun-betebeharrak betetzen dituela ziurtatzeko ardura duzu. Informazio gehiago eskuratzeko, ikusi [Microsoft-en pribatutasun-adierazpena](https://go.microsoft.com/fwlink/?linkid=396732).
+
+Zure Dynamics 365 Customer Insights administratzaileak konexioa ken dezake edozein unetan funtzionalitatearen erabilerari uzteko.
 
 ## <a name="exports"></a>Esportazioak
 
@@ -41,8 +47,6 @@ Administratzaileek soilik konfigura ditzakete konexio berriak, baina sortutako k
 Konexioak gehitzeko, eduki behar duzu [administratzaile baimenak](permissions.md). Beste Microsoft zerbitzu batzuekin konektatzen bazara, bi zerbitzuak erakunde berean daudela suposatuko dugu.
 
 1. Joan **Administratzailea** > **Konexioak (aurrebista)**.
-
-1. Joan **Konexioak** fitxara.
 
 1. Hautatu **Gehitu konexioa** konexio berri bat sortzeko. Aukeratu goitibeherako menuan zein konexio mota sortu nahi duzun.
 
@@ -77,7 +81,7 @@ Esportazio konexioa konfiguratu edo editatzerakoan, aukeratzen duzu zein erabilt
 
 ## <a name="remove-a-connection"></a>Konexioa kendu nahi duzu
 
-Kentzen ari zaren konexioa aberasteek edo esportazioek erabiltzen badute, lehenik kendu edo kendu behar dituzu. Kendu elkarrizketa-koadroak aberastasun edo esportazio garrantzitsuetara eramango zaitu.
+Kentzen ari zaren konexioa aberasteek edo esportazioek erabiltzen badute, lehenik, kendu edo kendu behar dituzu. Kendu elkarrizketa-koadroak aberastasun edo esportazio garrantzitsuetara eramango zaitu.
 
 Bereizitako aberastasunak eta esportazioak inaktibo bihurtzen dira. Berriro aktibatuko dituzu haiekin beste konexio bat gehituz [Aberastasunak](enrichment-hub.md) edo [Esportazioak](export-destinations.md) orrialdea.
 
@@ -99,3 +103,5 @@ Bereizitako aberastasunak eta esportazioak inaktibo bihurtzen dira. Berriro akti
 ## <a name="set-up-connections-with-secrets-managed-by-your-own-key-vault"></a>Konfiguratu konexioak zeure Key Vault-ek kudeatutako sekretuekin
 
 Konexio batzuek API gakoak edo pasahitzak bezalako sekretuak behar dituzte. Konexio batzuek zure Key Vault-en gordetako sekretuak onartzen dituzte. Lortu informazio gehiago onartzen diren konexioei eta nola konfiguratu [zure Key Vault Customer Insights egiteko](use-azure-key-vault.md).
+
+[!INCLUDE [footer-include](includes/footer-banner.md)]

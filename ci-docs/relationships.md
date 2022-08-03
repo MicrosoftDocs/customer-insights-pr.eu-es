@@ -21,21 +21,21 @@ searchScope:
 - ci-measure-template
 - ci-permissions
 - customerInsights
-ms.openlocfilehash: 5477798a8b9e0771d390e403379b7447eb7baddd
-ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
+ms.openlocfilehash: e622e5fa0b5738e31db1c668d95312adbc4f7d36
+ms.sourcegitcommit: ad74ace653db9a25fce4343adef7db1c9b0d8904
 ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9082568"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "9183532"
 ---
 # <a name="relationships-between-entities-and-entity-paths"></a>Entitateen eta entitateen bide-izenen arteko erlazioak
 
 Harremanek entitateak konektatzen dituzte eta zure datuen grafikoa definitzen dute entitateek identifikatzaile komuna partekatzen dutenean, atzerriko gakoa. Atzerriko gako honi entitate batetik bestera erreferentzia egin dakioke. Konektatutako entitateek datu-iturri anitzetan oinarritutako segmentuak eta neurriak definitzeko aukera ematen dute.
 
 Hiru harreman mota daude: 
-- Editatu ezin diren sistema harremanak, sistemak datuak bateratzeko prozesuaren zati gisa sortuak
-- Editatu ezin diren herentziazko harremanak, datu iturriak sartzetik automatikoki sortzen direnak 
-- Erabiltzaileek sortutako eta konfiguratutako harreman pertsonalizatu editagarriak
+- Edita daitezkeen sistema-erlazioak sistemak sortzen ditu datuen bateratze-prozesuaren zati gisa
+- Edita daitezkeen herentziazko erlazioak automatikoki sortzen dira datu-iturburuak barneratuta
+- Erlazio pertsonalizatu editagarriak erabiltzaileek sortu eta konfiguratzen dituzte
 
 ## <a name="non-editable-system-relationships"></a>Editatu ezin diren sistemen harremanak
 
@@ -67,69 +67,66 @@ Harremanak atzerriko gakoa duen *iturburu-entitatea* eta iturburuko entitatearen
    - **Deskribapena**: Erlazio-funtzioaren azalpena.
    - **Iturburuko entitatea**: Harremanean iturburu gisa erabiltzen den entitatea. Adibidez: SupportCase.
    - **Helburuko entitatea**: Harremanean helburu gisa erabiltzen den entitatea. Adibidez: Customer.
-   - **Iturriaren kardinalitatea** : Zehaztu iturburuko entitatearen kardinalitatea. Kardinalitateak multzo bateko elementu posibleen kopurua deskribatzen du. Beti xede-kardinalitatearekin lotzen da. Aukera dezakezu **Bat** edo **Asko**. Banan-banan eta banan-banako harremanak bakarrik onartzen dira.  
+   - **Iturburu kardinalitatea** : Jatorri entitatearen kardinalitatea. Kardinalitateak multzo bateko elementu posibleen kopurua deskribatzen du. Beti xede-kardinalitatearekin lotzen da. Aukera dezakezu **Bat** edo **Asko**. Banan-banan eta banan-banako harremanak bakarrik onartzen dira.  
      - Hainbatetik baterako: iturburu erregistro anitz xede erregistro batekin erlazionatu daitezke. Adibidez: bezero bakar baten laguntza kasu ugari.
      - Batetik baterako: iturburuko erregistro bakarra xede erregistro batekin erlazionatzen da. Adibidez: fidelizazio ID bakarra bezero bakarrarentzat.
 
      > [!NOTE]
      > Hainbatetik hainbaterako harremanak hainbatetik baterako bi harreman eta lotura duen entitate bat erabiliz sor daitezke, sorburuko entitatea eta xede-entitatea lotzen dituena.
 
-   - **Helmugako kardinalitatea**: helmugako entitatearen erregistroen kardinalitatea aukeratu. 
-   - **Iturburu gako eremua** : Iturburuko entitateko atzerriko gako eremua. Adibidez: SupportCase-k CaseID erabil dezake atzerriko gako eremu gisa.
-   - **Helburuko gako eremua**: xede entitatearen gako eremua. Adibidez bezeroak erabil dezake **Bezeroaren IDa** gako eremua.
+   - **Helburu kardinaltasuna** : Helburuko entitateen erregistroen kardinalitatea.
+   - **Iturburu-gakoaren eremua** : atzerriko gako eremua iturburu entitatean. Adibidea: SupportCase erabilerak **Kasuaren ID** atzerriko gako eremu gisa.
+   - **Helburu-gako-eremua** : xede-entitatearen gako-eremua. Adibidea: Bezeroen erabilerak **Bezeroaren ID** gako-eremu gisa.
 
 4. Erlazio pertsonalizatua sortzeko, hautatu **Gorde**.
 
 ## <a name="set-up-account-hierarchies"></a>Konfiguratu kontuaren hierarkiak
 
-Negozio kontuak helburu publiko nagusitzat erabiltzeko konfiguratuta dauden inguruneek kontu hierarkiak konfigura ditzakete erlazionatutako negozio kontuetarako. Adibidez, negozio unitate bereiziak dituen enpresa. 
+Enpresa-kontuak helburu nagusi gisa erabiltzeko konfiguratuta dauden inguruneek erlazionatutako negozio-kontuetarako kontu-hierarkiak konfigura ditzakete. Adibidez, negozio unitate bereiziak dituen enpresa.
 
 Erakundeek kontuen hierarkiak sortzen dituzte kontuak eta elkarren arteko harremanak hobeto kudeatzeko. Customer Insights-ek irensatutako bezeroen datuetan dagoeneko existitzen diren guraso-seme-alaben hierarkiak onartzen ditu. Adibidez, Dynamics 365 Sales-eko kontuak. Hierarkia hauek konfiguratu daitezke **Harremanak** orrialdea.
 
 1. Joan **Datuak** > **Harremanak**.
 1. Hautatu **Kontuaren hierarkia** fitxa.
-1. Hautatu **Kontu berriaren hierarkia**. 
-1. Urtean **Kontuen hierarkia** panelean, eman hierarkiari izena. Sistemak irteerako entitatearen izena sortzen du. Irteerako izen entitatearen izena alda dezakezu.
+1. Hautatu **Kontu berriaren hierarkia**.
+1. Urtean **Kontuen hierarkia** panelean, eman hierarkiari izena. Sistemak izen bat sortzen du irteerako entitatearentzat, baina alda dezakezu.
 1. Aukeratu zure kontuaren hierarkia duen entitatea. Normalean kontuak dituen entitate berean izaten da.
-1. Aukeratu **Kontuaren IDa** eta **Kontuaren guraso IDa** hautatutako entitatetik 
-1. Aukeratu **Gorde** ezarpenak aplikatzeko eta kontu hierarkia amaitzeko.
+1. Hautatu **Kontuaren UID** eta **Gurasoen UID** hautatutako entitatetik.
+1. Hautatu **Gorde** kontuaren hierarkia amaitzeko.
 
-## <a name="view-relationships"></a>Ikusi erlazioak
+## <a name="manage-existing-relationships"></a>Kudeatu lehendik dauden erlazioak
 
-Harremanak orrian sortu diren harreman guztiak zerrendatzen dira. Errenkada bakoitzak erlazio bat adierazten du, iturburu-entitateari, xede-entitateari eta kardinalitateari buruzko xehetasunak ere biltzen dituena. 
+Joan zaitez **Harremanak** orrialdean sortu diren erlazio guztiak, haien sorburu-entitatea, xede-entitatea eta kardinalitatea ikusteko.
 
 :::image type="content" source="media/relationships-list.png" alt-text="Harremanen eta aukeren zerrenda Harremanak orriko ekintza barran.":::
 
-Orrialde honek lehendik dauden eta harreman berrietarako aukera multzo bat eskaintzen du: 
-- **Erlazio berria:** [Sortu erlazio pertsonalizatu bat](#create-a-custom-relationship).
-- **Bistaratzailea**: [Arakatu harremanen bistaratzailea](#explore-the-relationship-visualizer) dauden erlazioen eta haien kardinalitatearen sare-diagrama ikusteko.
-- **Iragazi honen arabera**: Aukeratu zerrendan erakutsi beharreko harreman mota.
-- **Bilatu harremanak**: Erabili testuan oinarritutako bilaketa erlazioen propietateetan.
+Erabili **Iragazi arabera** edo **Bilatu harremanak** harreman jakin bat aurkitzeko aukerak. Lehendik dauden erlazioen eta haien kardinaltasunaren sare-diagrama ikusteko, hautatu [**Bistaratzailea**](#explore-the-relationship-visualizer).
+
+Hautatu erlazio bat erabilgarri dauden ekintzak ikusteko:
+- **Editatu**: Harreman pertsonalizatuen propietateak eguneratu editatzeko panelean eta gorde aldaketak.
+- **Ezabatu**: Harreman pertsonalizatuak ezabatu.
+- **Ikusi**: Sistemak sortutako eta heredatutako harremanak ikusi.
 
 ### <a name="explore-the-relationship-visualizer"></a>Arakatu harremanen bistaratzailea
 
 Harremanen bistaratzaileak konektatuta dauden entitateeen eta haien kardinalitatearen sare-diagrama erakusten du. Harremanen bidea ere bistaratzen du.
 
-Ikuspegia pertsonalizatzeko, koadroen kokapena alda dezakezu mihisean arrastatuz.
-
 :::image type="content" source="media/relationship-visualizer.png" alt-text="Erlazio bistaratzailearen sare diagramaren pantaila-argazkia erlazionatutako entitateen arteko konexioekin.":::
 
-Aukera erabilgarriak: 
+Ikuspegia pertsonalizatzeko, koadroen kokapena alda dezakezu mihisean arrastatuz. Beste aukera batzuk hauek dira: 
 - **Esportatu irudi gisa**: Uneko ikuspegia irudi fitxategi gisa gorde.
 - **Aldatu diseinu horizontal / bertikalera**: Entitateen eta harremanen lerrokatzea aldatu.
 - **Editatu**: Harreman pertsonalizatuen propietateak eguneratu editatzeko panelean eta gorde aldaketak.
 
 ## <a name="relationship-paths"></a>Erlazioaren bide-izenak
 
-Erlazioaren bide-izen batek iturburu entitate baten eta xede entitate baten arteko harremanekin lotura duten entitateak deskribatzen ditu. Profil bateratuaren entitatea ez den beste entitate batzuk biltzen dituen segmentu edo neurri bat sortzean erabiltzen da eta profil anitzeko entitate horretara iristeko aukera ugari daude. 
-
-Erlazioaren bide-izen batek profil bateratuko entitatera sartzeko zein harremanen gaineko sistemaren berri ematen du. Harreman bide desberdinek emaitza desberdinak eman ditzakete.
+Erlazioaren bide-izen batek iturburu entitate baten eta xede entitate baten arteko harremanekin lotura duten entitateak deskribatzen ditu. Profil bateratuaren entitatea ez den beste entitateak biltzen dituen segmentu edo neurri bat sortzeko erabiltzen da eta profil bateratu entitate batera heltzeko aukera anitz daude. Harreman bide desberdinek emaitza desberdinak eman ditzakete.
 
 Adibidez, entitatea *eCommerce_eCommerceErosketak* profil bateratuarekin harreman hauek ditu *Bezeroa* entitatea:
 
 - eCommerce_eCommercePurchases > Bezeroa
 - eCommerce_eCommercePurchases > eCommerce_eCommerceContacts > POS_posPurchases > Bezeroa
-- eCommerce_eCommercePurchases > eCommerce_eCommerceContacts > POS_posPurchases > loyaltyScheme_loyCustomers > Bezeroa 
+- eCommerce_eCommercePurchases > eCommerce_eCommerceContacts > POS_posPurchases > loyaltyScheme_loyCustomers > Bezeroa
 
 Erlazioaren bide-izen batek zehazten du zein entitate erabil ditzakezun neurri edo segmentuetarako arauak sortzerakoan. Harreman bide luzeena duen aukera aukeratzeak emaitza gutxiago lortuko du ziurrenik bat datozen erregistroek entitate guztien parte izan behar dutelako. Adibide honetan, bezeroak merkataritza elektronikoaren bidez (eCommerce_eCommercePurchases), salmenta puntu batean (POS_posPurchases) erosi behar ditu ondasunak eta gure fidelizazio programan parte hartu (loyaltyScheme_loyCustomers). Lehen aukera aukeratzerakoan, emaitza gehiago lortuko zenituzke, bezeroek entitate osagarri batean bakarrik egon behar dutelako.
 
@@ -155,7 +152,7 @@ Harreman bat **zeharkako harreman** bezala sailkatzen da iturburu-entitate bat h
 
 #### <a name="multi-hop-relationship"></a>Salto anitzeko erlazioa
 
-*Salto anitzeko erlazio* bat da *zeharkako harremana* iturburu-entitate bat xede-entitate batekin beste bitartekari-entitate baten edo gehiagoren bidez konektatzeko aukera ematen duena.
+**Salto anitzeko erlazio** bat da *zeharkako harremana* iturburu-entitate bat xede-entitate batekin beste bitartekari-entitate baten edo gehiagoren bidez konektatzeko aukera ematen duena.
 
 Adibidez, *eCommerce_eCommercePurchasesWest* izeneko jarduera-entitate bat konektatzen bada *eCommerce_eCommercePurchasesEast* izeneko tarteko entitate batekin eta, ondoren, *eCommerce_eCommerceContacts* izeneko xede-entitate batera konektatzen bada, salto anitzeko harremana da.
 
@@ -168,16 +165,6 @@ Salto anitzeko eta bide anitzeko erlazioak batera erabil daitezke sortzeko **sal
 Adibidez, *eCommerce_eCommercePurchasesWest* izeneko jarduera-entitate bat konektatzen bada *eCommerce_eCommercePurchasesEast* izeneko tarteko entitate batekin eta, ondoren, *eCommerce_eCommerceContacts* eta *loyaltyScheme_loyCustomers* izeneko bi xede-entitatetara konektatzen bada, salto eta bide-izen anitzeko harremana da.
 
 :::image type="content" source="media/multi-hop_multi-path_relationship.png" alt-text="Iturburu-entitatea zuzenean konektatzen da xede-entitate batekin eta beste xede-entitate batera konektatzen da tarteko entitate baten bidez.":::
-
-## <a name="manage-existing-relationships"></a>Kudeatu lehendik dauden erlazioak 
-
-Harremanak orrian, harreman bakoitza errenkada batez irudikatzen da. 
-
-Aukeratu harremana eta aukeratu aukera hauetako bat: 
- 
-- **Editatu**: Harreman pertsonalizatuen propietateak eguneratu editatzeko panelean eta gorde aldaketak.
-- **Ezabatu**: Harreman pertsonalizatuak ezabatu.
-- **Ikusi**: Sistemak sortutako eta heredatutako harremanak ikusi. 
 
 ## <a name="next-step"></a>Hurrengo urratsa
 

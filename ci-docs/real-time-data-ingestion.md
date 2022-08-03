@@ -11,12 +11,12 @@ manager: shellyha
 searchScope:
 - ci-system-api-usage
 - customerInsights
-ms.openlocfilehash: 39d68011df9e4341244af627bb71f4e3635256bb
-ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
+ms.openlocfilehash: 403cc9dbd3bddcf67f59b5cb0be936af4d268fc2
+ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
 ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9083177"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "9195643"
 ---
 # <a name="real-time-data-ingestion-preview"></a>Denbora errealeko iragazkiak (aurrebista)
 
@@ -28,7 +28,7 @@ Denbora errealeko funtzioak berehala ematen ditu kontsumorako datuak, ondorengo 
 
 Denbora errealeko eguneratzeek iraungitze-denbora dute eta ondoren datu-iturburu-etik ez dute balioa gehitzen:
 
-- Profilaren eguneratzeak 4 orduz mantenduko dira
+- Profilaren eguneraketak lau orduz mantenduko dira
 - Jarduerak 30 egunez mantenduko dira
 
 Balio hauek API dei parametroak alda ditzakezu. Zure datu iturriak zure egia iturri izaten jarraituko dutela ziurtatzea dute helburu. Denbora errealeko eguneratzeak denbora gehiagoz sartzea nahi baduzu, datu-iturburu batean gehitu behar dituzu hurrengo programatutako freskatzean atera ahal izateko.

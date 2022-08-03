@@ -1,7 +1,7 @@
 ---
 title: Egin lan Customer Insights datuekin Microsoft Dataverse-n
 description: Ikasi nola konektatu Customer Insights eta Microsoft Dataverse eta esportatzen diren irteerako entitateak ulertu Dataverse.
-ms.date: 05/30/2022
+ms.date: 07/15/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: shellyha
 searchScope:
 - ci-system-diagnostic
 - customerInsights
-ms.openlocfilehash: 252723b8c174cb1ec488388c26fd2a1d398e9002
-ms.sourcegitcommit: 5e26cbb6d2258074471505af2da515818327cf2c
+ms.openlocfilehash: 89ff629033230de3c6252b6a3a16816d9b3c1287
+ms.sourcegitcommit: 85b198de71ff2916fee5500ed7c37c823c889bbb
 ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 06/14/2022
-ms.locfileid: "9011505"
+ms.lasthandoff: 07/15/2022
+ms.locfileid: "9153389"
 ---
 # <a name="work-with-customer-insights-data-in-microsoft-dataverse"></a>Egin lan Customer Insights datuekin Microsoft Dataverse-n
 
@@ -27,19 +27,31 @@ Zurera konektatzen Dataverse inguruneak ere aukera ematen dizu [irensi lokal dat
 ## <a name="prerequisites"></a>Aurrebaldintzak
 
 - Bezeroen ikuspegiak eta Dataverse inguruneak eskualde berean egon behar dira.
-- Administratzaile global rola izan behar duzu Dataverse ingurunea. Egiaztatu hau bada [Dataverse ingurunea lotzen da](/power-platform/admin/control-user-access#associate-a-security-group-with-a-dataverse-environment) segurtasun-talde jakin batzuetara eta ziurtatu segurtasun-talde horietan gehitzen zarela.
+- Administratzaile rol globala izan behar duzu Dataverse ingurunea. Egiaztatu hau bada [Dataverse ingurunea lotzen da](/power-platform/admin/control-user-access#associate-a-security-group-with-a-dataverse-environment) segurtasun-talde jakin batzuetara eta ziurtatu segurtasun-talde horietan gehitzen zarela.
 - Ez dago beste Customer Insights ingurunerik dagoeneko lotuta Dataverse konektatu nahi duzun ingurunea. Ikasi nola egin [kendu lehendik dagoen konexio bat a Dataverse ingurunea](#remove-an-existing-connection-to-a-dataverse-environment).
-- A Microsoft Dataverse ingurunea biltegiratze-kontu bakar batera bakarrik konekta daiteke. Ingurunea konfiguratzen baduzu soilik aplikatzen da [erabili zure Azure Data Lake Storage](own-data-lake-storage.md).
+- A Microsoft Dataverse ingurunea biltegiratze-kontu bakar batera bakarrik konekta daiteke. Ingurua konfiguratzen baduzu soilik aplikatzen da [erabili zure Azure Data Lake Storage](own-data-lake-storage.md).
+
+## <a name="dataverse-storage-capacity-entitlement"></a>Dataverse biltegiratze ahalmenaren eskubidea
+
+Customer Insights harpidetzak zure erakundearen edukiera gehigarria izateko eskubidea ematen dizu [Dataverse biltegiratze ahalmena](/power-platform/admin/capacity-storage). Gehitutako edukiera zure harpidetzak erabiltzen dituen profil kopuruaren araberakoa da.
+
+**Adibidez:**
+
+15 GB datu-baseen biltegiratzea eta 20 GB fitxategi biltegiratzea lortzen duzula 100.000 bezero-profil bakoitzeko. Zure harpidetzak 300.000 bezero-profil barne hartzen baditu, zure biltegiratze-ahalmena 45 GB (3 x 15 GB) datu-baseen biltegiratzea eta 60 GB fitxategien biltegiratzea (3 x 20 GB) izango litzateke. Era berean, 30K kontu dituen B2B harpidetza baduzu, zure biltegiratze-ahalmena 45 GB (3 x 15 GB) datu-baseen biltegiratzea eta 60 GB fitxategi biltegiratzea (3 x 20 GB) izango litzateke.
+
+Erregistro-ahalmena ez da gehitzen eta finkoa zure erakundearentzat.
+
+Edukiera-eskubide zehatzei buruzko informazio gehiago lortzeko, ikus [Dynamics 365 Lizentzien Gida](https://go.microsoft.com/fwlink/?LinkId=866544).
 
 ## <a name="connect-a-dataverse-environment-to-customer-insights"></a>Konektatu a Dataverse ingurunea Customer Insights
 
-The **Microsoft Dataverse** urratsak Customer Insights zurearekin konektatzeko aukera ematen dizu Dataverse ingurunea bitartean [Customer Insights ingurunea sortzea](create-environment.md).
+The **Microsoft Dataverse** urratsak Customer Insights zurearekin konektatzeko aukera ematen dizu Dataverse ingurunea bitartean [Customer Insights ingurune bat sortzea](create-environment.md).
 
 :::image type="content" source="media/dataverse-provisioning.png" alt-text="datuak partekatzearekin Microsoft Dataverse sareko ingurune berrietarako automatikoki gaituta.":::
 
-Administratzaileek Customer Insights konfigura dezakete lehendik dagoen bat konektatzeko Dataverse ingurunea. URLa emanez Dataverse ingurunea, bere Customer Insights ingurune berrira atxikitzen ari da.
+Administratzaileek Customer Insights konfigura dezakete lehendik dagoen bat konektatzeko Dataverse ingurunea. URLa emanez Dataverse ingurunea, bere Customer Insights ingurune berrira konektatzen ari da. Customer Insights eta konexioa ezarri ondoren Dataverse, ez aldatu erakundearen izena Dataverse ingurunea. Erakundearen izena erabiltzen da Dataverse URLak eta aldatutako izenak Customer Insights-ekin lotura hausten dute.
 
-Lehendik dagoen bat erabili nahi ez baduzu Dataverse ingurunea, sistemak ingurune berri bat sortzen du zure maizterren Customer Insights datuetarako. [Power Platform administratzaileek inguruneak nork sor ditzakeen kontrola dezakete](/power-platform/admin/control-environment-creation). Customer Insights ingurune berri bat konfiguratzen ari zarenean eta administratzaileak hau sortzea desgaitu duenean Dataverse administratzaileentzat izan ezik, ezingo duzu ingurune berririk sortu.
+Lehendik dagoen bat erabili nahi ez baduzu Dataverse ingurunea, sistemak ingurune berri bat sortzen du zure maizterren Customer Insights datuetarako. [Power Platform administratzaileek inguruneak nork sor ditzakeen kontrola dezakete](/power-platform/admin/control-environment-creation). Customer Insights ingurune berri bat konfiguratzen ari zarenean eta administratzaileak hau sortzea desgaitu duenean Dataverse denentzako inguruneak administratzaileak izan ezik, agian ezingo duzu ingurune berririk sortu.
 
 **Gaitu datuak partekatzea** rekin Dataverse datuak partekatzeko kontrol-laukia hautatuta.
 
@@ -57,11 +69,11 @@ Datuak partekatzeko aukera gaitu Microsoft Dataverse zure ingurunea denean [zure
 Erabiltzerakoan bi muga daude Dataverse zurearekin Azure Data Lake Storage kontua:
 
 - A-ren arteko bat-bateko mapeoa dago Dataverse antolakuntza eta an Azure Data Lake Storage kontua. Behin a Dataverse erakundea biltegiratze-kontu batera konektatuta dago, ezin da beste biltegiratze-kontu batera konektatu. Muga horrek eragozten du a Dataverse ez ditu biltegiratze-kontu bat baino gehiago betetzen.
-- Datuak partekatzeak ez du funtzionatuko zure atzitzeko Azure Private Link konfigurazio bat behar bada Azure Data Lake Storage kontua suebaki baten atzean dagoelako. Dataverse Une honetan ez du onartzen esteka pribatuaren bidez amaierako puntu pribatuetarako konexioa.
+- Datuak partekatzeak ez du funtzionatuko zure atzitzeko Azure Private Link konfigurazio bat behar bada Azure Data Lake Storage kontua suebaki baten atzean dagoelako. Dataverse Une honetan, ez du onartzen esteka pribatuaren bidez amaierako puntu pribatuetarako konexioa.
 
 ### <a name="set-up-powershell"></a>Konfiguratu PowerShell
 
-PowerShell script-ak exekutatzeko, lehenik eta behin PowerShell horren arabera konfiguratu behar duzu.
+PowerShell scriptak exekutatzeko, lehenik eta behin PowerShell horren arabera konfiguratu behar duzu.
 
 1. Instalatu azken bertsioa [Azure Active Directory PowerShell for Graph](/powershell/azure/active-directory/install-adv2).
    1. Zure ordenagailuan, hautatu Windows tekla teklatuan eta bilatu **Windows PowerShell** eta hautatu **Exekutatu administratzaile gisa**.
@@ -77,14 +89,14 @@ PowerShell script-ak exekutatzeko, lehenik eta behin PowerShell horren arabera k
        - Behar duzu *maizter admin* PowerShell script hau exekutatzeko baimenak.
        - PowerShell script honek bi segurtasun talde sortzen ditu zure Azure harpidetzan. Bat Irakurle taldearentzat eta beste bat Kolaboratzaile taldearentzat eta egingo du Microsoft Dataverse Zerbitzua bi segurtasun talde hauen jabe gisa.
        - Exekutatu PowerShell script hau Windows PowerShell-en zurea duen Azure harpidetza IDa emanez Azure Data Lake Storage. Ireki PowerShell script-a editore batean informazio gehigarria eta inplementatutako logika berrikusteko.
-       - Gorde script honek sortutako segurtasun-taldeen ID balioak, hauek erabiliko ditugulako`ByolSetup.ps1` gidoia.
+       - Gorde script honek sortutako segurtasun-taldeen ID balioak, horiek erabiliko ditugulako`ByolSetup.ps1` gidoia.
 
         > [!NOTE]
-        > Segurtasun-taldeen sorrera desgaitu daiteke maizterrean. Kasu horretan, eskuzko konfigurazioa beharko litzateke eta zure Azure AD administratzaileak beharko luke [gaitu segurtasun taldeak sortzea](/azure/active-directory/enterprise-users/groups-self-service-management).
+        > Segurtasun-taldeen sorrera desgaitu daiteke zure maizterrean. Kasu horretan, eskuzko konfigurazioa beharko litzateke eta zure Azure AD administratzaileak beharko luke [gaitu segurtasun taldeak sortzea](/azure/active-directory/enterprise-users/groups-self-service-management).
 
     2. `ByolSetup.ps1`
         - Behar duzu *Biltegiratze Blob Datuen jabea* biltegiratze kontu/edukiontzi mailan baimenak script hau exekutatzeko edo script honek bat sortuko dizu. Zure rol-esleipena eskuz ken daiteke scripta behar bezala exekutatu ondoren.
-        - PowerShell script honek tolean oinarritutako sarbide-kontrola (RBAC) gehitzen du Microsoft Dataverse zerbitzua eta edozein Dataverse oinarritutako negozio-aplikazioak. Era berean, Sarbide Kontrol Zerrenda (ACL) eguneratzen du CustomerInsights edukiontzian sortutako segurtasun taldeetarako.`CreateSecurityGroups.ps1` gidoia. Kolaboratzaile taldeak izango du *rwx* baimena eta Irakurle taldeak izango du *rx* baimena soilik.
+        - PowerShell script honek beharrezko roletan oinarritutako sarbide-kontrola gehitzen du Microsoft Dataverse zerbitzua eta edozein Dataverse oinarritutako negozio-aplikazioak. Era berean, Sarbide Kontrol Zerrenda (ACL) eguneratzen du CustomerInsights edukiontzian sortutako segurtasun taldeetarako.`CreateSecurityGroups.ps1` gidoia. Kolaboratzaile taldeak izango du *rwx* baimena eta Irakurle taldeak izango du *rx* baimena soilik.
         - Exekutatu PowerShell script hau Windows PowerShell-en zurea duen Azure harpidetza IDa emanez Azure Data Lake Storage, biltegiratze-kontuaren izena, baliabide-taldearen izena eta Reader eta Contributor segurtasun taldearen ID balioak. Ireki PowerShell script-a editore batean informazio gehigarria eta inplementatutako logika berrikusteko.
         - Kopiatu irteerako katea scripta behar bezala exekutatu ondoren. Irteerako kateak honela dauka:`https://DVBYODLDemo/customerinsights?rg=285f5727-a2ae-4afd-9549-64343a0gbabc&cg=720d2dae-4ac8-59f8-9e96-2fa675dbdabc`
 
@@ -111,7 +123,7 @@ Mendekotasunengatik konexioa kentzeak huts egiten badu, mendekotasunak ere kendu
 
 ## <a name="output-entities"></a>Irteerako entitateak
 
-Customer Insights-en irteerako entitate batzuk taula gisa eskuragarri daude Dataverse. Beheko ataletan taula horien itxarondako eskema azaltzen da.
+Customer Insights-en irteerako entitate batzuk taula gisa daude eskuragarri Dataverse. Beheko ataletan taula horien itxarondako eskema azaltzen da.
 
 - [Bezero-profila](#customerprofile)
 - [AlternateKey](#alternatekey)

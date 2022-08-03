@@ -11,14 +11,14 @@ manager: shellyha
 searchScope:
 - ci-segment-suggestions
 - customerInsights
-ms.openlocfilehash: e98aea3b3f3a2c4788346deab1b7ad7d1167110d
-ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
+ms.openlocfilehash: df4f5f4b5c9a3ad66d57a6b349e18a0d714aff62
+ms.sourcegitcommit: 8a28e9458b857adf8e90e25e43b9bc422ebbb2cd
 ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9054325"
+ms.lasthandoff: 07/18/2022
+ms.locfileid: "9170574"
 ---
-# <a name="suggested-segments-based-on-activity-data-preview"></a>Jardueretan oinarritutako iradokitako segmentuen datuak (aurreargitalpena)
+# <a name="suggested-segments-based-on-activity-preview"></a>Iradokitako segmentuak jardueraren arabera (aurrebista)
 
 Ezagutu bezeroen segmentu interesgarriak Customer Insights-en kontsumitutako bezeroen jardueren datuetan oinarrituta. Jardueren datuen adibideak transakzioak, laguntza deien iraupena, erosketak edo itzulketak dira. Segmentuak iradokitzeko, jardueren datuak aztertzen dira berritasuna, maiztasuna eta diru balioa (edo iraupena). Bestela, sor dezakezu [iradokitako segmentuak neurri bat hobetzeko edo atributu batek zerk eragiten duen hobeto ulertzeko](suggested-segments.md).
 
@@ -35,33 +35,31 @@ Customer Insights-en eskuragarri dauden [Jardueraren datuekin](activities.md), b
 - zure negozioarekin maiz elkarreragiten duten bezeroak  
 
 Txikizkako negozioa baduzu, jakingo zenuke zein bezero sortzen duten diru sarrera gehien eta kupoi batekin saritzen dituzten. Edo noizbehinkako bezeroak identifikatu eta sari programa batean sartzeko eskaintza egin dezakezu zure negozioa maizago bisitatzeko.
-Osasun publikoa eskaintzen ari zaren osasun negozioan bazabiltza eta zure helburua gaixo bakoitzarentzako gastuak gutxitzea da. Horretarako modu bat aldizkako bisitak murriztea izan daiteke, ahalik eta bisita gutxienetan arreta onena eskainiz. Kasu honetan, zure helburua da bisitaren maiztasuna baxua izatea eta pazienteen errepikapeneko kostua minimizatzea. Edo maiz hitzorduak eta errepikatzen diren kostu handiak dituzten gaixoen segmentuak identifikatu eta kasu horiek aztertu ditzakezu norbanakoaren tratamendua hobetzeko. 
+Osasun publikoa ematen baduzu eta zure helburua paziente indibidualentzako gastuak murriztea bada, saia zaitezke behin eta berriz bisitak murrizten, ahalik eta arreta onena eskainiz ahalik eta bisita gutxienetan. Kasu honetan, zure helburua da bisitaren maiztasuna baxua izatea eta pazienteen errepikapeneko kostua minimizatzea. Edo maiz hitzorduak eta errepikatzen diren kostu handiak dituzten gaixoen segmentuak identifikatu eta kasu horiek aztertu ditzakezu norbanakoaren tratamendua hobetzeko.
 
 ## <a name="required-data"></a>Beharrezko datuak
 
-Iradokizunak hautatutako sarrerako datuetan oinarrituta sortzen dira. 
+Iradokizunak hautatutako sarrerako datuetan oinarrituta sortzen dira.
 
-- Bezeroen profilak: segmentu zehatz bateko bezero guztiak edo kideak. 
+- Bezeroen profilak: segmentu zehatz bateko bezero guztiak edo kideak.
 
 - Denbora-tartea: azken hilabetea, iazkoa edo edozein denbora pertsonalizatua.
 
 - Jarduera mota: erosketak, txikizkako transakzioak, lineako transakzioak, bezeroari arreta emateko kasuak, harpidetzak, eta beste.  
 
-- Jarduera datuak biltzen dituen Customer Insights-eko entitatea: UnifiedActivity entitatea edo jarduera zehatz baterako entitatea. 
+- Jarduera datuak biltzen dituen Customer Insights-eko entitatea: UnifiedActivity entitatea edo jarduera zehatz baterako entitatea.
 
 - Sartu beharreko neurriak: berritasuna, maiztasuna edo diru dimentsioa, zure negozioaren eskakizunen arabera.
 
 ## <a name="generate-suggested-segments"></a>Sortu iradokitako segmentuak
 
-1. Joan hona: **Segmentuak**.
+1. Joan **Segmentuak** eta hautatu **Iradokizunak (aurrebista)** fitxa.
 
-1. Aukeratu **Iradokizunak (aurrebista)** fitxa.
-
-1. Aukeratu **Bilatu iradokizun berriak** eta aukeratu **Ikusi edo aurreikusi bezeroen portaera**. Aukeratu **Hasi** esperientzia gidatua martxan jartzeko.
+1. Aukeratu **Bilatu iradokizun berriak** eta aukeratu **Ikusi edo aurreikusi bezeroen portaera**. Hautatu **Hasi**.
 
    :::image type="content" source="media/suggested-segments-activity-wizard.png" alt-text="Jardueran oinarritutako iradokitako segmentu baterako konfigurazio morroiaren lehen urratsa.":::
 
-1. Eman beharrezko sarrerako datuak eta hautatu **Hurrengoa** jarraitu.
+1. Eman beharrezko sarrera-datuak eta hautatu **Hurrengoa**.
 
    - Aukeratu bezeroak: sartu bezero guztiak edo segmentu zehatz bat.
    - Aukeratu jarduera: hautatu jarduera mota eta jarduera azaltzen duten entitateak.
@@ -69,32 +67,17 @@ Iradokizunak hautatutako sarrerako datuetan oinarrituta sortzen dira.
 
 1. Berrikusi zure sarrera eta hautatu **Exekutatu** eredua martxan jartzeko eta iradokizunak sortzeko.
 
-1. Bezeroen profil kopuruaren eta hautatutako jardueren arabera, minutu batzuk behar izan ditzake burutzeko. 
+Bezeroen profil kopuruaren eta hautatutako jardueren arabera, minutu batzuk behar izan ditzake burutzeko.
 
-Iradokizunak sortu ondoren, gehien interesatzen zaizun dimentsioaren edo balioaren arabera iragazi ditzakezu. 
+Iradokizunak sortu ondoren, gehien interesatzen zaizun dimentsioaren edo balioaren arabera iragazi ditzakezu.
 
-## <a name="view-details-of-a-suggested-segment"></a>Ikusi Iradokitako segmentuaren xehetasunak
+## <a name="manage-suggested-segments"></a>Kudeatu iradokitako segmentuak
 
-Iradokizunak sortu ondoren, hemen zerrendatuta aurkituko dituzu **Segmentuak** > **Iradokizunak (aurrebista)** aukera, **Jardueretan oinarritutako iradokizunak** atalean dagoena.
+Joan **Segmentuak** eta hautatu **Iradokizunak (aurrebista)** fitxa. urtean **Jardueran oinarritutako iradokizunak** atalean, hautatu iradokitako segmentu bat erabilgarri dauden ekintzak ikusteko.
 
-:::image type="content" source="media/suggested-segments-details.png" alt-text="Iradokitako segmentu baten datu zehatzak erakusten dituen alboko panel zabaldua.":::
-
-Aukeratu **Ikusi iradokizuna** iradokitako segmentu batean segmentu horren xehetasunak ikusteko. Alboko panelak dimentsio bakoitzaren neurria bezalako xehetasunak eskaintzen ditu xede-taldearekin alderatuta. Segmentuko kide potentzialen kopurua eta bezero guztiei dagokien ehunekoa ere nabarmentzen ditu. Iradokizuna segmentu gisa gorde nahi baduzu, hautatu **Sortu segmentua**.    
-
-## <a name="save-a-suggestion-as-a-segment"></a>Gorde segmentu bat iradokizun gisa
-
-1. Joan **Segmentuak** > **Iradokizunak (aurrebista)**.
-
-1. Hautatu gorde nahi duzun segmentua. 
-
-1. Alboko panelean, hautatu **Sortu segmentua**. 
-
-1. Segmentua gorde ondoren, segmentuen zerrendan agertuko da **Segmentu guztiak** fitxa. Orain izan daiteke [freskatu edo ezabatu beste edozein segmentu bezala](segments.md). Ezin dituzu segmentuaren xehetasunak editatu. Hala ere, iradokizunetarako irizpideak aldatu eta iradokizun desberdinak sor ditzakezu.
-
-## <a name="refresh-or-edit-a-set-of-suggestions"></a>Freskatu edo editatu iradokizun multzo bat
-
-1. Joan **Segmentuak** > **Iradokizunak (aurrebista)** eta bilatu segmentua **Jardueretan oinarritutako iradokizunak** atala.
-
-1. Aukeratu **Freskatu iradokizunak** iradokizunak freskatzeko konfiguratutako atributuak mantenduz. Edo hautatu **Editatu iradokizunak** konfiguratutako atributuak aldatzeko. Sistemak prozesua berriro exekutatuko du, segmentu iradokizunak sortuko ditu azken datuetan oinarrituta eta uneko iradokizunak ordezkatuko ditu.
+- **Ikusi iradokizuna** segmentu horren xehetasunak ikusteko dimentsio bakoitzaren hedadura, xede-taldearekin alderatuta. Segmentuko kide potentzialen kopurua eta bezero guztiei dagokien ehunekoa ere nabarmentzen ditu.
+- **Sortu segmentua** iradokitakoa segmentu gisa gordetzeko. Bertan bistaratzen da **Segmentu guztiak** fitxa eta izan daiteke [freskatu edo ezabatu](segments.md). Ezin dituzu segmentuaren xehetasunak editatu. Hala ere, iradokizunetarako irizpideak aldatu eta iradokizun desberdinak sor ditzakezu.
+- **Editatu iradokizunak** uneko iradokizunak ordezkatuko dituzten konfiguratutako atributuak aldatzeko.
+- **Freskatu iradokizunak** iradokizunak freskatzeko, konfiguratutako atributuak mantenduz.
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

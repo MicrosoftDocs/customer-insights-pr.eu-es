@@ -1,6 +1,6 @@
 ---
-title: Dynamics 365 aplikazioetarako Bezero Txartelaren gehigarria (aurrebista) (bideoa dauka)
-description: Erakutsi Dynamics 365 aplikazioetan Customer Insights-en bezero-profilaren datuak gehigarri honekin.
+title: Dynamics 365 aplikazioetarako Bezero txartelaren gehigarria (aurrebista) (bideoa dauka)
+description: Erakutsi Dynamics 365 aplikazioetako Customer Insights-en bezero-profilaren datuak gehigarri honekin.
 ms.date: 02/02/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
@@ -13,14 +13,14 @@ searchScope:
 - ci-search-filter
 - ci-customer-card
 - customerInsights
-ms.openlocfilehash: ead18963959f94fd07912384cf61802f83523e2f
-ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
+ms.openlocfilehash: 8b3b6a0d54b80d7df454e9dc925f14cc3c39684c
+ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
 ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9082127"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "9194907"
 ---
-# <a name="customer-card-add-in-for-dynamics-365-apps-preview"></a>Dynamics 365 aplikazioetarako Bezero Txartelaren gehigarria (aurrebista)
+# <a name="customer-card-add-in-for-dynamics-365-apps-preview"></a>Dynamics 365 aplikazioetarako Bezero txartelaren gehigarria (aurrebista)
 
 Lortu zure bezeroen 360 graduko ikuspegia zuzenean Dynamics 365 aplikazioetan. Bezeroaren txartelaren gehigarria onartutako Dynamics 365 aplikazio batean instalatuta baduzu, bezeroaren profileko eremuak, estatistikak eta jardueren kronograma bistaratzea aukera dezakezu. Gehigarriak Customer Insights-etik datuak berreskuratuko ditu konektatutako Dynamics 365 aplikazioko datuak eragin gabe.
 
@@ -28,21 +28,25 @@ Lortu zure bezeroen 360 graduko ikuspegia zuzenean Dynamics 365 aplikazioetan. B
 
 ## <a name="prerequisites"></a>Aurrebaldintzak
 
-- Gehigarriak Dynamics 365 ereduak gidatutako aplikazioekin soilik funtzionatzen du, hala nola Sales edo bezeroarentzako arreta-zerbitzu, 9.0 bertsioa eta berriagoak.
-- Dynamics 365 datuak Customer Insights bezeroen profilekin mapatzeko, gomendatzen dugu [Dynamics 365 aplikaziotik irentsita Microsoft Dataverse konektorea](connect-power-query.md). Dynamics 365 kontaktuak (edo kontuak) irensteko beste metodo bat erabiltzen baduzu, ziurtatu behar duzu`contactid` (edo`accountid`) eremua gisa ezartzen da [datu-iturburu horren lehen gakoa datuak bateratzeko prozesuaren mapa-urratsean](map-entities.md#select-primary-key-and-semantic-type-for-attributes).
+- Dynamics 365 ereduetan oinarritutako aplikazioak, hala nola Sales edo bezeroarentzako arreta-zerbitzu, 9.0 bertsioa eta berriagoa.
+- Dynamics 365 datuak Customer Insights bezeroen profiletara mapatzeko, gomendatzen dugu [Dynamics 365 aplikaziotik irentsita Microsoft Dataverse konektorea](connect-power-query.md). Dynamics 365 kontaktuak (edo kontuak) irensteko beste metodo bat erabiltzen baduzu, ziurtatu`contactid` (edo`accountid`) eremua gisa ezarri da [datu-iturburu horren lehen gakoa datuak bateratzeko prozesuan](map-entities.md#select-primary-key-and-semantic-type-for-attributes).
 - Bezero txartelaren gehigarriaren Dynamics 365 erabiltzaile guztiek izan behar dute [erabiltzaile gisa gehituta](permissions.md) Customer Insights-en datuak ikusteko.
-- [Bilaketa eta iragazketa gaitasunak konfiguratuta](search-filter-index.md) Customer Insights-en beharrezkoak dira datuen bilaketak funtziona dezan.
+- [Bilaketa eta iragazki gaitasunak konfiguratu ditu](search-filter-index.md) Customer Insights-en.
 - Gehigarri-kontrol bakoitza Customer Insights-eko datu zehatzetan oinarritzen da. Datu eta kontrol batzuk mota jakin batzuetako inguruneetan soilik daude eskuragarri. Gehigarriaren konfigurazioak aukeratutako ingurune mota dela-eta kontrol bat erabilgarri ez badago jakinaraziko dizu. Ikasi gehiago hurrengoari buruz [ingurunearen erabilera-kasuak](work-with-business-accounts.md).
-  - **Neurriaren kontrola**: Beharrezkoa da [konfiguratutako neurriak](measures.md) bezeroaren atributu mota.
-  - **Inteligentzia kontrola** : Erabiliz sortutako datuak eskatzen ditu [iragarpenak edo eredu pertsonalizatuak](predictions-overview.md).
-  - **Bezeroen xehetasunak kontrolatzea**: Profileko eremu guztiak eskuragarri daude bezeroaren profil bateratuan.
-  - **Aberastearen kontrola**: eskatzen du aktiboa [hobekuntzak](enrichment-hub.md) aplikatuta bezeroaren profiletara. Txartelaren gehigarriak aberastasun hauek onartzen ditu: [Markak](enrichment-microsoft.md) Microsoft-ek emandakoa, [Interesak](enrichment-microsoft.md) Microsoft-ek emandakoa, eta [Bulegoko konpromiso-datuak](enrichment-office.md) Microsoft-ek emandakoa.
-  - **Kontaktuen kontrola**: Motako kontaktuen entitate semantikoaren definizioa eskatzen du.
-  - **Kronologiaren kontrola**: eskatzen du [konfiguratutako jarduerak](activities.md).
+  - **Neurri kontrola** eskatzen du [konfiguratutako bezero-atributuen neurriak](measures.md).
+  - **Inteligentzia kontrola** erabiliz sortutako datuak eskatzen ditu [iragarpenak edo eredu pertsonalizatuak](predictions-overview.md).
+  - **Bezeroaren xehetasunen kontrola** bezeroen profil bateratuan erabilgarri dagoen profilaren eremu guztiak erakusten ditu.
+  - **Aberaste kontrola** aktiboa eskatzen du [aberastasunak](enrichment-hub.md) bezeroen profilei aplikatuta. Txartelaren gehigarriak aberastasun hauek onartzen ditu: [Markak](enrichment-microsoft.md) Microsoft-ek emandakoa, [Interesak](enrichment-microsoft.md) Microsoft-ek emandakoa, eta [Bulegoko konpromiso-datuak](enrichment-office.md) Microsoft-ek emandakoa.
+  - **Kontaktuen kontrola** harremanetarako entitate semantiko mota bat behar du.
+  - **Denbora-lerroaren kontrola** eskatzen du [konfiguratutako jarduerak](activities.md).
 
 ## <a name="install-the-customer-card-add-in"></a>Instalatu Bezeroaren txartelaren osagarria
 
-Bezeroaren Txartelaren Gehigarria Dynamics 365-en customer engagement aplikazioetarako irtenbidea da. Konponbidea instalatzeko, joan AppSource eta bilatu **Bezero txartel dinamikoa**. Hautatu [Bezero txartela AppSource-n](https://appsource.microsoft.com/product/dynamics-365/mscrm.dynamics_365_customer_insights_customer_card_addin?tab=Overview) eta hautatu **Eskuratu orain**.
+Bezeroaren Txartelaren Gehigarria Dynamics 365-en customer engagement aplikazioetarako irtenbidea da. Irtenbidea instalatzeko:
+
+1. Joan AppSource eta bilatu **Dynamics Bezero Txartela**.
+
+1. Hautatu [Bezero txartela AppSource-n](https://appsource.microsoft.com/product/dynamics-365/mscrm.dynamics_365_customer_insights_customer_card_addin?tab=Overview) eta hautatu **Eskuratu orain**.
 
 Baliteke Dynamics 365 aplikaziorako zure administratzaileekin saioa hasi behar duzula irtenbidea instalatzeko. Zenbait denbora behar izango duzu irtenbidea zure ingurunean instalatzeko.
 
@@ -122,7 +126,7 @@ Bezeroaren txartelaren gehigarria ez da automatikoki eguneratzen. Azken bertsior
 
 ## <a name="troubleshooting"></a>Arazoak konpontzea
 
-### <a name="controls-from-customer-card-add-in-dont-find-data"></a>Bezero Txartelaren Gehigarriko kontrolek ez dute daturik aurkitzen
+### <a name="controls-from-customer-card-add-in-dont-find-data"></a>Bezero Txartelaren gehigarriko kontrolek ez dute daturik aurkitzen
 
 **Arazoa:**
 
@@ -133,13 +137,13 @@ Nahiz eta behar bezala konfiguratutako ID eremuak, kontrolek ezin dute inolako b
 1. Ziurtatu Txartelaren gehigarria argibideen arabera konfiguratu duzula: [Konfiguratu Bezero Txartelaren gehigarria](#configure-the-customer-card-add-in)
 
 1. Berrikusi datuak sartzeko konfigurazioa. Editatu kontaktuaren ID GUIDa duen Dynamics 365 sistemarako datu-iturburu. Kontaktuaren ID GUID letra larriz agertzen bada Power Query editorea, saiatu urrats hauek:
-    1. Editatu datu-iturburu datu-iturburu hemen irekitzeko Power Query Editorea.
+    1. Editatu datu-iturburu datu-iturburu-en irekitzeko Power Query Editorea.
     1. Hautatu kontaktuaren ID zutabea.
     1. Hautatu **Eraldatu** goiburuko barran erabilgarri dauden ekintzak ikusteko.
     1. Hautatu **minuskula**. Baliozkotu taulako GUIDak letra xeheak badira.
     1. Gorde datu-iturburua.
     1. Exekutatu datuak sartzea, bateratzea eta beheranzko prozesuak aldaketak GUIDera hedatzeko.
 
-Sistemak freskatze osoa amaitu ondoren, Bezero Txartelaren Gehigarrien kontrolak espero diren datuak erakutsi beharko lituzke.
+Sistemak freskatze osoa amaitu ondoren, Bezero Txartelaren gehigarrien kontrolak espero diren datuak erakutsi beharko lituzke.
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

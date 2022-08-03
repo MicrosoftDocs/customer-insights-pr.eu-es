@@ -8,12 +8,12 @@ ms.topic: how-to
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: b58532a541ee22a5e34d0af1a3334ccbd53627b2
-ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
+ms.openlocfilehash: 3f23fe7177f931db3e3179970915d0cd3c736f87
+ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
 ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9082358"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "9196195"
 ---
 # <a name="enrich-company-profiles-with-leadspace-preview"></a>Aberastu enpresaren profilak Leadspace-rekin (aurrebista)
 
@@ -27,7 +27,7 @@ Leadspace datu-zientzietako enpresa bat da, B-to-B Bezeroentzako Datuen Platafor
 
 ## <a name="configure-the-connection-for-leadspace"></a>Konfiguratu konexioa Leadspace-rako
 
-Bat izan behar duzu [administratzailea](permissions.md#admin) Customer Insights-en eta "betiko giltza" dute (deitzen dena **Leadspace tokena**).
+Bat izan behar duzu [administratzailea](permissions.md#admin) Customer Insights-en eta "betiko gakoa" dute (deitzen zaio **Leadspace tokena**).
 
 1. Hautatu **Gehitu konexioa** aberaste bat konfiguratzean edo joan **Admin** > **Konexioak** eta hautatu **Konfiguratu** Leadspace fitxan.
 
@@ -54,11 +54,11 @@ Dynamics 365 Customer Insights administratzailea edonoiz ken dezake aberastea fu
 
 1. Berrikusi ikuspegi orokorra eta, ondoren, hautatu **Hurrengoa**.
 
-1. Hautatu konexioa. Jarri harremanetan administratzaile batekin erabilgarri ez badago.
+1. Hautatu konexioa. Jarri harremanetan administratzaile batekin konexiorik ez badago.
 
 1. Hautatu **Hurrengoa**.
 
-1. Hautatu **Bezeroaren datu multzoa** eta aukeratu Leadspace enpresako datuekin aberastu nahi duzun profila edo segmentua. The *Bezeroa* entitateak zure bezero-profil guztiak aberasten ditu, eta segmentu batek segmentu horretan dauden bezero-profilak soilik aberasten ditu.
+1. Hautatu **Bezeroaren datu multzoa** eta aukeratu Leadspace enpresako datuekin aberastu nahi duzun profila edo segmentua. The *Bezeroa* entitateak zure bezero-profil guztiak aberasten ditu, segmentu batek segmentu horretan dauden bezero-profilak soilik aberasten ditu.
 
     :::image type="content" source="media/enrichment-Leadspace-configuration-customer-data-set.png" alt-text="Pantaila-argazkia bezeroaren datu multzoa aukeratzerakoan.":::
 

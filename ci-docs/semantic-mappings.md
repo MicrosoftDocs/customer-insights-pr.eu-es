@@ -11,18 +11,18 @@ manager: shellyha
 searchScope:
 - ci-semantic-mapping
 - customerInsights
-ms.openlocfilehash: b3a0643ab71c98ce212f4e4581a584d8382c67eb
-ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
+ms.openlocfilehash: 7c9588ac7a132ca6f43cf26ea3a744109a0dd2b8
+ms.sourcegitcommit: ad74ace653db9a25fce4343adef7db1c9b0d8904
 ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9083135"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "9183616"
 ---
 # <a name="semantic-mappings-preview"></a>Esleipen semantikoak (aurreargitalpena)
 
-Kartografia semantikoek jarduerarik gabeko datuak aurrez definitutako eskemetara mapatzen uzten dizute. Eskema hauek Customer Insights-i zure datuen atributuak hobeto ulertzen laguntzen dute. Mapa semantikoak eta emandako datuek Customer Insights-en ikuspegi eta eginbide berriak ahalbidetzen dituzte. Zure jardueren datuak eskemetara mapatzeko, berrikusi [jarduerak](activities.md) dokumentazioa.
+Kartografia semantikoek jarduerarik gabeko datuak aurrez definitutako eskemetara mapatzen uzten dizute. Eskema hauek Customer Insights-i zure datuen atributuak hobeto ulertzen laguntzen diote. Mapa semantikoak eta emandako datuek Customer Insights-en ikuspegi eta eginbide berriak ahalbidetzen dituzte. Zure jardueren datuak eskemetara mapatzeko, berrikusi [jarduerak](activities.md) dokumentazioa.
 
-**Gaur egun mapaketa semantikoak gaituta daude negozio kontuetan oinarritutako inguruneetan**. *Harremanetarako Profila* Customer Insights-en gaur egun eskuragarri dagoen mapa semantiko mota bakarra da.
+**Gaur egun mapaketa semantikoak gaituta daude negozio kontuetan oinarritutako inguruneetan**. *HarremanetarakoProfila* Customer Insights-en gaur egun eskuragarri dagoen mapa semantiko mota bakarra da.
 
 ## <a name="define-a-contactprofile-semantic-entity-mapping"></a>Definitu ContactProfile entitateen mapaketa semantikoa
 
@@ -32,21 +32,21 @@ Kartografia semantikoek jarduerarik gabeko datuak aurrez definitutako eskemetara
 
 1. Urtean **Entitatearen datuak** urratsa, ezarri ondoko eremuetarako balioak:
 
-   - **Entitate maparen izena semantikoa**: Eman izena entitateen mapaketa semantikorako.
-   - **Iturburuko entitatea**: Hautatu harremanetarako datuak biltzen dituen entitatea.
-   - **Gako nagusia**: hautatu eremua bakarrik identifikatzen duena kontaktuaren erregistroa. Ez luke balio bikoizturik, balio hutsak edo falta diren balioak.
+   - **Entitate semantikoaren maparen izena** : izena zure entitate semantikoaren mapak egiteko.
+   - **Iturburu Entitatea** : harremanetarako datuak biltzen dituen entitatea.
+   - **Lehen gakoa** : kontaktu-erregistro bat modu esklusiboan identifikatzen duen eremua. Ez luke balio bikoizturik, balio hutsak edo falta diren balioak.
 
    :::image type="content" source="media/Semantic_Mapping_Wizard1.png" alt-text="Konfiguratu entitateen mapaketa semantikoa izena, iturburu entitatea eta gako nagusiarekin.":::
 
-1. Jarraitzeko, hautatu **Hurrengoa**.
+1. Hautatu **Hurrengoa**.
 
 1. Urtean **Harremanak** urratsa, konfiguratu xehetasunak zure harremanetarako datuak dagozkien kontuko datuekin konektatzeko. Urrats honek entitateen arteko konexioa bistaratzen du.  
 
    Inplementatu daitezkeen bi harreman mota daude: **Harreman zuzenak** eta **Zeharkako harremanak**. Informazio gehiagorako, joan hona [harreman zuzeneko eta zeharkako bideak](relationships.md#relationship-paths).
 
-   1. Aukeratu **Gehitu harremana** harremana konfiguratu.
+   1. Hautatu **Gehitu harremana** harremana konfiguratzeko.
    1. Aukeratu zure iturburuko entitatearen atributua zure harremanetarako entitatea beste entitate batekin konektatzen duena.
-   1. Aukeratu entitatea zure harremanetarako entitatearekin konektatzeko. Entitate bat aukeratu dezakezu **Kontuko entitateak** edo **Bitarteko entitatea** atala. Bitarteko entitate bat hautatzen baduzu, bigarren harremana definitu beharko duzu zure xede-kontuko entitatearekin konektatzeko.
+   1. Aukeratu entitatea zure harremanetarako entitatearekin konektatzeko. Aukeratu entitate bat **Kontu-entitateak** edo **Bitarteko entitatea** atala. Tarteko entitate bat hautatzen baduzu, definitu bigarren harreman bat zure xede-kontuaren entitatearekin konektatzeko.
 
       :::image type="content" source="media/Semantic_Mapping_Wizard2.png" alt-text="Aukeratu Kontuko entitatea edo Bitarteko entitatea.":::
 
@@ -55,52 +55,47 @@ Kartografia semantikoek jarduerarik gabeko datuak aurrez definitutako eskemetara
 
    > [!NOTE]
    > Harreman gehiago konfigura ditzakezu harremanetarako entitatearen eta tarteko entitateekin beste kontu-entitate batzuen artean.
-   >  :::image type="content" source="media/Semantic_Mapping_Wizard4.png" alt-text="Hainbat harreman bistaratzeak harremanetarako entitateak kontuko entitateekin lotzen ditu.":::
+   
+     :::image type="content" source="media/Semantic_Mapping_Wizard4.png" alt-text="Hainbat harreman bistaratzeak harremanetarako entitateak kontuko entitateekin lotzen ditu.":::
 
-1. Aukeratu **Hurrengoa** harreman konfigurazioa amaitutakoan.
+1. Hautatu **Hurrengoa**.
 
 1. Urtean **Ezarri mota semantikoa** urratsa, aukeratu bat **Mota semantikoa**. Gaur egun, bada bat **Mota semantikoa** deitu *ContactProfile*.
 
-1. Esleitu zure datuak *ContactProfile* **Mota semantikoa** erakutsitako eremuetarako.
-   - Eskatutako eremua: kontaktuaren IDa
-   - Aukerako eremuak: izen, abizen, Jaiotze data, generoa, posta elektroniko nagusia eta telefono nagusia
+1. Mapeatu zure kontaktuaren ID-ra *HarremanetarakoProfila* mota semantikoa **Harremanetarako IDa**. Aukeran, mapatu beste eremu batzuk, hala nola izen, abizen, generoa edo posta elektronikoa.
 
    :::image type="content" source="media/Semantic_Mapping_Wizard5.png" alt-text="Mapatu zure harremanetarako datuen atributuak beharrezko eta aukerako eremuekin.":::
 
-1. Jarraitzeko, hautatu **Hurrengoa**.
+1. Hautatu **Hurrengoa**.
 
-1. Urtean **Berrikuspena** urratsa, begiratu mapaketa semantikoaren konfigurazioari. Aukeratu **Editatu** dagokion atalak aldaketak egin ditzan.
+1. urtean **Berrikuspena** urratsa, berrikusi mapa semantikoaren konfigurazioa. Aldaketak egiteko, hautatu **Editatu** dagokion atalerako.
 
-1. Aukeratu **Gorde** berria gordetzeko **Kartografia semantikoa**.
+1. Sakatu **Gorde**.
 
-1. Gorde ondoren, hauta dezakezu **Korrika egin** prozesatu mapaketa semantikoa edo hautatu dezakezu **Itxi** zure mapaketa semantikoa prozesatu gabe gordetzeko.
-
-1. Kartografia semantiko bat aurrerago exekutatzeko, hautatu mapaketa semantikoa eta hautatu **Freskatu**.
+1. Mapa semantikoa prozesatzeko, hautatu **Korrika egin**. Edo hautatu **Itxi** zure mapa semantikoa prozesatu gabe gordetzeko. Geroago exekutatzeko, hautatu mapa semantikoa eta hautatu **Freskatu**.
 
 [!INCLUDE [progress-details-include](includes/progress-details-pane.md)]
 
 ## <a name="manage-existing-semantic-mappings"></a>Kudeatu lehendik dauden mapaketa semantikoak
 
-Aktibatuta **Datuak** > **Kartografia semantikoak (aurrebista)**, gordetako mapaketa semantiko guztiak ikusi eta kudeatu ditzakezu. Kartografia semantiko bakoitza ilara bereizi baten bidez irudikatzen da. Iturburuko entitateari, mota semantikoari, mapaketa motari eta haren egoerari buruzko xehetasunak aurkituko dituzu.
+Joan **Datuak** > **Mapeo semantikoak (aurrebista)** gordetako mapa semantikoak, haien iturburu-entitatea, mota semantikoa, mapa mota eta egoera ikusteko.
 
 :::image type="content" source="media/semantic-mapping-options.png" alt-text="Kartografia semantikoak kudeatzeko aukerak.":::
 
-- **Editatu**: ireki konfigurazioa esleipen semantikoaren konfigurazioa berrikuste pausoan. Uneko konfigurazioa alda dezakezu. Aukeratu **Gorde** eta **Korrika egin** aldaketak prozesatzeko.
-
-- **Freskatu**: Aukeratutako mapaketa semantikoa freskatzen du bere konfigurazioaren parte diren entitateetako datu eguneratuenekin. Edozein mapaketa semantiko freskatzeak mota bereko mapaketa semantiko guztiak freskatuko ditu.
-
-- **Aldatu izena**: Elkarrizketa-koadro bat irekitzen du eta bertan beste izen bat sar dezakezu hautatutako mapaketa semantikorako. Aldaketak aplikatzeko, hautatu **Gorde**.
-
-- **Ezabatu**: Elkarrizketa-koadro bat irekitzen du hautatutako mapaketa semantikoa ezabatzen dela berresteko. Kartografia semantiko bat baino gehiago aldi berean ezaba ditzakezu mapaketa semantikoak eta ezabatzeko ikonoa hautatuta. Hautatu **Ezabatu** ezabatzea baieztatzeko.
+Hautatu mapa semantikoa erabilgarri dauden ekintzak ikusteko.
+- **Editatu** egungo konfigurazioa. Aukeratu **Gorde** eta **Korrika egin** aldaketak prozesatzeko.
+- **Freskatu** azken datuak sartzeko mapa semantikoa. Edozein mapaketa semantiko freskatzeak mota bereko mapaketa semantiko guztiak freskatuko ditu.
+- **Aldatu izena** mapa semantikoa. Sakatu **Gorde**.
+- **Ezabatu** mapa semantikoa. Kartografia semantiko bat baino gehiago aldi berean ezabatzeko, hautatu mapa semantikoak eta ezabatzeko ikonoa. Hautatu **Ezabatu** ezabatzea baieztatzeko.
 
 ## <a name="use-a-contactprofile-semantic-entity-mapping-to-create-contact-level-activities"></a>Erabili ContactProfile entitate semantikoen mapaketa kontaktu mailako jarduerak sortzeko
 
-Bat sortu ondoren *Harremanetarako Profila* entitate semantikoen mapak, kontaktuen jarduerak har ditzakezu. Kontu baten jardueraren kronograman ikus dezakezu zein kontaktu zen jarduera bakoitzaren arduraduna. Urrats gehienek jarduera-mapearen konfigurazio tipikoari jarraitzen diote.
+Bat sortu ondoren *Harremanetarako Profila* entitate semantikoen mapaketa, kontaktuen jarduerak har ditzakezu. Kontu baten jardueraren kronograman ikus dezakezu zein kontaktu zen jarduera bakoitzaren arduraduna. Urrats gehienek jarduera-mapearen konfigurazio tipikoari jarraitzen diote.
 
    > [!NOTE]
-   > Kontaktu mailako jarduerak funtzionatzeko, biak izan behar dituzu **Kontuaren ID** eta **Kontaktu ID** zure jarduera-datuen barruan erregistro bakoitzeko atributuak.
+   > Kontaktu mailako jarduerak funtzionatzeko, biak izan behar dituzu **Kontuaren ID** eta **Kontaktu ID** zure jarduera-datuen barruan erregistro bakoitzerako atributuak.
 
-1. [Definitu a *Harremanetarako Profila* entitate semantikoen mapaketa.](#define-a-contactprofile-semantic-entity-mapping) Eta exekutatu mapa semantikoa.
+1. [Definitu a *HarremanetarakoProfila* entitate semantikoen mapaketa](#define-a-contactprofile-semantic-entity-mapping) eta exekutatu mapa semantikoa.
 
 1. Joan **Datuak** > **Jarduerak**.
 
@@ -108,7 +103,7 @@ Bat sortu ondoren *Harremanetarako Profila* entitate semantikoen mapak, kontaktu
 
 1. Jarriari izena eman, hautatu iturburuko jarduera-entitatea eta hautatu jarduera-entitatearen gako nagusia.
 
-1. urtean **Harremanak** urratsa, sortu zure jarduera-iturburuko datuen arteko zeharkako harremana kontuekin, zure harremanetarako datuak bitartekari gisa erabiliz. Informazio gehiagorako, ikus [harreman zuzeneko eta zeharkako bideak](relationships.md#relationship-paths).
+1. urtean **Harremanak** urratsa, sortu zure jarduera-iturburuko datuen arteko zeharkako harremana kontuekin, zure harremanetarako datuak bitartekari gisa erabiliz. Informazio gehiagorako, ikus [zuzeneko eta zeharkako harreman bideak](relationships.md#relationship-paths).
    - Deitutako jarduera baterako erlazio adibidea *Erosketak*:
       - **Erosketak Iturburu Jardueren Datuak** > **Harremanetarako datuak** atributuaren gainean **Kontaktu ID**
       - **Harremanetarako datuak** > **Kontuaren datuak** atributuaren gainean **Kontuaren ID**
@@ -119,14 +114,14 @@ Bat sortu ondoren *Harremanetarako Profila* entitate semantikoen mapak, kontaktu
 
 1. Exekutatu zure jardueren mapak.
 
-1. Zure kontaktu-mailako jarduerak zure bezeroen denbora-lerroan ikusgai egongo dira orain.
+1. Kontaktu-mailako jardueren mapa exekutatu ondoren, hautatu **Bezeroak**. Kontaktu-mailako jarduerak zure bezeroaren denbora-lerroan bistaratzen dira.
 
    :::image type="content" source="media/Contact_Activities2.png" alt-text="Azken emaitza kontaktu-jarduerak konfiguratu ondoren":::
 
-### <a name="contact-level-activity-timeline-filtering"></a>Kontaktu-mailako jardueren denbora-lerroaren iragazketa
+### <a name="contact-level-activity-timeline-filtering"></a>Kontaktu mailako jardueren denbora-lerroaren iragazketa
 
-Kontaktu-mailako jardueren mapa konfiguratu eta exekutatu ondoren, zure bezeroen jardueren kronograma eguneratuko da. Beren ID edo izenak biltzen ditu, zurearen arabera *Harremanetarako Profila* konfigurazioa, jardun zuten jardueretarako. Jarduerak kontaktuen arabera iragazi ditzakezu denbora-lerroan interesatzen zaizkizun kontaktu zehatzak ikusteko. Gainera, kontaktu zehatz bati esleituta ez dauden jarduera guztiak ikus ditzakezu hautatuta **Kontaktu bati mapatu gabeko jarduerak**.
+Zure bezeroen jardueren kronogramak haien IDak edo izenak barne hartzen ditu, zurearen arabera *HarremanetarakoProfila* konfigurazioa, jardun zuten jardueretarako. Iragazi jarduerak kontaktuen arabera denbora-lerroan interesatzen zaizkizun kontaktu zehatzak ikusteko. Kontaktu jakin bati esleituta ez dauden jarduera guztiak ikusteko, hautatu **Kontaktu bati mapatu gabeko jarduerak**.
 
-   :::image type="content" source="media/Contact_Activities3.png" alt-text="Kontaktu mailako jardueretarako eskuragarri dauden iragazketa-aukerak.":::
+:::image type="content" source="media/Contact_Activities3.png" alt-text="Kontaktu mailako jardueretarako eskuragarri dauden iragazketa-aukerak.":::
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]
