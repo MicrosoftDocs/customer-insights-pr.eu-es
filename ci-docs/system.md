@@ -1,7 +1,7 @@
 ---
-title: Sistemaren konfigurazioa
+title: Ikusi sistemaren konfigurazioa
 description: Eskuratu sistemaren ezarpenak buruz Dynamics 365 Customer Insights.
-ms.date: 04/21/2022
+ms.date: 08/09/2022
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: NimrodMagen
@@ -10,60 +10,98 @@ ms.reviewer: mhart
 manager: shellyha
 searchScope:
 - ci-system-status
-- ci-system-schedule
 - ci-system-about
 - ci-system-general
 - ci-system-api-usage
 - customerInsights
-ms.openlocfilehash: 0ef84d8e286d8135eb8938e72f1319925e948bed
-ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
+ms.openlocfilehash: 2498814a3d2e6330124fb97c036b9b310bcf1f7a
+ms.sourcegitcommit: 49394c7216db1ec7b754db6014b651177e82ae5b
 ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9050656"
+ms.lasthandoff: 08/10/2022
+ms.locfileid: "9246232"
 ---
-# <a name="system-configuration"></a>Sistemaren konfigurazioa
+# <a name="view-system-configuration"></a>Ikusi sistemaren konfigurazioa
 
-Sistemaren konfigurazioetara sartzeko, joan hona **Admin** > **Sistema** sistemako zereginen eta prozesuen zerrenda ikusteko.
+Ikusi sistemaren informazioa, sistemaren egoera eta APIaren erabilera.
 
-**Sistema** orriak fitxa hauek ditu:
-- [Fasea](#status-tab)
-- [Antolaketa](#schedule-tab)
-- [API erabilera](#api-usage-tab)
-- [Honi buruz](#about-tab)
-- [Orokorrak](#general-tab)
+## <a name="view-api-usage"></a>Ikusi APIaren erabilera
 
-:::image type="content" source="media/system-tabs.png" alt-text="Sistemaren orrian ezarpenen fitxak.":::
+Ikusi denbora errealeko APIaren erabilerari buruzko xehetasunak eta ikusi zein gertakari gertatu diren denbora-tarte jakin batean.
 
-## <a name="status-tab"></a>Egoera fitxa
+1. Joan **Admin** > **Sistema** eta hautatu **API erabilera** fitxa.
 
-The **Egoera fitxa** zereginen, datuen sarreraren, datuen esportazioen eta beste hainbat produktu-prozesu garrantzitsuen jarraipena egiteko aukera ematen du. Berrikusi fitxa honetako informazioa zure zeregin eta prozesu aktiboen osotasuna ziurtatzeko.
+1. **Hautatu denbora-tarte bat** ikusteko.
 
-Fitxa honek hainbat prozesurako egoera eta prozesatzeko informazioa duten taulak biltzen ditu. Taula bakoitzak jarraipena egiten du **izena** zeregina eta dagokion entitatea da **Egoera** bere korrika berriena eta noiz izan zen **Azken eguneraketa**. Azken exekuzioen xehetasunak ikus ditzakezu ataza edo prozesuaren izena hautatuta. 
+   The **API erabilera** orrialdeak hiru atal ditu:
 
-Hautatu ataza edo prozesuaren ondoan dagoen egoera **Egoera** zutabea irekitzeko **Aurrerapen xehetasunak** panela.
+   - **API deiak**: hautatutako epean APIra egindako deien kopuru agregatua bistaratzen duen taula.
+   - **Datuen transferentzia**: hautatutako denbora tartean APIaren bidez transferitu diren datu kopurua erakusten duen taula.
+   - **Eragiketak**: taula bat erabilgarri dauden API eragiketa bakoitzerako errenkadekin eta eragiketen erabilerari buruzko xehetasunak. Hautatu eragiketa-izen bat bertara joateko [API erreferentzia](https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights&operation=Get-all-instances).
+
+   Erabiltzen duten eragiketak [denbora errealeko datuak sartzea](real-time-data-ingestion.md) ikur prismatiko bat edukitzea denbora errealeko APIaren erabilera ikusteko.
+
+   1. Hautatu binokularra irekitzeko **Denbora errealeko APIaren erabilera** Eragiketaren erabilera xehetasunak dituen panela.
+   1. **Hautatu denbora-tarte bat** ikusteko.
+   1. Erabili **Taldeka** kutxa zure denbora errealeko elkarrekintzak nola aurkeztu onena aukeratzeko. Taldekatu datuak APIaren arabera **Metodoa**, **izen kualifikatua** (irensatutako entitatea), **Sortua** (gertaeraren iturria), **Emaitza** (arrakasta edo porrota) edo **Errore-kodeak**. Datuak historia-taula gisa eta taula gisa eskuragarri daude.
+
+## <a name="view-system-information"></a>Ikusi sistemaren informazioa
+
+Ikusi ingurunearen bistaratzeko izena, IDa, eskualdea, mota eta saioaren IDa.
+
+1. Joan **Admin** > **Sistema** eta hautatu **Buruz** fitxa.
+
+1. Hizkuntza eta herrialdea/eskualdea ikusteko, hautatu **Orokorra** fitxa.
+
+### <a name="update-preferred-language-or-countryregion"></a>Eguneratu hobetsitako hizkuntza edo herrialdea/eskualdea
+
+Bezeroen ikuspegiak [hizkuntza asko onartzen ditu](/dynamics365/get-started/availability). Aplikazioak zure hizkuntza-lehentasuna erabiliko du menua, etiketako testua eta sistemaren mezuak bezalako elementuak hobetsitako hizkuntzan erakusteko.
+
+Eskuz sartu dituzun inportatutako datuak eta informazioa ez dira itzuliko.
+
+1. Joan **Admin** > **Sistema** eta hautatu **Orokorra** fitxa.
+
+1. Nahiago duzun hizkuntza aldatzeko, aukeratu a **Hizkuntza** goitibehera.
+
+1. Data, ordua eta zenbakiak nahiago duzun formateatzea aldatzeko, erabili '... **Herrialdearen/Eskualdearen formatua** goitibeherako menuko. Formatuaren aurrebista bistaratzen da. Sistemak automatikoki aukeraketa bat iradokitzen du hizkuntza berri bat aukeratzen duzunean.
+
+1. Sakatu **Gorde**.
+
+## <a name="view-system-status"></a>Ikusi sistemaren egoera
+
+Egin jarraipena eginkizunen, datuen sarreraren, datuen esportazioen eta beste hainbat produktu-prozesu garrantzitsuen aurrerapena. Berrikusi informazioa zure zeregin eta prozesu aktiboen osotasuna ziurtatzeko.
+
+1. Joan **Admin** > **Sistema** eta hautatu **Egoera** fitxa.
+
+   Hainbat prozesuren egoera eta prozesatzeko informazioa bistaratzea. Ikusi **Izena** zereginaren, du **Egoera** bere azkeneko ibilbidea, eta noiz izan zen **Azken eguneratua**.
+
+1. Azken exekuzioen xehetasunak ikusteko, hautatu zeregina edo prozesuaren izena.
+
+1. Zeregin baten aurrerapenaren xehetasunak ikusteko, hautatu egoera. The **Aurrerapen xehetasunak** panelak bistaratzen ditu.
 
    :::image type="content" source="media/system-progress-details.png" alt-text="Sistemaren aurrerapenaren xehetasunen panela":::
 
-### <a name="status-definitions"></a>Egoeraren definizioak
+1. Zeregin guztien aurrerapenaren xehetasunak ikusteko, hautatu **Lan-fluxu osoa**.
 
-Sistemak egoera hauek erabiltzen ditu zereginetarako eta prozesuetarako:
+### <a name="status-definitions"></a>Egoera definizioak
+
+Sistemak egoera hauek erabiltzen ditu zeregin eta prozesuetarako:
 
 |Fasea  |Definizioa  |
 |---------|---------|
-|Utzi da |Prozesatzea amaitu baino lehen bertan behera utzi du erabiltzaileak.   |
-|Ezin izan da egin   |Datuen iradokizunak akatsak izan ditu.         |
-|Huts egin du  |Prozesatzeak huts egin du.  |
-|Ez da hasi   |Datu-iturburuak oraindik ez du daturik sartu edo oraindik zirriborro moduan daude.         |
+|Utzi da |Zeregin edo prozesua amaitu baino lehen bertan behera utzi du erabiltzaileak.   |
+|Ezin izan da egin   |Zereginak edo prozesuak erroreak izan ditu.         |
+|Huts egin du  |Zereginak edo prozesuak huts egin du.  |
+|Ez da hasi   |datu-iturburu-k ez du daturik irensten oraindik edo zeregina zirriborro moduan dago oraindik.         |
 |Prozesatze  |Zeregin edo prozesua abian da.  |
-|Freskatzen    |Datuen horniketa martxan da. Eragiketa hau bertan behera utzi dezakezu **Utzi freskagarria** herrian **Ekintzak** zutabea. datu-iturburu-en freskagarria gelditzeak azken freskatze egoeran itzuliko du.       |
+|Freskatzen    |Zeregin edo prozesua abian da. Eragiketa hau bertan behera uzteko, hautatu **Freskagarria** eta **Utzi lana**. Zeregin edo prozesu baten freskapena gelditzeak bere azken freskatze egoerara itzuliko du.       |
 |Saltatuta  |Zeregin edo prozesua saltatu egin da. Zeregin hau kontrolatzen duen downstream-eko prozesu bat edo gehiago huts egin edo saihestu egiten dira.|
 |Osatuta  |Zeregin edo prozesua behar bezala burutu da. Datu-iturburuetarako, datuak behar bezala irentsi direla adierazten du denboraren bat aipatzen bada **Freskatua** zutabea.|
 |Ilaran | Prozesatzea ilaran dago eta gorako zeregin eta prozesu guztiak amaitutakoan hasiko da. Informazio gehiagorako, ikus [Freskatzeko prozesuak](#refresh-processes).|
 
 ### <a name="refresh-processes"></a>Freskatzeko prozesuak
 
-Zereginen eta prozesuen freskatzearen arabera exekutatzen da [konfiguratutako ordutegia](#schedule-tab). 
+Zereginen eta prozesuen freskatzearen arabera exekutatzen da [konfiguratutako ordutegia](schedule-refresh.md).
 
 |Prozesua  |Deskribapenak  |
 |---------|---------|
@@ -86,58 +124,6 @@ Zereginen eta prozesuen freskatzearen arabera exekutatzen da [konfiguratutako or
 |User  |Eskuz exekutatzen da (denbora bakarreko freskagarria). Entitateen araberakoa da.  |
 
 Hautatu prozesu baten egoera lan guztiaren aurrerapenaren xehetasunak ikusteko. Goiko freskatze prozesuek a konpontzeko zer egin dezakezun ulertzen lagun dezakete **Saltatu** edo **Ilaran jarrita** zeregina edo prozesua.
-
-## <a name="schedule-tab"></a>Antolaketa fitxa
-
-Erabili **Antolaketa** fitxa [sartutako datu-iturburuen](data-sources.md) freskatze automatikoak antolatzeko. Freskatze automatikoak zure datuen iturrien eguneratzeak zure bezeroen profil bateratuetan islatzen laguntzen du.
-
-> [!NOTE]
-> Zuk kudeatzen dituzun datu-iturburuak beren egutegietan freskatzen dira. Zuk kudeatzen dituzun datu-iturburuak freskatzea antolatzeko, konfiguratu freskatze-ezarpenak datu-iturburu zehatz horretan.**Datu iturriak** orrialdea.
-> :::image type="content" source="media/PPDF-edit-refresh.png" alt-text="Power Platform Datu-fluxua freskatzeko ezarpenak.":::
-
-1. Joan **Admin** > **Sistema** eta hautatu **Ordutegia** fitxa.
-
-2. Aurreikusitako freskagarriaren egoera lehenetsia da **itzalita**. Programatutako freskariak gaitzeko, aldatu pantailaren goiko aldean txandakatzeko aukera **Aktibatu**.
-
-3. Aukeratu artean **Asterokoa** (lehenetsia) eta **Egunekoa** freskatzen. Astean freskagarriak antolatzeko asmoa baduzu, hautatu freskagarria exekutatu nahi duzun egun bat edo gehiago.
-
-4. Ezarri zure **Ordu eremu** eta ondoren erabili **Ordua** goitibeherako zure freskatze-denbora ezartzeko. Bukatu duzunean, hautatu **Ezarri** aukera. Egun bakarrean hainbat freskatze programatu nahi badituzu, hautatu **Gehitu beste denbora**.
-
-5. Aldaketak aplikatzeko, hautatu **Gorde**.
-
-## <a name="about-tab"></a>Fitxari buruz
-
-**Buruz** fitxan zure erakundearenak daude **Bistaratu izena**, aktiboa **Ingurumenaren IDa**, **Eskualdea**, eta zure **Saioaren IDa**. Laneko ingurune bat baino gehiago baduzu, bakoitzari erraz identifikatzeko bistaratzeko izena eman beharko zenioke.
-
-## <a name="general-tab"></a>Fitxa orokorra
-
-Hizkuntza eta herrialde/eskualde formatua alda ditzakezu **Orokorra** fitxan.
-
-Bezeroen ikuspegiak [hizkuntza asko onartzen ditu](/dynamics365/get-started/availability). Aplikazioak zure hizkuntza-lehentasuna erabiliko du menua, etiketako testua eta sistemaren mezuak bezalako elementuak hobetsitako hizkuntzan erakusteko.
-
-Eskuz sartu dituzun inportatutako datuak eta informazioa ez dira itzuliko.
-
-### <a name="update-the-settings"></a>Eguneratu ezarpenak
-
-Nahiago duzun hizkuntza aldatzeko, aukeratu a **Hizkuntza** goitibehera.
-
-Data, ordua eta zenbakiak nahiago duzun formateatzea aldatzeko, erabili '... **Herrialdearen/Eskualdearen formatua** goitibeherako menuko. Eremu honen azpian formateatze aurrebista bistaratzen da. Sistemak automatikoki hautapen bat proposatuko du hizkuntza berria aukeratzen duzunean.
-
-Hautatu **Gorde** zure aukerak baieztatzeko.
-
-## <a name="api-usage-tab"></a>APIaren erabilera fitxa
-
-Bilatu denbora errealeko APIaren erabilerari buruzko xehetasunak eta ikusi denbora-tarte jakin batean zein gertaera gertatu diren. Denboraren denbora tartea aukeratzen duzu **Aukeratu denbora markoa** goitibeherako menua. 
-
-**APIaren erabilera** hiru atal ditu: 
-- **API deiak**: hautatutako epean APIra egindako deien kopuru agregatua bistaratzen duen taula.
-
-- **Datuen transferentzia**: hautatutako denbora tartean APIaren bidez transferitu diren datu kopurua erakusten duen taula.
-
--  **Eragiketak**: taula bat erabilgarri dauden API eragiketa bakoitzerako errenkadekin eta eragiketen erabilerari buruzko xehetasunak. Joan nahi duzun eragiketaren izena hauta dezakezu [APIaren erreferentzia](https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights&operation=Get-all-instances).
-
-   Erabiltzen duten eragiketak [denbora errealeko datuak sartzea](real-time-data-ingestion.md) ikur prismatiko bat duen botoi bat edukitzea denbora errealeko APIaren erabilera ikusteko. Aukeratu botoia APIaren denbora errealeko uneko inguruneko erabilerari buruzko xehetasunak dituen alboko panela irekitzeko.   
-   Erabili **Taldekatu honen arabera** koadroan **APIaren erabilera denbora errealean** panelean denbora errealeko elkarrekintzak nola aurkeztu behar diren aukeratzeko. Datuak API metodoaren, entitatearen izen kualifikatua (irenstutako entitatea), sortutako (gertaeraren iturria), emaitza (arrakasta edo hutsegitea) edo errore kodeak arabera talka ditzakezu. Datuak historia-taula gisa eta taula gisa eskuragarri daude.
 
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

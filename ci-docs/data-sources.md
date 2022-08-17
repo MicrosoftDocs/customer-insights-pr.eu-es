@@ -1,6 +1,6 @@
 ---
 title: Datuen iturburuen ikuspegi orokorra
-description: Ikasi hainbat iturritatik datuak inportatu edo sartzen.
+description: Ikasi hainbat iturritako datuak inportatu edo sartzen.
 ms.date: 07/26/2022
 ms.subservice: audience-insights
 ms.topic: overview
@@ -12,12 +12,12 @@ searchScope:
 - ci-data-sources
 - ci-create-data-source
 - customerInsights
-ms.openlocfilehash: 6ab97c535454e84c1bb18aca00bca2568eb65a2a
-ms.sourcegitcommit: 5807b7d8c822925b727b099713a74ce2cb7897ba
+ms.openlocfilehash: 591353bf1ba2f9ca05ddd137e1cf29dc0b0fba97
+ms.sourcegitcommit: 49394c7216db1ec7b754db6014b651177e82ae5b
 ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 07/28/2022
-ms.locfileid: "9207076"
+ms.lasthandoff: 08/10/2022
+ms.locfileid: "9245634"
 ---
 # <a name="data-sources-overview"></a>Datuen iturburuen ikuspegi orokorra
 
@@ -29,7 +29,7 @@ Datu-iturriak erantsi edo inporta ditzakezu Customer Insights-era. Beheko esteke
 
 **Erantsi datu-iturburu bat**
 
-Microsoft-en Azure datu-zerbitzuetako batean datuak prestatuta badituzu, Customer Insights erraz konekta daiteke datu-iturburu-ra datuak berriro sartu beharrik gabe. Hautatu aukera hauetariko bat:
+Microsoft-en Azure datu-zerbitzuetako batean datuak prestatuta badituzu, Customer Insights erraz konekta daiteke datu-iturburu-era datuak berriro sartu beharrik gabe. Hautatu aukera hauetariko bat:
 - [Azure Data Lake Storage(csv edo parquet fitxategiak Common Data Model karpeta batean)](connect-common-data-model.md)
 - [Azure Synapse Analytics(Lakuen datu-baseak)](connect-synapse.md)
 - [Microsoft Dataverse datu-lakua](connect-dataverse-managed-lake.md)
@@ -41,18 +41,18 @@ Datu iturri lokalak, Microsoft edo hirugarrenen datuak erabiltzen badituzu, inpo
 
 ## <a name="review-data-sources"></a>Berrikusi datu-iturriak
 
-Zure ingurunea Customer Insights biltegia erabiltzeko konfiguratuta bazegoen eta tokiko datu-iturburuak erabiltzen badituzu, erabiltzen duzu Power Platform datu-fluxuak. Horrekin Power Platform datu-fluxuak, partekatutako datu-iturriak eta besteek kudeatutako datu-iturriak ikus ditzakezu. The **Datu-iturriak** orrialdeak hiru ataletan zerrendatzen ditu datu-iturriak:
+Zure ingurunea Customer Insights biltegia erabiltzeko konfiguratuta bazegoen eta tokiko datu-iturriak erabiltzen badituzu, erabiltzen duzu Power Platform datu-fluxuak. Horrekin Power Platform datu-fluxuak, partekatutako datu-iturriak eta besteek kudeatutako datu-iturriak ikus ditzakezu. The **Datu-iturriak** orrialdeak hiru ataletan zerrendatzen ditu datu-iturriak:
 - **Partekatua** : Customer Insights administratzaile guztiek kudeatu ditzaketen datu-iturriak. Power Platform datu-fluxuak, zure biltegiratze-kontua eta a Dataverse -kudeatutako data lake partekatutako datu-iturrien adibideak dira.
 - **Nik kudeatzen dut** :Power Platform Zuk bakarrik sortu eta kudeatutako datu-fluxuak. Customer Insights-eko beste administratzaileek datu-fluxu hauek soilik ikus ditzakete, baina ez editatu, freskatu edo ezabatu.
 - **Beste batzuek kudeatzen dute** :Power Platform beste administratzaile batzuek sortutako datu-fluxuak. Horiek bakarrik ikus ditzakezu. Edozein laguntza lortzeko harremanetan jartzeko datu-fluxuaren jabea zerrendatzen du.
 > [!NOTE]
-> Entitate guztiak beste erabiltzaileek ikusi eta erabil ditzakete. Datu-iturriak sortu dituen erabiltzailearen jabetzakoak diren arren, datuen ingestetik sortutako entitateak Customer Insights-eko erabiltzaile guztiek erabil ditzakete.
+> Entitate guztiak beste erabiltzaileek ikusi eta erabil ditzakete. Datu-iturburuak sortu dituen erabiltzailearenak diren arren, datuak sartzearen ondoriozko entitateak Customer Insights-eko erabiltzaile guztiek erabil ditzakete.
 
 Zure inguruneak erabiltzen ez badu Power Platform datu-fluxuak, **Datu-iturriak** orrialdeak datu-iturburu guztien zerrenda baino ez dauka. Ez dago atalik bistaratzen.
 
 ## <a name="manage-existing-data-sources"></a>Kudeatu lehendik dauden datu-iturriak
 
-Joan **Datuak** > **Datu-iturriak** irensten den datu-iturburu bakoitzaren izena, bere egoera eta iturri horren datuak azken aldiz freskatu diren ikusteko. Datu-iturburuen zerrenda edozein zutaberen arabera ordena dezakezu edo bilaketa-koadroa erabili kudeatu nahi duzun datu-iturburu aurkitzeko.
+Joan **Datuak** > **Datu-iturriak** irensten den datu-iturburu bakoitzaren izena, bere egoera eta iturri horren datuak azken aldiz freskatu diren ikusteko. Datu iturrien zerrenda edozein zutaberen arabera ordena dezakezu edo bilaketa-koadroa erabili kudeatu nahi duzun datu-iturburu aurkitzeko.
 
 Hautatu datu-iturburu bat erabilgarri dauden ekintzak ikusteko.
 
@@ -67,7 +67,7 @@ Hautatu datu-iturburu bat erabilgarri dauden ekintzak ikusteko.
 
 Datu-iturburuak antolaketa automatikoan freska daitezke edo eskuz freskatu, beharraren arabera. [Datu iturri lokalak](connect-power-query.md#add-data-from-on-premises-data-sources) freskatu datuak sartzerakoan konfiguratutako ordutegiak. Erantsitako datu-iturburuetarako, datuak barneratzeak datu-iturburu horren eskura dauden azken datuak kontsumitzen ditu.
 
-Joan **Admin** > **Sistema** > [**Ordutegia**](system.md#schedule-tab) sartutako datu-iturburuen sistemak programatutako freskaketak konfiguratzeko.
+Joan **Admin** > **Sistema** > [**Ordutegia**](schedule-refresh.md) sartutako datu-iturburuen sistemak programatutako freskaketak konfiguratzeko.
 
 Eskaeraren arabera datu-iturburu bat freskatzeko:
 

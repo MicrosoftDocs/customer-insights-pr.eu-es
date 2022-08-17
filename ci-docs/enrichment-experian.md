@@ -1,19 +1,19 @@
 ---
 title: Aberastu bezeroen profilak datu demografikoekin Experian (aurrebista)
 description: -Ri buruzko informazio orokorra Experian hirugarrenen aberastea.
-ms.date: 06/10/2022
+ms.date: 08/08/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: how-to
 author: kishorem-ms
 ms.author: kishorem
 manager: shellyha
-ms.openlocfilehash: 876853ab42e8c08ad1abacb8d8a205c0aadabcf7
-ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
+ms.openlocfilehash: fccb37cde3f05a70009c18b6c52db01a5ede094d
+ms.sourcegitcommit: b1d06fe26934f12f0c5ed13e8ef1d37e52e67cc7
 ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "9195921"
+ms.lasthandoff: 08/08/2022
+ms.locfileid: "9237981"
 ---
 # <a name="enrich-customer-profiles-with-demographics-from-experian-preview"></a>Aberastu bezeroen profilak datu demografikoekin Experian (aurrebista)
 
@@ -33,7 +33,7 @@ Gaur egun, Estatu Batuetan bezeroen profil aberasgarriak onartzen ditugu.
 
 ## <a name="configure-the-connection-for-experian"></a>Konfiguratu konexio-funtzioak Experian-en
 
-Bat izan behar duzu [administratzailea](permissions.md#admin) Customer Insights-en eta eduki bat Experian Erabiltzailearen IDa, alderdiaren IDa eta eredu-zenbakia.
+Bat izan behar duzu [administratzailea](permissions.md#admin) Bezeroen Insights-en eta eduki bat Experian Erabiltzailearen IDa, alderdiaren IDa eta eredu-zenbakia.
 
 1. Hautatu **Gehitu konexioa** aberaste bat konfiguratzean, edo joan hona **Admin** > **Konexioak** eta hautatu **Konfiguratu** gainean Experian teila.
 
@@ -41,13 +41,9 @@ Bat izan behar duzu [administratzailea](permissions.md#admin) Customer Insights-
 
 1. Sartu konexiorako izen bat eta baliozko erabiltzailearen IDa, alderdiaren IDa eta eredu-zenbakia Experian Garraio Seguru kontua.
 
-1. Berrikusi eta eman zure baimena [Datuen pribatutasuna eta betetzea](#data-privacy-and-compliance) hautatuz **Ados**.
+1. Berrikusi [datuen pribatutasuna eta betetzea](connections.md#data-privacy-and-compliance) eta hautatu **ados**.
 
 1. Hautatu **Egiaztatu** konfigurazioa balioztatzeko eta gero hautatu **Gorde**.
-
-### <a name="data-privacy-and-compliance"></a>Datuen pribatutasuna eta arau-gordetzea
-
-Gaitzen duzunean Dynamics 365 Customer Insights datuak transmititzeko Experian, datuak betetze mugatik kanpo transferitzea baimentzen duzu Dynamics 365 Customer Insights, datu pertsonalak bezalako datu sentikorrak barne. Microsoft-ek datu hauek transferituko ditu zure aginduz, baina zu arduratuko zara hori ziurtatzeaz Experian izan ditzakezun pribatutasun edo segurtasun betebeharrak betetzen ditu. Informazio gehiago eskuratzeko, ikusi [Microsoft-en pribatutasun-adierazpena](https://go.microsoft.com/fwlink/?linkid=396732). Dynamics 365 Customer Insights administratzailea edonoiz ken dezake aberastea funtzio hau erabiltzeari uzteko.
 
 ## <a name="configure-the-enrichment"></a>Konfiguratu aberastea
 
@@ -55,7 +51,7 @@ Gaitzen duzunean Dynamics 365 Customer Insights datuak transmititzeko Experian, 
 
 1. Hautatu **Aberastu nire datuak** gainean **Demografia** tik Experian teila.
 
-   :::image type="content" source="media/experian-tile.png" alt-text="Experian lauza aberastearen ikuspegi orokorra orrialdean.":::
+   :::image type="content" source="media/experian-tile.png" alt-text="Experian lauza aberastearen ikuspegi orokorraren orrian.":::
 
 1. Berrikusi ikuspegi orokorra eta, ondoren, hautatu **Hurrengoa**.
 

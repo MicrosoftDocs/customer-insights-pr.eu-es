@@ -1,6 +1,6 @@
 ---
 title: Datuak aberasteko (aurrebista) ikuspegi orokorra
-description: Erabili Microsoft-en eta hirugarrenen beste zerbitzu batzuen gaitasunak zure bezeroen datuak aberasteko.
+description: Erabili Microsoft-en eta hirugarrenen zerbitzuen gaitasunak zure bezeroen datuak aberasteko.
 ms.date: 06/10/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
@@ -14,12 +14,12 @@ searchScope:
 - ci-enrichment-details
 - ci-enrichment-wizard
 - customerInsights
-ms.openlocfilehash: 6b6daab480db5e37830ff58b71dcdd3bbdbe46da
-ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
-ms.translationtype: MT
+ms.openlocfilehash: 0c2a900190b4ab6e93098d05a2fd66bcd2b847fd
+ms.sourcegitcommit: 49394c7216db1ec7b754db6014b651177e82ae5b
+ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9053845"
+ms.lasthandoff: 08/10/2022
+ms.locfileid: "9245864"
 ---
 # <a name="data-enrichment-preview-overview"></a>Datuak aberasteko (aurrebista) ikuspegi orokorra
 
@@ -50,7 +50,7 @@ Joan **Datuak** > **Aberastua**. The **Ezagutu** fitxak onartzen diren aberaste-
 - [Interesak](enrichment-microsoft.md) hornituta Microsoft-en arabera
 - [Kokapen datuak](enrichment-azure-maps.md) emandako Microsoft Azure Mapak
 - [Kokapen datuak](enrichment-here.md) HERE Technologies-ek emanak
-- [SFTP datu pertsonalizatuak](enrichment-SFTP-custom-import.md) Fitxategiak Transferitzeko Protokolo Seguruaren (SFTP) bidez
+- [SFTP datu pertsonalizatuak](enrichment-SFTP-custom-import.md) Fitxategiak transferitzeko protokolo seguruaren bidez (SFTP)
 
 # <a name="business-accounts-b-to-b"></a>[Negozio-kontuak (negoziotik negoziora)](#tab/b2b)
 
@@ -61,7 +61,7 @@ Joan **Datuak** > **Aberastua**. The **Ezagutu** fitxak onartzen diren aberaste-
 - [Enpresaren datu hobetuak](enrichment-enhanced-company-data.md) Microsoft-ek emandakoa
 - [Kokapen datuak](enrichment-azure-maps.md) emandako Microsoft Azure Mapak
 - [Kokapen datuak](enrichment-here.md) HERE Technologies-ek emanak
-- [SFTP datu pertsonalizatuak](enrichment-SFTP-custom-import.md) Fitxategiak Transferitzeko Protokolo Seguruaren (SFTP) bidez
+- [SFTP datu pertsonalizatuak](enrichment-SFTP-custom-import.md) Fitxategiak transferitzeko protokolo seguruaren bidez (SFTP)
 
 ---
 
@@ -76,16 +76,16 @@ Hautatu aberastea erabilgarri dauden ekintzak ikusteko.
 - **ikusi** aberastasun xehetasunak bezeroen profil aberastuen kopuruarekin.
 - **Editatu** aberastasunaren konfigurazioa.
 - [**Korrika egin**](#run-or-refresh-enrichments) bezeroen profilak azken datuekin eguneratzeko aberastea. Exekutatu hainbat aberasgarri aldi berean zerrendan hautatuz.
-- **Aktibatu** edo **Desaktibatu** aberastasun bat. Aberaste inaktiboak ez dira freskatuko a bitartean [programatutako freskagarritasuna](system.md#schedule-tab).
+- **Aktibatu** edo **Desaktibatu** aberastasun bat. Aberaste inaktiboak ez dira freskatuko a bitartean [programatutako freskadura](schedule-refresh.md).
 - **Ezabatu** aberastea.
 
 Sortu ere egin dezakezu [segmentuak](segments.md) edo [neurriak](measures.md) aberasteetatik.
 
 ## <a name="run-or-refresh-enrichments"></a>Exekutatu edo freskatu aberasgarriak
 
-Exekutatu ondoren, aberasgarriak programazio automatiko batean freskatu daitezke edo eskuz freskatu daitezke eskaeraren arabera.
+Exekutatu ondoren, aberasketak programazio automatiko batean freskatu daitezke edo eskuz, eskaeraren arabera.
 
-1. Aberasgarri bat edo gehiago eskuz freskatzeko, hautatu eta aukeratu **Korrika egin**. To [programatu freskatze automatikoa](system.md#schedule-tab), joan **Admin** > **Sistema** > **Ordutegia**. Prozesatzeko denbora zure bezeroen datuen tamainaren araberakoa da.
+1. Aberasgarri bat edo gehiago eskuz freskatzeko, hautatu eta aukeratu **Korrika egin**. To [programatu freskatze automatikoa](schedule-refresh.md), joan **Admin** > **Sistema** > **Ordutegia**. Prozesatzeko denbora zure bezeroen datuen tamainaren araberakoa da.
 
 1. Aukeran, [aberaste prozesuaren aurrerapena ikusi](#see-the-progress-of-the-enrichment-process).
 
@@ -103,6 +103,8 @@ Aberaste-prozesuaren xehetasunak aurki ditzakezu, bere egoera eta arazo posiblea
 1. Ikusi nahi duzun aberastearen egoeran, hautatu **ikusi xehetasunak**.
 1. **Zereginaren xehetasunak** panelean, hautatu **erakutsi xehetasunak** aberastea eta bere egoera eguneratzeko eragiketan dauden prozesuak ikusteko.
 
+[!INCLUDE [progress-details-pane](includes/progress-details-pane.md)]
+
 ## <a name="view-enrichment-results"></a>Ikusi aberaste-emaitzak
 
 Aberaste-exekualdi baten ondoren, berrikusi aberastearen emaitzak.
@@ -110,11 +112,11 @@ Aberaste-exekualdi baten ondoren, berrikusi aberastearen emaitzak.
 1. Joan **Datuak** > **Aberastua**.
 1. urtean **Nire aberastasunak** fitxan, hautatu ikusi nahi duzun aberastasuna.
 
-Aberaste guztiek oinarrizko informazioa erakusten dute, hala nola profil aberastuen kopurua eta denboran zehar aberastutako profil kopurua. The **Bezeroen aurrebista aberastua** fitxak sortutako aberaste-entitatearen lagin bat erakusten du. Ikuspegi zehatza ikusteko, hautatu **Gehiago ikusi** eta hautatu **Datuak** fitxa.
+Aberaste guztiek oinarrizko informazioa erakusten dute, hala nola profil aberastu kopurua eta denboran zehar profil aberastu kopurua. The **Bezeroen aurrebista aberastua** fitxak sortutako aberaste-entitatearen lagin bat erakusten du. Ikuspegi zehatza ikusteko, hautatu **Gehiago ikusi** eta hautatu **Datuak** fitxa.
 
 :::image type="content" source="media/enrichments-results.png" alt-text="Aberasteen emaitzen orria.":::
 
-Eskuragarri badago, **Alorka aberastutako bezero kopurua** aberasturiko eremu bakoitzaren estaldura sakontzen du.
+Eskuragarri badago, **Alorka aberastutako bezero kopurua** eremu aberastu bakoitzaren estaldura sakontzea eskaintzen du.
 
 Aberaste batzuek aberastasun motari dagokion informazioa ere erakusten dute. Informazio gehiago lortzeko, ikusi erlazionatutako dokumentazioa.
 

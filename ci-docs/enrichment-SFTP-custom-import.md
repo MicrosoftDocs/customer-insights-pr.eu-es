@@ -1,19 +1,19 @@
 ---
 title: Aberastu bezeroen profilak SFTP pertsonalizatutako inportazioarekin (aurrebista)
 description: SFTP pertsonalizatutako inportazio aberasteari buruzko informazio orokorra.
-ms.date: 06/10/2022
+ms.date: 08/08/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: how-to
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: 81ef6c62240e26cb5c9475e6306e08edc7e5eb31
-ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
+ms.openlocfilehash: 831d1d3d3045379bbc5bcdcd4b05b8a147221f31
+ms.sourcegitcommit: b1d06fe26934f12f0c5ed13e8ef1d37e52e67cc7
 ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "9195781"
+ms.lasthandoff: 08/08/2022
+ms.locfileid: "9237751"
 ---
 # <a name="enrich-customer-profiles-with-sftp-custom-import-preview"></a>Aberastu bezeroen profilak SFTP pertsonalizatutako inportazioarekin (aurrebista)
 
@@ -85,14 +85,9 @@ Bat izan behar duzu [administratzailea](permissions.md#admin) Customer Insights-
 
 1. Idatzi balio duen erabiltzaile izena, pasahitza eta ostalariaren URLa inportatu beharreko datuak dauden SFTP zerbitzariarentzat.
 
-1. Berrikusi eta eman zure baimena [Datuen pribatutasuna eta betetzea](#data-privacy-and-compliance) hautatuz **Ados**.
+1. Berrikusi [datuen pribatutasuna eta betetzea](connections.md#data-privacy-and-compliance) eta hautatu **ados**.
 
 1. Hautatu **Egiaztatu** konfigurazioa balioztatzeko eta gero hautatu **Gorde**.
-
-### <a name="data-privacy-and-compliance"></a>Datuen pribatutasuna eta arau-gordetzea
-
-Gaitzen duzunean Dynamics 365 Customer Insights Inportazio pertsonalizatua erabiliz datuak transmititzeko, datuak betetze-mugatik kanpo transferitzea onartzen duzu Dynamics 365 Customer Insights, potentzialki sentikorrak diren datuak barne, hala nola Datu Pertsonalak. Microsoft-ek datu horiek zure aginduz transferituko ditu, baina zure ardura zara datuek izan ditzakezun pribatutasun- edo segurtasun-betebeharrak betetzen dituztela ziurtatzeaz. Informazio gehiago eskuratzeko, ikusi [Microsoft-en pribatutasun-adierazpena](https://go.microsoft.com/fwlink/?linkid=396732).
-Dynamics 365 Customer Insights administratzailea edonoiz ken dezake aberastea funtzio hau erabiltzeari uzteko.
 
 ## <a name="configure-the-import"></a>Konfiguratu inportatzea
 

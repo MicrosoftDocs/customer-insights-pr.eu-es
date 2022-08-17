@@ -1,7 +1,7 @@
 ---
 title: Konexioen ikuspegi orokorra (aurrebista)
 description: Customer Insights-etik beste zerbitzu batzuetarako konexioak.
-ms.date: 04/09/2021
+ms.date: 08/04/2022
 ms.reviewer: nikeller
 ms.subservice: audience-insights
 ms.topic: overview
@@ -11,91 +11,89 @@ manager: shellyha
 searchScope:
 - ci-connections
 - customerInsights
-ms.openlocfilehash: 4a0bc5dd4100b462a26660a0c51fda1fe92b6bb9
-ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
+ms.openlocfilehash: 8580dc7d90c75f66f73efc15f8e38f5e10fbb8a7
+ms.sourcegitcommit: 49394c7216db1ec7b754db6014b651177e82ae5b
 ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "9195159"
+ms.lasthandoff: 08/10/2022
+ms.locfileid: "9245496"
 ---
 # <a name="connections-preview-overview"></a>Konexioen ikuspegi orokorra (aurrebista)
 
-Konexioak dira Customer Insights-etik eta horretatik datuak partekatzea ahalbidetzeko gakoa. Konexio bakoitzak zerbitzu jakin batekin datuak partekatzea ezartzen du. Konexioak dira oinarria [konfiguratu hirugarrenen aberastasunak](enrichment-hub.md) eta [esportazioak konfiguratu](export-destinations.md). Konexio bera hainbat aldiz erabil daiteke. Adibidez, Dynamics 365 Marketing-erako konexio batek esportazio anitzetarako balio du eta Leadspace konexio bat aberastu ahal izateko.
+Konexioak dira Customer Insights-etik eta horretatik datuak partekatzea ahalbidetzeko gakoa. Konexio bakoitzak zerbitzu jakin batekin datuak partekatzea ezartzen du. Erabili konexioak [hirugarrenen aberasketak konfiguratu](enrichment-hub.md) eta [esportazioak konfiguratu](export-destinations.md). Konexio bera hainbat aldiz erabil daiteke. Adibidez, Dynamics 365 Marketing-erako konexio batek esportazio anitzetarako balio du eta Leadspace konexio bat aberastu ahal izateko.
 
-Joan **Administratzailea** > **Konexioak** konexioak sortzeko eta ikusteko.
+## <a name="export-connections"></a>Esportatu konexioak
 
-**Konexioak** fitxak konexio aktibo guztiak erakusten dizkizu. Zerrendan konexio bakoitzerako errenkada bat agertzen da.
+Administratzaileek soilik konfigura ditzakete konexio berriak, baina egin ditzakete [laguntzaileei sarbidea eman](#allow-contributors-to-use-a-connection-for-exports) dauden konexioak erabiltzeko. Administratzaileek datuak nora joan daitezkeen kontrolatzen dute, laguntzaileek beren beharretara egokitzen duten karga eta maiztasuna definitzen dute.
 
-Lortu ikuspegi orokorra, deskribapena eta jakin zer egin dezakezun **Ezagutu** fitxa.
+## <a name="enrichment-connections"></a>Aberaste-konexioak
 
-## <a name="data-privacy-and-compliance"></a>Datuen pribatutasuna eta arau-gordetzea
-
-Gaitzen duzunean Dynamics 365 Customer Insights hirugarrenei edo Microsoft-eko beste produktu batzuei datuak transmititzeko, datuak betetze-mugatik kanpo transferitzea onartzen duzu Dynamics 365 Customer Insights, potentzialki sentikorrak diren datuak barne, hala nola Datu Pertsonalak. Microsoft-ek datu horiek zure aginduetara transferituko ditu, baina hirugarrenak izan ditzakezun pribatutasun- edo segurtasun-betebeharrak betetzen dituela ziurtatzeko ardura duzu. Informazio gehiago eskuratzeko, ikusi [Microsoft-en pribatutasun-adierazpena](https://go.microsoft.com/fwlink/?linkid=396732).
-
-Zure Dynamics 365 Customer Insights administratzaileak konexioa ken dezake edozein unetan funtzionalitatearen erabilerari uzteko.
-
-## <a name="exports"></a>Esportazioak
-
-Administratzaileek soilik konfigura ditzakete konexio berriak, baina laguntzaileei sarbidea eman diezaiekete lehendik dauden konexioak erabiltzeko. Administratzaileek datuak nora joan daitezkeen kontrolatzen dute, laguntzaileek beren beharretara egokitzen duten karga eta maiztasuna definitzen dute. Informazio gehiagorako, ikus [Baimendu laguntzaileei esportazioetarako konexioa erabiltzea](#allow-contributors-to-use-a-connection-for-exports).
-
-## <a name="enrichments"></a>Aberasteak
-
-Administratzaileek soilik konfigura ditzakete konexio berriak, baina sortutako konexioak beti daude eskuragarri administratzaile zein laguntzaileentzat. Administratzaileek egiaztagiriak kudeatzen dituzte eta datuen transferentziei baimena ematen diete. Konexioak administratzaileek eta laguntzaileek aberasteko erabil ditzakete.
+Administratzaileek soilik konfigura ditzakete konexio berriak, baina sortutako konexioak beti daude erabilgarri administratzaileentzat zein laguntzaileentzat. Administratzaileek egiaztagiriak kudeatzen dituzte eta datuen transferentziei baimena ematen diete. Konexioak administratzaileek eta laguntzaileek aberasteko erabil ditzakete.
 
 ## <a name="add-a-new-connection"></a>Gehitu konexio bat
 
-Konexioak gehitzeko, eduki behar duzu [administratzaile baimenak](permissions.md). Beste Microsoft zerbitzu batzuekin konektatzen bazara, bi zerbitzuak erakunde berean daudela suposatuko dugu.
+### <a name="prerequisites"></a>Aurrebaldintzak
 
-1. Joan **Administratzailea** > **Konexioak (aurrebista)**.
+- [Administratzailearen baimenak](permissions.md)
+- Microsoft-eko beste zerbitzu batzuk, halakorik balego, erakunde berean daude
 
-1. Hautatu **Gehitu konexioa** konexio berri bat sortzeko. Aukeratu goitibeherako menuan zein konexio mota sortu nahi duzun.
+1. Joan **Administratzailea** > **Konexioak**.
 
-1. Hurrengoan **Konfiguratu konexioa** panelean, eman beharrezko xehetasunak.
-   1. **Bistaratzeko izena** eta konexio motak konexio bat deskribatzen du. Konexio honen xedea eta xedea azaltzen duen izena aukeratzea gomendatzen dugu.
-   1. Eremu zehatzak konektatzen ari zaren zerbitzuaren araberakoak dira. Konexio mota zehatz baten xehetasunak ezagutu ditzakezu xede zerbitzuaren inguruko artikulua.
-   1. Bada [erabili zure Key Vault](use-azure-key-vault.md) sekretuak gordetzeko, aktibatu **Erabili Key Vault** eta aukeratu zerrendako sekretua.
+1. Hautatu **Gehitu konexioa** eta aukeratu sortu nahi duzun konexio mota. Edo, joan **Ezagutu** fitxa eta hautatu **Konfiguratu** konexio fitxa batean.
 
-1. Konexioa sortzeko, hautatu **Gorde**.
+1. Eman zure konexioa ezaguna den izena **Bistaratze izena** eremua. Izena eta konexio motak konexio bat deskribatzen du. Konexio honen xedea eta xedea azaltzen duen izena aukeratzea gomendatzen dugu.
 
-Aukeratu ere egin dezakezu **Konfiguratu** teila batean **Ezagutu** fitxa.
+1. Sartu beharrezko xehetasunak. Eremu zehatzak konektatzen ari zaren zerbitzuaren araberakoak dira. Konexio mota zehatz baten xehetasunak lortzeko, ikusi xede-zerbitzuari buruzko artikulua.
 
-### <a name="allow-contributors-to-use-a-connection-for-exports"></a>Baimendu laguntzaileei esportazioetarako konexioa erabiltzea
+1. Bada [erabili zure Key Vault](use-azure-key-vault.md) sekretuak gordetzeko, aktibatu **Erabili Key Vault** eta aukeratu zerrendako sekretua.
 
-Esportazio konexioa konfiguratu edo editatzerakoan, aukeratzen duzu zein erabiltzaile konexio zehatz hau erabili ahal izateko definitzeko [esportazioak](export-destinations.md). Berez, konexioa erabilgarri dago administratzaile funtzioa duten erabiltzaileentzat. Ezarpen hau alda dezakezu **Aukeratu nork erabil dezakeen konexio hau** eta lagundu laguntzaile rolak dituzten erabiltzaileei konexio hau erabiltzeko.
+1. Berrikusi datuen pribatutasuna eta betetzea eta hautatu **ados**.
 
-- Laguntzaileek ezin izango dute konexioa ikusi edo editatu. Bistaratzeko izena eta haren mota soilik ikusiko dituzte esportazio bat sortzean.
+1. Hautatu **Gorde** konexioa sortzeko.
+
+### <a name="data-privacy-and-compliance"></a>Datuen pribatutasuna eta arau-gordetzea
+
+Gaitzen duzunean Dynamics 365 Customer Insights hirugarrenei edo Microsoft-eko beste produktu batzuei datuak transmititzeko, datuak betetze-mugatik kanpo transferitzea onartzen duzu Dynamics 365 Customer Insights, potentzialki sentikorrak diren datuak barne, hala nola Datu Pertsonalak. Microsoft-ek datu horiek zure aginduetara transferituko ditu, baina hirugarrenak izan ditzakezun pribatutasun- edo segurtasun-betebeharrak betetzen dituela ziurtatzeaz arduratzen zara. Informazio gehiago eskuratzeko, ikusi [Microsoft-en pribatutasun-adierazpena](https://go.microsoft.com/fwlink/?linkid=396732).
+
+Zure Dynamics 365 Customer Insights administratzaileak konexioa ken dezake edozein unetan funtzionalitatearen erabilerari uzteko.
+
+## <a name="allow-contributors-to-use-a-connection-for-exports"></a>Baimendu laguntzaileei esportazioetarako konexioa erabiltzea
+
+Esportazio-konexio bat konfiguratzean edo editatzen duzunean, aukeratu zein erabiltzailek baimentzen duten konexio zehatz hori definitzeko [esportazioak](export-destinations.md). Lehenespenez, konexio bat erabilgarri dago administratzaile rola duten erabiltzaileentzat. Aldatu **Aukeratu nork erabil dezakeen konexio hau** kolaboratzaile rola duten erabiltzaileei konexio hau erabiltzeko aukera emateko ezarpena.
+
+- Laguntzaileek ezin izango dute konexioa ikusi edo editatu. Bistaratzeko izena eta bere mota soilik ikusiko dituzte esportazio bat sortzean.
 - Konexioa partekatuz gero, laguntzaileei konexioa erabiltzeko baimena ematen diezu. Laguntzaileek partekatutako konexioak ikusiko dituzte esportazioak konfiguratzen dituztenean. Konexio zehatz hau erabiltzen duten esportazio guztiak kudea ditzakete.
 - Ezarpen hau alda dezakezu laguntzaileek definitutako esportazioak mantenduz.
 
-## <a name="edit-a-connection"></a>Editatu konexio bat
+## <a name="manage-existing-connections"></a>Kudeatu lehendik dauden konexioak
 
-1. Joan **Administratzailea** > **Konexioak (aurrebista)**.
+1. Joan **Administratzailea** > **Konexioak**.
 
-1. Joan **Konexioak** fitxara.
+1. Hautatu **Aberastea** edo **Esportazioak** fitxa aberasteko edo esportatzeko konexioen zerrenda ikusteko, konexio mota, noiz sortu zen eta nork duen sarbidea. Konexioen zerrenda edozein zutaberen arabera ordena dezakezu.
 
-1. Hautatu elipsi bertikala (&vellip;) editatu nahi duzun konexiorako.
+1. Hautatu konexioa erabilgarri dauden ekintzak ikusteko.
 
-1. Hautatu **Editatu**.
+   - **Editatu** konexioa.
+   - [**Kendu**](#remove-a-connection) konexio bat.
 
-1. Aldatu eguneratu nahi dituzun balioak eta hautatu **Gorde**.
+### <a name="remove-a-connection"></a>Konexioa kendu nahi duzu
 
-## <a name="remove-a-connection"></a>Konexioa kendu nahi duzu
+Kentzen ari zaren konexioa aberasteek edo esportazioek erabiltzen badute, lehenik, kendu edo kendu itzazu. Kendu elkarrizketa-koadroak aberasgarri edo esportazioetara bideratzen zaitu.
 
-Kentzen ari zaren konexioa aberasteek edo esportazioek erabiltzen badute, lehenik, kendu edo kendu behar dituzu. Kendu elkarrizketa-koadroak aberastasun edo esportazio garrantzitsuetara eramango zaitu.
+> [!TIP]
+> Desaktibatutako aberasketak eta banandutako esportazioak inaktibo bihurtzen dira. Berriro aktibatuko dituzu haiekin beste konexio bat gehituz [Aberastasunak](enrichment-hub.md) edo [Esportazioak](export-destinations.md) orrialdea.
 
-Bereizitako aberastasunak eta esportazioak inaktibo bihurtzen dira. Berriro aktibatuko dituzu haiekin beste konexio bat gehituz [Aberastasunak](enrichment-hub.md) edo [Esportazioak](export-destinations.md) orrialdea.
+1. Joan **Administratzailea** > **Konexioak**.
 
-1. Joan **Administratzailea** > **Konexioak (aurrebista)**.
+1. Hautatu **Aberastea** edo **Esportazioak** fitxa.
 
-1. Joan **Konexioak** fitxara.
-
-1. Hautatu elipsi bertikala (&vellip;) kendu nahi duzun konexiorako.
+1. Hautatu kendu nahi duzun konexioa.
 
 1. Hautatu **Kendu** goitibeherako menuan. Berresteko elkarrizketa agertzen da.
 
    1. Konexio hau erabiltzen duten aberastasunak edo esportazioak badaude, hautatu botoia konexioa erabiltzen ari dena ikusteko.
-      - **Esportazioak:** Konexioa kendu ahal izateko esportazioak kentzea edo deskonektatzea aukera dezakezu. Esportazio bat deskonektatzeko, administratzaileek **Deskonektatu** ekintza. Ekintza hau eskuragarri dago banakako eta hautatutako esportazio anitzetarako. Deskonektatuta esportazio konfigurazioa mantenduko duzu, baina ez da exekutatuko beste konexio bat gehitu arte.
-      - **Aberasteak:** Konexioa kendu ahal izateko aberasteak desaktibatzea edo kentzea aukera dezakezu.
+      - **Esportazioak:** Aukeratu bai **Kendu** esportazioa edo **Kendu konexioa**. Konexioa kentzeak esportazio-konfigurazioa mantentzen du, baina ez da exekutatuko beste konexio bat gehitu arte.
+      - **Aberasgarriak:** Aukeratu bai **Ezabatu** edo **Desaktibatu** aberastasunak.
    1. Konexioak mendekotasun gehiago ez duenean, itzuli berriro **Administratzailea** > **Konexioak** eta saiatu berriro konexioa kentzen.
 
 1. Ezabapena berresteko hautatu **Kendu**.

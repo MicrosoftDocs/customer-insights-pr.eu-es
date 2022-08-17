@@ -1,7 +1,7 @@
 ---
-title: Saioa birbidaltzea Dynamics 365 Customer Insights Azure Monitor-arekin (aurrebista)
+title: Esportatu diagnostiko-erregistroak (aurrebista)
 description: Ikasi erregistroak nola bidali Microsoft Azure Monitorea.
-ms.date: 12/14/2021
+ms.date: 08/08/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: article
@@ -11,71 +11,92 @@ manager: shellyha
 searchScope:
 - ci-system-diagnostic
 - customerInsights
-ms.openlocfilehash: 8c72df7054a682244215bbee54968d6aef4bbf59
-ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
+ms.openlocfilehash: 60b039173fd938482c782c7394420d4951c222a7
+ms.sourcegitcommit: 49394c7216db1ec7b754db6014b651177e82ae5b
 ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9052638"
+ms.lasthandoff: 08/10/2022
+ms.locfileid: "9245910"
 ---
-# <a name="log-forwarding-in-dynamics-365-customer-insights-with-azure-monitor-preview"></a>Saioa birbidaltzea Dynamics 365 Customer Insights Azure Monitor-arekin (aurrebista)
+# <a name="export-diagnostic-logs-preview"></a>Esportatu diagnostiko-erregistroak (aurrebista)
 
-Dynamics 365 Customer Insights Azure Monitor-ekin integrazio zuzena eskaintzen du. Azure Monitor baliabideen erregistroek erregistroak kontrolatzeko eta hara bidaltzeko aukera ematen dizute [Azure biltegiratzea](https://azure.microsoft.com/services/storage/),[Azure Log Analytics](/azure/azure-monitor/logs/log-analytics-overview), edo igor itzazu [Azure Event Hubs](https://azure.microsoft.com/services/event-hubs/).
+Bidali erregistroak Customer Insights-etik Azure Monitor erabiliz. Azure Monitor baliabideen erregistroek erregistroak kontrolatu eta bertara bidaltzeko aukera ematen dizute [Azure biltegiratzea](https://azure.microsoft.com/services/storage/),[Azure Log Analytics](/azure/azure-monitor/logs/log-analytics-overview), edo bidali zuzenean [Azure Event Hubs](https://azure.microsoft.com/services/event-hubs/).
 
 Customer Insights-ek gertaeren erregistro hauek bidaltzen ditu:
 
 - **Ikuskaritza Gertaerak**
-  - **APIEgertaera** - Aldaketen jarraipena gaitzen du Dynamics 365 Customer Insights UI.
+  - **APIEgertaera** - aldaketen jarraipena gaitzen du Dynamics 365 Customer Insights UI.
 - **Gertaera Operatiboak**
-  - **WorkflowEvent** - Lan-fluxuak konfiguratzeko aukera ematen dizu [Datu-iturriak](data-sources.md),[bateratu](data-unification.md),[aberastu](enrichment-hub.md), eta azkenean [esportatu](export-destinations.md) datuak beste sistema batzuetara. Urrats horiek guztiak banaka egin daitezke (adibidez, esportazio bakarra abiarazi). Orkestratuta ere exekutatu daiteke (adibidez, bateratze-prozesua abiarazten duen datu-iturburuetako datuak freskatzea, aberasketak sartu eta datuak beste sistema batera esportatu ondoren). Informazio gehiagorako, ikusi [WorkflowEvent eskema](#workflow-event-schema).
-  - **APIEgertaera** - API dei guztiak bezeroen instantziari Dynamics 365 Customer Insights. Informazio gehiagorako, ikusi [APIEgertaera eskema](#api-event-schema).
+  - **WorkflowEvent** - konfiguratzen uzten dizu [datu-iturriak](data-sources.md),[bateratu](data-unification.md),[aberastu](enrichment-hub.md), eta [esportatu](export-destinations.md) datuak beste sistema batzuetara. Urrats hauek banaka egin daitezke (adibidez, esportazio bakarra abiarazi). Orkestratuta ere exekutatu daitezke (adibidez, bateratze-prozesua abiarazten duten datu-iturburuetako datuak freskatzea, aberasketak sartu eta datuak beste sistema batera esportatuko dituena). Informazio gehiagorako, ikusi [WorkflowEvent eskema](#workflow-event-schema).
+  - **APIEgertaera** - bezeroen instantziaren API dei guztiak bidaltzen ditu Dynamics 365 Customer Insights. Informazio gehiagorako, ikusi [APIEgertaera eskema](#api-event-schema).
 
 ## <a name="set-up-the-diagnostic-settings"></a>Konfiguratu diagnostiko ezarpenak
 
 ### <a name="prerequisites"></a>Aurrebaldintzak
 
-Customer Insights-en diagnostikoak konfiguratzeko, aurrebaldintza hauek bete behar dira:
-
-- Aktibo bat duzu [Azure Harpidetza](https://azure.microsoft.com/pricing/purchase-options/pay-as-you-go/).
-- Zuk daukazu [Administratzailea](permissions.md#admin) baimenak Customer Insights-en.
-- Zuk daukazu **Laguntzailea** eta **Erabiltzaileen Sarbide Administratzailea** rola Azure-n helmugako baliabidean. Baliabidea an izan daiteke Azure Data Lake Storage kontua, Azure Event Hub bat edo Azure Log Analytics lan-eremu bat. Informazio gehiagorako, ikus [Gehitu edo kendu Azure rol-esleipenak Azure ataria erabiliz](/azure/role-based-access-control/role-assignments-portal). Baimen hau beharrezkoa da Customer Insights-en diagnostiko-ezarpenak konfiguratzen dituzun bitartean, konfiguratu ondoren alda daiteke.
-- [Helmugako baldintzak](/azure/azure-monitor/platform/diagnostic-settings#destination-requirements) Azure biltegiratzeko, Azure Event Hub edo Azure Log Analytics-ek betetzen ditu.
-- Gutxienez daukazu **Irakurlea** baliabidea dagokion baliabide taldean eginkizuna.
+- Aktibo bat [Azure Harpidetza](https://azure.microsoft.com/pricing/purchase-options/pay-as-you-go/).
+- [Administratzailea](permissions.md#admin) baimenak Customer Insights-en.
+- [Kolaboratzaile eta Erabiltzaileen Sarbide Administratzaile rola](/azure/role-based-access-control/role-assignments-portal) Azure-ko helmugako baliabidean. Baliabidea an izan daiteke Azure Data Lake Storage kontua, Azure Event Hub bat edo Azure Log Analytics lan-eremu bat. Baimen hau beharrezkoa da Customer Insights-en diagnostiko-ezarpenak konfiguratzen dituzun bitartean, baina konfiguratu ondoren alda daiteke.
+- [Helmugako baldintzak](/azure/azure-monitor/platform/diagnostic-settings#destination-requirements) Azure Storage, Azure Event Hub edo Azure Log Analytics betetzen dira.
+- Gutxienez **Irakurlea** baliabidea dagokion baliabide taldean eginkizuna.
 
 ### <a name="set-up-diagnostics-with-azure-monitor"></a>Konfiguratu diagnostikoak Azure Monitor-ekin
 
-1. Customer Insights atalean, hautatu **Sistema** > **Diagnostikoak** instantzia honetan konfiguratutako diagnostiko-helmugak ikusteko.
+1. Customer Insights atalean, joan hona **Admin** > **Sistema** eta hautatu **Diagnostikoak** fitxa.
 
 1. Hautatu **Gehitu helmuga**.
 
-   > [!div class="mx-imgBorder"]
-   > ![Diagnostiko konexioa](media/diagnostics-pane.png "Diagnostiko konexioa")
+   :::image type="content" source="media/diagnostics-pane.png" alt-text="Diagnostiko konexioa.":::
 
 1. Eman izen bat **Diagnostiko-helmugarako izena** eremua.
 
-1. Aukeratu **Maizterrak** Azure harpidetzaren xede-baliabidearekin eta hautatu **saioa hasi**.
+1. Hautatu **Baliabide mota** (Biltegiratze kontua, Gertaeren zentroa edo Log Analytics).
 
-1. Hautatu **Baliabide mota** (Biltegiratze-kontua, gertaeren zentroa edo erregistro-analisiak).
+1. Hautatu **Harpidetza**, **taldea**, eta **Baliabidea** helmuga baliabiderako. Ikusi [Helmugako baliabidearen konfigurazioa](#configuration-on-the-destination-resource) baimena eta erregistro-informazioa lortzeko.
 
-1. Hautatu **Harpidetza** helmuga baliabiderako.
-
-1. Hautatu **Baliabide taldea** helmuga baliabiderako.
-
-1. Hautatu **Baliabidea**.
-
-1. Berretsi **Datuen pribatutasuna eta betetzea** adierazpena.
+1. Berrikusi [datuen pribatutasuna eta betetzea](connections.md#data-privacy-and-compliance) eta hautatu **ados**.
 
 1. Hautatu **Konektatu sistemara** helmugako baliabidera konektatzeko. Erregistroak helmugan agertzen hasten dira 15 minuturen buruan, APIa erabiltzen bada eta gertaerak sortzen baditu.
 
-### <a name="remove-a-destination"></a>Helmuga bat kendu
+## <a name="configuration-on-the-destination-resource"></a>Helmugako baliabidearen konfigurazioa
 
-1. Joan **Sistema** > **Diagnostikoak**.
+Baliabide mota aukeratu duzunaren arabera, aldaketa hauek automatikoki gertatzen dira:
+
+### <a name="storage-account"></a>Biltegiratze-kontua
+
+Customer Insights zerbitzu nagusiak eskuratzen du **Biltegiratze-kontuaren laguntzailea** aukeratutako baliabidean baimena eta bi edukiontzi sortzen ditu hautatutako izen-eremuaren azpian:
+
+- `insight-logs-audit` duten **auditoretza-gertaerak**
+- `insight-logs-operational` duten **ekitaldi operatiboak**
+
+### <a name="event-hub"></a>Gertaeren atala
+
+Customer Insights zerbitzu nagusiak eskuratzen du **Azure Event Hubs datuen jabea** baliabidean baimena eta bi Gertaeren Zentro sortzen ditu hautatutako izen-eremuaren azpian:
+
+- `insight-logs-audit` duten **auditoretza-gertaerak**
+- `insight-logs-operational` duten **ekitaldi operatiboak**
+
+### <a name="log-analytics"></a>Log Analytics
+
+Customer Insights zerbitzu nagusiak eskuratzen du **Log Analytics Laguntzailea** baliabideari buruzko baimena. Erregistroak azpian daude eskuragarri **Erregistroak** > **Taulak** > **Erregistroen kudeaketa** hautatutako Log Analytics lan-eremuan. Zabaldu **Erregistroen kudeaketa** irtenbidea eta kokatu`CIEventsAudit` eta`CIEventsOperational` mahaiak.
+
+- `CIEventsAudit` duten **auditoretza-gertaerak**
+- `CIEventsOperational` duten **ekitaldi operatiboak**
+
+azpian **Kontsultak** leihoa, zabaldu **Ikuskaritza** irtenbidea eta bilatu bilatuz emandako adibide-kontsultak `CIEvents`.
+
+## <a name="remove-a-diagnostics-destination"></a>Kendu diagnostiko-helmuga bat
+
+1. Joan **Admin** > **Sistema** eta hautatu **Diagnostikoak** fitxa.
 
 1. Hautatu diagnostiko-helmuga zerrendan.
 
+   > [!TIP]
+   > Helmuga kentzeak erregistro-birbidaltzea geldiarazten du, baina ez du Azure harpidetzako baliabidea ezabatzen. Azure-n baliabidea ezabatzeko, hautatu esteka **Ekintzak** zutabea hautatutako baliabiderako Azure ataria ireki eta bertan ezabatzeko. Ondoren, ezabatu diagnostiko-helmuga.
+
 1. urtean **Ekintzak** zutabea, hautatu **Ezabatu** ikonoa.
 
-1. Berretsi ezabatzea erregistro-birbidaltzea geldiarazteko. Azure harpidetzako baliabidea ez da ezabatuko. Esteka hauta dezakezu **Ekintzak** zutabea hautatutako baliabiderako Azure ataria ireki eta bertan ezabatzeko.
+1. Berretsi ezabatzea helmuga kentzeko eta erregistro-birbidaltzea gelditzeko.
 
 ## <a name="log-categories-and-event-schemas"></a>Erregistro-kategoriak eta gertaeren eskemak
 
@@ -89,36 +110,9 @@ Customer Insights-ek bi kategoria eskaintzen ditu:
 - **Ikuskaritza-gertaerak** :[API gertaerak](#api-event-schema) zerbitzuan konfigurazio-aldaketen jarraipena egiteko. `POST|PUT|DELETE|PATCH` eragiketak kategoria honetan sartzen dira.
 - **Gertaera operatiboak** :[API gertaerak](#api-event-schema) edo [lan-fluxuaren gertaerak](#workflow-event-schema) zerbitzua erabiltzean sortutakoa.  Adibidez,`GET` eskaerak edo lan-fluxu baten exekuzio-gertaerak.
 
-## <a name="configuration-on-the-destination-resource"></a>Helmugako baliabidearen konfigurazioa
-
-Baliabide motaren aukeran oinarrituta, urrats hauek automatikoki aplikatuko dira:
-
-### <a name="storage-account"></a>Biltegiratze-kontua
-
-Customer Insights zerbitzu nagusiak eskuratzen du **Biltegiratze-kontuaren laguntzailea** aukeratutako baliabidean baimena eta bi edukiontzi sortzen ditu hautatutako izen-eremuaren azpian:
-
-- `insight-logs-audit` duten **auditoretza ekitaldiak**
-- `insight-logs-operational` duten **ekitaldi operatiboak**
-
-### <a name="event-hub"></a>Gertaeren atala
-
-Customer Insights zerbitzu nagusiak eskuratzen du **Azure Event Hubs datuen jabea** baliabidean baimena eta bi Gertaeren Zentro sortuko ditu hautatutako izen-eremuan:
-
-- `insight-logs-audit` duten **auditoretza ekitaldiak**
-- `insight-logs-operational` duten **ekitaldi operatiboak**
-
-### <a name="log-analytics"></a>Log Analytics
-
-Customer Insights zerbitzu nagusiak eskuratzen du **Log Analytics Laguntzailea** baliabideari buruzko baimena. Erregistroak azpian egongo dira eskuragarri **Erregistroak** > **Taulak** > **Erregistroen kudeaketa** hautatutako Log Analytics lan-eremuan. Zabaldu **Erregistroen kudeaketa** irtenbidea eta kokatu`CIEventsAudit` eta`CIEventsOperational` mahaiak.
-
-- `CIEventsAudit` duten **auditoretza ekitaldiak**
-- `CIEventsOperational` duten **ekitaldi operatiboak**
-
-azpian **Kontsultak** leihoa, zabaldu **Ikuskaritza** irtenbidea eta bilatu bilatuz emandako adibide-kontsultak `CIEvents`.
-
 ## <a name="event-schemas"></a>Gertaeren eskemak
 
-APIko gertaerek eta lan-fluxuko gertaerek egitura eta xehetasun komunak dituzte non desberdinak diren, ikusi [API gertaeren eskema](#api-event-schema) edo [lan-fluxuaren gertaeren eskema](#workflow-event-schema).
+APIko gertaerek eta lan-fluxuko gertaerek egitura komun bat dute, baina desberdintasun gutxi batzuekin. Informazio gehiagorako, ikus [API gertaeren eskema](#api-event-schema) edo [lan-fluxuaren gertaeren eskema](#workflow-event-schema).
 
 ### <a name="api-event-schema"></a>API gertaeren eskema
 
@@ -129,7 +123,7 @@ APIko gertaerek eta lan-fluxuko gertaerek egitura eta xehetasun komunak dituzte 
 | `operationName`   | String    | Beharrezkoa          | Gertaera honek adierazten duen eragiketaren izena.                                                                                                                | `Workflows.GetWorkFlowStatusAsync`                                                                                                                                       |
 | `category`        | String    | Beharrezkoa          | Gertaeraren erregistro-kategoria. Edota`Operational` edo `Audit`. POST/PUT/PATCH/DELETE HTTP eskaera guztiak etiketatuta daude`Audit`, gainontzeko guztiarekin`Operational` | `2020-09-08T09:48:14.8050869Z`                                                                                                                                           |
 | `resultType`      | String    | Beharrezkoa          | Ekitaldiaren egoera. `Success`,`ClientError`,`Failure`                                                                                                        |                                                                                                                                                                          |
-| `resultSignature` | String    | Aukerakoa          | Ekitaldiaren emaitzaren egoera. Eragiketa REST API dei bati dagokiona bada, HTTP egoera kodea da.        | `200`             |
+| `resultSignature` | String    | Aukerakoa          | Ekitaldiaren emaitzaren egoera. Eragiketa REST API dei bati badagokio, HTTP egoera kodea da.        | `200`             |
 | `durationMs`      | Long      | Aukerakoa          | Eragiketaren iraupena milisegundotan.     | `133`     |
 | `callerIpAddress` | String    | Aukerakoa          | Deitzailearen IP helbidea, eragiketa publikoki eskuragarri dagoen IP helbide batetik datorren API dei bati badagokio.                                                 | `144.318.99.233`         |
 | `identity`        | String    | Aukerakoa          | Eragiketa egin duen erabiltzailearen edo aplikazioaren identitatea deskribatzen duen JSON objektua.       | Ikusi [Identitatea](#identity-schema) atala.     |  
@@ -188,8 +182,8 @@ Lan-fluxuak hainbat urrats ditu. [Hartu datu-iturriak](data-sources.md),[baterat
 
 | OperationType     | Taldekatu                                     |
 | ----------------- | ----------------------------------------- |
-| Irenstea         | [Datu iturriak](data-sources.md)           |
-| Datuak prestatzea   | [Datu iturriak](data-sources.md)           |
+| Irenstea         | [Datu-iturriak](data-sources.md)           |
+| Datuak prestatzea   | [Datu-iturriak](data-sources.md)           |
 | Mapa               | [Datuak bateratzea](data-unification.md)   |
 | Lotu             | [Datuak bateratzea](data-unification.md)   |
 | Konbinazioa             | [Datuak bateratzea](data-unification.md)   |
@@ -220,7 +214,6 @@ Lan-fluxuak hainbat urrats ditu. [Hartu datu-iturriak](data-sources.md),[baterat
 | `durationMs`    | Long      | Aukerakoa          | Eragiketaren iraupena milisegundotan.                                                                                                                    | `133`                                                                                                                                                                    |
 | `properties`    | String    | Aukerakoa          | Gertaeren kategoria jakin baterako propietate gehiago dituen JSON objektua.                                                                                        | Ikus azpiatala [Lan-fluxuaren propietateak](#workflow-properties-schema)                                                                                                       |
 | `level`         | String    | Beharrezkoa          | Gertaeraren larritasun maila.                                                                                                                                  | `Informational`, `Warning` edo `Error`                                                                                                                                   |
-|                 |
 
 #### <a name="workflow-properties-schema"></a>Lan-fluxuaren propietateen eskema
 
@@ -243,7 +236,9 @@ Lan-fluxuaren gertaerek propietate hauek dituzte.
 | `properties.identifier`                      | No       | Yes  | - OperationType =`Export`, identifikatzailea esportazio-konfigurazioaren gida da. <br> - OperationType =`Enrichment`, aberastearen gidaria da <br> - OperationTyperako`Measures` eta`Segmentation`, identifikatzailea entitatearen izena da. |
 | `properties.friendlyName`                    | No       | Yes  | Esportazio edo prozesatzen den entitatearen izen atsegina.                                                                                                                                                                                           |
 | `properties.error`                           | No       | Yes  | Aukerakoa. Errore-mezua xehetasun gehiagorekin.                                                                                                                                                                                                                  |
-| `properties.additionalInfo.Kind`             | No       | Yes  | Aukerakoa. OperationTyperako`Export` bakarrik. Esportazio mota identifikatzen du. Informazio gehiagorako, ikus [esportazio-helmugen ikuspegi orokorra](export-destinations.md).                                                                                          |
+| `properties.additionalInfo.Kind`             | No       | Yes  | Aukerakoa. OperationTyperako`Export` bakarrik. Esportazio mota identifikatzen du. Informazio gehiagorako, ikus [esportazio-helmuguen ikuspegi orokorra](export-destinations.md).                                                                                          |
 | `properties.additionalInfo.AffectedEntities` | No       | Yes  | Aukerakoa. OperationTyperako`Export` bakarrik. Esportazioan konfiguratutako entitateen zerrenda dauka.                                                                                                                                                            |
 | `properties.additionalInfo.MessageCode`      | No       | Yes  | Aukerakoa. OperationTyperako`Export` bakarrik. Esportaziorako mezu zehatza.                                                                                                                                                                                 |
 | `properties.additionalInfo.entityCount`      | No       | Yes  | Aukerakoa. OperationTyperako`Segmentation` bakarrik. Segmentuak zenbat kide dituen adierazten du.                                                                                                                                                    |
+
+[!INCLUDE [footer-include](includes/footer-banner.md)]

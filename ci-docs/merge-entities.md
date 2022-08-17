@@ -1,5 +1,5 @@
 ---
-title: Datuak bateratzeko bezeroen eremuak bateratu
+title: Batu bezeroen eremuak datuak bateratzeko
 description: Konbinatu entitateak bezeroen profil bateratuak sortzeko.
 recommendations: false
 ms.date: 05/04/2022
@@ -14,14 +14,14 @@ searchScope:
 - ci-match
 - ci-relationships
 - customerInsights
-ms.openlocfilehash: 4a19b753e7a5979fe72d7e96bc4452d7795c2d48
-ms.sourcegitcommit: 3c5b0b40b2b45e420015bbdd228ce0e610245e6f
+ms.openlocfilehash: a6f29c4985ee274207d122fb1bd76d97b98613b6
+ms.sourcegitcommit: 10dcfc32eaf8ec0903be96136dca7bb4e250276a
 ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "9139642"
+ms.lasthandoff: 08/01/2022
+ms.locfileid: "9213567"
 ---
-# <a name="unify-customer-fields-for-data-unification"></a>Datuak bateratzeko bezeroen eremuak bateratu
+# <a name="unify-customer-fields-for-data-unification"></a>Batu bezeroen eremuak datuak bateratzeko
 
 Bateratze-prozesuaren urrats honetan, aukeratu eta baztertu zure profil bateratuko entitatearen barruan batzeko atributuak. Adibidez, hiru entitatek posta elektronikoko datuak bazituzten, baliteke hiru posta elektronikoko eremu bereiziak gordetzea edo profil bateratu baterako posta elektronikoko eremu bakarrean batu nahi izatea. Atributu batzuk automatikoki konbinatzen ditu sistemak. Bezeroen ID egonkorrak eta bakarrak sor ditzakezu eta erlazionatutako profilak multzo batean taldeka ditzakezu.
 
@@ -29,7 +29,7 @@ Bateratze-prozesuaren urrats honetan, aukeratu eta baztertu zure profil bateratu
 
 ## <a name="review-and-update-the-customer-fields"></a>Berrikusi eta eguneratu bezeroaren eremuak
 
-1. Berrikusi hemen bateratuko diren eremuen zerrenda **Bezeroaren eremuak** taulako fitxa. Egin aldaketak hala badagokio.
+1. Berrikusi zerrendan bateratuko diren eremuen zerrenda **Bezeroaren eremuak** taulako fitxa. Egin aldaketak hala badagokio.
 
    1. Edozein eremu konbinatuetarako, hau egin dezakezu:
       - [Editatu](#edit-a-merged-field)
@@ -47,7 +47,7 @@ Bateratze-prozesuaren urrats honetan, aukeratu eta baztertu zure profil bateratu
 
 1. Aukeran, [sortu bezeroaren IDaren konfigurazioa](#configure-customer-id-generation).
 
-1. Aukeran, [taldekatu profilak etxeetan edo multzotan](#group-profiles-into-households-or-clusters).
+1. Aukeran, [taldekatu profilak etxeetan edo klusterretan](#group-profiles-into-households-or-clusters).
 
 > [!div class="nextstepaction"]
 > [Hurrengo urratsa: berrikusi bateratzea](review-unification.md)
@@ -58,6 +58,9 @@ Bateratze-prozesuaren urrats honetan, aukeratu eta baztertu zure profil bateratu
 
 1. Zehaztu nola konbinatu eremuak hiru aukera hauetatik:
     - **Garrantzia**: balio nagusia identifikatzen du parte hartzen duten zehaztutako eremuen garrantziaren sailkapenean oinarrituta. Hori da konbinatzeko aukera lehenetsia. Garrantziaren araberako sailkapena ezartzeko, hautatu **Eraman gora/behera**.
+
+      > [!NOTE]
+      > Customer Insights-ek lehen balio nulua erabiltzen du. Adibidez, A, B eta C entitateak ordena horretan sailkatuta, A.Name eta B.Name nuluak badira, orduan C.Name-eko balioa erabiltzen da.
 
       :::image type="content" source="media/importance-merge-option.png" alt-text="Garrantziaren aukera eremuak konbinatzeko elkarrizketan.":::
 
@@ -143,7 +146,7 @@ Tratatu eremu multzo bat unitate bakar gisa. Adibidez, gure erregistroek Helbide
 
 Definitu nola sortu bezeroaren ID balioak, bezeroen profilaren identifikatzaile esklusiboak. Datuak bateratzeko prozesuko eremuak bateratzeko urratsak bezeroaren profilaren identifikatzaile esklusiboa sortzen du. Identifikatzailea da *Bezeroaren Id* urtean *Bezeroa* datuak bateratzeko prozesuaren ondoriozko entitatea.
 
-The *Bezeroaren Id*  nuluak ez diren irabazlearen gako nagusien lehen balioaren hash batean oinarritzen da. Gako hauek datuak bateratzeko erabiltzen diren entitateetatik datoz eta bat-etortze-ordenaren eragina dute.Beraz, sortutako bezero IDa alda daiteke lehen mailako gako-balio bat bat-etortze-ordenaren entitate nagusian aldatzen denean. Baliteke gako nagusiaren balioa ez izatea beti bezero bera ordezkatzea.
+The *Bezeroaren Id*  nuluak ez diren irabazlearen gako nagusien lehen balioaren hash batean oinarritzen da. Gako hauek datuak bateratzeko erabiltzen diren entitateetatik datoz eta bat-etortze-ordenaren eragina dute.Beraz, sortutako bezero IDa alda daiteke lehen mailako gako-balioa bat-etortze-ordenaren entitate nagusian aldatzen denean. Baliteke gako nagusiaren balioa ez izatea beti bezero bera ordezkatzea.
 
 Bezeroaren ID egonkor bat sortzeak portaera hori ekiditeko aukera ematen dizu.
 

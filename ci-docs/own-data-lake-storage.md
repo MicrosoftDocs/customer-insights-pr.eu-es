@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.manager: shellyha
 ms.custom: intro-internal
 ms.reviewer: mhart
-ms.openlocfilehash: 5acb58906c1a9db54337f3b4dc2ab7891db7954e
-ms.sourcegitcommit: 5e26cbb6d2258074471505af2da515818327cf2c
-ms.translationtype: MT
+ms.openlocfilehash: d2ff49c324c5c5c28213f362ff330d441fcb6052
+ms.sourcegitcommit: 49394c7216db1ec7b754db6014b651177e82ae5b
+ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 06/14/2022
-ms.locfileid: "9011918"
+ms.lasthandoff: 08/10/2022
+ms.locfileid: "9246186"
 ---
 # <a name="use-your-own-azure-data-lake-storage-gen2-account"></a>Erabili zurea Azure Data Lake Storage Gen2 kontua
 
@@ -27,17 +27,17 @@ Customer Insights-eko administratzaileek egin dezakete [inguruneak sortu](create
 
 - Azure Data Lake Storage kontuek Customer Insights ingurunea sortzean hautatu zenuen Azure eskualde berean egon behar dute. Bezeroen Insights ingurunearen eskualdea ikus dezakezu hemen **Admin** > **Sistema** > **Buruz**.
 - Data Lake biltegiratzeak Gen2 izan behar du eta eduki [izen-espazio hierarkikoa gaituta](/azure/storage/blobs/create-data-lake-storage-account). Gen1 biltegiratze-kontuak ez dira onartzen.
-- Izeneko edukiontzi bat`customerinsights` biltegiratze-kontuan egon behar du. Sortu behar duzu zure Data Lake biltegiratzea Customer Insights-en erabili aurretik. Customer Insights ingurunea konfiguratzen duen administratzaileak biltegiratze-kontuan edo biltegiratze-kontuan biltegiratze-kontuan edo biltegiratze-kontuan biltegiratze-kontuan edo biltegiratze-datuen kolaboratzailea edo biltegiratze-datuen jabearen rola behar du.`customerinsights` edukiontzia. Biltegiratze-kontu batean baimena esleitzeari buruzko informazio gehiago lortzeko, ikus [Sortu biltegiratze-kontu bat](/azure/storage/common/storage-account-create?toc=%2Fazure%2Fstorage%2Fblobs%2Ftoc.json&tabs=azure-portal).
+- Izeneko edukiontzi bat`customerinsights` biltegiratze-kontuan egon behar du. Sortu behar duzu zure Data Lake biltegiratzea Customer Insights-en erabili aurretik. Customer Insights ingurunea konfiguratzen duen administratzaileak biltegiratze-kontuan edo biltegiratze-kontuan biltegiratze-kontuan edo biltegiratze-kontuan biltegiratze-kontuan edo biltegiratze-datuen kolaboratzailea edo biltegiratze-datuen jabearen rola behar du.`customerinsights` edukiontzia. Biltegiratze-kontu batean baimena esleitzeari buruzko informazio gehiago lortzeko, ikus [Sortu biltegiratze kontu bat](/azure/storage/common/storage-account-create?toc=%2Fazure%2Fstorage%2Fblobs%2Ftoc.json&tabs=azure-portal).
 
 ## <a name="connect-customer-insights-with-your-storage-account"></a>Konektatu Customer Insights zure biltegiratze-kontuarekin
 
 Ingurune berri bat sortzen duzunean, ziurtatu Data Lake Storage kontua badagoela eta aurrebaldintza guztiak betetzen direla.
 
-1. urtean **Datuak biltegiratzea** ingurunea sortzean urratsa, ezarri **Gorde irteerako datuak** to **Azure Data Lake Storage Gen2**.
+1. urtean **Datuen biltegiratzea** ingurunea sortzean urratsa, ezarri **Gorde irteerako datuak** to **Azure Data Lake Storage Gen2**.
 1. Aukeratu nola egin **Konektatu biltegia**. Baliabideetan oinarritutako aukera eta autentifikaziorako harpidetzan oinarritutako aukera bat aukeratu dezakezu. Informazio gehiagorako, ikus [Konektatu batera Azure Data Lake Storage kontua Azure Service Principal bat erabiliz](connect-service-principal.md).
    - Izan ere **Azure harpidetza**, aukeratu **Harpidetza**, **taldea**, eta **Biltegiratze kontua** daukan`customerinsights` edukiontzia.
    - Izan ere **Kontuaren gakoa**, eman **Kontuaren izena** eta **Kontuaren gakoa** Data Lake Storage konturako. Autentifikazio-metodo hau erabiltzeak zure erakundeak gakoak biratzen dituen ala ez jakinarazten dizula esan nahi du. Behar duzu [eguneratu ingurunearen konfigurazioa](manage-environments.md#edit-an-existing-environment) giltza berriarekin biratzen denean.
-1. Aukeratu Azure Private Link erabili nahi duzun biltegiratze-kontura konektatzeko eta [sortu konexioa Esteka pribaturako](security-overview.md#private-links-tab) bi urratseko prozesu batekin.
+1. Aukeratu Azure Private Link erabili nahi duzun biltegiratze-kontura konektatzeko eta [sortu konexioa Esteka pribaturako](security-overview.md#set-up-an-azure-private-link) bi urratseko prozesu batekin.
 
 Sistemak datuak sartzea bezalako prozesuak amaitzen direnean, sistemak dagozkien karpetak sortzen ditu biltegiratze-kontuan. Datu fitxategiak eta *model.json* fitxategiak sortzen dira eta karpetetan gehitzen dira prozesuaren izenean oinarrituta.
 

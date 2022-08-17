@@ -8,12 +8,12 @@ ms.topic: how-to
 author: stefanie-msft
 ms.author: sthe
 manager: shellyha
-ms.openlocfilehash: f9c9ee55f2874ae1dcaf82f2ff17ed0fbbb7804d
-ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
+ms.openlocfilehash: 0e953cfff12df433d033717d58b28c2834468916
+ms.sourcegitcommit: 086f75136132d561cd78a4c2cb1e1933e2301f32
 ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "9196379"
+ms.lasthandoff: 08/11/2022
+ms.locfileid: "9259829"
 ---
 # <a name="export-data-to-azure-synapse-analytics-preview"></a>Esportatu datuak hona Azure Synapse Analytics (aurrebista)
 
@@ -24,7 +24,7 @@ Azure Synapse datu-biltegi eta makrodatuen sistemen ikuspegi luzea lortzeko denb
 > [!NOTE]
 > Ziurtatu guztiak ezartzen dituzula **funtzioak esleitzea** azaldu bezala.
 
-- Customer Insights atalean, zure Azure Active Directory (AD) erabiltzaile-kontuak bat izan behar du [Administratzaile rola](permissions.md#assign-roles-and-permissions).
+- Customer Insights atalean, zure Azure Active Directory (AD) erabiltzaile-kontuak bat izan behar du [Administratzaile rola](permissions.md#add-users).
 
 Azure-n:
 
@@ -32,13 +32,15 @@ Azure-n:
 
 - Berria erabiliz gero Azure Data Lake Storage Gen2 kontua, [Customer Insights-en zerbitzu nagusia](connect-service-principal.md) ditu **Biltegiratze Blob Datuen Laguntzailea** baimenak. Data Lake Storage Gen2-k **behar du** [izen-leku hierarkikoa](/azure/storage/blobs/data-lake-storage-namespace) gaituta.
 
-- Baliabide taldean non Azure Synapse lan-eremua kokatzen da, *zerbitzu nagusia* eta *Azure AD Customer Insights-en administratzaile-baimenak dituen erabiltzailea* esleitu behar dira gutxienez **Irakurlea**[baimenak](/azure/role-based-access-control/role-assignments-portal).
+- Baliabide taldean Azure Synapse lan-eremua kokatzen da, *zerbitzu nagusia* eta *Azure AD Customer Insights-en administratzaile-baimenak dituen erabiltzailea* esleitu behar dira gutxienez **Irakurlea**[baimenak](/azure/role-based-access-control/role-assignments-portal).
 
-- The *Azure AD Customer Insights-en administratzaile-baimenak dituen erabiltzailea* ditu **Biltegiratze Blob Datuen Laguntzailea** baimenak Azure Data Lake Storage Datuak kokatuta dauden eta honekin lotuta dauden Gen2 kontua Azure Synapse lan-eremua. Lortu informazio gehiago [Azure ataria erabiliz bloke eta ilara datuetara sartzeko Azure rola esleitzeko](/azure/storage/common/storage-auth-aad-rbac-portal) eta [Biltegiratzearen blob-datuen laguntzailearen baimenak](/azure/role-based-access-control/built-in-roles#storage-blob-data-contributor).
+- The *Azure AD Customer Insights-en administratzaile-baimenak dituen erabiltzailea* ditu **Biltegiratze Blob Datuen Laguntzailea** buruzko baimenak Azure Data Lake Storage Datuak kokatuta dauden eta honekin lotuta dauden Gen2 kontua Azure Synapse lan-eremua. Lortu informazio gehiago [Azure ataria erabiliz bloke eta ilara datuetara sartzeko Azure rola esleitzeko](/azure/storage/common/storage-auth-aad-rbac-portal) eta [Biltegiratzearen blob-datuen laguntzailearen baimenak](/azure/role-based-access-control/built-in-roles#storage-blob-data-contributor).
 
-- The *[Azure Synapse laneko gune kudeatutako identitatea](/azure/synapse-analytics/security/synapse-workspace-managed-identity)* ditu **Biltegiratze Blob Datuen Laguntzailea** baimenak Azure Data Lake Storage Datuak kokatuta dauden eta honekin lotuta dauden Gen2 kontua Azure Synapse lan-eremua. Lortu informazio gehiago [Azure ataria erabiliz bloke eta ilara datuetara sartzeko Azure rola esleitzeko](/azure/storage/common/storage-auth-aad-rbac-portal) eta [Biltegiratzearen blob-datuen laguntzailearen baimenak](/azure/role-based-access-control/built-in-roles#storage-blob-data-contributor).
+- The *[Azure Synapse laneko gune kudeatutako identitatea](/azure/synapse-analytics/security/synapse-workspace-managed-identity)* ditu **Biltegiratze Blob Datuen Laguntzailea** buruzko baimenak Azure Data Lake Storage Datuak kokatuta dauden eta honekin lotuta dauden Gen2 kontua Azure Synapse lan-eremua. Lortu informazio gehiago [Azure ataria erabiliz bloke eta ilara datuetara sartzeko Azure rola esleitzeko](/azure/storage/common/storage-auth-aad-rbac-portal) eta [Biltegiratzearen blob-datuen laguntzailearen baimenak](/azure/role-based-access-control/built-in-roles#storage-blob-data-contributor).
 
 - Gainean Azure Synapse lan-eremua, *Customer Insights-en zerbitzu nagusia* ditu **Synapse Administratzailea**[esleitutako rola](/azure/synapse-analytics/security/how-to-set-up-access-control).
+
+- Zure Customer Insights inguruneak datuak gordetzen baditu zure [propioa Azure Data Lake Storage](own-data-lake-storage.md), konexioa konfiguratzen duen erabiltzaileari Azure Synapse Analytics gutxienez barneratua behar du **Irakurlea** rola Data Lake Storage kontuan. Informazio gehiagorako, ikusi [Esleitu Azure funtzioak Azure ataria erabiliz](/azure/role-based-access-control/role-assignments-portal).
 
 ## <a name="set-up-connection-to-azure-synapse"></a>Konfiguratu konexioa Azure Synapse
 

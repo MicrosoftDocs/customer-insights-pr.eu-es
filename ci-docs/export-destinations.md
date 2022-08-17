@@ -12,16 +12,16 @@ searchScope:
 - ci-export
 - ci-connections
 - customerInsights
-ms.openlocfilehash: a70aadda4fc0eff3ddb4c89665506762613c291a
-ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
-ms.translationtype: MT
+ms.openlocfilehash: fd234aff9021ded76d8226bf2f15e035cf75e7db
+ms.sourcegitcommit: 49394c7216db1ec7b754db6014b651177e82ae5b
+ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "9194953"
+ms.lasthandoff: 08/10/2022
+ms.locfileid: "9245312"
 ---
 # <a name="exports-preview-overview"></a>Esportazioak (aurreargitalpena) ikuspegi orokorra
 
- Esportazioek datu zehatzak hainbat aplikaziorekin partekatzeko aukera ematen dute. Bezeroen profilak, entitateak, eskemak eta mapen xehetasunak sar ditzakete. Esportazio bakoitzak [konexioa, administratzaile batek konfiguratuta, autentifikazioa eta sarbidea kudeatzeko](connections.md). **Esportazioak** orrialdeak konfiguratutako esportazio guztiak erakusten ditu.
+ Esportazioek hainbat aplikaziorekin datu zehatzak partekatzeko aukera ematen dute. Bezeroen profilak, entitateak, eskemak eta mapen xehetasunak sar ditzakete. Esportazio bakoitzak [konexioa, administratzaile batek konfiguratuta, autentifikazioa eta sarbidea kudeatzeko](connections.md). **Esportazioak** orrialdeak konfiguratutako esportazio guztiak erakusten ditu.
 
 ## <a name="export-types"></a>Esportatze-motak
 
@@ -79,7 +79,7 @@ Hautatu esportazio bat erabilgarri dauden ekintzak ikusteko.
 
 ## <a name="schedule-and-run-exports"></a>Antolatu eta exekutatu esportazioak
 
-Konfiguratzen duzun esportazio bakoitzak freskatze ordutegia du. Freskatze batean, sistemak esportazio batean sartzeko datu berri edo eguneratuak bilatzen ditu. Berez, esportazioak [programatutako eguneratze sistema](system.md#schedule-tab) guztien zati gisa exekutatzen dira. Freskatze ordutegia pertsonaliza dezakezu edo desaktiba dezakezu esportazioak eskuz exekutatzeko.
+Konfiguratzen duzun esportazio bakoitzak freskatze ordutegia du. Freskatze batean, sistemak esportazio batean sartzeko datu berri edo eguneratuak bilatzen ditu. Berez, esportazioak [programatutako eguneratze sistema](schedule-refresh.md) guztien zati gisa exekutatzen dira. Freskatze ordutegia pertsonaliza dezakezu edo desaktiba dezakezu esportazioak eskuz exekutatzeko.
 
 Esportazio ordutegiak zure ingurunearen egoeraren araberakoak dira. Eguneratzeak martxan badaude aktibatuta [mendekotasunak](system.md#refresh-processes) programatutako esportazio bat hasi behar denean, sistemak eguneraketak osatuko ditu eta esportazioa exekutatuko du. The **Freskatua** zutabeak esportazio bat azken aldiz noiz freskatu den erakusten du.
 

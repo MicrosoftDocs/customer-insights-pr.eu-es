@@ -1,7 +1,7 @@
 ---
-title: Kudeatu erabiltzaile-baimenak
+title: Esleitu erabiltzaile-baimenak
 description: Lortu baimenei eta erabiltzaile-funtzioei buruzko informazio gehiago.
-ms.date: 02/09/2022
+ms.date: 08/08/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -12,20 +12,16 @@ searchScope:
 - ci-permissions
 - ci-system-security
 - customerInsights
-ms.openlocfilehash: 30b37645cad4e795ef20579e20e3f2bbdb2afbf6
-ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
+ms.openlocfilehash: a59a672b6f7e1e67c2162ea14bb9860df0d551aa
+ms.sourcegitcommit: 49394c7216db1ec7b754db6014b651177e82ae5b
 ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9054824"
+ms.lasthandoff: 08/10/2022
+ms.locfileid: "9245404"
 ---
-# <a name="manage-user-permissions"></a>Kudeatu erabiltzaile-baimenak
+# <a name="assign-user-permissions"></a>Esleitu erabiltzaile-baimenak
 
-The **Baimenak** orrialdean bertan ezarriko dituzu Customer Insights erabiltzeko rolak eta baimenak.
-
-Orrialdea ikusteko administratzaile baimenak izan behar dituzu. Baimenen orrira sartzeko, joan hona **Admin** > **Segurtasuna** > **Erabiltzaileak**.
-
-Hiru funtzio mota daude:
+Customer Insights-erako sarbidea administratzaile batek aplikazioan gehitzen dituen zure erakundeko erabiltzaileei mugatuta dago. Administratzaile batek erabiltzaileak gehitu, editatu edo kendu ditzake. Erabiltzaile bat erabiltzaile, talde edo aplikazio bakarra izan daiteke. Erabiltzaile batek hiru rol mota izan ditzake:
 
 ## <a name="viewer"></a>Ikuslea
 
@@ -41,18 +37,18 @@ Hiru funtzio mota daude:
 
 - Ikuslearen esku dauden baimen guztiak.
 - Kargatu eta eraldatu datuak **Datu-iturburuak** orria erabiliz.
-- Osatu***Datuen bateratzea** eta horrek bezeroen profil bateratu entitatea sortzen du.
+- Osatu **Datuen bateratzea** eta horrek bezeroen profil bateratu entitatea sortzen du.
 - Definitu **Harremanak** eta **jarduerak**.
 - Sortu segmentuak **Segmentuak** orria erabiliz.
 - Sortu neurriak erabiliz **Neurriak** orria.
 - Kudeatu eta konfiguratu bezeroen profilak **aberastea** orria (lehen alderdiko aberasketetarako bakarrik).
-- Kudeatu eta sortu esportazioak laguntzaileekin partekatutako konexioetan oinarrituta. [Lortu informazio gehiago administratzaileek laguntzaileei nola esportazioetarako konexio bat erabiltzea onartzen duten jakiteko](connections.md#allow-contributors-to-use-a-connection-for-exports).
+- Kudeatu eta sortu esportazioak oinarrituta [laguntzaileekin partekatutako konexioak](connections.md#allow-contributors-to-use-a-connection-for-exports).
 
 ## <a name="admin"></a>Admin
 
 - Kolaboratzailearen esku dauden baimen guztiak.
-- Aldatu ezarpenak **Sistema** orrian, zure sistemaren prozesuetarako laneko hizkuntza eta freskatze ordutegiak barne.
-- Ikusi eta gehitu baimenak **Baimenak** orria erabiliz.
+- Aldatu ezarpenak **Sistema** orrialdea, lan-hizkuntza barne, zure sistema-prozesuen freskatze-programazioak eta diagnostiko-erregistroak esportatzea.
+- Aldatu ezarpenak **Segurtasuna** orrialdea, erabiltzaileak, API gakoak, esteka pribatuak eta gakoen ganga barne.
 - Ezarri bilaketa eta Bezeroak orriko iragazkien definizioak **Bilaketa- eta iragazki-aurkibidea** orria erabiliz (**Bezeroak** orriaren bidez atzi daiteke).
 - Kudeatu konexioak eta onar itzazu beste erabiltzaile rolak **Konexioak** orrialdea.
 - Kudeatu eta konfiguratu bezeroen profilak **aberastea** orria (aberasketa guztietarako).
@@ -67,24 +63,27 @@ Hiru funtzio mota daude:
 - Administratzailearen eskura dauden baimen guztiak.
 - [Berrezarri eta ezabatu](manage-environments.md#reset-an-existing-environment-preview) Ingurumena.
 
-## <a name="assign-roles-and-permissions"></a>Rolak eta baimenak esleitu
+## <a name="add-users"></a>Gehitu erabiltzaileak
 
-1. Joan **Admin** > **Segurtasuna** > **Erabiltzaileak***.
+1. Joan **Admin** > **Segurtasuna** eta hautatu **Erabiltzaileak** fitxa.
 
 1. Aukeratu **Gehitu erabiltzaileak** **Gehitu / Editatu baimenak** panela irekitzeko.
 
-1. Erabili **Bilaketa** eremua aurkitzeko Azure Active Directory erabiltzaile edo taldea doitu nahi dituzun baimenak. Aukeratu a **Funtzioa** erabiltzaile edo talde horri esleitzeko.
+1. Erabili **Bilatu** eremua aurkitzeko Azure Active Directory gehitu nahi duzun erabiltzailea edo taldea. Aukeratu a **Funtzioa** erabiltzaile edo talde horri esleitzeko.
 
-1. Sakatu **Gorde**. Uneko ingurunea automatikoki partekatuko da baimenak aldatu dituzun erabiltzailearekin edo taldeko kideekin. Erabiltzaileek Customer Insights aplikaziora sartu eta beraien zehaztutako eginkizunaren arabera lan egin dezakete.
+1. Sakatu **Gorde**. Uneko ingurunea automatikoki partekatzen da erabiltzailearekin edo taldeko kideekin. Erabiltzaileek Customer Insights aplikaziora sartu eta beraien zehaztutako eginkizunaren arabera lan egin dezakete.
 
 ## <a name="view-current-permissions"></a>Ikusi uneko baimenak
 
-Joan **Admin** > **Segurtasuna** > **Erabiltzaileak** une honetan zein rol-esleipen dauden aktibo ikusteko.
+Joan **Admin** > **Segurtasuna** eta hautatu **Erabiltzaileak** fitxa erabiltzaile aktiboen zerrenda eta haien rol-esleipenak ikusteko. Erabiltzaileen zerrenda edozein zutaberen arabera ordena dezakezu edo bilaketa-koadroa erabil dezakezu erabiltzaile jakin bat aurkitzeko.
 
-- **Mota** zutabeak erabiltzaile, talde edo aplikazio bakarra zehazten du. Sistemak erabiltzaile eta talde indibidualak onartzen ditu.
-- Rolak azpian zehazten dira **Rola** zutabea.
-- Hautatu zutabeetako edozein titulu emaitzak emaitzak zutabe horren balioaren arabera ordenatzeko.
-- Erabili **Bilatu** eremua orrialdearen goialdean erabiltzaile jakinak kokatzeko.
+## <a name="manage-current-users"></a>Kudeatu egungo erabiltzaileak
 
+Joan **Admin** > **Segurtasuna** eta hautatu **Erabiltzaileak** fitxa. Erabiltzaileen zerrenda edozein zutaberen arabera ordena dezakezu edo bilaketa-koadroa erabili kudeatu nahi duzun erabiltzailea aurkitzeko.
+
+Hautatu erabiltzaile bat erabilgarri dauden ekintzak ikusteko.
+
+- **Editatu** erabiltzailearen rola editatzeko Customer Insights-en. Hautatu **Gorde** aldaketa berresteko.
+- **Kendu** erabiltzaileari Customer Insights-etarako sarbidea kentzeko. Hautatu **Ezabatu** ezabatzea baieztatzeko.
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

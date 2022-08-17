@@ -14,18 +14,18 @@ searchScope:
 - ci-measure-template
 - ci-enrichment-details
 - customerInsights
-ms.openlocfilehash: ead57ccbdcaf9f86ee54d1f15de71a63f2e1081b
-ms.sourcegitcommit: 8a28e9458b857adf8e90e25e43b9bc422ebbb2cd
+ms.openlocfilehash: 99368a7ab2e8d7b3e53c04fbf25bb23bd2e550a9
+ms.sourcegitcommit: 49394c7216db1ec7b754db6014b651177e82ae5b
 ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 07/18/2022
-ms.locfileid: "9170805"
+ms.lasthandoff: 08/10/2022
+ms.locfileid: "9245358"
 ---
 # <a name="measures-overview"></a>Neurrien ikuspegi orokorra
 
 Neurriek bezeroen portaerak eta negozioaren errendimendua hobeto ulertzen lagunduko dizute. Balio garrantzitsuak aztertzen dituzte [profil bateratuak](data-unification.md). Adibidez, enpresa batek ikusi nahi du *bezero bakoitzeko guztizko gastua* bezero bakoitzaren erosketa historia edo neurria ulertzeko *enpresaren guztizko salmentak* negozio osoko diru-sarrera agregatuak ulertzeko.
 
-Sortu negozio-jarduerak planifikatzeko neurriak bezeroen datuak kontsultatuz eta ikuspegiak ateraz. Adibidez, sortu neurri bat *guztizko gastua bezero bakoitzeko* eta *bezero bakoitzeko etekin osoa* gastu eta errentagarritasun handia duten bezero talde bat identifikatzen laguntzeko. Orduan, [segmentu bat sortu](segments.md) neurri horietan oinarrituta hurrengo ekintza onenak bultzatzeko.
+Sortu negozio-jarduerak planifikatzeko neurriak bezeroen datuak kontsultatuz eta ikuspegiak ateraz. Adibidez, sortu neurri bat *guztizko gastua bezero bakoitzeko* eta *bezero bakoitzeko etekin osoa* gastu handia baina errentagarritasun handia duten bezero talde bat identifikatzen laguntzeko. Orduan, [segmentu bat sortu](segments.md) neurri horietan oinarrituta hurrengo ekintza onenak bultzatzeko.
 
 ## <a name="create-a-measure"></a>Sortu neurri bat
 
@@ -53,7 +53,7 @@ Hautatu neurri baten ondoan erabilgarri dauden ekintzak ikusteko. Hautatu neurri
 - **Editatu** bere propietateak aldatzeko neurria.
 - **Freskatu** azken datuak sartzeko neurria.
 - **Aldatu izena** neurria.
-- **Aktibatu** edo **Desaktibatu** neurria. Neurri inaktiboak ez dira freskatuko a bitartean [programatutako freskadura](system.md#schedule-tab) eta izan **Egoera** gisa zerrendatuta **Saltatu**, freskatze bat ere saiatu ez dela adieraziz.
+- **Aktibatu** edo **Desaktibatu** neurria. Neurri inaktiboak ez dira freskatuko a bitartean [programatutako freskadura](schedule-refresh.md) eta izan **Egoera** gisa zerrendatuta **Saltatu**, freskatze bat ere saiatu ez dela adieraziz.
 - **Etiketa** to [kudeatu etiketak](work-with-tags-columns.md#manage-tags) neurrirako.
 - **Ezabatu** neurria.
 - **Zutabeak** to [pertsonalizatu zutabeak](work-with-tags-columns.md#customize-columns) pantaila hori.
@@ -62,7 +62,7 @@ Hautatu neurri baten ondoan erabilgarri dauden ekintzak ikusteko. Hautatu neurri
 
 ## <a name="refresh-measures"></a>Freskatzeko neurriak
 
-Neurriak programazio automatiko batean freskatu daitezke edo eskuz freskatu daitezke eskaeraren arabera. Neurri bat edo gehiago eskuz freskatzeko, hautatu eta aukeratu **Freskatu**. To [programatu freskatze automatikoa](system.md#schedule-tab), joan **Admin** > **Sistema** > **Ordutegia**.
+Neurriak programazio automatiko batean freskatu daitezke edo eskuz freskatu daitezke eskaeraren arabera. Neurri bat edo gehiago eskuz freskatzeko, hautatu eta aukeratu **Freskatu**. To [programatu freskatze automatikoa](schedule-refresh.md), joan **Admin** > **Sistema** > **Ordutegia**.
 
 [!INCLUDE [progress-details-include](includes/progress-details-pane.md)]
 

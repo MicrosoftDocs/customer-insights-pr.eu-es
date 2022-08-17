@@ -122,7 +122,7 @@
       href: segments.md
     - name: Sortu segmentu-sorgailuarekin
       href: segment-builder.md
-    - name: Sortu segmentu bizkorrekin
+    - name: Sortu segmentu azkarrekin
       href: segment-quick.md
     - name: Neurrietan oinarritutako iradokitako segmentuak
       href: suggested-segments.md
@@ -284,18 +284,20 @@
       href: connect-service-principal.md
 - name: Administrazioa
   items:
-    - name: Konfiguratu sistemaren konfigurazioa
-      href: system.md
-    - name: Konfiguratu segurtasun ezarpenak
-      href: security-overview.md
     - name: Esleitu erabiltzaile-baimenak
       href: permissions.md
     - name: Ekarri zure Key Vault
       href: use-azure-key-vault.md
+    - name: Konfiguratu segurtasun ezarpenak
+      href: security-overview.md
     - name: Esportatu diagnostikoen erregistroak
       href: diagnostics.md
-    - name: Konexioen ikuspegi orokorra
+    - name: Kudeatu konexioak
       href: connections.md
+    - name: Programatu sistema freskatzea
+      href: schedule-refresh.md
+    - name: Ikusi sistemaren konfigurazioa
+      href: system.md
 - name: APIak
   items:
     - name: Egin lan API-ekin

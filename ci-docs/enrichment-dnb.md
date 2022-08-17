@@ -1,7 +1,7 @@
 ---
 title: Aberastu konpainiaren profilak Dun & Bradstreet-ekin (aurrebista)
 description: Dun & Bradstreet hirugarrenen aberasteari buruzko informazio orokorra.
-ms.date: 06/10/2022
+ms.date: 08/08/2022
 ms.reviewer: mhart
 ms.service: customer-insights
 ms.subservice: audience-insights
@@ -9,12 +9,12 @@ ms.topic: how-to
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: 71b35e4295e19c13edadc6548ac79715555e8183
-ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
+ms.openlocfilehash: e89b64774dcb519a071dd3d403473807a50e7f33
+ms.sourcegitcommit: b1d06fe26934f12f0c5ed13e8ef1d37e52e67cc7
 ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "9196011"
+ms.lasthandoff: 08/08/2022
+ms.locfileid: "9237889"
 ---
 # <a name="enrich-company-profiles-with-dun--bradstreet-preview"></a>Aberastu konpainiaren profilak Dun & Bradstreet-ekin (aurrebista)
 
@@ -55,16 +55,11 @@ Bat izan behar duzu [administratzailea](permissions.md#admin) Customer Insights-
 
 1. Eman baliozko Dun & Bradstreet kredentzialak eta Dun & Bradstreet proiektuaren xehetasunak *Eskualdea, Jaregin karpetaren bidea eta Jaregin karpetaren izena*. Zuk [lortu informazio hau](#set-up-your-dun--bradstreet-project) Dun & Bradstreet proiektutik.
 
-1. Berrikusi eta eman zure baimena [Datuen pribatutasuna eta betetzea](#data-privacy-and-compliance) hautatuz **Ados**.
+1. Berrikusi [datuen pribatutasuna eta betetzea](connections.md#data-privacy-and-compliance) eta hautatu **ados**.
 
 1. Hautatu **Egiaztatu** konfigurazioa balioztatzeko eta gero hautatu **Gorde**.
 
    :::image type="content" source="media/enrichment-dnb-connection.png" alt-text="Dun & Bradstreet konexioaren konfigurazio orria.":::
-
-### <a name="data-privacy-and-compliance"></a>Datuen pribatutasuna eta arau-gordetzea
-
-Gaitzen duzunean Dynamics 365 Customer Insights Dun & Bradstreet-i datuak transmititzeko, datuak betetze-mugatik kanpo transferitzea onartzen duzu Dynamics 365 Customer Insights, potentzialki sentikorrak diren datuak barne, hala nola Datu Pertsonalak. Microsoft-ek datu horiek transferituko ditu zure aginduetara, baina zu zara Dun & Bradstreet-ek izan ditzakezun pribatutasun- edo segurtasun-betebeharrak betetzen dituela ziurtatzeaz. Informazio gehiago eskuratzeko, ikusi [Microsoft-en pribatutasun-adierazpena](https://go.microsoft.com/fwlink/?linkid=396732).
-Dynamics 365 Customer Insights administratzailea edonoiz ken dezake aberastea funtzio hau erabiltzeari uzteko.
 
 ## <a name="supported-countries-or-regions"></a>Lagundutako herrialdeak edo eskualdeak
 
@@ -92,7 +87,7 @@ Une honetan herrialde/eskualde aukera hauek onartzen ditugu: Kanada (ingelesa) e
 
 1. Mapeatu zure eremuak Dun & Bradstreet-en konpainiaren datuekin. Edota **DUNS zenbakia** edo **Enpresaren izena** eta **Herrialdea** eremuak beharrezkoak dira.
 
-      :::image type="content" source="media/enrichment-dnb-mapping.png" alt-text="Dun & Bradstreet eremu-mapen panela.":::
+      :::image type="content" source="media/enrichment-dnb-mapping.png" alt-text="Dun & Bradstreet eremu-mapa-panela.":::
 
 1. Hautatu **Hurrengoa** eremuaren jarraipena osatzeko.
 

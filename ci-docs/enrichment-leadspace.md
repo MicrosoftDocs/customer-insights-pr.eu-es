@@ -1,19 +1,19 @@
 ---
 title: Aberastu enpresaren profilak Leadspace-rekin (aurrebista)
 description: Leadspace-ren hirugarrenen aberasteari buruzko informazio orokorra.
-ms.date: 06/10/2022
+ms.date: 08/08/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: how-to
 author: jodahlMSFT
 ms.author: jodahl
 manager: shellyha
-ms.openlocfilehash: 3f23fe7177f931db3e3179970915d0cd3c736f87
-ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
+ms.openlocfilehash: f45fabc036775e11fc439f69513678d0607729d0
+ms.sourcegitcommit: b1d06fe26934f12f0c5ed13e8ef1d37e52e67cc7
 ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "9196195"
+ms.lasthandoff: 08/08/2022
+ms.locfileid: "9237935"
 ---
 # <a name="enrich-company-profiles-with-leadspace-preview"></a>Aberastu enpresaren profilak Leadspace-rekin (aurrebista)
 
@@ -27,7 +27,7 @@ Leadspace datu-zientzietako enpresa bat da, B-to-B Bezeroentzako Datuen Platafor
 
 ## <a name="configure-the-connection-for-leadspace"></a>Konfiguratu konexioa Leadspace-rako
 
-Bat izan behar duzu [administratzailea](permissions.md#admin) Customer Insights-en eta "betiko gakoa" dute (deitzen zaio **Leadspace tokena**).
+Bat izan behar duzu [administratzailea](permissions.md#admin) Customer Insights-en eta "betiko giltza" dute (deitzen zaio **Leadspace tokena**).
 
 1. Hautatu **Gehitu konexioa** aberaste bat konfiguratzean edo joan **Admin** > **Konexioak** eta hautatu **Konfiguratu** Leadspace fitxan.
 
@@ -35,14 +35,9 @@ Bat izan behar duzu [administratzailea](permissions.md#admin) Customer Insights-
 
 1. Sartu konexiorako izen bat eta baliozko Leadspace token bat.
 
-1. Berrikusi eta eman zure baimena [Datuen pribatutasuna eta betetzea](#data-privacy-and-compliance) hautatuz **Ados**.
+1. Berrikusi [datuen pribatutasuna eta betetzea](connections.md#data-privacy-and-compliance) eta hautatu **ados**.
 
 1. Hautatu **Egiaztatu** konfigurazioa balioztatzeko eta gero hautatu **Gorde**.
-
-### <a name="data-privacy-and-compliance"></a>Datuen pribatutasuna eta arau-gordetzea
-
-Dynamics 365 Customer Insights gaitzen duzunean datuak Leadspace-ra bidaltzeko, datuak betetzeko mugatik kanpo transferitzea baimentzen duzu Dynamics 365 Customer Insights-erako, datu pertsonalak bezalako datu sentikorrak barne. Microsoft-ek datu horiek transferituko ditu zure aginduz, baina zure ardura da Leadspace-k pribatutasun- edo segurtasun-betebeharrak betetzen dituela ziurtatzea. Informazio gehiago eskuratzeko, ikusi [Microsoft-en pribatutasun-adierazpena](https://go.microsoft.com/fwlink/?linkid=396732).
-Dynamics 365 Customer Insights administratzailea edonoiz ken dezake aberastea funtzio hau erabiltzeari uzteko.
 
 ## <a name="configure-the-enrichment"></a>Konfiguratu aberastea
 

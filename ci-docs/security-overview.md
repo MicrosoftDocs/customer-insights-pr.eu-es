@@ -1,76 +1,75 @@
 ---
-title: Segurtasun-ezarpenak Customer Insights-en
+title: Konfiguratu segurtasun ezarpenak
 description: Lortu informazio gehiago segurtasun-ezarpenei buruz Dynamics 365 Customer Insights.
-ms.date: 06/08/2022
+ms.date: 08/02/2022
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 163deb9bed4f82d742c46cace27dd128f0aca18b
-ms.sourcegitcommit: 8e9f0a9693fd8d91ad0227735ff03688fef5406f
+ms.openlocfilehash: ea21163d7dd05370de28ca8340ae9583846adb26
+ms.sourcegitcommit: 49394c7216db1ec7b754db6014b651177e82ae5b
 ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "8947400"
+ms.lasthandoff: 08/10/2022
+ms.locfileid: "9246047"
 ---
-# <a name="security-settings-in-customer-insights"></a>Segurtasun-ezarpenak Customer Insights-en
+# <a name="configure-security-settings"></a>Konfiguratu segurtasun ezarpenak
 
-The **Segurtasuna** orrialdeak erabiltzailearen baimenak eta funtzioak egiten laguntzen duten konfiguratzeko aukerak zerrendatzen ditu Dynamics 365 Customer Insights seguruagoa. Administratzaileek soilik atzi dezakete orrialde honetara.
+Kudeatu API gakoak, atzitu bezeroen datuak eta konfiguratu Azure Private Link bat.
 
-Joan **Admin** > **Segurtasuna** ezarpenak konfiguratzeko.
-
-The **Segurtasuna** orrialdeak fitxa hauek ditu:
-
-- [Erabiltzaileak](#users-tab)
-- [APIak](#apis-tab)
-- [Esteka pribatuak](#private-links-tab)
-- [Key Vault](#key-vault-tab)
-- [Sartu segurtasunez bezeroaren datuak Customer Lockbox-ekin (aurrebista)](#securely-access-customer-data-with-customer-lockbox-preview)
-
-## <a name="users-tab"></a>Erabiltzaileak fitxa
-
-Customer Insights-erako sarbidea administratzaile batek aplikazioan gehitu dituen zure erakundeko erabiltzaileei mugatuta dago. The **Erabiltzaileak** fitxak erabiltzaileen sarbidea eta haien baimenak kudeatzeko aukera ematen dizu. Informazio gehiagorako, ikus [Erabiltzaileen baimenak](permissions.md).
-
-## <a name="apis-tab"></a>APIen fitxa
+## <a name="manage-api-keys"></a>Kudeatu API gakoak
 
 Ikusi eta kudeatu teklak erabiltzeko [Customer Insights APIak](apis.md) zure inguruneko datuekin.
 
-Lehen eta bigarren mailako gako berriak sor ditzakezu hautatuta **Birsortu primarioa** edo **Bigarren mailako birsortzea**. 
+1. Joan **Sistema** > **Segurtasuna** eta hautatu **APIak** fitxa.
 
-API ingurunerako sarbidea blokeatzeko, hautatu **Desgaitu**. APIak desgaituta badaude, hauta dezakezu **Gaitu** berriro sarbidea emateko.
+1. Ingurunerako API sarbidea konfiguratu ez bada, hautatu **Gaitu**. Edo, ingurunerako API sarbidea blokeatzeko, hautatu **Desgaitu** eta baieztatu.
 
-## <a name="private-links-tab"></a>Esteka pribatuak fitxa
+1. Kudeatu API gako nagusiak eta bigarren mailakoak:
+
+   1. API gako nagusia edo bigarren mailakoa erakusteko, hautatu **Erakutsi** sinboloa.
+
+   1. API gako nagusia edo bigarren mailakoa kopiatzeko, hautatu **Kopiatu** sinboloa.
+
+   1. API gako nagusi edo bigarren mailako berriak sortzeko, hautatu **Birsortu primarioa** edo **Bigarren mailako birsortzea**.
+
+## <a name="securely-access-customer-data-with-customer-lockbox-preview"></a>Sartu segurtasunez bezeroaren datuak Customer Lockbox-ekin (aurrebista)
+
+Customer Insights-ek hau erabiltzen du Power Platform Bezeroaren Lockbox gaitasuna. Customer Lockbox interfaze bat eskaintzen du datuetara sartzeko eskaerak berrikusteko eta onartzeko (edo ukatzeko). Eskaera hauek laguntza-kasu bat konpontzeko bezeroen datuetarako sarbidea behar denean gertatzen dira. Eginbide hau erabiltzeko, Customer Insights-ek lehendik dagoen konexio bat izan behar du a Microsoft Dataverse zure maizterren ingurunea.
+
+Bezeroen Lockbox-ari buruzko informazio gehiago lortzeko, ikusi [laburpen](/power-platform/admin/about-lockbox#summary) de Power Platform Bezeroaren Lockbox. Artikuluak ere deskribatzen du [lan-fluxua](/power-platform/admin/about-lockbox#workflow) eta behar dena [konfigurazioa](/power-platform/admin/about-lockbox#enable-the-lockbox-policy) Customer Lockbox gaitzeko.
+
+> [!IMPORTANT]
+> Administratzaile globalak Power Platform edo Power Platform administratzaileek Customer Insights-etarako igorritako Customer Lockbox eskaerak onar ditzakete.
+
+## <a name="set-up-an-azure-private-link"></a>Konfiguratu Azure esteka pribatu bat
 
 [Azure esteka pribatua](/azure/private-link/private-link-overview) konekta gaitezen Customer Insights zure Azure Data Lake Storage kontua zure sare birtualeko amaiera-puntu pribatu batean. Biltegiratze-kontu bateko datuetarako, Internet publikora ez dagoena, Private Link-ek sare mugatu horrekin konektatzea ahalbidetzen du.
 
 > [!IMPORTANT]
 > Esteka pribatuko konexioa konfiguratzeko gutxieneko rol-eskakizuna:
 >
-> - Bezeroaren ikuspegia: Administratzailea
+> - Bezeroei buruzko informazioa: Administratzailea
 > - Azure integratutako rola: [Biltegiratze-kontuaren laguntzailea](/azure/role-based-access-control/built-in-roles#storage-account-contributor)
 > - Azure rol pertsonalizaturako baimenak: [Microsoft.Storage/storageAccounts/read eta Microsoft.Storage/storageAccounts/PrivateEndpointConnectionsApproval/action](/azure/role-based-access-control/resource-provider-operations#microsoftstorage)
->
 
-Customer Insights-en Esteka pribatua konfiguratzea bi urratseko prozesua da. Lehenik eta behin, esteka pribatu bat sortzen hasten zara **Admin** > **Segurtasuna** > **Esteka pribatuak** Bezeroen Insights-en. The **Gehitu esteka pribatua** panelak zure maizterraren biltegiratze-kontuak zerrendatzen ditu ikusteko baimenak dituzunak. Hautatu biltegiratze-kontua eta eman baimena Esteka pribatua sortzeko.
+1. Customer Insights atalean, joan hona **Admin** > **Segurtasuna** eta hautatu **Esteka pribatuak** fitxa.
 
-Ondoren, Data Lake biltegiratze kontuaren esteka pribatua onartu behar duzu. Ireki pantailan aurkezten den esteka Esteka pribatu berria onartzeko.
+1. Hautatu **Gehitu esteka pribatua**.
 
-## <a name="key-vault-tab"></a>Gakoen ganga fitxa
+   The **Gehitu esteka pribatua** panelak zure maizterraren biltegiratze-kontuak zerrendatzen ditu ikusteko baimenak dituzunak.
 
-The **Gakoen ganga** fitxak zurea lotu eta kudeatzeko aukera ematen dizu [Azure gakoen ganga](/azure/key-vault/general/basic-concepts) ingurumenari.
-Eskainitako gako-ganga erakundearen betetze-mugan sekretuak agertzeko eta erabiltzeko erabil daiteke. Customer Insights-ek Azure Key Vault-eko sekretuak erabil ditzake [konexioak ezarri](connections.md) hirugarrenen sistemetara.
+1. Hautatu harpidetza, baliabide taldea eta biltegiratze kontua.
 
-Informazio gehiagorako, ikus [Ekarri zure Azure key vault](use-azure-key-vault.md).
+1. Berrikusi [datuen pribatutasuna eta betetzea](connections.md#data-privacy-and-compliance) eta hautatu **ados**.
 
-## <a name="securely-access-customer-data-with-customer-lockbox-preview"></a>Sartu segurtasunez bezeroaren datuak Customer Lockbox-ekin (aurrebista)
+1. Sakatu **Gorde**.
 
-Customer Insights erabiltzen ari da Power Platform Bezeroaren Lockbox gaitasuna. Customer Lockbox interfaze bat eskaintzen du datuak atzitzeko eskaerak berrikusteko eta onartzeko (edo ukatzeko). Eskaera hauek laguntza-kasu bat konpontzeko bezeroen datuetarako sarbidea behar denean gertatzen dira. Eginbide hau erabiltzeko, Customer Insights-ek lehendik dagoen konexio bat izan behar du a Microsoft Dataverse zure maizterren ingurunea.
+1. Joan zure Data Lake Storage kontura eta ireki pantailan agertzen den esteka.
 
-Bezeroen Lockbox-ari buruzko informazio gehiago lortzeko, ikusi [laburpen](/power-platform/admin/about-lockbox#summary) de Power Platform Bezeroaren Lockbox. Artikuluak ere deskribatzen du [lan-fluxua](/power-platform/admin/about-lockbox#workflow) eta behar dena [konfigurazioa](/power-platform/admin/about-lockbox#enable-the-lockbox-policy) Customer Lockbox gaitzeko.
+1. Onartu esteka pribatua.
 
-> [!IMPORTANT]
-> Administratzaile globalak Power Platform edo Power Platform administratzaileek Customer Insights-etarako igorritako Customer Lockbox eskaerak onar ditzakete.
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]
