@@ -2,7 +2,7 @@
 title: Datuak bateratzeko baldintzak bat etortzea
 description: Lotu entitateak bezeroen profil bateratuak sortzeko.
 recommendations: false
-ms.date: 05/05/2022
+ms.date: 07/27/2022
 ms.subservice: audience-insights
 ms.topic: tutorial
 author: v-wendysmith
@@ -14,12 +14,12 @@ searchScope:
 - ci-merge
 - ci-map
 - customerInsights
-ms.openlocfilehash: e3e4e37d5b4c9caf2520a789d5f78ef33b491793
-ms.sourcegitcommit: 3c5b0b40b2b45e420015bbdd228ce0e610245e6f
+ms.openlocfilehash: eaa3409aaa7541dc88953336942e43afaf6511c6
+ms.sourcegitcommit: 267c317e10166146c9ac2c30560c479c9a005845
 ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "9139682"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "9304642"
 ---
 # <a name="match-conditions-for-data-unification"></a>Datuak bateratzeko baldintzak bat etortzea
 
@@ -27,6 +27,8 @@ Bateratzearen urrats honek entitateen arteko parekatze-ordena eta arauak definit
 
 > [!NOTE]
 > Zure partida-baldintzak sortu eta hautatu ondoren **Hurrengoa**, ezin duzu hautatutako entitate edo atributu bat kendu. Behar izanez gero, hautatu **Itzuli** hautatutako entitateak eta atributuak berrikusteko, jarraitu aurretik.
+
+[!INCLUDE [m3-first-run-note](includes/m3-first-run-note.md)]
 
 ## <a name="include-enriched-entities-preview"></a>Sartu entitate aberastuak (aurrebista)
 
@@ -43,18 +45,18 @@ datu-iturburu mailan entitateak aberastu badituzu zure bateratzearen emaitzak ho
 Partida bakoitzak bi entitate edo gehiago bateratzen ditu entitate bakar eta bateratu batean. Aldi berean, bezeroaren erregistro bakarrak gordetzen ditu. Bat-etortze-ordenak sistemak erregistroekin bat egiten saiatzen den ordena adierazten du.
 
 > [!IMPORTANT]
-> Zerrendako lehen entitateari entitate nagusia deitzen zaio. Entitate nagusiak zure profil bateratuen datu-multzoaren oinarri gisa balio du. Hautatzen diren entitate gehigarriak entitate honi gehituko zaizkio.
+> Lehen entitateari entitate nagusia deitzen zaio, eta horrek zure profil bateratuen oinarri gisa balio du. Hautatzen diren entitate gehigarriak entitate honi gehituko zaizkio.
 >
 > Gogoeta garrantzitsuak:
 >
 > - Aukeratu zure bezeroei buruzko profil-datu osatuena eta fidagarriena duen entitatea entitate nagusi gisa.
 > - Aukeratu beste entitate batzuekin komunean hainbat atributu dituen entitatea (adibidez, izena, telefono-zenbakia edo helbide elektronikoa) entitate nagusi gisa.
 
-1. Gainean **Bat datozen baldintzak** orrialdean, erabili gora eta behera mugitu geziak entitateak nahi duzun ordenan mugitzeko, edo arrastatu eta jaregin. Adibidez, hautatu **Kontaktuak: merkataritza elektronikoa** entitate nagusi gisa eta **Bezeroaren Leialtasuna: Leialtasuna** bigarren entitate gisa.
+1. Gainean **Bat datozen baldintzak** orrialdean, erabili gora eta behera mugitu geziak entitateak nahi duzun ordenan mugitzeko, edo arrastatu eta jaregin. Adibidez, hautatu **eCommerceBezeroak** entitate nagusi gisa eta **loyBezeroak** bigarren entitate gisa.
 
-1. Entitateko erregistro guztiak bezero esklusibo gisa edukitzeko, bat-etortzerik aurkitzen bada ere, hautatu **Sartu erregistro guztiak**. Entitate honetako erregistroak beste edozein entitatetako erregistroekin bat ez datozenak profil bateratuan sartzen dira. Partidurik ez duten erregistroei singleton deitzen zaie.
+1. Entitateko erregistro guztiak bezero esklusibo gisa edukitzeko, bat-etortzerik aurkitzen bada ere, hautatu **Sartu erregistro guztiak**. Entitate honetako erregistroak beste edozein entitateko erregistroekin bat ez datozenak profil bateratuan sartzen dira. Partidurik ez duten erregistroei singleton deitzen zaie.
   
-Lehen entitatea *Kontaktuak: merkataritza elektronikoa* hurrengo entitatearekin parekatzen da *Bezeroaren Leialtasuna: Leialtasuna*. Lehen bat-etortze-urratsetik ateratzen den datu-multzoa hurrengo entitatearekin bat dator bi entitate baino gehiago badituzu.
+Lehen entitatea *Kontaktuak: merkataritza elektronikoa* hurrengo entitatearekin parekatzen da *Bezeroaren Leialtasuna: Leialtasuna*. Lehenengo bat-etortze-urratsetik ateratzen den datu-multzoa hurrengo entitatearekin bat dator bi entitate baino gehiago badituzu.
 
 :::image type="content" source="media/m3_match.png" alt-text="Entitateetarako hautatutako partida-ordenaren pantaila-argazkia." lightbox="media/m3_match.png":::
 
@@ -70,7 +72,7 @@ Entitate-izen baten ondoan dagoen abisuak esan nahi du ez dagoela bat-etortze-ar
 
    :::image type="content" source="media/m3_add_rule.png" alt-text="Gehitu araua panelaren pantaila-argazkia.":::
 
-   - **Hautatu Entitatea/Eremua (lehen lerroa)** : Aukeratu erlazionatutako entitate bat eta atributu bat bezero batentzat litekeena den erregistro-propietate bat zehazteko. Adibidez, telefono zenbaki bat edo helbide elektronikoa. Saihestu jarduera motako atributuen arabera parekatzea. Esate baterako, erosketa IDak ez du bat-etortzerik izango beste erregistro mota batzuetan.
+   - **Hautatu Entitatea/Eremua (lehen lerroa)** : Aukeratu bezero batentzat litekeena den entitate bat eta atributu bat. Adibidez, telefono zenbaki bat edo helbide elektronikoa. Saihestu jarduera motako atributuen arabera parekatzea. Esate baterako, erosketa IDak ez du bat-etortzerik izango beste erregistro mota batzuetan.
 
    - **Hautatu Entitatea/Eremua (bigarren errenkada)** : Aukeratu lehen lerroan zehaztutako entitatearen atributuarekin erlazionatutako atributu bat.
 
@@ -90,7 +92,7 @@ Entitate-izen baten ondoan dagoen abisuak esan nahi du ez dagoela bat-etortze-ar
 
 1. Entitateak bat etortzeko atributuek baldintza anitz betetzen badituzte soilik, hautatu **Gehitu** > **Gehitu baldintza** partida-arau bati baldintza gehiago gehitzeko. Baldintzak AND operadore logikoarekin lotuta daude eta, beraz, baldintza guztiak betetzen badira soilik exekutatzen dira.
 
-1. Aukeran, kontuan hartu aukera aurreratuak adibidez [salbuespenak](#add-exceptions-to-a-rule) edo [bat etortzeko baldintza pertsonalizatuak](#specify-custom-match-conditions).
+1. Aukeran, kontuan hartu aukera aurreratuak, hala nola [salbuespenak](#add-exceptions-to-a-rule) edo [bat etortzeko baldintza pertsonalizatuak](#specify-custom-match-conditions).
 
 1. Hautatu **Eginda** araua amaitzeko.
 
@@ -116,7 +118,7 @@ Partiduen arauek baldintza multzoak adierazten dituzte. Entitateak hainbat atrib
 
 ### <a name="add-exceptions-to-a-rule"></a>Gehitu salbuespenak arau bati
 
-Kasu gehienetan, entitateen parekatzeak datu bateratuak dituzten bezero-profil bakarrak dakartza. Positibo faltsuen eta negatibo faltsuen kasu bakanak modu dinamikoan zuzentzeko, bat-etortze-arau baterako salbuespenak defini ditzakezu. Salbuespenak bat-etortze-arauak prozesatu ondoren aplikatzen dira eta salbuespen-irizpideak betetzen dituzten erregistro guztiak bat etortzea saihesten da.
+Kasu gehienetan, entitateen parekatzeak datu bateratuak dituzten bezero-profil bakarrak dakartza. Positibo faltsuen eta negatibo faltsuen kasu bakanei aurre egiteko, zehaztu partida-arau baterako salbuespenak. Salbuespenak bat-etortze-arauak prozesatu ondoren aplikatzen dira eta salbuespen-irizpideak betetzen dituzten erregistro guztiak bat etortzea saihesten da.
 
 Adibidez, zure parekatze-arauak abizen, hiria eta jaioteguna konbinatzen baditu, sistemak profil berdinarekin bizi diren abizen bera duten bikiak identifikatuko lituzke. Profilekin bat ez datorren salbuespen bat zehaztu dezakezu konbinatzen dituzun entitateetako izen berdinak ez badira.
 
@@ -134,7 +136,7 @@ Bat-etortze-logika lehenetsia gainidazten duten baldintzak zehaztu ditzakezu. La
 |---------|---------|---------|
 |Beti bat etorri behar du     | Beti bat datozen balioak definitzen ditu.         |  Beti parekatu *Mikel* eta *MikeR*.       |
 |Ez du inoiz bat etorri behar     | Inoiz bat ez datozen balioak definitzen ditu.        | Inoiz ez parekatu *Joan* eta *Jonathan*.        |
-|Salbuespen pertsonalizatua     | Partida-fasean sistemak beti alde batera utzi behar dituen balioak zehazten ditu. |  Ez ikusi balioei *11111* eta *Ezezaguna* partidan zehar.        |
+|Saihestu            | Partida-fasean sistemak beti alde batera utzi behar dituen balioak zehazten ditu. |  Ez ikusi balioei *11111* eta *Ezezaguna* partidan zehar.        |
 |Aliasen esleipena    | Sistemak balio berdintzat hartu behar dituen balioak definitzea.         | Kontuan hartu *Joe* berdina izateko *Joseph*.        |
 
 1. Hautatu **Pertsonalizatua**.
@@ -163,7 +165,7 @@ Bat-etortze-logika lehenetsia gainidazten duten baldintzak zehaztu ditzakezu. La
 
 1. Parekatze pertsonalizatua aplikatzea erabili nahi duzun bat-etortze-aukeraren araberakoa da.
 
-   - Izan ere **Beti lotu** edo **Inoiz ez parekatu**, jarraitu hurrengo urratsera.
+   - Izan ere **Beti parekatu** edo **Inoiz ez parekatu**, jarraitu hurrengo urratsera.
    - Izan ere **Saihesbidea** edo **Aliasaren mapaketa**, hautatu **Editatu** lehendik dagoen bat-etortze-arau batean edo sortu arau berri bat. Normalizazioak goitibeherako aukeran, aukeratu **Saihesbide pertsonalizatua** edo **Aliasaren mapaketa** aukera eta hautatu **Eginda**.
 
 1. Hautatu **Eginda** gainean **Pertsonalizatua** panela etortze pertsonalizatuaren konfigurazioa aplikatzeko.

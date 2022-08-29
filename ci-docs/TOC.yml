@@ -76,6 +76,8 @@
       href: merge-entities.md
     - name: Berrikusi datuen bateratzea
       href: review-unification.md
+    - name: Sortu kontaktu profil bateratua
+      href: data-unification-contacts.md
     - name: Eguneratu bateratze-ezarpenak
       href: data-unification-update.md
 - name: Datu-aberastea
@@ -120,9 +122,9 @@
   items:
     - name: Segmentuen informazio orokorra
       href: segments.md
-    - name: Sortu segmentu-sorgailuarekin
+    - name: Sortu segmentu-eraikitzailearekin
       href: segment-builder.md
-    - name: Sortu segmentu azkarrekin
+    - name: Sortu segmentu bizkorrekin
       href: segment-quick.md
     - name: Neurrietan oinarritutako iradokitako segmentuak
       href: suggested-segments.md
@@ -294,7 +296,7 @@
       href: diagnostics.md
     - name: Kudeatu konexioak
       href: connections.md
-    - name: Programatu sistema freskatzea
+    - name: Programatu sistemaren freskatzea
       href: schedule-refresh.md
     - name: Ikusi sistemaren konfigurazioa
       href: system.md

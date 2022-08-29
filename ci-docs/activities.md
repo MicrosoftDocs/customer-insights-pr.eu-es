@@ -1,9 +1,9 @@
 ---
-title: Bezeroen jarduerak
-description: Definitu bezeroen jarduerak eta ikusi denbora-lerroan bezeroen profiletan.
-ms.date: 07/22/2022
+title: Bezeroarekin edo enpresarekin harremanetan jartzeko jarduerak
+description: Definitu bezeroaren edo negozioaren harremanetarako jarduerak eta ikusi itzazu denbora-lerro batean bezeroen profiletan.
+ms.date: 08/12/2022
 ms.subservice: audience-insights
-ms.reviewer: mhart
+ms.reviewer: v-wendysmith
 ms.topic: conceptual
 author: CadeSanthaMSFT
 ms.author: cadesantha
@@ -16,19 +16,19 @@ searchScope:
 - ci-activities-wizard
 - ci-measures
 - ci-segment-suggestions
-- customerInsight
-ms.openlocfilehash: cc21b0eeb368156437e60d851c2d144f3974c066
-ms.sourcegitcommit: c45c3e044034bf866b0662f80a59166cee4ababe
+- customerInsights
+ms.openlocfilehash: bbb8bc30d079273bc935181c628915bb3c02d982
+ms.sourcegitcommit: 267c317e10166146c9ac2c30560c479c9a005845
 ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 07/22/2022
-ms.locfileid: "9188124"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "9304090"
 ---
-# <a name="customer-activities"></a>Bezeroen jarduerak
+# <a name="customer-or-business-contact-activities"></a>Bezeroarekin edo enpresarekin harremanetan jartzeko jarduerak
 
-Bezeroen jarduerak bezeroek egindako ekintzak edo gertaerak dira. Adibidez, transakzioak, laguntza-deien iraupena, webguneen berrikuspenak, erosketak edo itzulketak. Jarduera hauek datu-iturri batean edo gehiagotan daude. Customers Insights-ekin, sendotu zure bezeroen jarduerak hauetatik [datu-iturriak](data-sources.md) eta bezeroen profilekin lotu. Jarduera hauek kronologikoki agertzen dira denbora-lerro batean bezeroaren profilean. Sartu denbora-lerroa Dynamics 365 aplikazioetan [Bezero txartelaren gehigarria](customer-card-add-in.md) irtenbidea.
+Bezeroen jarduerak bezeroek edo negozio-kontaktuek egindako ekintzak edo gertaerak dira. Adibidez, transakzioak, laguntza-deien iraupena, webguneen berrikuspenak, erosketak edo itzulketak. Jarduera hauek datu-iturri batean edo gehiagotan daude. Customers Insights-ekin, sendotu zure bezeroen jarduerak hauetatik [datu-iturriak](data-sources.md) eta bezeroen profilekin lotu. Jarduera hauek kronologikoki agertzen dira denbora-lerro batean bezeroaren profilean. Sartu denbora-lerroa Dynamics 365 aplikazioetan [Bezero txartelaren gehigarria](customer-card-add-in.md) irtenbidea.
 
-## <a name="define-an-activity"></a>Definitu jarduera
+## <a name="define-a-customer-activity"></a>Definitu bezeroaren jarduera
 
 Entitate batek gutxienez motako atributu bat izan behar du **Data** bezeroaren denbora-lerro batean sartzeko. The **Gehitu jarduera** kontrola ezgaitzen da horrelako entitate bat aurkitzen ez bada.
 
@@ -38,9 +38,9 @@ Entitate batek gutxienez motako atributu bat izan behar du **Data** bezeroaren d
 
 1. urtean **Jardueraren datuak** urratsa, sartu informazio hau:
 
-   - **Jardueraren izena** : Zure jardueraren izena.
-   - **Jarduera-entitatea** : transakzio- edo jarduera-datuak barne hartzen dituen entitatea.
-   - **Lehen gakoa** : Erregistro bat modu esklusiboan identifikatzen duen eremua. Ez luke balio bikoizturik, balio hutsak edo falta diren balioak.
+   - **Jardueraren izena**: Hautatu zure jarduerarako izen bat.
+   - **Jarduera-entitatea** : Hautatu transakzio- edo jarduera-datuak biltzen dituen entitate bat.
+   - **Gako nagusia**: Hautatu erregistroa era esklusiboan identifikatzen duen eremua. Ez luke balio bikoizturik, balio hutsak edo falta diren balioak.
 
    :::image type="content" source="media/Activity_Wizard1.PNG" alt-text="Konfiguratu jardueraren datuak izena, entitatea eta gako nagusiarekin.":::
 
@@ -48,9 +48,9 @@ Entitate batek gutxienez motako atributu bat izan behar du **Data** bezeroaren d
 
 1. urtean **Harremana** urratsa, hautatu **Gehitu harremana** zure jarduera-datuak dagokion bezero-erregistroarekin konektatzeko. Urrats honek entitateen arteko konexioa bistaratzen du.  
 
-   - **Entitatearen atzerriko gakoa** : beste entitate batekin harremana ezartzeko erabiliko den zure jarduera-entitateko eremua.
+   - **Atzerriko giltza** : beste entitate batekin harremana ezartzeko erabiliko den zure jarduera-entitateko atzerriko eremua.
    - **Entitatearen izenari** : Zure jarduera-entitatearekin harremana izango duen iturburu-bezero-entitatea. Datuak bateratzeko prozesuan erabiltzen diren iturburu bezeroen entitateekin bakarrik lotu zaitezke.
-   - **Harremanaren izena** : Entitateen arteko harremana identifikatzen duen izena. Jarduera-entitate honen eta hautatutako iturburu-bezero-entitatearen arteko erlaziorik badago, erlazioaren izena irakurtzeko soilik da.
+   - **Harremanaren izena** : jarduera-entitate honen eta hautatutako iturburu-bezero-entitatearen arteko erlazio bat badago jada, erlazioaren izena irakurtzeko moduan egongo da. Harreman hori existitzen ez bada, harreman berri bat sortuko da koadro honetan ematen duzun izenarekin.
 
    :::image type="content" source="media/Activity_Wizard2.PNG" alt-text="Definitu entitate-harremana.":::
 
@@ -90,9 +90,9 @@ Entitate batek gutxienez motako atributu bat izan behar du **Data** bezeroaren d
 
 [!INCLUDE [progress-details-include](includes/progress-details-pane.md)]
 
-## <a name="manage-existing-activities"></a>Kudeatu lehendik dauden jarduerak
+## <a name="manage-existing-customer-activities"></a>Kudeatu lehendik dauden bezeroen jarduerak
 
-Joan **Datuak** > **Jarduerak** gordetako jarduerak, haien iturburu-entitatea, jarduera mota eta bezeroen denbora-lerroan sartzen badira ikusteko. Jardueren zerrenda edozein zutaberen arabera ordena dezakezu edo bilaketa-koadroa erabili kudeatu nahi duzun jarduera aurkitzeko.
+Joan **Datuak** > **Jarduerak** gordetako jarduerak, haien iturburu-entitatea, jarduera mota eta bezeroaren denbora-lerroan sartzen badira ikusteko. Jardueren zerrenda edozein zutaberen arabera ordena dezakezu edo bilaketa-koadroa erabili kudeatu nahi duzun jarduera aurkitzeko.
 
 Hautatu jarduera bat erabilgarri dauden ekintzak ikusteko.
 
@@ -116,9 +116,43 @@ Hautatu jarduera bat erabilgarri dauden ekintzak ikusteko.
 
      :::image type="content" source="media/Activity_Timeline3.PNG" alt-text="Erabili iragazki panela iragazki baldintzak konfiguratzeko.":::
 
-1. Iragazkiak kentzeko, hautatu **Garbitu iragazkiak** edo hautatu **Iragazkia** eta garbitu iragazkia kontrol-laukia.
-
 > [!NOTE]
 > Jardueren iragazkiak bezeroaren profila uzten duzunean kentzen dira. Bezero profila irekitzen duzun bakoitzean aplikatu behar dituzu.
+
+## <a name="define-a-contact-activity"></a>Definitu harremanetarako jarduera bat
+
+Enpresa-kontuetarako (B-to-B), erabili a *HarremanetarakoProfila* kontaktuen jarduerak harrapatzeko entitatea. Kontu bateko jardueraren kronograman ikus dezakezu zein kontaktu zen jarduera bakoitzaren arduraduna. Urrats gehienek bezeroaren jardueren maparen konfigurazioa jarraitzen dute.
+
+   > [!NOTE]
+   > Kontaktu mailako jarduera bat definitzeko, a *HarremanetarakoProfila* entitatea sortu behar da, bai a [kontaktu profil bateratua](data-unification-contacts.md) edo bidez [mapa semantikoa](semantic-mappings.md#define-a-contactprofile-semantic-entity-mapping).
+   >
+   > Biak izan behar dituzu **Kontuaren ID** eta **Kontaktu ID** zure jarduera-datuen barruan erregistro bakoitzerako atributuak.
+  
+1. Joan **Datuak** > **Jarduerak**.
+
+1. Hautatu **Gehitu jarduera**.
+
+1. Jarriari izena eman, hautatu iturburuko jarduera-entitatea eta hautatu jarduera-entitatearen gako nagusia.
+
+1. urtean **Harremanak** urratsa, sortu zure jarduera-iturburuko datuen arteko zeharkako harremana kontuekin, zure harremanetarako datuak bitartekari gisa erabiliz. Informazio gehiagorako, ikus [zuzeneko eta zeharkako harreman bideak](relationships.md#relationship-paths).
+   - Deitutako jarduera baterako erlazio adibidea *Erosketak*:
+      - **Erosketak Iturburu Jardueren Datuak** > **Harremanetarako datuak** atributuaren gainean **Kontaktu ID**
+      - **Harremanetarako datuak** > **Kontuaren datuak** atributuaren gainean **Kontuaren ID**
+
+   :::image type="content" source="media/Contact_Activities1.png" alt-text="Erlazio-konfigurazio adibidea.":::
+
+1. Harremanak konfiguratu ondoren, hautatu **Hurrengoa** eta osatu zure jarduera-maparen konfigurazioa. Jarduerak sortzeari buruzko urrats zehatzak ikusteko, ikus [bezeroen jarduera definitzea](#define-a-customer-activity).
+
+1. Exekutatu zure jardueren mapak.
+
+1. Zure kontaktu-mailako jarduerak zure bezeroen denbora-lerroan ikusgai egongo dira orain.
+
+   :::image type="content" source="media/Contact_Activities2.png" alt-text="Azken emaitza kontaktu-jarduerak konfiguratu ondoren":::
+
+## <a name="contact-level-activity-timeline-filtering"></a>Kontaktu mailako jardueren denbora-lerroaren iragazketa
+
+Kontaktu-mailako jardueren mapa konfiguratu eta exekutatu ondoren, zure bezeroen jarduera-kronologia eguneratuko da. Beren ID edo izenak biltzen ditu, zurearen arabera *HarremanetarakoProfila* konfigurazioa, jardun zuten jardueretarako. Jarduerak kontaktuen arabera iragazi ditzakezu denbora-lerroan, interesatzen zaizkizun kontaktu zehatzak ikusteko. Gainera, kontaktu zehatz bati esleituta ez dauden jarduera guztiak ikus ditzakezu hautatuta **Kontaktu bati mapatu gabeko jarduerak**.
+
+   :::image type="content" source="media/Contact_Activities3.png" alt-text="Kontaktu mailako jardueretarako eskuragarri dauden iragazketa-aukerak.":::
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

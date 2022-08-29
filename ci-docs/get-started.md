@@ -1,23 +1,23 @@
 ---
 title: Hasi Dynamics 365 Customer Insights erabiltzen
-description: Customer Insights-en ikuspegi orokorrak baliabideak azkar hasten laguntzen du.
-ms.reviewer: v-wendysmith
+description: Customer Insights-en ikuspegi orokorrak baliabideak azkar hasteko laguntzen du.
+ms.reviewer: mhart
 ms.author: mhart
 author: m-hartmann
-ms.date: 04/12/2022
-ms.subservice: engagement-insights
+ms.date: 08/31/2021
+ms.subservice: audience-insights
 ms.topic: conceptual
 ms.manager: shellyha
 ms.custom: intro-internal
 searchScope:
 - ci-home
 - customerInsights
-ms.openlocfilehash: 1c925110f40319df77940d1c32f24a99504d6ec6
-ms.sourcegitcommit: 5e26cbb6d2258074471505af2da515818327cf2c
+ms.openlocfilehash: ce0336c4bf853bc81ec01c45410169a63b69eb03
+ms.sourcegitcommit: 267c317e10166146c9ac2c30560c479c9a005845
 ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 06/14/2022
-ms.locfileid: "9011964"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "9304596"
 ---
 # <a name="get-started-with-dynamics-365-customer-insights"></a>Hasi Dynamics 365 Customer Insights erabiltzen
 
@@ -37,7 +37,7 @@ Customer Insights-en saioa hasten duzun lehen aldian, konfiguratu ezarpenak eta 
 
 ## <a name="step-3-ingest-unify-and-set-up-relationships-for-your-data"></a>3. urratsa: sartu, bateratu eta ezarri datuen erlazioak
 
-Profil bateratuak dira xehetasunak lortu eta datuetan eragiteko oinarria. Ekarri hainbat baliabidetako datuak eta exekutatu datuak bateratzeko prozesua, profil bateratuak konbinatzeko. Zehaztu irentsitako entitateen arteko erlazioak eta erabili aberaste-eginbideak profilei informazioa gehitzeko.
+Profil bateratuak dira xehetasunak lortu eta datuetan eragiteko oinarria. Ekarri hainbat baliabidetako datuak eta exekutatu datuak bateratzeko prozesua, profil bateratuak konbinatzeko. Zehaztu irentsitako entitateen arteko harremanak eta erabili aberaste-eginbideak profilei informazioa gehitzeko.
 
 1. Sartu datua hainbat aukeretatik datu-iturburuak sortuz. Aukeratu artean [Azure Data Lake Storage, Common Data Model barne](connect-common-data-model.md),[Azure Synapse Analytics](connect-synapse.md),[Microsoft Dataverse](connect-dataverse-managed-lake.md), edo [Power Query konektoreak](connect-power-query.md).
 
@@ -65,7 +65,7 @@ Orain zure datuak osatuta dauden eta zure bezeroei buruzko informazio zabala dut
 
 1. Arakatu [esportazio-aukeren](export-destinations.md) katalogo zabala, non bezeroaren datuak erabil baititzakezun. Adibidez, datuak erabil ditzakezu promozioak kudeatzeko eta marketin digitalarekin harremanetan jartzeko.
 
-1. Berrikusi integrazio-aukerak, adibidez, beste Dynamics 365 aplikazioekin [Bezero Txartelaren gehigarria](customer-card-add-in.md).  
+1. Berrikusi integrazio-aukerak, adibidez, beste Dynamics 365 aplikazioekin [Bezero txartelaren gehigarria](customer-card-add-in.md).  
 
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

@@ -1,8 +1,8 @@
 ---
-title: Batu bezeroen eremuak datuak bateratzeko
+title: Datuak bateratzeko bezeroen eremuak bateratu
 description: Konbinatu entitateak bezeroen profil bateratuak sortzeko.
 recommendations: false
-ms.date: 05/04/2022
+ms.date: 07/27/2022
 ms.subservice: audience-insights
 ms.topic: tutorial
 author: v-wendysmith
@@ -14,22 +14,22 @@ searchScope:
 - ci-match
 - ci-relationships
 - customerInsights
-ms.openlocfilehash: a6f29c4985ee274207d122fb1bd76d97b98613b6
-ms.sourcegitcommit: 10dcfc32eaf8ec0903be96136dca7bb4e250276a
-ms.translationtype: HT
+ms.openlocfilehash: 7ebd6ab8fa6ae141f33295a5d7723e96c8dc70ca
+ms.sourcegitcommit: 267c317e10166146c9ac2c30560c479c9a005845
+ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 08/01/2022
-ms.locfileid: "9213567"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "9303998"
 ---
-# <a name="unify-customer-fields-for-data-unification"></a>Batu bezeroen eremuak datuak bateratzeko
+# <a name="unify-customer-fields"></a>Bateratu bezeroen eremuak
 
-Bateratze-prozesuaren urrats honetan, aukeratu eta baztertu zure profil bateratuko entitatearen barruan batzeko atributuak. Adibidez, hiru entitatek posta elektronikoko datuak bazituzten, baliteke hiru posta elektronikoko eremu bereiziak gordetzea edo profil bateratu baterako posta elektronikoko eremu bakarrean batu nahi izatea. Atributu batzuk automatikoki konbinatzen ditu sistemak. Bezeroen ID egonkorrak eta bakarrak sor ditzakezu eta erlazionatutako profilak multzo batean taldeka ditzakezu.
+Bateratze-prozesuaren urrats honetan, aukeratu eta baztertu zure profil bateratuko entitatearen barruan batzeko atributuak. Adibidez, hiru entitatek posta elektronikoko datuak bazituzten, baliteke hiru posta elektronikoko eremu bereiziak gordetzea edo profil bateratu baterako posta elektronikoko eremu bakarrean batu nahi izatea. Atributu batzuk automatikoki konbinatzen ditu sistemak. Bezero ID egonkor eta bakarrak sor ditzakezu. Bezero indibidualentzat, erlazionatutako profilak multzo batean multzoka ditzakezu.
 
-:::image type="content" source="media/m3_unify.png" alt-text="Batu orria datuak bateratzeko prozesuan bezeroaren profil bateratua definitzen duten eremu bateratuekin taula erakusten duena.":::
+:::image type="content" source="media/m3_unify.png" alt-text="Bateratu bezeroen eremuen orria datuak bateratzeko prozesuan, bezeroen profil bateratua definitzen duten eremu bateratuekin taula erakutsiz.":::
 
 ## <a name="review-and-update-the-customer-fields"></a>Berrikusi eta eguneratu bezeroaren eremuak
 
-1. Berrikusi zerrendan bateratuko diren eremuen zerrenda **Bezeroaren eremuak** taulako fitxa. Egin aldaketak hala badagokio.
+1. Berrikusi hemen bateratuko diren eremuen zerrenda **Bezeroaren eremuak** taulako fitxa. Egin aldaketak hala badagokio.
 
    1. Edozein eremu konbinatuetarako, hau egin dezakezu:
       - [Editatu](#edit-a-merged-field)
@@ -47,7 +47,7 @@ Bateratze-prozesuaren urrats honetan, aukeratu eta baztertu zure profil bateratu
 
 1. Aukeran, [sortu bezeroaren IDaren konfigurazioa](#configure-customer-id-generation).
 
-1. Aukeran, [taldekatu profilak etxeetan edo klusterretan](#group-profiles-into-households-or-clusters).
+1. Aukeran B-to-C-rako, [taldekatu profilak etxeetan edo multzotan](#group-profiles-into-households-or-clusters).
 
 > [!div class="nextstepaction"]
 > [Hurrengo urratsa: berrikusi bateratzea](review-unification.md)
@@ -146,7 +146,7 @@ Tratatu eremu multzo bat unitate bakar gisa. Adibidez, gure erregistroek Helbide
 
 Definitu nola sortu bezeroaren ID balioak, bezeroen profilaren identifikatzaile esklusiboak. Datuak bateratzeko prozesuko eremuak bateratzeko urratsak bezeroaren profilaren identifikatzaile esklusiboa sortzen du. Identifikatzailea da *Bezeroaren Id* urtean *Bezeroa* datuak bateratzeko prozesuaren ondoriozko entitatea.
 
-The *Bezeroaren Id*  nuluak ez diren irabazlearen gako nagusien lehen balioaren hash batean oinarritzen da. Gako hauek datuak bateratzeko erabiltzen diren entitateetatik datoz eta bat-etortze-ordenaren eragina dute.Beraz, sortutako bezero IDa alda daiteke lehen mailako gako-balioa bat-etortze-ordenaren entitate nagusian aldatzen denean. Baliteke gako nagusiaren balioa ez izatea beti bezero bera ordezkatzea.
+The *Bezeroaren Id*  nuluak ez diren irabazlearen gako nagusien lehen balioaren hash batean oinarritzen da. Gako hauek datuak bateratzeko erabiltzen diren entitateetatik datoz eta bat-etortze-ordenaren eragina dute.Beraz, sortutako bezero IDa alda daiteke lehen mailako gako-balio bat bat-etortze-ordenaren entitate nagusian aldatzen denean. Baliteke gako nagusiaren balioa ez izatea beti bezero bera ordezkatzea.
 
 Bezeroaren ID egonkor bat sortzeak portaera hori ekiditeko aukera ematen dizu.
 
@@ -161,7 +161,7 @@ Bezeroaren ID egonkor bat sortzeak portaera hori ekiditeko aukera ematen dizu.
 
 ## <a name="group-profiles-into-households-or-clusters"></a>Taldeko profilak etxeetan edo klusterretan
 
-Erlazionatutako profilak kluster batean taldekatzeko arauak defini ditzakezu. Gaur egun bi kluster mota daude eskuragarri - etxekoak eta pertsonalizatutakoak. Sistemak automatikoki aurrez zehaztutako arauak dituen etxea aukeratzen du *Bezeroa* entitateak eremu semantikoak ditu *Person.LastName* eta *Location.Address*. Klusterra ere sor dezakezu zure arau eta baldintzekin, antzekoa [partida arauak](match-entities.md#define-rules-for-match-pairs).
+Bezero indibidualentzat, erlazionatutako profilak multzo batean taldekatzeko arauak defini ditzakezu. Gaur egun bi kluster mota daude eskuragarri - etxekoak eta pertsonalizatutakoak. Sistemak automatikoki aurrez zehaztutako arauak dituen etxea aukeratzen du *Bezeroa* entitateak eremu semantikoak ditu *Person.LastName* eta *Location.Address*. Klusterra ere sor dezakezu zure arau eta baldintzekin, antzekoa [partida arauak](match-entities.md#define-rules-for-match-pairs).
 
 1. Hautatu **Aurreratua** > **Sortu klusterra**.
 

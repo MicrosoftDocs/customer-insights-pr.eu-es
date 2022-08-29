@@ -1,7 +1,7 @@
 ---
 title: Sortu segmentu konplexuak segmentu-sorgailuarekin
 description: Erabili segmentu-sortzailea bezeroen segmentu konplexuak sortzeko hainbat atribututan oinarrituta taldekatuz.
-ms.date: 03/25/2022
+ms.date: 08/12/2022
 ms.subservice: audience-insights
 ms.topic: how-to
 author: JimsonChalissery
@@ -13,19 +13,19 @@ searchScope:
 - ci-segment-builder
 - ci-segment-details
 - customerInsights
-ms.openlocfilehash: cde373cd65e296675e1b3c92f3024e1093853842
-ms.sourcegitcommit: 8a28e9458b857adf8e90e25e43b9bc422ebbb2cd
+ms.openlocfilehash: 7f691fd0b2ea76a2960d5adf766a4b166f02ebb4
+ms.sourcegitcommit: 267c317e10166146c9ac2c30560c479c9a005845
 ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 07/18/2022
-ms.locfileid: "9170620"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "9304734"
 ---
 # <a name="create-complex-segments-with-segment-builder"></a>Sortu segmentu konplexuak segmentu-sorgailuarekin
 
-Definitu iragazki konplexuak bezero entitate bateratuaren eta hari lotutako entitateen inguruan. Segmentu bakoitzak, prozesatu ondoren, bezeroen erregistro multzo bat sortzen du eta esportatu eta neurriak hartu ditzakezu.
+Definitu iragazki konplexuak bezero bateratuaren edo kontaktu bateratuaren eta harekin erlazionatutako entitateen inguruan. Segmentu bakoitzak, prozesatu ondoren, bezeroen edo kontaktuen erregistro multzo bat sortzen du, esportatu eta neurriak har ditzakezun.
 
 > [!TIP]
-> Oinarritutako segmentuak **bezero partikularrak** automatikoki sartu segmentuko kideentzako eskuragarri dagoen informazioa. Inguruneetan **negozio kontuak**, segmentuak kontuetan (enpresak edo filialak) oinarritzen dira. Kontaktu informazioa segmentu batean sartzeko, erabili **Proiektuaren atributuak** funtzionalitatea segmentu eraikitzailean. Ziurtatu harremanetarako datu-iturriak daudela [semantikoki mapatuta ContactProfile](semantic-mappings.md#define-a-contactprofile-semantic-entity-mapping) entitatera.
+> Oinarritutako segmentuak **bezero partikularrak** automatikoki sartu segmentuko kideentzako eskuragarri dagoen informazioa. In **negozio kontuak**, baduzu [bateratua](data-unification.md) bai kontuak bai kontaktuak, aukeratu segmentua kontuetan edo negozio-kontaktuetan oinarritzen den. Kontaktuen informazioa espero duen helmuga batera esportatzeko, erabili kontaktuen zati bat. Kontuaren informazioa espero duen helmuga batera esportatzeko, erabili kontuen segmentu bat.
 
 ## <a name="segment-builder"></a>Segmentu-egilea
 
@@ -57,6 +57,11 @@ Goiko adibideak segmentazio-gaitasuna adierazten du. Segmentu bat definitu dugu 
 
 1. Hautatu **Berria** > **Sortu zeurea**. Segmentu-sortzailearen orrian, arauak definitzen edo konposatzen dituzu. Arau batek bezero multzo bat definitzen duten baldintza bat edo gehiago ditu.
 
+   > [!NOTE]
+   > Enpresa-kontuetan oinarritutako inguruneetarako, hautatu **Berria** > **Kontuen Segmentua** edo **Kontaktuen Segmentua (aurrebista)** sortu nahi duzun segmentu motaren arabera. Bat bada [kontu hierarkia](relationships.md#set-up-account-hierarchies) definitu da eta seme-alaben eta gurasoen arteko erlazioan oinarritutako datuak iragazteko arauak sortu nahi dituzu, hautatu **Hierarkia erabili? (aurrebista)**, hautatu hierarkia eta gero **Aplikatu**.
+   >
+   > :::image type="content" source="media/segment_acct_hierarchy.png" alt-text="Segmentu hautatzeko kontuaren hierarkia-panela.":::
+
 1. Hautatu **Editatu xehetasunak** Izenbururik gabeko segmentuaren ondoan. Eman segmentuari izena eta eguneratu segmentuaren iradokitako **irteerako entitatearen izena**. Aukeran, gehitu deskribapen bat eta [etiketak](work-with-tags-columns.md#manage-tags) segmentuari.
 
    :::image type="content" source="media/segments_edit_details.png" alt-text="Editatu xehetasunak elkarrizketa-koadroa.":::
@@ -65,11 +70,11 @@ Goiko adibideak segmentazio-gaitasuna adierazten du. Segmentu bat definitu dugu 
    - Berrikusi erabilgarri dauden entitateak eta atributuak **Gehitu arauan** paneleane ta hautatu gehitu beharreko atributuaren ondoko **+** ikonoa. Aukeratu atributua lehendik dagoen arau batean gehitu nahi duzun, ala arau berri bat sortzeko erabili.
    - Bat datozen iradokizunak ikusteko, idatzi atributuaren izena arauaren sekzioan.
 
-1. Aukeratu baldintzaren bat datozen balioak zehazteko eragileak. Atributuak lau datu mota izan ditzake balio gisa: zenbakizkoa, katea, datua edo boolearra. Atributuaren datu moten arabera, baldintza zehazteko eragile desberdinak daude. Negozio kontuak dituzten segmentuetarako, bi operadore berezi daude eskuratutako iruzkinen arteko balizko hierarkiak sartzeko. Erabili *seme-alabak* eta *guraso* operadoreek lotutako kontuak sartzeko.
+1. Aukeratu baldintzaren bat datozen balioak zehazteko eragileak. Atributuak lau datu mota izan ditzake balio gisa: zenbakizkoa, katea, datua edo boolearra. Atributuaren datu moten arabera, baldintza zehazteko eragile desberdinak daude.
 
 1. Arau batean baldintza gehiago gehitzeko, hautatu **Gehitu baldintza**. Arau bat sortzeko uneko arauaren barruan, hautatu **gehitu azpiaraua**.
 
-1. Arau batek beste entitate batzuk erabiltzen baditu *Bezeroa* entitatea, hautatu **Ezarri harreman-bidea** hautatutako entitatea bezero entitate bateratuarekin mapatzeko. Harreman bide posible bakarra badago, sistemak automatikoki hautatzen du. Desberdina [harreman bideak](relationships.md#relationship-paths) emaitza desberdinak eman ditzake. Arau bakoitzak bere erlazioaren bide-izena izan dezake.
+1. Arau batek beste entitate batzuk erabiltzen baditu *Bezeroa* entitate (edo *HarremanetarakoProfila* entitatea B-to-B), hautatu **Ezarri harreman-bidea** hautatutako entitatea bezero entitate bateratuarekin mapatzeko. Harreman bide posible bakarra badago, sistemak automatikoki hautatzen du. Desberdina [harreman bideak](relationships.md#relationship-paths) emaitza desberdinak eman ditzake. Arau bakoitzak bere erlazioaren bide-izena izan dezake.
 
    Hautatu :::image type="content" source="media/relationship-path.png" alt-text="Erlazioaren bide-izen posiblea, arau bat sortzerakoan bezeroaren entitate bateratuari esleitutako entitatea batean oinarrituta.":::
 
@@ -92,24 +97,22 @@ Goiko adibideak segmentazio-gaitasuna adierazten du. Segmentu bat definitu dugu 
       - **Gurutzatu** bi taldeak gainjartzen ditu. Bi taldeek *komunean dituzten* datuak soilik geratzen dira talde bateratuan.
       - **Salbuespena** bi taldeak batzen ditu. B taldearekiko *Komunak ez diren* A taldeko datuak soilik gordetzen dira B taldean.
 
-1. Lehenespenez, irteerako entitateak automatikoki edukiko ditu definitutako iragazkiekin bat datozen bezero-profilen atributu guztiak. Segmentu bat ez den beste entitate batzuetan oinarritzen bada *Bezeroa* entitatea, hautatu **Proiektuaren ezaugarriak** entitate hauen atributu gehiago irteerako entitateari gehitzeko.
-
-   > [!IMPORTANT]
-   > Negozio-kontuetan oinarritutako segmentuetarako, kontu bakoitzeko kontaktu baten edo gehiagoren xehetasunak *HarremanetarakoProfila* entitatea segmentuan sartu behar da segmentu hori aktibatzeko edo harremanetarako informazioa behar duten helmugetara esportatzeko. *ContactProfile* entitateari buruzko informazio gehiago lortzeko, ikus [Esleipen semantikoak](semantic-mappings.md).
-   > Kontaktuen proiektatutako atributuak dituzten negozio-kontuetan oinarritutako segmentu baten irteerako lagin bat honela izan daiteke:
-   >
-   > |ID  |Kontuaren izena  |Diru-sarrerak  |Kontaktuaren izena  | Kontaktuaren funtzioa|
-   > |---------|---------|---------|---------|---|
-   > |10021     | Contoso | 100K | [Abbie Moss, Ruth Soto]  | [CEO, lorpenen kudeatzailea]
-
-   :::image type="content" source="media/segments-project-attributes.png" alt-text="Alboko panelean hautatutako proiektatutako atributuen adibidea, irteerako entitatean gehitzeko.":::
-  
+1. Lehenespenez, irteerako entitateak automatikoki edukiko ditu definitutako iragazkiekin bat datozen bezero-profilen atributu guztiak. B-to-B erabiltzen denean *HarremanetarakoProfila* entitatea, kontuaren IDa automatikoki sartzen da. Segmentu bat ez den beste entitate batzuetan oinarritzen bada *Bezeroa* entitatea edo atributu gehiago sartzeko *HarremanetarakoProfila*, hautatu **Proiektuaren ezaugarriak** entitate hauen atributu gehiago irteerako entitateari gehitzeko.
+ 
    Adibidez: segmentu bat erosketa datuak dituen entitate batean oinarritzen da *Bezeroa* entitatea. Segmentuak uneko urtean ondasunak erosi dituzten Espainiako bezero guztiak bilatzen ditu. Salgaien prezioa edo erosketa-data bezalako atributuak gehitzea aukera dezakezu irteerako entitatean bat datozen bezero-erregistro guztietan. Informazioa baliagarria izan daiteke gastatutako guztizkoaren urtaroen araberako korrelazioak aztertzeko.
 
+   :::image type="content" source="media/segments-project-attributes.png" alt-text="Alboko panelean hautatutako proiektatutako atributuen adibidea, irteerako entitatean gehitzeko.":::
+ 
+   Kontaktuen proiektatutako atributuak dituzten negozio-kontuetan oinarritutako segmentu baten irteerako lagin bat honela izan daiteke:
+
+   |ID  |Kontuaren izena  |Diru-sarrerak  |Kontaktuaren izena  | Kontaktuaren funtzioa|
+   |---------|---------|---------|---------|---|
+   |10021     | Contoso | 100K | [Abbie Moss, Ruth Soto]  | [CEO, lorpenen kudeatzailea]
+
    > [!NOTE]
-   > - **Proiektuaren atributuak** bezero entitatearekin bat-bateko harremana duten entitateentzat bakarrik funtzionatzen du. Adibidez, bezero batek harpidetza ugari izan ditzake.
-   > - Proiektatu nahi duzun atributua saltotik bat baino gehiagora badago *Bezeroa* entitateak, harremanak definitzen duen moduan, atributu hori eraikitzen ari zaren segmentuaren kontsultaren arau guztietan erabili beharko litzateke.
-   > - Proiektatu nahi duzun atributua saltotik batera badago *Bezeroa* entitateak ez du presente egon behar atributu hori eraikitzen ari zaren segmentuaren kontsultaren arau guztietan erabiltzean.
+   > - **Proiektuaren ezaugarriak** ekin bat-to-asko harremana duten entitateentzat bakarrik lan egin *Bezeroa* edo *HarremanetarakoProfila* entitate. Adibidez, bezero batek harpidetza ugari izan ditzake.
+   > - Proiektatu nahi duzun atributua salto batera baino gehiagora badago *Bezeroa* edo *HarremanetarakoProfila* entitateak, erlazioak definitzen duen moduan, atributu hori eraikitzen ari zaren segmentu-kontsultaren arau guztietan erabili behar da.
+   > - Proiektatu nahi duzun atributua salto bakarrera badago *Bezeroa* edo *HarremanetarakoProfila* entitateak, atributu horrek ez du zertan egon behar eraikitzen ari zaren segmentu-kontsultaren arau guztietan.
    > - Multzo operadoreak erabiltzean **proiektatutako atributuak** kontuan hartzen dira.
 
 1. Hautatu **Korrika egin** segmentua sortzeko. Hautatu **Gorde** uneko konfigurazioa mantendu eta gero segmentua exekutatu nahi baduzu. The **Segmentuak** orrialdeak bistaratzen ditu.

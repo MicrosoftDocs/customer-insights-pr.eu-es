@@ -1,7 +1,7 @@
 ---
 title: Esportazioak (aurreargitalpena) ikuspegi orokorra
 description: Kudeatu esportazioak datuak partekatzeko.
-ms.date: 07/25/2022
+ms.date: 08/12/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: overview
@@ -12,23 +12,23 @@ searchScope:
 - ci-export
 - ci-connections
 - customerInsights
-ms.openlocfilehash: fd234aff9021ded76d8226bf2f15e035cf75e7db
-ms.sourcegitcommit: 49394c7216db1ec7b754db6014b651177e82ae5b
-ms.translationtype: HT
+ms.openlocfilehash: c580b6c01e1b4ac6b095733193d86ebd0b4005f2
+ms.sourcegitcommit: 267c317e10166146c9ac2c30560c479c9a005845
+ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 08/10/2022
-ms.locfileid: "9245312"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "9304044"
 ---
 # <a name="exports-preview-overview"></a>Esportazioak (aurreargitalpena) ikuspegi orokorra
 
- Esportazioek hainbat aplikaziorekin datu zehatzak partekatzeko aukera ematen dute. Bezeroen profilak, entitateak, eskemak eta mapen xehetasunak sar ditzakete. Esportazio bakoitzak [konexioa, administratzaile batek konfiguratuta, autentifikazioa eta sarbidea kudeatzeko](connections.md). **Esportazioak** orrialdeak konfiguratutako esportazio guztiak erakusten ditu.
+ Esportazioek datu zehatzak hainbat aplikaziorekin partekatzeko aukera ematen dute. Bezeroen profilak, entitateak, eskemak eta mapen xehetasunak sar ditzakete. Esportazio bakoitzak [konexioa, administratzaile batek konfiguratuta, autentifikazioa eta sarbidea kudeatzeko](connections.md). **Esportazioak** orrialdeak konfiguratutako esportazio guztiak erakusten ditu.
 
 ## <a name="export-types"></a>Esportatze-motak
 
 Bi esportazio mota nagusi daude:  
 
-- **Datuak ateratzeko esportazioak** : esportatu Customer Insights-en eskuragarri dagoen edozein motatako entitateak. Esportatzeko hautatzen dituzun entitateak datu-eremu, metadatu, eskema eta mapping xehetasun guztiekin esportatzen dira.
-- **Segmentu esportazioak** : esportatu segmentu-entitateak Customer Insights-etik. Segmentuek bezeroen profilen zerrenda adierazten dute. Esportazioa konfiguratzean, sartutako datu-eremuak hautatzen dituzu, datuak esportatzen ari zaren helburu-sistemaren arabera.
+- **Datuak ateratzeko esportazioak** Customer Insights-en erabilgarri dagoen edozein motatako entitateak esportatzeko aukera ematen dizu. Esportatzeko hautatzen dituzun entitateak datu-eremu, metadatu, eskema eta mapping xehetasun guztiekin esportatzen dira.
+- **Segmentu esportazioak** Customer Insights-etik segmentu-entitateak esportatzeko aukera ematen dizu. Banakako kontsumitzaileentzat (B-to-C), segmentuek bezeroen profilen zerrenda adierazten dute. Enpresentzat (B-to-B), [segmentuek kontu edo kontaktuen zerrenda irudika dezakete](segment-builder.md#create-a-new-segment-with-segment-builder). Esportazioa konfiguratzean, sartutako datu-eremuak hautatzen dituzu, datuak esportatzen ari zaren helburu-sistemaren arabera.
 
 ### <a name="export-segments"></a>Esportatu segmentuak
 
@@ -38,14 +38,15 @@ Esportazio-aukera gehienek bi ingurune mota onartzen dituzte. Segmentuak helburu
 **Banakako kontsumitzaileen inguruneetako esportazioak segmentatu (B-to-C)**  
 - Segmentuak testuinguruan inguruneetan banakako bezeroak eraikitzen dira *bezero profil bateratua* entitatea. Xede-sistemen baldintzak betetzen dituen segmentu guztiak (adibidez, helbide elektronikoa) esportatu ahal izango dira.
 
-**Enpresa kontuetarako esportazio inguruneak segmentatu (B-to-B)**  
-- Enpresa kontuetarako inguruneen testuinguruan segmentuak *kontua* entitatea. Kontuen segmentuak bere horretan esportatzeko, xede-sistemak kontu segmentu puruak onartzen ditu. Hau da kasua [LinkedIn](export-linkedin-ads.md) aukeratzerakoan **konpainia** aukera esportazioa definitzerakoan.
-- Helburuko beste sistema guztiek harremanetarako entitatearen eremuak behar dituzte. Kontu segmentuek erlazionatutako kontaktuetatik datuak berreskura ditzaketela ziurtatzeko, zure segmentuaren definizioak kontaktu entitatearen atributuak proiektatu behar ditu. Lortu informazio gehiago nola egin [konfiguratu segmentuak eta proiektuaren atributuak](segment-builder.md).
+**Segmentu esportazioak negozio-kontuetarako inguruneetan (B-to-B)**  
+- Enpresa-kontuetarako inguruneen testuinguruko segmentuak oinarrian eraikitzen dira *kontua* entitatea edo *kontaktua* entitate. Kontuen segmentuak bere horretan esportatzeko, xede-sistemak kontu segmentu puruak onartzen ditu. Hau da kasua [LinkedIn](export-linkedin-ads.md) aukeratzerakoan **konpainia** aukera esportazioa definitzerakoan.
+- Helburuko beste sistema guztiek harremanetarako entitatearen eremuak behar dituzte.
+- Bi segmentu motarekin (kontaktuak eta kontuak), Customer Insights-ek automatikoki identifikatzen du zein segmentu mota esportatzeko eskubidea duten helburu-sisteman oinarrituta. Adibidez, Mailchimp bezalako kontaktuetan ardaztutako helburu-sistema baterako, Customer Insights-ek esportatzeko kontaktu-segmentuak aukeratzen ditu soilik.
 
 **Segmentuen esportazioen mugak**  
 - Hirugarrenen helburu sistemek esporta ditzakezun bezeroen profil kopurua muga dezakete. 
-- Banakako bezeroentzako, segmentuko kide kopurua ikusiko duzu esportatzeko segmentu bat hautatzen duzunean. Abisu bat jasoko duzu segmentu bat handiegia bada. 
-- Negozio kontuetarako, segmentu bateko kontu kopurua ikusiko duzu; hala ere, proiekta daitezkeen kontaktuen kopurua ez da agertzen. Zenbait kasutan, esportatutako segmentuak xede-sistemak onartzen dituena baino bezero profil gehiago izatea ekar dezake. Helburu-sistemaren mugak gainditzen badira, esportazioa saltatzen da.
+- Banakako bezeroentzako, segmentuko kide kopurua ikusiko duzu esportatzeko segmentu bat hautatzen duzunean. Segmentu bat handiegia bada abisu bat jasoko duzu. 
+- Enpresa-kontuetarako, segmentuaren araberako kontu edo kontaktu kopurua ikusiko duzu. Abisu bat jasoko duzu segmentua handiegia bada. Helburuko sistemen emaitzen mugak gaindituz gero, esportazioa saltatuko da.
 
 ## <a name="set-up-a-new-export"></a>Konfiguratu esportazio berria
 
@@ -110,6 +111,20 @@ Datuak esportatzeko programatutako freskapenaren zain egon gabe, joan hona: **Da
 
 - Esportazio guztiak exekutatzeko, hautatu **Exekutatu guztiak** komando barran. Programazio aktiboa duten esportazioak bakarrik exekutatzen dira. Aktibo ez dagoen esportazio bat exekutatzeko, exekutatu esportazio bakarra.
 - Esportazio bakarra exekutatzeko, hautatu zerrendatik eta hautatu **Exekutatu** komando barran.
+
+## <a name="troubleshooting"></a>Arazoak konpontzea
+
+### <a name="segment-not-eligible-for-export"></a>Segmentua ez da esportatzeko eskubidea
+
+**Arazoa** Enpresa-kontuen ingurune batean zure esportazioek huts egiten dute errore-mezuarekin: "Segmentu hau ez da esportazio-helmuga honetarako egokia:"{ segmentuaren izena} '. Aukeratu ContactProfile motako segmentuak soilik eta saiatu berriro."
+
+**Ebazpena** Enpresa-kontuetarako Customer Insights inguruneak eguneratu dira kontu-segmentuez gain kontaktu-segmentuak onartzeko. Aldaketa hori dela eta, kontaktuen xehetasunak behar dituzten esportazioek kontaktuetan oinarritutako segmentuekin soilik funtzionatzen dute.
+
+1. [Sortu segmentu bat kontaktuetan oinarrituta](segment-builder.md) aurrez erabilitako segmentuarekin bat datorrena.
+
+1. Kontaktu-segmentu hori exekutatzen denean, editatu dagokion esportazioa eta hautatu segmentu berria.
+
+1. Hautatu **Gorde** konfigurazioa gordetzeko edo **Gorde eta exekutatu** esportazio hori berehala probatzeko.
 
 [!INCLUDE [progress-details-include](includes/progress-details-pane.md)]
 

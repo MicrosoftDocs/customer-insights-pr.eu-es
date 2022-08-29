@@ -6,23 +6,23 @@ ms.date: 08/01/2022
 ms.subservice: audience-insights
 ms.topic: tutorial
 author: v-wendysmith
-ms.author: mukeshpo
+ms.author: sstabbert
 ms.reviewer: v-wendysmith
 manager: shellyha
 searchScope:
 - ci-map
 - ci-match
 - customerInsights
-ms.openlocfilehash: 7f4829cfc14af623f724c6594e834f3fac1c15a9
-ms.sourcegitcommit: 10dcfc32eaf8ec0903be96136dca7bb4e250276a
-ms.translationtype: HT
+ms.openlocfilehash: 3f84c1c149f0befcbe489ccdd8a666ce6d5d798a
+ms.sourcegitcommit: 267c317e10166146c9ac2c30560c479c9a005845
+ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 08/01/2022
-ms.locfileid: "9213612"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "9304458"
 ---
 # <a name="remove-duplicates-before-unifying-data"></a>Kendu bikoiztuak datuak bateratu aurretik
 
-Baterako aukerako urrats honek erregistro bikoiztuak ezabatzeko arauak ezar ditzakezu **barruan** entitate bat. Desduplicazioak bezero batentzako erregistro anitz identifikatzen ditu eta gorde beharreko erregistrorik onena hautatzen du (oinarrizko bateratze-hobespenetan oinarrituta) edo erregistroak bateratzen ditu (baketa-hobespen aurreratuetan oinarrituta). Iturburu erregistroak bateratutako erregistroarekin lotzen dira ID ordezkoekin. Arauak konfiguratzen ez badira, sistemak definitutako arauak aplikatuko dira.
+Baterako aukerako urrats honek erregistro bikoiztuak ezabatzeko arauak ezar ditzakezu **barruan** entitate bat. Desduplicazioak bezero batentzako hainbat erregistro identifikatzen ditu eta gorde beharreko erregistrorik onena hautatzen du (oinarrizko bateratze-hobespenetan oinarrituta) edo erregistroak bateratzen ditu (baketa-hobespen aurreratuetan oinarrituta). Iturburu erregistroak bateratutako erregistroarekin lotzen dira ID ordezkoekin. Arauak konfiguratzen ez badira, sistemak definitutako arauak aplikatuko dira.
 
 ## <a name="default-deduplication"></a>Lehenetsitako deduplicazioa
 
@@ -45,9 +45,9 @@ datu-iturburu mailan entitateak aberastu badituzu zure bateratzearen emaitzak ho
 
 ## <a name="define-deduplication-rules"></a>Desduplicazio-arauak definitu
 
-1. Gainean **Erregistro bikoiztuak** orrialdea, hautatu entitate bat eta hautatu **Gehitu araua** deduplication arauak definitzeko.
+1. Gainean **Erregistro bikoiztuak** orrialdea, hautatu entitate bat eta hautatu **Gehitu araua** deduplicazio-arauak definitzeko.
 
-   :::image type="content" source="media/m3_duplicates_showmore.png" alt-text="Bikoiztutako erregistroen orrien pantaila-argazkia Erakutsi gehiago nabarmenduta":::
+   :::image type="content" source="media/m3_duplicates_showmore.png" alt-text="Bikoiztutako erregistroen orriaren pantaila-argazkia entitatea nabarmenduta eta Gehitu araua bistaratuta"  lightbox="media/m3_duplicates_showmore.png":::
 
    1. urtean **Gehitu araua** panelean, sartu informazio hau:
       - **Hautatu eremua** : Aukeratu bikoiztuak dauden egiaztatu nahi duzun entitateko eremu erabilgarrien zerrendatik. Aukeratu bezero bakoitzarentzat litekeena den eremua. Adibidez, helbide elektronikoa edo izena, hiria eta telefono zenbakiaren konbinazioa.
@@ -80,12 +80,12 @@ datu-iturburu mailan entitateak aberastu badituzu zure bateratzearen emaitzak ho
       - **Beteen daudenak** : Betetako atributu eremueak gehien dituen erregistroa identifikatzen du erregistro nagusi gisa. Hori da konbinatzeko aukera lehenetsia.
       - **Berrienak**: erregistro nagusia identifikatzen du berritasunen arabera. Berritasuna definitzeko data edo zenbakizko eremua behar du.
       - **Zaharrenak**: erregistro nagusia identifikatzen du zahartasunaren arabera. Berritasuna definitzeko data edo zenbakizko eremua behar du.
-      
-      Berdinketa gertatuz gero, irabazlearen errekorra MAX(PK) edo gako nagusiaren balio handiagoa duena da.
-      
-   1. Aukeran, entitate baten atributu indibidualetan bateratze-hobespenak definitzeko, hautatu **Aurreratua** panelaren behealdean. Adibidez, posta elektroniko berriena ETA helbiderik osatuena erregistro ezberdinetatik gordetzea aukera dezakezu. Zabaldu entitatea bere atributu guztiak ikusteko eta zein aukera erabili atributu indibidualetarako. Azkenaldian oinarritutako aukera bat aukeratzen baduzu, berritasuna definitzen duen data/orduaren eremua ere zehaztu behar duzu.
 
-      :::image type="content" source="media/m3_adv_merge.png" alt-text="Bateratze-hobespenen panel aurreratuak, azken posta elektronikoa eta helbide osoa erakusten dituena":::
+      Berdinketa gertatuz gero, irabazlearen errekorra MAX(PK) edo gako nagusiaren balio handiagoa duena da.
+
+   1. Aukeran, entitate baten atributu indibidualetan bateratze-hobespenak definitzeko, hautatu **Aurreratua** panelaren behealdean. Adibidez, posta elektroniko berriena ETA helbiderik osatuena erregistro ezberdinetatik gordetzea aukera dezakezu. Zabaldu entitatea bere atributu guztiak ikusteko eta zein aukera erabili atributu indibidualetarako. Azkenaldian oinarritutako aukera bat aukeratzen baduzu, berritasuna definitzen duen data/ordu eremu bat ere zehaztu behar duzu.
+
+      :::image type="content" source="media/m3_adv_merge.png" alt-text="Bateratze-hobespenen panel aurreratuak azken posta elektronikoa eta helbide osoa erakusten ditu":::
 
    1. Hautatu **Eginda** zure bateratze-hobespenak aplikatzeko.
 
@@ -96,18 +96,5 @@ datu-iturburu mailan entitateak aberastu badituzu zure bateratzearen emaitzak ho
 
 > [!div class="nextstepaction"]
 > [Entitate anitzentzako hurrengo urratsa: Baldintzak bat etortzea](match-entities.md)
-
-## <a name="deduplication-output-as-an-entity"></a>Irteerako bikoiztuak desegiteko entitate gisa
-
-Desduplicazio-prozesuak desbikoiztutako entitate berri bat sortzen du iturburuko entitate bakoitzeko. Entitate hauek **ConflationMatchPairs:CustomerInsights** balioarekin batera **Sistema** atalean **Entitateak** orrian, **Deduplication_DataSource_Entity** izenarekin.
-
-Bikoiztuak desegiteko irteerako entitate batek informazio hau dauka:
-
-- IDak eta gakoak
-  - Gako nagusia eta Ordezko ID eremuak. Ordezko ID eremua erregistro baterako identifikatutako ordezko ID guztiek osatzen dute.
-  - Deduplication_GroupId eremuak zehaztutako bikoiztuak desegiteko eremuetan oinarritutako antzeko erregistro guztiak multzokatzen dituen entitate baten barruan identifikatutako taldea edo klusterra erakusten du. Sistema prozesatzeko helburuarekin erabiltzen da. Eskuzko bikoiztuak desegiteko araurik zehazten ez bada eta sistemak definitutako bikoiztuak desegiteko arauak aplikatzen badira, baliteke eremu hori bikoiztuak desegiteko irteerako entitatean ez aurkitzea.
-  - Deduplication_WinnerId: eremu honek identifikatutako talde edo klusterren irabazlearen IDa dauka. Deduplication_WinnerId erregistroaren gako nagusiaren balioaren berdina bada, erregistroa irabazle erregistroa dela esan nahi du.
-- Bikoiztuak desegiteko arauak definitzeko erabiltzen diren eremuak.
-- Arau eta Puntuazio eremuak bikoiztuak desegiteko arauetatik zein aplikatu den eta bat datorren algoritmoak emandako puntuazioa adierazteko.
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

@@ -14,12 +14,12 @@ searchScope:
 - ci-activities
 - ci-activities-wizard
 - customerInsights
-ms.openlocfilehash: 6cdf47e6997f230811dcb0f2cf5542f3a6db2367
-ms.sourcegitcommit: c45c3e044034bf866b0662f80a59166cee4ababe
+ms.openlocfilehash: 0c8edfd8f45ce7770d568811df2b38be1b04e73a
+ms.sourcegitcommit: 267c317e10166146c9ac2c30560c479c9a005845
 ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 07/22/2022
-ms.locfileid: "9188078"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "9303768"
 ---
 # <a name="view-customer-profiles"></a>Ikusi bezeroen profilak
 
@@ -75,10 +75,10 @@ Gainean **Bezeroak** orrialdean, hautatu bezeroaren fitxa bat hautatutako bezero
 
 Bezeroaren xehetasunek honako hau barne hartzen dute:
 
-**Bezeroaren profilaren fitxa** bateratuaren balio desberdinak erakusten ditu *Bezeroa* entitate. Eremu batek hautatutako bezero-profilerako baliorik ez badu, ez da agertuko helbidearen eremua izan ezik. Fitxa ataletan egituratuta dago:
+**Bezeroaren profilaren fitxa** batuaren balio desberdinak erakusten ditu *Bezeroa* entitate. Eremu batek hautatutako bezero-profilerako baliorik ez badu, ez da agertuko helbidearen eremua izan ezik. Fitxa ataletan egituratuta dago:
 
 - Lehenengo atalean aurrez zehaztutako eremu multzo bat agertzen da eta jarraian bilaketa eta iragazki indizearen zati diren eremu guztiak agertzen dira. Helbideekin erlazionatutako eremu guztiak lerro bakarrean konbinatzen dira, profilak helbide-informaziorik ez badu ere erakusten du.
-- **Bezero honen kontaktuak** negozio-kontuetarako inguruneetan bistaratzea. Kontaktu bakoitza bere eremuekin erakusten da. Eremu hutsak ezkutatuta daude.
+- **Bezero honen kontaktuak** negozio-kontuetarako inguruneetan bistaratzea (B-to-B). Kontaktu bakoitza bere eremuekin erakusten da. Eremu hutsak ezkutatuta daude.
 - **Eremu gehigarriak** hautatutako bezeroaren gainerako eremuak erakusten ditu, IDak izan ezik.
 - **NANak** ID guztiak zerrendatzen ditu dagokion entitate-izenpean. Eremuak ID gisa identifikatzen dira euren semantikaren arabera.
 
