@@ -1,27 +1,27 @@
 ---
 title: Customer Insights APIetarako OData kontsultaren adibideak
 description: Gehien erabiltzen diren Open Data Protocol (OData)-ren adibideak Customer Insights APIak kontsultatzeko datuak berrikusteko.
-ms.date: 05/25/2022
+ms.date: 08/30/2022
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: m-hartmann
 ms.author: mhart
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: 8843fc04e4e6eaba0019d932c54f62561ffbdb92
-ms.sourcegitcommit: f3c12ad445d5f91a88f91a7bbc40790ebcfaa826
+ms.openlocfilehash: 26e56a3bab01ba55284a52e72efbcbfbaadaad6f
+ms.sourcegitcommit: 624b27bb65a0de1970dc1ac436643b493f0a31cf
 ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "9121547"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "9387187"
 ---
 # <a name="odata-query-examples-for-customer-insights-apis"></a>Customer Insights APIetarako OData kontsultaren adibideak
 
 Open Data Protocol (OData) datuetara sartzeko protokolo bat da, HTTP bezalako protokolo nagusietan eraikia. Sarerako REST bezalako metodologia onartuak erabiltzen ditu. OData zerbitzuak kontsumitzeko erabil daitezkeen hainbat liburutegi eta tresna mota daude.
 
-Artikulu honek maiz eskatzen diren adibide-kontsulta batzuk zerrendatzen ditu, zure inplementazio propioak eraikitzen laguntzeko [Customer Insights APIak](apis.md).
+Zure inplementazio propioak eraikitzen laguntzeko [Customer Insights APIak](apis.md) , berrikusi maiz eskatzen diren adibide-kontsulta batzuk.
 
-Kontsulten laginak aldatu behar dituzu xede inguruneetan funtzionatzeko: 
+Aldatu kontsulta-laginak xede-inguruneetan funtzionatzeko:
 
 - {serviceRoot}:`https://api.ci.ai.dynamics.com/v1/instances/{instanceId}/data` non{instanceId} kontsultatu nahi duzun Customer Insights ingurunearen GUID da. The [ListAllInstances eragiketa](https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights&operation=Get-all-instances) aurkitzen uzten dizu{InstanceId} sarbidea duzu.
 - {CID}: bezeroen erregistro bateratu baten GUID. Adibidez: `ce759201f786d590bf2134bff576c369`.
@@ -31,22 +31,22 @@ Kontsulten laginak aldatu behar dituzu xede inguruneetan funtzionatzeko:
 
 ## <a name="customer"></a>bezero hori
 
-Hurrengo taulak lagin-kontsulten multzoa dauka *Bezeroa* entitate.
+Lagin-kontsultak *Bezeroa* entitate.
 
 |Kontsulta mota |Adibidez  | Oharra  |
 |---------|---------|---------|
 |Bezeroaren ID bakarra     | `{serviceRoot}/Customer?$filter=CustomerId eq '{CID}'`          |  |
-|Ordezko gako    | `{serviceRoot}/Customer?$filter={DSname_EntityName_PrimaryKeyColumnName} eq '{AlternateKey}'`         |  Ordezko gakoek bezeroaren entitate bateratuan jarraitzen dute       |
+|ordezko gako    | `{serviceRoot}/Customer?$filter={DSname_EntityName_PrimaryKeyColumnName} eq '{AlternateKey}'`         |  Ordezko gakoek bezeroaren entitate bateratuan jarraitzen dute       |
 |Select   | `{serviceRoot}/Customer?$select=CustomerId,FullName&$filter=customerid eq '1'`        |         |
 |Denbora hau barru:    | `{serviceRoot}/Customer?$filter=CustomerId in ('{CID1}',’{CID2}’)`        |         |
-|Ordezko gako + In   | `{serviceRoot}/Customer?$filter={DSname_EntityName_PrimaryKeyColumnName} in ('{AlternateKey}','{AlternateKey}')`         |         |
+|ordezko gako + In   | `{serviceRoot}/Customer?$filter={DSname_EntityName_PrimaryKeyColumnName} in ('{AlternateKey}','{AlternateKey}')`         |         |
 |Bilatu?  | `{serviceRoot}/Customer?$top=10&$skip=0&$search="string"`        |   Bilaketa-kate baten 10 emaitza nagusiak ematen ditu      |
 |Segmentuko kidetasuna  | `{serviceRoot}/Customer?select=*&$filter=IsMemberOfSegment('{SegmentName}')&$top=10`     | Segmentazio-entitatearen errenkada-kopuru aurrez ezarritakoa ematen du.      |
-|Bezero baten kidetza segmentatu | `{serviceRoot}/Customer?$filter=CustomerId eq '{CID}'&IsMemberOfSegment('{SegmentName}')`     | Bezeroaren profila ematen du emandako segmentuko kidea bada     |
+|Segmentatu bezero baten kidetasuna | `{serviceRoot}/Customer?$filter=CustomerId eq '{CID}'&IsMemberOfSegment('{SegmentName}')`     | Bezeroaren profila ematen du emandako segmentuko kidea bada     |
 
 ## <a name="unified-activity"></a>Jarduera bateratua
 
-Hurrengo taulak lagin-kontsulten multzoa dauka *Jarduera bateratua* entitate.
+Lagin-kontsultak *Jarduera bateratua* entitate.
 
 |Kontsulta mota |Adibidez  | Oharra  |
 |---------|---------|---------|
@@ -59,7 +59,7 @@ Hurrengo taulak lagin-kontsulten multzoa dauka *Jarduera bateratua* entitate.
 
 ## <a name="other-examples"></a>Beste adibide batzuk
 
-Ondorengo taulak beste entitate batzuentzako lagin-kontsulten multzoa dauka.
+Beste entitateentzako kontsulta laginak.
 
 |Kontsulta mota |Adibidez  | Oharra  |
 |---------|---------|---------|
