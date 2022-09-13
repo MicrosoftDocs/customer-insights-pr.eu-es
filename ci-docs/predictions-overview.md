@@ -8,12 +8,12 @@ ms.topic: overview
 author: zacookmsft
 ms.author: zacook
 manager: shellyha
-ms.openlocfilehash: a87af80fa713a1ac70493345c0c920e416692b0f
-ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
+ms.openlocfilehash: 32240c8c43751d8514d38b392f23ef4138d50ee2
+ms.sourcegitcommit: 3c7cdfc8bd83ca236e4777240e08a541dc955d34
 ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9083093"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "9411816"
 ---
 # <a name="predictions-overview"></a>Iragarpenen ikuspegi orokorra
 
@@ -39,14 +39,11 @@ Datuak aurreikusten hasteko modurik errazena aurrez zehaztutako ereduak dira, ma
 
 > [!TIP]
 > Kutxaz kanpoko ereduak aldizka freskatzea gomendatzen dugu datu eguneratuekin, zure negozioaren erabilera kasua zehatz-mehatz informatzen dutela ziurtatzeko. Datuak ad hoc freskatzen dira sistemak datu-iturri berriak edo eguneratuak sartzen dituenean. Hala ere, ereduek kasu honetan soilik berregokituko dute eta lehendik dauden prestakuntza-datuak erabiltzen jarraituko dute.
-> 
+>
 > Bat konfigura dezakezu **Eguneratu ordutegia** konfigurazio-esperientzian eredua birziklatzeko egutegia ezarriz. Eredua berriro trebatu eta puntuatu egingo da ordutegi honetan, eta edozein unetan alda dezakezu.
-
 
 ## <a name="azure-machine-learning-integration"></a>Azure ikaskuntza automatikoaren integrazioa
 
 Erakunde batek dagoeneko Azure Ikaskuntza automatikoaren esperientzietan oinarritutako Ikaskuntza automatikoko eszenatokiak erabiltzen baditu, Customer Insights-eko eredu pertsonalizatuen ezaugarriak puntuak konektatzen laguntzen du. Sortu xehetasunak sortu nahi dituzun datuak aukeratzen lagunduko dizuten lan-fluxuak eta emaitzak zure bezeroen profil bateratuei esleitu. Informazio gehiago lortzeko, ikus [Ikaskuntza automatiko eredu pertsonalizatuak](custom-models.md).
 
-## <a name="ai-builder-prediction"></a>AI Builder iragarpen
-
-Batzuetan, datu multzoak osatu gabe daude eta balio batzuk falta dira. Customer Insights-ek Bezeroaren entitate eta segmentuetarako falta diren balioak aurreikusten lagun dezake. Informazio gehiagorako, ikus [Osatu zure datu partzialak iragarpenekin](predictions.md).
+[!INCLUDE [footer-include](includes/footer-banner.md)]

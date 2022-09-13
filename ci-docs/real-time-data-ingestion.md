@@ -11,12 +11,12 @@ manager: shellyha
 searchScope:
 - ci-system-api-usage
 - customerInsights
-ms.openlocfilehash: 2652e0868f5cc514ab6df9c150a9183cf95ae589
-ms.sourcegitcommit: 49394c7216db1ec7b754db6014b651177e82ae5b
+ms.openlocfilehash: dd433b57e8695891a08d6f7fdb8c87befd2e1cfa
+ms.sourcegitcommit: d7054a900f8c316804b6751e855e0fba4364914b
 ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 08/10/2022
-ms.locfileid: "9246093"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "9396046"
 ---
 # <a name="real-time-data-ingestion-preview"></a>Denbora errealeko iragazkiak (aurrebista)
 
@@ -82,10 +82,5 @@ Denbora errealeko gaitasunak erabil ditzakezu zure bideratzea eraikiz eta zuzene
 Jarduera bat sor dezakezu zure iturburu sistemaren formatuan edo UnifiedActivity formatuan. Lortu formatua API dei bat eginez /api/instantziak/{instanceId}/Kudeatu/entitate/UnifiedActivity.
 
 API honen xehetasunak, parametroak eta erantzunak barne, hemen aurki ditzakezu: **Entitatearen datuak** sekzioan, [Customer Insights APIen erreferentzia](https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights) atalean. Informazio gehiago lortzeko, ikus [Customer Insights APIekin lan egin](apis.md).
-
-## <a name="understand-your-real-time-usage-with-telemetry"></a>Ulertu zure denbora errealeko erabilera telemetriarekin
-
-Lortu denbora errealeko APIrako eskaeren bolumena eta sistemak izan ditzakeen arazoei buruzko informazioa. [Atzitu denbora errealeko telemetria](system.md#view-api-usage). 
-
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

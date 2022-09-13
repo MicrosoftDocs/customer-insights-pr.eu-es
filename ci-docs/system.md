@@ -14,12 +14,12 @@ searchScope:
 - ci-system-general
 - ci-system-api-usage
 - customerInsights
-ms.openlocfilehash: 2498814a3d2e6330124fb97c036b9b310bcf1f7a
-ms.sourcegitcommit: 49394c7216db1ec7b754db6014b651177e82ae5b
+ms.openlocfilehash: 6e60bf7c18939a29f660e06989e262deeb59a39b
+ms.sourcegitcommit: d7054a900f8c316804b6751e855e0fba4364914b
 ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 08/10/2022
-ms.locfileid: "9246232"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "9395986"
 ---
 # <a name="view-system-configuration"></a>Ikusi sistemaren konfigurazioa
 
@@ -38,12 +38,6 @@ Ikusi denbora errealeko APIaren erabilerari buruzko xehetasunak eta ikusi zein g
    - **API deiak**: hautatutako epean APIra egindako deien kopuru agregatua bistaratzen duen taula.
    - **Datuen transferentzia**: hautatutako denbora tartean APIaren bidez transferitu diren datu kopurua erakusten duen taula.
    - **Eragiketak**: taula bat erabilgarri dauden API eragiketa bakoitzerako errenkadekin eta eragiketen erabilerari buruzko xehetasunak. Hautatu eragiketa-izen bat bertara joateko [API erreferentzia](https://developer.ci.ai.dynamics.com/api-details#api=CustomerInsights&operation=Get-all-instances).
-
-   Erabiltzen duten eragiketak [denbora errealeko datuak sartzea](real-time-data-ingestion.md) ikur prismatiko bat edukitzea denbora errealeko APIaren erabilera ikusteko.
-
-   1. Hautatu binokularra irekitzeko **Denbora errealeko APIaren erabilera** Eragiketaren erabilera xehetasunak dituen panela.
-   1. **Hautatu denbora-tarte bat** ikusteko.
-   1. Erabili **Taldeka** kutxa zure denbora errealeko elkarrekintzak nola aurkeztu onena aukeratzeko. Taldekatu datuak APIaren arabera **Metodoa**, **izen kualifikatua** (irensatutako entitatea), **Sortua** (gertaeraren iturria), **Emaitza** (arrakasta edo porrota) edo **Errore-kodeak**. Datuak historia-taula gisa eta taula gisa eskuragarri daude.
 
 ## <a name="view-system-information"></a>Ikusi sistemaren informazioa
 
@@ -73,7 +67,7 @@ Egin jarraipena eginkizunen, datuen sarreraren, datuen esportazioen eta beste ha
 
 1. Joan **Admin** > **Sistema** eta hautatu **Egoera** fitxa.
 
-   Hainbat prozesuren egoera eta prozesatzeko informazioa bistaratzea. Ikusi **Izena** zereginaren, du **Egoera** bere azkeneko ibilbidea, eta noiz izan zen **Azken eguneratua**.
+   Hainbat prozesuren egoera eta prozesatzeko informazioa bistaratzea. Ikusi **Izena** zereginaren, du **Egoera** bere azken lasterketa, eta noiz izan zen **Azken eguneratua**.
 
 1. Azken exekuzioen xehetasunak ikusteko, hautatu zeregina edo prozesuaren izena.
 
@@ -83,9 +77,9 @@ Egin jarraipena eginkizunen, datuen sarreraren, datuen esportazioen eta beste ha
 
 1. Zeregin guztien aurrerapenaren xehetasunak ikusteko, hautatu **Lan-fluxu osoa**.
 
-### <a name="status-definitions"></a>Egoera definizioak
+### <a name="status-definitions"></a>Egoeraren definizioak
 
-Sistemak egoera hauek erabiltzen ditu zeregin eta prozesuetarako:
+Sistemak egoera hauek erabiltzen ditu zereginetarako eta prozesuetarako:
 
 |Fasea  |Definizioa  |
 |---------|---------|
@@ -94,7 +88,7 @@ Sistemak egoera hauek erabiltzen ditu zeregin eta prozesuetarako:
 |Huts egin du  |Zereginak edo prozesuak huts egin du.  |
 |Ez da hasi   |datu-iturburu-k ez du daturik irensten oraindik edo zeregina zirriborro moduan dago oraindik.         |
 |Prozesatze  |Zeregin edo prozesua abian da.  |
-|Freskatzen    |Zeregin edo prozesua abian da. Eragiketa hau bertan behera uzteko, hautatu **Freskagarria** eta **Utzi lana**. Zeregin edo prozesu baten freskapena gelditzeak bere azken freskatze egoerara itzuliko du.       |
+|Freskatzen    |Zeregin edo prozesua abian da. Eragiketa hau bertan behera uzteko, hautatu **Freskagarria** eta **Utzi lana**. Zeregin edo prozesu baten freskatzea gelditzeak azken freskatze egoerara itzuliko du.       |
 |Saltatuta  |Zeregin edo prozesua saltatu egin da. Zeregin hau kontrolatzen duen downstream-eko prozesu bat edo gehiago huts egin edo saihestu egiten dira.|
 |Osatuta  |Zeregin edo prozesua behar bezala burutu da. Datu-iturburuetarako, datuak behar bezala irentsi direla adierazten du denboraren bat aipatzen bada **Freskatua** zutabea.|
 |Ilaran | Prozesatzea ilaran dago eta gorako zeregin eta prozesu guztiak amaitutakoan hasiko da. Informazio gehiagorako, ikus [Freskatzeko prozesuak](#refresh-processes).|

@@ -1,7 +1,7 @@
 ---
 title: Egin lan Customer Insights datuekin Microsoft Dataverse-n
 description: Ikasi nola konektatu Customer Insights eta Microsoft Dataverse eta esportatzen diren irteerako entitateak ulertu Dataverse.
-ms.date: 08/15/2022
+ms.date: 08/25/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: shellyha
 searchScope:
 - ci-system-diagnostic
 - customerInsights
-ms.openlocfilehash: 0d536259f310b41fe12922baeebdc4569937db08
-ms.sourcegitcommit: 267c317e10166146c9ac2c30560c479c9a005845
+ms.openlocfilehash: dfa63110fc5291f2b63aebf588d6fdd20ed4ab67
+ms.sourcegitcommit: 134aac66e3e0b77b2e96a595d6acbb91bf9afda2
 ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 08/16/2022
-ms.locfileid: "9303814"
+ms.lasthandoff: 09/07/2022
+ms.locfileid: "9424294"
 ---
 # <a name="work-with-customer-insights-data-in-microsoft-dataverse"></a>Egin lan Customer Insights datuekin Microsoft Dataverse-n
 
@@ -136,6 +136,7 @@ Mendekotasunengatik konexioa kentzeak huts egiten badu, mendekotasunak ere kendu
 Customer Insights-en irteerako entitate batzuk taula gisa daude eskuragarri Dataverse. Beheko ataletan taula horien itxarondako eskema azaltzen da.
 
 - [Bezero-profila](#customerprofile)
+- [ContactProfile](#contactprofile)
 - [AlternateKey](#alternatekey)
 - [UnifiedActivity](#unifiedactivity)
 - [CustomerMeasure](#customermeasure)
@@ -145,21 +146,46 @@ Customer Insights-en irteerako entitate batzuk taula gisa daude eskuragarri Data
 
 ### <a name="customerprofile"></a>Bezero-profila
 
-Taula honetan Customer Insights-eko bezeroen profil bateratua dago. Bezeroen profil bateratu baten eskema datuak bateratzeko prozesuan erabiltzen diren entitate eta atributuen araberakoa da. Bezeroaren profilaren eskemak normalean atributuen azpimultzo bat dauka [Common Data Model-en CustomerProfile-ri buruzko definiziokoa](/common-data-model/schema/core/applicationcommon/foundationcommon/crmcommon/solutions/customerinsights/customerprofile).
+Taula honetan Customer Insights-eko bezeroen profil bateratua dago. Bezeroen profil bateratu baten eskema datuak bateratzeko prozesuan erabiltzen diren entitate eta atributuen araberakoa da. Bezeroaren profilaren eskemak normalean atributuen azpimultzo bat dauka [Common Data Model-en CustomerProfile-ri buruzko definiziokoa](/common-data-model/schema/core/applicationcommon/foundationcommon/crmcommon/solutions/customerinsights/customerprofile). B-to-B eszenatokirako, bezeroaren profilak kontu bateratuak ditu, eta eskemak normalean atributuen azpimultzo bat dauka.[Kontuaren datu-eredu komunaren definizioa](/common-data-model/schema/core/applicationcommon/foundationcommon/crmcommon/account).
+
+### <a name="contactprofile"></a>ContactProfile
+
+ContactProfile batek kontaktu bati buruzko informazio bateratua dauka. Kontaktuak dira [kontu batean mapatutako pertsonak](data-unification-contacts.md) B-to-B eszenatoki batean.
+
+| Column                       | Idatzi                | Deskribapenak     |
+| ---------------------------- | ------------------- | --------------- |
+|  Urtebetetze data            | DateTime       |  Kontaktuaren jaioteguna               |
+|  Hiria                 | Testu-mezua |  Harremanetarako helbidearen hiria               |
+|  Kontaktu ID            | Testu-mezua |  Kontaktu-profilaren IDa               |
+|  KontaktuProfileId     | Identifikatzaile esklusiboa   |  Kontaktuaren GUID               |
+|  HerrialdeaEdoEskualdea      | Testu-mezua |  Harremanetarako helbidearen herrialdea/eskualdea               |
+|  Bezeroaren IDa           | Testu-mezua |  Kontaktua mapatutako kontuaren IDa               |
+|  EntityName           | Testu-mezua |  Datuak nondik datozen entitatea                |
+|  FirstName            | Testu-mezua |  Kontaktuaren izen               |
+|  Generoa               | Testu-mezua |  Kontaktuaren generoa               |
+|  IDa                   | Testu-mezua |  Oinarritutako GUID deterministikoa`Identifier`               |
+|  Identifikatzailea           | Testu-mezua |  Kontaktu-profilaren barne IDa:`ContactProfile|CustomerId|ContactId`               |
+|  JobTitle             | Testu-mezua |  Kontaktuaren lanpostuaren izena               |
+|  LastName             | Testu-mezua |  Kontaktuaren abizen               |
+|  PostalCode           | Testu-mezua |  Kontaktuaren helbidearen posta-kodea               |
+|  Helbide elektroniko nagusia         | Testu-mezua |  Kontaktuaren helbide elektronikoa               |
+|  Lehen Telefonoa         | Testu-mezua |  Kontaktuaren telefono zenbakia               |
+|  StateOrProvince      | Testu-mezua |  Harremanetarako helbidearen estatua edo probintzia               |
+|  Helbidea        | Testu-mezua |  Harremanetarako helbidearen kalea               |
 
 ### <a name="alternatekey"></a>AlternateKey
 
 AlternateKey taulan bateratze prozesuan parte hartu duten entitateen gakoak daude.
 
-|Column  |Mota  |Deskribapenak  |
+|Column  |Idatzi  |Deskribapenak  |
 |---------|---------|---------|
-|DataSourceName    |String         | Datu-iturburuaren izena. Adibidez: `datasource5`        |
-|EntityName        | String        | Customer Insights-en entitatearen izena. Adibidez: `contact1`        |
-|AlternateValue    |String         |Bezeroaren IDari esleituta dagoen ID alternatiboa. Adibidez: `cntid_1078`         |
-|KeyRing           | Lerro anitzeko testua        | JSON balioa  </br> Lagina: [{"dataSourceName":" datasource5 ",</br>"entityName":" contact1",</br>"preferredKey":" cntid_1078",</br>"keys":[" cntid_1078"]}]       |
-|Bezeroaren IDa         | String        | Bezeroen profil bateratuaren IDa.         |
-|AlternateKeyId     | GUIDa         |  AlternateKey GUID determinista msdynci_identifier-en oinarrituta       |
-|msdynci_identifier |   String      |   `DataSourceName|EntityName|AlternateValue`  </br> Lagina: `testdatasource|contact1|cntid_1078`    |
+|DataSourceName    |Testu-mezua         | Datu-iturburuaren izena. Adibidez: `datasource5`        |
+|EntityName        | Testu-mezua        | Customer Insights-en entitatearen izena. Adibidez: `contact1`        |
+|AlternateValue    |Testu-mezua         |Bezeroaren IDari esleituta dagoen ID alternatiboa. Adibidez: `cntid_1078`         |
+|KeyRing           | Testu-mezua        | JSON balioa  </br> Lagina: [{"dataSourceName":" datasource5 ",</br>"entityName":" contact1",</br>"preferredKey":" cntid_1078",</br>"keys":[" cntid_1078"]}]       |
+|Bezeroaren IDa         | Testu-mezua        | Bezeroen profil bateratuaren IDa.         |
+|AlternateKeyId     | Identifikatzaile esklusiboa        |  AlternateKey-n oinarritutako GUID deterministikoa`Identifier`      |
+|Identifikatzailea |   Testu-mezua      |   `DataSourceName|EntityName|AlternateValue`  </br> Lagina: `testdatasource|contact1|cntid_1078`    |
 
 ### <a name="unifiedactivity"></a>UnifiedActivity
 
@@ -167,43 +193,42 @@ Taula honetan Customer Insights-en eskuragarri dauden erabiltzaileen jarduerak d
 
 | Column            | Idatzi        | Deskribapenak                                                                              |
 |-------------------|-------------|------------------------------------------------------------------------------------------|
-| Bezeroaren IDa        | String      | Bezero-profilaren IDa                                                                      |
-| ActivityId        | String      | Bezeroaren jardueraren barneko IDa (gako nagusia)                                       |
-| SourceEntityName  | String      | Iturburuko entitatearen izena                                                                |
-| SourceActivityId  | String      | Jatorrizko entitatearen gako nagusia                                                       |
-| ActivityType      | String      | Jarduera semantiko mota edo jarduera pertsonalizatuaren izena                                        |
-| ActivityTimeStamp | DATETIME    | Jardueraren denbora-zigilua                                                                      |
-| lanpostua             | String      | Jardueraren izenburua edo izena.                                                               |
-| Deskribapenak       | String      | Jardueraren azalpena                                                                     |
-| URLa               | String      | Estekatu jardueraren berariazko kanpoko URL batera                                         |
-| SemanticData      | JSON katea | Jarduera motari dagozkion esleipen semantikoen eremuetarako balio gakoen bikoteen zerrenda biltzen du |
-| RangeIndex        | String      | Unix denbora-marka, jardueren denbora-lerroa eta barruti-kontsulta eraginkorrak ordenatzeko erabiltzen dena |
-| mydynci_unifiedactivityid   | GUIDa | Bezeroaren jardueraren barneko IDa (ActivityId) |
+| Bezeroaren IDa        | Testu-mezua      | Bezero-profilaren IDa                                                                      |
+| ActivityId        | Testu-mezua      | Bezeroaren jardueraren barneko IDa (gako nagusia)                                       |
+| SourceEntityName  | Testu-mezua      | Iturburuko entitatearen izena                                                                |
+| SourceActivityId  | Testu-mezua      | Jatorrizko entitatearen gako nagusia                                                       |
+| ActivityType      | Testu-mezua      | Jarduera semantiko mota edo jarduera pertsonalizatuaren izena                                        |
+| ActivityTimeStamp | DateTime    | Jardueraren denbora-zigilua                                                                      |
+| lanpostua             | Testu-mezua      | Jardueraren izenburua edo izena.                                                               |
+| Deskribapenak       | Testu-mezua      | Jardueraren azalpena                                                                     |
+| URLa               | Testu-mezua      | Estekatu jardueraren berariazko kanpoko URL batera                                         |
+| SemanticData      | Testu-mezua | Jarduera motari dagozkion esleipen semantikoen eremuetarako balio gakoen bikoteen zerrenda biltzen du |
+| RangeIndex        | Testu-mezua      | Unix denbora-marka, jardueren denbora-lerroa eta barruti-kontsulta eraginkorrak ordenatzeko erabiltzen dena |
+| UnifiedActivityId   | Identifikatzaile esklusiboa | Bezeroaren jardueraren barneko IDa (ActivityId) |
 
 ### <a name="customermeasure"></a>CustomerMeasure
 
 Taula honetan bezeroaren atributuetan oinarritutako neurrien irteerako datuak daude.
 
-| Column             | Mota             | Deskribapenak                 |
+| Column             | Idatzi             | Deskribapenak                 |
 |--------------------|------------------|-----------------------------|
-| Bezeroaren IDa         | String           | Bezero-profilaren IDa        |
-| Neurketak           | JSON katea      | Neurriaren izena eta emandako bezeroarentzako balioen gako balio bikoteen zerrenda biltzen du | 
-| msdynci_identifier | String           | `Customer_Measure|CustomerId` |
-| msdynci_customermeasureid | GUIDa      | Bezero-profilaren IDa |
-
+| Bezeroaren IDa         | Testu-mezua           | Bezero-profilaren IDa        |
+| Neurketak           | Testu-mezua      | Neurriaren izena eta emandako bezeroarentzako balioen gako balio bikoteen zerrenda biltzen du |
+| Identifikatzailea | Testu-mezua           | `Customer_Measure|CustomerId` |
+| CustomerMeasureId | Identifikatzaile esklusiboa     | Bezero-profilaren IDa |
 
 ### <a name="enrichment"></a>Aberastea
 
 Taula honetan aberasteko prozesuaren irteera dago.
 
-| Column               | Mota             |  Deskribapenak                                          |
+| Column               | Idatzi             |  Deskribapenak                                          |
 |----------------------|------------------|------------------------------------------------------|
-| Bezeroaren IDa           | String           | Bezero-profilaren IDa                                 |
-| EnrichmentProvider   | String           | Aberastearen hornitzailearen izena                                  |
-| EnrichmentType       | String           | Aberaste mota                                      |
-| Balioak               | JSON katea      | Aberasteko prozesuak sortutako atributuen zerrenda |
-| msdynci_enrichmentid | GUIDa             | Msdynci_identifier-etik sortutako GUID determinista |
-| msdynci_identifier   | String           | `EnrichmentProvider|EnrichmentType|CustomerId`         |
+| Bezeroaren IDa           | Testu-mezua           | Bezero-profilaren IDa                                 |
+| EnrichmentProvider   | Testu-mezua           | Aberastearen hornitzailearen izena                                  |
+| EnrichmentType       | Testu-mezua           | Aberaste mota                                      |
+| Balioak               | Testu-mezua      | Aberasteko prozesuak sortutako atributuen zerrenda |
+| AberasteId | Identifikatzaile esklusiboa            | Hemendik sortutako GUID deterministikoa`Identifier` |
+| Identifikatzailea   | Testu-mezua           | `EnrichmentProvider|EnrichmentType|CustomerId`         |
 
 ### <a name="prediction"></a>Iragarpena
 
@@ -211,12 +236,12 @@ Taula honetan ereduaren iragarpenen irteera dago.
 
 | Column               | Idatzi        | Deskribapenak                                          |
 |----------------------|-------------|------------------------------------------------------|
-| Bezeroaren IDa           | String      | Bezero-profilaren IDa                                  |
-| ModelProvider        | String      | Ereduaren hornitzailearen izena                                      |
-| Eredua                | String      | Ereduaren izena                                                |
-| Balioak               | JSON katea | Ereduak sortutako atributuen zerrenda |
-| msdynci_predictionid | GUIDa        | Msdynci_identifier-etik sortutako GUID determinista | 
-| msdynci_identifier   | String      |  `Model|ModelProvider|CustomerId`                      |
+| Bezeroaren IDa           | Testu-mezua      | Bezero-profilaren IDa                                  |
+| ModelProvider        | Testu-mezua      | Ereduaren hornitzailearen izena                                      |
+| Eredua                | Testu-mezua      | Ereduaren izena                                                |
+| Balioak               | Testu-mezua | Ereduak sortutako atributuen zerrenda |
+| IragarpenId | Identifikatzaile esklusiboa       | Hemendik sortutako GUID deterministikoa`Identifier` |
+| Identifikatzailea   | Testu-mezua      |  `Model|ModelProvider|CustomerId`                      |
 
 ### <a name="segment-membership"></a>Segmentuko kidetasuna
 
@@ -224,12 +249,11 @@ Taula honek bezeroen profilen segmentu-kidetasunaren informazioa dauka.
 
 | Column        | Idatzi | Deskribapenak                        |
 |--------------------|--------------|-----------------------------|
-| Bezeroaren IDa        | String       | Bezero-profilaren IDa        |
-| SegmentProvider      | String       | Segmentuak argitaratzen dituen aplikazioa.      |
-| SegmentMembershipType | String       | Segmentu honetako kidetzaren erregistroko bezero mota. Hainbat mota onartzen ditu, hala nola Bezeroa, Kontaktua edo Kontua. Lehenetsia: Bezeroa  |
-| Segmentuak       | JSON katea  | Bezeroaren profila kide den segmentu berezien zerrenda      |
-| msdynci_identifier  | String   | Segmentuko kidetzaren erregistroaren identifikatzaile bakarra. `CustomerId|SegmentProvider|SegmentMembershipType|Name`  |
-| msdynci_segmentmembershipid | GUIDa      | Hemendik sortutako GUID deterministikoa`msdynci_identifier`          |
-
+| Bezeroaren IDa        | Testu-mezua       | Bezero-profilaren IDa        |
+| SegmentProvider      | Testu-mezua       | Segmentuak argitaratzen dituen aplikazioa.      |
+| SegmentMembershipType | Testu-mezua       | Segmentu honetako kidetzaren erregistroko bezero mota. Hainbat mota onartzen ditu, hala nola Bezeroa, Kontaktua edo Kontua. Lehenetsia: Bezeroa  |
+| Segmentuak       | Testu-mezua  | Bezeroaren profila kide den segmentu berezien zerrenda      |
+| Identifikatzailea  | Testu-mezua   | Segmentuko kidetzaren erregistroaren identifikatzaile bakarra. `CustomerId|SegmentProvider|SegmentMembershipType|Name`  |
+| Segmentaren Kide-Id | Identifikatzaile esklusiboa      | Hemendik sortutako GUID deterministikoa`Identifier`          |
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

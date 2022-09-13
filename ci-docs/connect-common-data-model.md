@@ -12,12 +12,12 @@ searchScope:
 - ci-create-data-source
 - ci-attach-cdm
 - customerInsights
-ms.openlocfilehash: b237c291bb4dd22ca22ab2cdd8b6293490aa83e1
-ms.sourcegitcommit: 49394c7216db1ec7b754db6014b651177e82ae5b
+ms.openlocfilehash: d79b2d34e425e123224209814fef6e367c77c813
+ms.sourcegitcommit: d7054a900f8c316804b6751e855e0fba4364914b
 ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 08/10/2022
-ms.locfileid: "9245767"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "9396031"
 ---
 # <a name="connect-to-data-in-azure-data-lake-storage"></a>Konektatu datuetara Azure Data Lake Storage-en
 
@@ -27,20 +27,22 @@ Sartu datuak Dynamics 365 Customer Insights zure erabiliz Azure Data Lake Storag
 
 - Datuak sartzea onartzen du Azure Data Lake Storage *Gen2* kontuak soilik. Ezin dituzu Data Lake Storage Gen1 kontuak erabili datuak irensteko.
 
-- The Azure Data Lake Storage kontua izan behar du [izen-espazio hierarkikoa gaituta](/azure/storage/blobs/data-lake-storage-namespace). Datuak erroko karpeta definitzen duen eta entitate bakoitzeko azpikarpetak dituen karpeta formatu hierarkiko batean gorde behar dira. Azpikarpetek datu osoak edo datu gehigarriak izan ditzakete.
+- The Azure Data Lake Storage kontua izan behar du [izen-espazio hierarkikoa gaituta](/azure/storage/blobs/data-lake-storage-namespace). Datuak erro karpeta definitzen duen eta entitate bakoitzaren azpikarpetak dituen karpeta formatu hierarkiko batean gorde behar dira. Azpikarpetek datu osoak edo datu gehigarriak izan ditzakete.
 
 - Azure zerbitzuaren entitatearekin autentifikatzeko, ziurtatu zure maizterrean konfiguratuta dagoela. Informazio gehiagorako, ikus [Konektatu batera Azure Data Lake Storage Gen2 kontua Azure zerbitzu nagusi batekin](connect-service-principal.md).
 
 - The Azure Data Lake Storage konektatu eta datuak hartu nahi dituzun Azure eskualde berean egon behar du Dynamics 365 Customer Insights ingurunea. Ez da onartzen beste Azure eskualde bateko datu-biltegi batetik Common Data Model-eko karpeta batera konektatzea. Inguruneko Azure eskualdea ezagutzeko, joan hona **Admin** > **Sistema** > **Buruz** Bezeroen Insights-en.
 
-- Lineako zerbitzuetan biltegiratutako datuak datuak prozesatzen edo gordetzen diren leku ezberdin batean biltegiratu daitezke Dynamics 365 Customer Insights.Lineako zerbitzuetan gordetako datuak inportatuz edo konektatuz gero, onartzen duzu datuak batera transferitu eta gorde daitezkeela.Dynamics 365 Customer Insights . [Lortu informazio gehiago Microsoft Trust Center-en](https://www.microsoft.com/trust-center).
+- Lineako zerbitzuetan biltegiratutako datuak datuak prozesatzen edo gordetzen diren tokian beste leku batean bil daitezke Dynamics 365 Customer Insights.Lineako zerbitzuetan gordetako datuak inportatuz edo konektatuz gero, onartzen duzu datuak batera transferitu eta gorde daitezkeela.Dynamics 365 Customer Insights . [Lortu informazio gehiago Microsoft Trust Center-en](https://www.microsoft.com/trust-center).
 
 - Customer Insights zerbitzuko nagusiak rol hauetako batean egon behar du biltegiratze-kontura atzitzeko. Informazio gehiagorako, ikus [Eman baimenak zerbitzu nagusiari biltegiratze-kontura atzitzeko](connect-service-principal.md#grant-permissions-to-the-service-principal-to-access-the-storage-account).
   - Storage Blob datu-irakurgailua
   - Storage Blob datuen jabea
   - Storage Blob datuen kolaboratzailea
 
-- Zure Data Lake Storage-ko datuek zure datuak biltegiratzeko Common Data Model estandarra jarraitu behar dute eta datu-eredu komunaren manifestua izan behar dute datu-fitxategien eskema irudikatzeko (*.csv edo *.parquet). Manifestuak entitateen xehetasunak eman behar ditu, hala nola entitate-zutabeak eta datu-motak, eta datu-fitxategiaren kokapena eta fitxategi-mota. Informazio gehiagorako, ikus [Common Data Model manifestua](/common-data-model/sdk/manifest). Manifestua ez badago, Storage Blob Data Owner edo Storage Blob Data Contributor sarbidea duten administratzaileek eskema defini dezakete datuak irenstean.
+- datu-iturburu konexioa konfiguratzen duen erabiltzaileak Storage Blob Data Contributor baimen gutxien behar ditu biltegiratze-kontuan.
+
+- Zure Data Lake Storage-ko datuek zure datuak biltegiratzeko Common Data Model estandarra jarraitu behar dute eta datu-eredu komunaren manifestua izan behar dute datu-fitxategien eskema irudikatzeko (*.csv edo *.parquet). Manifestuak entitateen xehetasunak eman behar ditu, hala nola entitate-zutabeak eta datu-motak, eta datu-fitxategiaren kokapena eta fitxategi-mota. Informazio gehiagorako, ikus [Common Data Model manifestua](/common-data-model/sdk/manifest). Manifestua ez badago, Storage Blob Data Owner edo Storage Blob Data Contributor sarbidea duten administratzaile erabiltzaileek eskema defini dezakete datuak sartzerakoan.
 
 ## <a name="connect-to-azure-data-lake-storage"></a>Konektatu Azure Data Lake Storage-ra
 
@@ -50,9 +52,9 @@ Sartu datuak Dynamics 365 Customer Insights zure erabiliz Azure Data Lake Storag
 
 1. Hautatu **Azure data Lake biltegiratzea**.
 
-   :::image type="content" source="media/data_sources_ADLS.png" alt-text="Elkarrizketa-koadroa Azure Data Lake-ren konexioaren xehetasunak sartzeko." lightbox="media/data_sources_ADLS.png":::
+   :::image type="content" source="media/data_sources_ADLS.png" alt-text="Elkarrizketa-koadroa Azure Data Lake-rako konexioaren xehetasunak sartzeko." lightbox="media/data_sources_ADLS.png":::
 
-1. Sartu a **Izena** datu-iturburu eta aukerakoa **Deskribapena**. Izenak datu-iturburu modu esklusiboan identifikatzen du eta beheranzko prozesuetan aipatzen da eta ezin da aldatu.
+1. Sartu a **Izena** datu-iturburu eta aukerako bat **Deskribapena**. Izenak datu-iturburu modu esklusiboan identifikatzen du eta beheranzko prozesuetan aipatzen da eta ezin da aldatu.
 
 1. Aukeratu aukera hauetako bat **Konektatu biltegia erabiliz**. Informazio gehiagorako, ikus [Konektatu Customer Insights bat Azure Data Lake Storage Gen2 kontua Azure zerbitzu nagusi batekin](connect-service-principal.md).
 
@@ -62,7 +64,7 @@ Sartu datuak Dynamics 365 Customer Insights zure erabiliz Azure Data Lake Storag
    > [!NOTE]
    > Rol hauetako bat behar duzu edukiontzian edo biltegiratze-kontuan datu-iturburu sortzeko:
    >
-   >  - Storage Blob Data Reader nahikoa da biltegiratze-kontu batetik irakurtzeko eta datuak Customer Insights-era sartzeko. 
+   >  - Storage Blob Data Reader nahikoa da biltegiratze-kontu batetik irakurtzeko eta datuak Customer Insights-era sartzeko.
    >  - Storage Blob Data Contributor edo Owner beharrezkoa da manifest-fitxategiak zuzenean Customer Insights-en editatu nahi badituzu.  
   
 1. Aukeratu izena **Edukiontzia** datuak eta eskema (model.json edo manifest.json fitxategia) dituen datuak inportatzeko, eta hautatu **Hurrengoa**.
@@ -110,7 +112,7 @@ Datuak kargatzeak denbora behar dezake. Freskatu arrakastatsu baten ondoren, ire
 
 1. Hautatu **Eskema fitxategi berria**.
 
-1. Idatzi fitxategiaren izen bat eta hautatu **Gorde**.
+1. Idatzi izen bat fitxategiarentzat eta hautatu **Gorde**.
 
 1. Hautatu **Entitate berria**. The **Entitate Berria** paneleko pantailak.
 
@@ -122,7 +124,7 @@ Datuak kargatzeak denbora behar dezake. Freskatu arrakastatsu baten ondoren, ire
 
 1. Sakatu **Gorde**.
 
-   :::image type="content" source="media/ADLS_new_entity_define_attributes.png" alt-text="Atributuak automatikoki definitzeko edo sortzeko elkarrizketa-koadroa.":::
+   :::image type="content" source="media/ADLS_new_entity_define_attributes.png" alt-text="Atributuak definitzeko edo automatikoki sortzeko elkarrizketa-koadroa.":::
 
 1. Hautatu **atributuak definitzea** atributuak eskuz gehitzeko edo hautatu **automatikoki sortu**. Atributuak definitzeko, idatzi izen bat, hautatu datu-formatua eta aukerako mota semantikoa. Automatikoki sortutako atributuetarako:
 
@@ -162,7 +164,7 @@ Eguneratu dezakezu *Konektatu biltegiratze-kontura erabiliz* aukera. Informazio 
 
 1. Joan **Datuak** > **Datu-iturburuak**.
 
-1. Eguneratu nahi duzun datu-iturburu ondoan, hautatu **Editatu**.
+1. Eguneratu nahi duzun datu-iturburu-aren ondoan, hautatu **Editatu**.
 
    :::image type="content" source="media/data_sources_edit_ADLS.png" alt-text="Azure Data Lake datu-iturburu editatzeko elkarrizketa-koadroa.":::
 
@@ -179,14 +181,14 @@ Eguneratu dezakezu *Konektatu biltegiratze-kontura erabiliz* aukera. Informazio 
    - **Gaitu esteka pribatua** biltegiratze-kontu bateko datuak Azure esteka pribatu baten bidez sartu nahi badituzu. Informazio gehiagorako, ikus [Esteka pribatuak](security-overview.md#set-up-an-azure-private-link).
 
 1. Hautatu **Hurrengoa**.
-1. Aldatu hauetako bat:
+1. Aldatu hurrengoetako bat:
    - Nabigatu beste model.json edo manifest.json fitxategi batera edukiontziko beste entitate multzo batekin.
    - Irensteko entitate gehigarriak gehitzeko, hautatu **Entitate berria**.
    - Mendekotasunik ez badago jada hautatutako entitateak kentzeko, hautatu entitatea eta **Ezabatu**.
       > [!IMPORTANT]
       > Lehendik dauden model.json edo manifest.json fitxategiaren eta entitateen multzoaren menpekotasunak badaude, errore mezu bat ikusiko duzu eta ezin duzu model.json edo manifest.json fitxategi desberdin bat hautatu. Kendu mendekotasun horiek model.json edo manifest.json fitxategia aldatu aurretik edo sortu datu-iturburu berri bat mendekotasunak ez kentzeko erabili nahi dituzun model.json edo manifest.json fitxategiarekin.
    - Datu-fitxategiaren kokapena edo gako nagusia aldatzeko, hautatu **Editatu**.
-   - Irensteko datu gehigarriak aldatzeko, ikus [Konfiguratu inkremental freskatze bat Azure Data Lake datu-iturburuetarako](incremental-refresh-data-sources.md).
+   - Irensteko datu gehigarriak aldatzeko, ikus [Konfiguratu inkrementala freskatze bat Azure Data Lake datu-iturburuetarako](incremental-refresh-data-sources.md).
    - Aldatu soilik entitatearen izena .json fitxategiko entitatearen izenarekin bat etor dadin.
 
      > [!NOTE]

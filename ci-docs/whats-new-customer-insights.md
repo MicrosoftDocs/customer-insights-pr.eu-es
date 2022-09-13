@@ -8,12 +8,12 @@ author: m-hartmann
 ms.author: mhart
 ms.reviewer: skumm
 manager: shellyha
-ms.openlocfilehash: 1e734464cec1f66428c3a2a2e403437a2a9d8500
-ms.sourcegitcommit: 624b27bb65a0de1970dc1ac436643b493f0a31cf
+ms.openlocfilehash: acba06cba5fb5cbf0bca5aeb30b603003555fc32
+ms.sourcegitcommit: 3ab8f1c0ba5874095a19f0b6367b9a4432f72ed1
 ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 08/31/2022
-ms.locfileid: "9387267"
+ms.lasthandoff: 09/06/2022
+ms.locfileid: "9409342"
 ---
 # <a name="whats-new-in-dynamics-365-customer-insights"></a>Dynamics 365 Customer Insights-en berritasunak
 
@@ -41,6 +41,14 @@ Informazio gehiagorako, ikus [Sortu kontaktu profil bateratua](data-unification-
 Kontaktuen bateratze berriari esker, kontaktuen segmentuak sor ditzakezu kontaktuen, kontuen edo bietako irizpideak erabiliz. Segmentu hauek beste zerbitzu batzuetan aktibatzeko esporta daitezke.
 
 Informazio gehiagorako, ikus [Esportazioen ikuspegi orokorra](export-destinations.md).
+
+### <a name="deployment-regions-aligned-with-microsoft-dataverse"></a>Lerrokatuta dauden hedapen-eskualdeak Microsoft Dataverse
+
+Customer Insights ingurune berri bat sortzean, zerbitzua inplementatzea eta ostatatzea nahi duzun eskualdea hauta dezakezu. Eskualdeen hautaketa eguneratu dugu lerrokatzeko Microsoft Dataverse eta Power Platform.
+
+Orain erraz hauta dezakezu lehendik duzun eskualde bera Microsoft Dataverse ingurunea edo zure Azure Data Lake biltegiratze-kontua (aukera hori hautatzen baduzu), Customer Insights-en eskuragarritasunaren arabera eskualde horretan.
+
+Informazio gehiagorako, ikus [Sortu ingurune berri bat](create-environment.md) eta [Produktuen erabilgarritasuna geografiaren arabera](https://dynamics.microsoft.com/availability-reports/).
 
 ## <a name="july-2022-updates"></a>2022ko uztaileko eguneraketak
 
@@ -116,7 +124,7 @@ Orain egin dezakezu [segmentu baten erabileraren jarraipena](segments.md#track-u
 
 Criteo erabiltzaileei publizitate digitala kudeatzen laguntzen dien lineako plataforma bat da. Orain bezeroen profil bateratuen segmentuak esporta ditzakezu kanpainak sortzeko, posta elektronikoko marketina eskaintzeko eta bezero talde zehatzak erabiltzeko Criteorekin.
 
-Informazio gehiagorako, ikus [Esportatu segmentuak Criteo-ra (aurrebista)](export-criteo.md).
+Informazio gehiagorako, ikus [Esportatu segmentuak Criteora (aurrebista)](export-criteo.md).
 
 ### <a name="refined-documentation-structure-for-environment-creation"></a>Ingurumena sortzeko dokumentazio egitura findua
 
@@ -128,11 +136,11 @@ Informazio gehiagorako, ikus [Nola: Ingurune berri bat sortu](create-environment
 
 2022ko apirileko eguneratzeek eginbide berriak, errendimenduaren hobekuntzak eta akatsen konponketak barne hartzen dituzte.
 
-### <a name="dun--bradstreet-enrichment-preview"></a>Dun & Bradstreet-en aberastea (aurrebista)
+### <a name="dun--bradstreet-enrichment-preview"></a>Dun & Bradstreet aberastea (aurrebista)
 
 Dun & Bradstreet-ek negozioentzako datu komertzialak, analitikoak eta ikuspegiak eskaintzen ditu. Enpresentzako bezeroen profil bateratuak dituzten bezeroei beren datuak aberasteko aukera ematen die. Aberasteen artean, DUNS zenbakia, enpresaren tamaina, kokapena, industria eta abar bezalako atributuak daude.
 
-Informazio gehiagorako, ikus [Enpresaren profilak aberastea Dun & Bradstreet-ekin (aurrebista)](enrichment-dnb.md).
+Informazio gehiagorako, ikus [Enpresa-profilak aberastea Dun & Bradstreet-ekin (Aurrebista)](enrichment-dnb.md).
 
 ### <a name="define-the-measure-type-when-creating-a-new-measure"></a>Zehaztu neurri mota neurri berri bat sortzerakoan
 
@@ -167,38 +175,38 @@ Informazio gehiagorako, ikus [Etiketa eta zutabeekin lan egin](work-with-tags-co
 Zure inguruneak erabiltzen badu Azure Data Lake Storage Customer Insights datuak gordetzeko, datuak partekatzeko Microsoft Dataverse konfigurazio gehigarri bat behar du.
 Lehenago, datuen partekatzea soilik gaitu dezakezu Dataverse zure datuak gure kudeatutako datu-lakuan gorde zirenean.
 
-Informazio gehiagorako, ikus [Gaitu honekin datuak partekatzea Dataverse zuretik Azure Data Lake Storage (Aurrebista)](customer-insights-dataverse.md#enable-data-sharing-with-dataverse-from-your-own-azure-data-lake-storage-preview) .
+Informazio gehiagorako, ikus [Gaitu honekin datuak partekatzea Dataverse zuretik Azure Data Lake Storage (Aurrebista)](customer-insights-dataverse.md#enable-data-sharing-with-dataverse-from-your-own-azure-data-lake-storage-preview).
 
 ### <a name="new-export-destinations-iterable-and-braze"></a>Esportazio-helmuga berriak: Iterable eta Braze
 
 Esportazio-helmugetako gure ekosistema zabaltzen jarraitzen dugu konexio berriekin. Orain segmentuak esporta ditzakezu Iterable eta Braze-ra haien aktibazio zerbitzuak erabiltzeko.
 
-Informazio gehiagorako, ikus [Esportatu segmentuak Iterablera (aurrebista)](export-iterable.md) eta [Esportatu segmentuak Braze-ra (aurrebista)](export-braze.md) .
+Informazio gehiagorako, ikus [Esportatu segmentuak Iterablera (aurrebista)](export-iterable.md) eta [Esportatu segmentuak Braze-ra (aurrebista)](export-braze.md).
 
 ### <a name="improvements-to-marketo-and-google-ads-export"></a>Marketo eta Google Ads esportatzeko hobekuntzak
 
 Konektatutako zerbitzuetan APIak aldatzeak konektoreen eguneraketak ekartzen ditu fidagarri eta arin exekutatzeko. Marketo eta Google Ads zerbitzuetara esportatzeko eguneratze batzuk kaleratu ditugu:
 
-- Google Ads: Google Ads esportazio-konektorearen bertsio berriak autentifikazio-esperientzia errazten du eta orain Google Ads-eko audientzia berriak sortzeko aukera ematen dizu automatikoki. 
+- Google Ads: Google Ads esportazio-konektorearen bertsio berriak autentifikazio-esperientzia errazten du eta orain Google Ads-eko audientzia berriak automatikoki sortzeko aukera ematen dizu. 
 - Marketo: Marketo esportazio-konektorearen bertsio berriak Marketo IDrako euskarria eskaintzen du, eta horri esker, datuak bikoiztu, lehendik dauden erregistroak eguneratu eta Marketo-n erregistro berriak sortu ditzakezu. 
 
 ## <a name="february-2022-updates"></a>2022ko otsaileko eguneraketak
 
 2022ko otsaileko eguneratzeek eginbide berriak, errendimenduaren hobekuntzak eta akatsen konponketak barne hartzen dituzte.
 
-### <a name="general-availability-for-prediction-models"></a>iragarpen modeloen erabilgarritasun orokorra
+### <a name="general-availability-for-prediction-models"></a>Iragarpen modeloen erabilgarritasun orokorra
 
 Kutxaz kanpoko iragarpen ereduak, barne **harpidetza txanda**, **txandaka**, eta **bezeroaren bizitzako balioa (CLV)** orokorrean eskuragarri egongo da Customer Insights-en zati gisa. 
 
-Informazio gehiagorako, ikus [Iragarpenen ikuspegi orokorra](predictions-overview.md) .
+Informazio gehiagorako, ikus [Iragarpenen ikuspegi orokorra](predictions-overview.md).
 
 ### <a name="new-data-source-integration-with-azure-synapse-analytics-preview"></a>datu-iturburu berria: bateratzea Azure Synapse Analytics (Aurrebista)
 
-Azure Synapse Analytics datu biltegietan eta big data sistemetan informaziorako denbora azkartzen duen enpresa analitika zerbitzu bat da.
+Azure Synapse Analytics Datu biltegietan eta datu handien sistemetan informaziorako denbora bizkortzen duen enpresa-analisi-zerbitzu bat da.
 
 Dagoeneko erabiltzen duten erakundeak Azure Synapse Analytics Datu horiek Customer Insights-en har ditzake. 
 
-Informazio gehiagorako, ikus [Konektatu bat Azure Synapse datu-iturburu (Aurrebista)](connect-synapse.md) .
+Informazio gehiagorako, ikus [Konektatu bat Azure Synapse datu-iturburu (Aurrebista)](connect-synapse.md).
 
 ### <a name="liveramp-enrichment-preview"></a>LiveRamp aberastea (aurrebista)
 
@@ -210,19 +218,19 @@ Informazio gehiagorako, ikus [Aberastu bezeroen profilak LiveRamp-eko identitate
 
 Erabili Microsoft eta beste bazkide batzuen iturrietako datuak zure bezeroen datuak aberasteko datuak bateratu aurretik. datu-iturburu aberasteek datuen osotasun eta kalitate handiagoa sortzen laguntzen dute, eta horrek emaitza hobeak lortzen lagunduko dizu datuak bateratu ondoren.
 
-Informazio gehiagorako, ikus [Datu-iturburuetarako aberastea (aurrebista)](data-sources-enrichment.md) .
+Informazio gehiagorako, ikus [Datu iturrietarako aberastea (Aurrebista)](data-sources-enrichment.md).
 
 ### <a name="change-owner-of-environment"></a>Aldatu ingurunearen jabea
 
 Hainbat erabiltzailek Customer Insights-en administratzaile-baimenak izan ditzaketen arren, erabiltzaile bakarra da ingurune baten jabea. Esperientzia hobetu batek ingurune baten jabeak alda ditzakezu eta jabe ohi batek erakundea utziz gero jabetza erreklamatzeko aukera ematen dizu. 
 
-Informazio gehiagorako, ikus [Ingurune baten jabea aldatu](manage-environments.md#change-the-owner-of-an-environment) .
+Informazio gehiagorako, ikus [Ingurune baten jabea aldatu](manage-environments.md#change-the-owner-of-an-environment).
 
 ### <a name="data-preparation-process-lists-corruption-reason-for-corrupted-records"></a>Datuak prestatzeko prozesuak hondatutako erregistroen ustelkeria arrazoiak zerrendatzen ditu
 
 Datuak prestatzeak datu hondatuak dituzten eremu guztien ustelkeriaren arrazoia erakusten du. Informazioa erregistro indibidualaren mailan ematen da erraz identifikatzeko. 
 
-Informazio gehiagorako, ikus [Datu iturri hondatuak](entities.md#corrupted-data-sources) .
+Informazio gehiagorako, ikus [Datu iturri hondatuak](entities.md#corrupted-data-sources).
 
 ### <a name="end-of-preview-for-reporting-features-in-the-engagement-insights-capability"></a>Engaiamenduaren estatistiken gaitasunean txostenak egiteko eginbideen aurrebistaren amaiera
 
@@ -246,7 +254,7 @@ Jarri harremanetan zure Microsoft kontuko taldearekin zuzenean gaitasunen aurreb
 
 ### <a name="sentiment-analysis-of-your-customers-feedback"></a>Zure bezeroen iritzien analisia
 
-Customer Insights-ek AI-k bultzatutako eginbide berri bat eskaintzen du bezeroen sentimendua sintetizatzeko eta negozio-alderdi zehatzak identifikatzeko, hobekuntzak hobetzeko aukera gisa. Zure bezeroen idatzizko iritziak aztertuz gero, informazio zehatzak lor ditzakezu kostu txikian. Sentimenduen analisia Lengoaia Naturaleko Prozesamenduaren (NLP) ereduek bultzatuta, bezeroaren ID bakoitzeko bi informazio eratorri sortzen dituztenak. Sentimendu puntuazioa (-5etik 5era) eta negozio-alderdi aplikagarrien zerrenda. 
+Customer Insights-ek AI-k bultzatutako funtzio berri bat eskaintzen du bezeroen sentimendua sintetizatzeko eta negozio-alderdi espezifikoak identifikatzeko, hobekuntzak hobetzeko aukera gisa. Zure bezeroen idatzizko iritziak aztertuz gero, informazio zehatzak lor ditzakezu kostu txikian. Sentimenduen analisia Lengoaia Naturaleko Prozesamenduaren (NLP) ereduek bultzatuta, bezeroaren ID bakoitzeko bi informazio eratorri sortzen dituztenak. Sentimendu puntuazioa (-5etik 5era) eta negozio-alderdi aplikagarrien zerrenda. 
 
 Informazio gehiagorako, ikus [Aztertu sentimendua bezeroen iritzietan (Aurrebista)](sentiment-analysis.md).
 

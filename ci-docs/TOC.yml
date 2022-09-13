@@ -88,7 +88,7 @@
       href: enrichment-office.md
     - name: Markak eta zaletasunak
       href: enrichment-microsoft.md
-    - name: Dun & Bradstreet enpresaren datuak
+    - name: Dun & Bradstreet-en konpainiaren datuak
       href: enrichment-dnb.md
     - name: Leadspace-eko enpresa-datuak
       href: enrichment-leadspace.md
@@ -160,8 +160,6 @@
           href: sentiment-analysis.md
         - name: Erabili Azure Ikaskuntza automatikoko eredu pertsonalizatuak
           href: custom-models.md
-        - name: Osatu partzialki falta diren datuak
-          href: predictions.md
     - name: Gida laginak
       items:
         - name: CLVren iragarpen gida lagina

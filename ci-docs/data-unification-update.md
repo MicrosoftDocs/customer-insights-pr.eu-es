@@ -1,7 +1,7 @@
 ---
 title: Eguneratu bezero, kontu edo kontaktuen bateratze-ezarpenak
 description: Eguneratu bikoiztutako arauak, bat-etortze-arauak edo eremu bateratuak bezeroaren edo kontuaren bateratze-ezarpenetan.
-ms.date: 08/12/2022
+ms.date: 08/26/2022
 ms.subservice: audience-insights
 ms.topic: tutorial
 author: Scott-Stabbert
@@ -13,12 +13,12 @@ searchScope:
 - ci-merge
 - ci-relationships
 - customerInsights
-ms.openlocfilehash: f2c14c169f5973b5f400989b9eeea593eba09182
-ms.sourcegitcommit: 267c317e10166146c9ac2c30560c479c9a005845
+ms.openlocfilehash: e893e66fd7691b9703d51ed8f87cfad63880cc3b
+ms.sourcegitcommit: 560c4ee16376a9c6fdd7860988ce2d2440194fa5
 ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 08/16/2022
-ms.locfileid: "9304320"
+ms.lasthandoff: 09/01/2022
+ms.locfileid: "9392456"
 ---
 # <a name="update-unification-settings"></a>Eguneratu bateratze-ezarpenak
 
@@ -30,7 +30,7 @@ Profil bateratua sortu ondoren bateratze-ezarpenak berrikusteko edo aldatzeko, e
 
    :::image type="content" source="media/m3_unified.png" alt-text="Datuak bateratu ondoren datuak bateratu orriaren pantaila-argazkia." lightbox="media/m3_unified.png":::
 
-   Enpresa kontuetarako (B-to-B), the **Bateratu** orrialdeak kontu bateratze-urrats bakoitzeko kontu bateratuaren profil eta lauza kopurua bistaratzen du. Kontaktuak bateratu baziren, kontaktuen bateratze-urrats bakoitzeko kontaktuen profil eta lauza bateratuen kopurua bistaratzen da. Aukeratu azpian dagoen fitxa egokia **Kontuak bateratu** edo **Batu kontaktuak (aurrebista)** eguneratu nahi duzunaren arabera.
+   Enpresa kontuetarako (B-to-B), the **Bateratu** orrialdeak kontu bateratze-urrats bakoitzeko kontu bateratuaren profil eta lauza kopurua bistaratzen du. Kontaktuak bateratuta bazeuden, kontaktuen bateratze-urrats bakoitzeko kontaktuen profil eta lauza bateratuen kopurua bistaratzen da. Aukeratu azpian dagoen fitxa egokia **Kontuak bateratu** edo **Batu kontaktuak (aurrebista)** eguneratu nahi denaren arabera.
 
    :::image type="content" source="media/b2b_unified.png" alt-text="Datuak bateratzea orriaren pantaila-argazkia kontua eta kontaktuaren datuak bateratu ondoren." lightbox="media/b2b_unified.png":::
 
@@ -38,7 +38,7 @@ Profil bateratua sortu ondoren bateratze-ezarpenak berrikusteko edo aldatzeko, e
    > The **Bat datozen baldintzak** lauza entitate bat baino gehiago hautatuta badago soilik bistaratzen da.
 
 1. Aukeratu zer eguneratu nahi duzun:
-   - [Iturburu-eremuak](#edit-source-fields) entitateak edo atributuak gehitzeko edo atributu motak aldatzeko.
+   - [Iturburu-eremuak](#edit-source-fields) atributuak edo entitateak gehitzeko edo atributu motak aldatzeko. Atributu bat kentzeko, ikus [Kendu eremu bateratua](#remove-a-unified-field). Entitate bat kentzeko, ikus [Kendu entitate bateratu bat](#remove-a-unified-entity).
    - [Erregistro bikoiztuak](#manage-deduplication-rules) desduplicazio-arauak kudeatzeko edo hobespenak bateratzeko.
    - [Bat datozen baldintzak](#manage-match-rules) bi entitate edo gehiagotan bat datozen arauak eguneratzeko.
    - [Bezeroen eremu bateratuak](#manage-unified-fields) eremuak konbinatzeko edo baztertzeko. Erlazionatutako profilak multzotan ere taldeka ditzakezu.
@@ -53,8 +53,6 @@ Profil bateratua sortu ondoren bateratze-ezarpenak berrikusteko edo aldatzeko, e
 
 ## <a name="edit-source-fields"></a>Editatu iturburu-eremuak
 
-Ezin duzu kendu atributu edo entitate bat dagoeneko bateratuta badaude.
-
 1. Hautatu **Editatu** gainean **Iturburu-eremuak** teila.
 
    :::image type="content" source="media/m3_source_edit.png" alt-text="Iturburu-eremuen orriaren pantaila-argazkia, gako nagusien, mapatutako eta mapatu gabeko eremuen kopurua erakusten duena":::
@@ -66,6 +64,80 @@ Ezin duzu kendu atributu edo entitate bat dagoeneko bateratuta badaude.
 1. Aukeran, entitate baten gako nagusia, atributu motak eta txandaka ditzakezu **Kartografia adimenduna** piztu edo itzali. Informazio gehiagorako, ikus [Hautatu iturri-eremuak](map-entities.md).
 
 1. Hautatu **Hurrengoa** desduplicazio-arauetan aldaketak egiteko, edo hautatu **Gorde eta itxi** eta itzuli [Eguneratu bateratze-ezarpenak](#update-unification-settings).
+
+### <a name="remove-a-unified-field"></a>Kendu eremu bateratua
+
+Bateratua izan den eremu bat kentzeko, eremua kendu behar da edozein menpekotasunetatik, hala nola, segmentu, neurri, aberasgarri edo erlazioetatik.
+
+1. Eremuaren menpekotasun guztiak kendu ondoren, joan hona **Datuak** > **Bateratu**.
+
+1. Hautatu **Editatu** gainean **Bezeroen eremu bateratuak** teila.
+
+1. Hautatu eremuko agerraldi guztiak eta, ondoren, hautatu **Baztertu**.
+
+   :::image type="content" source="media/m3_remove_attribute1.png" alt-text="Hautatutako eremuak eta Baztertu botoia erakusten dituen Eremu bateratuak orriaren pantaila-argazkia":::
+
+1. Hautatu **Eginda** berresteko eta gero hautatu **Gorde eta itxi**.
+
+   > [!TIP]
+   > Mezua ikusten baduzu "Ezin izan da bateratu gorde. Zehaztutako baliabidea ezin da aldatu edo ezabatu beherako mendekotasunengatik", orduan eremua beheranzko mendekotasun batean erabiltzen da oraindik.
+
+1. Eremua erregistro bikoiztuetarako edo bat datozen baldintzetarako arau batean erabiltzen bada, egin urrats hauek. Bestela, joan hurrengo urratsera.
+   1. Hautatu **Editatu** gainean **Erregistro bikoiztuak** teila.
+   1. Kendu eremua erabiltzen den arau guztietatik, hala badagokio, eta hautatu **Hurrengoa**.
+   1. Gainean **Bat datozen baldintzak** orrialdea, kendu eremua erabiltzen den arau guztietatik, hala badagokio, eta hautatu **Gorde eta itxi**.
+   1. Hautatu **Bateratu** > **Bezeroen profilak eta menpekotasunak bateratzea**. Itxaron bateratzea osatzeko hurrengo urratsera joan aurretik.
+
+1. Hautatu **Editatu** gainean **Iturburu-eremuak** teila.
+
+1. Hautatu **Hautatu entitateak eta eremuak** eta garbitu eremuaren agerraldi bakoitzaren ondoan dagoen kontrol-laukia.
+
+   :::image type="content" source="media/m3_remove_attribute2.png" alt-text="Garbitutako kontrol-laukiak erakusten dituen Hautatu entitateak eta eremuak elkarrizketa-koadroaren pantaila-argazkia":::
+
+1. Hautatu **Aplikatu**.
+
+1. Hautatu **Gorde eta itxi**.
+
+1. Hautatu **Bateratu** > **Bezeroen profilak eta menpekotasunak bateratzea** profil bateratua eguneratzeko.
+
+### <a name="remove-a-unified-entity"></a>Kendu entitate bateratu bat
+
+Bateratu den entitate bat kentzeko, entitatea kendu behar da edozein menpekotasunetatik, hala nola, segmentu, neurri, aberasgarri edo erlazioetatik.
+
+1. Entitateari menpekotasun guztiak kendu ondoren, joan hona **Datuak** > **Bateratu**.
+
+1. Hautatu **Editatu** gainean **Bezeroen eremu bateratuak** teila.
+
+1. Hautatu entitatearen eremu guztiak eta, ondoren, hautatu **Baztertu**.
+
+   :::image type="content" source="media/m3_remove_entity1.png" alt-text="Eremu bateratuen pantaila-argazkia entitate baten eremu guztiak hautatuta eta Baztertu botoia":::
+
+1. Hautatu **Eginda** berresteko eta gero hautatu **Gorde eta itxi**.
+
+   > [!TIP]
+   > Mezua ikusten baduzu "Ezin izan da bateratu gorde. Zehaztutako baliabidea ezin da aldatu edo ezabatu beherako menpekotasunengatik", orduan oraindik entitatea beheranzko mendekotasun batean erabiltzen da.
+
+1. Hautatu **Editatu** gainean **Erregistro bikoiztuak** teila.
+
+1. Kendu arau guztiak entitatetik, halakorik badago, eta hautatu **Hurrengoa**.
+
+1. Gainean **Bat datozen baldintzak** orrialdea, hautatu entitatea eta gero hautatu **Ezabatu**.
+
+   :::image type="content" source="media/m3_remove_entity2.png" alt-text="Hautatutako entitatearekin eta Ezabatu botoiarekin bat datozen baldintzak pantaila-argazkia":::
+
+1. Hautatu **Gorde eta itxi**.
+
+1. Hautatu **Editatu** gainean **Iturburu-eremuak** teila.
+
+1. Hautatu **Hautatu entitateak eta eremuak** eta garbitu entitatearen ondoko kontrol-laukia.
+
+   :::image type="content" source="media/m3_remove_entity3.png" alt-text="Hautatu entitateak eta eremuak elkarrizketa-koadroaren pantaila-argazkia, entitatearen kontrol-laukia garbituta":::
+
+1. Hautatu **Aplikatu**.
+
+1. Hautatu **Gorde eta itxi**.
+
+1. Hautatu **Bateratu** > **Bezeroen profilak eta menpekotasunak bateratzea** profil bateratua eguneratzeko.
 
 ## <a name="manage-deduplication-rules"></a>Kudeatu deduplicazio-arauak
 
@@ -159,7 +231,7 @@ Partiduen parametro gehienak birkonfigura eta doitu ditzakezu. Ezin dituzu entit
 
 ## <a name="run-matching-conditions"></a>Exekutatu bat datozen baldintzak
 
-Exekutatu bat datozen baldintzak desduplicazioa eta bat-etortze-arauak soilik exekutatzen ditu eta eguneratzen du *Desbikoizpena_* * eta *ConflationMatchPair* entitateak.
+Exekutatu bat datozen baldintzak desbikoiztu eta bat datozen arauak soilik exekutatzen ditu eta eguneratzen du *Desbikoizpena_* * eta *ConflationMatchPair* entitateak.
 
 1. Tik **Datuak** > **Bateratu** orrialdea, hautatu **Exekutatu bat datozen baldintzak soilik**.
 

@@ -1,5 +1,5 @@
 ---
-title: Programatu sistema freskatzea
+title: Programatu sistemaren freskatzea
 description: Programatu sistema freskatu behar den ordua
 ms.date: 08/09/2022
 ms.subservice: audience-insights
@@ -11,19 +11,19 @@ manager: shellyha
 searchScope:
 - ci-system-schedule
 - customerInsights
-ms.openlocfilehash: ce10fcfe9906d33209270f8f6930a51b045b13e2
-ms.sourcegitcommit: 49394c7216db1ec7b754db6014b651177e82ae5b
+ms.openlocfilehash: 949ea071ca41127b0c45488d5d7af3f6aa4e1c35
+ms.sourcegitcommit: d7054a900f8c316804b6751e855e0fba4364914b
 ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 08/10/2022
-ms.locfileid: "9246422"
+ms.lasthandoff: 09/02/2022
+ms.locfileid: "9395941"
 ---
-# <a name="schedule-system-refresh"></a>Programatu sistema freskatzea
+# <a name="schedule-system-refresh"></a>Programatu sistemaren freskatzea
 
 Programatu zure guztien freskatze automatikoak [irentsitako datu-iturriak](data-sources.md). Freskatze automatikoak zure datuen iturrien eguneratzeak zure bezeroen profil bateratuetan islatzen laguntzen du.
 
 > [!NOTE]
-> Power Query Zuk kudeatzen dituzun datu-iturriak beren ordutegiak freskatzen dituzte. Hauen freskatzea antolatzeko Power Query datu-iturburuak, konfiguratu freskatze-ezarpenak datu-iturburu zehatz horretan **Datu-iturriak** orrialdea.
+> Power Query Zuk kudeatutako datu-iturriak beren ordutegiak freskatzen dituzte. Hauen berriztapena antolatzeko Power Query datu-iturburuak, konfiguratu datu-iturburu zehatz horretan freskatze ezarpenak **Datu-iturriak** orrialdea.
 > :::image type="content" source="media/PPDF-edit-refresh.png" alt-text="Power Platform Datu-fluxua freskatzeko ezarpenak.":::
 
 ## <a name="set-system-refresh-schedule"></a>Ezarri sistemaren freskatze-egutegia
@@ -36,7 +36,7 @@ Programatu zure guztien freskatze automatikoak [irentsitako datu-iturriak](data-
 
 1. Aukeratu artean **Asterokoa** (lehenetsia) eta **Egunekoa** freskatzen. Astean freskagarriak antolatzeko asmoa baduzu, hautatu freskagarria exekutatu nahi duzun egun bat edo gehiago.
 
-1. Ezarri zure **Ordu eremu** eta ondoren erabili **Ordua** goitibeherako zure freskatze-denbora ezartzeko. Egun bakarrean hainbat freskatze programatu nahi badituzu, hautatu **Gehitu beste denbora**.
+1. Ezarri zure **Ordu eremu** eta ondoren erabili **Ordua** goitibeherako zure freskatze-denbora ezartzeko. Egun bakarrean hainbat freskatze programatu nahi badituzu, hautatu **Gehitu beste denbora**. Gehienez lau freskatze gehi ditzakezu.
 
 1. Aldaketak aplikatzeko, hautatu **Gorde**.
 
