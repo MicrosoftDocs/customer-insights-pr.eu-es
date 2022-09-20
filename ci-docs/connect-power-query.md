@@ -5,19 +5,19 @@ ms.date: 07/26/2022
 ms.reviewer: v-wendysmith
 ms.subservice: audience-insights
 ms.topic: how-to
-author: adkuppa
-ms.author: matgos
+author: mukeshpo
+ms.author: mukeshpo
 manager: shellyha
 searchScope:
 - ci-data-sources
 - ci-create-data-source
 - customerInsights
-ms.openlocfilehash: 7af51ed04fbd28149ea501c58e6fe71b5fa6d4b6
-ms.sourcegitcommit: 5807b7d8c822925b727b099713a74ce2cb7897ba
+ms.openlocfilehash: 6a25e332bafab414c9def4e1e6b461139dd24ea6
+ms.sourcegitcommit: dfba60e17ae6dc1e2e3830e6365e2c1f87230afd
 ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 07/28/2022
-ms.locfileid: "9207030"
+ms.lasthandoff: 09/09/2022
+ms.locfileid: "9463250"
 ---
 # <a name="connect-to-a-power-query-data-source"></a>Konektatu a Power Query datu-iturburu
 
@@ -63,7 +63,9 @@ Oinarritutako datu-iturriak gehitzea Power Query konektoreak, oro har, atal hone
 Datuak kargatzeak denbora behar dezake. Freskatu arrakastatsu baten ondoren, irentsitako datuak berrikusi daitezke [**Entitateak**](entities.md) orrialdea.
 
 > [!CAUTION]
-> Oinarritutako datu-iturburu bat Power Query bat sortzen du [datu-fluxua sartu Dataverse](/power-query/dataflows/overview-dataflows-across-power-platform-dynamics-365). Ez aldatu datu-fluxu baten izena fitxategian Power Platform Customer Insights-en erabiltzen den administrazio-zentroa. Datu-fluxu baten izena aldatzeak arazoak sortzen ditu Customer Insights datu-iturburu eta erreferentzien artean.Dataverse datu-fluxua.
+>
+> - Oinarritutako datu-iturburu bat Power Query bat sortzen du [datu-fluxua sartu Dataverse](/power-query/dataflows/overview-dataflows-across-power-platform-dynamics-365). Ez aldatu datu-fluxu baten izena fitxategian Power Platform Customer Insights-en erabiltzen den administrazio-zentroa. Datu-fluxu baten izena aldatzeak arazoak sortzen ditu Customer Insights datu-iturburu eta erreferentziekin.Dataverse datu-fluxua.
+> - Aldibereko ebaluazioak egiteko Power Query Customer Insights-en datu iturriek gauza bera dute [freskatu mugak PowerBI.com-en Dataflows bezalakoak](/power-query/power-query-online-limits#refresh-limits). Datuak freskatzeak huts egiten badu ebaluazio-mugara iritsi delako, datu-fluxu bakoitzaren freskatze-egutegia doitzea gomendatzen dugu datu-iturriak aldi berean prozesatzen ez direla ziurtatzeko.
 
 ### <a name="available-power-query-data-sources"></a>Eskuragarri Power Query datu-iturriak
 
@@ -77,12 +79,12 @@ Lokal datu-iturburuetako datuak barneratzea onartzen da Microsoft Power Platform
 
 A elkartu ondoren sortzen diren datu-iturriak Dataverse Customer Insights erabilera duen ingurunea [Power Platform datu-fluxuak](/power-query/dataflows/overview-dataflows-across-power-platform-dynamics-365) lehenetsiz. Datu fluxuek konektibitate lokala onartzen dute datuetarako atebidea erabiliz. Aurretik zeuden datu-iturriak kendu eta birsor ditzakezu Dataverse ingurunea lotzen zen [lokal datu-atebideak erabiliz](/data-integration/gateway/service-gateway-app).
 
-Dagoeneko datu-paseak Power BI edo Power Apps ingurunea ikusgai egongo da eta berrerabili ahal izango dituzu Customer Insights-en. Datu iturrien orriak estekara erakusten du Microsoft Power Platform lokal datu atebideak ikusi eta konfiguratzeko ingurunea.
+Dagoeneko datu-paseak Power BI edo Power Apps ingurunea ikusgai egongo da eta Customer Insights-en berrerabili ahal izango dituzu datu-pasabidea eta Customer Insights ingurunea Azure eskualde berean badaude. Datu iturrien orriak estekara erakusten du Microsoft Power Platform lokal datu atebideak ikusi eta konfiguratzeko ingurunea.
 
 > [!IMPORTANT]
 > Ziurtatu atebideak azken bertsiora eguneratuta daudela. Eguneratze bat instalatu eta atebide bat birkonfigura dezakezu atebidearen pantailan agertzen den gonbita batetik zuzenean edo [deskargatu azken bertsioa](https://powerapps.microsoft.com/downloads/). Ez baduzu azken atebidearen bertsioa erabiltzen, datu-fluxua freskatzeak huts egingo du errore-mezuekin **Gako-hitza ez da onartzen: konfigurazio-propietateak. Parametroaren izena: gako-hitza**.
 >
-> Customer Insights-en lokal datu-atebideekin akatsak konfigurazio-arazoek eragiten dituzte sarritan. Datuen atebideen arazoak konpontzeari buruzko informazio gehiago lortzeko, ikus [Konpondu lokal datu-atebidea](/data-integration/gateway/service-gateway-tshoot).
+> Customer Insights-en lokal datu-atebideekin akatsak konfigurazio-arazoek eragiten dituzte sarritan. Datu-atebideei buruzko arazoak konpontzeari buruzko informazio gehiago lortzeko, ikus [Konpondu lokal datu-atebidea](/data-integration/gateway/service-gateway-tshoot).
 
 ## <a name="edit-power-query-data-sources"></a>Editatu Power Query datu-iturriak
 

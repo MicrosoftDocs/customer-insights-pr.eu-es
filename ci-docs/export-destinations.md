@@ -12,12 +12,12 @@ searchScope:
 - ci-export
 - ci-connections
 - customerInsights
-ms.openlocfilehash: c580b6c01e1b4ac6b095733193d86ebd0b4005f2
-ms.sourcegitcommit: 267c317e10166146c9ac2c30560c479c9a005845
+ms.openlocfilehash: 44f58d694b9bd35a8d8c04d487d40743291e0566
+ms.sourcegitcommit: ef3e17134d44d2731605381ea0385dbc5aef6120
 ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 08/16/2022
-ms.locfileid: "9304044"
+ms.lasthandoff: 09/09/2022
+ms.locfileid: "9460175"
 ---
 # <a name="exports-preview-overview"></a>Esportazioak (aurreargitalpena) ikuspegi orokorra
 
@@ -82,6 +82,11 @@ Hautatu esportazio bat erabilgarri dauden ekintzak ikusteko.
 
 Konfiguratzen duzun esportazio bakoitzak freskatze ordutegia du. Freskatze batean, sistemak esportazio batean sartzeko datu berri edo eguneratuak bilatzen ditu. Berez, esportazioak [programatutako eguneratze sistema](schedule-refresh.md) guztien zati gisa exekutatzen dira. Freskatze ordutegia pertsonaliza dezakezu edo desaktiba dezakezu esportazioak eskuz exekutatzeko.
 
+> [!TIP]
+> Minimizatu segmentu-esportazioen prozesatze-denbora praktika onenekin:
+> - Banatu segmentu-entitateak esportazio anitzetan.
+> - Saihestu esportazio guztiak aldi berean programatzea. Utzi 30 minutu edo ordu bat esportazio bakoitzaren programatutako orduaren artean.
+
 Esportazio ordutegiak zure ingurunearen egoeraren araberakoak dira. Eguneratzeak martxan badaude aktibatuta [mendekotasunak](system.md#refresh-processes) programatutako esportazio bat hasi behar denean, sistemak eguneraketak osatuko ditu eta esportazioa exekutatuko du. The **Freskatua** zutabeak esportazio bat azken aldiz noiz freskatu den erakusten du.
 
 ### <a name="schedule-exports"></a>Antolatu esportazioak
@@ -116,7 +121,7 @@ Datuak esportatzeko programatutako freskapenaren zain egon gabe, joan hona: **Da
 
 ### <a name="segment-not-eligible-for-export"></a>Segmentua ez da esportatzeko eskubidea
 
-**Arazoa** Enpresa-kontuen ingurune batean zure esportazioek huts egiten dute errore-mezuarekin: "Segmentu hau ez da esportazio-helmuga honetarako egokia:"{ segmentuaren izena} '. Aukeratu ContactProfile motako segmentuak soilik eta saiatu berriro."
+**Arazoa** Enpresa-kontuen ingurune batean, zure esportazioek huts egiten dute errore-mezuarekin: "Segmentu hau ez da esportazio-helmuga honetarako egokia:"{ segmentuaren izena} '. Aukeratu ContactProfile motako segmentuak soilik eta saiatu berriro."
 
 **Ebazpena** Enpresa-kontuetarako Customer Insights inguruneak eguneratu dira kontu-segmentuez gain kontaktu-segmentuak onartzeko. Aldaketa hori dela eta, kontaktuen xehetasunak behar dituzten esportazioek kontaktuetan oinarritutako segmentuekin soilik funtzionatzen dute.
 

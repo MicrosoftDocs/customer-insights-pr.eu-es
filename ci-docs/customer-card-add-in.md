@@ -13,12 +13,12 @@ searchScope:
 - ci-search-filter
 - ci-customer-card
 - customerInsights
-ms.openlocfilehash: 8b3b6a0d54b80d7df454e9dc925f14cc3c39684c
-ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
+ms.openlocfilehash: 65fd80cc563b8b3b8c8874b66f179f8b0c7a19f0
+ms.sourcegitcommit: fe33cc76d015232ff8737f77193f44f2b884bb6b
 ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "9194907"
+ms.lasthandoff: 09/13/2022
+ms.locfileid: "9473627"
 ---
 # <a name="customer-card-add-in-for-dynamics-365-apps-preview"></a>Dynamics 365 aplikazioetarako Bezero txartelaren gehigarria (aurrebista)
 
@@ -32,7 +32,8 @@ Lortu zure bezeroen 360 graduko ikuspegia zuzenean Dynamics 365 aplikazioetan. B
 - Dynamics 365 datuak Customer Insights bezeroen profiletara mapatzeko, gomendatzen dugu [Dynamics 365 aplikaziotik irentsita Microsoft Dataverse konektorea](connect-power-query.md). Dynamics 365 kontaktuak (edo kontuak) irensteko beste metodo bat erabiltzen baduzu, ziurtatu`contactid` (edo`accountid`) eremua gisa ezarri da [datu-iturburu horren lehen gakoa datuak bateratzeko prozesuan](map-entities.md#select-primary-key-and-semantic-type-for-attributes).
 - Bezero txartelaren gehigarriaren Dynamics 365 erabiltzaile guztiek izan behar dute [erabiltzaile gisa gehituta](permissions.md) Customer Insights-en datuak ikusteko.
 - [Bilaketa eta iragazki gaitasunak konfiguratu ditu](search-filter-index.md) Customer Insights-en.
-- Gehigarri-kontrol bakoitza Customer Insights-eko datu zehatzetan oinarritzen da. Datu eta kontrol batzuk mota jakin batzuetako inguruneetan soilik daude eskuragarri. Gehigarriaren konfigurazioak aukeratutako ingurune mota dela-eta kontrol bat erabilgarri ez badago jakinaraziko dizu. Ikasi gehiago hurrengoari buruz [ingurunearen erabilera-kasuak](work-with-business-accounts.md).
+- Datu eta kontrol batzuk mota jakin batzuetako inguruneetan soilik daude eskuragarri. Gehigarriaren konfigurazioak aukeratutako ingurune mota dela-eta kontrol bat erabilgarri ez badago jakinaraziko dizu. Errore hau kontrol barruan agertuko da errendatzean. Ikasi gehiago hurrengoari buruz [ingurunearen erabilera-kasuak](work-with-business-accounts.md).
+- Gehigarri-kontrol bakoitza Customer Insights-eko datu zehatzetan oinarritzen da.
   - **Neurri kontrola** eskatzen du [konfiguratutako bezero-atributuen neurriak](measures.md).
   - **Inteligentzia kontrola** erabiliz sortutako datuak eskatzen ditu [iragarpenak edo eredu pertsonalizatuak](predictions-overview.md).
   - **Bezeroaren xehetasunen kontrola** bezeroen profil bateratuan erabilgarri dagoen profilaren eremu guztiak erakusten ditu.
