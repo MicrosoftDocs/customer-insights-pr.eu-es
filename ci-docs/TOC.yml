@@ -7,21 +7,21 @@
 - name: Ikasketa-katalogoa
   items:
     - name: Ziurta ezazu Microsoft Customer Data Platform Specialist gisa
-      href: /learn/certifications/exams/mb-260?tab=tab-instructor-led
+      href: /certifications/exams/mb-260?tab=tab-instructor-led
     - name: Hasi Customer Insights erabiltzen
-      href: /learn/modules/get-started-customer-data-platform/
+      href: /training/modules/get-started-customer-data-platform/
     - name: Sartu datuak
-      href: /learn/modules/ingest-data-customer-insights/
+      href: /training/modules/ingest-data-customer-insights/
     - name: Sortu bezeroaren profil bateratua
-      href: /learn/modules/unified-customer-profile/
+      href: /training/modules/unified-customer-profile/
     - name: Egin lan bezeroen ikuspegiekin
-      href: /learn/modules/working-with-customer-insights/
+      href: /training/modules/working-with-customer-insights/
     - name: Datuak aberastu eta iragarpenak egin
-      href: /learn/modules/enrich-data/
+      href: /training/modules/enrich-data/
     - name: Kudeatu kanpoko konexioak
-      href: /learn/modules/configure-third-party-connections/
+      href: /training/modules/configure-third-party-connections/
     - name: Administratu Customer Insights
-      href: /learn/modules/administer-customer-data-platform/
+      href: /training/modules/administer-customer-data-platform/
 - name: Doako proba
   items:
     - name: Hasi saioa doako proba lortzeko
@@ -118,6 +118,8 @@
       href: consent-management.md
     - name: Erabili web-datuak pertsonalizatzeko
       href: unknown-to-known.md
+    - name: Kudeatu bezeroen profil ezezagunak
+      href: manage-unknown-profiles.md
 - name: Segmentuak
   items:
     - name: Segmentuen informazio orokorra
