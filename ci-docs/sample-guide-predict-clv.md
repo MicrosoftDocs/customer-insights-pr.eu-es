@@ -1,23 +1,23 @@
 ---
 title: Bezeroaren bizi-iraupenaren balioaren iragarpenaren lagin gida
 description: Erabili lagin gida hau bezeroaren bizi-iraupenaren balio osorako iragarpen modeloa probatzeko.
-ms.date: 03/31/2022
+ms.date: 09/15/2022
 ms.reviewer: v-wendysmith
 ms.subservice: audience-insights
 ms.topic: tutorial
 author: yashlundia
 ms.author: yalundia
 manager: shellyha
-ms.openlocfilehash: 2013533ed225a396d21e51e63297d7608ce58ac6
-ms.sourcegitcommit: a97d31a647a5d259140a1baaeef8c6ea10b8cbde
+ms.openlocfilehash: fec43b279326daa17fb179181f5e310c99d48bb7
+ms.sourcegitcommit: be341cb69329e507f527409ac4636c18742777d2
 ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9051622"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "9609623"
 ---
 # <a name="customer-lifetime-value-clv-prediction-sample-guide"></a>Bezeroaren bizi-iraupenaren balioaren iragarpenaren lagin gida
 
-Gida honek Bezeroaren bizi-iraupenaren balio osoko (CLV) iragarpen adibidearen amaierako adibidea azalduko dizu Customer Insights-en, lagin-datuak erabiliz.
+Gida honek Customer lifetime value (CLV) iragarpen Customer Insights-en amaieratik amaierako adibide bat eskaintzen dizu lagin-datuak erabiliz. Iragarpen hau probatzea gomendatzen dizugu [ingurune berri batean](manage-environments.md).
 
 ## <a name="scenario"></a>Egoera
 
@@ -25,20 +25,19 @@ Contoso kalitate handiko kafe eta kafe makinak ekoizten dituen enpresa da. Conto
 
 ## <a name="prerequisites"></a>Aurrebaldintzak
 
-- Gutxienez [Laguntzaileen baimenak](permissions.md) Customer Insights.
-- Honako urrats hauek [ingurune berri batean](manage-environments.md) inplementatzea gomendatzen dizugu.
+- Gutxienez [kolaboratzaile-baimenak](permissions.md).
 
 ## <a name="task-1---ingest-data"></a>1. zeregina - Datuen sarrera
 
-Berrikusi artikuluak [datuak sartzeari buruz](data-sources.md) eta [datu-iturriak erabiliz inportatzea Power Query konektoreak](connect-power-query.md). Honako informazio honetan, ulertzen da ohituta zaudela orokorrean datuen sarrerarekin.
+Berrikusi artikuluak [datuak sartzeari buruz](data-sources.md) eta [batekin konektatzen Power Query datu-iturburu](connect-power-query.md). Informazio honek, oro har, datuak irensten ezagutzen dituzula suposatzen du.
 
 ### <a name="ingest-customer-data-from-ecommerce-platform"></a>Sartu bezero-datuak merkataritza elektronikoko plataformatik
 
-1. Sortu **merkataritza elektronikoa** izeneko datu-iturburu bat, aukeratu inportatzeko aukera eta hautatu **Testua/CSV** konektorea.
+1. Sortu Power Query datu-iturburu izeneko bat **merkataritza elektronikoa** eta hautatu **Testua/CSV** konektorea.
 
-1. Idatzi merkataritza elektronikoko kontaktuen URLa [https://aka.ms/ciadclasscontacts](https://aka.ms/ciadclasscontacts).
+1. Idatzi merkataritza elektronikoko kontaktuen URLa: https://aka.ms/ciadclasscontacts.
 
-1. Datuak editatu bitartean, hautatu **Bihurtu**, eta, ondoren, **Erabili lehenengo errenkada goiburu gisa**.
+1. Datuak editatzen dituzun bitartean, hautatu **Eraldatu** eta gero **Erabili lehen errenkada goiburu gisa**.
 
 1. Eguneratu jarraian zerrendatutako zutabeen datu motak:
    - **Jaioteguna**: Data
@@ -46,7 +45,7 @@ Berrikusi artikuluak [datuak sartzeari buruz](data-sources.md) eta [datu-iturria
 
    :::image type="content" source="media/ecommerce-dob-date.PNG" alt-text="Eraldatu jaiotze data datara.":::
 
-1. Eskuinaldeko paneleko "Izena" eremuan, aldatu izena **Kontsulta** datu-iturburuari eta ipini izen hau: **eCommerceContacts**
+1. urtean **Izena** eskuineko paneleko eremuan, aldatu izena zure datu-iturburu **eCommerceContacts**
 
 1. **Gorde** datu-iturburua.
 
@@ -56,126 +55,136 @@ Berrikusi artikuluak [datuak sartzeari buruz](data-sources.md) eta [datu-iturria
 
 1. Idatzi **sareko erosketen** datuen URLa: https://aka.ms/ciadclassonline.
 
-1. Datuak editatu bitartean, hautatu **Bihurtu**, eta, ondoren, **Erabili lehenengo errenkada goiburu gisa**.
+1. Datuak editatzen dituzun bitartean, hautatu **Eraldatu** eta gero **Erabili lehen errenkada goiburu gisa**.
 
 1. Eguneratu jarraian zerrendatutako zutabeen datu motak:
    - **PurchasedOn**: Data/ordua
    - **TotalPrice**: Moneta
 
-1. Alboko paneleko **Izena** eremuan, aldatu izena **Kontsulta** datu-iturburuari eta ipini izen hau: **eCommercePurchases**.
+1. urtean **Izena** alboko paneleko eremuan, izena aldatu zure datu-iturburu **eCommerceErosketak**.
 
 1. **Gorde** datu-iturburua.
 
 ### <a name="ingest-customer-data-from-loyalty-schema"></a>Sartu bezero-datuak fideltasun-eskematik
 
-1. Sortu **LoyaltyScheme** izeneko datu-iturburu bat, aukeratu inportatzeko aukera eta hautatu **Testua/CSV** konektorea.
+1. Sortu datu-iturburu izeneko bat **LeialtasunEgitasmoa** eta hautatu **Testua/CSV** konektorea.
 
-1. Idatzi merkataritza elektronikoko kontaktuen URLa: https://aka.ms/ciadclasscustomerloyalty.
+1. Sartu leialtasun-bezeroen URLa https://aka.ms/ciadclasscustomerloyalty.
 
-1. Datuak editatu bitartean, hautatu **Bihurtu**, eta, ondoren, **Erabili lehenengo errenkada goiburu gisa**.
+1. Datuak editatzen dituzun bitartean, hautatu **Eraldatu** eta gero **Erabili lehen errenkada goiburu gisa**.
 
 1. Eguneratu jarraian zerrendatutako zutabeen datu motak:
    - **Jaioteguna**: Data
    - **RewardsPoints**: Zenbaki osoa
    - **Sorrera-data**: Data/ordua
 
-1. Eskuinaldeko paneleko **Izena** eremuan, aldatu izena **Kontsulta** datu-iturburuari eta ipini izen hau: **loyCustomers**.
+1. urtean **Izena** eskuineko paneleko eremuan, aldatu izena zure datu-iturburu **loyBezeroak**.
 
 1. **Gorde** datu-iturburua.
 
 ### <a name="ingest-customer-data-from-website-reviews"></a>Sartu bezeroaren datuak webguneen berrikuspenetatik
 
-1. Sortu **Webgunea** izeneko datu-iturburu bat, aukeratu inportatzeko aukera eta hautatu **Testua / CSV** konektorea.
+1. Sortu datu-iturburu izeneko bat **Webgunea** eta hautatu **Testua/CSV** konektorea.
 
-1. Idatzi merkataritza elektronikoko kontaktuen URLa: https://aka.ms/CI-ILT/WebReviews.
+1. Sartu webgunearen berrikuspenetarako URLa https://aka.ms/CI-ILT/WebReviews.
 
-1. Datuak editatu bitartean, hautatu **Bihurtu**, eta, ondoren, **Erabili lehenengo errenkada goiburu gisa**.
+1. Datuak editatzen dituzun bitartean, hautatu **Eraldatu** eta gero **Erabili lehen errenkada goiburu gisa**.
 
 1. Eguneratu jarraian zerrendatutako zutabeen datu motak:
-
    - **ReviewRating**: zenbaki hamartarra
    - **Iritziaren data**: Data
 
-1. Eskuineko paneleko 'Izena' eremuan, aldatu zure datu-iturburuaren izena **Kontsulta**-tik **Iritziak**-era.
+1. urtean **Izena** eskuineko paneleko eremuan, aldatu izena zure datu-iturburu **Iritziak**.
 
 1. **Gorde** datu-iturburua.
 
 ## <a name="task-2---data-unification"></a>2. zeregina - Datuen bateratzea
 
+Berrikusi artikulua [datuen bateratzeari buruz](data-unification.md). Informazio honek datuen bateratzea orokorrean ezagutzen duzula suposatzen du.
+
 [!INCLUDE [sample-guide-unification](includes/sample-guide-unification.md)]
 
-## <a name="task-3---configure-customer-lifetime-value-prediction"></a>3. ataza - Konfiguratu bezeroaren bizi-iraupenaren balioaren iragarpena
+## <a name="task-3---create-transaction-history-activity"></a>3. ataza - Transakzioen historiako jarduera sortzea
 
-Bezeroen profil bateratuak ongi jarrita, bezeroaren bizi-iraupenaren balioaren iragarpena exekutatu dezakegu. Urrats zehatzak ikusteko, ikus [Bezeroaren bizitza osorako balioa iragarpen](predict-customer-lifetime-value.md).
+Berrikusi artikulua [bezeroen jarduerei buruz](activities.md). Ondorengo informazioak, oro har, jarduerak sortzen ezagutzen dituzula suposatzen du.
 
-1. Joan **Adimena**  > **Iragarpenak** eta hautatu **Bezeroaren bizi-iraupenaren balioaren eredua**.
+1. Sortu izeneko jarduera bat **eCommerceErosketak** nirekin *eCommercePurchases: eCommerce* entitatea eta bere gako nagusia, **ErosketaId**.
 
-1. Joan alboko paneleko informaziora eta hautatu **Hasi**.
+1. Sortu arteko harremana *eCommercePurchases: eCommerce* eta *eCommerceContacts: eCommerce* rekin **Kontaktu ID** bi entitateak konektatzeko atzerriko gako gisa.
+
+1. Hautatu **Prezio totala** rentzat **GertaeraJarduera** eta **Erosian** rentzat **Denbora-zigilua**.
+
+1. Hautatu **SalesOrderLine** rentzat **Jarduera mota** eta jardueraren datuak semantikoki mapatzea.
+
+1. Exekutatu jarduera.
+
+1. Gehitu beste jarduera bat eta mapa bere eremuen izenak dagozkien eremuekin:
+   - **Jarduera-entitatea** : Iritziak:Webgunea
+   - **Lehen gakoa** : ReviewId
+   - **Denbora-zigilua** : BerrikuspenData
+   - **Ekitaldi-jarduera** : ActivityTypeDisplay
+   - **Xehetasun gehigarria** : BerrikuspenBalorazioa
+   - **Jarduera mota** : Berrikuspena
+
+1. Exekutatu jarduera.
+
+## <a name="task-4---configure-customer-lifetime-value-prediction"></a>4. ataza - Konfiguratu bezeroaren bizi-iraupenaren balioaren iragarpena
+
+Bezeroen profil bateratuak ezarrita eta sortutako jarduerarekin, exekutatu bezeroaren bizitzako balioa (CLV) iragarpen. Urrats zehatzak ikusteko, ikus [Bezeroaren bizitza osorako balioa iragarpen](predict-customer-lifetime-value.md).
+
+1. Joan **Adimena** > **Iragarpenak**.
+
+1. Gainean **Sortu** fitxa, hautatu **Erabili eredua** gainean **Bezeroaren bizitzako balioa** teila.
+
+1. Hautatu **Hasi erabiltzen**.
 
 1. Eman izen hau ereduari: **OOB eCommerce CLV iragarpena** eta hau irteerako entitateari: **OOBeCommerceCLVPrediction**.
 
-1. Definitu modeloaren hobespenak CLV eredurako:
-   - **iragarpenaren denbora-tartea**: **12 hilabete edo 1 urte**. Ezarpen honek bezeroaren bizi-iraupenaren balioaren iragartzeko etorkizunean noraino definitzen duen definitzen du.
-   - **Bezero aktiboak** : Zehaztu bezero aktiboek zer esan nahi duten zure negozioarentzat. Ezarri bezeroak aktibo izateko gutxienez transakzio bat izan behar duen denbora-tarte historikoa. Ereduak bezero aktiboentzako CLV soilik aurreikusiko du. Aukeratu ereduak transakzio datu historikoetan oinarritutako denbora-tartea kalkulatzen utzi edo denbora-tarte jakin bat eman behar duen. Lagin gida honetan, **ereduak erosketa tartea kalkula dezan uzten diogu**, hau da aukera lehenetsia.
-   - **Balio handiko bezeroak** : Definitu balio handiko bezeroak gehien ordaintzen dituzten bezeroen pertzentila gisa. Ereduak sarrera hori erabiltzen du balio handiko bezeroen negozioaren definizioarekin bat datozen emaitzak emateko. Ereduak balio handiko bezeroak definitzea hauta dezakezu. Perzentila eratortzen duen arau heuristikoa erabiltzen du. Balio handiko bezeroak defini ditzakezu gehien ordaintzen duten bezeroen pertzentil gisa. Lagin gida honetan, balio handiko bezeroak eskuz definitzen ditugu **ordaintzen duten bezero aktiboen % 30** gisa eta hautatu **Hurrengoa**.
+1. Definitu ereduaren hobespenak:
+   - **iragarpen denbora-tartea** :**12 hilabete edo urtebete** etorkizunean noraino aurreikusteko CLV definitzeko.
+   - **Bezero aktiboak** :**Utzi ereduak erosketa-tartea kalkulatzea** hau da, bezero batek aktibotzat jotzeko gutxienez transakzio bat izan behar duen denbora-tartea.
+   - **Balio handiko bezeroa** : eskuz definitzeko balio handiko bezeroak gisa **bezero aktiboen % 30 nagusiak**.
 
     :::image type="content" source="media/clv-model-preferences.png" alt-text="Lehentasun urratsa CLV ereduaren esperientzia gidatuan.":::
 
+1. Hautatu **Hurrengoa**.
+
 1. **Beharrezko datuak** urratsean, hautatu **Gehitu datuak** transakzioen historiaren datuak emateko.
 
-1. Gehitu **eCommerceErosketak: eCommerce** entitatea eta esleitu ereduak eskatzen dituen atributuak:
-   - Transakzioaren IDa: eCommerce.eCommercePurchases.PurchaseId
-   - Transakzioaren data: eCommerce.eCommercePurchases.PurchasedOn
-   - Transakzioaren zenbatekoa: eCommerce.eCommercePurchases.TotalPrice
-   - Produktuaren IDa: eCommerce.eCommercePurchases.ProductId
+    :::image type="content" source="media/clv-model-required.png" alt-text="Gehitu beharrezko datuen urratsa CLV eredurako esperientzia gidatuan.":::
+
+1. Hautatu **SalesOrderLine** eta eCommercePurchases entitatea eta hautatu **Hurrengoa**. Beharrezko datuak automatikoki betetzen dira jardueratik. Hautatu **Gorde** eta gero **Hurrengoa**.
+
+1. The **Datu gehigarriak (aukerakoa)** urratsak bezeroen jarduera-datu gehiago gehitzeko aukera ematen dizu bezeroen interakzioei buruzko informazio gehiago lortzeko. Adibide honetarako, hautatu **Gehitu datuak** eta gehitu web berrikuspen jarduera.
 
 1. Hautatu **Hurrengoa**.
 
-1. Konfiguratu **eCommerceErosketak: eCommerce** entitatea eta **eCommerceContacts: eCommerce** entitatearen arteko erlazioa.
+1. urtean **Datuen eguneraketak** urratsa, hautatu **Hilerokoa** egutegi eredurako.
 
-1. **Datu osagarriak (aukerakoa)** urratsak bezeroen jardueren datu gehiago gehitzeko aukera ematen du. Datu horiek bezeroek zure negozioarekin dituzten elkarreraginak ezagutzeko informazio gehiago lortzen lagun dezakete, eta horrek CLVra ekar dezake. Bezeroen arteko elkarreragin nagusiak gehitzeak, esaterako web erregistroak, bezeroarentzako arreta-zerbitzu erregistroak edo saritze-programen historia, iragarpenen zehaztasuna hobe dezake. Aukeratu **Gehitu datuak** bezeroen jardueren datu gehiago sartzeko.
-
-1. Gehitu bezeroaren jardueraren entitatea eta esleitu haren eremuen izenak ereduak eskatzen dituen eremuetara:
-   - Bezeroaren jardueren entitatea: Reviews:Website
-   - Gako nagusia: Website.Reviews.ReviewId
-   - Denbora-marka: Website.Reviews.ReviewDate
-   - Gertaera (jardueraren izena): Website.Reviews.ActivityTypeDisplay
-   - Xehetasunak (zenbatekoa edo balioa): Website.Reviews.ReviewRating
-
-1. Aukeratu **Hurrengoa** eta konfiguratu jarduera eta transakzio datuen eta bezeroen datuen arteko harremana:  
-   - Jarduera mota: aukeratu lehendik daudenetatik
-   - Jardueraren etiketa: Review
-   - Dagokion etiketa: Website.Reviews.UserId
-   - Bezeroaren entitatea: eCommerceContacts:eCommerce
-   - Harremana: WebsiteReviews
-
-1. Aukeratu **Hurrengoa** ereduaren antolaketa ezartzeko.
-
-   Ereduak aldizka entrenatu behar du iradokitako datu berriak daudenean eredu berriak ikasteko. Adibide honetarako, aukeratu **Hilero**.
+1. Hautatu **Hurrengoa**.
 
 1. Xehetasun guztiak aztertu ondoren, hautatu **Gorde eta Exekutatu**.
 
-## <a name="task-4---review-model-results-and-explanations"></a>4. zeregina - Berrikusi ereduen emaitzak eta azalpenak
+## <a name="task-5---review-model-results-and-explanations"></a>5. zeregina - Berrikusi ereduen emaitzak eta azalpenak
 
-Ereduak datuen prestakuntza eta puntuazioa osatuko ditu. Ondoren, CLV ereduaren emaitzak eta azalpenak berrikus ditzakezu. Informazio gehiagorako, ikusi [Berrikusi iragarpen-egoera eta emaitzak](predict-customer-lifetime-value.md#review-prediction-status-and-results).
+Ereduak datuen prestakuntza eta puntuazioa osatuko ditu. Berrikusi [CLV ereduaren emaitzak eta azalpenak](predict-customer-lifetime-value.md#view-prediction-results).
 
-## <a name="task-5---create-a-segment-of-high-value-customers"></a>5. ataza - Sortu balio handiko bezeroen segmentu bat
+## <a name="task-6---create-a-segment-of-high-value-customers"></a>6. ataza - Sortu balio handiko bezeroen segmentu bat
 
 Eredua exekutatzeak entitate berri bat sortzen du, **Datuak** > **Entitateak** zerrendan agertzen dena. Ereduak sortutako entitatean oinarrituta bezeroen segmentu berri bat sor dezakezu.
 
-1. Joan hona: **Segmentuak**. 
+1. Emaitzen orrian, hautatu **Sortu segmentua**.
 
-1. Aukeratu **Berria** eta aukeratu **Sortu hemendik** > **Adimena**.
+1. Sortu arau bat erabiliz **OOBeCommerceCLVPiragarpena** entitatea eta segmentua definitu:
+   - **Eremua** : CLVScore
+   - **Eragilea** : baino handiagoa
+   - **Balioa** : 1500
 
-   ![Ereduaren irteerarekin segmentu bat sortzea.](media/segment-intelligence.png)
+1. Hautatu **Gorde** eta **Korrika egin** segmentua.
 
-1. Aukeratu **OOBeCommerceCLVPrediction** entitatea eta definitu segmentua:
-  - Eremua: CLVScore
-  - Eragilea: hau baino handiagoa
-  - Balioa: 1500
+Datozen 12 hilabeteetan $1500ko diru sarrera baino gehiago sortuko dituztela aurreikusten duten bezeroak identifikatzen dituen segmentu bat duzu orain. Segmentu hau dinamikoki eguneratzen da datu gehiago irensten badira. Informazio gehiagorako, ikusi [Sortu eta kudeatu segmentuak](segments.md).
 
-1. Aukeratu **Berrikuspena** eta **Gorde** segmentua.
+> [!TIP]
+> Iragarpen eredu baterako segmentu bat ere sor dezakezu hemendik **Segmentuak** orrialdea hautatuz **Berria** eta aukeratzea **Sortu hemendik** > **Adimena**. Informazio gehiagorako, ikus [Sortu segmentu berri bat segmentu azkarrekin](segment-quick.md).
 
-Datozen 12 hilabeteetan $1500ko diru sarrera baino gehiago sortuko dituztela aurreikusten duten bezeroak identifikatzen dituen segmentu bat duzu orain. Segmentu hau dinamikoki eguneratzen da datu gehiago irensten badira.
-
-Informazio gehiagorako, ikusi [Sortu eta kudeatu segmentuak](segments.md).
+[!INCLUDE [footer-include](includes/footer-banner.md)]

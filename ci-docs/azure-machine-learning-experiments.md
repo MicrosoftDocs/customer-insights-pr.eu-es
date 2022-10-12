@@ -1,19 +1,19 @@
 ---
 title: Erabili Azure Machine Learning-en oinarritutako ereduak
 description: 'Erabili Azure Machine Learning-en oinarritutako ereduak hemen: Dynamics 365 Customer Insights.'
-ms.date: 12/02/2021
+ms.date: 09/22/2022
 ms.subservice: audience-insights
 ms.topic: tutorial
 author: naravill
 ms.author: naravill
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: a1efad2887a02a92ee2960b07b066edc331f3665
-ms.sourcegitcommit: dca46afb9e23ba87a0ff59a1776c1d139e209a32
+ms.openlocfilehash: 8d9c9324ea4840b585b9af1a58d505ccaea6f18e
+ms.sourcegitcommit: be341cb69329e507f527409ac4636c18742777d2
 ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "9082274"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "9609729"
 ---
 # <a name="use-azure-machine-learning-based-models"></a>Erabili Azure Machine Learning-en oinarritutako ereduak
 
@@ -35,7 +35,7 @@ Dynamics 365 Customer Insights-eko datu bateratuak negozioaren ikuspegi osagarri
 ## <a name="work-with-azure-machine-learning-designer"></a>Lan egin Azure Machine Learning-en diseinatzailearekin
 
 Azure Ikaskuntza automatiko diseinatzaileak ikusizko mihise bat eskaintzen du, non datu multzoak eta moduluak arrastatu eta jar ditzakezun. Diseinatzailetik sortutako sorta bideratzea Customer Insights-en sar daiteke, hala konfiguratuta badago. 
-   
+
 ## <a name="working-with-azure-machine-learning-sdk"></a>Azure Machine Learning-en SDKrekin lan egitea
 
 Datu zientzialariek eta AA garatzaileek [Azure Machine Learning-en SDK](/python/api/overview/azure/ml/?preserve-view=true&view=azure-ml-py) erabiltzen dute ikaskuntza automatikoko lan fluxuak eraikitzeko. Gaur egun, SDK erabiliz trebatutako ereduak ezin dira zuzenean Customer Insights-ekin integratu. Eredu hori erabiltzen duen sortako interferentzia-bideratzea behar da Customer Insights-ekin integratzeko.
@@ -44,17 +44,16 @@ Datu zientzialariek eta AA garatzaileek [Azure Machine Learning-en SDK](/python/
 
 ### <a name="dataset-configuration"></a>Datu multzoaren konfigurazioa
 
-Datu multzoak sortu behar dituzu Customer Insights-eko entitate datuak zure sortako inferentzia-bideratzean erabiltzeko. Datu multzo hauek laneko arean erregistratu behar dira. Gaur egun, [datu multzo tabularrak](/azure/machine-learning/how-to-create-register-datasets#tabulardataset) soilik onartzen ditugu, .csv formatuan. Entitateen datuei dagozkien datu multzoak bideratze-parametro gisa parametrizatu behar dira.
-   
-* Diseinatzaileko datu multzoen parametroak
-   
-     Diseinatzailean, ireki **Aukeratu zutabeak datu multzoan** eta hautatu **Ezarri bideratze-parametro gisa**; bertan parametroaren izena ipini behar da.
+Sortu datu-multzoak Customer Insights-eko entitate-datuak zure loteen inferentzia kanalerako erabiltzeko. Erregistratu datu-multzo hauek laneko eremuan. Gaur egun, [datu multzo tabularrak](/azure/machine-learning/how-to-create-register-datasets#tabulardataset) soilik onartzen ditugu, .csv formatuan. Parametizatu entitatearen datuei dagozkien datu multzoak kanalizazio-parametro gisa.
 
-     > [!div class="mx-imgBorder"]
-     > ![Diseinatzaileko datu multzoen parametrizazioa.](media/intelligence-designer-dataset-parameters.png "Diseinatzaileko datu multzoen parametrizazioa")
-   
-* Datu multzoaren parametroa SDK-n (Python)
-   
+- Diseinatzaileko datu multzoen parametroak
+
+  Diseinatzailean, ireki **Aukeratu zutabeak datu multzoan** eta hautatu **Ezarri bideratze-parametro gisa**; bertan parametroaren izena ipini behar da.
+
+  :::image type="content" source="media/intelligence-designer-dataset-parameters.png" alt-text="Diseinatzaileko datu multzoen parametrizazioa.":::
+
+- Datu multzoaren parametroa SDK-n (Python)
+
    ```python
    HotelStayActivity_dataset = Dataset.get_by_name(ws, name='Hotel Stay Activity Data')
    HotelStayActivity_pipeline_param = PipelineParameter(name="HotelStayActivity_pipeline_param", default_value=HotelStayActivity_dataset)
@@ -63,10 +62,10 @@ Datu multzoak sortu behar dituzu Customer Insights-eko entitate datuak zure sort
 
 ### <a name="batch-inference-pipeline"></a>Sortako inferentzia-bideratzea
   
-* Diseinatzailean, trebakuntza-bideratze bat erabil daiteke inferentzia-bideratze bat sortzeko edo eguneratzeko. Gaur egun, sortako inferentzia-bideratzeak soilik onartzen dira.
+- Diseinatzailean, erabili prestakuntza kanalizazioa inferentzia kanalizazioa sortzeko edo eguneratzeko. Gaur egun, sortako inferentzia-bideratzeak soilik onartzen dira.
 
-* SDK erabiliz, bideratzea amaiera-puntu batean argitaratu dezakezu. Gaur egun, Customer Insights lehenetsitako bideratzearekin integratzen da Machine Learning-en laneko areako sortako bideratzearen amaiera-puntu batean.
-   
+- SDK-a erabiliz, argitaratu kanalizazioa amaiera-puntu batera. Gaur egun, Customer Insights lehenetsitako bideratzearekin integratzen da Machine Learning-en laneko areako sortako bideratzearen amaiera-puntu batean.
+
    ```python
    published_pipeline = pipeline.publish(name="ChurnInferencePipeline", description="Published Churn Inference pipeline")
    pipeline_endpoint = PipelineEndpoint.get(workspace=ws, name="ChurnPipelineEndpoint") 
@@ -75,11 +74,11 @@ Datu multzoak sortu behar dituzu Customer Insights-eko entitate datuak zure sort
 
 ### <a name="import-pipeline-data-into-customer-insights"></a>Inportatu bideratzearen datuak Customer Insights-era
 
-* Diseinatzaileak [Esportatu datuak modulua](/azure/machine-learning/algorithm-module-reference/export-data) eskaintzen du; horrek bideratze baten irteera Azure biltegira esportatzea ahalbidetzen du. Gaur egun, moduluak **Azure blob biltegiratzea** datu-biltegi mota erabili behar du eta **datu-biltegia** eta dagokion **bide-izena** parametrizatu. Customer Insights-ek parametro horiek biak gainidazten ditu bideratzea exekutatzerakoan produktuak eskuragarri duen datu biltegi eta bide-izen batekin.
-   > [!div class="mx-imgBorder"]
-   > ![Esportatu datuen moduluaren konfigurazioa.](media/intelligence-designer-importdata.png "Esportatu datuen moduluaren konfigurazioa")
-   
-* Inferentziaren irteera kodea erabiliz idaztean, irteera karga dezakezu laneko areako *erregistratutako datu-biltegiko* bide-izen batera. Bide-izena eta datu-biltegia bideratzean parametrizatuta badaude, Customer Insights-ek inferentzia irteera irakurri eta inportatu ahal izango du. Gaur egun, csv formatuko tabular bakarreko irteera onartzen da. Bide-izenak direktorioa eta fitxategi-izena izan behar ditu.
+- Diseinatzaileak [Esportatu datuak modulua](/azure/machine-learning/algorithm-module-reference/export-data) eskaintzen du; horrek bideratze baten irteera Azure biltegira esportatzea ahalbidetzen du. Gaur egun, moduluak **Azure blob biltegiratzea** datu-biltegi mota erabili behar du eta **datu-biltegia** eta dagokion **bide-izena** parametrizatu. Customer Insights-ek parametro horiek biak gainidazten ditu bideratzea exekutatzerakoan produktuak eskuragarri duen datu biltegi eta bide-izen batekin.
+
+  :::image type="content" source="media/intelligence-designer-importdata.png" alt-text="Esportatu datuen moduluaren konfigurazioa.":::
+
+- Inferentzia-irteera kodea erabiliz idaztean, kargatu irteera a barruko bide batera *erregistratutako datu-biltegia* lan eremuan. Bide-izena eta datu-biltegia bideratzean parametrizatuta badaude, Customer Insights-ek inferentzia irteera irakurri eta inportatu ahal izango du. Gaur egun, csv formatuko tabular bakarreko irteera onartzen da. Bide-izenak direktorioa eta fitxategi-izena izan behar ditu.
 
    ```python
    # In Pipeline setup script

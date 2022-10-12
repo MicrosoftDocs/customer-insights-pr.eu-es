@@ -1,7 +1,7 @@
 ---
-title: Bezeroaren balio osoaren iragarpena (CLV)
+title: Iragarri bezeroaren bizi-iraupena (CLV)
 description: Aurreikusi etorkizunean bezero aktiboen diru-sarrerak.
-ms.date: 07/21/2022
+ms.date: 09/30/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: how-to
@@ -13,74 +13,63 @@ searchScope:
 - ci-create-prediction
 - ci-custom-models
 - customerInsights
-ms.openlocfilehash: b6f6665d906cc96688efe84035336f64d2a39303
-ms.sourcegitcommit: 80d8436d8c940f1267e6f26b221b8d7ce02ed26b
+ms.openlocfilehash: f27462ac327027e50e23387ac9f75a671db9a86d
+ms.sourcegitcommit: be341cb69329e507f527409ac4636c18742777d2
 ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 07/22/2022
-ms.locfileid: "9186425"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "9610359"
 ---
-# <a name="customer-lifetime-value-clv-prediction"></a>Bezeroaren balio osoaren iragarpena (CLV)
+# <a name="predict-customer-lifetime-value-clv"></a>Iragarri bezeroaren bizi-iraupena (CLV)
 
-Aurreikusi bezero aktibo partikularrek zure negozioari ekarriko dioten balizko balioa (diru-sarrerak) etorkizunean zehaztutako denbora-tarte batean. Ezaugarri honek hainbat helburu lortzen lagun zaitzake:
+Aurreikusi bezero aktibo partikularrek zure negozioari ekarriko dioten balizko balioa (diru-sarrerak) etorkizunean zehaztutako denbora-tarte batean. Iragarpen honek laguntzen dizu:
 
-- Balio handiko bezeroak identifikatu eta ikuspegi hori prozesatu
-- Sortu bezeroen segmentu estrategikoak haien balio potentzialean oinarrituta kanpaina pertsonalizatuak egiteko bideratutako salmentekin, marketinarekin eta laguntza esfortzuekin
-- Produktuen garapena bideratu bezeroaren balioa handitzen duten ezaugarrietan oinarrituz
-- Optimizatu salmenten edo marketinaren estrategia eta aurrekontua zehatzago esleitu bezeroen dibulgaziorako
-- Balio handiko bezeroak aitortu eta saritu leialtasun edo sari programen bidez
+- Identifikatu balio handiko bezeroak eta prozesatu informazio hori.
+- Sortu bezero-segmentu estrategikoak beren balio potentzialaren arabera kanpaina pertsonalizatuak egiteko, salmenta, marketina eta laguntza-esfortzuak zuzenduta.
+- Gidatu produktuaren garapena bezeroaren balioa handitzen duten ezaugarrietan arreta jarriz.
+- Optimizatu salmenta- edo marketin-estrategia eta esleitu aurrekontua zehatzago bezeroei helarazteko.
+- Balio handiko bezeroak aintzat hartu eta saritu leialtasun- edo sari-programen bidez.
+
+Zehaztu zer esan nahi duen CLV zure negoziorako. Transakzioetan oinarritutako CLV iragarpen onartzen dugu. Bezero baten aurreikusitako balioa negozio-transakzioen historian oinarritzen da. Demagun hainbat eredu sortzea sarrera-hobespen ezberdinekin eta alderatu ereduaren emaitzak zure negozioaren beharretara hobekien egokitzen den eredua ikusteko.
+
+> [!TIP]
+> Probatu CLV iragarpen lagin-datuak erabiliz: [Bezeroaren bizitzako balioa (CLV) iragarpen adibide-gida](sample-guide-predict-clv.md).
 
 ## <a name="prerequisites"></a>Aurrebaldintzak
 
-Hasi aurretik, islatu CLV-k duen garrantzia zure negoziorako. Gaur egun, transakzioetan oinarritutako CLV iragarpen onartzen dugu. Bezero baten aurreikusitako balioa negozio-transakzioen historian oinarritzen da. Iragarpena sortzeko, gutxienez behar duzu [Laguntzailea](permissions.md) baimenak.
-
-CLV modeloa konfiguratzeak eta exekutatzeak denbora asko behar ez duenez, kontuan hartu sarrera hobespen desberdinak dituzten hainbat eredu sortzea eta alderatu modeloaren emaitzak, zure negozioaren beharretara hobekien egokitzen den eredua ikusteko.
-
-### <a name="data-requirements"></a>Datuen eskakizunak
-
-Datu hauek beharrezkoak dira, eta aukerako gisa markatuta daudenean, gomendagarria da modeloaren errendimendua handitzeko. Zenbat eta datu gehiago prozesatu ereduak, orduan eta zehatzagoa izango da iragarpena. Hori dela eta, bezeroen jardueren datu gehiago sartzea gomendatzen dizugu, eskuragarri badago.
-
-- Bezeroaren identifikatzailea: identifikazio bakarra bezero bakoitzarekin transakzioak lotzeko
-
-- Transakzioen historia: transakzio historikoen erregistroa beheko datu semantikoen eskemarekin
-    - **Transakzioaren IDa**: transakzio bakoitzaren identifikatzaile esklusiboa
-    - **Transakzioaren data**: data da, hobe transakzio bakoitzaren denbora-zigilua bada
-    - **Transakzioaren zenbatekoa**: transakzio bakoitzaren diru-balioa (adibidez, diru-sarrera edo irabazien marjina)
-    - **Itzultzei esleitutako etiketa** (aukerakoa): transakzioa itzulera den ala ez adierazten duen balio boolearra 
-    - **Produktuaren IDa** (aukerakoa): transakzioan parte hartu duen produktuaren IDa
-
-- Datu gehigarriak (aukerakoa), adibidez
-    - Web-jarduerak: webgunearen bisiten historia, posta elektronikoaren historia
-    - Leialtasun-jarduerak: leialtasuna saritzeko puntuak sortzearen eta amortizazioaren historia
-    - Bezeroarentzako arreta-zerbitzu erregistroa, zerbitzuaren dei-, kexa- edo itzulketa-historia
-    - Bezeroaren profilaren informazioa
-- Bezeroen jarduerei buruzko datuak (aukerakoa):
-    - Mota bereko jarduerak bereizteko jarduera identifikatzaileak
-    - Bezeroaren identifikadoreak maparen jardueretan zure bezeroentzat
-    - Jardueren izena eta jardueraren data biltzen dituen jarduera
-    - Jardueren datu semantikoen eskemak honakoak dira:
-        - **Gako nagusia**: Jarduera baterako identifikatzaile bakarra
-        - **Denbora-zigilua**: Giltza nagusian identifikatutako gertaeraren data eta ordua
-        - **Gertaera (jardueraren izena)**: erabili nahi duzun gertaeraren izena
-        - **Xehetasunak (zenbatekoa edo balioa)**: bezeroaren jarduerari buruzko xehetasunak
-
-- Iradokitako datuen ezaugarriak:
-    - Datu historiko nahikoak: gutxienez urtebeteko datu transakzionalak. Ahal izanez gero, bizpahiru urteko datu transakzionalak CLV urtebetez iragartzeko.
-    - Erosketa anitz bezero bakoitzeko: Egokiena, gutxienez bizpahiru transakzio bezero ID bakoitzeko, ahal bada data anitzetan zehar.
-    - Bezero kopurua: gutxienez 100 bezero esklusibo, ahal dela 10.000 bezero baino gehiago. Ereduak huts egingo du 100 bezero baino gutxiagorekin eta datu historiko nahikorik gabe
-    - Datuen osotasuna: % 20 baino gutxiago falta dira sarrerako datuetako beharrezko eremuetan
+- Gutxienez [Laguntzailea](permissions.md) baimenak
+- Gutxienez 100 bezero bakar, ahal izanez gero 10.000 bezero baino gehiago
+- Bezeroaren identifikatzailea, transakzioak bezero indibidual batekin lotzeko identifikatzaile bakarra
+- Gutxienez urtebeteko transakzioen historia, ahal dela bi edo hiru urte. Egokiena, gutxienez bizpahiru transakzio bezeroaren ID bakoitzeko, hobe da hainbat datatan zehar. Transakzioen historiak honako hauek izan behar ditu:
+  - **Transakzioaren IDa**: transakzio bakoitzaren identifikatzaile esklusiboa
+  - **Transakzio data** : transakzio bakoitzaren data edo ordua
+  - **Transakzioaren zenbatekoa**: transakzio bakoitzaren diru-balioa (adibidez, diru-sarrera edo irabazien marjina)
+  - **Itzulketei esleitutako etiketa** : balio boolearra egia/faltsua, transakzioa itzulera den ala ez adierazten duena
+  - **Produktuaren IDa** : transakzioan parte hartzen duen produktuaren IDa
+- Bezeroaren jarduerei buruzko datuak:
+  - **Lehen gakoa** : jarduera baten identifikatzaile bakarra
+  - **Denbora-zigilua** : Lehen gakoaren bidez identifikatutako gertaeraren data eta ordua
+  - **Gertaera (jardueraren izena)** : Erabili nahi duzun gertaeraren izena
+  - **Xehetasunak (zenbatekoa edo balioa)**: bezeroaren jarduerari buruzko xehetasunak
+- Datu gehigarriak, hala nola:
+  - Web-jarduerak: Webgunearen bisitaren historia edo posta elektronikoaren historia
+  - Leialtasun-jarduerak: Leialtasun-sari puntuen metaketa eta erreskate-historia
+  - Bezeroarentzako arreta-zerbitzu erregistroa: zerbitzu-deiak, kexak edo itzulketen historia
+  - Bezeroaren profilaren informazioa
+- Beharrezko eremuetan % 20 baino gutxiago falta dira balioak
 
 > [!NOTE]
-> - Ereduak zure bezeroen transakzioen historia eskatzen du. Une honetan transakzioen historiako entitate bakarra konfigura daiteke. Erosketa/transakzio entitate anitz badaude, horiek bateratu ditzakezu Power Query datuak sartu aurretik.
-> - Bezeroen jardueren datu osagarriak lortzeko (aukerakoa), hala ere, bezeroaren jarduera entitateak nahi adina gehi ditzakezu ereduak kontuan har ditzan.
+> Transakzioen historiako entitate bakarra konfigura daiteke. Erosketa edo transakzio entitate anitz badaude, konbinatu Power Query datuak sartu aurretik.
 
 ## <a name="create-a-customer-lifetime-value-prediction"></a>Sortu bezeroaren bizi-iraupenaren balioaren iragarpena
 
+Hautatu **Gorde zirriborroa** edozein unetan iragarpen zirriborro gisa gordetzeko. Iragarpen zirriborroa atalean bistaratzen da **Nire iragarpenak** fitxa.
+
 1. Joan **Adimena** > **Iragarpenak**.
 
-1. Hautatu **Bezeroaren bizi-iraupenaren balioa** fitxa eta hautatu **Erabili eredua**. 
+1. Gainean **Sortu** fitxa, hautatu **Erabili eredua** gainean **Bezeroaren bizitzako balioa** teila.
 
-1. urtean **Bezeroaren bizitzako balioa** panela, hautatu **Hasi**.
+1. Hautatu **Hasi erabiltzen**.
 
 1. **Eman izena eredu honi** eta **Irteerako entitatearen izenari** beste eredu edo entitate batzuetatik bereizteko.
 
@@ -88,159 +77,137 @@ Datu hauek beharrezkoak dira, eta aukerako gisa markatuta daudenean, gomendagarr
 
 ### <a name="define-model-preferences"></a>Zehaztu ereduaren hobespenak
 
-1. Ezarri **Iragarpen denbora-tartea** etorkizunean CLV-a noraino iragarri nahi duzun definitzeko.    
-   Lehenespenez, unitatea hilabete gisa ezartzen da. Urteetara alda dezakezu etorkizunean gehiago begiratzeko.
+1. Ezarri **Iragarpen denbora-tartea** etorkizunean CLV-a noraino iragarri nahi duzun definitzeko. Lehenespenez, unitatea hilabete gisa ezartzen da.
 
    > [!TIP]
-   > Ezarritako denbora-tarte baterako CLV zehaztasunez aurreikusteko, datu historikoen aldi konparagarria behar duzu. Adibidez, datozen 12 hilabeteetarako CLV aurreikusi nahi baduzu, gutxienez 18 - 24 hilabeteen datu historikoak izatea gomendatzen da.
+   > Ezarritako denbora-tarterako CLV zehatz-mehatz aurreikusteko, datu historikoen aldi konparagarria behar da. Adibidez, hurrengo 12 hilabeteetarako CLV aurreikusi nahi baduzu, izan gutxienez 18-24 hilabeteko datu historikoak.
 
-1. Zehaztu zer **Bezero aktiboak** zure negoziorako esan nahi du. Ezarri bezeroak aktibo jotzeko gutxienez transakzio bat izan behar duen denbora-tartea. Ereduak bezero aktiboentzako CLV soilik aurreikusiko du. 
-   - **Ereduak erosketa tartea kalkulatzen utzi (gomendatua)**: ereduak zure datuak aztertzen ditu eta erosketa historikoetan oinarritutako denbora tartea zehazten du.
-   - **Ezarri tartea eskuz**: bezero aktibo baten negozioaren definizio zehatza baduzu, aukeratu aukera hau eta ezarri epea horren arabera.
+1. Ezarri bezeroak aktibo jotzeko gutxienez transakzio bat izan behar duen denbora-tartea. Ereduak CLV-rako soilik aurreikusten du **Bezero aktiboak**.
+   - **Utzi ereduak erosketa tartea kalkulatzea (gomendatua)** : Modeloak zure datuak aztertzen ditu eta denbora-tarte bat zehazten du erosketa historikoetan oinarrituta.
+   - **Ezarri tartea eskuz** : Bezero aktiboa definitzeko denbora-tartea.
 
-1. Definitu pertzentila **Balio handiko bezeroa** ereduak zure negozioaren definizioarekin bat datozen emaitzak eman ditzan.
-    - **Ereduaren kalkulua (gomendatua)**: ereduak zure datuak aztertzen ditu eta balio handiko bezero bat zure negoziorako zer izan daitekeen zehazten du zure bezeroen transakzio-historian oinarrituta. Ereduak arau heuristikoa erabiltzen du (80/20 arauan edo Pareto-ren printzipioan inspiratuta) balio handiko bezeroen proportzioa aurkitzeko. Garai historikoan zure negozioak % 80 diru-sarrera metatuak lortu zituen bezeroen ehunekoa balio handiko bezeroentzat hartzen da. Normalean, % 30-40 bezero baino gutxiagok % 80 diru-sarrera metatuak lortzen dituzte. Hala ere, zenbaki hori zure negozioaren eta industriaren arabera alda daiteke.    
-    - **Bezero aktibo nagusien ehunekoa**: definitu balio handiko bezeroak zure negoziorako ordaindutako bezero aktiboen pertzentila gisa. Adibidez, aukera hau erabil dezakezu balio handiko bezeroak etorkizunean ordaintzen duten bezeroen % 20 gisa definitzeko.
+1. Definitu pertzentilaren **Balio handiko bezeroa**.
+    - **Ereduaren kalkulua (gomendatua)** : Ereduak 80/20 araua erabiltzen du. Garai historikoan zure negozioak % 80 diru-sarrera metatuak lortu zituen bezeroen ehunekoa balio handiko bezeroentzat hartzen da. Normalean, % 30-40 bezero baino gutxiagok % 80 diru-sarrera metatuak lortzen dituzte. Hala ere, zenbaki hori zure negozioaren eta industriaren arabera alda daiteke.
+    - **Bezero aktibo nagusien ehunekoa** : pertzentila espezifikoa balio handiko bezero batentzat. Adibidez, sartu **25** balio handiko bezeroak etorkizuneko bezero ordaintzaileen %25 nagusi gisa definitzea.
 
     Zure negozioak balio handiko bezeroak beste modu batean definitzen baditu, [aditzera eman nahiko genukeen bezala](https://go.microsoft.com/fwlink/?linkid=2074172).
 
-1. Hurrengo urratsera joateko, hautatu **Hurrengoa**.
+1. Hautatu **Hurrengoa**.
 
 ### <a name="add-required-data"></a>Gehitu beharrezko datuak
 
-1. **Beharrezko datuak** urratsean, hautatu **Gehitu datuak** **Bezeroen transakzio-historia** atalean eta aukeratu transakzioen edo erosketen historiari buruzko informazioa ematen duen entitatea, [aurrebaldintzak](#prerequisites) atalean deskribatu moduan.
+1. Hautatu **Gehitu datuak** rentzat **Bezeroaren transakzioen historia**.
 
-1. Esleitu eremu semantikoak erosketa-historiako entitateko atributuetara eta hautatu **Hurrengoa**.
+1. Hautatu jarduera semantiko mota, **Salmenta Eskaera** edo **SalesOrderLine**, transakzioen historia jasotzen duena. Jarduera konfiguratu ez bada, hautatu **hemen** eta sortu.
 
-   :::image type="content" source="media/clv-add-customer-data-mapping.png" alt-text="Konfigurazio-urratsaren irudia beharrezko datuen atributuak esleitzeko.":::
- 
-1. Beheko eremuak betetzen ez badira, konfiguratu erosketa-historiaren entitatea *Bezeroaren* entitatera eta hautatu **Gorde**.
-    1. Hautatu Transakzio-historiaren entitatea.
-    1. Aukeratu erosketa-historiaren entitatean bezeroa identifikatzen duen eremua. Zure Bezeroaren entitatearen bezeroaren ID nagusiarekin erlazionatu behar da.
-    1. Hautatu bezero nagusiaren entitatearekin bat datorren lan-fluxuaren entitate bat.
-    1. Idatzi izena deskribatzen duena harremana.
+1. Azpian **Jarduerak**, jarduera sortu zenean jarduera-atributuak semantikoki mapatu baziren, aukeratu kalkulua zentratu nahi duzun atributu edo entitate zehatzak. Mapa semantikoa gertatu ez bada, hautatu **Editatu** eta mapatu zure datuak.
+  
+   :::image type="content" source="media/CLV-add-required.PNG" alt-text="Gehitu CLV eredurako beharrezko datuak":::
 
-      :::image type="content" source="media/clv-add-customer-data-relationship.png" alt-text="Konfigurazio urratsaren irudia bezero entitatearekin harremana definitzeko.":::
+1. Hautatu **Hurrengoa** eta eredu honetarako behar diren atributuak berrikusi.
 
-1. Hautatu **Hurrengoa**.
+1. Sakatu **Gorde**.
+
+1. Gehitu jarduera gehiago edo hautatu **Hurrengoa**.
 
 ### <a name="add-optional-activity-data"></a>Gehitu aukerako jarduera-datuak
 
 Bezeroen interakzio nagusiak islatzen dituzten datuek (adibidez, webgunea, bezeroarentzako arreta-zerbitzu eta gertaeren erregistroak) testuingurua gehitzen dute transakzio erregistroetan. Zure bezeroen jardueren datuetan aurkitutako eredu gehiagok aurreikuspenen zehaztasuna hobe dezakete.
 
-1. urtean **Datu gehigarriak (aukerakoa)** urratsa, hautatu **Gehitu datuak** azpian **Hobetu ereduaren estatistikak jarduera-datu gehigarriekin**. Aukeratu bezeroaren jardueren entitateari buruzko informazioa ematen duen entitatea [aurrebaldintzetan](#prerequisites) azaltzen den moduan.
+1. Hautatu **Gehitu datuak** azpian **Hobetu ereduaren estatistikak jarduera-datu gehigarriekin**.
 
-1. Esleitu eremu semantikoak bezeroaren jardueraren entitateko atributuetara eta hautatu **Hurrengoa**.
+1. Aukeratu gehitzen ari zaren bezeroaren jarduera motarekin bat datorren jarduera mota. Jarduera konfiguratu ez bada, hautatu **hemen** eta sortu.
 
-   :::image type="content" source="media/clv-additional-data-mapping.png" alt-text="Konfigurazio-urratsaren datu gehigarrien eremuak esleitzeko.":::
+1. Azpian **Jarduerak**, jarduera sortu zenean jarduera-atributuak mapatu bazituzten, aukeratu kalkulua zentratu nahi duzun atributu edo entitate zehatzak. Kartografiarik gertatu ez bada, hautatu **Editatu** eta mapatu zure datuak.
 
-1. Aukeratu gehitzen ari zaren bezeroaren jarduera motarekin bat datorren jarduera mota. Aukeratu lehendik dauden jarduera moten artean edo gehitu jarduera mota berri bat.
-
-1. Konfiguratu harremana bezeroaren jarduera entitatetik *Bezeroa* entitatea.
-
-    1. Aukeratu bezeroaren jardueraren taulan bezeroa identifikatzen duen eremua. Zuzenean erlazionatuta egon daiteke zure *Bezero* entitatearen bezeroaren ID nagusiarekin.
-    1. Hautatu botoia *Bezero* entitatea bat datorrena zure lehen *Bezeroa* entitatearekin.
-    1. Idatzi izena deskribatzen duena harremana.
-
-   :::image type="content" source="media/clv-additional-data.png" alt-text="Konfigurazio-fluxuko urratsaren irudia datu osagarriak gehitzeko eta jarduera konfiguratutako adibideekin konfiguratzeko.":::
+1. Hautatu **Hurrengoa** eta eredu honetarako behar diren atributuak berrikusi.
 
 1. Sakatu **Gorde**.
-    Gehitu datu gehiago bezeroen beste jarduera batzuk sartu nahi badituzu.
 
-1. Gehitu aukerako bezeroaren datuak edo hautatu **Hurrengoa**.
+1. Hautatu **Hurrengoa**.
+
+1. [Gehitu aukerako bezeroen datuak](#add-optional-customer-data) edo hautatu **Hurrengoa** eta joan [Ezarri eguneratze-egutegia](#set-update-schedule).
 
 ### <a name="add-optional-customer-data"></a>Gehitu aukerako bezeroen datuak
 
 Hautatu normalean erabiltzen diren bezeroen profilaren 18 atributuren artean, ereduan sarrera gisa sartzeko. Atributu hauek eredu-emaitza pertsonalizatuagoak, garrantzitsuagoak eta ekintzaileagoak lor ditzakete zure negozioaren erabilera-kasuetarako.
 
 Adibidez: Contoso Kafeak bezeroaren bizitzako balioa aurreikusi nahi du balio handiko bezeroei zuzenduta, espreso makina berriaren aurkezpenarekin lotutako eskaintza pertsonalizatu batekin. Contoso-ek CLV eredua erabiltzen du eta bezeroen profilaren 18 atributu guztiak gehitzen ditu euren balio handieneko bezeroetan zein faktorek eragiten duten ikusteko. Bezeroen kokapena bezero horiengan eragin handiena duen faktorea dela ikusten dute.
-Informazio horrekin, tokiko ekitaldi bat antolatzen dute espresso-makina abian jartzeko eta bertako saltzaileekin elkartzen dira eskaintza pertsonalizatuak eta ekitaldian esperientzia berezi bat izateko. Informazio hori gabe, baliteke Contoso-ek marketin-mezu generikoak soilik bidali eta balio handiko bezeroen tokiko segmentu honetarako pertsonalizatzeko aukera galdu izana.
+Informazio horrekin, tokiko ekitaldi bat antolatzen dute espresso-makina abian jartzeko eta bertako saltzaileekin elkartzen dira eskaintza pertsonalizatuetarako eta ekitaldian esperientzia berezi bat izateko. Informazio hori gabe, Contoso-ek baliteke marketin-mezu generikoak soilik bidali eta balio handiko bezeroen tokiko segmentu honetarako pertsonalizatzeko aukera galdu izana.
 
-1. urtean **Datu gehigarriak (aukerakoa)** urratsa, hautatu **Gehitu datuak** azpian **Are gehiago, are gehiago areagotu ereduaren ezagutza bezeroen datu gehigarriekin**.
+1. Hautatu **Gehitu datuak** azpian **Are gehiago, are gehiago areagotu ereduaren ezagutza bezeroen datu gehigarriekin**.
 
-1. Izan ere **Entitatea**, aukeratu **Bezeroa: CustomerInsights** bezeroaren atributuen datuekin mapatzen den bezeroaren profil taula bateratua hautatzeko. Izan ere **Bezeroaren IDa**, aukeratu **System.Customer.CustomerId**.
+1. Izan ere **Entitatea**, aukeratu **Bezeroa: CustomerInsights** bezeroaren atributuen datuekin mapatzen den bezero profil bateratua hautatzeko. Izan ere **Bezeroaren IDa**, aukeratu **System.Customer.CustomerId**.
 
 1. Mapeatu eremu gehiago datuak zure bezeroen profil bateratuetan eskuragarri baldin badaude.
 
    :::image type="content" source="media/clv-optional-customer-profile-mapping.png" alt-text="Bezeroen profilaren datuetarako mapatutako eremuen adibidea.":::
 
-1. Hautatu **Gorde** ereduak bezeroaren bizitzako balioa iragartzen laguntzeko erabili behar dituen atributuak mapatu ondoren.
+1. Sakatu **Gorde**.
 
 1. Hautatu **Hurrengoa**.
 
 ### <a name="set-update-schedule"></a>Konfiguratu antolaketaren eguneratzea
 
-1. **Datuak eguneratzeko egutegia** urratsean, aukeratu maiztasuna zure modeloa berriro trebatzeko azken datuetan oinarrituta. Ezarpen hau garrantzitsua da iragarpenen zehaztasuna eguneratzeko, Customer Insights-en datu berriak sartzen diren heinean. Negozio gehienek hilean behin birsortu eta zehaztasun ona lortu dezakete.
+1. Aukeratu azken datuetan oinarrituta zure eredua berriro trebatzeko maiztasuna. Ezarpen hau garrantzitsua da iragarpenen zehaztasuna eguneratzeko, Customer Insights-en datu berriak sartzen diren heinean. Negozio gehienek hilean behin birsortu eta zehaztasun ona lortu dezakete.
 
 1. Hautatu **Hurrengoa**.
 
 ### <a name="review-and-run-the-model-configuration"></a>Berrikusi eta exekutatu modeloaren konfigurazioa
 
-1. **Berrikusi modeloaren xehetasunak** urratsean, balioztatu iragarpenaren konfigurazioa. Aurreikuspen konfigurazioaren edozein ataletara joan zaitezke hautatuta **Editatu** erakutsitako balioaren azpian. Konfigurazio-urrats bat ere hauta dezakezu aurrerapen adierazletik.
+The **Berrikusi eta exekutatu** urratsak konfigurazioaren laburpena erakusten du eta iragarpen sortu aurretik aldaketak egiteko aukera ematen du.
 
-1. Balio guztiak ondo konfiguratuta badaude, hautatu **Gorde eta exekutatu** eredua martxan jartzen hasteko. **Nire iragarpenak** fitxan, iragarpen prozesuaren egoera ikus dezakezu. Prozesuak hainbat ordu iraun dezake iragarpenean erabilitako datu kopuruaren arabera.
+1. Hautatu **Editatu** aldaketak berrikusteko eta egiteko edozein urratsetan.
 
-## <a name="review-prediction-status-and-results"></a>Berrikusi iragarpenen egoera eta emaitzak
+1. Zure hautapenekin pozik bazaude, hautatu **Gorde eta exekutatu** eredua exekutatzen hasteko. Hautatu **Eginda**. The **Nire iragarpenak** fitxa bistaratzen da iragarpen sortzen ari den bitartean. Prozesuak hainbat ordu iraun dezake iragarpenean erabilitako datu kopuruaren arabera.
 
-### <a name="review-prediction-status"></a>Berrikusi iragarpenen egoera
+[!INCLUDE [progress-details](includes/progress-details-pane.md)]
 
-1.  Joan **Adimena** > **Iragarpenak** atalera eta hautatu **Nire iragarpenak** fitxa.
-2.  Hautatu berrikusi nahi duzun iragarpena.
+## <a name="view-prediction-results"></a>Ikusi iragarpen emaitzak
 
-- **Iragarpenaren izena**: sortzean emandako iragarpenaren izena.
-- **Iragarpen mota**: iragarpenean erabilitako eredu mota
-- **Irteerako entitatea**: iragarpenaren irteera gordetzeko entitatearen izena. Joan **Datuak** > **Entitateak** aukerara izen hori duen entitatea aurkitzeko.
-- **Iragarritako eremua**: eremu hau iragarpen mota batzuetarako bakarrik betetzen da eta ez da erabiltzen bezeroaren bizi-iraupenaren balioaren iragarpenean.
-- **Egoera**: iragarpenaren exekuzioaren egoera.
-    - **Ilaran**: iragarpena beste prozesu batzuk osatzeko zain dago.
-    - **Freskatzea**: iragarpena une honetan exekutatzen ari da irteerako entitatera isuriko diren emaitzak sortzeko.
-    - **Huts egin du**: iragarpenaren exekuzioak huts egin du. Xehetasun gehiago eskuratzeko, [berrikusi egunkariak](manage-predictions.md#troubleshoot-a-failed-prediction).
-    - **Ongi osatu da**: iragarpena ongi osatu da. Aukeratu **Ikusi** elipsi bertikalen azpian iragarpen emaitzak berrikusteko.
-- **Editatuta**: aurreikuspenerako konfigurazioa aldatu zen data.
-- **Azken freskatua**: iragarpena freskatu den data irteerako entitatean.
+1. Joan **Adimena** > **Iragarpenak**.
 
-### <a name="review-prediction-results"></a>Berrikusi iragarpenen emaitzak
-
-1. Joan **Adimena** > **Iragarpenak** atalera eta hautatu **Nire iragarpenak** fitxa.
-
-1. Aukeratu emaitzak berrikusi nahi dituzun iragarpena.
+1. urtean **Nire iragarpenak** fitxan, hautatu ikusi nahi duzun iragarpen.
 
 Emaitza orrialdearen barruan hiru datu nagusi daude.
 
-- **Trebakuntza ereduaren errendimendua** : A, B edo C kalifikazio posibleak dira. Kalifikazio honek iragarpenaren errendimendua adierazten du eta irteerako entitatean gordetako emaitzak erabiltzeko erabakia hartzen lagun zaitzake. Aukeratu **Ikasi puntuazio honi buruz** azpiko ereduaren errendimendu-metrikak eta azken ereduaren errendimendu-kalifikazioa nola atera den hobeto ulertzeko.
+- **Prestakuntza ereduaren errendimendua** : A, B edo C kalifikazioek iragarpen-en errendimendua adierazten dute eta irteerako entitatean gordetako emaitzak erabiltzeko erabakia hartzen lagun zaitzake.
   
   :::image type="content" source="media/clv-model-score.png" alt-text="Ereduaren puntuazioaren informazio koadroaren irudia A kalifikazioarekin.":::
 
-  Iragarpen konfiguratzerakoan emandako balio handiko bezeroen definizioa erabiliz, sistemak ebaluatzen du AA ereduak balio handia izan zuen bezero handiak aurreikustean oinarrizko eredu batekin alderatuta.    
+  Customer Insights-ek balio handiko bezeroen iragarpenean AI ereduak nola jokatu duen ebaluatzen du oinarrizko eredu batekin alderatuta.
 
   Kalifikazioak arau hauetan oinarrituta zehazten dira:
   - **A** ereduak zehaztasunez aurreikusi zuen gutxienez % 5eko balio handiko bezero gehiago oinarrizko ereduarekin alderatuta.
   - **B** ereduak zehaztasunez aurreikusi zuen gutxienez % 0-5 balio handiko bezero gehiago oinarrizko ereduarekin alderatuta.
   - **C** ereduak zehaztasunez aurreikusi zuen balio handiko bezero gutxiago oinarrizko ereduarekin alderatuta.
-
-  **Ereduaren balorazioa** panelean adimen artifizialeko ereduaren errendimenduari eta oinarrizko ereduari buruzko xehetasun gehiago agertzen dira. Oinarrizko ereduak AI ez oinarritutako ikuspegia erabiltzen du bezeroek bizitzako balioa kalkulatzeko batez ere bezeroek egindako erosketa historikoetan oinarrituta.     
-  Oinarrizko ereduaren arabera CLV kalkulatzeko erabilitako formula estandarra:    
-
-  _**CLV bezero bakoitzeko** = Bezeroak bezeroaren leiho aktiboan egindako batez besteko hileko erosketa * Hilabete kopurua CLV iragarpen aldian * Bezero guztien atxikipen tasa orokorra*_
-
-  Adimen artifizialeko eredua oinarrizko ereduarekin alderatzen da, bi modeloen errendimendu metrikan oinarrituta.
   
-  - **Balio handiko bezeroak iragartzeko arrakasta-tasa**
+  Hautatu [**Ikasi puntuazio honi buruz**](#learn-about-the-score) irekitzeko **Ereduaren balorazioa** AI ereduaren errendimenduari eta oinarrizko ereduari buruzko xehetasun gehiago erakusten dituen panela. Hobeto ulertzen lagunduko dizu ereduaren errendimendu-neurriak eta azken ereduaren errendimendu-kalifikazioa nola atera den. Oinarrizko ereduak AI ez oinarritutako ikuspegia erabiltzen du bezeroek bizitzako balioa kalkulatzeko batez ere bezeroek egindako erosketa historikoetan oinarrituta.
 
-    Ikusi aldea adimen artifizialeko eredua erabiliz balio handiko bezeroak iragartzeko oinarrizko ereduarekin alderatuta. Adibidez, % 84 arrakasta-tasak esan nahi du prestakuntzako datuetan balio handiko bezero guztien artean adimen artifizialeko ereduak % 84 zehazki harrapatu zuela. Ondoren, arrakasta-tasa hau oinarrizko ereduaren arrakasta-tasarekin alderatzen dugu, aldaketa erlatiboa jakinarazteko. Balio hau ereduari kalifikazio bat emateko erabiltzen da.
+- **Bezeroen balioa pertzentilaren arabera** : Balio baxuko eta balio handiko bezeroek taula batean bistaratzen dituzte. Pasa zaitez histogramako barren gainetik talde bakoitzeko bezero kopurua eta talde horren batez besteko CLV ikusteko. Aukeran, [bezeroen segmentuak sortu](prediction-based-segment.md) beren CLV iragarpenetan oinarrituta.
+  
+   :::image type="content" source="media/CLV-value-percent.png" alt-text="Bezeroen balioa pertzentilaren arabera CLV eredurako":::
 
-  - **Erroreen metrikak**
-    
-    Beste metrika batek modeloaren errendimendu orokorra berrikusteko aukera ematen du etorkizuneko balioak iragartzeko akatsen arabera. Errore batez besteko akats karratuaren (RMSE) metrika orokorra erabiltzen dugu errore hori ebaluatzeko. RMSE datu kuantitatiboak iragartzeko eredu baten errorea neurtzeko modu estandarra da. Adimen artifizialeko ereduaren RMSE oinarrizko ereduaren RMSEarekin alderatzen da eta desberdintasun erlatiboa jakinarazi da.
+- **Eragin gehien duten faktoreak**: hainbat faktore hartzen dira kontuan zure CLV iragarpen sortzerakoan adimen artifizialeko ereduan emandako sarrera datuetan oinarrituta. Faktore bakoitzak eredu batek sortzen dituen aurreikuspen agregatuetarako kalkulatutako garrantzia du. Erabili faktore hauek zure iragarpen emaitzak balioztatzeko. Faktore horiek CLV zure bezero guztien artean aurreikusteko eragin duten faktore eragileei buruzko informazio gehiago eskaintzen dute.
+  
+   :::image type="content" source="media/CLV-influence-factors.png" alt-text="CLV ereduan eragin handiena duten faktoreak":::
 
-  Adimen artifizialeko ereduak bezeroen sailkapen zehatza lehenesten du zure negozioari ematen dioten balioaren arabera. Beraz, balio handiko bezeroak iragartzeko arrakasta-tasa soilik erabiltzen da azken ereduaren nota lortzeko. RMSE metrika balio arruntetarako sentikorra da. Erosketa balio izugarri altuak dituzten bezeroen ehuneko txikia duzun eszenatokietan, baliteke RMSE metrikak modeloaren errendimenduaren argazki osoa ez ematea.   
+### <a name="learn-about-the-score"></a>Ikasi puntuazioari buruz
 
-- **Bezeroen balioa pertzentilaren arabera**: balio handiko bezeroen definizioa erabiliz, bezeroak balio baxuko eta balio handiko taldetan biltzen dira, CLV iragarpenetan oinarrituta, eta taula batean agertzen dira. Histogramako barren gainetik pasatzean, talde bakoitzeko bezero kopurua eta talde horren batez besteko CLV-a ikus ditzakezu. Datu horiek lagundu dezakete nahi izanez gero [bezeroen segmentuak sortu](segments.md) CLV iragarpenetan oinarrituta.
+Oinarrizko ereduaren arabera CLV kalkulatzeko erabilitako formula estandarra:
 
-- **Eragin gehien duten faktoreak**: hainbat faktore hartzen dira kontuan zure CLV iragarpen sortzerakoan adimen artifizialeko ereduan emandako sarrera datuetan oinarrituta. Faktore bakoitzak eredu batek sortzen dituen aurreikuspen agregatuetarako kalkulatutako garrantzia du. Faktore hauek erabil ditzakezu zure iragarpen emaitzak balioztatzen laguntzeko. Faktore horiek CLV zure bezero guztien artean aurreikusteko eragin duten faktore eragileei buruzko informazio gehiago eskaintzen dute.
+ _**CLV bezero bakoitzarentzat** = Bezeroak bezero aktiboaren leihoan egindako hileroko batez besteko erosketa * CLV iragarpen aldiko hilabete kopurua * Bezero guztien atxikipen-tasa orokorra_
 
-## <a name="manage-predictions"></a>Iragarpenak kudeatu
+Adimen artifizialeko eredua oinarrizko ereduarekin alderatzen da, bi modeloen errendimendu metrikan oinarrituta.
+  
+- **Balio handiko bezeroak iragartzeko arrakasta-tasa**
 
-Iragarpenak optimizatzea, konpontzea, freskatzea edo ezabatzea posible da. Berrikusi sarrerako datuen erabilgarritasun txostena iragarpen azkarragoa eta fidagarriagoa nola egin jakiteko. Informazio gehiago lortzeko, ikusi [Kudeatu iragarpenak](manage-predictions.md).
+  Ikusi aldea adimen artifizialeko eredua erabiliz balio handiko bezeroak iragartzeko oinarrizko ereduarekin alderatuta. Adibidez, % 84 arrakasta-tasak esan nahi du prestakuntzako datuetan balio handiko bezero guztien artean adimen artifizialeko ereduak % 84 zehazki harrapatu zuela. Ondoren, arrakasta-tasa hau oinarrizko ereduaren arrakasta-tasarekin alderatzen dugu, aldaketa erlatiboa jakinarazteko. Balio hau ereduari kalifikazio bat emateko erabiltzen da.
+
+- **Erroreen metrikak**
+
+  Ikusi ereduaren errendimendu orokorra etorkizuneko balioak aurreikusteko erroreari dagokionez. Errore batez besteko akats karratuaren (RMSE) metrika orokorra erabiltzen dugu errore hori ebaluatzeko. RMSE datu kuantitatiboak iragartzeko eredu baten errorea neurtzeko modu estandarra da. Adimen artifizialeko ereduaren RMSE oinarrizko ereduaren RMSEarekin alderatzen da eta desberdintasun erlatiboa jakinarazi da.
+
+Adimen artifizialeko ereduak bezeroen sailkapen zehatza lehenesten du zure negozioari ematen dioten balioaren arabera. Beraz, balio handiko bezeroak iragartzeko arrakasta-tasa soilik erabiltzen da azken ereduaren nota lortzeko. RMSE metrika balio arruntetarako sentikorra da. Erosketa balio izugarri altuak dituzten bezeroen ehuneko txikia duzun eszenatokietan, baliteke RMSE metrikak modeloaren errendimenduaren argazki osoa ez ematea.
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

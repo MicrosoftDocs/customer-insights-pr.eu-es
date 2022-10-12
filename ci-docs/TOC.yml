@@ -162,6 +162,8 @@
           href: sentiment-analysis.md
         - name: Erabili Azure Ikaskuntza automatikoko eredu pertsonalizatuak
           href: custom-models.md
+        - name: Sortu iragarkietan oinarritutako segmentuak
+          href: prediction-based-segment.md
     - name: Gida laginak
       items:
         - name: CLVren iragarpen gida lagina
@@ -174,10 +176,6 @@
           href: sample-guide-predict-product-recommendation.md
         - name: Esperimentuak Azure ikaskuntza automatikoarekin
           href: azure-machine-learning-experiments.md
-    - name: Iragarpenak kudeatu
-      href: manage-predictions.md
-    - name: Sortu iragarkietan oinarritutako segmentuak
-      href: prediction-based-segment.md
 - name: Esportatu aukerak
   items:
     - name: Esportazioak

@@ -1,7 +1,7 @@
 ---
 title: Entitateak Customer Insights-en
 description: Ikusi datuak Entitateen orrian.
-ms.date: 12/06/2021
+ms.date: 08/04/2022
 ms.reviewer: mhart
 ms.subservice: audience-insights
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: shellyha
 searchScope:
 - ci-entities
 - customerInsight
-ms.openlocfilehash: 0beaa46d47545ac195ced876b509dfc57821bfaf
-ms.sourcegitcommit: ad74ace653db9a25fce4343adef7db1c9b0d8904
+ms.openlocfilehash: e365945b27e7c985ca5371c6b72619610b6f3af1
+ms.sourcegitcommit: be341cb69329e507f527409ac4636c18742777d2
 ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "9183525"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "9610083"
 ---
 # <a name="entities-in-customer-insights"></a>Entitateak Customer Insights-en
 
@@ -61,27 +61,5 @@ Joan **Datuak** > **Entitateak** entitateen zerrenda ikusteko. Entitate bakoitze
   - **Sortu** : Entitatearen sorreraren data eta ordua.
   - **Egileak editatua** : Entitatea aldatu duen pertsonaren izena.
   - **Editatua** : Erakundearen aldaketaren data eta ordua.
-
-## <a name="entity-specific-information"></a>Entitatearen informazio zehatza
-
-Hurrengo atalean sistemak sortutako entitate batzuei buruzko informazioa ematen da.
-
-### <a name="corrupted-data-sources"></a>Hondatutako datu-iturburuak
-
-Irentsitako datu-iturburu baten eremuek hondatutako datuak eduki ditzakete. Sistemak sortutako entitateetan hondatutako eremuak dituzten erregistroak agerian daude. Hondatutako erregistroak ezagutzeak iturburuko sisteman zein datu berrikusi eta eguneratu nahi dituzun identifikatzen lagunduko dizu. Datu-iturburuaren hurrengo freskatzearen ondoren, zuzendutako erregistroak Customer Insights-en irensten dira eta beheranzko prozesuetara pasatzen dira. 
-
-Adibidez, "urtebetetzea" zutabeak datu mota "data" gisa ezarrita dauka. Bezeroaren erregistroan urtebetetzea '01/01/19777' gisa sartu da. Sistemak erregistro hau hondatuta dagoela markatuko du. Norbaitek iturburuko sisteman urtebetetzea '1977ra' alda dezake. Datu-iturriak freskatze automatizatuaren ondoren, eremuak baliozko formatua du eta erregistroa hondatutako entitatetik kenduko da.
-
-Joan **Datuak** > **Entitateak** eta bilatu hondatutako entitateak **Sistema** atalean. Hondatutako entitateen izendapen eskema: 'DataSourceName_EntityName_corrupt'. Hautatu hondatutako entitate bat hondatutako eremuak eta arrazoia erregistro indibidualaren mailan identifikatzeko.
-
-   :::image type="content" source="media/corruption-reason.png" alt-text="Ustelkeria arrazoia.":::
-
-Customer Insights-ek oraindik hondatutako erregistroak prozesatzen ditu. Hala ere, arazoak sor ditzakete datu bateratuekin lan egitean.
-
-Iragarritako datuekin egiaztapen hauek exekutatzen dira hondatutako erregistroak agerian uzteko:
-
-- Eremu baten balioa ez dator bat bere zutabeko datu motarekin.
-- Eremuek zutabeak espero den eskemarekin bat ez datozen eragiten duten karaktereak dituzte. Adibidez: gaizki formateatutako komatxoak, ihes egin gabeko komatxoak edo karaktere lerro berriak.
-- Datetime/date/datetimeoffset zutabeak badaude, haien formatua ereduan zehaztu behar da ISO formatu estandarra jarraitzen ez badu.
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

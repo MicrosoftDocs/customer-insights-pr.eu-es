@@ -1,7 +1,7 @@
 ---
 title: Konektatu datuekin Microsoft Dataverse kudeatutako data lake-ra
 description: Inportatu datuak Microsoft Dataverse kudeatutako datu-biltegia.
-ms.date: 07/26/2022
+ms.date: 08/18/2022
 ms.subservice: audience-insights
 ms.topic: how-to
 author: adkuppa
@@ -11,12 +11,12 @@ ms.reviewer: v-wendysmith
 searchScope:
 - ci-dataverse
 - customerInsights
-ms.openlocfilehash: b21150a1c51bdad35250cae7fde7f38a014ec876
-ms.sourcegitcommit: 5807b7d8c822925b727b099713a74ce2cb7897ba
+ms.openlocfilehash: 0d9612525344c8ac99b6e3edfe33a426dc0a474b
+ms.sourcegitcommit: be341cb69329e507f527409ac4636c18742777d2
 ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 07/28/2022
-ms.locfileid: "9206938"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "9609776"
 ---
 # <a name="connect-to-data-in-a-microsoft-dataverse-managed-data-lake"></a>Konektatu datuekin Microsoft Dataverse kudeatutako data lake-ra
 
@@ -70,5 +70,93 @@ Beste Dataverse datu biltegi batekin konektatzeko, [sortu datu-iturburu berria](
 1. Egin klik **Gorde** zure aldaketak aplikatzeko eta itzultzeko **Datu-iturriak** orrialdea.
 
    [!INCLUDE [progress-details-include](includes/progress-details-pane.md)]
+
+## <a name="common-reasons-for-ingestion-errors-or-corrupted-data"></a>Irenste-akatsen edo datu hondatuen ohiko arrazoiak
+
+Iragarritako datuekin egiaztapen hauek exekutatzen dira hondatutako erregistroak agerian uzteko:
+
+- Eremu baten balioa ez dator bat bere zutabeko datu motarekin.
+- Eremuek zutabeak espero den eskemarekin bat ez datozen eragiten duten karaktereak dituzte. Adibidez: gaizki formateatutako komatxoak, ihes egin gabeko komatxoak edo karaktere lerro berriak.
+- Datetime/date/datetimeoffset zutabeak badaude, haien formatua ereduan zehaztu behar da ISO formatu estandarra jarraitzen ez badu.
+
+### <a name="schema-or-data-type-mismatch"></a>Eskema edo datu-mota ez datoz bat
+
+Datuak eskemarekin bat ez badatoz, erregistroak hondatuta bezala sailkatuko dira. Zuzendu iturburuko datuak edo eskema eta sartu berriro datuak.
+
+### <a name="datetime-fields-in-the-wrong-format"></a>Data-orduaren eremuak formatu okerrean
+
+Entitateko data-orduaren eremuak ez daude ISO edo en-US formatuetan. Customer Insights-en data-orduaren formatu lehenetsia en-US formatua da. Entitate bateko data-ordu-eremu guztiek formatu berean egon behar dute. Customer Insights-ek beste formatu batzuk onartzen ditu, baldin eta oharrak edo ezaugarriak ereduan edo manifest.json iturburuan edo entitate mailan egiten badira. Adibidez:
+
+**Model.json**
+
+   ```json
+      "annotations": [
+        {
+          "name": "ci:CustomTimestampFormat",
+          "value": "yyyy-MM-dd'T'HH:mm:ss:SSS"
+        },
+        {
+          "name": "ci:CustomDateFormat",
+          "value": "yyyy-MM-dd"
+        }
+      ]   
+   ```
+
+  Manifest.json batean, datetime formatua entitate mailan edo atributu mailan zehaztu daiteke. Entitate mailan, erabili "exhibitsTraits" *.manifest.cdm.json entitatean datu-orduaren formatua definitzeko. Atributu mailan, erabili "appliedTraits" entityname.cdm.json atributuan.
+
+**Manifest.json entitate mailan**
+
+```json
+"exhibitsTraits": [
+    {
+        "traitReference": "is.formatted.dateTime",
+        "arguments": [
+            {
+                "name": "format",
+                "value": "yyyy-MM-dd'T'HH:mm:ss"
+            }
+        ]
+    },
+    {
+        "traitReference": "is.formatted.date",
+        "arguments": [
+            {
+                "name": "format",
+                "value": "yyyy-MM-dd"
+            }
+        ]
+    }
+]
+```
+
+**Entity.json atributu mailan**
+
+```json
+   {
+      "name": "PurchasedOn",
+      "appliedTraits": [
+        {
+          "traitReference": "is.formatted.date",
+          "arguments" : [
+            {
+              "name": "format",
+              "value": "yyyy-MM-dd"
+            }
+          ]
+        },
+        {
+          "traitReference": "is.formatted.dateTime",
+          "arguments" : [
+            {
+              "name": "format",
+              "value": "yyyy-MM-ddTHH:mm:ss"
+            }
+          ]
+        }
+      ],
+      "attributeContext": "POSPurchases/attributeContext/POSPurchases/PurchasedOn",
+      "dataFormat": "DateTime"
+    }
+```
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

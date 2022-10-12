@@ -1,7 +1,7 @@
 ---
 title: Programatu sistemaren freskatzea
 description: Programatu sistema freskatu behar den ordua
-ms.date: 08/09/2022
+ms.date: 09/27/2022
 ms.subservice: audience-insights
 ms.topic: conceptual
 author: NimrodMagen
@@ -11,19 +11,19 @@ manager: shellyha
 searchScope:
 - ci-system-schedule
 - customerInsights
-ms.openlocfilehash: 949ea071ca41127b0c45488d5d7af3f6aa4e1c35
-ms.sourcegitcommit: d7054a900f8c316804b6751e855e0fba4364914b
+ms.openlocfilehash: 4aac02b570357d2086f7a9d7340b0e4837157a0b
+ms.sourcegitcommit: be341cb69329e507f527409ac4636c18742777d2
 ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "9395941"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "9610313"
 ---
 # <a name="schedule-system-refresh"></a>Programatu sistemaren freskatzea
 
 Programatu zure guztien freskatze automatikoak [irentsitako datu-iturriak](data-sources.md). Freskatze automatikoak zure datuen iturrien eguneratzeak zure bezeroen profil bateratuetan islatzen laguntzen du.
 
 > [!NOTE]
-> Power Query Zuk kudeatutako datu-iturriak beren ordutegiak freskatzen dituzte. Hauen berriztapena antolatzeko Power Query datu-iturburuak, konfiguratu datu-iturburu zehatz horretan freskatze ezarpenak **Datu-iturriak** orrialdea.
+> Power Query Zuk kudeatutako datu-iturriak beren ordutegiak freskatzen dituzte. Hauen freskatzea antolatzeko Power Query datu-iturburuak, konfiguratu freskatze-ezarpenak datu-iturburu zehatz horretan **Datu-iturriak** orrialdea. Lerrokatu denborak gorako datuak freskatze-egutegiarekin, freskaketak guztiak aldi berean gerta ez daitezen.
 > :::image type="content" source="media/PPDF-edit-refresh.png" alt-text="Power Platform Datu-fluxua freskatzeko ezarpenak.":::
 
 ## <a name="set-system-refresh-schedule"></a>Ezarri sistemaren freskatze-egutegia

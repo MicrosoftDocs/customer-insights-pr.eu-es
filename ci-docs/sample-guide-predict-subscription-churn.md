@@ -1,7 +1,7 @@
 ---
 title: Harpidetzaren galera-tasaren iragarpenaren lagin-gida
 description: Erabil ezazu lagin-gida hau harpidetzen galera-tasaren iragarpenaren eredua probatzeko.
-ms.date: 03/31/2022
+ms.date: 09/19/2022
 ms.reviewer: v-wendysmith
 ms.subservice: audience-insights
 ms.topic: tutorial
@@ -11,77 +11,73 @@ manager: shellyha
 searchScope:
 - ci-create-prediction
 - customerInsights
-ms.openlocfilehash: 5a8eeafecacef3d0bb4a798b698cf490423ca98d
-ms.sourcegitcommit: 6a5f4312a2bb808c40830863f26620daf65b921d
+ms.openlocfilehash: 7e754be9a2cb9450949c6b3667bbd37aa39cf0bf
+ms.sourcegitcommit: be341cb69329e507f527409ac4636c18742777d2
 ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "8741396"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "9609991"
 ---
 # <a name="subscription-churn-prediction-sample-guide"></a>Harpidetzaren galera-tasaren iragarpenaren lagin-gida
 
-Harpidetzaren galera-tasaren iragarpenaren adibide bat azalduko dizugu, behean emandako lagin datuak erabiliz. 
+Gida honek iragarpen harpidetza churn-en amaierako adibide bat azalduko dizu lagin-datuak erabiliz. Iragarpen hau probatzea gomendatzen dizugu [ingurune berri batean](manage-environments.md).
 
 ## <a name="scenario"></a>Egoera
 
-Contoso kalitate handiko kafea eta kafe-makinak sortzen dituen enpresa bat da. Horiek Contoso Coffee webgunearen bidez saltzen dituzte. Berriki harpidetza negozioa hasi zuten euren bezeroek aldiro kafea hartzeko. Haien helburua da ulertzea harpidetutako bezeroetako zeintzuk utz dezaketen harpidetza bertan behera hurrengo hilabeteetan. Zein bezero **galtzeko arriskua** dagoen jakiteak marketinarekin erlazionatutako ahalegina bideratzen lagun diezaioke enpresari, arreta bezero horiengan jarrita.
+Contoso kalitate handiko kafe eta kafe makinak ekoizten dituen enpresa da. Contoso Kafearen webgunearen bidez saltzen dituzte produktuak. Berriki harpidetza negozioa hasi zuten euren bezeroek aldiro kafea hartzeko. Haien helburua hurrengo hilabeteetan harpidetutako bezeroek harpidetza bertan behera utz dezaketen ulertzea da. Euren bezeroetatik zein den jakitea **litekeena da birrintzea** marketin-ahaleginak aurrezten lagun diezaieke horiek mantentzen zentratuz.
 
 ## <a name="prerequisites"></a>Aurrebaldintzak
 
 - Gutxienez [Laguntzaileen baimenak](permissions.md) Customer Insights.
-- Honako urrats hauek [ingurune berri batean](manage-environments.md) inplementatzea gomendatzen dizugu.
 
 ## <a name="task-1---ingest-data"></a>1. zeregina - Datuen sarrera
 
-Berrikusi artikuluak [datuak sartzeari buruz](data-sources.md) eta [datu-iturriak erabiliz inportatzea Power Query konektoreak](connect-power-query.md) zehazki. Honako informazio honetan, ulertzen da ohituta zaudela orokorrean datuen sarrerarekin. 
+Berrikusi artikuluak [datuak sartzeari buruz](data-sources.md) eta [batekin konektatzen Power Query datu-iturburu](connect-power-query.md). Informazio honek, oro har, datuak irensten ezagutzen dituzula suposatzen du.
 
 ### <a name="ingest-customer-data-from-ecommerce-platform"></a>Sartu bezero-datuak merkataritza elektronikoko plataformatik
 
-1. Sortu **merkataritza elektronikoa** izeneko datu-iturburu bat, aukeratu inportatzeko aukera eta hautatu **Testua/CSV** konektorea.
+1. Sortu Power Query datu-iturburu izeneko bat **merkataritza elektronikoa** eta hautatu **Testua/CSV** konektorea.
 
 1. Idatzi merkataritza elektronikoko kontaktuen URLa: https://aka.ms/ciadclasscontacts.
 
-1. Datuak editatu bitartean, hautatu **Bihurtu**, eta, ondoren, **Erabili lehenengo errenkada goiburu gisa**.
+1. Datuak editatzen dituzun bitartean, hautatu **Eraldatu** eta gero **Erabili lehen errenkada goiburu gisa**.
 
 1. Eguneratu jarraian zerrendatutako zutabeen datu motak:
-
    - **Jaioteguna**: Data
    - **Sorrera-data**: Data/ordua/zona
 
    :::image type="content" source="media/ecommerce-dob-date.PNG" alt-text="Eraldatu jaiotze data datara.":::
 
-1. Eskuinaldeko paneleko **Izena** eremuan, aldatu izena **Kontsulta** datu-iturburuari eta ipini izen hau: **eCommerceContacts**
+1. urtean **Izena** eskuineko paneleko eremuan, aldatu izena zure datu-iturburu **eCommerceContacts**
 
 1. Gorde datu-iturburua.
 
 ### <a name="ingest-customer-data-from-loyalty-schema"></a>Sartu bezero-datuak fideltasun-eskematik
 
-1. Sortu **LoyaltyScheme** izeneko datu-iturburu bat, aukeratu inportatzeko aukera eta hautatu **Testua/CSV** konektorea.
+1. Sortu datu-iturburu izeneko bat **LeialtasunEgitasmoa** eta hautatu **Testua/CSV** konektorea.
 
-1. Idatzi merkataritza elektronikoko kontaktuen URLa: https://aka.ms/ciadclasscustomerloyalty.
+1. Sartu leialtasun-bezeroen URLa https://aka.ms/ciadclasscustomerloyalty.
 
-1. Datuak editatu bitartean, hautatu **Bihurtu**, eta, ondoren, **Erabili lehenengo errenkada goiburu gisa**.
+1. Datuak editatzen dituzun bitartean, hautatu **Eraldatu** eta gero **Erabili lehen errenkada goiburu gisa**.
 
 1. Eguneratu jarraian zerrendatutako zutabeen datu motak:
-
    - **Jaioteguna**: Data
    - **RewardsPoints**: Zenbaki osoa
    - **Sorrera-data**: Data/ordua
 
-1. Eskuinaldeko paneleko **Izena** eremuan, aldatu izena **Kontsulta** datu-iturburuari eta ipini izen hau: **loyCustomers**.
+1. urtean **Izena** eskuineko paneleko eremuan, aldatu izena zure datu-iturburu **loyBezeroak**.
 
 1. Gorde datu-iturburua.
 
 ### <a name="ingest-subscription-information"></a>Sartu harpidetzari buruzko informazioa
 
-1. Sortu **Harpidetzaren historia** izeneko datu-iturburu bat, aukeratu inportatzeko aukera eta hautatu **Testua / CSV** konektorea.
+1. Sortu datu-iturburu izeneko bat **Harpidetza Historia** eta hautatu **Testua/CSV** konektorea.
 
-1. Idatzi merkataritza elektronikoko kontaktuen URLa https://aka.ms/ciadchurnsubscriptionhistory.
+1. Sartu harpidetzen URLa https://aka.ms/ciadchurnsubscriptionhistory.
 
-1. Datuak editatu bitartean, hautatu **Bihurtu**, eta, ondoren, **Erabili lehenengo errenkada goiburu gisa**.
+1. Datuak editatzen dituzun bitartean, hautatu **Eraldatu** eta gero **Erabili lehen errenkada goiburu gisa**.
 
 1. Eguneratu jarraian zerrendatutako zutabeen datu motak:
-
    - **Harpidetzaren IDa**: osoko zenbakia
    - **Harpidetza kopurua**: Moneta
    - **Harpidetzaren amaiera-data**: Data / Ordua
@@ -91,92 +87,107 @@ Berrikusi artikuluak [datuak sartzeari buruz](data-sources.md) eta [datu-iturria
    - **Automatikoki berritzen da**: Egia / gezurra
    - **Errepikapen-maiztasuna, hilabetetan**: osoko zenbakia
 
-1. Eskuineko paneleko **Izena** eremuan, aldatu **Kontsulta** izena datu-iturburuari eta idatzi **SubscriptionHistory**.
+1. urtean **Izena** eskuineko paneleko eremuan, aldatu izena zure datu-iturburu **Harpidetza Historia**.
 
 1. Gorde datu-iturburua.
 
 ### <a name="ingest-customer-data-from-website-reviews"></a>Sartu bezeroaren datuak webguneen berrikuspenetatik
 
-1. Sortu **Webgunea** izeneko datu-iturburu bat, aukeratu inportatzeko aukera eta hautatu **Testua / CSV** konektorea.
+1. Sortu datu-iturburu izeneko bat **Webgunea** eta hautatu **Testua/CSV** konektorea.
 
-1. Idatzi merkataritza elektronikoko kontaktuen URLa https://aka.ms/ciadclasswebsite.
+1. Sartu webgunearen berrikuspenetarako URLa https://aka.ms/ciadclasswebsite.
 
-1. Datuak editatu bitartean, hautatu **Bihurtu**, eta, ondoren, **Erabili lehenengo errenkada goiburu gisa**.
+1. Datuak editatzen dituzun bitartean, hautatu **Eraldatu** eta gero **Erabili lehen errenkada goiburu gisa**.
 
 1. Eguneratu jarraian zerrendatutako zutabeen datu motak:
-
    - **Iritziaren batez besteko balorazioa**: osoko zenbakia
    - **Iritziaren data**: Data
 
-1. Eskuineko paneleko 'Izena' eremuan, aldatu **Kontsulta** izena datu-iturburuari eta ipini **web-eko iritziak**.
+1. urtean **Izena** eskuineko paneleko eremuan, aldatu izena zure datu-iturburu **webIritziak**.
 
 ## <a name="task-2---data-unification"></a>2. zeregina - Datuen bateratzea
 
+Berrikusi artikulua [datuen bateratzeari buruz](data-unification.md). Informazio honek datuen bateratzea orokorrean ezagutzen duzula suposatzen du.
+
 [!INCLUDE [sample-guide-unification](includes/sample-guide-unification.md)]
 
-## <a name="task-3---configure-the-subscription-churn-prediction"></a>3. zeregina - Konfiguratu harpidetzen galera-tasaren iragarpena
+## <a name="task-3---create-transaction-history-activity"></a>3. ataza - Transakzioen historiako jarduera sortzea
 
-Bezeroen profil bateratuak behar bezala jarrita, harpidetzaren galera-tasaren iragarpena exekutatu dezakegu. Urrats zehatzak ikusteko, ikusi [Harpidetza txanda iragarpen](predict-subscription-churn.md) Artikulu. 
+Berrikusi artikulua [bezeroen jarduerei buruz](activities.md). Ondorengo informazioak, oro har, jarduerak sortzen ezagutzen dituzula suposatzen du.
 
-1. Joan **Adimena** > **Ezagutu** atalera eta hautatu **Bezeroen galera-tasaren eredua**.
+1. Sortu izeneko jarduera bat **Harpidetza Historia** nirekin *Harpidetza* entitatea eta bere gako nagusia, **BezeroarenId**.
 
-1. Aukeratu **Harpidetza** aukera eta hautatu **Hasi**.
+1. Sortu arteko harremana *SubscriptionHistory:Harpidetza* eta *eCommerceContacts: eCommerce* rekin **Bezeroaren ID** bi entitateak konektatzeko atzerriko gako gisa.
+
+1. Hautatu **Harpidetza mota** rentzat **GertaeraJarduera** eta **HarpidetzaAmaieraData** rentzat **Denbora-zigilua**.
+
+1. Hautatu **Harpidetza** rentzat **Jarduera mota** eta jardueraren datuak semantikoki mapatzea.
+
+1. Exekutatu jarduera.
+
+1. Gehitu beste jarduera bat eta mapa bere eremuen izenak dagozkien eremuekin:
+   - Bezeroaren jardueren entitatea: Reviews:Website
+   - Gako nagusia: Website.Reviews.ReviewId
+   - Denbora-marka: Website.Reviews.ReviewDate
+   - Gertaera (jardueraren izena): Website.Reviews.ActivityTypeDisplay
+   - Xehetasunak (zenbatekoa edo balioa): Website.Reviews.ReviewRating
+
+1. Exekutatu jarduera.
+
+## <a name="task-4---configure-the-subscription-churn-prediction"></a>4. zeregina - Konfiguratu harpidetzen galera-tasaren iragarpena
+
+Bezeroen profil bateratuak ezarrita eta jarduera sortuta, exekutatu iragarpen harpidetza sorta. Urrats zehatzak ikusteko, ikus [Harpidetza txanda iragarpen](predict-subscription-churn.md).
+
+1. Joan **Adimena** > **Iragarpenak**.
+
+1. Gainean **Sortu** fitxa, hautatu **Erabili eredua** gainean **Bezeroen txandakako eredua** teila.
+
+1. Hautatu **Harpidetza** bira motarako eta gero **Hasi**.
 
 1. Eman **OOB eCommerce harpidetzen galera-tasaren iragarpena** izena ereduari eta **OOBSubscriptionChurnPrediction** irteerako entitateari.
 
-1. Definitu galera-tasaren ereduaren bi baldintza:
+1. Definitu ereduaren hobespenak:
+   - **Harpidetza amaitu zenetik egun batzuk** :**60** egunak bezero bat birrindutzat hartzen dela adierazteko, harpidetza amaitu eta epe horretan harpidetza berritzen ez badu.
+   - **Etorkizuna ikertzeko egunak iragartzeko** :**93** egun, hau da, ereduak zein bezerok iragar ditzaketen aurreikusten duen iraupena. Etorkizunean zenbat eta gehiago begiratu, orduan eta emaitza hain zehatzak izango dira.
 
-   * **Harpidetza amaitu zenetik igarotako egunak**: **gutxienez 60** egun. Harpidetza amaitu eta bezeroak hura berritu ez badu ezarritako epean, galdutzat emango da. 
+   :::image type="content" source="media/model-subs-levers.PNG" alt-text="Hautatu ereduaren hobespenak eta churn definizioa.":::
 
-   * **Bezeroen galera-tasaren definizioa** : **gutxienez 93** egun. Ereduak behar duen denbora zein bezero galduko diren iragartzeko. Etorkizunean zenbat eta gehiago begiratu, orduan eta emaitza hain zehatzak izango dira.
+1. Hautatu **Hurrengoa**.
 
-     :::image type="content" source="media/model-subs-levers.PNG" alt-text="Aukeratu iragarpen-leihoa eta galera-tasaren definizioa ereduaren mailakatzaileak.":::
+1. urtean **Beharrezko datuak** urratsa, hautatu **Gehitu datuak** harpidetza historia emateko.
 
-1. Aukeratu **Gehitu beharrezko datuak** eta hautatu **Gehitu datuak** harpidetzaren historiarako.
+1. Hautatu **Harpidetza** eta SubscriptionHistory entitatea eta hautatu **Hurrengoa**. Beharrezko datuak automatikoki betetzen dira jardueratik. Sakatu **Gorde**.
 
-1. Gehitu **Harpidetza: harpidetzaren historia** entitatea eta esleitu elektronikoko eremuak ereduak eskatzen dituen eremuetara.
+1. Bezeroaren jarduerak atalean, hautatu **Gehitu datuak**.
 
-1. Sartu **Harpidetza: harpidetzaren historia** entitatea **merkataritza elektronikoko kontaktuak: merkataritza elektronikoa**, izendatu harremana **merkataritza elektronikoko harpidetza**.
+1. Adibide honetarako, gehitu web berrikuspen jarduera.
 
-   :::image type="content" source="media/model-subscription-join.PNG" alt-text="Sartu merkataritza elektronikoko entitateetan.":::
+1. Hautatu **Hurrengoa**.
 
-1. Bezeroen jardueretan, gehitu **web-eko iritziak: webgunea** entitatea eta esleitu web-eko iritziak ereduak eskatzen dituen eremuetara. 
-   - Gako nagusia: ReviewId
-   - Denbora-marka: ReviewDate
-   - Gertaera: ReviewRating
-
-1. Konfiguratu jarduera webguneen iritzietarako. Aukeratu **Berrikuspena** jarduera eta sartu **web-eko berrikuspenak: webgunea** entitatean **merkataritza elektronikoko kontaktuak: merkataritza elektronikoa**-rekin.
-
-1. Aukeratu **Hurrengoa** ereduaren antolaketa ezartzeko.
-
-   Ereduak aldizka trebatu behar du eredu berriak ikasteko datu berriak sartzen direnean. Adibide honetarako, hautatu **hilero**.
+1. urtean **Datuen eguneraketak** urratsa, hautatu **Hilerokoa** egutegi eredurako.
 
 1. Xehetasun guztiak aztertu ondoren, hautatu **Gorde eta Exekutatu**.
 
-## <a name="task-4---review-model-results-and-explanations"></a>4. zeregina - Berrikusi ereduen emaitzak eta azalpenak
+## <a name="task-5---review-model-results-and-explanations"></a>5. zeregina - Berrikusi ereduen emaitzak eta azalpenak
 
-Ereduak datuen prestakuntza eta puntuazioa osatuko ditu. Harpidetzen galera-tasaren ereduaren azalpenak berrikus ditzakezu. Informazio gehiagorako, ikusi [Berrikusi iragarpen-egoera eta emaitzak](predict-subscription-churn.md#review-a-prediction-status-and-results).
+Ereduak datuen prestakuntza eta puntuazioa osatuko ditu. Berrikusi harpidetza txandakako ereduaren azalpenak. Informazio gehiagorako, ikus [Ikusi iragarpen emaitzak](predict-subscription-churn.md#view-prediction-results).
 
-## <a name="task-5---create-a-segment-of-high-churn-risk-customers"></a>5. zeregina - Sortu galera-arrisku handiko bezeroen segmentu bat
+## <a name="task-6---create-a-segment-of-high-churn-risk-customers"></a>6. zeregina - Sortu galera-arrisku handiko bezeroen segmentu bat
 
-Ekoizpen eredua martxan jartzeak hemen ikus dezakezun entitate berri bat sortzen du: **Datuak** > **Entitateak**.   
+Eredua exekutatzeak entitate berri bat sortzen du, **Datuak** > **Entitateak** zerrendan agertzen dena. Ereduak sortutako entitatean oinarritutako segmentu berri bat sor dezakezu.
 
-Ereduak sortutako entitatean oinarritutako segmentu berri bat sor dezakezu.
+1. Emaitzen orrian, hautatu **Sortu segmentua**.
 
-1.  Joan hona: **Segmentuak**. Aukeratu **Berria** eta aukeratu **Sortu hemendik** > **Adimena**. 
+1. Sortu arau bat erabiliz **OOBsubscriptionChurnPrediction** entitatea eta segmentua definitu:
+   - **Eremua** : ChurnScore
+   - **Eragilea** : baino handiagoa
+   - **Balioa** : 0,6
 
-   :::image type="content" source="media/segment-intelligence.PNG" alt-text="Ereduaren irteerarekin segmentu bat sortzea.":::
+1. Hautatu **Gorde** eta **Korrika egin** segmentua.
 
-1. Aukeratu **OOBSubscriptionChurnPrediction** amaiera-puntua eta definitu segmentua: 
-   - Eremua: ChurnScore
-   - Eragilea: hau baino handiagoa
-   - Balioa: 0.6
-   
-   :::image type="content" source="media/segment-setup-subs.PNG" alt-text="Konfiguratu harpidetzaren galera-tasaren segmentua.":::
+Harpidetza-negozio honen galera-arrisku handiko bezeroak identifikatzen dituen segmentu dinamikoki eguneratua duzu. Informazio gehiagorako, ikusi [Sortu eta kudeatu segmentuak](segments.md).
 
-Harpidetza-negozio honen galera-arrisku handiko bezeroak identifikatzen dituen segmentu dinamikoki eguneratua duzu.
-
-Informazio gehiagorako, ikusi [Sortu eta kudeatu segmentuak](segments.md).
-
+> [!TIP]
+> Iragarpen eredu baterako segmentu bat ere sor dezakezu hemendik **Segmentuak** orrialdea hautatuz **Berria** eta aukeratzea **Sortu hemendik** > **Adimena**. Informazio gehiagorako, ikus [Sortu segmentu berri bat segmentu azkarrekin](segment-quick.md).
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

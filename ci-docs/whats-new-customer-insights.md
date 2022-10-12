@@ -8,12 +8,12 @@ author: m-hartmann
 ms.author: mhart
 ms.reviewer: skumm
 manager: shellyha
-ms.openlocfilehash: acba06cba5fb5cbf0bca5aeb30b603003555fc32
-ms.sourcegitcommit: 3ab8f1c0ba5874095a19f0b6367b9a4432f72ed1
-ms.translationtype: MT
+ms.openlocfilehash: 2a386d65a5e285d471e9cafc45f247e7b4ae23bb
+ms.sourcegitcommit: be341cb69329e507f527409ac4636c18742777d2
+ms.translationtype: HT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 09/06/2022
-ms.locfileid: "9409342"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "9609577"
 ---
 # <a name="whats-new-in-dynamics-365-customer-insights"></a>Dynamics 365 Customer Insights-en berritasunak
 
@@ -216,7 +216,7 @@ Informazio gehiagorako, ikus [Aberastu bezeroen profilak LiveRamp-eko identitate
 
 ### <a name="enrichment-for-data-sources-preview"></a>Datu-iturburuetarako aberastea (aurrebista)
 
-Erabili Microsoft eta beste bazkide batzuen iturrietako datuak zure bezeroen datuak aberasteko datuak bateratu aurretik. datu-iturburu aberasteek datuen osotasun eta kalitate handiagoa sortzen laguntzen dute, eta horrek emaitza hobeak lortzen lagunduko dizu datuak bateratu ondoren.
+Erabili Microsoft eta beste bazkide batzuen iturrietako datuak zure bezeroen datuak aberasteko datuak bateratu aurretik. datu-iturburu aberasteek datuen osotasun eta kalitate handiagoak lortzen laguntzen dute, eta horrek emaitza hobeak lortzen lagunduko dizu datuak bateratu ondoren.
 
 Informazio gehiagorako, ikus [Datu iturrietarako aberastea (Aurrebista)](data-sources-enrichment.md).
 
@@ -228,9 +228,9 @@ Informazio gehiagorako, ikus [Ingurune baten jabea aldatu](manage-environments.m
 
 ### <a name="data-preparation-process-lists-corruption-reason-for-corrupted-records"></a>Datuak prestatzeko prozesuak hondatutako erregistroen ustelkeria arrazoiak zerrendatzen ditu
 
-Datuak prestatzeak datu hondatuak dituzten eremu guztien ustelkeriaren arrazoia erakusten du. Informazioa erregistro indibidualaren mailan ematen da erraz identifikatzeko. 
+Datuak prestatzeak datu hondatuak dituzten eremu guztien ustelkeriaren arrazoia erakusten du. Informazioa erregistro indibidualaren mailan ematen da erraz identifikatzeko.
 
-Informazio gehiagorako, ikus [Datu iturri hondatuak](entities.md#corrupted-data-sources).
+Informazio gehiagorako, ikus [Datu iturri hondatuak](data-sources.md#corrupt-data-sources).
 
 ### <a name="end-of-preview-for-reporting-features-in-the-engagement-insights-capability"></a>Engaiamenduaren estatistiken gaitasunean txostenak egiteko eginbideen aurrebistaren amaiera
 

@@ -1,7 +1,7 @@
 ---
 title: Konektatu Common Data Model karpetara Azure Data Lake kontua erabiliz
 description: Egin lan Common Data Model-ekin Azure Data Lake Storage erabiliz.
-ms.date: 07/27/2022
+ms.date: 09/29/2022
 ms.topic: how-to
 author: mukeshpo
 ms.author: mukeshpo
@@ -12,12 +12,12 @@ searchScope:
 - ci-create-data-source
 - ci-attach-cdm
 - customerInsights
-ms.openlocfilehash: d79b2d34e425e123224209814fef6e367c77c813
-ms.sourcegitcommit: d7054a900f8c316804b6751e855e0fba4364914b
+ms.openlocfilehash: c12603b9ed8a814356a0f8d0137e97afc749b87c
+ms.sourcegitcommit: be341cb69329e507f527409ac4636c18742777d2
 ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 09/02/2022
-ms.locfileid: "9396031"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "9609927"
 ---
 # <a name="connect-to-data-in-azure-data-lake-storage"></a>Konektatu datuetara Azure Data Lake Storage-en
 
@@ -44,6 +44,10 @@ Sartu datuak Dynamics 365 Customer Insights zure erabiliz Azure Data Lake Storag
 
 - Zure Data Lake Storage-ko datuek zure datuak biltegiratzeko Common Data Model estandarra jarraitu behar dute eta datu-eredu komunaren manifestua izan behar dute datu-fitxategien eskema irudikatzeko (*.csv edo *.parquet). Manifestuak entitateen xehetasunak eman behar ditu, hala nola entitate-zutabeak eta datu-motak, eta datu-fitxategiaren kokapena eta fitxategi-mota. Informazio gehiagorako, ikus [Common Data Model manifestua](/common-data-model/sdk/manifest). Manifestua ez badago, Storage Blob Data Owner edo Storage Blob Data Contributor sarbidea duten administratzaile erabiltzaileek eskema defini dezakete datuak sartzerakoan.
 
+## <a name="recommendations"></a>Gomendioak
+
+Errendimendu optimoa lortzeko, Customer Insights-ek partizio baten tamaina 1 GB edo txikiagoa izatea gomendatzen du eta karpeta bateko partizio-fitxategien kopuruak 1000 baino gehiago ez izatea gomendatzen du.
+
 ## <a name="connect-to-azure-data-lake-storage"></a>Konektatu Azure Data Lake Storage-ra
 
 1. Joan **Datuak** > **Datu-iturburuak**.
@@ -54,7 +58,7 @@ Sartu datuak Dynamics 365 Customer Insights zure erabiliz Azure Data Lake Storag
 
    :::image type="content" source="media/data_sources_ADLS.png" alt-text="Elkarrizketa-koadroa Azure Data Lake-rako konexioaren xehetasunak sartzeko." lightbox="media/data_sources_ADLS.png":::
 
-1. Sartu a **Izena** datu-iturburu eta aukerako bat **Deskribapena**. Izenak datu-iturburu modu esklusiboan identifikatzen du eta beheranzko prozesuetan aipatzen da eta ezin da aldatu.
+1. Sartu a **Izena** datu-iturburu eta aukerako bat **Deskribapena**. Izenak bakarrik identifikatzen du datu-iturburu eta beheranzko prozesuetan aipatzen da eta ezin da aldatu.
 
 1. Aukeratu aukera hauetako bat **Konektatu biltegia erabiliz**. Informazio gehiagorako, ikus [Konektatu Customer Insights bat Azure Data Lake Storage Gen2 kontua Azure zerbitzu nagusi batekin](connect-service-principal.md).
 
@@ -199,5 +203,101 @@ Eguneratu dezakezu *Konektatu biltegiratze-kontura erabiliz* aukera. Informazio 
 1. Egin klik **Gorde** zure aldaketak aplikatzeko eta itzultzeko **Datu-iturriak** orrialdea.
 
    [!INCLUDE [progress-details-include](includes/progress-details-pane.md)]
+
+## <a name="common-reasons-for-ingestion-errors-or-corrupt-data"></a>Irenste-akatsen edo datuak hondatzearen ohiko arrazoiak
+
+Datuak sartzen direnean, erregistro bat hondatuta har daitekeen arrazoi ohikoenetako batzuk hauek dira:
+
+- Datu-motak eta eremu-balioak ez datoz bat iturburu-fitxategiaren eta eskemaren artean
+- Iturburu-fitxategiko zutabe kopurua ez dator bat eskemarekin
+- Eremuek zutabeak okertzea eragiten duten karaktereak dituzte espero den eskemarekin alderatuta. Adibidez: gaizki formateatutako komatxoak, ihesik gabeko komatxoak, lerro berriko karaktereak edo fitxadun karaktereak.
+- Partizio fitxategiak falta dira
+- Datetime/date/datetimeoffset zutabeak badaude, haien formatua eskeman zehaztu behar da formatu estandarra jarraitzen ez badu.
+
+### <a name="schema-or-data-type-mismatch"></a>Eskema edo datu-mota ez datoz bat
+
+Datuak eskemarekin bat ez badatoz, sartze-prozesua akatsekin amaitzen da. Zuzendu iturburuko datuak edo eskema eta sartu berriro datuak.
+
+### <a name="partition-files-are-missing"></a>Partizio fitxategiak falta dira
+
+- Ingestioa arrakastatsua izan bada erregistro hondatu gabe, baina ezin baduzu daturik ikusi, editatu model.json edo manifest.json fitxategia partizioak zehaztuta daudela ziurtatzeko. Orduan, [freskatu datu-iturburu](data-sources.md#refresh-data-sources).
+
+- Programazio automatikoko freskatze batean datu-iturriak freskatzen diren aldi berean datu-ingurketa gertatzen bada, baliteke partizio-fitxategiak hutsik egotea edo erabilgarri ez egotea Customer Insights-ek prozesatzeko. Goragoko freskatze programazioarekin bat egiteko, aldatu [sistema freskatzeko programazioa](schedule-refresh.md) edo datu-iturburu-ren freskatze ordutegia. Lerrokatu denborak, freskaketak guztiak aldi berean gerta ez daitezen eta Customer Insights-en prozesatu beharreko azken datuak eskaintzeko.
+
+### <a name="datetime-fields-in-the-wrong-format"></a>Data-orduaren eremuak formatu okerrean
+
+Entitateko data-orduaren eremuak ez daude ISO 8601 edo en-US formatuan. Customer Insights-en data-orduaren formatu lehenetsia en-US formatua da. Entitate bateko data-ordu-eremu guztiek formatu berean egon behar dute. Customer Insights-ek beste formatu batzuk onartzen ditu, baldin eta oharrak edo ezaugarriak ereduan edo manifest.json iturburuan edo entitate mailan egiten badira. Adibidez:
+
+**Model.json**
+
+   ```json
+      "annotations": [
+        {
+          "name": "ci:CustomTimestampFormat",
+          "value": "yyyy-MM-dd'T'HH:mm:ss:SSS"
+        },
+        {
+          "name": "ci:CustomDateFormat",
+          "value": "yyyy-MM-dd"
+        }
+      ]   
+   ```
+
+  Manifest.json batean, datetime formatua entitate mailan edo atributu mailan zehaztu daiteke. Entitate mailan, erabili "exhibitsTraits" *.manifest.cdm.json entitatean data-ordu formatua definitzeko. Atributu mailan, erabili "appliedTraits" entityname.cdm.json atributuan.
+
+**Manifest.json entitate mailan**
+
+```json
+"exhibitsTraits": [
+    {
+        "traitReference": "is.formatted.dateTime",
+        "arguments": [
+            {
+                "name": "format",
+                "value": "yyyy-MM-dd'T'HH:mm:ss"
+            }
+        ]
+    },
+    {
+        "traitReference": "is.formatted.date",
+        "arguments": [
+            {
+                "name": "format",
+                "value": "yyyy-MM-dd"
+            }
+        ]
+    }
+]
+```
+
+**Entity.json atributu mailan**
+
+```json
+   {
+      "name": "PurchasedOn",
+      "appliedTraits": [
+        {
+          "traitReference": "is.formatted.date",
+          "arguments" : [
+            {
+              "name": "format",
+              "value": "yyyy-MM-dd"
+            }
+          ]
+        },
+        {
+          "traitReference": "is.formatted.dateTime",
+          "arguments" : [
+            {
+              "name": "format",
+              "value": "yyyy-MM-ddTHH:mm:ss"
+            }
+          ]
+        }
+      ],
+      "attributeContext": "POSPurchases/attributeContext/POSPurchases/PurchasedOn",
+      "dataFormat": "DateTime"
+    }
+```
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

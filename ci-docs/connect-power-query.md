@@ -1,7 +1,7 @@
 ---
 title: Konektatu a Power Query datu-iturburu (bideoa dauka)
 description: Hartu datuak a bidez Power Query konektorea (bideoa dauka).
-ms.date: 07/26/2022
+ms.date: 09/29/2022
 ms.reviewer: v-wendysmith
 ms.subservice: audience-insights
 ms.topic: how-to
@@ -12,12 +12,12 @@ searchScope:
 - ci-data-sources
 - ci-create-data-source
 - customerInsights
-ms.openlocfilehash: 6a25e332bafab414c9def4e1e6b461139dd24ea6
-ms.sourcegitcommit: dfba60e17ae6dc1e2e3830e6365e2c1f87230afd
+ms.openlocfilehash: 4cc7e57dfb0f8d050e91adc441c24e849882f5d8
+ms.sourcegitcommit: be341cb69329e507f527409ac4636c18742777d2
 ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 09/09/2022
-ms.locfileid: "9463250"
+ms.lasthandoff: 09/30/2022
+ms.locfileid: "9609861"
 ---
 # <a name="connect-to-a-power-query-data-source"></a>Konektatu a Power Query datu-iturburu
 
@@ -43,16 +43,17 @@ Oinarritutako datu-iturriak gehitzea Power Query konektoreak, oro har, atal hone
 
 1. Hautatu **Transformatu datuak**.
 
-1. The **Power Query - Kontsultak editatu** elkarrizketa-koadroak datuak berrikusi eta findu ditzakezu. Aukeratutako datu-iturburu sistemetan identifikatutako sistemak ezkerreko panelean agertzen dira.
+1. Berrikusi eta hobetu zure datuak **Power Query - Kontsultak editatu** orrialdea. Aukeratutako datu-iturburu sistemetan identifikatutako sistemak ezkerreko panelean agertzen dira.
 
    :::image type="content" source="media/data-manager-configure-edit-queries.png" alt-text="Editatu eskaera eztabaida":::
 
-1. Zure datuak ere eralda ditzakezu. Hautatu entitate bat editatzeko edo eraldatzeko. Erabili aukerak Power Query eraldaketak aplikatzeko leihoa. Transformazio bakoitza azpian dago zerrendatuta **Aplikaturiko urratsak**. Power Query ugari eskaintzen ditu [aurrez eraikitako eraldaketa](/power-query/power-query-what-is-power-query#transformations) aukerak.
+1. Eraldatu zure datuak. Hautatu entitate bat editatzeko edo eraldatzeko. Erabili aukerak Power Query eraldaketak aplikatzeko leihoa. Transformazio bakoitza azpian dago zerrendatuta **Aplikaturiko urratsak**. Power Query ugari eskaintzen ditu [aurrez eraikitako eraldaketa](/power-query/power-query-what-is-power-query#transformations) aukerak.
 
-   Ondorengo eraldaketak erabiltzea gomendatzen dugu:
-
-   - CSV fitxategi bateko datuak irensten badituzu, lehenengo ilaran maiz goiburuak agertzen dira. Joan **Eraldatu** eta hautatu **Erabili lehen errenkada goiburu gisa**.
-   - Ziurtatu datu mota behar bezala ezarrita dagoela. Adibidez, data eremuetarako, hautatu data mota bat.
+   > [!IMPORTANT]
+   > Ondorengo eraldaketak erabiltzea gomendatzen dugu:
+   >
+   > - CSV fitxategi bateko datuak irensten badituzu, lehenengo ilaran maiz goiburuak agertzen dira. Joan **Eraldatu** eta hautatu **Erabili lehen errenkada goiburu gisa**.
+   > - Ziurtatu datu-mota egoki ezarrita dagoela eta datuekin bat datorrela. Adibidez, data eremuetarako, hautatu data mota bat.
 
 1. Zure datu-iturburu-i entitate gehigarriak gehitzeko **Editatu kontsultak** elkarrizketa-koadroa, joan hona **Hasiera** eta hautatu **Lortu datuak**. Errepikatu 5-10 urratsak datu-iturburu honetarako entitate guztiak gehitu arte. Datu-multzo ugari biltzen dituen datu-basea baduzu, datu-multzo bakoitza bere entitatea da.
 
@@ -102,5 +103,51 @@ Dagoeneko datu-paseak Power BI edo Power Apps ingurunea ikusgai egongo da eta Cu
 1. Hautatu **Gorde** zure aldaketak aplikatzeko eta itzultzeko **Datu-iturriak** orrialdea.
 
    [!INCLUDE [progress-details-include](includes/progress-details-pane.md)]
+
+## <a name="common-reasons-for-ingestion-errors-or-corrupt-data"></a>Irenste-akatsen edo datuak hondatzearen ohiko arrazoiak
+
+### <a name="data-type-does-not-match-data"></a>Datu mota ez dator bat datuekin
+
+Datu-mota desegokia ohikoena data-eremu bat data-formatu egokian ezartzen ez denean gertatzen da.
+
+Datuak jatorrian finkatu eta berriro sartu. Edo konpondu Customer Insights-en eraldaketa. Eraldaketa konpontzeko:
+
+1. Joan **Datuak** > **Datu-iturburuak**.
+
+1. Hondatutako datuekin datu-iturburu-ren ondoan, hautatu **Editatu**.
+
+1. Hautatu **Hurrengoa**.
+
+1. Hautatu kontsulta bakoitza eta bilatu okerrak diren "Aplikaturiko Urrats" barruan aplikatutako eraldaketak edo data-formatu batekin eraldatu ez diren data-zutabeak.
+
+   :::image type="content" source="media/PQ_corruped_date.png" alt-text="Power Query- Editatu data-formatu okerra erakutsiz":::
+
+1. Aldatu datu-mota datuekin behar bezala etortzeko.
+
+1. Sakatu **Gorde**. datu-iturburu hori freskatu da.
+
+## <a name="troubleshoot-ppdf-power-query-based-data-source-refresh-issues"></a>Arazoak konpondu PPDF Power Query -oinarritutako datu-iturburu freskatze arazoak
+
+Datuak zaharkituta badaude edo datu-iturburu freskatu ondoren erroreak jasotzen badituzu, egin urrats hauek:
+
+1. Joan hona: [Power Platform](https://make.powerapps.com)
+
+1. Hautatu **Ingurumena** zure Customer Insights instantziarako.
+
+1. Nabigatu **Datu-fluxuak**.
+
+1. Customer Insights-en datu-iturburu-ri dagokion datu-fluxurako, hautatu elipsi bertikala (&vellip;) eta gero hautatu **Erakutsi freskatze-historia**.
+
+1. bada **Egoera** datu-fluxuarena da **Arrakasta**,-ren jabetza Power Query -oinarritutako datu-iturburu agian aldatu izana:
+
+   1. Berrikusi freskatze-programazioa freskatze-historiatik.
+   1. Ezarri jabe berriaren ordutegia eta gorde ezarpenak.
+
+1. bada **Egoera** datu-fluxuarena da **Huts egin du**:
+
+   1. Deskargatu freskatze historiaren fitxategia.
+   1. Berrikusi deskargatutako fitxategia hutsegitearen arrazoia ikusteko.
+   1. Errorea konpondu ezin bada, hautatu **?** laguntza-txartel bat irekitzeko. Sartu deskargatutako freskatze historiaren fitxategia.
+
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]
