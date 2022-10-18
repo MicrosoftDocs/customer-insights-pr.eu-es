@@ -8,12 +8,12 @@ author: m-hartmann
 ms.author: mhart
 ms.reviewer: skumm
 manager: shellyha
-ms.openlocfilehash: 2a386d65a5e285d471e9cafc45f247e7b4ae23bb
-ms.sourcegitcommit: be341cb69329e507f527409ac4636c18742777d2
-ms.translationtype: HT
+ms.openlocfilehash: dcee60a73e0c32278553253040478c31e45237ae
+ms.sourcegitcommit: 618ef15b434de0a68213383b6521ce2a60753afb
+ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 09/30/2022
-ms.locfileid: "9609577"
+ms.lasthandoff: 10/07/2022
+ms.locfileid: "9638336"
 ---
 # <a name="whats-new-in-dynamics-365-customer-insights"></a>Dynamics 365 Customer Insights-en berritasunak
 
@@ -23,6 +23,28 @@ Eguneratzeak eskualdeen arabera banatzen ditugu. Beraz, eskualde batzuek beste b
 
 > [!TIP]
 > Bidali eta bozkatzeko eginbideak eskaerak eta produktuaren iradokizunak, joan [Dynamics 365 aplikazioaren ideiak atarira](https://experience.dynamics.com/ideas/categories/?forum=79a8c474-4e35-e911-a971-000d3a4f3343&forumName=Dynamics%20365%20Customer%20Insights).
+
+## <a name="september-2022-updates"></a>2022ko iraileko eguneraketak
+
+2022ko iraileko eguneratzeek funtzio berriak, errendimendu-berritzeak eta akatsen konponketak barne hartzen dituzte.
+
+### <a name="export-data-to-hubspot"></a>Esportatu datuak HubSpot-era
+
+Esportatu bezeroen profil bateratuen segmentuak HubSpot-era eta erabili posta elektroniko bidezko marketinerako.
+
+Informazio gehiagorako, ikus [Esportatu segmentuak HubSpot-era](export-hubspot.md).
+
+### <a name="remove-a-unified-field-or-entity-from-data-unification"></a>Kendu eremu edo entitate bateratu bat datu bateratzetik
+
+Datuak bateratzeko prozesutik eremuak eta entitateak ken ditzakezu.
+
+Informazio gehiagorako, ikus [Kendu eremu bateratua](data-unification-update.md#remove-a-unified-field).
+
+### <a name="manage-unknown-customer-profiles"></a>Kudeatu bezeroen profil ezezagunak
+
+Pertsonalizazio gogoangarria zure bezeroen datuen aberastasunaren eta osotasunaren araberakoa da eta Customer Insights-ek helburu horiek lortzen laguntzen dizu. IDa ez den beste informaziorik ez duten erabiltzaileentzako bezero-profilak kudea ditzakezu.
+
+Informazio gehiagorako, ikus [Kudeatu profil ezezagunak Customer Insights-ekin](manage-unknown-profiles.md).
 
 ## <a name="august-2022-updates"></a>2022ko abuztuko eguneraketak
 
@@ -140,7 +162,7 @@ Informazio gehiagorako, ikus [Nola: Ingurune berri bat sortu](create-environment
 
 Dun & Bradstreet-ek negozioentzako datu komertzialak, analitikoak eta ikuspegiak eskaintzen ditu. Enpresentzako bezeroen profil bateratuak dituzten bezeroei beren datuak aberasteko aukera ematen die. Aberasteen artean, DUNS zenbakia, enpresaren tamaina, kokapena, industria eta abar bezalako atributuak daude.
 
-Informazio gehiagorako, ikus [Enpresa-profilak aberastea Dun & Bradstreet-ekin (Aurrebista)](enrichment-dnb.md).
+Informazio gehiagorako, ikus [Enpresaren profilak aberastea Dun & Bradstreet-ekin (aurrebista)](enrichment-dnb.md).
 
 ### <a name="define-the-measure-type-when-creating-a-new-measure"></a>Zehaztu neurri mota neurri berri bat sortzerakoan
 
@@ -218,7 +240,7 @@ Informazio gehiagorako, ikus [Aberastu bezeroen profilak LiveRamp-eko identitate
 
 Erabili Microsoft eta beste bazkide batzuen iturrietako datuak zure bezeroen datuak aberasteko datuak bateratu aurretik. datu-iturburu aberasteek datuen osotasun eta kalitate handiagoak lortzen laguntzen dute, eta horrek emaitza hobeak lortzen lagunduko dizu datuak bateratu ondoren.
 
-Informazio gehiagorako, ikus [Datu iturrietarako aberastea (Aurrebista)](data-sources-enrichment.md).
+Informazio gehiagorako, ikus [Datu-iturburuetarako aberastea (aurrebista)](data-sources-enrichment.md).
 
 ### <a name="change-owner-of-environment"></a>Aldatu ingurunearen jabea
 
@@ -232,7 +254,7 @@ Datuak prestatzeak datu hondatuak dituzten eremu guztien ustelkeriaren arrazoia 
 
 Informazio gehiagorako, ikus [Datu iturri hondatuak](data-sources.md#corrupt-data-sources).
 
-### <a name="end-of-preview-for-reporting-features-in-the-engagement-insights-capability"></a>Engaiamenduaren estatistiken gaitasunean txostenak egiteko eginbideen aurrebistaren amaiera
+### <a name="end-of-preview-for-reporting-features-in-the-engagement-insights-capability"></a>Konpromisoaren estatistiken gaitasunean txostenak egiteko eginbideen aurrebistaren amaiera
 
 The Dynamics 365 Customer Insights konpromisoari buruzko informazio-gaitasunaren aurrebista 2022ko otsailaren 15ean amaitu zen.  
 Aldaketa honek esan nahi du Customer Insights-en probako esperientziak ez duela inbutuak sortzeko gaitasunik ezta txostenak egiteko beste funtzionalitaterik ere.
