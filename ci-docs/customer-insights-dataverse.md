@@ -11,12 +11,12 @@ manager: shellyha
 searchScope:
 - ci-system-diagnostic
 - customerInsights
-ms.openlocfilehash: dfa63110fc5291f2b63aebf588d6fdd20ed4ab67
-ms.sourcegitcommit: 134aac66e3e0b77b2e96a595d6acbb91bf9afda2
+ms.openlocfilehash: 9433c411a2c7eb0db137c6392578993d47be82a2
+ms.sourcegitcommit: 8559ca47a22d1d7cd9be13531c2eaf0c1083942b
 ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 09/07/2022
-ms.locfileid: "9424294"
+ms.lasthandoff: 10/12/2022
+ms.locfileid: "9671236"
 ---
 # <a name="work-with-customer-insights-data-in-microsoft-dataverse"></a>Egin lan Customer Insights datuekin Microsoft Dataverse-n
 
@@ -63,6 +63,9 @@ The **Microsoft Dataverse** urratsak Customer Insights zurearekin konektatzeko a
 ## <a name="enable-data-sharing-with-dataverse-from-your-own-azure-data-lake-storage-preview"></a>Gaitu honekin datuak partekatzea Dataverse zuretik Azure Data Lake Storage (aurrebista)
 
 In [zurea Azure Data Lake Storage kontua](own-data-lake-storage.md), egiaztatu erabiltzaileak Customer Insights ingurunea konfiguratzen duela gutxienez **Biltegiratze Blob Datuen irakurgailua** baimenak`customerinsights` biltegiratze kontuan edukiontzia.
+
+> [!NOTE]
+> Datuak partekatzea zurea erabiltzen baduzu soilik aplikagarria da Azure Data Lake Storage kontua. Ezarpen hau ez dago erabilgarri Customer Insights inguruneak lehenetsia erabiltzen badu Dataverse biltegiratzea.
 
 ### <a name="limitations"></a>Murriztapenak
 
@@ -163,7 +166,7 @@ ContactProfile batek kontaktu bati buruzko informazio bateratua dauka. Kontaktua
 |  EntityName           | Testu-mezua |  Datuak nondik datozen entitatea                |
 |  FirstName            | Testu-mezua |  Kontaktuaren izen               |
 |  Generoa               | Testu-mezua |  Kontaktuaren generoa               |
-|  IDa                   | Testu-mezua |  Oinarritutako GUID deterministikoa`Identifier`               |
+|  IDa                   | Testu-mezua |  GUID deterministikoan oinarrituta`Identifier`               |
 |  Identifikatzailea           | Testu-mezua |  Kontaktu-profilaren barne IDa:`ContactProfile|CustomerId|ContactId`               |
 |  JobTitle             | Testu-mezua |  Kontaktuaren lanpostuaren izena               |
 |  LastName             | Testu-mezua |  Kontaktuaren abizen               |
