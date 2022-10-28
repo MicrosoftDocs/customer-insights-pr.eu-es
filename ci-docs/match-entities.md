@@ -2,7 +2,7 @@
 title: Datuak bateratzeko baldintzak bat etortzea
 description: Lotu entitateak bezeroen profil bateratuak sortzeko.
 recommendations: false
-ms.date: 07/27/2022
+ms.date: 10/07/2022
 ms.subservice: audience-insights
 ms.topic: tutorial
 author: v-wendysmith
@@ -14,12 +14,12 @@ searchScope:
 - ci-merge
 - ci-map
 - customerInsights
-ms.openlocfilehash: eaa3409aaa7541dc88953336942e43afaf6511c6
-ms.sourcegitcommit: 267c317e10166146c9ac2c30560c479c9a005845
+ms.openlocfilehash: bbd2c5f441b85460250c11f02358ea67260278d6
+ms.sourcegitcommit: 52ea58c872b10f1e6f9d120be93df93cca1a12dd
 ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 08/16/2022
-ms.locfileid: "9304642"
+ms.lasthandoff: 10/26/2022
+ms.locfileid: "9721506"
 ---
 # <a name="match-conditions-for-data-unification"></a>Datuak bateratzeko baldintzak bat etortzea
 
@@ -56,7 +56,7 @@ Partida bakoitzak bi entitate edo gehiago bateratzen ditu entitate bakar eta bat
 
 1. Entitateko erregistro guztiak bezero esklusibo gisa edukitzeko, bat-etortzerik aurkitzen bada ere, hautatu **Sartu erregistro guztiak**. Entitate honetako erregistroak beste edozein entitateko erregistroekin bat ez datozenak profil bateratuan sartzen dira. Partidurik ez duten erregistroei singleton deitzen zaie.
   
-Lehen entitatea *Kontaktuak: merkataritza elektronikoa* hurrengo entitatearekin parekatzen da *Bezeroaren Leialtasuna: Leialtasuna*. Lehenengo bat-etortze-urratsetik ateratzen den datu-multzoa hurrengo entitatearekin bat dator bi entitate baino gehiago badituzu.
+Lehen entitatea *Kontaktuak: merkataritza elektronikoa* hurrengo entitatearekin parekatzen da *Bezeroaren Leialtasuna: Leialtasuna*. Lehen bat-etortze-urratsetik ateratzen den datu-multzoa hurrengo entitatearekin bat dator bi entitate baino gehiago badituzu.
 
 :::image type="content" source="media/m3_match.png" alt-text="Entitateetarako hautatutako partida-ordenaren pantaila-argazkia." lightbox="media/m3_match.png":::
 
@@ -85,7 +85,7 @@ Entitate-izen baten ondoan dagoen abisuak esan nahi du ez dagoela bat-etortze-ar
      - **Zuriunea** : zuriune guztiak kentzen ditu. *Kaixo   Mundua* bihurtzen da *KaixoMundua*.
 
    - **Zehaztasuna**: zehaztu baldintza hau aplikatzeko zehaztasun maila.
-     - **Oinarrizkoa** : Aukeratu *Baxua (%30)*, *(%60)*, *(%80)*, eta *Zehatza (%100)*. Hautatu **Zehatza** ehuneko 100ean bat datozen erregistroak soilik lotzeko.
+     - **Oinarrizkoa** : Aukeratu *Baxua (%30)*, *(%60)*, *(%80)*, eta *Zehatza (% 100)*. Hautatu **Zehatza** ehuneko 100ean bat datozen erregistroak soilik lotzeko.
      - **Pertsonalizatua**: ezarri erregistroek bat etorri behar duten ehunekoa. Sistemak atalase hori gainditzen duten erregistroak baino ez ditu bat etorriko.
 
    - **Izena** : Arauaren izena.
@@ -130,12 +130,12 @@ Adibidez, zure parekatze-arauak abizen, hiria eta jaioteguna konbinatzen baditu,
 
 ### <a name="specify-custom-match-conditions"></a>Zehaztu pertsonalizatutako bat etortzeko baldintzak
 
-Bat-etortze-logika lehenetsia gainidazten duten baldintzak zehaztu ditzakezu. Lau aukera daude eskuragarri:
+Zehaztu partida-logika lehenetsia gainidazten duten baldintzak. Lau aukera daude eskuragarri:
 
 |Aukera  |Deskribapenak |Adibidez  |
 |---------|---------|---------|
-|Beti bat etorri behar du     | Beti bat datozen balioak definitzen ditu.         |  Beti parekatu *Mikel* eta *MikeR*.       |
-|Ez du inoiz bat etorri behar     | Inoiz bat ez datozen balioak definitzen ditu.        | Inoiz ez parekatu *Joan* eta *Jonathan*.        |
+|Beti bat etorri behar du     | Beti bat datozen gako nagusien balioak definitzen ditu.         |  Lotu beti errenkada gako nagusiarekin *12345* gako nagusia duen ilarara *54321*.       |
+|Ez du inoiz bat etorri behar     | Inoiz bat ez datozen gako nagusien balioak definitzen ditu.        | Inoiz ez lotu errenkada gako nagusiarekin *12345* gako nagusia duen ilarara *54321*.        |
 |Saihestu            | Partida-fasean sistemak beti alde batera utzi behar dituen balioak zehazten ditu. |  Ez ikusi balioei *11111* eta *Ezezaguna* partidan zehar.        |
 |Aliasen esleipena    | Sistemak balio berdintzat hartu behar dituen balioak definitzea.         | Kontuan hartu *Joe* berdina izateko *Joseph*.        |
 
@@ -143,17 +143,18 @@ Bat-etortze-logika lehenetsia gainidazten duten baldintzak zehaztu ditzakezu. La
 
    :::image type="content" source="media/m3_match_custom.png" alt-text="Botoi pertsonalizatua":::
 
-1. Aukeratu **Mota pertsonalizatua** eta hautatu **Deskargatu txantiloia**. Bat-etortze-aukera bakoitzerako txantiloi bat behar duzu.
+1. Aukeratu **Mota pertsonalizatua** eta hautatu **Deskargatu txantiloia**. Aldatu txantiloiari zuriunerik erabili gabe. Erabili txantiloi bereizi bat parekatzeko aukera bakoitzerako.
 
-1. Ireki deskargatutako txantiloi fitxategia eta bete xehetasunak. Txantiloiak entitateak eta entitatearen gako nagusien balioak pertsonalizatutako partidan zehazteko eremuak ditu. Adibidez, gako nagusia nahi baduzu *12345* hurrengotik *Salmentak* entitatea beti lehen mailako gakoarekin bat etortzeko *34567* hurrengotik *Harremanetarako* entitatea, bete txantiloia:
-    - Entitate1: Salmentak
-    - Entitate-gakoa1: 12345
-    - Entitatea2: kontaktua
-    - Entitate-gakoa2: 34567
+1. Ireki deskargatutako txantiloi fitxategia eta bete xehetasunak. Txantiloiak entitateak eta entitatearen gako nagusien balioak pertsonalizatutako partidan zehazteko eremuak ditu. Entitate-izenek maiuskulak eta minuskulak bereizten dituzte. Adibidez, gako nagusia nahi baduzu *12345* hurrengotik *Salmentak* entitatea beti lehen mailako gakoarekin bat etortzeko *34567* hurrengotik *Harremanetarako* entitatea, bete txantiloia:
+   - Entitate1: Salmentak
+   - Entitate-gakoa1: 12345
+   - Entitatea2: kontaktua
+   - Entitate-gakoa2: 34567
 
    Txantiloi fitxategi berak entitate anitzeko partiden erregistro pertsonalizatuak zehaztu ditzake.
 
-   Entitate batean bikoiztuak desegiteko parekatze pertsonalizatua zehaztu nahi baduzu, eman Entitate 1 eta Entitate 2 entitate bera eta ezarri gako primarioen balio desberdinak.
+   > [!NOTE]
+   > Entitate batean bikoiztuak desegiteko parekatze pertsonalizatua zehaztu nahi baduzu, eman Entitate 1 eta Entitate 2 entitate bera eta ezarri gako primarioen balio desberdinak. Gutxienez desduplicazio-arau bat definitu behar diozu entitateari parekatze pertsonalizatua erabiltzeko.
 
 1. Gainbatze guztiak gehitu ondoren, gorde txantiloi fitxategia.
 
@@ -168,7 +169,9 @@ Bat-etortze-logika lehenetsia gainidazten duten baldintzak zehaztu ditzakezu. La
    - Izan ere **Beti parekatu** edo **Inoiz ez parekatu**, jarraitu hurrengo urratsera.
    - Izan ere **Saihesbidea** edo **Aliasaren mapaketa**, hautatu **Editatu** lehendik dagoen bat-etortze-arau batean edo sortu arau berri bat. Normalizazioak goitibeherako aukeran, aukeratu **Saihesbide pertsonalizatua** edo **Aliasaren mapaketa** aukera eta hautatu **Eginda**.
 
-1. Hautatu **Eginda** gainean **Pertsonalizatua** panela etortze pertsonalizatuaren konfigurazioa aplikatzeko.
+1. Hautatu **Eginda** gainean **Pertsonalizatua** panela bat etortze pertsonalizatuaren konfigurazioa aplikatzeko.
+
+   Irensten den txantiloi-fitxategi bakoitza bere datu-iturburu da. Bat-etortze-tratamendu berezia behar duten erregistroak aurkitzen badira, eguneratu datu-iturburu egokia. Eguneraketa hurrengo bateratze-prozesuan erabiliko da. Esaterako, pertsona bakar gisa batu ziren helbide berean bizi diren ia izen bera duten bikiak identifikatzen dituzu. Eguneratu datu-iturburu bikiak erregistro bereizi eta bakar gisa identifikatzeko.
 
 > [!div class="nextstepaction"]
 > [Hurrengo urratsa: Eremuak bateratu](merge-entities.md)
