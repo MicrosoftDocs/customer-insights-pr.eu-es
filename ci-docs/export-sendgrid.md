@@ -8,12 +8,12 @@ ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: f2990ad410dda0cbf952f82f3fc30b3a53a7bcd4
-ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
+ms.openlocfilehash: 855e77055eeb24a2c6cff0d45cd23edf93cc0581
+ms.sourcegitcommit: c3ae7e7e0c9566f9479ba71a26afc5a17fb589c2
 ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "9196977"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "9724833"
 ---
 # <a name="export-segments-to-sendgrid-preview"></a>Esportatu segmentuak SendGrid-era (aurrebista)
 
@@ -29,7 +29,8 @@ Esportatu bezeroen profil bateratuen segmentuak SendGrid kontaktu zerrendetara e
 
 ## <a name="known-limitations"></a>Muga ezagunak
 
-- Gehienez 100.000 bezero-profil guztira SendGrid-era, eta horrek ordu batzuk behar izan ditzake osatzeko. SendGrid-era esporta ditzakezun bezero-profilen kopurua SendGrid-ekin duzun kontratuaren araberakoa da.
+- Ez da onartzen Bring your own storage (BYOS) esteka pribatua.
+- 100.000 bezero-profil gehienez SendGrid-era, eta hori osatzeko ordu batzuk behar izan ditzake. SendGrid-era esporta dezakezun bezero-profilen kopurua SendGrid-ekin duzun kontratuaren araberakoa da.
 - Segmentuak soilik.
 
 ## <a name="set-up-connection-to-sendgrid"></a>Konfiguratu konexioa SendGrid-era

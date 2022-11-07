@@ -8,12 +8,12 @@ ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 6e45ca5827afa29d97a746bd1a474c2346cc32d2
-ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
+ms.openlocfilehash: 075e6758f2c6992a1185756f9beecf852fdd0a96
+ms.sourcegitcommit: c3ae7e7e0c9566f9479ba71a26afc5a17fb589c2
 ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "9196747"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "9724561"
 ---
 # <a name="export-segments-to-klaviyo-preview"></a>Esportatu segmentuak Klaviyo-ra (aurrebista)
 
@@ -29,6 +29,7 @@ Esportatu bezero profil bateratuen segmentuak Klaviyo-ra eta erabili marketin-ja
 
 ## <a name="known-limitations"></a>Muga ezagunak
 
+- Ez da onartzen Bring your own storage (BYOS) esteka pribatua.
 - Gehienez milioi bat bezero-profil Klaviyo-ra esportatzeko, 20 minutu arte iraun dezaketenak osatzeko. Klaviyo-ra esporta ditzakezun bezero-profilen kopurua Klaviyorekin duzun kontratuaren araberakoa da.
 - Segmentuak soilik.
 

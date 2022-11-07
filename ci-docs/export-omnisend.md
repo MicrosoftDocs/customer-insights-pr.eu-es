@@ -8,12 +8,12 @@ ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: c23d6d3538c4df6006c14064f95379169af06622
-ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
+ms.openlocfilehash: fb57e2bd70592f4ce4e1a13e21901dc69734f6bf
+ms.sourcegitcommit: c3ae7e7e0c9566f9479ba71a26afc5a17fb589c2
 ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "9196149"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "9725155"
 ---
 # <a name="export-segments-to-omnisend-preview"></a>Esportatu segmentuak Omnisend-era (aurrebista)
 
@@ -28,6 +28,7 @@ Esportatu bezeroen profil bateratuen segmentuak Omnisend-era eta erabili marketi
 
 ## <a name="known-limitations"></a>Muga ezagunak
 
+- Ez da onartzen Bring your own storage (BYOS) esteka pribatua.
 - Gehienez milioi bat bezero profil Omnisend-era esportatzeko, eta hori lau ordu behar izan daiteke osatzeko. Omnisend-era esporta ditzakezun bezeroen profil kopurua Omnisend-ekin duzun kontratuaren menpe dago.
 - Segmentuak soilik.
 

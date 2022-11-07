@@ -8,12 +8,12 @@ ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 4d2ec29c194dc481ee40048b8ecbed813291b4d2
-ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
+ms.openlocfilehash: c0affd3ed45f462696850813bd50331061dde780
+ms.sourcegitcommit: c3ae7e7e0c9566f9479ba71a26afc5a17fb589c2
 ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "9196471"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "9724486"
 ---
 # <a name="export-segments-to-constant-contact-preview"></a>Esportatu segmentuak Constant Contact-era (aurrebista)
 
@@ -28,7 +28,8 @@ Esportatu bezeroen profil bateratuen segmentuak Constant Contact eta erabili mar
 
 ## <a name="known-limitations"></a>Muga ezagunak
 
-- Gehienez milioi bat bezero-profil esportatzen dira Constant Contact-era, eta hori osatzeko ordubete behar izan daiteke. Constant Contact-era esporta dezakezun bezero-profilen kopurua Constant Contact-ekin duzun kontratuaren araberakoa da.
+- Ez da onartzen Bring your own storage (BYOS) esteka pribatua.
+- Gehienez milioi bat bezero-profil esportatzen ditu Constant Contact-era, eta hori osatzeko ordubete behar izan daiteke. Constant Contact-era esporta ditzakezun bezero-profilen kopurua Constant Contact-ekin duzun kontratuaren araberakoa da.
 - Segmentuak soilik.
 
 ## <a name="set-up-connection-to-constant-contact"></a>Konfiguratu konexioa Constant Contact-era

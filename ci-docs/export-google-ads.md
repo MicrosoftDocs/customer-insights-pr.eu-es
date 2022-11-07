@@ -8,12 +8,12 @@ author: pkieffer
 ms.author: philk
 ms.reviewer: mhart
 manager: shellyha
-ms.openlocfilehash: fd7498ecf17ef8a3a8f22dcc49ae204bef88b47f
-ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
+ms.openlocfilehash: a46623e609665f8031f223593a6644147e5209d8
+ms.sourcegitcommit: c3ae7e7e0c9566f9479ba71a26afc5a17fb589c2
 ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "9196563"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "9725063"
 ---
 # <a name="export-segments-to-google-ads-preview"></a>Esportatu segmentuak Google Ads-era (aurrebista)
 
@@ -30,6 +30,7 @@ Esportatu bezeroen profil bateratuen segmentuak Google Ads audientzia-zerrenda b
 
 ## <a name="known-limitations"></a>Muga ezagunak
 
+- Ez da onartzen Bring your own storage (BYOS) esteka pribatua.
 - Esportatu Google Ads-era Esportazio bakoitzeko milioi bat bezero-profil, eta hori osatzeko 30 minutu behar izan daitezke hornitzailearen aldetik dauden mugak direla eta.
 - Segmentuak soilik.
 - Google Ads-en parekatzeak 48 ordu iraun ditzake.
@@ -46,7 +47,7 @@ Esportatu bezeroen profil bateratuen segmentuak Google Ads audientzia-zerrenda b
 
 1. Aukeratu nork erabil dezakeen konexioa. Berez, administratzaileak soilik dira. Informazio gehiagorako, ikus [Baimendu laguntzaileei esportazioetarako konexioa erabiltzea](connections.md#allow-contributors-to-use-a-connection-for-exports).
 
-1. Sartu zure Google Ads bezero ID.
+1. Sartu zure Google Ads bezero IDa.
 
 1. Berrikusi [datuen pribatutasuna eta betetzea](connections.md#data-privacy-and-compliance) eta hautatu **ados**.
 

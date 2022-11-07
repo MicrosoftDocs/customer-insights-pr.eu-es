@@ -8,12 +8,12 @@ ms.topic: how-to
 author: phkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 816a3b242fadaa5a75db878adf0a76baf638e41c
-ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
+ms.openlocfilehash: fc4ac34c1de096e25ba6c374fe17b1da6b2f745f
+ms.sourcegitcommit: c3ae7e7e0c9566f9479ba71a26afc5a17fb589c2
 ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "9196931"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "9724879"
 ---
 # <a name="export-segments-to-sendinblue-preview"></a>Esportatu segmentuak Sendinblue-ra (aurrebista)
 
@@ -29,7 +29,8 @@ Esportatu bezero profil bateratuen segmentuak kanpaniak sortzeko, posta elektron
 
 ## <a name="known-limitations"></a>Muga ezagunak
 
-- Milioi bat bezero-profil gehienez Sendinblue-ra esportatzeko, 90 minutu arte iraun dezaketenak osatzeko. Sendinblue-ra esporta ditzakezun bezero-profilen kopurua Sendinbluerekin duzun kontratuaren araberakoa da.
+- Ez da onartzen Bring your own storage (BYOS) esteka pribatua.
+- Sendinblue-ra esportazio bakoitzeko milioi bat bezero-profil gehienez, eta hori osatzeko 90 minutu behar izan daitezke. Sendinblue-ra esporta ditzakezun bezero-profilen kopurua Sendinbluerekin duzun kontratuaren araberakoa da.
 - Segmentuak soilik.
 
 ## <a name="set-up-connection-to-sendinblue"></a>Konfiguratu Sendinblue-ra konexioa

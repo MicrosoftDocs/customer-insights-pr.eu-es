@@ -8,12 +8,12 @@ ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 0281be288b2c4d9e5da7ad8e2ed25f7b51b8498e
-ms.sourcegitcommit: f959c85871777e5f4eab289e91b2fd114cd72153
+ms.openlocfilehash: b34f1d54fa499f6c6b80fa547a8aaf61af3b35a1
+ms.sourcegitcommit: c3ae7e7e0c9566f9479ba71a26afc5a17fb589c2
 ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 09/23/2022
-ms.locfileid: "9588922"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "9725339"
 ---
 # <a name="export-segments-to-hubspot-preview"></a>Esportatu segmentuak HubSpot-era (aurrebista)
 
@@ -27,6 +27,7 @@ Esportatu bezeroen profil bateratuen segmentuak HubSpot-era eta erabili posta el
 
 ## <a name="known-limitations"></a>Muga ezagunak
 
+- Ez da onartzen Bring your own storage (BYOS) esteka pribatua.
 - Gehienez 100.000 bezero-profil HubSpot-era esportatzeko, 15 minutu arte iraun ditzake. HubSpot-era esporta dezakezun bezero-profilen kopurua HubSpot-ekin duzun kontratuaren araberakoa eta mugatua da.
 - Segmentuak soilik.
 
@@ -42,7 +43,7 @@ Esportatu bezeroen profil bateratuen segmentuak HubSpot-era eta erabili posta el
 
 1. Aukeratu nork erabil dezakeen konexioa. Inolako neurririk hartzen ez baduzu, lehenetsia izango da Administratzaileak. Informazio gehiagorako, ikus [Baimendu laguntzaileei esportazioetarako konexioa erabiltzea](connections.md#allow-contributors-to-use-a-connection-for-exports).
 
-1. Sartu zure HubSpot-eko kredentzialak eskatzen dionean.
+1. Idatzi zure HubSpot-eko kredentzialak eskatzen dionean.
 
 1. Berrikusi [datuen pribatutasuna eta betetzea](connections.md#data-privacy-and-compliance) eta hautatu **ados**.
 

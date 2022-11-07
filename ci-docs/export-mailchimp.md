@@ -8,12 +8,12 @@ ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 54aec10e24b6356e2e4317cf33e740a1a086a2dd
-ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
+ms.openlocfilehash: d74672768afec94e899ff0aec8c118c2afcde368
+ms.sourcegitcommit: c3ae7e7e0c9566f9479ba71a26afc5a17fb589c2
 ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "9196839"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "9725017"
 ---
 # <a name="export-segments-to-mailchimp-preview"></a>Esportatu segmentuak Mailchimp-era (aurrebista)
 
@@ -28,7 +28,8 @@ Esportatu bezero profil bateratuen segmentuak Mailchimp-era buletinak eta posta 
 
 ## <a name="known-limitations"></a>Muga ezagunak
 
-- Mailchimp-era esportazio bakoitzeko milioi bat bezero-profil gehienez, hiru ordu iraun ditzake. Mailchimp-era esporta ditzakezun bezero-profilen kopurua Mailchimp-ekin duzun kontratuaren araberakoa da.
+- Ez da onartzen Bring your own storage (BYOS) esteka pribatua.
+- Mailchimp-era esportazio bakoitzeko milioi bat bezero-profil gehienez, hiru ordu iraun ditzake. Mailchimp-era esporta dezakezun bezero-profilen kopurua Mailchimp-ekin duzun kontratuaren araberakoa da.
 - Segmentuak soilik.
 
 ## <a name="set-up-connection-to-mailchimp"></a>Konfiguratu konexioa Mailchimp-era

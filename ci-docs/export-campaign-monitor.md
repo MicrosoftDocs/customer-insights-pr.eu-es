@@ -8,12 +8,12 @@ ms.topic: conceptual
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 3c04fc26dc690cf32b45913257e82b9a0f617185
-ms.sourcegitcommit: 594081c82ca385f7143b3416378533aaf2d6d0d3
+ms.openlocfilehash: 82303c7bcb269ee68419c9639ee743e13451f273
+ms.sourcegitcommit: c3ae7e7e0c9566f9479ba71a26afc5a17fb589c2
 ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "9196287"
+ms.lasthandoff: 10/27/2022
+ms.locfileid: "9724533"
 ---
 # <a name="export-segments-to-campaign-monitor-preview"></a>Esportatu segmentuak Campaign Monitor-era (aurrebista)
 
@@ -29,6 +29,7 @@ Esportatu bezeroen profil bateratuen segmentuak Campaign Monitor-era eta erabili
 
 ## <a name="known-limitations"></a>Muga ezagunak
 
+- Ez da onartzen Bring your own storage (BYOS) esteka pribatua.
 - Gehienez milioi bat bezero-profil Esportazio bakoitzeko Campaign Monitor-era, eta hori osatzeko 20 minutu behar izan daitezke. Campaign Monitor-era esporta dezakezun bezero-profilen kopurua Campaign Monitor-ekin duzun kontratuaren araberakoa da.
 - Segmentuak soilik.
 
