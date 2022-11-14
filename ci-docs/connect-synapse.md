@@ -9,16 +9,16 @@ ms.topic: how-to
 author: mukeshpo
 ms.author: mukeshpo
 manager: shellyha
-ms.openlocfilehash: 7bc0c3614e6dd39fbd65ae098ed679d95d09de9d
-ms.sourcegitcommit: 086f75136132d561cd78a4c2cb1e1933e2301f32
+ms.openlocfilehash: 675fd03c44a7a7a492b111895d79c2e77f93a5b5
+ms.sourcegitcommit: 4ba74816ebfa46412c64c40a61e1f31c4ccc40f2
 ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 08/11/2022
-ms.locfileid: "9259783"
+ms.lasthandoff: 11/03/2022
+ms.locfileid: "9738141"
 ---
 # <a name="connect-an-azure-synapse-analytics-data-source-preview"></a>Konektatu bat Azure Synapse Analytics datu-iturburu (aurrebista)
 
-Azure Synapse Analytics Datu-biltegietan eta datu handien sistemetan informaziorako denbora bizkortzen duen enpresa-analisi-zerbitzu bat da. Azure Synapse Analytics Enpresako datuen biltegian erabiltzen diren SQL teknologia onenak biltzen ditu, datu handietarako erabiltzen diren Spark teknologiak, Data Explorer erregistro eta denbora serieen analisirako, Pipelines datuak integratzeko eta ETL/ELT eta integrazio sakona beste Azure zerbitzu batzuekin, esaterako.Power BI,Cosmos DB, eta AzureML.
+Azure Synapse Analytics datu biltegietan eta big data sistemetan informaziorako denbora azkartzen duen enpresa analitika zerbitzu bat da. Azure Synapse Analytics Enpresako datuen biltegian erabiltzen diren SQL teknologia onenak biltzen ditu, datu handietarako erabiltzen diren Spark teknologiak, Data Explorer erregistro eta denbora serieen analisirako, Pipelines datuak integratzeko eta ETL/ELT eta integrazio sakona beste Azure zerbitzu batzuekin, esaterako.Power BI,Cosmos DB, eta AzureML.
 
 Informazio gehiagorako, ikus [Azure Synapse ikuspegi orokorra](/azure/synapse-analytics/overview-what-is).
 
@@ -45,7 +45,7 @@ Informazio gehiagorako, ikus [Azure Synapse ikuspegi orokorra](/azure/synapse-an
 
 - *[Azure Synapse laneko eremuaren kudeatutako identitatea](/azure/synapse-analytics/security/synapse-workspace-managed-identity)* **Biltegiratzearen blob-datuen laguntzailea** baimenak behar ditu Azure Data Lake Storage Gen2 kontuan datuak non kokatzen diren eta Azure Synapse laneko arean. Lortu informazio gehiago [Azure ataria erabiliz bloke eta ilara datuetara sartzeko Azure rola esleitzeko](/azure/storage/common/storage-auth-aad-rbac-portal) eta [Biltegiratzearen blob-datuen laguntzailearen baimenak](/azure/role-based-access-control/built-in-roles#storage-blob-data-contributor).
 
-- Gainean Azure Synapse lan-eremua, *Customer Insights-en zerbitzu nagusia* hau da, "Dynamics 365 AI for Customer Insights" beharrak **Synapse Administratzailea** esleitutako rola. Informazio gehiagorako, ikus [Nola konfiguratu sarbide kontrola zure Synapse laneko areako](/azure/synapse-analytics/security/how-to-set-up-access-control).
+- Gainean Azure Synapse lan-eremua, *Customer Insights-en zerbitzu nagusia* hau da, "Dynamics 365 AI for Customer Insights" beharrak **Synapse Administratzailea** esleitutako rola. The **erabiltzailea** gutxienez bat behar du **Synapse Laguntzailea** lan-eremuari esleitutako rola. Informazio gehiagorako, ikus [Nola konfiguratu sarbide kontrola zure Synapse laneko areako](/azure/synapse-analytics/security/how-to-set-up-access-control).
 
 - Zure Customer Insights inguruneak datuak gordetzen baditu zure [propioa Azure Data Lake Storage](own-data-lake-storage.md), konexioa konfiguratzen duen erabiltzaileari Azure Synapse Analytics gutxienez barneratua behar du **Irakurlea** rola Data Lake Storage kontuan. Informazio gehiagorako, ikusi [Esleitu Azure funtzioak Azure ataria erabiliz](/azure/role-based-access-control/role-assignments-portal).
 
@@ -57,9 +57,9 @@ Informazio gehiagorako, ikus [Azure Synapse ikuspegi orokorra](/azure/synapse-an
 
 1. Aukeratu **Azure Synapse Analytics (Aurrebista)** metodoa.
 
-   :::image type="content" source="media/data_sources_synapse.png" alt-text="Synapse Analytics datuetara konektatzeko elkarrizketa-koadroa":::
+   :::image type="content" source="media/data_sources_synapse.png" alt-text="Elkarrizketa-koadroa Synapse Analytics datuetara konektatzeko":::
   
-1. Sartu a **Izena** datu-iturburu eta aukerakoa **Deskribapena**.
+1. Sartu a **Izena** datu-iturburu eta aukerako bat **Deskribapena**.
 
 1. Aukeratu bat [eskuragarri dagoen konexioa](connections.md) to Azure Synapse Analytics edo [berri bat sortu](export-azure-synapse-analytics.md#set-up-connection-to-azure-synapse).
 
@@ -69,7 +69,7 @@ Informazio gehiagorako, ikus [Azure Synapse ikuspegi orokorra](/azure/synapse-an
 
 1. Aukeran, aukeratu datu-entitateak datuen profila onartzeko.
 
-1. Hautatu **Gorde** zure hautapena aplikatzeko eta sortu berri den datu-iturburu Lake datu-base taulei lotuta dauden datuak sartzen hasteko.Azure Synapse Analytics. The **Datu-iturriak** orrialdea irekitzen da datu-iturburu berria erakusten **Freskagarria** egoera.
+1. Hautatu **Gorde** zure hautapena aplikatzeko eta sortu berri den datu-iturburu Lake datu-baseko taulei lotuta dauden datuak sartzen hasteko Azure Synapse Analytics. The **Datu-iturriak** orrialdea irekitzen da datu-iturburu berria erakusten **Freskagarria** egoera.
 
    [!INCLUDE [progress-details-include](includes/progress-details-pane.md)]
 
