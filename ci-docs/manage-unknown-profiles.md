@@ -8,29 +8,29 @@ ms.topic: conceptual
 author: andtapia
 ms.author: andreatapia
 manager: shellyha
-ms.openlocfilehash: d7e5050ee5832df5ecf40a352f7ea8d42830fa45
-ms.sourcegitcommit: f6b6a4c4ce9cf12e449488b24aab80a2cbfe0c47
+ms.openlocfilehash: 0e12f64a22b93d117009fb8aee76d02a7583e699
+ms.sourcegitcommit: 24627d53dcdf607baaab1cc3c299a3584c386173
 ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 09/21/2022
-ms.locfileid: "9556381"
+ms.lasthandoff: 11/15/2022
+ms.locfileid: "9776806"
 ---
 # <a name="manage-unknown-profiles-with-customer-insights"></a>Kudeatu profil ezezagunak Customer Insights-ekin
 
-Interneteko erabiltzaileak askotan identifikatu gabekoak eta anonimoak dira sarean. Gailu edo kanal desberdinak erabiltzen dituztelako saioa hasi ez badute, bezero leialenentzat ere egia da. Hirugarrenen cookie-ak laster desagertuko direlako, lehenen datuetan oinarritutako erabiltzaileen hobespenak kudeatzea funtsezkoa da esperientzia pertsonalizatu bereiztuak lortzeko. Marka askorentzat, erabiltzaile ezagunak edo autentifikatuak gutxiengoak dira pertsonalizazioaren inguruan bezeroen itxaropenak gero eta handiagoak diren arren. Enpresentzat oso ona da bezeroak nor diren jakitea, datu fidagarri, zehatz eta bateratuetan oinarrituta.
+Interneteko erabiltzaileak sarritan identifikatu gabekoak edo anonimoak dira sarean. Bezero leialenak ere "ezezagunak" direla ager daitezke gailu ezberdinetan saioa hasi ez badute. Marka askorentzat, erabiltzaile ezagunak edo autentifikatuak gutxiengoak dira pertsonalizazioaren inguruan bezeroen itxaropenak gero eta handiagoak diren arren. Hirugarrenen cookieen etorkizuna zalantzan jarrita, erabiltzaileen hobespenak lehenen datuetan oinarrituta kudeatzea funtsezkoa da esperientzia pertsonalizatuak lortzeko.
 
-Pertsonalizazio gogoangarria zure bezeroen datuen aberastasunaren eta osotasunaren araberakoa da eta Customer Insights-ek helburu horiek lortzen laguntzen dizu. Ez duzu bezero-bidaia-aren hasieran jasotako datuen erabilera mugatu edo eten beharrik. Customer Insights-ek zure datuak ekar ditzakezu erabiltzaile ezezagunentzako bezero-profila sortzeko. Ondoren, profil hori erabil dezakezu ekintza gehiago egiteko, harremanetarako informazioa falta izan arren. Inportatu lehenen datuak, hala nola web, mugikor edo CRM sistemetatik, Customer Insights-era, bezeroen profilak etengabe aberasteko. Interakzio gehiago bateratzen dituzun heinean, [piztu *ezezaguna* bezero bat sartu *ezagunak* bezeroa](unknown-to-known.md).
+Pertsonalizazio gogoangarria zure bezeroa ezagutzen duzunaren araberakoa da eta Customer Insights-ek hori egiten laguntzen dizu zure bezero guztien jarraipena eginez.  Ez duzu bezero-bidaia-aren hasieran jasotako datuen erabilera mugatu edo eten beharrik. Customer Insights-ek zure datuak ekar ditzakezu erabiltzaile ezezagunentzako bezero-profila sortzeko. Ondoren, profil hori erabil dezakezu ekintza gehiago egiteko, harremanetarako informazioa falta izan arren. Inportatu lehenen datuak, hala nola web, mugikor edo CRM sistemetatik, Customer Insights-era, bezeroen profilak etengabe aberasteko. Interakzio gehiago bateratzen dituzun heinean, [piztu *ezezaguna* bezero bat sartu *ezagunak* bezeroa](unknown-to-known.md).
 
 ## <a name="sample-scenario"></a>Eszenario lagina
 
-Merkataritza elektronikoa azken hamarkadan gehien hazi den kanala da. Demagun erabiltzaile batek bere gailu mugikorra erabiltzen duela zure merkataritza elektronikoko gunea arakatzeko. Webguneak "mobile_guest123" bisitaria esleitzen du identifikatzaile esklusibo gisa eta zure lineako jardueran oinarritutako jokabide-jarduerak biltzen hasten zara. Adibidez, zein orrialde bisitatu dituzten, zenbat denbora eman duten orrialde horietan edo zein esteka egin duten klik. Ez dakizu haien izena edo helbide elektronikoa, baina datu hauek markei erabiltzaile zehatz honi buruzko informazio esanguratsuak eskaintzen lagun diezaiekete. Era berean, informazio horiek erabil ditzakezu erabiltzaileak gunea bisitatzen duen hurrengo aldian. Kontsultatu "mobile_guest123"-ren Bezeroen estatistikak erabiltzailearen segmentu-zerrenda berreskuratzeko, hala nola "organikoa", "mugikorrentzako eskaera-bezeroak", "balio handiko bezeroak", etab., edo berreskuratu profila web-esperientzia pertsonalizatuak sortzeko. Datuak edozein aktibazio-sistemara ere esporta ditzakezu gauza bera egiteko.
+Demagun erabiltzaile batek bere gailu mugikorra erabiltzen duela zure merkataritza elektronikoko gunea arakatzeko. Webguneak "mobile_guest123" bisitaria esleitzen du identifikatzaile esklusibo gisa eta zure lineako jardueran oinarritutako jokabide-jarduerak biltzen hasten zara. Adibidez, zein orrialde bisitatu dituzten, zenbat denbora eman duten orrialde horietan edo zein esteka egin duten klik. Ez dakizu haien izena edo helbide elektronikoa, baina datu hauek markei erabiltzaile zehatz honi buruzko informazio esanguratsuak eskaintzen lagun diezaiekete. Era berean, informazio horiek erabil ditzakezu erabiltzaileak gunea bisitatzen duen hurrengo aldian. Kontsultatu "mobile_guest123"-ren bezeroen estatistikak erabiltzailearen segmentu-zerrenda berreskuratzeko, hala nola, "organikoa", "mugikorretarako eskaerak egiteko bezeroak", "balio handiko bezeroak", etab., edo berreskuratu profila web-esperientzia pertsonalizatuak sortzeko. Datuak edozein aktibazio-sistemara ere esporta ditzakezu gauza bera egiteko.
 
 ## <a name="prerequisites"></a>Aurrebaldintzak
 
 - Hartu lehenen datuak Customer Insights-en
 - Entitate bakoitzak gako nagusi gisa ezartzen den ID bakarra du
 - Pertsonalizaziorako gako nagusi bat duen entitate bakoitza bateratu egiten da
-- Zure webguneko edukiak kudeatzeko sistemak APIak erabiltzeko gai da (Weba pertsonalizatzeko Customer Insights-ekin zuzeneko komunikazioan oinarrituta)
+- Zure webguneko edukiak kudeatzeko sistemak APIak erabil ditzake (Weba pertsonalizatzeko Customer Insights-ekin zuzeneko komunikazioan oinarrituta)
 
 Hurrengo taulak balio handiko web-gertaerak nola atzeman daitezkeen adibide sinplifikatu bat erakusten du.
 

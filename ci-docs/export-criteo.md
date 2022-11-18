@@ -8,12 +8,12 @@ ms.topic: how-to
 author: pkieffer
 ms.author: philk
 manager: shellyha
-ms.openlocfilehash: 61435030254638965fbeb7980312e73695416aa2
-ms.sourcegitcommit: c3ae7e7e0c9566f9479ba71a26afc5a17fb589c2
+ms.openlocfilehash: 811752da943cd5e40608d48644a1744c7971d3c8
+ms.sourcegitcommit: 40ae3322ac95913e485607494754dd03814e42bb
 ms.translationtype: MT
 ms.contentlocale: eu-ES
-ms.lasthandoff: 10/27/2022
-ms.locfileid: "9724774"
+ms.lasthandoff: 11/11/2022
+ms.locfileid: "9760011"
 ---
 # <a name="export-segments-to-criteo-preview"></a>Esportatu segmentuak Criteo-ra (aurrebista)
 
@@ -27,7 +27,6 @@ Esportatu bezeroen profil bateratuen segmentuak kanpainak sortzeko, posta elektr
 
 ## <a name="known-limitations"></a>Muga ezagunak
 
-- Ez da onartzen Bring your own storage (BYOS) esteka pribatua.
 - Gehienez milioi bat bezero profil Criteo-ra esportatzeko, eta hori osatzeko 30 minutu behar izan daitezke. Criteora esporta ditzakezun bezero-profilen kopurua Criteorekin duzun kontratuaren araberakoa da.
 - Segmentuak soilik.
 
@@ -43,7 +42,7 @@ Esportatu bezeroen profil bateratuen segmentuak kanpainak sortzeko, posta elektr
 
 1. Aukeratu nork erabil dezakeen konexioa. Berez, administratzaileak soilik dira. Informazio gehiagorako, ikus [Baimendu laguntzaileei esportazioetarako konexioa erabiltzea](connections.md#allow-contributors-to-use-a-connection-for-exports).
 
-1. Berrikusi [datuen pribatutasuna eta betetzea](connections.md#data-privacy-and-compliance) eta hautatu **ados**.
+1. Berrikusi [datuen pribatutasuna eta betetzea](connections.md#data-privacy-and-compliance) eta hautatu **ados** .
 
 1. Hautatu **Konektatu** konexioa hasieratzeko.
 
@@ -59,7 +58,7 @@ Esportatu bezeroen profil bateratuen segmentuak kanpainak sortzeko, posta elektr
 
 1. Joan **Datuak** > **Esportazioak**.
 
-1. Hautatu **Gehitu esportazioa**.
+1. Hautatu **Gehitu esportazioa** .
 
 1. urtean **Esportatzeko konexioa** eremuan, aukeratu konexio bat Criteo atalean. Jarri harremanetan administratzaile batekin konexiorik ez badago.
 
